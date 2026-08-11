@@ -92,7 +92,7 @@ def revised_manifest() -> dict:
         "validation": {
             "evidence_profile": "DRAFT_EXPLICIT_LIMITATIONS",
             "split": "stimulus and recording grouped split pending G2",
-            "leakage_checks": ["stimulus_id and recording_id disjointness required"],
+            "leakage_checks": ["stimulus_id and block_id disjointness required; recording windows use temporal embargo"],
             "nulls": ["circular shift declared; not yet run"],
             "metrics": ["held-out Pearson r declared; not yet run"],
             "benchmark_summary": [

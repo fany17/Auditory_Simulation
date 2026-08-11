@@ -79,13 +79,14 @@
 
 - train/validation/test 比例目标为 70/15/15；
 - 同一 `stimulus_id` 不跨 split；
-- 同一 `recording_id` 默认不跨 split；如实际结构导致不可行，必须先形成 connected-component 报告再重新冻结；
-- 同一 recording 内跨 split 时间窗至少隔离 2 s；正式窗口化后隔离宽度不得小于最大 lag、滤波边缘和特征感受野之和；
-- speaker_id 可用时单独报告 speaker 泄漏；若一个 speaker 覆盖全部刺激，则标记 `SPEAKER_GENERALIZATION_NOT_ESTIMABLE`，不得伪称 speaker-held-out；
-- language 必须进入 manifest，并作为 split 分层/覆盖审计字段；同一 stimulus 的语言标签必须唯一，少样本语言若不能形成有效 held-out 证据则标记 `LANGUAGE_GENERALIZATION_NOT_ESTIMABLE`；
+- 真实 manifest 证明 `stimulus_id + recording_id` 联合分组形成单一 connected component，无法形成 train/validation/test；该原始方案保留为 `INFEASIBLE_SINGLE_CONNECTED_COMPONENT`；
+- 主 split 已重冻结为 `stimulus_id + block_id` 分组：block 02/03/04/05 为 train，block 06 为 validation，block 01 为 test；
+- recording 可跨 split，但 passage 窗口不得重叠，跨 split 时间窗至少隔离 2 s；正式窗口化后隔离宽度不得小于最大 lag、滤波边缘和特征感受野之和；
+- speaker_id 单独作为 advisory 审计；当前有 6 个 speaker 跨 split，主结果不得声称 speaker-held-out 或 speaker-generalization；
+- language 必须进入 manifest 并接受 split 覆盖审计；Catalan 音频存在 provenance 冲突，当前排除于 primary baseline 并标记 `LANGUAGE_GENERALIZATION_NOT_ESTIMABLE`；
 - subject 可跨主 split，因此主结果只支持 unseen-stimulus within-subject/generalized-across-recording 的口径；另行的 subject-generalization 必须使用独立 split manifest。
 
-任何 sample_id 重复、必需 group key 缺失、group 跨 split 或时间邻域泄漏均为 hard fail。
+任何 sample_id 重复、必需 group key 缺失、stimulus/block 跨 split、language 缺失或时间邻域泄漏均为 hard fail。
 
 ## 6. 特征、目标与 baseline
 

@@ -17,6 +17,8 @@ BASE_REQUIRED_COLUMNS = {
     "session_id",
     "recording_id",
     "stimulus_id",
+    "block_id",
+    "language",
     "start_sec",
     "end_sec",
 }
@@ -30,6 +32,8 @@ class Assignment:
     session_id: str
     recording_id: str
     stimulus_id: str
+    block_id: str
+    language: str
     speaker_id: str
     start_sec: float
     end_sec: float
@@ -60,6 +64,8 @@ def read_assignments(path: str | Path) -> list[Assignment]:
                     session_id=(row.get("session_id") or "").strip(),
                     recording_id=(row.get("recording_id") or "").strip(),
                     stimulus_id=(row.get("stimulus_id") or "").strip(),
+                    block_id=(row.get("block_id") or "").strip(),
+                    language=(row.get("language") or "").strip(),
                     speaker_id=(row.get("speaker_id") or "").strip(),
                     start_sec=start_sec,
                     end_sec=end_sec,
@@ -72,6 +78,7 @@ def validate_assignments(
     rows: Sequence[Assignment],
     required_group_keys: Iterable[str],
     optional_group_keys: Iterable[str] = (),
+    stratification_keys: Iterable[str] = (),
     temporal_context_key: str = "recording_id",
     temporal_embargo_seconds: float = 2.0,
     require_all_splits: bool = True,
@@ -124,6 +131,19 @@ def validate_assignments(
             if len(splits) > 1:
                 issues.append(f"optional group leakage {key}={value}: {sorted(splits)}")
 
+    for key in stratification_keys:
+        stratified_splits_by_value: dict[str, set[str]] = defaultdict(set)
+        for row in rows:
+            value = row.value(key).strip()
+            if not value or value == "UNKNOWN":
+                issues.append(f"missing stratification value {key}: {row.sample_id}")
+                continue
+            stratified_splits_by_value[value].add(row.split)
+        for value, splits in sorted(stratified_splits_by_value.items()):
+            missing = sorted(ALLOWED_SPLITS - splits)
+            if missing:
+                issues.append(f"stratification coverage missing {key}={value}: {missing}")
+
     by_context: dict[str, list[Assignment]] = defaultdict(list)
     for row in rows:
         context = row.value(temporal_context_key).strip()
@@ -166,6 +186,7 @@ def main() -> int:
         rows,
         required_group_keys=split_config["required_group_keys"],
         optional_group_keys=split_config.get("optional_group_keys", []),
+        stratification_keys=split_config.get("stratification_keys", []),
         temporal_context_key=split_config["temporal_context_key"],
         temporal_embargo_seconds=float(split_config["temporal_embargo_seconds"]),
     )

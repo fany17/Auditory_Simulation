@@ -50,7 +50,10 @@
 
 - 正式科学结果：`NOT_YET_AVAILABLE`；
 - `ds004703` 许可：`ACCEPTED_WITH_STRICTER_README_BOUNDARY`；
-- 数据下载/读取：`AUTHORIZED_ON_2203`，尚待实际运行证据；
+- 数据下载/读取：2203 下载进行中；最近非哈希盘点为 370/377 个对象字节数匹配，完整 G2 数据审计尚未通过；
 - 专用环境：`G1 PASS`；2203 独立环境、自检和远端 10 项测试均通过，证据见 `reports/remote_selfcheck_2203.json`；
+- 轻量 manifest/split：`PASS_WITH_CATALAN_EXCLUSION_AND_SPLIT_REDESIGN`；438 segments 中 319 个 English passage segment 进入 primary split，40 tests、Ruff、mypy 与 319 行 split guard 通过；
+- 原 `stimulus+recording` 方案：单一 connected component，不可三分；已重冻结为 stimulus+block 分组及 recording 内 2 s embargo；
+- Catalan：显式标为 `ca`，但 block 音频与 cue 波形冲突，暂不进入 baseline，不能声称跨语言泛化；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
 - M6A→M6B exchange contract：`REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`；producer 侧 33 项远端测试、Ruff 与 mypy 均通过，consumer cross-test 尚未运行，未冻结或接受。

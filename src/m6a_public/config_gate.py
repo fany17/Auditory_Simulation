@@ -90,12 +90,18 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
 
     split = config.get("split", {})
     required_groups = set(split.get("required_group_keys", []))
-    if not {"stimulus_id", "recording_id"}.issubset(required_groups):
-        errors.append("split must guard stimulus_id and recording_id")
-    if "language" not in set(split.get("optional_group_keys", [])):
-        errors.append("split must carry explicit language metadata")
-    if split.get("language_policy") != "EXPLICIT_MANIFEST_AND_SPLIT_STRATIFICATION_WITH_UNKNOWN_FAIL_CLOSED":
-        errors.append("split language policy must fail closed on unknown language")
+    if required_groups != {"stimulus_id", "block_id"}:
+        errors.append("split must guard stimulus_id and block_id")
+    if "language" not in set(split.get("stratification_keys", [])):
+        errors.append("split must carry language as an explicit stratification key")
+    if split.get("language_policy") != "EXPLICIT_MANIFEST_AND_SPLIT_COVERAGE_AUDIT":
+        errors.append("split language policy must audit explicit split coverage")
+    if split.get("recording_policy") != "MAY_SPAN_SPLITS_WITH_NONOVERLAPPING_PASSAGE_WINDOWS_AND_TEMPORAL_EMBARGO":
+        errors.append("split recording policy must preserve within-recording temporal isolation")
+    if split.get("original_recording_grouping_status") != "INFEASIBLE_SINGLE_CONNECTED_COMPONENT":
+        errors.append("original recording grouping no-go must remain recorded")
+    if set(split.get("block_assignments", {}).values()) != {"train", "validation", "test"}:
+        errors.append("block assignments must cover train/validation/test")
     if split.get("temporal_embargo_seconds", 0) <= 0:
         errors.append("temporal embargo must be positive")
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:

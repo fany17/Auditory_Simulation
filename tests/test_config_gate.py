@@ -28,6 +28,12 @@ class ConfigGateTests(unittest.TestCase):
         changed["model"]["trainable"] = True
         self.assertTrue(any("remain frozen" in item for item in validate_task_config(changed)))
 
+    def test_refrozen_split_records_original_no_go_and_block_assignments(self) -> None:
+        split = self.config["split"]
+        self.assertEqual(set(split["required_group_keys"]), {"stimulus_id", "block_id"})
+        self.assertEqual(split["original_recording_grouping_status"], "INFEASIBLE_SINGLE_CONNECTED_COMPONENT")
+        self.assertEqual(len(split["block_assignments"]), 6)
+
     def test_forbidden_integrity_field_is_detected(self) -> None:
         changed = copy.deepcopy(self.config)
         changed["dataset"]["checksum"] = "not-allowed"

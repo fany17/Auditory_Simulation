@@ -13,6 +13,8 @@ def row(
     start_sec: float = 0.0,
     end_sec: float = 1.0,
     speaker_id: str = "",
+    block_id: str = "block-a",
+    language: str = "en",
 ) -> Assignment:
     return Assignment(
         sample_id=sample_id,
@@ -21,6 +23,8 @@ def row(
         session_id="ses-01",
         recording_id=recording_id,
         stimulus_id=stimulus_id,
+        block_id=block_id,
+        language=language,
         speaker_id=speaker_id,
         start_sec=start_sec,
         end_sec=end_sec,
@@ -78,6 +82,16 @@ class SplitGuardTests(unittest.TestCase):
         ]
         issues = validate_assignments(rows, [], optional_group_keys=["speaker_id"])
         self.assertTrue(any("optional group leakage speaker_id=speaker-x" in item for item in issues))
+
+    def test_language_stratification_requires_all_splits(self) -> None:
+        rows = [
+            row("a", "train", "rec-a", "stim-a", language="en"),
+            row("b", "validation", "rec-b", "stim-b", language="en"),
+            row("c", "test", "rec-c", "stim-c", language="en"),
+            row("d", "train", "rec-d", "stim-d", language="ca"),
+        ]
+        issues = validate_assignments(rows, [], stratification_keys=["language"])
+        self.assertTrue(any("stratification coverage missing language=ca" in item for item in issues))
 
 
 if __name__ == "__main__":

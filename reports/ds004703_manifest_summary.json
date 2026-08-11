@@ -1,0 +1,116 @@
+{
+  "task_id": "M6A-PUBLIC-001",
+  "dataset_id": "ds004703",
+  "dataset_version": "1.1.0",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "segment_count": 438,
+  "analysis_eligible_segment_count": 319,
+  "recording_count": 11,
+  "stimulus_count": 58,
+  "passage_language_counts": {
+    "ca": 41,
+    "en": 319
+  },
+  "eligible_language_counts": {
+    "en": 319
+  },
+  "block_assignments": {
+    "block-04": "train",
+    "block-02": "train",
+    "block-05": "train",
+    "block-03": "train",
+    "block-06": "validation",
+    "block-01": "test"
+  },
+  "original_grouping_connected_components": {
+    "node_count": 59,
+    "component_count": 1,
+    "largest_component_nodes": 59,
+    "policy": "stimulus_id_plus_recording_id_must_not_cross_split",
+    "feasible_for_three_splits": false
+  },
+  "refrozen_primary_policy": {
+    "required_group_keys": [
+      "stimulus_id",
+      "block_id"
+    ],
+    "recording_policy": "MAY_SPAN_SPLITS_WITH_NONOVERLAPPING_PASSAGE_WINDOWS_AND_TEMPORAL_EMBARGO",
+    "language_policy": "EXPLICIT_MANIFEST_AND_SPLIT_COVERAGE_AUDIT",
+    "speaker_policy": "ADVISORY_ONLY_SPEAKER_GENERALIZATION_NOT_CLAIMED",
+    "catalan_status": "EXCLUDED_FROM_PRIMARY_BASELINE_PENDING_AUDIO_PROVENANCE_RESOLUTION"
+  },
+  "split_checks": {
+    "stimulus_split_conflicts": [],
+    "block_split_conflicts": [],
+    "language_split_coverage": {
+      "en": [
+        "test",
+        "train",
+        "validation"
+      ]
+    },
+    "recordings_spanning_splits": 9,
+    "speaker_split_conflicts": [
+      "s1303a",
+      "s1401a",
+      "s1503a",
+      "s2102a",
+      "s3003a",
+      "s3602b"
+    ],
+    "temporal_embargo_seconds": 2.0,
+    "temporal_cross_split_violations": []
+  },
+  "metadata_conflicts": [
+    "README and iEEG sidecars declare 6 blocks x 7 passages, but bundled Block directories contain 8 English passages plus 1 Catalan-labeled file each",
+    "all six Catalan-labeled Block files are waveform-identical to pleasePressSpace_normed.wav while events templates span approximately 46 seconds",
+    "catalan_v2 files match the events template duration but exact played-waveform provenance remains unresolved"
+  ],
+  "catalan_block_nonhash_waveform_comparisons": [
+    {
+      "stimulus_id": "catalan-f01",
+      "block_file": "stimuli/excerpts/Block 2/catalan-f01_normed.wav",
+      "same_shape_as_please_press_space": true,
+      "waveform_correlation_with_please_press_space": 1.0,
+      "waveform_rms_difference": 0.0
+    },
+    {
+      "stimulus_id": "catalan-f02",
+      "block_file": "stimuli/excerpts/Block 4/catalan-f02_normed.wav",
+      "same_shape_as_please_press_space": true,
+      "waveform_correlation_with_please_press_space": 1.0,
+      "waveform_rms_difference": 0.0
+    },
+    {
+      "stimulus_id": "catalan-f03",
+      "block_file": "stimuli/excerpts/Block 6/catalan-f03_normed.wav",
+      "same_shape_as_please_press_space": true,
+      "waveform_correlation_with_please_press_space": 1.0,
+      "waveform_rms_difference": 0.0
+    },
+    {
+      "stimulus_id": "catalan-m01",
+      "block_file": "stimuli/excerpts/Block 1/catalan-m01_normed.wav",
+      "same_shape_as_please_press_space": true,
+      "waveform_correlation_with_please_press_space": 1.0,
+      "waveform_rms_difference": 0.0
+    },
+    {
+      "stimulus_id": "catalan-m02",
+      "block_file": "stimuli/excerpts/Block 3/catalan-m02_normed.wav",
+      "same_shape_as_please_press_space": true,
+      "waveform_correlation_with_please_press_space": 1.0,
+      "waveform_rms_difference": 0.0
+    },
+    {
+      "stimulus_id": "catalan-m03",
+      "block_file": "stimuli/excerpts/Block 5/catalan-m03_normed.wav",
+      "same_shape_as_please_press_space": true,
+      "waveform_correlation_with_please_press_space": 1.0,
+      "waveform_rms_difference": 0.0
+    }
+  ],
+  "errors": [],
+  "manifest_status": "PASS_WITH_CATALAN_EXCLUSION_AND_SPLIT_REDESIGN",
+  "g2_status": "PENDING_FULL_DATASET_AUDIT"
+}

@@ -57,13 +57,27 @@
     },
     "required_group_keys": [
       "stimulus_id",
-      "recording_id"
+      "block_id"
     ],
-    "optional_group_keys": [
-      "speaker_id",
+    "optional_group_keys": [],
+    "advisory_group_keys": [
+      "speaker_id"
+    ],
+    "stratification_keys": [
       "language"
     ],
-    "language_policy": "EXPLICIT_MANIFEST_AND_SPLIT_STRATIFICATION_WITH_UNKNOWN_FAIL_CLOSED",
+    "language_policy": "EXPLICIT_MANIFEST_AND_SPLIT_COVERAGE_AUDIT",
+    "speaker_policy": "ADVISORY_ONLY_SPEAKER_GENERALIZATION_NOT_CLAIMED",
+    "recording_policy": "MAY_SPAN_SPLITS_WITH_NONOVERLAPPING_PASSAGE_WINDOWS_AND_TEMPORAL_EMBARGO",
+    "original_recording_grouping_status": "INFEASIBLE_SINGLE_CONNECTED_COMPONENT",
+    "block_assignments": {
+      "block-01": "test",
+      "block-02": "train",
+      "block-03": "train",
+      "block-04": "train",
+      "block-05": "train",
+      "block-06": "validation"
+    },
     "temporal_context_key": "recording_id",
     "temporal_embargo_seconds": 2.0,
     "seed": 20260811,
