@@ -24,6 +24,8 @@
 6. 所有大数据、权重、特征和训练只位于 2203，本地只保留轻量可审计资产；
 7. 不进行任何 SHA、MD5、checksum、文件哈希或 Git 对象哈希操作。
 
+跨项目接口当前为 `REDESIGN_REQUIRED`：Auditory 内部运行 manifest 与 M6A→M6B exchange manifest 必须分离。exchange contract 仅为 `DRAFT_PROPOSED_BY_M6A`，须经协调审核和 STN consumer cross-test 后才能冻结；当前不存在冻结 M6A artifact。
+
 ## 当前节点
 
 当前节点为 `G0-G2 启动门禁`：
@@ -49,5 +51,6 @@
 - 正式科学结果：`NOT_YET_AVAILABLE`；
 - `ds004703` 许可：`ACCEPTED_WITH_STRICTER_README_BOUNDARY`；
 - 数据下载/读取：`AUTHORIZED_ON_2203`，尚待实际运行证据；
-- 专用环境：尚待创建和自检；
+- 专用环境：`G1 PASS`；2203 独立环境、自检和远端 10 项测试均通过，证据见 `reports/remote_selfcheck_2203.json`；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
+- M6A→M6B exchange contract：`DRAFT_PROPOSED_BY_M6A`，尚未冻结或接受。

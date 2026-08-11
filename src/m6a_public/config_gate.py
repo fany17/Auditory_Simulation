@@ -107,6 +107,14 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     if nulls.get("formal_permutations", 0) < 1000:
         errors.append("formal_permutations must be at least 1000")
 
+    artifact = config.get("artifact", {})
+    if artifact.get("internal_schema_path") != "schemas/m6a_public_internal_manifest.schema.json":
+        errors.append("internal run manifest path is not frozen")
+    if artifact.get("exchange_contract_status") != "DRAFT_PROPOSED_BY_M6A":
+        errors.append("exchange contract must remain DRAFT_PROPOSED_BY_M6A")
+    if artifact.get("frozen_m6a_artifact_exists") is not False:
+        errors.append("no frozen M6A artifact exists at G0-G2")
+
     forbidden = find_forbidden_fields(config)
     if forbidden:
         errors.append("forbidden integrity fields: " + ", ".join(forbidden))

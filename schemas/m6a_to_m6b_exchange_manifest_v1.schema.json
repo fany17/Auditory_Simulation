@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "m6a-m6b-exchange-manifest-v1-draft",
+  "title": "M6A to M6B exchange manifest v1 draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "identity",
+    "acceptance",
+    "public_dataset",
+    "model",
+    "audio_preprocessing",
+    "layer_inventory",
+    "extraction_spec",
+    "transferable_transforms",
+    "validation",
+    "known_failures",
+    "claims",
+    "method_package",
+    "canary_fixture",
+    "file_inventory"
+  ],
+  "properties": {
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contract_version", "release_id", "producer", "consumer", "release_status"],
+      "properties": {
+        "contract_version": {"const": "1-draft"},
+        "release_id": {"type": "string"},
+        "producer": {"const": "Auditory_Simulation/M6A-PUBLIC"},
+        "consumer": {"const": "STN_Decoding_Encoding/M6B-STN"},
+        "release_status": {
+          "enum": ["DRAFT_PROPOSED_BY_M6A", "CANDIDATE_FOR_CROSS_TEST", "FROZEN", "ACCEPTED", "RETIRED"]
+        }
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["producer_review", "consumer_cross_test", "coordinator_decision"],
+      "properties": {
+        "producer_review": {"type": "string"},
+        "consumer_cross_test": {"type": "string"},
+        "coordinator_decision": {"type": "string"}
+      }
+    },
+    "public_dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dataset_id", "version", "doi", "license_boundary", "benchmark_role", "redistribution"],
+      "properties": {
+        "dataset_id": {"type": "string"},
+        "version": {"type": "string"},
+        "doi": {"type": "string"},
+        "license_boundary": {"type": "string"},
+        "benchmark_role": {"type": "string"},
+        "redistribution": {"const": "NO_RAW_DATA_OR_FULL_PUBLIC_FEATURE_PAYLOAD"}
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model_id", "revision_label", "resolved_at_utc", "license", "frozen", "software_versions"],
+      "properties": {
+        "model_id": {"type": "string"},
+        "revision_label": {"type": "string"},
+        "resolved_at_utc": {"type": "string", "format": "date-time"},
+        "license": {"type": "string"},
+        "frozen": {"const": true},
+        "revision_limitation": {"type": "string"},
+        "software_versions": {
+          "type": "object",
+          "additionalProperties": {"type": "string"}
+        }
+      }
+    },
+    "audio_preprocessing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_rate_hz", "channels", "amplitude_rule", "resampling", "chunking", "time_reference"],
+      "properties": {
+        "input_rate_hz": {"type": "integer", "minimum": 1},
+        "channels": {"type": "string"},
+        "amplitude_rule": {"type": "string"},
+        "resampling": {"type": "string"},
+        "chunking": {"type": "string"},
+        "time_reference": {"type": "string"},
+        "edge_handling": {"type": "string"}
+      }
+    },
+    "layer_inventory": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["layer_key", "ordinal", "source", "frame_rate_hz", "dtype", "feature_dim", "time_axis_reference"],
+        "properties": {
+          "layer_key": {"type": "string"},
+          "ordinal": {"type": "integer", "minimum": 0},
+          "source": {"type": "string"},
+          "frame_rate_hz": {"type": "number", "exclusiveMinimum": 0},
+          "dtype": {"type": "string"},
+          "feature_dim": {"type": "integer", "minimum": 1},
+          "time_axis_reference": {"type": "string"}
+        }
+      }
+    },
+    "extraction_spec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entrypoint", "config_schema", "output_layout", "batch_rule", "chunk_rule", "determinism_boundary"],
+      "properties": {
+        "entrypoint": {"type": "string"},
+        "config_schema": {"type": "string"},
+        "output_layout": {"type": "string"},
+        "batch_rule": {"type": "string"},
+        "chunk_rule": {"type": "string"},
+        "determinism_boundary": {"type": "string"}
+      }
+    },
+    "transferable_transforms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "kind", "fit_scope", "source_split", "input_layer", "artifact_file", "applicability"],
+        "properties": {
+          "name": {"type": "string"},
+          "kind": {"enum": ["NORMALIZER", "PCA", "BASIS", "OTHER"]},
+          "fit_scope": {"type": "string"},
+          "source_split": {"const": "train"},
+          "input_layer": {"type": "string"},
+          "output_dim": {"type": "integer", "minimum": 1},
+          "artifact_file": {"type": "string"},
+          "applicability": {"type": "string"}
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["split", "leakage_checks", "nulls", "metrics", "benchmark_summary"],
+      "properties": {
+        "split": {"type": "string"},
+        "leakage_checks": {"type": "array", "items": {"type": "string"}},
+        "nulls": {"type": "array", "items": {"type": "string"}},
+        "metrics": {"type": "array", "items": {"type": "string"}},
+        "benchmark_summary": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "known_failures": {"type": "array", "items": {"type": "string"}},
+    "claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["can_claim", "cannot_claim"],
+      "properties": {
+        "can_claim": {"type": "array", "items": {"type": "string"}},
+        "cannot_claim": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "method_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["package_version", "entrypoint", "runtime_spec", "files"],
+      "properties": {
+        "package_version": {"type": "string"},
+        "entrypoint": {"type": "string"},
+        "runtime_spec": {"type": "string"},
+        "files": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "canary_fixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["synthetic", "format", "input_file", "expected_output_file", "purpose"],
+      "properties": {
+        "synthetic": {"const": true},
+        "format": {"enum": ["JSON", "CSV", "TINY_TSV", "NPY"]},
+        "input_file": {"type": "string"},
+        "expected_output_file": {"type": "string"},
+        "purpose": {"const": "SHAPE_TIME_LAYER_ORDER_CANARY"}
+      }
+    },
+    "reference_feature_payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_for_consumer", "remote_only", "format", "location", "purpose"],
+      "properties": {
+        "required_for_consumer": {"const": false},
+        "remote_only": {"const": true},
+        "format": {"enum": ["ZARR", "HDF5", "PARQUET", "NPY_BUNDLE"]},
+        "location": {"type": "string"},
+        "purpose": {"type": "string"}
+      }
+    },
+    "file_inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "role", "bytes", "modified_at_utc", "remote_only"],
+        "properties": {
+          "path": {"type": "string"},
+          "role": {"type": "string"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "modified_at_utc": {"type": "string", "format": "date-time"},
+          "schema": {"type": "string"},
+          "remote_only": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}

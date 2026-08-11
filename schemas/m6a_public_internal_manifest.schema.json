@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "m6a-artifact-manifest-v1",
-  "title": "M6A frozen artifact manifest",
+  "$id": "m6a-public-internal-manifest-v1",
+  "title": "M6A-PUBLIC internal run manifest",
   "type": "object",
   "additionalProperties": false,
   "required": [

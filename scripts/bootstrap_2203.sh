@@ -5,6 +5,7 @@ SOURCE_ROOT="${1:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 PROJECT_ROOT="${M6A_REMOTE_ROOT:-/home/fanyu/auditory_simulation_m6a}"
 ENV_NAME="auditory_m6a_public_001"
 ENV_FILE="${SOURCE_ROOT}/environment/m6a_public_2203.yml"
+REQUIREMENTS_FILE="${SOURCE_ROOT}/environment/requirements_2203.txt"
 
 mkdir -p \
   "${PROJECT_ROOT}/cache/huggingface" \
@@ -17,8 +18,14 @@ mkdir -p \
 if conda env list | awk '{print $1}' | grep -Fxq "${ENV_NAME}"; then
   echo "Environment already exists: ${ENV_NAME}"
 else
-  conda env create --file "${ENV_FILE}"
+  conda create -y -n "${ENV_NAME}" --override-channels -c conda-forge python=3.11 pip
 fi
+
+conda run --no-capture-output -n "${ENV_NAME}" \
+  python -m pip install \
+  --quiet \
+  --extra-index-url https://download.pytorch.org/whl/cu128 \
+  -r "${REQUIREMENTS_FILE}"
 
 conda run --no-capture-output -n "${ENV_NAME}" \
   python "${SOURCE_ROOT}/scripts/remote_selfcheck.py" \

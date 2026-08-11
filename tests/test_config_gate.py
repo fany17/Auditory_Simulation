@@ -34,8 +34,22 @@ class ConfigGateTests(unittest.TestCase):
         self.assertEqual(find_forbidden_fields(changed), ["$.dataset.checksum"])
 
     def test_artifact_schema_contains_no_forbidden_fields(self) -> None:
-        schema = json.loads((ROOT / "schemas" / "m6a_artifact_manifest.schema.json").read_text(encoding="utf-8"))
-        self.assertEqual(find_forbidden_fields(schema), [])
+        internal_schema = json.loads(
+            (ROOT / "schemas" / "m6a_public_internal_manifest.schema.json").read_text(encoding="utf-8")
+        )
+        exchange_schema = json.loads(
+            (ROOT / "schemas" / "m6a_to_m6b_exchange_manifest_v1.schema.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(find_forbidden_fields(internal_schema), [])
+        self.assertEqual(find_forbidden_fields(exchange_schema), [])
+        payload_formats = exchange_schema["properties"]["reference_feature_payload"]["properties"]["format"]["enum"]
+        self.assertNotIn("TSV", payload_formats)
+        self.assertIn("TINY_TSV", exchange_schema["properties"]["canary_fixture"]["properties"]["format"]["enum"])
+
+    def test_exchange_contract_is_not_frozen(self) -> None:
+        artifact = self.config["artifact"]
+        self.assertEqual(artifact["exchange_contract_status"], "DRAFT_PROPOSED_BY_M6A")
+        self.assertIs(artifact["frozen_m6a_artifact_exists"], False)
 
 
 if __name__ == "__main__":

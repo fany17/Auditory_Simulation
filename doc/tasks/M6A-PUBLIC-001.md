@@ -116,15 +116,21 @@
 3. smoke 阶段至少 20 次，正式阶段默认 1000 次；随机种子和失败 permutation 全部保留；
 4. 多层、多 lag、多电极比较必须使用预注册的 FDR 或 max-statistic 校正，不得事后选择更有利方法。
 
-## 8. Artifact schema
+## 8. 内部 manifest 与跨项目 exchange contract
 
-冻结 artifact 必须符合 `schemas/m6a_artifact_manifest.schema.json`，并包含：
+当前运行产物只使用 `schemas/m6a_public_internal_manifest.schema.json`。它是 Auditory 项目内部 run manifest，不是 M6A→M6B 合同，也不得作为已冻结跨项目 artifact 发布。
+
+跨项目草案见 `doc/M6A_TO_M6B_EXCHANGE_CONTRACT_DRAFT.md` 与 `schemas/m6a_to_m6b_exchange_manifest_v1.schema.json`，状态固定为 `DRAFT_PROPOSED_BY_M6A`。只有协调审核和 STN consumer cross-test 通过后，才可建立 frozen/accepted 版本。
+
+内部运行 manifest 必须包含：
 
 - task/artifact 版本和状态；
 - 数据集、模型、split、特征、目标、null、指标和失败边界；
 - 文件名、字节数、时间戳、数量、schema 和 remote-only 状态；
 - `can_claim` 与 `cannot_claim`；
 - 原始数据与权重只记录 `REMOTE_ONLY`，不得复制进 artifact。
+
+M6A→M6B 正式交付目标是冻结 method package、schema、公开 benchmark evidence 和 tiny synthetic/canary fixture。`ds004703` 原始数据、模型缓存和全量特征不得进入 STN 仓库。高维 feature payload 不得使用 TSV；正式数组格式须在 2203 用真实 shape 和读写访问模式完成 G3 基准后选择。tiny TSV 仅可作为 canary。
 
 ## 9. 阶段门禁
 

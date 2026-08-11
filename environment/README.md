@@ -4,6 +4,8 @@
 - 远端项目根：`/home/fanyu/auditory_simulation_m6a`
 - 创建入口：`scripts/bootstrap_2203.sh`
 - 自检入口：`scripts/remote_selfcheck.py`
+- Conda 基础：`environment/m6a_public_2203.yml`，只从 `conda-forge` 创建 Python 3.11 与 pip
+- Python 包：`environment/requirements_2203.txt`，固定首轮直接依赖版本
 
 环境必须新建，不得激活后修改 `auditory_demos` 或其他科研环境。环境解析后的实际包版本以 `python -m pip list --format=freeze` 的非哈希文本记录为准；该记录只能声称版本清单，不构成密码学完整性证明。
 

@@ -126,7 +126,10 @@
     "multiple_comparison": "FDR_OR_MAX_STATISTIC_PREDECLARED_BEFORE_G4"
   },
   "artifact": {
-    "schema_path": "schemas/m6a_artifact_manifest.schema.json",
+    "internal_schema_path": "schemas/m6a_public_internal_manifest.schema.json",
+    "exchange_contract_status": "DRAFT_PROPOSED_BY_M6A",
+    "exchange_schema_path": "schemas/m6a_to_m6b_exchange_manifest_v1.schema.json",
+    "frozen_m6a_artifact_exists": false,
     "large_assets": "REMOTE_ONLY",
     "local_allowed": [
       "code",
