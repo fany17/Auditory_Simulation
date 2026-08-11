@@ -77,7 +77,35 @@ def read_ieeg_header(path: Path) -> dict[str, Any]:
         "path": path.as_posix(),
         "sampling_rate_hz": float(raw.info["sfreq"]),
         "channels": int(len(raw.ch_names)),
+        "channel_names": list(raw.ch_names),
         "duration_seconds": float(raw.times[-1]) if raw.n_times else 0.0,
+    }
+
+
+def reconcile_expected_inventory(
+    expected_rows: list[dict[str, str]],
+    actual_rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    expected_by_path = {row["path"]: int(row["bytes"]) for row in expected_rows}
+    actual_by_path = {str(row["path"]): int(row["bytes"]) for row in actual_rows}
+    missing = sorted(set(expected_by_path) - set(actual_by_path))
+    unexpected = sorted(set(actual_by_path) - set(expected_by_path))
+    byte_mismatches = [
+        {
+            "path": path,
+            "expected_bytes": expected_by_path[path],
+            "actual_bytes": actual_by_path[path],
+        }
+        for path in sorted(set(expected_by_path) & set(actual_by_path))
+        if expected_by_path[path] != actual_by_path[path]
+    ]
+    return {
+        "expected_file_count": len(expected_by_path),
+        "expected_total_bytes": sum(expected_by_path.values()),
+        "missing_paths": missing,
+        "unexpected_paths": unexpected,
+        "byte_mismatches": byte_mismatches,
+        "status": "PASS" if not (missing or unexpected or byte_mismatches) else "FAIL",
     }
 
 
@@ -91,6 +119,7 @@ def main() -> int:
     parser.add_argument("--scope", default="FULL_DATASET")
     parser.add_argument("--expected-object-count", type=int)
     parser.add_argument("--expected-total-bytes", type=int)
+    parser.add_argument("--expected-inventory", type=Path)
     parser.add_argument("--require-neural-files", action="store_true")
     args = parser.parse_args()
 
@@ -98,7 +127,9 @@ def main() -> int:
     if not root.is_dir():
         raise SystemExit(f"dataset root does not exist: {root}")
 
-    files = sorted(path for path in root.rglob("*") if path.is_file())
+    all_files = sorted(path for path in root.rglob("*") if path.is_file())
+    in_progress_paths = [path for path in all_files if ".partial-" in path.name]
+    files = [path for path in all_files if path not in in_progress_paths]
     inventory: list[dict[str, Any]] = []
     counts: Counter[str] = Counter()
     bytes_by_role: Counter[str] = Counter()
@@ -121,6 +152,8 @@ def main() -> int:
     by_relative = {item["path"]: item for item in inventory}
     errors: list[str] = []
     warnings: list[str] = []
+    if in_progress_paths:
+        errors.append(f"active partial downloads remain: {len(in_progress_paths)}")
 
     description_path = root / "dataset_description.json"
     description: dict[str, Any] = {}
@@ -210,6 +243,13 @@ def main() -> int:
         errors.append(f"object count mismatch: expected {args.expected_object_count}, found {len(files)}")
     if args.expected_total_bytes is not None and total_bytes != args.expected_total_bytes:
         errors.append(f"total bytes mismatch: expected {args.expected_total_bytes}, found {total_bytes}")
+    expected_inventory_reconciliation: dict[str, Any] | None = None
+    if args.expected_inventory is not None:
+        with args.expected_inventory.open("r", encoding="utf-8", newline="") as handle:
+            expected_rows = list(csv.DictReader(handle))
+        expected_inventory_reconciliation = reconcile_expected_inventory(expected_rows, inventory)
+        if expected_inventory_reconciliation["status"] != "PASS":
+            errors.append("expected inventory path/byte reconciliation failed")
     if args.require_neural_files:
         for required_role in ("ieeg", "events", "channels"):
             if counts[required_role] == 0:
@@ -234,6 +274,16 @@ def main() -> int:
         "integrity_policy": "NON_HASH_AUDIT",
         "file_count": len(files),
         "total_bytes": total_bytes,
+        "active_partial_count": len(in_progress_paths),
+        "active_partial_files": [
+            {
+                "path": path.relative_to(root).as_posix(),
+                "bytes": path.stat().st_size,
+                "modified_at_utc": utc_mtime(path),
+            }
+            for path in in_progress_paths
+        ],
+        "expected_inventory_reconciliation": expected_inventory_reconciliation,
         "counts_by_role": dict(sorted(counts.items())),
         "bytes_by_role": dict(sorted(bytes_by_role.items())),
         "participant_count": participant_count,

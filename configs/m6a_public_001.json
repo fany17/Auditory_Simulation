@@ -93,13 +93,21 @@
     "secondary_subject_generalization": false
   },
   "neural_target": {
-    "status": "PROVISIONAL_UNTIL_G2_METADATA_READ",
+    "status": "REDESIGN_REQUIRED_BEFORE_G3",
     "name": "high_gamma_power",
     "band_hz": [
       70,
       150
     ],
     "target_rate_hz": 50,
+    "observed_sampling_rate_hz_values": [
+      512,
+      1024
+    ],
+    "observed_power_line_frequency_hz": 60,
+    "line_harmonics_inside_candidate_band_hz": [
+      120
+    ],
     "lag_seconds": [
       0.0,
       0.05,
@@ -113,7 +121,9 @@
       0.45,
       0.5
     ],
-    "metadata_conflict_action": "REDESIGN_REQUIRED"
+    "metadata_conflict_action": "FREEZE_EXPLICIT_60_120_HZ_REJECTION_OR_REDESIGN_BAND",
+    "neural_extraction_allowed": false,
+    "resolution_status": "PENDING_METHOD_FREEZE"
   },
   "features": {
     "acoustic_baselines": [

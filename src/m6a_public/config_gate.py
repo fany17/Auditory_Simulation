@@ -134,6 +134,18 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:
         errors.append("allowed_splits must be train/validation/test")
 
+    neural_target = config.get("neural_target", {})
+    if neural_target.get("status") != "REDESIGN_REQUIRED_BEFORE_G3":
+        errors.append("neural target must record the G2 high-gamma redesign gate")
+    if neural_target.get("observed_power_line_frequency_hz") != 60:
+        errors.append("neural target must record the observed 60 Hz line frequency")
+    if 120 not in neural_target.get("line_harmonics_inside_candidate_band_hz", []):
+        errors.append("neural target must record the 120 Hz harmonic inside 70-150 Hz")
+    if neural_target.get("neural_extraction_allowed") is not False:
+        errors.append("neural extraction must remain blocked until target method is refrozen")
+    if neural_target.get("resolution_status") != "PENDING_METHOD_FREEZE":
+        errors.append("neural target resolution must remain pending method freeze")
+
     baseline = config.get("baseline", {})
     if baseline.get("primary") != "layerwise_ridge_encoding":
         errors.append("primary baseline must be layerwise_ridge_encoding")

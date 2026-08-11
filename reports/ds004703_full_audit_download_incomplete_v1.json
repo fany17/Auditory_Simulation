@@ -1,0 +1,2263 @@
+{
+  "task_id": "M6A-PUBLIC-001",
+  "dataset_id": "ds004703",
+  "expected_version": "1.1.0",
+  "audit_scope": "FULL_DATASET_377_OBJECTS",
+  "audited_at_utc": "2026-08-11T12:24:15.124430+00:00",
+  "dataset_root": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "file_count": 377,
+  "total_bytes": 8581872914,
+  "counts_by_role": {
+    "audio": 270,
+    "channels": 11,
+    "dataset_description": 1,
+    "events": 11,
+    "ieeg": 8,
+    "other": 74,
+    "participants": 1,
+    "readme": 1
+  },
+  "bytes_by_role": {
+    "audio": 449672660,
+    "channels": 80216,
+    "dataset_description": 314,
+    "events": 8958464,
+    "ieeg": 6949166288,
+    "other": 1173993274,
+    "participants": 217,
+    "readme": 1481
+  },
+  "participant_count": 10,
+  "dataset_description": {
+    "Name": "sEEG Passive listening to natural speech",
+    "BIDSVersion": "1.6.0",
+    "Authors": [
+      "Anna Mai",
+      "Stephanie Ries",
+      "Sharona Ben-Haim",
+      "Jerry Shih",
+      "Timothy Gentner"
+    ],
+    "DatasetDOI": "doi:10.18112/openneuro.ds004703.v1.1.0",
+    "License": "CC0"
+  },
+  "license_boundary": "CC0_PLUS_README_NONCOMMERCIAL_AND_NO_REIDENTIFICATION",
+  "audio_samples": [
+    {
+      "path": "stimuli/all_stimuli/catalan-f01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-f01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-f02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-f02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-f03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-f03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-m01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-m01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-m02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-m02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-m03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2242634,
+      "duration_seconds": 50.853378684807254,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/catalan-m03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/instructions1_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1553238,
+      "duration_seconds": 35.22081632653061,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/instructions2_clipped_normed.wav",
+      "samplerate": 44100,
+      "channels": 2,
+      "frames": 663774,
+      "duration_seconds": 15.05156462585034,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/instructions2_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 936392,
+      "duration_seconds": 21.233378684807256,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/instructions3_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 275543,
+      "duration_seconds": 6.248140589569161,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/pleasePressSpace_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0102b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 168277,
+      "duration_seconds": 3.8158049886621317,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0202a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 197365,
+      "duration_seconds": 4.4753968253968255,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0202b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2510081,
+      "duration_seconds": 56.91793650793651,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0202b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 196097,
+      "duration_seconds": 4.446643990929705,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0203b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1894158,
+      "duration_seconds": 42.95142857142857,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0203b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 205745,
+      "duration_seconds": 4.665419501133787,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0302b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 187675,
+      "duration_seconds": 4.255668934240362,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0305a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1918675,
+      "duration_seconds": 43.50736961451247,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0305a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 229986,
+      "duration_seconds": 5.215102040816326,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0501a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 311471,
+      "duration_seconds": 7.062834467120181,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0501a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 212502,
+      "duration_seconds": 4.818639455782313,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0601a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 204446,
+      "duration_seconds": 4.635963718820862,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0602b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 183541,
+      "duration_seconds": 4.161927437641723,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0702a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1343385,
+      "duration_seconds": 30.462244897959184,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0702a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 157939,
+      "duration_seconds": 3.5813832199546485,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0703b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1721430,
+      "duration_seconds": 39.03469387755102,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0703b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 136798,
+      "duration_seconds": 3.1019954648526076,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0802b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1322702,
+      "duration_seconds": 29.993242630385488,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0802b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 195677,
+      "duration_seconds": 4.437120181405896,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0901b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1604187,
+      "duration_seconds": 36.376122448979594,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s0901b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 216819,
+      "duration_seconds": 4.916530612244898,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1001a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1837705,
+      "duration_seconds": 41.67131519274376,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1001a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 147709,
+      "duration_seconds": 3.3494104308390025,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1103a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2411948,
+      "duration_seconds": 54.69269841269841,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1103a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 160440,
+      "duration_seconds": 3.638095238095238,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1201a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1523961,
+      "duration_seconds": 34.556938775510204,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1201a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 137025,
+      "duration_seconds": 3.107142857142857,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1202b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1520485,
+      "duration_seconds": 34.4781179138322,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1202b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 153847,
+      "duration_seconds": 3.48859410430839,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1203a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1501980,
+      "duration_seconds": 34.05850340136055,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1203a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 180219,
+      "duration_seconds": 4.086598639455782,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1303a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1508923,
+      "duration_seconds": 34.2159410430839,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1303a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 220683,
+      "duration_seconds": 5.004149659863946,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1303a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1294117,
+      "duration_seconds": 29.345056689342403,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1303a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 295021,
+      "duration_seconds": 6.689818594104309,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1401a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1556030,
+      "duration_seconds": 35.284126984126985,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1401a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 170897,
+      "duration_seconds": 3.8752154195011337,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1401a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1613285,
+      "duration_seconds": 36.582426303854874,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1401a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 169079,
+      "duration_seconds": 3.8339909297052155,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1401b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2400666,
+      "duration_seconds": 54.43687074829932,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1401b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151347,
+      "duration_seconds": 3.431904761904762,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1501a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1902405,
+      "duration_seconds": 43.13843537414966,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1501a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 170407,
+      "duration_seconds": 3.8641043083900226,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1503a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 743333,
+      "duration_seconds": 16.85562358276644,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1503a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 169988,
+      "duration_seconds": 3.8546031746031746,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1503a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1217788,
+      "duration_seconds": 27.614240362811792,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1503a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151347,
+      "duration_seconds": 3.431904761904762,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1503a-ex03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 201815,
+      "duration_seconds": 4.576303854875284,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1604a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2044636,
+      "duration_seconds": 46.363628117913834,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1604a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 194086,
+      "duration_seconds": 4.401043083900227,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1702b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1826765,
+      "duration_seconds": 41.42324263038549,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1702b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 200679,
+      "duration_seconds": 4.550544217687075,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1703b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2359389,
+      "duration_seconds": 53.5008843537415,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1703b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 171579,
+      "duration_seconds": 3.8906802721088436,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1901a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 127023,
+      "duration_seconds": 2.880340136054422,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1901b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1648794,
+      "duration_seconds": 37.38761904761905,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s1901b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 180218,
+      "duration_seconds": 4.086575963718821,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2102a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1243116,
+      "duration_seconds": 28.18857142857143,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2102a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 217501,
+      "duration_seconds": 4.931995464852608,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2102a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1603804,
+      "duration_seconds": 36.367437641723356,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2102a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 124294,
+      "duration_seconds": 2.818458049886621,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2102a-ex03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1996545,
+      "duration_seconds": 45.27312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2102a-ex03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 101789,
+      "duration_seconds": 2.308140589569161,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2202b-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2404657,
+      "duration_seconds": 54.52736961451247,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2202b-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 203633,
+      "duration_seconds": 4.617528344671202,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2301a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 993895,
+      "duration_seconds": 22.537301587301588,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2301a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 183174,
+      "duration_seconds": 4.153605442176871,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2302b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1548946,
+      "duration_seconds": 35.123492063492066,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2302b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 193858,
+      "duration_seconds": 4.395873015873016,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2403a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 189994,
+      "duration_seconds": 4.308253968253968,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2502a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 130660,
+      "duration_seconds": 2.96281179138322,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2801a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2686917,
+      "duration_seconds": 60.9278231292517,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2801a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 132479,
+      "duration_seconds": 3.0040589569161,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s2902a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 185902,
+      "duration_seconds": 4.21546485260771,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3001b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2168962,
+      "duration_seconds": 49.18281179138322,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3001b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 195677,
+      "duration_seconds": 4.437120181405896,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3002a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 204088,
+      "duration_seconds": 4.627845804988662,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3003a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1479307,
+      "duration_seconds": 33.54437641723356,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3003a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 135206,
+      "duration_seconds": 3.065895691609977,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3003a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1966298,
+      "duration_seconds": 44.58725623582767,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3003a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 172034,
+      "duration_seconds": 3.900997732426304,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3102b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 917363,
+      "duration_seconds": 20.8018820861678,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3102b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 162259,
+      "duration_seconds": 3.6793424036281177,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3201a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 3399661,
+      "duration_seconds": 77.08981859410432,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3201a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 208862,
+      "duration_seconds": 4.73609977324263,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3301a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1128260,
+      "duration_seconds": 25.584126984126986,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3301a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 126341,
+      "duration_seconds": 2.864875283446712,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3301a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1642196,
+      "duration_seconds": 37.23800453514739,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3301a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 152711,
+      "duration_seconds": 3.4628344671201816,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3602b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1570329,
+      "duration_seconds": 35.60836734693878,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3602b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 181128,
+      "duration_seconds": 4.107210884353742,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3602b-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1450846,
+      "duration_seconds": 32.8990022675737,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3602b-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 147482,
+      "duration_seconds": 3.344263038548753,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3703b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1559894,
+      "duration_seconds": 35.371746031746035,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3703b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 280244,
+      "duration_seconds": 6.354739229024943,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3801a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1459782,
+      "duration_seconds": 33.10163265306122,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3801a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 272288,
+      "duration_seconds": 6.174331065759637,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3802a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1529220,
+      "duration_seconds": 34.67619047619048,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3802a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 230458,
+      "duration_seconds": 5.225804988662132,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3902a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1391515,
+      "duration_seconds": 31.55362811791383,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3902a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 228413,
+      "duration_seconds": 5.179433106575964,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3902a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 142708,
+      "duration_seconds": 3.236009070294785,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3903b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1157755,
+      "duration_seconds": 26.25294784580499,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3903b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 164532,
+      "duration_seconds": 3.7308843537414966,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3903b-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1452511,
+      "duration_seconds": 32.93675736961451,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s3903b-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 201587,
+      "duration_seconds": 4.571133786848073,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s4001b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 152939,
+      "duration_seconds": 3.4680045351473923,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s4002b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1527249,
+      "duration_seconds": 34.63149659863946,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s4002b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 188630,
+      "duration_seconds": 4.277324263038548,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s4003b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1119873,
+      "duration_seconds": 25.393945578231293,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/s4003b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 184105,
+      "duration_seconds": 4.174716553287982,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/all_stimuli/welcome_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 87288,
+      "duration_seconds": 1.9793197278911565,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/catalan-m01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s1303a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1508923,
+      "duration_seconds": 34.2159410430839,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s1401a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1556030,
+      "duration_seconds": 35.284126984126985,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s1901b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1648794,
+      "duration_seconds": 37.38761904761905,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s2102a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1243116,
+      "duration_seconds": 28.18857142857143,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s2301a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 993895,
+      "duration_seconds": 22.537301587301588,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s3001b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2168962,
+      "duration_seconds": 49.18281179138322,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s3602b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1570329,
+      "duration_seconds": 35.60836734693878,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1527249,
+      "duration_seconds": 34.63149659863946,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/catalan-f01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s0703b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1721430,
+      "duration_seconds": 39.03469387755102,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s1201a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1523961,
+      "duration_seconds": 34.556938775510204,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s2102a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1603804,
+      "duration_seconds": 36.367437641723356,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s2202b-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2404657,
+      "duration_seconds": 54.52736961451247,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s3301a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1128260,
+      "duration_seconds": 25.584126984126986,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s3602b-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1450846,
+      "duration_seconds": 32.8990022675737,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s3903b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1157755,
+      "duration_seconds": 26.25294784580499,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 2/s4003b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1119873,
+      "duration_seconds": 25.393945578231293,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/catalan-m02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s1001a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1837705,
+      "duration_seconds": 41.67131519274376,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s1303a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1294117,
+      "duration_seconds": 29.345056689342403,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s1401a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1613285,
+      "duration_seconds": 36.582426303854874,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s1501a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1902405,
+      "duration_seconds": 43.13843537414966,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s3201a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 3399661,
+      "duration_seconds": 77.08981859410432,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s3301a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1642196,
+      "duration_seconds": 37.23800453514739,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s3703b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1559894,
+      "duration_seconds": 35.371746031746035,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 3/s3903b-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1452511,
+      "duration_seconds": 32.93675736961451,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/catalan-f02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s0202b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2510081,
+      "duration_seconds": 56.91793650793651,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s0702a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1343385,
+      "duration_seconds": 30.462244897959184,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s1604a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2044636,
+      "duration_seconds": 46.363628117913834,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s2102a-ex03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1996545,
+      "duration_seconds": 45.27312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s2801a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2686917,
+      "duration_seconds": 60.9278231292517,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s3102b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 917363,
+      "duration_seconds": 20.8018820861678,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s3802a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1529220,
+      "duration_seconds": 34.67619047619048,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 4/s3902a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1391515,
+      "duration_seconds": 31.55362811791383,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/catalan-m03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s0203b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1894158,
+      "duration_seconds": 42.95142857142857,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s0802b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1322702,
+      "duration_seconds": 29.993242630385488,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s1103a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2411948,
+      "duration_seconds": 54.69269841269841,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s1202b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1520485,
+      "duration_seconds": 34.4781179138322,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s1401b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2400666,
+      "duration_seconds": 54.43687074829932,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s1503a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 743333,
+      "duration_seconds": 16.85562358276644,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s1703b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2359389,
+      "duration_seconds": 53.5008843537415,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 5/s3003a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1479307,
+      "duration_seconds": 33.54437641723356,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/catalan-f03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s0305a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1918675,
+      "duration_seconds": 43.50736961451247,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s0901b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1604187,
+      "duration_seconds": 36.376122448979594,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s1203a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1501980,
+      "duration_seconds": 34.05850340136055,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s1503a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1217788,
+      "duration_seconds": 27.614240362811792,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s1702b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1826765,
+      "duration_seconds": 41.42324263038549,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s2302b-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1548946,
+      "duration_seconds": 35.123492063492066,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s3003a-ex02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1966298,
+      "duration_seconds": 44.58725623582767,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/Block 6/s3801a-ex01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1459782,
+      "duration_seconds": 33.10163265306122,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/catalan_v2/catalan-f01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2061070,
+      "duration_seconds": 46.736281179138324,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/catalan_v2/catalan-f02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1918068,
+      "duration_seconds": 43.49360544217687,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/catalan_v2/catalan-f03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2387176,
+      "duration_seconds": 54.130975056689344,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/catalan_v2/catalan-m01_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2069282,
+      "duration_seconds": 46.92249433106576,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/catalan_v2/catalan-m02_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2266666,
+      "duration_seconds": 51.398321995464855,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/excerpts/catalan_v2/catalan-m03_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2242634,
+      "duration_seconds": 50.853378684807254,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/instructions1_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1553238,
+      "duration_seconds": 35.22081632653061,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/instructions2_clipped_normed.wav",
+      "samplerate": 44100,
+      "channels": 2,
+      "frames": 663774,
+      "duration_seconds": 15.05156462585034,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/instructions2_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 936392,
+      "duration_seconds": 21.233378684807256,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/instructions3_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 275543,
+      "duration_seconds": 6.248140589569161,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/pleasePressSpace_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151842,
+      "duration_seconds": 3.44312925170068,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan-f01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2061070,
+      "duration_seconds": 46.736281179138324,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan-f02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 1918068,
+      "duration_seconds": 43.49360544217687,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan-f03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2387176,
+      "duration_seconds": 54.130975056689344,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan-m01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2069282,
+      "duration_seconds": 46.92249433106576,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan-m02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2266666,
+      "duration_seconds": 51.398321995464855,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan-m03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 2242634,
+      "duration_seconds": 50.853378684807254,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan_questions_v2/catalan-f01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan_questions_v2/catalan-f02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan_questions_v2/catalan-f03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan_questions_v2/catalan-m01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan_questions_v2/catalan-m02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/catalan_questions_v2/catalan-m03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 167258,
+      "duration_seconds": 3.792698412698413,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0102b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 168277,
+      "duration_seconds": 3.8158049886621317,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0202a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 197365,
+      "duration_seconds": 4.4753968253968255,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0202b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 196097,
+      "duration_seconds": 4.446643990929705,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0203b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 205745,
+      "duration_seconds": 4.665419501133787,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0302b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 187675,
+      "duration_seconds": 4.255668934240362,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0305a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 229986,
+      "duration_seconds": 5.215102040816326,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0501a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 311471,
+      "duration_seconds": 7.062834467120181,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0501a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 212502,
+      "duration_seconds": 4.818639455782313,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0601a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 204446,
+      "duration_seconds": 4.635963718820862,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0602b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 183541,
+      "duration_seconds": 4.161927437641723,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0702a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 157939,
+      "duration_seconds": 3.5813832199546485,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0703b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 136798,
+      "duration_seconds": 3.1019954648526076,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0802b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 195677,
+      "duration_seconds": 4.437120181405896,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s0901b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 216819,
+      "duration_seconds": 4.916530612244898,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1001a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 147709,
+      "duration_seconds": 3.3494104308390025,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1103a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 160440,
+      "duration_seconds": 3.638095238095238,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1201a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 137025,
+      "duration_seconds": 3.107142857142857,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1202b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 153847,
+      "duration_seconds": 3.48859410430839,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1203a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 180219,
+      "duration_seconds": 4.086598639455782,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1303a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 220683,
+      "duration_seconds": 5.004149659863946,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1303a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 295021,
+      "duration_seconds": 6.689818594104309,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1401a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 170897,
+      "duration_seconds": 3.8752154195011337,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1401a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 169079,
+      "duration_seconds": 3.8339909297052155,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1401b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151347,
+      "duration_seconds": 3.431904761904762,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1501a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 170407,
+      "duration_seconds": 3.8641043083900226,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1503a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 169988,
+      "duration_seconds": 3.8546031746031746,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1503a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 151347,
+      "duration_seconds": 3.431904761904762,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1503a-ex03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 201815,
+      "duration_seconds": 4.576303854875284,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1604a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 194086,
+      "duration_seconds": 4.401043083900227,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1702b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 200679,
+      "duration_seconds": 4.550544217687075,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1703b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 171579,
+      "duration_seconds": 3.8906802721088436,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1901a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 127023,
+      "duration_seconds": 2.880340136054422,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s1901b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 180218,
+      "duration_seconds": 4.086575963718821,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2102a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 217501,
+      "duration_seconds": 4.931995464852608,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2102a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 124294,
+      "duration_seconds": 2.818458049886621,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2102a-ex03_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 101789,
+      "duration_seconds": 2.308140589569161,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2202b-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 203633,
+      "duration_seconds": 4.617528344671202,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2301a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 183174,
+      "duration_seconds": 4.153605442176871,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2302b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 193858,
+      "duration_seconds": 4.395873015873016,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2403a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 189994,
+      "duration_seconds": 4.308253968253968,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2502a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 130660,
+      "duration_seconds": 2.96281179138322,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2801a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 132479,
+      "duration_seconds": 3.0040589569161,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s2902a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 185902,
+      "duration_seconds": 4.21546485260771,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3001b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 195677,
+      "duration_seconds": 4.437120181405896,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3002a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 204088,
+      "duration_seconds": 4.627845804988662,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3003a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 135206,
+      "duration_seconds": 3.065895691609977,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3003a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 172034,
+      "duration_seconds": 3.900997732426304,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3102b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 162259,
+      "duration_seconds": 3.6793424036281177,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3201a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 208862,
+      "duration_seconds": 4.73609977324263,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3301a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 126341,
+      "duration_seconds": 2.864875283446712,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3301a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 152711,
+      "duration_seconds": 3.4628344671201816,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3602b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 181128,
+      "duration_seconds": 4.107210884353742,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3602b-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 147482,
+      "duration_seconds": 3.344263038548753,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3703b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 280244,
+      "duration_seconds": 6.354739229024943,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3801a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 272288,
+      "duration_seconds": 6.174331065759637,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3802a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 230458,
+      "duration_seconds": 5.225804988662132,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3902a-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 228413,
+      "duration_seconds": 5.179433106575964,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3902a-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 142708,
+      "duration_seconds": 3.236009070294785,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3903b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 164532,
+      "duration_seconds": 3.7308843537414966,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s3903b-ex02_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 201587,
+      "duration_seconds": 4.571133786848073,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s4001b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 152939,
+      "duration_seconds": 3.4680045351473923,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s4002b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 188630,
+      "duration_seconds": 4.277324263038548,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/questions/s4003b-ex01_question_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 184105,
+      "duration_seconds": 4.174716553287982,
+      "format": "WAV"
+    },
+    {
+      "path": "stimuli/welcome_normed.wav",
+      "samplerate": 44100,
+      "channels": 1,
+      "frames": 87288,
+      "duration_seconds": 1.9793197278911565,
+      "format": "WAV"
+    }
+  ],
+  "ieeg_samples": [
+    {
+      "path": "sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 1024.0,
+      "channels": 276,
+      "duration_seconds": 2654.3115234375
+    },
+    {
+      "path": "sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 512.0,
+      "channels": 148,
+      "duration_seconds": 3552.748046875
+    },
+    {
+      "path": "sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 512.0,
+      "channels": 148,
+      "duration_seconds": 2599.748046875
+    },
+    {
+      "path": "sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 1024.0,
+      "channels": 148,
+      "duration_seconds": 4687.4990234375
+    },
+    {
+      "path": "sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 1024.0,
+      "channels": 276,
+      "duration_seconds": 1998.0615234375
+    },
+    {
+      "path": "sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 512.0,
+      "channels": 148,
+      "duration_seconds": 1146.498046875
+    },
+    {
+      "path": "sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 1024.0,
+      "channels": 276,
+      "duration_seconds": 1435.5615234375
+    },
+    {
+      "path": "sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg.edf",
+      "sampling_rate_hz": 512.0,
+      "channels": 277,
+      "duration_seconds": 3402.373046875
+    }
+  ],
+  "warnings": [],
+  "errors": [
+    "total bytes mismatch: expected 14173350514, found 8581872914"
+  ],
+  "status": "FAIL"
+}

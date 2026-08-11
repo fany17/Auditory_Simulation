@@ -50,12 +50,14 @@
 
 - 正式科学结果：`NOT_YET_AVAILABLE`；
 - `ds004703` 许可：`ACCEPTED_WITH_STRICTER_README_BOUNDARY`；
-- 数据下载/读取：2203 非哈希盘点为 377/377 个文件、0 个 `.part`；下载对象已齐，完整 G2 数据审计尚未通过；
+- 数据下载/读取：首次 full audit 发现先前的 glob 把 `.partial-<id>` 临时文件误计为最终对象；精确 inventory 审计当时为 374/377 个 final path、8,306,097,426/14,173,350,514 bytes，SD011/SD019/SD022 EDF 仍在下载。G2 将按精确相对路径与字节数重跑，尚未通过；
 - 专用环境：`G1 PASS`；2203 独立环境、自检和远端 10 项测试均通过，证据见 `reports/remote_selfcheck_2203.json`；
 - 轻量 manifest/split：`SPLIT_REWORK_COMPLETED`；438 segments 中 319 个 English passage segment 进入确定性 primary split，train/validation/test 为 223/48/48（69.9%/15.0%/15.0%）；旧 208/32/79 分配已被审核否决并保留失败历史；
 - 原 `stimulus+recording` 方案：单一 connected component，不可三分；现采用 stimulus+block 分组。2 s 仅为 `preliminary_minimum_embargo`，正式窗口化前必须按 lag、滤波/填充边缘和模型 context 计算 final embargo 并重跑 guard；
 - Catalan：显式标为 `ca`，但 block 音频与 cue 波形冲突，暂不进入 baseline，不能声称跨语言泛化；
+- 神经 metadata：11 份 sidecar/channels/events 可读，采样率为 512/1024 Hz，工频为 60 Hz；README 的 C-prefix 排除规则已机器化。标准 `electrodes.tsv`/`coordsystem.json` 均缺失，仅有 9 份非标准 contact RAS CSV 且无脑区标签；
+- neural target：候选 70-150 Hz 穿过 120 Hz 工频二次谐波，状态为 `REDESIGN_REQUIRED_BEFORE_G3`；冻结明确的 60/120 Hz rejection 或重设频带前禁止神经特征提取；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
 - 当前 split 只支持 within-subject unseen-stimulus/block generalization；不支持 subject-held-out、speaker-held-out 或 cross-language；
 - M6A→M6B exchange contract：`REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`；原 16 项已由 STN 独立验证 resolved，新增非有限 JSON 数值缺口已在严格 CLI loader 与语义 validator 两层 fail closed，等待 STN 复核；consumer cross-test 尚未运行，未冻结或接受。
-- 本轮联合验证：2203 专用环境 `44 passed, 18 subtests`，Ruff 通过，mypy 对 14 个源文件通过；319 行 preliminary split guard 通过。
+- 最新联合验证：2203 专用环境 `48 passed, 18 subtests`，Ruff 通过，mypy 对 17 个源文件通过；config gate 与 319 行 preliminary split guard 通过。

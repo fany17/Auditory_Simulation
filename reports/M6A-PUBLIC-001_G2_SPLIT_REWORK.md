@@ -52,6 +52,8 @@ All checks passed!
 Success: no issues found in 14 source files
 ```
 
-319 行 split guard：`PASS`，issues 为空，`baseline_final=false`。数据对象非哈希盘点为 377/377 个文件、0 个 `.part`，但完整 G2 数据 audit 尚未结束。
+319 行 split guard：`PASS`，issues 为空，`baseline_final=false`。
+
+后续首次 full audit 发现下载状态盘点缺陷：下载器临时文件名为 `.partial-<id>`，原先只检查 `*.part`，因此曾把 active partial 误计为最终对象。该 377/377 表述已撤回；G2 改为按官方 inventory 的精确相对路径与字节数 fail closed，在所有 final path 到齐前保持 `PENDING_FULL_DATASET_AUDIT`。这项失败作为审计证据保留。
 
 本轮只使用文件名、字节数、时间戳、数量、schema 与抽样可读性，不进行任何哈希或校验和验证。

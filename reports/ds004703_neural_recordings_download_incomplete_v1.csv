@@ -1,0 +1,12 @@
+participant_id,session_id,recording_id,sampling_rate_hz,power_line_frequency_hz,recording_duration_seconds,channel_count,good_neural_channel_count,analysis_eligible_neural_channel_count,c_prefix_exclusion_count,events_within_recording,edf_header_read,edf_header_channel_count_matches_tsv,analysis_eligible_neural_channels_missing_from_edf,edf_header_sampling_rate_matches_sidecar
+sub-SD010,ses-01,sub-SD010_ses-01_task-PassiveListen,1024.0,60.0,2654.3125,279,107,107,124,True,True,False,0,True
+sub-SD011,ses-01,sub-SD011_ses-01_task-PassiveListen,1024.0,60.0,3244.1875,276,120,120,118,True,False,False,0,False
+sub-SD012,ses-01,sub-SD012_ses-01_task-PassiveListen,512.0,60.0,3552.75,148,38,38,32,True,True,True,0,True
+sub-SD012,ses-02,sub-SD012_ses-02_task-PassiveListen,512.0,60.0,3552.75,148,36,36,32,True,True,True,0,True
+sub-SD013,ses-01,sub-SD013_ses-01_task-PassiveListen,1024.0,60.0,4687.5,148,120,120,6,True,True,True,0,True
+sub-SD015,ses-01,sub-SD015_ses-01_task-PassiveListen,1024.0,60.0,1998.0625,276,100,100,154,True,True,True,0,True
+sub-SD017,ses-01,sub-SD017_ses-01_task-PassiveListen,512.0,60.0,1146.5,148,100,100,26,True,True,True,0,True
+sub-SD018,ses-01,sub-SD018_ses-01_task-PassiveListen,1024.0,60.0,1435.5625,277,175,175,61,True,True,False,0,True
+sub-SD019,ses-01,sub-SD019_ses-01_task-PassiveListen,1024.0,60.0,3791.0625,277,232,232,10,True,False,False,0,False
+sub-SD021,ses-01,sub-SD021_ses-01_task-PassiveListen,512.0,60.0,3402.375,280,144,142,100,True,True,False,0,True
+sub-SD022,ses-01,sub-SD022_ses-01_task-PassiveListen,1024.0,60.0,3262.75,279,176,176,64,True,False,False,0,False

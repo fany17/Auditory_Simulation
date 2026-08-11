@@ -102,7 +102,7 @@
 - 统一映射到预注册的神经时间网格；
 - 任何标准化、PCA、特征选择只在 train 拟合并应用到 validation/test。
 
-首轮 neural target 暂定为 `70-150 Hz high-gamma power`，以实际采样率、工频和通道 metadata 为前置核验；若频带与工频谐波冲突或数据不支持，该目标状态为 `REDESIGN_REQUIRED`，不得静默替换。
+首轮 neural target 候选原为 `70-150 Hz high-gamma power`。G2 已确认采样率为 512/1024 Hz、工频为 60 Hz，因此 120 Hz 二次谐波位于候选带内；目标状态已设为 `REDESIGN_REQUIRED_BEFORE_G3`。在正式冻结明确的 60/120 Hz rejection/filter edge 或重新设计频带前，禁止神经特征提取，不得静默沿用原目标。
 
 主模型为 ridge encoding：
 
