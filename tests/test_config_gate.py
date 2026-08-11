@@ -44,11 +44,12 @@ class ConfigGateTests(unittest.TestCase):
         self.assertEqual(find_forbidden_fields(exchange_schema), [])
         payload_formats = exchange_schema["properties"]["reference_feature_payload"]["properties"]["format"]["enum"]
         self.assertNotIn("TSV", payload_formats)
-        self.assertIn("TINY_TSV", exchange_schema["properties"]["canary_fixture"]["properties"]["format"]["enum"])
+        canary_formats = exchange_schema["properties"]["canary_fixture"]["properties"]["expected_output_format"]["enum"]
+        self.assertIn("TINY_TSV", canary_formats)
 
     def test_exchange_contract_is_not_frozen(self) -> None:
         artifact = self.config["artifact"]
-        self.assertEqual(artifact["exchange_contract_status"], "DRAFT_PROPOSED_BY_M6A")
+        self.assertEqual(artifact["exchange_contract_status"], "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW")
         self.assertIs(artifact["frozen_m6a_artifact_exists"], False)
 
 

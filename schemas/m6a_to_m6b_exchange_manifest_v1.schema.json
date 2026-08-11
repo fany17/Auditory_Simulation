@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "m6a-m6b-exchange-manifest-v1-draft",
-  "title": "M6A to M6B exchange manifest v1 draft",
+  "title": "M6A to M6B exchange manifest v1 revised draft",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -24,14 +24,44 @@
     "identity": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["contract_version", "release_id", "producer", "consumer", "release_status"],
+      "required": [
+        "contract_version",
+        "release_id",
+        "producer",
+        "consumer",
+        "release_status",
+        "status_history"
+      ],
       "properties": {
         "contract_version": {"const": "1-draft"},
-        "release_id": {"type": "string"},
+        "release_id": {"type": "string", "minLength": 1},
         "producer": {"const": "Auditory_Simulation/M6A-PUBLIC"},
         "consumer": {"const": "STN_Decoding_Encoding/M6B-STN"},
         "release_status": {
-          "enum": ["DRAFT_PROPOSED_BY_M6A", "CANDIDATE_FOR_CROSS_TEST", "FROZEN", "ACCEPTED", "RETIRED"]
+          "enum": [
+            "DRAFT_PROPOSED_BY_M6A",
+            "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW",
+            "CANDIDATE_FOR_CROSS_TEST"
+          ]
+        },
+        "status_history": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "recorded_at_utc"],
+            "properties": {
+              "status": {
+                "enum": [
+                  "DRAFT_PROPOSED_BY_M6A",
+                  "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW",
+                  "CANDIDATE_FOR_CROSS_TEST"
+                ]
+              },
+              "recorded_at_utc": {"type": "string", "format": "date-time"}
+            }
+          }
         }
       }
     },
@@ -40,147 +70,361 @@
       "additionalProperties": false,
       "required": ["producer_review", "consumer_cross_test", "coordinator_decision"],
       "properties": {
-        "producer_review": {"type": "string"},
-        "consumer_cross_test": {"type": "string"},
-        "coordinator_decision": {"type": "string"}
+        "producer_review": {"enum": ["PENDING", "PASS", "FAIL", "NOT_APPLICABLE"]},
+        "consumer_cross_test": {"enum": ["PENDING", "PASS", "FAIL", "NOT_APPLICABLE"]},
+        "coordinator_decision": {"enum": ["PENDING", "PASS", "FAIL", "NOT_APPLICABLE"]}
       }
     },
     "public_dataset": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["dataset_id", "version", "doi", "license_boundary", "benchmark_role", "redistribution"],
+      "required": [
+        "dataset_id",
+        "version",
+        "doi",
+        "license_boundary",
+        "benchmark_role",
+        "redistribution"
+      ],
       "properties": {
-        "dataset_id": {"type": "string"},
-        "version": {"type": "string"},
-        "doi": {"type": "string"},
-        "license_boundary": {"type": "string"},
-        "benchmark_role": {"type": "string"},
+        "dataset_id": {"type": "string", "minLength": 1},
+        "version": {"type": "string", "minLength": 1},
+        "doi": {"type": "string", "minLength": 1},
+        "license_boundary": {"type": "string", "minLength": 1},
+        "benchmark_role": {"type": "string", "minLength": 1},
         "redistribution": {"const": "NO_RAW_DATA_OR_FULL_PUBLIC_FEATURE_PAYLOAD"}
       }
     },
     "model": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["model_id", "revision_label", "resolved_at_utc", "license", "frozen", "software_versions"],
+      "required": [
+        "model_id",
+        "revision_label",
+        "revision_immutable",
+        "resolved_at_utc",
+        "license",
+        "frozen",
+        "software_versions",
+        "model_files"
+      ],
       "properties": {
-        "model_id": {"type": "string"},
-        "revision_label": {"type": "string"},
+        "model_id": {"type": "string", "minLength": 1},
+        "revision_label": {"type": "string", "minLength": 1},
+        "revision_immutable": {"type": "boolean"},
         "resolved_at_utc": {"type": "string", "format": "date-time"},
-        "license": {"type": "string"},
+        "license": {"type": "string", "minLength": 1},
         "frozen": {"const": true},
-        "revision_limitation": {"type": "string"},
+        "revision_limitation": {"type": "string", "minLength": 1},
         "software_versions": {
           "type": "object",
-          "additionalProperties": {"type": "string"}
+          "additionalProperties": {"type": "string", "minLength": 1},
+          "required": ["python", "torch", "transformers", "numpy"],
+          "properties": {
+            "python": {"type": "string", "minLength": 1},
+            "torch": {"type": "string", "minLength": 1},
+            "transformers": {"type": "string", "minLength": 1},
+            "numpy": {"type": "string", "minLength": 1}
+          }
+        },
+        "model_files": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "file_name",
+              "inventory_path",
+              "role",
+              "bytes",
+              "modified_at_utc",
+              "cache_boundary",
+              "included_in_exchange"
+            ],
+            "properties": {
+              "file_name": {"type": "string", "minLength": 1, "pattern": "^[^/\\\\]+$"},
+              "inventory_path": {"type": "string", "minLength": 1},
+              "role": {"enum": ["MODEL_CONFIG", "MODEL_WEIGHTS", "MODEL_PREPROCESSOR"]},
+              "bytes": {"type": "integer", "minimum": 1},
+              "modified_at_utc": {"type": "string", "format": "date-time"},
+              "cache_boundary": {"type": "string", "minLength": 1},
+              "included_in_exchange": {"const": false}
+            }
+          }
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"revision_immutable": {"const": false}}},
+          "then": {"required": ["revision_limitation"]}
+        }
+      ]
     },
     "audio_preprocessing": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["input_rate_hz", "channels", "amplitude_rule", "resampling", "chunking", "time_reference"],
+      "required": [
+        "input_rate_hz",
+        "channels",
+        "amplitude_rule",
+        "resampling",
+        "chunking",
+        "time_reference",
+        "edge_handling"
+      ],
       "properties": {
         "input_rate_hz": {"type": "integer", "minimum": 1},
-        "channels": {"type": "string"},
-        "amplitude_rule": {"type": "string"},
-        "resampling": {"type": "string"},
-        "chunking": {"type": "string"},
-        "time_reference": {"type": "string"},
-        "edge_handling": {"type": "string"}
+        "channels": {"type": "string", "minLength": 1},
+        "amplitude_rule": {"type": "string", "minLength": 1},
+        "resampling": {"type": "string", "minLength": 1},
+        "chunking": {"type": "string", "minLength": 1},
+        "time_reference": {"type": "string", "minLength": 1},
+        "edge_handling": {"type": "string", "minLength": 1}
       }
     },
     "layer_inventory": {
       "type": "array",
       "minItems": 1,
+      "uniqueItems": true,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["layer_key", "ordinal", "source", "frame_rate_hz", "dtype", "feature_dim", "time_axis_reference"],
+        "required": [
+          "layer_key",
+          "ordinal",
+          "source",
+          "frame_rate_hz",
+          "dtype",
+          "feature_dim",
+          "time_axis_reference"
+        ],
         "properties": {
-          "layer_key": {"type": "string"},
+          "layer_key": {"type": "string", "minLength": 1},
           "ordinal": {"type": "integer", "minimum": 0},
-          "source": {"type": "string"},
+          "source": {"type": "string", "minLength": 1},
           "frame_rate_hz": {"type": "number", "exclusiveMinimum": 0},
-          "dtype": {"type": "string"},
+          "dtype": {"enum": ["float16", "float32", "float64"]},
           "feature_dim": {"type": "integer", "minimum": 1},
-          "time_axis_reference": {"type": "string"}
+          "time_axis_reference": {"type": "string", "minLength": 1}
         }
       }
     },
     "extraction_spec": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["entrypoint", "config_schema", "output_layout", "batch_rule", "chunk_rule", "determinism_boundary"],
+      "required": [
+        "entrypoint_file",
+        "config_schema_file",
+        "output_schema_file",
+        "runtime_spec_file",
+        "output_layout",
+        "batch_rule",
+        "chunk_rule",
+        "determinism_boundary"
+      ],
       "properties": {
-        "entrypoint": {"type": "string"},
-        "config_schema": {"type": "string"},
-        "output_layout": {"type": "string"},
-        "batch_rule": {"type": "string"},
-        "chunk_rule": {"type": "string"},
-        "determinism_boundary": {"type": "string"}
+        "entrypoint_file": {"type": "string", "minLength": 1},
+        "config_schema_file": {"type": "string", "minLength": 1},
+        "output_schema_file": {"type": "string", "minLength": 1},
+        "runtime_spec_file": {"type": "string", "minLength": 1},
+        "output_layout": {"type": "string", "minLength": 1},
+        "batch_rule": {"type": "string", "minLength": 1},
+        "chunk_rule": {"type": "string", "minLength": 1},
+        "determinism_boundary": {"type": "string", "minLength": 1}
       }
     },
     "transferable_transforms": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["name", "kind", "fit_scope", "source_split", "input_layer", "artifact_file", "applicability"],
+        "required": [
+          "name",
+          "kind",
+          "fit_scope",
+          "source_split",
+          "input_layer",
+          "artifact_file",
+          "applicability"
+        ],
         "properties": {
-          "name": {"type": "string"},
+          "name": {"type": "string", "minLength": 1},
           "kind": {"enum": ["NORMALIZER", "PCA", "BASIS", "OTHER"]},
-          "fit_scope": {"type": "string"},
+          "fit_scope": {"type": "string", "minLength": 1},
           "source_split": {"const": "train"},
-          "input_layer": {"type": "string"},
+          "input_layer": {"type": "string", "minLength": 1},
           "output_dim": {"type": "integer", "minimum": 1},
-          "artifact_file": {"type": "string"},
-          "applicability": {"type": "string"}
+          "artifact_file": {"type": "string", "minLength": 1},
+          "applicability": {"type": "string", "minLength": 1}
         }
       }
     },
     "validation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["split", "leakage_checks", "nulls", "metrics", "benchmark_summary"],
+      "required": [
+        "evidence_profile",
+        "split",
+        "leakage_checks",
+        "nulls",
+        "metrics",
+        "benchmark_summary"
+      ],
       "properties": {
-        "split": {"type": "string"},
-        "leakage_checks": {"type": "array", "items": {"type": "string"}},
-        "nulls": {"type": "array", "items": {"type": "string"}},
-        "metrics": {"type": "array", "items": {"type": "string"}},
-        "benchmark_summary": {"type": "array", "items": {"type": "object"}}
+        "evidence_profile": {"enum": ["DRAFT_EXPLICIT_LIMITATIONS", "CANDIDATE_EVIDENCE"]},
+        "split": {"type": "string", "minLength": 1},
+        "leakage_checks": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "nulls": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "metrics": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "benchmark_summary": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/benchmarkEvidence"}
+        }
       }
     },
-    "known_failures": {"type": "array", "items": {"type": "string"}},
+    "known_failures": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
     "claims": {
       "type": "object",
       "additionalProperties": false,
       "required": ["can_claim", "cannot_claim"],
       "properties": {
-        "can_claim": {"type": "array", "items": {"type": "string"}},
-        "cannot_claim": {"type": "array", "items": {"type": "string"}}
+        "can_claim": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "cannot_claim": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
       }
     },
     "method_package": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["package_version", "entrypoint", "runtime_spec", "files"],
+      "required": ["package_version", "entrypoint_file", "runtime_spec_file", "files"],
       "properties": {
-        "package_version": {"type": "string"},
-        "entrypoint": {"type": "string"},
-        "runtime_spec": {"type": "string"},
-        "files": {"type": "array", "items": {"type": "string"}}
+        "package_version": {"type": "string", "minLength": 1},
+        "entrypoint_file": {"type": "string", "minLength": 1},
+        "runtime_spec_file": {"type": "string", "minLength": 1},
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
       }
     },
     "canary_fixture": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["synthetic", "format", "input_file", "expected_output_file", "purpose"],
+      "required": [
+        "synthetic",
+        "input_file",
+        "input_format",
+        "input_sample_rate_hz",
+        "input_channels",
+        "input_sample_count",
+        "expected_output_file",
+        "expected_output_format",
+        "expected_layer_order",
+        "expected_layers",
+        "frame_time",
+        "tolerance",
+        "purpose"
+      ],
       "properties": {
         "synthetic": {"const": true},
-        "format": {"enum": ["JSON", "CSV", "TINY_TSV", "NPY"]},
-        "input_file": {"type": "string"},
-        "expected_output_file": {"type": "string"},
-        "purpose": {"const": "SHAPE_TIME_LAYER_ORDER_CANARY"}
+        "input_file": {"type": "string", "minLength": 1},
+        "input_format": {"enum": ["WAV_PCM16", "NPY_FLOAT32"]},
+        "input_sample_rate_hz": {"type": "integer", "minimum": 1},
+        "input_channels": {"const": 1},
+        "input_sample_count": {"type": "integer", "minimum": 1},
+        "expected_output_file": {"type": "string", "minLength": 1},
+        "expected_output_format": {"enum": ["NPZ", "HDF5", "ZARR", "TINY_TSV"]},
+        "expected_layer_order": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "expected_layers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["layer_key", "shape", "dtype", "frame_count", "feature_dim"],
+            "properties": {
+              "layer_key": {"type": "string", "minLength": 1},
+              "shape": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "prefixItems": [
+                  {"type": "integer", "minimum": 1},
+                  {"type": "integer", "minimum": 1}
+                ],
+                "items": false
+              },
+              "dtype": {"enum": ["float16", "float32", "float64"]},
+              "frame_count": {"type": "integer", "minimum": 1},
+              "feature_dim": {"type": "integer", "minimum": 1}
+            }
+          }
+        },
+        "frame_time": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["unit", "array_key", "shape", "reference"],
+          "properties": {
+            "unit": {"const": "seconds"},
+            "array_key": {"type": "string", "minLength": 1},
+            "shape": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "prefixItems": [{"type": "integer", "minimum": 1}],
+              "items": false
+            },
+            "reference": {"type": "string", "minLength": 1}
+          }
+        },
+        "tolerance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["absolute", "relative", "frame_time_seconds"],
+          "properties": {
+            "absolute": {"type": "number", "minimum": 0},
+            "relative": {"type": "number", "minimum": 0},
+            "frame_time_seconds": {"type": "number", "minimum": 0}
+          }
+        },
+        "purpose": {"const": "NUMERIC_SHAPE_DTYPE_FRAME_TIME_LAYER_ORDER_CANARY"}
       }
     },
     "reference_feature_payload": {
@@ -191,24 +435,200 @@
         "required_for_consumer": {"const": false},
         "remote_only": {"const": true},
         "format": {"enum": ["ZARR", "HDF5", "PARQUET", "NPY_BUNDLE"]},
-        "location": {"type": "string"},
-        "purpose": {"type": "string"}
+        "location": {"type": "string", "minLength": 1},
+        "purpose": {"type": "string", "minLength": 1}
       }
     },
     "file_inventory": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["path", "role", "bytes", "modified_at_utc", "remote_only"],
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/inventoryItem"}
+    }
+  },
+  "allOf": [
+    {
+      "if": {
         "properties": {
-          "path": {"type": "string"},
-          "role": {"type": "string"},
-          "bytes": {"type": "integer", "minimum": 0},
-          "modified_at_utc": {"type": "string", "format": "date-time"},
-          "schema": {"type": "string"},
-          "remote_only": {"type": "boolean"}
+          "identity": {
+            "properties": {"release_status": {"const": "DRAFT_PROPOSED_BY_M6A"}},
+            "required": ["release_status"]
+          }
         }
+      },
+      "then": {
+        "properties": {
+          "acceptance": {
+            "properties": {
+              "producer_review": {"enum": ["PENDING", "PASS", "FAIL"]},
+              "consumer_cross_test": {"const": "PENDING"},
+              "coordinator_decision": {"const": "PENDING"}
+            }
+          },
+          "validation": {
+            "properties": {"evidence_profile": {"const": "DRAFT_EXPLICIT_LIMITATIONS"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "identity": {
+            "properties": {"release_status": {"const": "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW"}},
+            "required": ["release_status"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "acceptance": {
+            "properties": {
+              "producer_review": {"const": "PASS"},
+              "consumer_cross_test": {"const": "PENDING"},
+              "coordinator_decision": {"const": "PENDING"}
+            }
+          },
+          "validation": {
+            "properties": {"evidence_profile": {"const": "DRAFT_EXPLICIT_LIMITATIONS"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "identity": {
+            "properties": {"release_status": {"const": "CANDIDATE_FOR_CROSS_TEST"}},
+            "required": ["release_status"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "acceptance": {
+            "properties": {
+              "producer_review": {"const": "PASS"},
+              "consumer_cross_test": {"enum": ["PENDING", "PASS", "FAIL"]},
+              "coordinator_decision": {"const": "PENDING"}
+            }
+          },
+          "validation": {
+            "properties": {"evidence_profile": {"const": "CANDIDATE_EVIDENCE"}}
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "benchmarkEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "dataset",
+        "split",
+        "target",
+        "model_or_baseline",
+        "metric",
+        "value",
+        "null_comparison",
+        "status",
+        "limitations"
+      ],
+      "properties": {
+        "scope": {"type": "string", "minLength": 1},
+        "dataset": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["dataset_id", "version"],
+          "properties": {
+            "dataset_id": {"type": "string", "minLength": 1},
+            "version": {"type": "string", "minLength": 1}
+          }
+        },
+        "split": {"type": "string", "minLength": 1},
+        "target": {"type": "string", "minLength": 1},
+        "model_or_baseline": {"type": "string", "minLength": 1},
+        "metric": {"type": "string", "minLength": 1},
+        "value": {"type": ["number", "null"]},
+        "null_comparison": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method", "status", "value", "permutations", "limitations"],
+          "properties": {
+            "method": {"type": "string", "minLength": 1},
+            "status": {"enum": ["RUN", "PENDING", "FAILED", "NOT_ESTIMABLE"]},
+            "value": {"type": ["number", "null"]},
+            "permutations": {"type": ["integer", "null"], "minimum": 1},
+            "limitations": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"type": "string", "minLength": 1}
+            }
+          },
+          "allOf": [
+            {
+              "if": {"properties": {"status": {"const": "RUN"}}},
+              "then": {
+                "properties": {
+                  "value": {"type": "number"},
+                  "permutations": {"type": "integer", "minimum": 1}
+                }
+              },
+              "else": {
+                "properties": {
+                  "value": {"type": "null"},
+                  "permutations": {"type": "null"}
+                }
+              }
+            }
+          ]
+        },
+        "status": {"enum": ["SUPPORTED", "PROVISIONAL", "FAILED", "NOT_ESTIMABLE"]},
+        "limitations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"status": {"const": "SUPPORTED"}}},
+          "then": {"properties": {"value": {"type": "number"}}}
+        },
+        {
+          "if": {"properties": {"status": {"enum": ["FAILED", "NOT_ESTIMABLE"]}}},
+          "then": {"properties": {"value": {"type": "null"}}}
+        }
+      ]
+    },
+    "inventoryItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "role", "bytes", "modified_at_utc", "availability"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "role": {
+          "enum": [
+            "METHOD_ENTRYPOINT",
+            "RUNTIME_SPEC",
+            "EXTRACTION_CONFIG_SCHEMA",
+            "EXTRACTION_OUTPUT_SCHEMA",
+            "CANARY_INPUT",
+            "CANARY_EXPECTED_OUTPUT",
+            "TRANSFORM_ARTIFACT",
+            "BENCHMARK_EVIDENCE",
+            "MODEL_CONFIG_SOURCE",
+            "MODEL_WEIGHT_SOURCE",
+            "DOCUMENTATION",
+            "REFERENCE_FEATURE_PAYLOAD"
+          ]
+        },
+        "bytes": {"type": "integer", "minimum": 0},
+        "modified_at_utc": {"type": "string", "format": "date-time"},
+        "schema": {"type": "string", "minLength": 1},
+        "availability": {"enum": ["INCLUDED_LOCAL", "REMOTE_REFERENCE_ONLY"]}
       }
     }
   }

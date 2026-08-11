@@ -24,7 +24,7 @@
 6. 所有大数据、权重、特征和训练只位于 2203，本地只保留轻量可审计资产；
 7. 不进行任何 SHA、MD5、checksum、文件哈希或 Git 对象哈希操作。
 
-跨项目接口当前为 `REDESIGN_REQUIRED`：Auditory 内部运行 manifest 与 M6A→M6B exchange manifest 必须分离。exchange contract 仅为 `DRAFT_PROPOSED_BY_M6A`，须经协调审核和 STN consumer cross-test 后才能冻结；当前不存在冻结 M6A artifact。
+跨项目接口已完成 producer 侧 16 项返工：Auditory 内部运行 manifest 与 M6A→M6B exchange manifest 保持分离。exchange contract 当前为 `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`，尚无真实 manifest、method package 或 canary；须经 STN consumer 复核，且后续真实 candidate cross-test 与协调接受后才能另发正式 v1。当前不存在冻结 M6A artifact。
 
 ## 当前节点
 
@@ -33,7 +33,7 @@
 - 建立正式任务书、配置、schema 与测试；
 - 建立 2203 专用 Conda 环境并完成连接/环境自检；
 - 记录 `ds004703` 官方版本、许可、README 限制和轻量文件清单；
-- 获取公开数据并完成最小可读性、BIDS schema 和 split 泄漏测试；
+- 获取公开数据并完成最小可读性、BIDS schema、显式 language/stimulus manifest 和 split 泄漏测试；
 - 在上述门禁通过且资源正常时，进入第一批冻结音频表征提取与 ridge smoke baseline。
 
 ## 硬停止条件
@@ -53,4 +53,4 @@
 - 数据下载/读取：`AUTHORIZED_ON_2203`，尚待实际运行证据；
 - 专用环境：`G1 PASS`；2203 独立环境、自检和远端 10 项测试均通过，证据见 `reports/remote_selfcheck_2203.json`；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
-- M6A→M6B exchange contract：`DRAFT_PROPOSED_BY_M6A`，尚未冻结或接受。
+- M6A→M6B exchange contract：`REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`；producer 侧 33 项远端测试通过，consumer cross-test 尚未运行，未冻结或接受。

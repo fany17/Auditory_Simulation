@@ -89,6 +89,10 @@ def main() -> int:
     parser.add_argument("--inventory", type=Path, required=True)
     parser.add_argument("--audio-samples", type=int, default=5)
     parser.add_argument("--ieeg-samples", type=int, default=1)
+    parser.add_argument("--scope", default="FULL_DATASET")
+    parser.add_argument("--expected-object-count", type=int)
+    parser.add_argument("--expected-total-bytes", type=int)
+    parser.add_argument("--require-neural-files", action="store_true")
     args = parser.parse_args()
 
     root = args.dataset_root.resolve()
@@ -202,6 +206,16 @@ def main() -> int:
     if ieeg_paths and not supported_ieeg:
         warnings.append("only NWB iEEG files found; header reader not implemented")
 
+    total_bytes = sum(item["bytes"] for item in inventory)
+    if args.expected_object_count is not None and len(files) != args.expected_object_count:
+        errors.append(f"object count mismatch: expected {args.expected_object_count}, found {len(files)}")
+    if args.expected_total_bytes is not None and total_bytes != args.expected_total_bytes:
+        errors.append(f"total bytes mismatch: expected {args.expected_total_bytes}, found {total_bytes}")
+    if args.require_neural_files:
+        for required_role in ("ieeg", "events", "channels"):
+            if counts[required_role] == 0:
+                errors.append(f"required role missing: {required_role}")
+
     args.inventory.parent.mkdir(parents=True, exist_ok=True)
     with args.inventory.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(
@@ -215,11 +229,12 @@ def main() -> int:
         "task_id": "M6A-PUBLIC-001",
         "dataset_id": "ds004703",
         "expected_version": "1.1.0",
+        "audit_scope": args.scope,
         "audited_at_utc": datetime.now(timezone.utc).isoformat(),
         "dataset_root": str(root),
         "integrity_policy": "NON_HASH_AUDIT",
         "file_count": len(files),
-        "total_bytes": sum(item["bytes"] for item in inventory),
+        "total_bytes": total_bytes,
         "counts_by_role": dict(sorted(counts.items())),
         "bytes_by_role": dict(sorted(bytes_by_role.items())),
         "participant_count": participant_count,

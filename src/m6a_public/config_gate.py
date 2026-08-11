@@ -92,6 +92,10 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     required_groups = set(split.get("required_group_keys", []))
     if not {"stimulus_id", "recording_id"}.issubset(required_groups):
         errors.append("split must guard stimulus_id and recording_id")
+    if "language" not in set(split.get("optional_group_keys", [])):
+        errors.append("split must carry explicit language metadata")
+    if split.get("language_policy") != "EXPLICIT_MANIFEST_AND_SPLIT_STRATIFICATION_WITH_UNKNOWN_FAIL_CLOSED":
+        errors.append("split language policy must fail closed on unknown language")
     if split.get("temporal_embargo_seconds", 0) <= 0:
         errors.append("temporal embargo must be positive")
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:
@@ -110,8 +114,8 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     artifact = config.get("artifact", {})
     if artifact.get("internal_schema_path") != "schemas/m6a_public_internal_manifest.schema.json":
         errors.append("internal run manifest path is not frozen")
-    if artifact.get("exchange_contract_status") != "DRAFT_PROPOSED_BY_M6A":
-        errors.append("exchange contract must remain DRAFT_PROPOSED_BY_M6A")
+    if artifact.get("exchange_contract_status") != "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW":
+        errors.append("exchange contract must remain REVISED_DRAFT_AWAITING_CONSUMER_REVIEW")
     if artifact.get("frozen_m6a_artifact_exists") is not False:
         errors.append("no frozen M6A artifact exists at G0-G2")
 

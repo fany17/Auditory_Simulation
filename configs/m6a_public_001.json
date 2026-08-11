@@ -60,8 +60,10 @@
       "recording_id"
     ],
     "optional_group_keys": [
-      "speaker_id"
+      "speaker_id",
+      "language"
     ],
+    "language_policy": "EXPLICIT_MANIFEST_AND_SPLIT_STRATIFICATION_WITH_UNKNOWN_FAIL_CLOSED",
     "temporal_context_key": "recording_id",
     "temporal_embargo_seconds": 2.0,
     "seed": 20260811,
@@ -127,7 +129,7 @@
   },
   "artifact": {
     "internal_schema_path": "schemas/m6a_public_internal_manifest.schema.json",
-    "exchange_contract_status": "DRAFT_PROPOSED_BY_M6A",
+    "exchange_contract_status": "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW",
     "exchange_schema_path": "schemas/m6a_to_m6b_exchange_manifest_v1.schema.json",
     "frozen_m6a_artifact_exists": false,
     "large_assets": "REMOTE_ONLY",

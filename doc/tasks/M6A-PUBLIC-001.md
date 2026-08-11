@@ -66,6 +66,7 @@
 - participant、session、task、run/recording；
 - iEEG 文件、channels/electrodes、采样率、通道类型和状态；
 - events 的 onset、duration、trial/stimulus 标识；
+- 每个 stimulus 的 language；无法从正式 metadata 或文件结构确定时必须标记 `UNKNOWN` 并阻止对应跨语言声称；
 - 音频文件名、字节数、时间戳、采样率、声道、时长和抽样可读性；
 - 脑区/电极元数据可用性、缺失项与排除原因；
 - 每个 recording 的音频—events—iEEG 时间关系。
@@ -81,6 +82,7 @@
 - 同一 `recording_id` 默认不跨 split；如实际结构导致不可行，必须先形成 connected-component 报告再重新冻结；
 - 同一 recording 内跨 split 时间窗至少隔离 2 s；正式窗口化后隔离宽度不得小于最大 lag、滤波边缘和特征感受野之和；
 - speaker_id 可用时单独报告 speaker 泄漏；若一个 speaker 覆盖全部刺激，则标记 `SPEAKER_GENERALIZATION_NOT_ESTIMABLE`，不得伪称 speaker-held-out；
+- language 必须进入 manifest，并作为 split 分层/覆盖审计字段；同一 stimulus 的语言标签必须唯一，少样本语言若不能形成有效 held-out 证据则标记 `LANGUAGE_GENERALIZATION_NOT_ESTIMABLE`；
 - subject 可跨主 split，因此主结果只支持 unseen-stimulus within-subject/generalized-across-recording 的口径；另行的 subject-generalization 必须使用独立 split manifest。
 
 任何 sample_id 重复、必需 group key 缺失、group 跨 split 或时间邻域泄漏均为 hard fail。
@@ -120,7 +122,7 @@
 
 当前运行产物只使用 `schemas/m6a_public_internal_manifest.schema.json`。它是 Auditory 项目内部 run manifest，不是 M6A→M6B 合同，也不得作为已冻结跨项目 artifact 发布。
 
-跨项目草案见 `doc/M6A_TO_M6B_EXCHANGE_CONTRACT_DRAFT.md` 与 `schemas/m6a_to_m6b_exchange_manifest_v1.schema.json`，状态固定为 `DRAFT_PROPOSED_BY_M6A`。只有协调审核和 STN consumer cross-test 通过后，才可建立 frozen/accepted 版本。
+跨项目草案见 `doc/M6A_TO_M6B_EXCHANGE_CONTRACT_DRAFT.md` 与 `schemas/m6a_to_m6b_exchange_manifest_v1.schema.json`，当前状态固定为 `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`。未生成真实 manifest、method package 和 canary 前不得升为 candidate；只有真实 candidate 完成 STN consumer cross-test 且协调接受后，才可另行建立不带 draft 的 frozen/accepted v1。
 
 内部运行 manifest 必须包含：
 
