@@ -1,0 +1,16 @@
+{
+  "status": "FAIL",
+  "checked_at_utc": "2026-08-07T07:33:30Z",
+  "root": "E:\\BCI_LFP_EEG\\Project\\0_EEG_Explanation_Auditory\\Auditory_Simulation\\docs\\algorithm_project\\03_2203_final_demo_package",
+  "errors": [
+    "missing required file: demo/TB001-DEMO001/data/showcase_results.json",
+    "missing required file: demo/TB001-DEMO001/data/showcase_data.js",
+    "missing required file: reports/TB001-DEMO001_SCIENTIFIC_INTERPRETATION.md",
+    "missing required file: reports/TB001-DEMO001_IDENTITY_TEST.json",
+    "missing required file: outputs/TB001-DEMO001/current_run_group.json",
+    "missing required file: stimuli/TB001-DEMO001/input_16k_mono.wav",
+    "missing required file: outputs/TB001-DEMO001/current_showcase.json",
+    "missing required file: outputs/TB001-DEMO001/current_frontend.json"
+  ],
+  "warnings": []
+}

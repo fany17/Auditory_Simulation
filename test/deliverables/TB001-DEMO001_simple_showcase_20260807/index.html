@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <title>语音如何变成文字？</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-head">
+    <div>
+      <p class="kicker">WAV2VEC 2.0 · 真实推理结果</p>
+      <h1>语音进去，经过不同层，最后变成什么？</h1>
+      <p class="subtitle">选择一档语速，再减弱或去掉任意 Transformer 层，观察最终英文字幕如何改变。</p>
+    </div>
+    <div class="truth-badge"><span></span>140 次真实推理</div>
+  </header>
+
+  <main class="flow" aria-label="语音到文字的处理流程">
+    <section class="stage input-stage">
+      <div class="stage-number">01</div>
+      <p class="stage-label">输入</p>
+      <h2>一段英语语音</h2>
+      <p class="stage-note">语速越快，识别任务越困难。</p>
+
+      <div id="speedButtons" class="speed-buttons" aria-label="语速选择"></div>
+      <div class="audio-shell">
+        <audio id="audioPlayer" controls preload="metadata"></audio>
+        <canvas id="waveformCanvas" height="104" aria-label="语音波形"></canvas>
+      </div>
+      <div class="input-meta">
+        <span id="speedLabel"></span>
+        <span id="durationLabel"></span>
+      </div>
+    </section>
+
+    <div class="flow-arrow" aria-hidden="true"><span></span></div>
+
+    <section class="stage model-stage">
+      <div class="stage-number">02</div>
+      <p class="stage-label">中间处理</p>
+      <h2>选择要改变的层</h2>
+      <p class="stage-note">每个 Transformer 层都会在输入上增加一次表示更新；这里改变的是这次“新增量”。</p>
+
+      <div id="layerStrengthControl" class="strength-control" aria-label="层作用强度">
+        <button data-alpha="1" type="button"><strong>正常</strong><span>保留 100%</span></button>
+        <button data-alpha="0.5" type="button"><strong>减弱一半</strong><span>保留 50%</span></button>
+        <button data-alpha="0" type="button"><strong>直接去掉</strong><span>保留 0%</span></button>
+      </div>
+      <div id="frontendControl" class="frontend-control hidden" aria-label="卷积前端时间分辨率">
+        <button data-frontend="frontend-50hz" type="button"><strong>标准时间采样</strong><span>50 Hz · 20 ms</span></button>
+        <button data-frontend="frontend-100hz" type="button"><strong>加密时间采样</strong><span>100 Hz · 10 ms</span></button>
+        <button data-frontend="frontend-200hz" type="button"><strong>过密实验条件</strong><span>200 Hz · 5 ms</span></button>
+      </div>
+
+      <div class="model-path">
+        <button id="frontendNode" class="fixed-node selectable-node" type="button">
+          <span>卷积前端</span>
+          <small id="frontendStatus">点击查看时间下采样</small>
+        </button>
+        <div class="path-line"></div>
+        <div id="layerStack" class="layer-stack" aria-label="12 个 Transformer 层"></div>
+        <div class="path-line"></div>
+        <div class="fixed-node">CTC 文字输出</div>
+      </div>
+      <p id="impactLegend" class="impact-legend"><span></span>层内细条：当前语速下，直接去掉该层造成的 CTC 输出变化</p>
+      <p id="interventionLabel" class="intervention-label"></p>
+
+      <section class="layer-explainer" aria-live="polite" aria-label="当前层的作用说明">
+        <div class="layer-explainer-head">
+          <div>
+            <span id="layerGroup" class="layer-group"></span>
+            <h3 id="layerTitle"></h3>
+          </div>
+          <span id="layerPosition" class="layer-position"></span>
+        </div>
+        <p id="layerRole" class="layer-role"></p>
+
+        <div id="residualEquation" class="residual-equation" aria-label="层输出的计算方式">
+          <span>层输入 <i>h<sub>in</sub></i></span>
+          <b>＋</b>
+          <span><em id="alphaValue">α</em> × 本层新增 <i>Δh</i></span>
+          <b>→</b>
+          <span>下一层</span>
+        </div>
+        <div id="frontendEquation" class="residual-equation hidden" aria-label="卷积前端时间分辨率的计算方式">
+          <span>16,000 samples/s</span>
+          <b>÷</b>
+          <span>总步幅 <em id="frontendStrideValue">320</em></span>
+          <b>→</b>
+          <span id="frontendRateValue">约 50 帧/s</span>
+        </div>
+        <p id="strengthMeaning" class="strength-meaning"></p>
+
+        <div class="layer-evidence" aria-label="当前输入中的实测影响">
+          <div><strong id="layerEditValue">0</strong><span id="layerEditLabel">字幕字符变化</span></div>
+          <div><strong id="layerCtcValue">0</strong><span id="layerCtcLabel">CTC 分布变化</span></div>
+          <div><strong id="layerHiddenValue">0</strong><span id="layerHiddenLabel">最终表示变化</span></div>
+        </div>
+        <p id="explanationBoundary" class="layer-boundary">上面的“处理重点”按网络深度解释信息流位置，不是该层独占的语言功能；数值才是本段语音上的实际消融结果。</p>
+      </section>
+    </section>
+
+    <div class="flow-arrow" aria-hidden="true"><span></span></div>
+
+    <section class="stage output-stage">
+      <div class="stage-number">03</div>
+      <p class="stage-label">最终输出</p>
+      <h2>英文字幕</h2>
+      <p class="stage-note">先看数据集真实标注，再比较标准模型与当前干预输出。</p>
+
+      <article class="transcript-card reference-card">
+        <div class="transcript-head"><span>真实文本 · 数据集标注</span><small id="referenceAudioId"></small></div>
+        <p id="referenceTranscript" class="transcript reference-transcript"></p>
+      </article>
+
+      <div class="comparison-arrow comparison-label" aria-hidden="true">↓ 标准模型识别</div>
+
+      <article class="transcript-card baseline-card">
+        <div class="transcript-head"><span>标准模型输出</span><small id="baselineRunId"></small></div>
+        <p id="baselineTranscript" class="transcript"></p>
+      </article>
+
+      <div class="comparison-arrow comparison-label" aria-hidden="true">↓ 当前改变后的识别</div>
+
+      <article class="transcript-card adjusted-card">
+        <div class="transcript-head"><span id="adjustedTitle">改变后</span><small id="adjustedRunId"></small></div>
+        <p id="adjustedTranscript" class="transcript"></p>
+      </article>
+
+      <div class="result-summary">
+        <div><strong id="baselineCer">—</strong><span>标准模型 CER</span></div>
+        <div><strong id="adjustedCer">—</strong><span>当前输出 CER</span></div>
+        <div><strong id="editCount">—</strong><span>两次输出字符差异</span></div>
+      </div>
+      <p class="internal-note">内部 CTC 分布差异：<strong id="ctcDifference">—</strong></p>
+      <p id="cerSentence" class="cer-sentence"></p>
+      <p id="resultSentence" class="result-sentence"></p>
+    </section>
+  </main>
+
+  <section class="summary-figure" aria-labelledby="summaryFigureTitle">
+    <div class="summary-figure-copy">
+      <p class="stage-label">整体结果</p>
+      <h2 id="summaryFigureTitle">语速和前端时间采样要一起看</h2>
+      <p>标准 50 Hz 在 2× 时明显失效；100 Hz 能补偿当前快速语音；200 Hz 因未重训练的时间尺度失配而整体较差。</p>
+      <div class="strategy-note">
+        <strong>当前样本的补偿示范</strong>
+        <span>≤1.5× 使用 50 Hz；≥1.75× 使用 100 Hz。</span>
+        <small>这条规则从同一条语音中选出，不是 held-out 验证，也不是通用最优解。</small>
+      </div>
+      <div class="figure-links">
+        <a href="figures/frontend_speed_cer.svg" target="_blank" rel="noopener">单独打开 SVG</a>
+        <a href="figures/frontend_speed_cer.png" target="_blank" rel="noopener">单独打开 PNG</a>
+      </div>
+    </div>
+    <a class="figure-image-link" href="figures/frontend_speed_cer.svg" target="_blank" rel="noopener" aria-label="单独打开语速与卷积前端CER结果图">
+      <img src="figures/frontend_speed_cer.svg" alt="折线图：五档语速下50、100、200 Hz卷积前端以及同样本补偿示范的字符错误率">
+    </a>
+  </section>
+
+  <footer>
+    <p>页面只展示真实输出。语速改变会影响原模型转写；层效应始终在同一语速下比较。</p>
+    <p>当前干预是工程消融；卷积步幅变体未重训练，层级说明也不代表专属语言功能或脑区。</p>
+  </footer>
+
+  <script src="data/reference_data.js"></script>
+  <script src="data/showcase_data.js"></script>
+  <script src="data/frontend_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

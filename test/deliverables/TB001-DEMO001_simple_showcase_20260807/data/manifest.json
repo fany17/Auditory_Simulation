@@ -1,0 +1,13 @@
+{
+  "task_id": "TB001-DEMO001",
+  "generated_at_utc": "2026-08-06T11:26:58Z",
+  "source_run_group": "outputs/TB001-DEMO001/run_groups/run-20260806T112651Z",
+  "config_path": "configs/TB001-DEMO001.yaml",
+  "runs_json": "data/runs.json",
+  "visualization_json": "data/visualization.json",
+  "audio": "assets/input_16k_mono.wav",
+  "unique_inference_count": 25,
+  "alpha_1_cells_reference_baseline": true,
+  "model_revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "offline": true
+}

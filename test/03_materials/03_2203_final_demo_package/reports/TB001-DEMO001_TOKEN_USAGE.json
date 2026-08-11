@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-06T10:14:57Z",
+  "scope": "Two server2203 Codex CLI initial-deployment attempts only",
+  "definition": {
+    "total_tokens": "input_tokens + output_tokens",
+    "cached_input_tokens": "subset of input_tokens; not added again",
+    "reasoning_output_tokens": "reported separately; not added again"
+  },
+  "attempts": [
+    {
+      "attempt": "attempt1_workspace_write",
+      "status": "BLOCKED_AT_S0_BWRAP_SANDBOX",
+      "start_utc": "2026-08-06T09:59:17Z",
+      "end_utc": "2026-08-06T10:00:03Z",
+      "process_exit_code": 0,
+      "codex_version": "codex-cli 0.144.4",
+      "private_events_sha256": "c5dc09eb7ac1ad3dd264df17b08171f9629ad76d2861c4879392aada6f4659a3",
+      "usage_available": true,
+      "turns": [
+        {
+          "event_line": 9,
+          "input_tokens": 159558,
+          "cached_input_tokens": 130816,
+          "non_cached_input_tokens": 28742,
+          "output_tokens": 1714,
+          "reasoning_output_tokens": 600,
+          "total_tokens": 161272
+        }
+      ],
+      "totals": {
+        "input_tokens": 159558,
+        "cached_input_tokens": 130816,
+        "non_cached_input_tokens": 28742,
+        "output_tokens": 1714,
+        "reasoning_output_tokens": 600,
+        "total_tokens": 161272
+      }
+    },
+    {
+      "attempt": "attempt2_inherit_path",
+      "status": "BLOCKED_AT_S0_BWRAP_SANDBOX",
+      "start_utc": "2026-08-06T10:04:58Z",
+      "end_utc": "2026-08-06T10:06:23Z",
+      "process_exit_code": 0,
+      "codex_version": "codex-cli 0.144.4",
+      "private_events_sha256": "c0f8c612ed20e8991bc258378c8b57903ed55e825597a26bd661e67c2a11ae47",
+      "usage_available": true,
+      "turns": [
+        {
+          "event_line": 9,
+          "input_tokens": 149225,
+          "cached_input_tokens": 118528,
+          "non_cached_input_tokens": 30697,
+          "output_tokens": 3577,
+          "reasoning_output_tokens": 1318,
+          "total_tokens": 152802
+        }
+      ],
+      "totals": {
+        "input_tokens": 149225,
+        "cached_input_tokens": 118528,
+        "non_cached_input_tokens": 30697,
+        "output_tokens": 3577,
+        "reasoning_output_tokens": 1318,
+        "total_tokens": 152802
+      }
+    }
+  ],
+  "aggregate": {
+    "input_tokens": 308783,
+    "cached_input_tokens": 249344,
+    "non_cached_input_tokens": 59439,
+    "output_tokens": 5291,
+    "reasoning_output_tokens": 1918,
+    "total_tokens": 314074
+  },
+  "demo_inference_billing_tokens": 0,
+  "demo_internal_counts_are_not_billing_tokens": [
+    "ctc_frame_count",
+    "greedy_token_id_count_before_ctc_collapse",
+    "transcript_character_count"
+  ],
+  "current_desktop_codex_session_usage": "UNAVAILABLE_FROM_SERVER_JSONL",
+  "privacy": "Raw JSONL remains in the private audit directory and is excluded from the project report package.",
+  "updated_at_utc": "2026-08-07T07:29:19Z",
+  "current_completion": {
+    "execution_method": "LOCAL_CONTROLLER_OVER_SSH",
+    "remote_codex_agent_used": false,
+    "remote_agent_tokens": 0,
+    "model_inference_billing_tokens": 0,
+    "desktop_controller_usage": "UNAVAILABLE",
+    "note": "No estimate was fabricated. CTC frames, token IDs and transcript characters are not billing tokens."
+  },
+  "historical_remote_agent_attempts_are_not_part_of_current_completion": true,
+  "showcase_extension": {
+    "execution_method": "LOCAL_CONTROLLER_OVER_SSH",
+    "remote_agent_tokens": 0,
+    "model_inference_billing_tokens": 0,
+    "desktop_controller_usage": "UNAVAILABLE",
+    "note": "125 wav2vec2 forward results are not language-model billing tokens."
+  },
+  "frontend_extension": {
+    "execution_method": "LOCAL_CONTROLLER_OVER_SSH",
+    "remote_agent_tokens": 0,
+    "model_inference_billing_tokens": 0,
+    "desktop_controller_usage": "UNAVAILABLE",
+    "note": "15 wav2vec2 forward results are not language-model billing tokens."
+  }
+}

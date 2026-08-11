@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "go_no_go": "GO_FOR_HUMAN_REVIEW_AND_OPTIONAL_SECOND_UTTERANCE",
+  "completed_at_utc": "2026-08-06T11:33:22Z",
+  "execution_method": "LOCAL_CONTROLLER_OVER_SSH",
+  "remote_agent_used_for_completion": false,
+  "unique_inference_results": 25,
+  "nonbaseline_success": 24,
+  "nonbaseline_failed": 0,
+  "transcript_changed_runs": 0,
+  "identity_test": "PASS",
+  "root_verify": "PASS",
+  "browser_qa": "PASS",
+  "scientific_review_boundary": "Agent self-check complete; final acceptance remains human.",
+  "updated_at_utc": "2026-08-07T07:29:19Z",
+  "remote_agent_used_for_showcase": false,
+  "showcase": {
+    "status": "PASS",
+    "group_id": "showcase-20260807T044653Z",
+    "conditions": 5,
+    "unique_inferences": 125,
+    "interventions": 120,
+    "failed": 0,
+    "text_changed": 33,
+    "default_selection": {
+      "condition_id": "speed-2p00",
+      "layer_id": 5,
+      "alpha": 0.0,
+      "run_id": "speed-2p00-layer-05-alpha-0p0",
+      "transcript_edit_distance": 6
+    },
+    "browser_qa": "PASS"
+  },
+  "frontend": {
+    "status": "PASS",
+    "group_id": "frontend-20260807T053643Z",
+    "conditions": 5,
+    "variants_per_condition": 3,
+    "unique_inferences": 15,
+    "failed": 0,
+    "text_changed_vs_standard": 9,
+    "x2_standard_cer": 0.3157894736842105,
+    "x2_100hz_cer": 0.017543859649122806,
+    "x2_200hz_cer": 0.22807017543859648,
+    "browser_qa": "PASS",
+    "reference_comparison": "PASS",
+    "cer_figure": "PASS",
+    "adaptive_demo_boundary": "same-sample only; not held-out"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-08-07T05:02:53Z",
+  "method": "controller-side in-app browser on localhost copy of SSH-downloaded lightweight package",
+  "default_state": {
+    "speed": "2×",
+    "duration_seconds": 2.56,
+    "layer": 5,
+    "strength": "removed",
+    "run_id": "speed-2p00-layer-05-alpha-0p0",
+    "baseline_transcript": "AS RITINGS THERE ARE TWO KINDS BRISH AND VON",
+    "adjusted_transcript": "AS FRETINGS THERE ARE TWO KINDS RIISH AND FUN",
+    "character_edit_distance": 6,
+    "removed_word_highlights": 3,
+    "added_word_highlights": 3
+  },
+  "interaction_checks": [
+    {
+      "condition": "1.75×",
+      "layer": 3,
+      "alpha": 0.0,
+      "run_id": "speed-1p75-layer-03-alpha-0p0",
+      "character_edit_distance": 4,
+      "audio_duration_seconds": 2.925688,
+      "status": "PASS"
+    },
+    {
+      "action": "normal",
+      "baseline_equals_adjusted": true,
+      "character_edit_distance": 0,
+      "status": "PASS"
+    },
+    {
+      "action": "half",
+      "run_id": "speed-1p75-layer-03-alpha-0p5",
+      "status": "PASS"
+    }
+  ],
+  "audio_ready_state": 4,
+  "console_errors_or_warnings": 0,
+  "visual_layout": "PASS: single clean left-input / middle-layers / right-output flow",
+  "boundary": "Controller self-QA, not independent scientific review.",
+  "updated_at_utc": "2026-08-07T07:29:19Z",
+  "frontend_extension": {
+    "status": "PASS",
+    "default_frontend_check": "2x / 100Hz",
+    "standard_transcript": "AS RITINGS THERE ARE TWO KINDS BRISH AND VON",
+    "frontend_100hz_transcript": "AS FOR ETCHINGS THEY ARE OF TWO KINDS GRITISH AND FOREIGN",
+    "frontend_100hz_cer": 0.017543859649122806,
+    "frontend_200hz_cer": 0.22807017543859648,
+    "frontend_200hz_control": "PASS",
+    "return_to_layer_l9_alpha_0p5": "PASS",
+    "layer_strength_semantics_visible": "PASS",
+    "audio_ready_state": 4,
+    "audio_duration_seconds": 2.56,
+    "reference_comparison": {
+      "status": "PASS",
+      "reference_audio_id": "hf-internal-testing/librispeech_asr_demo:clean:validation:8",
+      "reference_text": "AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FOREIGN",
+      "x2_standard_cer": 0.3157894736842105,
+      "x2_100hz_cer": 0.017543859649122806,
+      "x2_100hz_wrong_word_highlights": 1,
+      "x2_standard_wrong_word_highlights": 4
+    },
+    "cer_figure": {
+      "status": "PASS",
+      "embedded_image_loaded": true,
+      "embedded_natural_size": [
+        902,
+        557
+      ],
+      "standalone_svg": "PASS",
+      "standalone_png": "PASS",
+      "source_csv": "reports/figures/frontend_speed_cer_source.csv",
+      "manifest": "reports/figures/frontend_speed_cer_manifest.json",
+      "adaptive_policy": "speed <= 1.5x: frontend-50hz; speed >= 1.75x: frontend-100hz",
+      "adaptive_cer_percent": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.7543859649122806
+      ],
+      "boundary": "Same-utterance selection only; not held-out and not a general optimum."
+    },
+    "method": "controller-side in-app browser on localhost stable delivery copy",
+    "boundary": "Desktop browser interaction QA; narrow-screen behavior is covered by responsive CSS, not a separate device run."
+  }
+}

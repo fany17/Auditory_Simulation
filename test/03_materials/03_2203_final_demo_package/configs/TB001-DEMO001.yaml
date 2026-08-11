@@ -1,0 +1,17 @@
+task_id: TB001-DEMO001
+model_id: facebook/wav2vec2-base-960h
+model_revision: 22aad52d435eb6dbaf354bdad9b0da84ce7d6156
+processor_revision: 22aad52d435eb6dbaf354bdad9b0da84ce7d6156
+audio_path: stimuli/TB001-DEMO001/input_16k_mono.wav
+audio_manifest_path: stimuli/TB001-DEMO001/manifest.json
+model_manifest_path: models/model_manifest.json
+layers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+alphas: [0.0, 0.5]
+identity_layer: 1
+identity_alpha: 1.0
+identity_tolerance_float32: 1.0e-5
+dtype: float32
+device: cuda:0
+seed: 0
+apply_spec_augment: false
+metrics_schema_version: 1

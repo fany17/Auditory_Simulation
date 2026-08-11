@@ -1,0 +1,21 @@
+﻿speed_factor,frontend_variant,frontend_label,ctc_frame_rate_hz,cer_percent,transcript
+1.0,frontend-50hz,标准时间采样 · 50 Hz (20 ms),49.8046875,0.0,AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FOREIGN
+1.0,frontend-100hz,加密时间采样 · 100 Hz (10 ms),99.609375,0.0,AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FOREIGN
+1.0,frontend-200hz,过密实验条件 · 200 Hz (5 ms),199.4140625,12.280701754385964,AS FOR ACHINGS THERR OF TWO KINDS BRITISH AND FORIGN
+1.25,frontend-50hz,标准时间采样 · 50 Hz (20 ms),49.8046875,0.0,AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FOREIGN
+1.25,frontend-100hz,加密时间采样 · 100 Hz (10 ms),99.609375,10.526315789473683,AS FOR ATCHINGS THEY ARE OF TWO KINDS VERDISH AND FORIGN
+1.25,frontend-200hz,过密实验条件 · 200 Hz (5 ms),199.21875,24.561403508771928,AS FOR ANCHINGS THER OF TWO KINDS VRISH ANDFOUN
+1.5,frontend-50hz,标准时间采样 · 50 Hz (20 ms),49.80499148554374,0.0,AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FOREIGN
+1.5,frontend-100hz,加密时间采样 · 100 Hz (10 ms),99.31701243293722,1.7543859649122806,AS FOR ETCHINGS THEY ARE OF TWO KINDS BRUTISH AND FOREIGN
+1.5,frontend-200hz,过密实验条件 · 200 Hz (5 ms),198.9269954040247,29.82456140350877,AS FOR EGINGS THERE ARE FEW HINES RISH AND FORUN
+1.75,frontend-50hz,标准时间采样 · 50 Hz (20 ms),49.902800623785005,8.771929824561402,AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FUN
+1.75,frontend-100hz,加密时间采样 · 100 Hz (10 ms),99.46380124329751,0.0,AS FOR ETCHINGS THEY ARE OF TWO KINDS BRITISH AND FOREIGN
+1.75,frontend-200hz,过密实验条件 · 200 Hz (5 ms),198.92760248659502,22.807017543859647,AS FOR ATCHINGS THERE ARE FLE HINES BUVISH AND FOREIGN
+2.0,frontend-50hz,标准时间采样 · 50 Hz (20 ms),49.609375,31.57894736842105,AS RITINGS THERE ARE TWO KINDS BRISH AND VON
+2.0,frontend-100hz,加密时间采样 · 100 Hz (10 ms),99.21875,1.7543859649122806,AS FOR ETCHINGS THEY ARE OF TWO KINDS GRITISH AND FOREIGN
+2.0,frontend-200hz,过密实验条件 · 200 Hz (5 ms),198.828125,22.807017543859647,AS FOR AGINGS THERE ARE F FEW KINDS GRUISH AND FOREIGN
+1.0,same-sample-adaptive-demo,同样本补偿示范策略,50.0,0.0,derived selection from existing run; no new inference
+1.25,same-sample-adaptive-demo,同样本补偿示范策略,50.0,0.0,derived selection from existing run; no new inference
+1.5,same-sample-adaptive-demo,同样本补偿示范策略,50.0,0.0,derived selection from existing run; no new inference
+1.75,same-sample-adaptive-demo,同样本补偿示范策略,100.0,0.0,derived selection from existing run; no new inference
+2.0,same-sample-adaptive-demo,同样本补偿示范策略,100.0,1.7543859649122806,derived selection from existing run; no new inference
