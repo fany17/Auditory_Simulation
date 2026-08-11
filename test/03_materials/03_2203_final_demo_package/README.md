@@ -1,8 +1,10 @@
 # TB001-DEMO001：Wav2Vec 2.0 Layer Lab
 
-本目录实现 `docs/STANDALONE_EXECUTION_SPEC.md` 的第一版完整 Demo。计算仅由普通 Python 完成；控制端可通过 SSH 调用服务器命令，服务器上不需要也不得启动 Codex Agent。
+> **状态（2026-08-11）：`HISTORICAL_INCOMPLETE_SNAPSHOT`。** 本目录是既往完整运行形成的部分本地快照，不是当前可独立复现的完整交付包，也不属于正式 M6A 结果。当前快照缺少原执行规范、`outputs/TB001-DEMO001/current_run_group.json`、`reports/TB001-DEMO001_SCIENTIFIC_INTERPRETATION.md`、`delivery/TB001-DEMO001_lightweight/` 以及页面引用的 `demo/TB001-DEMO001/data/showcase_data.js`。以下命令、结果和完成状态记录的是历史完整运行，不表示这些入口在当前快照中均可成功执行。
 
-## 稳定入口
+本目录曾按 `docs/STANDALONE_EXECUTION_SPEC.md` 实现第一版 Demo。计算由普通 Python 完成；控制端可通过 SSH 调用服务器命令，服务器上不需要也不得启动 Codex Agent。
+
+## 历史运行入口
 
 从本目录任意位置均可使用显式脚本路径；脚本自行解析根目录：
 
@@ -15,9 +17,9 @@
 
 运行阶段强制使用本地模型 snapshot（`local_files_only` 和 offline 环境变量），不会下载模型或数据。权重准备属于显式 prepare/S0–S2 阶段，不在 `run_demo.py` 中发生。
 
-## 入口与范围
+## 历史完整交付的入口与范围
 
-- HTML：`demo/TB001-DEMO001/index.html`
+- HTML：`demo/TB001-DEMO001/index.html`（当前快照缺少 `data/showcase_data.js`，不能据此声明页面完整可用）
 - 结果：`outputs/TB001-DEMO001/current_run_group.json`
 - 执行报告：`reports/TB001-DEMO001_EXECUTION_REPORT.md`
 - 科研解读：`reports/TB001-DEMO001_SCIENTIFIC_INTERPRETATION.md`

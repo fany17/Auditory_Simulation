@@ -7,7 +7,7 @@
 ```powershell
 & "C:\Users\fanyu\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" `
   -m http.server 8000 `
-  --directory "E:\BCI_LFP_EEG\Project\0_EEG_Explanation_Auditory\Auditory_Simulation\deliverables\TB001-DEMO001_simple_showcase_20260807"
+  --directory "E:\BCI_LFP_EEG\Project\0_EEG_Explanation_Auditory\Auditory_Simulation\test\deliverables\TB001-DEMO001_simple_showcase_20260807"
 ```
 
 然后访问 `http://127.0.0.1:8000/`。看完按 `Ctrl+C` 停止服务。

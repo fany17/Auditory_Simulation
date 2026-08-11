@@ -2,7 +2,7 @@
 
 本目录是一个独立的公开听觉模型、公开神经数据与计算方法项目。当前核心方向是建立声音表征与不同层级神经活动之间可检验的对齐关系，研究声学、语音、语言、语义、情绪、音乐和运动相关信息的保留、转换与丢失。
 
-本项目不负责 PD 患者 STN 实验、临床采集、TTL/MR4 同步、DBS 装置或真实患者 STN-LFP 的专属分析；这些工作独立属于 `stn-rhythm-pilot`。
+本项目不负责 PD 患者 STN 实验、临床采集、TTL/MR4 同步、DBS 装置或真实患者 STN-LFP 的专属分析；这些工作独立属于 `STN_Decoding_Encoding`。
 
 ## 目录边界
 
@@ -38,12 +38,12 @@ Auditory_Simulation/
 - 首轮模型策略：冻结预训练 wav2vec 2.0、HuBERT、WavLM 表征；不把“从零训练基座”设为启动前提。
 - 执行状态：`PLANNING_ONLY`；尚未授权下载数据/模型、安装环境或运行分析。
 - `test/` 中既有 Demo 不自动升级为 M6A 正式结果。
-- Git 管理：未获明确授权，本目录未初始化 Git。
+- Git 管理：本目录已作为唯一 Git 工作区初始化，远端为 `git@github.com:fany17/Auditory_Simulation.git`；Git 就绪不改变 `PLANNING_ONLY` 状态，也不构成下载数据、运行模型或启动 M6A 的授权。
 
-## 与 stn-rhythm-pilot 的接口
+## 与 STN_Decoding_Encoding 的接口
 
 - `M6A-PUBLIC` 在本项目内建立并外部验证公开数据方法与冻结 artifact。
-- 未来可能的 `M6B-STN` 只在 `stn-rhythm-pilot` 内、经独立任务书和数据治理批准后运行。
+- 未来可能的 `M6B-STN` 只在 `STN_Decoding_Encoding` 内、经独立任务书和数据治理批准后运行。
 - 两项目不共享可变工作目录、当前任务文档、结果状态或项目总纲。
 - Auditory 的公开数据结果不能替代 STN 真实数据证据；STN 单被试结果也不能反向充当公开模型的通用验证。
 
