@@ -7,6 +7,7 @@
     "schema_version",
     "task_id",
     "status",
+    "coordinator_review",
     "primary_target",
     "reference",
     "bandpass_fir",
@@ -24,7 +25,16 @@
   "properties": {
     "schema_version": {"const": "m6a-neural-target-method-candidate-v1"},
     "task_id": {"const": "M6A-PUBLIC-001"},
-    "status": {"const": "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW"},
+    "status": {"const": "METHOD_FROZEN_COORDINATOR_ACCEPTED"},
+    "coordinator_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewed_on"],
+      "properties": {
+        "status": {"const": "ACCEPT"},
+        "reviewed_on": {"const": "2026-08-11"}
+      }
+    },
     "primary_target": {
       "type": "object",
       "additionalProperties": false,

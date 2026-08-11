@@ -22,7 +22,7 @@
 
 官方 inventory 由 `scripts/public_s3_inventory.py` 通过 OpenNeuro public S3 `ListObjectsV2` 取得，source 为 `https://s3.amazonaws.com/openneuro.org`，取得时间为 `2026-08-11T11:14:08.907738+00:00`；原始轻量记录保存为 `reports/ds004703_s3_inventory_summary.json` 与 `reports/ds004703_s3_inventory.csv`。
 
-后台下载未中断。完整 G2 必须等待三个临时 EDF 以预期文件名落盘，再重新执行 exact path/byte reconciliation 和 11/11 EDF header audit。
+原单连接 downloader 后续经保存的 161 s 同窗观测为 0.09938 MiB/s；补强门禁后的 8×16 MiB Range benchmark 为 0.23246 MiB/s、0 失败。原进程族已确认停止，恰好 3 个旧 partial 移入 `/home/fanyu/auditory_simulation_m6a/log/interrupted_downloads/20260811T133028Z/`，full range 仅对 SD011/SD019/SD022 active。完整 G2 仍必须等待三个 EDF 以预期文件名落盘，再重新执行 exact path/byte reconciliation 和 11/11 EDF header audit；切换本身不是 G2 PASS。
 
 ## 已完成的 metadata 证据
 
@@ -39,7 +39,7 @@
 
 ## Target method candidate gate
 
-旧 70-150 Hz high-gamma 候选带包含 120 Hz 工频二次谐波，已被替换为待协调二审的 `METHOD_FREEZE_CANDIDATE`：主目标为排除 110-130 Hz 的六个等宽 10 Hz 子带；旧宽带方法仅为 sensitivity。reference 保持 as-recorded，不猜缺失 scalp reference、不按 contact 名构造 bipolar。当前 `neural_extraction_allowed=false`，该候选不构成真实神经 target 或 G2 PASS。
+旧 70-150 Hz high-gamma 候选带包含 120 Hz 工频二次谐波，已被替换为协调接受的 frozen method：主目标为排除 110-130 Hz 的六个等宽 10 Hz 子带；旧宽带方法仅为 sensitivity。reference 保持 as-recorded，不猜缺失 scalp reference、不按 contact 名构造 bipolar。当前 `neural_extraction_allowed=false`；方法冻结不构成真实神经 target、G3 启动或 G2 PASS。
 
 ## 运行证据
 
@@ -55,6 +55,17 @@ Success: no issues found in 19 source files
 66 passed, 76 subtests passed in 1.36s
 All checks passed!
 Success: no issues found in 22 source files
+neural target method gate: PASS
+main config gate: PASS
+formal src direct convolution scan: PASS
+```
+
+method freeze + Range switch 最终提交前 checkpoint 为：
+
+```text
+83 passed, 93 subtests passed in 1.41s
+All checks passed!
+Success: no issues found in 26 source files
 neural target method gate: PASS
 main config gate: PASS
 formal src direct convolution scan: PASS

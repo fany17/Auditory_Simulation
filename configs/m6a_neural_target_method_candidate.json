@@ -1,7 +1,11 @@
 {
   "schema_version": "m6a-neural-target-method-candidate-v1",
   "task_id": "M6A-PUBLIC-001",
-  "status": "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+  "status": "METHOD_FROZEN_COORDINATOR_ACCEPTED",
+  "coordinator_review": {
+    "status": "ACCEPT",
+    "reviewed_on": "2026-08-11"
+  },
   "primary_target": {
     "name": "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER",
     "selection_rule": "PREDECLARED_PRIMARY_NEVER_SELECTED_BY_ENCODING_PERFORMANCE",

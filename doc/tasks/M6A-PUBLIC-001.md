@@ -104,9 +104,9 @@
 - 统一映射到预注册的神经时间网格；
 - 任何标准化、PCA、特征选择只在 train 拟合并应用到 validation/test。
 
-首轮 neural target 当前为 `METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW`：主目标预声明为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
+首轮 neural target method 已由协调二审 `ACCEPT` 并冻结：主目标为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
 
-候选使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值预计算为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入独立 schema/gate。当前只允许 synthetic tests；协调接受、G2 full audit、音频模型 context 测量与 final split guard 完成前，禁止真实神经提取。
+冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。当前仍只允许 synthetic tests；G2 full audit、audio cross-split context 测量、final embargo 与 baseline-final split guard 完成前，禁止真实神经提取。方法冻结不等于 G3 启动、真实 target、M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
 
 主模型为 ridge encoding：
 

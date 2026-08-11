@@ -30,7 +30,9 @@ class ConfigGateTests(unittest.TestCase):
 
     def test_neural_target_candidate_remains_blocked_while_awaiting_review(self) -> None:
         target = self.config["neural_target"]
-        self.assertEqual(target["status"], "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW")
+        self.assertEqual(target["status"], "METHOD_FROZEN_AWAITING_EXECUTION_GATES")
+        self.assertEqual(target["resolution_status"], "METHOD_FROZEN")
+        self.assertEqual(target["method_coordinator_review"], "ACCEPT")
         self.assertEqual(target["primary_reference_policy"], "AS_RECORDED_SCALP_REFERENCE")
         self.assertEqual(target["sidecar_reference_recording_count"], 11)
         self.assertEqual(target["observed_power_line_frequency_hz"], 60)

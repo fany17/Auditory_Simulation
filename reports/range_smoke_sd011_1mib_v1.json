@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "http_status": 206,
+  "content_range": "bytes 0-1048575/1833841408",
+  "requested_start": 0,
+  "requested_end": 1048575,
+  "content_range_start": 0,
+  "content_range_end": 1048575,
+  "object_total_bytes": 1833841408,
+  "expected_bytes": 1048576,
+  "actual_bytes": 1048576,
+  "elapsed_seconds": 2.1426657889969647,
+  "mib_per_second": 0.4667083430067388,
+  "response_headers_used": [
+    "Content-Range"
+  ],
+  "output": "/home/fanyu/auditory_simulation_m6a/logs/range_staging/smoke_sd011/range_000000000000_000001048575.bin"
+}

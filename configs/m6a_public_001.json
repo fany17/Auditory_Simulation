@@ -99,13 +99,15 @@
     "secondary_subject_generalization": false
   },
   "neural_target": {
-    "status": "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "status": "METHOD_FROZEN_AWAITING_EXECUTION_GATES",
     "name": "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER",
     "method_candidate_path": "configs/m6a_neural_target_method_candidate.json",
     "method_candidate_schema_path": "schemas/m6a_neural_target_method_candidate.schema.json",
     "primary_reference_policy": "AS_RECORDED_SCALP_REFERENCE",
     "sidecar_reference_value": "scalp electrode, not included with data",
     "sidecar_reference_recording_count": 11,
+    "method_coordinator_review": "ACCEPT",
+    "method_reviewed_on": "2026-08-11",
     "target_rate_hz": 50,
     "observed_sampling_rate_hz_values": [
       512,
@@ -130,7 +132,7 @@
     ],
     "metadata_conflict_action": "PRIMARY_EXCLUDES_110_130_HZ_AROUND_120_HZ_HARMONIC",
     "neural_extraction_allowed": false,
-    "resolution_status": "AWAITING_COORDINATOR_REVIEW"
+    "resolution_status": "METHOD_FROZEN"
   },
   "features": {
     "acoustic_baselines": [

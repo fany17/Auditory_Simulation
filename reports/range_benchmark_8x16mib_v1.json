@@ -1,0 +1,100 @@
+{
+  "run_id": "20260811T130715Z",
+  "mode": "BENCHMARK_ONLY_NO_ASSEMBLY",
+  "status": "PASS",
+  "integrity_policy": "NON_HASH_RANGE_AND_BYTE_AUDIT",
+  "dataset_root": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+  "staging_root": "/home/fanyu/auditory_simulation_m6a/logs/range_staging/ds004703_range_v1",
+  "chunk_bytes": 16777216,
+  "workers": 8,
+  "selected_paths": [
+    "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+    "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+    "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf"
+  ],
+  "requested_chunk_count": 8,
+  "downloaded_chunk_count": 8,
+  "reused_chunk_count": 0,
+  "failed_chunk_count": 0,
+  "downloaded_bytes": 134217728,
+  "download_elapsed_seconds": 625.8863800669787,
+  "aggregate_mib_per_second": 0.20450996231345087,
+  "response_headers_used": [
+    "Content-Range"
+  ],
+  "chunk_results": [
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 0,
+      "end": 16777215,
+      "content_range": "bytes 0-16777215/1833841408",
+      "bytes": 16777216,
+      "elapsed_seconds": 3.7078669129987247,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 16777216,
+      "end": 33554431,
+      "content_range": "bytes 16777216-33554431/1833841408",
+      "bytes": 16777216,
+      "elapsed_seconds": 3.7399321609991603,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 33554432,
+      "end": 50331647,
+      "content_range": "bytes 33554432-50331647/1833841408",
+      "bytes": 16777216,
+      "elapsed_seconds": 3.792077533027623,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 0,
+      "end": 16777215,
+      "content_range": "bytes 0-16777215/2168195488",
+      "bytes": 16777216,
+      "elapsed_seconds": 3.4967621550313197,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 16777216,
+      "end": 33554431,
+      "content_range": "bytes 16777216-33554431/2168195488",
+      "bytes": 16777216,
+      "elapsed_seconds": 625.8816626290209,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 33554432,
+      "end": 50331647,
+      "content_range": "bytes 33554432-50331647/2168195488",
+      "bytes": 16777216,
+      "elapsed_seconds": 520.650126944005,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 0,
+      "end": 16777215,
+      "content_range": "bytes 0-16777215/1865216192",
+      "bytes": 16777216,
+      "elapsed_seconds": 134.08921786001883,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 16777216,
+      "end": 33554431,
+      "content_range": "bytes 16777216-33554431/1865216192",
+      "bytes": 16777216,
+      "elapsed_seconds": 4.30500622902764,
+      "status": "DOWNLOADED"
+    }
+  ],
+  "assembly_results": []
+}

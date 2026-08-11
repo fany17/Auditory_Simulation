@@ -92,6 +92,11 @@ def validate_neural_target_method(
     if forbidden:
         errors.append("forbidden integrity fields: " + ", ".join(forbidden))
 
+    if candidate["status"] != "METHOD_FROZEN_COORDINATOR_ACCEPTED":
+        errors.append("neural target method must record coordinator-accepted frozen status")
+    if candidate["coordinator_review"] != {"status": "ACCEPT", "reviewed_on": "2026-08-11"}:
+        errors.append("coordinator method-freeze acceptance record is not frozen")
+
     primary = candidate["primary_target"]
     expected_subbands = [
         {

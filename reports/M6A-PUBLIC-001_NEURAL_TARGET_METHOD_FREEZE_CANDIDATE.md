@@ -1,5 +1,7 @@
 # M6A-PUBLIC-001 neural target method freeze candidate 阶段报告
 
+> Provenance：本报告记录 candidate 提交时点；协调随后于 2026-08-11 `ACCEPT`，现行状态只在正式方法文档、schema 与主配置中维护。
+
 | 字段 | 内容 |
 |---|---|
 | 状态 | `METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |

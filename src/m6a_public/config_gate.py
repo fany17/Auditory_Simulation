@@ -145,8 +145,8 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("allowed_splits must be train/validation/test")
 
     neural_target = config.get("neural_target", {})
-    if neural_target.get("status") != "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW":
-        errors.append("neural target must remain a method freeze candidate awaiting review")
+    if neural_target.get("status") != "METHOD_FROZEN_AWAITING_EXECUTION_GATES":
+        errors.append("neural target must remain method-frozen and awaiting execution gates")
     if neural_target.get("name") != "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER":
         errors.append("neural target primary name is not frozen")
     if neural_target.get("method_candidate_path") != "configs/m6a_neural_target_method_candidate.json":
@@ -162,14 +162,18 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("neural target must record the exact sidecar iEEGReference")
     if neural_target.get("sidecar_reference_recording_count") != 11:
         errors.append("neural target must record all 11 sidecar reference declarations")
+    if neural_target.get("method_coordinator_review") != "ACCEPT":
+        errors.append("neural target must record coordinator method-freeze acceptance")
+    if neural_target.get("method_reviewed_on") != "2026-08-11":
+        errors.append("neural target method review date is not frozen")
     if neural_target.get("observed_power_line_frequency_hz") != 60:
         errors.append("neural target must record the observed 60 Hz line frequency")
     if 120 not in neural_target.get("line_harmonics_inside_candidate_band_hz", []):
         errors.append("neural target must record the 120 Hz harmonic inside 70-150 Hz")
     if neural_target.get("neural_extraction_allowed") is not False:
         errors.append("neural extraction must remain blocked until target method is refrozen")
-    if neural_target.get("resolution_status") != "AWAITING_COORDINATOR_REVIEW":
-        errors.append("neural target resolution must remain awaiting coordinator review")
+    if neural_target.get("resolution_status") != "METHOD_FROZEN":
+        errors.append("neural target resolution must record method freeze")
 
     anatomy = config.get("anatomy_mapping", {})
     if anatomy.get("status") != "ANATOMY_MAPPING_NOT_READY":

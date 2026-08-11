@@ -1,8 +1,9 @@
-# M6A-PUBLIC-001 neural target METHOD_FREEZE_CANDIDATE
+# M6A-PUBLIC-001 neural target frozen method
 
 | 字段 | 内容 |
 |---|---|
-| 状态 | `METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 状态 | `METHOD_FROZEN_COORDINATOR_ACCEPTED` |
+| Coordinator review | `ACCEPT`（2026-08-11） |
 | 主目标 | `LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER` |
 | 主 reference | `AS_RECORDED_SCALP_REFERENCE` |
 | 真实神经提取 | `NOT_ALLOWED` |
@@ -10,6 +11,8 @@
 | 配置 | `configs/m6a_neural_target_method_candidate.json` |
 | schema | `schemas/m6a_neural_target_method_candidate.schema.json` |
 | 语义门禁 | `python -m m6a_public.neural_target_gate ...` |
+
+本文件由既有 candidate 原位升级为唯一正式方法文档；文件名保留 candidate provenance，不另建重复 frozen 配置或文档。
 
 ## 1. 预声明主目标
 
@@ -75,8 +78,8 @@
 
 已计算 filter/resampling edge 最大值为 1.091796875 s。`final_embargo = max(2 s, 0.5 s, 1.091796875 s, measured audio cross-split context overlap)`；由于冻结声音模型尚未下载和测量，最后一项仍为 null，因此 `baseline_final=false`、split 仍为 preliminary，不能重跑 baseline-final split guard。
 
-当前阻塞不是滤波参数无法预声明，而是：协调二审尚未接受本候选；G2 仍等待 3 个 EDF；音频模型 context 尚未测量；final split guard 尚未重跑。任何一项未闭环时，禁止真实神经提取、模型下载和 baseline。
+方法已由协调二审接受，但执行仍被以下门禁阻塞：G2 full audit；音频 cross-split context 测量；final embargo；baseline-final split guard。任何一项未闭环时，禁止真实神经提取和 baseline。
 
 ## 7. 声称边界
 
-本候选可声称的是：有限支持方法、参数、时间语义与 synthetic fail-closed 门禁已被预先声明。不能声称 neural target 已冻结/accepted、真实 high-gamma 已提取、目标具备生理特异性、G3 已启动、brain region 可估计或 baseline 已运行。
+现在可声称：神经目标的有限支持方法、参数、时间语义与 synthetic fail-closed 门禁已由协调接受并冻结。不能声称 G3 已启动、真实 high-gamma target 已提取、目标具备生理特异性、brain region 可估计、M6A exchange candidate 已形成、整条 M6A 已 accepted/frozen 或 baseline 已运行。
