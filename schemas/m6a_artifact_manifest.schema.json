@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "m6a-artifact-manifest-v1",
+  "title": "M6A frozen artifact manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "artifact_version",
+    "created_at_utc",
+    "status",
+    "dataset",
+    "model",
+    "split",
+    "features",
+    "target",
+    "metrics",
+    "nulls",
+    "files",
+    "claims"
+  ],
+  "properties": {
+    "task_id": {"const": "M6A-PUBLIC-001"},
+    "artifact_version": {"type": "string", "minLength": 1},
+    "created_at_utc": {"type": "string", "format": "date-time"},
+    "status": {
+      "enum": [
+        "GATE_ONLY",
+        "SMOKE_ONLY",
+        "PROVISIONAL",
+        "ACCEPTED",
+        "FAILED",
+        "BLOCKED"
+      ]
+    },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dataset_id", "version", "license_boundary", "remote_only"],
+      "properties": {
+        "dataset_id": {"type": "string"},
+        "version": {"type": "string"},
+        "license_boundary": {"type": "string"},
+        "remote_only": {"const": true}
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model_id", "revision_label", "resolved_at_utc", "license", "frozen"],
+      "properties": {
+        "model_id": {"type": "string"},
+        "revision_label": {"type": "string"},
+        "resolved_at_utc": {"type": "string", "format": "date-time"},
+        "license": {"type": "string"},
+        "frozen": {"const": true},
+        "version_limitation": {"type": "string"}
+      }
+    },
+    "split": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["split_id", "primary_analysis", "required_group_keys", "seed", "leakage_checks"],
+      "properties": {
+        "split_id": {"type": "string"},
+        "primary_analysis": {"type": "string"},
+        "required_group_keys": {"type": "array", "items": {"type": "string"}},
+        "seed": {"type": "integer"},
+        "leakage_checks": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "features": {"type": "array", "items": {"type": "string"}},
+    "target": {"type": "string"},
+    "metrics": {"type": "array", "items": {"type": "string"}},
+    "nulls": {"type": "array", "items": {"type": "string"}},
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "bytes", "modified_at_utc", "role", "remote_only"],
+        "properties": {
+          "path": {"type": "string"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "modified_at_utc": {"type": "string", "format": "date-time"},
+          "role": {"type": "string"},
+          "remote_only": {"type": "boolean"},
+          "count": {"type": "integer", "minimum": 0},
+          "schema": {"type": "string"},
+          "sample_readability": {"type": "string"}
+        }
+      }
+    },
+    "claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["can_claim", "cannot_claim"],
+      "properties": {
+        "can_claim": {"type": "array", "items": {"type": "string"}},
+        "cannot_claim": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# Large or remote-only research assets
+data/raw/
+data/downloads/
+models/
+weights/
+remote_data/
+outputs/features/
+outputs/checkpoints/
+outputs/tensors/
+.cache/
+
+# Python/runtime products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+
+# Large model/tensor formats
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Local editor/OS noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.log

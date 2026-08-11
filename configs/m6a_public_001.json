@@ -1,0 +1,148 @@
+{
+  "schema_version": "m6a-task-config-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "status": "ACTIVE_EXECUTION",
+  "authorized_at": "2026-08-11",
+  "integrity_policy": {
+    "mode": "NON_HASH_AUDIT",
+    "evidence_fields": [
+      "path",
+      "bytes",
+      "modified_at_utc",
+      "count",
+      "schema",
+      "sample_readability"
+    ],
+    "cryptographic_integrity_claim": false
+  },
+  "dataset": {
+    "dataset_id": "ds004703",
+    "version": "1.1.0",
+    "doi": "10.18112/openneuro.ds004703.v1.1.0",
+    "declared_license": "CC0",
+    "license_status": "ACCEPTED_WITH_STRICTER_README_BOUNDARY",
+    "strict_use_boundaries": [
+      "NONCOMMERCIAL_ACADEMIC_RESEARCH_ONLY",
+      "NO_REIDENTIFICATION",
+      "NO_RAW_DATA_EXPORT_FROM_2203"
+    ],
+    "download_allowed": true,
+    "interactive_terms_stop": true,
+    "remote_root": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0"
+  },
+  "model": {
+    "model_id": "facebook/wav2vec2-base",
+    "role": "FROZEN_SPEECH_SSL_ENCODER",
+    "declared_license": "Apache-2.0",
+    "revision_label": "main",
+    "resolved_at": "2026-08-11",
+    "revision_limitation": "NON_IMMUTABLE_LABEL_UNDER_NO_HASH_POLICY",
+    "sampling_rate_hz": 16000,
+    "hidden_state_count_expected": 13,
+    "trainable": false,
+    "download_allowed": true,
+    "remote_cache": "/home/fanyu/auditory_simulation_m6a/cache/huggingface"
+  },
+  "split": {
+    "primary_analysis": "stimulus_generalization",
+    "allowed_splits": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "target_fractions": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "required_group_keys": [
+      "stimulus_id",
+      "recording_id"
+    ],
+    "optional_group_keys": [
+      "speaker_id"
+    ],
+    "temporal_context_key": "recording_id",
+    "temporal_embargo_seconds": 2.0,
+    "seed": 20260811,
+    "secondary_subject_generalization": true
+  },
+  "neural_target": {
+    "status": "PROVISIONAL_UNTIL_G2_METADATA_READ",
+    "name": "high_gamma_power",
+    "band_hz": [
+      70,
+      150
+    ],
+    "target_rate_hz": 50,
+    "lag_seconds": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5
+    ],
+    "metadata_conflict_action": "REDESIGN_REQUIRED"
+  },
+  "features": {
+    "acoustic_baselines": [
+      "amplitude_envelope",
+      "log_mel_train_only_pca"
+    ],
+    "model_features": "wav2vec2_projected_plus_12_transformer_layers",
+    "fit_transforms_on": "train_only"
+  },
+  "baseline": {
+    "primary": "layerwise_ridge_encoding",
+    "alpha_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "alpha_selection": "grouped_train_validation_only",
+    "primary_metric": "heldout_electrode_pearson_r",
+    "secondary_metrics": [
+      "heldout_r2",
+      "subject_summary",
+      "region_summary"
+    ]
+  },
+  "nulls": {
+    "methods": [
+      "circular_time_shift",
+      "stimulus_derangement_within_duration_bin"
+    ],
+    "smoke_permutations": 20,
+    "formal_permutations": 1000,
+    "multiple_comparison": "FDR_OR_MAX_STATISTIC_PREDECLARED_BEFORE_G4"
+  },
+  "artifact": {
+    "schema_path": "schemas/m6a_artifact_manifest.schema.json",
+    "large_assets": "REMOTE_ONLY",
+    "local_allowed": [
+      "code",
+      "config",
+      "lightweight_metadata",
+      "tests",
+      "reports"
+    ]
+  },
+  "resources": {
+    "host_alias": "server2203",
+    "remote_project_root": "/home/fanyu/auditory_simulation_m6a",
+    "conda_environment": "auditory_m6a_public_001",
+    "smoke_gpu_hours_limit": 2,
+    "continuous_gpu_hours_report_threshold": 24,
+    "storage_bytes_report_threshold": 500000000000,
+    "minimum_free_bytes": 500000000000
+  }
+}

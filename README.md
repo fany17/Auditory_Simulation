@@ -8,9 +8,16 @@
 
 ```text
 Auditory_Simulation/
-├── AGENTS.md      # 本项目工作规则与证据门禁
-├── doc/           # 当前边界、当前任务状态及历史规划材料
-└── test/          # 测试、验证、演示和历史执行参考
+├── AGENTS.md       # 本项目工作规则与证据门禁
+├── doc/            # 当前边界、任务书、当前状态及历史规划材料
+├── configs/        # 机器可读的正式任务配置
+├── environment/    # 2203 专用环境定义与非哈希版本记录
+├── schemas/        # split 与冻结 artifact schema
+├── src/            # M6A 正式代码
+├── scripts/        # 2203 启动与自检入口
+├── tests/          # 正式单元测试；不等同于历史 test/
+├── reports/        # 轻量阶段报告
+└── test/           # 历史测试、验证、演示和执行参考
 ```
 
 ### `doc/`：本项目独立文档
@@ -33,12 +40,14 @@ Auditory_Simulation/
 ## 当前状态
 
 - 当前边界：声音模型、公开神经数据和计算神经仿真的方法平台。
-- 当前方向：`M6A-PUBLIC`，优先规划公开数据上的声音—神经表征对齐。
-- 第一候选任务：`M6A-PUBLIC-001`，冻结 OpenNeuro `ds004703` 版本与边界，并设计最小逐层对齐基线。
-- 首轮模型策略：冻结预训练 wav2vec 2.0、HuBERT、WavLM 表征；不把“从零训练基座”设为启动前提。
-- 执行状态：`PLANNING_ONLY`；尚未授权下载数据/模型、安装环境或运行分析。
+- 当前方向：`M6A-PUBLIC`，建立公开数据上的声音—神经表征对齐。
+- 当前唯一任务：`M6A-PUBLIC-001`，冻结 OpenNeuro `ds004703 v1.1.0` 并建立最小逐层对齐基线。
+- 首轮模型策略：冻结 `facebook/wav2vec2-base`，不微调声音基座；HuBERT/WavLM 留待后续对照任务。
+- 执行状态：`ACTIVE_EXECUTION`；专用环境、公开数据、公开模型和轻量分析均获授权在 2203 执行。
+- 许可边界：CC0 元数据与 README 更严格限制共同执行；仅限非商业学术研究、禁止再识别、禁止原始数据外传。
+- 完整性边界：只使用文件名、字节数、时间戳、数量、schema 与抽样可读性；不进行任何哈希或校验和验证。
 - `test/` 中既有 Demo 不自动升级为 M6A 正式结果。
-- Git 管理：本目录已作为唯一 Git 工作区初始化，远端为 `git@github.com:fany17/Auditory_Simulation.git`；Git 就绪不改变 `PLANNING_ONLY` 状态，也不构成下载数据、运行模型或启动 M6A 的授权。
+- Git 管理：本目录是唯一 Git 工作区；大数据、模型权重、大体积特征与训练输出不进入本地仓库。
 
 ## 与 STN_Decoding_Encoding 的接口
 
