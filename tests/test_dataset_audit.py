@@ -3,7 +3,7 @@ from __future__ import annotations
 import unittest
 
 from scripts.dataset_audit import reconcile_expected_inventory
-from scripts.neural_metadata_audit import summarize_channels
+from scripts.neural_metadata_audit import channel_inventory_difference, summarize_channels
 
 
 class DatasetAuditTests(unittest.TestCase):
@@ -35,6 +35,26 @@ class DatasetAuditTests(unittest.TestCase):
         self.assertEqual(report["analysis_eligible_neural_names"], ["LA1"])
         self.assertEqual(report["c_prefix_names"], ["C1"])
         self.assertEqual(report["dc1_channels"][0]["description"], "room audio")
+
+    def test_channel_inventory_difference_preserves_names_and_types(self) -> None:
+        rows = [
+            {"name": "LA1", "type": "SEEG", "status": "good"},
+            {"name": "Trigger Event", "type": "MISC", "status": "bad"},
+        ]
+        report = channel_inventory_difference(rows, ["LA1", "EDF annotation"])
+        self.assertEqual(
+            report["tsv_only"],
+            [
+                {
+                    "name": "Trigger Event",
+                    "type": "MISC",
+                    "status": "bad",
+                    "difference": "CHANNELS_TSV_ONLY",
+                }
+            ],
+        )
+        self.assertEqual(report["edf_only"][0]["name"], "EDF annotation")
+        self.assertEqual(report["edf_only"][0]["type"], "UNDECLARED_IN_CHANNELS_TSV")
 
 
 if __name__ == "__main__":

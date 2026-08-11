@@ -86,6 +86,12 @@
     "final_embargo_seconds": null,
     "final_embargo_status": "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN",
     "final_embargo_formula": "max(preliminary_minimum_embargo_seconds, maximum_encoding_lag_seconds, filter_or_padding_edge_seconds, audio_model_receptive_field_or_context_overlap_seconds)",
+    "final_embargo_components_seconds": {
+      "preliminary_minimum_embargo_seconds": 2.0,
+      "maximum_encoding_lag_seconds": 0.5,
+      "filter_or_padding_edge_seconds": null,
+      "audio_model_receptive_field_or_context_overlap_seconds": null
+    },
     "primary_generalization_scope": "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY",
     "subject_heldout_claim_allowed": false,
     "speaker_heldout_claim_allowed": false,
@@ -147,9 +153,25 @@
     "primary_metric": "heldout_electrode_pearson_r",
     "secondary_metrics": [
       "heldout_r2",
-      "subject_summary",
-      "region_summary"
+      "subject_summary"
+    ],
+    "gated_metrics": [
+      {
+        "name": "region_summary",
+        "status": "NOT_ESTIMABLE",
+        "gate": "ANATOMY_MAPPING_NOT_READY"
+      }
     ]
+  },
+  "anatomy_mapping": {
+    "status": "ANATOMY_MAPPING_NOT_READY",
+    "standard_electrodes_tsv_count": 0,
+    "standard_coordsystem_json_count": 0,
+    "nonstandard_contact_ras_csv_count": 9,
+    "contact_ras_has_region_labels": false,
+    "contact_name_inference_allowed": false,
+    "electrode_level_smoke_allowed_after_other_gates": true,
+    "region_summary_status": "NOT_ESTIMABLE"
   },
   "nulls": {
     "methods": [
@@ -162,7 +184,10 @@
   },
   "artifact": {
     "internal_schema_path": "schemas/m6a_public_internal_manifest.schema.json",
-    "exchange_contract_status": "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW",
+    "exchange_contract_status": "REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION",
+    "exchange_consumer_status": "READY_WAITING_M6A_CANDIDATE",
+    "consumer_cross_test_status": "NOT_RUN",
+    "exchange_candidate_exists": false,
     "exchange_schema_path": "schemas/m6a_to_m6b_exchange_manifest_v1.schema.json",
     "frozen_m6a_artifact_exists": false,
     "large_assets": "REMOTE_ONLY",

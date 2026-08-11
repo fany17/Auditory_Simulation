@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from m6a_public.embargo_gate import evaluate_final_embargo
+
 
 FORBIDDEN_FIELD_NAMES = {
     "sha",
@@ -131,6 +133,9 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
             errors.append(f"{claim_key} must be false at the preliminary split gate")
     if split.get("secondary_subject_generalization") is not False:
         errors.append("secondary subject generalization is not supported by the current split")
+    embargo_report = evaluate_final_embargo(split.get("final_embargo_components_seconds", {}))
+    if embargo_report["status"] != "PENDING_MEASUREMENT" or embargo_report["baseline_final"]:
+        errors.append("final embargo must remain pending measured filter and audio-model context")
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:
         errors.append("allowed_splits must be train/validation/test")
 
@@ -146,9 +151,22 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     if neural_target.get("resolution_status") != "PENDING_METHOD_FREEZE":
         errors.append("neural target resolution must remain pending method freeze")
 
+    anatomy = config.get("anatomy_mapping", {})
+    if anatomy.get("status") != "ANATOMY_MAPPING_NOT_READY":
+        errors.append("anatomy mapping must remain explicitly not ready")
+    if anatomy.get("region_summary_status") != "NOT_ESTIMABLE":
+        errors.append("region summary must remain NOT_ESTIMABLE without audited mapping")
+    if anatomy.get("contact_name_inference_allowed") is not False:
+        errors.append("contact names cannot be used to infer brain regions")
+
     baseline = config.get("baseline", {})
     if baseline.get("primary") != "layerwise_ridge_encoding":
         errors.append("primary baseline must be layerwise_ridge_encoding")
+    if "region_summary" in baseline.get("secondary_metrics", []):
+        errors.append("region_summary cannot be an ordinary metric before anatomy mapping")
+    gated_metrics = {item.get("name"): item for item in baseline.get("gated_metrics", [])}
+    if gated_metrics.get("region_summary", {}).get("status") != "NOT_ESTIMABLE":
+        errors.append("region_summary must be a gated NOT_ESTIMABLE metric")
 
     nulls = config.get("nulls", {})
     if nulls.get("smoke_permutations", 0) < 20:
@@ -159,8 +177,14 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     artifact = config.get("artifact", {})
     if artifact.get("internal_schema_path") != "schemas/m6a_public_internal_manifest.schema.json":
         errors.append("internal run manifest path is not frozen")
-    if artifact.get("exchange_contract_status") != "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW":
-        errors.append("exchange contract must remain REVISED_DRAFT_AWAITING_CONSUMER_REVIEW")
+    if artifact.get("exchange_contract_status") != "REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION":
+        errors.append("exchange contract review status must record revised DRAFT acceptance")
+    if artifact.get("exchange_consumer_status") != "READY_WAITING_M6A_CANDIDATE":
+        errors.append("exchange consumer must remain ready and waiting for a real M6A candidate")
+    if artifact.get("consumer_cross_test_status") != "NOT_RUN":
+        errors.append("consumer cross-test cannot run before a real candidate exists")
+    if artifact.get("exchange_candidate_exists") is not False:
+        errors.append("no exchange candidate exists before G2, target and embargo gates")
     if artifact.get("frozen_m6a_artifact_exists") is not False:
         errors.append("no frozen M6A artifact exists at G0-G2")
 

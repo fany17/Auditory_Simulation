@@ -69,6 +69,35 @@ def event_summary(path: Path) -> dict[str, Any]:
     return {"event_row_count": row_count, "maximum_event_offset_seconds": maximum_offset}
 
 
+def channel_inventory_difference(
+    channel_rows: list[dict[str, str]],
+    edf_channel_names: list[str],
+) -> dict[str, list[dict[str, str]]]:
+    channels_by_name = {row.get("name") or "": row for row in channel_rows}
+    tsv_names = set(channels_by_name)
+    edf_names = set(edf_channel_names)
+    return {
+        "tsv_only": [
+            {
+                "name": name,
+                "type": channels_by_name[name].get("type") or "UNKNOWN",
+                "status": channels_by_name[name].get("status") or "UNKNOWN",
+                "difference": "CHANNELS_TSV_ONLY",
+            }
+            for name in sorted(tsv_names - edf_names)
+        ],
+        "edf_only": [
+            {
+                "name": name,
+                "type": "UNDECLARED_IN_CHANNELS_TSV",
+                "status": "UNKNOWN",
+                "difference": "EDF_ONLY",
+            }
+            for name in sorted(edf_names - tsv_names)
+        ],
+    }
+
+
 def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
     root = root.resolve()
     errors: list[str] = []
@@ -89,7 +118,8 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
 
         try:
             sidecar = json.loads(sidecar_path.read_text(encoding="utf-8"))
-            channels = summarize_channels(read_tsv(channels_path))
+            channel_rows = read_tsv(channels_path)
+            channels = summarize_channels(channel_rows)
             events = event_summary(events_path)
             offset = json.loads(offset_path.read_text(encoding="utf-8"))["AudioOffset"]
         except (OSError, KeyError, ValueError, json.JSONDecodeError) as exc:
@@ -120,6 +150,17 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
                 f"analysis-eligible neural channels missing from EDF for {recording_id}: "
                 + ", ".join(analysis_neural_missing_from_edf)
             )
+        inventory_difference = (
+            channel_inventory_difference(channel_rows, list(edf_header["channel_names"]))
+            if edf_header is not None
+            else {"tsv_only": [], "edf_only": []}
+        )
+        events_within_edf = (
+            events["maximum_event_offset_seconds"]
+            <= float(edf_header["duration_seconds"]) + 1.0 / sidecar_sampling
+            if edf_header is not None
+            else None
+        )
         recording = {
             "participant_id": participant_id,
             "session_id": session_id,
@@ -134,6 +175,7 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
             "events": events,
             "audio_offset_seconds": float(offset),
             "events_within_recording": events["maximum_event_offset_seconds"] <= sidecar_duration,
+            "events_within_edf_timeline": events_within_edf,
             "edf_file": edf_path.relative_to(root).as_posix(),
             "edf_bytes": edf_path.stat().st_size if edf_path.is_file() else None,
             "edf_modified_at_utc": utc_mtime(edf_path) if edf_path.is_file() else None,
@@ -142,6 +184,10 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
                 edf_header is not None and int(edf_header["channels"]) == channels["channel_count"]
             ),
             "analysis_eligible_neural_channels_missing_from_edf": analysis_neural_missing_from_edf,
+            "channel_inventory_difference": {
+                "tsv_only": inventory_difference["tsv_only"],
+                "edf_only": inventory_difference["edf_only"],
+            },
             "edf_header_sampling_rate_matches_sidecar": (
                 edf_header is not None
                 and float(edf_header["sampling_rate_hz"]) == sidecar_sampling
@@ -149,8 +195,18 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
         }
         if not recording["events_within_recording"]:
             errors.append(f"events extend beyond recording duration for {recording_id}")
+        if edf_header is not None and events_within_edf is not True:
+            errors.append(f"events extend beyond EDF timeline for {recording_id}")
         if edf_header is not None and not recording["edf_header_channel_count_matches_tsv"]:
             warnings.append(f"EDF/channels total row-count difference for {recording_id}")
+        if edf_header is not None and (
+            inventory_difference["tsv_only"] or inventory_difference["edf_only"]
+        ):
+            warnings.append(
+                f"EDF/channels named inventory difference for {recording_id}: "
+                f"tsv_only={len(inventory_difference['tsv_only'])}, "
+                f"edf_only={len(inventory_difference['edf_only'])}"
+            )
         if edf_header is not None and not recording["edf_header_sampling_rate_matches_sidecar"]:
             errors.append(f"EDF/sidecar sampling mismatch for {recording_id}")
         recordings.append(recording)
@@ -196,6 +252,14 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
         "audited_at_utc": datetime.now(timezone.utc).isoformat(),
         "integrity_policy": "NON_HASH_AUDIT",
         "recording_count": len(recordings),
+        "necessary_metadata_readability": {
+            "ieeg_sidecar_json_read": len(recordings),
+            "channels_tsv_read": len(recordings),
+            "events_tsv_read": len(recordings),
+            "audio_offset_json_read": len(recordings),
+            "expected_each": 11,
+            "status": "PASS" if len(recordings) == 11 else "FAIL",
+        },
         "sampling_rate_hz_values": sampling_rates,
         "power_line_frequency_hz_values": line_frequencies,
         "analysis_eligible_neural_channel_count": sum(
@@ -245,11 +309,14 @@ def write_recording_csv(path: Path, recordings: list[dict[str, Any]]) -> None:
             "analysis_eligible_neural_channel_count": item["channels"]["analysis_eligible_neural_channel_count"],
             "c_prefix_exclusion_count": item["channels"]["c_prefix_exclusion_count"],
             "events_within_recording": item["events_within_recording"],
+            "events_within_edf_timeline": item["events_within_edf_timeline"],
             "edf_header_read": item["edf_header"] is not None,
             "edf_header_channel_count_matches_tsv": item["edf_header_channel_count_matches_tsv"],
             "analysis_eligible_neural_channels_missing_from_edf": len(
                 item["analysis_eligible_neural_channels_missing_from_edf"]
             ),
+            "channels_tsv_only_count": len(item["channel_inventory_difference"]["tsv_only"]),
+            "channels_edf_only_count": len(item["channel_inventory_difference"]["edf_only"]),
             "edf_header_sampling_rate_matches_sidecar": item["edf_header_sampling_rate_matches_sidecar"],
         }
         for item in recordings

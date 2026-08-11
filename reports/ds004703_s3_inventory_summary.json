@@ -1,0 +1,13 @@
+{
+  "dataset_id": "ds004703",
+  "listed_at_utc": "2026-08-11T11:14:08.907738+00:00",
+  "source": "https://s3.amazonaws.com/openneuro.org",
+  "object_count": 377,
+  "total_bytes": 14173350514,
+  "integrity_policy": "NON_HASH_AUDIT",
+  "evidence_fields": [
+    "path",
+    "bytes",
+    "modified_at_utc"
+  ]
+}

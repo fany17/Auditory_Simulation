@@ -35,6 +35,14 @@ class ConfigGateTests(unittest.TestCase):
         self.assertIn(120, target["line_harmonics_inside_candidate_band_hz"])
         self.assertIs(target["neural_extraction_allowed"], False)
 
+    def test_anatomy_mapping_blocks_region_summary_without_blocking_electrode_smoke(self) -> None:
+        anatomy = self.config["anatomy_mapping"]
+        self.assertEqual(anatomy["status"], "ANATOMY_MAPPING_NOT_READY")
+        self.assertEqual(anatomy["region_summary_status"], "NOT_ESTIMABLE")
+        self.assertFalse(anatomy["contact_name_inference_allowed"])
+        self.assertTrue(anatomy["electrode_level_smoke_allowed_after_other_gates"])
+        self.assertNotIn("region_summary", self.config["baseline"]["secondary_metrics"])
+
     def test_refrozen_split_records_original_no_go_and_block_assignments(self) -> None:
         split = self.config["split"]
         self.assertEqual(set(split["required_group_keys"]), {"stimulus_id", "block_id"})
@@ -77,7 +85,13 @@ class ConfigGateTests(unittest.TestCase):
 
     def test_exchange_contract_is_not_frozen(self) -> None:
         artifact = self.config["artifact"]
-        self.assertEqual(artifact["exchange_contract_status"], "REVISED_DRAFT_AWAITING_CONSUMER_REVIEW")
+        self.assertEqual(
+            artifact["exchange_contract_status"],
+            "REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION",
+        )
+        self.assertEqual(artifact["exchange_consumer_status"], "READY_WAITING_M6A_CANDIDATE")
+        self.assertEqual(artifact["consumer_cross_test_status"], "NOT_RUN")
+        self.assertIs(artifact["exchange_candidate_exists"], False)
         self.assertIs(artifact["frozen_m6a_artifact_exists"], False)
 
 

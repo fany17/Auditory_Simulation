@@ -4,7 +4,8 @@
 |---|---|
 | 发布端 | `Auditory_Simulation / M6A-PUBLIC` |
 | 消费端 | `STN_Decoding_Encoding / M6B-STN` |
-| 状态 | `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW` |
+| Revised DRAFT review | `REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION` |
+| Consumer readiness | `READY_WAITING_M6A_CANDIDATE` |
 | Schema | `schemas/m6a_to_m6b_exchange_manifest_v1.schema.json` |
 | Validator | `src/m6a_public/exchange_validator.py` |
 | 冻结状态 | `NOT_FROZEN` |
@@ -18,6 +19,8 @@
 Auditory 内部运行 manifest 的 `$id` 为 `m6a-public-internal-manifest-v1`，只服务公开数据实验。它与本 exchange manifest 的身份、字段和发布状态不同，不能作为跨项目合同发布。
 
 当前不存在真实 exchange manifest、method package、runtime spec、canary 或冻结 M6A artifact。本轮仅修订 schema、validator、测试和文档，不得把测试 fixture 当作候选 bundle。
+
+STN consumer 二审与协调独立复跑已接受 revised DRAFT schema/validator；16/16、non-finite 与 layer-order 反例均 fail closed。该接受只授权后续 candidate 准备，不是 release `ACCEPTED`：真实 candidate 尚无，`CONSUMER_CROSS_TEST=NOT_RUN`，contract 仍非 accepted/frozen，draft schema 也不会改发正式 v1。
 
 ## 2. 草案状态机与 acceptance
 
@@ -125,9 +128,11 @@ CLI 使用拒绝 `NaN`、`Infinity` 和 `-Infinity` parse constants 的严格 JS
 
 - `CROSSWALK_REVIEW=PASS_WITH_REWORK`（STN 首轮只读审核结论）
 - `REWORK_DISPOSITION=16/16_IMPLEMENTED_BY_M6A`
-- `EXCHANGE_CONTRACT_STATUS=REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`
+- `REVISED_DRAFT_REVIEW=ACCEPT`
+- `EXCHANGE_CONTRACT_STATUS=REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`
+- `CONSUMER_STATUS=READY_WAITING_M6A_CANDIDATE`
 - `CONSUMER_CROSS_TEST=NOT_RUN`
 - `CANDIDATE_BUNDLE=NO`
 - `FROZEN_M6A_ARTIFACT=NO`
 
-该状态不阻塞 M6A G2 数据读取、语言/刺激 manifest、split 与 baseline 门禁。真实 candidate 只能在 G2 完成并依据真实音频与模型行为生成后提出。
+该状态不阻塞 M6A G2 数据读取、语言/刺激 manifest 与 split 门禁，但不授权 baseline。真实 candidate 只能在 G2 full audit、neural target freeze、final embargo/split guard 通过，并依据真实 method/runtime/canary 与模型行为生成后提出。

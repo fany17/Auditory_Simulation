@@ -5,7 +5,7 @@
 | 日期 | 2026-08-11 |
 | 输入问题 | `NONFINITE_NUMERIC_VALUES_ACCEPTED` |
 | 处置 | `IMPLEMENTED_BY_M6A_AWAITING_STN_REVIEW` |
-| Contract 状态 | `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW` |
+| Contract 状态 | `REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION` |
 | Candidate/frozen | `NO / NO` |
 
 ## 门禁修正
@@ -30,3 +30,5 @@ Success: no issues found in 14 source files
 ## 发布边界
 
 本轮只修订 producer DRAFT 规范、validator、测试与报告。没有真实 exchange manifest、method package 或 canary；不得声称 candidate、consumer cross-test、accepted 或 frozen。
+
+后续 STN consumer 二审与协调独立复跑已确认 non-finite 与 layer-order 反例 fail closed，`REVISED_DRAFT_REVIEW=ACCEPT`。consumer 当前为 `READY_WAITING_M6A_CANDIDATE`；真实 candidate 仍不存在，因此 `CONSUMER_CROSS_TEST=NOT_RUN`，release 未 accepted/frozen。

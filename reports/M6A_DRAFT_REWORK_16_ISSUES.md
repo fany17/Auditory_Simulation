@@ -6,7 +6,7 @@
 | 上游审核 | `STN CROSSWALK_REVIEW=PASS_WITH_REWORK` |
 | 本轮范围 | Auditory 自有 schema、contract、validator 与测试 |
 | 处置 | `16/16 IMPLEMENTED_BY_M6A` |
-| 当前状态 | `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW` |
+| 当前状态 | `REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION` |
 | Consumer cross-test | `NOT_RUN` |
 | Candidate/frozen artifact | `NO / NO` |
 
@@ -51,4 +51,4 @@
 2. 直接传入 dict 时，语义 validator 递归检查所有浮点值的 `math.isfinite`，覆盖 canary tolerance、frame-time/shape 相关数值、benchmark value 与 null value；
 3. JSON Schema 继续执行类型、非负与范围约束，但不单独承担非有限值门禁；
 4. 新增三类非有限值在 tolerance、benchmark value/null value 与 CLI 文本入口的 fail-closed 反例测试；
-5. contract 状态保持 `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`，未升级 candidate。
+5. producer 返工时 contract 状态保持 `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`，未升级 candidate。后续 STN 二审与协调复跑已接受该 revised DRAFT，当前为 `REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`，仍无真实 candidate。

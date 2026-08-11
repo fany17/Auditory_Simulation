@@ -24,7 +24,7 @@
 6. 所有大数据、权重、特征和训练只位于 2203，本地只保留轻量可审计资产；
 7. 不进行任何 SHA、MD5、checksum、文件哈希或 Git 对象哈希操作。
 
-跨项目接口已完成 producer 侧原 16 项返工；STN 二审新增的 `NONFINITE_NUMERIC_VALUES_ACCEPTED` 已由 M6A 精确返工并等待 STN 复核。Auditory 内部运行 manifest 与 M6A→M6B exchange manifest 保持分离。exchange contract 当前为 `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`，尚无真实 manifest、method package 或 canary；须经 STN consumer 复核，且后续真实 candidate cross-test 与协调接受后才能另发正式 v1。当前不存在冻结 M6A artifact。
+跨项目接口的 revised DRAFT 已通过 STN consumer 二审与协调独立复跑：`REVISED_DRAFT_REVIEW=ACCEPT`，原 16 项、non-finite 与 layer-order 反例均 fail closed。当前准确状态是 `REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION` / `READY_WAITING_M6A_CANDIDATE`。Auditory 内部运行 manifest 与 M6A→M6B exchange manifest 保持分离；当前没有真实 manifest、method package 或 canary，`CONSUMER_CROSS_TEST=NOT_RUN`，contract 仍非 accepted/frozen，也未发布正式 v1。
 
 ## 当前节点
 
@@ -56,8 +56,9 @@
 - 原 `stimulus+recording` 方案：单一 connected component，不可三分；现采用 stimulus+block 分组。2 s 仅为 `preliminary_minimum_embargo`，正式窗口化前必须按 lag、滤波/填充边缘和模型 context 计算 final embargo 并重跑 guard；
 - Catalan：显式标为 `ca`，但 block 音频与 cue 波形冲突，暂不进入 baseline，不能声称跨语言泛化；
 - 神经 metadata：11 份 sidecar/channels/events 可读，采样率为 512/1024 Hz，工频为 60 Hz；README 的 C-prefix 排除规则已机器化。标准 `electrodes.tsv`/`coordsystem.json` 均缺失，仅有 9 份非标准 contact RAS CSV 且无脑区标签；
+- anatomy gate：`ANATOMY_MAPPING_NOT_READY`；它不单独阻塞后续电极级 smoke，但 region summary 为 `NOT_ESTIMABLE`，在坐标系/atlas/映射可审计前禁止从 contact 名称猜脑区；
 - neural target：候选 70-150 Hz 穿过 120 Hz 工频二次谐波，状态为 `REDESIGN_REQUIRED_BEFORE_G3`；冻结明确的 60/120 Hz rejection 或重设频带前禁止神经特征提取；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
 - 当前 split 只支持 within-subject unseen-stimulus/block generalization；不支持 subject-held-out、speaker-held-out 或 cross-language；
-- M6A→M6B exchange contract：`REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`；原 16 项已由 STN 独立验证 resolved，新增非有限 JSON 数值缺口已在严格 CLI loader 与语义 validator 两层 fail closed，等待 STN 复核；consumer cross-test 尚未运行，未冻结或接受。
-- 最新联合验证：2203 专用环境 `48 passed, 18 subtests`，Ruff 通过，mypy 对 17 个源文件通过；config gate 与 319 行 preliminary split guard 通过。
+- M6A→M6B exchange contract review：`REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`；consumer 为 `READY_WAITING_M6A_CANDIDATE`。真实 candidate 尚无、consumer cross-test 未运行，contract 未 accepted/frozen；candidate 准备仍受 G2 full audit、neural target freeze、final embargo/split guard 和真实 method/runtime/canary 门禁约束。
+- 最新联合验证：2203 专用环境 `53 passed, 22 subtests`，Ruff 通过，mypy 对 19 个源文件通过；config gate 与 319 行 preliminary split guard 通过。

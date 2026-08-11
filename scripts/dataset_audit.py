@@ -120,6 +120,7 @@ def main() -> int:
     parser.add_argument("--expected-object-count", type=int)
     parser.add_argument("--expected-total-bytes", type=int)
     parser.add_argument("--expected-inventory", type=Path)
+    parser.add_argument("--expected-inventory-summary", type=Path)
     parser.add_argument("--require-neural-files", action="store_true")
     args = parser.parse_args()
 
@@ -244,12 +245,34 @@ def main() -> int:
     if args.expected_total_bytes is not None and total_bytes != args.expected_total_bytes:
         errors.append(f"total bytes mismatch: expected {args.expected_total_bytes}, found {total_bytes}")
     expected_inventory_reconciliation: dict[str, Any] | None = None
+    expected_inventory_provenance: dict[str, Any] | None = None
     if args.expected_inventory is not None:
         with args.expected_inventory.open("r", encoding="utf-8", newline="") as handle:
             expected_rows = list(csv.DictReader(handle))
         expected_inventory_reconciliation = reconcile_expected_inventory(expected_rows, inventory)
         if expected_inventory_reconciliation["status"] != "PASS":
             errors.append("expected inventory path/byte reconciliation failed")
+    if args.expected_inventory_summary is not None:
+        with args.expected_inventory_summary.open("r", encoding="utf-8") as handle:
+            inventory_summary = json.load(handle)
+        expected_inventory_provenance = {
+            "source": inventory_summary.get("source"),
+            "listed_at_utc": inventory_summary.get("listed_at_utc"),
+            "acquisition_method": "PUBLIC_S3_LIST_OBJECTS_V2",
+            "acquisition_script": "scripts/public_s3_inventory.py",
+            "object_count": inventory_summary.get("object_count"),
+            "total_bytes": inventory_summary.get("total_bytes"),
+            "evidence_fields": inventory_summary.get("evidence_fields"),
+        }
+        if inventory_summary.get("dataset_id") != "ds004703":
+            errors.append("expected inventory summary dataset_id mismatch")
+        if expected_inventory_reconciliation is not None and (
+            inventory_summary.get("object_count")
+            != expected_inventory_reconciliation["expected_file_count"]
+            or inventory_summary.get("total_bytes")
+            != expected_inventory_reconciliation["expected_total_bytes"]
+        ):
+            errors.append("expected inventory summary count/bytes disagree with inventory CSV")
     if args.require_neural_files:
         for required_role in ("ieeg", "events", "channels"):
             if counts[required_role] == 0:
@@ -284,6 +307,7 @@ def main() -> int:
             for path in in_progress_paths
         ],
         "expected_inventory_reconciliation": expected_inventory_reconciliation,
+        "expected_inventory_provenance": expected_inventory_provenance,
         "counts_by_role": dict(sorted(counts.items())),
         "bytes_by_role": dict(sorted(bytes_by_role.items())),
         "participant_count": participant_count,

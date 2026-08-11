@@ -108,7 +108,8 @@
 
 - alpha 仅在 grouped train/validation 内选择；
 - 主指标：电极级 held-out Pearson r；
-- 辅指标：held-out R2、被试/脑区汇总及置信区间；
+- 辅指标：held-out R2 与被试汇总；
+- anatomy gate 当前为 `ANATOMY_MAPPING_NOT_READY`：标准 `electrodes.tsv`/`coordsystem.json` 均缺失，9 份非标准 contact RAS CSV 没有脑区标签。因此 `region_summary=NOT_ESTIMABLE`；该门禁不单独阻塞电极级 smoke，但禁止从 contact 名称猜脑区；
 - 不能只报告 pooled 最佳层。
 
 ## 7. null 与统计边界
@@ -124,7 +125,7 @@
 
 当前运行产物只使用 `schemas/m6a_public_internal_manifest.schema.json`。它是 Auditory 项目内部 run manifest，不是 M6A→M6B 合同，也不得作为已冻结跨项目 artifact 发布。
 
-跨项目草案见 `doc/M6A_TO_M6B_EXCHANGE_CONTRACT_DRAFT.md` 与 `schemas/m6a_to_m6b_exchange_manifest_v1.schema.json`，当前状态固定为 `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`。未生成真实 manifest、method package 和 canary 前不得升为 candidate；只有真实 candidate 完成 STN consumer cross-test 且协调接受后，才可另行建立不带 draft 的 frozen/accepted v1。
+跨项目草案见 `doc/M6A_TO_M6B_EXCHANGE_CONTRACT_DRAFT.md` 与 `schemas/m6a_to_m6b_exchange_manifest_v1.schema.json`。STN consumer 二审与协调独立复跑已接受 revised DRAFT，当前 review 状态为 `REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`，consumer 状态为 `READY_WAITING_M6A_CANDIDATE`。这不是 release accepted/frozen：未生成真实 manifest、method package 和 canary 前不得升为 candidate；只有真实 candidate 完成 STN consumer cross-test 且协调接受后，才可另行建立不带 draft 的 frozen/accepted v1。
 
 内部运行 manifest 必须包含：
 
