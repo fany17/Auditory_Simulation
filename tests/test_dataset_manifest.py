@@ -6,7 +6,7 @@ from m6a_public.dataset_manifest import (
     classify_stimulus,
     connected_component_summary,
     contiguous_groups,
-    deterministic_block_split,
+    optimize_block_split,
     split_checks,
     speaker_id_for,
 )
@@ -20,11 +20,42 @@ class DatasetManifestTests(unittest.TestCase):
         self.assertEqual(classify_stimulus("unmapped")[:2], ("UNKNOWN", "UNKNOWN"))
         self.assertEqual(speaker_id_for("s1303a-ex02", "PASSAGE"), "s1303a")
 
-    def test_block_split_has_four_one_one_profile(self) -> None:
-        mapping = deterministic_block_split([f"block-{index:02d}" for index in range(1, 7)], 20260811)
-        counts = {name: list(mapping.values()).count(name) for name in ("train", "validation", "test")}
-        self.assertEqual(counts, {"train": 4, "validation": 1, "test": 1})
-        self.assertEqual(mapping, deterministic_block_split(list(reversed(mapping)), 20260811))
+    def test_block_split_optimizes_segment_ratio_without_result_inputs(self) -> None:
+        counts = {
+            "block-01": 79,
+            "block-02": 72,
+            "block-03": 48,
+            "block-04": 48,
+            "block-05": 40,
+            "block-06": 32,
+        }
+        mapping, report = optimize_block_split(counts)
+        self.assertEqual(
+            mapping,
+            {
+                "block-01": "train",
+                "block-02": "train",
+                "block-03": "validation",
+                "block-04": "test",
+                "block-05": "train",
+                "block-06": "train",
+            },
+        )
+        self.assertEqual(report["split_segment_counts"], {"train": 223, "validation": 48, "test": 48})
+        self.assertEqual(report["inputs"], "ELIGIBLE_SEGMENT_COUNTS_BY_BLOCK_ONLY")
+
+    def test_block_split_tie_break_is_order_independent_and_fixed(self) -> None:
+        counts = {
+            "block-06": 32,
+            "block-05": 40,
+            "block-04": 48,
+            "block-03": 48,
+            "block-02": 72,
+            "block-01": 79,
+        }
+        mapping, _ = optimize_block_split(counts)
+        self.assertEqual(mapping["block-03"], "validation")
+        self.assertEqual(mapping["block-04"], "test")
 
     def test_contiguous_groups_preserve_repeated_control_segments(self) -> None:
         rows = [{"ex_name": "cue"}, {"ex_name": "cue"}, {"ex_name": "passage"}, {"ex_name": "cue"}]

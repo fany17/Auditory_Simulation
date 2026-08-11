@@ -119,7 +119,7 @@ python -m m6a_public.exchange_validator MANIFEST.json \
   --bundle-root BUNDLE_ROOT
 ```
 
-Draft schema 先拒绝未知字段和无效类型，语义 validator 再核对状态跃迁、路径、inventory 集合关系、角色、layer 唯一性、canary 元数据与 candidate 本地文件。任一错误均返回非零退出码；不允许仅记录 warning 后继续。
+CLI 使用拒绝 `NaN`、`Infinity` 和 `-Infinity` parse constants 的严格 JSON loader。Draft schema 先拒绝未知字段、无效类型并保留 tolerance 的非负/范围约束；语义 validator 再显式核对所有浮点值均为有限数，并核对状态跃迁、路径、inventory 集合关系、角色、layer 唯一性、canary 元数据与 candidate 本地文件。Python 的默认 JSON 解析和 JSON Schema 数值比较不足以单独拒绝非有限数，因此严格解析与 `math.isfinite` 语义门禁缺一不可。任一错误均返回非零退出码；不允许仅记录 warning 后继续。
 
 ## 10. 当前结论
 

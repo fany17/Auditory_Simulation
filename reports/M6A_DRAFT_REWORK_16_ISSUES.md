@@ -42,3 +42,13 @@
 ## 科研与发布边界
 
 本轮可声称 producer 已对 16 项 schema/validator 返工逐项实现并通过本项目测试。不能声称 STN 已复核修订稿、consumer cross-test 已运行、真实 method/canary 已交付、contract 已接受或冻结，也不能声称任何公开脑数据 baseline 结果。
+
+## STN 二审补充 disposition
+
+原 16 项已由 STN 独立复核为全部 resolved。随后新增问题 `NONFINITE_NUMERIC_VALUES_ACCEPTED`，处置状态为 `IMPLEMENTED_BY_M6A_AWAITING_STN_REVIEW`：
+
+1. exchange CLI 改用严格 JSON loader，`NaN`、`Infinity`、`-Infinity` 解析即失败并返回非零；
+2. 直接传入 dict 时，语义 validator 递归检查所有浮点值的 `math.isfinite`，覆盖 canary tolerance、frame-time/shape 相关数值、benchmark value 与 null value；
+3. JSON Schema 继续执行类型、非负与范围约束，但不单独承担非有限值门禁；
+4. 新增三类非有限值在 tolerance、benchmark value/null value 与 CLI 文本入口的 fail-closed 反例测试；
+5. contract 状态保持 `REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`，未升级 candidate。

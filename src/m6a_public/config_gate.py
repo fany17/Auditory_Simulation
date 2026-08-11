@@ -100,10 +100,37 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("split recording policy must preserve within-recording temporal isolation")
     if split.get("original_recording_grouping_status") != "INFEASIBLE_SINGLE_CONNECTED_COMPONENT":
         errors.append("original recording grouping no-go must remain recorded")
-    if set(split.get("block_assignments", {}).values()) != {"train", "validation", "test"}:
-        errors.append("block assignments must cover train/validation/test")
-    if split.get("temporal_embargo_seconds", 0) <= 0:
-        errors.append("temporal embargo must be positive")
+    expected_block_assignments = {
+        "block-01": "train",
+        "block-02": "train",
+        "block-03": "validation",
+        "block-04": "test",
+        "block-05": "train",
+        "block-06": "train",
+    }
+    if split.get("block_assignments") != expected_block_assignments:
+        errors.append("block assignments must match the reviewed deterministic ratio optimum")
+    if split.get("assignment_method") != "DETERMINISTIC_GROUP_SIZE_RATIO_OPTIMIZATION":
+        errors.append("split assignment must use deterministic group-size ratio optimization")
+    if split.get("preliminary_minimum_embargo_seconds", 0) != 2.0:
+        errors.append("preliminary minimum embargo must remain 2 seconds")
+    if split.get("split_status") != "PRELIMINARY_NOT_BASELINE_FINAL":
+        errors.append("split must remain preliminary until final embargo is measured and guarded")
+    if split.get("final_embargo_seconds") is not None:
+        errors.append("final embargo must remain unset before G3 measurement")
+    if split.get("final_embargo_status") != "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN":
+        errors.append("final embargo must require G3 measurement and guard rerun")
+    if split.get("primary_generalization_scope") != "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY":
+        errors.append("primary generalization scope must remain within-subject unseen stimulus/block only")
+    for claim_key in (
+        "subject_heldout_claim_allowed",
+        "speaker_heldout_claim_allowed",
+        "cross_language_claim_allowed",
+    ):
+        if split.get(claim_key) is not False:
+            errors.append(f"{claim_key} must be false at the preliminary split gate")
+    if split.get("secondary_subject_generalization") is not False:
+        errors.append("secondary subject generalization is not supported by the current split")
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:
         errors.append("allowed_splits must be train/validation/test")
 

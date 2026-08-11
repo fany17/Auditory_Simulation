@@ -25,13 +25,11 @@ def main() -> int:
     parser.add_argument("--segment-manifest", type=Path, required=True)
     parser.add_argument("--split-manifest", type=Path, required=True)
     parser.add_argument("--summary", type=Path, required=True)
-    parser.add_argument("--seed", type=int, default=20260811)
-    parser.add_argument("--embargo-seconds", type=float, default=2.0)
+    parser.add_argument("--preliminary-minimum-embargo-seconds", type=float, default=2.0)
     args = parser.parse_args()
     segments, split_rows, summary = build_ds004703_manifests(
         args.dataset_root,
-        seed=args.seed,
-        embargo_seconds=args.embargo_seconds,
+        preliminary_minimum_embargo_seconds=args.preliminary_minimum_embargo_seconds,
     )
     write_csv(args.segment_manifest, segments)
     write_csv(args.split_manifest, split_rows)

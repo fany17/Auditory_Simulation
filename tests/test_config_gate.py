@@ -32,7 +32,22 @@ class ConfigGateTests(unittest.TestCase):
         split = self.config["split"]
         self.assertEqual(set(split["required_group_keys"]), {"stimulus_id", "block_id"})
         self.assertEqual(split["original_recording_grouping_status"], "INFEASIBLE_SINGLE_CONNECTED_COMPONENT")
-        self.assertEqual(len(split["block_assignments"]), 6)
+        self.assertEqual(
+            split["block_assignments"],
+            {
+                "block-01": "train",
+                "block-02": "train",
+                "block-03": "validation",
+                "block-04": "test",
+                "block-05": "train",
+                "block-06": "train",
+            },
+        )
+        self.assertEqual(split["split_status"], "PRELIMINARY_NOT_BASELINE_FINAL")
+        self.assertIsNone(split["final_embargo_seconds"])
+        self.assertFalse(split["subject_heldout_claim_allowed"])
+        self.assertFalse(split["speaker_heldout_claim_allowed"])
+        self.assertFalse(split["cross_language_claim_allowed"])
 
     def test_forbidden_integrity_field_is_detected(self) -> None:
         changed = copy.deepcopy(self.config)

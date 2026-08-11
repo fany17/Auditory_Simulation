@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -86,7 +87,7 @@ def validate_assignments(
     issues: list[str] = []
     if not rows:
         return ["split manifest has no rows"]
-    if temporal_embargo_seconds < 0:
+    if not math.isfinite(temporal_embargo_seconds) or temporal_embargo_seconds < 0:
         return ["temporal_embargo_seconds must be non-negative"]
 
     seen_ids: set[str] = set()
@@ -103,6 +104,8 @@ def validate_assignments(
             present_splits.add(row.split)
         if row.end_sec <= row.start_sec:
             issues.append(f"non-positive interval: {row.sample_id}")
+        if not math.isfinite(row.start_sec) or not math.isfinite(row.end_sec):
+            issues.append(f"non-finite interval: {row.sample_id}")
 
     if require_all_splits:
         missing_splits = sorted(ALLOWED_SPLITS - present_splits)
@@ -188,9 +191,17 @@ def main() -> int:
         optional_group_keys=split_config.get("optional_group_keys", []),
         stratification_keys=split_config.get("stratification_keys", []),
         temporal_context_key=split_config["temporal_context_key"],
-        temporal_embargo_seconds=float(split_config["temporal_embargo_seconds"]),
+        temporal_embargo_seconds=float(split_config["preliminary_minimum_embargo_seconds"]),
     )
-    report = {"status": "PASS" if not issues else "FAIL", "rows": len(rows), "issues": issues}
+    report = {
+        "status": "PASS" if not issues else "FAIL",
+        "rows": len(rows),
+        "issues": issues,
+        "embargo_status": "PRELIMINARY_MINIMUM_ONLY",
+        "preliminary_minimum_embargo_seconds": split_config["preliminary_minimum_embargo_seconds"],
+        "final_embargo_status": split_config["final_embargo_status"],
+        "baseline_final": False,
+    }
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not issues else 1
 

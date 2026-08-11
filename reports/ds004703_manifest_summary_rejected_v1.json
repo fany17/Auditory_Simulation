@@ -15,80 +15,12 @@
     "en": 319
   },
   "block_assignments": {
-    "block-01": "train",
+    "block-04": "train",
     "block-02": "train",
-    "block-03": "validation",
-    "block-04": "test",
     "block-05": "train",
-    "block-06": "train"
-  },
-  "block_segment_counts": {
-    "block-01": 79,
-    "block-02": 72,
-    "block-03": 48,
-    "block-04": 48,
-    "block-05": 40,
-    "block-06": 32
-  },
-  "split_optimization": {
-    "method": "DETERMINISTIC_GROUP_SIZE_RATIO_OPTIMIZATION",
-    "inputs": "ELIGIBLE_SEGMENT_COUNTS_BY_BLOCK_ONLY",
-    "prohibited_inputs": [
-      "NEURAL_SIGNAL",
-      "MODEL_PERFORMANCE",
-      "RESULT_METRICS"
-    ],
-    "target_percent": {
-      "train": 70,
-      "validation": 15,
-      "test": 15
-    },
-    "total_segments": 319,
-    "block_segment_counts": {
-      "block-01": 79,
-      "block-02": 72,
-      "block-03": 48,
-      "block-04": 48,
-      "block-05": 40,
-      "block-06": 32
-    },
-    "split_segment_counts": {
-      "train": 223,
-      "validation": 48,
-      "test": 48
-    },
-    "split_fractions": {
-      "train": 0.6990595611285266,
-      "validation": 0.15047021943573669,
-      "test": 0.15047021943573669
-    },
-    "objective": "MINIMIZE_SUM_SQUARED_INTEGER_COUNT_ERROR_TO_70_15_15",
-    "objective_squared_error_integer_units": 1350,
-    "tie_break": "MIN_ABSOLUTE_ERROR_THEN_FEWEST_HELDOUT_BLOCKS_THEN_LEXICOGRAPHIC_VALIDATION_TEST_TRAIN"
-  },
-  "split_rework_provenance": {
-    "status": "SPLIT_REWORK_COMPLETED",
-    "rejected_policy": "RANDOM_SEEDED_FOUR_ONE_ONE_BLOCK_ASSIGNMENT",
-    "rejected_block_assignments": {
-      "block-01": "test",
-      "block-02": "train",
-      "block-03": "train",
-      "block-04": "train",
-      "block-05": "train",
-      "block-06": "validation"
-    },
-    "rejected_split_segment_counts": {
-      "train": 208,
-      "validation": 32,
-      "test": 79
-    },
-    "rejected_split_fractions": {
-      "train": 0.6520376175548589,
-      "validation": 0.10031347962382445,
-      "test": 0.2476489028213166
-    },
-    "rejection_reason": "INDEPENDENT_REVIEW_FOUND_MATERIAL_DEVIATION_FROM_70_15_15",
-    "failure_history_preserved": true
+    "block-03": "train",
+    "block-06": "validation",
+    "block-01": "test"
   },
   "original_grouping_connected_components": {
     "node_count": 59,
@@ -105,15 +37,7 @@
     "recording_policy": "MAY_SPAN_SPLITS_WITH_NONOVERLAPPING_PASSAGE_WINDOWS_AND_TEMPORAL_EMBARGO",
     "language_policy": "EXPLICIT_MANIFEST_AND_SPLIT_COVERAGE_AUDIT",
     "speaker_policy": "ADVISORY_ONLY_SPEAKER_GENERALIZATION_NOT_CLAIMED",
-    "catalan_status": "EXCLUDED_FROM_PRIMARY_BASELINE_PENDING_AUDIO_PROVENANCE_RESOLUTION",
-    "split_status": "PRELIMINARY_NOT_BASELINE_FINAL",
-    "preliminary_minimum_embargo_seconds": 2.0,
-    "final_embargo_formula": "max(2s, maximum_encoding_lag, filter_or_padding_edge, audio_model_receptive_field_or_context_overlap)",
-    "final_embargo_status": "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN",
-    "generalization_scope": "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY",
-    "subject_heldout_supported": false,
-    "speaker_heldout_supported": false,
-    "cross_language_supported": false
+    "catalan_status": "EXCLUDED_FROM_PRIMARY_BASELINE_PENDING_AUDIO_PROVENANCE_RESOLUTION"
   },
   "split_checks": {
     "stimulus_split_conflicts": [],
@@ -125,15 +49,16 @@
         "validation"
       ]
     },
-    "recordings_spanning_splits": 6,
+    "recordings_spanning_splits": 9,
     "speaker_split_conflicts": [
       "s1303a",
       "s1401a",
+      "s1503a",
       "s2102a",
-      "s3301a",
-      "s3903b"
+      "s3003a",
+      "s3602b"
     ],
-    "preliminary_minimum_embargo_seconds": 2.0,
+    "temporal_embargo_seconds": 2.0,
     "temporal_cross_split_violations": []
   },
   "metadata_conflicts": [
@@ -186,6 +111,6 @@
     }
   ],
   "errors": [],
-  "manifest_status": "PASS_WITH_CATALAN_EXCLUSION_AND_PRELIMINARY_SPLIT_REWORK",
+  "manifest_status": "PASS_WITH_CATALAN_EXCLUSION_AND_SPLIT_REDESIGN",
   "g2_status": "PENDING_FULL_DATASET_AUDIT"
 }

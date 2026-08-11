@@ -2,13 +2,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from collections import Counter
 from pathlib import Path, PurePosixPath
-from typing import Any
+from typing import Any, NoReturn
 
 from jsonschema import Draft202012Validator, FormatChecker
 
-from m6a_public.config_gate import find_forbidden_fields, load_json
+from m6a_public.config_gate import find_forbidden_fields
 
 
 DRAFT_STATUS = "DRAFT_PROPOSED_BY_M6A"
@@ -29,6 +30,32 @@ SINGLETON_CANDIDATE_ROLES = {
     "CANARY_INPUT",
     "CANARY_EXPECTED_OUTPUT",
 }
+
+
+def _reject_nonstandard_json_constant(value: str) -> NoReturn:
+    raise ValueError(f"non-standard JSON numeric constant is forbidden: {value}")
+
+
+def load_strict_json_object(path: str | Path) -> dict[str, Any]:
+    with Path(path).open("r", encoding="utf-8") as handle:
+        payload = json.load(handle, parse_constant=_reject_nonstandard_json_constant)
+    if not isinstance(payload, dict):
+        raise ValueError(f"expected JSON object: {path}")
+    return payload
+
+
+def _nonfinite_numeric_errors(value: Any, path: str = "$") -> list[str]:
+    errors: list[str] = []
+    if isinstance(value, float):
+        if not math.isfinite(value):
+            errors.append(f"non-finite numeric value: {path}")
+    elif isinstance(value, dict):
+        for key, child in value.items():
+            errors.extend(_nonfinite_numeric_errors(child, f"{path}.{key}"))
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            errors.extend(_nonfinite_numeric_errors(child, f"{path}[{index}]"))
+    return errors
 
 
 def _safe_relative_path(value: str) -> bool:
@@ -54,7 +81,10 @@ def validate_exchange_manifest(
     schema: dict[str, Any],
     bundle_root: str | Path | None = None,
 ) -> list[str]:
-    errors = _schema_errors(manifest, schema)
+    # JSON Schema range checks are not sufficient for Python's non-standard
+    # NaN/Infinity float values, so semantic finiteness is a separate hard gate.
+    errors = _nonfinite_numeric_errors(manifest)
+    errors.extend(_schema_errors(manifest, schema))
     if errors:
         return errors
 
@@ -251,7 +281,19 @@ def main() -> int:
     parser.add_argument("--schema", type=Path, required=True)
     parser.add_argument("--bundle-root", type=Path)
     args = parser.parse_args()
-    errors = validate_exchange_manifest(load_json(args.manifest), load_json(args.schema), args.bundle_root)
+    try:
+        manifest = load_strict_json_object(args.manifest)
+        schema = load_strict_json_object(args.schema)
+    except (OSError, ValueError) as exc:
+        print(
+            json.dumps(
+                {"status": "FAIL", "errors": [f"strict JSON parse failed: {exc}"]},
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return 2
+    errors = validate_exchange_manifest(manifest, schema, args.bundle_root)
     print(json.dumps({"status": "PASS" if not errors else "FAIL", "errors": errors}, ensure_ascii=False, indent=2))
     return 0 if not errors else 1
 

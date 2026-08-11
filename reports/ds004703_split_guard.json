@@ -1,5 +1,9 @@
 {
   "status": "PASS",
   "rows": 319,
-  "issues": []
+  "issues": [],
+  "embargo_status": "PRELIMINARY_MINIMUM_ONLY",
+  "preliminary_minimum_embargo_seconds": 2.0,
+  "final_embargo_status": "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN",
+  "baseline_final": false
 }

@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 import csv
-import random
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
+from itertools import product
 from pathlib import Path
 from statistics import median
 from typing import Any
@@ -33,15 +33,72 @@ def speaker_id_for(stimulus_id: str, role: str) -> str:
     return "UNKNOWN"
 
 
-def deterministic_block_split(block_ids: list[str], seed: int) -> dict[str, str]:
-    if len(block_ids) != 6:
-        raise ValueError(f"expected six stimulus blocks, found {len(block_ids)}")
-    shuffled = sorted(block_ids)
-    random.Random(seed).shuffle(shuffled)
-    return {
-        **{block_id: "train" for block_id in shuffled[:4]},
-        shuffled[4]: "validation",
-        shuffled[5]: "test",
+SPLIT_NAMES = ("train", "validation", "test")
+SPLIT_TARGET_PERCENT = {"train": 70, "validation": 15, "test": 15}
+
+
+def optimize_block_split(block_counts: dict[str, int]) -> tuple[dict[str, str], dict[str, Any]]:
+    """Assign whole blocks using segment counts only and a fixed deterministic tie-break."""
+    if len(block_counts) < len(SPLIT_NAMES):
+        raise ValueError("at least three non-empty blocks are required")
+    if any(not block_id or count <= 0 for block_id, count in block_counts.items()):
+        raise ValueError("block ids must be non-empty and segment counts must be positive")
+
+    ordered_blocks = sorted(block_counts)
+    total_segments = sum(block_counts.values())
+    best_key: tuple[Any, ...] | None = None
+    best_assignment: dict[str, str] | None = None
+    best_counts: dict[str, int] | None = None
+
+    for assigned_splits in product(SPLIT_NAMES, repeat=len(ordered_blocks)):
+        if set(assigned_splits) != set(SPLIT_NAMES):
+            continue
+        assignment = dict(zip(ordered_blocks, assigned_splits))
+        split_counts = {
+            split_name: sum(
+                block_counts[block_id]
+                for block_id, assigned_split in assignment.items()
+                if assigned_split == split_name
+            )
+            for split_name in SPLIT_NAMES
+        }
+        integer_errors = {
+            split_name: 100 * split_counts[split_name] - SPLIT_TARGET_PERCENT[split_name] * total_segments
+            for split_name in SPLIT_NAMES
+        }
+        blocks_by_split = {
+            split_name: tuple(block_id for block_id in ordered_blocks if assignment[block_id] == split_name)
+            for split_name in SPLIT_NAMES
+        }
+        key = (
+            sum(error * error for error in integer_errors.values()),
+            sum(abs(error) for error in integer_errors.values()),
+            len(blocks_by_split["validation"]) + len(blocks_by_split["test"]),
+            blocks_by_split["validation"],
+            blocks_by_split["test"],
+            blocks_by_split["train"],
+        )
+        if best_key is None or key < best_key:
+            best_key = key
+            best_assignment = assignment
+            best_counts = split_counts
+
+    if best_key is None or best_assignment is None or best_counts is None:
+        raise ValueError("no valid three-way block assignment exists")
+    return best_assignment, {
+        "method": "DETERMINISTIC_GROUP_SIZE_RATIO_OPTIMIZATION",
+        "inputs": "ELIGIBLE_SEGMENT_COUNTS_BY_BLOCK_ONLY",
+        "prohibited_inputs": ["NEURAL_SIGNAL", "MODEL_PERFORMANCE", "RESULT_METRICS"],
+        "target_percent": SPLIT_TARGET_PERCENT,
+        "total_segments": total_segments,
+        "block_segment_counts": {block_id: block_counts[block_id] for block_id in ordered_blocks},
+        "split_segment_counts": best_counts,
+        "split_fractions": {
+            split_name: best_counts[split_name] / total_segments for split_name in SPLIT_NAMES
+        },
+        "objective": "MINIMIZE_SUM_SQUARED_INTEGER_COUNT_ERROR_TO_70_15_15",
+        "objective_squared_error_integer_units": best_key[0],
+        "tie_break": "MIN_ABSOLUTE_ERROR_THEN_FEWEST_HELDOUT_BLOCKS_THEN_LEXICOGRAPHIC_VALIDATION_TEST_TRAIN",
     }
 
 
@@ -122,7 +179,7 @@ def split_checks(rows: list[dict[str, Any]], embargo_seconds: float) -> dict[str
         "language_split_coverage": {key: sorted(values) for key, values in sorted(language_splits.items())},
         "recordings_spanning_splits": sum(1 for values in recording_splits.values() if len(values) > 1),
         "speaker_split_conflicts": sorted(key for key, values in speaker_splits.items() if len(values) > 1),
-        "temporal_embargo_seconds": embargo_seconds,
+        "preliminary_minimum_embargo_seconds": embargo_seconds,
         "temporal_cross_split_violations": temporal_violations,
     }
 
@@ -177,8 +234,7 @@ def _timestamp(path: Path) -> str:
 
 def build_ds004703_manifests(
     root: Path,
-    seed: int = 20260811,
-    embargo_seconds: float = 2.0,
+    preliminary_minimum_embargo_seconds: float = 2.0,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
     import numpy as np
     import soundfile  # type: ignore[import-untyped]
@@ -186,8 +242,6 @@ def build_ds004703_manifests(
     root = root.resolve()
     templates = _read_timing_templates(root / "stimuli" / "stim-times.tsv")
     stimulus_to_block, block_files, errors = _block_inventory(root)
-    block_ids = sorted(set(stimulus_to_block.values()))
-    block_split = deterministic_block_split(block_ids, seed)
     audio_cache: dict[Path, dict[str, Any]] = {}
     manifest: list[dict[str, Any]] = []
 
@@ -298,6 +352,10 @@ def build_ds004703_manifests(
             }
             manifest.append(row)
 
+    eligible_block_counts = Counter(
+        row["block_id"] for row in manifest if row["analysis_eligible"]
+    )
+    block_split, split_optimization = optimize_block_split(dict(eligible_block_counts))
     split_manifest: list[dict[str, Any]] = []
     for row in manifest:
         if not row["analysis_eligible"]:
@@ -338,7 +396,7 @@ def build_ds004703_manifests(
             }
         )
 
-    checks = split_checks(split_manifest, embargo_seconds)
+    checks = split_checks(split_manifest, preliminary_minimum_embargo_seconds)
     component_report = connected_component_summary(split_manifest)
     language_counts = Counter(row["language"] for row in manifest if row["stimulus_role"] == "PASSAGE")
     eligible_language_counts = Counter(row["language"] for row in split_manifest)
@@ -354,6 +412,28 @@ def build_ds004703_manifests(
         "passage_language_counts": dict(sorted(language_counts.items())),
         "eligible_language_counts": dict(sorted(eligible_language_counts.items())),
         "block_assignments": block_split,
+        "block_segment_counts": dict(sorted(eligible_block_counts.items())),
+        "split_optimization": split_optimization,
+        "split_rework_provenance": {
+            "status": "SPLIT_REWORK_COMPLETED",
+            "rejected_policy": "RANDOM_SEEDED_FOUR_ONE_ONE_BLOCK_ASSIGNMENT",
+            "rejected_block_assignments": {
+                "block-01": "test",
+                "block-02": "train",
+                "block-03": "train",
+                "block-04": "train",
+                "block-05": "train",
+                "block-06": "validation",
+            },
+            "rejected_split_segment_counts": {"train": 208, "validation": 32, "test": 79},
+            "rejected_split_fractions": {
+                "train": 208 / 319,
+                "validation": 32 / 319,
+                "test": 79 / 319,
+            },
+            "rejection_reason": "INDEPENDENT_REVIEW_FOUND_MATERIAL_DEVIATION_FROM_70_15_15",
+            "failure_history_preserved": True,
+        },
         "original_grouping_connected_components": component_report,
         "refrozen_primary_policy": {
             "required_group_keys": ["stimulus_id", "block_id"],
@@ -361,6 +441,14 @@ def build_ds004703_manifests(
             "language_policy": "EXPLICIT_MANIFEST_AND_SPLIT_COVERAGE_AUDIT",
             "speaker_policy": "ADVISORY_ONLY_SPEAKER_GENERALIZATION_NOT_CLAIMED",
             "catalan_status": "EXCLUDED_FROM_PRIMARY_BASELINE_PENDING_AUDIO_PROVENANCE_RESOLUTION",
+            "split_status": "PRELIMINARY_NOT_BASELINE_FINAL",
+            "preliminary_minimum_embargo_seconds": preliminary_minimum_embargo_seconds,
+            "final_embargo_formula": "max(2s, maximum_encoding_lag, filter_or_padding_edge, audio_model_receptive_field_or_context_overlap)",
+            "final_embargo_status": "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN",
+            "generalization_scope": "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY",
+            "subject_heldout_supported": False,
+            "speaker_heldout_supported": False,
+            "cross_language_supported": False,
         },
         "split_checks": checks,
         "metadata_conflicts": [
@@ -378,6 +466,8 @@ def build_ds004703_manifests(
         or checks["temporal_cross_split_violations"]
         or any(row["language"] == "UNKNOWN" for row in manifest if row["stimulus_role"] == "PASSAGE")
     )
-    summary["manifest_status"] = "FAIL" if failures else "PASS_WITH_CATALAN_EXCLUSION_AND_SPLIT_REDESIGN"
+    summary["manifest_status"] = (
+        "FAIL" if failures else "PASS_WITH_CATALAN_EXCLUSION_AND_PRELIMINARY_SPLIT_REWORK"
+    )
     summary["g2_status"] = "PENDING_FULL_DATASET_AUDIT"
     return manifest, split_manifest, summary

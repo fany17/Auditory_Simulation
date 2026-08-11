@@ -70,18 +70,27 @@
     "speaker_policy": "ADVISORY_ONLY_SPEAKER_GENERALIZATION_NOT_CLAIMED",
     "recording_policy": "MAY_SPAN_SPLITS_WITH_NONOVERLAPPING_PASSAGE_WINDOWS_AND_TEMPORAL_EMBARGO",
     "original_recording_grouping_status": "INFEASIBLE_SINGLE_CONNECTED_COMPONENT",
+    "assignment_method": "DETERMINISTIC_GROUP_SIZE_RATIO_OPTIMIZATION",
+    "assignment_objective": "MINIMIZE_SQUARED_ELIGIBLE_SEGMENT_COUNT_ERROR_TO_70_15_15_WITHOUT_NEURAL_MODEL_OR_RESULT_INPUTS",
     "block_assignments": {
-      "block-01": "test",
+      "block-01": "train",
       "block-02": "train",
-      "block-03": "train",
-      "block-04": "train",
+      "block-03": "validation",
+      "block-04": "test",
       "block-05": "train",
-      "block-06": "validation"
+      "block-06": "train"
     },
     "temporal_context_key": "recording_id",
-    "temporal_embargo_seconds": 2.0,
-    "seed": 20260811,
-    "secondary_subject_generalization": true
+    "split_status": "PRELIMINARY_NOT_BASELINE_FINAL",
+    "preliminary_minimum_embargo_seconds": 2.0,
+    "final_embargo_seconds": null,
+    "final_embargo_status": "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN",
+    "final_embargo_formula": "max(preliminary_minimum_embargo_seconds, maximum_encoding_lag_seconds, filter_or_padding_edge_seconds, audio_model_receptive_field_or_context_overlap_seconds)",
+    "primary_generalization_scope": "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY",
+    "subject_heldout_claim_allowed": false,
+    "speaker_heldout_claim_allowed": false,
+    "cross_language_claim_allowed": false,
+    "secondary_subject_generalization": false
   },
   "neural_target": {
     "status": "PROVISIONAL_UNTIL_G2_METADATA_READ",

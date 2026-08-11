@@ -80,11 +80,12 @@
 - train/validation/test 比例目标为 70/15/15；
 - 同一 `stimulus_id` 不跨 split；
 - 真实 manifest 证明 `stimulus_id + recording_id` 联合分组形成单一 connected component，无法形成 train/validation/test；该原始方案保留为 `INFEASIBLE_SINGLE_CONNECTED_COMPONENT`；
-- 主 split 已重冻结为 `stimulus_id + block_id` 分组：block 02/03/04/05 为 train，block 06 为 validation，block 01 为 test；
-- recording 可跨 split，但 passage 窗口不得重叠，跨 split 时间窗至少隔离 2 s；正式窗口化后隔离宽度不得小于最大 lag、滤波边缘和特征感受野之和；
-- speaker_id 单独作为 advisory 审计；当前有 6 个 speaker 跨 split，主结果不得声称 speaker-held-out 或 speaker-generalization；
+- 主 split 采用确定性的 group-aware segment-count 比例优化：目标 70/15/15，只使用 block 的 eligible segment 数，不读取神经信号、模型性能或结果指标；固定 tie-break 后 block 01/02/05/06 为 train，block 03 为 validation，block 04 为 test，对应 223/48/48（69.9%/15.0%/15.0%）；
+- 旧的随机种子 4/1/1 block 分配得到 208/32/79（65.2%/10.0%/24.8%），已由协调审核否决并作为失败历史保存，不得恢复为正式 split；
+- recording 可跨 split，但 passage 窗口不得重叠。当前 2 s 只定义为 `preliminary_minimum_embargo`，因此 split 状态为 `PRELIMINARY_NOT_BASELINE_FINAL`；正式窗口化前必须计算 `final_embargo = max(2 s, maximum encoding lag, filter/padding edge, audio model receptive field/context overlap)` 并重新运行 guard；
+- speaker_id 单独作为 advisory 审计；新 split 有 5 个 speaker 跨 split（`s1303a`、`s1401a`、`s2102a`、`s3301a`、`s3903b`），主结果不得声称 speaker-held-out 或 speaker-generalization；
 - language 必须进入 manifest 并接受 split 覆盖审计；Catalan 音频存在 provenance 冲突，当前排除于 primary baseline 并标记 `LANGUAGE_GENERALIZATION_NOT_ESTIMABLE`；
-- subject 可跨主 split，因此主结果只支持 unseen-stimulus within-subject/generalized-across-recording 的口径；另行的 subject-generalization 必须使用独立 split manifest。
+- subject 可跨主 split，因此当前只支持 `within-subject unseen-stimulus/block generalization`；不支持 subject-held-out、speaker-held-out 或 cross-language 声称。任何新增 generalization 分析必须另立并审核独立 split manifest。
 
 任何 sample_id 重复、必需 group key 缺失、stimulus/block 跨 split、language 缺失或时间邻域泄漏均为 hard fail。
 

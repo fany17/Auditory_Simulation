@@ -1,17 +1,22 @@
 from __future__ import annotations
 
+import contextlib
+import io
 import json
+import math
+import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
+from m6a_public.exchange_validator import main as exchange_validator_main
 from m6a_public.exchange_validator import validate_exchange_manifest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCHEMA = json.loads(
-    (ROOT / "schemas" / "m6a_to_m6b_exchange_manifest_v1.schema.json").read_text(encoding="utf-8")
-)
+SCHEMA_PATH = ROOT / "schemas" / "m6a_to_m6b_exchange_manifest_v1.schema.json"
+SCHEMA = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
 
 
 def revised_manifest() -> dict:
@@ -244,6 +249,45 @@ class ExchangeValidatorTests(unittest.TestCase):
         manifest = revised_manifest()
         manifest["canary_fixture"]["tolerance"]["absolute"] = -1.0
         self.assertTrue(validate_exchange_manifest(manifest, SCHEMA))
+
+    def test_nonfinite_canary_tolerances_fail_closed_for_direct_dicts(self) -> None:
+        for value in (math.nan, math.inf, -math.inf):
+            for field in ("absolute", "relative", "frame_time_seconds"):
+                with self.subTest(value=value, field=field):
+                    manifest = revised_manifest()
+                    manifest["canary_fixture"]["tolerance"][field] = value
+                    errors = validate_exchange_manifest(manifest, SCHEMA)
+                    self.assertTrue(any("non-finite numeric value" in item for item in errors))
+
+    def test_nonfinite_benchmark_values_fail_closed_for_direct_dicts(self) -> None:
+        for value in (math.nan, math.inf, -math.inf):
+            for field in ("value", "null_value"):
+                with self.subTest(value=value, field=field):
+                    manifest = revised_manifest()
+                    benchmark = manifest["validation"]["benchmark_summary"][0]
+                    if field == "value":
+                        benchmark["value"] = value
+                    else:
+                        benchmark["null_comparison"]["value"] = value
+                    errors = validate_exchange_manifest(manifest, SCHEMA)
+                    self.assertTrue(any("non-finite numeric value" in item for item in errors))
+
+    def test_cli_rejects_nonstandard_json_numeric_constants(self) -> None:
+        for constant in ("NaN", "Infinity", "-Infinity"):
+            with self.subTest(constant=constant), tempfile.TemporaryDirectory() as temporary:
+                manifest_path = Path(temporary) / "manifest.json"
+                manifest_path.write_text(f'{{"nonstandard": {constant}}}', encoding="utf-8")
+                argv = [
+                    "exchange_validator",
+                    str(manifest_path),
+                    "--schema",
+                    str(SCHEMA_PATH),
+                ]
+                output = io.StringIO()
+                with patch.object(sys, "argv", argv), contextlib.redirect_stdout(output):
+                    exit_code = exchange_validator_main()
+                self.assertNotEqual(exit_code, 0)
+                self.assertIn("strict JSON parse failed", output.getvalue())
 
     def test_candidate_requires_bundle_root(self) -> None:
         manifest = revised_manifest()
