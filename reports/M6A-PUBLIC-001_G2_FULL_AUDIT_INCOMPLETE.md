@@ -30,15 +30,16 @@
 - 10 participants、11 recordings；11 份 iEEG sidecar、channels 与 events 可读；
 - PyBIDS `validate=True` 可建立布局，识别 10 subjects；
 - 采样率为 512/1024 Hz，工频统一为 60 Hz；
+- 11 个 sidecar 的 `iEEGReference` 已逐 recording 机器记录，唯一值均为 `scalp electrode, not included with data`，一致性 gate 为 PASS；主分析 reference 因此限定为 `AS_RECORDED_SCALP_REFERENCE`；
 - README 的 C-prefix channel 排除已转为机器审计，当前 metadata 中共有 727 个 C-prefix 行，排除后候选 good SEEG/ECOG 为 1,346 channel-recording entries；
 - 标准 `electrodes.tsv` 与 `coordsystem.json` 数量均为 0；9 份 contact RAS CSV 没有解剖脑区标签，SD012 解剖数据按 README 缺失；
 - 已完成的 EDF 中，分析候选 SEEG/ECOG 通道名均存在；3 个 recording 的 EDF 总通道数与 channels.tsv 相差 1–3 行，仅记录 warning，不据此删除神经通道。
 
 逐名称差异已写入最新 recording report：SD010 的 TSV-only 为 `Trigger Event`、`Patient Event`、`STI 014`（均 MISC/bad）；SD018 与 SD021 的 TSV-only 为 `STI 014`；SD012 两次 recording、SD013、SD015、SD017 各为 TSV-only `STI 014` 与 EDF-only `Pleth`。这些差异均不属于 analysis-eligible SEEG/ECOG；8 个已完成 EDF 的 events 最大 offset 均未越 EDF 时间轴。其余三个 recording 仍因 EDF 下载未完成而 fail closed。
 
-## Target no-go
+## Target method candidate gate
 
-70-150 Hz high-gamma 候选带包含 120 Hz 工频二次谐波，因此 target 状态为 `REDESIGN_REQUIRED_BEFORE_G3`。在冻结明确的 60/120 Hz rejection 与 filter edge，或重设频带之前，`neural_extraction_allowed=false`。
+旧 70-150 Hz high-gamma 候选带包含 120 Hz 工频二次谐波，已被替换为待协调二审的 `METHOD_FREEZE_CANDIDATE`：主目标为排除 110-130 Hz 的六个等宽 10 Hz 子带；旧宽带方法仅为 sensitivity。reference 保持 as-recorded，不猜缺失 scalp reference、不按 contact 名构造 bipolar。当前 `neural_extraction_allowed=false`，该候选不构成真实神经 target 或 G2 PASS。
 
 ## 运行证据
 
@@ -48,6 +49,17 @@ All checks passed!
 Success: no issues found in 19 source files
 ```
 
+上述是首次 incomplete audit checkpoint。method candidate checkpoint 另为：
+
+```text
+66 passed, 76 subtests passed in 1.36s
+All checks passed!
+Success: no issues found in 22 source files
+neural target method gate: PASS
+main config gate: PASS
+formal src direct convolution scan: PASS
+```
+
 失败运行保存在：
 
 - `reports/ds004703_full_audit_download_incomplete_v1.json`；
@@ -55,6 +67,8 @@ Success: no issues found in 19 source files
 - `reports/ds004703_neural_metadata_download_incomplete_v1.json`；
 - `reports/ds004703_neural_recordings_download_incomplete_v1.csv`。
 - `reports/ds004703_neural_metadata_download_incomplete_v3.json`；
-- `reports/ds004703_neural_recordings_download_incomplete_v3.csv`。
+- `reports/ds004703_neural_recordings_download_incomplete_v3.csv`；
+- `reports/ds004703_neural_metadata_download_incomplete_v4.json`；
+- `reports/ds004703_neural_recordings_download_incomplete_v4.csv`。
 
 这些文件是失败/进行中证据，不是 G2 PASS。全程未生成、读取、比较或验证任何哈希或校验和。

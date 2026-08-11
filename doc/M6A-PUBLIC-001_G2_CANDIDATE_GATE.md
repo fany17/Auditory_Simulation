@@ -45,6 +45,7 @@ G2 candidate 只包含轻量报告、inventory、recording metadata、split/guar
 ## 5. G2 之后仍独立阻塞的门禁
 
 - `ANATOMY_MAPPING_NOT_READY`：不阻塞电极级 method smoke，但 `region_summary=NOT_ESTIMABLE`；
+- 逐 recording `iEEGReference` 必须记录并在 11 个 sidecar 中一致为 `scalp electrode, not included with data`；首轮只能使用 `AS_RECORDED_SCALP_REFERENCE`；
 - `NEURAL_TARGET_REDESIGN_REQUIRED_BEFORE_G3`：target/filter 未协调冻结，`neural_extraction_allowed=false`；
 - final embargo 的 filter edge 与 wav2vec2 context 未实测，`baseline_final=false`；
 - revised exchange DRAFT 虽已接受用于 candidate 准备，但真实 method/runtime/canary 尚无，consumer cross-test 仍 `NOT_RUN`。

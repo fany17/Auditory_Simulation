@@ -1,11 +1,13 @@
-# M6A-PUBLIC-001 neural target redesign 草案
+# M6A-PUBLIC-001 neural target redesign 草案（审核否决历史）
 
 | 字段 | 内容 |
 |---|---|
-| 状态 | `DRAFT_AWAITING_COORDINATOR_REVIEW` |
+| 状态 | `REDESIGN_REQUIRED_SUPERSEDED` |
 | 触发证据 | 所有 iEEG sidecar 为 60 Hz 工频；原 70-150 Hz 候选带包含 120 Hz 二次谐波 |
 | 当前门禁 | `REDESIGN_REQUIRED_BEFORE_G3` |
 | 神经提取授权 | `false` |
+
+协调审核否决了本文件中“方案 A/B 待后续选择”的设计，因为它未预先冻结唯一主目标。失败历史保留，不作为当前执行规范。现行候选见 `doc/M6A-PUBLIC-001_NEURAL_TARGET_METHOD_FREEZE_CANDIDATE.md`；该新文件仍只是待协调二审的 method freeze candidate，不授权真实神经提取。
 
 ## 不可直接沿用的方案
 

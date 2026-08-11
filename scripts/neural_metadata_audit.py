@@ -12,6 +12,7 @@ from scripts.dataset_audit import read_ieeg_header, utc_mtime
 
 
 NEURAL_CHANNEL_TYPES = {"SEEG", "ECOG"}
+EXPECTED_IEEG_REFERENCE = "scalp electrode, not included with data"
 
 
 def read_tsv(path: Path) -> list[dict[str, str]]:
@@ -98,6 +99,45 @@ def channel_inventory_difference(
     }
 
 
+def summarize_ieeg_references(
+    recordings: list[dict[str, Any]],
+    expected_count: int = 11,
+) -> dict[str, Any]:
+    recording_values = [
+        {
+            "recording_id": item["recording_id"],
+            "iEEGReference": item.get("iEEGReference"),
+            "matches_frozen_value": item.get("iEEGReference") == EXPECTED_IEEG_REFERENCE,
+        }
+        for item in recordings
+    ]
+    observed_values = sorted(
+        {str(item["iEEGReference"]) for item in recording_values if item["iEEGReference"] is not None}
+    )
+    mismatch_ids = [
+        str(item["recording_id"])
+        for item in recording_values
+        if item["matches_frozen_value"] is not True
+    ]
+    passed = (
+        len(recording_values) == expected_count
+        and observed_values == [EXPECTED_IEEG_REFERENCE]
+        and not mismatch_ids
+    )
+    return {
+        "expected_value": EXPECTED_IEEG_REFERENCE,
+        "expected_recording_count": expected_count,
+        "observed_recording_count": len(recording_values),
+        "observed_unique_values": observed_values,
+        "recording_values": recording_values,
+        "mismatch_recording_ids": mismatch_ids,
+        "primary_policy": "AS_RECORDED_SCALP_REFERENCE",
+        "missing_reference_reconstruction": "FORBIDDEN",
+        "contact_name_bipolar_pairing": "FORBIDDEN",
+        "status": "PASS" if passed else "FAIL",
+    }
+
+
 def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
     root = root.resolve()
     errors: list[str] = []
@@ -170,6 +210,7 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
             "recording_duration_seconds": sidecar_duration,
             "task_name": sidecar.get("TaskName"),
             "recording_type": sidecar.get("RecordingType"),
+            "iEEGReference": sidecar.get("iEEGReference"),
             "declared_seeg_plus_ecog_channels": declared_neural_channels,
             "channels": channels,
             "events": events,
@@ -231,6 +272,7 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
 
     line_frequencies = sorted({item["power_line_frequency_hz"] for item in recordings})
     sampling_rates = sorted({item["sampling_rate_hz"] for item in recordings})
+    ieeg_reference_audit = summarize_ieeg_references(recordings)
     line_harmonics_in_candidate_band = sorted(
         {
             harmonic
@@ -239,11 +281,12 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
             if 70 <= harmonic <= 150
         }
     )
-    target_status = (
-        "REDESIGN_REQUIRED_BEFORE_G3" if line_harmonics_in_candidate_band else "PROVISIONAL_PASS"
-    )
     if len(sidecars) != 11:
         errors.append(f"expected 11 iEEG sidecars, found {len(sidecars)}")
+    if ieeg_reference_audit["status"] != "PASS":
+        errors.append(
+            "iEEGReference must match the frozen as-recorded scalp reference for all 11 recordings"
+        )
 
     return {
         "task_id": "M6A-PUBLIC-001",
@@ -262,6 +305,7 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
         },
         "sampling_rate_hz_values": sampling_rates,
         "power_line_frequency_hz_values": line_frequencies,
+        "ieeg_reference_audit": ieeg_reference_audit,
         "analysis_eligible_neural_channel_count": sum(
             item["channels"]["analysis_eligible_neural_channel_count"] for item in recordings
         ),
@@ -283,15 +327,18 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
             "limitation": "SD012 anatomical scans are unavailable per README; contact RAS files do not provide anatomical region labels.",
         },
         "neural_target_gate": {
-            "candidate": "70-150 Hz high-gamma power",
-            "status": target_status,
+            "candidate": "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER",
+            "status": "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
             "line_harmonics_in_band_hz": line_harmonics_in_candidate_band,
-            "required_action": "Freeze explicit 60/120 Hz rejection or redesign the band before any G3 neural extraction.",
+            "excluded_harmonic_guard_hz": [110, 130],
+            "primary_reference_policy": "AS_RECORDED_SCALP_REFERENCE",
+            "neural_extraction_allowed": False,
+            "required_action": "Coordinator review is required before any real neural extraction; final embargo also awaits audio-model context measurement.",
         },
         "recordings": recordings,
         "warnings": warnings,
         "errors": errors,
-        "status": "FAIL" if errors else "PASS_WITH_NEURAL_TARGET_REDESIGN_REQUIRED",
+        "status": "FAIL" if errors else "PASS_WITH_METHOD_FREEZE_CANDIDATE_NOT_AUTHORIZED",
     }
 
 
@@ -303,6 +350,7 @@ def write_recording_csv(path: Path, recordings: list[dict[str, Any]]) -> None:
             "recording_id": item["recording_id"],
             "sampling_rate_hz": item["sampling_rate_hz"],
             "power_line_frequency_hz": item["power_line_frequency_hz"],
+            "iEEGReference": item["iEEGReference"],
             "recording_duration_seconds": item["recording_duration_seconds"],
             "channel_count": item["channels"]["channel_count"],
             "good_neural_channel_count": item["channels"]["good_neural_channel_count"],

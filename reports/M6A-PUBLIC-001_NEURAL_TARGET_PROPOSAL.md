@@ -1,12 +1,14 @@
-# M6A-PUBLIC-001 neural target / final embargo proposal
+# M6A-PUBLIC-001 neural target / final embargo proposal（审核否决历史）
 
 | 字段 | 内容 |
 |---|---|
-| 状态 | `DRAFT_AWAITING_COORDINATOR_REVIEW` |
+| 状态 | `REDESIGN_REQUIRED_SUPERSEDED` |
 | Target gate | `NEURAL_TARGET_REDESIGN_REQUIRED_BEFORE_G3` |
 | Anatomy gate | `ANATOMY_MAPPING_NOT_READY` |
 | Neural extraction | `NOT_ALLOWED` |
 | Baseline final | `false` |
+
+协调审核否决了本报告中将 A/B 保留为待选主方案的做法。该时点运行证据原样保留，不改写成新候选证据。现行候选报告另见 `reports/M6A-PUBLIC-001_NEURAL_TARGET_METHOD_FREEZE_CANDIDATE.md`。
 
 ## 已冻结的输入证据
 

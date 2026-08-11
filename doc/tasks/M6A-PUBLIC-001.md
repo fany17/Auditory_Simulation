@@ -71,6 +71,8 @@
 - 脑区/电极元数据可用性、缺失项与排除原因；
 - 每个 recording 的音频—events—iEEG 时间关系。
 
+11 个 iEEG sidecar 的 `iEEGReference` 必须逐 recording 机器记录并一致为 `scalp electrode, not included with data`。首轮主分析保持 `AS_RECORDED_SCALP_REFERENCE`；禁止猜测缺失 scalp reference、禁止按 contact 名构造 bipolar pair。CAR、CMR、bipolar 只可作为未来单独批准的 sensitivity。
+
 不得用文件存在替代可读性，不得用事件行号猜测刺激身份。README 指示名称以 `C` 开头的通道未使用，正式排除规则须由 channels/electrodes 实际字段复核后执行。
 
 ## 5. 防泄漏 split
@@ -102,7 +104,9 @@
 - 统一映射到预注册的神经时间网格；
 - 任何标准化、PCA、特征选择只在 train 拟合并应用到 validation/test。
 
-首轮 neural target 候选原为 `70-150 Hz high-gamma power`。G2 已确认采样率为 512/1024 Hz、工频为 60 Hz，因此 120 Hz 二次谐波位于候选带内；目标状态已设为 `REDESIGN_REQUIRED_BEFORE_G3`。在正式冻结明确的 60/120 Hz rejection/filter edge 或重新设计频带前，禁止神经特征提取，不得静默沿用原目标。
+首轮 neural target 当前为 `METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW`：主目标预声明为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
+
+候选使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值预计算为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入独立 schema/gate。当前只允许 synthetic tests；协调接受、G2 full audit、音频模型 context 测量与 final split guard 完成前，禁止真实神经提取。
 
 主模型为 ridge encoding：
 

@@ -56,9 +56,10 @@
 - 原 `stimulus+recording` 方案：单一 connected component，不可三分；现采用 stimulus+block 分组。2 s 仅为 `preliminary_minimum_embargo`，正式窗口化前必须按 lag、滤波/填充边缘和模型 context 计算 final embargo 并重跑 guard；
 - Catalan：显式标为 `ca`，但 block 音频与 cue 波形冲突，暂不进入 baseline，不能声称跨语言泛化；
 - 神经 metadata：11 份 sidecar/channels/events 可读，采样率为 512/1024 Hz，工频为 60 Hz；README 的 C-prefix 排除规则已机器化。标准 `electrodes.tsv`/`coordsystem.json` 均缺失，仅有 9 份非标准 contact RAS CSV 且无脑区标签；
+- reference metadata：11 份 sidecar 的 `iEEGReference` 由审计器逐 recording 记录并应一致为 `scalp electrode, not included with data`；首轮主分析预声明 `AS_RECORDED_SCALP_REFERENCE`，禁止猜测缺失 reference 或按 contact 名构造 bipolar pair；
 - anatomy gate：`ANATOMY_MAPPING_NOT_READY`；它不单独阻塞后续电极级 smoke，但 region summary 为 `NOT_ESTIMABLE`，在坐标系/atlas/映射可审计前禁止从 contact 名称猜脑区；
-- neural target：候选 70-150 Hz 穿过 120 Hz 工频二次谐波，状态为 `REDESIGN_REQUIRED_BEFORE_G3`；冻结明确的 60/120 Hz rejection 或重设频带前禁止神经特征提取；
+- neural target：当前为 `METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW`；主目标预声明为排除 110-130 Hz 的六个等宽 10 Hz high-gamma 子带，有限 FIR edge 最大值 1.091796875 s。旧 70-150 Hz 方案仅为 sensitivity；协调接受前仍禁止神经特征提取；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
 - 当前 split 只支持 within-subject unseen-stimulus/block generalization；不支持 subject-held-out、speaker-held-out 或 cross-language；
 - M6A→M6B exchange contract review：`REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`；consumer 为 `READY_WAITING_M6A_CANDIDATE`。真实 candidate 尚无、consumer cross-test 未运行，contract 未 accepted/frozen；candidate 准备仍受 G2 full audit、neural target freeze、final embargo/split guard 和真实 method/runtime/canary 门禁约束。
-- 最新联合验证：2203 专用环境 `53 passed, 22 subtests`，Ruff 通过，mypy 对 19 个源文件通过；config gate 与 319 行 preliminary split guard 通过。
+- 最新联合验证：method candidate checkpoint 在 2203 专用环境为 `66 passed, 76 subtests`，Ruff 通过，mypy 对 22 个源文件通过；neural target semantic gate、main config gate 与 formal-src direct-convolution scan 均通过。上一 `53 passed, 22 subtests` checkpoint 仍保留于历史报告。

@@ -120,8 +120,11 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("split must remain preliminary until final embargo is measured and guarded")
     if split.get("final_embargo_seconds") is not None:
         errors.append("final embargo must remain unset before G3 measurement")
-    if split.get("final_embargo_status") != "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN":
-        errors.append("final embargo must require G3 measurement and guard rerun")
+    if (
+        split.get("final_embargo_status")
+        != "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_GUARD_RERUN"
+    ):
+        errors.append("final embargo must require audio context measurement and guard rerun")
     if split.get("primary_generalization_scope") != "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY":
         errors.append("primary generalization scope must remain within-subject unseen stimulus/block only")
     for claim_key in (
@@ -136,20 +139,37 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     embargo_report = evaluate_final_embargo(split.get("final_embargo_components_seconds", {}))
     if embargo_report["status"] != "PENDING_MEASUREMENT" or embargo_report["baseline_final"]:
         errors.append("final embargo must remain pending measured filter and audio-model context")
+    if split.get("final_embargo_components_seconds", {}).get("filter_or_padding_edge_seconds") != 1.091796875:
+        errors.append("split embargo must record the method-candidate filter/resampling edge")
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:
         errors.append("allowed_splits must be train/validation/test")
 
     neural_target = config.get("neural_target", {})
-    if neural_target.get("status") != "REDESIGN_REQUIRED_BEFORE_G3":
-        errors.append("neural target must record the G2 high-gamma redesign gate")
+    if neural_target.get("status") != "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW":
+        errors.append("neural target must remain a method freeze candidate awaiting review")
+    if neural_target.get("name") != "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER":
+        errors.append("neural target primary name is not frozen")
+    if neural_target.get("method_candidate_path") != "configs/m6a_neural_target_method_candidate.json":
+        errors.append("neural target method candidate path is not frozen")
+    if (
+        neural_target.get("method_candidate_schema_path")
+        != "schemas/m6a_neural_target_method_candidate.schema.json"
+    ):
+        errors.append("neural target method candidate schema path is not frozen")
+    if neural_target.get("primary_reference_policy") != "AS_RECORDED_SCALP_REFERENCE":
+        errors.append("neural target reference must remain as recorded")
+    if neural_target.get("sidecar_reference_value") != "scalp electrode, not included with data":
+        errors.append("neural target must record the exact sidecar iEEGReference")
+    if neural_target.get("sidecar_reference_recording_count") != 11:
+        errors.append("neural target must record all 11 sidecar reference declarations")
     if neural_target.get("observed_power_line_frequency_hz") != 60:
         errors.append("neural target must record the observed 60 Hz line frequency")
     if 120 not in neural_target.get("line_harmonics_inside_candidate_band_hz", []):
         errors.append("neural target must record the 120 Hz harmonic inside 70-150 Hz")
     if neural_target.get("neural_extraction_allowed") is not False:
         errors.append("neural extraction must remain blocked until target method is refrozen")
-    if neural_target.get("resolution_status") != "PENDING_METHOD_FREEZE":
-        errors.append("neural target resolution must remain pending method freeze")
+    if neural_target.get("resolution_status") != "AWAITING_COORDINATOR_REVIEW":
+        errors.append("neural target resolution must remain awaiting coordinator review")
 
     anatomy = config.get("anatomy_mapping", {})
     if anatomy.get("status") != "ANATOMY_MAPPING_NOT_READY":

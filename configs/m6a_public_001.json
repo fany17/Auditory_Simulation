@@ -84,12 +84,12 @@
     "split_status": "PRELIMINARY_NOT_BASELINE_FINAL",
     "preliminary_minimum_embargo_seconds": 2.0,
     "final_embargo_seconds": null,
-    "final_embargo_status": "PENDING_G3_MEASUREMENT_AND_GUARD_RERUN",
+    "final_embargo_status": "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_GUARD_RERUN",
     "final_embargo_formula": "max(preliminary_minimum_embargo_seconds, maximum_encoding_lag_seconds, filter_or_padding_edge_seconds, audio_model_receptive_field_or_context_overlap_seconds)",
     "final_embargo_components_seconds": {
       "preliminary_minimum_embargo_seconds": 2.0,
       "maximum_encoding_lag_seconds": 0.5,
-      "filter_or_padding_edge_seconds": null,
+      "filter_or_padding_edge_seconds": 1.091796875,
       "audio_model_receptive_field_or_context_overlap_seconds": null
     },
     "primary_generalization_scope": "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY",
@@ -99,12 +99,13 @@
     "secondary_subject_generalization": false
   },
   "neural_target": {
-    "status": "REDESIGN_REQUIRED_BEFORE_G3",
-    "name": "high_gamma_power",
-    "band_hz": [
-      70,
-      150
-    ],
+    "status": "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "name": "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER",
+    "method_candidate_path": "configs/m6a_neural_target_method_candidate.json",
+    "method_candidate_schema_path": "schemas/m6a_neural_target_method_candidate.schema.json",
+    "primary_reference_policy": "AS_RECORDED_SCALP_REFERENCE",
+    "sidecar_reference_value": "scalp electrode, not included with data",
+    "sidecar_reference_recording_count": 11,
     "target_rate_hz": 50,
     "observed_sampling_rate_hz_values": [
       512,
@@ -127,9 +128,9 @@
       0.45,
       0.5
     ],
-    "metadata_conflict_action": "FREEZE_EXPLICIT_60_120_HZ_REJECTION_OR_REDESIGN_BAND",
+    "metadata_conflict_action": "PRIMARY_EXCLUDES_110_130_HZ_AROUND_120_HZ_HARMONIC",
     "neural_extraction_allowed": false,
-    "resolution_status": "PENDING_METHOD_FREEZE"
+    "resolution_status": "AWAITING_COORDINATOR_REVIEW"
   },
   "features": {
     "acoustic_baselines": [

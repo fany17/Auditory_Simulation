@@ -3,7 +3,12 @@ from __future__ import annotations
 import unittest
 
 from scripts.dataset_audit import reconcile_expected_inventory
-from scripts.neural_metadata_audit import channel_inventory_difference, summarize_channels
+from scripts.neural_metadata_audit import (
+    EXPECTED_IEEG_REFERENCE,
+    channel_inventory_difference,
+    summarize_channels,
+    summarize_ieeg_references,
+)
 
 
 class DatasetAuditTests(unittest.TestCase):
@@ -55,6 +60,21 @@ class DatasetAuditTests(unittest.TestCase):
         )
         self.assertEqual(report["edf_only"][0]["name"], "EDF annotation")
         self.assertEqual(report["edf_only"][0]["type"], "UNDECLARED_IN_CHANNELS_TSV")
+
+    def test_ieeg_reference_audit_records_all_recordings_and_fails_mismatch(self) -> None:
+        recordings = [
+            {"recording_id": f"recording-{index:02d}", "iEEGReference": EXPECTED_IEEG_REFERENCE}
+            for index in range(11)
+        ]
+        report = summarize_ieeg_references(recordings)
+        self.assertEqual(report["status"], "PASS")
+        self.assertEqual(report["observed_recording_count"], 11)
+        self.assertTrue(all(item["matches_frozen_value"] for item in report["recording_values"]))
+
+        recordings[-1]["iEEGReference"] = "unknown"
+        changed = summarize_ieeg_references(recordings)
+        self.assertEqual(changed["status"], "FAIL")
+        self.assertEqual(changed["mismatch_recording_ids"], ["recording-10"])
 
 
 if __name__ == "__main__":

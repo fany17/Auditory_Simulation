@@ -28,9 +28,11 @@ class ConfigGateTests(unittest.TestCase):
         changed["model"]["trainable"] = True
         self.assertTrue(any("remain frozen" in item for item in validate_task_config(changed)))
 
-    def test_neural_target_is_blocked_by_observed_line_harmonic(self) -> None:
+    def test_neural_target_candidate_remains_blocked_while_awaiting_review(self) -> None:
         target = self.config["neural_target"]
-        self.assertEqual(target["status"], "REDESIGN_REQUIRED_BEFORE_G3")
+        self.assertEqual(target["status"], "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW")
+        self.assertEqual(target["primary_reference_policy"], "AS_RECORDED_SCALP_REFERENCE")
+        self.assertEqual(target["sidecar_reference_recording_count"], 11)
         self.assertEqual(target["observed_power_line_frequency_hz"], 60)
         self.assertIn(120, target["line_harmonics_inside_candidate_band_hz"])
         self.assertIs(target["neural_extraction_allowed"], False)

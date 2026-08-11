@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "m6a-neural-target-method-candidate-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "status",
+    "primary_target",
+    "reference",
+    "bandpass_fir",
+    "power_estimator",
+    "sampling_rate_profiles",
+    "train_only_transform",
+    "time_grid",
+    "lag",
+    "sensitivity",
+    "final_embargo",
+    "synthetic_test_thresholds",
+    "anatomy",
+    "execution"
+  ],
+  "properties": {
+    "schema_version": {"const": "m6a-neural-target-method-candidate-v1"},
+    "task_id": {"const": "M6A-PUBLIC-001"},
+    "status": {"const": "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW"},
+    "primary_target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "selection_rule", "subbands", "excluded_harmonic_guard_hz", "aggregation"],
+      "properties": {
+        "name": {"const": "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER"},
+        "selection_rule": {"const": "PREDECLARED_PRIMARY_NEVER_SELECTED_BY_ENCODING_PERFORMANCE"},
+        "subbands": {
+          "type": "array",
+          "prefixItems": [
+            {"$ref": "#/$defs/subband_70_80"},
+            {"$ref": "#/$defs/subband_80_90"},
+            {"$ref": "#/$defs/subband_90_100"},
+            {"$ref": "#/$defs/subband_100_110"},
+            {"$ref": "#/$defs/subband_130_140"},
+            {"$ref": "#/$defs/subband_140_150"}
+          ],
+          "items": false,
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "excluded_harmonic_guard_hz": {
+          "type": "array",
+          "prefixItems": [{"const": 110}, {"const": 130}],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "aggregation": {"const": "TRAIN_STANDARDIZE_EACH_SUBBAND_THEN_EQUAL_WEIGHT_MEAN"}
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sidecar_value", "primary_policy", "missing_reference_reconstruction", "contact_name_bipolar_pairing", "future_sensitivities"],
+      "properties": {
+        "sidecar_value": {"const": "scalp electrode, not included with data"},
+        "primary_policy": {"const": "AS_RECORDED_SCALP_REFERENCE"},
+        "missing_reference_reconstruction": {"const": "FORBIDDEN"},
+        "contact_name_bipolar_pairing": {"const": "FORBIDDEN"},
+        "future_sensitivities": {
+          "type": "array",
+          "prefixItems": [{"const": "CAR"}, {"const": "CMR"}, {"const": "BIPOLAR_SEPARATELY_APPROVED_ONLY"}],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        }
+      }
+    },
+    "bandpass_fir": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["implementation", "execution_backend", "convolution", "window", "stopband_attenuation_db", "nominal_passband_width_hz", "transition_width_hz", "lower_stop_to_pass_definition", "upper_pass_to_stop_definition", "numtaps_rule", "minimum_input_samples_rule", "phase", "padding"],
+      "properties": {
+        "implementation": {"const": "scipy.signal.firwin"},
+        "execution_backend": {"const": "scipy.signal.oaconvolve"},
+        "convolution": {"const": "OVERLAP_ADD_SYMMETRIC_FINITE_LENGTH_FIR"},
+        "window": {"const": "KAISER"},
+        "stopband_attenuation_db": {"const": 60},
+        "nominal_passband_width_hz": {"const": 10},
+        "transition_width_hz": {"const": 2},
+        "lower_stop_to_pass_definition": {"const": "stop_end=low_hz-2; cutoff_midpoint=low_hz-1; pass_start=low_hz"},
+        "upper_pass_to_stop_definition": {"const": "pass_end=high_hz; cutoff_midpoint=high_hz+1; stop_start=high_hz+2"},
+        "numtaps_rule": {"const": "odd(kaiserord(60 dB, 2/(sampling_rate/2)))"},
+        "minimum_input_samples_rule": {"const": "INPUT_LENGTH_MUST_BE_AT_LEAST_BANDPASS_NUMTAPS"},
+        "phase": {"const": "ZERO_PHASE_CENTERED_CONVOLUTION_WITH_FULL_SUPPORT_MASK"},
+        "padding": {"const": "NO_PADDING_SHARED_ACROSS_EVENT_OR_SPLIT_BOUNDARY"}
+      }
+    },
+    "power_estimator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "hilbert_transform", "lowpass_implementation", "lowpass_passband_edge_hz", "lowpass_stopband_edge_hz", "lowpass_cutoff_midpoint_hz", "transition_width_hz", "stopband_attenuation_db", "numtaps_rule"],
+      "properties": {
+        "method": {"const": "SQUARE_THEN_FINITE_FIR_LOWPASS"},
+        "hilbert_transform": {"const": "FORBIDDEN"},
+        "lowpass_implementation": {"const": "scipy.signal.firwin"},
+        "lowpass_passband_edge_hz": {"const": 10},
+        "lowpass_stopband_edge_hz": {"const": 20},
+        "lowpass_cutoff_midpoint_hz": {"const": 15},
+        "transition_width_hz": {"const": 10},
+        "stopband_attenuation_db": {"const": 60},
+        "numtaps_rule": {"const": "odd(kaiserord(60 dB, 10/(sampling_rate/2)))"}
+      }
+    },
+    "sampling_rate_profiles": {
+      "type": "array",
+      "prefixItems": [
+        {"$ref": "#/$defs/profile_512"},
+        {"$ref": "#/$defs/profile_1024"}
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "train_only_transform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["log_formula", "epsilon_fit", "center", "scale", "degenerate_scale_action", "fit_scope", "application_scope"],
+      "properties": {
+        "log_formula": {"const": "natural_log(power + epsilon_by_channel_and_subband)"},
+        "epsilon_fit": {"const": "max(1e-30, 1e-6 * median(positive_train_valid_power))"},
+        "center": {"const": "mean_train_valid_log_power_per_channel_and_subband"},
+        "scale": {"const": "population_std_train_valid_log_power_per_channel_and_subband"},
+        "degenerate_scale_action": {"const": "FAIL_CHANNEL_SUBBAND"},
+        "fit_scope": {"const": "TRAIN_VALID_FRAMES_ONLY"},
+        "application_scope": {"const": "FROZEN_APPLY_TO_VALIDATION_AND_TEST"}
+      }
+    },
+    "time_grid": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_frame_rate_hz", "grid_origin_seconds", "frame_timestamp", "downsampling", "interpolation_support", "output_validity"],
+      "properties": {
+        "target_frame_rate_hz": {"const": 50},
+        "grid_origin_seconds": {"const": 0},
+        "frame_timestamp": {"const": "RECORDING_TIME_SECONDS_AT_OUTPUT_FRAME_CENTER"},
+        "downsampling": {"const": "POWER_LOWPASS_THEN_LINEAR_INTERPOLATION_TO_K_OVER_50_SECONDS"},
+        "interpolation_support": {"const": "TWO_NEAREST_SOURCE_SAMPLES_NO_EXTRAPOLATION"},
+        "output_validity": {"const": "MASK_UNLESS_COMPLETE_FILTER_AND_INTERPOLATION_SUPPORT_IS_INSIDE_ALLOWED_EVENT_SPLIT_INTERVAL"}
+      }
+    },
+    "lag": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["values_seconds", "positive_lag_semantics", "maximum_lag_seconds"],
+      "properties": {
+        "values_seconds": {
+          "type": "array",
+          "prefixItems": [{"const": 0}, {"const": 0.05}, {"const": 0.1}, {"const": 0.15}, {"const": 0.2}, {"const": 0.25}, {"const": 0.3}, {"const": 0.35}, {"const": 0.4}, {"const": 0.45}, {"const": 0.5}],
+          "items": false,
+          "minItems": 11,
+          "maxItems": 11
+        },
+        "positive_lag_semantics": {"const": "AUDIO_AT_T_PREDICTS_NEURAL_AT_T_PLUS_LAG"},
+        "maximum_lag_seconds": {"const": 0.5}
+      }
+    },
+    "sensitivity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "status", "may_replace_primary", "selection_by_result_allowed", "execution_requires_separate_approval"],
+      "properties": {
+        "name": {"const": "70_150_HZ_WITH_60_120_REJECTION"},
+        "status": {"const": "PREDECLARED_SENSITIVITY_NOT_PRIMARY"},
+        "may_replace_primary": {"const": false},
+        "selection_by_result_allowed": {"const": false},
+        "execution_requires_separate_approval": {"const": true}
+      }
+    },
+    "final_embargo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formula", "computed_filter_resampling_edge_seconds_max", "audio_cross_split_context_overlap_seconds", "status", "baseline_final"],
+      "properties": {
+        "formula": {"const": "max(2s, 0.5s, computed_filter_resampling_edge, measured_audio_cross_split_context_overlap)"},
+        "computed_filter_resampling_edge_seconds_max": {"const": 1.091796875},
+        "audio_cross_split_context_overlap_seconds": {"type": "null"},
+        "status": {"const": "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_FINAL_SPLIT_GUARD"},
+        "baseline_final": {"const": false}
+      }
+    },
+    "synthetic_test_thresholds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coefficient_symmetry_absolute_tolerance", "overlap_add_vs_direct_absolute_tolerance", "overlap_add_vs_direct_relative_tolerance", "impulse_outside_finite_fir_support_absolute_tolerance", "passband_center_minimum_gain_db", "passband_center_maximum_gain_db", "line_60_hz_maximum_gain_db", "harmonic_120_hz_maximum_gain_db", "time_domain_harmonic_to_passband_rms_maximum_ratio", "nonfinite_output_allowed"],
+      "properties": {
+        "coefficient_symmetry_absolute_tolerance": {"const": 1e-12},
+        "overlap_add_vs_direct_absolute_tolerance": {"const": 1e-12},
+        "overlap_add_vs_direct_relative_tolerance": {"const": 1e-12},
+        "impulse_outside_finite_fir_support_absolute_tolerance": {"const": 1e-12},
+        "passband_center_minimum_gain_db": {"const": -0.1},
+        "passband_center_maximum_gain_db": {"const": 0.1},
+        "line_60_hz_maximum_gain_db": {"const": -55},
+        "harmonic_120_hz_maximum_gain_db": {"const": -55},
+        "time_domain_harmonic_to_passband_rms_maximum_ratio": {"const": 0.01},
+        "nonfinite_output_allowed": {"const": false}
+      }
+    },
+    "anatomy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "region_summary", "contact_name_region_inference"],
+      "properties": {
+        "status": {"const": "ANATOMY_MAPPING_NOT_READY"},
+        "region_summary": {"const": "NOT_ESTIMABLE"},
+        "contact_name_region_inference": {"const": "FORBIDDEN"}
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["synthetic_tests_allowed", "real_neural_waveform_target_extraction_allowed", "model_download_allowed", "baseline_allowed"],
+      "properties": {
+        "synthetic_tests_allowed": {"const": true},
+        "real_neural_waveform_target_extraction_allowed": {"const": false},
+        "model_download_allowed": {"const": false},
+        "baseline_allowed": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "subband_70_80": {"type": "object", "additionalProperties": false, "required": ["layer_key", "low_hz", "high_hz", "weight"], "properties": {"layer_key": {"const": "hg_70_80"}, "low_hz": {"const": 70}, "high_hz": {"const": 80}, "weight": {"const": 0.16666666666666666}}},
+    "subband_80_90": {"type": "object", "additionalProperties": false, "required": ["layer_key", "low_hz", "high_hz", "weight"], "properties": {"layer_key": {"const": "hg_80_90"}, "low_hz": {"const": 80}, "high_hz": {"const": 90}, "weight": {"const": 0.16666666666666666}}},
+    "subband_90_100": {"type": "object", "additionalProperties": false, "required": ["layer_key", "low_hz", "high_hz", "weight"], "properties": {"layer_key": {"const": "hg_90_100"}, "low_hz": {"const": 90}, "high_hz": {"const": 100}, "weight": {"const": 0.16666666666666666}}},
+    "subband_100_110": {"type": "object", "additionalProperties": false, "required": ["layer_key", "low_hz", "high_hz", "weight"], "properties": {"layer_key": {"const": "hg_100_110"}, "low_hz": {"const": 100}, "high_hz": {"const": 110}, "weight": {"const": 0.16666666666666666}}},
+    "subband_130_140": {"type": "object", "additionalProperties": false, "required": ["layer_key", "low_hz", "high_hz", "weight"], "properties": {"layer_key": {"const": "hg_130_140"}, "low_hz": {"const": 130}, "high_hz": {"const": 140}, "weight": {"const": 0.16666666666666666}}},
+    "subband_140_150": {"type": "object", "additionalProperties": false, "required": ["layer_key", "low_hz", "high_hz", "weight"], "properties": {"layer_key": {"const": "hg_140_150"}, "low_hz": {"const": 140}, "high_hz": {"const": 150}, "weight": {"const": 0.16666666666666666}}},
+    "profile_512": {"type": "object", "additionalProperties": false, "required": ["sampling_rate_hz", "bandpass_numtaps", "bandpass_kaiser_beta", "bandpass_radius_samples", "power_smoothing_numtaps", "power_smoothing_kaiser_beta", "power_smoothing_radius_samples", "finite_fir_chain_radius_samples", "linear_interpolation_radius_samples", "total_filter_resampling_edge_samples", "total_filter_resampling_edge_seconds"], "properties": {"sampling_rate_hz": {"const": 512}, "bandpass_numtaps": {"const": 931}, "bandpass_kaiser_beta": {"const": 5.65326}, "bandpass_radius_samples": {"const": 465}, "power_smoothing_numtaps": {"const": 187}, "power_smoothing_kaiser_beta": {"const": 5.65326}, "power_smoothing_radius_samples": {"const": 93}, "finite_fir_chain_radius_samples": {"const": 558}, "linear_interpolation_radius_samples": {"const": 1}, "total_filter_resampling_edge_samples": {"const": 559}, "total_filter_resampling_edge_seconds": {"const": 1.091796875}}},
+    "profile_1024": {"type": "object", "additionalProperties": false, "required": ["sampling_rate_hz", "bandpass_numtaps", "bandpass_kaiser_beta", "bandpass_radius_samples", "power_smoothing_numtaps", "power_smoothing_kaiser_beta", "power_smoothing_radius_samples", "finite_fir_chain_radius_samples", "linear_interpolation_radius_samples", "total_filter_resampling_edge_samples", "total_filter_resampling_edge_seconds"], "properties": {"sampling_rate_hz": {"const": 1024}, "bandpass_numtaps": {"const": 1859}, "bandpass_kaiser_beta": {"const": 5.65326}, "bandpass_radius_samples": {"const": 929}, "power_smoothing_numtaps": {"const": 373}, "power_smoothing_kaiser_beta": {"const": 5.65326}, "power_smoothing_radius_samples": {"const": 186}, "finite_fir_chain_radius_samples": {"const": 1115}, "linear_interpolation_radius_samples": {"const": 1}, "total_filter_resampling_edge_samples": {"const": 1116}, "total_filter_resampling_edge_seconds": {"const": 1.08984375}}}
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": "m6a-neural-target-method-candidate-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "status": "METHOD_FREEZE_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+  "primary_target": {
+    "name": "LINE_HARMONIC_EXCLUDED_MULTIBAND_HIGH_GAMMA_LOG_POWER",
+    "selection_rule": "PREDECLARED_PRIMARY_NEVER_SELECTED_BY_ENCODING_PERFORMANCE",
+    "subbands": [
+      {"layer_key": "hg_70_80", "low_hz": 70, "high_hz": 80, "weight": 0.16666666666666666},
+      {"layer_key": "hg_80_90", "low_hz": 80, "high_hz": 90, "weight": 0.16666666666666666},
+      {"layer_key": "hg_90_100", "low_hz": 90, "high_hz": 100, "weight": 0.16666666666666666},
+      {"layer_key": "hg_100_110", "low_hz": 100, "high_hz": 110, "weight": 0.16666666666666666},
+      {"layer_key": "hg_130_140", "low_hz": 130, "high_hz": 140, "weight": 0.16666666666666666},
+      {"layer_key": "hg_140_150", "low_hz": 140, "high_hz": 150, "weight": 0.16666666666666666}
+    ],
+    "excluded_harmonic_guard_hz": [110, 130],
+    "aggregation": "TRAIN_STANDARDIZE_EACH_SUBBAND_THEN_EQUAL_WEIGHT_MEAN"
+  },
+  "reference": {
+    "sidecar_value": "scalp electrode, not included with data",
+    "primary_policy": "AS_RECORDED_SCALP_REFERENCE",
+    "missing_reference_reconstruction": "FORBIDDEN",
+    "contact_name_bipolar_pairing": "FORBIDDEN",
+    "future_sensitivities": ["CAR", "CMR", "BIPOLAR_SEPARATELY_APPROVED_ONLY"]
+  },
+  "bandpass_fir": {
+    "implementation": "scipy.signal.firwin",
+    "execution_backend": "scipy.signal.oaconvolve",
+    "convolution": "OVERLAP_ADD_SYMMETRIC_FINITE_LENGTH_FIR",
+    "window": "KAISER",
+    "stopband_attenuation_db": 60,
+    "nominal_passband_width_hz": 10,
+    "transition_width_hz": 2,
+    "lower_stop_to_pass_definition": "stop_end=low_hz-2; cutoff_midpoint=low_hz-1; pass_start=low_hz",
+    "upper_pass_to_stop_definition": "pass_end=high_hz; cutoff_midpoint=high_hz+1; stop_start=high_hz+2",
+    "numtaps_rule": "odd(kaiserord(60 dB, 2/(sampling_rate/2)))",
+    "minimum_input_samples_rule": "INPUT_LENGTH_MUST_BE_AT_LEAST_BANDPASS_NUMTAPS",
+    "phase": "ZERO_PHASE_CENTERED_CONVOLUTION_WITH_FULL_SUPPORT_MASK",
+    "padding": "NO_PADDING_SHARED_ACROSS_EVENT_OR_SPLIT_BOUNDARY"
+  },
+  "power_estimator": {
+    "method": "SQUARE_THEN_FINITE_FIR_LOWPASS",
+    "hilbert_transform": "FORBIDDEN",
+    "lowpass_implementation": "scipy.signal.firwin",
+    "lowpass_passband_edge_hz": 10,
+    "lowpass_stopband_edge_hz": 20,
+    "lowpass_cutoff_midpoint_hz": 15,
+    "transition_width_hz": 10,
+    "stopband_attenuation_db": 60,
+    "numtaps_rule": "odd(kaiserord(60 dB, 10/(sampling_rate/2)))"
+  },
+  "sampling_rate_profiles": [
+    {
+      "sampling_rate_hz": 512,
+      "bandpass_numtaps": 931,
+      "bandpass_kaiser_beta": 5.65326,
+      "bandpass_radius_samples": 465,
+      "power_smoothing_numtaps": 187,
+      "power_smoothing_kaiser_beta": 5.65326,
+      "power_smoothing_radius_samples": 93,
+      "finite_fir_chain_radius_samples": 558,
+      "linear_interpolation_radius_samples": 1,
+      "total_filter_resampling_edge_samples": 559,
+      "total_filter_resampling_edge_seconds": 1.091796875
+    },
+    {
+      "sampling_rate_hz": 1024,
+      "bandpass_numtaps": 1859,
+      "bandpass_kaiser_beta": 5.65326,
+      "bandpass_radius_samples": 929,
+      "power_smoothing_numtaps": 373,
+      "power_smoothing_kaiser_beta": 5.65326,
+      "power_smoothing_radius_samples": 186,
+      "finite_fir_chain_radius_samples": 1115,
+      "linear_interpolation_radius_samples": 1,
+      "total_filter_resampling_edge_samples": 1116,
+      "total_filter_resampling_edge_seconds": 1.08984375
+    }
+  ],
+  "train_only_transform": {
+    "log_formula": "natural_log(power + epsilon_by_channel_and_subband)",
+    "epsilon_fit": "max(1e-30, 1e-6 * median(positive_train_valid_power))",
+    "center": "mean_train_valid_log_power_per_channel_and_subband",
+    "scale": "population_std_train_valid_log_power_per_channel_and_subband",
+    "degenerate_scale_action": "FAIL_CHANNEL_SUBBAND",
+    "fit_scope": "TRAIN_VALID_FRAMES_ONLY",
+    "application_scope": "FROZEN_APPLY_TO_VALIDATION_AND_TEST"
+  },
+  "time_grid": {
+    "target_frame_rate_hz": 50,
+    "grid_origin_seconds": 0,
+    "frame_timestamp": "RECORDING_TIME_SECONDS_AT_OUTPUT_FRAME_CENTER",
+    "downsampling": "POWER_LOWPASS_THEN_LINEAR_INTERPOLATION_TO_K_OVER_50_SECONDS",
+    "interpolation_support": "TWO_NEAREST_SOURCE_SAMPLES_NO_EXTRAPOLATION",
+    "output_validity": "MASK_UNLESS_COMPLETE_FILTER_AND_INTERPOLATION_SUPPORT_IS_INSIDE_ALLOWED_EVENT_SPLIT_INTERVAL"
+  },
+  "lag": {
+    "values_seconds": [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5],
+    "positive_lag_semantics": "AUDIO_AT_T_PREDICTS_NEURAL_AT_T_PLUS_LAG",
+    "maximum_lag_seconds": 0.5
+  },
+  "sensitivity": {
+    "name": "70_150_HZ_WITH_60_120_REJECTION",
+    "status": "PREDECLARED_SENSITIVITY_NOT_PRIMARY",
+    "may_replace_primary": false,
+    "selection_by_result_allowed": false,
+    "execution_requires_separate_approval": true
+  },
+  "final_embargo": {
+    "formula": "max(2s, 0.5s, computed_filter_resampling_edge, measured_audio_cross_split_context_overlap)",
+    "computed_filter_resampling_edge_seconds_max": 1.091796875,
+    "audio_cross_split_context_overlap_seconds": null,
+    "status": "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_FINAL_SPLIT_GUARD",
+    "baseline_final": false
+  },
+  "synthetic_test_thresholds": {
+    "coefficient_symmetry_absolute_tolerance": 1e-12,
+    "overlap_add_vs_direct_absolute_tolerance": 1e-12,
+    "overlap_add_vs_direct_relative_tolerance": 1e-12,
+    "impulse_outside_finite_fir_support_absolute_tolerance": 1e-12,
+    "passband_center_minimum_gain_db": -0.1,
+    "passband_center_maximum_gain_db": 0.1,
+    "line_60_hz_maximum_gain_db": -55,
+    "harmonic_120_hz_maximum_gain_db": -55,
+    "time_domain_harmonic_to_passband_rms_maximum_ratio": 0.01,
+    "nonfinite_output_allowed": false
+  },
+  "anatomy": {
+    "status": "ANATOMY_MAPPING_NOT_READY",
+    "region_summary": "NOT_ESTIMABLE",
+    "contact_name_region_inference": "FORBIDDEN"
+  },
+  "execution": {
+    "synthetic_tests_allowed": true,
+    "real_neural_waveform_target_extraction_allowed": false,
+    "model_download_allowed": false,
+    "baseline_allowed": false
+  }
+}
