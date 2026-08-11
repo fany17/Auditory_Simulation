@@ -103,24 +103,24 @@ def validate_assignments(
             issues.append("missing splits: " + ", ".join(missing_splits))
 
     for key in required_group_keys:
-        by_value: dict[str, set[str]] = defaultdict(set)
+        required_groups_by_value: dict[str, set[str]] = defaultdict(set)
         for row in rows:
             value = row.value(key).strip()
             if not value:
                 issues.append(f"missing required group {key}: {row.sample_id}")
                 continue
-            by_value[value].add(row.split)
-        for value, splits in sorted(by_value.items()):
+            required_groups_by_value[value].add(row.split)
+        for value, splits in sorted(required_groups_by_value.items()):
             if len(splits) > 1:
                 issues.append(f"group leakage {key}={value}: {sorted(splits)}")
 
     for key in optional_group_keys:
-        by_value: dict[str, set[str]] = defaultdict(set)
+        optional_groups_by_value: dict[str, set[str]] = defaultdict(set)
         for row in rows:
             value = row.value(key).strip()
             if value:
-                by_value[value].add(row.split)
-        for value, splits in sorted(by_value.items()):
+                optional_groups_by_value[value].add(row.split)
+        for value, splits in sorted(optional_groups_by_value.items()):
             if len(splits) > 1:
                 issues.append(f"optional group leakage {key}={value}: {sorted(splits)}")
 

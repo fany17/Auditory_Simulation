@@ -6,13 +6,27 @@ import json
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from collections.abc import Iterator
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterator
+from typing import TypedDict
 
 
 S3_ENDPOINT = "https://s3.amazonaws.com/openneuro.org"
 XML_NAMESPACE = {"s3": "http://s3.amazonaws.com/doc/2006-03-01/"}
+
+
+class S3Object(TypedDict):
+    key: str
+    bytes: int
+    modified_at_utc: str
+
+
+class InventoryRow(TypedDict):
+    path: str
+    bytes: int
+    modified_at_utc: str
+    source_url: str
 
 
 def request_page(prefix: str, continuation: str | None = None) -> bytes:
@@ -25,7 +39,7 @@ def request_page(prefix: str, continuation: str | None = None) -> bytes:
         return response.read()
 
 
-def iter_objects(prefix: str) -> Iterator[dict[str, object]]:
+def iter_objects(prefix: str) -> Iterator[S3Object]:
     continuation: str | None = None
     while True:
         root = ET.fromstring(request_page(prefix, continuation))
@@ -61,7 +75,7 @@ def main() -> int:
 
     prefix = args.dataset_id.rstrip("/") + "/"
     objects = sorted(iter_objects(prefix), key=lambda item: str(item["key"]))
-    rows = [
+    rows: list[InventoryRow] = [
         {
             "path": str(item["key"])[len(prefix) :],
             "bytes": item["bytes"],
@@ -82,7 +96,7 @@ def main() -> int:
         "listed_at_utc": datetime.now(timezone.utc).isoformat(),
         "source": S3_ENDPOINT,
         "object_count": len(rows),
-        "total_bytes": sum(int(row["bytes"]) for row in rows),
+        "total_bytes": sum(row["bytes"] for row in rows),
         "integrity_policy": "NON_HASH_AUDIT",
         "evidence_fields": ["path", "bytes", "modified_at_utc"],
     }

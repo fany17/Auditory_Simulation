@@ -53,4 +53,4 @@
 - 数据下载/读取：`AUTHORIZED_ON_2203`，尚待实际运行证据；
 - 专用环境：`G1 PASS`；2203 独立环境、自检和远端 10 项测试均通过，证据见 `reports/remote_selfcheck_2203.json`；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
-- M6A→M6B exchange contract：`REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`；producer 侧 33 项远端测试通过，consumer cross-test 尚未运行，未冻结或接受。
+- M6A→M6B exchange contract：`REVISED_DRAFT_AWAITING_CONSUMER_REVIEW`；producer 侧 33 项远端测试、Ruff 与 mypy 均通过，consumer cross-test 尚未运行，未冻结或接受。

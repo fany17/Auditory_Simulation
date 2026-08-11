@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import os
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -47,7 +46,7 @@ def read_tsv_header(path: Path) -> list[str]:
 
 
 def read_audio_info(path: Path) -> dict[str, Any]:
-    import soundfile
+    import soundfile  # type: ignore[import-untyped]
 
     info = soundfile.info(str(path))
     return {
@@ -61,7 +60,7 @@ def read_audio_info(path: Path) -> dict[str, Any]:
 
 
 def read_ieeg_header(path: Path) -> dict[str, Any]:
-    import mne
+    import mne  # type: ignore[import-untyped]
 
     suffix = path.suffix.lower()
     if suffix == ".edf":
