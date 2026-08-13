@@ -23,7 +23,9 @@ Auditory_Simulation/
 ### `doc/`：本项目独立文档
 
 - `PROJECT_BOUNDARY.md`：当前有效的项目目标、所有权、排除项及与 STN 项目的接口。
-- `CURRENT_TASK.md`：当前阶段、候选任务和执行授权状态。
+- `CURRENT_TASK.md`：当前阶段、任务优先级和执行授权状态。
+- `tasks/M6A-PUBLIC-002.md`：2026-08-13 至 2026-08-20 的预训练声音/时序架构一周复现任务。
+- `tasks/M6A-PUBLIC-001.md`：ds004703 / wav2vec2 layer-wise Audio->Brain encoding 历史正式任务，当前保留 preliminary checkpoint，本周不扩展。
 - `01_听觉时变信息处理项目总纲.md`：历史总纲，仅保留规划来源，不再作为当前权威。
 - `PROJECT_CHARTER.md`：历史章程草案，仅保留规划来源，不再作为当前权威。
 
@@ -40,27 +42,28 @@ Auditory_Simulation/
 ## 当前状态
 
 - 当前边界：声音模型、公开神经数据和计算神经仿真的方法平台。
-- 当前方向：`M6A-PUBLIC`，建立公开数据上的声音—神经表征对齐。
-- 当前唯一任务：`M6A-PUBLIC-001`，冻结 OpenNeuro `ds004703 v1.1.0` 并建立最小逐层对齐基线。
-- 首轮模型策略：冻结 `facebook/wav2vec2-base`，不微调声音基座；HuBERT/WavLM 留待后续对照任务。
-- 执行状态：`ACTIVE_EXECUTION`；专用环境、公开数据、公开模型和轻量分析均获授权在 2203 执行。
-- 当前节点：最小 G4 已在 2203 完成同一 `sub-SD012_ses-02_task-PassiveListen` recording 的 40 passages（24/8/8），形成单被试 preliminary held-out 指标与 20-null 机械检查，状态为 `G4_MINIMAL_SD012_SES02_PRELIMINARY_COMPLETE_AWAITING_COORDINATOR_REVIEW`。这不是协调接受的正式 G4 科学结果；当前仍无 M6A→M6B exchange candidate 或 consumer cross-test。
-- 许可边界：CC0 元数据与 README 更严格限制共同执行；仅限非商业学术研究、禁止再识别、禁止原始数据外传。
-- 完整性边界：只使用文件名、字节数、时间戳、数量、schema 与抽样可读性；不进行任何哈希或校验和验证。
-- `test/` 中既有 Demo 不自动升级为 M6A 正式结果。
+- 当前方向：`M6A-PUBLIC`。
+- 当前优先任务：`M6A-PUBLIC-002`，建立可直接下载、已有 pretrained weights、零训练的声音/时序架构 baseline。
+- 本周正式模型：PANNs CNN14、ConvTasNet、SpeechBrain CRDNN、Parakeet-TDT/FastConformer、Audio Mamba/SSAM、wav2vec2、Whisper、CoNNear periphery、ICNet。
+- 本周硬边界：`ZERO_TRAINING`；不从头训练、不微调、不继续预训练，也不训练 linear probe/ridge/classifier；只做 inference、representation extraction、架构审计和无需拟合参数的 temporal probes。
+- `M6A-PUBLIC-001` 保留在 `G4_MINIMAL_SD012_SES02_PRELIMINARY_COMPLETE_AWAITING_COORDINATOR_REVIEW` checkpoint；本周不扩 subject/recording/model，不继续神经拟合，也不生成新的 exchange candidate。
+- 首轮 wav2vec2 preliminary 仍只属于单被试单 recording 描述性结果，不提供稳定显著性、脑区或泛化结论。
+- 当前没有 M6A→M6B exchange candidate，consumer cross-test 仍未运行。
 - Git 管理：本目录是唯一 Git 工作区；大数据、模型权重、大体积特征与训练输出不进入本地仓库。
 
 ## 与 STN_Decoding_Encoding 的接口
 
-- `M6A-PUBLIC` 在本项目内建立并外部验证公开数据方法与冻结 artifact。
-- 未来可能的 `M6B-STN` 只在 `STN_Decoding_Encoding` 内、经独立任务书和数据治理批准后运行。
+- `M6A-PUBLIC` 在本项目内建立并外部验证公开数据方法、声音/时序模型 baseline 与冻结 artifact。
+- `M6B-STN` 只在 `STN_Decoding_Encoding` 内、经独立任务书和数据治理批准后运行。
 - 两项目不共享可变工作目录、当前任务文档、结果状态或项目总纲。
 - Auditory 的公开数据结果不能替代 STN 真实数据证据；STN 单被试结果也不能反向充当公开模型的通用验证。
+- 患者数据默认不得进入 `Auditory_Simulation`。
 
 ## 阅读顺序
 
 1. `AGENTS.md`
 2. `doc/PROJECT_BOUNDARY.md`
 3. `doc/CURRENT_TASK.md`
-4. 经人工批准的具体任务书与实际运行证据
-5. 只有追溯历史决策时，才阅读旧总纲、旧章程和 `test/`
+4. `doc/tasks/M6A-PUBLIC-002.md`
+5. 只有追溯 ds004703/wav2vec2 历史时才阅读 `doc/tasks/M6A-PUBLIC-001.md` 及其阶段报告
+6. 只有追溯历史决策时，才阅读旧总纲、旧章程和 `test/`
