@@ -3,7 +3,8 @@
 | 字段 | 内容 |
 |---|---|
 | 日期 | 2026-08-13 |
-| 状态 | `G3_SINGLE_RECORDING_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 状态 | `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY` |
+| 协调审核 | `ACCEPT`（2026-08-13） |
 | scoped config | `configs/m6a_g3_single_recording_candidate.json` |
 | 唯一机器报告 | `reports/g3_single_recording_candidate_20260813.json` |
 | 远端数组 | `/home/fanyu/auditory_simulation_m6a/outputs/g3_single_recording_candidate_20260813T081355Z` |
@@ -64,4 +65,6 @@ provisional internal selection 为 `NPY_PER_TENSOR`：支持 mmap、直接 layer
 - `formal_baseline_run=false`、`scientific_result_claimed=false`、`exchange_candidate_created=false`、`formal_train_only_transform_fitted=false`；
 - 未计算 ridge、Pearson r、R2、null、显著性或层优劣；不能声称任何神经表征、模型层优势、脑区结论或泛化结果；
 - 首次通过输出未显式机器记录既有 duration 差异与负 power 容差，保留为上述 superseded provenance；当前唯一候选为 `reports/g3_single_recording_candidate_20260813.json`；
-- 当前停止等待协调审核；接受前不扩展其他 segment/subject，不运行 G4，不建立 exchange candidate。
+- G3 协调接受后只解除“可起草 G4 协议”的依赖；它没有授权 G4 数据执行、其他 recording/subject 扩展或 exchange candidate。
+
+协调已独立复核并接受本候选。该接受仅证明单 passage 工程时间轴、shape、有界读取和数组可读性，不构成 neural encoding、层优劣、泛化、显著性或其他科学结果。后续 G4 仍须独立冻结协议并获得执行授权。

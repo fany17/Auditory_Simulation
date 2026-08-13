@@ -19,6 +19,7 @@ from m6a_public.config_gate import find_forbidden_fields
 
 
 G3_STATUS = "G3_SINGLE_RECORDING_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+G3_ACCEPTED_STATUS = "G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY"
 SUPERSEDED_G3_STATUS = "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE"
 G3_CONFIG_STATUS = "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED"
 REPORT_SCHEMA_VERSION = "m6a-g3-single-recording-alignment-candidate-v1"
@@ -914,7 +915,7 @@ def validate_g3_evidence(
         "report_identity": (
             payload.get("report_schema_version") == REPORT_SCHEMA_VERSION
             and payload.get("task_id") == "M6A-PUBLIC-001"
-            and payload.get("status") != SUPERSEDED_G3_STATUS
+            and payload.get("status") in {None, G3_STATUS, G3_ACCEPTED_STATUS}
         ),
         "non_hash_and_finite_evidence": (
             payload.get("integrity_policy") == "NON_HASH_AUDIT"

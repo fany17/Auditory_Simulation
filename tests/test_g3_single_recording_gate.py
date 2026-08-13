@@ -650,6 +650,7 @@ class G3CandidateEvidenceTests(unittest.TestCase):
             "superseded_provenance": lambda item: item.__setitem__(
                 "status", SUPERSEDED_G3_STATUS
             ),
+            "unknown_status": lambda item: item.__setitem__("status", "UNREVIEWED"),
         }
         for name, mutate in cases.items():
             with self.subTest(name=name):

@@ -106,11 +106,12 @@
 
 首轮 neural target method 已由协调二审 `ACCEPT` 并冻结：主目标为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
 
-冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 与 2.0 s final embargo/baseline-final split 已于 2026-08-13 获协调者接受。G3 另以 `configs/m6a_g3_single_recording_candidate.json` 进行 scoped authorization：只允许预声明机器规则选出的一个 recording、一个 train passage、36 个 eligible channels 与有限支持读取；全数据 `neural_extraction_allowed=false`。方法/G2/split 接受与 G3 candidate 均不等于 G4、M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
+冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 与 2.0 s final embargo/baseline-final split 已于 2026-08-13 获协调者接受。G3 单 recording 候选也已由协调者接受，状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`，但只证明工程时间轴、shape 与有界读取。当前 G4 仅为协议候选，`g4_execution_authorized=false`、全数据 `neural_extraction_allowed=false`；这些接受均不等于 M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
 
 主模型为 ridge encoding：
 
-- alpha 仅在 grouped train/validation 内选择；
+- 15 个 feature variant 均以 float64 thin SVD ridge 实现；每个 fit partition、每个 variant 至多一次 decomposition，并作为 multi-target 路径复用于全部 11 lag × 36 electrodes × 6 alpha；alpha 只由 validation 选择，固定 tie 时取最小 alpha；
+- alpha 锁定后以 train+validation 重拟合 ridge，但 feature/PCA/target transform 始终只使用 train 参数；test 只评估一次；
 - 主指标：电极级 held-out Pearson r；
 - 辅指标：held-out R2 与被试汇总；
 - anatomy gate 当前为 `ANATOMY_MAPPING_NOT_READY`：标准 `electrodes.tsv`/`coordsystem.json` 均缺失，9 份非标准 contact RAS CSV 没有脑区标签。因此 `region_summary=NOT_ESTIMABLE`；该门禁不单独阻塞电极级 smoke，但禁止从 contact 名称猜脑区；
@@ -118,12 +119,13 @@
 
 ## 7. null 与统计边界
 
-至少保存：
+G4 协议候选冻结以下边界：
 
-1. `circular_time_shift`：在 recording/stimulus 内循环移位，移位量必须超过 lag、滤波边缘和特征感受野；
-2. `stimulus_derangement`：在时长匹配桶内打乱 stimulus—neural 配对，保持 split 不变；
-3. smoke 阶段至少 20 次，正式阶段默认 1000 次；随机种子和失败 permutation 全部保留；
-4. 多层、多 lag、多电极比较必须使用预注册的 FDR 或 max-statistic 校正，不得事后选择更有利方法。
+1. primary smoke null 仅为 8 个 test passages 的 stimulus derangement：完整枚举 14,833 个无 fixed-point bijection，再以 NumPy PCG64 seed `20260813` 无放回均匀抽取 20 个；同一 mapping 在所有 feature/layer/lag/electrode cell 与两个 correction family 间共用；
+2. null 不重跑模型，也不重拟合 transform、PCA、ridge 或 alpha；只把已锁定的 donor test prediction 映射到 target passage neural target。每对 passage 内按 normalized complete-support phase 线性映射 donor prediction 到 target common frames，禁止先跨 passage 拼接后 time warp；
+3. observed/null 都先逐 target passage 计算相同 metric，再由 8 个 passage 等权形成 cell metric；任一 passage 不可估计则该 cell 为 `NOT_ESTIMABLE`；
+4. wav2vec2 的 passage 内 Transformer 为全局上下文，因此 circular shift 不适用。acoustic circular shift 仅为 secondary mechanical diagnostic，不得替代 primary null；
+5. 两个预注册 correction family 分别使用 one-sided max Pearson statistic。effective family 是 observed 与全部 20 null 均可估计 cell 的固定交集，空集即失败；20 次置换只验证机械流程，不提供稳定显著性结论。
 
 ## 8. 内部 manifest 与跨项目 exchange contract
 
@@ -156,7 +158,7 @@ M6A→M6B 正式交付目标是冻结 method package、schema、公开 benchmark
 
 硬停止条件沿用 `doc/CURRENT_TASK.md`。此外：
 
-- 单次 smoke GPU 运行上限 2 小时；
+- 单次 smoke GPU invocation 必须严格低于 2 小时，并在达到 2 小时前 checkpoint/停报；G4 累计预计 GPU 可不超过 4 小时，但必须拆成可恢复阶段。协议阶段静态估算不是实跑资源证据，执行前仍须通过只读 preflight；
 - 首轮数据与缓存预计达到 500 GB 前必须重新报告；
 - 连续正式 GPU 运行预计超过 24 小时前必须重新报告；
 - 磁盘可用空间低于 500 GB 时不启动新增大体积步骤；

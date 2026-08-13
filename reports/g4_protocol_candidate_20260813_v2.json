@@ -1,0 +1,606 @@
+{
+  "report_schema_version": "m6a-g4-protocol-gate-report-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "status": "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE",
+  "superseded_by": "reports/g4_protocol_candidate_20260813_v3.json",
+  "superseded_reason": "RESTORED_THE_EXISTING_TWO_HOUR_SINGLE_SMOKE_GPU_HARD_BOUND_AND_ADDED_SEPARATE_FOUR_HOUR_TOTAL_PREFLIGHT_SEMANTICS",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "cryptographic_integrity_claim": false,
+  "protocol_config": "configs/m6a_g4_protocol_candidate.json",
+  "protocol_schema": "schemas/m6a_g4_protocol_candidate.schema.json",
+  "scope_audit": {
+    "split_csv": "reports/ds004703_primary_split.csv",
+    "recording_id": "sub-SD012_ses-02_task-PassiveListen",
+    "participant_id": "sub-SD012",
+    "session_id": "ses-02",
+    "excluded_sessions_present_count": 0,
+    "passage_count": 40,
+    "split_counts": {
+      "train": 24,
+      "validation": 8,
+      "test": 8
+    },
+    "block_assignments": {
+      "block-01": "train",
+      "block-02": "train",
+      "block-03": "validation",
+      "block-04": "test",
+      "block-05": "train"
+    },
+    "unique_sample_id_count": 40,
+    "unique_stimulus_id_count": 40,
+    "unique_audio_file_count": 40,
+    "manifest_audio_seconds": 1532.4559637188208,
+    "test_derangement_count": 14833,
+    "selected_smoke_derangements": [
+      {
+        "draw_index": 1,
+        "enumerated_space_index": 8051,
+        "duration_mismatch_sum_seconds": 154.35714285714286,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 2,
+        "enumerated_space_index": 12835,
+        "duration_mismatch_sum_seconds": 156.53814058956917,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 3,
+        "enumerated_space_index": 14252,
+        "duration_mismatch_sum_seconds": 105.72426303854874,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 4,
+        "enumerated_space_index": 13085,
+        "duration_mismatch_sum_seconds": 135.34426303854875,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 5,
+        "enumerated_space_index": 6145,
+        "duration_mismatch_sum_seconds": 162.78326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 6,
+        "enumerated_space_index": 7765,
+        "duration_mismatch_sum_seconds": 103.62675736961451,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 7,
+        "enumerated_space_index": 13881,
+        "duration_mismatch_sum_seconds": 133.16326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 8,
+        "enumerated_space_index": 5485,
+        "duration_mismatch_sum_seconds": 124.73360544217687,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 9,
+        "enumerated_space_index": 8734,
+        "duration_mismatch_sum_seconds": 162.78326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 10,
+        "enumerated_space_index": 3024,
+        "duration_mismatch_sum_seconds": 139.4936507936508,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 11,
+        "enumerated_space_index": 10186,
+        "duration_mismatch_sum_seconds": 162.78326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 12,
+        "enumerated_space_index": 378,
+        "duration_mismatch_sum_seconds": 118.29977324263038,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 13,
+        "enumerated_space_index": 283,
+        "duration_mismatch_sum_seconds": 65.38839002267574,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 14,
+        "enumerated_space_index": 5360,
+        "duration_mismatch_sum_seconds": 141.58938775510205,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 15,
+        "enumerated_space_index": 1600,
+        "duration_mismatch_sum_seconds": 75.88811791383219,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 16,
+        "enumerated_space_index": 6526,
+        "duration_mismatch_sum_seconds": 154.35714285714286,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 17,
+        "enumerated_space_index": 11905,
+        "duration_mismatch_sum_seconds": 109.8736507936508,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 18,
+        "enumerated_space_index": 10834,
+        "duration_mismatch_sum_seconds": 130.98049886621317,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 19,
+        "enumerated_space_index": 4830,
+        "duration_mismatch_sum_seconds": 103.62675736961451,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 20,
+        "enumerated_space_index": 6615,
+        "duration_mismatch_sum_seconds": 112.0546485260771,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      }
+    ],
+    "result_or_signal_input_used": false,
+    "new_real_edf_read": false,
+    "new_real_audio_read": false,
+    "issues": [],
+    "status": "PASS"
+  },
+  "required_checks": {
+    "protocol_schema_and_semantics": true,
+    "g3_coordinator_acceptance_recorded": true,
+    "accepted_split_and_method_dependencies": true,
+    "single_recording_24_8_8_scope": true,
+    "uniform_test_derangement_is_feasible": true,
+    "region_summary_remains_not_estimable": true,
+    "protocol_only_execution_blocked": true,
+    "resource_preflight_is_explicitly_not_run": true,
+    "task_resource_bounds_match_protocol": true
+  },
+  "failed_checks": [],
+  "protocol_errors": [],
+  "g4_execution_authorized": false,
+  "new_real_edf_read": false,
+  "new_real_audio_read": false,
+  "new_feature_extraction_run": false,
+  "ridge_run": false,
+  "null_run": false,
+  "metric_run": false,
+  "formal_baseline_run": false,
+  "scientific_result_claimed": false,
+  "exchange_candidate_created": false
+}

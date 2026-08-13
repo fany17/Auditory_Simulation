@@ -557,5 +557,8 @@
     "engineering_only_claim_boundary": true
   },
   "failed_checks": [],
-  "status": "G3_SINGLE_RECORDING_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+  "coordinator_review": "ACCEPT",
+  "reviewed_on": "2026-08-13",
+  "accepted_scope": "ENGINEERING_TIME_AXIS_SHAPE_AND_BOUNDED_READ_ONLY_NOT_SCIENTIFIC_RESULT",
+  "status": "G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY"
 }

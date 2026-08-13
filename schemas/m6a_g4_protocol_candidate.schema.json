@@ -1,0 +1,673 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "m6a-g4-protocol-candidate-v1",
+  "title": "M6A G4 protocol candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "status",
+    "integrity_policy",
+    "dependency_gates",
+    "scope",
+    "time_alignment",
+    "target_transform",
+    "features",
+    "ridge",
+    "nulls",
+    "multiple_comparison",
+    "metrics",
+    "resources",
+    "execution"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "m6a-g4-protocol-candidate-v1"
+    },
+    "task_id": {
+      "const": "M6A-PUBLIC-001"
+    },
+    "status": {
+      "const": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+    },
+    "integrity_policy": {
+      "const": "NON_HASH_AUDIT"
+    },
+    "dependency_gates": {
+      "$ref": "#/$defs/dependency_gates"
+    },
+    "scope": {
+      "$ref": "#/$defs/scope"
+    },
+    "time_alignment": {
+      "$ref": "#/$defs/time_alignment"
+    },
+    "target_transform": {
+      "$ref": "#/$defs/target_transform"
+    },
+    "features": {
+      "$ref": "#/$defs/features"
+    },
+    "ridge": {
+      "$ref": "#/$defs/ridge"
+    },
+    "nulls": {
+      "$ref": "#/$defs/nulls"
+    },
+    "multiple_comparison": {
+      "$ref": "#/$defs/multiple_comparison"
+    },
+    "metrics": {
+      "$ref": "#/$defs/metrics"
+    },
+    "resources": {
+      "$ref": "#/$defs/resources"
+    },
+    "execution": {
+      "$ref": "#/$defs/execution"
+    }
+  },
+  "$defs": {
+    "dependency_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "g3_status",
+        "g3_coordinator_review",
+        "g3_reviewed_on",
+        "g3_scientific_result_claimed",
+        "final_embargo_status",
+        "split_status",
+        "neural_method_status",
+        "anatomy_status"
+      ],
+      "properties": {
+        "g3_status": {"type": "string"},
+        "g3_coordinator_review": {"type": "string"},
+        "g3_reviewed_on": {"type": "string"},
+        "g3_scientific_result_claimed": {"type": "boolean"},
+        "final_embargo_status": {"type": "string"},
+        "split_status": {"type": "string"},
+        "neural_method_status": {"type": "string"},
+        "anatomy_status": {"type": "string"}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "split_csv",
+        "participant_id",
+        "session_id",
+        "excluded_sessions",
+        "recording_id",
+        "expected_passage_counts",
+        "expected_total_passages",
+        "expected_block_assignments",
+        "unique_stimulus_per_passage_required",
+        "unique_audio_file_per_passage_required",
+        "result_based_selection_allowed",
+        "other_subjects_allowed",
+        "other_sessions_allowed",
+        "other_recordings_allowed"
+      ],
+      "properties": {
+        "split_csv": {"type": "string"},
+        "participant_id": {"type": "string"},
+        "session_id": {"type": "string"},
+        "excluded_sessions": {"type": "array", "items": {"type": "string"}},
+        "recording_id": {"type": "string"},
+        "expected_passage_counts": {"type": "object"},
+        "expected_total_passages": {"type": "integer", "minimum": 1},
+        "expected_block_assignments": {"type": "object"},
+        "unique_stimulus_per_passage_required": {"type": "boolean"},
+        "unique_audio_file_per_passage_required": {"type": "boolean"},
+        "result_based_selection_allowed": {"type": "boolean"},
+        "other_subjects_allowed": {"type": "boolean"},
+        "other_sessions_allowed": {"type": "boolean"},
+        "other_recordings_allowed": {"type": "boolean"}
+      }
+    },
+    "time_alignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "feature_grid",
+        "feature_rate_hz",
+        "feature_timestamp_semantics",
+        "lags_seconds",
+        "lag_semantics",
+        "fractional_grid_lag_policy",
+        "target_timestamp_semantics",
+        "target_sampling",
+        "target_source",
+        "common_frame_set",
+        "same_feature_frames_for_all_lags",
+        "passage_boundary_crossing_allowed",
+        "split_boundary_crossing_allowed",
+        "padding_across_passage_allowed",
+        "extrapolation_allowed",
+        "incomplete_support_action"
+      ],
+      "properties": {
+        "feature_grid": {"type": "string"},
+        "feature_rate_hz": {"type": "integer", "const": 50},
+        "feature_timestamp_semantics": {"type": "string"},
+        "lags_seconds": {
+          "type": "array",
+          "minItems": 11,
+          "maxItems": 11,
+          "items": {"type": "number", "minimum": 0, "maximum": 0.5}
+        },
+        "lag_semantics": {"type": "string"},
+        "fractional_grid_lag_policy": {"type": "string"},
+        "target_timestamp_semantics": {"type": "string"},
+        "target_sampling": {"type": "string"},
+        "target_source": {"type": "string"},
+        "common_frame_set": {"type": "string"},
+        "same_feature_frames_for_all_lags": {"type": "boolean"},
+        "passage_boundary_crossing_allowed": {"type": "boolean"},
+        "split_boundary_crossing_allowed": {"type": "boolean"},
+        "padding_across_passage_allowed": {"type": "boolean"},
+        "extrapolation_allowed": {"type": "boolean"},
+        "incomplete_support_action": {"type": "string"}
+      }
+    },
+    "target_transform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fit_partition",
+        "fit_scope",
+        "fit_population",
+        "fit_unit",
+        "parameters_shared_across_all_lags",
+        "lag_specific_refit_allowed",
+        "validation_contributes_to_fit",
+        "test_contributes_to_fit",
+        "negative_power_policy",
+        "epsilon_formula",
+        "no_positive_train_power_action",
+        "log_formula",
+        "center",
+        "scale",
+        "minimum_scale",
+        "nonfinite_action",
+        "apply_frozen_train_parameters_to",
+        "subband_standardization_precedes_aggregation",
+        "subband_weights",
+        "aggregation"
+      ],
+      "properties": {
+        "fit_partition": {"type": "string"},
+        "fit_scope": {"type": "string"},
+        "fit_population": {"type": "string"},
+        "fit_unit": {"type": "string"},
+        "parameters_shared_across_all_lags": {"type": "boolean"},
+        "lag_specific_refit_allowed": {"type": "boolean"},
+        "validation_contributes_to_fit": {"type": "boolean"},
+        "test_contributes_to_fit": {"type": "boolean"},
+        "negative_power_policy": {"type": "string"},
+        "epsilon_formula": {"type": "string"},
+        "no_positive_train_power_action": {"type": "string"},
+        "log_formula": {"type": "string"},
+        "center": {"type": "string"},
+        "scale": {"type": "string"},
+        "minimum_scale": {"type": "number", "exclusiveMinimum": 0},
+        "nonfinite_action": {"type": "string"},
+        "apply_frozen_train_parameters_to": {"type": "array", "items": {"type": "string"}},
+        "subband_standardization_precedes_aggregation": {"type": "boolean"},
+        "subband_weights": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "number"}},
+        "aggregation": {"type": "string"}
+      }
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "shared_statistics_frame_set",
+        "validation_contributes_to_fit",
+        "test_contributes_to_fit",
+        "scale_definition",
+        "minimum_scale",
+        "constant_or_nonfinite_feature_action",
+        "amplitude_envelope",
+        "log_mel",
+        "wav2vec2"
+      ],
+      "properties": {
+        "shared_statistics_frame_set": {"type": "string"},
+        "validation_contributes_to_fit": {"type": "boolean"},
+        "test_contributes_to_fit": {"type": "boolean"},
+        "scale_definition": {"type": "string"},
+        "minimum_scale": {"type": "number", "exclusiveMinimum": 0},
+        "constant_or_nonfinite_feature_action": {"type": "string"},
+        "amplitude_envelope": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source", "output_dimension", "standardization"],
+          "properties": {
+            "source": {"type": "string"},
+            "output_dimension": {"type": "integer", "const": 1},
+            "standardization": {"type": "string"}
+          }
+        },
+        "log_mel": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "input_dimension",
+            "pre_pca_standardization",
+            "pca_dimension",
+            "pca_dimension_selection",
+            "pca_fit_partition",
+            "pca_solver",
+            "component_order",
+            "component_sign",
+            "score_standardization",
+            "minimum_train_samples",
+            "minimum_numeric_rank",
+            "singular_value_rank_tolerance",
+            "first_20_singular_values_must_be_finite",
+            "twentieth_singular_value_must_exceed_rank_tolerance",
+            "automatic_dimension_reduction_allowed",
+            "rank_failure_action"
+          ],
+          "properties": {
+            "source": {"type": "string"},
+            "input_dimension": {"type": "integer", "const": 80},
+            "pre_pca_standardization": {"type": "string"},
+            "pca_dimension": {"type": "integer", "const": 20},
+            "pca_dimension_selection": {"type": "string"},
+            "pca_fit_partition": {"type": "string"},
+            "pca_solver": {"type": "string"},
+            "component_order": {"type": "string"},
+            "component_sign": {"type": "string"},
+            "score_standardization": {"type": "string"},
+            "minimum_train_samples": {"type": "integer", "const": 20},
+            "minimum_numeric_rank": {"type": "integer", "const": 20},
+            "singular_value_rank_tolerance": {"type": "string"},
+            "first_20_singular_values_must_be_finite": {"type": "boolean"},
+            "twentieth_singular_value_must_exceed_rank_tolerance": {"type": "boolean"},
+            "automatic_dimension_reduction_allowed": {"type": "boolean"},
+            "rank_failure_action": {"type": "string"}
+          }
+        },
+        "wav2vec2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "layer_keys",
+            "input_dimension_per_layer",
+            "standardization",
+            "pca_allowed",
+            "test_layer_selection_allowed",
+            "test_lag_selection_allowed",
+            "test_alpha_selection_allowed"
+          ],
+          "properties": {
+            "source": {"type": "string"},
+            "layer_keys": {"type": "array", "minItems": 13, "maxItems": 13, "items": {"type": "string"}},
+            "input_dimension_per_layer": {"type": "integer", "const": 768},
+            "standardization": {"type": "string"},
+            "pca_allowed": {"type": "boolean"},
+            "test_layer_selection_allowed": {"type": "boolean"},
+            "test_lag_selection_allowed": {"type": "boolean"},
+            "test_alpha_selection_allowed": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "ridge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "solver",
+        "formula",
+        "fit_intercept",
+        "numeric_dtype",
+        "feature_variant_count",
+        "decomposition_unit",
+        "train_decomposition_count_max",
+        "train_plus_validation_decomposition_count_max",
+        "total_decomposition_count_max",
+        "decomposition_reused_across",
+        "per_cell_decomposition_allowed",
+        "reuse_equivalence_required",
+        "alpha_grid",
+        "fit_partition",
+        "alpha_selection_partition",
+        "alpha_selection_metric",
+        "alpha_selection_unit",
+        "alpha_tie_tolerance",
+        "alpha_tie_break",
+        "all_validation_scores_not_estimable_action",
+        "final_refit_partition_after_alpha_lock",
+        "final_refit_uses_locked_alpha",
+        "transform_parameters_remain_train_only_during_final_refit",
+        "transform_refit_after_validation_allowed",
+        "test_evaluation_count",
+        "test_access_before_alpha_lock_allowed",
+        "layer_selection_allowed",
+        "lag_selection_allowed"
+      ],
+      "properties": {
+        "solver": {"type": "string"},
+        "formula": {"type": "string"},
+        "fit_intercept": {"type": "boolean"},
+        "numeric_dtype": {"type": "string"},
+        "feature_variant_count": {"type": "integer", "minimum": 1},
+        "decomposition_unit": {"type": "string"},
+        "train_decomposition_count_max": {"type": "integer", "minimum": 1},
+        "train_plus_validation_decomposition_count_max": {"type": "integer", "minimum": 1},
+        "total_decomposition_count_max": {"type": "integer", "minimum": 1},
+        "decomposition_reused_across": {"type": "string"},
+        "per_cell_decomposition_allowed": {"type": "boolean"},
+        "reuse_equivalence_required": {"type": "string"},
+        "alpha_grid": {"type": "array", "items": {"type": "number", "exclusiveMinimum": 0}},
+        "fit_partition": {"type": "string"},
+        "alpha_selection_partition": {"type": "string"},
+        "alpha_selection_metric": {"type": "string"},
+        "alpha_selection_unit": {"type": "string"},
+        "alpha_tie_tolerance": {"type": "number", "minimum": 0},
+        "alpha_tie_break": {"type": "string"},
+        "all_validation_scores_not_estimable_action": {"type": "string"},
+        "final_refit_partition_after_alpha_lock": {"type": "array", "items": {"type": "string"}},
+        "final_refit_uses_locked_alpha": {"type": "boolean"},
+        "transform_parameters_remain_train_only_during_final_refit": {"type": "boolean"},
+        "transform_refit_after_validation_allowed": {"type": "boolean"},
+        "test_evaluation_count": {"type": "integer", "minimum": 0},
+        "test_access_before_alpha_lock_allowed": {"type": "boolean"},
+        "layer_selection_allowed": {"type": "boolean"},
+        "lag_selection_allowed": {"type": "boolean"}
+      }
+    },
+    "nulls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "smoke_permutations",
+        "scientific_significance_claim_allowed",
+        "primary_null_source_all_families",
+        "shared_mapping_scope",
+        "post_result_primary_null_substitution_allowed",
+        "applicability_matrix",
+        "stimulus_derangement",
+        "acoustic_circular_shift"
+      ],
+      "properties": {
+        "smoke_permutations": {"type": "integer", "const": 20},
+        "scientific_significance_claim_allowed": {"type": "boolean"},
+        "primary_null_source_all_families": {"type": "string"},
+        "shared_mapping_scope": {"type": "string"},
+        "post_result_primary_null_substitution_allowed": {"type": "boolean"},
+        "applicability_matrix": {"type": "object"},
+        "stimulus_derangement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "partition",
+            "expected_passages",
+            "identity_mapping_allowed",
+            "within_split_only",
+            "bijection_required",
+            "duration_stratum",
+            "enumerated_derangement_count",
+            "algorithm",
+            "random_generator",
+            "random_seed",
+            "sample_without_replacement",
+            "minimum_unique_derangements",
+            "mapping_direction",
+            "mapping_object",
+            "donor_to_target_time_mapping",
+            "cross_passage_concatenation_before_mapping_allowed",
+            "model_rerun_allowed",
+            "transform_refit_allowed",
+            "pca_refit_allowed",
+            "ridge_refit_allowed",
+            "alpha_reselection_allowed",
+            "test_neural_target_recomputed_or_refit_allowed",
+            "target_passage_contribution",
+            "observed_and_null_metric_aggregation_identical",
+            "duration_mismatch_role",
+            "singleton_or_insufficient_derangements_action",
+            "neural_or_model_result_used_for_assignment"
+          ],
+          "properties": {
+            "partition": {"type": "string"},
+            "expected_passages": {"type": "integer", "const": 8},
+            "identity_mapping_allowed": {"type": "boolean"},
+            "within_split_only": {"type": "boolean"},
+            "bijection_required": {"type": "boolean"},
+            "duration_stratum": {"type": "string"},
+            "enumerated_derangement_count": {"type": "integer", "const": 14833},
+            "algorithm": {"type": "string"},
+            "random_generator": {"type": "string"},
+            "random_seed": {"type": "integer", "const": 20260813},
+            "sample_without_replacement": {"type": "boolean"},
+            "minimum_unique_derangements": {"type": "integer", "const": 20},
+            "mapping_direction": {"type": "string"},
+            "mapping_object": {"type": "string"},
+            "donor_to_target_time_mapping": {"type": "string"},
+            "cross_passage_concatenation_before_mapping_allowed": {"type": "boolean"},
+            "model_rerun_allowed": {"type": "boolean"},
+            "transform_refit_allowed": {"type": "boolean"},
+            "pca_refit_allowed": {"type": "boolean"},
+            "ridge_refit_allowed": {"type": "boolean"},
+            "alpha_reselection_allowed": {"type": "boolean"},
+            "test_neural_target_recomputed_or_refit_allowed": {"type": "boolean"},
+            "target_passage_contribution": {"type": "string"},
+            "observed_and_null_metric_aggregation_identical": {"type": "boolean"},
+            "duration_mismatch_role": {"type": "string"},
+            "singleton_or_insufficient_derangements_action": {"type": "string"},
+            "neural_or_model_result_used_for_assignment": {"type": "boolean"}
+          }
+        },
+        "acoustic_circular_shift": {"type": "object"}
+      }
+    },
+    "multiple_comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "primary_metric",
+        "wav2vec2_family",
+        "wav2vec2_family_cell_count",
+        "acoustic_family",
+        "acoustic_family_cell_count",
+        "permutation_statistic",
+        "shared_derangement_mapping_across_family_cells",
+        "all_declared_cells_must_be_attempted_and_status_recorded",
+        "effective_family_rule",
+        "effective_family_fixed_across_permutations",
+        "required_family_audit_fields",
+        "empty_effective_family_action",
+        "families_fixed_before_execution",
+        "favorable_family_selection_allowed",
+        "fdr_allowed",
+        "permutation_p",
+        "minimum_attainable_p",
+        "smoke_interpretation"
+      ],
+      "properties": {
+        "method": {"type": "string"},
+        "primary_metric": {"type": "string"},
+        "wav2vec2_family": {"type": "string"},
+        "wav2vec2_family_cell_count": {"type": "integer", "minimum": 1},
+        "acoustic_family": {"type": "string"},
+        "acoustic_family_cell_count": {"type": "integer", "minimum": 1},
+        "permutation_statistic": {"type": "string"},
+        "shared_derangement_mapping_across_family_cells": {"type": "boolean"},
+        "all_declared_cells_must_be_attempted_and_status_recorded": {"type": "boolean"},
+        "effective_family_rule": {"type": "string"},
+        "effective_family_fixed_across_permutations": {"type": "boolean"},
+        "required_family_audit_fields": {"type": "array", "items": {"type": "string"}},
+        "empty_effective_family_action": {"type": "string"},
+        "families_fixed_before_execution": {"type": "boolean"},
+        "favorable_family_selection_allowed": {"type": "boolean"},
+        "fdr_allowed": {"type": "boolean"},
+        "permutation_p": {"type": "object"},
+        "minimum_attainable_p": {"type": "number", "minimum": 0, "maximum": 1},
+        "smoke_interpretation": {"type": "string"}
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary",
+        "secondary",
+        "metric_computation_unit",
+        "pearson_not_estimable_if",
+        "r2_not_estimable_if",
+        "not_estimable_representation",
+        "cell_pearson_aggregation",
+        "cell_r2_aggregation",
+        "cell_estimable_rule",
+        "observed_and_null_use_identical_passage_and_cell_aggregation",
+        "electrode_aggregation",
+        "subject_summary",
+        "generalization_claim",
+        "model_vs_acoustic",
+        "model_vs_acoustic_aggregation",
+        "model_vs_acoustic_inferential_p_value",
+        "model_vs_acoustic_correction_family",
+        "region_summary"
+      ],
+      "properties": {
+        "primary": {"type": "string"},
+        "secondary": {"type": "string"},
+        "metric_computation_unit": {"type": "string"},
+        "pearson_not_estimable_if": {"type": "string"},
+        "r2_not_estimable_if": {"type": "string"},
+        "not_estimable_representation": {"type": "string"},
+        "cell_pearson_aggregation": {"type": "string"},
+        "cell_r2_aggregation": {"type": "string"},
+        "cell_estimable_rule": {"type": "string"},
+        "observed_and_null_use_identical_passage_and_cell_aggregation": {"type": "boolean"},
+        "electrode_aggregation": {"type": "string"},
+        "subject_summary": {"type": "string"},
+        "generalization_claim": {"type": "string"},
+        "model_vs_acoustic": {"type": "string"},
+        "model_vs_acoustic_aggregation": {"type": "string"},
+        "model_vs_acoustic_inferential_p_value": {"type": "string"},
+        "model_vs_acoustic_correction_family": {"type": "string"},
+        "region_summary": {"type": "string"}
+      }
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "remote_project_root",
+        "remote_only_outputs",
+        "estimated_passages",
+        "estimated_audio_seconds_from_manifest",
+        "estimated_50hz_frames_upper_bound",
+        "estimated_core_tensor_bytes",
+        "estimated_new_remote_bytes_upper_bound",
+        "estimated_total_gpu_hours_upper_bound",
+        "single_invocation_gpu_hours_hard_limit",
+        "gpu_execution_partitioning",
+        "checkpoint_and_stop_before_single_invocation_hours",
+        "resource_estimate_status",
+        "execution_preflight_required",
+        "execution_preflight_status",
+        "execution_requires_preflight_status",
+        "static_protocol_estimate_is_execution_evidence",
+        "preflight_checks",
+        "preflight_fail_if_estimated_gpu_hours_or_remote_bytes_exceed_protocol_bound",
+        "ridge_train_decomposition_count_max",
+        "ridge_train_plus_validation_decomposition_count_max",
+        "ridge_total_decomposition_count_max",
+        "stop_before_execution_if_continuous_gpu_hours_greater_than",
+        "stop_before_execution_if_projected_cache_data_bytes_at_or_above",
+        "minimum_free_bytes",
+        "large_arrays_in_git_allowed"
+      ],
+      "properties": {
+        "remote_project_root": {"type": "string"},
+        "remote_only_outputs": {"type": "boolean"},
+        "estimated_passages": {"type": "integer", "minimum": 1},
+        "estimated_audio_seconds_from_manifest": {"type": "number", "exclusiveMinimum": 0},
+        "estimated_50hz_frames_upper_bound": {"type": "integer", "minimum": 1},
+        "estimated_core_tensor_bytes": {"type": "integer", "minimum": 1},
+        "estimated_new_remote_bytes_upper_bound": {"type": "integer", "minimum": 1},
+        "estimated_total_gpu_hours_upper_bound": {"type": "number", "const": 4.0},
+        "single_invocation_gpu_hours_hard_limit": {"type": "number", "const": 2.0},
+        "gpu_execution_partitioning": {"type": "string"},
+        "checkpoint_and_stop_before_single_invocation_hours": {"type": "number", "const": 2.0},
+        "resource_estimate_status": {"type": "string"},
+        "execution_preflight_required": {"type": "boolean"},
+        "execution_preflight_status": {"type": "string"},
+        "execution_requires_preflight_status": {"type": "string"},
+        "static_protocol_estimate_is_execution_evidence": {"type": "boolean"},
+        "preflight_checks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actual_free_bytes_minimum",
+            "estimated_new_remote_bytes_maximum",
+            "project_data_plus_cache_plus_estimated_new_bytes_strictly_below",
+            "estimated_single_invocation_gpu_hours_strictly_below",
+            "estimated_total_gpu_hours_maximum",
+            "continuous_formal_gpu_hours_report_threshold"
+          ],
+          "properties": {
+            "actual_free_bytes_minimum": {"type": "integer", "const": 500000000000},
+            "estimated_new_remote_bytes_maximum": {"type": "integer", "const": 20000000000},
+            "project_data_plus_cache_plus_estimated_new_bytes_strictly_below": {"type": "integer", "const": 500000000000},
+            "estimated_single_invocation_gpu_hours_strictly_below": {"type": "number", "const": 2.0},
+            "estimated_total_gpu_hours_maximum": {"type": "number", "const": 4.0},
+            "continuous_formal_gpu_hours_report_threshold": {"type": "number", "const": 24.0}
+          }
+        },
+        "preflight_fail_if_estimated_gpu_hours_or_remote_bytes_exceed_protocol_bound": {"type": "boolean"},
+        "ridge_train_decomposition_count_max": {"type": "integer", "minimum": 1},
+        "ridge_train_plus_validation_decomposition_count_max": {"type": "integer", "minimum": 1},
+        "ridge_total_decomposition_count_max": {"type": "integer", "minimum": 1},
+        "stop_before_execution_if_continuous_gpu_hours_greater_than": {"type": "number", "exclusiveMinimum": 0},
+        "stop_before_execution_if_projected_cache_data_bytes_at_or_above": {"type": "integer", "minimum": 1},
+        "minimum_free_bytes": {"type": "integer", "minimum": 1},
+        "large_arrays_in_git_allowed": {"type": "boolean"}
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_only",
+        "g4_execution_authorized",
+        "new_real_edf_read",
+        "new_real_audio_read",
+        "new_feature_extraction_run",
+        "ridge_run",
+        "null_run",
+        "metric_run",
+        "formal_baseline_run",
+        "scientific_result_claimed",
+        "exchange_candidate_created",
+        "allowed_output_status"
+      ],
+      "properties": {
+        "protocol_only": {"type": "boolean"},
+        "g4_execution_authorized": {"type": "boolean"},
+        "new_real_edf_read": {"type": "boolean"},
+        "new_real_audio_read": {"type": "boolean"},
+        "new_feature_extraction_run": {"type": "boolean"},
+        "ridge_run": {"type": "boolean"},
+        "null_run": {"type": "boolean"},
+        "metric_run": {"type": "boolean"},
+        "formal_baseline_run": {"type": "boolean"},
+        "scientific_result_claimed": {"type": "boolean"},
+        "exchange_candidate_created": {"type": "boolean"},
+        "allowed_output_status": {"type": "string"}
+      }
+    }
+  }
+}

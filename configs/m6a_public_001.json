@@ -160,7 +160,11 @@
     "resolution_status": "METHOD_FROZEN"
   },
   "g3_single_recording": {
-    "status": "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED",
+    "status": "G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY",
+    "coordinator_review": "ACCEPT",
+    "reviewed_on": "2026-08-13",
+    "candidate_report": "reports/g3_single_recording_candidate_20260813.json",
+    "scientific_result_claimed": false,
     "config_path": "configs/m6a_g3_single_recording_candidate.json",
     "recording_id": "sub-SD012_ses-02_task-PassiveListen",
     "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
@@ -176,14 +180,18 @@
     "exchange_candidate_creation_allowed": false
   },
   "features": {
+    "protocol_status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "protocol_config_path": "configs/m6a_g4_protocol_candidate.json",
     "acoustic_baselines": [
       "amplitude_envelope",
-      "log_mel_train_only_pca"
+      "log_mel_train_only_pca_20"
     ],
     "model_features": "wav2vec2_projected_plus_12_transformer_layers",
-    "fit_transforms_on": "train_only"
+    "fit_transforms_on": "train_only_common_support_frames",
+    "g4_execution_authorized": false
   },
   "baseline": {
+    "protocol_status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
     "primary": "layerwise_ridge_encoding",
     "alpha_grid": [
       0.01,
@@ -193,7 +201,10 @@
       100.0,
       1000.0
     ],
-    "alpha_selection": "grouped_train_validation_only",
+    "alpha_selection": "validation_only_then_refit_train_plus_validation_with_locked_alpha",
+    "transform_fit_partition": "train_only_no_refit_after_validation",
+    "test_evaluation_count": 1,
+    "g4_execution_authorized": false,
     "primary_metric": "heldout_electrode_pearson_r",
     "secondary_metrics": [
       "heldout_r2",
@@ -218,13 +229,14 @@
     "region_summary_status": "NOT_ESTIMABLE"
   },
   "nulls": {
-    "methods": [
-      "circular_time_shift",
-      "stimulus_derangement_within_duration_bin"
-    ],
+    "primary_smoke_null": "stimulus_derangement_uniform_without_replacement_from_14833_test_derangements",
+    "acoustic_secondary_diagnostic": "within_passage_circular_shift_minimum_2_seconds",
+    "wav2vec2_circular_shift_applicability": "NOT_APPLICABLE_GLOBAL_WITHIN_PASSAGE_TRANSFORMER_CONTEXT",
     "smoke_permutations": 20,
     "formal_permutations": 1000,
-    "multiple_comparison": "FDR_OR_MAX_STATISTIC_PREDECLARED_BEFORE_G4"
+    "multiple_comparison": "ONE_SIDED_MAX_STATISTIC_FIXED_FAMILIES",
+    "smoke_significance_claim_allowed": false,
+    "g4_execution_authorized": false
   },
   "artifact": {
     "internal_schema_path": "schemas/m6a_public_internal_manifest.schema.json",

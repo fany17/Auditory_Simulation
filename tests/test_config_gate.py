@@ -94,12 +94,26 @@ class ConfigGateTests(unittest.TestCase):
 
     def test_g3_authorization_is_single_recording_and_global_extraction_stays_closed(self) -> None:
         g3 = self.config["g3_single_recording"]
-        self.assertEqual(g3["status"], "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED")
+        self.assertEqual(
+            g3["status"],
+            "G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY",
+        )
+        self.assertEqual(g3["coordinator_review"], "ACCEPT")
+        self.assertFalse(g3["scientific_result_claimed"])
         self.assertEqual(g3["eligible_channel_count"], 36)
         self.assertFalse(g3["other_recordings_allowed"])
         self.assertFalse(g3["other_segments_allowed"])
         self.assertFalse(g3["whole_dataset_neural_extraction_allowed"])
         self.assertFalse(self.config["neural_target"]["neural_extraction_allowed"])
+
+    def test_g4_resource_bounds_are_frozen_but_execution_is_not_authorized(self) -> None:
+        resources = self.config["resources"]
+        self.assertEqual(resources["smoke_gpu_hours_limit"], 2)
+        self.assertEqual(resources["minimum_free_bytes"], 500_000_000_000)
+        self.assertFalse(self.config["features"]["g4_execution_authorized"])
+        changed = copy.deepcopy(self.config)
+        changed["resources"]["smoke_gpu_hours_limit"] = 3
+        self.assertTrue(validate_task_config(changed))
 
     def test_forbidden_integrity_field_is_detected(self) -> None:
         changed = copy.deepcopy(self.config)

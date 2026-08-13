@@ -28,13 +28,13 @@
 
 ## 当前节点
 
-当前节点为 `G3_SINGLE_RECORDING_CANDIDATE_AWAITING_COORDINATOR_REVIEW`：
+当前节点为 `G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW`：
 
-- 协调者已于 2026-08-13 接受 final-embargo candidate；`final_embargo_seconds=2.0`、`final_embargo_status=FINAL_EMBARGO_COORDINATOR_ACCEPTED`、`split_status=BASELINE_FINAL_COORDINATOR_ACCEPTED`、`baseline_final=true`。这只接受当前 split/final embargo，不是 G3、整条 M6A、artifact 或科学结论 PASS/FROZEN；
+- 协调者已于 2026-08-13 接受 final-embargo candidate；`final_embargo_seconds=2.0`、`final_embargo_status=FINAL_EMBARGO_COORDINATOR_ACCEPTED`、`split_status=BASELINE_FINAL_COORDINATOR_ACCEPTED`、`baseline_final=true`。这只接受当前 split/final embargo，不是整条 M6A、artifact 或科学结论 PASS/FROZEN；
 - 唯一主模型 `facebook/wav2vec2-base` 缓存保持 `SEMANTICALLY_VALIDATED_REMOTE_ONLY`，`model.download_allowed=false`；mutable `main`、第三方镜像与 no-hash 政策不能提供密码学完整性或不可变 provenance；
-- G3 真实读取只获 scoped authorization：机器规则选择 `sub-SD012_ses-02_task-PassiveListen`，并只读取最早 train passage `sub-SD012_ses-02_task-PassiveListen__seg-004` 的 36 个 eligible channels 与冻结有限支持范围；全数据 `neural_extraction_allowed=false`，禁止其他 recording/segment；
-- 已生成单 passage 的 amplitude envelope、raw log-mel、wav2vec2 projected + 12 layers 与六子带 pre-transform/log-power smoke tensor，并映射至 recording-origin 50 Hz grid；唯一机器报告为 `reports/g3_single_recording_candidate_20260813.json`，状态为 `G3_SINGLE_RECORDING_CANDIDATE_AWAITING_COORDINATOR_REVIEW`；
-- 协调接受前禁止扩展其他 segment/subject、拟合正式 train-only transform、运行 ridge/null/指标/G4 或建立 M6A→M6B exchange candidate。
+- G3 单 recording 候选已由协调者接受，机器状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`。它只证明预声明一个 recording/一个 train passage 的有界读取、时间轴、shape 与数组可读性，不是科学结果；全数据 `neural_extraction_allowed=false`；
+- G4 协议候选只覆盖同一受试者、同一 `sub-SD012_ses-02_task-PassiveListen` recording 的 24/8/8 train/validation/test passages，排除 `ses-01`，并冻结 exact `t+lag`、所有 lag 共用的 train-only target transform、固定 20 维 log-mel PCA rank 门禁、ridge SVD 复用、test-only stimulus derangement 与 max-statistic smoke 流程；
+- 当前 `execution_preflight_status=NOT_RUN_PROTOCOL_STAGE`、`g4_execution_authorized=false`。本轮不读取新 EDF/audio、不提取特征、不运行 ridge/null/指标；真实执行前必须只读核对可用空间、项目 data+cache+预计新增体积、单次 GPU invocation 严格低于 2 h、累计预计不超过 4 h，并得到独立授权。
 
 ## 硬停止条件
 
@@ -60,9 +60,9 @@
 - anatomy gate：`ANATOMY_MAPPING_NOT_READY`；它不单独阻塞后续电极级 smoke，但 region summary 为 `NOT_ESTIMABLE`，在坐标系/atlas/映射可审计前禁止从 contact 名称猜脑区；
 - neural target method：协调二审已 `ACCEPT`，状态为 `METHOD_FROZEN_AWAITING_EXECUTION_GATES`；主目标为排除 110-130 Hz 的六个等宽 10 Hz high-gamma 子带，有限 FIR edge 最大值 1.091796875 s。旧 70-150 Hz 方案仅为 sensitivity；全数据 `neural_extraction_allowed=false`，仅 G3 配置中的单 recording/单 passage 读取获授权；
 - 声音模型门禁：`facebook/wav2vec2-base@main` 只有 `pytorch_model.bin` 权重；通过 16 kHz mono、单 passage、无 batch padding、`local_files_only=true`、`trust_remote_code=false`、`weights_only=true` 且禁止降级、tensor-only 与关键 shape 检查；projected + 12 Transformer layers、49 帧、20 ms 步长和首帧中心 0.01246875 s 的 synthetic canary 通过。Transformer 可在单 passage 内全局注意，这不等于局部 receptive field；
-- G3 candidate：12/12 机器 checks 通过；真实波形仅分段读取 36 channels、18,850 samples（125.427734375–162.244140625 s），未 preload 整段。输出 1,732 个 recording-origin 50 Hz frames，其中 common valid 1,622；未拟合正式 train-only transform、未运行 baseline 或科学指标；
+- G3：协调者已 `ACCEPT`，状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`；真实波形仅分段读取 36 channels、18,850 samples（125.427734375–162.244140625 s），未 preload 整段。输出 1,732 个 recording-origin 50 Hz frames，其中 common valid 1,622；未拟合正式 train-only transform、未运行 baseline 或科学指标；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
 - 当前 split 只支持 within-subject unseen-stimulus/block generalization；不支持 subject-held-out、speaker-held-out 或 cross-language；
 - M6A→M6B exchange contract review：`REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`；consumer 为 `READY_WAITING_M6A_CANDIDATE`。真实 exchange candidate 尚无、consumer cross-test 未运行，contract 未 accepted/frozen；candidate 准备仍受 final embargo/split guard 和真实 method/runtime/canary 门禁约束。
 - G2 promotion gate：历史机器入口为 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，所有 required checks 为 true；`g2_pass_claimed=false`、`candidate_contains_raw_data=false`。首次因额外要求 C-prefix 名称唯一而 fail closed 的报告已保留；实际协调要求的 eligible 名单唯一性与 1346/727 聚合均通过。协调者独立验收后当前 G2 状态为 `G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE`。
-- 最新联合验证：2203 专用环境为 `120 passed, 198 subtests`，Ruff 通过，mypy 对 37 个源文件通过；accepted final-embargo gate、neural target semantic gate、main config gate 与 G3 单一机器 gate 均通过。首次 G3 输出未机器记录既有时长差异和负功率容差，已保留为 provenance；补齐 fail-closed 证据后重跑正式候选。
+- 最新联合验证：2203 专用环境为 `138 passed, 309 subtests`，Ruff 通过，mypy 对完整 `src scripts tests` 的 40 个文件通过；main config、neural target method、accepted final-embargo、G3 与 G4 protocol gates 均通过。G4 当前机器报告为 `reports/g4_protocol_candidate_20260813_v3.json`，9/9 required checks 为 true；旧 v1/v2 报告均已标记为 superseded provenance。

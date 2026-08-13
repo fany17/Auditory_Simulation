@@ -205,7 +205,11 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
 
     g3 = config.get("g3_single_recording", {})
     expected_g3 = {
-        "status": "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED",
+        "status": "G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY",
+        "coordinator_review": "ACCEPT",
+        "reviewed_on": "2026-08-13",
+        "candidate_report": "reports/g3_single_recording_candidate_20260813.json",
+        "scientific_result_claimed": False,
         "config_path": "configs/m6a_g3_single_recording_candidate.json",
         "recording_id": "sub-SD012_ses-02_task-PassiveListen",
         "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
@@ -227,7 +231,7 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         "exchange_candidate_creation_allowed": False,
     }
     if g3 != expected_g3:
-        errors.append("G3 authorization must remain exact, single-recording and fail-closed")
+        errors.append("G3 acceptance must remain exact, engineering-only and fail-closed")
 
     neural_target = config.get("neural_target", {})
     if neural_target.get("status") != "METHOD_FROZEN_AWAITING_EXECUTION_GATES":
@@ -268,9 +272,35 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     if anatomy.get("contact_name_inference_allowed") is not False:
         errors.append("contact names cannot be used to infer brain regions")
 
+    features = config.get("features", {})
+    expected_features = {
+        "protocol_status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+        "protocol_config_path": "configs/m6a_g4_protocol_candidate.json",
+        "acoustic_baselines": [
+            "amplitude_envelope",
+            "log_mel_train_only_pca_20",
+        ],
+        "model_features": "wav2vec2_projected_plus_12_transformer_layers",
+        "fit_transforms_on": "train_only_common_support_frames",
+        "g4_execution_authorized": False,
+    }
+    if features != expected_features:
+        errors.append("G4 feature protocol pointer and execution gate drifted")
+
     baseline = config.get("baseline", {})
+    if baseline.get("protocol_status") != "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW":
+        errors.append("baseline must remain a G4 protocol candidate")
     if baseline.get("primary") != "layerwise_ridge_encoding":
         errors.append("primary baseline must be layerwise_ridge_encoding")
+    if (
+        baseline.get("alpha_selection")
+        != "validation_only_then_refit_train_plus_validation_with_locked_alpha"
+        or baseline.get("transform_fit_partition")
+        != "train_only_no_refit_after_validation"
+        or baseline.get("test_evaluation_count") != 1
+        or baseline.get("g4_execution_authorized") is not False
+    ):
+        errors.append("G4 ridge selection/refit/test-once gate drifted")
     if "region_summary" in baseline.get("secondary_metrics", []):
         errors.append("region_summary cannot be an ordinary metric before anatomy mapping")
     gated_metrics = {item.get("name"): item for item in baseline.get("gated_metrics", [])}
@@ -278,10 +308,24 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("region_summary must be a gated NOT_ESTIMABLE metric")
 
     nulls = config.get("nulls", {})
-    if nulls.get("smoke_permutations", 0) < 20:
-        errors.append("smoke_permutations must be at least 20")
-    if nulls.get("formal_permutations", 0) < 1000:
-        errors.append("formal_permutations must be at least 1000")
+    expected_nulls = {
+        "primary_smoke_null": (
+            "stimulus_derangement_uniform_without_replacement_from_14833_test_derangements"
+        ),
+        "acoustic_secondary_diagnostic": (
+            "within_passage_circular_shift_minimum_2_seconds"
+        ),
+        "wav2vec2_circular_shift_applicability": (
+            "NOT_APPLICABLE_GLOBAL_WITHIN_PASSAGE_TRANSFORMER_CONTEXT"
+        ),
+        "smoke_permutations": 20,
+        "formal_permutations": 1000,
+        "multiple_comparison": "ONE_SIDED_MAX_STATISTIC_FIXED_FAMILIES",
+        "smoke_significance_claim_allowed": False,
+        "g4_execution_authorized": False,
+    }
+    if nulls != expected_nulls:
+        errors.append("G4 primary null, max-statistic, or execution gate drifted")
 
     artifact = config.get("artifact", {})
     if artifact.get("internal_schema_path") != "schemas/m6a_public_internal_manifest.schema.json":
@@ -296,6 +340,19 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("no exchange candidate exists before G2, target and embargo gates")
     if artifact.get("frozen_m6a_artifact_exists") is not False:
         errors.append("no frozen M6A artifact exists at G0-G2")
+
+    resources = config.get("resources", {})
+    if (
+        resources.get("host_alias") != "server2203"
+        or resources.get("remote_project_root")
+        != "/home/fanyu/auditory_simulation_m6a"
+        or resources.get("conda_environment") != "auditory_m6a_public_001"
+        or resources.get("smoke_gpu_hours_limit") != 2
+        or resources.get("continuous_gpu_hours_report_threshold") != 24
+        or resources.get("storage_bytes_report_threshold") != 500_000_000_000
+        or resources.get("minimum_free_bytes") != 500_000_000_000
+    ):
+        errors.append("G4 resource bounds or dedicated 2203 environment drifted")
 
     forbidden = find_forbidden_fields(config)
     if forbidden:
