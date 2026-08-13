@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "m6a-g4-resource-runtime-preflight-candidate-v1",
+  "title": "M6A G4 resource and runtime preflight candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "task_id", "status", "integrity_policy", "dependency",
+    "storage", "model", "longest_passage", "synthetic_input", "runtime_canary",
+    "execution_estimate", "checkpoint_design", "execution"
+  ],
+  "properties": {
+    "schema_version": {"const": "m6a-g4-resource-runtime-preflight-candidate-v1"},
+    "task_id": {"const": "M6A-PUBLIC-001"},
+    "status": {"const": "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"},
+    "integrity_policy": {"const": "NON_HASH_AUDIT"},
+    "dependency": {"$ref": "#/$defs/dependency"},
+    "storage": {"$ref": "#/$defs/storage"},
+    "model": {"$ref": "#/$defs/model"},
+    "longest_passage": {"$ref": "#/$defs/longest"},
+    "synthetic_input": {"$ref": "#/$defs/synthetic"},
+    "runtime_canary": {"$ref": "#/$defs/runtime"},
+    "execution_estimate": {"$ref": "#/$defs/estimate"},
+    "checkpoint_design": {"$ref": "#/$defs/checkpoint"},
+    "execution": {"$ref": "#/$defs/execution"}
+  },
+  "$defs": {
+    "dependency": {
+      "type": "object", "additionalProperties": false,
+      "required": ["g4_protocol_status", "g4_protocol_review", "g4_protocol_reviewed_on", "g4_protocol_config", "g4_protocol_report", "prior_g4_protocol_status", "prior_g4_protocol_report", "amendment_scope", "g4_scientific_result_claimed"],
+      "properties": {
+        "g4_protocol_status": {"const": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"},
+        "g4_protocol_review": {"const": "PENDING"},
+        "g4_protocol_reviewed_on": {"type": "null"},
+        "g4_protocol_config": {"type": "string"}, "g4_protocol_report": {"type": "string"},
+        "prior_g4_protocol_status": {"const": "G4_PROTOCOL_COORDINATOR_ACCEPTED"},
+        "prior_g4_protocol_report": {"const": "reports/g4_protocol_candidate_20260813_v3.json"},
+        "amendment_scope": {"const": "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_ONLY"},
+        "g4_scientific_result_claimed": {"const": false}
+      }
+    },
+    "categories": {
+      "type": "object", "additionalProperties": false,
+      "required": ["data", "cache", "outputs", "log", "code"],
+      "properties": {
+        "data": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "cache": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "outputs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "log": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "code": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "storage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["project_root", "categories", "measurement", "minimum_actual_free_bytes", "estimated_new_bytes_upper_bound", "data_cache_plus_estimated_new_strictly_below_bytes"],
+      "properties": {
+        "project_root": {"type": "string"}, "categories": {"$ref": "#/$defs/categories"},
+        "measurement": {"const": "REGULAR_FILE_BYTES_WITHOUT_FOLLOWING_SYMLINKS"},
+        "minimum_actual_free_bytes": {"const": 500000000000},
+        "estimated_new_bytes_upper_bound": {"const": 20000000000},
+        "data_cache_plus_estimated_new_strictly_below_bytes": {"const": 500000000000}
+      }
+    },
+    "model": {
+      "type": "object", "additionalProperties": false,
+      "required": ["model_id", "revision_label", "cache_path", "cache_state", "download_allowed", "local_files_only", "trust_remote_code", "repository_custom_code_executed", "weights_only_required", "tensor_only_required", "model_eval_required", "inference_mode_required", "parameter_requires_grad_count_expected", "batch_size", "sample_rate_hz", "hidden_size", "input_preprocessing", "layer_keys", "attention_scope"],
+      "properties": {
+        "model_id": {"const": "facebook/wav2vec2-base"}, "revision_label": {"const": "main"},
+        "cache_path": {"type": "string"}, "cache_state": {"const": "SEMANTICALLY_VALIDATED_REMOTE_ONLY"},
+        "download_allowed": {"const": false}, "local_files_only": {"const": true}, "trust_remote_code": {"const": false},
+        "repository_custom_code_executed": {"const": false}, "weights_only_required": {"const": true},
+        "tensor_only_required": {"const": true}, "model_eval_required": {"const": true}, "inference_mode_required": {"const": true},
+        "parameter_requires_grad_count_expected": {"const": 0}, "batch_size": {"const": 1}, "sample_rate_hz": {"const": 16000},
+        "hidden_size": {"const": 768}, "input_preprocessing": {"$ref": "#/$defs/wav2vec2InputPreprocessing"},
+        "layer_keys": {"type": "array", "minItems": 13, "maxItems": 13, "items": {"type": "string"}},
+        "attention_scope": {"const": "GLOBAL_WITHIN_ONE_SYNTHETIC_PASSAGE"}
+      }
+    },
+    "longest": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manifest_path", "recording_id", "selection_rule", "expected_passage_count", "sample_id", "stimulus_id", "split", "audio_file_metadata_only", "audio_duration_seconds", "sample_count_formula", "expected_synthetic_sample_count", "expected_frame_count", "real_audio_read_allowed"],
+      "properties": {
+        "manifest_path": {"type": "string"}, "recording_id": {"type": "string"},
+        "selection_rule": {"const": "MAX_AUDIO_DURATION_SECONDS_THEN_SAMPLE_ID_LEXICOGRAPHIC"},
+        "expected_passage_count": {"const": 40}, "sample_id": {"type": "string"}, "stimulus_id": {"type": "string"},
+        "split": {"enum": ["train", "validation", "test"]}, "audio_file_metadata_only": {"type": "string"},
+        "audio_duration_seconds": {"type": "number", "exclusiveMinimum": 0},
+        "sample_count_formula": {"const": "CEIL_AUDIO_DURATION_SECONDS_TIMES_16000"},
+        "expected_synthetic_sample_count": {"const": 1233438}, "expected_frame_count": {"const": 3854},
+        "real_audio_read_allowed": {"const": false}
+      }
+    },
+    "synthetic": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source", "formula", "finite_required", "channels", "input_path", "neighbor_input_allowed"],
+      "properties": {
+        "source": {"const": "DETERMINISTIC_IN_MEMORY_FINITE_MONO_NO_FILE_PATH"}, "formula": {"type": "string"},
+        "finite_required": {"const": true}, "channels": {"const": 1}, "input_path": {"type": "null"},
+        "neighbor_input_allowed": {"const": false}
+      }
+    },
+    "runtime": {
+      "type": "object", "additionalProperties": false,
+      "required": ["cuda_required", "warmup_seconds", "warmup_sample_count", "longest_forward_count", "output_hidden_states", "model_input_padding_samples", "feature_extractor_equivalence_absolute_tolerance", "feature_extractor_equivalence_relative_tolerance", "attention_mask_argument", "oom_action", "nonfinite_action", "shape_or_layer_drift_action", "chunked_or_windowed_model_approximation_allowed", "measurements"],
+      "properties": {
+        "cuda_required": {"const": true}, "warmup_seconds": {"const": 1.0}, "warmup_sample_count": {"const": 16000},
+        "longest_forward_count": {"const": 1}, "output_hidden_states": {"const": true}, "model_input_padding_samples": {"const": 0},
+        "feature_extractor_equivalence_absolute_tolerance": {"const": 1e-7},
+        "feature_extractor_equivalence_relative_tolerance": {"const": 1e-7},
+        "attention_mask_argument": {"const": "OMITTED"},
+        "oom_action": {"type": "string"}, "nonfinite_action": {"const": "FAIL"}, "shape_or_layer_drift_action": {"const": "FAIL"},
+        "chunked_or_windowed_model_approximation_allowed": {"const": false},
+        "measurements": {"type": "array", "minItems": 6, "uniqueItems": true, "items": {"type": "string"}}
+      }
+    },
+    "wav2vec2InputPreprocessing": {
+      "type": "object", "additionalProperties": false,
+      "required": ["preprocessor_config_filename", "preprocessor_config_source_endpoint", "preprocessor_source_probe", "preprocessor_config_bytes", "cache_state", "feature_size", "sampling_rate_hz", "do_normalize", "return_attention_mask", "padding_value", "padding_side", "input_dtype", "passage_scope", "normalization_formula", "normalization_epsilon", "constant_input_action", "nonfinite_input_action", "no_padding_policy", "attention_mask_argument", "validation_test_scope", "train_fitted_statistics_used", "cross_passage_statistics_allowed"],
+      "properties": {
+        "preprocessor_config_filename": {"const": "preprocessor_config.json"},
+        "preprocessor_config_source_endpoint": {"const": "https://hf-mirror.com"},
+        "preprocessor_source_probe": {"const": "reports/wav2vec2_model_mirror_probe_20260813.json"},
+        "preprocessor_config_bytes": {"const": 159},
+        "cache_state": {"const": "SEMANTICALLY_VALIDATED_REMOTE_ONLY"},
+        "feature_size": {"const": 1}, "sampling_rate_hz": {"const": 16000},
+        "do_normalize": {"const": true}, "return_attention_mask": {"const": false},
+        "padding_value": {"const": 0.0}, "padding_side": {"const": "right"},
+        "input_dtype": {"const": "float32"},
+        "passage_scope": {"const": "EACH_PASSAGE_INDEPENDENT_NO_CROSS_PASSAGE_STATISTICS"},
+        "normalization_formula": {"const": "(x - mean_float32(x)) / sqrt(population_variance_float32_ddof0(x) + 1e-7)"},
+        "normalization_epsilon": {"const": 1e-7},
+        "constant_input_action": {"const": "FAIL_BEFORE_FEATURE_EXTRACTOR"},
+        "nonfinite_input_action": {"const": "FAIL_BEFORE_FEATURE_EXTRACTOR"},
+        "no_padding_policy": {"const": "SINGLE_PASSAGE_NO_PADDING"},
+        "attention_mask_argument": {"const": "OMITTED"},
+        "validation_test_scope": {"const": "SAME_FIXED_PARAMETER_FREE_PASSAGE_WISE_RULE"},
+        "train_fitted_statistics_used": {"const": false},
+        "cross_passage_statistics_allowed": {"const": false}
+      }
+    },
+    "estimate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["passage_count", "model_load_safety_multiplier", "model_load_minimum_upper_bound_seconds", "forward_safety_multiplier", "forward_minimum_upper_bound_seconds", "checkpoint_and_process_overhead_upper_bound_seconds", "single_invocation_formula", "total_formula", "single_invocation_gpu_hours_strictly_below", "total_gpu_hours_maximum", "continuous_formal_gpu_hours_report_threshold", "duration_linear_scaling_assumed"],
+      "properties": {
+        "passage_count": {"const": 40}, "model_load_safety_multiplier": {"const": 2.0},
+        "model_load_minimum_upper_bound_seconds": {"const": 60.0}, "forward_safety_multiplier": {"const": 2.0},
+        "forward_minimum_upper_bound_seconds": {"const": 60.0}, "checkpoint_and_process_overhead_upper_bound_seconds": {"const": 30.0},
+        "single_invocation_formula": {"type": "string"}, "total_formula": {"type": "string"},
+        "single_invocation_gpu_hours_strictly_below": {"const": 2.0}, "total_gpu_hours_maximum": {"const": 4.0},
+        "continuous_formal_gpu_hours_report_threshold": {"const": 24.0}, "duration_linear_scaling_assumed": {"const": false}
+      }
+    },
+    "checkpoint": {
+      "type": "object", "additionalProperties": false,
+      "required": ["execution_unit", "write_order", "successful_passage_checkpoint_required", "resume_skips_only_validated_final_checkpoint", "partial_preserved_on_failure", "delete_on_failure_allowed", "checkpoint_before_two_hour_limit"],
+      "properties": {
+        "execution_unit": {"const": "ONE_PASSAGE_PER_INVOCATION"}, "write_order": {"type": "string"},
+        "successful_passage_checkpoint_required": {"const": true}, "resume_skips_only_validated_final_checkpoint": {"const": true},
+        "partial_preserved_on_failure": {"const": true}, "delete_on_failure_allowed": {"const": false},
+        "checkpoint_before_two_hour_limit": {"const": true}
+      }
+    },
+    "execution": {
+      "type": "object", "additionalProperties": false,
+      "required": ["preflight_only", "g4_execution_authorized", "new_real_edf_read", "new_real_audio_read", "real_feature_extraction_run", "ridge_run", "null_run", "metric_run", "scientific_result_claimed", "exchange_candidate_created", "allowed_output_status"],
+      "properties": {
+        "preflight_only": {"const": true}, "g4_execution_authorized": {"const": false}, "new_real_edf_read": {"const": false},
+        "new_real_audio_read": {"const": false}, "real_feature_extraction_run": {"const": false}, "ridge_run": {"const": false},
+        "null_run": {"const": false}, "metric_run": {"const": false}, "scientific_result_claimed": {"const": false},
+        "exchange_candidate_created": {"const": false},
+        "allowed_output_status": {"const": "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"}
+      }
+    }
+  }
+}

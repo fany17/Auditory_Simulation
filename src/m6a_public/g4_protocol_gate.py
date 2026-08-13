@@ -13,10 +13,13 @@ from jsonschema import Draft202012Validator
 from m6a_public.audio_context_gate import EXPECTED_LAYER_KEYS, nonfinite_numeric_paths
 from m6a_public.config_gate import find_forbidden_fields
 from m6a_public.g3_single_recording_gate import load_strict_json_object
+from m6a_public.wav2vec2_preprocessing import (
+    WAV2VEC2_INPUT_PREPROCESSING_CONTRACT,
+)
 
 
 G3_ACCEPTED_STATUS = "G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY"
-G4_STATUS = "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+G4_STATUS = "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
 G4_SCHEMA_VERSION = "m6a-g4-protocol-candidate-v1"
 G4_REPORT_SCHEMA_VERSION = "m6a-g4-protocol-gate-report-v1"
 EXPECTED_PARTICIPANT = "sub-SD012"
@@ -224,8 +227,31 @@ def validate_g4_protocol(
         errors.append("G4 protocol schema version drifted")
     if config.get("task_id") != "M6A-PUBLIC-001" or config.get("status") != G4_STATUS:
         errors.append("G4 protocol identity or candidate status drifted")
+    if (
+        config.get("coordinator_review") != "PENDING"
+        or config.get("reviewed_on") is not None
+        or config.get("scientific_result_claimed") is not False
+    ):
+        errors.append("G4 protocol amendment review or claim boundary drifted")
     if config.get("integrity_policy") != "NON_HASH_AUDIT":
         errors.append("G4 protocol integrity policy must remain non-hash")
+
+    if _mapping(config.get("prior_protocol_acceptance")) != {
+        "status": "G4_PROTOCOL_COORDINATOR_ACCEPTED",
+        "coordinator_review": "ACCEPT",
+        "reviewed_on": "2026-08-13",
+        "report": "reports/g4_protocol_candidate_20260813_v3.json",
+        "preserved_as_historical_provenance": True,
+    }:
+        errors.append("prior accepted G4 protocol provenance drifted")
+    if _mapping(config.get("amendment")) != {
+        "scope": "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_ONLY",
+        "reason": "PREPROCESSOR_FEATURE_EXTRACTOR_CONTRACT_WAS_MISSING",
+        "g3_raw_input_representation_status": "ENGINEERING_SHAPE_TIME_EVIDENCE_ONLY",
+        "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed": False,
+        "g3_recompute_required": False,
+    }:
+        errors.append("G4 preprocessing amendment scope or G3 reuse boundary drifted")
 
     dependency = _mapping(config.get("dependency_gates"))
     if dependency != {
@@ -400,6 +426,7 @@ def validate_g4_protocol(
                 "layer_keys",
                 "input_dimension_per_layer",
                 "standardization",
+                "input_preprocessing",
                 "pca_allowed",
                 "test_layer_selection_allowed",
                 "test_lag_selection_allowed",
@@ -412,6 +439,8 @@ def validate_g4_protocol(
         or wav2vec2.get("input_dimension_per_layer") != 768
         or wav2vec2.get("standardization")
         != "TRAIN_ONLY_PER_LAYER_PER_DIMENSION_ZSCORE"
+        or wav2vec2.get("input_preprocessing")
+        != WAV2VEC2_INPUT_PREPROCESSING_CONTRACT
         or wav2vec2.get("pca_allowed") is not False
         or wav2vec2.get("test_layer_selection_allowed") is not False
         or wav2vec2.get("test_lag_selection_allowed") is not False
@@ -704,7 +733,8 @@ def validate_g4_protocol(
         or resources.get("resource_estimate_status")
         != "PROTOCOL_UPPER_BOUND_REQUIRES_EXECUTION_PREFLIGHT"
         or resources.get("execution_preflight_required") is not True
-        or resources.get("execution_preflight_status") != "NOT_RUN_PROTOCOL_STAGE"
+        or resources.get("execution_preflight_status")
+        != "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
         or resources.get("execution_requires_preflight_status") != "PASS"
         or resources.get("static_protocol_estimate_is_execution_evidence") is not False
         or preflight
@@ -996,9 +1026,9 @@ def finalize_g4_protocol_report(
             and _mapping(protocol.get("execution")).get("scientific_result_claimed")
             is False
         ),
-        "resource_preflight_is_explicitly_not_run": (
+        "resource_preflight_is_candidate_not_execution_acceptance": (
             _mapping(protocol.get("resources")).get("execution_preflight_status")
-            == "NOT_RUN_PROTOCOL_STAGE"
+            == "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
             and _mapping(protocol.get("resources")).get(
                 "static_protocol_estimate_is_execution_evidence"
             )
@@ -1022,6 +1052,7 @@ def finalize_g4_protocol_report(
         "report_schema_version": G4_REPORT_SCHEMA_VERSION,
         "task_id": "M6A-PUBLIC-001",
         "status": G4_STATUS if not failed else "FAIL",
+        "current_candidate": not failed,
         "integrity_policy": "NON_HASH_AUDIT",
         "cryptographic_integrity_claim": False,
         "protocol_config": "configs/m6a_g4_protocol_candidate.json",
@@ -1030,6 +1061,11 @@ def finalize_g4_protocol_report(
         "required_checks": checks,
         "failed_checks": failed,
         "protocol_errors": protocol_errors,
+        "prior_protocol_acceptance": protocol.get("prior_protocol_acceptance"),
+        "protocol_amendment": protocol.get("amendment"),
+        "wav2vec2_input_preprocessing": _mapping(
+            _mapping(protocol.get("features")).get("wav2vec2")
+        ).get("input_preprocessing"),
         "g4_execution_authorized": False,
         "new_real_edf_read": False,
         "new_real_audio_read": False,

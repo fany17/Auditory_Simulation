@@ -1,0 +1,465 @@
+{
+  "report_schema_version": "m6a-g4-resource-runtime-preflight-report-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "current_candidate": false,
+  "superseded_by": "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json",
+  "superseded_reason": "V3_REVALIDATED_THE_CURRENT_CONFIG_AND_EVIDENCE_WITHOUT_RERUNNING_MODEL_COMPUTATION",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "cryptographic_integrity_claim": false,
+  "audited_at_utc": "2026-08-13T10:18:40.310702+00:00",
+  "config_path": "configs/m6a_g4_resource_runtime_preflight_candidate.json",
+  "schema_path": "schemas/m6a_g4_resource_runtime_preflight_candidate.schema.json",
+  "config_errors": [],
+  "longest_passage_manifest_audit": {
+    "status": "PASS",
+    "manifest_path": "reports/ds004703_primary_split.csv",
+    "recording_id": "sub-SD012_ses-02_task-PassiveListen",
+    "selection_rule": "MAX_AUDIO_DURATION_SECONDS_THEN_SAMPLE_ID_LEXICOGRAPHIC",
+    "passage_count": 40,
+    "longest": {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-028",
+      "stimulus_id": "s3201a-ex01",
+      "split": "validation",
+      "audio_file_metadata_only": "stimuli/excerpts/Block 3/s3201a-ex01_normed.wav",
+      "audio_duration_seconds": 77.08981859410432,
+      "synthetic_sample_count_formula": "ceil(audio_duration_seconds * 16000)",
+      "synthetic_sample_count": 1233438,
+      "analysis_eligible": "True",
+      "audio_source_status": "BUNDLED_BLOCK_AUDIO"
+    },
+    "real_audio_read": false,
+    "issues": []
+  },
+  "storage_audit": {
+    "audited_at_utc": "2026-08-13T10:18:36.283113+00:00",
+    "project_root": "/home/fanyu/auditory_simulation_m6a",
+    "measurement": "REGULAR_FILE_BYTES_WITHOUT_FOLLOWING_SYMLINKS",
+    "categories": {
+      "data": {
+        "paths": [
+          {
+            "path": "/home/fanyu/auditory_simulation_m6a/data",
+            "exists": true,
+            "bytes": 14173350514,
+            "regular_file_count": 377,
+            "symlink_entry_count_not_followed": 0,
+            "modified_at_utc": "2026-08-11T11:04:45.181608+00:00"
+          }
+        ],
+        "bytes": 14173350514
+      },
+      "cache": {
+        "paths": [
+          {
+            "path": "/home/fanyu/auditory_simulation_m6a/cache",
+            "exists": true,
+            "bytes": 380271415,
+            "regular_file_count": 4,
+            "symlink_entry_count_not_followed": 0,
+            "modified_at_utc": "2026-08-11T11:04:45.181608+00:00"
+          }
+        ],
+        "bytes": 380271415
+      },
+      "outputs": {
+        "paths": [
+          {
+            "path": "/home/fanyu/auditory_simulation_m6a/outputs",
+            "exists": true,
+            "bytes": 280055356,
+            "regular_file_count": 16,
+            "symlink_entry_count_not_followed": 0,
+            "modified_at_utc": "2026-08-13T08:14:07.124564+00:00"
+          }
+        ],
+        "bytes": 280055356
+      },
+      "log": {
+        "paths": [
+          {
+            "path": "/home/fanyu/auditory_simulation_m6a/log",
+            "exists": true,
+            "bytes": 663816428,
+            "regular_file_count": 11,
+            "symlink_entry_count_not_followed": 0,
+            "modified_at_utc": "2026-08-13T08:47:23.487650+00:00"
+          },
+          {
+            "path": "/home/fanyu/auditory_simulation_m6a/logs",
+            "exists": true,
+            "bytes": 5905355079,
+            "regular_file_count": 376,
+            "symlink_entry_count_not_followed": 0,
+            "modified_at_utc": "2026-08-13T10:18:00.448882+00:00"
+          }
+        ],
+        "bytes": 6569171507
+      },
+      "code": {
+        "paths": [
+          {
+            "path": "/home/fanyu/auditory_simulation_m6a/code_snapshot",
+            "exists": true,
+            "bytes": 120929017,
+            "regular_file_count": 236,
+            "symlink_entry_count_not_followed": 0,
+            "modified_at_utc": "2026-08-13T08:36:06.127621+00:00"
+          }
+        ],
+        "bytes": 120929017
+      }
+    },
+    "selected_category_total_bytes": 21523777809,
+    "project_root_total_bytes": 21525428164,
+    "project_root_regular_file_count": 1058,
+    "unclassified_other_bytes": 1650355,
+    "actual_free_bytes": 978024435712,
+    "estimated_new_bytes_upper_bound": 20000000000,
+    "data_cache_plus_estimated_new_bytes": 34553621929
+  },
+  "runtime_canary": {
+    "status": "PASS",
+    "model_id": "facebook/wav2vec2-base",
+    "revision_label": "main",
+    "device": "cuda:0",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "repository_custom_code_executed": false,
+    "weights_only": true,
+    "tensor_only": true,
+    "download_attempted": false,
+    "model_eval": true,
+    "inference_mode": true,
+    "parameter_requires_grad_count": 0,
+    "loading_info": {
+      "missing_keys": [],
+      "unexpected_keys": [
+        "project_hid.bias",
+        "project_hid.weight",
+        "project_q.bias",
+        "project_q.weight",
+        "quantizer.codevectors",
+        "quantizer.weight_proj.bias",
+        "quantizer.weight_proj.weight"
+      ],
+      "mismatched_keys": [],
+      "error_msgs": []
+    },
+    "model_load_wall_seconds": 0.7075378899462521,
+    "transformers_version": "5.14.1",
+    "preprocessor_remote_semantic_audit": {
+      "status": "PASS",
+      "audited_at_utc": "2026-08-13T10:18:00.449722+00:00",
+      "source_endpoint": "https://hf-mirror.com",
+      "filename": "preprocessor_config.json",
+      "prior_failed_audit": {
+        "path": "/home/fanyu/auditory_simulation_m6a/logs/wav2vec2_preprocessor_mirror_audit_20260813.json",
+        "status": "FAIL",
+        "fallback_http_status": 403,
+        "preserved": true
+      },
+      "probes": [
+        {
+          "endpoint": "https://mirrors.tuna.tsinghua.edu.cn",
+          "http_status": 404,
+          "body_bytes": -1,
+          "semantic_fields": {},
+          "semantic_match": false,
+          "proxy_used": false,
+          "error": {
+            "type": "HTTPError",
+            "message": "HTTP 404"
+          }
+        },
+        {
+          "endpoint": "https://hf-mirror.com",
+          "http_status": 200,
+          "body_bytes": 159,
+          "semantic_fields": {
+            "feature_size": 1,
+            "sampling_rate": 16000,
+            "padding_value": 0.0,
+            "do_normalize": true,
+            "return_attention_mask": false,
+            "padding_side": "right"
+          },
+          "semantic_match": true,
+          "proxy_used": false,
+          "error": null
+        }
+      ],
+      "http_status": 200,
+      "mirror_body_bytes": 159,
+      "mirror_semantic_fields": {
+        "feature_size": 1,
+        "sampling_rate": 16000,
+        "padding_value": 0.0,
+        "do_normalize": true,
+        "return_attention_mask": false,
+        "padding_side": "right"
+      },
+      "cache_bytes": 159,
+      "cache_modified_at_utc": "2026-08-13T07:15:07.342413+00:00",
+      "remote_only": true,
+      "cache_write_performed": false,
+      "network_body_persisted": false,
+      "proxy_used": false
+    },
+    "preprocessor_config_audit": {
+      "status": "PASS",
+      "path": "/home/fanyu/auditory_simulation_m6a/cache/huggingface/facebook_wav2vec2_base_main_20260813/preprocessor_config.json",
+      "filename": "preprocessor_config.json",
+      "bytes": 159,
+      "modified_at_utc": "2026-08-13T07:15:07.342413+00:00",
+      "semantic_fields": {
+        "feature_size": 1,
+        "sampling_rate": 16000,
+        "padding_value": 0.0,
+        "do_normalize": true,
+        "return_attention_mask": false,
+        "padding_side": "right"
+      },
+      "missing_fields": [],
+      "unexpected_fields": [],
+      "remote_only": true,
+      "issues": []
+    },
+    "feature_extractor_semantics": {
+      "feature_size": 1,
+      "sampling_rate": 16000,
+      "padding_value": 0.0,
+      "do_normalize": true,
+      "return_attention_mask": false,
+      "padding_side": "right"
+    },
+    "feature_extractor_equivalence": {
+      "status": "PASS",
+      "warmup": {
+        "label": "ONE_SECOND_WARMUP",
+        "status": "PASS",
+        "sample_count": 16000,
+        "feature_extractor_output_shape": [
+          16000
+        ],
+        "feature_extractor_output_dtype": "float32",
+        "attention_mask_returned": false,
+        "attention_mask_argument": "OMITTED",
+        "padding_used": false,
+        "absolute_tolerance": 1e-07,
+        "relative_tolerance": 1e-07,
+        "max_absolute_difference": 0.0,
+        "equivalent": true,
+        "normalization": {
+          "sample_count": 16000,
+          "input_dtype": "float32",
+          "normalization_epsilon": 1e-07,
+          "pre_all_finite": true,
+          "pre_mean": 0.0,
+          "pre_population_variance": 0.0062500000931322575,
+          "pre_population_std": 0.07905694097280502,
+          "post_all_finite": true,
+          "post_mean": 9.536743617033494e-10,
+          "post_population_variance": 0.9999840259552002,
+          "post_population_std": 0.9999920129776001
+        }
+      },
+      "longest": {
+        "label": "LONGEST_G4_PASSAGE",
+        "status": "PASS",
+        "sample_count": 1233438,
+        "feature_extractor_output_shape": [
+          1233438
+        ],
+        "feature_extractor_output_dtype": "float32",
+        "attention_mask_returned": false,
+        "attention_mask_argument": "OMITTED",
+        "padding_used": false,
+        "absolute_tolerance": 1e-07,
+        "relative_tolerance": 1e-07,
+        "max_absolute_difference": 0.0,
+        "equivalent": true,
+        "normalization": {
+          "sample_count": 1233438,
+          "input_dtype": "float32",
+          "normalization_epsilon": 1e-07,
+          "pre_all_finite": true,
+          "pre_mean": 1.310260699938226e-06,
+          "pre_population_variance": 0.00624993909150362,
+          "pre_population_std": 0.07905655354261398,
+          "post_all_finite": true,
+          "post_mean": -9.166094550039361e-09,
+          "post_population_variance": 0.999984085559845,
+          "post_population_std": 0.9999920129776001
+        }
+      }
+    },
+    "passage_wise_normalization_applied": true,
+    "cross_passage_statistics_used": false,
+    "train_fitted_preprocessing_statistics_used": false,
+    "attention_mask_argument": "OMITTED",
+    "attention_mask_tensor_created": false,
+    "raw_input_canary_history": "NOT_RUN_NO_SUPERSEDED_PROVENANCE_CREATED",
+    "input_source": "DETERMINISTIC_IN_MEMORY_FINITE_MONO_NO_FILE_PATH",
+    "input_path": null,
+    "real_audio_read": false,
+    "real_edf_read": false,
+    "synthetic_input_all_finite": true,
+    "preprocessed_input_all_finite": true,
+    "synthetic_input_channels": 1,
+    "warmup": {
+      "status": "PASS",
+      "sample_count": 16000,
+      "wall_seconds": 0.19773226405959576
+    },
+    "longest_forward": {
+      "status": "PASS",
+      "batch_size": 1,
+      "sample_count": 1233438,
+      "frame_count": 3854,
+      "layer_keys": [
+        "projected",
+        "transformer_01",
+        "transformer_02",
+        "transformer_03",
+        "transformer_04",
+        "transformer_05",
+        "transformer_06",
+        "transformer_07",
+        "transformer_08",
+        "transformer_09",
+        "transformer_10",
+        "transformer_11",
+        "transformer_12"
+      ],
+      "layer_shapes": [
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ],
+        [
+          1,
+          3854,
+          768
+        ]
+      ],
+      "all_finite": true,
+      "attention_scope": "GLOBAL_WITHIN_ONE_SYNTHETIC_PASSAGE",
+      "chunked_or_windowed_approximation_used": false,
+      "oom": false,
+      "wall_seconds": 0.07231187901925296,
+      "cuda_peak_allocated_bytes": 1660685824,
+      "cuda_peak_reserved_bytes": 1962934272
+    }
+  },
+  "runtime_error": null,
+  "execution_estimate": {
+    "model_load_upper_bound_seconds": 60.0,
+    "longest_forward_upper_bound_seconds": 60.0,
+    "checkpoint_and_process_overhead_upper_bound_seconds": 30.0,
+    "single_invocation_upper_bound_seconds": 150.0,
+    "single_invocation_upper_bound_gpu_hours": 0.041666666666666664,
+    "total_40_passage_upper_bound_gpu_hours": 1.6666666666666665,
+    "duration_linear_scaling_assumed": false
+  },
+  "checkpoint_design_audit": {
+    "execution_unit": "ONE_PASSAGE_PER_INVOCATION",
+    "successful_passage_checkpoint_required": true,
+    "atomic_final_rename_required": true,
+    "resume_skips_only_validated_final_checkpoint": true,
+    "partial_preserved_on_failure": true,
+    "checkpoint_before_two_hour_limit": true
+  },
+  "g4_execution_authorized": false,
+  "new_real_edf_read": false,
+  "new_real_audio_read": false,
+  "real_feature_extraction_run": false,
+  "ridge_run": false,
+  "null_run": false,
+  "metric_run": false,
+  "scientific_result_claimed": false,
+  "exchange_candidate_created": false,
+  "evidence_revalidation": {
+    "revalidated_at_utc": "2026-08-13T10:20:03.058337+00:00",
+    "source_report": "/home/fanyu/auditory_simulation_m6a/logs/g4_resource_runtime_preflight_candidate_20260813.json",
+    "source_status": "FAIL",
+    "source_failure": "GATE_REJECTED_NEGATIVE_FINITE_NORMALIZED_MEAN",
+    "source_report_preserved": true,
+    "model_computation_rerun": false,
+    "real_audio_or_edf_reread": false
+  },
+  "required_checks": {
+    "preflight_pipeline_completed": true,
+    "identity_and_non_hash_policy": true,
+    "longest_passage_from_lightweight_manifest": true,
+    "storage_category_identity_and_bytes": true,
+    "free_space_at_least_500gb": true,
+    "data_cache_plus_new_strictly_below_500gb": true,
+    "offline_frozen_model_security": true,
+    "remote_preprocessor_config_semantic_audit": true,
+    "passage_wise_feature_extractor_equivalence": true,
+    "synthetic_input_only": true,
+    "one_second_warmup": true,
+    "longest_passage_global_forward": true,
+    "conservative_runtime_bounds": true,
+    "recoverable_one_passage_checkpoint_design": true,
+    "execution_and_claims_remain_blocked": true
+  },
+  "failed_checks": [],
+  "status": "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE"
+}

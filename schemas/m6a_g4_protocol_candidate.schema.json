@@ -8,7 +8,12 @@
     "schema_version",
     "task_id",
     "status",
+    "coordinator_review",
+    "reviewed_on",
+    "scientific_result_claimed",
     "integrity_policy",
+    "prior_protocol_acceptance",
+    "amendment",
     "dependency_gates",
     "scope",
     "time_alignment",
@@ -29,11 +34,16 @@
       "const": "M6A-PUBLIC-001"
     },
     "status": {
-      "const": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+      "const": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
     },
+    "coordinator_review": {"const": "PENDING"},
+    "reviewed_on": {"type": "null"},
+    "scientific_result_claimed": {"const": false},
     "integrity_policy": {
       "const": "NON_HASH_AUDIT"
     },
+    "prior_protocol_acceptance": {"$ref": "#/$defs/priorProtocolAcceptance"},
+    "amendment": {"$ref": "#/$defs/amendment"},
     "dependency_gates": {
       "$ref": "#/$defs/dependency_gates"
     },
@@ -69,6 +79,82 @@
     }
   },
   "$defs": {
+    "priorProtocolAcceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "coordinator_review", "reviewed_on", "report", "preserved_as_historical_provenance"],
+      "properties": {
+        "status": {"const": "G4_PROTOCOL_COORDINATOR_ACCEPTED"},
+        "coordinator_review": {"const": "ACCEPT"},
+        "reviewed_on": {"const": "2026-08-13"},
+        "report": {"const": "reports/g4_protocol_candidate_20260813_v3.json"},
+        "preserved_as_historical_provenance": {"const": true}
+      }
+    },
+    "amendment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope", "reason", "g3_raw_input_representation_status", "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed", "g3_recompute_required"],
+      "properties": {
+        "scope": {"const": "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_ONLY"},
+        "reason": {"const": "PREPROCESSOR_FEATURE_EXTRACTOR_CONTRACT_WAS_MISSING"},
+        "g3_raw_input_representation_status": {"const": "ENGINEERING_SHAPE_TIME_EVIDENCE_ONLY"},
+        "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed": {"const": false},
+        "g3_recompute_required": {"const": false}
+      }
+    },
+    "wav2vec2InputPreprocessing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preprocessor_config_filename",
+        "preprocessor_config_source_endpoint",
+        "preprocessor_source_probe",
+        "preprocessor_config_bytes",
+        "cache_state",
+        "feature_size",
+        "sampling_rate_hz",
+        "do_normalize",
+        "return_attention_mask",
+        "padding_value",
+        "padding_side",
+        "input_dtype",
+        "passage_scope",
+        "normalization_formula",
+        "normalization_epsilon",
+        "constant_input_action",
+        "nonfinite_input_action",
+        "no_padding_policy",
+        "attention_mask_argument",
+        "validation_test_scope",
+        "train_fitted_statistics_used",
+        "cross_passage_statistics_allowed"
+      ],
+      "properties": {
+        "preprocessor_config_filename": {"const": "preprocessor_config.json"},
+        "preprocessor_config_source_endpoint": {"const": "https://hf-mirror.com"},
+        "preprocessor_source_probe": {"const": "reports/wav2vec2_model_mirror_probe_20260813.json"},
+        "preprocessor_config_bytes": {"const": 159},
+        "cache_state": {"const": "SEMANTICALLY_VALIDATED_REMOTE_ONLY"},
+        "feature_size": {"const": 1},
+        "sampling_rate_hz": {"const": 16000},
+        "do_normalize": {"const": true},
+        "return_attention_mask": {"const": false},
+        "padding_value": {"const": 0.0},
+        "padding_side": {"const": "right"},
+        "input_dtype": {"const": "float32"},
+        "passage_scope": {"const": "EACH_PASSAGE_INDEPENDENT_NO_CROSS_PASSAGE_STATISTICS"},
+        "normalization_formula": {"const": "(x - mean_float32(x)) / sqrt(population_variance_float32_ddof0(x) + 1e-7)"},
+        "normalization_epsilon": {"const": 1e-7},
+        "constant_input_action": {"const": "FAIL_BEFORE_FEATURE_EXTRACTOR"},
+        "nonfinite_input_action": {"const": "FAIL_BEFORE_FEATURE_EXTRACTOR"},
+        "no_padding_policy": {"const": "SINGLE_PASSAGE_NO_PADDING"},
+        "attention_mask_argument": {"const": "OMITTED"},
+        "validation_test_scope": {"const": "SAME_FIXED_PARAMETER_FREE_PASSAGE_WISE_RULE"},
+        "train_fitted_statistics_used": {"const": false},
+        "cross_passage_statistics_allowed": {"const": false}
+      }
+    },
     "dependency_gates": {
       "type": "object",
       "additionalProperties": false,
@@ -303,6 +389,7 @@
             "layer_keys",
             "input_dimension_per_layer",
             "standardization",
+            "input_preprocessing",
             "pca_allowed",
             "test_layer_selection_allowed",
             "test_lag_selection_allowed",
@@ -313,6 +400,7 @@
             "layer_keys": {"type": "array", "minItems": 13, "maxItems": 13, "items": {"type": "string"}},
             "input_dimension_per_layer": {"type": "integer", "const": 768},
             "standardization": {"type": "string"},
+            "input_preprocessing": {"$ref": "#/$defs/wav2vec2InputPreprocessing"},
             "pca_allowed": {"type": "boolean"},
             "test_layer_selection_allowed": {"type": "boolean"},
             "test_lag_selection_allowed": {"type": "boolean"},

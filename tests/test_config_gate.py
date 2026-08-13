@@ -2,10 +2,16 @@ from __future__ import annotations
 
 import copy
 import json
+import tempfile
 import unittest
 from pathlib import Path
 
-from m6a_public.config_gate import find_forbidden_fields, load_json, validate_task_config
+from m6a_public.config_gate import (
+    find_forbidden_fields,
+    load_json,
+    validate_candidate_report_governance,
+    validate_task_config,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,6 +23,7 @@ class ConfigGateTests(unittest.TestCase):
 
     def test_repository_config_passes(self) -> None:
         self.assertEqual(validate_task_config(self.config), [])
+        self.assertEqual(validate_candidate_report_governance(ROOT), [])
 
     def test_download_requires_strict_license_boundary(self) -> None:
         changed = copy.deepcopy(self.config)
@@ -32,6 +39,18 @@ class ConfigGateTests(unittest.TestCase):
         model = self.config["model"]
         self.assertIs(model["download_allowed"], False)
         self.assertEqual(model["cache_state"], "SEMANTICALLY_VALIDATED_REMOTE_ONLY")
+
+    def test_wav2vec2_preprocessing_contract_is_fail_closed(self) -> None:
+        for field, value in (
+            ("do_normalize", False),
+            ("return_attention_mask", True),
+            ("attention_mask_argument", "ALL_ONES"),
+            ("cross_passage_statistics_allowed", True),
+        ):
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.config)
+                changed["model"]["inference_input"]["preprocessing"][field] = value
+                self.assertTrue(validate_task_config(changed))
 
     def test_neural_target_method_is_frozen_but_execution_remains_blocked(self) -> None:
         target = self.config["neural_target"]
@@ -100,6 +119,12 @@ class ConfigGateTests(unittest.TestCase):
         )
         self.assertEqual(g3["coordinator_review"], "ACCEPT")
         self.assertFalse(g3["scientific_result_claimed"])
+        self.assertEqual(
+            g3["representation_evidence_scope"], "ENGINEERING_SHAPE_TIME_ONLY"
+        )
+        self.assertFalse(
+            g3["representation_reuse_for_g4_scientific_baseline_allowed"]
+        )
         self.assertEqual(g3["eligible_channel_count"], 36)
         self.assertFalse(g3["other_recordings_allowed"])
         self.assertFalse(g3["other_segments_allowed"])
@@ -114,6 +139,89 @@ class ConfigGateTests(unittest.TestCase):
         changed = copy.deepcopy(self.config)
         changed["resources"]["smoke_gpu_hours_limit"] = 3
         self.assertTrue(validate_task_config(changed))
+
+    def test_g4_protocol_amendment_preserves_prior_acceptance_and_execution_stays_closed(self) -> None:
+        protocol = self.config["g4_protocol"]
+        self.assertEqual(
+            protocol["status"],
+            "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+        )
+        self.assertEqual(protocol["coordinator_review"], "PENDING")
+        self.assertIsNone(protocol["reviewed_on"])
+        self.assertEqual(
+            protocol["prior_accepted_status"], "G4_PROTOCOL_COORDINATOR_ACCEPTED"
+        )
+        self.assertFalse(
+            protocol[
+                "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed"
+            ]
+        )
+        self.assertFalse(protocol["scientific_result_claimed"])
+        self.assertFalse(protocol["g4_execution_authorized"])
+        self.assertEqual(
+            protocol["candidate_report"],
+            "reports/g4_protocol_amendment_candidate_20260813_v2.json",
+        )
+        self.assertEqual(
+            protocol["preflight_report"],
+            "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json",
+        )
+        self.assertEqual(
+            protocol["preflight_status"],
+            "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+        )
+
+    def test_only_v2_and_v3_are_current_candidate_reports(self) -> None:
+        protocol_old = load_json(
+            ROOT / "reports" / "g4_protocol_amendment_candidate_20260813.json"
+        )
+        protocol_current = load_json(
+            ROOT / "reports" / "g4_protocol_amendment_candidate_20260813_v2.json"
+        )
+        preflight_v2 = load_json(
+            ROOT / "reports" / "g4_resource_runtime_preflight_candidate_20260813_v2.json"
+        )
+        preflight_current = load_json(
+            ROOT / "reports" / "g4_resource_runtime_preflight_candidate_20260813_v3.json"
+        )
+        self.assertEqual(
+            protocol_old["status"], "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE"
+        )
+        self.assertIs(protocol_old["current_candidate"], False)
+        self.assertIs(protocol_current["current_candidate"], True)
+        self.assertEqual(
+            preflight_v2["status"], "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE"
+        )
+        self.assertIs(preflight_v2["current_candidate"], False)
+        self.assertIs(preflight_current["current_candidate"], True)
+
+    def test_governance_rejects_superseded_report_promoted_as_current(self) -> None:
+        required = [
+            "configs/m6a_public_001.json",
+            "reports/g4_protocol_amendment_candidate_20260813.json",
+            "reports/g4_protocol_amendment_candidate_20260813_v2.json",
+            "reports/g4_resource_runtime_preflight_candidate_20260813.json",
+            "reports/g4_resource_runtime_preflight_candidate_20260813_v2.json",
+            "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json",
+            "reports/wav2vec2_preprocessor_mirror_audit_20260813.json",
+            "reports/g4_protocol_candidate_20260813_v3.json",
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for relative in required:
+                target = root / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(
+                    (ROOT / relative).read_text(encoding="utf-8"), encoding="utf-8"
+                )
+            old = root / "reports/g4_protocol_amendment_candidate_20260813.json"
+            payload = load_json(old)
+            payload["status"] = (
+                "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+            )
+            payload["current_candidate"] = True
+            old.write_text(json.dumps(payload), encoding="utf-8")
+            self.assertTrue(validate_candidate_report_governance(root))
 
     def test_forbidden_integrity_field_is_detected(self) -> None:
         changed = copy.deepcopy(self.config)

@@ -65,6 +65,14 @@ class G4ProtocolTests(unittest.TestCase):
         self.assertFalse(report["new_real_audio_read"])
         self.assertFalse(report["ridge_run"])
         self.assertFalse(report["scientific_result_claimed"])
+        self.assertEqual(
+            report["protocol_amendment"]["scope"],
+            "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_ONLY",
+        )
+        self.assertTrue(report["wav2vec2_input_preprocessing"]["do_normalize"])
+        self.assertFalse(
+            report["wav2vec2_input_preprocessing"]["return_attention_mask"]
+        )
 
     def test_scope_is_exact_single_recording_24_8_8(self) -> None:
         scope = audit_g4_scope(self.split_csv)
@@ -134,6 +142,13 @@ class G4ProtocolTests(unittest.TestCase):
 
     def test_features_ridge_refit_and_test_once_are_fail_closed(self) -> None:
         cases = {
+            "silent_accept": lambda item: item.__setitem__(
+                "status", "G4_PROTOCOL_COORDINATOR_ACCEPTED"
+            ),
+            "g3_raw_reuse": lambda item: item["amendment"].__setitem__(
+                "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed",
+                True,
+            ),
             "pca_dim": lambda item: item["features"]["log_mel"].__setitem__(
                 "pca_dimension", 32
             ),
@@ -149,6 +164,15 @@ class G4ProtocolTests(unittest.TestCase):
             "wav_test_layer": lambda item: item["features"]["wav2vec2"].__setitem__(
                 "test_layer_selection_allowed", True
             ),
+            "wav_preprocessor_normalize": lambda item: item["features"]["wav2vec2"][
+                "input_preprocessing"
+            ].__setitem__("do_normalize", False),
+            "wav_preprocessor_attention_mask": lambda item: item["features"]["wav2vec2"][
+                "input_preprocessing"
+            ].__setitem__("return_attention_mask", True),
+            "wav_preprocessor_cross_passage": lambda item: item["features"]["wav2vec2"][
+                "input_preprocessing"
+            ].__setitem__("cross_passage_statistics_allowed", True),
             "feature_validation_fit": lambda item: item["features"].__setitem__(
                 "validation_contributes_to_fit", True
             ),

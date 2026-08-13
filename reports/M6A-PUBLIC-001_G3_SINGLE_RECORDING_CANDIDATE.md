@@ -27,6 +27,8 @@ G2 sidecar 声明 recording duration 为 3552.75 s，G2 EDF header 的最后样�
 
 所有声音表征均仅从该独立 passage 生成。44.1 kHz mono 音频重采样为 554,104 个 16 kHz samples；模型缓存只读，`download_allowed=false`、`local_files_only=true`、`trust_remote_code=false`、`weights_only=true`。
 
+该 G3 运行发生在 passage-wise `Wav2Vec2FeatureExtractor` normalization 契约冻结之前。其 wav2vec2 raw-input representation 仅保留工程 shape/time 证据，状态为 `MUST_NOT_REUSE_FOR_G4_SCIENTIFIC_BASELINE`；本轮不重算 G3，任何 G4 科学执行必须使用后续独立审核的 preprocessing implementation 与新生成的正式 G4 表征。
+
 | 表征 | native shape | aligned shape |
 |---|---:|---:|
 | amplitude envelope | `1731 x 1` | `1732 x 1` |

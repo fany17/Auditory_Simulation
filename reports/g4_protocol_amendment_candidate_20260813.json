@@ -1,24 +1,14 @@
 {
   "report_schema_version": "m6a-g4-protocol-gate-report-v1",
   "task_id": "M6A-PUBLIC-001",
-  "status": "G4_PROTOCOL_COORDINATOR_ACCEPTED",
-  "coordinator_review": "ACCEPT",
-  "reviewed_on": "2026-08-13",
-  "scientific_result_claimed": false,
+  "status": "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE",
+  "current_candidate": false,
+  "superseded_by": "reports/g4_protocol_amendment_candidate_20260813_v2.json",
+  "superseded_reason": "RESOURCE_PREFLIGHT_CANDIDATE_STATE_AND_CURRENT_REPORT_POINTERS_WERE_FINALIZED_IN_V2",
   "integrity_policy": "NON_HASH_AUDIT",
   "cryptographic_integrity_claim": false,
   "protocol_config": "configs/m6a_g4_protocol_candidate.json",
   "protocol_schema": "schemas/m6a_g4_protocol_candidate.schema.json",
-  "historical_acceptance_boundary": {
-    "accepted_scope": "G4_PROTOCOL_BEFORE_WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_AMENDMENT",
-    "excluded_from_acceptance": [
-      "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT"
-    ],
-    "protocol_config_path_is_mutable_and_now_amended": true,
-    "current_protocol_config_status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
-    "current_amendment_report": "reports/g4_protocol_amendment_candidate_20260813_v2.json",
-    "amendment_accepted_by_this_report": false
-  },
   "scope_audit": {
     "split_csv": "reports/ds004703_primary_split.csv",
     "recording_id": "sub-SD012_ses-02_task-PassiveListen",

@@ -1,8 +1,25 @@
 {
   "schema_version": "m6a-g4-protocol-candidate-v1",
   "task_id": "M6A-PUBLIC-001",
-  "status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+  "status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+  "coordinator_review": "PENDING",
+  "reviewed_on": null,
+  "scientific_result_claimed": false,
   "integrity_policy": "NON_HASH_AUDIT",
+  "prior_protocol_acceptance": {
+    "status": "G4_PROTOCOL_COORDINATOR_ACCEPTED",
+    "coordinator_review": "ACCEPT",
+    "reviewed_on": "2026-08-13",
+    "report": "reports/g4_protocol_candidate_20260813_v3.json",
+    "preserved_as_historical_provenance": true
+  },
+  "amendment": {
+    "scope": "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_ONLY",
+    "reason": "PREPROCESSOR_FEATURE_EXTRACTOR_CONTRACT_WAS_MISSING",
+    "g3_raw_input_representation_status": "ENGINEERING_SHAPE_TIME_EVIDENCE_ONLY",
+    "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed": false,
+    "g3_recompute_required": false
+  },
   "dependency_gates": {
     "g3_status": "G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY",
     "g3_coordinator_review": "ACCEPT",
@@ -154,6 +171,30 @@
       ],
       "input_dimension_per_layer": 768,
       "standardization": "TRAIN_ONLY_PER_LAYER_PER_DIMENSION_ZSCORE",
+      "input_preprocessing": {
+        "preprocessor_config_filename": "preprocessor_config.json",
+        "preprocessor_config_source_endpoint": "https://hf-mirror.com",
+        "preprocessor_source_probe": "reports/wav2vec2_model_mirror_probe_20260813.json",
+        "preprocessor_config_bytes": 159,
+        "cache_state": "SEMANTICALLY_VALIDATED_REMOTE_ONLY",
+        "feature_size": 1,
+        "sampling_rate_hz": 16000,
+        "do_normalize": true,
+        "return_attention_mask": false,
+        "padding_value": 0.0,
+        "padding_side": "right",
+        "input_dtype": "float32",
+        "passage_scope": "EACH_PASSAGE_INDEPENDENT_NO_CROSS_PASSAGE_STATISTICS",
+        "normalization_formula": "(x - mean_float32(x)) / sqrt(population_variance_float32_ddof0(x) + 1e-7)",
+        "normalization_epsilon": 1e-7,
+        "constant_input_action": "FAIL_BEFORE_FEATURE_EXTRACTOR",
+        "nonfinite_input_action": "FAIL_BEFORE_FEATURE_EXTRACTOR",
+        "no_padding_policy": "SINGLE_PASSAGE_NO_PADDING",
+        "attention_mask_argument": "OMITTED",
+        "validation_test_scope": "SAME_FIXED_PARAMETER_FREE_PASSAGE_WISE_RULE",
+        "train_fitted_statistics_used": false,
+        "cross_passage_statistics_allowed": false
+      },
       "pca_allowed": false,
       "test_layer_selection_allowed": false,
       "test_lag_selection_allowed": false,
@@ -331,7 +372,7 @@
     "checkpoint_and_stop_before_single_invocation_hours": 2.0,
     "resource_estimate_status": "PROTOCOL_UPPER_BOUND_REQUIRES_EXECUTION_PREFLIGHT",
     "execution_preflight_required": true,
-    "execution_preflight_status": "NOT_RUN_PROTOCOL_STAGE",
+    "execution_preflight_status": "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
     "execution_requires_preflight_status": "PASS",
     "static_protocol_estimate_is_execution_evidence": false,
     "preflight_checks": {
@@ -363,6 +404,6 @@
     "formal_baseline_run": false,
     "scientific_result_claimed": false,
     "exchange_candidate_created": false,
-    "allowed_output_status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+    "allowed_output_status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
   }
 }

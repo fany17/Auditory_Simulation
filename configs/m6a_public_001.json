@@ -62,7 +62,31 @@
       "neighbor_audio_read_allowed": false,
       "batch_padding": "FORBIDDEN_PRIMARY_INFERENCE",
       "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE",
-      "transformer_local_receptive_field_claimed": false
+      "transformer_local_receptive_field_claimed": false,
+      "preprocessing": {
+        "preprocessor_config_filename": "preprocessor_config.json",
+        "preprocessor_config_source_endpoint": "https://hf-mirror.com",
+        "preprocessor_source_probe": "reports/wav2vec2_model_mirror_probe_20260813.json",
+        "preprocessor_config_bytes": 159,
+        "cache_state": "SEMANTICALLY_VALIDATED_REMOTE_ONLY",
+        "feature_size": 1,
+        "sampling_rate_hz": 16000,
+        "do_normalize": true,
+        "return_attention_mask": false,
+        "padding_value": 0.0,
+        "padding_side": "right",
+        "input_dtype": "float32",
+        "passage_scope": "EACH_PASSAGE_INDEPENDENT_NO_CROSS_PASSAGE_STATISTICS",
+        "normalization_formula": "(x - mean_float32(x)) / sqrt(population_variance_float32_ddof0(x) + 1e-7)",
+        "normalization_epsilon": 1e-7,
+        "constant_input_action": "FAIL_BEFORE_FEATURE_EXTRACTOR",
+        "nonfinite_input_action": "FAIL_BEFORE_FEATURE_EXTRACTOR",
+        "no_padding_policy": "SINGLE_PASSAGE_NO_PADDING",
+        "attention_mask_argument": "OMITTED",
+        "validation_test_scope": "SAME_FIXED_PARAMETER_FREE_PASSAGE_WISE_RULE",
+        "train_fitted_statistics_used": false,
+        "cross_passage_statistics_allowed": false
+      }
     }
   },
   "split": {
@@ -165,6 +189,9 @@
     "reviewed_on": "2026-08-13",
     "candidate_report": "reports/g3_single_recording_candidate_20260813.json",
     "scientific_result_claimed": false,
+    "representation_input_contract_status": "RAW_INPUT_PREPROCESSING_NOT_FROZEN_AT_G3",
+    "representation_evidence_scope": "ENGINEERING_SHAPE_TIME_ONLY",
+    "representation_reuse_for_g4_scientific_baseline_allowed": false,
     "config_path": "configs/m6a_g3_single_recording_candidate.json",
     "recording_id": "sub-SD012_ses-02_task-PassiveListen",
     "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
@@ -179,8 +206,24 @@
     "scientific_result_claim_allowed": false,
     "exchange_candidate_creation_allowed": false
   },
+  "g4_protocol": {
+    "status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "coordinator_review": "PENDING",
+    "reviewed_on": null,
+    "config_path": "configs/m6a_g4_protocol_candidate.json",
+    "candidate_report": "reports/g4_protocol_amendment_candidate_20260813_v2.json",
+    "prior_accepted_status": "G4_PROTOCOL_COORDINATOR_ACCEPTED",
+    "prior_accepted_report": "reports/g4_protocol_candidate_20260813_v3.json",
+    "amendment_scope": "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_ONLY",
+    "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed": false,
+    "scientific_result_claimed": false,
+    "g4_execution_authorized": false,
+    "preflight_status": "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "preflight_config_path": "configs/m6a_g4_resource_runtime_preflight_candidate.json",
+    "preflight_report": "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json"
+  },
   "features": {
-    "protocol_status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "protocol_status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
     "protocol_config_path": "configs/m6a_g4_protocol_candidate.json",
     "acoustic_baselines": [
       "amplitude_envelope",
@@ -191,7 +234,7 @@
     "g4_execution_authorized": false
   },
   "baseline": {
-    "protocol_status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "protocol_status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
     "primary": "layerwise_ridge_encoding",
     "alpha_grid": [
       0.01,

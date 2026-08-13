@@ -1,0 +1,88 @@
+{
+  "report_schema_version": "m6a-wav2vec2-preprocessor-mirror-audit-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "status": "FAIL",
+  "current_candidate": false,
+  "audited_at_utc": "2026-08-13T10:16:46.366336+00:00",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "cryptographic_integrity_claim": false,
+  "model_id": "facebook/wav2vec2-base",
+  "revision_label": "main",
+  "revision_limitation": "MUTABLE_MAIN_LABEL_NON_CRYPTOGRAPHIC_REPRODUCIBILITY_ONLY",
+  "source_endpoint": "https://hf-mirror.com",
+  "source_endpoint_limitation": "THIRD_PARTY_MIRROR_PLUS_MUTABLE_MAIN_AND_NO_HASH_POLICY_DO_NOT_PROVIDE_CRYPTOGRAPHIC_INTEGRITY_OR_IMMUTABLE_PROVENANCE",
+  "filename": "preprocessor_config.json",
+  "probes": [
+    {
+      "endpoint": "https://mirrors.tuna.tsinghua.edu.cn",
+      "http_status": 404,
+      "body_bytes": -1,
+      "semantic_fields": {},
+      "semantic_match": false,
+      "proxy_used": false,
+      "error": {
+        "type": "HTTPError",
+        "message": "HTTP 404"
+      }
+    },
+    {
+      "endpoint": "https://hf-mirror.com",
+      "http_status": 403,
+      "body_bytes": -1,
+      "semantic_fields": {},
+      "semantic_match": false,
+      "proxy_used": false,
+      "error": {
+        "type": "HTTPError",
+        "message": "HTTP 403"
+      }
+    }
+  ],
+  "http_status": 403,
+  "mirror_body_bytes": -1,
+  "mirror_semantic_fields": {},
+  "cache_audit": {
+    "status": "PASS",
+    "path": "/home/fanyu/auditory_simulation_m6a/cache/huggingface/facebook_wav2vec2_base_main_20260813/preprocessor_config.json",
+    "filename": "preprocessor_config.json",
+    "bytes": 159,
+    "modified_at_utc": "2026-08-13T07:15:07.342413+00:00",
+    "semantic_fields": {
+      "feature_size": 1,
+      "sampling_rate": 16000,
+      "padding_value": 0.0,
+      "do_normalize": true,
+      "return_attention_mask": false,
+      "padding_side": "right"
+    },
+    "missing_fields": [],
+    "unexpected_fields": [],
+    "remote_only": true,
+    "issues": []
+  },
+  "cache_write_performed": false,
+  "network_body_persisted": false,
+  "proxy_used": false,
+  "response_summary_fields_read": [
+    "http_status",
+    "body_bytes"
+  ],
+  "error": {
+    "type": "HTTPError",
+    "message": "HTTP 403"
+  },
+  "required_checks": {
+    "prior_tuna_unavailable_and_single_hf_mirror_selected": true,
+    "current_tuna_probe_precedes_fallback": true,
+    "mirror_http_200": false,
+    "mirror_body_bytes_match_cached_file": false,
+    "mirror_semantics_match_frozen_contract": false,
+    "cached_preprocessor_semantic_audit_pass": true,
+    "cache_remained_remote_only_and_unchanged": true
+  },
+  "failed_checks": [
+    "mirror_http_200",
+    "mirror_body_bytes_match_cached_file",
+    "mirror_semantics_match_frozen_contract"
+  ]
+}

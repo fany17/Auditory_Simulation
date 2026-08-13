@@ -59,6 +59,10 @@
 - 参数：完全冻结，不训练、不微调
 - revision：使用 mutable `main` 在 2026-08-13 的 2203 解析快照；2203 无法直连官方 endpoint，清华 TUNA 旧 Hugging Face 路径已下线且实测 404，因此固定使用单一 `https://hf-mirror.com` endpoint。第三方镜像、mutable `main` 与 no-hash 政策共同意味着不能提供密码学完整性或不可变 provenance；仅以文件名、字节数、时间戳、配置语义、`weights_only=true` tensor-only/关键 shape 与库版本形成受限非密码学审计。候选语义验证后缓存状态冻结为 `SEMANTICALLY_VALIDATED_REMOTE_ONLY`，模型下载权限关闭，禁止再次按 mutable `main` 静默替换
 
+G4 科学执行前新增的实质性 preprocessing 修订当前仅为 `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，不改变原 G4 协议已接受的历史 provenance，也不得在协调复核前标为 accepted。机器契约固定 `preprocessor_config.json` 的 `feature_size=1`、`sampling_rate=16000`、`padding_value=0.0`、`do_normalize=true`、`return_attention_mask=false`、`padding_side=right`；每个 passage 独立按 float32 population variance (`ddof=0`) 与 epsilon `1e-7` 做 zero-mean/unit-variance normalization，无 padding。常数或 non-finite waveform fail closed；`return_attention_mask=false` 时正式入口不传 attention mask。validation/test 使用同一无训练参数的逐 passage 规则，不共享统计量。
+
+清华 TUNA 路径已在 2203 无代理实测为 HTTP 404；有限回退的单一 `https://hf-mirror.com` endpoint 返回 HTTP 200。只记录响应状态、正文 bytes、时间戳与配置语义，不读取或记录 ETag，也不执行哈希/校验和。G3 既有 raw-input wav2vec2 representation 只保留工程 shape/time 证据，机器边界为 `MUST_NOT_REUSE_FOR_G4_SCIENTIFIC_BASELINE`，无需重算 G3。
+
 ## 4. 数据与时间轴门禁
 
 正式提取前必须生成轻量元数据表，至少包含：
@@ -106,7 +110,7 @@
 
 首轮 neural target method 已由协调二审 `ACCEPT` 并冻结：主目标为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
 
-冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 与 2.0 s final embargo/baseline-final split 已于 2026-08-13 获协调者接受。G3 单 recording 候选也已由协调者接受，状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`，但只证明工程时间轴、shape 与有界读取。当前 G4 仅为协议候选，`g4_execution_authorized=false`、全数据 `neural_extraction_allowed=false`；这些接受均不等于 M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
+冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 与 2.0 s final embargo/baseline-final split 已于 2026-08-13 获协调者接受。G3 单 recording 候选也已由协调者接受，状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`，但只证明工程时间轴、shape 与有界读取。原 G4 协议已获协调接受；当前 preprocessing 修订与资源/runtime preflight 分别仍为候选，`g4_execution_authorized=false`、全数据 `neural_extraction_allowed=false`；这些接受均不等于 M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
 
 主模型为 ridge encoding：
 
@@ -159,6 +163,7 @@ M6A→M6B 正式交付目标是冻结 method package、schema、公开 benchmark
 硬停止条件沿用 `doc/CURRENT_TASK.md`。此外：
 
 - 单次 smoke GPU invocation 必须严格低于 2 小时，并在达到 2 小时前 checkpoint/停报；G4 累计预计 GPU 可不超过 4 小时，但必须拆成可恢复阶段。协议阶段静态估算不是实跑资源证据，执行前仍须通过只读 preflight；
+- 当前 synthetic preflight 候选实测最长 passage 输入为 77.08981859410432 s、1,233,438 个 16 kHz samples；一次完整 passage-global forward 为 0.07231187901925296 s，CUDA peak allocated/reserved 为 1,660,685,824/1,962,934,272 bytes。保守运行设计仍按每 passage 独立 invocation、成功后原子 checkpoint，单次上界 150 s、40 次累计 1.6666666666666665 h；这些数值只属于候选资源证据，不授权真实 G4；
 - 首轮数据与缓存预计达到 500 GB 前必须重新报告；
 - 连续正式 GPU 运行预计超过 24 小时前必须重新报告；
 - 磁盘可用空间低于 500 GB 时不启动新增大体积步骤；

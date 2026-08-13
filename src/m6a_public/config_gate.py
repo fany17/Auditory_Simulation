@@ -6,6 +6,9 @@ from pathlib import Path
 from typing import Any
 
 from m6a_public.embargo_gate import evaluate_final_embargo
+from m6a_public.wav2vec2_preprocessing import (
+    WAV2VEC2_INPUT_PREPROCESSING_CONTRACT,
+)
 
 
 FORBIDDEN_FIELD_NAMES = {
@@ -29,6 +32,117 @@ def load_json(path: str | Path) -> dict[str, Any]:
     if not isinstance(payload, dict):
         raise ValueError(f"Expected JSON object: {path}")
     return payload
+
+
+def validate_candidate_report_governance(repository_root: str | Path) -> list[str]:
+    root = Path(repository_root)
+    errors: list[str] = []
+    expected_reports: dict[str, dict[str, Any]] = {
+        "reports/g4_protocol_amendment_candidate_20260813.json": {
+            "status": "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE",
+            "current_candidate": False,
+            "superseded_by": (
+                "reports/g4_protocol_amendment_candidate_20260813_v2.json"
+            ),
+        },
+        "reports/g4_protocol_amendment_candidate_20260813_v2.json": {
+            "status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+            "current_candidate": True,
+        },
+        "reports/g4_resource_runtime_preflight_candidate_20260813.json": {
+            "status": "FAIL",
+            "current_candidate": False,
+        },
+        "reports/g4_resource_runtime_preflight_candidate_20260813_v2.json": {
+            "status": "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE",
+            "current_candidate": False,
+            "superseded_by": (
+                "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json"
+            ),
+        },
+        "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json": {
+            "status": (
+                "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_"
+                "AWAITING_COORDINATOR_REVIEW"
+            ),
+            "current_candidate": True,
+        },
+        "reports/wav2vec2_preprocessor_mirror_audit_20260813.json": {
+            "status": "FAIL",
+            "current_candidate": False,
+        },
+    }
+    loaded: dict[str, dict[str, Any]] = {}
+    for relative_path, expected in expected_reports.items():
+        try:
+            report = load_json(root / relative_path)
+        except (OSError, ValueError) as error:
+            errors.append(f"candidate report unavailable or malformed: {relative_path}: {error}")
+            continue
+        loaded[relative_path] = report
+        for field, expected_value in expected.items():
+            if report.get(field) != expected_value:
+                errors.append(f"candidate report governance drifted: {relative_path}:{field}")
+
+    current_protocol = loaded.get(
+        "reports/g4_protocol_amendment_candidate_20260813_v2.json", {}
+    )
+    current_preflight = loaded.get(
+        "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json", {}
+    )
+    if sum(
+        report.get("current_candidate") is True
+        and report.get("status")
+        == "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+        for report in loaded.values()
+    ) != 1 or current_protocol.get("current_candidate") is not True:
+        errors.append("protocol amendment must have exactly one current candidate report")
+    if sum(
+        report.get("current_candidate") is True
+        and report.get("status")
+        == "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+        for report in loaded.values()
+    ) != 1 or current_preflight.get("current_candidate") is not True:
+        errors.append("preflight must have exactly one current candidate report")
+
+    try:
+        main_config = load_json(root / "configs/m6a_public_001.json")
+    except (OSError, ValueError) as error:
+        errors.append(f"main config unavailable for candidate pointer audit: {error}")
+    else:
+        g4 = main_config.get("g4_protocol", {})
+        if not isinstance(g4, dict) or (
+            g4.get("candidate_report")
+            != "reports/g4_protocol_amendment_candidate_20260813_v2.json"
+            or g4.get("preflight_report")
+            != "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json"
+        ):
+            errors.append("main config current candidate pointers drifted")
+
+    try:
+        accepted = load_json(root / "reports/g4_protocol_candidate_20260813_v3.json")
+    except (OSError, ValueError) as error:
+        errors.append(f"historical accepted protocol report unavailable: {error}")
+    else:
+        expected_boundary = {
+            "accepted_scope": (
+                "G4_PROTOCOL_BEFORE_WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_AMENDMENT"
+            ),
+            "excluded_from_acceptance": ["WAV2VEC2_PREPROCESSING_INPUT_CONTRACT"],
+            "protocol_config_path_is_mutable_and_now_amended": True,
+            "current_protocol_config_status": (
+                "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+            ),
+            "current_amendment_report": (
+                "reports/g4_protocol_amendment_candidate_20260813_v2.json"
+            ),
+            "amendment_accepted_by_this_report": False,
+        }
+        if accepted.get("status") != "G4_PROTOCOL_COORDINATOR_ACCEPTED" or (
+            accepted.get("historical_acceptance_boundary") != expected_boundary
+        ):
+            errors.append("historical G4 protocol acceptance boundary drifted")
+    return errors
 
 
 def find_forbidden_fields(value: Any, path: str = "$") -> list[str]:
@@ -130,6 +244,7 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         "batch_padding": "FORBIDDEN_PRIMARY_INFERENCE",
         "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE",
         "transformer_local_receptive_field_claimed": False,
+        "preprocessing": WAV2VEC2_INPUT_PREPROCESSING_CONTRACT,
     }
     if input_gate != expected_input_gate:
         errors.append("wav2vec2 passage-isolation input semantics are not frozen")
@@ -210,6 +325,11 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         "reviewed_on": "2026-08-13",
         "candidate_report": "reports/g3_single_recording_candidate_20260813.json",
         "scientific_result_claimed": False,
+        "representation_input_contract_status": (
+            "RAW_INPUT_PREPROCESSING_NOT_FROZEN_AT_G3"
+        ),
+        "representation_evidence_scope": "ENGINEERING_SHAPE_TIME_ONLY",
+        "representation_reuse_for_g4_scientific_baseline_allowed": False,
         "config_path": "configs/m6a_g3_single_recording_candidate.json",
         "recording_id": "sub-SD012_ses-02_task-PassiveListen",
         "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
@@ -232,6 +352,33 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     }
     if g3 != expected_g3:
         errors.append("G3 acceptance must remain exact, engineering-only and fail-closed")
+
+    g4_protocol = config.get("g4_protocol", {})
+    expected_g4_protocol = {
+        "status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+        "coordinator_review": "PENDING",
+        "reviewed_on": None,
+        "config_path": "configs/m6a_g4_protocol_candidate.json",
+        "candidate_report": "reports/g4_protocol_amendment_candidate_20260813_v2.json",
+        "prior_accepted_status": "G4_PROTOCOL_COORDINATOR_ACCEPTED",
+        "prior_accepted_report": "reports/g4_protocol_candidate_20260813_v3.json",
+        "amendment_scope": "WAV2VEC2_PREPROCESSING_INPUT_CONTRACT_ONLY",
+        "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed": False,
+        "scientific_result_claimed": False,
+        "g4_execution_authorized": False,
+        "preflight_status": (
+            "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_"
+            "AWAITING_COORDINATOR_REVIEW"
+        ),
+        "preflight_config_path": (
+            "configs/m6a_g4_resource_runtime_preflight_candidate.json"
+        ),
+        "preflight_report": (
+            "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json"
+        ),
+    }
+    if g4_protocol != expected_g4_protocol:
+        errors.append("G4 protocol amendment or preflight candidate pointer drifted")
 
     neural_target = config.get("neural_target", {})
     if neural_target.get("status") != "METHOD_FROZEN_AWAITING_EXECUTION_GATES":
@@ -274,7 +421,9 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
 
     features = config.get("features", {})
     expected_features = {
-        "protocol_status": "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+        "protocol_status": (
+            "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+        ),
         "protocol_config_path": "configs/m6a_g4_protocol_candidate.json",
         "acoustic_baselines": [
             "amplitude_envelope",
@@ -288,8 +437,11 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("G4 feature protocol pointer and execution gate drifted")
 
     baseline = config.get("baseline", {})
-    if baseline.get("protocol_status") != "G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW":
-        errors.append("baseline must remain a G4 protocol candidate")
+    if (
+        baseline.get("protocol_status")
+        != "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+    ):
+        errors.append("baseline must remain blocked on the G4 protocol amendment review")
     if baseline.get("primary") != "layerwise_ridge_encoding":
         errors.append("primary baseline must be layerwise_ridge_encoding")
     if (
@@ -365,6 +517,7 @@ def main() -> int:
     parser.add_argument("config", type=Path)
     args = parser.parse_args()
     errors = validate_task_config(load_json(args.config))
+    errors.extend(validate_candidate_report_governance(args.config.resolve().parents[1]))
     report = {"status": "PASS" if not errors else "FAIL", "errors": errors}
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 1

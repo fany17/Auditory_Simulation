@@ -3,18 +3,32 @@
 | 字段 | 内容 |
 |---|---|
 | 日期 | 2026-08-13 |
-| 状态 | `G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 当前状态 | `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 原协议历史状态 | `G4_PROTOCOL_COORDINATOR_ACCEPTED` |
 | 协议配置 | `configs/m6a_g4_protocol_candidate.json` |
 | schema | `schemas/m6a_g4_protocol_candidate.schema.json` |
-| 唯一当前机器报告 | `reports/g4_protocol_candidate_20260813_v3.json` |
-| 2203 日志 | `/home/fanyu/auditory_simulation_m6a/logs/g4_protocol_candidate_20260813_v3.json` |
+| 原协议 accepted 报告 | `reports/g4_protocol_candidate_20260813_v3.json` |
+| 当前修订候选报告 | `reports/g4_protocol_amendment_candidate_20260813_v2.json` |
+| 当前 2203 日志 | `/home/fanyu/auditory_simulation_m6a/logs/g4_protocol_amendment_candidate_20260813_v2.json` |
 | 完整性边界 | `NON_HASH_AUDIT`；不提供密码学完整性声称 |
 
 ## 依赖、范围与停止点
 
-G3 已由协调者接受为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`。G4 协议范围固定为同一受试者、同一 `sub-SD012_ses-02_task-PassiveListen` recording：24 train、8 validation、8 test passages，排除 `ses-01`，不允许按波形、质量或结果选择。
+G3 已由协调者接受为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`。G4 原协议也已由协调者接受；本文件原位保留该历史，同时把新发现的 wav2vec2 preprocessing 输入契约作为独立实质性修订候选，不能静默继承 accepted 状态。G4 范围继续固定为同一受试者、同一 `sub-SD012_ses-02_task-PassiveListen` recording：24 train、8 validation、8 test passages，排除 `ses-01`，不允许按波形、质量或结果选择。
+
+原协议 accepted 机器报告 `reports/g4_protocol_candidate_20260813_v3.json` 中的 `protocol_config` 是可变路径；该路径现已承载 amendment。机器边界已明确：原接受范围不包含 `WAV2VEC2_PREPROCESSING_INPUT_CONTRACT`，不得仅凭该历史报告宣称当前 amendment accepted。协议修订唯一当前候选是 `reports/g4_protocol_amendment_candidate_20260813_v2.json`；无版本旧报告已标记 `SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE` 并指向 v2。
 
 本轮仅使用轻量 split/config 与 synthetic matrix 验证协议。`g4_execution_authorized=false`、`new_real_edf_read=false`、`new_real_audio_read=false`、`new_feature_extraction_run=false`、`ridge_run=false`、`null_run=false`、`metric_run=false`。未执行 G4，也未建立 exchange candidate。
+
+## Wav2vec2 preprocessing 修订
+
+- `preprocessor_config.json` 机器冻结为 `feature_size=1`、`sampling_rate=16000`、`padding_value=0.0`、`do_normalize=true`、`return_attention_mask=false`、`padding_side=right`；
+- 每个 passage 独立以 float32 mean、population variance (`ddof=0`) 和 epsilon `1e-7` 计算 `(x-mean)/sqrt(var+epsilon)`；不得跨 passage 或 split 共享统计量，常数或 non-finite waveform fail closed；
+- 输入为单 passage、16 kHz mono、无 padding；`return_attention_mask=false` 时不创建或传入 attention mask；
+- 自有实现须与本地 `Wav2Vec2FeatureExtractor` 在 `rtol=atol=1e-7` 内等价；warm-up 与 longest synthetic input 实测最大绝对差均为 0；
+- G3 既有 raw-input wav2vec2 representation 只保留工程 shape/time 证据，状态为 `MUST_NOT_REUSE_FOR_G4_SCIENTIFIC_BASELINE`。不重算 G3；未来真实 G4 必须复用本修订接受后的同一实现并重新生成 G4 表征。
+
+2203 无代理优先探测清华 TUNA，目标路径返回 HTTP 404；随后只回退到单一 `https://hf-mirror.com`，返回 HTTP 200，正文为 159 bytes 且语义字段匹配。首次 hf-mirror 请求返回 HTTP 403 的失败报告被保留，有限重试成功。缓存仍为 remote-only，未写入网络正文，模型下载保持关闭。第三方镜像、mutable `main` 与 no-hash 边界不提供密码学完整性或不可变 provenance。
 
 ## 时间、target 与 feature transform
 
@@ -40,14 +54,15 @@ Alpha 只由 validation 选择；`1e-12` tie 内取最小 alpha。锁定后允�
 
 协议静态上界为 40 passages、1,532.45596371882 s、76,623 frames、3,151,044,252 core tensor bytes、预计新增不超过 20 GB、累计预计 GPU 不超过 4 h。这些不是实跑资源证据。既有单次 smoke 硬边界保持不变：每个 GPU invocation 必须严格低于 2 h，计算必须拆成可恢复阶段，并在达到 2 h 前 checkpoint/停报。
 
-真实执行前必须只读完成 preflight：实际 free bytes 至少 500 GB；预计新增不超过 20 GB；项目 data+cache+预计新增严格低于 500 GB；单次 GPU invocation 预计严格低于 2 h；累计预计 GPU 不超过 4 h；连续正式 GPU 超过 24 h 的报告阈值保持不变。当前 `execution_preflight_status=NOT_RUN_PROTOCOL_STAGE`；任一不满足即停止并报告，不得启动 G4。
+当前资源/runtime preflight 状态仅为 `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`。只读空间盘点与 synthetic longest-passage canary 已完成，但这不等于执行授权。实际 free bytes 为 978,024,435,712；data+cache+预计新增 20 GB 为 34,553,621,929 bytes。保守估算单次 invocation 上界 150 s、40 passages 合计 1.6666666666666665 GPU h，仍须每 passage 独立、成功后原子 checkpoint。任一门禁漂移即停止，不得启动 G4。
 
 ## 验证与证据边界
 
-- 当前机器报告 9/9 required checks 为 true，40 passages 与 24/8/8、14,833 个 derangement、G3/split/method/anatomy/资源交叉状态均一致；
+- 原协议 accepted 报告的 9/9 required checks 为 true。当前 preprocessing 修订机器报告同样为 9/9 true，但状态严格保持 `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`；
+- current-candidate 治理只允许 v2 协议修订报告为当前候选；superseded 报告的状态、`current_candidate=false` 与 `superseded_by` 均由主 config gate 复核；
 - 旧 `reports/g4_protocol_candidate_20260813.json` 与 `reports/g4_protocol_candidate_20260813_v2.json` 均已机器标记为 `SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE`；v2 因错误放宽 main config 的单次 2 h 硬边界而被替代，它不是当前候选；
 - 一次文档同步把任务书副本平铺到 2203 snapshot 的 `doc/` 根；核对绝对路径后已将该副本移动到 `/home/fanyu/auditory_simulation_m6a/logs/provenance/g4_protocol_sync_layout_20260813/M6A-PUBLIC-001.md`，正式路径 `code_snapshot/doc/tasks/M6A-PUBLIC-001.md` 已更新。未删除文件，数据目录未受影响；
-- 2203 专用环境最终验证：`138 passed, 309 subtests`；Ruff PASS；mypy 对完整 `src scripts tests` 的 40 个文件 PASS；config、neural method、accepted embargo、G3 与 G4 定向门禁均包含在测试中；
+- 2203 专用环境最终验证：`147 passed, 349 subtests`；Ruff 对完整 `src scripts tests` PASS；mypy 对完整 46 个文件 PASS；主 config gate PASS；当前协议修订报告 9/9、preflight 报告 15/15 required checks 为 true；
 - 当前没有 ridge、Pearson r、R2、null、max-statistic、显著性、层优劣或神经表征结果。`region_summary=NOT_ESTIMABLE`，不得从 contact 名称推断脑区。
 
-本候选等待协调审核；在获得新的 scoped execution authorization 与真实资源 preflight PASS 前停止。
+本协议修订候选与资源/runtime preflight 候选均等待协调审核；在两者获协调接受并取得新的 scoped execution authorization 前停止。

@@ -28,13 +28,14 @@
 
 ## 当前节点
 
-当前节点为 `G4_PROTOCOL_CANDIDATE_AWAITING_COORDINATOR_REVIEW`：
+当前节点同时受两个候选门禁约束：`G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` 与 `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`：
 
 - 协调者已于 2026-08-13 接受 final-embargo candidate；`final_embargo_seconds=2.0`、`final_embargo_status=FINAL_EMBARGO_COORDINATOR_ACCEPTED`、`split_status=BASELINE_FINAL_COORDINATOR_ACCEPTED`、`baseline_final=true`。这只接受当前 split/final embargo，不是整条 M6A、artifact 或科学结论 PASS/FROZEN；
 - 唯一主模型 `facebook/wav2vec2-base` 缓存保持 `SEMANTICALLY_VALIDATED_REMOTE_ONLY`，`model.download_allowed=false`；mutable `main`、第三方镜像与 no-hash 政策不能提供密码学完整性或不可变 provenance；
-- G3 单 recording 候选已由协调者接受，机器状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`。它只证明预声明一个 recording/一个 train passage 的有界读取、时间轴、shape 与数组可读性，不是科学结果；全数据 `neural_extraction_allowed=false`；
-- G4 协议候选只覆盖同一受试者、同一 `sub-SD012_ses-02_task-PassiveListen` recording 的 24/8/8 train/validation/test passages，排除 `ses-01`，并冻结 exact `t+lag`、所有 lag 共用的 train-only target transform、固定 20 维 log-mel PCA rank 门禁、ridge SVD 复用、test-only stimulus derangement 与 max-statistic smoke 流程；
-- 当前 `execution_preflight_status=NOT_RUN_PROTOCOL_STAGE`、`g4_execution_authorized=false`。本轮不读取新 EDF/audio、不提取特征、不运行 ridge/null/指标；真实执行前必须只读核对可用空间、项目 data+cache+预计新增体积、单次 GPU invocation 严格低于 2 h、累计预计不超过 4 h，并得到独立授权。
+- G3 单 recording 候选已由协调者接受，机器状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`。它只证明预声明一个 recording/一个 train passage 的有界读取、时间轴、shape 与数组可读性，不是科学结果。其既有 wav2vec2 raw-input representation 仅保留工程 shape/time 证据，状态为 `MUST_NOT_REUSE_FOR_G4_SCIENTIFIC_BASELINE`，不重算 G3；全数据 `neural_extraction_allowed=false`；
+- 已接受的 G4 原协议历史报告保持 `G4_PROTOCOL_COORDINATOR_ACCEPTED`。当前实质性修订只新增 passage-wise wav2vec2 preprocessing：固定 16 kHz、逐 passage 独立 zero-mean/unit-variance、无 padding、`return_attention_mask=false` 时不传 attention mask，并用本地 `Wav2Vec2FeatureExtractor` 严格等价核对。修订在协调复核前不得静默继承 accepted 状态；
+- G4 范围继续只覆盖同一受试者、同一 `sub-SD012_ses-02_task-PassiveListen` recording 的 24/8/8 train/validation/test passages，排除 `ses-01`，并冻结 exact `t+lag`、所有 lag 共用的 train-only target transform、固定 20 维 log-mel PCA rank 门禁、ridge SVD 复用、test-only stimulus derangement 与 max-statistic smoke 流程；
+- preflight 候选只使用 synthetic longest-passage waveform 和只读空间盘点。`g4_execution_authorized=false`；本轮不读取新 EDF/audio、不提取真实特征、不运行 ridge/null/指标。任何真实 G4 执行仍需协调接受协议修订与 preflight 后另行授权。
 
 ## 硬停止条件
 
@@ -61,8 +62,11 @@
 - neural target method：协调二审已 `ACCEPT`，状态为 `METHOD_FROZEN_AWAITING_EXECUTION_GATES`；主目标为排除 110-130 Hz 的六个等宽 10 Hz high-gamma 子带，有限 FIR edge 最大值 1.091796875 s。旧 70-150 Hz 方案仅为 sensitivity；全数据 `neural_extraction_allowed=false`，仅 G3 配置中的单 recording/单 passage 读取获授权；
 - 声音模型门禁：`facebook/wav2vec2-base@main` 只有 `pytorch_model.bin` 权重；通过 16 kHz mono、单 passage、无 batch padding、`local_files_only=true`、`trust_remote_code=false`、`weights_only=true` 且禁止降级、tensor-only 与关键 shape 检查；projected + 12 Transformer layers、49 帧、20 ms 步长和首帧中心 0.01246875 s 的 synthetic canary 通过。Transformer 可在单 passage 内全局注意，这不等于局部 receptive field；
 - G3：协调者已 `ACCEPT`，状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`；真实波形仅分段读取 36 channels、18,850 samples（125.427734375–162.244140625 s），未 preload 整段。输出 1,732 个 recording-origin 50 Hz frames，其中 common valid 1,622；未拟合正式 train-only transform、未运行 baseline 或科学指标；
+- wav2vec2 preprocessing 修订：2026-08-13 在 2203 无代理探测清华 TUNA 目标路径返回 HTTP 404；同一轮有限回退 `https://hf-mirror.com` 返回 HTTP 200。远端 `preprocessor_config.json` 为 159 bytes，机器核对 `feature_size=1`、`sampling_rate=16000`、`padding_value=0.0`、`do_normalize=true`、`return_attention_mask=false`、`padding_side=right`。缓存保持 remote-only、下载关闭；第三方镜像、mutable `main` 与 no-hash 边界不提供密码学完整性或不可变 provenance；
+- G4 synthetic preflight：实际 free bytes 为 978,024,435,712；data/cache/outputs/log/code 选定合计 21,523,777,809 bytes，项目根合计 21,525,428,164 bytes；data+cache+预计新增 20 GB 为 34,553,621,929 bytes。最长 passage 77.08981859410432 s 对应 `ceil(duration*16000)=1,233,438` 个 synthetic samples；冻结预处理与本地 feature extractor 最大绝对差为 0，不传 attention mask。一次 passage-global forward 产生 13 个 `[1,3854,768]` finite tensors，wall 0.07231187901925296 s，CUDA peak allocated/reserved 为 1,660,685,824/1,962,934,272 bytes；保守估算单次 150 s、40 次合计 1.6666666666666665 h。该候选只证明资源与运行 shape 可行，不授权 G4；
 - layer-wise alignment：尚未运行，不能声称存在模型层—脑区功能对应。
 - 当前 split 只支持 within-subject unseen-stimulus/block generalization；不支持 subject-held-out、speaker-held-out 或 cross-language；
 - M6A→M6B exchange contract review：`REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`；consumer 为 `READY_WAITING_M6A_CANDIDATE`。真实 exchange candidate 尚无、consumer cross-test 未运行，contract 未 accepted/frozen；candidate 准备仍受 final embargo/split guard 和真实 method/runtime/canary 门禁约束。
 - G2 promotion gate：历史机器入口为 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，所有 required checks 为 true；`g2_pass_claimed=false`、`candidate_contains_raw_data=false`。首次因额外要求 C-prefix 名称唯一而 fail closed 的报告已保留；实际协调要求的 eligible 名单唯一性与 1346/727 聚合均通过。协调者独立验收后当前 G2 状态为 `G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE`。
-- 最新联合验证：2203 专用环境为 `138 passed, 309 subtests`，Ruff 通过，mypy 对完整 `src scripts tests` 的 40 个文件通过；main config、neural target method、accepted final-embargo、G3 与 G4 protocol gates 均通过。G4 当前机器报告为 `reports/g4_protocol_candidate_20260813_v3.json`，9/9 required checks 为 true；旧 v1/v2 报告均已标记为 superseded provenance。
+- 最新联合验证：2203 专用环境为 `147 passed, 349 subtests`，Ruff 对完整 `src scripts tests` 通过，mypy 对完整 46 个文件通过，主 config gate 为 `PASS`。已接受原 G4 协议的历史机器报告仍为 `reports/g4_protocol_candidate_20260813_v3.json`；当前修订候选 `reports/g4_protocol_amendment_candidate_20260813_v2.json` 为 9/9 required checks true，当前 preflight 候选 `reports/g4_resource_runtime_preflight_candidate_20260813_v3.json` 为 15/15 true。两者均不得在协调复核前写为 accepted。
+- 候选治理：协议修订仅 v2、preflight 仅 v3 可标记 `current_candidate=true`；无版本协议修订报告与 preflight v2 均为 `SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE`，原始 preflight 与镜像无版本报告继续保持 `FAIL`。原协议 accepted v3 报告的 config 路径现已发生 amendment，其机器接受范围明确排除 `WAV2VEC2_PREPROCESSING_INPUT_CONTRACT`；不得据此宣称 amendment accepted。首次 hf-mirror 403 只保留 provenance，不构成当前 preflight PASS 的必要条件。
