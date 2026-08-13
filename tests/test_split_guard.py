@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from m6a_public.split_guard import Assignment, validate_assignments
+from m6a_public.split_guard import Assignment, summarize_assignments, validate_assignments
 
 
 def row(
@@ -32,6 +32,26 @@ def row(
 
 
 class SplitGuardTests(unittest.TestCase):
+    def test_summary_records_actual_split_block_and_language_counts(self) -> None:
+        rows = [
+            row("a", "train", "rec-a", "stim-a", block_id="block-01", language="en"),
+            row("b", "validation", "rec-b", "stim-b", block_id="block-03", language="en"),
+            row("c", "test", "rec-c", "stim-c", block_id="block-04", language="en"),
+        ]
+        self.assertEqual(
+            summarize_assignments(rows),
+            {
+                "split_counts": {"test": 1, "train": 1, "validation": 1},
+                "block_assignments": {
+                    "block-01": "train",
+                    "block-03": "validation",
+                    "block-04": "test",
+                },
+                "language_counts": {"en": 3},
+                "catalan_rows": 0,
+            },
+        )
+
     def test_clean_grouped_split_passes(self) -> None:
         rows = [
             row("a", "train", "rec-a", "stim-a"),

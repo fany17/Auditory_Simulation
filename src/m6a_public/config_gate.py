@@ -118,6 +118,8 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("preliminary minimum embargo must remain 2 seconds")
     if split.get("split_status") != "PRELIMINARY_NOT_BASELINE_FINAL":
         errors.append("split must remain preliminary until final embargo is measured and guarded")
+    if split.get("baseline_final") is not False:
+        errors.append("baseline_final must remain false before final embargo and guard rerun")
     if split.get("final_embargo_seconds") is not None:
         errors.append("final embargo must remain unset before G3 measurement")
     if (

@@ -4,7 +4,7 @@ import argparse
 import csv
 import json
 import math
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Sequence
@@ -176,10 +176,30 @@ def validate_assignments(
     return sorted(set(issues))
 
 
+def summarize_assignments(rows: Sequence[Assignment]) -> dict[str, object]:
+    split_counts = Counter(row.split for row in rows)
+    language_counts = Counter(row.language for row in rows)
+    block_splits: dict[str, set[str]] = defaultdict(set)
+    for row in rows:
+        block_splits[row.block_id].add(row.split)
+    block_assignments: dict[str, str | list[str]] = {
+        block_id: next(iter(splits)) if len(splits) == 1 else sorted(splits)
+        for block_id, splits in sorted(block_splits.items())
+    }
+    catalan_rows = sum(row.language.strip().lower() in {"ca", "catalan"} for row in rows)
+    return {
+        "split_counts": dict(sorted(split_counts.items())),
+        "block_assignments": block_assignments,
+        "language_counts": dict(sorted(language_counts.items())),
+        "catalan_rows": catalan_rows,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Audit split leakage for M6A-PUBLIC-001.")
     parser.add_argument("split_csv", type=Path)
     parser.add_argument("--config", type=Path, default=Path("configs/m6a_public_001.json"))
+    parser.add_argument("--report", type=Path)
     args = parser.parse_args()
     with args.config.open("r", encoding="utf-8") as handle:
         config = json.load(handle)
@@ -194,6 +214,10 @@ def main() -> int:
         temporal_embargo_seconds=float(split_config["preliminary_minimum_embargo_seconds"]),
     )
     report = {
+        "report_schema_version": "m6a-split-guard-v2",
+        "task_id": "M6A-PUBLIC-001",
+        "dataset_id": "ds004703",
+        "dataset_version": "1.1.0",
         "status": "PASS" if not issues else "FAIL",
         "rows": len(rows),
         "issues": issues,
@@ -202,7 +226,12 @@ def main() -> int:
         "final_embargo_status": split_config["final_embargo_status"],
         "baseline_final": False,
     }
-    print(json.dumps(report, ensure_ascii=False, indent=2))
+    report.update(summarize_assignments(rows))
+    rendered = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
+    if args.report is not None:
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.write_text(rendered, encoding="utf-8")
+    print(rendered, end="")
     return 0 if not issues else 1
 
 

@@ -2,8 +2,8 @@
 
 | 字段 | 内容 |
 |---|---|
-| 状态 | `PENDING_3_EDF_DOWNLOADS` |
-| 当前是否为 G2 candidate | `NO` |
+| 状态 | `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 当前是否为 G2 candidate | `YES` |
 | 完整性策略 | `NON_HASH_AUDIT` |
 | 后续模型/神经/baseline | `NOT_AUTHORIZED_BEFORE_LATER_GATES` |
 
@@ -40,12 +40,21 @@
 
 ## 4. Candidate 输出
 
-G2 candidate 只包含轻量报告、inventory、recording metadata、split/guard 与失败边界，不包含原始数据。状态只能是 `CANDIDATE_AWAITING_COORDINATOR_REVIEW`，不能自称 G2 PASS。
+G2 candidate 只包含轻量报告、inventory、recording metadata、split/guard 与失败边界，不包含原始数据。单一机器入口为 `scripts/g2_promotion_gate.py`；它只组合固定版本的 dataset audit、neural metadata audit、split guard 与主 config，不重复读取数据。缺输入、陈旧状态、非有限数、字段缺失或任一 required check 非 true 均 fail closed。输出只能是 `PENDING`、`FAIL` 或 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，不能自称 G2 PASS。当前真实入口输出为 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，仍等待协调者独立验收。
 
 ## 5. G2 之后仍独立阻塞的门禁
 
 - `ANATOMY_MAPPING_NOT_READY`：不阻塞电极级 method smoke，但 `region_summary=NOT_ESTIMABLE`；
 - 逐 recording `iEEGReference` 必须记录并在 11 个 sidecar 中一致为 `scalp electrode, not included with data`；首轮只能使用 `AS_RECORDED_SCALP_REFERENCE`；
-- `NEURAL_TARGET_REDESIGN_REQUIRED_BEFORE_G3`：target/filter 未协调冻结，`neural_extraction_allowed=false`；
-- final embargo 的 filter edge 与 wav2vec2 context 未实测，`baseline_final=false`；
+- neural target 方法已冻结为 `METHOD_FROZEN_AWAITING_EXECUTION_GATES`，但 `neural_extraction_allowed=false`；这不等于 G3、整条 M6A 或 exchange contract 已冻结；
+- G2 协调验收、audio cross-split context、final embargo 与 baseline-final split guard 仍是相互独立的执行阻塞项，`baseline_final=false`；
 - revised exchange DRAFT 虽已接受用于 candidate 准备，但真实 method/runtime/canary 尚无，consumer cross-test 仍 `NOT_RUN`。
+
+## 6. 当前候选证据
+
+- Range 重试：仅补齐 2 个缺失区间，复用 350 个已有 chunk，失败 0；三个 EDF 均以官方字节数装配，staging 与 dataset active partial 均为 0；
+- dataset audit：377/377 paths、14,173,350,514 bytes，missing/unexpected/byte mismatch 均为 0，11/11 EDF header 可读；
+- neural metadata audit：11/11 sidecar/channels/events/audio-offset、sampling/timeline/eligible channel、reference 与 PyBIDS 门禁通过；analysis-eligible=1346，C-prefix exclusion=727；
+- split guard：319 行，train/validation/test=223/48/48；block 01/02/05/06=train、03=validation、04=test；English=319、Catalan=0；
+- promotion gate：全部 required checks 为 true，`g2_pass_claimed=false`，`candidate_contains_raw_data=false`；首次过度约束 C-prefix 唯一性的失败证据保留于 `reports/ds004703_g2_promotion_gate_failed_channel_identity_v1.json`；
+- 2203 专用环境：91 tests + 133 subtests、Ruff、mypy（29 source files）、主 config gate、method gate 与 formal-src direct-convolution scan 全部通过。

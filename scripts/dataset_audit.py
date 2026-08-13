@@ -183,10 +183,26 @@ def main() -> int:
     else:
         errors.append("README missing")
     lower_readme = readme_text.lower()
-    if "may not be used for commer" not in lower_readme:
+    readme_noncommercial_restriction_found = "may not be used for commer" in lower_readme
+    readme_no_reidentification_restriction_found = (
+        "disambiguates participant identity" in lower_readme
+    )
+    if not readme_noncommercial_restriction_found:
         errors.append("README noncommercial restriction not found")
-    if "disambiguates participant identity" not in lower_readme:
+    if not readme_no_reidentification_restriction_found:
         errors.append("README reidentification restriction not found")
+
+    dataset_boundary_checks = {
+        "dataset_doi_matches": description.get("DatasetDOI") == expected_doi,
+        "declared_license_matches": str(description.get("License", "")).upper() == "CC0",
+        "readme_noncommercial_restriction_found": readme_noncommercial_restriction_found,
+        "readme_no_reidentification_restriction_found": (
+            readme_no_reidentification_restriction_found
+        ),
+    }
+    dataset_boundary_checks["status"] = (
+        "PASS" if all(dataset_boundary_checks.values()) else "FAIL"
+    )
 
     participants_path = root / "participants.tsv"
     participant_count = 0
@@ -288,6 +304,7 @@ def main() -> int:
         writer.writerows(inventory)
 
     report = {
+        "report_schema_version": "m6a-dataset-audit-v2",
         "task_id": "M6A-PUBLIC-001",
         "dataset_id": "ds004703",
         "expected_version": "1.1.0",
@@ -312,6 +329,7 @@ def main() -> int:
         "bytes_by_role": dict(sorted(bytes_by_role.items())),
         "participant_count": participant_count,
         "dataset_description": description,
+        "dataset_boundary_checks": dataset_boundary_checks,
         "license_boundary": "CC0_PLUS_README_NONCOMMERCIAL_AND_NO_REIDENTIFICATION",
         "audio_samples": audio_reports,
         "ieeg_samples": ieeg_reports,

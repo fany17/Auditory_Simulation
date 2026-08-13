@@ -1,0 +1,30 @@
+{
+  "report_schema_version": "m6a-split-guard-v2",
+  "task_id": "M6A-PUBLIC-001",
+  "dataset_id": "ds004703",
+  "dataset_version": "1.1.0",
+  "status": "PASS",
+  "rows": 319,
+  "issues": [],
+  "embargo_status": "PRELIMINARY_MINIMUM_ONLY",
+  "preliminary_minimum_embargo_seconds": 2.0,
+  "final_embargo_status": "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_GUARD_RERUN",
+  "baseline_final": false,
+  "split_counts": {
+    "test": 48,
+    "train": 223,
+    "validation": 48
+  },
+  "block_assignments": {
+    "block-01": "train",
+    "block-02": "train",
+    "block-03": "validation",
+    "block-04": "test",
+    "block-05": "train",
+    "block-06": "train"
+  },
+  "language_counts": {
+    "en": 319
+  },
+  "catalan_rows": 0
+}

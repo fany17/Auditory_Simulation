@@ -1,0 +1,378 @@
+path,bytes,modified_at_utc,role,sample_readability
+.bidsignore,56,2023-08-18T13:23:01+00:00,other,NOT_SAMPLED
+.datalad/config,63,2023-08-18T13:23:01+00:00,other,NOT_SAMPLED
+.gitattributes,385,2023-08-18T13:23:01+00:00,other,NOT_SAMPLED
+CHANGES,76,2023-08-18T14:37:58+00:00,other,NOT_SAMPLED
+README,1481,2023-08-18T13:23:02+00:00,readme,TEXT_READ
+dataset_description.json,314,2023-08-18T14:37:58+00:00,dataset_description,JSON_PARSED
+participants.tsv,217,2023-08-18T13:23:03+00:00,participants,TSV_HEADER_READ
+stimuli/Passive Listening iEEG Protocol.docx,16029,2023-08-18T13:23:03+00:00,other,NOT_SAMPLED
+stimuli/Passive-Listening_iEEG_v3.py,14021,2023-08-18T13:23:03+00:00,other,NOT_SAMPLED
+stimuli/Passive-Listening_iEEG_v3.pyc,12812,2023-08-18T13:23:04+00:00,other,NOT_SAMPLED
+stimuli/add_duration.ipynb,2993,2023-08-18T13:23:04+00:00,other,NOT_SAMPLED
+stimuli/all_df.csv,1471116,2023-08-18T13:23:04+00:00,other,NOT_SAMPLED
+stimuli/all_stimuli/catalan-f01_normed.wav,303728,2023-08-18T13:23:05+00:00,audio,AUDIO_HEADER_READ
+stimuli/all_stimuli/catalan-f01_question_normed.wav,334560,2023-08-18T13:23:05+00:00,audio,AUDIO_HEADER_READ
+stimuli/all_stimuli/catalan-f02_normed.wav,303728,2023-08-18T13:23:05+00:00,audio,AUDIO_HEADER_READ
+stimuli/all_stimuli/catalan-f02_question_normed.wav,334560,2023-08-18T13:23:05+00:00,audio,AUDIO_HEADER_READ
+stimuli/all_stimuli/catalan-f03_normed.wav,303728,2023-08-18T13:23:06+00:00,audio,AUDIO_HEADER_READ
+stimuli/all_stimuli/catalan-f03_question_normed.wav,334560,2023-08-18T13:23:06+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/catalan-m01_normed.wav,303728,2023-08-18T13:23:06+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/catalan-m01_question_normed.wav,334560,2023-08-18T13:23:07+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/catalan-m02_normed.wav,303728,2023-08-18T13:23:07+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/catalan-m02_question_normed.wav,334560,2023-08-18T13:23:07+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/catalan-m03_normed.wav,4485312,2023-08-18T13:23:08+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/catalan-m03_question_normed.wav,334560,2023-08-18T13:23:08+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/instructions1_normed.wav,3106520,2023-08-18T13:23:08+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/instructions2_clipped_normed.wav,2655140,2023-08-18T13:23:09+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/instructions2_normed.wav,1872828,2023-08-18T13:23:09+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/instructions3_normed.wav,551130,2023-08-18T13:23:09+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/pleasePressSpace_normed.wav,303728,2023-08-18T13:23:10+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0102b-ex01_question_normed.wav,336598,2023-08-18T13:23:10+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0202a-ex01_question_normed.wav,394774,2023-08-18T13:23:10+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0202b-ex01_normed.wav,5020206,2023-08-18T13:23:11+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0202b-ex01_question_normed.wav,392238,2023-08-18T13:23:11+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0203b-ex01_normed.wav,3788360,2023-08-18T13:23:11+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0203b-ex01_question_normed.wav,411534,2023-08-18T13:23:12+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0302b-ex01_question_normed.wav,375394,2023-08-18T13:23:12+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0305a-ex01_normed.wav,3837394,2023-08-18T13:23:12+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0305a-ex01_question_normed.wav,460016,2023-08-18T13:23:12+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0501a-ex01_question_normed.wav,622986,2023-08-18T13:23:13+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0501a-ex02_question_normed.wav,425048,2023-08-18T13:23:13+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0601a-ex01_question_normed.wav,408936,2023-08-18T13:23:13+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0602b-ex01_question_normed.wav,367126,2023-08-18T13:23:14+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0702a-ex01_normed.wav,2686814,2023-08-18T13:23:14+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0702a-ex01_question_normed.wav,315922,2023-08-18T13:23:14+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0703b-ex01_normed.wav,3442904,2023-08-18T13:23:15+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0703b-ex01_question_normed.wav,273640,2023-08-18T13:23:15+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0802b-ex01_normed.wav,2645448,2023-08-18T13:23:15+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0802b-ex01_question_normed.wav,391398,2023-08-18T13:23:16+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0901b-ex01_normed.wav,3208418,2023-08-18T13:23:16+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s0901b-ex01_question_normed.wav,433682,2023-08-18T13:23:16+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1001a-ex01_normed.wav,3675454,2023-08-18T13:23:17+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1001a-ex01_question_normed.wav,295462,2023-08-18T13:23:18+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1103a-ex01_normed.wav,4823940,2023-08-18T13:23:18+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1103a-ex01_question_normed.wav,320924,2023-08-18T13:23:18+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1201a-ex01_normed.wav,3047966,2023-08-18T13:23:19+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1201a-ex01_question_normed.wav,274094,2023-08-18T13:23:19+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1202b-ex01_normed.wav,3041014,2023-08-18T13:23:19+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1202b-ex01_question_normed.wav,307738,2023-08-18T13:23:20+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1203a-ex01_normed.wav,3004004,2023-08-18T13:23:20+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1203a-ex01_question_normed.wav,360482,2023-08-18T13:23:20+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1303a-ex01_normed.wav,3017890,2023-08-18T13:23:21+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1303a-ex01_question_normed.wav,441410,2023-08-18T13:23:21+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1303a-ex02_normed.wav,2588278,2023-08-18T13:23:21+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1303a-ex02_question_normed.wav,590086,2023-08-18T13:23:21+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1401a-ex01_normed.wav,3112104,2023-08-18T13:23:22+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1401a-ex01_question_normed.wav,341838,2023-08-18T13:23:22+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1401a-ex02_normed.wav,3226614,2023-08-18T13:23:22+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1401a-ex02_question_normed.wav,338202,2023-08-18T13:23:23+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1401b-ex01_normed.wav,4801376,2023-08-18T13:23:23+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1401b-ex01_question_normed.wav,302738,2023-08-18T13:23:23+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1501a-ex01_normed.wav,3804854,2023-08-18T13:23:24+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1501a-ex01_question_normed.wav,340858,2023-08-18T13:23:24+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1503a-ex01_normed.wav,1486710,2023-08-18T13:23:24+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1503a-ex01_question_normed.wav,340020,2023-08-18T13:23:25+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1503a-ex02_normed.wav,2435620,2023-08-18T13:23:25+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1503a-ex02_question_normed.wav,302738,2023-08-18T13:23:25+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1503a-ex03_question_normed.wav,403674,2023-08-18T13:23:26+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1604a-ex01_normed.wav,4089316,2023-08-18T13:23:26+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1604a-ex01_question_normed.wav,388216,2023-08-18T13:23:26+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1702b-ex01_normed.wav,3653574,2023-08-18T13:23:27+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1702b-ex01_question_normed.wav,401402,2023-08-18T13:23:27+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1703b-ex01_normed.wav,4718822,2023-08-18T13:23:27+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1703b-ex01_question_normed.wav,343202,2023-08-18T13:23:28+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1901a-ex01_question_normed.wav,254090,2023-08-18T13:23:28+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1901b-ex01_normed.wav,3297632,2023-08-18T13:23:28+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s1901b-ex01_question_normed.wav,360480,2023-08-18T13:23:29+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2102a-ex01_normed.wav,2486276,2023-08-18T13:23:29+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2102a-ex01_question_normed.wav,435046,2023-08-18T13:23:29+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2102a-ex02_normed.wav,3207652,2023-08-18T13:23:29+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2102a-ex02_question_normed.wav,248632,2023-08-18T13:23:30+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2102a-ex03_normed.wav,3993134,2023-08-18T13:23:30+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2102a-ex03_question_normed.wav,203622,2023-08-18T13:23:31+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2202b-ex02_normed.wav,4809358,2023-08-18T13:23:31+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2202b-ex02_question_normed.wav,407310,2023-08-18T13:23:31+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2301a-ex01_normed.wav,1987834,2023-08-18T13:23:32+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2301a-ex01_question_normed.wav,366392,2023-08-18T13:23:32+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2302b-ex01_normed.wav,3097936,2023-08-18T13:23:32+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2302b-ex01_question_normed.wav,387760,2023-08-18T13:23:32+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2403a-ex01_question_normed.wav,380032,2023-08-18T13:23:33+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2502a-ex01_question_normed.wav,261364,2023-08-18T13:23:33+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2801a-ex01_normed.wav,5373878,2023-08-18T13:23:34+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2801a-ex01_question_normed.wav,265002,2023-08-18T13:23:34+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s2902a-ex01_question_normed.wav,371848,2023-08-18T13:23:35+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3001b-ex01_normed.wav,4337968,2023-08-18T13:23:35+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3001b-ex01_question_normed.wav,391398,2023-08-18T13:23:35+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3002a-ex01_question_normed.wav,408220,2023-08-18T13:23:36+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3003a-ex01_normed.wav,2958658,2023-08-18T13:23:36+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3003a-ex01_question_normed.wav,270456,2023-08-18T13:23:36+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3003a-ex02_normed.wav,3932640,2023-08-18T13:23:37+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3003a-ex02_question_normed.wav,344112,2023-08-18T13:23:37+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3102b-ex01_normed.wav,1834770,2023-08-18T13:23:37+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3102b-ex01_question_normed.wav,324562,2023-08-18T13:23:38+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3201a-ex01_normed.wav,6799366,2023-08-18T13:23:38+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3201a-ex01_question_normed.wav,417768,2023-08-18T13:23:39+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3301a-ex01_normed.wav,2256564,2023-08-18T13:23:39+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3301a-ex01_question_normed.wav,252726,2023-08-18T13:23:39+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3301a-ex02_normed.wav,3284436,2023-08-18T13:23:39+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3301a-ex02_question_normed.wav,305466,2023-08-18T13:23:40+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3602b-ex01_normed.wav,3140702,2023-08-18T13:23:40+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3602b-ex01_question_normed.wav,362300,2023-08-18T13:23:40+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3602b-ex02_normed.wav,2901736,2023-08-18T13:23:41+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3602b-ex02_question_normed.wav,295008,2023-08-18T13:23:41+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3703b-ex01_normed.wav,3119832,2023-08-18T13:23:41+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3703b-ex01_question_normed.wav,560532,2023-08-18T13:23:42+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3801a-ex01_normed.wav,2919608,2023-08-18T13:23:42+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3801a-ex01_question_normed.wav,544620,2023-08-18T13:23:43+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3802a-ex01_normed.wav,3058484,2023-08-18T13:23:43+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3802a-ex01_question_normed.wav,460960,2023-08-18T13:23:43+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3902a-ex01_normed.wav,2783074,2023-08-18T13:23:43+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3902a-ex01_question_normed.wav,456870,2023-08-18T13:23:44+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3902a-ex02_question_normed.wav,285460,2023-08-18T13:23:44+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3903b-ex01_normed.wav,2315554,2023-08-18T13:23:44+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3903b-ex01_question_normed.wav,329108,2023-08-18T13:23:45+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3903b-ex02_normed.wav,2905066,2023-08-18T13:23:45+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s3903b-ex02_question_normed.wav,403218,2023-08-18T13:23:45+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s4001b-ex01_question_normed.wav,305922,2023-08-18T13:23:46+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s4002b-ex01_normed.wav,3054542,2023-08-18T13:23:46+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s4002b-ex01_question_normed.wav,377304,2023-08-18T13:23:46+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s4003b-ex01_normed.wav,2239790,2023-08-18T13:23:47+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/s4003b-ex01_question_normed.wav,368254,2023-08-18T13:23:47+00:00,audio,NOT_SAMPLED
+stimuli/all_stimuli/welcome_normed.wav,174620,2023-08-18T13:23:47+00:00,audio,NOT_SAMPLED
+stimuli/cp_wavs.py,380,2023-08-18T13:23:48+00:00,other,NOT_SAMPLED
+stimuli/excerpts/Block 1/catalan-m01_normed.wav,303728,2023-08-18T13:23:48+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s1303a-ex01_normed.wav,3017890,2023-08-18T13:23:48+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s1401a-ex01_normed.wav,3112104,2023-08-18T13:23:49+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s1901b-ex01_normed.wav,3297632,2023-08-18T13:23:49+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s2102a-ex01_normed.wav,2486276,2023-08-18T13:23:49+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s2301a-ex01_normed.wav,1987834,2023-08-18T13:23:50+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s3001b-ex01_normed.wav,4337968,2023-08-18T13:23:50+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s3602b-ex01_normed.wav,3140702,2023-08-18T13:23:50+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 1/s4002b-ex01_normed.wav,3054542,2023-08-18T13:23:51+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/catalan-f01_normed.wav,303728,2023-08-18T13:23:52+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s0703b-ex01_normed.wav,3442904,2023-08-18T13:23:52+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s1201a-ex01_normed.wav,3047966,2023-08-18T13:23:52+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s2102a-ex02_normed.wav,3207652,2023-08-18T13:23:53+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s2202b-ex02_normed.wav,4809358,2023-08-18T13:23:53+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s3301a-ex01_normed.wav,2256564,2023-08-18T13:23:54+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s3602b-ex02_normed.wav,2901736,2023-08-18T13:23:54+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s3903b-ex01_normed.wav,2315554,2023-08-18T13:23:54+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 2/s4003b-ex01_normed.wav,2239790,2023-08-18T13:23:55+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/catalan-m02_normed.wav,303728,2023-08-18T13:23:55+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s1001a-ex01_normed.wav,3675454,2023-08-18T13:23:55+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s1303a-ex02_normed.wav,2588278,2023-08-18T13:23:56+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s1401a-ex02_normed.wav,3226614,2023-08-18T13:23:56+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s1501a-ex01_normed.wav,3804854,2023-08-18T13:23:56+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s3201a-ex01_normed.wav,6799366,2023-08-18T13:23:57+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s3301a-ex02_normed.wav,3284436,2023-08-18T13:23:57+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s3703b-ex01_normed.wav,3119832,2023-08-18T13:23:57+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 3/s3903b-ex02_normed.wav,2905066,2023-08-18T13:23:58+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/catalan-f02_normed.wav,303728,2023-08-18T13:23:58+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s0202b-ex01_normed.wav,5020206,2023-08-18T13:23:58+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s0702a-ex01_normed.wav,2686814,2023-08-18T13:23:59+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s1604a-ex01_normed.wav,4089316,2023-08-18T13:23:59+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s2102a-ex03_normed.wav,3993134,2023-08-18T13:23:59+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s2801a-ex01_normed.wav,5373878,2023-08-18T13:24:00+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s3102b-ex01_normed.wav,1834770,2023-08-18T13:24:00+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s3802a-ex01_normed.wav,3058484,2023-08-18T13:24:00+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 4/s3902a-ex01_normed.wav,2783074,2023-08-18T13:24:01+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/catalan-m03_normed.wav,303728,2023-08-18T13:24:01+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s0203b-ex01_normed.wav,3788360,2023-08-18T13:24:01+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s0802b-ex01_normed.wav,2645448,2023-08-18T13:24:02+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s1103a-ex01_normed.wav,4823940,2023-08-18T13:24:02+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s1202b-ex01_normed.wav,3041014,2023-08-18T13:24:02+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s1401b-ex01_normed.wav,4801376,2023-08-18T13:24:03+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s1503a-ex01_normed.wav,1486710,2023-08-18T13:24:03+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s1703b-ex01_normed.wav,4718822,2023-08-18T13:24:03+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 5/s3003a-ex01_normed.wav,2958658,2023-08-18T13:24:03+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/catalan-f03_normed.wav,303728,2023-08-18T13:24:04+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s0305a-ex01_normed.wav,3837394,2023-08-18T13:24:04+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s0901b-ex01_normed.wav,3208418,2023-08-18T13:24:04+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s1203a-ex01_normed.wav,3004004,2023-08-18T13:24:05+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s1503a-ex02_normed.wav,2435620,2023-08-18T13:24:05+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s1702b-ex01_normed.wav,3653574,2023-08-18T13:24:05+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s2302b-ex01_normed.wav,3097936,2023-08-18T13:24:06+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s3003a-ex02_normed.wav,3932640,2023-08-18T13:24:06+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/Block 6/s3801a-ex01_normed.wav,2919608,2023-08-18T13:24:06+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/catalan_v2/catalan-f01_normed.wav,4122184,2023-08-18T13:24:07+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/catalan_v2/catalan-f02_normed.wav,3836180,2023-08-18T13:24:07+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/catalan_v2/catalan-f03_normed.wav,4774396,2023-08-18T13:24:08+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/catalan_v2/catalan-m01_normed.wav,4138608,2023-08-18T13:24:08+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/catalan_v2/catalan-m02_normed.wav,4533376,2023-08-18T13:24:09+00:00,audio,NOT_SAMPLED
+stimuli/excerpts/catalan_v2/catalan-m03_normed.wav,4485312,2023-08-18T13:24:09+00:00,audio,NOT_SAMPLED
+stimuli/instructions1_normed.wav,3106520,2023-08-18T13:24:10+00:00,audio,NOT_SAMPLED
+stimuli/instructions2_clipped_normed.wav,2655140,2023-08-18T13:24:10+00:00,audio,NOT_SAMPLED
+stimuli/instructions2_normed.wav,1872828,2023-08-18T13:24:10+00:00,audio,NOT_SAMPLED
+stimuli/instructions3_normed.wav,551130,2023-08-18T13:24:11+00:00,audio,NOT_SAMPLED
+stimuli/pleasePressSpace_normed.wav,303728,2023-08-18T13:24:11+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan-f01_question_normed.wav,4122184,2023-08-18T13:24:11+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan-f02_question_normed.wav,3836180,2023-08-18T13:24:12+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan-f03_question_normed.wav,4774396,2023-08-18T13:24:12+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan-m01_question_normed.wav,4138608,2023-08-18T13:24:12+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan-m02_question_normed.wav,4533376,2023-08-18T13:24:13+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan-m03_question_normed.wav,4485312,2023-08-18T13:24:13+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan_questions_v2/catalan-f01_question_normed.wav,334560,2023-08-18T13:24:13+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan_questions_v2/catalan-f02_question_normed.wav,334560,2023-08-18T13:24:14+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan_questions_v2/catalan-f03_question_normed.wav,334560,2023-08-18T13:24:14+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan_questions_v2/catalan-m01_question_normed.wav,334560,2023-08-18T13:24:14+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan_questions_v2/catalan-m02_question_normed.wav,334560,2023-08-18T13:24:15+00:00,audio,NOT_SAMPLED
+stimuli/questions/catalan_questions_v2/catalan-m03_question_normed.wav,334560,2023-08-18T13:24:15+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0102b-ex01_question_normed.wav,336598,2023-08-18T13:24:15+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0202a-ex01_question_normed.wav,394774,2023-08-18T13:24:16+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0202b-ex01_question_normed.wav,392238,2023-08-18T13:24:16+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0203b-ex01_question_normed.wav,411534,2023-08-18T13:24:16+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0302b-ex01_question_normed.wav,375394,2023-08-18T13:24:16+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0305a-ex01_question_normed.wav,460016,2023-08-18T13:24:17+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0501a-ex01_question_normed.wav,622986,2023-08-18T13:24:17+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0501a-ex02_question_normed.wav,425048,2023-08-18T13:24:17+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0601a-ex01_question_normed.wav,408936,2023-08-18T13:24:18+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0602b-ex01_question_normed.wav,367126,2023-08-18T13:24:18+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0702a-ex01_question_normed.wav,315922,2023-08-18T13:24:18+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0703b-ex01_question_normed.wav,273640,2023-08-18T13:24:19+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0802b-ex01_question_normed.wav,391398,2023-08-18T13:24:19+00:00,audio,NOT_SAMPLED
+stimuli/questions/s0901b-ex01_question_normed.wav,433682,2023-08-18T13:24:19+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1001a-ex01_question_normed.wav,295462,2023-08-18T13:24:20+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1103a-ex01_question_normed.wav,320924,2023-08-18T13:24:20+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1201a-ex01_question_normed.wav,274094,2023-08-18T13:24:20+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1202b-ex01_question_normed.wav,307738,2023-08-18T13:24:20+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1203a-ex01_question_normed.wav,360482,2023-08-18T13:24:21+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1303a-ex01_question_normed.wav,441410,2023-08-18T13:24:21+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1303a-ex02_question_normed.wav,590086,2023-08-18T13:24:21+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1401a-ex01_question_normed.wav,341838,2023-08-18T13:24:22+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1401a-ex02_question_normed.wav,338202,2023-08-18T13:24:22+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1401b-ex01_question_normed.wav,302738,2023-08-18T13:24:22+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1501a-ex01_question_normed.wav,340858,2023-08-18T13:24:23+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1503a-ex01_question_normed.wav,340020,2023-08-18T13:24:23+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1503a-ex02_question_normed.wav,302738,2023-08-18T13:24:23+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1503a-ex03_question_normed.wav,403674,2023-08-18T13:24:24+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1604a-ex01_question_normed.wav,388216,2023-08-18T13:24:24+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1702b-ex01_question_normed.wav,401402,2023-08-18T13:24:24+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1703b-ex01_question_normed.wav,343202,2023-08-18T13:24:24+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1901a-ex01_question_normed.wav,254090,2023-08-18T13:24:25+00:00,audio,NOT_SAMPLED
+stimuli/questions/s1901b-ex01_question_normed.wav,360480,2023-08-18T13:24:25+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2102a-ex01_question_normed.wav,435046,2023-08-18T13:24:26+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2102a-ex02_question_normed.wav,248632,2023-08-18T13:24:26+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2102a-ex03_question_normed.wav,203622,2023-08-18T13:24:26+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2202b-ex02_question_normed.wav,407310,2023-08-18T13:24:27+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2301a-ex01_question_normed.wav,366392,2023-08-18T13:24:27+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2302b-ex01_question_normed.wav,387760,2023-08-18T13:24:27+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2403a-ex01_question_normed.wav,380032,2023-08-18T13:24:28+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2502a-ex01_question_normed.wav,261364,2023-08-18T13:24:28+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2801a-ex01_question_normed.wav,265002,2023-08-18T13:24:28+00:00,audio,NOT_SAMPLED
+stimuli/questions/s2902a-ex01_question_normed.wav,371848,2023-08-18T13:24:28+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3001b-ex01_question_normed.wav,391398,2023-08-18T13:24:29+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3002a-ex01_question_normed.wav,408220,2023-08-18T13:24:29+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3003a-ex01_question_normed.wav,270456,2023-08-18T13:24:29+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3003a-ex02_question_normed.wav,344112,2023-08-18T13:24:30+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3102b-ex01_question_normed.wav,324562,2023-08-18T13:24:30+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3201a-ex01_question_normed.wav,417768,2023-08-18T13:24:30+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3301a-ex01_question_normed.wav,252726,2023-08-18T13:24:31+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3301a-ex02_question_normed.wav,305466,2023-08-18T13:24:31+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3602b-ex01_question_normed.wav,362300,2023-08-18T13:24:31+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3602b-ex02_question_normed.wav,295008,2023-08-18T13:24:31+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3703b-ex01_question_normed.wav,560532,2023-08-18T13:24:32+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3801a-ex01_question_normed.wav,544620,2023-08-18T13:24:32+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3802a-ex01_question_normed.wav,460960,2023-08-18T13:24:32+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3902a-ex01_question_normed.wav,456870,2023-08-18T13:24:33+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3902a-ex02_question_normed.wav,285460,2023-08-18T13:24:33+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3903b-ex01_question_normed.wav,329108,2023-08-18T13:24:33+00:00,audio,NOT_SAMPLED
+stimuli/questions/s3903b-ex02_question_normed.wav,403218,2023-08-18T13:24:34+00:00,audio,NOT_SAMPLED
+stimuli/questions/s4001b-ex01_question_normed.wav,305922,2023-08-18T13:24:34+00:00,audio,NOT_SAMPLED
+stimuli/questions/s4002b-ex01_question_normed.wav,377304,2023-08-18T13:24:34+00:00,audio,NOT_SAMPLED
+stimuli/questions/s4003b-ex01_question_normed.wav,368254,2023-08-18T13:24:34+00:00,audio,NOT_SAMPLED
+stimuli/stim-times.tsv,2142858,2023-08-18T13:24:35+00:00,other,TSV_HEADER_READ
+stimuli/welcome_normed.wav,174620,2023-08-18T13:24:35+00:00,audio,NOT_SAMPLED
+sub-SD010/ses-01/anat/SD010_contact_RAS.csv,3420,2023-08-18T13:24:35+00:00,other,NOT_SAMPLED
+sub-SD010/ses-01/anat/sub-SD010_CT_defaced.nii,16777568,2023-08-18T13:24:35+00:00,other,NOT_SAMPLED
+sub-SD010/ses-01/anat/sub-SD010_T1w_defaced.nii,59244896,2023-08-18T13:24:36+00:00,other,NOT_SAMPLED
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_channels.tsv,8724,2023-08-18T13:24:38+00:00,channels,TSV_HEADER_READ
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg.edf,1506531536,2023-08-18T13:24:38+00:00,ieeg,IEEG_HEADER_READ
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg.json,1260,2023-08-18T13:25:10+00:00,other,NOT_SAMPLED
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg_audio-offset.json,29,2023-08-18T13:25:10+00:00,other,NOT_SAMPLED
+sub-SD010/ses-01/sub-SD010_ses-01_task-PassiveListen_events.tsv,901955,2023-08-18T13:25:10+00:00,events,TSV_HEADER_READ
+sub-SD010/ses-01/sub-SD010_ses-01_task-PassiveListen_log.tsv,6703,2023-08-18T13:25:11+00:00,other,TSV_HEADER_READ
+sub-SD011/ses-01/anat/sub-SD011_CT_defaced.nii,67109216,2023-08-18T13:25:11+00:00,other,NOT_SAMPLED
+sub-SD011/ses-01/anat/sub-SD011_T1w_defaced.nii,16777568,2023-08-18T13:25:13+00:00,other,NOT_SAMPLED
+sub-SD011/ses-01/anat/sub-SD011_contact_RAS.csv,3713,2023-08-18T13:25:13+00:00,other,NOT_SAMPLED
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_channels.tsv,8621,2023-08-18T13:25:14+00:00,channels,TSV_HEADER_READ
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf,1833841408,2023-08-18T13:25:14+00:00,ieeg,IEEG_HEADER_READ
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.json,1256,2023-08-18T13:25:53+00:00,other,NOT_SAMPLED
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg_audio-offset.json,40,2023-08-18T13:25:53+00:00,other,NOT_SAMPLED
+sub-SD011/ses-01/sub-SD011_ses-01_task-PassiveListen_events.tsv,1348169,2023-08-18T13:25:54+00:00,events,TSV_HEADER_READ
+sub-SD011/ses-01/sub-SD011_ses-01_task-PassiveListen_log.tsv,9879,2023-08-18T13:25:54+00:00,other,TSV_HEADER_READ
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_channels.tsv,4812,2023-08-18T13:25:54+00:00,channels,TSV_HEADER_READ
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg.edf,538464512,2023-08-18T13:25:55+00:00,ieeg,IEEG_HEADER_READ
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg.json,1311,2023-08-18T13:26:06+00:00,other,NOT_SAMPLED
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg_audio-offset.json,41,2023-08-18T13:26:06+00:00,other,NOT_SAMPLED
+sub-SD012/ses-01/sub-SD012_ses-01_task-PassiveListen_events.tsv,103102,2023-08-18T13:26:07+00:00,events,TSV_HEADER_READ
+sub-SD012/ses-01/sub-SD012_ses-01_task-PassiveListen_log.tsv,828,2023-08-18T13:26:07+00:00,other,TSV_HEADER_READ
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_channels.tsv,4820,2023-08-18T13:26:07+00:00,channels,TSV_HEADER_READ
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.edf,394035456,2023-08-18T13:26:07+00:00,ieeg,IEEG_HEADER_READ
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.json,1311,2023-08-18T13:26:16+00:00,other,NOT_SAMPLED
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg_audio-offset.json,41,2023-08-18T13:26:16+00:00,other,NOT_SAMPLED
+sub-SD012/ses-02/sub-SD012_ses-02_task-PassiveListen_events.tsv,1145816,2023-08-18T13:26:16+00:00,events,TSV_HEADER_READ
+sub-SD012/ses-02/sub-SD012_ses-02_task-PassiveListen_log.tsv,8299,2023-08-18T13:26:17+00:00,other,TSV_HEADER_READ
+sub-SD013/ses-01/anat/SD013_contact_RAS.csv,3304,2023-08-18T13:26:17+00:00,other,NOT_SAMPLED
+sub-SD013/ses-01/anat/sub-SD013_CT_defaced.nii,97517920,2023-08-18T13:26:17+00:00,other,NOT_SAMPLED
+sub-SD013/ses-01/anat/sub-SD013_T1w_defaced.nii,133693792,2023-08-18T13:26:20+00:00,other,NOT_SAMPLED
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_channels.tsv,4599,2023-08-18T13:26:23+00:00,channels,TSV_HEADER_READ
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg.edf,1420838144,2023-08-18T13:26:23+00:00,ieeg,IEEG_HEADER_READ
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg.json,1242,2023-08-18T13:26:53+00:00,other,NOT_SAMPLED
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg_audio-offset.json,41,2023-08-18T13:26:53+00:00,other,NOT_SAMPLED
+sub-SD013/ses-01/sub-SD013_ses-01_task-PassiveListen_events.tsv,398874,2023-08-18T13:26:54+00:00,events,TSV_HEADER_READ
+sub-SD013/ses-01/sub-SD013_ses-01_task-PassiveListen_log.tsv,1916,2023-08-18T13:26:54+00:00,other,TSV_HEADER_READ
+sub-SD015/ses-01/anat/sub-SD015_CT_defaced.nii,67109216,2023-08-18T13:26:54+00:00,other,NOT_SAMPLED
+sub-SD015/ses-01/anat/sub-SD015_T1w_defaced.nii,16777568,2023-08-18T13:26:56+00:00,other,NOT_SAMPLED
+sub-SD015/ses-01/anat/sub-SD015_contact_RAS.csv,3350,2023-08-18T13:26:57+00:00,other,NOT_SAMPLED
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_channels.tsv,8745,2023-08-18T13:26:57+00:00,channels,TSV_HEADER_READ
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg.edf,1129471744,2023-08-18T13:26:57+00:00,ieeg,IEEG_HEADER_READ
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg.json,1245,2023-08-18T13:27:21+00:00,other,NOT_SAMPLED
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg_audio-offset.json,40,2023-08-18T13:27:21+00:00,other,NOT_SAMPLED
+sub-SD015/ses-01/sub-SD015_ses-01_task-PassiveListen_events.tsv,167248,2023-08-18T13:27:22+00:00,events,TSV_HEADER_READ
+sub-SD015/ses-01/sub-SD015_ses-01_task-PassiveListen_log.tsv,1266,2023-08-18T13:27:22+00:00,other,TSV_HEADER_READ
+sub-SD017/ses-01/anat/sub-SD017_CT_defaced.nii,67109216,2023-08-18T13:27:22+00:00,other,NOT_SAMPLED
+sub-SD017/ses-01/anat/sub-SD017_T1w_defaced.nii,16777568,2023-08-18T13:27:24+00:00,other,NOT_SAMPLED
+sub-SD017/ses-01/anat/sub-SD017_contact_RAS.csv,3171,2023-08-18T13:27:24+00:00,other,NOT_SAMPLED
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_channels.tsv,4806,2023-08-18T13:27:25+00:00,channels,TSV_HEADER_READ
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg.edf,173792512,2023-08-18T13:27:25+00:00,ieeg,IEEG_HEADER_READ
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg.json,1264,2023-08-18T13:27:29+00:00,other,NOT_SAMPLED
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg_audio-offset.json,41,2023-08-18T13:27:29+00:00,other,NOT_SAMPLED
+sub-SD017/ses-01/sub-SD017_ses-01_task-PassiveListen_events.tsv,420490,2023-08-18T13:27:29+00:00,events,TSV_HEADER_READ
+sub-SD017/ses-01/sub-SD017_ses-01_task-PassiveListen_log.tsv,3060,2023-08-18T13:27:29+00:00,other,TSV_HEADER_READ
+sub-SD018/ses-01/anat/SD018_contact_RAS.csv,5629,2023-08-18T13:27:30+00:00,other,NOT_SAMPLED
+sub-SD018/ses-01/anat/sub-SD018_CT_defaced.nii,67109216,2023-08-18T13:27:30+00:00,other,NOT_SAMPLED
+sub-SD018/ses-01/anat/sub-SD018_T1w_defaced.nii,16777568,2023-08-18T13:27:32+00:00,other,NOT_SAMPLED
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_channels.tsv,8682,2023-08-18T13:27:32+00:00,channels,TSV_HEADER_READ
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg.edf,817400064,2023-08-18T13:27:33+00:00,ieeg,IEEG_HEADER_READ
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg.json,1371,2023-08-18T13:27:50+00:00,other,NOT_SAMPLED
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg_audio-offset.json,40,2023-08-18T13:27:51+00:00,other,NOT_SAMPLED
+sub-SD018/ses-01/sub-SD018_ses-01_task-PassiveListen_events.tsv,419599,2023-08-18T13:27:51+00:00,events,TSV_HEADER_READ
+sub-SD018/ses-01/sub-SD018_ses-01_task-PassiveListen_log.tsv,3056,2023-08-18T13:27:51+00:00,other,TSV_HEADER_READ
+sub-SD019/ses-01/anat/sub-SD019_CT_defaced.nii,67109216,2023-08-18T13:27:51+00:00,other,NOT_SAMPLED
+sub-SD019/ses-01/anat/sub-SD019_T1w_defaced.nii,16777568,2023-08-18T13:27:53+00:00,other,NOT_SAMPLED
+sub-SD019/ses-01/anat/sub-SD019_contact_RAS.csv,7107,2023-08-18T13:27:54+00:00,other,NOT_SAMPLED
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_channels.tsv,8485,2023-08-18T13:27:54+00:00,channels,TSV_HEADER_READ
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf,2168195488,2023-08-18T13:27:54+00:00,ieeg,IEEG_HEADER_READ
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.json,1276,2023-08-18T13:28:48+00:00,other,NOT_SAMPLED
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg_audio-offset.json,39,2023-08-18T13:28:48+00:00,other,NOT_SAMPLED
+sub-SD019/ses-01/sub-SD019_ses-01_task-PassiveListen_events.tsv,1352362,2023-08-18T13:28:49+00:00,events,TSV_HEADER_READ
+sub-SD019/ses-01/sub-SD019_ses-01_task-PassiveListen_log.tsv,8381,2023-08-18T13:28:49+00:00,other,TSV_HEADER_READ
+sub-SD021/ses-01/anat/sub-SD021_CT_defaced.nii,67109216,2023-08-18T13:28:49+00:00,other,NOT_SAMPLED
+sub-SD021/ses-01/anat/sub-SD021_T1w_defaced.nii,16777568,2023-08-18T13:28:52+00:00,other,NOT_SAMPLED
+sub-SD021/ses-01/anat/sub-SD021_contact_RAS.csv,4520,2023-08-18T13:28:53+00:00,other,NOT_SAMPLED
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_channels.tsv,8896,2023-08-18T13:28:53+00:00,channels,TSV_HEADER_READ
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg.edf,968632320,2023-08-18T13:28:54+00:00,ieeg,IEEG_HEADER_READ
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg.json,1242,2023-08-18T13:29:49+00:00,other,NOT_SAMPLED
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg_audio-offset.json,40,2023-08-18T13:29:50+00:00,other,NOT_SAMPLED
+sub-SD021/ses-01/sub-SD021_ses-01_task-PassiveListen_events.tsv,1349568,2023-08-18T13:29:50+00:00,events,TSV_HEADER_READ
+sub-SD021/ses-01/sub-SD021_ses-01_task-PassiveListen_log.tsv,10105,2023-08-18T13:29:50+00:00,other,TSV_HEADER_READ
+sub-SD022/ses-01/anat/sub-SD022_CT_defaced.nii,67109216,2023-08-18T13:29:51+00:00,other,NOT_SAMPLED
+sub-SD022/ses-01/anat/sub-SD022_T1w_defaced.nii,16777568,2023-08-18T13:29:57+00:00,other,NOT_SAMPLED
+sub-SD022/ses-01/anat/sub-SD022_contact_RAS.csv,2941,2023-08-18T13:29:59+00:00,other,NOT_SAMPLED
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_channels.tsv,9026,2023-08-18T13:29:59+00:00,channels,TSV_HEADER_READ
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf,1865216192,2023-08-18T13:30:00+00:00,ieeg,IEEG_HEADER_READ
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.json,1366,2023-08-18T13:31:08+00:00,other,NOT_SAMPLED
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg_audio-offset.json,41,2023-08-18T13:31:08+00:00,other,NOT_SAMPLED
+sub-SD022/ses-01/sub-SD022_ses-01_task-PassiveListen_events.tsv,1351281,2023-08-18T13:31:08+00:00,events,TSV_HEADER_READ
+sub-SD022/ses-01/sub-SD022_ses-01_task-PassiveListen_log.tsv,10108,2023-08-18T13:31:09+00:00,other,TSV_HEADER_READ

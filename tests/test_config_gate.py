@@ -28,7 +28,7 @@ class ConfigGateTests(unittest.TestCase):
         changed["model"]["trainable"] = True
         self.assertTrue(any("remain frozen" in item for item in validate_task_config(changed)))
 
-    def test_neural_target_candidate_remains_blocked_while_awaiting_review(self) -> None:
+    def test_neural_target_method_is_frozen_but_execution_remains_blocked(self) -> None:
         target = self.config["neural_target"]
         self.assertEqual(target["status"], "METHOD_FROZEN_AWAITING_EXECUTION_GATES")
         self.assertEqual(target["resolution_status"], "METHOD_FROZEN")

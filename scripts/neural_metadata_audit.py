@@ -289,10 +289,12 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
         )
 
     return {
+        "report_schema_version": "m6a-neural-metadata-audit-v2",
         "task_id": "M6A-PUBLIC-001",
         "dataset_id": "ds004703",
         "dataset_version": "1.1.0",
         "audited_at_utc": datetime.now(timezone.utc).isoformat(),
+        "dataset_root": str(root),
         "integrity_policy": "NON_HASH_AUDIT",
         "recording_count": len(recordings),
         "necessary_metadata_readability": {
@@ -338,7 +340,7 @@ def build_neural_metadata_audit(root: Path) -> dict[str, Any]:
         "recordings": recordings,
         "warnings": warnings,
         "errors": errors,
-        "status": "FAIL" if errors else "PASS_WITH_METHOD_FREEZE_CANDIDATE_NOT_AUTHORIZED",
+        "status": "FAIL" if errors else "PASS_WITH_METHOD_FROZEN_EXECUTION_BLOCKED",
     }
 
 

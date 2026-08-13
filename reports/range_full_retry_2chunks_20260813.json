@@ -1,0 +1,2519 @@
+{
+  "run_id": "20260813T062518Z",
+  "mode": "FULL",
+  "status": "PASS",
+  "integrity_policy": "NON_HASH_RANGE_AND_BYTE_AUDIT",
+  "dataset_root": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+  "staging_root": "/home/fanyu/auditory_simulation_m6a/logs/range_staging/ds004703_range_v1",
+  "chunk_bytes": 16777216,
+  "workers": 2,
+  "selected_paths": [
+    "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+    "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+    "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf"
+  ],
+  "requested_chunk_count": 352,
+  "benchmark_offset_chunks": 0,
+  "downloaded_chunk_count": 2,
+  "reused_chunk_count": 350,
+  "failed_chunk_count": 0,
+  "downloaded_bytes": 33554432,
+  "download_elapsed_seconds": 492.9185317939846,
+  "aggregate_mib_per_second": 0.06491945004286105,
+  "chunk_reuse_policy": "EXPECTED_START_END_AND_BYTE_SIZE_ONLY",
+  "content_completeness_limitation": "SIZE_MATCH_REUSE_IS_NON_CRYPTOGRAPHIC_AND_DOES_NOT_PROVE_CONTENT_IDENTITY",
+  "response_headers_used": [
+    "Content-Range"
+  ],
+  "chunk_results": [
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 0,
+      "end": 16777215,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 16777216,
+      "end": 33554431,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 33554432,
+      "end": 50331647,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 50331648,
+      "end": 67108863,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 67108864,
+      "end": 83886079,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 83886080,
+      "end": 100663295,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 100663296,
+      "end": 117440511,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 117440512,
+      "end": 134217727,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 134217728,
+      "end": 150994943,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 150994944,
+      "end": 167772159,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 167772160,
+      "end": 184549375,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 184549376,
+      "end": 201326591,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 201326592,
+      "end": 218103807,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 218103808,
+      "end": 234881023,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 234881024,
+      "end": 251658239,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 251658240,
+      "end": 268435455,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 268435456,
+      "end": 285212671,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 285212672,
+      "end": 301989887,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 301989888,
+      "end": 318767103,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 318767104,
+      "end": 335544319,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 335544320,
+      "end": 352321535,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 352321536,
+      "end": 369098751,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 369098752,
+      "end": 385875967,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 385875968,
+      "end": 402653183,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 402653184,
+      "end": 419430399,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 419430400,
+      "end": 436207615,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 436207616,
+      "end": 452984831,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 452984832,
+      "end": 469762047,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 469762048,
+      "end": 486539263,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 486539264,
+      "end": 503316479,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 503316480,
+      "end": 520093695,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 520093696,
+      "end": 536870911,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 536870912,
+      "end": 553648127,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 553648128,
+      "end": 570425343,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 570425344,
+      "end": 587202559,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 587202560,
+      "end": 603979775,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 603979776,
+      "end": 620756991,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 620756992,
+      "end": 637534207,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 637534208,
+      "end": 654311423,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 654311424,
+      "end": 671088639,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 671088640,
+      "end": 687865855,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 687865856,
+      "end": 704643071,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 704643072,
+      "end": 721420287,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 721420288,
+      "end": 738197503,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 738197504,
+      "end": 754974719,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 754974720,
+      "end": 771751935,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 771751936,
+      "end": 788529151,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 788529152,
+      "end": 805306367,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 805306368,
+      "end": 822083583,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 822083584,
+      "end": 838860799,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 838860800,
+      "end": 855638015,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 855638016,
+      "end": 872415231,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 872415232,
+      "end": 889192447,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 889192448,
+      "end": 905969663,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 905969664,
+      "end": 922746879,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 922746880,
+      "end": 939524095,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 939524096,
+      "end": 956301311,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 956301312,
+      "end": 973078527,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 973078528,
+      "end": 989855743,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 989855744,
+      "end": 1006632959,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1006632960,
+      "end": 1023410175,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1023410176,
+      "end": 1040187391,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1040187392,
+      "end": 1056964607,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1056964608,
+      "end": 1073741823,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1073741824,
+      "end": 1090519039,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1090519040,
+      "end": 1107296255,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1107296256,
+      "end": 1124073471,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1124073472,
+      "end": 1140850687,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1140850688,
+      "end": 1157627903,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1157627904,
+      "end": 1174405119,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1174405120,
+      "end": 1191182335,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1191182336,
+      "end": 1207959551,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1207959552,
+      "end": 1224736767,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1224736768,
+      "end": 1241513983,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1241513984,
+      "end": 1258291199,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1258291200,
+      "end": 1275068415,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1275068416,
+      "end": 1291845631,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1291845632,
+      "end": 1308622847,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1308622848,
+      "end": 1325400063,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1325400064,
+      "end": 1342177279,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1342177280,
+      "end": 1358954495,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1358954496,
+      "end": 1375731711,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1375731712,
+      "end": 1392508927,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1392508928,
+      "end": 1409286143,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1409286144,
+      "end": 1426063359,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1426063360,
+      "end": 1442840575,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1442840576,
+      "end": 1459617791,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1459617792,
+      "end": 1476395007,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1476395008,
+      "end": 1493172223,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1493172224,
+      "end": 1509949439,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1509949440,
+      "end": 1526726655,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1526726656,
+      "end": 1543503871,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1543503872,
+      "end": 1560281087,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1560281088,
+      "end": 1577058303,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1577058304,
+      "end": 1593835519,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1593835520,
+      "end": 1610612735,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1610612736,
+      "end": 1627389951,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1627389952,
+      "end": 1644167167,
+      "http_status": 206,
+      "content_range": "bytes 1627389952-1644167167/1833841408",
+      "bytes": 16777216,
+      "elapsed_seconds": 3.7235052729956806,
+      "mib_per_second": 4.297026276836042,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1644167168,
+      "end": 1660944383,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1660944384,
+      "end": 1677721599,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1677721600,
+      "end": 1694498815,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1694498816,
+      "end": 1711276031,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1711276032,
+      "end": 1728053247,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1728053248,
+      "end": 1744830463,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1744830464,
+      "end": 1761607679,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1761607680,
+      "end": 1778384895,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1778384896,
+      "end": 1795162111,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1795162112,
+      "end": 1811939327,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1811939328,
+      "end": 1828716543,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1828716544,
+      "end": 1833841407,
+      "bytes": 5124864,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 0,
+      "end": 16777215,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 16777216,
+      "end": 33554431,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 33554432,
+      "end": 50331647,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 50331648,
+      "end": 67108863,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 67108864,
+      "end": 83886079,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 83886080,
+      "end": 100663295,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 100663296,
+      "end": 117440511,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 117440512,
+      "end": 134217727,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 134217728,
+      "end": 150994943,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 150994944,
+      "end": 167772159,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 167772160,
+      "end": 184549375,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 184549376,
+      "end": 201326591,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 201326592,
+      "end": 218103807,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 218103808,
+      "end": 234881023,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 234881024,
+      "end": 251658239,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 251658240,
+      "end": 268435455,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 268435456,
+      "end": 285212671,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 285212672,
+      "end": 301989887,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 301989888,
+      "end": 318767103,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 318767104,
+      "end": 335544319,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 335544320,
+      "end": 352321535,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 352321536,
+      "end": 369098751,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 369098752,
+      "end": 385875967,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 385875968,
+      "end": 402653183,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 402653184,
+      "end": 419430399,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 419430400,
+      "end": 436207615,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 436207616,
+      "end": 452984831,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 452984832,
+      "end": 469762047,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 469762048,
+      "end": 486539263,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 486539264,
+      "end": 503316479,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 503316480,
+      "end": 520093695,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 520093696,
+      "end": 536870911,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 536870912,
+      "end": 553648127,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 553648128,
+      "end": 570425343,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 570425344,
+      "end": 587202559,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 587202560,
+      "end": 603979775,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 603979776,
+      "end": 620756991,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 620756992,
+      "end": 637534207,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 637534208,
+      "end": 654311423,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 654311424,
+      "end": 671088639,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 671088640,
+      "end": 687865855,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 687865856,
+      "end": 704643071,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 704643072,
+      "end": 721420287,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 721420288,
+      "end": 738197503,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 738197504,
+      "end": 754974719,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 754974720,
+      "end": 771751935,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 771751936,
+      "end": 788529151,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 788529152,
+      "end": 805306367,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 805306368,
+      "end": 822083583,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 822083584,
+      "end": 838860799,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 838860800,
+      "end": 855638015,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 855638016,
+      "end": 872415231,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 872415232,
+      "end": 889192447,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 889192448,
+      "end": 905969663,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 905969664,
+      "end": 922746879,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 922746880,
+      "end": 939524095,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 939524096,
+      "end": 956301311,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 956301312,
+      "end": 973078527,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 973078528,
+      "end": 989855743,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 989855744,
+      "end": 1006632959,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1006632960,
+      "end": 1023410175,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1023410176,
+      "end": 1040187391,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1040187392,
+      "end": 1056964607,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1056964608,
+      "end": 1073741823,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1073741824,
+      "end": 1090519039,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1090519040,
+      "end": 1107296255,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1107296256,
+      "end": 1124073471,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1124073472,
+      "end": 1140850687,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1140850688,
+      "end": 1157627903,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1157627904,
+      "end": 1174405119,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1174405120,
+      "end": 1191182335,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1191182336,
+      "end": 1207959551,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1207959552,
+      "end": 1224736767,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1224736768,
+      "end": 1241513983,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1241513984,
+      "end": 1258291199,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1258291200,
+      "end": 1275068415,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1275068416,
+      "end": 1291845631,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1291845632,
+      "end": 1308622847,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1308622848,
+      "end": 1325400063,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1325400064,
+      "end": 1342177279,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1342177280,
+      "end": 1358954495,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1358954496,
+      "end": 1375731711,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1375731712,
+      "end": 1392508927,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1392508928,
+      "end": 1409286143,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1409286144,
+      "end": 1426063359,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1426063360,
+      "end": 1442840575,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1442840576,
+      "end": 1459617791,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1459617792,
+      "end": 1476395007,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1476395008,
+      "end": 1493172223,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1493172224,
+      "end": 1509949439,
+      "http_status": 206,
+      "content_range": "bytes 1493172224-1509949439/2168195488",
+      "bytes": 16777216,
+      "elapsed_seconds": 492.8812224320136,
+      "mib_per_second": 0.03246218210759081,
+      "status": "DOWNLOADED"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1509949440,
+      "end": 1526726655,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1526726656,
+      "end": 1543503871,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1543503872,
+      "end": 1560281087,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1560281088,
+      "end": 1577058303,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1577058304,
+      "end": 1593835519,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1593835520,
+      "end": 1610612735,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1610612736,
+      "end": 1627389951,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1627389952,
+      "end": 1644167167,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1644167168,
+      "end": 1660944383,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1660944384,
+      "end": 1677721599,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1677721600,
+      "end": 1694498815,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1694498816,
+      "end": 1711276031,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1711276032,
+      "end": 1728053247,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1728053248,
+      "end": 1744830463,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1744830464,
+      "end": 1761607679,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1761607680,
+      "end": 1778384895,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1778384896,
+      "end": 1795162111,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1795162112,
+      "end": 1811939327,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1811939328,
+      "end": 1828716543,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1828716544,
+      "end": 1845493759,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1845493760,
+      "end": 1862270975,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1862270976,
+      "end": 1879048191,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1879048192,
+      "end": 1895825407,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1895825408,
+      "end": 1912602623,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1912602624,
+      "end": 1929379839,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1929379840,
+      "end": 1946157055,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1946157056,
+      "end": 1962934271,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1962934272,
+      "end": 1979711487,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1979711488,
+      "end": 1996488703,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1996488704,
+      "end": 2013265919,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2013265920,
+      "end": 2030043135,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2030043136,
+      "end": 2046820351,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2046820352,
+      "end": 2063597567,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2063597568,
+      "end": 2080374783,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2080374784,
+      "end": 2097151999,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2097152000,
+      "end": 2113929215,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2113929216,
+      "end": 2130706431,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2130706432,
+      "end": 2147483647,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2147483648,
+      "end": 2164260863,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 2164260864,
+      "end": 2168195487,
+      "bytes": 3934624,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 0,
+      "end": 16777215,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 16777216,
+      "end": 33554431,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 33554432,
+      "end": 50331647,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 50331648,
+      "end": 67108863,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 67108864,
+      "end": 83886079,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 83886080,
+      "end": 100663295,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 100663296,
+      "end": 117440511,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 117440512,
+      "end": 134217727,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 134217728,
+      "end": 150994943,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 150994944,
+      "end": 167772159,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 167772160,
+      "end": 184549375,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 184549376,
+      "end": 201326591,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 201326592,
+      "end": 218103807,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 218103808,
+      "end": 234881023,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 234881024,
+      "end": 251658239,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 251658240,
+      "end": 268435455,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 268435456,
+      "end": 285212671,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 285212672,
+      "end": 301989887,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 301989888,
+      "end": 318767103,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 318767104,
+      "end": 335544319,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 335544320,
+      "end": 352321535,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 352321536,
+      "end": 369098751,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 369098752,
+      "end": 385875967,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 385875968,
+      "end": 402653183,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 402653184,
+      "end": 419430399,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 419430400,
+      "end": 436207615,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 436207616,
+      "end": 452984831,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 452984832,
+      "end": 469762047,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 469762048,
+      "end": 486539263,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 486539264,
+      "end": 503316479,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 503316480,
+      "end": 520093695,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 520093696,
+      "end": 536870911,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 536870912,
+      "end": 553648127,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 553648128,
+      "end": 570425343,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 570425344,
+      "end": 587202559,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 587202560,
+      "end": 603979775,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 603979776,
+      "end": 620756991,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 620756992,
+      "end": 637534207,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 637534208,
+      "end": 654311423,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 654311424,
+      "end": 671088639,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 671088640,
+      "end": 687865855,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 687865856,
+      "end": 704643071,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 704643072,
+      "end": 721420287,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 721420288,
+      "end": 738197503,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 738197504,
+      "end": 754974719,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 754974720,
+      "end": 771751935,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 771751936,
+      "end": 788529151,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 788529152,
+      "end": 805306367,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 805306368,
+      "end": 822083583,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 822083584,
+      "end": 838860799,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 838860800,
+      "end": 855638015,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 855638016,
+      "end": 872415231,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 872415232,
+      "end": 889192447,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 889192448,
+      "end": 905969663,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 905969664,
+      "end": 922746879,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 922746880,
+      "end": 939524095,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 939524096,
+      "end": 956301311,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 956301312,
+      "end": 973078527,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 973078528,
+      "end": 989855743,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 989855744,
+      "end": 1006632959,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1006632960,
+      "end": 1023410175,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1023410176,
+      "end": 1040187391,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1040187392,
+      "end": 1056964607,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1056964608,
+      "end": 1073741823,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1073741824,
+      "end": 1090519039,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1090519040,
+      "end": 1107296255,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1107296256,
+      "end": 1124073471,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1124073472,
+      "end": 1140850687,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1140850688,
+      "end": 1157627903,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1157627904,
+      "end": 1174405119,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1174405120,
+      "end": 1191182335,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1191182336,
+      "end": 1207959551,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1207959552,
+      "end": 1224736767,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1224736768,
+      "end": 1241513983,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1241513984,
+      "end": 1258291199,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1258291200,
+      "end": 1275068415,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1275068416,
+      "end": 1291845631,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1291845632,
+      "end": 1308622847,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1308622848,
+      "end": 1325400063,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1325400064,
+      "end": 1342177279,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1342177280,
+      "end": 1358954495,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1358954496,
+      "end": 1375731711,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1375731712,
+      "end": 1392508927,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1392508928,
+      "end": 1409286143,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1409286144,
+      "end": 1426063359,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1426063360,
+      "end": 1442840575,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1442840576,
+      "end": 1459617791,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1459617792,
+      "end": 1476395007,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1476395008,
+      "end": 1493172223,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1493172224,
+      "end": 1509949439,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1509949440,
+      "end": 1526726655,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1526726656,
+      "end": 1543503871,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1543503872,
+      "end": 1560281087,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1560281088,
+      "end": 1577058303,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1577058304,
+      "end": 1593835519,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1593835520,
+      "end": 1610612735,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1610612736,
+      "end": 1627389951,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1627389952,
+      "end": 1644167167,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1644167168,
+      "end": 1660944383,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1660944384,
+      "end": 1677721599,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1677721600,
+      "end": 1694498815,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1694498816,
+      "end": 1711276031,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1711276032,
+      "end": 1728053247,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1728053248,
+      "end": 1744830463,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1744830464,
+      "end": 1761607679,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1761607680,
+      "end": 1778384895,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1778384896,
+      "end": 1795162111,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1795162112,
+      "end": 1811939327,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1811939328,
+      "end": 1828716543,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1828716544,
+      "end": 1845493759,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1845493760,
+      "end": 1862270975,
+      "bytes": 16777216,
+      "status": "REUSED_SIZE_MATCH"
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "start": 1862270976,
+      "end": 1865216191,
+      "bytes": 2945216,
+      "status": "REUSED_SIZE_MATCH"
+    }
+  ],
+  "assembly_results": [
+    {
+      "path": "sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf",
+      "status": "ASSEMBLED",
+      "bytes": 1833841408
+    },
+    {
+      "path": "sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf",
+      "status": "ASSEMBLED",
+      "bytes": 2168195488
+    },
+    {
+      "path": "sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf",
+      "status": "ASSEMBLED",
+      "bytes": 1865216192
+    }
+  ]
+}
