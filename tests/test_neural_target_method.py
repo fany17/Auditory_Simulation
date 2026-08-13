@@ -88,6 +88,11 @@ class NeuralTargetCandidateGateTests(unittest.TestCase):
             ("reference", ("reference", "primary_policy"), "CAR"),
             ("filter", ("bandpass_fir", "transition_width_hz"), 3),
             ("backend", ("bandpass_fir", "execution_backend"), "numpy.convolve"),
+            (
+                "final_embargo_status",
+                ("final_embargo", "status"),
+                "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+            ),
         )
         for name, path, value in mutations:
             with self.subTest(name=name):

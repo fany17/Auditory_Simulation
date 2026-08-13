@@ -44,6 +44,7 @@ Auditory_Simulation/
 - 当前唯一任务：`M6A-PUBLIC-001`，冻结 OpenNeuro `ds004703 v1.1.0` 并建立最小逐层对齐基线。
 - 首轮模型策略：冻结 `facebook/wav2vec2-base`，不微调声音基座；HuBERT/WavLM 留待后续对照任务。
 - 执行状态：`ACTIVE_EXECUTION`；专用环境、公开数据、公开模型和轻量分析均获授权在 2203 执行。
+- 当前节点：2.0 s final embargo 与 baseline-final split 已获协调接受；`G3_SINGLE_RECORDING_CANDIDATE_AWAITING_COORDINATOR_REVIEW` 仅覆盖预声明的一个 recording/一个 train passage 工程 smoke，不等于 baseline、整条 M6A 或科学结果通过。
 - 许可边界：CC0 元数据与 README 更严格限制共同执行；仅限非商业学术研究、禁止再识别、禁止原始数据外传。
 - 完整性边界：只使用文件名、字节数、时间戳、数量、schema 与抽样可读性；不进行任何哈希或校验和验证。
 - `test/` 中既有 Demo 不自动升级为 M6A 正式结果。

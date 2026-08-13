@@ -35,7 +35,7 @@ from m6a_public.audio_context_gate import (
     resample_independent_passage,
     write_report,
 )
-from m6a_public.embargo_gate import evaluate_final_embargo_candidate
+from m6a_public.embargo_gate import evaluate_final_embargo
 
 
 def _modified_at(path: Path) -> str:
@@ -302,7 +302,7 @@ def main() -> int:
             "basis": "REAL_319_ROW_AUDIO_IDENTITY_GATE_PLUS_SYNTHETIC_PATH_SENTINEL",
         },
         "embargo_components_seconds": components,
-        "embargo_evaluation": evaluate_final_embargo_candidate(components),
+        "embargo_evaluation": evaluate_final_embargo(components),
         "split_guard": split_guard,
         "formal_feature_extraction_run": False,
         "real_neural_waveform_read": False,
@@ -321,8 +321,8 @@ def main() -> int:
                 "audio_cross_split_context_overlap_seconds": report["context"][
                     "audio_cross_split_context_overlap_seconds"
                 ],
-                "final_embargo_candidate_seconds": report["embargo_evaluation"].get(
-                    "final_embargo_candidate_seconds"
+                "final_embargo_seconds": report["embargo_evaluation"].get(
+                    "final_embargo_seconds"
                 ),
                 "output": str(args.output),
             },

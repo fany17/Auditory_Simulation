@@ -34,7 +34,7 @@ from m6a_public.audio_context_gate import (
     resample_independent_passage,
 )
 from m6a_public.config_gate import load_json
-from m6a_public.embargo_gate import evaluate_final_embargo_candidate
+from m6a_public.embargo_gate import evaluate_final_embargo
 from scripts.download_wav2vec2_model import validate_download_authorization
 
 
@@ -174,14 +174,15 @@ def valid_evidence(config: dict[str, Any]) -> dict[str, Any]:
             "basis": "REAL_319_ROW_AUDIO_IDENTITY_GATE_PLUS_SYNTHETIC_PATH_SENTINEL",
         },
         "embargo_components_seconds": components,
-        "embargo_evaluation": evaluate_final_embargo_candidate(components),  # type: ignore[arg-type]
+        "embargo_evaluation": evaluate_final_embargo(components),  # type: ignore[arg-type]
         "split_guard": {
-            "report_schema_version": "m6a-split-guard-final-embargo-candidate-v1",
+            "report_schema_version": "m6a-split-guard-final-embargo-accepted-v1",
             "status": "PASS",
             "rows": 319,
             "issues": [],
             "final_embargo_candidate_seconds": 2.0,
-            "baseline_final": False,
+            "final_embargo_seconds": 2.0,
+            "baseline_final": True,
             "split_counts": {"train": 223, "validation": 48, "test": 48},
             "block_assignments": {
                 "block-01": "train",
@@ -318,12 +319,12 @@ class CandidateGateTests(unittest.TestCase):
         self.config = load_json(ROOT / "configs" / "m6a_public_001.json")
         self.evidence = valid_evidence(self.config)
 
-    def test_complete_evidence_yields_candidate_only(self) -> None:
+    def test_complete_evidence_yields_accepted_final_embargo_only(self) -> None:
         report = finalize_candidate_report(self.evidence, self.config)
         self.assertEqual(report["status"], CANDIDATE_STATUS)
         self.assertEqual(report["failed_checks"], [])
         self.assertTrue(all(report["required_checks"].values()))
-        self.assertIs(self.config["split"]["baseline_final"], False)
+        self.assertIs(self.config["split"]["baseline_final"], True)
         self.assertIs(self.config["neural_target"]["neural_extraction_allowed"], False)
 
     def test_each_context_layer_padding_inventory_and_split_drift_fails(self) -> None:

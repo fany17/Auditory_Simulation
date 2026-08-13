@@ -103,12 +103,12 @@
       "block-06": "train"
     },
     "temporal_context_key": "recording_id",
-    "split_status": "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL",
-    "baseline_final": false,
+    "split_status": "BASELINE_FINAL_COORDINATOR_ACCEPTED",
+    "baseline_final": true,
     "preliminary_minimum_embargo_seconds": 2.0,
-    "final_embargo_seconds": null,
+    "final_embargo_seconds": 2.0,
     "final_embargo_candidate_seconds": 2.0,
-    "final_embargo_status": "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "final_embargo_status": "FINAL_EMBARGO_COORDINATOR_ACCEPTED",
     "final_embargo_formula": "max(preliminary_minimum_embargo_seconds, maximum_encoding_lag_seconds, filter_or_padding_edge_seconds, audio_cross_split_context_overlap_seconds, audio_resampling_edge_seconds)",
     "final_embargo_components_seconds": {
       "preliminary_minimum_embargo_seconds": 2.0,
@@ -158,6 +158,22 @@
     "metadata_conflict_action": "PRIMARY_EXCLUDES_110_130_HZ_AROUND_120_HZ_HARMONIC",
     "neural_extraction_allowed": false,
     "resolution_status": "METHOD_FROZEN"
+  },
+  "g3_single_recording": {
+    "status": "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED",
+    "config_path": "configs/m6a_g3_single_recording_candidate.json",
+    "recording_id": "sub-SD012_ses-02_task-PassiveListen",
+    "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
+    "edf_relative_path": "sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.edf",
+    "audio_relative_path": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+    "eligible_channel_count": 36,
+    "real_neural_waveform_read_scope": "ONE_SELECTED_RECORDING_ONE_PASSAGE_36_ELIGIBLE_CHANNELS_PLUS_FROZEN_FINITE_SUPPORT_ONLY",
+    "other_recordings_allowed": false,
+    "other_segments_allowed": false,
+    "whole_dataset_neural_extraction_allowed": false,
+    "formal_baseline_run_allowed": false,
+    "scientific_result_claim_allowed": false,
+    "exchange_candidate_creation_allowed": false
   },
   "features": {
     "acoustic_baselines": [

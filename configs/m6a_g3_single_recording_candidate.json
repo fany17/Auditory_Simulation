@@ -1,0 +1,124 @@
+{
+  "schema_version": "m6a-g3-single-recording-candidate-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "status": "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED",
+  "selection": {
+    "metadata_report": "reports/ds004703_neural_metadata_g2_candidate.json",
+    "split_csv": "reports/ds004703_primary_split.csv",
+    "recording_rule": "G2_HEADER_READABLE_AND_HEADER_CHANNEL_COUNT_MATCHES_TSV_AND_ELIGIBLE_NAMES_ALL_IN_EDF_AND_REFERENCE_PASS_THEN_MIN_ELIGIBLE_CHANNEL_COUNT_THEN_RECORDING_ID_LEXICOGRAPHIC",
+    "passage_rule": "EARLIEST_ELIGIBLE_TRAIN_PASSAGE_BY_START_SEC_THEN_SAMPLE_ID",
+    "expected_recording_id": "sub-SD012_ses-02_task-PassiveListen",
+    "expected_sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
+    "expected_stimulus_id": "s4002b-ex01",
+    "expected_audio_file": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+    "expected_edf_file": "sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.edf",
+    "expected_split": "train",
+    "expected_start_seconds": 126.519807944,
+    "expected_end_seconds": 161.15130454263945,
+    "expected_sampling_rate_hz": 512,
+    "expected_eligible_channel_count": 36,
+    "result_based_selection_allowed": false
+  },
+  "read_scope": {
+    "dataset_root": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+    "allowed_recording_count": 1,
+    "allowed_passage_count": 1,
+    "allowed_channel_count": 36,
+    "preload_entire_recording": false,
+    "segment_read_only": true,
+    "read_support_profile_hz": 512,
+    "read_support_edge_samples": 559,
+    "read_support_edge_seconds": 1.091796875,
+    "read_rounding_tolerance_samples": 1,
+    "other_recordings_allowed": false,
+    "other_segments_allowed": false,
+    "stn_or_patient_data_allowed": false
+  },
+  "audio_features": {
+    "source_sample_rate_hz": 44100,
+    "model_sample_rate_hz": 16000,
+    "channels": 1,
+    "independent_passage_inference": true,
+    "neighbor_passage_read_allowed": false,
+    "amplitude_envelope": {
+      "method": "HANN_WEIGHTED_ROOT_MEAN_SQUARE",
+      "window_samples": 400,
+      "hop_samples": 320,
+      "window": "PERIODIC_HANN",
+      "center": false,
+      "padding": "NONE",
+      "frame_timestamp": "PASSAGE_START_PLUS_WINDOW_SAMPLE_CENTER"
+    },
+    "log_mel": {
+      "method": "HTK_TRIANGULAR_MEL_POWER",
+      "n_fft": 512,
+      "window_samples": 400,
+      "hop_samples": 320,
+      "mel_bins": 80,
+      "fmin_hz": 50,
+      "fmax_hz": 7600,
+      "window": "PERIODIC_HANN",
+      "center": false,
+      "padding": "NONE",
+      "power": 2,
+      "log_formula": "natural_log(mel_power + 1e-10)",
+      "frame_timestamp": "PASSAGE_START_PLUS_WINDOW_SAMPLE_CENTER"
+    },
+    "wav2vec2": {
+      "model_id": "facebook/wav2vec2-base",
+      "cache_state": "SEMANTICALLY_VALIDATED_REMOTE_ONLY",
+      "download_allowed": false,
+      "local_files_only": true,
+      "trust_remote_code": false,
+      "weights_only_required": true,
+      "layer_inventory": "PROJECTED_PLUS_12_TRANSFORMER_LAYERS",
+      "expected_layer_count": 13,
+      "hidden_size": 768,
+      "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE"
+    }
+  },
+  "neural_smoke": {
+    "method_status": "METHOD_FROZEN_COORDINATOR_ACCEPTED",
+    "reference": "AS_RECORDED_SCALP_REFERENCE",
+    "subband_count": 6,
+    "output": "RAW_FINITE_FIR_POWER_AND_PRETRANSFORM_LOG_POWER_BY_CHANNEL_AND_SUBBAND",
+    "smoke_log_formula": "natural_log(max(raw_power, 0) + 1e-30)",
+    "negative_power_clip_absolute_tolerance": 1e-12,
+    "smoke_log_limitation": "ENGINEERING_FINITE_READABILITY_ONLY_NOT_THE_TRAIN_ONLY_TARGET_TRANSFORM",
+    "formal_train_only_transform_fitted": false,
+    "smoke_statistics_reusable_for_baseline": false,
+    "target_frame_rate_hz": 50,
+    "grid_origin_seconds": 0,
+    "insufficient_support_action": "MASK",
+    "real_waveform_read_scope": "ONE_SELECTED_RECORDING_ONE_PASSAGE_36_ELIGIBLE_CHANNELS_PLUS_FROZEN_FINITE_SUPPORT_ONLY"
+  },
+  "alignment": {
+    "grid": "RECORDING_ORIGIN_K_OVER_50_SECONDS",
+    "interpolation": "LINEAR_TWO_NEAREST_NATIVE_FRAMES_NO_EXTRAPOLATION",
+    "native_and_aligned_grids_reported_separately": true,
+    "common_valid_mask": "INTERSECTION_OF_ENVELOPE_LOG_MEL_WAV2VEC2_AND_NEURAL_COMPLETE_SUPPORT",
+    "outside_valid_mask_fill": 0,
+    "timestamps_strictly_identical": true
+  },
+  "format_benchmark": {
+    "formats": ["NPY_PER_TENSOR", "NPZ_COMPRESSED"],
+    "new_dependency_allowed": false,
+    "selection_criteria": [
+      "MMAP_AND_DIRECT_SLICE_SUPPORT",
+      "NO_OBJECT_ARRAYS",
+      "STRICT_DTYPE_AND_SHAPE",
+      "ATOMIC_PER_TENSOR_FAILURE_RECOVERY"
+    ],
+    "provisional_preference": "NPY_PER_TENSOR",
+    "required_access_benchmarks": ["FULL_READ", "SINGLE_WAV2VEC2_LAYER", "SINGLE_NEURAL_ELECTRODE"]
+  },
+  "execution": {
+    "remote_only_arrays": true,
+    "raw_waveform_saved": false,
+    "formal_baseline_run": false,
+    "scientific_result_claimed": false,
+    "exchange_candidate_created": false,
+    "expand_other_recordings_or_segments_before_review": false,
+    "allowed_output_status": "G3_SINGLE_RECORDING_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+  }
+}

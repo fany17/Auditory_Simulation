@@ -253,7 +253,11 @@ class G2PromotionGateTests(unittest.TestCase):
             ("region", lambda b: b["config"]["anatomy_mapping"].__setitem__("region_summary_status", "PASS"), "config_anatomy_not_ready_and_region_not_estimable"),
             ("method", lambda b: b["config"]["neural_target"].__setitem__("status", "CANDIDATE"), "config_method_frozen_but_neural_extraction_blocked"),
             ("extraction", lambda b: b["config"]["neural_target"].__setitem__("neural_extraction_allowed", True), "config_method_frozen_but_neural_extraction_blocked"),
-            ("baseline final", lambda b: b["config"]["split"].__setitem__("baseline_final", True), "config_baseline_not_final"),
+            (
+                "baseline acceptance drift",
+                lambda b: b["config"]["split"].__setitem__("baseline_final", False),
+                "config_final_embargo_state_is_accepted_not_whole_m6a",
+            ),
         ]
         for label, mutate, expected_check in mutations:
             with self.subTest(label=label):

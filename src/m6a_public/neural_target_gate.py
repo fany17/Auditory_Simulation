@@ -200,14 +200,16 @@ def validate_neural_target_method(
         errors.append("audio resampling edge is not frozen")
     if not _same_number(edge["final_embargo_candidate_seconds"], 2.0):
         errors.append("final embargo candidate must be 2 seconds")
+    if not _same_number(edge["final_embargo_seconds"], 2.0):
+        errors.append("accepted final embargo must be 2 seconds")
     if edge["transformer_attention_scope"] != "GLOBAL_WITHIN_SINGLE_PASSAGE":
         errors.append("Transformer attention scope must remain global only within one passage")
     if edge["transformer_local_receptive_field_claimed"] is not False:
         errors.append("Transformer cannot be claimed to have a local receptive field")
-    if edge["status"] != "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW":
-        errors.append("final embargo must remain a candidate awaiting coordinator review")
-    if edge["baseline_final"] is not False:
-        errors.append("baseline cannot be final before coordinator review")
+    if edge["status"] != "FINAL_EMBARGO_COORDINATOR_ACCEPTED":
+        errors.append("final embargo must record coordinator acceptance")
+    if edge["baseline_final"] is not True:
+        errors.append("baseline split must be final after coordinator acceptance")
 
     execution = candidate["execution"]
     if execution != {

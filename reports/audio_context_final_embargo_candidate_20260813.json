@@ -1,7 +1,7 @@
 {
-  "report_schema_version": "m6a-audio-context-final-embargo-candidate-v1",
+  "report_schema_version": "m6a-audio-context-final-embargo-accepted-v1",
   "task_id": "M6A-PUBLIC-001",
-  "created_at_utc": "2026-08-13T07:44:55.490306+00:00",
+  "created_at_utc": "2026-08-13T08:19:10.990609+00:00",
   "integrity_policy": "NON_HASH_AUDIT",
   "cryptographic_integrity_claim": false,
   "model": {
@@ -336,24 +336,24 @@
     "audio_resampling_edge_seconds": 0.0006349206349206349
   },
   "embargo_evaluation": {
-    "status": "FINAL_EMBARGO_CANDIDATE_READY",
-    "baseline_final": false,
-    "final_embargo_seconds": null,
-    "final_embargo_candidate_seconds": 2.0,
+    "status": "PASS",
+    "baseline_final": true,
+    "final_embargo_seconds": 2.0,
     "pending_components": [],
     "errors": []
   },
   "split_guard": {
-    "report_schema_version": "m6a-split-guard-final-embargo-candidate-v1",
+    "report_schema_version": "m6a-split-guard-final-embargo-accepted-v1",
     "task_id": "M6A-PUBLIC-001",
     "dataset_id": "ds004703",
     "dataset_version": "1.1.0",
     "status": "PASS",
     "rows": 319,
     "issues": [],
-    "embargo_status": "FINAL_EMBARGO_CANDIDATE_ONLY",
+    "embargo_status": "FINAL_EMBARGO_COORDINATOR_ACCEPTED",
     "final_embargo_candidate_seconds": 2.0,
-    "baseline_final": false,
+    "final_embargo_seconds": 2.0,
+    "baseline_final": true,
     "audio_identity": {
       "status": "PASS",
       "row_count": 319,
@@ -1002,5 +1002,5 @@
     "execution_remains_blocked": true
   },
   "failed_checks": [],
-  "status": "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+  "status": "FINAL_EMBARGO_COORDINATOR_ACCEPTED"
 }

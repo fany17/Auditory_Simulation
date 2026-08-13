@@ -47,8 +47,8 @@ REQUIRED_AUDIO_IDENTITY_COLUMNS = {
     "audio_source_status",
 }
 MODEL_FILES = ("README.md", "config.json", "preprocessor_config.json", "pytorch_model.bin")
-CANDIDATE_STATUS = "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
-REPORT_SCHEMA_VERSION = "m6a-audio-context-final-embargo-candidate-v1"
+CANDIDATE_STATUS = "FINAL_EMBARGO_COORDINATOR_ACCEPTED"
+REPORT_SCHEMA_VERSION = "m6a-audio-context-final-embargo-accepted-v1"
 EXPECTED_CONFIG_PROFILE = {
     "model_type": "wav2vec2",
     "architectures": ["Wav2Vec2ForPreTraining"],
@@ -470,16 +470,17 @@ def build_split_guard_candidate(split_csv: str | Path, config: dict[str, Any]) -
     issues.extend(f"audio identity: {issue}" for issue in audio_identity["issues"])
     issues = sorted(set(issues))
     report: dict[str, Any] = {
-        "report_schema_version": "m6a-split-guard-final-embargo-candidate-v1",
+        "report_schema_version": "m6a-split-guard-final-embargo-accepted-v1",
         "task_id": "M6A-PUBLIC-001",
         "dataset_id": "ds004703",
         "dataset_version": "1.1.0",
         "status": "PASS" if not issues else "FAIL",
         "rows": len(rows),
         "issues": issues,
-        "embargo_status": "FINAL_EMBARGO_CANDIDATE_ONLY",
+        "embargo_status": "FINAL_EMBARGO_COORDINATOR_ACCEPTED",
         "final_embargo_candidate_seconds": candidate_seconds,
-        "baseline_final": False,
+        "final_embargo_seconds": split["final_embargo_seconds"],
+        "baseline_final": split["baseline_final"],
         "audio_identity": audio_identity,
     }
     report.update(summarize_assignments(rows))
@@ -755,21 +756,24 @@ def validate_candidate_evidence(evidence: dict[str, Any], config: dict[str, Any]
             and audio_identity.get("issues") == []
         ),
         "final_embargo_candidate": (
-            embargo.get("status") == "FINAL_EMBARGO_CANDIDATE_READY"
-            and embargo.get("final_embargo_candidate_seconds") == 2.0
-            and embargo.get("baseline_final") is False
+            embargo.get("status") == "PASS"
+            and embargo.get("final_embargo_seconds") == 2.0
+            and embargo.get("baseline_final") is True
             and _get(config, "split", "final_embargo_candidate_seconds") == 2.0
-            and _get(config, "split", "final_embargo_seconds") is None
-            and _get(config, "split", "baseline_final") is False
+            and _get(config, "split", "final_embargo_seconds") == 2.0
+            and _get(config, "split", "final_embargo_status")
+            == "FINAL_EMBARGO_COORDINATOR_ACCEPTED"
+            and _get(config, "split", "baseline_final") is True
         ),
         "real_lightweight_split_guard": (
             split_report.get("report_schema_version")
-            == "m6a-split-guard-final-embargo-candidate-v1"
+            == "m6a-split-guard-final-embargo-accepted-v1"
             and split_report.get("status") == "PASS"
             and split_report.get("rows") == 319
             and split_report.get("issues") == []
             and split_report.get("final_embargo_candidate_seconds") == 2.0
-            and split_report.get("baseline_final") is False
+            and split_report.get("final_embargo_seconds") == 2.0
+            and split_report.get("baseline_final") is True
             and split_report.get("split_counts") == EXPECTED_SPLIT_COUNTS
             and split_report.get("block_assignments") == EXPECTED_BLOCK_ASSIGNMENTS
             and split_report.get("language_counts") == {"en": 319}
@@ -777,7 +781,7 @@ def validate_candidate_evidence(evidence: dict[str, Any], config: dict[str, Any]
         ),
         "execution_remains_blocked": (
             _get(config, "neural_target", "neural_extraction_allowed") is False
-            and _get(config, "split", "baseline_final") is False
+            and _get(config, "split", "baseline_final") is True
             and _get(config, "artifact", "exchange_candidate_exists") is False
             and evidence.get("formal_feature_extraction_run") is False
             and evidence.get("real_neural_waveform_read") is False

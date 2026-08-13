@@ -1,0 +1,443 @@
+{
+  "report_schema_version": "m6a-g3-single-recording-alignment-candidate-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "created_at_utc": "2026-08-13T08:09:33.988673+00:00",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "cryptographic_integrity_claim": false,
+  "runtime": {
+    "python": "3.11.15",
+    "conda_environment": "auditory_m6a_public_001"
+  },
+  "selection": {
+    "recording_id": "sub-SD012_ses-02_task-PassiveListen",
+    "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
+    "stimulus_id": "s4002b-ex01",
+    "audio_file": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+    "edf_file": "sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.edf",
+    "split": "train",
+    "start_seconds": 126.519807944,
+    "end_seconds": 161.15130454263945,
+    "sampling_rate_hz": 512,
+    "eligible_channel_count": 36,
+    "eligible_channel_names": [
+      "Grid A10",
+      "Grid A13",
+      "Grid A14",
+      "Grid A19",
+      "Grid A20",
+      "Grid A3",
+      "Grid A4",
+      "Grid A5",
+      "Grid A8",
+      "Grid A9",
+      "LA1",
+      "LA10",
+      "LA2",
+      "LA3",
+      "LA4",
+      "LA5",
+      "LHH1",
+      "LHH10",
+      "LHH2",
+      "LHH3",
+      "LHT1",
+      "LHT10",
+      "LHT2",
+      "LHT3",
+      "LHT4",
+      "LHT5",
+      "LIF1",
+      "LIF2",
+      "LIF3",
+      "LIF4",
+      "LSF1",
+      "LSF2",
+      "LSF3",
+      "LSF4",
+      "LST1",
+      "LST6"
+    ],
+    "reference": "scalp electrode, not included with data",
+    "selection_candidate_recording_count": 6,
+    "result_based_selection_used": false
+  },
+  "real_neural_read": {
+    "edf_file": "sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.edf",
+    "preload_entire_recording": false,
+    "segment_read_only": true,
+    "requested_recording_count": 1,
+    "requested_channel_count": 36,
+    "returned_channel_count": 36,
+    "returned_channel_names": [
+      "Grid A10",
+      "Grid A13",
+      "Grid A14",
+      "Grid A19",
+      "Grid A20",
+      "Grid A3",
+      "Grid A4",
+      "Grid A5",
+      "Grid A8",
+      "Grid A9",
+      "LA1",
+      "LA10",
+      "LA2",
+      "LA3",
+      "LA4",
+      "LA5",
+      "LHH1",
+      "LHH10",
+      "LHH2",
+      "LHH3",
+      "LHT1",
+      "LHT10",
+      "LHT2",
+      "LHT3",
+      "LHT4",
+      "LHT5",
+      "LIF1",
+      "LIF2",
+      "LIF3",
+      "LIF4",
+      "LSF1",
+      "LSF2",
+      "LSF3",
+      "LSF4",
+      "LST1",
+      "LST6"
+    ],
+    "sampling_rate_hz": 512,
+    "recording_total_samples": 1331072,
+    "recording_duration_seconds": 2599.75,
+    "passage_start_sample_floor": 64778,
+    "passage_end_sample_ceil": 82510,
+    "support_edge_samples": 559,
+    "read_start_sample": 64219,
+    "read_end_sample_exclusive": 83069,
+    "read_start_seconds": 125.427734375,
+    "read_end_seconds_exclusive": 162.244140625,
+    "read_sample_count": 18850,
+    "other_recording_or_segment_read_count": 0,
+    "raw_waveform_saved": false,
+    "mne_preload": false
+  },
+  "audio_read": {
+    "audio_file": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+    "requested_audio_file_count": 1,
+    "other_audio_read_count": 0,
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "source_frames": 1527249,
+    "source_duration_seconds": 34.63149659863946,
+    "resampled_frames": 554104,
+    "resampled_duration_seconds": 34.6315,
+    "neighbor_passage_read_allowed": false
+  },
+  "model_runtime": {
+    "device": "cuda",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "repository_custom_code_executed": false,
+    "weights_only": true,
+    "tensor_only": true,
+    "download_attempted": false,
+    "model_eval": true,
+    "parameter_requires_grad_count": 0,
+    "loading_info": {
+      "missing_keys": [],
+      "unexpected_keys": [
+        "project_hid.bias",
+        "project_hid.weight",
+        "project_q.bias",
+        "project_q.weight",
+        "quantizer.codevectors",
+        "quantizer.weight_proj.bias",
+        "quantizer.weight_proj.weight"
+      ],
+      "mismatched_keys": [],
+      "error_msgs": []
+    }
+  },
+  "native_grids": {
+    "amplitude_envelope": {
+      "frame_count": 1731,
+      "feature_dim": 1,
+      "first_frame_center_seconds": 126.53227669399999,
+      "last_frame_center_seconds": 161.13227669399998,
+      "frame_step_seconds": 0.02,
+      "shape": [
+        1731,
+        1
+      ]
+    },
+    "log_mel": {
+      "frame_count": 1731,
+      "feature_dim": 80,
+      "first_frame_center_seconds": 126.53227669399999,
+      "last_frame_center_seconds": 161.13227669399998,
+      "frame_step_seconds": 0.02,
+      "shape": [
+        1731,
+        80
+      ]
+    },
+    "wav2vec2": {
+      "layer_keys": [
+        "projected",
+        "transformer_01",
+        "transformer_02",
+        "transformer_03",
+        "transformer_04",
+        "transformer_05",
+        "transformer_06",
+        "transformer_07",
+        "transformer_08",
+        "transformer_09",
+        "transformer_10",
+        "transformer_11",
+        "transformer_12"
+      ],
+      "layer_count": 13,
+      "hidden_size": 768,
+      "native_shape_frames_layers_hidden": [
+        1731,
+        13,
+        768
+      ],
+      "native_frame_count_formula": 1731,
+      "native_first_frame_center_seconds": 126.53227669399999,
+      "native_last_frame_center_seconds": 161.13227669399998,
+      "native_frame_step_seconds": 0.02,
+      "aligned_shape_layers_frames_hidden": [
+        13,
+        1732,
+        768
+      ],
+      "valid_frame_count": 1730,
+      "all_finite": true
+    },
+    "neural": {
+      "native_sample_count": 18850,
+      "native_first_sample_time_seconds": 125.427734375,
+      "native_last_sample_time_seconds": 162.2421875,
+      "channel_count": 36,
+      "subband_count": 6,
+      "subbands_hz": [
+        [
+          70.0,
+          80.0
+        ],
+        [
+          80.0,
+          90.0
+        ],
+        [
+          90.0,
+          100.0
+        ],
+        [
+          100.0,
+          110.0
+        ],
+        [
+          130.0,
+          140.0
+        ],
+        [
+          140.0,
+          150.0
+        ]
+      ],
+      "raw_power_shape": [
+        1732,
+        36,
+        6
+      ],
+      "pretransform_log_power_shape": [
+        1732,
+        36,
+        6
+      ],
+      "valid_frame_count": 1622,
+      "support_edge_samples": 559,
+      "support_edge_seconds": 1.091796875,
+      "negative_raw_power_value_count_before_smoke_clip": 160,
+      "smoke_log_formula": "natural_log(max(raw_power, 0) + 1e-30)",
+      "formal_train_only_transform_fitted": false,
+      "smoke_statistics_reusable_for_baseline": false,
+      "all_finite": true
+    }
+  },
+  "aligned_grid": {
+    "grid": "RECORDING_ORIGIN_K_OVER_50_SECONDS",
+    "frame_rate_hz": 50,
+    "frame_count": 1732,
+    "first_frame_seconds": 126.52,
+    "last_frame_seconds": 161.14,
+    "common_valid_frame_count": 1622,
+    "first_common_valid_frame_seconds": 127.62,
+    "last_common_valid_frame_seconds": 160.04,
+    "timestamps_strictly_increasing": true,
+    "all_tensor_timestamps_identical": true,
+    "interpolation": "LINEAR_TWO_NEAREST_NATIVE_FRAMES_NO_EXTRAPOLATION",
+    "common_mask_is_intersection": true,
+    "individual_valid_frame_counts": {
+      "amplitude_envelope": 1730,
+      "log_mel": 1730,
+      "wav2vec2": 1730,
+      "neural": 1622
+    },
+    "all_tensors_finite": true
+  },
+  "tensor_inventory": [
+    {
+      "name": "frame_times_seconds",
+      "relative_path": "npy_per_tensor/frame_times_seconds.npy",
+      "bytes": 13984,
+      "modified_at_utc": "2026-08-13T08:09:29.712552+00:00",
+      "dtype": "float64",
+      "shape": [
+        1732
+      ],
+      "object_dtype": false,
+      "remote_only": true
+    },
+    {
+      "name": "common_valid_mask",
+      "relative_path": "npy_per_tensor/common_valid_mask.npy",
+      "bytes": 1860,
+      "modified_at_utc": "2026-08-13T08:09:29.713552+00:00",
+      "dtype": "bool",
+      "shape": [
+        1732
+      ],
+      "object_dtype": false,
+      "remote_only": true
+    },
+    {
+      "name": "amplitude_envelope_aligned",
+      "relative_path": "npy_per_tensor/amplitude_envelope_aligned.npy",
+      "bytes": 7056,
+      "modified_at_utc": "2026-08-13T08:09:29.714552+00:00",
+      "dtype": "float32",
+      "shape": [
+        1732,
+        1
+      ],
+      "object_dtype": false,
+      "remote_only": true
+    },
+    {
+      "name": "log_mel_aligned",
+      "relative_path": "npy_per_tensor/log_mel_aligned.npy",
+      "bytes": 554368,
+      "modified_at_utc": "2026-08-13T08:09:29.714552+00:00",
+      "dtype": "float32",
+      "shape": [
+        1732,
+        80
+      ],
+      "object_dtype": false,
+      "remote_only": true
+    },
+    {
+      "name": "wav2vec2_aligned",
+      "relative_path": "npy_per_tensor/wav2vec2_aligned.npy",
+      "bytes": 69169280,
+      "modified_at_utc": "2026-08-13T08:09:30.070552+00:00",
+      "dtype": "float32",
+      "shape": [
+        13,
+        1732,
+        768
+      ],
+      "object_dtype": false,
+      "remote_only": true
+    },
+    {
+      "name": "neural_subband_power_aligned",
+      "relative_path": "npy_per_tensor/neural_subband_power_aligned.npy",
+      "bytes": 1496576,
+      "modified_at_utc": "2026-08-13T08:09:30.208552+00:00",
+      "dtype": "float32",
+      "shape": [
+        1732,
+        36,
+        6
+      ],
+      "object_dtype": false,
+      "remote_only": true
+    },
+    {
+      "name": "neural_pretransform_log_power_aligned",
+      "relative_path": "npy_per_tensor/neural_pretransform_log_power_aligned.npy",
+      "bytes": 1496576,
+      "modified_at_utc": "2026-08-13T08:09:30.212553+00:00",
+      "dtype": "float32",
+      "shape": [
+        1732,
+        36,
+        6
+      ],
+      "object_dtype": false,
+      "remote_only": true
+    }
+  ],
+  "format_benchmark": {
+    "formats_tested": [
+      "NPY_PER_TENSOR",
+      "NPZ_COMPRESSED"
+    ],
+    "selection_status": "PROVISIONAL_INTERNAL_FORMAT_SELECTION",
+    "selected_format": "NPY_PER_TENSOR",
+    "selection_reason": "NPY_PER_TENSOR_SUPPORTS_MMAP_DIRECT_LAYER_AND_ELECTRODE_SLICES_WITH_ATOMIC_PER_TENSOR_FAILURE_RECOVERY",
+    "new_dependency_used": false,
+    "npy_per_tensor": {
+      "bytes": 72739700,
+      "write_seconds": 0.5035449690185487,
+      "full_read_seconds": 0.05683534510899335,
+      "single_wav2vec2_layer_seconds": 0.0019532109145075083,
+      "single_neural_electrode_seconds": 0.0003378159599378705,
+      "mmap_supported": true,
+      "direct_slice_supported": true,
+      "atomic_per_tensor": true,
+      "allow_pickle": false
+    },
+    "npz_compressed": {
+      "bytes": 67287978,
+      "write_seconds": 2.9578743829624727,
+      "full_read_seconds": 0.39900143805425614,
+      "single_wav2vec2_layer_seconds": 0.34612492995802313,
+      "single_neural_electrode_seconds": 0.008126572938635945,
+      "mmap_supported": false,
+      "direct_slice_supported": false,
+      "atomic_archive": true,
+      "allow_pickle": false,
+      "relative_path": "npz_compressed/aligned_tensors.npz"
+    }
+  },
+  "remote_output_root": "/home/fanyu/auditory_simulation_m6a/outputs/g3_single_recording_candidate_20260813T080914Z",
+  "high_dimensional_arrays_in_git": false,
+  "real_neural_waveform_read_scope": "ONE_SELECTED_RECORDING_ONE_PASSAGE_36_ELIGIBLE_CHANNELS_PLUS_FROZEN_FINITE_SUPPORT_ONLY",
+  "formal_baseline_run": false,
+  "scientific_result_claimed": false,
+  "exchange_candidate_created": false,
+  "other_recordings_or_segments_processed": false,
+  "formal_train_only_transform_fitted": false,
+  "required_checks": {
+    "report_identity": true,
+    "non_hash_and_finite_evidence": true,
+    "scoped_config_valid": true,
+    "accepted_split_not_whole_m6a": true,
+    "model_cache_frozen": true,
+    "selection_rule_reexecuted": true,
+    "bounded_segment_read": true,
+    "native_feature_shapes": true,
+    "aligned_grid_and_common_mask": true,
+    "tensor_inventory_exact_remote_only": true,
+    "format_benchmark_and_selection": true,
+    "engineering_only_claim_boundary": true
+  },
+  "failed_checks": [],
+  "status": "SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE"
+}

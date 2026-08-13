@@ -479,14 +479,14 @@ def validate_g2_promotion(
         and _get(config, "neural_target", "method_coordinator_review") == "ACCEPT"
         and _get(config, "neural_target", "neural_extraction_allowed") is False
     )
-    checks["config_baseline_not_final"] = (
-        _get(config, "split", "baseline_final") is False
+    checks["config_final_embargo_state_is_accepted_not_whole_m6a"] = (
+        _get(config, "split", "baseline_final") is True
         and _get(config, "split", "split_status")
-        in {
-            "PRELIMINARY_NOT_BASELINE_FINAL",
-            "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL",
-        }
-        and _get(config, "split", "final_embargo_seconds") is None
+        == "BASELINE_FINAL_COORDINATOR_ACCEPTED"
+        and _get(config, "split", "final_embargo_seconds") == 2.0
+        and _get(config, "split", "final_embargo_status")
+        == "FINAL_EMBARGO_COORDINATOR_ACCEPTED"
+        and _get(config, "g2", "whole_m6a_pass_claimed") is False
     )
 
     failed_checks = [name for name, passed in checks.items() if passed is not True]

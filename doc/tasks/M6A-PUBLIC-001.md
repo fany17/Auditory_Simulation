@@ -84,7 +84,7 @@
 - 真实 manifest 证明 `stimulus_id + recording_id` 联合分组形成单一 connected component，无法形成 train/validation/test；该原始方案保留为 `INFEASIBLE_SINGLE_CONNECTED_COMPONENT`；
 - 主 split 采用确定性的 group-aware segment-count 比例优化：目标 70/15/15，只使用 block 的 eligible segment 数，不读取神经信号、模型性能或结果指标；固定 tie-break 后 block 01/02/05/06 为 train，block 03 为 validation，block 04 为 test，对应 223/48/48（69.9%/15.0%/15.0%）；
 - 旧的随机种子 4/1/1 block 分配得到 208/32/79（65.2%/10.0%/24.8%），已由协调审核否决并作为失败历史保存，不得恢复为正式 split；
-- recording 可跨 split，但 passage 窗口不得重叠。当前 2 s 只定义为 `preliminary_minimum_embargo`，因此 split 状态为 `PRELIMINARY_NOT_BASELINE_FINAL`；正式窗口化前必须计算 `final_embargo = max(2 s, maximum encoding lag, filter/padding edge, audio model receptive field/context overlap)` 并重新运行 guard；
+- recording 可跨 split，但 passage 窗口不得重叠。协调已接受 `final_embargo=2.0 s` 与 `BASELINE_FINAL_COORDINATOR_ACCEPTED` split；该接受只冻结 split/embargo，不等于授权 ridge/null、G4、整条 M6A 或科学结果；
 - speaker_id 单独作为 advisory 审计；新 split 有 5 个 speaker 跨 split（`s1303a`、`s1401a`、`s2102a`、`s3301a`、`s3903b`），主结果不得声称 speaker-held-out 或 speaker-generalization；
 - language 必须进入 manifest 并接受 split 覆盖审计；Catalan 音频存在 provenance 冲突，当前排除于 primary baseline 并标记 `LANGUAGE_GENERALIZATION_NOT_ESTIMABLE`；
 - subject 可跨主 split，因此当前只支持 `within-subject unseen-stimulus/block generalization`；不支持 subject-held-out、speaker-held-out 或 cross-language 声称。任何新增 generalization 分析必须另立并审核独立 split manifest。
@@ -106,7 +106,7 @@
 
 首轮 neural target method 已由协调二审 `ACCEPT` 并冻结：主目标为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
 
-冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 candidate 已于 2026-08-13 获协调者接受；唯一冻结主模型、synthetic audio-context canary 与真实 319 行 audio identity gate 已完成。48 个唯一音频文件均不跨 split，跨 split 输入 overlap 候选为 0.0 s；加入 0.0006349206349206349 s 音频重采样边缘后 final embargo 候选仍为 2.0 s，319 行 split candidate guard 通过。协调复核前 `baseline_final=false`，禁止真实神经提取。方法冻结、G2 接受与 final-embargo candidate 均不等于 G3 启动、真实 target、M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
+冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 与 2.0 s final embargo/baseline-final split 已于 2026-08-13 获协调者接受。G3 另以 `configs/m6a_g3_single_recording_candidate.json` 进行 scoped authorization：只允许预声明机器规则选出的一个 recording、一个 train passage、36 个 eligible channels 与有限支持读取；全数据 `neural_extraction_allowed=false`。方法/G2/split 接受与 G3 candidate 均不等于 G4、M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
 
 主模型为 ridge encoding：
 

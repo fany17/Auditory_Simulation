@@ -52,7 +52,7 @@ class ConfigGateTests(unittest.TestCase):
         self.assertTrue(anatomy["electrode_level_smoke_allowed_after_other_gates"])
         self.assertNotIn("region_summary", self.config["baseline"]["secondary_metrics"])
 
-    def test_refrozen_split_records_original_no_go_and_block_assignments(self) -> None:
+    def test_baseline_final_split_records_original_no_go_and_block_assignments(self) -> None:
         split = self.config["split"]
         self.assertEqual(set(split["required_group_keys"]), {"stimulus_id", "block_id"})
         self.assertEqual(split["original_recording_grouping_status"], "INFEASIBLE_SINGLE_CONNECTED_COMPONENT")
@@ -67,8 +67,8 @@ class ConfigGateTests(unittest.TestCase):
                 "block-06": "train",
             },
         )
-        self.assertEqual(split["split_status"], "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL")
-        self.assertIsNone(split["final_embargo_seconds"])
+        self.assertEqual(split["split_status"], "BASELINE_FINAL_COORDINATOR_ACCEPTED")
+        self.assertEqual(split["final_embargo_seconds"], 2.0)
         self.assertFalse(split["subject_heldout_claim_allowed"])
         self.assertFalse(split["speaker_heldout_claim_allowed"])
         self.assertFalse(split["cross_language_claim_allowed"])
@@ -81,16 +81,25 @@ class ConfigGateTests(unittest.TestCase):
         self.assertEqual(self.config["g2"]["coordinator_review"], "ACCEPT")
         self.assertIs(self.config["g2"]["whole_m6a_pass_claimed"], False)
 
-    def test_final_embargo_is_candidate_not_baseline_final(self) -> None:
+    def test_final_embargo_and_split_are_coordinator_accepted(self) -> None:
         split = self.config["split"]
-        self.assertEqual(split["split_status"], "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL")
+        self.assertEqual(split["split_status"], "BASELINE_FINAL_COORDINATOR_ACCEPTED")
         self.assertEqual(
             split["final_embargo_status"],
-            "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+            "FINAL_EMBARGO_COORDINATOR_ACCEPTED",
         )
         self.assertEqual(split["final_embargo_candidate_seconds"], 2.0)
-        self.assertIsNone(split["final_embargo_seconds"])
-        self.assertIs(split["baseline_final"], False)
+        self.assertEqual(split["final_embargo_seconds"], 2.0)
+        self.assertIs(split["baseline_final"], True)
+
+    def test_g3_authorization_is_single_recording_and_global_extraction_stays_closed(self) -> None:
+        g3 = self.config["g3_single_recording"]
+        self.assertEqual(g3["status"], "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED")
+        self.assertEqual(g3["eligible_channel_count"], 36)
+        self.assertFalse(g3["other_recordings_allowed"])
+        self.assertFalse(g3["other_segments_allowed"])
+        self.assertFalse(g3["whole_dataset_neural_extraction_allowed"])
+        self.assertFalse(self.config["neural_target"]["neural_extraction_allowed"])
 
     def test_forbidden_integrity_field_is_detected(self) -> None:
         changed = copy.deepcopy(self.config)

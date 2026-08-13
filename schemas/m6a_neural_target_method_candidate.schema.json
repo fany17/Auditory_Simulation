@@ -188,17 +188,18 @@
     "final_embargo": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["formula", "computed_filter_resampling_edge_seconds_max", "audio_cross_split_context_overlap_seconds", "audio_resampling_edge_seconds", "final_embargo_candidate_seconds", "transformer_attention_scope", "transformer_local_receptive_field_claimed", "status", "baseline_final"],
+      "required": ["formula", "computed_filter_resampling_edge_seconds_max", "audio_cross_split_context_overlap_seconds", "audio_resampling_edge_seconds", "final_embargo_candidate_seconds", "final_embargo_seconds", "transformer_attention_scope", "transformer_local_receptive_field_claimed", "status", "baseline_final"],
       "properties": {
         "formula": {"const": "max(2s, 0.5s, computed_neural_filter_resampling_edge, measured_audio_cross_split_context_overlap, audio_resampling_edge)"},
         "computed_filter_resampling_edge_seconds_max": {"const": 1.091796875},
         "audio_cross_split_context_overlap_seconds": {"const": 0},
         "audio_resampling_edge_seconds": {"const": 0.0006349206349206349},
         "final_embargo_candidate_seconds": {"const": 2},
+        "final_embargo_seconds": {"const": 2},
         "transformer_attention_scope": {"const": "GLOBAL_WITHIN_SINGLE_PASSAGE"},
         "transformer_local_receptive_field_claimed": {"const": false},
-        "status": {"const": "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW"},
-        "baseline_final": {"const": false}
+        "status": {"const": "FINAL_EMBARGO_COORDINATOR_ACCEPTED"},
+        "baseline_final": {"const": true}
       }
     },
     "synthetic_test_thresholds": {

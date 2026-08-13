@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from m6a_public.embargo_gate import evaluate_final_embargo_candidate
+from m6a_public.embargo_gate import evaluate_final_embargo
 
 
 FORBIDDEN_FIELD_NAMES = {
@@ -160,19 +160,19 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("split assignment must use deterministic group-size ratio optimization")
     if split.get("preliminary_minimum_embargo_seconds", 0) != 2.0:
         errors.append("preliminary minimum embargo must remain 2 seconds")
-    if split.get("split_status") != "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL":
-        errors.append("split must remain a non-final embargo candidate before coordinator review")
-    if split.get("baseline_final") is not False:
-        errors.append("baseline_final must remain false before final embargo and guard rerun")
-    if split.get("final_embargo_seconds") is not None:
-        errors.append("accepted final embargo must remain unset before coordinator review")
+    if split.get("split_status") != "BASELINE_FINAL_COORDINATOR_ACCEPTED":
+        errors.append("split must record baseline-final coordinator acceptance")
+    if split.get("baseline_final") is not True:
+        errors.append("baseline_final must be true after final-embargo coordinator acceptance")
+    if split.get("final_embargo_seconds") != 2.0:
+        errors.append("accepted final embargo must be 2 seconds")
     if split.get("final_embargo_candidate_seconds") != 2.0:
         errors.append("final embargo candidate must be 2 seconds")
     if (
         split.get("final_embargo_status")
-        != "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+        != "FINAL_EMBARGO_COORDINATOR_ACCEPTED"
     ):
-        errors.append("final embargo must remain a candidate awaiting coordinator review")
+        errors.append("final embargo must record coordinator acceptance")
     if split.get("primary_generalization_scope") != "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY":
         errors.append("primary generalization scope must remain within-subject unseen stimulus/block only")
     for claim_key in (
@@ -184,13 +184,13 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
             errors.append(f"{claim_key} must be false at the preliminary split gate")
     if split.get("secondary_subject_generalization") is not False:
         errors.append("secondary subject generalization is not supported by the current split")
-    embargo_report = evaluate_final_embargo_candidate(split.get("final_embargo_components_seconds", {}))
+    embargo_report = evaluate_final_embargo(split.get("final_embargo_components_seconds", {}))
     if (
-        embargo_report["status"] != "FINAL_EMBARGO_CANDIDATE_READY"
-        or embargo_report["baseline_final"]
-        or embargo_report.get("final_embargo_candidate_seconds") != 2.0
+        embargo_report["status"] != "PASS"
+        or embargo_report["baseline_final"] is not True
+        or embargo_report.get("final_embargo_seconds") != 2.0
     ):
-        errors.append("final embargo components must form a non-final 2-second candidate")
+        errors.append("final embargo components must form an accepted baseline-final 2-second gate")
     if split.get("final_embargo_components_seconds", {}).get("filter_or_padding_edge_seconds") != 1.091796875:
         errors.append("split embargo must record the frozen neural filter/resampling edge")
     if split.get("final_embargo_components_seconds", {}).get("audio_cross_split_context_overlap_seconds") != 0.0:
@@ -202,6 +202,32 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("split embargo must record the finite audio-resampling edge")
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:
         errors.append("allowed_splits must be train/validation/test")
+
+    g3 = config.get("g3_single_recording", {})
+    expected_g3 = {
+        "status": "G3_SINGLE_RECORDING_ALIGNMENT_AUTHORIZED_SCOPED",
+        "config_path": "configs/m6a_g3_single_recording_candidate.json",
+        "recording_id": "sub-SD012_ses-02_task-PassiveListen",
+        "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
+        "edf_relative_path": (
+            "sub-SD012/ses-02/ieeg/"
+            "sub-SD012_ses-02_task-PassiveListen_ieeg.edf"
+        ),
+        "audio_relative_path": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+        "eligible_channel_count": 36,
+        "real_neural_waveform_read_scope": (
+            "ONE_SELECTED_RECORDING_ONE_PASSAGE_36_ELIGIBLE_CHANNELS_"
+            "PLUS_FROZEN_FINITE_SUPPORT_ONLY"
+        ),
+        "other_recordings_allowed": False,
+        "other_segments_allowed": False,
+        "whole_dataset_neural_extraction_allowed": False,
+        "formal_baseline_run_allowed": False,
+        "scientific_result_claim_allowed": False,
+        "exchange_candidate_creation_allowed": False,
+    }
+    if g3 != expected_g3:
+        errors.append("G3 authorization must remain exact, single-recording and fail-closed")
 
     neural_target = config.get("neural_target", {})
     if neural_target.get("status") != "METHOD_FROZEN_AWAITING_EXECUTION_GATES":

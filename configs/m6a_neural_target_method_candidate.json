@@ -116,10 +116,11 @@
     "audio_cross_split_context_overlap_seconds": 0.0,
     "audio_resampling_edge_seconds": 0.0006349206349206349,
     "final_embargo_candidate_seconds": 2.0,
+    "final_embargo_seconds": 2.0,
     "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE",
     "transformer_local_receptive_field_claimed": false,
-    "status": "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
-    "baseline_final": false
+    "status": "FINAL_EMBARGO_COORDINATOR_ACCEPTED",
+    "baseline_final": true
   },
   "synthetic_test_thresholds": {
     "coefficient_symmetry_absolute_tolerance": 1e-12,

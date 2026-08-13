@@ -47,7 +47,7 @@ G2 candidate 只包含轻量报告、inventory、recording metadata、split/guar
 - `ANATOMY_MAPPING_NOT_READY`：不阻塞电极级 method smoke，但 `region_summary=NOT_ESTIMABLE`；
 - 逐 recording `iEEGReference` 必须记录并在 11 个 sidecar 中一致为 `scalp electrode, not included with data`；首轮只能使用 `AS_RECORDED_SCALP_REFERENCE`；
 - neural target 方法已冻结为 `METHOD_FROZEN_AWAITING_EXECUTION_GATES`，但 `neural_extraction_allowed=false`；这不等于 G3、整条 M6A 或 exchange contract 已冻结；
-- G2 协调验收已完成；audio cross-split context、final embargo 候选及 baseline-final split guard 仍是相互独立的执行阻塞项，`baseline_final=false`；
+- G2 协调验收后，audio cross-split context、2.0 s final embargo 与 baseline-final split guard 也已于 2026-08-13 独立获协调接受；该后续接受不改变本文件的 G2 provenance，也不等于 G3/M6A/scientific PASS；
 - revised exchange DRAFT 虽已接受用于 candidate 准备，但真实 method/runtime/canary 尚无，consumer cross-test 仍 `NOT_RUN`。
 
 ## 6. 当前候选证据
