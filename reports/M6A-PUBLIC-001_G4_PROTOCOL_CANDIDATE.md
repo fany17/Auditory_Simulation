@@ -3,7 +3,8 @@
 | 字段 | 内容 |
 |---|---|
 | 日期 | 2026-08-13 |
-| 当前状态 | `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 候选状态 | `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 协调结论 | `G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED`（2026-08-13） |
 | 原协议历史状态 | `G4_PROTOCOL_COORDINATOR_ACCEPTED` |
 | 协议配置 | `configs/m6a_g4_protocol_candidate.json` |
 | schema | `schemas/m6a_g4_protocol_candidate.schema.json` |
@@ -54,11 +55,11 @@ Alpha 只由 validation 选择；`1e-12` tie 内取最小 alpha。锁定后允�
 
 协议静态上界为 40 passages、1,532.45596371882 s、76,623 frames、3,151,044,252 core tensor bytes、预计新增不超过 20 GB、累计预计 GPU 不超过 4 h。这些不是实跑资源证据。既有单次 smoke 硬边界保持不变：每个 GPU invocation 必须严格低于 2 h，计算必须拆成可恢复阶段，并在达到 2 h 前 checkpoint/停报。
 
-当前资源/runtime preflight 状态仅为 `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`。只读空间盘点与 synthetic longest-passage canary 已完成，但这不等于执行授权。实际 free bytes 为 978,024,435,712；data+cache+预计新增 20 GB 为 34,553,621,929 bytes。保守估算单次 invocation 上界 150 s、40 passages 合计 1.6666666666666665 GPU h，仍须每 passage 独立、成功后原子 checkpoint。任一门禁漂移即停止，不得启动 G4。
+资源/runtime preflight 候选已由协调接受为 `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_COORDINATOR_ACCEPTED`。只读空间盘点与 synthetic longest-passage canary 已完成，但这不等于真实执行授权。实际 free bytes 为 978,024,435,712；data+cache+预计新增 20 GB 为 34,553,621,929 bytes。保守估算单次 invocation 上界 150 s、40 passages 合计 1.6666666666666665 GPU h，仍须每 passage 独立、成功后原子 checkpoint。正式执行管线通过独立审核前不得启动 G4。
 
 ## 验证与证据边界
 
-- 原协议 accepted 报告的 9/9 required checks 为 true。当前 preprocessing 修订机器报告同样为 9/9 true，但状态严格保持 `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`；
+- 原协议 accepted 报告与 preprocessing 修订候选的 9/9 required checks 均为 true；修订候选报告保持候选证据语义，协调接受记录由主配置独立保存；
 - current-candidate 治理只允许 v2 协议修订报告为当前候选；superseded 报告的状态、`current_candidate=false` 与 `superseded_by` 均由主 config gate 复核；
 - 旧 `reports/g4_protocol_candidate_20260813.json` 与 `reports/g4_protocol_candidate_20260813_v2.json` 均已机器标记为 `SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE`；v2 因错误放宽 main config 的单次 2 h 硬边界而被替代，它不是当前候选；
 - 一次文档同步把任务书副本平铺到 2203 snapshot 的 `doc/` 根；核对绝对路径后已将该副本移动到 `/home/fanyu/auditory_simulation_m6a/logs/provenance/g4_protocol_sync_layout_20260813/M6A-PUBLIC-001.md`，正式路径 `code_snapshot/doc/tasks/M6A-PUBLIC-001.md` 已更新。未删除文件，数据目录未受影响；

@@ -140,14 +140,18 @@ class ConfigGateTests(unittest.TestCase):
         changed["resources"]["smoke_gpu_hours_limit"] = 3
         self.assertTrue(validate_task_config(changed))
 
-    def test_g4_protocol_amendment_preserves_prior_acceptance_and_execution_stays_closed(self) -> None:
+    def test_g4_protocol_amendment_and_preflight_are_accepted_but_execution_stays_closed(self) -> None:
         protocol = self.config["g4_protocol"]
         self.assertEqual(
             protocol["status"],
+            "G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED",
+        )
+        self.assertEqual(
+            protocol["candidate_status"],
             "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
         )
-        self.assertEqual(protocol["coordinator_review"], "PENDING")
-        self.assertIsNone(protocol["reviewed_on"])
+        self.assertEqual(protocol["coordinator_review"], "ACCEPT")
+        self.assertEqual(protocol["reviewed_on"], "2026-08-13")
         self.assertEqual(
             protocol["prior_accepted_status"], "G4_PROTOCOL_COORDINATOR_ACCEPTED"
         )
@@ -168,7 +172,16 @@ class ConfigGateTests(unittest.TestCase):
         )
         self.assertEqual(
             protocol["preflight_status"],
+            "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_COORDINATOR_ACCEPTED",
+        )
+        self.assertEqual(
+            protocol["preflight_candidate_status"],
             "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+        )
+        self.assertEqual(protocol["preflight_coordinator_review"], "ACCEPT")
+        self.assertEqual(protocol["preflight_reviewed_on"], "2026-08-13")
+        self.assertEqual(
+            protocol["next_gate"], "G4_EXECUTION_PIPELINE_CANDIDATE_REQUIRED"
         )
 
     def test_only_v2_and_v3_are_current_candidate_reports(self) -> None:

@@ -1,0 +1,2938 @@
+{
+  "status": "G4_MINIMAL_SD012_SES02_PRELIMINARY_COMPLETE",
+  "task_id": "M6A-PUBLIC-001",
+  "created_at_utc": "2026-08-13T11:35:34.737884+00:00",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "scope": {
+    "participant_id": "sub-SD012",
+    "session_id": "ses-02",
+    "recording_id": "sub-SD012_ses-02_task-PassiveListen",
+    "passage_counts": {
+      "train": 24,
+      "validation": 8,
+      "test": 8
+    },
+    "channel_count": 36,
+    "lags_seconds": [
+      0.0,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5
+    ],
+    "stimulus_cross_split_count": 0
+  },
+  "model_runtime": {
+    "device": "cuda",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "weights_only": true,
+    "download_attempted": false,
+    "attention_mask_argument": "OMITTED",
+    "model_eval": true,
+    "parameter_requires_grad_count": 0
+  },
+  "passage_metadata": [
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-004",
+      "stimulus_id": "s4002b-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+      "start_seconds": 126.519807944,
+      "end_seconds": 161.15130454263945,
+      "source_audio_frames": 1527249,
+      "resampled_audio_frames": 554104,
+      "common_frame_count": 1597,
+      "first_common_time": 127.62,
+      "last_common_time": 159.54,
+      "read_start_sample": 64219,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 64219,
+        "read_end_sample_exclusive": 83069,
+        "read_sample_count": 18850,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 17732,
+        "complete_support_negative_minimum_before_clip": -2.5151926646472442e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1597
+        ],
+        "envelope.npy": [
+          1597,
+          1
+        ],
+        "logmel.npy": [
+          1597,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1597,
+          768
+        ],
+        "neural_power_native.npy": [
+          18850,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-005",
+      "stimulus_id": "s1401a-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s1401a-ex01_normed.wav",
+      "start_seconds": 176.515371631,
+      "end_seconds": 211.799498615127,
+      "source_audio_frames": 1556030,
+      "resampled_audio_frames": 564547,
+      "common_frame_count": 1630,
+      "first_common_time": 177.62,
+      "last_common_time": 210.2,
+      "read_start_sample": 89816,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 89816,
+        "read_end_sample_exclusive": 109001,
+        "read_sample_count": 19185,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 18067,
+        "complete_support_negative_minimum_before_clip": -2.1330042793378593e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1630
+        ],
+        "envelope.npy": [
+          1630,
+          1
+        ],
+        "logmel.npy": [
+          1630,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1630,
+          768
+        ],
+        "neural_power_native.npy": [
+          19185,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-006",
+      "stimulus_id": "s2301a-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s2301a-ex01_normed.wav",
+      "start_seconds": 225.392055464,
+      "end_seconds": 247.9293570513016,
+      "source_audio_frames": 993895,
+      "resampled_audio_frames": 360597,
+      "common_frame_count": 992,
+      "first_common_time": 226.5,
+      "last_common_time": 246.32,
+      "read_start_sample": 114841,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 114841,
+        "read_end_sample_exclusive": 127499,
+        "read_sample_count": 12658,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 11540,
+        "complete_support_negative_minimum_before_clip": -1.4019946292293785e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          992
+        ],
+        "envelope.npy": [
+          992,
+          1
+        ],
+        "logmel.npy": [
+          992,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          992,
+          768
+        ],
+        "neural_power_native.npy": [
+          12658,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-007",
+      "stimulus_id": "s1303a-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s1303a-ex01_normed.wav",
+      "start_seconds": 258.610866821,
+      "end_seconds": 292.8268078640839,
+      "source_audio_frames": 1508923,
+      "resampled_audio_frames": 547456,
+      "common_frame_count": 1576,
+      "first_common_time": 259.72,
+      "last_common_time": 291.22,
+      "read_start_sample": 131849,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 131849,
+        "read_end_sample_exclusive": 150487,
+        "read_sample_count": 18638,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 17520,
+        "complete_support_negative_minimum_before_clip": -3.277488690956796e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1576
+        ],
+        "envelope.npy": [
+          1576,
+          1
+        ],
+        "logmel.npy": [
+          1576,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1576,
+          768
+        ],
+        "neural_power_native.npy": [
+          18638,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-010",
+      "stimulus_id": "s2102a-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s2102a-ex01_normed.wav",
+      "start_seconds": 386.00297644799997,
+      "end_seconds": 414.1915478765714,
+      "source_audio_frames": 1243116,
+      "resampled_audio_frames": 451018,
+      "common_frame_count": 1275,
+      "first_common_time": 387.1,
+      "last_common_time": 412.58,
+      "read_start_sample": 197074,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 197074,
+        "read_end_sample_exclusive": 212626,
+        "read_sample_count": 15552,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 14434,
+        "complete_support_negative_minimum_before_clip": -4.764500657106742e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1275
+        ],
+        "envelope.npy": [
+          1275,
+          1
+        ],
+        "logmel.npy": [
+          1275,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1275,
+          768
+        ],
+        "neural_power_native.npy": [
+          15552,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-011",
+      "stimulus_id": "s3602b-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s3602b-ex01_normed.wav",
+      "start_seconds": 424.59412768499993,
+      "end_seconds": 460.2024950319387,
+      "source_audio_frames": 1570329,
+      "resampled_audio_frames": 569734,
+      "common_frame_count": 1646,
+      "first_common_time": 425.7,
+      "last_common_time": 458.6,
+      "read_start_sample": 216833,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 216833,
+        "read_end_sample_exclusive": 236183,
+        "read_sample_count": 19350,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 18232,
+        "complete_support_negative_minimum_before_clip": -4.2098472853469196e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1646
+        ],
+        "envelope.npy": [
+          1646,
+          1
+        ],
+        "logmel.npy": [
+          1646,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1646,
+          768
+        ],
+        "neural_power_native.npy": [
+          19350,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-012",
+      "stimulus_id": "s1901b-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s1901b-ex01_normed.wav",
+      "start_seconds": 470.005549735,
+      "end_seconds": 507.39316878261906,
+      "source_audio_frames": 1648794,
+      "resampled_audio_frames": 598202,
+      "common_frame_count": 1736,
+      "first_common_time": 471.1,
+      "last_common_time": 505.8,
+      "read_start_sample": 240083,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 240083,
+        "read_end_sample_exclusive": 260345,
+        "read_sample_count": 20262,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 19144,
+        "complete_support_negative_minimum_before_clip": -1.8377100899193643e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1736
+        ],
+        "envelope.npy": [
+          1736,
+          1
+        ],
+        "logmel.npy": [
+          1736,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1736,
+          768
+        ],
+        "neural_power_native.npy": [
+          20262,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-013",
+      "stimulus_id": "s3001b-ex01",
+      "block_id": "block-01",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 1/s3001b-ex01_normed.wav",
+      "start_seconds": 518.038704047,
+      "end_seconds": 567.2215158383832,
+      "source_audio_frames": 2168962,
+      "resampled_audio_frames": 786925,
+      "common_frame_count": 2325,
+      "first_common_time": 519.14,
+      "last_common_time": 565.62,
+      "read_start_sample": 264676,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 264676,
+        "read_end_sample_exclusive": 290977,
+        "read_sample_count": 26301,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 25183,
+        "complete_support_negative_minimum_before_clip": -2.1189819154737165e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2325
+        ],
+        "envelope.npy": [
+          2325,
+          1
+        ],
+        "logmel.npy": [
+          2325,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2325,
+          768
+        ],
+        "neural_power_native.npy": [
+          26301,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-016",
+      "stimulus_id": "s3602b-ex02",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s3602b-ex02_normed.wav",
+      "start_seconds": 664.115727374,
+      "end_seconds": 697.0147296415737,
+      "source_audio_frames": 1450846,
+      "resampled_audio_frames": 526385,
+      "common_frame_count": 1511,
+      "first_common_time": 665.22,
+      "last_common_time": 695.42,
+      "read_start_sample": 339468,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 339468,
+        "read_end_sample_exclusive": 357431,
+        "read_sample_count": 17963,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 16845,
+        "complete_support_negative_minimum_before_clip": -3.3974221775772033e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1511
+        ],
+        "envelope.npy": [
+          1511,
+          1
+        ],
+        "logmel.npy": [
+          1511,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1511,
+          768
+        ],
+        "neural_power_native.npy": [
+          17963,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-017",
+      "stimulus_id": "s3903b-ex01",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s3903b-ex01_normed.wav",
+      "start_seconds": 707.249000718,
+      "end_seconds": 733.5019485638051,
+      "source_audio_frames": 1157755,
+      "resampled_audio_frames": 420048,
+      "common_frame_count": 1178,
+      "first_common_time": 708.36,
+      "last_common_time": 731.9,
+      "read_start_sample": 361552,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 361552,
+        "read_end_sample_exclusive": 376112,
+        "read_sample_count": 14560,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 13442,
+        "complete_support_negative_minimum_before_clip": -4.7608536498964567e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1178
+        ],
+        "envelope.npy": [
+          1178,
+          1
+        ],
+        "logmel.npy": [
+          1178,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1178,
+          768
+        ],
+        "neural_power_native.npy": [
+          14560,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-018",
+      "stimulus_id": "s1201a-ex01",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s1201a-ex01_normed.wav",
+      "start_seconds": 745.584401725,
+      "end_seconds": 780.1413405005102,
+      "source_audio_frames": 1523961,
+      "resampled_audio_frames": 552912,
+      "common_frame_count": 1594,
+      "first_common_time": 746.68,
+      "last_common_time": 778.54,
+      "read_start_sample": 381180,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 381180,
+        "read_end_sample_exclusive": 399992,
+        "read_sample_count": 18812,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 17694,
+        "complete_support_negative_minimum_before_clip": -6.061391881101783e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1594
+        ],
+        "envelope.npy": [
+          1594,
+          1
+        ],
+        "logmel.npy": [
+          1594,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1594,
+          768
+        ],
+        "neural_power_native.npy": [
+          18812,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-019",
+      "stimulus_id": "s2202b-ex02",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s2202b-ex02_normed.wav",
+      "start_seconds": 788.951963447,
+      "end_seconds": 843.4793330615125,
+      "source_audio_frames": 2404657,
+      "resampled_audio_frames": 872438,
+      "common_frame_count": 2592,
+      "first_common_time": 790.06,
+      "last_common_time": 841.88,
+      "read_start_sample": 403384,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 403384,
+        "read_end_sample_exclusive": 432421,
+        "read_sample_count": 29037,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 27919,
+        "complete_support_negative_minimum_before_clip": -3.3916896043744684e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2592
+        ],
+        "envelope.npy": [
+          2592,
+          1
+        ],
+        "logmel.npy": [
+          2592,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2592,
+          768
+        ],
+        "neural_power_native.npy": [
+          29037,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-020",
+      "stimulus_id": "s0703b-ex01",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s0703b-ex01_normed.wav",
+      "start_seconds": 855.524725854,
+      "end_seconds": 894.5594197315511,
+      "source_audio_frames": 1721430,
+      "resampled_audio_frames": 624556,
+      "common_frame_count": 1818,
+      "first_common_time": 856.62,
+      "last_common_time": 892.96,
+      "read_start_sample": 437469,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 437469,
+        "read_end_sample_exclusive": 458574,
+        "read_sample_count": 21105,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 19987,
+        "complete_support_negative_minimum_before_clip": -2.6354378367124998e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1818
+        ],
+        "envelope.npy": [
+          1818,
+          1
+        ],
+        "logmel.npy": [
+          1818,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1818,
+          768
+        ],
+        "neural_power_native.npy": [
+          21105,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-021",
+      "stimulus_id": "s2102a-ex02",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s2102a-ex02_normed.wav",
+      "start_seconds": 904.530053568,
+      "end_seconds": 940.8974912097233,
+      "source_audio_frames": 1603804,
+      "resampled_audio_frames": 581880,
+      "common_frame_count": 1684,
+      "first_common_time": 905.64,
+      "last_common_time": 939.3,
+      "read_start_sample": 462560,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 462560,
+        "read_end_sample_exclusive": 482299,
+        "read_sample_count": 19739,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 18621,
+        "complete_support_negative_minimum_before_clip": -4.437139205943035e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1684
+        ],
+        "envelope.npy": [
+          1684,
+          1
+        ],
+        "logmel.npy": [
+          1684,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1684,
+          768
+        ],
+        "neural_power_native.npy": [
+          19739,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-022",
+      "stimulus_id": "s4003b-ex01",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s4003b-ex01_normed.wav",
+      "start_seconds": 948.848739966,
+      "end_seconds": 974.2426855442313,
+      "source_audio_frames": 1119873,
+      "resampled_audio_frames": 406304,
+      "common_frame_count": 1135,
+      "first_common_time": 949.96,
+      "last_common_time": 972.64,
+      "read_start_sample": 485251,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 485251,
+        "read_end_sample_exclusive": 499372,
+        "read_sample_count": 14121,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 13003,
+        "complete_support_negative_minimum_before_clip": -4.387739837210868e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1135
+        ],
+        "envelope.npy": [
+          1135,
+          1
+        ],
+        "logmel.npy": [
+          1135,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1135,
+          768
+        ],
+        "neural_power_native.npy": [
+          14121,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-023",
+      "stimulus_id": "s3301a-ex01",
+      "block_id": "block-02",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 2/s3301a-ex01_normed.wav",
+      "start_seconds": 988.4020882660001,
+      "end_seconds": 1013.9862152501271,
+      "source_audio_frames": 1128260,
+      "resampled_audio_frames": 409347,
+      "common_frame_count": 1145,
+      "first_common_time": 989.5,
+      "last_common_time": 1012.38,
+      "read_start_sample": 505502,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 505502,
+        "read_end_sample_exclusive": 519720,
+        "read_sample_count": 14218,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 13100,
+        "complete_support_negative_minimum_before_clip": -2.5081905167067253e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1145
+        ],
+        "envelope.npy": [
+          1145,
+          1
+        ],
+        "logmel.npy": [
+          1145,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1145,
+          768
+        ],
+        "neural_power_native.npy": [
+          14218,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-024",
+      "stimulus_id": "s1501a-ex01",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s1501a-ex01_normed.wav",
+      "start_seconds": 1027.26169699,
+      "end_seconds": 1070.4001323641496,
+      "source_audio_frames": 1902405,
+      "resampled_audio_frames": 690215,
+      "common_frame_count": 2023,
+      "first_common_time": 1028.36,
+      "last_common_time": 1068.8,
+      "read_start_sample": 525398,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 525398,
+        "read_end_sample_exclusive": 548604,
+        "read_sample_count": 23206,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 22088,
+        "complete_support_negative_minimum_before_clip": -3.099542149816208e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2023
+        ],
+        "envelope.npy": [
+          2023,
+          1
+        ],
+        "logmel.npy": [
+          2023,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2023,
+          768
+        ],
+        "neural_power_native.npy": [
+          23206,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-025",
+      "stimulus_id": "s3301a-ex02",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s3301a-ex02_normed.wav",
+      "start_seconds": 1080.91690957,
+      "end_seconds": 1118.1549141051473,
+      "source_audio_frames": 1642196,
+      "resampled_audio_frames": 595809,
+      "common_frame_count": 1728,
+      "first_common_time": 1082.02,
+      "last_common_time": 1116.56,
+      "read_start_sample": 552870,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 552870,
+        "read_end_sample_exclusive": 573055,
+        "read_sample_count": 20185,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 19067,
+        "complete_support_negative_minimum_before_clip": -2.383468110860202e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1728
+        ],
+        "envelope.npy": [
+          1728,
+          1
+        ],
+        "logmel.npy": [
+          1728,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1728,
+          768
+        ],
+        "neural_power_native.npy": [
+          20185,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-026",
+      "stimulus_id": "s1303a-ex02",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s1303a-ex02_normed.wav",
+      "start_seconds": 1129.21781342,
+      "end_seconds": 1158.5628701093424,
+      "source_audio_frames": 1294117,
+      "resampled_audio_frames": 469521,
+      "common_frame_count": 1333,
+      "first_common_time": 1130.32,
+      "last_common_time": 1156.96,
+      "read_start_sample": 577600,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 577600,
+        "read_end_sample_exclusive": 593744,
+        "read_sample_count": 16144,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 15026,
+        "complete_support_negative_minimum_before_clip": -2.3138213888701104e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1333
+        ],
+        "envelope.npy": [
+          1333,
+          1
+        ],
+        "logmel.npy": [
+          1333,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1333,
+          768
+        ],
+        "neural_power_native.npy": [
+          16144,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-027",
+      "stimulus_id": "s1001a-ex01",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s1001a-ex01_normed.wav",
+      "start_seconds": 1170.37300262,
+      "end_seconds": 1212.0443178127439,
+      "source_audio_frames": 1837705,
+      "resampled_audio_frames": 666742,
+      "common_frame_count": 1949,
+      "first_common_time": 1171.48,
+      "last_common_time": 1210.44,
+      "read_start_sample": 598671,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 598671,
+        "read_end_sample_exclusive": 621126,
+        "read_sample_count": 22455,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 21337,
+        "complete_support_negative_minimum_before_clip": -2.5497971339792392e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1949
+        ],
+        "envelope.npy": [
+          1949,
+          1
+        ],
+        "logmel.npy": [
+          1949,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1949,
+          768
+        ],
+        "neural_power_native.npy": [
+          22455,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-028",
+      "stimulus_id": "s3201a-ex01",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s3201a-ex01_normed.wav",
+      "start_seconds": 1219.94953221,
+      "end_seconds": 1297.0393508041043,
+      "source_audio_frames": 3399661,
+      "resampled_audio_frames": 1233438,
+      "common_frame_count": 3720,
+      "first_common_time": 1221.06,
+      "last_common_time": 1295.44,
+      "read_start_sample": 624055,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 624055,
+        "read_end_sample_exclusive": 664644,
+        "read_sample_count": 40589,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 39471,
+        "complete_support_negative_minimum_before_clip": -6.575755253724424e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          3720
+        ],
+        "envelope.npy": [
+          3720,
+          1
+        ],
+        "logmel.npy": [
+          3720,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          3720,
+          768
+        ],
+        "neural_power_native.npy": [
+          40589,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-029",
+      "stimulus_id": "s3703b-ex01",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s3703b-ex01_normed.wav",
+      "start_seconds": 1314.67540414,
+      "end_seconds": 1350.047150171746,
+      "source_audio_frames": 1559894,
+      "resampled_audio_frames": 565948,
+      "common_frame_count": 1634,
+      "first_common_time": 1315.78,
+      "last_common_time": 1348.44,
+      "read_start_sample": 672554,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 672554,
+        "read_end_sample_exclusive": 691784,
+        "read_sample_count": 19230,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 18112,
+        "complete_support_negative_minimum_before_clip": -3.24386008341556e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1634
+        ],
+        "envelope.npy": [
+          1634,
+          1
+        ],
+        "logmel.npy": [
+          1634,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1634,
+          768
+        ],
+        "neural_power_native.npy": [
+          19230,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-030",
+      "stimulus_id": "s1401a-ex02",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s1401a-ex02_normed.wav",
+      "start_seconds": 1365.15557882,
+      "end_seconds": 1401.738005123855,
+      "source_audio_frames": 1613285,
+      "resampled_audio_frames": 585319,
+      "common_frame_count": 1695,
+      "first_common_time": 1366.26,
+      "last_common_time": 1400.14,
+      "read_start_sample": 698400,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 698400,
+        "read_end_sample_exclusive": 718249,
+        "read_sample_count": 19849,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 18731,
+        "complete_support_negative_minimum_before_clip": -1.8941690645234277e-13,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1695
+        ],
+        "envelope.npy": [
+          1695,
+          1
+        ],
+        "logmel.npy": [
+          1695,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1695,
+          768
+        ],
+        "neural_power_native.npy": [
+          19849,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-031",
+      "stimulus_id": "s3903b-ex02",
+      "block_id": "block-03",
+      "split": "validation",
+      "audio_file": "stimuli/excerpts/Block 3/s3903b-ex02_normed.wav",
+      "start_seconds": 1421.7627924,
+      "end_seconds": 1454.6995497696146,
+      "source_audio_frames": 1452511,
+      "resampled_audio_frames": 526989,
+      "common_frame_count": 1513,
+      "first_common_time": 1422.86,
+      "last_common_time": 1453.1,
+      "read_start_sample": 727383,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 727383,
+        "read_end_sample_exclusive": 745366,
+        "read_sample_count": 17983,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 16865,
+        "complete_support_negative_minimum_before_clip": -2.4657175251603424e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1513
+        ],
+        "envelope.npy": [
+          1513,
+          1
+        ],
+        "logmel.npy": [
+          1513,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1513,
+          768
+        ],
+        "neural_power_native.npy": [
+          17983,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-036",
+      "stimulus_id": "s3902a-ex01",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s3902a-ex01_normed.wav",
+      "start_seconds": 1606.9631847800001,
+      "end_seconds": 1638.516812897914,
+      "source_audio_frames": 1391515,
+      "resampled_audio_frames": 504859,
+      "common_frame_count": 1444,
+      "first_common_time": 1608.06,
+      "last_common_time": 1636.92,
+      "read_start_sample": 822206,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 822206,
+        "read_end_sample_exclusive": 839480,
+        "read_sample_count": 17274,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 16156,
+        "complete_support_negative_minimum_before_clip": -5.6645926434825286e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1444
+        ],
+        "envelope.npy": [
+          1444,
+          1
+        ],
+        "logmel.npy": [
+          1444,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1444,
+          768
+        ],
+        "neural_power_native.npy": [
+          17274,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-037",
+      "stimulus_id": "s2102a-ex03",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s2102a-ex03_normed.wav",
+      "start_seconds": 1651.70496168,
+      "end_seconds": 1696.9780909317008,
+      "source_audio_frames": 1996545,
+      "resampled_audio_frames": 724371,
+      "common_frame_count": 2130,
+      "first_common_time": 1652.8,
+      "last_common_time": 1695.38,
+      "read_start_sample": 845113,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 845113,
+        "read_end_sample_exclusive": 869412,
+        "read_sample_count": 24299,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 23181,
+        "complete_support_negative_minimum_before_clip": -5.084015322385243e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2130
+        ],
+        "envelope.npy": [
+          2130,
+          1
+        ],
+        "logmel.npy": [
+          2130,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2130,
+          768
+        ],
+        "neural_power_native.npy": [
+          24299,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-038",
+      "stimulus_id": "s1604a-ex01",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s1604a-ex01_normed.wav",
+      "start_seconds": 1703.35101982,
+      "end_seconds": 1749.7146479379137,
+      "source_audio_frames": 2044636,
+      "resampled_audio_frames": 741819,
+      "common_frame_count": 2184,
+      "first_common_time": 1704.46,
+      "last_common_time": 1748.12,
+      "read_start_sample": 871556,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 871556,
+        "read_end_sample_exclusive": 896413,
+        "read_sample_count": 24857,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 23739,
+        "complete_support_negative_minimum_before_clip": -3.118322768055796e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2184
+        ],
+        "envelope.npy": [
+          2184,
+          1
+        ],
+        "logmel.npy": [
+          2184,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2184,
+          768
+        ],
+        "neural_power_native.npy": [
+          24857,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-039",
+      "stimulus_id": "s0202b-ex01",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s0202b-ex01_normed.wav",
+      "start_seconds": 1760.5041715,
+      "end_seconds": 1817.4221080079365,
+      "source_audio_frames": 2510081,
+      "resampled_audio_frames": 910687,
+      "common_frame_count": 2712,
+      "first_common_time": 1761.6,
+      "last_common_time": 1815.82,
+      "read_start_sample": 900819,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 900819,
+        "read_end_sample_exclusive": 931080,
+        "read_sample_count": 30261,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 29143,
+        "complete_support_negative_minimum_before_clip": -2.7290210749873607e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2712
+        ],
+        "envelope.npy": [
+          2712,
+          1
+        ],
+        "logmel.npy": [
+          2712,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2712,
+          768
+        ],
+        "neural_power_native.npy": [
+          30261,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-040",
+      "stimulus_id": "s3102b-ex01",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s3102b-ex01_normed.wav",
+      "start_seconds": 1828.76835415,
+      "end_seconds": 1849.5702362361678,
+      "source_audio_frames": 917363,
+      "resampled_audio_frames": 332831,
+      "common_frame_count": 905,
+      "first_common_time": 1829.88,
+      "last_common_time": 1847.96,
+      "read_start_sample": 935770,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 935770,
+        "read_end_sample_exclusive": 947539,
+        "read_sample_count": 11769,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 10651,
+        "complete_support_negative_minimum_before_clip": -3.903731913890639e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          905
+        ],
+        "envelope.npy": [
+          905,
+          1
+        ],
+        "logmel.npy": [
+          905,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          905,
+          768
+        ],
+        "neural_power_native.npy": [
+          11769,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-041",
+      "stimulus_id": "s2801a-ex01",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s2801a-ex01_normed.wav",
+      "start_seconds": 1858.33054876,
+      "end_seconds": 1919.2583718892517,
+      "source_audio_frames": 2686917,
+      "resampled_audio_frames": 974846,
+      "common_frame_count": 2912,
+      "first_common_time": 1859.44,
+      "last_common_time": 1917.66,
+      "read_start_sample": 950906,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 950906,
+        "read_end_sample_exclusive": 983220,
+        "read_sample_count": 32314,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 31196,
+        "complete_support_negative_minimum_before_clip": -5.634706700037149e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2912
+        ],
+        "envelope.npy": [
+          2912,
+          1
+        ],
+        "logmel.npy": [
+          2912,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2912,
+          768
+        ],
+        "neural_power_native.npy": [
+          32314,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-042",
+      "stimulus_id": "s3802a-ex01",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s3802a-ex01_normed.wav",
+      "start_seconds": 1928.51665751,
+      "end_seconds": 1963.1928479861904,
+      "source_audio_frames": 1529220,
+      "resampled_audio_frames": 554820,
+      "common_frame_count": 1600,
+      "first_common_time": 1929.62,
+      "last_common_time": 1961.6,
+      "read_start_sample": 986841,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 986841,
+        "read_end_sample_exclusive": 1005714,
+        "read_sample_count": 18873,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 17755,
+        "complete_support_negative_minimum_before_clip": -4.4968372926389583e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1600
+        ],
+        "envelope.npy": [
+          1600,
+          1
+        ],
+        "logmel.npy": [
+          1600,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1600,
+          768
+        ],
+        "neural_power_native.npy": [
+          18873,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-043",
+      "stimulus_id": "s0702a-ex01",
+      "block_id": "block-04",
+      "split": "test",
+      "audio_file": "stimuli/excerpts/Block 4/s0702a-ex01_normed.wav",
+      "start_seconds": 1975.49126138,
+      "end_seconds": 2005.9535062779591,
+      "source_audio_frames": 1343385,
+      "resampled_audio_frames": 487396,
+      "common_frame_count": 1389,
+      "first_common_time": 1976.6,
+      "last_common_time": 2004.36,
+      "read_start_sample": 1010892,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1010892,
+        "read_end_sample_exclusive": 1027608,
+        "read_sample_count": 16716,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 15598,
+        "complete_support_negative_minimum_before_clip": -2.4753512943531327e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1389
+        ],
+        "envelope.npy": [
+          1389,
+          1
+        ],
+        "logmel.npy": [
+          1389,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1389,
+          768
+        ],
+        "neural_power_native.npy": [
+          16716,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-044",
+      "stimulus_id": "s1401b-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s1401b-ex01_normed.wav",
+      "start_seconds": 2029.77595648,
+      "end_seconds": 2084.2128272282994,
+      "source_audio_frames": 2400666,
+      "resampled_audio_frames": 870990,
+      "common_frame_count": 2588,
+      "first_common_time": 2030.88,
+      "last_common_time": 2082.62,
+      "read_start_sample": 1038686,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1038686,
+        "read_end_sample_exclusive": 1067676,
+        "read_sample_count": 28990,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 27872,
+        "complete_support_negative_minimum_before_clip": -4.360678473172819e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2588
+        ],
+        "envelope.npy": [
+          2588,
+          1
+        ],
+        "logmel.npy": [
+          2588,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2588,
+          768
+        ],
+        "neural_power_native.npy": [
+          28990,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-045",
+      "stimulus_id": "s0802b-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s0802b-ex01_normed.wav",
+      "start_seconds": 2091.6347221,
+      "end_seconds": 2121.6279647303854,
+      "source_audio_frames": 1322702,
+      "resampled_audio_frames": 479892,
+      "common_frame_count": 1365,
+      "first_common_time": 2092.74,
+      "last_common_time": 2120.02,
+      "read_start_sample": 1070357,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1070357,
+        "read_end_sample_exclusive": 1086833,
+        "read_sample_count": 16476,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 15358,
+        "complete_support_negative_minimum_before_clip": -3.7657110852835445e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1365
+        ],
+        "envelope.npy": [
+          1365,
+          1
+        ],
+        "logmel.npy": [
+          1365,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1365,
+          768
+        ],
+        "neural_power_native.npy": [
+          16476,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-046",
+      "stimulus_id": "s1703b-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s1703b-ex01_normed.wav",
+      "start_seconds": 2133.25591017,
+      "end_seconds": 2186.7567945237415,
+      "source_audio_frames": 2359389,
+      "resampled_audio_frames": 856015,
+      "common_frame_count": 2541,
+      "first_common_time": 2134.36,
+      "last_common_time": 2185.16,
+      "read_start_sample": 1091668,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1091668,
+        "read_end_sample_exclusive": 1120179,
+        "read_sample_count": 28511,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 27393,
+        "complete_support_negative_minimum_before_clip": -5.485217792248897e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2541
+        ],
+        "envelope.npy": [
+          2541,
+          1
+        ],
+        "logmel.npy": [
+          2541,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2541,
+          768
+        ],
+        "neural_power_native.npy": [
+          28511,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-047",
+      "stimulus_id": "s0203b-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s0203b-ex01_normed.wav",
+      "start_seconds": 2195.59221075,
+      "end_seconds": 2238.5436393214286,
+      "source_audio_frames": 1894158,
+      "resampled_audio_frames": 687223,
+      "common_frame_count": 2013,
+      "first_common_time": 2196.7,
+      "last_common_time": 2236.94,
+      "read_start_sample": 1123584,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1123584,
+        "read_end_sample_exclusive": 1146694,
+        "read_sample_count": 23110,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 21992,
+        "complete_support_negative_minimum_before_clip": -7.533550562338097e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2013
+        ],
+        "envelope.npy": [
+          2013,
+          1
+        ],
+        "logmel.npy": [
+          2013,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2013,
+          768
+        ],
+        "neural_power_native.npy": [
+          23110,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-048",
+      "stimulus_id": "s1202b-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s1202b-ex01_normed.wav",
+      "start_seconds": 2249.15491276,
+      "end_seconds": 2283.6330306738323,
+      "source_audio_frames": 1520485,
+      "resampled_audio_frames": 551650,
+      "common_frame_count": 1590,
+      "first_common_time": 2250.26,
+      "last_common_time": 2282.04,
+      "read_start_sample": 1151008,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1151008,
+        "read_end_sample_exclusive": 1169780,
+        "read_sample_count": 18772,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 17654,
+        "complete_support_negative_minimum_before_clip": -4.9326920643616065e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1590
+        ],
+        "envelope.npy": [
+          1590,
+          1
+        ],
+        "logmel.npy": [
+          1590,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1590,
+          768
+        ],
+        "neural_power_native.npy": [
+          18772,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-049",
+      "stimulus_id": "s1503a-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s1503a-ex01_normed.wav",
+      "start_seconds": 2300.12855931,
+      "end_seconds": 2316.9841828927665,
+      "source_audio_frames": 743333,
+      "resampled_audio_frames": 269690,
+      "common_frame_count": 708,
+      "first_common_time": 2301.24,
+      "last_common_time": 2315.38,
+      "read_start_sample": 1177106,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1177106,
+        "read_end_sample_exclusive": 1186855,
+        "read_sample_count": 9749,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 8631,
+        "complete_support_negative_minimum_before_clip": -1.2469836364891282e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          708
+        ],
+        "envelope.npy": [
+          708,
+          1
+        ],
+        "logmel.npy": [
+          708,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          708,
+          768
+        ],
+        "neural_power_native.npy": [
+          9749,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-052",
+      "stimulus_id": "s1103a-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s1103a-ex01_normed.wav",
+      "start_seconds": 2388.45704755,
+      "end_seconds": 2443.1497459626985,
+      "source_audio_frames": 2411948,
+      "resampled_audio_frames": 875084,
+      "common_frame_count": 2600,
+      "first_common_time": 2389.56,
+      "last_common_time": 2441.54,
+      "read_start_sample": 1222331,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1222331,
+        "read_end_sample_exclusive": 1251452,
+        "read_sample_count": 29121,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 28003,
+        "complete_support_negative_minimum_before_clip": -1.2925147094483002e-13,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          2600
+        ],
+        "envelope.npy": [
+          2600,
+          1
+        ],
+        "logmel.npy": [
+          2600,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          2600,
+          768
+        ],
+        "neural_power_native.npy": [
+          29121,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    },
+    {
+      "sample_id": "sub-SD012_ses-02_task-PassiveListen__seg-053",
+      "stimulus_id": "s3003a-ex01",
+      "block_id": "block-05",
+      "split": "train",
+      "audio_file": "stimuli/excerpts/Block 5/s3003a-ex01_normed.wav",
+      "start_seconds": 2450.98091087,
+      "end_seconds": 2484.525287287234,
+      "source_audio_frames": 1479307,
+      "resampled_audio_frames": 536711,
+      "common_frame_count": 1543,
+      "first_common_time": 2452.08,
+      "last_common_time": 2482.92,
+      "read_start_sample": 1254343,
+      "sampling_rate_hz": 512,
+      "read": {
+        "read_start_sample": 1254343,
+        "read_end_sample_exclusive": 1272636,
+        "read_sample_count": 18293,
+        "support_edge_samples": 559,
+        "complete_support_start_offset": 1119,
+        "complete_support_end_offset_exclusive": 17175,
+        "complete_support_negative_minimum_before_clip": -5.726668648608894e-14,
+        "negative_power_absolute_tolerance": 1e-12,
+        "channel_count": 36,
+        "mne_preload": false
+      },
+      "tensor_shapes": {
+        "times.npy": [
+          1543
+        ],
+        "envelope.npy": [
+          1543,
+          1
+        ],
+        "logmel.npy": [
+          1543,
+          80
+        ],
+        "wav2vec2.npy": [
+          13,
+          1543,
+          768
+        ],
+        "neural_power_native.npy": [
+          18293,
+          36,
+          6
+        ]
+      },
+      "all_finite": true
+    }
+  ],
+  "necessary_gates": {
+    "input_readable_and_scope_exact": true,
+    "tensor_shapes_and_finite": true,
+    "split_and_stimulus_no_leakage": true
+  },
+  "summary": {
+    "variant_summaries": [
+      {
+        "variant": "amplitude_envelope",
+        "best_lag_seconds_descriptive_test_only": 0.05,
+        "median_test_pearson_r": 0.015699990569860094,
+        "test_pearson_r_iqr": [
+          0.005683351833578127,
+          0.02058446890777751
+        ],
+        "median_test_r2": -0.04265101973556864,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "log_mel_pca20",
+        "best_lag_seconds_descriptive_test_only": 0.5,
+        "median_test_pearson_r": 0.01760002132817242,
+        "test_pearson_r_iqr": [
+          0.006790171849753687,
+          0.029467043167157456
+        ],
+        "median_test_r2": -0.0492567115745289,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_00",
+        "best_lag_seconds_descriptive_test_only": 0.1,
+        "median_test_pearson_r": 0.015015635772827166,
+        "test_pearson_r_iqr": [
+          0.0019809841262775256,
+          0.0210185459278942
+        ],
+        "median_test_r2": -0.07768337364564433,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_01",
+        "best_lag_seconds_descriptive_test_only": 0.0,
+        "median_test_pearson_r": 0.03238889318603615,
+        "test_pearson_r_iqr": [
+          0.010957047279332667,
+          0.05390238874704298
+        ],
+        "median_test_r2": -0.09865274765737281,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_02",
+        "best_lag_seconds_descriptive_test_only": 0.05,
+        "median_test_pearson_r": 0.02842013589192373,
+        "test_pearson_r_iqr": [
+          0.011859014286765956,
+          0.036338035006869426
+        ],
+        "median_test_r2": -0.11370107527601889,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_03",
+        "best_lag_seconds_descriptive_test_only": 0.5,
+        "median_test_pearson_r": 0.027881372638857857,
+        "test_pearson_r_iqr": [
+          0.013158258918997601,
+          0.034517766745977486
+        ],
+        "median_test_r2": -0.10966963112830591,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_04",
+        "best_lag_seconds_descriptive_test_only": 0.15000000000000002,
+        "median_test_pearson_r": 0.02713755841213422,
+        "test_pearson_r_iqr": [
+          0.013257655724680729,
+          0.04539221236326362
+        ],
+        "median_test_r2": -0.10907664394562416,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_05",
+        "best_lag_seconds_descriptive_test_only": 0.5,
+        "median_test_pearson_r": 0.031244326339239743,
+        "test_pearson_r_iqr": [
+          0.01250278648603177,
+          0.04442901183318886
+        ],
+        "median_test_r2": -0.11353857062875307,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_06",
+        "best_lag_seconds_descriptive_test_only": 0.05,
+        "median_test_pearson_r": 0.027087170222642606,
+        "test_pearson_r_iqr": [
+          0.007885575858509391,
+          0.04108288952768238
+        ],
+        "median_test_r2": -0.11494323441037388,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_07",
+        "best_lag_seconds_descriptive_test_only": 0.1,
+        "median_test_pearson_r": 0.03465478182609133,
+        "test_pearson_r_iqr": [
+          0.018572589427171153,
+          0.04703677459501723
+        ],
+        "median_test_r2": -0.12425354582911027,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_08",
+        "best_lag_seconds_descriptive_test_only": 0.4,
+        "median_test_pearson_r": 0.028278420863870515,
+        "test_pearson_r_iqr": [
+          0.011632400547906097,
+          0.037548789851164804
+        ],
+        "median_test_r2": -0.13200301794645367,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_09",
+        "best_lag_seconds_descriptive_test_only": 0.2,
+        "median_test_pearson_r": 0.03866712391366953,
+        "test_pearson_r_iqr": [
+          0.02015336424735564,
+          0.055300116007171295
+        ],
+        "median_test_r2": -0.10713272396010394,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_10",
+        "best_lag_seconds_descriptive_test_only": 0.5,
+        "median_test_pearson_r": 0.029800361731314836,
+        "test_pearson_r_iqr": [
+          0.011844985208586723,
+          0.041779767422224716
+        ],
+        "median_test_r2": -0.10603542173763629,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_11",
+        "best_lag_seconds_descriptive_test_only": 0.25,
+        "median_test_pearson_r": 0.025948052558382922,
+        "test_pearson_r_iqr": [
+          0.00662988057921488,
+          0.0375405105927273
+        ],
+        "median_test_r2": -0.10418610509555155,
+        "estimable_electrodes": 36
+      },
+      {
+        "variant": "wav2vec2_12",
+        "best_lag_seconds_descriptive_test_only": 0.25,
+        "median_test_pearson_r": 0.03773000238639803,
+        "test_pearson_r_iqr": [
+          0.021569199710736894,
+          0.05097978715388171
+        ],
+        "median_test_r2": -0.14004184227896574,
+        "estimable_electrodes": 36
+      }
+    ],
+    "wav2vec2_layer_names": [
+      "projected",
+      "transformer_01",
+      "transformer_02",
+      "transformer_03",
+      "transformer_04",
+      "transformer_05",
+      "transformer_06",
+      "transformer_07",
+      "transformer_08",
+      "transformer_09",
+      "transformer_10",
+      "transformer_11",
+      "transformer_12"
+    ],
+    "best_wav2vec2_layer_lag_descriptive_test_only": {
+      "variant": "wav2vec2_09",
+      "best_lag_seconds_descriptive_test_only": 0.2,
+      "median_test_pearson_r": 0.03866712391366953,
+      "test_pearson_r_iqr": [
+        0.02015336424735564,
+        0.055300116007171295
+      ],
+      "median_test_r2": -0.10713272396010394,
+      "estimable_electrodes": 36
+    },
+    "wav2vec2_family_null": {
+      "declared_cell_count": 5148,
+      "effective_cell_count": 5148,
+      "excluded_cell_count": 0,
+      "observed_max_pearson_r": 0.09163285856242549,
+      "null_max_pearson_r": [
+        0.07504128520615687,
+        0.05336339698938485,
+        0.04799600621902593,
+        0.07027534514629966,
+        0.05435620262258178,
+        0.08243353620684984,
+        0.06250145153369543,
+        0.06017421069494364,
+        0.09586897641120841,
+        0.052485414814045096,
+        0.07054562670307955,
+        0.056145206075719226,
+        0.07672320666568684,
+        0.07379345949769399,
+        0.05679243589099014,
+        0.09876972141569446,
+        0.05853193598575799,
+        0.0570849754554505,
+        0.07379323130027227,
+        0.1201835973006147
+      ],
+      "null_max_percentile_of_observed": 85.0,
+      "exceedance_count_max_null_ge_observed": 3,
+      "mechanical_smoke_p": 0.19047619047619047,
+      "stable_significance_claimed": false
+    },
+    "acoustic_family_null": {
+      "declared_cell_count": 792,
+      "effective_cell_count": 792,
+      "excluded_cell_count": 0,
+      "observed_max_pearson_r": 0.061501998977420945,
+      "null_max_pearson_r": [
+        0.06084733271747644,
+        0.04939816286782217,
+        0.05629936225747094,
+        0.057144524124558414,
+        0.05491964388212612,
+        0.06411479369728959,
+        0.039082532337614946,
+        0.0608438279653589,
+        0.07690657311160941,
+        0.06639162983163147,
+        0.07144079784073555,
+        0.06407610082017214,
+        0.0645994083802555,
+        0.07353980324365256,
+        0.05483586138045508,
+        0.053969251202875865,
+        0.05331274468697741,
+        0.06226012808024175,
+        0.06645496994439819,
+        0.08240320852197121
+      ],
+      "null_max_percentile_of_observed": 50.0,
+      "exceedance_count_max_null_ge_observed": 10,
+      "mechanical_smoke_p": 0.5238095238095238,
+      "stable_significance_claimed": false
+    },
+    "derangements": [
+      {
+        "draw_index": 1,
+        "enumerated_space_index": 8051,
+        "duration_mismatch_sum_seconds": 154.35714285714286,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 2,
+        "enumerated_space_index": 12835,
+        "duration_mismatch_sum_seconds": 156.53814058956917,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 3,
+        "enumerated_space_index": 14252,
+        "duration_mismatch_sum_seconds": 105.72426303854874,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 4,
+        "enumerated_space_index": 13085,
+        "duration_mismatch_sum_seconds": 135.34426303854875,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 5,
+        "enumerated_space_index": 6145,
+        "duration_mismatch_sum_seconds": 162.78326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 6,
+        "enumerated_space_index": 7765,
+        "duration_mismatch_sum_seconds": 103.62675736961451,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 7,
+        "enumerated_space_index": 13881,
+        "duration_mismatch_sum_seconds": 133.16326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 8,
+        "enumerated_space_index": 5485,
+        "duration_mismatch_sum_seconds": 124.73360544217687,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 9,
+        "enumerated_space_index": 8734,
+        "duration_mismatch_sum_seconds": 162.78326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 10,
+        "enumerated_space_index": 3024,
+        "duration_mismatch_sum_seconds": 139.4936507936508,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 11,
+        "enumerated_space_index": 10186,
+        "duration_mismatch_sum_seconds": 162.78326530612244,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 12,
+        "enumerated_space_index": 378,
+        "duration_mismatch_sum_seconds": 118.29977324263038,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 13,
+        "enumerated_space_index": 283,
+        "duration_mismatch_sum_seconds": 65.38839002267574,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 14,
+        "enumerated_space_index": 5360,
+        "duration_mismatch_sum_seconds": 141.58938775510205,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 15,
+        "enumerated_space_index": 1600,
+        "duration_mismatch_sum_seconds": 75.88811791383219,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 16,
+        "enumerated_space_index": 6526,
+        "duration_mismatch_sum_seconds": 154.35714285714286,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 17,
+        "enumerated_space_index": 11905,
+        "duration_mismatch_sum_seconds": 109.8736507936508,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 18,
+        "enumerated_space_index": 10834,
+        "duration_mismatch_sum_seconds": 130.98049886621317,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 19,
+        "enumerated_space_index": 4830,
+        "duration_mismatch_sum_seconds": 103.62675736961451,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      },
+      {
+        "draw_index": 20,
+        "enumerated_space_index": 6615,
+        "duration_mismatch_sum_seconds": 112.0546485260771,
+        "target_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043"
+        ],
+        "donor_sample_ids": [
+          "sub-SD012_ses-02_task-PassiveListen__seg-040",
+          "sub-SD012_ses-02_task-PassiveListen__seg-036",
+          "sub-SD012_ses-02_task-PassiveListen__seg-043",
+          "sub-SD012_ses-02_task-PassiveListen__seg-037",
+          "sub-SD012_ses-02_task-PassiveListen__seg-042",
+          "sub-SD012_ses-02_task-PassiveListen__seg-039",
+          "sub-SD012_ses-02_task-PassiveListen__seg-041",
+          "sub-SD012_ses-02_task-PassiveListen__seg-038"
+        ],
+        "identity_pair_count": 0,
+        "mapping_shared_across_all_features_layers_lags_electrodes_and_families": true
+      }
+    ]
+  },
+  "elapsed_seconds": 161.36149486806244,
+  "scientific_boundary": {
+    "single_subject_single_recording_preliminary": true,
+    "stable_significance_claimed": false,
+    "region_summary": "NOT_ESTIMABLE",
+    "subject_heldout_generalization_claimed": false,
+    "speaker_heldout_generalization_claimed": false,
+    "cross_language_generalization_claimed": false
+  }
+}

@@ -355,9 +355,12 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
 
     g4_protocol = config.get("g4_protocol", {})
     expected_g4_protocol = {
-        "status": "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
-        "coordinator_review": "PENDING",
-        "reviewed_on": None,
+        "status": "G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED",
+        "candidate_status": (
+            "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+        ),
+        "coordinator_review": "ACCEPT",
+        "reviewed_on": "2026-08-13",
         "config_path": "configs/m6a_g4_protocol_candidate.json",
         "candidate_report": "reports/g4_protocol_amendment_candidate_20260813_v2.json",
         "prior_accepted_status": "G4_PROTOCOL_COORDINATOR_ACCEPTED",
@@ -366,16 +369,20 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         "g3_raw_input_representation_reuse_for_g4_scientific_baseline_allowed": False,
         "scientific_result_claimed": False,
         "g4_execution_authorized": False,
-        "preflight_status": (
+        "preflight_status": "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_COORDINATOR_ACCEPTED",
+        "preflight_candidate_status": (
             "G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_"
             "AWAITING_COORDINATOR_REVIEW"
         ),
+        "preflight_coordinator_review": "ACCEPT",
+        "preflight_reviewed_on": "2026-08-13",
         "preflight_config_path": (
             "configs/m6a_g4_resource_runtime_preflight_candidate.json"
         ),
         "preflight_report": (
             "reports/g4_resource_runtime_preflight_candidate_20260813_v3.json"
         ),
+        "next_gate": "G4_EXECUTION_PIPELINE_CANDIDATE_REQUIRED",
     }
     if g4_protocol != expected_g4_protocol:
         errors.append("G4 protocol amendment or preflight candidate pointer drifted")
@@ -421,9 +428,7 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
 
     features = config.get("features", {})
     expected_features = {
-        "protocol_status": (
-            "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
-        ),
+        "protocol_status": "G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED",
         "protocol_config_path": "configs/m6a_g4_protocol_candidate.json",
         "acoustic_baselines": [
             "amplitude_envelope",
@@ -439,9 +444,9 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     baseline = config.get("baseline", {})
     if (
         baseline.get("protocol_status")
-        != "G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+        != "G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED"
     ):
-        errors.append("baseline must remain blocked on the G4 protocol amendment review")
+        errors.append("baseline must retain the accepted G4 protocol amendment status")
     if baseline.get("primary") != "layerwise_ridge_encoding":
         errors.append("primary baseline must be layerwise_ridge_encoding")
     if (

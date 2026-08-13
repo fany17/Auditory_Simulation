@@ -59,7 +59,7 @@
 - 参数：完全冻结，不训练、不微调
 - revision：使用 mutable `main` 在 2026-08-13 的 2203 解析快照；2203 无法直连官方 endpoint，清华 TUNA 旧 Hugging Face 路径已下线且实测 404，因此固定使用单一 `https://hf-mirror.com` endpoint。第三方镜像、mutable `main` 与 no-hash 政策共同意味着不能提供密码学完整性或不可变 provenance；仅以文件名、字节数、时间戳、配置语义、`weights_only=true` tensor-only/关键 shape 与库版本形成受限非密码学审计。候选语义验证后缓存状态冻结为 `SEMANTICALLY_VALIDATED_REMOTE_ONLY`，模型下载权限关闭，禁止再次按 mutable `main` 静默替换
 
-G4 科学执行前新增的实质性 preprocessing 修订当前仅为 `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，不改变原 G4 协议已接受的历史 provenance，也不得在协调复核前标为 accepted。机器契约固定 `preprocessor_config.json` 的 `feature_size=1`、`sampling_rate=16000`、`padding_value=0.0`、`do_normalize=true`、`return_attention_mask=false`、`padding_side=right`；每个 passage 独立按 float32 population variance (`ddof=0`) 与 epsilon `1e-7` 做 zero-mean/unit-variance normalization，无 padding。常数或 non-finite waveform fail closed；`return_attention_mask=false` 时正式入口不传 attention mask。validation/test 使用同一无训练参数的逐 passage 规则，不共享统计量。
+G4 科学执行前新增的实质性 preprocessing 修订已于 2026-08-13 获协调接受，项目状态为 `G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED`；其候选证据仍保留原候选状态与唯一 v2 指针，不改变原 G4 协议已接受的历史 provenance。机器契约固定 `preprocessor_config.json` 的 `feature_size=1`、`sampling_rate=16000`、`padding_value=0.0`、`do_normalize=true`、`return_attention_mask=false`、`padding_side=right`；每个 passage 独立按 float32 population variance (`ddof=0`) 与 epsilon `1e-7` 做 zero-mean/unit-variance normalization，无 padding。常数或 non-finite waveform fail closed；`return_attention_mask=false` 时正式入口不传 attention mask。validation/test 使用同一无训练参数的逐 passage 规则，不共享统计量。资源/runtime preflight 同日获协调接受，但正式 G4 执行管线仍须另立候选并审核，当前 `g4_execution_authorized=false`。
 
 清华 TUNA 路径已在 2203 无代理实测为 HTTP 404；有限回退的单一 `https://hf-mirror.com` endpoint 返回 HTTP 200。只记录响应状态、正文 bytes、时间戳与配置语义，不读取或记录 ETag，也不执行哈希/校验和。G3 既有 raw-input wav2vec2 representation 只保留工程 shape/time 证据，机器边界为 `MUST_NOT_REUSE_FOR_G4_SCIENTIFIC_BASELINE`，无需重算 G3。
 
@@ -110,7 +110,7 @@ G4 科学执行前新增的实质性 preprocessing 修订当前仅为 `G4_PROTOC
 
 首轮 neural target method 已由协调二审 `ACCEPT` 并冻结：主目标为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
 
-冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 与 2.0 s final embargo/baseline-final split 已于 2026-08-13 获协调者接受。G3 单 recording 候选也已由协调者接受，状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`，但只证明工程时间轴、shape 与有界读取。原 G4 协议已获协调接受；当前 preprocessing 修订与资源/runtime preflight 分别仍为候选，`g4_execution_authorized=false`、全数据 `neural_extraction_allowed=false`；这些接受均不等于 M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
+冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 与 2.0 s final embargo/baseline-final split 已于 2026-08-13 获协调者接受。G3 单 recording 候选也已由协调者接受，状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`，但只证明工程时间轴、shape 与有界读取。原 G4 协议、preprocessing 修订与资源/runtime preflight 均已获协调接受；候选报告仍保留候选证据语义。当前 `g4_execution_authorized=false`、全数据 `neural_extraction_allowed=false`，下一步必须先通过正式执行管线候选审核；这些接受均不等于 M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
 
 主模型为 ridge encoding：
 

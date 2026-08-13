@@ -3,8 +3,9 @@
 | 字段 | 内容 |
 |---|---|
 | 日期 | 2026-08-13 |
-| 状态 | `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
-| 协议依赖 | `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 候选状态 | `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 协调结论 | `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_COORDINATOR_ACCEPTED`（2026-08-13） |
+| 协议依赖 | `G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED` |
 | 配置 | `configs/m6a_g4_resource_runtime_preflight_candidate.json` |
 | schema | `schemas/m6a_g4_resource_runtime_preflight_candidate.schema.json` |
 | 当前机器报告 | `reports/g4_resource_runtime_preflight_candidate_20260813_v3.json` |
@@ -15,7 +16,7 @@
 
 本节点只执行 2203 空间只读盘点、轻量 manifest 最长 passage 身份选择、preprocessor 语义审计，以及确定性 synthetic mono waveform 的 passage-global wav2vec2 canary。未读取新真实 EDF/audio，未提取真实特征，未运行 ridge、null 或指标；`g4_execution_authorized=false`、`scientific_result_claimed=false`、`exchange_candidate_created=false`。
 
-已接受原 G4 协议的历史 provenance 保持不变。passage-wise wav2vec2 preprocessing 是新的实质性补充，因此当前协议状态仅为 `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`；preflight 也仅为候选，二者均不得作为 G4 执行授权。
+已接受原 G4 协议的历史 provenance 保持不变。passage-wise wav2vec2 preprocessing 修订与本 preflight 候选均已由协调独立复核并接受；候选报告仍保留候选生成时的机器状态。二者只解除正式执行管线候选的依赖，不得直接作为真实 G4 执行授权。
 
 ## 镜像与 preprocessor 语义
 

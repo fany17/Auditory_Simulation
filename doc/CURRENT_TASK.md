@@ -28,14 +28,16 @@
 
 ## 当前节点
 
-当前节点同时受两个候选门禁约束：`G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW` 与 `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`：
+当前节点为 `G4_MINIMAL_SD012_SES02_PRELIMINARY_COMPLETE_AWAITING_COORDINATOR_REVIEW`：
 
 - 协调者已于 2026-08-13 接受 final-embargo candidate；`final_embargo_seconds=2.0`、`final_embargo_status=FINAL_EMBARGO_COORDINATOR_ACCEPTED`、`split_status=BASELINE_FINAL_COORDINATOR_ACCEPTED`、`baseline_final=true`。这只接受当前 split/final embargo，不是整条 M6A、artifact 或科学结论 PASS/FROZEN；
 - 唯一主模型 `facebook/wav2vec2-base` 缓存保持 `SEMANTICALLY_VALIDATED_REMOTE_ONLY`，`model.download_allowed=false`；mutable `main`、第三方镜像与 no-hash 政策不能提供密码学完整性或不可变 provenance；
 - G3 单 recording 候选已由协调者接受，机器状态为 `G3_SINGLE_RECORDING_COORDINATOR_ACCEPTED_ENGINEERING_ONLY`。它只证明预声明一个 recording/一个 train passage 的有界读取、时间轴、shape 与数组可读性，不是科学结果。其既有 wav2vec2 raw-input representation 仅保留工程 shape/time 证据，状态为 `MUST_NOT_REUSE_FOR_G4_SCIENTIFIC_BASELINE`，不重算 G3；全数据 `neural_extraction_allowed=false`；
-- 已接受的 G4 原协议历史报告保持 `G4_PROTOCOL_COORDINATOR_ACCEPTED`。当前实质性修订只新增 passage-wise wav2vec2 preprocessing：固定 16 kHz、逐 passage 独立 zero-mean/unit-variance、无 padding、`return_attention_mask=false` 时不传 attention mask，并用本地 `Wav2Vec2FeatureExtractor` 严格等价核对。修订在协调复核前不得静默继承 accepted 状态；
+- 已接受的 G4 原协议历史报告保持 `G4_PROTOCOL_COORDINATOR_ACCEPTED`。实质性修订只新增 passage-wise wav2vec2 preprocessing：固定 16 kHz、逐 passage 独立 zero-mean/unit-variance、无 padding、`return_attention_mask=false` 时不传 attention mask，并用本地 `Wav2Vec2FeatureExtractor` 严格等价核对；该修订已于 2026-08-13 独立复核并接受为 `G4_PROTOCOL_AMENDMENT_COORDINATOR_ACCEPTED`；
 - G4 范围继续只覆盖同一受试者、同一 `sub-SD012_ses-02_task-PassiveListen` recording 的 24/8/8 train/validation/test passages，排除 `ses-01`，并冻结 exact `t+lag`、所有 lag 共用的 train-only target transform、固定 20 维 log-mel PCA rank 门禁、ridge SVD 复用、test-only stimulus derangement 与 max-statistic smoke 流程；
-- preflight 候选只使用 synthetic longest-passage waveform 和只读空间盘点。`g4_execution_authorized=false`；本轮不读取新 EDF/audio、不提取真实特征、不运行 ridge/null/指标。任何真实 G4 执行仍需协调接受协议修订与 preflight 后另行授权。
+- preflight 只使用 synthetic longest-passage waveform 和只读空间盘点，已于 2026-08-13 独立复核并接受为 `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_COORDINATOR_ACCEPTED`。随后按用户要求优先取得初期结果，在 2203 完成最小 G4：40 passages、36 electrodes、15 feature variants、既定 lag/ridge/test-once 与 20 个预声明 stimulus derangement；真实运行 161.36149486806244 s。当前结果等待协调审核，不扩展其他 recording/subject；
+- 初期结果：amplitude envelope 描述性最佳中位 test Pearson r=0.0157（lag 0.05 s），log-mel PCA20 为 0.0176（lag 0.50 s），wav2vec2 描述性最佳为 Transformer 09 的 0.0387（lag 0.20 s）。wav2vec2/acoustic 20-null 机械性 p 分别为 0.1905/0.5238；各 feature variant 描述性最佳 lag 的中位 R2 均为负。本结果仅为单被试单 recording preliminary，不提供稳定显著性、脑区或泛化结论；
+- 核心机器报告为 `reports/g4_preliminary_report_20260813.json`，简报为 `reports/M6A-PUBLIC-001_G4_MINIMAL_PRELIMINARY_RESULTS.md`；约 3.70 GB 高维输出继续只位于 `/home/fanyu/auditory_simulation_m6a/outputs/g4_minimal_sd012_ses02_preliminary_20260813`。当前没有 M6A→M6B exchange candidate，consumer cross-test 仍未运行。
 
 ## 硬停止条件
 
@@ -68,5 +70,5 @@
 - 当前 split 只支持 within-subject unseen-stimulus/block generalization；不支持 subject-held-out、speaker-held-out 或 cross-language；
 - M6A→M6B exchange contract review：`REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`；consumer 为 `READY_WAITING_M6A_CANDIDATE`。真实 exchange candidate 尚无、consumer cross-test 未运行，contract 未 accepted/frozen；candidate 准备仍受 final embargo/split guard 和真实 method/runtime/canary 门禁约束。
 - G2 promotion gate：历史机器入口为 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，所有 required checks 为 true；`g2_pass_claimed=false`、`candidate_contains_raw_data=false`。首次因额外要求 C-prefix 名称唯一而 fail closed 的报告已保留；实际协调要求的 eligible 名单唯一性与 1346/727 聚合均通过。协调者独立验收后当前 G2 状态为 `G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE`。
-- 最新联合验证：2203 专用环境为 `147 passed, 349 subtests`，Ruff 对完整 `src scripts tests` 通过，mypy 对完整 46 个文件通过，主 config gate 为 `PASS`。已接受原 G4 协议的历史机器报告仍为 `reports/g4_protocol_candidate_20260813_v3.json`；当前修订候选 `reports/g4_protocol_amendment_candidate_20260813_v2.json` 为 9/9 required checks true，当前 preflight 候选 `reports/g4_resource_runtime_preflight_candidate_20260813_v3.json` 为 15/15 true。两者均不得在协调复核前写为 accepted。
-- 候选治理：协议修订仅 v2、preflight 仅 v3 可标记 `current_candidate=true`；无版本协议修订报告与 preflight v2 均为 `SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE`，原始 preflight 与镜像无版本报告继续保持 `FAIL`。原协议 accepted v3 报告的 config 路径现已发生 amendment，其机器接受范围明确排除 `WAV2VEC2_PREPROCESSING_INPUT_CONTRACT`；不得据此宣称 amendment accepted。首次 hf-mirror 403 只保留 provenance，不构成当前 preflight PASS 的必要条件。
+- 协调最终独立复核：2203 专用环境为 `151 passed, 355 subtests`，Ruff 对完整 `src scripts tests` 通过，mypy 对完整 46 个文件通过，主 config gate 为 `PASS`；协议修订候选 9/9、preflight 候选 15/15 required checks 均为 true。协调接受记录位于主配置，候选报告本身保持候选证据语义；接受只解除下一步“实现执行管线”的依赖，不直接授权真实 G4。
+- 候选治理：协议修订仅 v2、preflight 仅 v3 可标记 `current_candidate=true`；无版本协议修订报告与 preflight v2 均为 `SUPERSEDED_PROVENANCE_NOT_CURRENT_CANDIDATE`，原始 preflight 与镜像无版本报告继续保持 `FAIL`。原协议 accepted v3 报告的 config 路径现已发生 amendment，其历史接受范围明确排除 `WAV2VEC2_PREPROCESSING_INPUT_CONTRACT`；本次 amendment 接受由主配置中的独立协调复核记录提供。首次 hf-mirror 403 只保留 provenance，不构成当前 preflight PASS 的必要条件。

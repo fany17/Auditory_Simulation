@@ -44,7 +44,7 @@ Auditory_Simulation/
 - 当前唯一任务：`M6A-PUBLIC-001`，冻结 OpenNeuro `ds004703 v1.1.0` 并建立最小逐层对齐基线。
 - 首轮模型策略：冻结 `facebook/wav2vec2-base`，不微调声音基座；HuBERT/WavLM 留待后续对照任务。
 - 执行状态：`ACTIVE_EXECUTION`；专用环境、公开数据、公开模型和轻量分析均获授权在 2203 执行。
-- 当前节点：既有 G4 协议已获协调接受；wav2vec2 passage-wise preprocessing 属于实质性协议补充，当前状态仅为 `G4_PROTOCOL_AMENDMENT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`。资源与运行预检也仅为 `G4_RESOURCE_AND_RUNTIME_PREFLIGHT_CANDIDATE_AWAITING_COORDINATOR_REVIEW`。尚未读取新真实数据、运行 ridge/null/指标或获得 G4 执行授权；这不等于 G4、整条 M6A 或科学结果通过。
+- 当前节点：最小 G4 已在 2203 完成同一 `sub-SD012_ses-02_task-PassiveListen` recording 的 40 passages（24/8/8），形成单被试 preliminary held-out 指标与 20-null 机械检查，状态为 `G4_MINIMAL_SD012_SES02_PRELIMINARY_COMPLETE_AWAITING_COORDINATOR_REVIEW`。这不是协调接受的正式 G4 科学结果；当前仍无 M6A→M6B exchange candidate 或 consumer cross-test。
 - 许可边界：CC0 元数据与 README 更严格限制共同执行；仅限非商业学术研究、禁止再识别、禁止原始数据外传。
 - 完整性边界：只使用文件名、字节数、时间戳、数量、schema 与抽样可读性；不进行任何哈希或校验和验证。
 - `test/` 中既有 Demo 不自动升级为 M6A 正式结果。
