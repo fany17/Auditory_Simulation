@@ -30,18 +30,40 @@
     "interactive_terms_stop": true,
     "remote_root": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0"
   },
+  "g2": {
+    "status": "G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE",
+    "coordinator_review": "ACCEPT",
+    "reviewed_on": "2026-08-13",
+    "candidate_gate_report": "reports/ds004703_g2_promotion_gate_candidate.json",
+    "whole_m6a_pass_claimed": false
+  },
   "model": {
     "model_id": "facebook/wav2vec2-base",
     "role": "FROZEN_SPEECH_SSL_ENCODER",
     "declared_license": "Apache-2.0",
     "revision_label": "main",
-    "resolved_at": "2026-08-11",
-    "revision_limitation": "NON_IMMUTABLE_LABEL_UNDER_NO_HASH_POLICY",
+    "resolved_at": "2026-08-13",
+    "revision_limitation": "MUTABLE_MAIN_LABEL_NON_CRYPTOGRAPHIC_REPRODUCIBILITY_ONLY",
+    "source_endpoint": "https://hf-mirror.com",
+    "source_endpoint_role": "PUBLIC_HUGGING_FACE_ENDPOINT_MIRROR",
+    "source_endpoint_limitation": "THIRD_PARTY_MIRROR_PLUS_MUTABLE_MAIN_AND_NO_HASH_POLICY_DO_NOT_PROVIDE_CRYPTOGRAPHIC_INTEGRITY_OR_IMMUTABLE_PROVENANCE",
     "sampling_rate_hz": 16000,
     "hidden_state_count_expected": 13,
     "trainable": false,
-    "download_allowed": true,
-    "remote_cache": "/home/fanyu/auditory_simulation_m6a/cache/huggingface"
+    "download_allowed": false,
+    "cache_state": "SEMANTICALLY_VALIDATED_REMOTE_ONLY",
+    "remote_cache": "/home/fanyu/auditory_simulation_m6a/cache/huggingface/facebook_wav2vec2_base_main_20260813",
+    "inference_input": {
+      "source_sampling_rate_hz": 44100,
+      "model_sampling_rate_hz": 16000,
+      "channels": 1,
+      "mono_policy": "REQUIRE_MONO_NO_IMPLICIT_DOWNMIX",
+      "passage_policy": "ONE_ELIGIBLE_PASSAGE_PER_INFERENCE_CALL",
+      "neighbor_audio_read_allowed": false,
+      "batch_padding": "FORBIDDEN_PRIMARY_INFERENCE",
+      "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE",
+      "transformer_local_receptive_field_claimed": false
+    }
   },
   "split": {
     "primary_analysis": "stimulus_generalization",
@@ -81,17 +103,19 @@
       "block-06": "train"
     },
     "temporal_context_key": "recording_id",
-    "split_status": "PRELIMINARY_NOT_BASELINE_FINAL",
+    "split_status": "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL",
     "baseline_final": false,
     "preliminary_minimum_embargo_seconds": 2.0,
     "final_embargo_seconds": null,
-    "final_embargo_status": "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_GUARD_RERUN",
-    "final_embargo_formula": "max(preliminary_minimum_embargo_seconds, maximum_encoding_lag_seconds, filter_or_padding_edge_seconds, audio_model_receptive_field_or_context_overlap_seconds)",
+    "final_embargo_candidate_seconds": 2.0,
+    "final_embargo_status": "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+    "final_embargo_formula": "max(preliminary_minimum_embargo_seconds, maximum_encoding_lag_seconds, filter_or_padding_edge_seconds, audio_cross_split_context_overlap_seconds, audio_resampling_edge_seconds)",
     "final_embargo_components_seconds": {
       "preliminary_minimum_embargo_seconds": 2.0,
       "maximum_encoding_lag_seconds": 0.5,
       "filter_or_padding_edge_seconds": 1.091796875,
-      "audio_model_receptive_field_or_context_overlap_seconds": null
+      "audio_cross_split_context_overlap_seconds": 0.0,
+      "audio_resampling_edge_seconds": 0.0006349206349206349
     },
     "primary_generalization_scope": "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY",
     "subject_heldout_claim_allowed": false,

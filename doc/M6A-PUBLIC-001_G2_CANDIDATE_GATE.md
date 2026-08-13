@@ -2,7 +2,7 @@
 
 | 字段 | 内容 |
 |---|---|
-| 状态 | `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW` |
+| 状态 | `G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE` |
 | 当前是否为 G2 candidate | `YES` |
 | 完整性策略 | `NON_HASH_AUDIT` |
 | 后续模型/神经/baseline | `NOT_AUTHORIZED_BEFORE_LATER_GATES` |
@@ -40,14 +40,14 @@
 
 ## 4. Candidate 输出
 
-G2 candidate 只包含轻量报告、inventory、recording metadata、split/guard 与失败边界，不包含原始数据。单一机器入口为 `scripts/g2_promotion_gate.py`；它只组合固定版本的 dataset audit、neural metadata audit、split guard 与主 config，不重复读取数据。缺输入、陈旧状态、非有限数、字段缺失或任一 required check 非 true 均 fail closed。输出只能是 `PENDING`、`FAIL` 或 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，不能自称 G2 PASS。当前真实入口输出为 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，仍等待协调者独立验收。
+G2 candidate 只包含轻量报告、inventory、recording metadata、split/guard 与失败边界，不包含原始数据。单一机器入口为 `scripts/g2_promotion_gate.py`；它只组合固定版本的 dataset audit、neural metadata audit、split guard 与主 config，不重复读取数据。缺输入、陈旧状态、非有限数、字段缺失或任一 required check 非 true 均 fail closed。该历史机器入口输出为 `G2_CANDIDATE_AWAITING_COORDINATOR_REVIEW`，从未自称 G2 PASS。协调者于 2026-08-13 独立核对后给出 `G2_CANDIDATE_REVIEW=ACCEPT`；当前推进状态因此原位更新为 `G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE`，但这不表示整条 M6A PASS/FROZEN。
 
 ## 5. G2 之后仍独立阻塞的门禁
 
 - `ANATOMY_MAPPING_NOT_READY`：不阻塞电极级 method smoke，但 `region_summary=NOT_ESTIMABLE`；
 - 逐 recording `iEEGReference` 必须记录并在 11 个 sidecar 中一致为 `scalp electrode, not included with data`；首轮只能使用 `AS_RECORDED_SCALP_REFERENCE`；
 - neural target 方法已冻结为 `METHOD_FROZEN_AWAITING_EXECUTION_GATES`，但 `neural_extraction_allowed=false`；这不等于 G3、整条 M6A 或 exchange contract 已冻结；
-- G2 协调验收、audio cross-split context、final embargo 与 baseline-final split guard 仍是相互独立的执行阻塞项，`baseline_final=false`；
+- G2 协调验收已完成；audio cross-split context、final embargo 候选及 baseline-final split guard 仍是相互独立的执行阻塞项，`baseline_final=false`；
 - revised exchange DRAFT 虽已接受用于 candidate 准备，但真实 method/runtime/canary 尚无，consumer cross-test 仍 `NOT_RUN`。
 
 ## 6. 当前候选证据

@@ -481,7 +481,11 @@ def validate_g2_promotion(
     )
     checks["config_baseline_not_final"] = (
         _get(config, "split", "baseline_final") is False
-        and _get(config, "split", "split_status") == "PRELIMINARY_NOT_BASELINE_FINAL"
+        and _get(config, "split", "split_status")
+        in {
+            "PRELIMINARY_NOT_BASELINE_FINAL",
+            "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL",
+        }
         and _get(config, "split", "final_embargo_seconds") is None
     )
 

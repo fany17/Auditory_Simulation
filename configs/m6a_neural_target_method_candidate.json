@@ -111,10 +111,14 @@
     "execution_requires_separate_approval": true
   },
   "final_embargo": {
-    "formula": "max(2s, 0.5s, computed_filter_resampling_edge, measured_audio_cross_split_context_overlap)",
+    "formula": "max(2s, 0.5s, computed_neural_filter_resampling_edge, measured_audio_cross_split_context_overlap, audio_resampling_edge)",
     "computed_filter_resampling_edge_seconds_max": 1.091796875,
-    "audio_cross_split_context_overlap_seconds": null,
-    "status": "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_FINAL_SPLIT_GUARD",
+    "audio_cross_split_context_overlap_seconds": 0.0,
+    "audio_resampling_edge_seconds": 0.0006349206349206349,
+    "final_embargo_candidate_seconds": 2.0,
+    "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE",
+    "transformer_local_receptive_field_claimed": false,
+    "status": "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
     "baseline_final": false
   },
   "synthetic_test_thresholds": {
@@ -138,6 +142,7 @@
     "synthetic_tests_allowed": true,
     "real_neural_waveform_target_extraction_allowed": false,
     "model_download_allowed": false,
+    "model_cache_state": "SEMANTICALLY_VALIDATED_REMOTE_ONLY",
     "baseline_allowed": false
   }
 }

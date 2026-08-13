@@ -1,0 +1,1006 @@
+{
+  "report_schema_version": "m6a-audio-context-final-embargo-candidate-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "created_at_utc": "2026-08-13T07:44:55.490306+00:00",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "cryptographic_integrity_claim": false,
+  "model": {
+    "model_id": "facebook/wav2vec2-base",
+    "revision_label": "main",
+    "resolved_at": "2026-08-13",
+    "revision_limitation": "MUTABLE_MAIN_LABEL_NON_CRYPTOGRAPHIC_REPRODUCIBILITY_ONLY",
+    "source_endpoint": "https://hf-mirror.com",
+    "source_endpoint_role": "PUBLIC_HUGGING_FACE_ENDPOINT_MIRROR",
+    "source_endpoint_limitation": "THIRD_PARTY_MIRROR_PLUS_MUTABLE_MAIN_AND_NO_HASH_POLICY_DO_NOT_PROVIDE_CRYPTOGRAPHIC_INTEGRITY_OR_IMMUTABLE_PROVENANCE",
+    "declared_license": "Apache-2.0",
+    "trainable": false,
+    "cache_state": "SEMANTICALLY_VALIDATED_REMOTE_ONLY",
+    "configuration": {
+      "hidden_size": 768,
+      "num_hidden_layers": 12,
+      "conv_kernel": [
+        10,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "conv_stride": [
+        5,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "feat_extract_norm": "group",
+      "do_stable_layer_norm": false,
+      "model_input_sampling_rate_hz": 16000
+    },
+    "config_semantic_audit": {
+      "status": "PASS",
+      "observed": {
+        "model_type": "wav2vec2",
+        "architectures": [
+          "Wav2Vec2ForPreTraining"
+        ],
+        "hidden_size": 768,
+        "num_hidden_layers": 12,
+        "conv_dim": [
+          512,
+          512,
+          512,
+          512,
+          512,
+          512,
+          512
+        ],
+        "conv_kernel": [
+          10,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2
+        ],
+        "conv_stride": [
+          5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "errors": []
+    },
+    "weight_semantic_audit": {
+      "status": "PASS",
+      "weights_only": true,
+      "tensor_only": true,
+      "tensor_count": 218,
+      "key_parameter_shapes": {
+        "wav2vec2.feature_extractor.conv_layers.0.conv.weight": [
+          512,
+          1,
+          10
+        ],
+        "wav2vec2.feature_projection.projection.weight": [
+          768,
+          512
+        ],
+        "wav2vec2.encoder.layers.0.attention.q_proj.weight": [
+          768,
+          768
+        ],
+        "wav2vec2.encoder.layers.11.attention.q_proj.weight": [
+          768,
+          768
+        ]
+      },
+      "errors": []
+    }
+  },
+  "runtime": {
+    "python": "3.11.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.14.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.0",
+    "soundfile": "0.13.1",
+    "conda_environment": "auditory_m6a_public_001"
+  },
+  "model_cache_path": "/home/fanyu/auditory_simulation_m6a/cache/huggingface/facebook_wav2vec2_base_main_20260813",
+  "model_cache_remote_only": true,
+  "model_inventory": [
+    {
+      "path": "README.md",
+      "bytes": 1997,
+      "modified_at_utc": "2026-08-13T07:13:51.061409+00:00",
+      "sample_readability": true
+    },
+    {
+      "path": "config.json",
+      "bytes": 1842,
+      "modified_at_utc": "2026-08-13T07:13:53.800410+00:00",
+      "sample_readability": true
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 159,
+      "modified_at_utc": "2026-08-13T07:15:07.342413+00:00",
+      "sample_readability": true
+    },
+    {
+      "path": "pytorch_model.bin",
+      "bytes": 380267417,
+      "modified_at_utc": "2026-08-13T07:15:44.201414+00:00",
+      "sample_readability": true
+    }
+  ],
+  "model_inventory_total_bytes": 380271415,
+  "input_semantics": {
+    "source_sample_rate_hz": 44100,
+    "model_sample_rate_hz": 16000,
+    "channels": 1,
+    "mono_policy": "REQUIRE_MONO_NO_IMPLICIT_DOWNMIX",
+    "passage_policy": "ONE_ELIGIBLE_PASSAGE_PER_INFERENCE_CALL",
+    "crop_interval": "HALF_OPEN_INTEGER_SAMPLE_BOUNDS_WITHIN_STANDALONE_PASSAGE_FILE",
+    "neighbor_audio_read_allowed": false,
+    "batch_padding": "FORBIDDEN_PRIMARY_INFERENCE"
+  },
+  "resampling": {
+    "source_sample_rate_hz": 44100,
+    "target_sample_rate_hz": 16000,
+    "up": 160,
+    "down": 441,
+    "filter_design": "scipy.signal.firwin_kaiser_symmetric_finite_polyphase",
+    "filter_taps": 8821,
+    "kaiser_beta": 5.0,
+    "padtype": "constant_zero_passage_local",
+    "input_support_radius_samples": 28,
+    "output_support_radius_samples": 10,
+    "edge_seconds": 0.0006349206349206349
+  },
+  "split_sentinel": {
+    "status": "PASS",
+    "read_paths": [
+      "train/passage.wav"
+    ],
+    "forbidden_read_count": 0,
+    "heldout_sentinel_observed": false,
+    "output_samples": 1528
+  },
+  "model_canary": {
+    "device": "cuda",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "repository_custom_code_executed": false,
+    "loading_info": {
+      "missing_keys": [],
+      "unexpected_keys": [
+        "project_hid.bias",
+        "project_hid.weight",
+        "project_q.bias",
+        "project_q.weight",
+        "quantizer.codevectors",
+        "quantizer.weight_proj.bias",
+        "quantizer.weight_proj.weight"
+      ],
+      "mismatched_keys": [],
+      "error_msgs": []
+    },
+    "unexpected_key_semantics": "PREDECLARED_PRETRAINING_HEADS_EXCLUDED_FROM_FROZEN_BASE_ENCODER",
+    "model_eval": true,
+    "parameter_requires_grad_count": 0,
+    "source_samples": 66150,
+    "crop_start_sample": 11025,
+    "crop_end_sample_exclusive": 55125,
+    "cropped_samples": 44100,
+    "crop_half_open_interval_verified": true,
+    "resampled_samples": 16000,
+    "model_input_padding_samples": 0,
+    "attention_mask_all_ones": true,
+    "passage_local_resample_padding": true,
+    "layer_keys": [
+      "projected",
+      "transformer_01",
+      "transformer_02",
+      "transformer_03",
+      "transformer_04",
+      "transformer_05",
+      "transformer_06",
+      "transformer_07",
+      "transformer_08",
+      "transformer_09",
+      "transformer_10",
+      "transformer_11",
+      "transformer_12"
+    ],
+    "layer_shapes": [
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ],
+      [
+        1,
+        49,
+        768
+      ]
+    ],
+    "all_outputs_finite": true,
+    "hidden_state_selection_semantics": "feature_projection_output_plus_transformer_hidden_states_1_through_12; encoder hidden_states[0] is not relabeled as raw projection"
+  },
+  "frame_timing": {
+    "kernels": [
+      10,
+      3,
+      3,
+      3,
+      3,
+      2,
+      2
+    ],
+    "strides": [
+      5,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "cumulative_stride_samples": 320,
+    "receptive_field_samples": 400,
+    "convolutional_receptive_field_seconds": 0.025,
+    "expected_frames": 49,
+    "observed_frames": 49,
+    "first_frame_center_seconds": 0.01246875,
+    "last_frame_center_seconds": 0.97246875,
+    "frame_step_seconds": 0.02,
+    "timestamp_semantics": "SECONDS_FROM_ISOLATED_PASSAGE_START_AT_CONVOLUTION_SUPPORT_CENTER"
+  },
+  "context": {
+    "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE",
+    "transformer_local_receptive_field_claimed": false,
+    "cross_split_input_overlap_measured": true,
+    "audio_cross_split_context_overlap_seconds": 0.0,
+    "basis": "REAL_319_ROW_AUDIO_IDENTITY_GATE_PLUS_SYNTHETIC_PATH_SENTINEL"
+  },
+  "embargo_components_seconds": {
+    "preliminary_minimum_embargo_seconds": 2.0,
+    "maximum_encoding_lag_seconds": 0.5,
+    "filter_or_padding_edge_seconds": 1.091796875,
+    "audio_cross_split_context_overlap_seconds": 0.0,
+    "audio_resampling_edge_seconds": 0.0006349206349206349
+  },
+  "embargo_evaluation": {
+    "status": "FINAL_EMBARGO_CANDIDATE_READY",
+    "baseline_final": false,
+    "final_embargo_seconds": null,
+    "final_embargo_candidate_seconds": 2.0,
+    "pending_components": [],
+    "errors": []
+  },
+  "split_guard": {
+    "report_schema_version": "m6a-split-guard-final-embargo-candidate-v1",
+    "task_id": "M6A-PUBLIC-001",
+    "dataset_id": "ds004703",
+    "dataset_version": "1.1.0",
+    "status": "PASS",
+    "rows": 319,
+    "issues": [],
+    "embargo_status": "FINAL_EMBARGO_CANDIDATE_ONLY",
+    "final_embargo_candidate_seconds": 2.0,
+    "baseline_final": false,
+    "audio_identity": {
+      "status": "PASS",
+      "row_count": 319,
+      "audio_file_nonempty": true,
+      "empty_audio_file_rows": 0,
+      "unique_audio_file_count": 48,
+      "one_stimulus_per_audio_file": true,
+      "one_block_per_audio_file": true,
+      "one_split_per_audio_file": true,
+      "audio_file_cross_split_count": 0,
+      "audio_files_crossing_splits": [],
+      "sample_rate_hz_values": [
+        44100
+      ],
+      "channel_values": [
+        1
+      ],
+      "audio_source_status_values": [
+        "BUNDLED_BLOCK_AUDIO"
+      ],
+      "audio_file_assignments": [
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s1303a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1303a-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s1401a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1401a-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s1901b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1901b-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s2102a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s2102a-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s2301a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s2301a-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s3001b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3001b-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s3602b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3602b-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 1/s4002b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s4002b-ex01"
+          ],
+          "block_ids": [
+            "block-01"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s0703b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s0703b-ex01"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s1201a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1201a-ex01"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s2102a-ex02_normed.wav",
+          "stimulus_ids": [
+            "s2102a-ex02"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s2202b-ex02_normed.wav",
+          "stimulus_ids": [
+            "s2202b-ex02"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s3301a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3301a-ex01"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s3602b-ex02_normed.wav",
+          "stimulus_ids": [
+            "s3602b-ex02"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s3903b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3903b-ex01"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 2/s4003b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s4003b-ex01"
+          ],
+          "block_ids": [
+            "block-02"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s1001a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1001a-ex01"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s1303a-ex02_normed.wav",
+          "stimulus_ids": [
+            "s1303a-ex02"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s1401a-ex02_normed.wav",
+          "stimulus_ids": [
+            "s1401a-ex02"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s1501a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1501a-ex01"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s3201a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3201a-ex01"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s3301a-ex02_normed.wav",
+          "stimulus_ids": [
+            "s3301a-ex02"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s3703b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3703b-ex01"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 3/s3903b-ex02_normed.wav",
+          "stimulus_ids": [
+            "s3903b-ex02"
+          ],
+          "block_ids": [
+            "block-03"
+          ],
+          "splits": [
+            "validation"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s0202b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s0202b-ex01"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s0702a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s0702a-ex01"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s1604a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1604a-ex01"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s2102a-ex03_normed.wav",
+          "stimulus_ids": [
+            "s2102a-ex03"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s2801a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s2801a-ex01"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s3102b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3102b-ex01"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s3802a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3802a-ex01"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 4/s3902a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3902a-ex01"
+          ],
+          "block_ids": [
+            "block-04"
+          ],
+          "splits": [
+            "test"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s0203b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s0203b-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s0802b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s0802b-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s1103a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1103a-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s1202b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1202b-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s1401b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1401b-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s1503a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1503a-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s1703b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1703b-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 5/s3003a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3003a-ex01"
+          ],
+          "block_ids": [
+            "block-05"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s0305a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s0305a-ex01"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s0901b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s0901b-ex01"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s1203a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1203a-ex01"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s1503a-ex02_normed.wav",
+          "stimulus_ids": [
+            "s1503a-ex02"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s1702b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s1702b-ex01"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s2302b-ex01_normed.wav",
+          "stimulus_ids": [
+            "s2302b-ex01"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s3003a-ex02_normed.wav",
+          "stimulus_ids": [
+            "s3003a-ex02"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        },
+        {
+          "audio_file": "stimuli/excerpts/Block 6/s3801a-ex01_normed.wav",
+          "stimulus_ids": [
+            "s3801a-ex01"
+          ],
+          "block_ids": [
+            "block-06"
+          ],
+          "splits": [
+            "train"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "split_counts": {
+      "test": 48,
+      "train": 223,
+      "validation": 48
+    },
+    "block_assignments": {
+      "block-01": "train",
+      "block-02": "train",
+      "block-03": "validation",
+      "block-04": "test",
+      "block-05": "train",
+      "block-06": "train"
+    },
+    "language_counts": {
+      "en": 319
+    },
+    "catalan_rows": 0
+  },
+  "formal_feature_extraction_run": false,
+  "real_neural_waveform_read": false,
+  "baseline_run": false,
+  "exchange_candidate_created": false,
+  "scientific_result_claimed": false,
+  "required_checks": {
+    "report_identity": true,
+    "non_hash_policy": true,
+    "finite_numeric_values": true,
+    "g2_coordinator_acceptance": true,
+    "single_frozen_model_identity": true,
+    "model_config_frozen_profile": true,
+    "weight_container_safe_and_shaped": true,
+    "runtime_profile_present": true,
+    "model_inventory_exact_and_readable": true,
+    "input_semantics_frozen": true,
+    "finite_resampling_support": true,
+    "synthetic_split_sentinel": true,
+    "model_load_and_frozen_eval": true,
+    "base_encoder_load_is_complete": true,
+    "padding_and_crop_canary": true,
+    "projected_plus_12_layers": true,
+    "frame_count_and_center_mapping": true,
+    "context_scope_distinction": true,
+    "real_manifest_audio_identity": true,
+    "final_embargo_candidate": true,
+    "real_lightweight_split_guard": true,
+    "execution_remains_blocked": true
+  },
+  "failed_checks": [],
+  "status": "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
+}

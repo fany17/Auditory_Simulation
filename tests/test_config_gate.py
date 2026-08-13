@@ -28,6 +28,11 @@ class ConfigGateTests(unittest.TestCase):
         changed["model"]["trainable"] = True
         self.assertTrue(any("remain frozen" in item for item in validate_task_config(changed)))
 
+    def test_model_cache_is_validated_remote_only_and_download_closed(self) -> None:
+        model = self.config["model"]
+        self.assertIs(model["download_allowed"], False)
+        self.assertEqual(model["cache_state"], "SEMANTICALLY_VALIDATED_REMOTE_ONLY")
+
     def test_neural_target_method_is_frozen_but_execution_remains_blocked(self) -> None:
         target = self.config["neural_target"]
         self.assertEqual(target["status"], "METHOD_FROZEN_AWAITING_EXECUTION_GATES")
@@ -62,11 +67,30 @@ class ConfigGateTests(unittest.TestCase):
                 "block-06": "train",
             },
         )
-        self.assertEqual(split["split_status"], "PRELIMINARY_NOT_BASELINE_FINAL")
+        self.assertEqual(split["split_status"], "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL")
         self.assertIsNone(split["final_embargo_seconds"])
         self.assertFalse(split["subject_heldout_claim_allowed"])
         self.assertFalse(split["speaker_heldout_claim_allowed"])
         self.assertFalse(split["cross_language_claim_allowed"])
+
+    def test_g2_is_accepted_only_for_audio_context_gate(self) -> None:
+        self.assertEqual(
+            self.config["g2"]["status"],
+            "G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE",
+        )
+        self.assertEqual(self.config["g2"]["coordinator_review"], "ACCEPT")
+        self.assertIs(self.config["g2"]["whole_m6a_pass_claimed"], False)
+
+    def test_final_embargo_is_candidate_not_baseline_final(self) -> None:
+        split = self.config["split"]
+        self.assertEqual(split["split_status"], "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL")
+        self.assertEqual(
+            split["final_embargo_status"],
+            "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW",
+        )
+        self.assertEqual(split["final_embargo_candidate_seconds"], 2.0)
+        self.assertIsNone(split["final_embargo_seconds"])
+        self.assertIs(split["baseline_final"], False)
 
     def test_forbidden_integrity_field_is_detected(self) -> None:
         changed = copy.deepcopy(self.config)

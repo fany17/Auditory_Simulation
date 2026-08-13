@@ -57,7 +57,7 @@
 - 输入：16 kHz mono waveform，显式传入采样率
 - 输出：卷积投影后的初始表示与 12 个 Transformer block 的 hidden states
 - 参数：完全冻结，不训练、不微调
-- revision：使用 `main` 在 2026-08-11 的 2203 解析快照；因 no-hash 政策不记录 Git 对象 ID，使用文件名、字节数、时间戳、配置内容与库版本形成非密码学 manifest，并明确其不可提供密码学不可变性保证
+- revision：使用 mutable `main` 在 2026-08-13 的 2203 解析快照；2203 无法直连官方 endpoint，清华 TUNA 旧 Hugging Face 路径已下线且实测 404，因此固定使用单一 `https://hf-mirror.com` endpoint。第三方镜像、mutable `main` 与 no-hash 政策共同意味着不能提供密码学完整性或不可变 provenance；仅以文件名、字节数、时间戳、配置语义、`weights_only=true` tensor-only/关键 shape 与库版本形成受限非密码学审计。候选语义验证后缓存状态冻结为 `SEMANTICALLY_VALIDATED_REMOTE_ONLY`，模型下载权限关闭，禁止再次按 mutable `main` 静默替换
 
 ## 4. 数据与时间轴门禁
 
@@ -106,7 +106,7 @@
 
 首轮 neural target method 已由协调二审 `ACCEPT` 并冻结：主目标为 `70-80`、`80-90`、`90-100`、`100-110`、`130-140`、`140-150 Hz` 六个等宽子带，排除含 120 Hz 二次谐波的 `110-130 Hz`，每个子带在 train valid frames 上单独标准化后等权平均。旧 `70-150 Hz + 60/120 rejection` 仅为 `PREDECLARED_SENSITIVITY_NOT_PRIMARY`，不能按 encoding 结果替换主目标。
 
-冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。当前仍只允许 synthetic tests；G2 full audit、audio cross-split context 测量、final embargo 与 baseline-final split guard 完成前，禁止真实神经提取。方法冻结不等于 G3 启动、真实 target、M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
+冻结方法使用对称有限 Kaiser FIR、overlap-add convolution、square 后有限低通功率，不使用整段 FFT Hilbert；512/1024 Hz 的 filter/resampling edge 最大值为 1.091796875 s。50 Hz frame center、正 lag 语义与 train-only epsilon/center/scale 已写入 schema/gate。G2 candidate 已于 2026-08-13 获协调者接受；唯一冻结主模型、synthetic audio-context canary 与真实 319 行 audio identity gate 已完成。48 个唯一音频文件均不跨 split，跨 split 输入 overlap 候选为 0.0 s；加入 0.0006349206349206349 s 音频重采样边缘后 final embargo 候选仍为 2.0 s，319 行 split candidate guard 通过。协调复核前 `baseline_final=false`，禁止真实神经提取。方法冻结、G2 接受与 final-embargo candidate 均不等于 G3 启动、真实 target、M6A exchange candidate、整条 M6A accepted/frozen 或科学结果。
 
 主模型为 ridge encoding：
 

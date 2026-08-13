@@ -194,19 +194,30 @@ def validate_neural_target_method(
     )
     if not _same_number(edge["computed_filter_resampling_edge_seconds_max"], computed_max):
         errors.append("final embargo filter/resampling edge disagrees with sampling profiles")
-    if edge["audio_cross_split_context_overlap_seconds"] is not None:
-        errors.append("audio context overlap must remain pending until the frozen model is measured")
+    if not _same_number(edge["audio_cross_split_context_overlap_seconds"], 0.0):
+        errors.append("isolated-passage audio cross-split context overlap must be zero")
+    if not _same_number(edge["audio_resampling_edge_seconds"], 0.0006349206349206349):
+        errors.append("audio resampling edge is not frozen")
+    if not _same_number(edge["final_embargo_candidate_seconds"], 2.0):
+        errors.append("final embargo candidate must be 2 seconds")
+    if edge["transformer_attention_scope"] != "GLOBAL_WITHIN_SINGLE_PASSAGE":
+        errors.append("Transformer attention scope must remain global only within one passage")
+    if edge["transformer_local_receptive_field_claimed"] is not False:
+        errors.append("Transformer cannot be claimed to have a local receptive field")
+    if edge["status"] != "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW":
+        errors.append("final embargo must remain a candidate awaiting coordinator review")
     if edge["baseline_final"] is not False:
-        errors.append("baseline cannot be final before audio context measurement and split guard rerun")
+        errors.append("baseline cannot be final before coordinator review")
 
     execution = candidate["execution"]
     if execution != {
         "synthetic_tests_allowed": True,
         "real_neural_waveform_target_extraction_allowed": False,
         "model_download_allowed": False,
+        "model_cache_state": "SEMANTICALLY_VALIDATED_REMOTE_ONLY",
         "baseline_allowed": False,
     }:
-        errors.append("candidate execution gate permits only synthetic tests")
+        errors.append("execution gate must freeze the validated remote model cache and block downloads")
 
     anatomy = candidate["anatomy"]
     if anatomy["region_summary"] != "NOT_ESTIMABLE":

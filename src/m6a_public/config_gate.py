@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from m6a_public.embargo_gate import evaluate_final_embargo
+from m6a_public.embargo_gate import evaluate_final_embargo_candidate
 
 
 FORBIDDEN_FIELD_NAMES = {
@@ -82,6 +82,14 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
     if dataset.get("interactive_terms_stop") is not True:
         errors.append("interactive_terms_stop must be true")
 
+    g2 = config.get("g2", {})
+    if g2.get("status") != "G2_COORDINATOR_ACCEPTED_FOR_AUDIO_CONTEXT_GATE":
+        errors.append("G2 must record coordinator acceptance for the audio-context gate")
+    if g2.get("coordinator_review") != "ACCEPT" or g2.get("reviewed_on") != "2026-08-13":
+        errors.append("G2 coordinator acceptance and review date are incomplete")
+    if g2.get("whole_m6a_pass_claimed") is not False:
+        errors.append("G2 acceptance cannot claim the whole M6A task passed")
+
     model = config.get("model", {})
     if model.get("model_id") != "facebook/wav2vec2-base":
         errors.append("first model must be facebook/wav2vec2-base")
@@ -89,6 +97,42 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("first model must remain frozen")
     if model.get("sampling_rate_hz") != 16000:
         errors.append("wav2vec2 input sampling rate must be 16000 Hz")
+    if model.get("download_allowed") is not False:
+        errors.append("model download must be closed after semantic cache validation")
+    if model.get("cache_state") != "SEMANTICALLY_VALIDATED_REMOTE_ONLY":
+        errors.append("model cache must be frozen as semantically validated and remote-only")
+    if model.get("revision_label") != "main":
+        errors.append("the sole model revision label must remain main")
+    if model.get("revision_limitation") != "MUTABLE_MAIN_LABEL_NON_CRYPTOGRAPHIC_REPRODUCIBILITY_ONLY":
+        errors.append("the mutable main revision limitation must be explicit")
+    if model.get("source_endpoint") != "https://hf-mirror.com":
+        errors.append("the audio-context node must use only the fixed 2203-accessible mirror")
+    if model.get("source_endpoint_role") != "PUBLIC_HUGGING_FACE_ENDPOINT_MIRROR":
+        errors.append("model source endpoint role is not auditable")
+    if (
+        model.get("source_endpoint_limitation")
+        != "THIRD_PARTY_MIRROR_PLUS_MUTABLE_MAIN_AND_NO_HASH_POLICY_DO_NOT_PROVIDE_CRYPTOGRAPHIC_INTEGRITY_OR_IMMUTABLE_PROVENANCE"
+    ):
+        errors.append("mirror and mutable-main provenance limitation must be explicit")
+    if model.get("remote_cache") != (
+        "/home/fanyu/auditory_simulation_m6a/cache/huggingface/"
+        "facebook_wav2vec2_base_main_20260813"
+    ):
+        errors.append("the model cache must remain at the dedicated remote-only path")
+    input_gate = model.get("inference_input", {})
+    expected_input_gate = {
+        "source_sampling_rate_hz": 44100,
+        "model_sampling_rate_hz": 16000,
+        "channels": 1,
+        "mono_policy": "REQUIRE_MONO_NO_IMPLICIT_DOWNMIX",
+        "passage_policy": "ONE_ELIGIBLE_PASSAGE_PER_INFERENCE_CALL",
+        "neighbor_audio_read_allowed": False,
+        "batch_padding": "FORBIDDEN_PRIMARY_INFERENCE",
+        "transformer_attention_scope": "GLOBAL_WITHIN_SINGLE_PASSAGE",
+        "transformer_local_receptive_field_claimed": False,
+    }
+    if input_gate != expected_input_gate:
+        errors.append("wav2vec2 passage-isolation input semantics are not frozen")
 
     split = config.get("split", {})
     required_groups = set(split.get("required_group_keys", []))
@@ -116,17 +160,19 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
         errors.append("split assignment must use deterministic group-size ratio optimization")
     if split.get("preliminary_minimum_embargo_seconds", 0) != 2.0:
         errors.append("preliminary minimum embargo must remain 2 seconds")
-    if split.get("split_status") != "PRELIMINARY_NOT_BASELINE_FINAL":
-        errors.append("split must remain preliminary until final embargo is measured and guarded")
+    if split.get("split_status") != "FINAL_EMBARGO_CANDIDATE_NOT_BASELINE_FINAL":
+        errors.append("split must remain a non-final embargo candidate before coordinator review")
     if split.get("baseline_final") is not False:
         errors.append("baseline_final must remain false before final embargo and guard rerun")
     if split.get("final_embargo_seconds") is not None:
-        errors.append("final embargo must remain unset before G3 measurement")
+        errors.append("accepted final embargo must remain unset before coordinator review")
+    if split.get("final_embargo_candidate_seconds") != 2.0:
+        errors.append("final embargo candidate must be 2 seconds")
     if (
         split.get("final_embargo_status")
-        != "PENDING_AUDIO_CONTEXT_MEASUREMENT_AND_GUARD_RERUN"
+        != "FINAL_EMBARGO_CANDIDATE_AWAITING_COORDINATOR_REVIEW"
     ):
-        errors.append("final embargo must require audio context measurement and guard rerun")
+        errors.append("final embargo must remain a candidate awaiting coordinator review")
     if split.get("primary_generalization_scope") != "WITHIN_SUBJECT_UNSEEN_STIMULUS_AND_BLOCK_ONLY":
         errors.append("primary generalization scope must remain within-subject unseen stimulus/block only")
     for claim_key in (
@@ -138,11 +184,22 @@ def validate_task_config(config: dict[str, Any]) -> list[str]:
             errors.append(f"{claim_key} must be false at the preliminary split gate")
     if split.get("secondary_subject_generalization") is not False:
         errors.append("secondary subject generalization is not supported by the current split")
-    embargo_report = evaluate_final_embargo(split.get("final_embargo_components_seconds", {}))
-    if embargo_report["status"] != "PENDING_MEASUREMENT" or embargo_report["baseline_final"]:
-        errors.append("final embargo must remain pending measured filter and audio-model context")
+    embargo_report = evaluate_final_embargo_candidate(split.get("final_embargo_components_seconds", {}))
+    if (
+        embargo_report["status"] != "FINAL_EMBARGO_CANDIDATE_READY"
+        or embargo_report["baseline_final"]
+        or embargo_report.get("final_embargo_candidate_seconds") != 2.0
+    ):
+        errors.append("final embargo components must form a non-final 2-second candidate")
     if split.get("final_embargo_components_seconds", {}).get("filter_or_padding_edge_seconds") != 1.091796875:
-        errors.append("split embargo must record the method-candidate filter/resampling edge")
+        errors.append("split embargo must record the frozen neural filter/resampling edge")
+    if split.get("final_embargo_components_seconds", {}).get("audio_cross_split_context_overlap_seconds") != 0.0:
+        errors.append("measured audio cross-split input overlap must be zero for isolated passages")
+    if (
+        split.get("final_embargo_components_seconds", {}).get("audio_resampling_edge_seconds")
+        != 0.0006349206349206349
+    ):
+        errors.append("split embargo must record the finite audio-resampling edge")
     if set(split.get("allowed_splits", [])) != {"train", "validation", "test"}:
         errors.append("allowed_splits must be train/validation/test")
 

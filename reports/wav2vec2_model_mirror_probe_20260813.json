@@ -1,0 +1,39 @@
+{
+  "report_schema_version": "m6a-model-mirror-probe-v1",
+  "task_id": "M6A-PUBLIC-001",
+  "checked_on": "2026-08-13",
+  "model_id": "facebook/wav2vec2-base",
+  "revision_label": "main",
+  "revision_limitation": "MUTABLE_MAIN_LABEL_NON_CRYPTOGRAPHIC_REPRODUCIBILITY_ONLY",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "probes": [
+    {
+      "label": "TUNA_REMOVED_LEGACY_PATH",
+      "mirror_domain": "mirrors.tuna.tsinghua.edu.cn",
+      "status": "FAIL",
+      "http_status": 404,
+      "json_readable": false,
+      "failure": "LEGACY_HUGGING_FACE_MODELS_PATH_NOT_AVAILABLE"
+    },
+    {
+      "label": "HF_MIRROR_SELECTED_ENDPOINT",
+      "mirror_domain": "hf-mirror.com",
+      "status": "PASS",
+      "http_status": 200,
+      "body_bytes": 1842,
+      "json_readable": true,
+      "model_type": "wav2vec2",
+      "architectures": ["Wav2Vec2ForPreTraining"],
+      "hidden_size": 768,
+      "num_hidden_layers": 12,
+      "conv_dim": [512, 512, 512, 512, 512, 512, 512],
+      "conv_kernel": [10, 3, 3, 3, 3, 2, 2],
+      "conv_stride": [5, 2, 2, 2, 2, 2, 2]
+    }
+  ],
+  "selected_endpoint": "https://hf-mirror.com",
+  "selected_endpoint_role": "PUBLIC_HUGGING_FACE_ENDPOINT_MIRROR",
+  "selected_endpoint_limitation": "THIRD_PARTY_MIRROR_PLUS_MUTABLE_MAIN_AND_NO_HASH_POLICY_DO_NOT_PROVIDE_CRYPTOGRAPHIC_INTEGRITY_OR_IMMUTABLE_PROVENANCE",
+  "multiple_download_sources_allowed": false,
+  "local_transfer_used": false
+}
