@@ -1,0 +1,45 @@
+{
+  "ICNet": {
+    "bottleneck": {
+      "dtype": "float32",
+      "finite": true,
+      "shape": [
+        1,
+        1,
+        762,
+        64
+      ]
+    },
+    "cfs_present": true,
+    "input": {
+      "dtype": "float32",
+      "finite": true,
+      "shape": [
+        1,
+        26432,
+        1
+      ]
+    },
+    "model": "ICNet",
+    "status": "PASS",
+    "temporal_probe": "synthetic tone; no IC recordings read",
+    "units_1000": {
+      "dtype": "int8",
+      "finite": true,
+      "shape": [
+        1,
+        762,
+        1000
+      ]
+    },
+    "wall_seconds": 1.9928902270039544
+  },
+  "PANNs-CNN14": {
+    "error": "No module named 'torch'",
+    "error_type": "ModuleNotFoundError",
+    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+  },
+  "patient_data_read": false,
+  "probe_count": 6,
+  "zero_training": true
+}

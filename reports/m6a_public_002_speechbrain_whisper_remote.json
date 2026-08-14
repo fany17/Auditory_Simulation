@@ -1,0 +1,21 @@
+{
+  "SpeechBrain-CRDNN": {
+    "decoded_type": "tuple",
+    "endpoint": "https://hf-mirror.com",
+    "model": "SpeechBrain-CRDNN",
+    "model_id": "speechbrain/asr-crdnn-rnnlm-librispeech",
+    "status": "PASS",
+    "synthetic_only": true,
+    "wall_seconds": 39.346197075094096
+  },
+  "Whisper-turbo": {
+    "error": "Model has been downloaded but the SHA256 checksum does not not match. Please retry loading the model.",
+    "error_type": "RuntimeError",
+    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+  },
+  "input_shape": [
+    16000
+  ],
+  "patient_data_read": false,
+  "zero_training": true
+}

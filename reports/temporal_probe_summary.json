@@ -1,0 +1,21 @@
+{
+  "task_id": "M6A-PUBLIC-002",
+  "status": "READY_FOR_COORDINATOR_REVIEW",
+  "probe_inputs": ["tone", "regular_clicks", "jitter_clicks", "omission", "phase_shift", "speech"],
+  "probe_generation": "deterministic synthetic mono waveforms; no benchmark or patient audio",
+  "zero_training": true,
+  "pass_count": 6,
+  "total_count": 9,
+  "models": {
+    "wav2vec2": {"status": "PASS", "scope": "six probes; projected plus 12 hidden layers", "tone_shape": [1, 49, 768], "selected_relative_distances": {"jitter_clicks": 0.8625, "omission": 1.0127, "phase_shift": 0.0559, "regular_clicks": 1.0373, "speech": 1.1751}},
+    "PANNs-CNN14": {"status": "PASS", "scope": "six probes; embedding", "tone_shape": [1, 2048], "selected_relative_distances": {"jitter_clicks": 0.6774616, "omission": 0.6706467, "phase_shift": 0.0926366, "regular_clicks": 0.6824784, "speech": 0.4458149}},
+    "ConvTasNet": {"status": "PASS", "scope": "six probes; waveform output shape/finite", "output_shape": [1, 1, 16000]},
+    "SpeechBrain-CRDNN": {"status": "PASS", "scope": "synthetic speech-like probe; decoder smoke", "decoded_type": "tuple"},
+    "CoNNear-periphery": {"status": "PASS", "scope": "official synthetic tone multi-level example; stage outputs", "output_channels": 201},
+    "ICNet": {"status": "PASS", "scope": "official synthetic tone population smoke; bottleneck and units_1000", "population_units": 1000},
+    "Whisper-turbo": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "scope": "not run after loader failure"},
+    "Parakeet-TDT": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "scope": "not completed within 180-second synthetic GPU attempt"},
+    "Audio-Mamba": {"status": "NOT_RUN", "scope": "deferred dependency/weight chain"}
+  },
+  "interpretation": "No-fit temporal representation evidence only; no accuracy, WER, SDR, ridge, classifier, or scientific superiority claim."
+}

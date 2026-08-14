@@ -1,0 +1,12 @@
+{
+  "Parakeet-TDT": {
+    "error": "No module named 'nemo'",
+    "error_type": "ModuleNotFoundError",
+    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+  },
+  "input_shape": [
+    16000
+  ],
+  "patient_data_read": false,
+  "zero_training": true
+}

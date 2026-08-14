@@ -3,7 +3,7 @@
 | 字段 | 内容 |
 |---|---|
 | 日期 | 2026-08-13 |
-| 状态 | `ACTIVE_EXECUTION` |
+| 状态 | `READY_FOR_COORDINATOR_REVIEW` |
 | 执行授权 | `AUTHORIZED_WITH_GATES` |
 | 当前方向 | `M6A-PUBLIC：公开声音模型、公开神经数据与通用听觉计算方法` |
 | 当前优先任务 | `M6A-PUBLIC-002` |
@@ -11,6 +11,8 @@
 | 执行窗口 | `2026-08-13` 至 `2026-08-20` |
 | 计算位置 | `server2203:/home/fanyu/auditory_simulation_m6a` |
 | Git 边界 | 本地唯一 Git 工作区；远端计算目录不作为第二 Git 工作区 |
+
+本轮 M6A-PUBLIC-002 已完成一次低成本 Stage A-D 复现收口：2203 上 CoNNear、ICNet、PANNs-CNN14、ConvTasNet、SpeechBrain-CRDNN 与 wav2vec2 synthetic inference/probe 有 PASS 证据，共 6/9；Whisper 与 Parakeet 保留阻塞证据，Audio-Mamba 未进入高成本依赖链。因此当前状态为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`，尚未达到任务书的 7/9 最低目标，不宣称本周 PASS。大模型、缓存、特征和日志仍只在 2203；本地仅保留轻量脚本与报告；不执行训练、微调、downstream probe、患者/STN 数据或 Git。
 
 ## 当前决定
 

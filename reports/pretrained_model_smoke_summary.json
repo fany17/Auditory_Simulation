@@ -1,0 +1,19 @@
+{
+  "task_id": "M6A-PUBLIC-002",
+  "status": "READY_FOR_COORDINATOR_REVIEW",
+  "execution_root": "server2203:/home/fanyu/auditory_simulation_m6a/m6a_public_002",
+  "zero_training": true,
+  "patient_data_read": false,
+  "official_or_author_path_first": true,
+  "results": {
+    "CoNNear-periphery": {"status": "PASS", "wall_seconds": 61.8678100259, "stages": {"vbm": [3, 8192, 201], "vihc": [3, 8192, 201], "anf_hsr": [3, 8192, 201], "anf_msr": [3, 8192, 201], "anf_lsr": [3, 8192, 201]}, "finite": true},
+    "ICNet": {"status": "PASS", "wall_seconds": 1.77721217996, "input": [1, 26432, 1], "bottleneck": [1, 1, 762, 64], "units_1000": [1, 762, 1000], "finite": true},
+    "PANNs-CNN14": {"status": "PASS", "wall_seconds": 2.34247823805, "embedding": [1, 2048], "finite": true},
+    "ConvTasNet": {"status": "PASS", "wall_seconds": 8.31677936099, "output_per_probe": [1, 1, 16000], "finite": true},
+    "SpeechBrain-CRDNN": {"status": "PASS", "wall_seconds": 39.3461970751, "synthetic_decode_type": "tuple"},
+    "wav2vec2": {"status": "PASS", "wall_seconds": 0.57, "tone": [1, 49, 768], "projected_plus_layers": 13, "finite": true},
+    "Whisper-turbo": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "bypass_attempted": false},
+    "Parakeet-TDT": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "reason": "Nemo unavailable; Transformers synthetic generation exceeded 180 seconds"},
+    "Audio-Mamba": {"status": "NOT_RUN", "inference": false, "reason": "official weights and Mamba dependency chain deferred"}
+  }
+}

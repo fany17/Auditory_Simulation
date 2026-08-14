@@ -1,0 +1,104 @@
+{
+  "CoNNear-periphery": {
+    "model": "CoNNear-periphery",
+    "pretrained": true,
+    "stages": {
+      "anf_hsr": {
+        "dtype": "float64",
+        "finite": true,
+        "shape": [
+          3,
+          8192,
+          201
+        ]
+      },
+      "anf_lsr": {
+        "dtype": "float64",
+        "finite": true,
+        "shape": [
+          3,
+          8192,
+          201
+        ]
+      },
+      "anf_msr": {
+        "dtype": "float64",
+        "finite": true,
+        "shape": [
+          3,
+          8192,
+          201
+        ]
+      },
+      "vbm": {
+        "dtype": "float32",
+        "finite": true,
+        "shape": [
+          3,
+          8192,
+          201
+        ]
+      },
+      "vihc": {
+        "dtype": "float64",
+        "finite": true,
+        "shape": [
+          3,
+          8192,
+          201
+        ]
+      }
+    },
+    "status": "PASS",
+    "wall_seconds": 61.86781002592761
+  },
+  "ICNet": {
+    "bottleneck": {
+      "dtype": "float32",
+      "finite": true,
+      "shape": [
+        1,
+        1,
+        762,
+        64
+      ]
+    },
+    "cfs_present": true,
+    "input": {
+      "dtype": "float32",
+      "finite": true,
+      "shape": [
+        1,
+        26432,
+        1
+      ]
+    },
+    "model": "ICNet",
+    "pretrained": true,
+    "status": "PASS",
+    "temporal_probe": "synthetic tone; no IC recordings read",
+    "units_1000": {
+      "dtype": "int8",
+      "finite": true,
+      "shape": [
+        1,
+        762,
+        1000
+      ]
+    },
+    "wall_seconds": 1.7772121799644083
+  },
+  "PANNs-CNN14": {
+    "error": "No module named 'torch'",
+    "error_type": "ModuleNotFoundError",
+    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+  },
+  "patient_data_read": false,
+  "probe_count": 6,
+  "wav2vec2": {
+    "error": "No module named 'torch'",
+    "error_type": "ModuleNotFoundError",
+    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+  },
+  "zero_training": true
+}

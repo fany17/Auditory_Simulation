@@ -1,0 +1,77 @@
+{
+  "ConvTasNet": {
+    "endpoint": "https://hf-mirror.com",
+    "model": "ConvTasNet",
+    "model_id": "JorisCos/ConvTasNet_Libri1Mix_enhsingle_16k",
+    "status": "PASS",
+    "temporal_probe_shapes": {
+      "jitter_clicks": {
+        "dtype": "float32",
+        "finite": true,
+        "shape": [
+          1,
+          1,
+          16000
+        ]
+      },
+      "omission": {
+        "dtype": "float32",
+        "finite": true,
+        "shape": [
+          1,
+          1,
+          16000
+        ]
+      },
+      "phase_shift": {
+        "dtype": "float32",
+        "finite": true,
+        "shape": [
+          1,
+          1,
+          16000
+        ]
+      },
+      "regular_clicks": {
+        "dtype": "float32",
+        "finite": true,
+        "shape": [
+          1,
+          1,
+          16000
+        ]
+      },
+      "speech": {
+        "dtype": "float32",
+        "finite": true,
+        "shape": [
+          1,
+          1,
+          16000
+        ]
+      },
+      "tone": {
+        "dtype": "float32",
+        "finite": true,
+        "shape": [
+          1,
+          1,
+          16000
+        ]
+      }
+    },
+    "tone": {
+      "dtype": "float32",
+      "finite": true,
+      "shape": [
+        1,
+        1,
+        16000
+      ]
+    },
+    "wall_seconds": 8.31677936099004
+  },
+  "patient_data_read": false,
+  "probe_count": 6,
+  "zero_training": true
+}

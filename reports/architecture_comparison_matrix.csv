@@ -1,0 +1,10 @@
+model,mechanism,temporal_context,output_role,inference_status,temporal_status,claim_boundary
+PANNs-CNN14,CNN pooling,finite learned receptive fields,AudioSet embedding,PASS,PASS,synthetic embedding response only
+ConvTasNet,temporal convolution,finite convolutional context,separation waveform,PASS,PASS,synthetic waveform response only
+SpeechBrain-CRDNN,CNN plus BiLSTM,recurrent sequence state,ASR decoder,PASS,PASS,synthetic decoder smoke only
+Parakeet-TDT,FastConformer plus TDT,attention and transducer state,ASR decoder,BLOCKED,BLOCKED,no result
+Audio-Mamba,selective SSM,state-space recurrence,self-supervised embedding,NOT_RUN,NOT_RUN,no result
+wav2vec2,Transformer self-attention,passage-global attention,hidden states,PASS,PASS,synthetic hidden-state response only
+Whisper-turbo,encoder-decoder Transformer,global attention and decoder state,ASR decoder,BLOCKED,BLOCKED,no result
+CoNNear-periphery,trained AECNN cascade,cochlear channel dynamics,BM/IHC/ANF stages,PASS,PASS,physiological surrogate not human auditory cortex
+ICNet,convolutional encoder-decoder,learned temporal population mapping,bottleneck/IC units,PASS,PASS,animal IC surrogate not human IC

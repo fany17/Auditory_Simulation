@@ -1,0 +1,12 @@
+{
+  "Parakeet-TDT": {
+    "error": "Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`",
+    "error_type": "ValueError",
+    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+  },
+  "input_shape": [
+    16000
+  ],
+  "patient_data_read": false,
+  "zero_training": true
+}
