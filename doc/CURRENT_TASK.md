@@ -12,9 +12,9 @@
 | 计算位置 | `server2203:/home/fanyu/auditory_simulation_m6a` |
 | Git 边界 | 本地唯一 Git 工作区；远端计算目录不作为第二 Git 工作区 |
 
-本轮 M6A-PUBLIC-002 已完成一次低成本 Stage A-D 复现收口：2203 上 CoNNear、ICNet、PANNs-CNN14、ConvTasNet、SpeechBrain-CRDNN 与 wav2vec2 synthetic inference/probe 有 PASS 证据，共 6/9；Whisper 与 Parakeet 保留阻塞证据，Audio-Mamba 未进入高成本依赖链。因此当前状态为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`，尚未达到任务书的 7/9 最低目标，不宣称本周 PASS。大模型、缓存、特征和日志仍只在 2203；本地仅保留轻量脚本与报告；不执行训练、微调、downstream probe、患者/STN 数据或 Git。
+本轮 M6A-PUBLIC-002 已完成一次低成本 Stage A-D 复现收口：2203 上 CoNNear、ICNet、PANNs-CNN14、ConvTasNet、SpeechBrain-CRDNN、wav2vec2 与 Parakeet 有 inference PASS 证据，共 7/9；统一 temporal probe 仍为 6/9，Audio-Mamba 权重与 Whisper 保留阻塞证据。因此当前状态为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`，尚未达到任务书的 7/9 temporal 最低目标，不宣称本周 PASS。大模型、缓存、特征和日志仍只在 2203；本地仅保留轻量脚本与报告；不执行训练、微调、downstream probe、患者/STN 数据或 Git。
 
-本轮续跑新增统一 synthetic temporal evidence：CoNNear 已逐级输出 `waveform→BM→IHC→ANF-H/M/L`，ICNet 已输出 `waveform→bottleneck→units_1000`；两者均已覆盖 `tone/regular_clicks/jitter_clicks/omission/phase_shift/speech` 六项输入。Parakeet 按官方 Transformers 路径做了一次 `local_files_only=true`、`trust_remote_code=false` 的六 probe forward 尝试，但现有缓存没有完整模型权重，保留 `BLOCKED_BY_UPSTREAM_DEPENDENCY`；Audio-Mamba 已机器化记录官方权重/依赖未就绪。当前仍为协调审核状态，不升格为 7/9 或任务 PASS。
+本轮续跑新增统一 synthetic temporal evidence：CoNNear 已逐级输出 `waveform→BM→IHC→ANF-H/M/L`，ICNet 已输出 `waveform→bottleneck→units_1000`；两者均已覆盖六项输入。Parakeet 已完成官方 Transformers 六 probe `generate` smoke，输出为 finite decoder token sequences，未宣称 hidden representation temporal probe；Audio-Mamba 官方代码已下载，但公开权重源在 2203 网络不可达，保留 `BLOCKED_BY_UPSTREAM_DEPENDENCY`。当前仍为协调审核状态，不升格为任务 PASS。
 
 ## 当前决定
 

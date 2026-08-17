@@ -40,32 +40,32 @@ def main() -> None:
         from transformers import AutoModelForTDT, AutoProcessor
 
         model_id = "nvidia/parakeet-tdt-0.6b-v3"
+        model_dir = str(ROOT / "cache/parakeet_tdt_0.6b_v3")
         started = time.perf_counter()
-        processor = AutoProcessor.from_pretrained(model_id, trust_remote_code=False, local_files_only=True)
+        processor = AutoProcessor.from_pretrained(model_dir, trust_remote_code=False, local_files_only=True)
         model = AutoModelForTDT.from_pretrained(
-            model_id, trust_remote_code=False, dtype="auto", device_map="cuda:0", local_files_only=True
+            model_dir, trust_remote_code=False, dtype="auto", device_map="cuda:0", local_files_only=True
         ).eval()
         output_shapes: dict[str, object] = {}
         with torch.inference_mode():
             for name, waveform in make_probes().items():
                 inputs = processor(waveform, sampling_rate=16000, return_tensors="pt")
                 inputs = {key: value.to("cuda:0") for key, value in inputs.items()}
-                output = model(**inputs)
-                logits = getattr(output, "logits", None)
-                if logits is None:
-                    raise RuntimeError("Parakeet forward returned no logits")
+                generated = model.generate(**inputs)
+                sequences = getattr(generated, "sequences", generated)
                 output_shapes[name] = {
-                    "shape": list(logits.shape),
-                    "dtype": str(logits.dtype),
-                    "finite": bool(torch.isfinite(logits).all().item()),
+                    "shape": list(sequences.shape),
+                    "dtype": str(sequences.dtype),
+                    "finite": bool(torch.isfinite(sequences).all().item()),
                 }
         results["Parakeet-TDT"] = {
             "status": "PASS",
             "model_id": model_id,
             "endpoint": ENDPOINT,
+            "model_dir": model_dir,
             "wall_seconds": time.perf_counter() - started,
             "model_class": type(model).__name__,
-            "forward_output": output_shapes,
+            "inference_output": output_shapes,
             "synthetic_only": True,
         }
     except Exception as exc:

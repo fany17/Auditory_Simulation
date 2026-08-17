@@ -1,17 +1,31 @@
 {
   "cache_candidates_present": [],
-  "code_candidates_present": [],
+  "code_candidates_present": ["cache/audio_mamba_ssam/code/audio-mamba-official-master.tar.gz"],
+  "code_inventory": [{"path": "cache/audio_mamba_ssam/code/audio-mamba-official-master.tar.gz", "bytes": 80807, "timestamp": "2026-08-17T17:34:14+08:00", "source": "https://codeload.github.com/SarthakYadav/audio-mamba-official/tar.gz/refs/heads/master"}],
   "dependency_presence": {
     "causal_conv1d": false,
     "hear_api": false,
     "mamba_ssm": false
   },
-  "download_attempted": false,
+  "download_attempted": true,
+  "source_audit": {
+    "checked_on": "2026-08-17",
+    "official_readme_weight_source": "Google Drive folder",
+    "github_releases": "NO_DIRECT_WEIGHT_RELEASE_FOUND",
+    "huggingface_same_official_weight": "NOT_FOUND",
+    "domestic_mirror_same_official_weight": "NOT_FOUND",
+    "same_official_weight_direct_download": false,
+    "prior_2203_result": "OFFICIAL_GOOGLE_DRIVE_NETWORK_UNREACHABLE",
+    "credentials_or_login_requested": false,
+    "bypass_attempted": false
+  },
+  "weights_source": "https://drive.google.com/drive/folders/1l6_8e1TFEfnobwUMIbA7-aKw2FwlBhho?usp=drive_link",
+  "weights_status": "BLOCKED_BY_UPSTREAM_DEPENDENCY",
   "inference": false,
   "model": "Audio-Mamba/SSAM",
   "official_source": "https://github.com/SarthakYadav/audio-mamba-official",
   "patient_data_read": false,
-  "reason": "official code/weights and the Mamba runtime chain are not present; obtaining the official weight folder is outside this low-cost pass",
+  "reason": "official code tarball downloaded; public Google Drive pretrained-weight source was network-unreachable from 2203; no login, credential, or bypass attempted",
   "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY",
   "temporal_probe": false,
   "zero_training": true

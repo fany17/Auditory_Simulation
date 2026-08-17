@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "model_id": "nvidia/parakeet-tdt-0.6b-v3",
+  "revision_label": "main",
+  "source": "https://hf-mirror.com/nvidia/parakeet-tdt-0.6b-v3/resolve/main",
+  "cache_root": "/home/fanyu/auditory_simulation_m6a/m6a_public_002/cache/parakeet_tdt_0.6b_v3",
+  "files": [
+    {"path": ".gitattributes", "bytes": 1722, "timestamp": "2026-08-17T17:33:32+08:00"},
+    {"path": "README.md", "bytes": 42888, "timestamp": "2026-08-17T17:33:33+08:00"},
+    {"path": "config.json", "bytes": 1153, "timestamp": "2026-08-17T17:33:34+08:00"},
+    {"path": "generation_config.json", "bytes": 289, "timestamp": "2026-08-17T17:33:35+08:00"},
+    {"path": "model.safetensors", "bytes": 2508311120, "timestamp": "2026-08-17T17:37:06+08:00"},
+    {"path": "parakeet-tdt-0.6b-v3.nemo", "bytes": 2509332480, "timestamp": "2026-08-17T17:38:12+08:00"},
+    {"path": "parakeet-tdt-0.6b-v3.q8_0.gguf", "bytes": 713975456, "timestamp": "2026-08-17T17:41:15+08:00"},
+    {"path": "processor_config.json", "bytes": 392, "timestamp": "2026-08-17T17:41:16+08:00"},
+    {"path": "tokenizer.json", "bytes": 1159960, "timestamp": "2026-08-17T17:41:18+08:00"},
+    {"path": "tokenizer_config.json", "bytes": 290, "timestamp": "2026-08-17T17:41:19+08:00"},
+    {"path": ".eval_results/open_asr_leaderboard.yaml", "bytes": 2130, "timestamp": "2026-08-17T17:41:20+08:00"},
+    {"path": "plots/asr.png", "bytes": 114075, "timestamp": "2026-08-17T17:41:22+08:00"}
+  ],
+  "integrity_note": "Non-cryptographic inventory only: filenames, byte sizes, timestamps and sample readability; no digest verification."
+}

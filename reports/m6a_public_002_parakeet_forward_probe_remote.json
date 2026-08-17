@@ -1,8 +1,62 @@
 {
   "Parakeet-TDT": {
-    "error": "nvidia/parakeet-tdt-0.6b-v3 does not appear to have a file named pytorch_model.bin or model.safetensors.",
-    "error_type": "OSError",
-    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+    "endpoint": "https://hf-mirror.com",
+    "inference_output": {
+      "jitter_clicks": {
+        "dtype": "torch.int64",
+        "finite": true,
+        "shape": [
+          1,
+          14
+        ]
+      },
+      "omission": {
+        "dtype": "torch.int64",
+        "finite": true,
+        "shape": [
+          1,
+          10
+        ]
+      },
+      "phase_shift": {
+        "dtype": "torch.int64",
+        "finite": true,
+        "shape": [
+          1,
+          10
+        ]
+      },
+      "regular_clicks": {
+        "dtype": "torch.int64",
+        "finite": true,
+        "shape": [
+          1,
+          13
+        ]
+      },
+      "speech": {
+        "dtype": "torch.int64",
+        "finite": true,
+        "shape": [
+          1,
+          13
+        ]
+      },
+      "tone": {
+        "dtype": "torch.int64",
+        "finite": true,
+        "shape": [
+          1,
+          13
+        ]
+      }
+    },
+    "model_class": "ParakeetForTDT",
+    "model_dir": "/home/fanyu/auditory_simulation_m6a/m6a_public_002/cache/parakeet_tdt_0.6b_v3",
+    "model_id": "nvidia/parakeet-tdt-0.6b-v3",
+    "status": "PASS",
+    "synthetic_only": true,
+    "wall_seconds": 1.7851959239924327
   },
   "patient_data_read": false,
   "probe_count": 6,
