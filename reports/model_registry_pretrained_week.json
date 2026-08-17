@@ -12,7 +12,7 @@
     {"model": "ConvTasNet", "status": "PASS", "probe": "PASS", "evidence": "2203:m6a_public_002_lowcost_probes.json"},
     {"model": "SpeechBrain-CRDNN", "status": "PASS", "probe": "PASS", "evidence": "2203:m6a_public_002_speechbrain_whisper.json"},
     {"model": "Parakeet-TDT", "status": "PASS", "probe": "PASS_INFERENCE_ONLY", "evidence": "2203:m6a_public_002_parakeet_forward_probe.json; dedicated snapshot cache; six finite synthetic generate outputs; no hidden-layer temporal summary"},
-    {"model": "Audio-Mamba", "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "probe": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "evidence": "2203:m6a_public_002_audio_mamba_gate.json; official code tarball present, public Drive weights unreachable from 2203"},
+    {"model": "Audio-Mamba", "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "probe": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "evidence": "2203:m6a_public_002_audio_mamba_gate.json; official tiny checkpoint present at weights/checkpoints/checkpoint-99.pth, mamba runtime dependencies unavailable"},
     {"model": "wav2vec2", "status": "PASS", "probe": "PASS", "evidence": "2203:prior synthetic runner"},
     {"model": "Whisper-turbo", "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "probe": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "evidence": "2203:m6a_public_002_speechbrain_whisper.json"},
     {"model": "CoNNear-periphery", "status": "PASS", "probe": "PASS", "evidence": "2203:m6a_public_002_stage_bc_smoke.json"},

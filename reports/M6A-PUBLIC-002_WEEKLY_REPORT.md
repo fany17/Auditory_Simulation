@@ -20,7 +20,7 @@ CoNNear 与 ICNet 的统一 probe 当前均为 6/6：`tone`、`regular_clicks`�
 | wav2vec2 | projected + 12 hidden layers，tone `[1,49,768]`，finite |
 | Whisper turbo | 官方加载未形成 inference 结果；失败证据保留，不绕过 |
 | Parakeet-TDT | 官方 Transformers six-probe generate smoke PASS；token 序列 finite，但未提取 hidden representation |
-| Audio-Mamba/SSAM | 官方权重与 Mamba 依赖链本轮未进入 |
+| Audio-Mamba/SSAM | 官方 tiny 权重已在 2203 正式目录；`mamba_ssm`/`causal_conv1d` 依赖链仍阻塞 |
 
 ## 已完成交付
 
@@ -46,7 +46,7 @@ PANNs 原截断文件失败记录保留，同源重取后已通过；Whisper 与
 
 ## 本轮续跑补充
 
-Parakeet 本轮从 HF mirror 下载完整 snapshot 到 2203 专用 cache，并按官方 Transformers 路径做六 probe `generate` smoke；输出为 finite decoder token sequences，未将其当作 hidden-layer temporal representation。Audio-Mamba 官方代码 tarball 已落盘，但公开 Google Drive 权重源在 2203 网络不可达，未绕过登录或权限，也未启动 inference。
+Parakeet 本轮从 HF mirror 下载完整 snapshot 到 2203 专用 cache，并按官方 Transformers 路径做六 probe `generate` smoke；输出为 finite decoder token sequences，未将其当作 hidden-layer temporal representation。Audio-Mamba 官方 tiny 权重已按 `weights/checkpoints/checkpoint-99.pth` 落盘 2203；官方 Mamba 依赖构建受 CUDA/PyTorch 工具链不匹配阻塞，未绕过官方路径，也未启动 inference。
 
 CoNNear 的统一 probe 已真正输出 `waveform→BM→IHC→ANF-H/M/L`。六类输入均已记录，其中 regular/jitter/omission/phase 为重点生理比较；stage distance、lag-1 persistence 和事件后 10 ms 平均响应写入 2203 `reports/m6a_public_002_auditory_physio_probes.json`。ICNet 对六类输入输出 `waveform→bottleneck→units_1000`；bottleneck 与 units distance 已记录，单帧跨 probe persistence 明确为 `null`。
 

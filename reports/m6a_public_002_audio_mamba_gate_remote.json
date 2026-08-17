@@ -1,32 +1,45 @@
 {
   "cache_candidates_present": [],
-  "code_candidates_present": ["cache/audio_mamba_ssam/code/audio-mamba-official-master.tar.gz"],
-  "code_inventory": [{"path": "cache/audio_mamba_ssam/code/audio-mamba-official-master.tar.gz", "bytes": 80807, "timestamp": "2026-08-17T17:34:14+08:00", "source": "https://codeload.github.com/SarthakYadav/audio-mamba-official/tar.gz/refs/heads/master"}],
+  "code_candidates_present": [
+    "/home/fanyu/auditory_simulation_m6a/m6a_public_002/cache/audio_mamba_ssam/code/audio-mamba-official-master"
+  ],
+  "config": "ssam_tiny_200_16x4",
+  "dependency_install_attempted": true,
   "dependency_presence": {
     "causal_conv1d": false,
     "hear_api": false,
     "mamba_ssm": false
   },
   "download_attempted": true,
-  "source_audit": {
-    "checked_on": "2026-08-17",
-    "official_readme_weight_source": "Google Drive folder",
-    "github_releases": "NO_DIRECT_WEIGHT_RELEASE_FOUND",
-    "huggingface_same_official_weight": "NOT_FOUND",
-    "domestic_mirror_same_official_weight": "NOT_FOUND",
-    "same_official_weight_direct_download": false,
-    "prior_2203_result": "OFFICIAL_GOOGLE_DRIVE_NETWORK_UNREACHABLE",
-    "credentials_or_login_requested": false,
-    "bypass_attempted": false
-  },
-  "weights_source": "https://drive.google.com/drive/folders/1l6_8e1TFEfnobwUMIbA7-aKw2FwlBhho?usp=drive_link",
-  "weights_status": "BLOCKED_BY_UPSTREAM_DEPENDENCY",
   "inference": false,
+  "inference_attempted": false,
   "model": "Audio-Mamba/SSAM",
   "official_source": "https://github.com/SarthakYadav/audio-mamba-official",
   "patient_data_read": false,
-  "reason": "official code tarball downloaded; public Google Drive pretrained-weight source was network-unreachable from 2203; no login, credential, or bypass attempted",
+  "reason": "official tiny checkpoint is present, but official mamba runtime dependencies are unavailable in the dedicated environment; no bypass or alternate model used",
+  "source_audit": {
+    "bypass_attempted": false,
+    "credentials_or_login_requested": false,
+    "domestic_mirror_same_official_weight": "NOT_FOUND",
+    "github_releases": "NO_DIRECT_WEIGHT_RELEASE_FOUND",
+    "huggingface_same_official_weight": "NOT_FOUND",
+    "official_readme_weight_source": "Google Drive folder",
+    "prior_2203_result": "OFFICIAL_GOOGLE_DRIVE_NETWORK_UNREACHABLE",
+    "same_official_weight_direct_download": false
+  },
   "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY",
   "temporal_probe": false,
+  "weights_candidates_present": [
+    "/home/fanyu/auditory_simulation_m6a/m6a_public_002/cache/audio_mamba_ssam/weights/checkpoints/checkpoint-99.pth"
+  ],
+  "weights_inventory": [
+    {
+      "bytes": 57495342,
+      "path": "cache/audio_mamba_ssam/weights/checkpoints/checkpoint-99.pth",
+      "source": "official Audio-Mamba/SSAM tiny checkpoint supplied to 2203",
+      "timestamp": "2026-08-17T11:10:22.649805+00:00"
+    }
+  ],
+  "weights_status": "PRESENT",
   "zero_training": true
 }
