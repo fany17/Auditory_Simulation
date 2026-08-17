@@ -14,6 +14,6 @@
     "wav2vec2": {"status": "PASS", "wall_seconds": 0.57, "tone": [1, 49, 768], "projected_plus_layers": 13, "finite": true},
     "Whisper-turbo": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "bypass_attempted": false},
     "Parakeet-TDT": {"status": "PASS", "inference": true, "probe": "PASS_INFERENCE_ONLY", "wall_seconds": 1.7852, "output_type": "decoder_token_sequences", "probe_count": 6, "reason": "official Transformers local-cache inference; six synthetic outputs finite; hidden-layer temporal representation not extracted"},
-    "Audio-Mamba": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "weights_status": "PRESENT", "config": "ssam_tiny_200_16x4", "reason": "official tiny checkpoint is present in the required 2203 weights/checkpoints path, but mamba_ssm and causal_conv1d are unavailable; official dependency build was blocked by the CUDA/PyTorch toolchain mismatch; no bypass"}
+    "Audio-Mamba": {"status": "PASS", "inference": true, "weights_status": "PRESENT", "config": "ssam_tiny_200_16x4", "probe_count": 6, "representation_shape": [1, 26, 960], "finite": true, "wall_seconds": 0.26070825499482453, "reason": "official tiny checkpoint and runtime dependencies loaded in isolated 2203 environment; six synthetic hidden representations produced"}
   }
 }

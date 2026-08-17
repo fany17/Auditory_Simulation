@@ -1,0 +1,101 @@
+{
+  "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/m6a_public_002/cache/audio_mamba_ssam/weights/checkpoints/checkpoint-99.pth",
+  "config": "ssam_tiny_200_16x4",
+  "downstream_probe": false,
+  "event_triggered_mean": {
+    "jitter_clicks": 1.0663501024246216,
+    "omission": 1.105425477027893,
+    "phase_shift": 0.9531593918800354,
+    "regular_clicks": 1.0944970846176147,
+    "speech": 0.920720100402832,
+    "tone": 0.9568141102790833
+  },
+  "finite": true,
+  "patient_data_read": false,
+  "persistence_lag1": {
+    "jitter_clicks": 0.6354798640076519,
+    "omission": 0.7081298011534565,
+    "phase_shift": -0.06637677123460327,
+    "regular_clicks": 0.701779546252896,
+    "speech": 0.2483464018867599,
+    "tone": -0.05492303373384208
+  },
+  "probe_names": [
+    "tone",
+    "regular_clicks",
+    "jitter_clicks",
+    "omission",
+    "phase_shift",
+    "speech"
+  ],
+  "relative_distance_to_tone": {
+    "jitter_clicks": 0.8560983096599013,
+    "omission": 0.904105012289215,
+    "phase_shift": 0.2374634581695399,
+    "regular_clicks": 0.8894405597116137,
+    "speech": 0.6697164835416889
+  },
+  "sample_rate": 16000,
+  "shapes": {
+    "jitter_clicks": [
+      1,
+      26,
+      960
+    ],
+    "omission": [
+      1,
+      26,
+      960
+    ],
+    "phase_shift": [
+      1,
+      26,
+      960
+    ],
+    "regular_clicks": [
+      1,
+      26,
+      960
+    ],
+    "speech": [
+      1,
+      26,
+      960
+    ],
+    "tone": [
+      1,
+      26,
+      960
+    ]
+  },
+  "status": "PASS",
+  "timestamp_finite": true,
+  "timestamp_shapes": {
+    "jitter_clicks": [
+      1,
+      26
+    ],
+    "omission": [
+      1,
+      26
+    ],
+    "phase_shift": [
+      1,
+      26
+    ],
+    "regular_clicks": [
+      1,
+      26
+    ],
+    "speech": [
+      1,
+      26
+    ],
+    "tone": [
+      1,
+      26
+    ]
+  },
+  "wall_seconds": 0.26070825499482453,
+  "zero_training": true
+}

@@ -6,17 +6,18 @@
   "config": "ssam_tiny_200_16x4",
   "dependency_install_attempted": true,
   "dependency_presence": {
-    "causal_conv1d": false,
-    "hear_api": false,
-    "mamba_ssm": false
+    "causal_conv1d": true,
+    "hear_api": true,
+    "mamba_ssm": true
   },
   "download_attempted": true,
-  "inference": false,
-  "inference_attempted": false,
+  "inference": true,
+  "inference_attempted": true,
   "model": "Audio-Mamba/SSAM",
   "official_source": "https://github.com/SarthakYadav/audio-mamba-official",
   "patient_data_read": false,
-  "reason": "official tiny checkpoint is present, but official mamba runtime dependencies are unavailable in the dedicated environment; no bypass or alternate model used",
+  "probe_evidence": "reports/m6a_public_002_audio_mamba_probe.json",
+  "reason": "official tiny checkpoint and runtime dependencies are present; six synthetic probes passed",
   "source_audit": {
     "bypass_attempted": false,
     "credentials_or_login_requested": false,
@@ -27,8 +28,8 @@
     "prior_2203_result": "OFFICIAL_GOOGLE_DRIVE_NETWORK_UNREACHABLE",
     "same_official_weight_direct_download": false
   },
-  "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY",
-  "temporal_probe": false,
+  "status": "PASS_INFERENCE",
+  "temporal_probe": true,
   "weights_candidates_present": [
     "/home/fanyu/auditory_simulation_m6a/m6a_public_002/cache/audio_mamba_ssam/weights/checkpoints/checkpoint-99.pth"
   ],

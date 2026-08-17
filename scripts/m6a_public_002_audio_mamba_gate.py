@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import sys
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -25,6 +26,9 @@ def main() -> None:
     code_present = [str(path) for path in code_candidates if path.exists()]
     cache_present = [str(path) for path in cache_candidates if path.exists()]
     weights_present = [str(path) for path in weight_candidates if path.exists()]
+    official_code = ROOT / "cache/audio_mamba_ssam/code/audio-mamba-official-master"
+    if official_code.exists():
+        sys.path.insert(0, str(official_code))
     weight_inventory = [
         {
             "path": str(path.relative_to(ROOT)),
@@ -41,13 +45,19 @@ def main() -> None:
         name: bool(importlib.util.find_spec(name))
         for name in ("mamba_ssm", "causal_conv1d", "hear_api")
     }
-    runtime_ready = all(dependencies.values()) and bool(weights_present)
+    probe_report_path = ROOT / "reports/m6a_public_002_audio_mamba_probe.json"
+    probe_report = {}
+    if probe_report_path.exists():
+        probe_report = json.loads(probe_report_path.read_text(encoding="utf-8"))
+    inference_pass = probe_report.get("status") == "PASS"
+    runtime_ready = all(dependencies.values()) and bool(weights_present) and inference_pass
     result = {
         "model": "Audio-Mamba/SSAM",
         "config": "ssam_tiny_200_16x4",
         "status": "PASS_INFERENCE" if runtime_ready else "BLOCKED_BY_UPSTREAM_DEPENDENCY",
-        "inference": runtime_ready,
-        "temporal_probe": False,
+        "inference": inference_pass,
+        "temporal_probe": inference_pass,
+        "probe_evidence": str(probe_report_path.relative_to(ROOT)) if probe_report else None,
         "zero_training": True,
         "patient_data_read": False,
         "official_source": "https://github.com/SarthakYadav/audio-mamba-official",
@@ -68,12 +78,11 @@ def main() -> None:
         "weights_status": "PRESENT" if weights_present else "MISSING",
         "dependency_presence": dependencies,
         "dependency_install_attempted": True,
-        "inference_attempted": False,
+        "inference_attempted": bool(probe_report),
         "reason": (
-            "official tiny checkpoint is present, but official mamba runtime dependencies "
-            "are unavailable in the dedicated environment; no bypass or alternate model used"
-            if not runtime_ready
-            else "official tiny checkpoint and runtime dependencies are present"
+            "official tiny checkpoint and runtime dependencies are present; six synthetic probes passed"
+            if runtime_ready
+            else "official tiny checkpoint or runtime dependency/probe evidence is incomplete; no bypass or alternate model used"
         ),
         "download_attempted": True,
     }

@@ -10,8 +10,8 @@ CoNNear 与 ICNet 的统一 probe 当前均为 6/6：`tone`、`regular_clicks`�
 
 | 项目 | 结果 |
 |---|---|
-| inference PASS | 7/9：wav2vec2、PANNs、ConvTasNet、SpeechBrain、CoNNear、ICNet、Parakeet |
-| temporal probe PASS | 6/9；均为 no-fit synthetic representation probe |
+| inference PASS | 8/9：wav2vec2、PANNs、ConvTasNet、SpeechBrain、CoNNear、ICNet、Parakeet、Audio-Mamba |
+| temporal probe PASS | 7/9；均为 no-fit synthetic representation probe |
 | CoNNear | BM/IHC/ANF 五级输出，201 CF，finite |
 | ICNet | bottleneck `[1,1,762,64]`；units_1000 `[1,762,1000]`，finite |
 | PANNs | embedding `[1,2048]`，finite；同源重取后加载 PASS |
@@ -20,7 +20,7 @@ CoNNear 与 ICNet 的统一 probe 当前均为 6/6：`tone`、`regular_clicks`�
 | wav2vec2 | projected + 12 hidden layers，tone `[1,49,768]`，finite |
 | Whisper turbo | 官方加载未形成 inference 结果；失败证据保留，不绕过 |
 | Parakeet-TDT | 官方 Transformers six-probe generate smoke PASS；token 序列 finite，但未提取 hidden representation |
-| Audio-Mamba/SSAM | 官方 tiny 权重已在 2203 正式目录；`mamba_ssm`/`causal_conv1d` 依赖链仍阻塞 |
+| Audio-Mamba/SSAM | 官方 tiny 权重与匹配运行时已在隔离环境；六 probe hidden representation PASS |
 
 ## 已完成交付
 
@@ -38,15 +38,15 @@ CoNNear 与 ICNet 的统一 probe 当前均为 6/6：`tone`、`regular_clicks`�
 
 可声称：这些公开 pretrained/physiology-surrogate 路径在 synthetic 输入上完成了有限的加载、shape、finite 与时间扰动 smoke；CoNNear 和 ICNet 的输出级别及机制边界可被审计。
 
-不可声称：模型优劣、脑区对应、神经编码等价、因果听觉机制、跨被试泛化或科学显著性。当前 temporal probe 仍为 6/9，尚未达到任务书 7/9 最低目标，因此不写本周 PASS。
+不可声称：模型优劣、脑区对应、神经编码等价、因果听觉机制、跨被试泛化或科学显著性。当前 temporal probe 已达到 7/9 最低数量门槛，但仍需协调审核，不写本周 PASS。
 
 ## 失败与下一门禁
 
-PANNs 原截断文件失败记录保留，同源重取后已通过；Whisper 与 Audio-Mamba 的失败/未运行证据保留，Parakeet 已完成官方 generate smoke。协调者需决定是接受当前 7/9 inference、6/9 temporal probe 的阶段性结果，还是另行授权补齐 temporal probe；在此之前停止，不启动 G3、exchange candidate、患者数据或任何训练流程。
+PANNs 原截断文件失败记录保留，同源重取后已通过；Whisper 的失败证据保留，Parakeet 已完成官方 generate smoke。Audio-Mamba 已在新隔离环境完成官方 tiny 六 probe hidden representation；当前为 8/9 inference、7/9 temporal probe 的阶段性结果，等待协调审核，不启动 G3、exchange candidate、患者数据或任何训练流程。
 
 ## 本轮续跑补充
 
-Parakeet 本轮从 HF mirror 下载完整 snapshot 到 2203 专用 cache，并按官方 Transformers 路径做六 probe `generate` smoke；输出为 finite decoder token sequences，未将其当作 hidden-layer temporal representation。Audio-Mamba 官方 tiny 权重已按 `weights/checkpoints/checkpoint-99.pth` 落盘 2203；官方 Mamba 依赖构建受 CUDA/PyTorch 工具链不匹配阻塞，未绕过官方路径，也未启动 inference。
+Parakeet 本轮从 HF mirror 下载完整 snapshot 到 2203 专用 cache，并按官方 Transformers 路径做六 probe `generate` smoke；输出为 finite decoder token sequences，未将其当作 hidden-layer temporal representation。Audio-Mamba 官方 tiny 权重已按 `weights/checkpoints/checkpoint-99.pth` 落盘 2203；在新隔离环境中使用匹配的 Mamba runtime 完成官方 `ssam_tiny_200_16x4` 六 probe，输出 shape `[1,26,960]` 且 finite；未进行下游拟合。
 
 CoNNear 的统一 probe 已真正输出 `waveform→BM→IHC→ANF-H/M/L`。六类输入均已记录，其中 regular/jitter/omission/phase 为重点生理比较；stage distance、lag-1 persistence 和事件后 10 ms 平均响应写入 2203 `reports/m6a_public_002_auditory_physio_probes.json`。ICNet 对六类输入输出 `waveform→bottleneck→units_1000`；bottleneck 与 units distance 已记录，单帧跨 probe persistence 明确为 `null`。
 
@@ -58,4 +58,4 @@ CoNNear 的统一 probe 已真正输出 `waveform→BM→IHC→ANF-H/M/L`。六�
 - CoNNear 增加了有明确生理命名的 BM、IHC、ANF-H/M/L 变换；ICNet 增加了 bottleneck 到 1000-unit animal IC surrogate 的 population transform。二者都不等于人脑皮层、患者神经信号或跨物种功能等价。
 - 成熟模型已覆盖局部卷积、循环状态、全局注意力、时序压缩和部分 auditory-physiology surrogate；真正缺口仍是可审计的时间参考、跨模型表征语义、有限/全局上下文边界，以及与公开神经数据的防泄漏 alignment 证据。本轮没有运行 Audio↔Brain 或 downstream readout。
 
-本轮状态仍为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`；inference 已 7/9，但 temporal probe 为 6/9，不宣称任务 PASS 或科学结果。
+本轮状态仍为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`；inference 为 8/9、temporal probe 为 7/9，仍不宣称任务 PASS 或科学结果。

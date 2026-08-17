@@ -3,7 +3,7 @@ PANNs-CNN14,CNN pooling,finite learned receptive fields,embedding compression,no
 ConvTasNet,temporal convolution,finite convolutional context,waveform preservation through separator,none,PASS,PASS,context and causality need task-specific audit,PASS is synthetic waveform only
 SpeechBrain-CRDNN,CNN plus BiLSTM,recurrent sequence state,decoder sequence compression,none,PASS,PASS,decoder state is not a neural physiology model,synthetic decoder smoke only
 Parakeet-TDT,FastConformer plus TDT,attention and transducer state,encoder-decoder compression,none,PASS,NOT_ESTIMABLE,official generate smoke passed on six synthetic inputs; token output is not a hidden-layer temporal representation,decoder smoke only
-Audio-Mamba,selective SSM,state-space recurrence,SSM state compression,none,BLOCKED,BLOCKED,official tiny checkpoint present but mamba runtime dependency build blocked by CUDA/PyTorch mismatch,no result
+Audio-Mamba,selective SSM,state-space recurrence,SSM state compression,none,PASS,PASS,official SSAM tiny hidden representation smoke on six synthetic probes; no downstream fit,temporal summary only
 wav2vec2,Transformer self-attention,passage-global attention,hidden-state hierarchy,none,PASS,PASS,global context and learned speech bias need brain alignment tests,synthetic hidden-state response only
 Whisper-turbo,encoder-decoder Transformer,global attention and decoder state,encoder-decoder compression,none,BLOCKED,BLOCKED,official loader path did not yield inference,no result
 CoNNear-periphery,trained AECNN cascade,cochlear channel dynamics,201 CF population transform,BM/IHC/ANF cascade,PASS,PASS,peripheral surrogate does not establish cortical or human equivalence,physiological surrogate only
