@@ -12,7 +12,7 @@
 | 计算位置 | `server2203:/home/fanyu/auditory_simulation_m6a` |
 | Git 边界 | 本地唯一 Git 工作区；远端计算目录不作为第二 Git 工作区 |
 
-本轮 M6A-PUBLIC-002 已完成一次低成本 Stage A-D 复现收口：2203 上 CoNNear、ICNet、PANNs-CNN14、ConvTasNet、SpeechBrain-CRDNN、wav2vec2、Parakeet 与 Audio-Mamba 有 inference PASS 证据，共 8/9；统一 temporal probe 已为 7/9，Whisper 保留阻塞证据。因此当前状态为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`，达到任务书的 7/9 temporal 最低数量目标但仍等待协调审核，不宣称本周 PASS。大模型、缓存、特征和日志仍只在 2203；本地仅保留轻量脚本与报告；不执行训练、微调、downstream probe、患者/STN 数据或 Git。
+本轮 M6A-PUBLIC-002 已完成一次低成本 Stage A-D 复现收口：2203 上 CoNNear、ICNet、PANNs-CNN14、ConvTasNet、SpeechBrain-CRDNN、wav2vec2、Parakeet、Audio-Mamba 与 Whisper 有 inference PASS 证据，共 9/9；统一 temporal probe 已为 8/9。旧 openai-whisper loader 的失败证据保留，官方 HF Transformers `openai/whisper-large-v3-turbo` 已完成六个 synthetic probe 的 encoder hidden representation。因此当前状态为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`，仍等待协调审核，不宣称本周 PASS。大模型、缓存、特征和日志仍只在 2203；本地仅保留轻量脚本与报告；不执行训练、微调、downstream probe、患者/STN 数据或 Git。
 
 本轮续跑新增统一 synthetic temporal evidence：CoNNear 已逐级输出 `waveform→BM→IHC→ANF-H/M/L`，ICNet 已输出 `waveform→bottleneck→units_1000`；两者均已覆盖六项输入。Parakeet 已完成官方 Transformers 六 probe `generate` smoke，输出为 finite decoder token sequences，未宣称 hidden representation temporal probe；Audio-Mamba 官方 tiny 权重已落盘 2203 规定的 `weights/checkpoints` 路径，并在新隔离环境以 `ssam_tiny_200_16x4` 完成六 probe hidden representation，输出 `[1,26,960]` 且 finite。当前仍为协调审核状态，不升格为任务 PASS。
 

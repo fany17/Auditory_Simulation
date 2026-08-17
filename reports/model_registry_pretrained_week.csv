@@ -5,6 +5,6 @@ SpeechBrain-CRDNN,CNN plus BiLSTM,speechbrain/asr-crdnn-rnnlm-librispeech,PASS,P
 Parakeet-TDT,FastConformer/TDT,nvidia/parakeet-tdt-0.6b-v3,PASS,PASS_INFERENCE_ONLY,2203:m6a_public_002_parakeet_forward_probe.json,official snapshot downloaded to dedicated cache; six synthetic generate outputs finite; no hidden-layer temporal summary
 Audio-Mamba,selective SSM,official SSAM tiny,PASS,PASS,2203:m6a_public_002_audio_mamba_gate.json; m6a_public_002_audio_mamba_probe.json,ssam_tiny_200_16x4 six finite hidden representations [1,26,960]
 wav2vec2,speech SSL Transformer,facebook/wav2vec2-base,PASS,PASS,2203 prior synthetic runner,
-Whisper-turbo,encoder-decoder Transformer,OpenAI turbo,BLOCKED_BY_UPSTREAM_DEPENDENCY,BLOCKED_BY_UPSTREAM_DEPENDENCY,2203 speechbrain_whisper.json,official loader rejected downloaded file; no bypass
+Whisper-turbo,encoder-decoder Transformer,openai/whisper-large-v3-turbo,PASS,PASS,2203:m6a_public_002_whisper_transformers_probe.json; m6a_public_002_whisper_transformers_download.json,official Transformers local-cache safetensors inference; six finite encoder representations [1,1500,1280]
 CoNNear-periphery,auditory periphery AECNN,HearingTechnology/CoNNear_periphery,PASS,PASS,2203 stage_bc_smoke.json,
 ICNet,inferior-colliculus population surrogate,fotisdr/ICNet,PASS,PASS,2203 stage_bc_smoke.json,

@@ -1,0 +1,86 @@
+{
+  "downstream_probe": false,
+  "event_triggered_mean": {
+    "jitter_clicks": 0.27310821413993835,
+    "omission": 0.27447959780693054,
+    "phase_shift": 0.2730783522129059,
+    "regular_clicks": 0.2745172381401062,
+    "speech": 0.2713892161846161,
+    "tone": 0.2736266553401947
+  },
+  "feature_extractor": {
+    "feature_size": 128,
+    "hop_length": 160,
+    "n_samples": 480000,
+    "padding": "max_length to model context",
+    "sampling_rate": 16000
+  },
+  "finite": true,
+  "local_files_only": true,
+  "model_id": "openai/whisper-large-v3-turbo",
+  "patient_data_read": false,
+  "persistence_lag1": {
+    "jitter_clicks": 0.34931195855409153,
+    "omission": 0.3338245671822055,
+    "phase_shift": 0.3953648686854542,
+    "regular_clicks": 0.34595747112702124,
+    "speech": 0.361455534852885,
+    "tone": 0.39714811313812587
+  },
+  "probe_names": [
+    "tone",
+    "regular_clicks",
+    "jitter_clicks",
+    "omission",
+    "phase_shift",
+    "speech"
+  ],
+  "relative_distance_to_tone": {
+    "jitter_clicks": 0.6602418870003278,
+    "omission": 0.666150118747179,
+    "phase_shift": 0.2528565543481805,
+    "regular_clicks": 0.6702320373249502,
+    "speech": 0.3975304879153186
+  },
+  "representation": "Whisper encoder last_hidden_state",
+  "revision_label": "main",
+  "revision_limitation": "mutable label; no cryptographic provenance asserted",
+  "safetensors_only": true,
+  "sample_rate": 16000,
+  "shapes": {
+    "jitter_clicks": [
+      1,
+      1500,
+      1280
+    ],
+    "omission": [
+      1,
+      1500,
+      1280
+    ],
+    "phase_shift": [
+      1,
+      1500,
+      1280
+    ],
+    "regular_clicks": [
+      1,
+      1500,
+      1280
+    ],
+    "speech": [
+      1,
+      1500,
+      1280
+    ],
+    "tone": [
+      1,
+      1500,
+      1280
+    ]
+  },
+  "status": "PASS",
+  "trust_remote_code": false,
+  "wall_seconds": 0.45901840599253774,
+  "zero_training": true
+}

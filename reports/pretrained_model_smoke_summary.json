@@ -12,7 +12,7 @@
     "ConvTasNet": {"status": "PASS", "wall_seconds": 8.31677936099, "output_per_probe": [1, 1, 16000], "finite": true},
     "SpeechBrain-CRDNN": {"status": "PASS", "wall_seconds": 39.3461970751, "synthetic_decode_type": "tuple"},
     "wav2vec2": {"status": "PASS", "wall_seconds": 0.57, "tone": [1, 49, 768], "projected_plus_layers": 13, "finite": true},
-    "Whisper-turbo": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "bypass_attempted": false},
+    "Whisper-turbo": {"status": "PASS", "inference": true, "probe_count": 6, "representation": "encoder last_hidden_state", "shape": [1, 1500, 1280], "finite": true, "local_files_only": true, "trust_remote_code": false, "safetensors_only": true},
     "Parakeet-TDT": {"status": "PASS", "inference": true, "probe": "PASS_INFERENCE_ONLY", "wall_seconds": 1.7852, "output_type": "decoder_token_sequences", "probe_count": 6, "reason": "official Transformers local-cache inference; six synthetic outputs finite; hidden-layer temporal representation not extracted"},
     "Audio-Mamba": {"status": "PASS", "inference": true, "weights_status": "PRESENT", "config": "ssam_tiny_200_16x4", "probe_count": 6, "representation_shape": [1, 26, 960], "finite": true, "wall_seconds": 0.26070825499482453, "reason": "official tiny checkpoint and runtime dependencies loaded in isolated 2203 environment; six synthetic hidden representations produced"}
   }

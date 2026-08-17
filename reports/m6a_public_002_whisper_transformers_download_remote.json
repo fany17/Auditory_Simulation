@@ -1,0 +1,68 @@
+{
+  "cache_path": "/home/fanyu/auditory_simulation_m6a/m6a_public_002/cache/whisper_transformers_large_v3_turbo",
+  "endpoint": "https://hf-mirror.com",
+  "files": [
+    {
+      "bytes": 34648,
+      "modified_time": 1786988400.3108053,
+      "relative_path": "added_tokens.json"
+    },
+    {
+      "bytes": 1256,
+      "modified_time": 1786988399.8198051,
+      "relative_path": "config.json"
+    },
+    {
+      "bytes": 3772,
+      "modified_time": 1786988399.8648052,
+      "relative_path": "generation_config.json"
+    },
+    {
+      "bytes": 493869,
+      "modified_time": 1786988401.0658052,
+      "relative_path": "merges.txt"
+    },
+    {
+      "bytes": 1617824864,
+      "modified_time": 1786988466.6368082,
+      "relative_path": "model.safetensors"
+    },
+    {
+      "bytes": 52666,
+      "modified_time": 1786988399.9148052,
+      "relative_path": "normalizer.json"
+    },
+    {
+      "bytes": 340,
+      "modified_time": 1786988401.2448053,
+      "relative_path": "preprocessor_config.json"
+    },
+    {
+      "bytes": 2186,
+      "modified_time": 1786988399.7728052,
+      "relative_path": "special_tokens_map.json"
+    },
+    {
+      "bytes": 2710337,
+      "modified_time": 1786988401.9378052,
+      "relative_path": "tokenizer.json"
+    },
+    {
+      "bytes": 282843,
+      "modified_time": 1786988400.4108052,
+      "relative_path": "tokenizer_config.json"
+    },
+    {
+      "bytes": 1036558,
+      "modified_time": 1786988401.8938053,
+      "relative_path": "vocab.json"
+    }
+  ],
+  "local_only_after_download": true,
+  "model_id": "openai/whisper-large-v3-turbo",
+  "revision_label": "main",
+  "revision_limitation": "mutable label; no cryptographic provenance asserted",
+  "safetensors_only": true,
+  "status": "PASS",
+  "trust_remote_code": false
+}
