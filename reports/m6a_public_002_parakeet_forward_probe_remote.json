@@ -1,0 +1,10 @@
+{
+  "Parakeet-TDT": {
+    "error": "nvidia/parakeet-tdt-0.6b-v3 does not appear to have a file named pytorch_model.bin or model.safetensors.",
+    "error_type": "OSError",
+    "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY"
+  },
+  "patient_data_read": false,
+  "probe_count": 6,
+  "zero_training": true
+}

@@ -44,7 +44,7 @@ Auditory_Simulation/
 - 当前边界：声音模型、公开神经数据和计算神经仿真的方法平台。
 - 当前方向：`M6A-PUBLIC`。
 - 当前优先任务：`M6A-PUBLIC-002`，建立可直接下载、已有 pretrained weights、零训练的声音/时序架构 baseline。
-- 当前进度：`M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`；本轮 2203 轻量复现得到 6/9 inference 与 6/9 synthetic temporal probe PASS，7/9 最低目标尚未达到，保留 Whisper/Parakeet/Audio-Mamba 阻塞证据，不宣称任务 PASS。
+- 当前进度：`M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`；本轮 2203 轻量复现得到 6/9 inference 与 6/9 synthetic temporal probe PASS，并补齐 CoNNear/ICNet 六类 probe（其中 regular/jitter/omission/phase 为重点生理比较）；7/9 最低目标尚未达到，保留 Whisper/Parakeet/Audio-Mamba 阻塞证据，不宣称任务 PASS。
 - 本周正式模型：PANNs CNN14、ConvTasNet、SpeechBrain CRDNN、Parakeet-TDT/FastConformer、Audio Mamba/SSAM、wav2vec2、Whisper、CoNNear periphery、ICNet。
 - 本周硬边界：`ZERO_TRAINING`；不从头训练、不微调、不继续预训练，也不训练 linear probe/ridge/classifier；只做 inference、representation extraction、架构审计和无需拟合参数的 temporal probes。
 - `M6A-PUBLIC-001` 保留在 `G4_MINIMAL_SD012_SES02_PRELIMINARY_COMPLETE_AWAITING_COORDINATOR_REVIEW` checkpoint；本周不扩 subject/recording/model，不继续神经拟合，也不生成新的 exchange candidate。

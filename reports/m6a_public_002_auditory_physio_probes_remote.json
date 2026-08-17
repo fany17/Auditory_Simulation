@@ -1,0 +1,477 @@
+{
+  "CoNNear-periphery": {
+    "event_triggered_mean": {
+      "ANF-H": 0.46307684605320293,
+      "ANF-L": 0.006365854469283174,
+      "ANF-M": 0.06335742563009263,
+      "BM": 0.0,
+      "IHC": 0.5765438079833984
+    },
+    "model": "CoNNear-periphery",
+    "outputs": [
+      "BM",
+      "IHC",
+      "ANF-H",
+      "ANF-M",
+      "ANF-L"
+    ],
+    "per_probe": {
+      "jitter_clicks": {
+        "ANF-H": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-L": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-M": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "BM": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            16384,
+            201
+          ]
+        },
+        "IHC": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3293184,
+            1
+          ]
+        }
+      },
+      "omission": {
+        "ANF-H": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-L": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-M": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "BM": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            16384,
+            201
+          ]
+        },
+        "IHC": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3293184,
+            1
+          ]
+        }
+      },
+      "phase_shift": {
+        "ANF-H": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-L": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-M": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "BM": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            16384,
+            201
+          ]
+        },
+        "IHC": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3293184,
+            1
+          ]
+        }
+      },
+      "regular_clicks": {
+        "ANF-H": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-L": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-M": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "BM": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            16384,
+            201
+          ]
+        },
+        "IHC": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3293184,
+            1
+          ]
+        }
+      },
+      "speech": {
+        "ANF-H": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-L": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-M": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "BM": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            16384,
+            201
+          ]
+        },
+        "IHC": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3293184,
+            1
+          ]
+        }
+      },
+      "tone": {
+        "ANF-H": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-L": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "ANF-M": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3284992,
+            1
+          ]
+        },
+        "BM": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            16384,
+            201
+          ]
+        },
+        "IHC": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            3293184,
+            1
+          ]
+        }
+      }
+    },
+    "persistence_lag1": {
+      "ANF-H": 0.9806309713116252,
+      "ANF-L": 0.9858108711855199,
+      "ANF-M": 0.9862853393794916,
+      "BM": 0.9994560531005139,
+      "IHC": 0.9819663717550051
+    },
+    "relative_distance_to_tone": {
+      "ANF-H": {
+        "jitter_clicks": 0.8140795003272511,
+        "omission": 0.804461055464066,
+        "phase_shift": 0.9416775548786978,
+        "regular_clicks": 0.8210460586332581,
+        "speech": 0.9950733690116815
+      },
+      "ANF-L": {
+        "jitter_clicks": 1.0068628551744636,
+        "omission": 1.0086295186300873,
+        "phase_shift": 1.1671155327042222,
+        "regular_clicks": 1.0139366634477651,
+        "speech": 1.0440627221849568
+      },
+      "ANF-M": {
+        "jitter_clicks": 0.9785845618026369,
+        "omission": 0.9806630631292633,
+        "phase_shift": 1.1140906780726183,
+        "regular_clicks": 0.9847148270814134,
+        "speech": 1.080126261009253
+      },
+      "BM": {
+        "jitter_clicks": 1.035531592184288,
+        "omission": 1.0322657627481393,
+        "phase_shift": 1.4199796188943994,
+        "regular_clicks": 1.0480899820160094,
+        "speech": 1.0890301193850773
+      },
+      "IHC": {
+        "jitter_clicks": 0.06506165873693683,
+        "omission": 0.06515020479151679,
+        "phase_shift": 0.08823439877744471,
+        "regular_clicks": 0.06620094908266379,
+        "speech": 0.0737560803232689
+      }
+    },
+    "sample_rate": 20000.0,
+    "status": "PASS",
+    "synthetic_only": true,
+    "wall_seconds": 19.73291838192381
+  },
+  "ICNet": {
+    "model": "ICNet",
+    "per_probe": {
+      "jitter_clicks": {
+        "bottleneck": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            1,
+            1,
+            762,
+            64
+          ]
+        },
+        "units_1000": {
+          "dtype": "int8",
+          "finite": true,
+          "shape": [
+            1,
+            762,
+            1000
+          ]
+        }
+      },
+      "omission": {
+        "bottleneck": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            1,
+            1,
+            762,
+            64
+          ]
+        },
+        "units_1000": {
+          "dtype": "int8",
+          "finite": true,
+          "shape": [
+            1,
+            762,
+            1000
+          ]
+        }
+      },
+      "phase_shift": {
+        "bottleneck": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            1,
+            1,
+            762,
+            64
+          ]
+        },
+        "units_1000": {
+          "dtype": "int8",
+          "finite": true,
+          "shape": [
+            1,
+            762,
+            1000
+          ]
+        }
+      },
+      "regular_clicks": {
+        "bottleneck": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            1,
+            1,
+            762,
+            64
+          ]
+        },
+        "units_1000": {
+          "dtype": "int8",
+          "finite": true,
+          "shape": [
+            1,
+            762,
+            1000
+          ]
+        }
+      },
+      "speech": {
+        "bottleneck": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            1,
+            1,
+            762,
+            64
+          ]
+        },
+        "units_1000": {
+          "dtype": "int8",
+          "finite": true,
+          "shape": [
+            1,
+            762,
+            1000
+          ]
+        }
+      },
+      "tone": {
+        "bottleneck": {
+          "dtype": "float32",
+          "finite": true,
+          "shape": [
+            1,
+            1,
+            762,
+            64
+          ]
+        },
+        "units_1000": {
+          "dtype": "int8",
+          "finite": true,
+          "shape": [
+            1,
+            762,
+            1000
+          ]
+        }
+      }
+    },
+    "persistence_lag1": {
+      "bottleneck": null,
+      "units_1000": null
+    },
+    "relative_distance_to_tone": {
+      "bottleneck": {
+        "jitter_clicks": 1.4088513467529946,
+        "omission": 1.4110414114648129,
+        "phase_shift": 0.12562587644782236,
+        "regular_clicks": 1.4036527507979348,
+        "speech": 0.5691771638025874
+      },
+      "units_1000": {
+        "jitter_clicks": 0.9983952595456304,
+        "omission": 0.9966482361645189,
+        "phase_shift": 0.9774294420330251,
+        "regular_clicks": 0.9972502767386302,
+        "speech": 0.9458546443546962
+      }
+    },
+    "status": "PASS",
+    "synthetic_only": true,
+    "wall_seconds": 9.50822746194899
+  },
+  "patient_data_read": false,
+  "zero_training": true
+}

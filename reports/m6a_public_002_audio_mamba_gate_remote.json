@@ -1,0 +1,18 @@
+{
+  "cache_candidates_present": [],
+  "code_candidates_present": [],
+  "dependency_presence": {
+    "causal_conv1d": false,
+    "hear_api": false,
+    "mamba_ssm": false
+  },
+  "download_attempted": false,
+  "inference": false,
+  "model": "Audio-Mamba/SSAM",
+  "official_source": "https://github.com/SarthakYadav/audio-mamba-official",
+  "patient_data_read": false,
+  "reason": "official code/weights and the Mamba runtime chain are not present; obtaining the official weight folder is outside this low-cost pass",
+  "status": "BLOCKED_BY_UPSTREAM_DEPENDENCY",
+  "temporal_probe": false,
+  "zero_training": true
+}

@@ -1,0 +1,51 @@
+{
+  "PANNs-CNN14": {
+    "event_triggered_mean": 0.09317302628377684,
+    "finite": true,
+    "persistence_lag1": 0.010704888524081066,
+    "probe_names": [
+      "tone",
+      "regular_clicks",
+      "jitter_clicks",
+      "omission",
+      "phase_shift",
+      "speech"
+    ],
+    "relative_distance_to_tone": {
+      "jitter_clicks": 0.6774616888957589,
+      "omission": 0.6706468383753529,
+      "phase_shift": 0.09263652212938596,
+      "regular_clicks": 0.6824785143974496,
+      "speech": 0.4372005582399886
+    },
+    "shapes": {
+      "jitter_clicks": [
+        1,
+        2048
+      ],
+      "omission": [
+        1,
+        2048
+      ],
+      "phase_shift": [
+        1,
+        2048
+      ],
+      "regular_clicks": [
+        1,
+        2048
+      ],
+      "speech": [
+        1,
+        2048
+      ],
+      "tone": [
+        1,
+        2048
+      ]
+    }
+  },
+  "patient_data_read": false,
+  "probe_count": 6,
+  "zero_training": true
+}

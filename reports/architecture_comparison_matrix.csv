@@ -1,10 +1,10 @@
-model,mechanism,temporal_context,output_role,inference_status,temporal_status,claim_boundary
-PANNs-CNN14,CNN pooling,finite learned receptive fields,AudioSet embedding,PASS,PASS,synthetic embedding response only
-ConvTasNet,temporal convolution,finite convolutional context,separation waveform,PASS,PASS,synthetic waveform response only
-SpeechBrain-CRDNN,CNN plus BiLSTM,recurrent sequence state,ASR decoder,PASS,PASS,synthetic decoder smoke only
-Parakeet-TDT,FastConformer plus TDT,attention and transducer state,ASR decoder,BLOCKED,BLOCKED,no result
-Audio-Mamba,selective SSM,state-space recurrence,self-supervised embedding,NOT_RUN,NOT_RUN,no result
-wav2vec2,Transformer self-attention,passage-global attention,hidden states,PASS,PASS,synthetic hidden-state response only
-Whisper-turbo,encoder-decoder Transformer,global attention and decoder state,ASR decoder,BLOCKED,BLOCKED,no result
-CoNNear-periphery,trained AECNN cascade,cochlear channel dynamics,BM/IHC/ANF stages,PASS,PASS,physiological surrogate not human auditory cortex
-ICNet,convolutional encoder-decoder,learned temporal population mapping,bottleneck/IC units,PASS,PASS,animal IC surrogate not human IC
+model,mechanism,temporal_context,retention_or_compression,physiology_transform,inference_status,temporal_status,research_gap,claim_boundary
+PANNs-CNN14,CNN pooling,finite learned receptive fields,embedding compression,none,PASS,PASS,temporal detail after pooling is unresolved,synthetic embedding response only
+ConvTasNet,temporal convolution,finite convolutional context,waveform preservation through separator,none,PASS,PASS,context and causality need task-specific audit,PASS is synthetic waveform only
+SpeechBrain-CRDNN,CNN plus BiLSTM,recurrent sequence state,decoder sequence compression,none,PASS,PASS,decoder state is not a neural physiology model,synthetic decoder smoke only
+Parakeet-TDT,FastConformer plus TDT,attention and transducer state,encoder-decoder compression,none,BLOCKED,BLOCKED,official local-cache-only forward found incomplete model cache; no bypass or download,no result
+Audio-Mamba,selective SSM,state-space recurrence,SSM state compression,none,NOT_RUN,NOT_RUN,weight/dependency path not available,no result
+wav2vec2,Transformer self-attention,passage-global attention,hidden-state hierarchy,none,PASS,PASS,global context and learned speech bias need brain alignment tests,synthetic hidden-state response only
+Whisper-turbo,encoder-decoder Transformer,global attention and decoder state,encoder-decoder compression,none,BLOCKED,BLOCKED,official loader path did not yield inference,no result
+CoNNear-periphery,trained AECNN cascade,cochlear channel dynamics,201 CF population transform,BM/IHC/ANF cascade,PASS,PASS,peripheral surrogate does not establish cortical or human equivalence,physiological surrogate only
+ICNet,convolutional encoder-decoder,learned temporal population mapping,1000-unit population transform,waveform to bottleneck to IC units,PASS,PASS,animal IC surrogate and single-frame persistence limit,animal IC surrogate only

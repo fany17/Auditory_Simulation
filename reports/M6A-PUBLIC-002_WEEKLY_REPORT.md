@@ -2,6 +2,8 @@
 
 状态：`M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`。
 
+CoNNear 与 ICNet 的统一 probe 当前均为 6/6：`tone`、`regular_clicks`、`jitter_clicks`、`omission`、`phase_shift`、`speech`。其中 `speech` 是与其他缓存模型相同的确定性 synthetic waveform；报告中的距离仍仅是 no-fit 表征扰动描述。
+
 本轮在 `server2203:/home/fanyu/auditory_simulation_m6a/m6a_public_002` 续跑，未重跑已确认的 wav2vec2 synthetic inference 与 CoNNear 既有 smoke；完成 ICNet 官方 smoke/temporal probe、PANNs 同源重取后的真实加载，以及低成本 ConvTasNet、SpeechBrain CRDNN 的 synthetic inference/probe。
 
 ## 核心结果
@@ -17,7 +19,7 @@
 | SpeechBrain CRDNN | synthetic decoder smoke PASS |
 | wav2vec2 | projected + 12 hidden layers，tone `[1,49,768]`，finite |
 | Whisper turbo | 官方加载未形成 inference 结果；失败证据保留，不绕过 |
-| Parakeet-TDT | NeMo 依赖缺失；Transformers GPU synthetic generation 超过 180 s，保留阻塞 |
+| Parakeet-TDT | 官方 Transformers local-cache-only six-probe forward 尝试发现现有缓存没有完整 `pytorch_model.bin` 或 `model.safetensors`；未下载，保留阻塞 |
 | Audio-Mamba/SSAM | 官方权重与 Mamba 依赖链本轮未进入 |
 
 ## 已完成交付
@@ -41,3 +43,19 @@
 ## 失败与下一门禁
 
 PANNs 原截断文件失败记录保留，同源重取后已通过；Whisper、Parakeet、Audio-Mamba 的失败/未运行证据保留。协调者需决定是接受当前 6/9 的阶段性结果，还是另行授权补齐至少 7/9；在此之前停止，不启动 G3、exchange candidate、患者数据或任何训练流程。
+
+## 本轮续跑补充
+
+Parakeet 本轮按官方 Transformers 路径做了一次 120 s 上限、`local_files_only=true`、`trust_remote_code=false` 的六 probe forward 尝试；现有缓存没有完整模型权重，因此未进入实际 forward，未下载或绕过官方路径。Audio-Mamba 只做了 2203 目录与依赖 gate，官方权重目录及 Mamba runtime 不在现有专用缓存，未启动高成本权重链。
+
+CoNNear 的统一 probe 已真正输出 `waveform→BM→IHC→ANF-H/M/L`。六类输入均已记录，其中 regular/jitter/omission/phase 为重点生理比较；stage distance、lag-1 persistence 和事件后 10 ms 平均响应写入 2203 `reports/m6a_public_002_auditory_physio_probes.json`。ICNet 对六类输入输出 `waveform→bottleneck→units_1000`；bottleneck 与 units distance 已记录，单帧跨 probe persistence 明确为 `null`。
+
+## 架构结论与研究缺口
+
+- CNN/TCN 能在有限卷积上下文中保留局部时间结构；池化或 separator 输出会压缩或重整时间信息，不能直接当作神经时间码。
+- BiLSTM/CRDNN 和 Transformer/Conformer 通过 recurrent state 或 attention 处理长上下文；wav2vec2 的 passage-global attention 与 Whisper/Parakeet 的 encoder-decoder 语义状态不能被简化为有限生理 receptive field。
+- Mamba/SSAM 代表 state-space 压缩，但本轮无可运行官方权重证据。
+- CoNNear 增加了有明确生理命名的 BM、IHC、ANF-H/M/L 变换；ICNet 增加了 bottleneck 到 1000-unit animal IC surrogate 的 population transform。二者都不等于人脑皮层、患者神经信号或跨物种功能等价。
+- 成熟模型已覆盖局部卷积、循环状态、全局注意力、时序压缩和部分 auditory-physiology surrogate；真正缺口仍是可审计的时间参考、跨模型表征语义、有限/全局上下文边界，以及与公开神经数据的防泄漏 alignment 证据。本轮没有运行 Audio↔Brain 或 downstream readout。
+
+本轮状态仍为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`，不宣称 7/9、任务 PASS 或科学结果。

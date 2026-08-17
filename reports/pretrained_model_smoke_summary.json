@@ -13,7 +13,7 @@
     "SpeechBrain-CRDNN": {"status": "PASS", "wall_seconds": 39.3461970751, "synthetic_decode_type": "tuple"},
     "wav2vec2": {"status": "PASS", "wall_seconds": 0.57, "tone": [1, 49, 768], "projected_plus_layers": 13, "finite": true},
     "Whisper-turbo": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "bypass_attempted": false},
-    "Parakeet-TDT": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "reason": "Nemo unavailable; Transformers synthetic generation exceeded 180 seconds"},
-    "Audio-Mamba": {"status": "NOT_RUN", "inference": false, "reason": "official weights and Mamba dependency chain deferred"}
+    "Parakeet-TDT": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "reason": "One official transformers forward attempt with local_files_only=true found no complete pytorch_model.bin or model.safetensors in the existing cache; no download"},
+    "Audio-Mamba": {"status": "BLOCKED_BY_UPSTREAM_DEPENDENCY", "inference": false, "reason": "official code/weights and Mamba dependency chain absent in the dedicated 2203 cache"}
   }
 }
