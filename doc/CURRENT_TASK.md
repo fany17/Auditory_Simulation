@@ -2,137 +2,64 @@
 
 | 字段 | 内容 |
 |---|---|
-| 日期 | 2026-08-13 |
-| 状态 | `READY_FOR_COORDINATOR_REVIEW` |
-| 执行授权 | `AUTHORIZED_WITH_GATES` |
+| 日期 | `2026-08-21` |
+| 状态 | `ACTIVE_EXECUTION` |
 | 当前方向 | `M6A-PUBLIC：公开声音模型、公开神经数据与通用听觉计算方法` |
-| 当前优先任务 | `M6A-PUBLIC-002` |
-| 正式任务书 | `doc/tasks/M6A-PUBLIC-002.md` |
-| 执行窗口 | `2026-08-13` 至 `2026-08-20` |
-| 计算位置 | `server2203:/home/fanyu/auditory_simulation_m6a` |
-| Git 边界 | 本地唯一 Git 工作区；远端计算目录不作为第二 Git 工作区 |
+| 当前优先任务 | `M6A-PUBLIC-003` |
+| 正式任务书 | `doc/tasks/M6A-PUBLIC-003.md` |
+| Task index | `doc/TASKS.md` |
+| 患者/STN 数据 | `FORBIDDEN` |
 
-本轮 M6A-PUBLIC-002 已完成一次低成本 Stage A-D 复现收口：2203 上 CoNNear、ICNet、PANNs-CNN14、ConvTasNet、SpeechBrain-CRDNN、wav2vec2、Parakeet、Audio-Mamba 与 Whisper 有 inference PASS 证据，共 9/9；统一 temporal probe 已为 8/9。旧 openai-whisper loader 的失败证据保留，官方 HF Transformers `openai/whisper-large-v3-turbo` 已完成六个 synthetic probe 的 encoder hidden representation。因此当前状态为 `M6A-PUBLIC-002_READY_FOR_COORDINATOR_REVIEW`，仍等待协调审核，不宣称本周 PASS。大模型、缓存、特征和日志仍只在 2203；本地仅保留轻量脚本与报告；不执行训练、微调、downstream probe、患者/STN 数据或 Git。
+## 当前任务
 
-本轮续跑新增统一 synthetic temporal evidence：CoNNear 已逐级输出 `waveform→BM→IHC→ANF-H/M/L`，ICNet 已输出 `waveform→bottleneck→units_1000`；两者均已覆盖六项输入。Parakeet 已完成官方 Transformers 六 probe `generate` smoke，输出为 finite decoder token sequences，未宣称 hidden representation temporal probe；Audio-Mamba 官方 tiny 权重已落盘 2203 规定的 `weights/checkpoints` 路径，并在新隔离环境以 `ssam_tiny_200_16x4` 完成六 probe hidden representation，输出 `[1,26,960]` 且 finite。当前仍为协调审核状态，不升格为任务 PASS。
+`M6A-PUBLIC-003：Temporal Architecture Perturbation`
 
-## 当前决定
+目标不再是继续补 pretrained baseline，而是研究明确结构变量如何影响快速声音时间信息的保留、整合与丢失。
 
-本周优先级已由单一 wav2vec2→iEEG encoding 扩展为“预训练声音/时序架构复现周”。目标不是设计新模型，而是先建立足够强的成熟 AI 与 auditory-physiology baseline。
+第一轮只做三个主题：
 
-本周硬规则：
+1. **Early vs Late Downsampling**：保持总压缩尽量一致，只改变下采样发生层级；
+2. **Multiscale Receptive Field / RF Growth**：kernel、dilation、RF growth schedule、parallel RF，以及 RF/downsampling decoupling；
+3. **Explicit Change/Event Branch**：baseline vs 显式变化支路 vs 参数匹配普通第二支路。
 
-- 正式执行对象必须有公开可下载 pretrained checkpoint / trained weights；
-- `ZERO_TRAINING`：不从头训练、不微调、不继续预训练；
-- 不训练 linear probe、ridge、classifier 或其他 downstream readout；
-- 只做 inference、feature extraction、架构审计与无需拟合参数的 temporal representation analysis；
-- 不读取、复制或分析 STN 患者数据；
-- 本周禁止提出或实现新的 auditory-inspired architecture。
+允许训练小型、matched experimental models 来做结构因果比较；禁止微调 wav2vec2、Whisper、Parakeet、Audio-Mamba 等大型 pretrained backbone。
 
-当前正式模型清单：
+详细执行要求见 `doc/tasks/M6A-PUBLIC-003.md`。
 
-1. PANNs CNN14；
-2. ConvTasNet；
-3. SpeechBrain CRDNN；
-4. NVIDIA Parakeet-TDT / FastConformer；
-5. Audio Mamba / SSAM；
-6. `facebook/wav2vec2-base`；
-7. OpenAI Whisper turbo；
-8. CoNNear periphery；
-9. ICNet。
+## Frozen baseline：M6A-PUBLIC-002
 
-`LEAF` 因正式使用需要任务训练，不满足本周 `ZERO_TRAINING` 边界，降级为 registry-only 历史/候选条目。
+`M6A-PUBLIC-002` 已满足进入下一阶段所需的 baseline 条件：
 
-## M6A-PUBLIC-002 当前任务
+- 9/9 pretrained inference；
+- 8/9 unified temporal representation probe；
+- 覆盖 PANNs CNN14、ConvTasNet、SpeechBrain CRDNN、Parakeet-TDT/FastConformer、Audio-Mamba/SSAM、wav2vec2、Whisper、CoNNear periphery、ICNet；
+- CoNNear 已覆盖 `waveform→BM→IHC→ANF-H/M/L` 六类 probe；
+- ICNet 已覆盖 `waveform→bottleneck→units_1000` 六类 probe；
+- 0 training / 0 finetuning / 0 patient data。
 
-任务书：`doc/tasks/M6A-PUBLIC-002.md`
+002 作为 003 的 frozen reference，不继续为了补更多模型或 9/9 hidden representation 消耗时间。
 
-本周执行顺序固定为：
+旧失败记录继续保留，不删除 historical blocker。
 
-```text
-model registry / checkpoint audit
-→ official example smoke
-→ unified temporal probes
-→ architecture / temporal representation matrix
-→ weekly report
-```
+## Historical checkpoint：M6A-PUBLIC-001
 
-统一 probe 只使用小型、可控输入：pure tone、regular clicks、jitter、omission、phase shift 和短自然语音。禁止为了本周任务下载大型 benchmark 或训练数据集。
+`M6A-PUBLIC-001` 保留 ds004703 / wav2vec2 的单被试单 recording preliminary checkpoint，不在 003 中扩 subject、recording 或神经拟合，也不自动生成 M6A→M6B exchange candidate。
 
-CoNNear 的本周角色是复现人类 auditory periphery surrogate：
+## 项目边界
 
-```text
-sound
-→ basilar-membrane vibration
-→ IHC receptor potential
-→ H/M/L ANF firing-rate representation
-```
+- `Auditory_Simulation`：公开数据、声音模型、通用表征/时间结构方法、M6A；
+- `STN_Decoding_Encoding`：患者实验、STN 数据、STN-specific adaptation、M6B；
+- 两者只通过冻结、版本化 artifact 衔接；
+- 患者数据默认不得进入 `Auditory_Simulation`；
+- `AuditoryReading` 独立负责教材、综述和知识整理，不作为第二实验运行目录。
 
-ICNet 的本周角色是复现正常听力沙鼠 inferior-colliculus population model：
+## 当前硬规则
 
-```text
-sound
-→ shared bottleneck
-→ simulated IC neural population
-```
-
-两者不能混写：CoNNear 代表外周逐级生理近似，ICNet 代表早期中枢神经编码近似；ICNet 不是人脑 IC 模型，CoNNear 附带的解析 CN/IC backend 也不等于 CoNNear 已学习到中枢听觉层级。
-
-## M6A-PUBLIC-001 历史 checkpoint
-
-`M6A-PUBLIC-001` 不删除、不覆盖，正式任务书仍为 `doc/tasks/M6A-PUBLIC-001.md`。
-
-其当前冻结节点为：
-
-`G4_MINIMAL_SD012_SES02_PRELIMINARY_COMPLETE_AWAITING_COORDINATOR_REVIEW`
-
-已完成同一 `sub-SD012_ses-02_task-PassiveListen` recording 的 40 passages（24/8/8）、36 electrodes、wav2vec2/acoustic layer-wise 最小 G4 preliminary。描述性结果中 wav2vec2 Transformer 09 的最佳中位 test Pearson r 为 0.0387（lag 0.20 s），20-null mechanical p=0.1905；各 feature variant 描述性最佳 lag 的中位 R2 均为负。该结果仍只属于单被试单 recording preliminary，不提供稳定显著性、脑区或泛化结论。
-
-本周不扩大 M6A-PUBLIC-001：
-
-- 不新增 subject / recording；
-- 不新增声音模型进入神经拟合；
-- 不继续 ridge/null 扩展；
-- 不生成新的 M6A→M6B exchange candidate。
-
-已有数据、split、preprocessing、G1–G4 工程审计和报告继续保留，不回滚、不重解释。
-
-## 与 STN_Decoding_Encoding 的接口
-
-跨项目边界不变：
-
-- `Auditory_Simulation` 只处理公开声音、公开模型、公开神经数据和非临床计算方法；
-- `STN_Decoding_Encoding` 独立处理患者实验、STN 数据和 STN-specific adaptation；
-- 两边只通过冻结、版本化 artifact 接口衔接；
-- 患者数据默认不得进入 `Auditory_Simulation`。
-
-现有 M6A→M6B revised DRAFT 状态继续保持：
-
-- `REVISED_DRAFT_ACCEPTED_FOR_CANDIDATE_PREPARATION`；
-- consumer：`READY_WAITING_M6A_CANDIDATE`；
-- `CONSUMER_CROSS_TEST=NOT_RUN`；
-- contract 仍非 accepted/frozen；
-- 本周模型复现任务不自动生成 exchange candidate，也不解锁患者适配。
-
-## 本周 PASS 标准
-
-- 9/9 pretrained source 完成审计；
-- 至少 7/9 官方 inference 跑通；
-- CoNNear 与 ICNet 两条 auditory-physiology 主线优先跑通；
-- 至少 7/9 完成可执行的统一 temporal probe；
-- `0` 次训练；
-- `0` 次微调；
-- `0` 次患者数据读取；
-- 输出模型 registry、smoke summary、temporal probe summary、architecture comparison matrix、CoNNear/ICNet 两份复现报告和一份 weekly report。
-
-## 硬停止条件
-
-- 下载接口要求账户本人点击同意、签署新条款、提供个人凭据或付费；
-- checkpoint 无法合法公开下载；
-- 单个非核心模型因 upstream dependency 占用过高修复成本；
-- 预计新增存储超过 500 GB、连续 GPU 运行超过 24 小时或需要重大不可逆操作；
-- 任务需要训练、微调、继续预训练或训练 downstream probe；
-- 任务需要读取 STN 患者数据；
-- 任务试图直接进入新 auditory-inspired architecture 设计。
-
-单个非核心模型被依赖阻断时，记录 `BLOCKED_BY_UPSTREAM_DEPENDENCY` 并继续其他模型，不为了 9/9 耗尽整周。
+- 不读取患者/STN 数据；
+- 不修改 `STN_Decoding_Encoding`；
+- 不继续堆 pretrained model；
+- 不微调大型 pretrained backbone；
+- 阴性结构结果必须保留；
+- 参数无法 matched 时必须标记 confounded；
+- 禁止按脑区名字机械搭建“仿听觉系统网络”；
+- 所有 auditory-inspired 修改必须有明确计算原则、baseline deficit、minimal implementation、matched control、ablation 和 falsifiable endpoint。
