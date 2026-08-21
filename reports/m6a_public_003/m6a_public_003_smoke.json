@@ -1,0 +1,20 @@
+{
+  "integrity_policy": "NON_HASH_AUDIT",
+  "known_rf_checks": {
+    "rf_dilation_decoupled_resolution_ms": 1.0,
+    "rf_dilation_decoupled_samples": 33,
+    "rf_stride_coupled_resolution_ms": 4.0,
+    "rf_stride_coupled_samples": 33
+  },
+  "no_pretrained_model": true,
+  "parameter_match_status_counts": {
+    "CONFOUNDED": 1,
+    "PASS": 14
+  },
+  "patient_stn_data_read": false,
+  "rf_row_count": 99,
+  "session_id": "M6A-PUBLIC-003-S01",
+  "status": "PASS",
+  "task_id": "M6A-PUBLIC-003",
+  "variant_count": 15
+}

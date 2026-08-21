@@ -1,0 +1,29 @@
+{
+  "failed_or_nonpass_count": 0,
+  "figures": [
+    "reports/figures/m6a_public_003_rf_and_resolution.{png,svg,pdf}",
+    "reports/figures/m6a_public_003_performance_by_perturbation.{png,svg,pdf}",
+    "reports/figures/m6a_public_003_matched_architecture_comparison.{png,svg,pdf}",
+    "reports/figures/m6a_public_003_representation_checks.{png,svg,pdf}"
+  ],
+  "formal_run_count": 45,
+  "pass_count": 45,
+  "reports": [
+    "reports/STRUCTURAL_MODIFICATION_REGISTRY.md",
+    "reports/receptive_field_by_layer.csv",
+    "reports/TEMPORAL_BENCHMARK_DESIGN.md",
+    "reports/DOWNSAMPLING_ABLATION.md",
+    "reports/RECEPTIVE_FIELD_ABLATION.md",
+    "reports/EVENT_BRANCH_ABLATION.md",
+    "reports/M6A-PUBLIC-003_SUMMARY.md"
+  ],
+  "scope_groups": [
+    "downsampling",
+    "rf_growth_multiscale_decoupling",
+    "explicit_change_branch"
+  ],
+  "session_id": "M6A-PUBLIC-003-S01",
+  "status": "READY_FOR_REVIEW",
+  "task_id": "M6A-PUBLIC-003",
+  "variant_count": 15
+}

@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-08-21T16:52:14.732660+00:00",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA L40",
+  "device_used": "cuda",
+  "formal_seed_count": 3,
+  "hostname": "nercn",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "large_checkpoints_saved": false,
+  "no_pretrained_model": true,
+  "patient_stn_data_read": false,
+  "platform": "Linux-4.18.0-553.137.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python": "3.11.15",
+  "same_split_optimizer_epochs_batch": true,
+  "session_id": "M6A-PUBLIC-003-S01",
+  "status": "READY_FOR_REVIEW",
+  "task_id": "M6A-PUBLIC-003",
+  "torch": "2.11.0+cu128"
+}

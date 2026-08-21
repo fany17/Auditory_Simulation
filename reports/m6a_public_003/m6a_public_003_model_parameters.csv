@@ -1,0 +1,16 @@
+variant,family,match_group,mode,width,branch_width,kernel,dilation_schedule,stride_schedule,parameter_count,approx_flops_per_sample,final_theoretical_RF_samples,final_theoretical_RF_ms,final_output_time_resolution_ms,final_output_length,notes,reference_variant,relative_parameter_difference,parameter_match_status
+early_downsample,downsampling,downsampling,single,16,0,5,"1,1,1,1","2,1,2,1",6667,3001152,39,39.0,4.0,128,stride/pooling proxy occurs early; total factor 4,early_downsample,0.0,PASS
+late_downsample,downsampling,downsampling,single,16,0,5,"1,1,1,1","1,1,2,2",6667,4639552,23,23.0,4.0,128,same final factor 4; stride is delayed to later blocks,early_downsample,0.0,PASS
+uniform_local,rf_growth,rf_schedule,single,16,0,3,"1,1,1,1","1,1,1,1",4619,3197760,11,11.0,1.0,512,uniform/local dilation schedule,uniform_local,0.0,PASS
+exponential_growth,rf_growth,rf_schedule,single,16,0,3,"1,2,4,8","1,1,1,1",4619,3197760,33,33.0,1.0,512,exponential dilation schedule,uniform_local,0.0,PASS
+delayed_growth,rf_growth,rf_schedule,single,16,0,3,"1,1,1,2","1,1,1,1",4619,3197760,13,13.0,1.0,512,delayed-growth dilation schedule,uniform_local,0.0,PASS
+parallel_multiscale,rf_growth,multiscale,parallel,13,0,3,"1,1,1,1","1,1,1,1",4815,3450304,59,59.0,1.0,512,depthwise parallel k=3/7/15 branches with 1x1 fusion,uniform_local,0.042433427148733494,PASS
+rf_stride_coupled,rf_growth,rf_decoupling,single,16,0,3,"1,1,1,2","2,2,1,1",4619,1624896,33,33.0,4.0,128,matched RF obtained mainly with stride; final resolution 4 ms,rf_stride_coupled,0.0,PASS
+rf_dilation_decoupled,rf_growth,rf_decoupling,single,16,0,3,"1,2,4,8","1,1,1,1",4619,3197760,33,33.0,1.0,512,same theoretical RF through dilation; final resolution 1 ms,rf_stride_coupled,0.0,PASS
+kernel_3,rf_growth,kernel_sweep,single,16,0,3,"1,1,1,1","1,1,1,1",4619,3197760,11,11.0,1.0,512,kernel-size diagnostic; width chosen for approximate parameter match,kernel_3,0.0,PASS
+kernel_7,rf_growth,kernel_sweep,single,11,0,7,"1,1,1,1","1,1,1,1",4575,3505344,27,27.0,1.0,512,kernel-size diagnostic; width chosen for approximate parameter match,kernel_3,-0.00952587140073609,PASS
+kernel_15,rf_growth,kernel_sweep,single,8,0,15,"1,1,1,1","1,1,1,1",4811,3958592,59,59.0,1.0,512,kernel-size diagnostic; width chosen for approximate parameter match,kernel_3,0.041567438839575664,PASS
+kernel_31,rf_growth,kernel_sweep,single,5,0,31,"1,1,1,1","1,1,1,1",3855,3191232,123,123.0,1.0,512,kernel-size diagnostic; expected parameter confound is retained,kernel_3,-0.16540376704914483,CONFOUNDED
+event_baseline,explicit_change_branch,event_branch,single,16,0,3,"1,1,1,1","1,1,1,1",4619,3197760,11,11.0,1.0,512,single content branch baseline,event_baseline,0.0,PASS
+explicit_change,explicit_change_branch,event_branch,explicit_change,16,11,3,"1,1,1,1","1,1,1,1",4867,3224384,11,11.0,1.0,512,content branch plus first-difference branch,event_baseline,0.053691275167785234,PASS
+ordinary_second_branch,explicit_change_branch,event_branch,ordinary_second,16,11,3,"1,1,1,1","1,1,1,1",4867,3224384,11,11.0,1.0,512,content branch plus parameter-matched copy of raw input branch,event_baseline,0.053691275167785234,PASS
