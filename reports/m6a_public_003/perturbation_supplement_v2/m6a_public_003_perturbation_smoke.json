@@ -1,0 +1,12 @@
+{
+  "integrity_policy": "NON_HASH_AUDIT",
+  "known_rf_checks": {
+    "rf_dilation_decoupled_resolution_ms": 1.0,
+    "rf_dilation_decoupled_samples": 33,
+    "rf_stride_coupled_resolution_ms": 4.0,
+    "rf_stride_coupled_samples": 33
+  },
+  "parameter_rows": 15,
+  "rf_rows": 99,
+  "status": "PASS"
+}

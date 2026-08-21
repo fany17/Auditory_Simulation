@@ -1,0 +1,13 @@
+{
+  "task_id": "M6A-PUBLIC-003",
+  "supplement_id": "M6A-PUBLIC-003-PERTURBATION-SUPPLEMENT-V1",
+  "status": "FAILED_REPORT_RENDER",
+  "record_retained": true,
+  "training_and_metric_stage": "completed before report rendering failure",
+  "failure_stage": "write_updated_reports",
+  "failure_type": "NameError",
+  "failure_message": "Markdown figure suffix braces were interpreted as f-string expressions",
+  "replacement_run": "perturbation_supplement_v2",
+  "formal_results_preserved": true,
+  "integrity_policy": "NON_HASH_AUDIT"
+}

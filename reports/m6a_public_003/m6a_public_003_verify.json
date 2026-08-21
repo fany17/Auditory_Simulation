@@ -11,7 +11,16 @@
     "summary_rows": 270,
     "representation_rows": 135,
     "figure_stems": 4,
-    "large_checkpoint_files": 0
+    "large_checkpoint_files": 0,
+    "perturbation_supplement": {
+      "metric_rows": 675,
+      "summary_rows": 225,
+      "status_rows": 45,
+      "parameter_smoke_rows": 15,
+      "rf_smoke_rows": 99,
+      "figure_stems": 1,
+      "large_checkpoint_files": 0
+    }
   },
   "integrity_policy": "NON_HASH_AUDIT"
 }

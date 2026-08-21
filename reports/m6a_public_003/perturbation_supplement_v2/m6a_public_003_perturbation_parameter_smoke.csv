@@ -1,0 +1,16 @@
+variant,family,parameter_count,final_theoretical_RF_samples,final_theoretical_RF_ms,final_output_time_resolution_ms,final_output_length
+early_downsample,downsampling,6667,39,39.0,4.0,128
+late_downsample,downsampling,6667,23,23.0,4.0,128
+uniform_local,rf_growth,4619,11,11.0,1.0,512
+exponential_growth,rf_growth,4619,33,33.0,1.0,512
+delayed_growth,rf_growth,4619,13,13.0,1.0,512
+parallel_multiscale,rf_growth,4815,59,59.0,1.0,512
+rf_stride_coupled,rf_growth,4619,33,33.0,4.0,128
+rf_dilation_decoupled,rf_growth,4619,33,33.0,1.0,512
+kernel_3,rf_growth,4619,11,11.0,1.0,512
+kernel_7,rf_growth,4575,27,27.0,1.0,512
+kernel_15,rf_growth,4811,59,59.0,1.0,512
+kernel_31,rf_growth,3855,123,123.0,1.0,512
+event_baseline,explicit_change_branch,4619,11,11.0,1.0,512
+explicit_change,explicit_change_branch,4867,11,11.0,1.0,512
+ordinary_second_branch,explicit_change_branch,4867,11,11.0,1.0,512

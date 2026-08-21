@@ -1,0 +1,55 @@
+{
+  "created_at_utc": "2026-08-21T17:25:14.320916+00:00",
+  "device_used": "cuda",
+  "discrimination_probe": "regular versus jitter mixed probe with unseen_jitter_ms=[m], train rates and train phase magnitudes",
+  "failed_or_nonpass_count": 0,
+  "figure": "reports/figures/m6a_public_003_performance_vs_perturbation_magnitude.{png,svg,pdf}",
+  "formal_results_path": "run/formal",
+  "formal_results_preserved": true,
+  "generalization_probe": "positive-jitter subset magnitude MAE and magnitude-normalized error",
+  "hostname": "nercn",
+  "integrity_policy": "NON_HASH_AUDIT",
+  "large_checkpoints_saved": false,
+  "localization_probe": "global positive temporal translation of test-seen x with zero fill; onset target translated by the same amount",
+  "magnitude_axis_is_explicit": true,
+  "magnitudes_ms": [
+    10.0,
+    20.0,
+    50.0
+  ],
+  "metric_row_count": 675,
+  "no_pretrained_model": true,
+  "original_unseen_jitter_ms": [
+    3.0,
+    5.0,
+    7.0
+  ],
+  "parameter_rf_smoke": "reports/m6a_public_003_perturbation_smoke.json",
+  "parameter_rf_smoke_status": "PASS",
+  "pass_count": 45,
+  "patient_stn_data_read": false,
+  "perturbation_definition": "10/20/50 ms global positive temporal shift for localization; isolated jitter magnitude for discrimination and extrapolative generalization",
+  "platform": "Linux-4.18.0-553.137.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python": "3.11.15",
+  "same_split_optimizer_epochs_batch": true,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "seen_jitter_ms": [
+    2.0,
+    4.0,
+    6.0
+  ],
+  "session_id": "M6A-PUBLIC-003-S01",
+  "status": "READY_FOR_REVIEW",
+  "summary_row_count": 225,
+  "supplement_id": "M6A-PUBLIC-003-PERTURBATION-SUPPLEMENT-V2",
+  "supplement_is_unseen_extrapolation": true,
+  "supplement_run_count": 45,
+  "supplementary_retraining_reason": "formal run saved no checkpoints; minimal same-budget retraining required for evaluation",
+  "task_id": "M6A-PUBLIC-003",
+  "torch": "2.11.0+cu128",
+  "variant_count": 15
+}

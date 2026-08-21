@@ -25,6 +25,30 @@
       "status": "PASS",
       "authority": "server2203 auditory_demos",
       "record_retained": true
+    },
+    {
+      "command": "conda run -n auditory_demos pytest -q tests/test_m6a_public_003.py tests/test_m6a_public_003_perturbation_unittest.py",
+      "status": "BLOCKED_BY_ENVIRONMENT",
+      "evidence": "pytest command not found in the approved auditory_demos environment",
+      "record_retained": true
+    },
+    {
+      "command": "conda run -n auditory_demos python -m pytest -q tests/test_m6a_public_003.py tests/test_m6a_public_003_perturbation_unittest.py",
+      "status": "BLOCKED_BY_ENVIRONMENT",
+      "evidence": "No module named pytest in the approved auditory_demos environment",
+      "record_retained": true
+    },
+    {
+      "command": "conda run -n auditory_demos python -m unittest -v tests.test_m6a_public_003_unittest tests.test_m6a_public_003_perturbation_unittest",
+      "status": "PASS",
+      "tests_passed": 9,
+      "record_retained": true
+    },
+    {
+      "command": "conda run -n auditory_demos python -m py_compile scripts/m6a_public_003_temporal_benchmark.py scripts/m6a_public_003_perturbation_eval.py scripts/verify_m6a_public_003.py tests/test_m6a_public_003_perturbation_unittest.py",
+      "status": "PASS",
+      "authority": "server2203 auditory_demos",
+      "record_retained": true
     }
   ],
   "local_python_boundary": "Local Python behavior is not used as the authoritative runtime decision; syntax and smoke evidence come from server2203 auditory_demos."

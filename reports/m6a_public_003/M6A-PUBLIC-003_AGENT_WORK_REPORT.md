@@ -10,3 +10,12 @@ EVIDENCE_GAPS: synthetic task distribution, three seeds, theoretical rather than
 BLOCKERS: none for the authorized engineering run; scientific acceptance remains a human/Agent A gate
 QUESTIONS_FOR_AGENT_CHECK: review parameter matching, RF confounds and explicit-change superiority pattern
 STOP_REASON: reached the approved READY_FOR_REVIEW gate; no ACCEPT/HUMAN_ACCEPTED written
+
+## Additive 10/20/50 ms supplement
+
+STATUS: READY_FOR_REVIEW
+COMPLETED: exact 10/20/50 ms localization, discrimination and extrapolative jitter-generalization evaluation across 15 variants and three seeds.
+PRESERVED: prior formal outputs under the separate formal run path; no checkpoints, pretrained assets, patient/STN data or large outputs were added.
+RESULTS: see the magnitude-axis CSVs, manifest and `m6a_public_003_performance_vs_perturbation_magnitude.{png,svg,pdf}`.
+SELF_CHECK: parameter/RF smoke, authoritative remote py_compile, standard-library unittest and independent supplement verification were run; pytest remains an environment block if unavailable.
+STOP_REASON: supplementary evidence is complete and is returned to Agent A/人工审核; no ACCEPT/HUMAN_ACCEPTED written.
