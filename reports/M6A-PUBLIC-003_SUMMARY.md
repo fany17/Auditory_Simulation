@@ -136,3 +136,18 @@ real-world perturbation, distinguish causal event types, or generalize to
 neural data. The existing formal negative findings remain unchanged, including
 chance-level phase-shift detection and the absence of a stable explicit-change
 advantage over the parameter-matched ordinary second branch.
+
+### Direct answer to the 10/20/50 ms question
+
+Conservative direct answer: localization, discrimination and generalization all
+failed in this benchmark. Across the structures,
+`localization_shift_recovery_mae_ms` is approximately equal to the imposed
+10/20/50 ms magnitude. This means the predicted onset change was approximately
+zero and the 10/20/50 ms displacement was not recovered; it must not be
+mistaken for a small raw `onset_timing_error_ms` or
+`localization_onset_mae_ms`. `discrimination_balanced_accuracy` remains near
+0.5, so regular and jitter probes were not separated. `generalization_jitter_mae_ms`
+is approximately magnitude minus 2 ms, while relative error approaches 1 at
+larger magnitudes, consistent with outputs remaining near the training scale
+rather than extrapolating to 10/20/50 ms. No structure group therefore shows a
+credible advantage on the direct question.

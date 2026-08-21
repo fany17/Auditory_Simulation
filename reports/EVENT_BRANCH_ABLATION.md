@@ -94,3 +94,12 @@ Traceability files: `m6a_public_003_perturbation_metrics_by_seed.csv`,
 | event_baseline | 0.8147 ± 0.0286 | 0.9076 ± 0.0140 | 0.9629 ± 0.0057 |
 | explicit_change | 0.8034 ± 0.0061 | 0.9017 ± 0.0029 | 0.9607 ± 0.0012 |
 | ordinary_second_branch | 0.8006 ± 0.0042 | 0.9002 ± 0.0018 | 0.9601 ± 0.0009 |
+
+### Explicit change/event-group conclusion
+
+No event-branch variant shows a credible advantage on the direct 10/20/50 ms
+question. `explicit_change` does not outperform the parameter-matched
+`ordinary_second_branch` in displacement recovery, regular-versus-jitter
+discrimination or jitter-magnitude extrapolation; both remain near the same
+failed pattern. The baseline, explicit-change branch and ordinary second branch
+therefore do not establish a successful event-based solution.

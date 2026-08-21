@@ -86,3 +86,12 @@ Traceability files: `m6a_public_003_perturbation_metrics_by_seed.csv`,
 |---|---:|---:|---:|
 | early_downsample | 0.8284 ± 0.0111 | 0.9142 ± 0.0052 | 0.9655 ± 0.0022 |
 | late_downsample | 0.7991 ± 0.0219 | 0.9003 ± 0.0102 | 0.9598 ± 0.0044 |
+
+### Downsampling-group conclusion
+
+Neither `early_downsample` nor `late_downsample` shows a credible advantage on
+the direct 10/20/50 ms question. Both have displacement-recovery error near
+the imposed magnitude, discrimination near chance and jitter generalization
+near magnitude minus 2 ms with larger relative error. The early-versus-late
+choice therefore did not rescue localization, regular-versus-jitter
+discrimination or extrapolation; raw onset MAE is not displacement recovery.

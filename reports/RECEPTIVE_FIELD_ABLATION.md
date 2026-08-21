@@ -143,3 +143,13 @@ Traceability files: `m6a_public_003_perturbation_metrics_by_seed.csv`,
 | kernel_7 | 0.8012 ± 0.0301 | 0.9001 ± 0.0150 | 0.9604 ± 0.0061 |
 | kernel_15 | 0.8213 ± 0.0164 | 0.9104 ± 0.0085 | 0.9642 ± 0.0034 |
 | kernel_31 | 0.7999 ± 0.0113 | 0.8979 ± 0.0092 | 0.9587 ± 0.0044 |
+
+### RF-growth and multiscale-group conclusion
+
+No RF-growth, dilation-schedule, parallel-multiscale or RF/downsampling
+decoupling variant shows a credible advantage on 10/20/50 ms localization,
+discrimination or extrapolation. Uniform, exponential and delayed RF growth
+and the multiscale branch did not rescue the failed displacement recovery,
+chance-level discrimination or near-training-scale jitter outputs. Any apparent
+pattern for `kernel_31` remains `CONFOUNDED` because its parameter match failed;
+it is not evidence for a kernel-size effect.
