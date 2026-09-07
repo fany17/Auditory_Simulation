@@ -2,64 +2,59 @@
 
 | 字段 | 内容 |
 |---|---|
-| 日期 | `2026-08-21` |
-| 状态 | `ACTIVE_EXECUTION` |
-| 当前方向 | `M6A-PUBLIC：公开声音模型、公开神经数据与通用听觉计算方法` |
-| 当前优先任务 | `M6A-PUBLIC-003` |
-| 正式任务书 | `doc/tasks/M6A-PUBLIC-003.md` |
-| Task index | `doc/TASKS.md` |
+| 日期 | `2026-09-07` |
+| 状态 | `M6A-PUBLIC-004 READY_TO_EXECUTE` |
+| 当前方向 | 公开声音模型、公开神经数据与通用 auditory-neural representation |
+| 当前优先任务 | `M6A-PUBLIC-004` |
+| 正式任务书 | `doc/tasks/M6A-PUBLIC-004.md` |
 | 患者/STN 数据 | `FORBIDDEN` |
 
 ## 当前任务
 
-`M6A-PUBLIC-003：Temporal Architecture Perturbation`
+`M6A-PUBLIC-004：Auditory–Neural Representation Alignment and Transfer`
 
-目标不再是继续补 pretrained baseline，而是研究明确结构变量如何影响快速声音时间信息的保留、整合与丢失。
+第一主数据使用 SparrKULee EEG，随后使用 ds004703 做公开 intracranial transfer。目标是建立：
 
-第一轮只做三个主题：
+```text
+audio representation
+      ↕
+public EEG neural representation
+      ↓ transfer
+public sEEG neural representation
+      ↓ freeze
+ART-AUDREP-v1 candidate
+      ↓
+STN_Decoding_Encoding consumer
+```
 
-1. **Early vs Late Downsampling**：保持总压缩尽量一致，只改变下采样发生层级；
-2. **Multiscale Receptive Field / RF Growth**：kernel、dilation、RF growth schedule、parallel RF，以及 RF/downsampling decoupling；
-3. **Explicit Change/Event Branch**：baseline vs 显式变化支路 vs 参数匹配普通第二支路。
+当前不再增加新的 pretrained architecture，不读取患者/STN 数据，不微调大型 audio backbone。
 
-允许训练小型、matched experimental models 来做结构因果比较；禁止微调 wav2vec2、Whisper、Parakeet、Audio-Mamba 等大型 pretrained backbone。
+执行顺序：
 
-详细执行要求见 `doc/tasks/M6A-PUBLIC-003.md`。
+1. dataset/timing/leakage audit；
+2. acoustic + wav2vec2 + HuBERT layerwise baseline；
+3. channel-agnostic neural encoder；
+4. encoding + contrastive/retrieval；
+5. held-out subject；
+6. EEG→public sEEG transfer；
+7. few-shot learning curve；
+8. `ART-AUDREP-v1` candidate package。
 
-## Frozen baseline：M6A-PUBLIC-002
+## M6A-PUBLIC-003 状态
 
-`M6A-PUBLIC-002` 已满足进入下一阶段所需的 baseline 条件：
+`M6A-PUBLIC-003` 已完成执行，状态为 `COMPLETED_EXECUTION_READY_FOR_REVIEW`。
 
-- 9/9 pretrained inference；
-- 8/9 unified temporal representation probe；
-- 覆盖 PANNs CNN14、ConvTasNet、SpeechBrain CRDNN、Parakeet-TDT/FastConformer、Audio-Mamba/SSAM、wav2vec2、Whisper、CoNNear periphery、ICNet；
-- CoNNear 已覆盖 `waveform→BM→IHC→ANF-H/M/L` 六类 probe；
-- ICNet 已覆盖 `waveform→bottleneck→units_1000` 六类 probe；
-- 0 training / 0 finetuning / 0 patient data。
+45/45 formal runs 与 supplementary 10/20/50 ms probes 已完成。当前结果不支持继续通过 early/late downsampling、multiscale RF、RF-growth 或 explicit change branch 追加结构探索。阴性结果保留，003 不再阻塞 004。
 
-002 作为 003 的 frozen reference，不继续为了补更多模型或 9/9 hidden representation 消耗时间。
+## Frozen baseline
 
-旧失败记录继续保留，不删除 historical blocker。
+`M6A-PUBLIC-002`：9/9 pretrained inference、8/9 unified temporal representation probe，作为 004 的 frozen model bank/reference。
 
-## Historical checkpoint：M6A-PUBLIC-001
+`M6A-PUBLIC-001`：ds004703/wav2vec2 单被试 preliminary checkpoint，只作历史参考；004 将重新以 leak-safe、held-out 和 transfer 设计建立正式公共证据。
 
-`M6A-PUBLIC-001` 保留 ds004703 / wav2vec2 的单被试单 recording preliminary checkpoint，不在 003 中扩 subject、recording 或神经拟合，也不自动生成 M6A→M6B exchange candidate。
+## 跨项目边界
 
-## 项目边界
-
-- `Auditory_Simulation`：公开数据、声音模型、通用表征/时间结构方法、M6A；
-- `STN_Decoding_Encoding`：患者实验、STN 数据、STN-specific adaptation、M6B；
-- 两者只通过冻结、版本化 artifact 衔接；
-- 患者数据默认不得进入 `Auditory_Simulation`；
-- `AuditoryReading` 独立负责教材、综述和知识整理，不作为第二实验运行目录。
-
-## 当前硬规则
-
-- 不读取患者/STN 数据；
-- 不修改 `STN_Decoding_Encoding`；
-- 不继续堆 pretrained model；
-- 不微调大型 pretrained backbone；
-- 阴性结构结果必须保留；
-- 参数无法 matched 时必须标记 confounded；
-- 禁止按脑区名字机械搭建“仿听觉系统网络”；
-- 所有 auditory-inspired 修改必须有明确计算原则、baseline deficit、minimal implementation、matched control、ablation 和 falsifiable endpoint。
+- `Auditory_Simulation`：公开数据、声音模型、公共 EEG/sEEG、通用 representation、M6A。
+- `STN_Decoding_Encoding`：患者实验、STN 数据、STN-specific adaptation、PINS/SEEG 写入验证、M6B。
+- 仅通过冻结、版本化 artifact 连接。
+- `ART-AUDREP-v1` 未经 STN consumer cross-test 前，只能称 `candidate`，不得称 accepted/frozen contract。
