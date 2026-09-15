@@ -1,9 +1,9 @@
-# TASK — <SEMANTIC-TASK-ID> — <Title>
+# TASK — <PUB-##> — <Title>
 
 | Field | Value |
 |---|---|
-| Task ID | `<SEMANTIC-TASK-ID>` |
-| Pipeline Node | `<same as Task ID unless explicitly split>` |
+| Task ID | `<PUB-##>` |
+| Title | `<semantic title>` |
 | Track | `<PUBLIC_METHOD / SUPPORT / ...>` |
 | Class | `<MAINLINE_EXECUTION / AUDIT / INTERFACE / ...>` |
 | Status | `<BACKLOG / READY / ACTIVE / WAITING_EXTERNAL / BLOCKED / REVIEW / FROZEN / COMPLETED / CANCELLED / HISTORICAL_REFERENCE>` |
@@ -15,18 +15,17 @@
 | Deliverables | `<paths/artifacts>` |
 | Acceptance | `<decidable criteria>` |
 | Go/No-go | `<positive/negative/blocked handling>` |
-| Downstream | `<consumer/node>` |
+| Downstream | `<consumer task>` |
 | Last Updated | `<YYYY-MM-DD>` |
 
-## Naming check
+## Numbering check
 
-Task ID must:
-
-- directly describe the work；
-- contain no `M<number>` milestone；
-- contain no `R0/P0/W0/S0` sequence number；
-- contain no date/status/version；
-- match filename `doc/tasks/<SEMANTIC-TASK-ID>.md`。
+- canonical ID uses `PUB-##`；
+- numbering starts from 01 within the public namespace and does not continue M6A；
+- semantic meaning lives in Title；
+- no second identity such as `M6A-*` or `PUBLIC-REPRESENTATION`；
+- filename: `doc/tasks/<TASK-ID>_<SEMANTIC-SLUG>.md`；
+- status/date/version/priority are metadata, not ID。
 
 ## 1. Scientific / Operational Question
 
@@ -37,10 +36,6 @@ Task ID must:
 ## 4. Inputs and Preconditions
 
 ## 5. Execution Plan
-
-### Stage A
-
-### Stage B
 
 ## 6. Controls / Leakage / Confounds
 
