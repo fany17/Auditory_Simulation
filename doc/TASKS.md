@@ -1,54 +1,60 @@
-# Auditory_Simulation Task Index
+# Auditory_Simulation Task Registry
 
-## 当前最高优先任务
+执行规范：`doc/TASK_EXECUTION_STANDARD.md`  
+文档索引：`doc/DOCUMENT_INDEX.md`  
+Program mapping：`AuditoryReading/PROGRAM_RESEARCH_GRAPH.md`
 
-### `M6A-PUBLIC-004` — Auditory–Neural Representation Alignment and Transfer
+`TASKS.md` 是本仓库 Local Task 状态 source of truth。
 
-状态：`READY_TO_EXECUTE`
+| Task ID | Program Node | Track | Class | Status | Blocking | Patient Data | Task Spec | Primary Output |
+|---|---|---|---|---|---|---|---|---|
+| `M6A-PUBLIC-001` | historical support | PUBLIC_METHOD | MAINLINE_EXECUTION | HISTORICAL_REFERENCE | NO | FORBIDDEN | `doc/tasks/M6A-PUBLIC-001.md` | preliminary ds004703/wav2vec2 checkpoint |
+| `M6A-PUBLIC-002` | R1 support bank | PUBLIC_METHOD | MAINLINE_EXECUTION | COMPLETED | NO | FORBIDDEN | `doc/tasks/M6A-PUBLIC-002.md` | frozen pretrained model/reference bank |
+| `M6A-PUBLIC-003` | R1 support evidence | PUBLIC_METHOD | MAINLINE_EXECUTION | REVIEW | NO | FORBIDDEN | `doc/tasks/M6A-PUBLIC-003.md` | temporal architecture perturbation negative/boundary evidence |
+| `M6A-PUBLIC-004` | `R1` | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for STN direct R2–R4 | FORBIDDEN | `doc/tasks/M6A-PUBLIC-004.md` | `ART-AUDREP-v1` candidate + public benchmark |
 
-入口：`doc/tasks/M6A-PUBLIC-004.md`
+## Current priority
 
-目标：使用公开 EEG（第一主数据：SparrKULee）和公开 intracranial 数据（第一迁移数据：ds004703）建立 auditory-aligned、channel-agnostic neural representation；完成 EEG→sEEG transfer、few-shot 学习曲线，并冻结可由 `STN_Decoding_Encoding` 消费的 `ART-AUDREP-v1` candidate。
+### `M6A-PUBLIC-004` — READY
 
-第一执行序列：
+目标：在公开数据中建立可审计的 auditory-neural prior，并测试跨记录方式迁移和 data-efficiency。
 
-1. dataset / timing / leakage audit；
-2. acoustic + wav2vec2 + HuBERT layerwise baseline；
+第一阶段顺序：
+
+1. SparrKULee/ds004703 access、license、timing、identity、split audit；
+2. acoustic/onset/timing + wav2vec2/HuBERT baseline；
 3. channel-agnostic neural encoder；
-4. encoding + contrastive/retrieval benchmark；
-5. held-out subject；
-6. public EEG→sEEG transfer；
-7. frozen artifact candidate。
+4. encoding + contrastive/retrieval；
+5. held-out subject/session/story；
+6. public EEG→public intracranial transfer；
+7. few-shot/negative-transfer evidence；
+8. `ART-AUDREP-v1` candidate。
 
-患者/STN 数据严格禁止进入本仓库。
+### Program boundary
 
-## 已完成执行、等待审核
+`R1` 是 **optional accelerator / comparator**。
 
-### `M6A-PUBLIC-003` — Temporal Architecture Perturbation
+- positive transfer：下游 STN 可以作为预训练条件；
+- no transfer：保留结果，STN direct/simple models 继续；
+- negative transfer：保留结果并限制 artifact claim；
+- `EEG→sEEG` 成功不能自动写成 `EEG→STN` 已成功。
 
-状态：`COMPLETED_EXECUTION_READY_FOR_REVIEW`
+因此 `M6A-PUBLIC-004` **不阻塞** STN 的 Protocol v2、患者持续采集或 direct computational-variable analysis。
 
-入口：`doc/tasks/M6A-PUBLIC-003.md`
+## `M6A-PUBLIC-003` review rule
 
-45/45 formal runs 完成；补充 10/20/50 ms probe 已完成。当前直接结论是：本 benchmark 中 localization shift recovery、regular-vs-jitter discrimination 和 extrapolative jitter magnitude generalization 均失败；early/late downsampling、RF growth/multiscale 和 explicit change branch 未显示可信优势。阴性结果冻结，不继续通过增加结构变体追结果。
+003 已完成执行，当前只允许：
 
-## 已完成/冻结任务
+- independent/human review；
+- completion/frozen record；
+- provenance/bug correction。
 
-### `M6A-PUBLIC-002` — Pretrained Audio/Temporal Architecture Reproduction
+不允许因为阴性结果继续追加 architecture 变体。
 
-状态：`COMPLETED_FOR_NEXT_STAGE`
+## Hard boundary
 
-已完成 9/9 pretrained inference、8/9 unified temporal representation probe。作为 004 的声音模型候选与历史 baseline，不继续补模型。
-
-### `M6A-PUBLIC-001` — Public Audio→Brain Minimal Alignment
-
-状态：`HISTORICAL_PRELIMINARY_CHECKPOINT`
-
-保留 ds004703/wav2vec2 单被试单 recording preliminary；004 将以新的跨数据、held-out、transfer 设计重新执行公共 auditory-neural alignment，不把 001 当作正式证据。
-
-## 项目边界
-
-- `Auditory_Simulation`：公开数据、公开模型、通用 auditory-neural representation、M6A。
-- `STN_Decoding_Encoding`：患者实验、STN 数据、STN-specific adaptation、PINS/SEEG 写入验证、M6B。
-- 两者只通过冻结、版本化 artifact 衔接；患者数据默认不得进入本仓库。
-- `AuditoryReading`：证据、教材、研究总图；不执行模型。
+- 患者/STN 数据不得进入本仓库；
+- 不读取患者派生 embedding；
+- 不使用 STN 结果选择 public model/layer；
+- 不继续堆 pretrained model 名单；
+- 所有 downstream handoff 必须是冻结、版本化 artifact。
