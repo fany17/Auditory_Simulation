@@ -8,13 +8,11 @@ Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 
 ## Current / future tasks
 
-| Task ID | Pipeline Node | Track | Class | Status | Blocking | Patient Data | Task Spec | Primary Output |
+| Task ID | Title | Track | Class | Status | Blocking | Patient Data | Task Spec | Primary Output |
 |---|---|---|---|---|---|---|---|---|
-| `PUBLIC-REPRESENTATION` | same ID | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for direct STN science | FORBIDDEN | `doc/tasks/PUBLIC-REPRESENTATION.md` | `ART-AUDREP-v1` candidate + public benchmark |
+| `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for direct STN READ | FORBIDDEN | `doc/tasks/PUB-01_PUBLIC_REPRESENTATION.md` | `ART-AUDREP-v1` candidate + public benchmark |
 
 ## Historical provenance
-
-旧 public milestone 只作为历史证据：
 
 | Historical ID | Status | Role |
 |---|---|---|
@@ -24,11 +22,11 @@ Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 
 这些历史 ID 不再作为 current/future task 命名来源，不继续创建 `M6A-PUBLIC-005`。
 
-## `PUBLIC-REPRESENTATION` — READY
+## PUB-01 — READY
 
 目标：在公开数据中建立可审计 auditory-neural prior，并测试跨记录方式迁移和 data efficiency。
 
-第一阶段顺序：
+第一阶段：
 
 1. SparrKULee / ds004703 access、license、timing、identity、split audit；
 2. acoustic/onset/timing + wav2vec2/HuBERT baseline；
@@ -39,26 +37,7 @@ Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 7. few-shot / negative-transfer evidence；
 8. `ART-AUDREP-v1` candidate。
 
-### Pipeline boundary
-
-`PUBLIC-REPRESENTATION` 是 optional accelerator/comparator：
-
-- positive transfer：患者侧可作为预训练条件；
-- no transfer：保留结果，direct/simple STN models 继续；
-- negative transfer：保留 domain mismatch；
-- public EEG→intracranial 成功不能自动外推 STN。
-
-因此该任务不阻塞 `STN-READ-PROTOCOL`、`STN-DATA-QC` 或 direct `STN-READ-COMPUTATION`。
-
-## Historical perturbation review rule
-
-历史 temporal-architecture perturbation 已完成执行，当前只允许：
-
-- independent/human review；
-- completion/frozen record；
-- provenance/bug correction。
-
-不允许因为阴性结果继续追加 architecture 变体。
+PUB-01 是 optional accelerator/comparator。positive/no/negative transfer 均可验收，不阻塞 READ-01/02/03 的 direct science。
 
 ## Hard boundary
 
