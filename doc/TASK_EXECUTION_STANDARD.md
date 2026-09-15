@@ -1,29 +1,41 @@
 # Auditory_Simulation Task Execution Standard
 
-版本：`program-standard-v1.0 / 2026-09-15`  
-Program authoritative standard：`AuditoryReading/TASK_EXECUTION_STANDARD.md`。
+版本：`semantic-pipeline-v2.0 / 2026-09-15`  
+全局规范：`AuditoryReading/TASK_EXECUTION_STANDARD.md`。
 
-本文件是公共执行仓库的本地镜像与边界补充；与 Program 标准冲突时，患者/公共数据边界以本仓库 `PROJECT_BOUNDARY.md` 为最高约束。
+本文件是公共执行仓库的本地镜像与边界补充；数据边界以本仓库 `PROJECT_BOUNDARY.md` 为最高约束。
 
-## 1. Local task location
+## 1. Task identity and location
 
-今后新任务统一放在：
+当前/未来 task 统一使用语义型 ID，并放在：
 
 ```text
-doc/tasks/<TASK-ID>.md
+doc/tasks/<SEMANTIC-TASK-ID>.md
 ```
+
+当前 canonical task：`PUBLIC-REPRESENTATION`。
+
+禁止 current/future ID 使用：
+
+- `M<number>` milestone；
+- `R0/P0/W0/S0` 等顺序号；
+- 日期；
+- `NEXT/HIGH/FINAL` 状态词；
+- task version number。
+
+状态、日期、版本属于 metadata，不属于 Task ID。
+
+历史 `M6A-PUBLIC-001..003` 保留 provenance，不批量改名；不再创建新的 `M6A-*` task。
 
 状态 source of truth：`doc/TASKS.md`。  
 当前入口：`doc/CURRENT_TASK.md`。
-
-历史 `doc/tasks/M6A-PUBLIC-001..003.md` 保留 provenance，不为了格式统一重写全文；其当前状态由 `doc/TASKS.md` 映射。
 
 ## 2. Required metadata
 
 新任务必须包含：
 
 - Task ID；
-- Program Node；
+- Pipeline Node（默认与 Task ID 同名）；
 - Track；
 - Class；
 - Status；
@@ -44,27 +56,27 @@ doc/tasks/<TASK-ID>.md
 
 `BACKLOG / READY / ACTIVE / WAITING_EXTERNAL / BLOCKED / REVIEW / FROZEN / COMPLETED / CANCELLED / HISTORICAL_REFERENCE`
 
-不再新建 `NEXT-HIGH`、`READY_TO_EXECUTE`、`COMPLETED_EXECUTION_READY_FOR_REVIEW` 等自定义状态；旧文字可保留在历史报告，但 Registry 必须映射到统一状态。
+旧自定义状态只保留历史报告；Registry 必须映射到统一状态。
 
 ## 4. Public-project hard boundaries
 
 - 患者/STN 数据：`FORBIDDEN`。
 - 不读取患者派生 embedding、私有临床 metadata 或患者模型权重。
-- 不修改 `STN_Decoding_Encoding` 的患者科学结论。
-- 公共 artifact 只能依据公共数据选择模型/layer/hyperparameter。
-- STN 结果不得反向用于挑选 `ART-AUDREP` 内容。
+- 不修改患者项目科学结论。
+- public artifact 只能依据 public data 选择模型/layer/hyperparameter。
+- STN 结果不得反向用于挑选 `ART-AUDREP-v1` 内容。
 
 ## 5. Current scientific role
 
-`M6A-PUBLIC-004` 对应 Program `R1`：**optional public prior / comparator**。
+`PUBLIC-REPRESENTATION` 是 optional public prior / comparator。
 
-它的成功与失败都必须可报告：
+合法结论包括：
 
 - positive transfer；
 - no transfer；
 - negative transfer。
 
-它不再是 STN READ `R2–R4` 的硬门。不能因为公共 transfer 未完成而要求患者侧停止 direct/simple model science。
+它不构成 direct `STN-READ-COMPUTATION` 的硬门。
 
 ## 6. Execution discipline
 
@@ -73,25 +85,25 @@ doc/tasks/<TASK-ID>.md
 禁止：
 
 - 自动扩 pretrained model 名单；
-- 因结果阴性更换 split/负样本/窗口追阳性；
-- 把同一 story 相邻片段泄漏到 train/test；
+- 因阴性更换 split/负样本/窗口追阳性；
+- 相邻 story/time leakage；
 - test subject 参与 normalization/layer selection；
 - 把高 representation correlation 写成脑区同源；
-- 自动启动 downstream M6B。
+- 自动启动患者侧 downstream。
 
-任务结束时：更新 task Completion Record、`TASKS.md`、`CURRENT_TASK.md`，然后停止。
+任务结束时：更新 Completion Record、`TASKS.md`、`CURRENT_TASK.md`，然后停止。
 
 ## 7. Cross-repo artifact
 
-M6A→M6B 只通过版本化 artifact，例如 `ART-AUDREP-v1`。
+公共→患者只通过版本化 artifact，例如 `ART-AUDREP-v1`。
 
-必须包含：version、source commit/config/seed、schema、runtime/transform、canary、benchmark、known failures、provenance。
+必须包含：version、source task/commit/config/seed、schema、runtime/transform、canary、benchmark、known failures、license/provenance。
 
-Consumer cross-test 不通过时，由 M6B 输出 rework；M6B 不静默修补 producer artifact。
+Consumer validation 不通过时，由患者侧输出 rework；consumer 不静默修补 producer artifact。
 
 ## 8. Documentation rule
 
-- `PROJECT_CHARTER.md`、`01_听觉时变信息处理项目总纲.md`：long-form background，不是当前 task registry。
-- `M6A-PUBLIC-001_*`、exchange-contract draft：historical/interface evidence，除非 `TASKS.md` 明确激活，否则不可自动执行。
-- `reports/`：结果证据，不反向改变任务状态。
-- 新任务只进入 `doc/tasks/`。
+- long-form charter/总纲：background，不是 current registry；
+- historical milestone task/interface drafts：provenance，不能自动执行；
+- `reports/`：结果证据，不反向改变 task 状态；
+- current/future task 只进入 `doc/tasks/` 且使用 semantic ID。
