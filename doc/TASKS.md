@@ -2,48 +2,57 @@
 
 执行规范：`doc/TASK_EXECUTION_STANDARD.md`  
 文档索引：`doc/DOCUMENT_INDEX.md`  
-Program mapping：`AuditoryReading/PROGRAM_RESEARCH_GRAPH.md`
+Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 
-`TASKS.md` 是本仓库 Local Task 状态 source of truth。
+`TASKS.md` 是本仓库 current/future task 状态 source of truth。
 
-| Task ID | Program Node | Track | Class | Status | Blocking | Patient Data | Task Spec | Primary Output |
+## Current / future tasks
+
+| Task ID | Pipeline Node | Track | Class | Status | Blocking | Patient Data | Task Spec | Primary Output |
 |---|---|---|---|---|---|---|---|---|
-| `M6A-PUBLIC-001` | historical support | PUBLIC_METHOD | MAINLINE_EXECUTION | HISTORICAL_REFERENCE | NO | FORBIDDEN | `doc/tasks/M6A-PUBLIC-001.md` | preliminary ds004703/wav2vec2 checkpoint |
-| `M6A-PUBLIC-002` | R1 support bank | PUBLIC_METHOD | MAINLINE_EXECUTION | COMPLETED | NO | FORBIDDEN | `doc/tasks/M6A-PUBLIC-002.md` | frozen pretrained model/reference bank |
-| `M6A-PUBLIC-003` | R1 support evidence | PUBLIC_METHOD | MAINLINE_EXECUTION | REVIEW | NO | FORBIDDEN | `doc/tasks/M6A-PUBLIC-003.md` | temporal architecture perturbation negative/boundary evidence |
-| `M6A-PUBLIC-004` | `R1` | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for STN direct R2–R4 | FORBIDDEN | `doc/tasks/M6A-PUBLIC-004.md` | `ART-AUDREP-v1` candidate + public benchmark |
+| `PUBLIC-REPRESENTATION` | same ID | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for direct STN science | FORBIDDEN | `doc/tasks/PUBLIC-REPRESENTATION.md` | `ART-AUDREP-v1` candidate + public benchmark |
 
-## Current priority
+## Historical provenance
 
-### `M6A-PUBLIC-004` — READY
+旧 public milestone 只作为历史证据：
 
-目标：在公开数据中建立可审计的 auditory-neural prior，并测试跨记录方式迁移和 data-efficiency。
+| Historical ID | Status | Role |
+|---|---|---|
+| `M6A-PUBLIC-001` | HISTORICAL_REFERENCE | preliminary public alignment checkpoint |
+| `M6A-PUBLIC-002` | COMPLETED | frozen pretrained model/reference bank |
+| `M6A-PUBLIC-003` | REVIEW | temporal-architecture perturbation evidence; review/close only |
+
+这些历史 ID 不再作为 current/future task 命名来源，不继续创建 `M6A-PUBLIC-005`。
+
+## `PUBLIC-REPRESENTATION` — READY
+
+目标：在公开数据中建立可审计 auditory-neural prior，并测试跨记录方式迁移和 data efficiency。
 
 第一阶段顺序：
 
-1. SparrKULee/ds004703 access、license、timing、identity、split audit；
+1. SparrKULee / ds004703 access、license、timing、identity、split audit；
 2. acoustic/onset/timing + wav2vec2/HuBERT baseline；
 3. channel-agnostic neural encoder；
 4. encoding + contrastive/retrieval；
 5. held-out subject/session/story；
 6. public EEG→public intracranial transfer；
-7. few-shot/negative-transfer evidence；
+7. few-shot / negative-transfer evidence；
 8. `ART-AUDREP-v1` candidate。
 
-### Program boundary
+### Pipeline boundary
 
-`R1` 是 **optional accelerator / comparator**。
+`PUBLIC-REPRESENTATION` 是 optional accelerator/comparator：
 
-- positive transfer：下游 STN 可以作为预训练条件；
-- no transfer：保留结果，STN direct/simple models 继续；
-- negative transfer：保留结果并限制 artifact claim；
-- `EEG→sEEG` 成功不能自动写成 `EEG→STN` 已成功。
+- positive transfer：患者侧可作为预训练条件；
+- no transfer：保留结果，direct/simple STN models 继续；
+- negative transfer：保留 domain mismatch；
+- public EEG→intracranial 成功不能自动外推 STN。
 
-因此 `M6A-PUBLIC-004` **不阻塞** STN 的 Protocol v2、患者持续采集或 direct computational-variable analysis。
+因此该任务不阻塞 `STN-READ-PROTOCOL`、`STN-DATA-QC` 或 direct `STN-READ-COMPUTATION`。
 
-## `M6A-PUBLIC-003` review rule
+## Historical perturbation review rule
 
-003 已完成执行，当前只允许：
+历史 temporal-architecture perturbation 已完成执行，当前只允许：
 
 - independent/human review；
 - completion/frozen record；
@@ -57,4 +66,4 @@ Program mapping：`AuditoryReading/PROGRAM_RESEARCH_GRAPH.md`
 - 不读取患者派生 embedding；
 - 不使用 STN 结果选择 public model/layer；
 - 不继续堆 pretrained model 名单；
-- 所有 downstream handoff 必须是冻结、版本化 artifact。
+- downstream handoff 必须是冻结、版本化 artifact。
