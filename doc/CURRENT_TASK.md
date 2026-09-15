@@ -8,34 +8,35 @@
 | Title | `Public Auditory–Neural Representation` |
 | Track | `PUBLIC_METHOD` |
 | Status | `READY` |
-| Class | `MAINLINE_EXECUTION` |
 | Patient Data | `FORBIDDEN` |
-| Task Spec | `doc/tasks/PUB-01_PUBLIC_REPRESENTATION.md` |
+| Parent Task | `doc/tasks/PUB-01/TASK.md` |
+| Subtask Registry | `doc/tasks/PUB-01/SUBTASKS.md` |
+| Current executable Subtask | `PUB-01-S01` |
+| Subtask Spec | `doc/tasks/PUB-01/subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` |
 | Blocking | `NO` for direct STN READ |
 
-## What to execute next
+## Execute next
 
-1. SparrKULee + ds004703 access/license inventory；
-2. audio↔neural pairing/timing audit；
-3. leak-safe grouped split；
-4. interpretable acoustic/onset baseline；
-5. held-out benchmark skeleton。
+只执行 `PUB-01-S01 — Dataset / License / Timing Audit`。
 
-只有 audit 通过后才进入 neural encoder / contrastive training。
+完成后必须进行：
+
+1. technical validation；
+2. acceptance validation；
+3. parent-consistency validation；
+4. 更新 S01 Completion Record；
+5. 更新 `PUB-01/SUBTASKS.md`。
+
+只有 S01 被接受后，`PUB-01-S02` 才允许进入 READY。
 
 ## Scientific role
 
-PUB-01 建立公共 auditory-neural prior 和 transfer benchmark。它是 optional accelerator/comparator，不是 STN READ 的必要前置。
-
-- positive transfer：下游 `INT-01` 可作为 comparator/initialization；
-- no transfer：保留无增益结果；
-- negative transfer：保留 domain mismatch；
-- direct/simple STN science 继续。
+PUB-01 是 optional public prior/comparator；positive/no/negative transfer 都是合法结果，不阻塞 direct STN READ。
 
 ## Historical review lane
 
-旧 temporal-architecture perturbation milestone 保持 `REVIEW`，只允许审核、completion record 和必要勘误。
+历史 temporal-architecture perturbation 仍为 `REVIEW`，但不是当前 primary task/subtask。
 
 ## Stop rule
 
-完成当前 stage 后更新 task Completion Record、`TASKS.md`、本文件，然后停止；不自动启动患者侧任务或新 public task。
+完成当前 S01 后停止，不自动启动 S02 或患者侧 `INT-01`。
