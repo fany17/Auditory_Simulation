@@ -1,60 +1,54 @@
-# Auditory_Simulation 当前任务状态
+# Auditory_Simulation Current Task
 
-| 字段 | 内容 |
+更新时间：`2026-09-15`
+
+| Field | Value |
 |---|---|
-| 日期 | `2026-09-07` |
-| 状态 | `M6A-PUBLIC-004 READY_TO_EXECUTE` |
-| 当前方向 | 公开声音模型、公开神经数据与通用 auditory-neural representation |
-| 当前优先任务 | `M6A-PUBLIC-004` |
-| 正式任务书 | `doc/tasks/M6A-PUBLIC-004.md` |
-| 患者/STN 数据 | `FORBIDDEN` |
+| Primary Task | `M6A-PUBLIC-004` |
+| Program Node | `R1` |
+| Track | `PUBLIC_METHOD` |
+| Status | `READY` |
+| Class | `MAINLINE_EXECUTION` |
+| Patient Data | `FORBIDDEN` |
+| Task Spec | `doc/tasks/M6A-PUBLIC-004.md` |
+| Blocking | `NO` for STN direct READ `R2–R4` |
 
-## 当前任务
+## What to execute next
 
-`M6A-PUBLIC-004：Auditory–Neural Representation Alignment and Transfer`
+`M6A-PUBLIC-004 — Auditory–Neural Representation Alignment and Transfer`
 
-第一主数据使用 SparrKULee EEG，随后使用 ds004703 做公开 intracranial transfer。目标是建立：
+第一执行 gate：
 
-```text
-audio representation
-      ↕
-public EEG neural representation
-      ↓ transfer
-public sEEG neural representation
-      ↓ freeze
-ART-AUDREP-v1 candidate
-      ↓
-STN_Decoding_Encoding consumer
-```
+1. SparrKULee + ds004703 access/license inventory；
+2. audio↔neural pairing/timing audit；
+3. leak-safe grouped split；
+4. interpretable acoustic/onset baseline；
+5. held-out benchmark skeleton。
 
-当前不再增加新的 pretrained architecture，不读取患者/STN 数据，不微调大型 audio backbone。
+只有 Stage 0/Audit 通过后才进入 neural encoder/contrastive training。
 
-执行顺序：
+## Scientific role
 
-1. dataset/timing/leakage audit；
-2. acoustic + wav2vec2 + HuBERT layerwise baseline；
-3. channel-agnostic neural encoder；
-4. encoding + contrastive/retrieval；
-5. held-out subject；
-6. EEG→public sEEG transfer；
-7. few-shot learning curve；
-8. `ART-AUDREP-v1` candidate package。
+本任务用于建立公共 auditory-neural prior 和 transfer benchmark。
 
-## M6A-PUBLIC-003 状态
+它**不是**患者 STN 计算问题的必要前置：
 
-`M6A-PUBLIC-003` 已完成执行，状态为 `COMPLETED_EXECUTION_READY_FOR_REVIEW`。
+- 如果 public pretraining 有 positive transfer，下游可作为 comparator/initialization；
+- 如果无增益或 negative transfer，保留结果，患者侧 direct/simple model science 继续。
 
-45/45 formal runs 与 supplementary 10/20/50 ms probes 已完成。当前结果不支持继续通过 early/late downsampling、multiscale RF、RF-growth 或 explicit change branch 追加结构探索。阴性结果保留，003 不再阻塞 004。
+不得把 public EEG→sEEG 结果直接外推成 STN transfer 已成立。
 
-## Frozen baseline
+## Other lane
 
-`M6A-PUBLIC-002`：9/9 pretrained inference、8/9 unified temporal representation probe，作为 004 的 frozen model bank/reference。
+`M6A-PUBLIC-003`：`REVIEW`。
 
-`M6A-PUBLIC-001`：ds004703/wav2vec2 单被试 preliminary checkpoint，只作历史参考；004 将重新以 leak-safe、held-out 和 transfer 设计建立正式公共证据。
+003 只允许审核、completion record 和必要勘误；不新增 architecture 变体。
 
-## 跨项目边界
+## Stop rule
 
-- `Auditory_Simulation`：公开数据、声音模型、公共 EEG/sEEG、通用 representation、M6A。
-- `STN_Decoding_Encoding`：患者实验、STN 数据、STN-specific adaptation、PINS/SEEG 写入验证、M6B。
-- 仅通过冻结、版本化 artifact 连接。
-- `ART-AUDREP-v1` 未经 STN consumer cross-test 前，只能称 `candidate`，不得称 accepted/frozen contract。
+完成本次 primary task 预定义 stage 后：
+
+- 更新 `doc/tasks/M6A-PUBLIC-004.md` Completion Record；
+- 更新 `doc/TASKS.md`；
+- 更新本文件；
+- 停止，不自动启动 M6B 或新 public task。
