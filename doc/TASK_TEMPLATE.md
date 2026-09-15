@@ -1,5 +1,11 @@
 # TASK — <PUB-##> — <Title>
 
+Canonical location:
+
+```text
+doc/tasks/<TASK-ID>/TASK.md
+```
+
 | Field | Value |
 |---|---|
 | Task ID | `<PUB-##>` |
@@ -12,20 +18,12 @@
 | Patient Data | `FORBIDDEN` |
 | Upstream | `<task/artifact/NONE>` |
 | Inputs | `<auditable inputs>` |
-| Deliverables | `<paths/artifacts>` |
-| Acceptance | `<decidable criteria>` |
+| Deliverables | `<parent-level outputs>` |
+| Acceptance | `<parent-level decidable criteria>` |
 | Go/No-go | `<positive/negative/blocked handling>` |
 | Downstream | `<consumer task>` |
+| Subtask Registry | `doc/tasks/<TASK-ID>/SUBTASKS.md` |
 | Last Updated | `<YYYY-MM-DD>` |
-
-## Numbering check
-
-- canonical ID uses `PUB-##`；
-- numbering starts from 01 within the public namespace and does not continue M6A；
-- semantic meaning lives in Title；
-- no second identity such as `M6A-*` or `PUBLIC-REPRESENTATION`；
-- filename: `doc/tasks/<TASK-ID>_<SEMANTIC-SLUG>.md`；
-- status/date/version/priority are metadata, not ID。
 
 ## 1. Scientific / Operational Question
 
@@ -36,6 +34,8 @@
 ## 4. Inputs and Preconditions
 
 ## 5. Execution Plan
+
+父任务只写 work-package/stage 结构；独立可验收细节进入 `SUBTASKS.md` 和 subtask spec。
 
 ## 6. Controls / Leakage / Confounds
 
@@ -49,8 +49,14 @@
 
 ## 11. Artifact / Handoff Contract
 
-## 12. Completion Record
+## 12. Amendment Record
+
+`NONE`
+
+改变 question/cohort/primary endpoint/data permission/Acceptance/Go-No-Go/artifact semantics 时必须登记 parent amendment，并重新审查受影响 S##。
+
+## 13. Completion Record
 
 `NOT_STARTED`
 
-> 阴性、no-transfer、negative-transfer 都可以正常完成任务；completion 不以阳性结果为条件。
+父任务完成必须经过 Integration Review；所有 blocking S## 完成/冻结或正式吸收 NO-GO 后，再重核 parent Acceptance。
