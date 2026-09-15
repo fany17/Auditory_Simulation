@@ -1,207 +1,112 @@
-# AGENTS.md
+# AGENTS.md — Auditory_Simulation Local Agent Rules
 
-| 字段 | 内容 |
+| Field | Value |
 |---|---|
-| 版本 | v1.4 |
-| 生效日期 | 2026-08-11 |
-| 状态 | ACTIVE |
-| 维护者 | 人工负责人 + Agent A |
-| 适用根目录 | `Auditory_Simulation/` |
+| Status | `ACTIVE` |
+| Effective date | `2026-09-15` |
+| Applies to | `Auditory_Simulation/` |
+| Program governance | `AuditoryReading/AGENTS.md` |
 
-## 1. 适用范围与权威顺序
+本文件只补充 `Auditory_Simulation` 的本地执行规则。全项目 task/subtask 编号、目录、创建、校验、完成、amendment 和 handoff 规则以 `AuditoryReading/AGENTS.md` 为权威。
 
-本文件适用于整个 `Auditory_Simulation` 项目及其所有子目录。
+若当前 workspace 无法读取 sibling `AuditoryReading`，必须至少遵守本文件、`doc/TASK_EXECUTION_STANDARD.md`、`doc/TASK_TEMPLATE.md`、`doc/SUBTASK_TEMPLATE.md`；不得凭旧 M6A 文档恢复历史执行逻辑。
 
-正式项目范围依次由以下内容定义：
+## 1. Public-project hard boundary
 
-1. 当前用户明确指令与本文件的安全边界；
-2. `doc/PROJECT_BOUNDARY.md`；
-3. `doc/CURRENT_TASK.md`；
-4. 经人工批准的具体任务书；
-5. 实际代码、配置、日志、指标、图、执行报告和审核证据。
+本仓库只负责：
 
-科学目标和项目所有权以边界文件为准，当前状态以当前任务文件为准，单轮执行以人工批准的具体任务书为准。旧总纲、旧章程、测试材料和较低层文件不得擅自改变当前目标或边界。
+- `PUB-##` 公共数据/公共方法任务；
+- 公开声音模型；
+- 公开 EEG/intracranial neural data；
+- 通用 auditory-neural representation；
+- transfer/few-shot benchmark；
+- 冻结 public artifact。
 
-## 2. 默认语言与沟通
+严格禁止患者/STN raw/intermediate/derivative、患者派生 embedding、私有临床 metadata、使用患者结果反向选择 public model/layer/hyperparameter，以及患者 PINS/DBS/SEEG 刺激分析。
 
-- 不论用户使用何种语言，优先使用中文回答。
-- 先报告结论、状态和证据，再说明过程。
-- 不存在、未核验或未批准的内容应写“待定”“待核验”“未启动”或“无证据”，不得补写为已完成事实。
-- 会改变科学目标、正式任务编号、数据权限、外部发布或 Git 历史的重要选择，必须等待人工决定。
+大型数据、模型权重、cache、训练输出留在批准的计算环境；Git 只保存轻量代码、配置、结构化结果、task/subtask 记录和报告。
 
-## 3. 正式项目与测试材料
+## 2. Fixed read order
 
-### 3.1 `doc/` 是本项目独立文档
+每次执行按顺序读取：
 
-`doc/` 保存本项目自己的边界、当前任务状态、正式规范和历史规划材料。本项目不维护覆盖 `Auditory_Simulation` 与 `STN_Decoding_Encoding` 的跨项目总文档。
+1. 用户当前明确指令；
+2. Program `AuditoryReading/AGENTS.md`（可见时）；
+3. 本 `AGENTS.md`；
+4. `doc/PROJECT_BOUNDARY.md`；
+5. `doc/DOCUMENT_INDEX.md`；
+6. `doc/TASK_EXECUTION_STANDARD.md`；
+7. `doc/TASKS.md`；
+8. `doc/CURRENT_TASK.md`；
+9. 父任务 `doc/tasks/<TASK-ID>/TASK.md`；
+10. `doc/tasks/<TASK-ID>/SUBTASKS.md`；
+11. 指定 subtask；
+12. spec 列出的数据/config/artifact/report。
 
-`doc/PROJECT_BOUNDARY.md` 与 `doc/CURRENT_TASK.md` 是当前入口。旧总纲与旧章程仅保留历史 provenance；某次测试结果、单一模型输出或 Agent 临时建议不得自动改写当前项目边界。
+## 3. Current/future task layout
 
-### 3.2 `test/` 不是整体项目
+```text
+doc/tasks/<TASK-ID>/
+  TASK.md
+  SUBTASKS.md
+  subtasks/
+    <TASK-ID>-S01_<TITLE>.md
+```
 
-`test/` 中的 `02_` 操作手册、`03_` 系列、独立验证、历史尝试和 `test/deliverables/` 默认只属于测试、演示或执行参考。
+历史 `M6A-PUBLIC-001/002/003` 原文件保留 provenance，不自动迁移或执行。
 
-只有同时满足以下条件，测试材料才能提升为正式项目资产：
+## 4. Subtask rule
 
-1. 人工明确批准纳入；
-2. 分配唯一的本项目任务编号；
-3. 在 `doc/CURRENT_TASK.md` 登记为唯一当前任务，并批准对应具体任务书；
-4. 保存正式配置、运行记录、日志、指标和图；
-5. 完成执行报告和 Agent A 独立审核；
-6. 人工最终决定为 `ACCEPT`。
+- 父任务定义 question/scope/acceptance；subtask 不得改变。
+- `PUB-01-S##` 只表示 `PUB-01` 内部执行单元。
+- 一次 execution 只执行一个 primary subtask。
+- 新 detail 若有独立 deliverable/acceptance/blocker，才新建 S##。
+- 普通小修改直接记录在当前 subtask Completion Record。
+- 禁止 sub-subtask。
+- 新科学问题必须申请新 `PUB-##`，不能藏在 S## 中。
 
-默认审核整体项目时不扫描、不汇总、不引用 `test/`，除非用户明确要求复核某项测试或决定是否将其提升为正式任务。
+## 5. Subtask pre-execution gate
 
-## 4. 当前项目状态
+开始前必须确认：ID/filename/`SUBTASKS.md` 一致；parent 正确；patient data 仍 `FORBIDDEN`；upstream 满足；license/data access 合规；deliverable/acceptance/validation 已写；split/leakage 规则冻结；允许修改文件范围明确。
 
-- `doc/PROJECT_BOUNDARY.md` 已建立独立边界：本项目负责公开声音模型、公开神经数据、表征对齐方法与非临床计算神经仿真。
-- `doc/CURRENT_TASK.md` 当前为 `ACTIVE_EXECUTION`，唯一任务是 `M6A-PUBLIC-001`。
-- 人工已授权长期推进公开数据路线，并允许在项目边界内采用合理、可逆的默认值，无需逐微步骤等待批准。
-- 首轮冻结 OpenNeuro `ds004703` `v1.1.0`，并以冻结的 `facebook/wav2vec2-base` 作为基础 speech SSL 表征模型。
-- `ds004703` 的 CC0 元数据与 README 限制共同生效；项目采用更严格边界：仅限非商业学术研究、禁止任何再识别、禁止原始数据外传。
-- 大数据、模型权重、特征与训练只允许位于 2203；本地 Git 只保留代码、配置、轻量元数据、测试和报告。
-- 首轮只批准 frozen feature、acoustic baseline、layer-wise ridge encoding、预注册 null 和防泄漏 split；微调声音模型、第二数据集和 STN 数据仍需新任务门禁。
-- 当前尚无经审核接受的 M6A 科学结果；正式代码和环境建立不等于 layer-wise alignment 已获支持。
+任何一项失败，不进入 `ACTIVE`。
 
-Agent B 可在 `doc/tasks/M6A-PUBLIC-001.md` 范围内持续执行。许可接口若要求账户本人点击同意、签署新条款或提供个人凭据，重大不可逆操作、异常资源开销或项目边界变化，必须暂停并请求人工决定。
+## 6. Validation
 
-## 5. Agent 角色
+subtask 完成必须经过：
 
-### 5.1 Agent A：Planner-Reviewer
+1. Technical validation：输出/schema/test/reproduction；
+2. Acceptance validation：`PASS / PASS_WITH_LIMITATION / REWORK / HOLD / NO_GO`；
+3. Parent consistency：确认不改变 PUB parent scope、claim 和 data boundary。
 
-Agent A 负责：
+Executor 不能只凭“跑通”自行完成；至少做一次独立 review pass。
 
-- 阅读项目边界、当前任务、具体任务书和实际项目文件；
-- 盘点已有与缺失内容；
-- 区分 P、E、I、H、V 五类陈述；
-- 规划任务路线、依赖、测试、图、指标和门槛；
-- 编写正式任务书草案；
-- 独立审核代码、配置、日志、指标、图和 provenance；
-- 给出 `ACCEPT`、`REWORK`、`REDESIGN` 或 `ROLLBACK` 建议；
-- 在人工确认后更新项目状态和下一轮规划。
+父 `PUB-##` 完成还必须独立做 Integration Review。
 
-Agent A 不得：
+## 7. Negative evidence
 
-- 在无证据时宣布完成；
-- 只复述 Agent B 总结而不检查实际文件；
-- 审核过程中降低或改变原验收标准；
-- 把测试演示包装成正式项目结果；
-- 把未来愿景写成当前能力；
-- 未经人工批准自动启动下一任务。
+positive / no transfer / negative transfer 均是合法结果。
 
-### 5.2 Agent B：Executor
+禁止因为阴性自动改 split、换窗口、加新 backbone、改 negative sampling，或新建“再试一个”的 S##。新增分支必须回到 parent scope 与 acceptance 判断。
 
-Agent B 只有在 `doc/CURRENT_TASK.md` 明确记录执行授权、且人工批准对应具体任务书后才能启动。
+## 8. Cross-repo handoff
 
-Agent B 负责在授权范围内实现代码、配置、测试、运行、日志、指标、图和执行报告。Agent B 不得改变科学问题、隐藏失败、只保留最佳运行、降低验收标准、越过任务允许目录或自行宣布 `ACCEPT`。
+公共→患者只通过冻结、版本化 artifact，例如 `ART-AUDREP-v1`。
 
-### 5.3 人工负责人
+必须记录 source task/subtask/commit/config、schema、runtime/transform、canary、benchmark、known failures、license/provenance。
 
-人工负责人最终决定：
+患者 consumer 不静默修改 producer artifact；失败返回 rework decision。
 
-- 项目边界与当前任务是否批准；
-- 是否批准 M6A 候选任务的具体数据版本、模型 revision、资源与执行范围；
-- 任务目标、资源和授权范围；
-- 外部数据、模型、下载、许可证和发布；
-- Git 远端、分支、发布和历史策略的重大变更；
-- 审核状态与是否进入下一任务。
+## 9. Git / destructive operations
 
-## 6. 证据与科学表述
+- 不擅自切换/重置/强制推送/改写历史；
+- 不覆盖用户修改或 frozen evidence；
+- 删除 current 临时文件前确认新 canonical 路径已建立且可读；
+- 历史 M6A provenance 不为整洁而批量改名；
+- 若仓库既有规则禁止 checksum/hash 审计，继续遵守，不主动新增此类完整性流程。
 
-正式文档、代码注释、图表和结论应区分：
+## 10. Stop rule
 
-- `P`：项目已确认目标；
-- `E`：外部证据支持事实；
-- `I`：工程实现建议；
-- `H`：待验证研究假设；
-- `V`：长期愿景。
+完成一个指定 subtask 后：更新其 Completion Record、parent `SUBTASKS.md`，必要时更新 parent `TASK.md` / owner `TASKS.md` / `CURRENT_TASK.md`，然后停止。
 
-必须遵守：
-
-- probe 可读不等于模型显式使用、因果使用或生物实际 decoder；
-- 模型状态相似不等于脑区对应或功能等价；
-- 异构模型原始参数的互相预测不默认等于表征对齐、功能对齐或机制同一；
-- 工程近似不等于完整真实听觉生理；
-- LFP proxy 不得直接写成真实临床 LFP；
-- 离线或伪流式模型不得写成实时因果系统；
-- 阴性结果、失败 seed、超时、发散和 no-go 均属于项目证据，不得删除或覆盖。
-
-## 7. 正式任务门禁
-
-`M6A-PUBLIC-001` 已获执行授权。任务书和机器配置必须冻结并持续核对：
-
-1. `ds004703` 的精确版本、许可、有效被试/recording、音频与神经文件、事件字段和可用规模；
-2. 音频—神经时间对齐、采样率、通道/脑区元数据、缺失和排除规则；
-3. wav2vec 2.0、HuBERT、WavLM 的精确代码版本、权重 revision、层输出、许可和缓存边界；
-4. train/validation/test 的 subject/session/stimulus 防泄漏规则；
-5. neural target、时间窗、lag、降采样、评价指标、null 与多重比较策略；
-6. ridge/线性 encoding 基线，以及是否授权 contrastive、CCA、RSA 或 CKA 扩展；
-7. 当前硬件、软件、显存、存储和允许运行时间；
-8. go/no-go、停止、失败保留和转向条件；
-9. 数据/模型下载、缓存、发布和许可证边界。
-
-当前授权允许在 2203 上获取公开数据和模型，但不允许商业用途、再识别、原始数据外传或把大体积资产提交 Git。若实际接口出现新的交互式条款、签署或个人凭据要求，下载门禁自动关闭。
-
-从零训练、微调声音模型或引入第二数据集时，必须建立新的独立任务门禁，不能沿用首轮冻结模型任务的授权。
-
-每轮只能有一个处于执行状态的 `CURRENT_TASK.md`。未通过审核的任务输出不能作为后续任务的可靠依赖。
-
-## 8. 文件与目录
-
-- `README.md`：项目入口和目录边界。
-- `AGENTS.md`：Agent 项目级工作规则。
-- `doc/`：本项目的边界、当前任务、正式规范与历史材料。
-- `test/`：独立测试、验证、演示和测试交付；默认排除在整体项目审核之外。
-- 具体任务书与任务历史：只在人工批准任务时确定存放位置和命名，不预建重复的总览或空目录。
-- `src/`、`stimuli/`、`configs/`、`tests/`、`experiments/`、`outputs/`、`reports/`：仅在正式任务实际需要时创建。
-
-不要为了让目录看起来完整而批量创建空目录。任何“已完成”必须能指向实际文件、命令和结果证据。
-
-## 9. Git 与版本管理
-
-- 本目录已由用户明确指定为 `Auditory_Simulation` 的唯一 Git 工作区，并已连接远端 `git@github.com:fany17/Auditory_Simulation.git`。
-- 在用户批准的任务范围内，可直接在本目录修改、检查、提交和推送；不得为单项任务重复建立 Git 镜像或第二工作区。
-- Git 就绪只解决版本管理，不构成科学任务执行授权；数据/模型下载、环境安装和 M6A 分析仍受 `doc/CURRENT_TASK.md` 与具体任务书门禁约束。
-- 不得擅自切换分支、过滤提交、重置工作区、删除 `.git` 或批量恢复覆盖。
-- 提交前必须核对工作树、差异和目标分支；不得把无关用户修改混入提交。
-- 涉及改写历史、强制推送、批量恢复、仓库迁移或删除的操作，仍须另行获得人工明确授权并先建立可恢复保护。
-- 临时验证目录如确有必要，结束后按用户要求收敛，并通过回收站移除。
-
-## 10. 删除、覆盖与恢复
-
-- 所有删除必须进入回收站；如果做不到，只能移动到明确的备份目录，不能永久删除。
-- 删除或递归移动前，必须核对解析后的绝对路径和目标范围。
-- 不使用 `git reset --hard`、强制 checkout 或其他破坏性恢复，除非用户明确授权且已有可靠恢复来源。
-- 不覆盖人工决定、失败记录、原始日志、旧审核报告或已有 artifact。
-- 修改重要项目文件前，应确认版本、来源和与其他文档的依赖关系。
-
-## 11. 环境、数据与外部资源
-
-- 环境、模型、数据和权重只能在经任务书批准的 2203 专用路径中安装或下载，不得复用或污染其他科研环境。
-- 外部模型、代码和数据必须记录论文或官方来源、版本、许可证、下载日期、文件名、字节数、时间戳、数量、schema、抽样可读性、输入输出和资源需求。
-- 绝对禁止主动生成、读取、比较或验证 SHA、MD5、checksum、文件哈希或 Git 对象哈希；不得把缺少哈希写成完整性已经得到密码学证明。
-- 真实语音、环境声、EEG 或 LFP 只有在权限、伦理、隐私、同步和许可证明确后才能进入正式项目。
-- 不把上级目录或其他工作区资产自动视为本项目已拥有或已完成的内容。
-
-## 12. 审核与汇报
-
-Agent A 的审核至少覆盖：
-
-- 实际文件清单和修改范围；
-- 任务要求—证据矩阵；
-- 配置、环境、命令和退出码；
-- 测试、随机种子、数值稳定性和时间轴；
-- split、防泄漏和公平比较；
-- 指标生成路径和至少一个关键结果复核；
-- 图形能否由真实结果重建；
-- 阴性结果、替代解释和结论边界；
-- Git diff 或无 Git manifest；
-- 下一步、停止点与重新审核条件。
-
-证据不足时报告具体缺口，不使用“基本完成”“继续优化”等模糊状态代替正式判断。
-
-## 13. 文件维护
-
-当项目范围、目录边界、Agent 角色、Git 策略、数据权限或审核规则发生正式变化时，应同步修订本文件并记录日期和原因。
-
-本文件不能替代项目边界、当前任务、正式任务书、执行报告、实际证据或人工决定。
+不得自动启动 sibling subtask、下一个 parent task 或患者侧任务。
