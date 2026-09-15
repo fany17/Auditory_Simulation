@@ -3,7 +3,7 @@
 | 字段 | 内容 |
 |---|---|
 | 文档性质 | 本项目独立边界；不是执行 task spec |
-| 版本 | `v1.2` |
+| 版本 | `v2.0` |
 | 生效日期 | `2026-09-15` |
 | 状态 | `ACTIVE` |
 | 适用目录 | `Auditory_Simulation/` |
@@ -14,24 +14,24 @@
 
 `Auditory_Simulation` 是**公开数据、公开声音模型与通用 auditory-neural representation 方法项目**。
 
-当前 Program 角色为 `R1 / PUBLIC_METHOD`：
+当前 pipeline 角色：`PUBLIC-REPRESENTATION / PUBLIC_METHOD`。
 
-> 使用公开声音—神经数据建立可审计的表示、迁移和 few-shot benchmark，并向患者侧提供冻结、版本化的公共方法 artifact。
+> 使用公开声音—神经数据建立可审计的 representation、迁移和 few-shot benchmark，并向患者侧提供冻结、版本化的公共方法 artifact。
 
-本项目不负责证明 STN 的患者内神经机制；public pretraining 是患者侧的 **optional accelerator / comparator**，不是 STN READ 科学的硬前置。
+本项目不负责证明 STN 患者内神经机制。public pretraining 是患者侧 optional accelerator / comparator，不是 STN READ 科学的硬前置。
 
 ## 2. 本项目负责
 
-### 2.1 Public audio representation
+### Public audio representation
 
 - interpretable acoustic/onset/timing features；
 - frozen wav2vec2 / HuBERT 等已批准模型；
 - layerwise representation；
-- 模型来源、revision、license、preprocessing provenance。
+- model source/revision/license/preprocessing provenance。
 
-现有 M6A-002 model bank 已足以支持当前 004；不再因为出现新 architecture 自动扩模型名单。
+历史 pretrained model bank 已足够支持当前任务；不因出现新 architecture 自动扩模型名单。
 
-### 2.2 Public neural data
+### Public neural data
 
 - SparrKULee 等公开 EEG；
 - ds004703 等公开 intracranial data；
@@ -40,7 +40,7 @@
 - audio↔neural timing/pairing；
 - grouped split 与 leakage audit。
 
-### 2.3 General methods
+### General methods
 
 - ridge/TRF encoding；
 - channel-agnostic neural encoder；
@@ -57,10 +57,10 @@
 - 患者实验与患者数据；
 - STN-LFP raw/intermediate/derivative；
 - MR4/TTL/clinical synchronization；
-- STN patient-specific scientific claims；
-- Protocol v2 expectation/error/update experiments；
-- PINS/DBS stimulation capability 或患者刺激；
-- SEEG 临床合作/刺激；
+- `STN-READ-*` patient-specific scientific claims；
+- expectation/error/update protocol；
+- `STN-WRITE-*` 刺激能力、system ID、target、pilot、validation；
+- `SEEG-*` 临床合作与刺激；
 - patient-specific adapter result；
 - clinical/behavioral write-in claims。
 
@@ -68,31 +68,34 @@
 
 ## 4. 与患者项目的关系
 
-旧结构曾把 M6B-STN 写成必须等待完整 M6A artifact 才能继续。现更新为：
+当前结构：
 
-- `M6A-PUBLIC-004 / R1`：公共 prior/comparator；
-- `STN R0/R2/R3/R4`：患者 direct READ science，可以独立推进；
-- `ART-AUDREP-v1` 到达后，患者侧可运行可选 transfer/comparator；
-- public transfer 为 zero/no/negative 均可正常完成任务；
-- public transfer 失败不得阻塞患者 direct/simple models。
+- `PUBLIC-REPRESENTATION`：公共 prior/comparator；
+- `STN-READ-PROTOCOL → STN-DATA-QC → STN-READ-COMPUTATION → STN-READ-VALIDATION`：患者 direct READ science，可独立推进；
+- `ART-AUDREP-v1` 到达后，患者侧可运行 `STN-READ-TRANSFER`；
+- public transfer 为 positive/no/negative 均可正常完成；
+- public transfer 失败不得阻塞 direct/simple STN models。
 
-`EEG → public intracranial → STN` 不是预设的生物学层级链，也不是必须成功的技术路线。
+`EEG → public intracranial → STN` 不是预设生物学层级，也不是必须成功的技术路线。
 
-## 5. 当前任务和历史任务
+## 5. Current task and historical provenance
 
-状态以 `doc/TASKS.md` 为准。
+Current task：
 
-- `M6A-PUBLIC-004`：`READY`；Program `R1`；
-- `M6A-PUBLIC-003`：`REVIEW`；执行已完成，不继续扩 architecture；
-- `M6A-PUBLIC-002`：`COMPLETED`；frozen model/reference bank；
-- `M6A-PUBLIC-001`：`HISTORICAL_REFERENCE`。
+- `PUBLIC-REPRESENTATION`：`READY`。
 
-旧 task 文件中的自定义状态只保留历史 provenance，不覆盖 Registry。
+Historical milestone evidence：
 
-## 6. M6A-PUBLIC-004 第一阶段边界
+- historical temporal-architecture perturbation：`REVIEW`；只允许审核/收口；
+- historical pretrained baseline：`COMPLETED`；frozen reference bank；
+- historical preliminary public alignment：`HISTORICAL_REFERENCE`。
+
+旧 `M6A-*` task 文件中的命名和状态只保留 provenance，不覆盖 current Registry，也不再继续编号。
+
+## 6. `PUBLIC-REPRESENTATION` first-stage boundary
 
 Primary public EEG：SparrKULee。  
-Primary public intracranial transfer dataset：ds004703。
+Primary public intracranial transfer candidate：ds004703。
 
 第一阶段必须先完成：
 
@@ -101,24 +104,24 @@ Primary public intracranial transfer dataset：ds004703。
 3. true pairing/timing audit；
 4. leak-safe grouped split；
 5. interpretable acoustic/onset baseline；
-6. held-out benchmark。
+6. held-out benchmark skeleton。
 
 然后才进入 neural encoder/contrastive/transfer。
 
 不能为了“先跑起来”随机切相邻时间点或忽略 story/subject leakage。
 
-## 7. Artifact 边界
+## 7. Artifact boundary
 
-未来 `ART-AUDREP-v1` 至少包含：
+`ART-AUDREP-v1` 至少包含：
 
 - semantic version；
-- source commit/config/seed；
+- source task/commit/config/seed；
 - model/feature specification；
 - preprocessing/timing spec；
 - neural encoder architecture/weights（若许可允许）；
 - portable transform/runtime；
 - canary；
-- public benchmarks；
+- public benchmark；
 - few-shot/negative-transfer evidence；
 - known failures；
 - schema/validator；
@@ -126,26 +129,26 @@ Primary public intracranial transfer dataset：ds004703。
 
 患者结果不得用于选择 artifact 内容。
 
-患者侧 consumer cross-test 通过前只能称 `candidate`。
+患者侧 consumer validation 通过前只能称 `candidate`。
 
 ## 8. 证据解释边界
 
 可以写：
 
-- 某 public audio representation 在 held-out neural data 有预测力；
-- 某 public prior 有 positive/no/negative transfer；
+- public audio representation 在 held-out neural data 有预测力；
+- public prior 有 positive/no/negative transfer；
 - 某 layer/feature 在预定义 benchmark 中更稳定；
 - 某 neural encoder 提高 data efficiency。
 
 不能仅凭这些写：
 
 - EEG、sEEG 和 STN 表征同源；
-- 某 DNN layer 等于某脑区；
+- DNN layer 等于某脑区；
 - public pretraining 证明 STN 机制；
 - shared geometry 等于因果机制；
-- public model 已具备人工 write-in 能力。
+- public model 已具备 write-in 能力。
 
-## 9. 停止规则
+## 9. Stop / redesign rules
 
 必须停止/重设计而不是追阳性的情况：
 
@@ -159,7 +162,7 @@ Primary public intracranial transfer dataset：ds004703。
 
 Negative/no-transfer 均可正常完成任务。
 
-## 10. 文档治理
+## 10. Document governance
 
 当前权威读取链：
 
@@ -169,7 +172,7 @@ Negative/no-transfer 均可正常完成任务。
 4. `doc/TASK_EXECUTION_STANDARD.md`；
 5. `doc/TASKS.md`；
 6. `doc/CURRENT_TASK.md`；
-7. 当前 `doc/tasks/<TASK-ID>.md`；
+7. `doc/tasks/PUBLIC-REPRESENTATION.md`；
 8. config/code/log/report evidence。
 
-旧 `PROJECT_CHARTER.md`、`01_听觉时变信息处理项目总纲.md`、historical exchange drafts 和 reports 均可作为设计/证据来源，但不能覆盖当前 Registry。
+旧 charter/总纲、historical milestone tasks、exchange drafts 和 reports 可作为设计/证据来源，但不能覆盖 current Registry。
