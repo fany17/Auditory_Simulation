@@ -4,13 +4,13 @@
 文档索引：`doc/DOCUMENT_INDEX.md`  
 Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 
-`TASKS.md` 是本仓库 current/future task 状态 source of truth。
+`TASKS.md` 是本仓库**父任务**状态 source of truth。subtask 状态由各父任务自己的 `SUBTASKS.md` 管理。
 
 ## Current / future tasks
 
-| Task ID | Title | Track | Class | Status | Blocking | Patient Data | Task Spec | Primary Output |
-|---|---|---|---|---|---|---|---|---|
-| `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for direct STN READ | FORBIDDEN | `doc/tasks/PUB-01_PUBLIC_REPRESENTATION.md` | `ART-AUDREP-v1` candidate + public benchmark |
+| Task ID | Title | Track | Class | Status | Blocking | Patient Data | Parent Task Spec | Subtask Registry | Primary Output |
+|---|---|---|---|---|---|---|---|---|---|
+| `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for direct STN READ | FORBIDDEN | `doc/tasks/PUB-01/TASK.md` | `doc/tasks/PUB-01/SUBTASKS.md` | `ART-AUDREP-v1` candidate + public benchmark |
 
 ## Historical provenance
 
@@ -20,24 +20,19 @@ Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 | `M6A-PUBLIC-002` | COMPLETED | frozen pretrained model/reference bank |
 | `M6A-PUBLIC-003` | REVIEW | temporal-architecture perturbation evidence; review/close only |
 
-这些历史 ID 不再作为 current/future task 命名来源，不继续创建 `M6A-PUBLIC-005`。
+这些历史 ID 不再作为 current/future task 命名来源。
 
-## PUB-01 — READY
+## PUB-01 current subtask entry
 
-目标：在公开数据中建立可审计 auditory-neural prior，并测试跨记录方式迁移和 data efficiency。
+执行 `PUB-01` 时必须先读：
 
-第一阶段：
+1. `doc/tasks/PUB-01/TASK.md`
+2. `doc/tasks/PUB-01/SUBTASKS.md`
+3. 其中最早满足依赖的 READY subtask
 
-1. SparrKULee / ds004703 access、license、timing、identity、split audit；
-2. acoustic/onset/timing + wav2vec2/HuBERT baseline；
-3. channel-agnostic neural encoder；
-4. encoding + contrastive/retrieval；
-5. held-out subject/session/story；
-6. public EEG→public intracranial transfer；
-7. few-shot / negative-transfer evidence；
-8. `ART-AUDREP-v1` candidate。
+当前首个 READY subtask：`PUB-01-S01 — Dataset / License / Timing Audit`。
 
-PUB-01 是 optional accelerator/comparator。positive/no/negative transfer 均可验收，不阻塞 READ-01/02/03 的 direct science。
+不允许跳过 S01 直接进入模型训练。
 
 ## Hard boundary
 
