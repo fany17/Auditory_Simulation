@@ -1,58 +1,78 @@
 # Auditory_Simulation Task Execution Standard
 
-版本：`numbered-pipeline-v2.1 / 2026-09-15`  
-全局规范：`AuditoryReading/TASK_EXECUTION_STANDARD.md`。
+版本：`parent-subtask-v3.0 / 2026-09-15`  
+Program governance：`AuditoryReading/AGENTS.md`  
+Program task standard：`AuditoryReading/TASK_EXECUTION_STANDARD.md`
 
-## 1. Task identity and location
+本文件只补充公共执行仓库规则；与 Program 规则冲突时，以数据边界 `PROJECT_BOUNDARY.md` 和 Program `AGENTS.md` 为准。
 
-Current/future public tasks use one canonical namespace: `PUB-##`, independently starting at `01`.
+## 1. Parent task identity
 
-Task spec path:
+Current/future public parent tasks 只使用 `PUB-##`。
+
+目录：
 
 ```text
-doc/tasks/<TASK-ID>_<SEMANTIC-SLUG>.md
+doc/tasks/<TASK-ID>/
+  TASK.md
+  SUBTASKS.md
+  subtasks/
+    <TASK-ID>-S01_<TITLE>.md
 ```
 
-Current task：`PUB-01 — Public Auditory–Neural Representation`。
+历史 `M6A-PUBLIC-001..003` 原位保留 provenance，不进入新目录结构。
 
-旧 `M6A-PUBLIC-001..003` 只保留 provenance，不继续编号；不再使用第二套纯语义 ID。
+## 2. Subtask identity
 
-状态 source of truth：`doc/TASKS.md`。当前入口：`doc/CURRENT_TASK.md`。
+父任务内只使用 `<TASK-ID>-S##`，如 `PUB-01-S01`。
 
-## 2. Required metadata
+- 每个 parent 的 S## 独立从 01 开始；
+- 编号不复用；
+- 禁止 sub-subtask；
+- 独立 deliverable/acceptance/blocker 才建 S##；
+- 小实现细节写入当前 subtask Completion Record。
 
-新任务必须包含 Task ID、Title、Track、Class、Status、Owner Repo、Blocking、Patient Data、Upstream、Inputs、Deliverables、Acceptance、Go/No-go、Downstream、Last Updated。
+## 3. Source of truth
 
-模板：`doc/TASK_TEMPLATE.md`。
+- parent status：`doc/TASKS.md`；
+- current execution entry：`doc/CURRENT_TASK.md`；
+- parent spec：`doc/tasks/<TASK-ID>/TASK.md`；
+- subtask status：`doc/tasks/<TASK-ID>/SUBTASKS.md`；
+- subtask spec：`doc/tasks/<TASK-ID>/subtasks/...`。
 
-## 3. Allowed status
+## 4. Required templates
 
-`BACKLOG / READY / ACTIVE / WAITING_EXTERNAL / BLOCKED / REVIEW / FROZEN / COMPLETED / CANCELLED / HISTORICAL_REFERENCE`
+- parent：`doc/TASK_TEMPLATE.md`；
+- subtask：`doc/SUBTASK_TEMPLATE.md`。
 
-## 4. Hard boundaries
+## 5. Public hard boundaries
 
-- 患者/STN 数据：`FORBIDDEN`；
-- 不读取患者派生 embedding、私有临床 metadata 或患者模型权重；
-- public artifact 只能依据 public data 选择模型/layer/hyperparameter；
-- STN 结果不得反向用于挑选 `ART-AUDREP-v1` 内容。
+患者/STN data、patient embedding、private clinical metadata 永远 `FORBIDDEN`。任何 S## 不得放宽。
 
-## 5. Current scientific role
+public model/layer/hyperparameter 只能依据 public data；患者结果不得反向影响 PUB artifact。
 
-PUB-01 是 optional public prior / comparator。positive/no/negative transfer 均可正常验收，不构成 READ-03 的硬门。
+## 6. Pre-execution gate
 
-## 6. Execution discipline
+subtask ACTIVE 前必须确认：ID/registry/filename 一致、parent 正确、upstream 满足、license/data access 合规、acceptance/validation 明确、split/leakage 规则冻结、允许修改范围明确。
 
-一次 execution 只指定一个 primary Task ID。
+## 7. Validation
 
-禁止自动扩 pretrained model 名单、因阴性换 split/window 追阳性、时间/story 泄漏、test subject 参与 normalization/layer selection、把 representation correlation 写成脑区同源、自动启动患者侧 downstream。
+每个 S## 必须经过：
 
-## 7. Cross-repo artifact
+1. Technical validation；
+2. Acceptance validation：`PASS / PASS_WITH_LIMITATION / REWORK / HOLD / NO_GO`；
+3. Parent consistency validation。
 
-公共→患者只通过版本化 artifact，例如 `ART-AUDREP-v1`。必须包含 version、source task/commit/config/seed、schema、runtime/transform、canary、benchmark、known failures、license/provenance。
+父任务完成还需要 Integration Review。
 
-## 8. Documentation rule
+## 8. Negative evidence
 
-- long-form charter/总纲：background；
-- historical M6A tasks/interface drafts：provenance；
-- `reports/`：结果证据；
-- current/future task 只进入 `doc/tasks/`，使用 `PUB-##` canonical ID。
+positive/no/negative transfer 均可验收。不得因阴性自动新增模型/窗口/split/negative-sampling S##。
+
+## 9. Cross-repo artifact
+
+公共→患者只通过冻结、版本化 artifact，如 `ART-AUDREP-v1`；记录 source task/subtask/commit/config、schema/runtime/canary、benchmark、known failures、license/provenance。
+
+## 10. Stop rule
+
+完成当前 S## 后更新 Completion Record 和 `SUBTASKS.md`，必要时更新 parent/TASKS/CURRENT_TASK，然后停止；不自动启动 sibling 或 downstream。
