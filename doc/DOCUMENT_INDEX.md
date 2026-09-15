@@ -12,13 +12,13 @@
 4. `TASK_EXECUTION_STANDARD.md`
 5. `TASKS.md`
 6. `CURRENT_TASK.md`
-7. `tasks/PUBLIC-REPRESENTATION.md`
+7. `tasks/PUB-01_PUBLIC_REPRESENTATION.md`
 
 `TASKS.md` 是 current/future task 状态 source of truth。
 
-## B. Current executable task specs
+## B. Current executable task spec
 
-- `tasks/PUBLIC-REPRESENTATION.md` — public auditory-neural representation；`READY`。
+- `tasks/PUB-01_PUBLIC_REPRESENTATION.md` — `PUB-01`，Public Auditory–Neural Representation；`READY`。
 
 ## C. Historical milestone task specs
 
@@ -26,55 +26,30 @@
 
 - `tasks/M6A-PUBLIC-001.md` — historical preliminary public alignment；
 - `tasks/M6A-PUBLIC-002.md` — completed pretrained baseline；
-- `tasks/M6A-PUBLIC-003.md` — completed execution / review-only evidence。
+- `tasks/M6A-PUBLIC-003.md` — review-only temporal perturbation evidence。
 
-这些旧 `M6A-*` 名称不再是 current/future pipeline 命名来源，不再新增 `M6A-PUBLIC-004/005/...`。
+旧 `M6A-*` 名称不再是 current/future 命名来源，也不继续编号。
 
-## D. Project background / long-form design
+## D. Background / interface / reports
 
-以下用于理解历史设计，不决定当前执行优先级：
+`01_听觉时变信息处理项目总纲.md`、`PROJECT_CHARTER.md`、historical exchange drafts、reports/experiment packages 均用于背景或 provenance，不决定 current task status。
 
-- `01_听觉时变信息处理项目总纲.md`
-- `PROJECT_CHARTER.md`
-- historical reports / experiment packages
+只有 PUB-01 生成新的 `ART-AUDREP-v1` candidate 后，才进入患者侧 `INT-01` consumer validation。
 
-冲突时，以 current `PROJECT_BOUNDARY.md`、`TASKS.md` 和全局 `AuditoryReading/RESEARCH_PIPELINE.md` 为准。
-
-## E. Historical/interface drafts
-
-包括旧 public→patient contract / candidate / redesign drafts。
-
-它们记录历史接口设计，不等于当前 accepted artifact contract，也不允许凭文件名恢复旧 milestone pipeline。
-
-只有 `PUBLIC-REPRESENTATION` 生成新的 `ART-AUDREP-v1` candidate 后，才进入当前 consumer validation。
-
-## F. Reports
-
-`reports/` 存放执行结果、结构化指标、图与审计报告。
-
-规则：
-
-- report 不等于 task；
-- report 内 future work 不自动创建 task；
-- negative results 必须保留；
-- 历史 perturbation 结果不能因为新任务而覆盖或删除。
-
-## G. Code / config / schema assets
+## E. Code / config / schema assets
 
 - `configs/`：配置；
 - `schemas/`：artifact/manifest schema；
 - `src/`、`scripts/`：代码；
 - `tests/`：验证；
 - `environment/`：环境；
-- 计算服务器：大型模型、数据、cache 和训练输出，不进入 Git。
+- 大型模型、数据、cache 和训练输出留在计算环境，不进入 Git。
 
-## H. New-document rule
+## F. New-document rule
 
-今后：
-
-- 新 task spec → `doc/tasks/<SEMANTIC-TASK-ID>.md`；
+- 新 task spec → `doc/tasks/<TASK-ID>_<SEMANTIC-SLUG>.md`；
+- Task ID 使用统一 `PUB-##` 编号，不再使用 M6A 或第二套 semantic ID；
 - 新 policy → `doc/`；
 - 新结果 → `reports/`；
-- live task ID 禁止 `M#`、顺序号、日期、状态词；
-- 不把 task、report、draft contract 混成一个新文件名；
+- report 内 future work 不自动创建 task；
 - 活文档由 Git 历史版本化。
