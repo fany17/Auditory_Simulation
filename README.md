@@ -1,83 +1,59 @@
 # Auditory_Simulation
 
-本目录是独立的公开听觉模型、公开神经数据与计算方法项目。当前核心方向是建立声音表征、时间结构与不同层级神经活动之间可检验的计算关系，并研究结构变量如何影响时间信息的保留、转换和丢失。
+本目录是独立的公开听觉模型、公开神经数据与计算方法项目。当前父任务是 `PUB-01 — Public Auditory–Neural Representation`。
 
-本项目不负责 PD 患者 STN 实验、临床采集、TTL/MR4 同步、DBS 装置或真实患者 STN-LFP 专属分析；这些工作独立属于 `STN_Decoding_Encoding`。
+本项目不负责患者 STN 实验、临床采集、DBS/PINS/SEEG 人体刺激或真实患者 STN-LFP 专属分析；这些工作独立属于 `STN_Decoding_Encoding`。
 
-## 当前入口
+## Current entry
 
-1. `AGENTS.md`
-2. `doc/PROJECT_BOUNDARY.md`
-3. `doc/TASKS.md`
-4. `doc/CURRENT_TASK.md`
-5. `doc/tasks/M6A-PUBLIC-003.md`
+1. Program `AuditoryReading/AGENTS.md`（可见时）
+2. `AGENTS.md`
+3. `doc/PROJECT_BOUNDARY.md`
+4. `doc/DOCUMENT_INDEX.md`
+5. `doc/TASK_EXECUTION_STANDARD.md`
+6. `doc/TASKS.md`
+7. `doc/CURRENT_TASK.md`
+8. `doc/tasks/PUB-01/TASK.md`
+9. `doc/tasks/PUB-01/SUBTASKS.md`
+10. 当前指定 subtask
 
-## 当前任务
-
-### `M6A-PUBLIC-003：Temporal Architecture Perturbation`
-
-状态：`ACTIVE_EXECUTION`
-
-目标：在已完成 pretrained architecture baseline 后，不再继续堆模型，而是系统研究：
-
-- temporal resolution / downsampling timing；
-- multiscale receptive field；
-- receptive-field growth schedule；
-- RF/downsampling decoupling；
-- explicit change/onset/event pathway。
-
-第一轮只做：
-
-1. Early vs Late Downsampling；
-2. Receptive-Field Growth / Multiscale RF；
-3. Explicit Change Branch。
-
-允许训练小型 matched experimental models；禁止微调大型 pretrained backbone；禁止读取患者/STN 数据。
-
-## Frozen baseline
-
-`M6A-PUBLIC-002` 已完成 9/9 pretrained inference、8/9 unified temporal representation probe，覆盖：
-
-- PANNs CNN14；
-- ConvTasNet；
-- SpeechBrain CRDNN；
-- Parakeet-TDT / FastConformer；
-- Audio-Mamba / SSAM；
-- wav2vec2；
-- Whisper；
-- CoNNear periphery；
-- ICNet。
-
-CoNNear 已完成 `waveform→BM→IHC→ANF-H/M/L` 六类 probe；ICNet 已完成 `waveform→bottleneck→units_1000` 六类 probe。002 作为 003 的 frozen reference，不继续补模型。
-
-`M6A-PUBLIC-001` 保留 ds004703 / wav2vec2 单被试单 recording preliminary checkpoint，不在当前结构任务中扩展。
-
-## 目录边界
+## Current task tree — PUB-01
 
 ```text
-Auditory_Simulation/
-├── AGENTS.md
-├── doc/
-│   ├── PROJECT_BOUNDARY.md
-│   ├── TASKS.md
-│   ├── CURRENT_TASK.md
-│   └── tasks/
-├── configs/
-├── environment/
-├── schemas/
-├── src/
-├── scripts/
-├── tests/
-├── reports/
-└── test/
+PUB-01  Public Auditory–Neural Representation
+│
+├─ PUB-01-S01  Dataset / License / Timing Audit          READY
+├─ PUB-01-S02  Feature Bank and Leak-safe Baseline       BACKLOG
+├─ PUB-01-S03  Public EEG Representation Benchmark       BACKLOG
+├─ PUB-01-S04  Public Intracranial Transfer              BACKLOG
+└─ PUB-01-S05  Artifact Candidate and Integration Review BACKLOG
 ```
 
-大数据、模型权重、大体积特征和训练输出不进入 Git；计算资产留在 2203，Git 只保留轻量代码、配置、结构化结果和报告。
+当前只执行 `PUB-01-S01`。subtask 只有在上游和三级验证满足后才能进入 READY/ACTIVE。
 
-## 与其他仓库分工
+PUB-01 是 patient-side READ 的 optional accelerator/comparator，不是硬前置。positive/no/negative transfer 均为合法结果。
 
-- `Auditory_Simulation`：公开数据、公开模型、结构实验、通用表征与 M6A。
-- `AuditoryReading`：教材、综述、证据整理、学习与汇报知识资产。
-- `STN_Decoding_Encoding`：患者实验、STN 数据、STN-specific adaptation 与 M6B。
+## Task / subtask governance
 
-`Auditory_Simulation` 与 `STN_Decoding_Encoding` 仅通过冻结、版本化 artifact 衔接；患者数据默认不得进入本仓库。
+父任务定义 scientific question、scope、Acceptance 和 Go/No-go；subtask 只拆分可独立验收的执行 work package。
+
+新增具体细节时：
+
+- 小实现细节 → 当前 subtask Completion Record；
+- 独立 work package → 新增 `<TASK-ID>-S##`；
+- 改父任务 question/endpoint/permission/Acceptance → parent Amendment Record；
+- 超出 parent scope → 新建新的 `PUB-##` 主任务。
+
+subtask 必须经过 technical / acceptance / parent-consistency 三级验证。
+
+## Historical milestones
+
+旧 `M6A-PUBLIC-001/002/003` 文件只保留 provenance，不再定义 current/future pipeline，也不继续创建新的 `M6A-*` task。
+
+## Repository split
+
+- `Auditory_Simulation`：`PUB-##` 公共方法；
+- `AuditoryReading`：全项目 pipeline、Program `AGENTS.md`、证据、教材和治理规范；
+- `STN_Decoding_Encoding`：`READ-## / INT-## / WRITE-## / SEEG-## / SYS-##`。
+
+公共项目与患者项目只通过冻结、版本化 artifact 衔接；患者数据不得进入本仓库。

@@ -1,45 +1,43 @@
-# Auditory_Simulation Task Index
+# Auditory_Simulation Task Registry
 
-## 当前任务
+执行规范：`doc/TASK_EXECUTION_STANDARD.md`  
+文档索引：`doc/DOCUMENT_INDEX.md`  
+Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 
-### `M6A-PUBLIC-003` — Temporal Architecture Perturbation
+`TASKS.md` 是本仓库**父任务**状态 source of truth。subtask 状态由各父任务自己的 `SUBTASKS.md` 管理。
 
-状态：`ACTIVE_EXECUTION`
+## Current / future tasks
 
-入口：`doc/tasks/M6A-PUBLIC-003.md`
+| Task ID | Title | Track | Class | Status | Blocking | Patient Data | Parent Task Spec | Subtask Registry | Primary Output |
+|---|---|---|---|---|---|---|---|---|---|
+| `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for direct STN READ | FORBIDDEN | `doc/tasks/PUB-01/TASK.md` | `doc/tasks/PUB-01/SUBTASKS.md` | `ART-AUDREP-v1` candidate + public benchmark |
 
-目标：在既有 pretrained baseline 完成后，系统研究 temporal resolution、downsampling timing、multiscale receptive field、receptive-field growth schedule、RF/downsampling decoupling 与 explicit change/event pathway 的结构因果效应。
+## Historical provenance
 
-第一轮只做：
+| Historical ID | Status | Role |
+|---|---|---|
+| `M6A-PUBLIC-001` | HISTORICAL_REFERENCE | preliminary public alignment checkpoint |
+| `M6A-PUBLIC-002` | COMPLETED | frozen pretrained model/reference bank |
+| `M6A-PUBLIC-003` | REVIEW | temporal-architecture perturbation evidence; review/close only |
 
-1. Early vs Late Downsampling；
-2. Receptive-Field Growth / Multiscale RF；
-3. Explicit Change Branch。
+这些历史 ID 不再作为 current/future task 命名来源。
 
-允许训练小型 matched experimental models；禁止微调大型 pretrained backbone；禁止患者/STN 数据。
+## PUB-01 current subtask entry
 
-## 已完成/冻结任务
+执行 `PUB-01` 时必须先读：
 
-### `M6A-PUBLIC-002` — Pretrained Audio/Temporal Architecture Reproduction
+1. `doc/tasks/PUB-01/TASK.md`
+2. `doc/tasks/PUB-01/SUBTASKS.md`
+3. 其中最早满足依赖的 READY subtask
 
-状态：`COMPLETED_FOR_NEXT_STAGE`
+当前首个 READY subtask：`PUB-01-S01 — Dataset / License / Timing Audit`。
 
-任务书：`doc/tasks/M6A-PUBLIC-002.md`
+不允许跳过 S01 直接进入模型训练。
 
-已完成：9/9 pretrained inference；8/9 unified temporal representation probe；覆盖 PANNs CNN14、ConvTasNet、SpeechBrain CRDNN、Parakeet-TDT/FastConformer、Audio-Mamba/SSAM、wav2vec2、Whisper、CoNNear periphery、ICNet。
+## Hard boundary
 
-该任务结果作为 003 的 frozen baseline，不继续补模型。
-
-### `M6A-PUBLIC-001` — Public Audio→Brain Minimal Alignment
-
-状态：`HISTORICAL_PRELIMINARY_CHECKPOINT`
-
-任务书：`doc/tasks/M6A-PUBLIC-001.md`
-
-保留 ds004703/wav2vec2 单被试单 recording preliminary，不在 003 中扩展。
-
-## 项目边界
-
-- `Auditory_Simulation`：公开数据、公开模型、声音/时序计算、通用方法、M6A。
-- `STN_Decoding_Encoding`：患者实验、STN 数据、STN-specific adaptation、M6B。
-- 只通过冻结、版本化 artifact 衔接；患者数据默认不得进入本仓库。
+- 患者/STN 数据不得进入本仓库；
+- 不读取患者派生 embedding；
+- 不使用 STN 结果选择 public model/layer；
+- 不继续堆 pretrained model 名单；
+- downstream handoff 必须是冻结、版本化 artifact。
