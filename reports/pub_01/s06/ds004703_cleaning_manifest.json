@@ -1,0 +1,17 @@
+{
+  "task": "PUB-01-S06",
+  "dataset": "ds004703",
+  "version": "1.1.0",
+  "original_server_path": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+  "derivatives_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/ds004703_qc_20260919_v1",
+  "recordings": 11,
+  "audio_files": 270,
+  "event_groups": 438,
+  "eligible_segments": 319,
+  "scan": "Every neural/audio sample read for finite/flat checks; metadata pairing audited",
+  "cleaning": "Non-destructive channel/segment exclusion indices and standardized metadata only",
+  "signal_transforms": "NONE: no filtering, resampling, re-reference, ICA or imputation",
+  "original_preserved": true,
+  "benchmark_admission": "HOLD pending S01 complete audit and split review",
+  "physical_sync": "UNKNOWN; metadata consistency is not physical sync evidence"
+}

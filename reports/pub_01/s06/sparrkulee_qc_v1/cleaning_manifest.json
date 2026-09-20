@@ -1,0 +1,13 @@
+{
+  "task": "PUB-01-S06",
+  "dataset": "SparrKULee",
+  "version": "3.1",
+  "npy_files_scanned": 277,
+  "eeg_files": 204,
+  "hold_files": 204,
+  "scope": "Completed NPY derivatives present at run start only; not full 4142-file QC",
+  "transformations": "NONE; preserve publisher preprocessing, no truncation/padding/refiltering",
+  "benchmark_admission": "HOLD: per-file timebase/channel/unit provenance and missing scope pending",
+  "excluded_formats": "data_dict not unpickled; raw BDF/NPZ QC pending",
+  "publisher_pipeline_source": "https://raw.githubusercontent.com/exporl/auditory-eeg-dataset/master/preprocessing_code/sparrKULee.yaml"
+}

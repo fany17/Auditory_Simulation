@@ -1,0 +1,117 @@
+{
+  "task": "PUB-01-S06",
+  "status": "READY_FOR_REVIEW",
+  "benchmark_admission": "HOLD_S01",
+  "physical_sync": "UNKNOWN",
+  "split": "UNASSIGNED",
+  "raw_preserved": true,
+  "datasets": [
+    {
+      "task": "PUB-01-S06",
+      "dataset": "ds004703",
+      "version": "1.1.0",
+      "original_server_path": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+      "derivatives_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/ds004703_qc_20260919_v2",
+      "recordings": 11,
+      "audio_files": 270,
+      "event_groups": 438,
+      "eligible_segments": 319,
+      "scan": "Every neural/audio sample read for finite/flat checks; metadata pairing audited",
+      "cleaning": "Virtual derivative: channel/segment exclusions + executable pub_01_virtual_derivative.py; validation required",
+      "config": {
+        "version": "1.1.0",
+        "input": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+        "scan_chunk_seconds": 20,
+        "scan_scope": "all samples in all 11 existing EDF recordings and 270 WAV files",
+        "drop_channel_rules": [
+          "official bad",
+          "README unused C-prefix",
+          "non-neural type",
+          "any nonfinite",
+          "exact flat"
+        ],
+        "stimulus_mapping": "bundled script: excerpts/Block *; controls at stimuli root",
+        "duplicate_check": "direct decoded waveform comparison; not hashes",
+        "catalan": "exclude pending played-waveform provenance resolution",
+        "alignment_max_spread_seconds": 1e-06,
+        "template_duration_tolerance_seconds": 1e-09,
+        "audio_template_margin_seconds": [
+          -0.05,
+          5.0
+        ],
+        "cleaning_outputs": "standardized metadata and eligible channel/segment indices, not transformed neural signals"
+      },
+      "signal_transforms": "NONE: no filtering, resampling, re-reference, ICA or imputation",
+      "original_preserved": true,
+      "benchmark_admission": "HOLD pending S01 complete audit and split review",
+      "physical_sync": "UNKNOWN; metadata consistency is not physical sync evidence"
+    },
+    {
+      "task": "PUB-01-S06",
+      "dataset": "SparrKULee",
+      "version": "3.1",
+      "metadata_mapping_rows": 668,
+      "duplicate_source_alias_rows": 2,
+      "expected_eeg_derivatives": 666,
+      "available_validated": 666,
+      "missing": 0,
+      "hold": 0,
+      "not_in_official_inventory": 0,
+      "large_tail_flag": 26,
+      "loader": "pub_01_sparrkulee_virtual.CommonOverlap",
+      "source": "https://raw.githubusercontent.com/exporl/auditory-eeg-dataset/master/technical_validation/util/split_and_normalize.py",
+      "transformation": "Time-first view of EEG, common prefix at index 0; excluded tails explicit; raw arrays unchanged",
+      "numerical_validation": "All indexed samples finite/flat-checked through loader; 3 positions per recording compared directly to raw arrays",
+      "rate_hz": 64,
+      "rate_basis": "Publisher preprocessing YAML and consumption contract; NPY has no embedded sample-rate header",
+      "forbidden_actions_not_done": [
+        "train",
+        "adjacent_time_split",
+        "normalize",
+        "refilter",
+        "rereference"
+      ],
+      "limitations": [
+        "Physical sync not independently established",
+        "Historical generator revision unknown",
+        "Large-tail flags retained for review, not silently accepted scientific pairing",
+        "Full public download and other-format QC separate",
+        "Group split remains unassigned"
+      ]
+    }
+  ],
+  "raw_format_counts": {
+    "JSON": 10,
+    "TEXT": 15,
+    "NPY": 739,
+    "TSV": 1467,
+    "RESTRICTED_NUMPY_PICKLE": 72,
+    "FAILED_FORMAT": 1,
+    "XML": 970,
+    "NPZ_GZIP": 204,
+    "DOCX": 4,
+    "BDF_GZIP": 660
+  },
+  "raw_bdf_quality_counts": {
+    "CALIBRATION_VALID": 660
+  },
+  "recording_rows": {
+    "SOURCE_EDF": 11,
+    "PUBLISHED_EEG_VIRTUAL_VIEW": 666,
+    "RAW_BDF_FORMAT_QC_NOT_NEW_DERIVATIVE": 660
+  },
+  "evidence": {
+    "reconcile": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/reconcile_20260920_final_v2",
+    "channel_provenance": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_channel_provenance_20260920_v3",
+    "stimulus_roles": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/raw_stimulus_roles_20260920_v2",
+    "ds_remaining_formats": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/ds_remaining_formats_20260920_v1",
+    "independent_raw_stimulus": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/review_raw_stimulus_complete_20260920_v1"
+  },
+  "limitations": [
+    "196 restricted not requested; 49 derivative raw headers inaccessible plus one public-raw stimulation file restricted",
+    "26 large-tail flags; historical publisher generator revision unknown",
+    "ds004703 Catalan playback provenance and immutable identity unresolved",
+    "Virtual views only: no new filtering, normalization, resampling, ICA or model training",
+    "Raw format/size PASS is not all-channel quality or physiological alignment PASS"
+  ]
+}

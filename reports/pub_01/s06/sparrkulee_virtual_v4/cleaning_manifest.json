@@ -1,0 +1,33 @@
+{
+  "task": "PUB-01-S06",
+  "dataset": "SparrKULee",
+  "version": "3.1",
+  "metadata_mapping_rows": 668,
+  "duplicate_source_alias_rows": 2,
+  "expected_eeg_derivatives": 666,
+  "available_validated": 666,
+  "missing": 0,
+  "hold": 0,
+  "not_in_official_inventory": 0,
+  "large_tail_flag": 26,
+  "loader": "pub_01_sparrkulee_virtual.CommonOverlap",
+  "source": "https://raw.githubusercontent.com/exporl/auditory-eeg-dataset/master/technical_validation/util/split_and_normalize.py",
+  "transformation": "Time-first view of EEG, common prefix at index 0; excluded tails explicit; raw arrays unchanged",
+  "numerical_validation": "All indexed samples finite/flat-checked through loader; 3 positions per recording compared directly to raw arrays",
+  "rate_hz": 64,
+  "rate_basis": "Publisher preprocessing YAML and consumption contract; NPY has no embedded sample-rate header",
+  "forbidden_actions_not_done": [
+    "train",
+    "adjacent_time_split",
+    "normalize",
+    "refilter",
+    "rereference"
+  ],
+  "limitations": [
+    "Physical sync not independently established",
+    "Historical generator revision unknown",
+    "Large-tail flags retained for review, not silently accepted scientific pairing",
+    "Full public download and other-format QC separate",
+    "Group split remains unassigned"
+  ]
+}

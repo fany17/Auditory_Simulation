@@ -1,6 +1,6 @@
 # Auditory_Simulation Document Index
 
-更新时间：`2026-09-15`
+更新时间：`2026-09-20`
 
 ## A. Authoritative current documents
 
@@ -32,9 +32,12 @@ tasks/PUB-01/
     PUB-01-S03_PUBLIC_EEG_BENCHMARK.md
     PUB-01-S04_INTRACRANIAL_TRANSFER.md
     PUB-01-S05_ARTIFACT_INTEGRATION.md
+    PUB-01-S06_DOWNLOAD_INITIAL_CLEANING.md
 ```
 
-当前 first executable subtask：`PUB-01-S01`。
+`PUB-01-S06` 已COMPLETED，当前无ACTIVE执行子任务；S01完整模型准入仍REVIEW。数据准备交付与独立验收入口：[COORDINATOR_REVIEW.md](../reports/pub_01/COORDINATOR_REVIEW.md)。
+
+2026-09-19 用户设立的数据准备持续goal已于2026-09-20完成实际交付和独立验收；S02尚不执行。
 
 ## C. Templates / execution governance
 
@@ -45,17 +48,19 @@ tasks/PUB-01/
 
 ## D. Historical milestone task specs
 
-保留 provenance，不自动执行：
+已按用户要求归档，保留原文和 provenance，不自动执行：
 
-- `tasks/M6A-PUBLIC-001.md` — historical preliminary public alignment；
-- `tasks/M6A-PUBLIC-002.md` — completed pretrained baseline；
-- `tasks/M6A-PUBLIC-003.md` — review-only temporal perturbation evidence。
+- `archive/pre_pub_20260919/tasks/M6A-PUBLIC-001.md` — historical preliminary public alignment；
+- `archive/pre_pub_20260919/tasks/M6A-PUBLIC-002.md` — completed pretrained baseline；
+- `archive/pre_pub_20260919/tasks/M6A-PUBLIC-003.md` — review-only temporal perturbation evidence。
+
+归档入口与旧路径映射：[archive/README.md](archive/README.md)。
 
 旧 `M6A-*` 名称不再是 current/future 命名来源，也不继续编号。
 
 ## E. Background / interface / reports
 
-`01_听觉时变信息处理项目总纲.md`、`PROJECT_CHARTER.md`、historical exchange drafts、reports/experiment packages 均用于背景或 provenance，不决定 current task/subtask status。
+旧总纲、`PROJECT_CHARTER.md`、M6A candidate/rework/exchange 草案均位于 `archive/pre_pub_20260919/`；reports/experiment packages 仍在原报告目录。以上材料只用于背景或 provenance，不决定 current task/subtask status。
 
 只有 PUB-01 完成 integration review 并生成新的 `ART-AUDREP-v1` candidate 后，才进入患者侧 `INT-01` consumer validation。
 
@@ -67,6 +72,9 @@ tasks/PUB-01/
 - `tests/`：验证；
 - `environment/`：环境；
 - 大型模型、数据、cache 和训练输出留在计算环境，不进入 Git。
+- 所有数据下载、解压、读取核验与计算统一在 `server2203`，具体边界见 `../README.md` 和 `../environment/README.md`。
+- `../test/README.md`：历史材料/演示与自动测试的区分。
+- `../reports/README.md`：报告、历史交付包与 PUB 结果的导航。
 
 ## G. New-document rule
 

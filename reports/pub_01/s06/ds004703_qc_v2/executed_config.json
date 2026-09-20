@@ -1,0 +1,51 @@
+{
+  "task": "PUB-01-S06",
+  "execution_host": "server2203",
+  "project_root": "/home/fanyu/auditory_simulation_m6a",
+  "sparrkulee": {
+    "version": "3.1",
+    "license": "CC-BY-NC-4.0",
+    "scope": "All 4142 official unrestricted files; 196 restricted excluded",
+    "expected_bytes": 135967030049,
+    "workers": 3,
+    "attempts_per_file": 3,
+    "socket_timeout_seconds": 90,
+    "resume": "HTTP Range; must return matching 206 Content-Range",
+    "publisher_preprocessed": "Preserve provenance; no repeated blind filtering"
+  },
+  "ds004703": {
+    "version": "1.1.0",
+    "input": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+    "scan_chunk_seconds": 20,
+    "scan_scope": "all samples in all 11 existing EDF recordings and 270 WAV files",
+    "drop_channel_rules": [
+      "official bad",
+      "README unused C-prefix",
+      "non-neural type",
+      "any nonfinite",
+      "exact flat"
+    ],
+    "stimulus_mapping": "bundled script: excerpts/Block *; controls at stimuli root",
+    "duplicate_check": "direct decoded waveform comparison; not hashes",
+    "catalan": "exclude pending played-waveform provenance resolution",
+    "alignment_max_spread_seconds": 1e-06,
+    "template_duration_tolerance_seconds": 1e-09,
+    "audio_template_margin_seconds": [
+      -0.05,
+      5.0
+    ],
+    "cleaning_outputs": "standardized metadata and eligible channel/segment indices, not transformed neural signals"
+  },
+  "forbidden_transforms": [
+    "filter",
+    "resample",
+    "rereference",
+    "ICA",
+    "impute",
+    "train_model",
+    "fit_cross_fold_statistics"
+  ],
+  "split_assignment": "UNASSIGNED; S01 independent review required",
+  "originals": "read-only, retained",
+  "local_outputs": "lightweight structured summaries only"
+}

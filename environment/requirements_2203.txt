@@ -5,6 +5,7 @@ scipy==1.17.0
 pandas==3.0.0
 scikit-learn==1.8.0
 mne==1.11.0
+nibabel==5.4.2
 soundfile==0.13.1
 pybids==0.21.0
 pytest==9.0.2

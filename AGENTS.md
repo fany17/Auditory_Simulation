@@ -24,7 +24,9 @@
 
 严格禁止患者/STN raw/intermediate/derivative、患者派生 embedding、私有临床 metadata、使用患者结果反向选择 public model/layer/hyperparameter，以及患者 PINS/DBS/SEEG 刺激分析。
 
-大型数据、模型权重、cache、训练输出留在批准的计算环境；Git 只保存轻量代码、配置、结构化结果、task/subtask 记录和报告。
+所有数据集下载（含续传）、解压、读取核验、预处理和派生数据生成必须在 `server2203` 完成；模型权重下载、特征提取、训练/评估及缓存也统一在 2203。不得在 Windows 本地下载数据后再上传，不得因服务器不可用而回退到本地执行。
+
+现有服务器项目根为 `/home/fanyu/auditory_simulation_m6a`。先盘点并复用可核验的既有资产，不覆盖历史数据或 frozen evidence。本地只保留轻量代码、配置、来源/许可/路径清单、结构化汇总结果、task/subtask 记录和报告；可查阅官方文档与许可网页。数据集载荷、音频/神经信号、权重、特征张量、cache 与大型训练输出不得回传本地或进入 Git。代码按需复制到服务器，不在远端初始化第二个 Git 工作区。
 
 ## 2. Fixed read order
 
@@ -53,7 +55,7 @@ doc/tasks/<TASK-ID>/
     <TASK-ID>-S01_<TITLE>.md
 ```
 
-历史 `M6A-PUBLIC-001/002/003` 原文件保留 provenance，不自动迁移或执行。
+历史 `M6A-PUBLIC-001/002/003` 与旧总纲/charter 已按用户 2026-09-19 指令归档到 `doc/archive/pre_pub_20260919/`；原文保留 provenance，旧路径见归档映射，不自动执行。
 
 ## 4. Subtask rule
 
@@ -102,7 +104,7 @@ positive / no transfer / negative transfer 均是合法结果。
 - 不擅自切换/重置/强制推送/改写历史；
 - 不覆盖用户修改或 frozen evidence；
 - 删除 current 临时文件前确认新 canonical 路径已建立且可读；
-- 历史 M6A provenance 不为整洁而批量改名；
+- 历史 M6A provenance 保留原文；2026-09-19 用户授权归档只改变目录，映射见 `doc/archive/pre_pub_20260919/ARCHIVE_MAP.csv`；
 - 若仓库既有规则禁止 checksum/hash 审计，继续遵守，不主动新增此类完整性流程。
 
 ## 10. Stop rule

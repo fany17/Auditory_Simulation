@@ -1,0 +1,37 @@
+{
+  "source": "https://s3.amazonaws.com/openneuro.org/ds004703/",
+  "scope": "Live public S3 listing vs existing v1.1.0 directory; not immutable-version proof",
+  "expected_files": 377,
+  "expected_bytes": 14173350514,
+  "status_counts": {
+    "SIZE_MATCH": 377,
+    "SIZE_MISMATCH": 0,
+    "MISSING": 0
+  },
+  "categories": {
+    "anatomy": {
+      "SIZE_MATCH": 27,
+      "SIZE_MISMATCH": 0,
+      "MISSING": 0
+    },
+    "audio": {
+      "SIZE_MATCH": 270,
+      "SIZE_MISMATCH": 0,
+      "MISSING": 0
+    },
+    "neural": {
+      "SIZE_MATCH": 11,
+      "SIZE_MISMATCH": 0,
+      "MISSING": 0
+    },
+    "metadata_or_other": {
+      "SIZE_MATCH": 69,
+      "SIZE_MISMATCH": 0,
+      "MISSING": 0
+    }
+  },
+  "limitations": [
+    "Size equality is not content integrity or format readability.",
+    "Live listing may differ from the immutable dataset version."
+  ]
+}

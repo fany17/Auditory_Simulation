@@ -1,0 +1,15 @@
+{
+  "source_url": "https://rdr.kuleuven.be/api/access/datafile/36986",
+  "official_bytes": 116391936,
+  "original_server_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_35-1.data_dict",
+  "second_server_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/podcast_35_1_independent_refetch_20260919/derivatives/preprocessed_stimuli/podcast_35-1.data_dict",
+  "direct_byte_streams_identical": true,
+  "decoding": {
+    "original": "UnpicklingError: pickle data was truncated",
+    "independent_refetch": "UnpicklingError: pickle data was truncated"
+  },
+  "status": "HOLD",
+  "inference": "If identical and both truncated, current served object is unreadable; do not blame a local interrupted transfer",
+  "originals_preserved": true,
+  "hash_audit": false
+}

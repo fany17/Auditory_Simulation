@@ -1,0 +1,12 @@
+{
+  "task": "PUB-01-S01",
+  "status": "REVIEW",
+  "dataset_count": 2,
+  "group_rows": 1104,
+  "pair_rows": 1104,
+  "split_assignments": "NONE",
+  "physical_sync": "UNKNOWN",
+  "exclusions_scope": "segment/external-object/large-tail flags; full channel exclusions remain in ds v2 channel_qc",
+  "initial_failed_audit": "S01 root original 438 HOLD table retained; current snapshot supersedes duplicate-path heuristic only",
+  "scope": "Audit snapshot generated from actual S06 evidence, not completed benchmark admission"
+}

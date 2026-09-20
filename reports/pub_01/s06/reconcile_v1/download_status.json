@@ -1,0 +1,19 @@
+{
+  "task": "PUB-01-S06",
+  "dataset": "SparrKULee",
+  "version": "3.1",
+  "timestamp_utc": "2026-09-19T16:02:49.614963+00:00",
+  "expected_public_files": 4142,
+  "expected_public_bytes": 135967030049,
+  "restricted_excluded": 196,
+  "downloaded_size_match": 2810,
+  "downloaded_bytes": 40913260023,
+  "missing_or_partial": 1332,
+  "format_checked": 2788,
+  "format_hold": 1,
+  "download_pid": 107053,
+  "download_process_alive": true,
+  "state": "PARTIAL_ACTIVE",
+  "integrity": "Bytes/decoder checks only; no digest proof",
+  "benchmark_admission": "HOLD_S01"
+}

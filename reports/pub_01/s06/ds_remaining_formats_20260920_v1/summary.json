@@ -1,0 +1,23 @@
+{
+  "expected": 96,
+  "checked": 96,
+  "formats": {
+    "TEXT": 5,
+    "JSON": 23,
+    "TSV": 35,
+    "DOCX": 1,
+    "PYTHON_SOURCE": 2,
+    "LEGACY_BYTECODE": 1,
+    "NOTEBOOK_JSON": 1,
+    "CSV": 10,
+    "NIFTI": 18
+  },
+  "statuses": {
+    "PASS_TEXT_ONLY": 7,
+    "PASS_FORMAT": 88,
+    "EXCLUDED_NOT_EXECUTED": 1
+  },
+  "signal_files_previously_checked": 281,
+  "full_inventory": 377,
+  "scope": "Remaining-format check complements 281 all-sample EDF/WAV QC; anatomy not used in benchmark"
+}

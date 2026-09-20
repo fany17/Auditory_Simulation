@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PUB-01-S06 lightweight cleaning manifest",
+  "type": "object",
+  "required": ["task", "dataset", "version"],
+  "properties": {
+    "task": {"const": "PUB-01-S06"},
+    "dataset": {"enum": ["ds004703", "SparrKULee"]},
+    "version": {"type": "string"},
+    "recordings": {"type": "integer", "minimum": 0},
+    "eligible_segments": {"type": "integer", "minimum": 0},
+    "expected_eeg_derivatives": {"type": "integer", "minimum": 0},
+    "available_validated": {"type": "integer", "minimum": 0},
+    "missing": {"type": "integer", "minimum": 0},
+    "hold": {"type": "integer", "minimum": 0},
+    "large_tail_flag": {"type": "integer", "minimum": 0},
+    "original_preserved": {"const": true},
+    "physical_sync": {"type": "string"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

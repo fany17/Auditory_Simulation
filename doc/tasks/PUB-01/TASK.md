@@ -6,7 +6,7 @@
 | Title | `Public Auditory–Neural Representation` |
 | Track | `PUBLIC_METHOD` |
 | Class | `MAINLINE_EXECUTION` |
-| Status | `READY` |
+| Status | `ACTIVE` |
 | Owner Repo | `Auditory_Simulation` |
 | Blocking | `NO` for direct STN READ |
 | Patient Data | `FORBIDDEN` |
@@ -68,6 +68,8 @@ Primary public intracranial candidate：OpenNeuro `ds004703`，使用前必须�
 4. `PUB-01-S04` Public Intracranial Transfer；
 5. `PUB-01-S05` Artifact Candidate and Parent Integration Review。
 
+2026-09-19 用户要求持续推进至数据下载和初步清洗完成，新增 `PUB-01-S06 — Server Dataset Download and Initial Cleaning` 作为 S01 审计后的独立数据准备包。编号不重排；执行依赖为 S01 → S06 → S02 → S03 → S04 → S05。S06 对已经完成许可/身份核验的数据可分支先行下载和非破坏性 QC，不绕过 S01 的 benchmark 准入验收。
+
 任何一个 detail 若形成独立 deliverable/acceptance，按 `AGENTS.md` 分配新的 S##；不得直接堆入父任务。
 
 ## 6. Controls / leakage / confounds
@@ -127,7 +129,7 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 
 ## 12. Amendment Record
 
-`NONE`
+2026-09-19：用户明确要求设置持续 goal，至少完成 PUB-01 数据集下载及初步清洗，并跟进执行而非仅派发后停止。此处将“初步清晰”按上下文落实为初步清洗/质量核验。新增 S06 数据准备交付；范围仍为 SparrKULee 与 ds004703，全部数据工作在 server2203，原始数据只读保留，清洗产物另存。许可不明/访问受限必须记录真实阻塞，不能绕过；不授权模型训练、患者资料或改变科学 endpoint。协调者在 S01/S06 之间核验后推进，无需重复询问已有启动授权。
 
 ## 13. Completion Record
 

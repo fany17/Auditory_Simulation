@@ -20,7 +20,7 @@ doc/tasks/<TASK-ID>/
     <TASK-ID>-S01_<TITLE>.md
 ```
 
-历史 `M6A-PUBLIC-001..003` 原位保留 provenance，不进入新目录结构。
+历史 `M6A-PUBLIC-001..003` 按 2026-09-19 用户指令归档至 `archive/pre_pub_20260919/tasks/`，保留原文，不进入当前 PUB 任务目录结构。
 
 ## 2. Subtask identity
 
@@ -50,6 +50,8 @@ doc/tasks/<TASK-ID>/
 患者/STN data、patient embedding、private clinical metadata 永远 `FORBIDDEN`。任何 S## 不得放宽。
 
 public model/layer/hyperparameter 只能依据 public data；患者结果不得反向影响 PUB artifact。
+
+所有数据集下载、续传、解压、读取核验、预处理、派生数据生成，以及权重下载、特征提取、训练/评估和缓存均在 `server2203` 完成。本地只保留轻量代码、配置、清单、汇总结果与报告，不下载或回传数据载荷/权重/特征张量。远端不可用时记录阻塞，不回退本地执行。先核验现有 `/home/fanyu/auditory_simulation_m6a` 资产，避免重复下载或覆盖历史结果。
 
 ## 6. Pre-execution gate
 

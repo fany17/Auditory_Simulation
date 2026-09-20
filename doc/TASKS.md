@@ -10,7 +10,7 @@ Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 
 | Task ID | Title | Track | Class | Status | Blocking | Patient Data | Parent Task Spec | Subtask Registry | Primary Output |
 |---|---|---|---|---|---|---|---|---|---|
-| `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | READY | NO for direct STN READ | FORBIDDEN | `doc/tasks/PUB-01/TASK.md` | `doc/tasks/PUB-01/SUBTASKS.md` | `ART-AUDREP-v1` candidate + public benchmark |
+| `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | ACTIVE | NO for direct STN READ | FORBIDDEN | `doc/tasks/PUB-01/TASK.md` | `doc/tasks/PUB-01/SUBTASKS.md` | `ART-AUDREP-v1` candidate + public benchmark |
 
 ## Historical provenance
 
@@ -30,7 +30,7 @@ Pipeline：`AuditoryReading/RESEARCH_PIPELINE.md`
 2. `doc/tasks/PUB-01/SUBTASKS.md`
 3. 其中最早满足依赖的 READY subtask
 
-当前首个 READY subtask：`PUB-01-S01 — Dataset / License / Timing Audit`。
+2026-09-20：`PUB-01-S06 — Server Dataset Download and Initial Cleaning` 已 COMPLETED（获准公开范围，PASS_WITH_LIMITATION），本次数据准备goal已验收。当前无ACTIVE执行子任务；S01完整模型准入仍REVIEW，S02–S05保持BACKLOG。详见 `reports/pub_01/COORDINATOR_REVIEW.md`；父任务PUB-01整体尚未完成。
 
 不允许跳过 S01 直接进入模型训练。
 

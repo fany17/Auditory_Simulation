@@ -62,7 +62,7 @@ PUB-01 是患者侧 optional accelerator/comparator，不是 STN READ 的硬前�
 
 ## 5. Current task and historical provenance
 
-Current：`PUB-01 = READY`。
+Current：`PUB-01 = ACTIVE`（2026-09-20；S06获准公开范围服务器下载与初步清洗已COMPLETED、独立验收PASS_WITH_LIMITATION；S01模型准入仍REVIEW，S02未启动，父任务整体尚未完成）。
 
 Historical：
 
@@ -81,6 +81,12 @@ Primary public intracranial transfer candidate：ds004703。
 
 ## 7. Artifact boundary
 
+### Storage and execution boundary（2026-09-19 用户确认）
+
+所有数据集下载、续传、解压、读取核验、预处理和派生数据生成均在 `server2203` 执行；模型权重下载、特征提取、训练/评估与缓存同样留在服务器。现有项目根：`/home/fanyu/auditory_simulation_m6a`。不在本地暂存数据后再上传，不因远端不可用而转到本地执行。
+
+本地唯一 Git 工作区只保存轻量代码、配置、来源/许可/路径清单、结构化汇总结果和报告。公开文档/许可网页可在本地查阅；数据载荷、音频/神经信号、权重与特征张量不回传。复用服务器已有资产前核验身份、版本和可用性；不得覆盖历史证据。
+
 `ART-AUDREP-v1` 至少包含 semantic version、source task/commit/config/seed、model/feature spec、preprocessing/timing、neural encoder、portable runtime、canary、public benchmark、few-shot/negative-transfer evidence、known failures、schema/validator、license/provenance manifest。
 
 患者结果不得用于选择 artifact 内容；INT-01 consumer validation 通过前只能称 candidate。
@@ -97,6 +103,6 @@ license 不清、timing/pairing 不可审计、split 泄漏、held-out subject c
 
 ## 10. Document governance
 
-权威读取链：`AGENTS.md` → `PROJECT_BOUNDARY.md` → `DOCUMENT_INDEX.md` → `TASK_EXECUTION_STANDARD.md` → `TASKS.md` → `CURRENT_TASK.md` → `tasks/PUB-01_PUBLIC_REPRESENTATION.md` → config/code/log/report evidence。
+权威读取链：Program `AuditoryReading/AGENTS.md` → 本仓库 `AGENTS.md` → `PROJECT_BOUNDARY.md` → `DOCUMENT_INDEX.md` → `TASK_EXECUTION_STANDARD.md` → `TASKS.md` → `CURRENT_TASK.md` → `tasks/PUB-01/TASK.md` → `tasks/PUB-01/SUBTASKS.md` → 指定 subtask → config/code/log/report evidence。
 
 旧 charter/总纲、historical M6A tasks、exchange drafts 和 reports 仅作 provenance/背景，不能覆盖 current Registry。

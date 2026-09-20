@@ -8,7 +8,7 @@
 | Status | `BACKLOG` |
 | Blocking for Parent | `YES` |
 | Patient Data | `FORBIDDEN` |
-| Upstream Subtasks | `PUB-01-S01` |
+| Upstream Subtasks | `PUB-01-S01` + `PUB-01-S06` |
 | Inputs | accepted dataset manifest/split keys, approved frozen audio models |
 | Deliverables | interpretable feature bank, frozen split manifest, ridge/TRF baseline |
 | Acceptance | features reproducible, split leak-safe, baseline runs without test-driven selection |
@@ -24,7 +24,7 @@
 至少包含 envelope/onset/log-mel or cochleagram、适用的 F0/spectral-flux/timing variables、wav2vec2/HuBERT layerwise frozen features，以及 ridge/TRF baseline。
 
 ## 3. Inputs / Preconditions
-S01 对相应 dataset 为 PASS；group split keys 已冻结。
+S01 对相应 dataset 为 PASS；S06 下载与初步清洗已验收；group split keys 已冻结。
 
 ## 4. Execution Steps
 1. 冻结 feature extraction spec/version。

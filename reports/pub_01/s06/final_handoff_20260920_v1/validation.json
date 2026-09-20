@@ -1,0 +1,14 @@
+{
+  "task": "PUB-01-S06",
+  "validation": "PASS",
+  "inventory_rows": 4715,
+  "recording_rows": {
+    "SOURCE_EDF": 11,
+    "PUBLISHED_EEG_VIRTUAL_VIEW": 666,
+    "RAW_BDF_FORMAT_QC_NOT_NEW_DERIVATIVE": 660
+  },
+  "exclusions_rows": 1529,
+  "source_corruptions_preserved": 1,
+  "restricted_not_requested": 196,
+  "scope": "Lightweight schema/count/uniqueness/numeric evidence checks, not new signal scans or scientific admission"
+}

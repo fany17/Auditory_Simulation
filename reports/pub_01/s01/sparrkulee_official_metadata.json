@@ -1,0 +1,316 @@
+{
+  "versionNumber": 3,
+  "versionMinorNumber": 1,
+  "versionState": "RELEASED",
+  "releaseTime": "2025-12-05T09:02:12Z",
+  "license": {
+    "name": "CC-BY-NC-4.0",
+    "uri": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "iconUri": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+    "rightsIdentifier": "CC-BY-NC-4.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "languageCode": "en"
+  },
+  "termsOfUse": "UNKNOWN",
+  "termsOfAccess": "users requesting access should send a mail to the authors, stating what they want to use the data for. Access will be granted to non-commercial users, complying to the CC-BY-NC-4.0 licence ",
+  "restrictions": "UNKNOWN",
+  "fileAccessRequest": true,
+  "confidentialityDeclaration": "UNKNOWN",
+  "source_url": "https://rdr.kuleuven.be/api/datasets/:persistentId/?persistentId=doi:10.48804/K3VSND",
+  "metadataBlocks": {
+    "citation": {
+      "displayName": "Citation Metadata",
+      "name": "citation",
+      "fields": [
+        {
+          "typeName": "title",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "SparrKULee: A Speech-evoked Auditory Response Repository of the KU Leuven, containing EEG of 85 participants"
+        },
+        {
+          "typeName": "author",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "authorName": {
+                "typeName": "authorName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Bollens, Lies"
+              },
+              "authorAffiliation": {
+                "typeName": "authorAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Associatie KU Leuven"
+              },
+              "authorIdentifierScheme": {
+                "typeName": "authorIdentifierScheme",
+                "multiple": false,
+                "typeClass": "controlledVocabulary",
+                "value": "ORCID"
+              },
+              "authorIdentifier": {
+                "typeName": "authorIdentifier",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "0000-0002-2520-2667"
+              }
+            },
+            {
+              "authorName": {
+                "typeName": "authorName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Accou, Bernd"
+              },
+              "authorAffiliation": {
+                "typeName": "authorAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Associatie KU Leuven"
+              },
+              "authorIdentifierScheme": {
+                "typeName": "authorIdentifierScheme",
+                "multiple": false,
+                "typeClass": "controlledVocabulary",
+                "value": "ORCID"
+              },
+              "authorIdentifier": {
+                "typeName": "authorIdentifier",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "0000-0002-3758-5968"
+              }
+            },
+            {
+              "authorName": {
+                "typeName": "authorName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Van hamme, Hugo"
+              },
+              "authorAffiliation": {
+                "typeName": "authorAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Associatie KU Leuven"
+              },
+              "authorIdentifierScheme": {
+                "typeName": "authorIdentifierScheme",
+                "multiple": false,
+                "typeClass": "controlledVocabulary",
+                "value": "ORCID"
+              },
+              "authorIdentifier": {
+                "typeName": "authorIdentifier",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "0000-0003-1331-5186"
+              }
+            },
+            {
+              "authorName": {
+                "typeName": "authorName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Francart, Tom"
+              },
+              "authorAffiliation": {
+                "typeName": "authorAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Associatie KU Leuven"
+              },
+              "authorIdentifierScheme": {
+                "typeName": "authorIdentifierScheme",
+                "multiple": false,
+                "typeClass": "controlledVocabulary",
+                "value": "ORCID"
+              },
+              "authorIdentifier": {
+                "typeName": "authorIdentifier",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "0000-0001-9734-4261"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "departmentFaculty",
+          "multiple": true,
+          "typeClass": "controlledVocabulary",
+          "value": [
+            "Department of Electrical Engineering (ESAT)",
+            "Department of Neurosciences"
+          ]
+        },
+        {
+          "typeName": "datasetContact",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "datasetContactName": {
+                "typeName": "datasetContactName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Bollens, Lies"
+              },
+              "datasetContactAffiliation": {
+                "typeName": "datasetContactAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Associatie KU Leuven"
+              },
+              "datasetContactEmail": {
+                "typeName": "datasetContactEmail",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "lies.bollens@kuleuven.be"
+              }
+            },
+            {
+              "datasetContactName": {
+                "typeName": "datasetContactName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Francart, Tom"
+              },
+              "datasetContactAffiliation": {
+                "typeName": "datasetContactAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Associatie KU Leuven"
+              },
+              "datasetContactEmail": {
+                "typeName": "datasetContactEmail",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "tom.francart@kuleuven.be"
+              }
+            },
+            {
+              "datasetContactName": {
+                "typeName": "datasetContactName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Verheijen, Wendy"
+              },
+              "datasetContactAffiliation": {
+                "typeName": "datasetContactAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Associatie KU Leuven"
+              },
+              "datasetContactEmail": {
+                "typeName": "datasetContactEmail",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "wendy.verheijen@kuleuven.be"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "dsDescription",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "dsDescriptionValue": {
+                "typeName": "dsDescriptionValue",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "The following author contributed equally to this dataset: Accou, Bernd; Bollens, Lies.<br>\n\n<strong>For easy access to the data, we recommend using the instruction/access via <a href=\"https://homes.esat.kuleuven.be/~spchdata/corpora/auditory_eeg_data/\">our hosting server</a>.</strong>\n<br>\nResearchers investigating the neural mechanisms underlying speech perception often employ electroencephalography (EEG)\nto record brain activity while participants listen to spoken language. The high temporal resolution of EEG enables the study of\nneural responses to fast and dynamic speech signals. Previous studies have successfully extracted speech characteristics\nfrom EEG data and, conversely, predicted EEG activity from speech features.\nMachine learning techniques are generally employed to construct encoding and decoding models, which necessitate a\nsubstantial amount of data. \n<br>\n<br>\nWe present SparrKULee: A Speech-evoked Auditory Repository of EEG, measured at KU Leuven,\ncomprising 64-channel EEG recordings from 85 young individuals with normal hearing, each of whom listened to 90-150\nminutes of natural speech. This dataset is more extensive than any currently available dataset in terms of both the number of\nparticipants and the amount of data per participant. It is suitable for training larger machine learning models. We evaluate the\ndataset using linear and state-of-the-art non-linear models in a speech encoding/decoding and match/mismatch paradigm,\nproviding benchmark scores for future research.\n\n<br>\n<br>\nOur  <a href=\"https://github.com/exporl/auditory-eeg-dataset\"> github repository</a> contains the necessary code to perform preprocessing steps needed to obtain the files in the derivatives folder, as well as extra code to show the technical validation of our dataset and tools to download the dataset more easily. \n<br>\nThis link provides a download of the whole dataset in <a href=\"https://rdr.kuleuven.be/api/access/dataset/:persistentId/?persistentId=doi:10.48804/K3VSND\"> one big zip file ( > 100GB) </a>.\n<br>\n\nFor a download of the dataset using already zipped files, split up into smaller chunks<a href=\"https://kuleuven-my.sharepoint.com/:f:/g/personal/lies_bollens_kuleuven_be/EulH76nkcwxIuK--XJhLxKQBaX8_GgAX-rTKK7mskzmAZA?e=N6M5Ll\">, click here</a>.\n \n<br> \n<br> \n\nDue to privacy concerns, there are some restricted files in the dataset. Users requesting access should send a mail to <a href=\"mailto:sparrkulee@kuleuven.be\">sparrkulee@kuleuven.be </a>, stating what they want to use the data for. Access will be granted to non-commercial users, complying to the CC-BY-NC-4.0 licence"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "keyword",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "keywordValue": {
+                "typeName": "keywordValue",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Auditory EEG"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "publication",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "publicationCitation": {
+                "typeName": "publicationCitation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Accou, B., Bollens, L., Gillis, M., Verheijen, W., Van hamme, H., Francart, T. with Accou, B. (joint first author), Bollens, L. (joint first author) (2024). SparrKULee: A Speech-Evoked Auditory Response Repository from KU Leuven, containing the EEG of 85 participants. <i>Data</i>, <i>9</i> (8), Art.No. 94. doi: 10.3390/data9080094"
+              },
+              "publicationIDType": {
+                "typeName": "publicationIDType",
+                "multiple": false,
+                "typeClass": "controlledVocabulary",
+                "value": "doi"
+              },
+              "publicationIDNumber": {
+                "typeName": "publicationIDNumber",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "10.3390/data9080094"
+              },
+              "liriasSourceID": {
+                "typeName": "liriasSourceID",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "4169883"
+              },
+              "publicationURL": {
+                "typeName": "publicationURL",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "https://doi.org/10.3390/data9080094"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "technicalFormat",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "xml, apr, json, pkl, bdf, tsv, npz"
+        },
+        {
+          "typeName": "access",
+          "multiple": false,
+          "typeClass": "compound",
+          "value": {
+            "accessRights": {
+              "typeName": "accessRights",
+              "multiple": false,
+              "typeClass": "controlledVocabulary",
+              "value": "open"
+            },
+            "legitimateOptout": {
+              "typeName": "legitimateOptout",
+              "multiple": false,
+              "typeClass": "controlledVocabulary",
+              "value": "privacy"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

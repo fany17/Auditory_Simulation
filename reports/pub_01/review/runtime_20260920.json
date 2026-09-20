@@ -1,0 +1,16 @@
+{
+  "observed_host": "server2203",
+  "python_executable": "/home/fanyu/.conda/envs/auditory_m6a_public_001/bin/python",
+  "python": "3.11.15",
+  "packages": {
+    "numpy": "2.4.6",
+    "mne": "1.11.0",
+    "nibabel": "5.4.2",
+    "scipy": "1.17.0",
+    "soundfile": "0.13.1",
+    "pandas": "3.0.0",
+    "pytest": "9.0.2",
+    "jsonschema": "4.25.1"
+  },
+  "scope": "Actual interpreter and named package versions queried with importlib.metadata; not a full environment lock or new installation"
+}

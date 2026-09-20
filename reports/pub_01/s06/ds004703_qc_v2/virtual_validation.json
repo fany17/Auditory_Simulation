@@ -1,0 +1,10 @@
+{
+  "recordings": 11,
+  "segments": 319,
+  "numeric_comparisons": 33,
+  "max_abs_difference": 0.0,
+  "status": "PASS",
+  "representation": "Virtual derivative with executable loader; not filtered signals",
+  "sample_window": "floor(onset*sfreq):ceil((onset+audio_duration)*sfreq), half-open",
+  "sources": "Original EDF paths bound in recording_qc.csv; native samples and rates preserved"
+}

@@ -1,0 +1,378 @@
+path,category,expected_bytes,actual_bytes,status
+.bidsignore,metadata_or_other,56,56,SIZE_MATCH
+.datalad/config,metadata_or_other,63,63,SIZE_MATCH
+.gitattributes,metadata_or_other,385,385,SIZE_MATCH
+CHANGES,metadata_or_other,76,76,SIZE_MATCH
+README,metadata_or_other,1481,1481,SIZE_MATCH
+dataset_description.json,metadata_or_other,314,314,SIZE_MATCH
+participants.tsv,metadata_or_other,217,217,SIZE_MATCH
+stimuli/Passive Listening iEEG Protocol.docx,metadata_or_other,16029,16029,SIZE_MATCH
+stimuli/Passive-Listening_iEEG_v3.py,metadata_or_other,14021,14021,SIZE_MATCH
+stimuli/Passive-Listening_iEEG_v3.pyc,metadata_or_other,12812,12812,SIZE_MATCH
+stimuli/add_duration.ipynb,metadata_or_other,2993,2993,SIZE_MATCH
+stimuli/all_df.csv,metadata_or_other,1471116,1471116,SIZE_MATCH
+stimuli/all_stimuli/catalan-f01_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/all_stimuli/catalan-f01_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/all_stimuli/catalan-f02_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/all_stimuli/catalan-f02_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/all_stimuli/catalan-f03_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/all_stimuli/catalan-f03_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/all_stimuli/catalan-m01_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/all_stimuli/catalan-m01_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/all_stimuli/catalan-m02_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/all_stimuli/catalan-m02_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/all_stimuli/catalan-m03_normed.wav,audio,4485312,4485312,SIZE_MATCH
+stimuli/all_stimuli/catalan-m03_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/all_stimuli/instructions1_normed.wav,audio,3106520,3106520,SIZE_MATCH
+stimuli/all_stimuli/instructions2_clipped_normed.wav,audio,2655140,2655140,SIZE_MATCH
+stimuli/all_stimuli/instructions2_normed.wav,audio,1872828,1872828,SIZE_MATCH
+stimuli/all_stimuli/instructions3_normed.wav,audio,551130,551130,SIZE_MATCH
+stimuli/all_stimuli/pleasePressSpace_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/all_stimuli/s0102b-ex01_question_normed.wav,audio,336598,336598,SIZE_MATCH
+stimuli/all_stimuli/s0202a-ex01_question_normed.wav,audio,394774,394774,SIZE_MATCH
+stimuli/all_stimuli/s0202b-ex01_normed.wav,audio,5020206,5020206,SIZE_MATCH
+stimuli/all_stimuli/s0202b-ex01_question_normed.wav,audio,392238,392238,SIZE_MATCH
+stimuli/all_stimuli/s0203b-ex01_normed.wav,audio,3788360,3788360,SIZE_MATCH
+stimuli/all_stimuli/s0203b-ex01_question_normed.wav,audio,411534,411534,SIZE_MATCH
+stimuli/all_stimuli/s0302b-ex01_question_normed.wav,audio,375394,375394,SIZE_MATCH
+stimuli/all_stimuli/s0305a-ex01_normed.wav,audio,3837394,3837394,SIZE_MATCH
+stimuli/all_stimuli/s0305a-ex01_question_normed.wav,audio,460016,460016,SIZE_MATCH
+stimuli/all_stimuli/s0501a-ex01_question_normed.wav,audio,622986,622986,SIZE_MATCH
+stimuli/all_stimuli/s0501a-ex02_question_normed.wav,audio,425048,425048,SIZE_MATCH
+stimuli/all_stimuli/s0601a-ex01_question_normed.wav,audio,408936,408936,SIZE_MATCH
+stimuli/all_stimuli/s0602b-ex01_question_normed.wav,audio,367126,367126,SIZE_MATCH
+stimuli/all_stimuli/s0702a-ex01_normed.wav,audio,2686814,2686814,SIZE_MATCH
+stimuli/all_stimuli/s0702a-ex01_question_normed.wav,audio,315922,315922,SIZE_MATCH
+stimuli/all_stimuli/s0703b-ex01_normed.wav,audio,3442904,3442904,SIZE_MATCH
+stimuli/all_stimuli/s0703b-ex01_question_normed.wav,audio,273640,273640,SIZE_MATCH
+stimuli/all_stimuli/s0802b-ex01_normed.wav,audio,2645448,2645448,SIZE_MATCH
+stimuli/all_stimuli/s0802b-ex01_question_normed.wav,audio,391398,391398,SIZE_MATCH
+stimuli/all_stimuli/s0901b-ex01_normed.wav,audio,3208418,3208418,SIZE_MATCH
+stimuli/all_stimuli/s0901b-ex01_question_normed.wav,audio,433682,433682,SIZE_MATCH
+stimuli/all_stimuli/s1001a-ex01_normed.wav,audio,3675454,3675454,SIZE_MATCH
+stimuli/all_stimuli/s1001a-ex01_question_normed.wav,audio,295462,295462,SIZE_MATCH
+stimuli/all_stimuli/s1103a-ex01_normed.wav,audio,4823940,4823940,SIZE_MATCH
+stimuli/all_stimuli/s1103a-ex01_question_normed.wav,audio,320924,320924,SIZE_MATCH
+stimuli/all_stimuli/s1201a-ex01_normed.wav,audio,3047966,3047966,SIZE_MATCH
+stimuli/all_stimuli/s1201a-ex01_question_normed.wav,audio,274094,274094,SIZE_MATCH
+stimuli/all_stimuli/s1202b-ex01_normed.wav,audio,3041014,3041014,SIZE_MATCH
+stimuli/all_stimuli/s1202b-ex01_question_normed.wav,audio,307738,307738,SIZE_MATCH
+stimuli/all_stimuli/s1203a-ex01_normed.wav,audio,3004004,3004004,SIZE_MATCH
+stimuli/all_stimuli/s1203a-ex01_question_normed.wav,audio,360482,360482,SIZE_MATCH
+stimuli/all_stimuli/s1303a-ex01_normed.wav,audio,3017890,3017890,SIZE_MATCH
+stimuli/all_stimuli/s1303a-ex01_question_normed.wav,audio,441410,441410,SIZE_MATCH
+stimuli/all_stimuli/s1303a-ex02_normed.wav,audio,2588278,2588278,SIZE_MATCH
+stimuli/all_stimuli/s1303a-ex02_question_normed.wav,audio,590086,590086,SIZE_MATCH
+stimuli/all_stimuli/s1401a-ex01_normed.wav,audio,3112104,3112104,SIZE_MATCH
+stimuli/all_stimuli/s1401a-ex01_question_normed.wav,audio,341838,341838,SIZE_MATCH
+stimuli/all_stimuli/s1401a-ex02_normed.wav,audio,3226614,3226614,SIZE_MATCH
+stimuli/all_stimuli/s1401a-ex02_question_normed.wav,audio,338202,338202,SIZE_MATCH
+stimuli/all_stimuli/s1401b-ex01_normed.wav,audio,4801376,4801376,SIZE_MATCH
+stimuli/all_stimuli/s1401b-ex01_question_normed.wav,audio,302738,302738,SIZE_MATCH
+stimuli/all_stimuli/s1501a-ex01_normed.wav,audio,3804854,3804854,SIZE_MATCH
+stimuli/all_stimuli/s1501a-ex01_question_normed.wav,audio,340858,340858,SIZE_MATCH
+stimuli/all_stimuli/s1503a-ex01_normed.wav,audio,1486710,1486710,SIZE_MATCH
+stimuli/all_stimuli/s1503a-ex01_question_normed.wav,audio,340020,340020,SIZE_MATCH
+stimuli/all_stimuli/s1503a-ex02_normed.wav,audio,2435620,2435620,SIZE_MATCH
+stimuli/all_stimuli/s1503a-ex02_question_normed.wav,audio,302738,302738,SIZE_MATCH
+stimuli/all_stimuli/s1503a-ex03_question_normed.wav,audio,403674,403674,SIZE_MATCH
+stimuli/all_stimuli/s1604a-ex01_normed.wav,audio,4089316,4089316,SIZE_MATCH
+stimuli/all_stimuli/s1604a-ex01_question_normed.wav,audio,388216,388216,SIZE_MATCH
+stimuli/all_stimuli/s1702b-ex01_normed.wav,audio,3653574,3653574,SIZE_MATCH
+stimuli/all_stimuli/s1702b-ex01_question_normed.wav,audio,401402,401402,SIZE_MATCH
+stimuli/all_stimuli/s1703b-ex01_normed.wav,audio,4718822,4718822,SIZE_MATCH
+stimuli/all_stimuli/s1703b-ex01_question_normed.wav,audio,343202,343202,SIZE_MATCH
+stimuli/all_stimuli/s1901a-ex01_question_normed.wav,audio,254090,254090,SIZE_MATCH
+stimuli/all_stimuli/s1901b-ex01_normed.wav,audio,3297632,3297632,SIZE_MATCH
+stimuli/all_stimuli/s1901b-ex01_question_normed.wav,audio,360480,360480,SIZE_MATCH
+stimuli/all_stimuli/s2102a-ex01_normed.wav,audio,2486276,2486276,SIZE_MATCH
+stimuli/all_stimuli/s2102a-ex01_question_normed.wav,audio,435046,435046,SIZE_MATCH
+stimuli/all_stimuli/s2102a-ex02_normed.wav,audio,3207652,3207652,SIZE_MATCH
+stimuli/all_stimuli/s2102a-ex02_question_normed.wav,audio,248632,248632,SIZE_MATCH
+stimuli/all_stimuli/s2102a-ex03_normed.wav,audio,3993134,3993134,SIZE_MATCH
+stimuli/all_stimuli/s2102a-ex03_question_normed.wav,audio,203622,203622,SIZE_MATCH
+stimuli/all_stimuli/s2202b-ex02_normed.wav,audio,4809358,4809358,SIZE_MATCH
+stimuli/all_stimuli/s2202b-ex02_question_normed.wav,audio,407310,407310,SIZE_MATCH
+stimuli/all_stimuli/s2301a-ex01_normed.wav,audio,1987834,1987834,SIZE_MATCH
+stimuli/all_stimuli/s2301a-ex01_question_normed.wav,audio,366392,366392,SIZE_MATCH
+stimuli/all_stimuli/s2302b-ex01_normed.wav,audio,3097936,3097936,SIZE_MATCH
+stimuli/all_stimuli/s2302b-ex01_question_normed.wav,audio,387760,387760,SIZE_MATCH
+stimuli/all_stimuli/s2403a-ex01_question_normed.wav,audio,380032,380032,SIZE_MATCH
+stimuli/all_stimuli/s2502a-ex01_question_normed.wav,audio,261364,261364,SIZE_MATCH
+stimuli/all_stimuli/s2801a-ex01_normed.wav,audio,5373878,5373878,SIZE_MATCH
+stimuli/all_stimuli/s2801a-ex01_question_normed.wav,audio,265002,265002,SIZE_MATCH
+stimuli/all_stimuli/s2902a-ex01_question_normed.wav,audio,371848,371848,SIZE_MATCH
+stimuli/all_stimuli/s3001b-ex01_normed.wav,audio,4337968,4337968,SIZE_MATCH
+stimuli/all_stimuli/s3001b-ex01_question_normed.wav,audio,391398,391398,SIZE_MATCH
+stimuli/all_stimuli/s3002a-ex01_question_normed.wav,audio,408220,408220,SIZE_MATCH
+stimuli/all_stimuli/s3003a-ex01_normed.wav,audio,2958658,2958658,SIZE_MATCH
+stimuli/all_stimuli/s3003a-ex01_question_normed.wav,audio,270456,270456,SIZE_MATCH
+stimuli/all_stimuli/s3003a-ex02_normed.wav,audio,3932640,3932640,SIZE_MATCH
+stimuli/all_stimuli/s3003a-ex02_question_normed.wav,audio,344112,344112,SIZE_MATCH
+stimuli/all_stimuli/s3102b-ex01_normed.wav,audio,1834770,1834770,SIZE_MATCH
+stimuli/all_stimuli/s3102b-ex01_question_normed.wav,audio,324562,324562,SIZE_MATCH
+stimuli/all_stimuli/s3201a-ex01_normed.wav,audio,6799366,6799366,SIZE_MATCH
+stimuli/all_stimuli/s3201a-ex01_question_normed.wav,audio,417768,417768,SIZE_MATCH
+stimuli/all_stimuli/s3301a-ex01_normed.wav,audio,2256564,2256564,SIZE_MATCH
+stimuli/all_stimuli/s3301a-ex01_question_normed.wav,audio,252726,252726,SIZE_MATCH
+stimuli/all_stimuli/s3301a-ex02_normed.wav,audio,3284436,3284436,SIZE_MATCH
+stimuli/all_stimuli/s3301a-ex02_question_normed.wav,audio,305466,305466,SIZE_MATCH
+stimuli/all_stimuli/s3602b-ex01_normed.wav,audio,3140702,3140702,SIZE_MATCH
+stimuli/all_stimuli/s3602b-ex01_question_normed.wav,audio,362300,362300,SIZE_MATCH
+stimuli/all_stimuli/s3602b-ex02_normed.wav,audio,2901736,2901736,SIZE_MATCH
+stimuli/all_stimuli/s3602b-ex02_question_normed.wav,audio,295008,295008,SIZE_MATCH
+stimuli/all_stimuli/s3703b-ex01_normed.wav,audio,3119832,3119832,SIZE_MATCH
+stimuli/all_stimuli/s3703b-ex01_question_normed.wav,audio,560532,560532,SIZE_MATCH
+stimuli/all_stimuli/s3801a-ex01_normed.wav,audio,2919608,2919608,SIZE_MATCH
+stimuli/all_stimuli/s3801a-ex01_question_normed.wav,audio,544620,544620,SIZE_MATCH
+stimuli/all_stimuli/s3802a-ex01_normed.wav,audio,3058484,3058484,SIZE_MATCH
+stimuli/all_stimuli/s3802a-ex01_question_normed.wav,audio,460960,460960,SIZE_MATCH
+stimuli/all_stimuli/s3902a-ex01_normed.wav,audio,2783074,2783074,SIZE_MATCH
+stimuli/all_stimuli/s3902a-ex01_question_normed.wav,audio,456870,456870,SIZE_MATCH
+stimuli/all_stimuli/s3902a-ex02_question_normed.wav,audio,285460,285460,SIZE_MATCH
+stimuli/all_stimuli/s3903b-ex01_normed.wav,audio,2315554,2315554,SIZE_MATCH
+stimuli/all_stimuli/s3903b-ex01_question_normed.wav,audio,329108,329108,SIZE_MATCH
+stimuli/all_stimuli/s3903b-ex02_normed.wav,audio,2905066,2905066,SIZE_MATCH
+stimuli/all_stimuli/s3903b-ex02_question_normed.wav,audio,403218,403218,SIZE_MATCH
+stimuli/all_stimuli/s4001b-ex01_question_normed.wav,audio,305922,305922,SIZE_MATCH
+stimuli/all_stimuli/s4002b-ex01_normed.wav,audio,3054542,3054542,SIZE_MATCH
+stimuli/all_stimuli/s4002b-ex01_question_normed.wav,audio,377304,377304,SIZE_MATCH
+stimuli/all_stimuli/s4003b-ex01_normed.wav,audio,2239790,2239790,SIZE_MATCH
+stimuli/all_stimuli/s4003b-ex01_question_normed.wav,audio,368254,368254,SIZE_MATCH
+stimuli/all_stimuli/welcome_normed.wav,audio,174620,174620,SIZE_MATCH
+stimuli/cp_wavs.py,metadata_or_other,380,380,SIZE_MATCH
+stimuli/excerpts/Block 1/catalan-m01_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/excerpts/Block 1/s1303a-ex01_normed.wav,audio,3017890,3017890,SIZE_MATCH
+stimuli/excerpts/Block 1/s1401a-ex01_normed.wav,audio,3112104,3112104,SIZE_MATCH
+stimuli/excerpts/Block 1/s1901b-ex01_normed.wav,audio,3297632,3297632,SIZE_MATCH
+stimuli/excerpts/Block 1/s2102a-ex01_normed.wav,audio,2486276,2486276,SIZE_MATCH
+stimuli/excerpts/Block 1/s2301a-ex01_normed.wav,audio,1987834,1987834,SIZE_MATCH
+stimuli/excerpts/Block 1/s3001b-ex01_normed.wav,audio,4337968,4337968,SIZE_MATCH
+stimuli/excerpts/Block 1/s3602b-ex01_normed.wav,audio,3140702,3140702,SIZE_MATCH
+stimuli/excerpts/Block 1/s4002b-ex01_normed.wav,audio,3054542,3054542,SIZE_MATCH
+stimuli/excerpts/Block 2/catalan-f01_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/excerpts/Block 2/s0703b-ex01_normed.wav,audio,3442904,3442904,SIZE_MATCH
+stimuli/excerpts/Block 2/s1201a-ex01_normed.wav,audio,3047966,3047966,SIZE_MATCH
+stimuli/excerpts/Block 2/s2102a-ex02_normed.wav,audio,3207652,3207652,SIZE_MATCH
+stimuli/excerpts/Block 2/s2202b-ex02_normed.wav,audio,4809358,4809358,SIZE_MATCH
+stimuli/excerpts/Block 2/s3301a-ex01_normed.wav,audio,2256564,2256564,SIZE_MATCH
+stimuli/excerpts/Block 2/s3602b-ex02_normed.wav,audio,2901736,2901736,SIZE_MATCH
+stimuli/excerpts/Block 2/s3903b-ex01_normed.wav,audio,2315554,2315554,SIZE_MATCH
+stimuli/excerpts/Block 2/s4003b-ex01_normed.wav,audio,2239790,2239790,SIZE_MATCH
+stimuli/excerpts/Block 3/catalan-m02_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/excerpts/Block 3/s1001a-ex01_normed.wav,audio,3675454,3675454,SIZE_MATCH
+stimuli/excerpts/Block 3/s1303a-ex02_normed.wav,audio,2588278,2588278,SIZE_MATCH
+stimuli/excerpts/Block 3/s1401a-ex02_normed.wav,audio,3226614,3226614,SIZE_MATCH
+stimuli/excerpts/Block 3/s1501a-ex01_normed.wav,audio,3804854,3804854,SIZE_MATCH
+stimuli/excerpts/Block 3/s3201a-ex01_normed.wav,audio,6799366,6799366,SIZE_MATCH
+stimuli/excerpts/Block 3/s3301a-ex02_normed.wav,audio,3284436,3284436,SIZE_MATCH
+stimuli/excerpts/Block 3/s3703b-ex01_normed.wav,audio,3119832,3119832,SIZE_MATCH
+stimuli/excerpts/Block 3/s3903b-ex02_normed.wav,audio,2905066,2905066,SIZE_MATCH
+stimuli/excerpts/Block 4/catalan-f02_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/excerpts/Block 4/s0202b-ex01_normed.wav,audio,5020206,5020206,SIZE_MATCH
+stimuli/excerpts/Block 4/s0702a-ex01_normed.wav,audio,2686814,2686814,SIZE_MATCH
+stimuli/excerpts/Block 4/s1604a-ex01_normed.wav,audio,4089316,4089316,SIZE_MATCH
+stimuli/excerpts/Block 4/s2102a-ex03_normed.wav,audio,3993134,3993134,SIZE_MATCH
+stimuli/excerpts/Block 4/s2801a-ex01_normed.wav,audio,5373878,5373878,SIZE_MATCH
+stimuli/excerpts/Block 4/s3102b-ex01_normed.wav,audio,1834770,1834770,SIZE_MATCH
+stimuli/excerpts/Block 4/s3802a-ex01_normed.wav,audio,3058484,3058484,SIZE_MATCH
+stimuli/excerpts/Block 4/s3902a-ex01_normed.wav,audio,2783074,2783074,SIZE_MATCH
+stimuli/excerpts/Block 5/catalan-m03_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/excerpts/Block 5/s0203b-ex01_normed.wav,audio,3788360,3788360,SIZE_MATCH
+stimuli/excerpts/Block 5/s0802b-ex01_normed.wav,audio,2645448,2645448,SIZE_MATCH
+stimuli/excerpts/Block 5/s1103a-ex01_normed.wav,audio,4823940,4823940,SIZE_MATCH
+stimuli/excerpts/Block 5/s1202b-ex01_normed.wav,audio,3041014,3041014,SIZE_MATCH
+stimuli/excerpts/Block 5/s1401b-ex01_normed.wav,audio,4801376,4801376,SIZE_MATCH
+stimuli/excerpts/Block 5/s1503a-ex01_normed.wav,audio,1486710,1486710,SIZE_MATCH
+stimuli/excerpts/Block 5/s1703b-ex01_normed.wav,audio,4718822,4718822,SIZE_MATCH
+stimuli/excerpts/Block 5/s3003a-ex01_normed.wav,audio,2958658,2958658,SIZE_MATCH
+stimuli/excerpts/Block 6/catalan-f03_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/excerpts/Block 6/s0305a-ex01_normed.wav,audio,3837394,3837394,SIZE_MATCH
+stimuli/excerpts/Block 6/s0901b-ex01_normed.wav,audio,3208418,3208418,SIZE_MATCH
+stimuli/excerpts/Block 6/s1203a-ex01_normed.wav,audio,3004004,3004004,SIZE_MATCH
+stimuli/excerpts/Block 6/s1503a-ex02_normed.wav,audio,2435620,2435620,SIZE_MATCH
+stimuli/excerpts/Block 6/s1702b-ex01_normed.wav,audio,3653574,3653574,SIZE_MATCH
+stimuli/excerpts/Block 6/s2302b-ex01_normed.wav,audio,3097936,3097936,SIZE_MATCH
+stimuli/excerpts/Block 6/s3003a-ex02_normed.wav,audio,3932640,3932640,SIZE_MATCH
+stimuli/excerpts/Block 6/s3801a-ex01_normed.wav,audio,2919608,2919608,SIZE_MATCH
+stimuli/excerpts/catalan_v2/catalan-f01_normed.wav,audio,4122184,4122184,SIZE_MATCH
+stimuli/excerpts/catalan_v2/catalan-f02_normed.wav,audio,3836180,3836180,SIZE_MATCH
+stimuli/excerpts/catalan_v2/catalan-f03_normed.wav,audio,4774396,4774396,SIZE_MATCH
+stimuli/excerpts/catalan_v2/catalan-m01_normed.wav,audio,4138608,4138608,SIZE_MATCH
+stimuli/excerpts/catalan_v2/catalan-m02_normed.wav,audio,4533376,4533376,SIZE_MATCH
+stimuli/excerpts/catalan_v2/catalan-m03_normed.wav,audio,4485312,4485312,SIZE_MATCH
+stimuli/instructions1_normed.wav,audio,3106520,3106520,SIZE_MATCH
+stimuli/instructions2_clipped_normed.wav,audio,2655140,2655140,SIZE_MATCH
+stimuli/instructions2_normed.wav,audio,1872828,1872828,SIZE_MATCH
+stimuli/instructions3_normed.wav,audio,551130,551130,SIZE_MATCH
+stimuli/pleasePressSpace_normed.wav,audio,303728,303728,SIZE_MATCH
+stimuli/questions/catalan-f01_question_normed.wav,audio,4122184,4122184,SIZE_MATCH
+stimuli/questions/catalan-f02_question_normed.wav,audio,3836180,3836180,SIZE_MATCH
+stimuli/questions/catalan-f03_question_normed.wav,audio,4774396,4774396,SIZE_MATCH
+stimuli/questions/catalan-m01_question_normed.wav,audio,4138608,4138608,SIZE_MATCH
+stimuli/questions/catalan-m02_question_normed.wav,audio,4533376,4533376,SIZE_MATCH
+stimuli/questions/catalan-m03_question_normed.wav,audio,4485312,4485312,SIZE_MATCH
+stimuli/questions/catalan_questions_v2/catalan-f01_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/questions/catalan_questions_v2/catalan-f02_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/questions/catalan_questions_v2/catalan-f03_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/questions/catalan_questions_v2/catalan-m01_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/questions/catalan_questions_v2/catalan-m02_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/questions/catalan_questions_v2/catalan-m03_question_normed.wav,audio,334560,334560,SIZE_MATCH
+stimuli/questions/s0102b-ex01_question_normed.wav,audio,336598,336598,SIZE_MATCH
+stimuli/questions/s0202a-ex01_question_normed.wav,audio,394774,394774,SIZE_MATCH
+stimuli/questions/s0202b-ex01_question_normed.wav,audio,392238,392238,SIZE_MATCH
+stimuli/questions/s0203b-ex01_question_normed.wav,audio,411534,411534,SIZE_MATCH
+stimuli/questions/s0302b-ex01_question_normed.wav,audio,375394,375394,SIZE_MATCH
+stimuli/questions/s0305a-ex01_question_normed.wav,audio,460016,460016,SIZE_MATCH
+stimuli/questions/s0501a-ex01_question_normed.wav,audio,622986,622986,SIZE_MATCH
+stimuli/questions/s0501a-ex02_question_normed.wav,audio,425048,425048,SIZE_MATCH
+stimuli/questions/s0601a-ex01_question_normed.wav,audio,408936,408936,SIZE_MATCH
+stimuli/questions/s0602b-ex01_question_normed.wav,audio,367126,367126,SIZE_MATCH
+stimuli/questions/s0702a-ex01_question_normed.wav,audio,315922,315922,SIZE_MATCH
+stimuli/questions/s0703b-ex01_question_normed.wav,audio,273640,273640,SIZE_MATCH
+stimuli/questions/s0802b-ex01_question_normed.wav,audio,391398,391398,SIZE_MATCH
+stimuli/questions/s0901b-ex01_question_normed.wav,audio,433682,433682,SIZE_MATCH
+stimuli/questions/s1001a-ex01_question_normed.wav,audio,295462,295462,SIZE_MATCH
+stimuli/questions/s1103a-ex01_question_normed.wav,audio,320924,320924,SIZE_MATCH
+stimuli/questions/s1201a-ex01_question_normed.wav,audio,274094,274094,SIZE_MATCH
+stimuli/questions/s1202b-ex01_question_normed.wav,audio,307738,307738,SIZE_MATCH
+stimuli/questions/s1203a-ex01_question_normed.wav,audio,360482,360482,SIZE_MATCH
+stimuli/questions/s1303a-ex01_question_normed.wav,audio,441410,441410,SIZE_MATCH
+stimuli/questions/s1303a-ex02_question_normed.wav,audio,590086,590086,SIZE_MATCH
+stimuli/questions/s1401a-ex01_question_normed.wav,audio,341838,341838,SIZE_MATCH
+stimuli/questions/s1401a-ex02_question_normed.wav,audio,338202,338202,SIZE_MATCH
+stimuli/questions/s1401b-ex01_question_normed.wav,audio,302738,302738,SIZE_MATCH
+stimuli/questions/s1501a-ex01_question_normed.wav,audio,340858,340858,SIZE_MATCH
+stimuli/questions/s1503a-ex01_question_normed.wav,audio,340020,340020,SIZE_MATCH
+stimuli/questions/s1503a-ex02_question_normed.wav,audio,302738,302738,SIZE_MATCH
+stimuli/questions/s1503a-ex03_question_normed.wav,audio,403674,403674,SIZE_MATCH
+stimuli/questions/s1604a-ex01_question_normed.wav,audio,388216,388216,SIZE_MATCH
+stimuli/questions/s1702b-ex01_question_normed.wav,audio,401402,401402,SIZE_MATCH
+stimuli/questions/s1703b-ex01_question_normed.wav,audio,343202,343202,SIZE_MATCH
+stimuli/questions/s1901a-ex01_question_normed.wav,audio,254090,254090,SIZE_MATCH
+stimuli/questions/s1901b-ex01_question_normed.wav,audio,360480,360480,SIZE_MATCH
+stimuli/questions/s2102a-ex01_question_normed.wav,audio,435046,435046,SIZE_MATCH
+stimuli/questions/s2102a-ex02_question_normed.wav,audio,248632,248632,SIZE_MATCH
+stimuli/questions/s2102a-ex03_question_normed.wav,audio,203622,203622,SIZE_MATCH
+stimuli/questions/s2202b-ex02_question_normed.wav,audio,407310,407310,SIZE_MATCH
+stimuli/questions/s2301a-ex01_question_normed.wav,audio,366392,366392,SIZE_MATCH
+stimuli/questions/s2302b-ex01_question_normed.wav,audio,387760,387760,SIZE_MATCH
+stimuli/questions/s2403a-ex01_question_normed.wav,audio,380032,380032,SIZE_MATCH
+stimuli/questions/s2502a-ex01_question_normed.wav,audio,261364,261364,SIZE_MATCH
+stimuli/questions/s2801a-ex01_question_normed.wav,audio,265002,265002,SIZE_MATCH
+stimuli/questions/s2902a-ex01_question_normed.wav,audio,371848,371848,SIZE_MATCH
+stimuli/questions/s3001b-ex01_question_normed.wav,audio,391398,391398,SIZE_MATCH
+stimuli/questions/s3002a-ex01_question_normed.wav,audio,408220,408220,SIZE_MATCH
+stimuli/questions/s3003a-ex01_question_normed.wav,audio,270456,270456,SIZE_MATCH
+stimuli/questions/s3003a-ex02_question_normed.wav,audio,344112,344112,SIZE_MATCH
+stimuli/questions/s3102b-ex01_question_normed.wav,audio,324562,324562,SIZE_MATCH
+stimuli/questions/s3201a-ex01_question_normed.wav,audio,417768,417768,SIZE_MATCH
+stimuli/questions/s3301a-ex01_question_normed.wav,audio,252726,252726,SIZE_MATCH
+stimuli/questions/s3301a-ex02_question_normed.wav,audio,305466,305466,SIZE_MATCH
+stimuli/questions/s3602b-ex01_question_normed.wav,audio,362300,362300,SIZE_MATCH
+stimuli/questions/s3602b-ex02_question_normed.wav,audio,295008,295008,SIZE_MATCH
+stimuli/questions/s3703b-ex01_question_normed.wav,audio,560532,560532,SIZE_MATCH
+stimuli/questions/s3801a-ex01_question_normed.wav,audio,544620,544620,SIZE_MATCH
+stimuli/questions/s3802a-ex01_question_normed.wav,audio,460960,460960,SIZE_MATCH
+stimuli/questions/s3902a-ex01_question_normed.wav,audio,456870,456870,SIZE_MATCH
+stimuli/questions/s3902a-ex02_question_normed.wav,audio,285460,285460,SIZE_MATCH
+stimuli/questions/s3903b-ex01_question_normed.wav,audio,329108,329108,SIZE_MATCH
+stimuli/questions/s3903b-ex02_question_normed.wav,audio,403218,403218,SIZE_MATCH
+stimuli/questions/s4001b-ex01_question_normed.wav,audio,305922,305922,SIZE_MATCH
+stimuli/questions/s4002b-ex01_question_normed.wav,audio,377304,377304,SIZE_MATCH
+stimuli/questions/s4003b-ex01_question_normed.wav,audio,368254,368254,SIZE_MATCH
+stimuli/stim-times.tsv,metadata_or_other,2142858,2142858,SIZE_MATCH
+stimuli/welcome_normed.wav,audio,174620,174620,SIZE_MATCH
+sub-SD010/ses-01/anat/SD010_contact_RAS.csv,anatomy,3420,3420,SIZE_MATCH
+sub-SD010/ses-01/anat/sub-SD010_CT_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD010/ses-01/anat/sub-SD010_T1w_defaced.nii,anatomy,59244896,59244896,SIZE_MATCH
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8724,8724,SIZE_MATCH
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg.edf,neural,1506531536,1506531536,SIZE_MATCH
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1260,1260,SIZE_MATCH
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,29,29,SIZE_MATCH
+sub-SD010/ses-01/sub-SD010_ses-01_task-PassiveListen_events.tsv,metadata_or_other,901955,901955,SIZE_MATCH
+sub-SD010/ses-01/sub-SD010_ses-01_task-PassiveListen_log.tsv,metadata_or_other,6703,6703,SIZE_MATCH
+sub-SD011/ses-01/anat/sub-SD011_CT_defaced.nii,anatomy,67109216,67109216,SIZE_MATCH
+sub-SD011/ses-01/anat/sub-SD011_T1w_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD011/ses-01/anat/sub-SD011_contact_RAS.csv,anatomy,3713,3713,SIZE_MATCH
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8621,8621,SIZE_MATCH
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.edf,neural,1833841408,1833841408,SIZE_MATCH
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1256,1256,SIZE_MATCH
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,40,SIZE_MATCH
+sub-SD011/ses-01/sub-SD011_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1348169,1348169,SIZE_MATCH
+sub-SD011/ses-01/sub-SD011_ses-01_task-PassiveListen_log.tsv,metadata_or_other,9879,9879,SIZE_MATCH
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,4812,4812,SIZE_MATCH
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg.edf,neural,538464512,538464512,SIZE_MATCH
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1311,1311,SIZE_MATCH
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,41,SIZE_MATCH
+sub-SD012/ses-01/sub-SD012_ses-01_task-PassiveListen_events.tsv,metadata_or_other,103102,103102,SIZE_MATCH
+sub-SD012/ses-01/sub-SD012_ses-01_task-PassiveListen_log.tsv,metadata_or_other,828,828,SIZE_MATCH
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_channels.tsv,metadata_or_other,4820,4820,SIZE_MATCH
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.edf,neural,394035456,394035456,SIZE_MATCH
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.json,metadata_or_other,1311,1311,SIZE_MATCH
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,41,SIZE_MATCH
+sub-SD012/ses-02/sub-SD012_ses-02_task-PassiveListen_events.tsv,metadata_or_other,1145816,1145816,SIZE_MATCH
+sub-SD012/ses-02/sub-SD012_ses-02_task-PassiveListen_log.tsv,metadata_or_other,8299,8299,SIZE_MATCH
+sub-SD013/ses-01/anat/SD013_contact_RAS.csv,anatomy,3304,3304,SIZE_MATCH
+sub-SD013/ses-01/anat/sub-SD013_CT_defaced.nii,anatomy,97517920,97517920,SIZE_MATCH
+sub-SD013/ses-01/anat/sub-SD013_T1w_defaced.nii,anatomy,133693792,133693792,SIZE_MATCH
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,4599,4599,SIZE_MATCH
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg.edf,neural,1420838144,1420838144,SIZE_MATCH
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1242,1242,SIZE_MATCH
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,41,SIZE_MATCH
+sub-SD013/ses-01/sub-SD013_ses-01_task-PassiveListen_events.tsv,metadata_or_other,398874,398874,SIZE_MATCH
+sub-SD013/ses-01/sub-SD013_ses-01_task-PassiveListen_log.tsv,metadata_or_other,1916,1916,SIZE_MATCH
+sub-SD015/ses-01/anat/sub-SD015_CT_defaced.nii,anatomy,67109216,67109216,SIZE_MATCH
+sub-SD015/ses-01/anat/sub-SD015_T1w_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD015/ses-01/anat/sub-SD015_contact_RAS.csv,anatomy,3350,3350,SIZE_MATCH
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8745,8745,SIZE_MATCH
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg.edf,neural,1129471744,1129471744,SIZE_MATCH
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1245,1245,SIZE_MATCH
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,40,SIZE_MATCH
+sub-SD015/ses-01/sub-SD015_ses-01_task-PassiveListen_events.tsv,metadata_or_other,167248,167248,SIZE_MATCH
+sub-SD015/ses-01/sub-SD015_ses-01_task-PassiveListen_log.tsv,metadata_or_other,1266,1266,SIZE_MATCH
+sub-SD017/ses-01/anat/sub-SD017_CT_defaced.nii,anatomy,67109216,67109216,SIZE_MATCH
+sub-SD017/ses-01/anat/sub-SD017_T1w_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD017/ses-01/anat/sub-SD017_contact_RAS.csv,anatomy,3171,3171,SIZE_MATCH
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,4806,4806,SIZE_MATCH
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg.edf,neural,173792512,173792512,SIZE_MATCH
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1264,1264,SIZE_MATCH
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,41,SIZE_MATCH
+sub-SD017/ses-01/sub-SD017_ses-01_task-PassiveListen_events.tsv,metadata_or_other,420490,420490,SIZE_MATCH
+sub-SD017/ses-01/sub-SD017_ses-01_task-PassiveListen_log.tsv,metadata_or_other,3060,3060,SIZE_MATCH
+sub-SD018/ses-01/anat/SD018_contact_RAS.csv,anatomy,5629,5629,SIZE_MATCH
+sub-SD018/ses-01/anat/sub-SD018_CT_defaced.nii,anatomy,67109216,67109216,SIZE_MATCH
+sub-SD018/ses-01/anat/sub-SD018_T1w_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8682,8682,SIZE_MATCH
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg.edf,neural,817400064,817400064,SIZE_MATCH
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1371,1371,SIZE_MATCH
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,40,SIZE_MATCH
+sub-SD018/ses-01/sub-SD018_ses-01_task-PassiveListen_events.tsv,metadata_or_other,419599,419599,SIZE_MATCH
+sub-SD018/ses-01/sub-SD018_ses-01_task-PassiveListen_log.tsv,metadata_or_other,3056,3056,SIZE_MATCH
+sub-SD019/ses-01/anat/sub-SD019_CT_defaced.nii,anatomy,67109216,67109216,SIZE_MATCH
+sub-SD019/ses-01/anat/sub-SD019_T1w_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD019/ses-01/anat/sub-SD019_contact_RAS.csv,anatomy,7107,7107,SIZE_MATCH
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8485,8485,SIZE_MATCH
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.edf,neural,2168195488,2168195488,SIZE_MATCH
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1276,1276,SIZE_MATCH
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,39,39,SIZE_MATCH
+sub-SD019/ses-01/sub-SD019_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1352362,1352362,SIZE_MATCH
+sub-SD019/ses-01/sub-SD019_ses-01_task-PassiveListen_log.tsv,metadata_or_other,8381,8381,SIZE_MATCH
+sub-SD021/ses-01/anat/sub-SD021_CT_defaced.nii,anatomy,67109216,67109216,SIZE_MATCH
+sub-SD021/ses-01/anat/sub-SD021_T1w_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD021/ses-01/anat/sub-SD021_contact_RAS.csv,anatomy,4520,4520,SIZE_MATCH
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8896,8896,SIZE_MATCH
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg.edf,neural,968632320,968632320,SIZE_MATCH
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1242,1242,SIZE_MATCH
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,40,SIZE_MATCH
+sub-SD021/ses-01/sub-SD021_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1349568,1349568,SIZE_MATCH
+sub-SD021/ses-01/sub-SD021_ses-01_task-PassiveListen_log.tsv,metadata_or_other,10105,10105,SIZE_MATCH
+sub-SD022/ses-01/anat/sub-SD022_CT_defaced.nii,anatomy,67109216,67109216,SIZE_MATCH
+sub-SD022/ses-01/anat/sub-SD022_T1w_defaced.nii,anatomy,16777568,16777568,SIZE_MATCH
+sub-SD022/ses-01/anat/sub-SD022_contact_RAS.csv,anatomy,2941,2941,SIZE_MATCH
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,9026,9026,SIZE_MATCH
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.edf,neural,1865216192,1865216192,SIZE_MATCH
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1366,1366,SIZE_MATCH
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,41,SIZE_MATCH
+sub-SD022/ses-01/sub-SD022_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1351281,1351281,SIZE_MATCH
+sub-SD022/ses-01/sub-SD022_ses-01_task-PassiveListen_log.tsv,metadata_or_other,10108,10108,SIZE_MATCH

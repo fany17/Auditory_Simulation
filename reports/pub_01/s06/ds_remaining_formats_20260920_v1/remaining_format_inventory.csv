@@ -1,0 +1,97 @@
+relative_path,category,expected_bytes,format,status,characters,scope,top_level,rows,width_counts,static_parse,bytes_read,shape,samples,nonfinite
+.bidsignore,metadata_or_other,56,TEXT,PASS_TEXT_ONLY,53,UTF-8 decode only; not code execution or semantic validation,,,,,,,,
+.datalad/config,metadata_or_other,63,TEXT,PASS_TEXT_ONLY,63,UTF-8 decode only; not code execution or semantic validation,,,,,,,,
+.gitattributes,metadata_or_other,385,TEXT,PASS_TEXT_ONLY,385,UTF-8 decode only; not code execution or semantic validation,,,,,,,,
+CHANGES,metadata_or_other,76,TEXT,PASS_TEXT_ONLY,76,UTF-8 decode only; not code execution or semantic validation,,,,,,,,
+README,metadata_or_other,1481,TEXT,PASS_TEXT_ONLY,1452,UTF-8 decode only; not code execution or semantic validation,,,,,,,,
+dataset_description.json,metadata_or_other,314,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+participants.tsv,metadata_or_other,217,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,11,"{""4"": 11}",,,,,
+stimuli/Passive Listening iEEG Protocol.docx,metadata_or_other,16029,DOCX,PASS_FORMAT,,"All archive entries decoded, XML parsed",,,,,,,,
+stimuli/Passive-Listening_iEEG_v3.py,metadata_or_other,14021,PYTHON_SOURCE,PASS_TEXT_ONLY,,Never imported/executed; current runtime compatibility not asserted,,,,CURRENT_PYTHON_AST_PASS,,,,
+stimuli/Passive-Listening_iEEG_v3.pyc,metadata_or_other,12812,LEGACY_BYTECODE,EXCLUDED_NOT_EXECUTED,,Opaque bytes read only; no marshal/unpickle/import/execution; not evidence of runtime compatibility,,,,,12812,,,
+stimuli/add_duration.ipynb,metadata_or_other,2993,NOTEBOOK_JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+stimuli/all_df.csv,metadata_or_other,1471116,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,33672,"{""1"": 33672}",,,,,
+stimuli/cp_wavs.py,metadata_or_other,380,PYTHON_SOURCE,PASS_TEXT_ONLY,,Never imported/executed; current runtime compatibility not asserted,,,,CURRENT_PYTHON_AST_PASS,,,,
+stimuli/stim-times.tsv,metadata_or_other,2142858,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,33673,"{""6"": 33673}",,,,,
+sub-SD010/ses-01/anat/SD010_contact_RAS.csv,anatomy,3420,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,111,"{""5"": 111}",,,,,
+sub-SD010/ses-01/anat/sub-SD010_CT_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD010/ses-01/anat/sub-SD010_T1w_defaced.nii,anatomy,59244896,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 452]",29622272,0
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8724,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,280,"{""7"": 280}",,,,,
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1260,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD010/ses-01/ieeg/sub-SD010_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,29,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD010/ses-01/sub-SD010_ses-01_task-PassiveListen_events.tsv,metadata_or_other,901955,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,15360,"{""6"": 15360}",,,,,
+sub-SD010/ses-01/sub-SD010_ses-01_task-PassiveListen_log.tsv,metadata_or_other,6703,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,158,"{""2"": 158}",,,,,
+sub-SD011/ses-01/anat/sub-SD011_CT_defaced.nii,anatomy,67109216,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD011/ses-01/anat/sub-SD011_T1w_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD011/ses-01/anat/sub-SD011_contact_RAS.csv,anatomy,3713,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,121,"{""5"": 121}",,,,,
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8621,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,277,"{""7"": 277}",,,,,
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1256,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD011/ses-01/ieeg/sub-SD011_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD011/ses-01/sub-SD011_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1348169,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,22942,"{""6"": 22942}",,,,,
+sub-SD011/ses-01/sub-SD011_ses-01_task-PassiveListen_log.tsv,metadata_or_other,9879,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,232,"{""2"": 232}",,,,,
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,4812,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,149,"{""7"": 149}",,,,,
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1311,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD012/ses-01/ieeg/sub-SD012_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD012/ses-01/sub-SD012_ses-01_task-PassiveListen_events.tsv,metadata_or_other,103102,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,1700,"{""6"": 1700}",,,,,
+sub-SD012/ses-01/sub-SD012_ses-01_task-PassiveListen_log.tsv,metadata_or_other,828,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,21,"{""2"": 21}",,,,,
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_channels.tsv,metadata_or_other,4820,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,149,"{""7"": 149}",,,,,
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg.json,metadata_or_other,1311,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD012/ses-02/ieeg/sub-SD012_ses-02_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD012/ses-02/sub-SD012_ses-02_task-PassiveListen_events.tsv,metadata_or_other,1145816,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,19468,"{""6"": 19468}",,,,,
+sub-SD012/ses-02/sub-SD012_ses-02_task-PassiveListen_log.tsv,metadata_or_other,8299,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,195,"{""2"": 195}",,,,,
+sub-SD013/ses-01/anat/SD013_contact_RAS.csv,anatomy,3304,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,111,"{""5"": 111}",,,,,
+sub-SD013/ses-01/anat/sub-SD013_CT_defaced.nii,anatomy,97517920,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[512, 512, 186]",48758784,0
+sub-SD013/ses-01/anat/sub-SD013_T1w_defaced.nii,anatomy,133693792,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[512, 512, 255]",66846720,0
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,4599,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,149,"{""7"": 149}",,,,,
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1242,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD013/ses-01/ieeg/sub-SD013_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD013/ses-01/sub-SD013_ses-01_task-PassiveListen_events.tsv,metadata_or_other,398874,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,7012,"{""6"": 7012}",,,,,
+sub-SD013/ses-01/sub-SD013_ses-01_task-PassiveListen_log.tsv,metadata_or_other,1916,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,39,"{""2"": 39}",,,,,
+sub-SD015/ses-01/anat/sub-SD015_CT_defaced.nii,anatomy,67109216,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD015/ses-01/anat/sub-SD015_T1w_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD015/ses-01/anat/sub-SD015_contact_RAS.csv,anatomy,3350,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,111,"{""5"": 111}",,,,,
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8745,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,277,"{""7"": 277}",,,,,
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1245,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD015/ses-01/ieeg/sub-SD015_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD015/ses-01/sub-SD015_ses-01_task-PassiveListen_events.tsv,metadata_or_other,167248,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,2789,"{""6"": 2789}",,,,,
+sub-SD015/ses-01/sub-SD015_ses-01_task-PassiveListen_log.tsv,metadata_or_other,1266,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,29,"{""2"": 29}",,,,,
+sub-SD017/ses-01/anat/sub-SD017_CT_defaced.nii,anatomy,67109216,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD017/ses-01/anat/sub-SD017_T1w_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD017/ses-01/anat/sub-SD017_contact_RAS.csv,anatomy,3171,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,101,"{""5"": 101}",,,,,
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,4806,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,149,"{""7"": 149}",,,,,
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1264,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD017/ses-01/ieeg/sub-SD017_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD017/ses-01/sub-SD017_ses-01_task-PassiveListen_events.tsv,metadata_or_other,420490,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,7105,"{""6"": 7105}",,,,,
+sub-SD017/ses-01/sub-SD017_ses-01_task-PassiveListen_log.tsv,metadata_or_other,3060,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,67,"{""2"": 67}",,,,,
+sub-SD018/ses-01/anat/SD018_contact_RAS.csv,anatomy,5629,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,176,"{""5"": 176}",,,,,
+sub-SD018/ses-01/anat/sub-SD018_CT_defaced.nii,anatomy,67109216,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD018/ses-01/anat/sub-SD018_T1w_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8682,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,278,"{""7"": 278}",,,,,
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1371,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD018/ses-01/ieeg/sub-SD018_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD018/ses-01/sub-SD018_ses-01_task-PassiveListen_events.tsv,metadata_or_other,419599,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,7105,"{""6"": 7105}",,,,,
+sub-SD018/ses-01/sub-SD018_ses-01_task-PassiveListen_log.tsv,metadata_or_other,3056,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,67,"{""2"": 67}",,,,,
+sub-SD019/ses-01/anat/sub-SD019_CT_defaced.nii,anatomy,67109216,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD019/ses-01/anat/sub-SD019_T1w_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD019/ses-01/anat/sub-SD019_contact_RAS.csv,anatomy,7107,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,233,"{""5"": 233}",,,,,
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8485,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,278,"{""7"": 278}",,,,,
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1276,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD019/ses-01/ieeg/sub-SD019_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,39,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD019/ses-01/sub-SD019_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1352362,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,22973,"{""6"": 22973}",,,,,
+sub-SD019/ses-01/sub-SD019_ses-01_task-PassiveListen_log.tsv,metadata_or_other,8381,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,179,"{""2"": 179}",,,,,
+sub-SD021/ses-01/anat/sub-SD021_CT_defaced.nii,anatomy,67109216,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD021/ses-01/anat/sub-SD021_T1w_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD021/ses-01/anat/sub-SD021_contact_RAS.csv,anatomy,4520,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,143,"{""5"": 143}",,,,,
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,8896,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,281,"{""7"": 281}",,,,,
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1242,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD021/ses-01/ieeg/sub-SD021_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,40,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD021/ses-01/sub-SD021_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1349568,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,22973,"{""6"": 22973}",,,,,
+sub-SD021/ses-01/sub-SD021_ses-01_task-PassiveListen_log.tsv,metadata_or_other,10105,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,233,"{""2"": 233}",,,,,
+sub-SD022/ses-01/anat/sub-SD022_CT_defaced.nii,anatomy,67109216,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD022/ses-01/anat/sub-SD022_T1w_defaced.nii,anatomy,16777568,NIFTI,PASS_FORMAT,,"All voxel values decoded; no reconstruction, visualization or identity inference; not benchmark input",,,,,,"[256, 256, 256]",16777216,0
+sub-SD022/ses-01/anat/sub-SD022_contact_RAS.csv,anatomy,2941,CSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,95,"{""5"": 95}",,,,,
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_channels.tsv,metadata_or_other,9026,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,280,"{""7"": 280}",,,,,
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg.json,metadata_or_other,1366,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD022/ses-01/ieeg/sub-SD022_ses-01_task-PassiveListen_ieeg_audio-offset.json,metadata_or_other,41,JSON,PASS_FORMAT,,Parsed JSON; notebook cells NOT executed,dict,,,,,,,
+sub-SD022/ses-01/sub-SD022_ses-01_task-PassiveListen_events.tsv,metadata_or_other,1351281,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,22973,"{""6"": 22973}",,,,,
+sub-SD022/ses-01/sub-SD022_ses-01_task-PassiveListen_log.tsv,metadata_or_other,10108,TSV,PASS_FORMAT,,Decoded table; semantic/rectangular requirements not assumed,,233,"{""2"": 233}",,,,,

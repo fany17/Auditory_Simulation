@@ -1,0 +1,15 @@
+{
+  "source_server_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/sub-009/ses-shortstories01/eeg/sub-009_ses-shortstories01_task-restingState_run-02_eeg.bdf.gz",
+  "diagnostic_excerpt_server_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/review_bdf_calibration_20260920_v1/two_record_diagnostic.bdf",
+  "records": 2,
+  "channels_compared": 64,
+  "samples_per_channel": 2048,
+  "compared_unit": "microvolt",
+  "max_absolute_difference": 3.092281986027956e-11,
+  "absolute_tolerance_microvolt": 1e-08,
+  "negative_digital_values": 71680,
+  "positive_digital_values": 59392,
+  "status": "PASS",
+  "original_preserved": true,
+  "scope": "Independent numerical decoder/calibration sample, not full raw QC or physical synchronization"
+}

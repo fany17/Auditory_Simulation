@@ -1,0 +1,15 @@
+{
+  "expected_npz": 204,
+  "available": 204,
+  "hold": 0,
+  "exact_data_dict_audio_matches": 72,
+  "rate_basis": "NPZ fs scalar, never the overwritten data_dict stimulus_sr",
+  "physical_sync": "UNKNOWN",
+  "roles": {
+    "PUBLISHED_STIMULUS_AUDIO": 72,
+    "AUXILIARY_ROLE_UNVERIFIED": 62,
+    "TRIGGER_BY_FILENAME": 70
+  },
+  "metadata_only_source": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/review_raw_stimulus_complete_20260920_v1/raw_stimulus_inventory.csv",
+  "role_limitation": "Filename roles provisional; exact publisher match is not proof of natural speech/playback"
+}

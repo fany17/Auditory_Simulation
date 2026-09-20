@@ -1,0 +1,40 @@
+{
+  "task": "PUB-01-S06",
+  "dataset": "ds004703",
+  "version": "1.1.0",
+  "original_server_path": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+  "derivatives_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/ds004703_qc_20260919_v2",
+  "recordings": 11,
+  "audio_files": 270,
+  "event_groups": 438,
+  "eligible_segments": 319,
+  "scan": "Every neural/audio sample read for finite/flat checks; metadata pairing audited",
+  "cleaning": "Virtual derivative: channel/segment exclusions + executable pub_01_virtual_derivative.py; validation required",
+  "config": {
+    "version": "1.1.0",
+    "input": "/home/fanyu/auditory_simulation_m6a/data/ds004703/v1.1.0",
+    "scan_chunk_seconds": 20,
+    "scan_scope": "all samples in all 11 existing EDF recordings and 270 WAV files",
+    "drop_channel_rules": [
+      "official bad",
+      "README unused C-prefix",
+      "non-neural type",
+      "any nonfinite",
+      "exact flat"
+    ],
+    "stimulus_mapping": "bundled script: excerpts/Block *; controls at stimuli root",
+    "duplicate_check": "direct decoded waveform comparison; not hashes",
+    "catalan": "exclude pending played-waveform provenance resolution",
+    "alignment_max_spread_seconds": 1e-06,
+    "template_duration_tolerance_seconds": 1e-09,
+    "audio_template_margin_seconds": [
+      -0.05,
+      5.0
+    ],
+    "cleaning_outputs": "standardized metadata and eligible channel/segment indices, not transformed neural signals"
+  },
+  "signal_transforms": "NONE: no filtering, resampling, re-reference, ICA or imputation",
+  "original_preserved": true,
+  "benchmark_admission": "HOLD pending S01 complete audit and split review",
+  "physical_sync": "UNKNOWN; metadata consistency is not physical sync evidence"
+}
