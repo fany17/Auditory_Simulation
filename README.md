@@ -44,14 +44,14 @@
 PUB-01  Public Auditory–Neural Representation
 │
 ├─ PUB-01-S01  Dataset / License / Timing Audit          REVIEW
-├─ PUB-01-S06  Server Dataset Download / Initial Cleaning COMPLETED
+├─ PUB-01-S01_SS01  Server Dataset Download / Initial Cleaning COMPLETED
 ├─ PUB-01-S02  Feature Bank and Leak-safe Baseline       BACKLOG
 ├─ PUB-01-S03  Public EEG Representation Benchmark       BACKLOG
 ├─ PUB-01-S04  Public Intracranial Transfer              BACKLOG
 └─ PUB-01-S05  Artifact Candidate and Integration Review BACKLOG
 ```
 
-2026-09-20，`PUB-01-S06` 获准公开范围下载与初步清洗已通过独立验收（PASS_WITH_LIMITATION）。SparrKULee公开4,142对象已齐，ds004703复用377对象并完成盘点；受限对象及坏源文件明确列出。见 [最终验收](reports/pub_01/COORDINATOR_REVIEW.md)。编号不重排，依赖仍为 S01 → S06 → S02 → S03 → S04 → S05；完整S01模型准入仍需审阅。
+2026-09-20，`PUB-01-S01_SS01` 获准公开范围下载与初步清洗已通过独立验收（PASS_WITH_LIMITATION）。SparrKULee公开4,142对象已齐，ds004703复用377对象并完成盘点；受限对象及坏源文件明确列出。见 [最终验收](reports/pub_01/COORDINATOR_REVIEW.md)。2026-09-24将旧S06迁入S01_SS01；依赖为 S01许可准入 → S01_SS01 → S01最终验收 → S02 → S03 → S04 → S05；完整S01模型准入仍需审阅。
 
 本次数据下载、初步清洗和文档归档目标已完成，所有载荷与处理留在2203。初步清洗使用已实际验证的虚拟索引/公共区间视图，不代表新增滤波信号或模型准入通过；S02仍为BACKLOG，未启动训练。
 

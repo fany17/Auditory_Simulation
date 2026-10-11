@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests": [
+    "lag direction",
+    "noncircular edge",
+    "shared finite mask",
+    "streaming ridge vs direct solve",
+    "streaming metrics vs direct formulas",
+    "synthetic delayed response"
+  ]
+}

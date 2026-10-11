@@ -1,0 +1,80 @@
+{
+  "run_id": "PUB-01-S03_SS01-ENVELOPE-DECODE-20261011",
+  "status": "PASS_WITH_LIMITATION",
+  "scope_subjects": [
+    "sub-001",
+    "sub-002",
+    "sub-003",
+    "sub-004",
+    "sub-005",
+    "sub-006",
+    "sub-007",
+    "sub-008",
+    "sub-009",
+    "sub-010"
+  ],
+  "scope_records": 93,
+  "usable_records": 93,
+  "skipped_records": 0,
+  "failed_subjects": [],
+  "summary": [
+    {
+      "model": "backward_trf",
+      "condition": "matched",
+      "subjects": 10,
+      "test_record_macro_r": 0.18191283192912988,
+      "test_record_macro_r2": 0.017807342923171945,
+      "test_pooled_r": 0.1828822597706155,
+      "test_pooled_r2": 0.022245039715788673,
+      "test_samples": 1448987
+    },
+    {
+      "model": "backward_trf",
+      "condition": "null_shift13s",
+      "subjects": 10,
+      "test_record_macro_r": -0.0032899262567823496,
+      "test_record_macro_r2": -0.020428964632530786,
+      "test_pooled_r": -0.0029267685709948696,
+      "test_pooled_r2": -0.016188953984574827,
+      "test_samples": 1448987
+    },
+    {
+      "model": "zero_lag_ridge",
+      "condition": "matched",
+      "subjects": 10,
+      "test_record_macro_r": 0.0736820581092615,
+      "test_record_macro_r2": -0.009846294774780235,
+      "test_pooled_r": 0.07400165089593719,
+      "test_pooled_r2": -0.005707634489601298,
+      "test_samples": 1448987
+    },
+    {
+      "model": "zero_lag_ridge",
+      "condition": "null_shift13s",
+      "subjects": 10,
+      "test_record_macro_r": -0.0037304623310024697,
+      "test_record_macro_r2": -0.016349191528454675,
+      "test_pooled_r": -0.0038022718927380713,
+      "test_pooled_r2": -0.01220191877548602,
+      "test_samples": 1448987
+    }
+  ],
+  "elapsed_seconds": 58.11439800262451,
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.0",
+    "matplotlib": "3.11.1"
+  },
+  "finished_utc": "2026-10-10T16:57:35.682967+00:00",
+  "same_support_checked": true,
+  "split_family_disjoint_checked": true,
+  "limitations": [
+    "initial first-10 within-subject cross-source-family only",
+    "publisher origin not physical synchronization",
+    "offline future EEG up to 500ms",
+    "single descriptive mismatch, no significance test",
+    "no semantic/audio waveform reconstruction",
+    "no deep EEG decoder trained"
+  ]
+}

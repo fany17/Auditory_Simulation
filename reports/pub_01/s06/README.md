@@ -1,5 +1,7 @@
 # PUB-01-S06 当前产物入口
 
+> 2026-09-24 编号迁移：本报告中的原PUB-01-S06现归属PUB-01-S01_SS01。S06仅为历史别名；原验收结论、机器清单和产物路径保留，当前登记以doc/tasks/PUB-01/SUBTASKS.md为准。
+
 2026-09-20 当前 **REVIEW / READY_FOR_REVIEW**。获准公开范围下载、完整格式盘点和初步虚拟清洗已实际完成，等待协调者最终独立验收；不是S01 benchmark准入，不启动S02。
 
 正式根级交付：`download_inventory.csv`、`download_status.json`、`recording_qc.csv`、`exclusion_inventory.csv`、`cleaning_manifest.json`、`validation.json`，均来自服务器 `final_handoff_20260920_v1/`。4,715对象=4,338 SparrKULee（含196未请求受限项）+377 ds004703；recording表的11 EDF、666已发布EEG虚拟视图和660 raw BDF是不同证据层级，不能相加当作独立样本量。

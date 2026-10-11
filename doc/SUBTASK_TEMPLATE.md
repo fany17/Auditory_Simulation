@@ -3,6 +3,7 @@
 | Field | Value |
 |---|---|
 | Subtask ID | `<PUB-01-S01>` |
+| Parent Node | `<所属 TASK-ID-S##；主节点填 NONE>` |
 | Parent Task | `<PUB-01>` |
 | Title | `<semantic title>` |
 | Status | `<BACKLOG / READY / ACTIVE / WAITING_EXTERNAL / BLOCKED / REVIEW / FROZEN / COMPLETED / CANCELLED>` |
@@ -48,3 +49,5 @@ Decision: `PASS / PASS_WITH_LIMITATION / REWORK / HOLD / NO_GO`
 `NOT_STARTED`
 
 完成后记录 actual inputs/versions、code/config/command、changed files、outputs、validation、failures/deviations、decision、commit/branch、effect on parent、next action。
+
+本模板同时用于 S## 和 S##_SS##。子节点 ID 示例：PUB-01-S01_SS01；任务书位于 subtasks/PUB-01-S01/，状态登记在父任务 SUBTASKS.md 的 S01 子节点表。

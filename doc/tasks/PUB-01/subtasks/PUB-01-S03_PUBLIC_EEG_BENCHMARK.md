@@ -5,7 +5,7 @@
 | Subtask ID | `PUB-01-S03` |
 | Parent Task | `PUB-01` |
 | Title | `Public EEG Representation Benchmark` |
-| Status | `BACKLOG` |
+| Status | `ACTIVE` |
 | Blocking for Parent | `YES` |
 | Patient Data | `FORBIDDEN` |
 | Upstream Subtasks | `PUB-01-S02` |
@@ -15,7 +15,7 @@
 | Validation | rerun selected folds + leakage audit + metric consistency |
 | Go/Hold/Fail | complete regardless of effect sign; output feeds S04/S05 |
 | Files Allowed to Change | public model/config/report paths + `doc/tasks/PUB-01/**` |
-| Last Updated | `2026-09-15` |
+| Last Updated | `2026-10-11` |
 
 ## 1. Objective
 在公开 EEG 上建立可审计 auditory-neural representation benchmark，而不是只追求最高准确率。
@@ -47,4 +47,8 @@ benchmark manifest、metrics tables、retrieval/encoding results、subject distr
 Technical: rerun subset + metric/unit checks。Acceptance: predefined conditions completeness。Parent consistency: 不把 EEG 成功外推成 intracranial/STN。
 
 ## 9. Completion Record
-`NOT_STARTED`
+`IN_PROGRESS`：2026-10-11 SS01已COMPLETED / PASS_WITH_LIMITATION，10名93条EEG→包络实际test/null及验证见reports/pub_01/s03/envelope_decode_20261011/REPORT.md。本轮backward TRF test r=0.1819、R²=0.0178，null r=−0.0033；zero-lag R²=−0.0098保留。首被试重现、独立指标及图表review通过。完整S03的neural model/retrieval/held-out-subject等仍未执行，保持ACTIVE；不自动进入S04。
+
+## 2026-10-11 本轮初步解码授权与范围
+统筹转达用户要求本周继续PUB并由对应项目交实际初步解码结果。本轮在S03内登记SS01，执行公开EEG→发布方声音包络的backward ridge/TRF与zero-lag基线；精确复用S02的被试内source-family划分，先冻结10名，不自动扩展。任务书见 `PUB-01-S03/PUB-01-S03_SS01_ENVELOPE_DECODING.md`。
+这是现有public neural benchmark内的线性重建方向补充，沿用ridge/TRF方法及同一公开cohort；不替代S03原定的encoding/retrieval、neural model和held-out-subject验收，S03/PUB-01继续ACTIVE。只完成SS01后停止，不进入S04。

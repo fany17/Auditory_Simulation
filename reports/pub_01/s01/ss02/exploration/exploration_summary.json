@@ -1,0 +1,74 @@
+{
+  "status": "DESCRIPTIVE_EXPLORATION_COMPLETE",
+  "selected_sparr": [
+    {
+      "sample_key": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "role": "public_signal",
+      "source_access": "PUBLIC",
+      "sampling_rate_hz": 64.0
+    },
+    {
+      "sample_key": "sub-002_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-002",
+      "role": "public_signal",
+      "source_access": "PUBLIC",
+      "sampling_rate_hz": 64.0
+    },
+    {
+      "sample_key": "sub-003_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-003",
+      "role": "public_signal",
+      "source_access": "PUBLIC",
+      "sampling_rate_hz": 64.0
+    },
+    {
+      "sample_key": "sub-019_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-019",
+      "role": "restricted_raw_public_derivative",
+      "source_access": "RESTRICTED",
+      "sampling_rate_hz": 64.0
+    }
+  ],
+  "selected_ds004703": [
+    {
+      "sample_key": "sub-SD010_ses-01_task-PassiveListen_trial-3",
+      "subject": "sub-SD010",
+      "recording": "sub-SD010_ses-01_task-PassiveListen",
+      "sampling_rate_hz": 1024.0,
+      "units": "µV (EDF original µV; MNE SI V converted ×1e6)",
+      "unit_verified": true
+    },
+    {
+      "sample_key": "sub-SD011_ses-01_task-PassiveListen_trial-3",
+      "subject": "sub-SD011",
+      "recording": "sub-SD011_ses-01_task-PassiveListen",
+      "sampling_rate_hz": 1024.0,
+      "units": "µV (EDF original µV; MNE SI V converted ×1e6)",
+      "unit_verified": true
+    },
+    {
+      "sample_key": "sub-SD012_ses-01_task-PassiveListen_trial-3",
+      "subject": "sub-SD012",
+      "recording": "sub-SD012_ses-01_task-PassiveListen",
+      "sampling_rate_hz": 512.0,
+      "units": "µV (EDF original µV; MNE SI V converted ×1e6)",
+      "unit_verified": true
+    }
+  ],
+  "tail": {
+    "n": 26,
+    "min_s": 31.328125,
+    "median_s": 31.328125,
+    "max_s": 31.328125,
+    "representative": "sub-001_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz"
+  },
+  "failures": [],
+  "audio_notes": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz: raw stimulus audio read from /home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/stimuli/eeg/audiobook_5_1.npz.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz: raw stimulus audio read from /home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/stimuli/eeg/audiobook_6_1.npz.gz",
+    "sub-SD010_ses-01_task-PassiveListen_trial-3: public WAV read; envelope=Hilbert+20-Hz low-pass",
+    "sub-SD011_ses-01_task-PassiveListen_trial-3: public WAV read; envelope=Hilbert+20-Hz low-pass",
+    "sub-SD012_ses-01_task-PassiveListen_trial-3: public WAV read; envelope=Hilbert+20-Hz low-pass"
+  ]
+}

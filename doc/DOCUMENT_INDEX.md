@@ -32,10 +32,12 @@ tasks/PUB-01/
     PUB-01-S03_PUBLIC_EEG_BENCHMARK.md
     PUB-01-S04_INTRACRANIAL_TRANSFER.md
     PUB-01-S05_ARTIFACT_INTEGRATION.md
-    PUB-01-S06_DOWNLOAD_INITIAL_CLEANING.md
+    PUB-01-S01/
+      PUB-01-S01_SS01_DOWNLOAD_INITIAL_CLEANING.md
+      PUB-01-S01_SS02_BENCHMARK_ADMISSION.md
 ```
 
-`PUB-01-S06` 已COMPLETED，当前无ACTIVE执行子任务；S01完整模型准入仍REVIEW。数据准备交付与独立验收入口：[COORDINATOR_REVIEW.md](../reports/pub_01/COORDINATOR_REVIEW.md)。
+`PUB-01-S01_SS01` 已COMPLETED，当前无ACTIVE执行子任务；S01完整模型准入仍REVIEW。数据准备交付与独立验收入口：[COORDINATOR_REVIEW.md](../reports/pub_01/COORDINATOR_REVIEW.md)。
 
 2026-09-19 用户设立的数据准备持续goal已于2026-09-20完成实际交付和独立验收；S02尚不执行。
 
@@ -82,6 +84,16 @@ tasks/PUB-01/
 - parent subtask registry → `doc/tasks/<TASK-ID>/SUBTASKS.md`；
 - 新 subtask → `doc/tasks/<TASK-ID>/subtasks/<TASK-ID>-S##_<TITLE>.md`；
 - Task ID 使用统一 `PUB-##`；subtask 只用 `<TASK-ID>-S##`；
-- 禁止 sub-subtask；
+- 已有节点内追加工作使用 S##_SS##；
 - report 内 future work 不自动创建 task/subtask；
 - 活文档由 Git 历史版本化。
+
+## 追加工作与节点层级（2026-09-24 用户规则）
+
+- S## 表示父任务下的主节点；归属于已有节点的追加工作必须登记为该节点的 SS##，例如 PUB-01-S01_SS01，不得仅因追加时间较晚占用新的主节点编号。
+- SS## 在所属 S## 内从 01 独立编号；先查已有 owner，再决定新增。小修改留在现有完成记录；重复冻结流程仍使用 run，不创建 SS##。
+- 主任务登记仍集中在父任务 SUBTASKS.md：主节点表登记 S##，其下按 S## 分区登记 SS##，包含 Parent Node、依赖、状态、任务书和验收。不得创建第二份竞争登记表。
+- 子节点任务书路径：subtasks/<TASK-ID>-S##/<TASK-ID>-S##_SS##_<TITLE>.md；主节点任务书仍在 subtasks/<TASK-ID>-S##_<TITLE>.md。复用 SUBTASK_TEMPLATE，补 Parent Node 字段。
+- SS## 继承所属节点的范围、权限、验收边界；完成 SS## 不等于完成 S##。依赖可表达为“节点前置准入 → SS## → 节点最终验收”，不得写成互相等待的循环。
+- 只有超出已有节点职责的独立主阶段才分配新的 S##；不得因整理文档自动新增研究任务。更深层工作先写步骤，不自动递归建任务。
+- 编号迁移必须记录旧 ID、新 ID、任务书路径和原有产物位置。已发布旧编号不复用为另一任务；当前登记移除旧节点，历史报告/脚本/服务器路径保留别名说明，不批量搬动数据。

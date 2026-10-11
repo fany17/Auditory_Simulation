@@ -1,5 +1,7 @@
 # PUB-01-S06 公开范围完成报告与独立复核
 
+> 2026-09-24 编号迁移：本报告中的原PUB-01-S06现归属PUB-01-S01_SS01。S06仅为历史别名；原验收结论、机器清单和产物路径保留，当前登记以doc/tasks/PUB-01/SUBTASKS.md为准。
+
 最终状态更新（2026-09-20）：协调者已完成独立验收，**COMPLETED / PASS_WITH_LIMITATION**。见[最终验收报告](../COORDINATOR_REVIEW.md)。下文REVIEW / READY_FOR_REVIEW保留为执行方提交时的状态，后续以最终验收决定为准。
 
 2026-09-20。状态 **REVIEW / READY_FOR_REVIEW**，获准公开范围数据准备已实际完成，交协调者最终验收；不自行写DONE。S01 benchmark准入仍HOLD。所有信号操作在server2203，Windows仅轻量表与代码，无训练、无患者/STN、无hash审计、无Git提交/push。

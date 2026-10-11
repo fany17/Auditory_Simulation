@@ -1,0 +1,64 @@
+{
+  "decision": "PASS_WITH_LIMITATION",
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS",
+  "checks": [
+    "10 frozen subjects/unchanged scope",
+    "exact S02 family split",
+    "no skips/failures hidden",
+    "same four-condition time support",
+    "alpha selected only by maximum validation metric",
+    "record-to-subject-to-summary arithmetic",
+    "independent first-record direct Pearson/SSE formulas",
+    "first-subject reproduction"
+  ],
+  "direct_metric_check": [
+    {
+      "model": "backward_trf",
+      "condition": "matched",
+      "r_error": 2.7755575615628914e-17,
+      "r2_error": 0.0
+    },
+    {
+      "model": "backward_trf",
+      "condition": "null_shift13s",
+      "r_error": 2.0816681711721685e-17,
+      "r2_error": 2.220446049250313e-16
+    },
+    {
+      "model": "zero_lag_ridge",
+      "condition": "matched",
+      "r_error": 0.0,
+      "r2_error": 2.220446049250313e-16
+    },
+    {
+      "model": "zero_lag_ridge",
+      "condition": "null_shift13s",
+      "r_error": 0.0,
+      "r2_error": 2.220446049250313e-16
+    }
+  ],
+  "rerun_max_absolute_error": 0.0,
+  "scope_subjects": [
+    "sub-001",
+    "sub-002",
+    "sub-003",
+    "sub-004",
+    "sub-005",
+    "sub-006",
+    "sub-007",
+    "sub-008",
+    "sub-009",
+    "sub-010"
+  ],
+  "scope_records": 93,
+  "test_records_per_condition": 27,
+  "review_type": "separate scripted and manual review pass by same agent; not external human signoff",
+  "limits": [
+    "no held-out-subject/deep-model/semantic result",
+    "single mismatch is not a p-value",
+    "publisher coordinate is not hardware synchronization",
+    "S03 and PUB-01 remain ACTIVE"
+  ]
+}

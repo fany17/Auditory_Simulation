@@ -62,7 +62,7 @@ PUB-01 是患者侧 optional accelerator/comparator，不是 STN READ 的硬前�
 
 ## 5. Current task and historical provenance
 
-Current：`PUB-01 = ACTIVE`（2026-09-20；S06获准公开范围服务器下载与初步清洗已COMPLETED、独立验收PASS_WITH_LIMITATION；S01模型准入仍REVIEW，S02未启动，父任务整体尚未完成）。
+Current：`PUB-01 = ACTIVE`（2026-09-20；S01_SS01获准公开范围服务器下载与初步清洗已COMPLETED、独立验收PASS_WITH_LIMITATION；S01模型准入仍REVIEW，S02未启动，父任务整体尚未完成）。
 
 Historical：
 

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PUB-01-S01-SS02 descriptive exploration</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; color: #202124; max-width: 1180px; margin: 0 auto; padding: 2rem; }
+h1, h2 { color: #1f3b5b; }
+figure { margin: 1.2rem 0 2.2rem; }
+figure img { max-width: 100%; height: auto; border: 1px solid #d9e2ec; }
+figcaption { color: #4e5d6c; margin-top: .45rem; }
+.note { background: #f4f7fa; border-left: 4px solid #2a6fbb; padding: .8rem 1rem; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0 1.5rem; }
+th, td { border: 1px solid #d9e2ec; padding: .45rem .6rem; text-align: left; vertical-align: top; }
+th { background: #eef3f8; }
+</style>
+</head>
+<body>
+<h1>PUB-01-S01-SS02：先探索数据的描述性报告</h1>
+<div class="note"><strong>结论先行：</strong>本批已在 server2203 完成既有索引与确定性小样本的实际读取和绘图。图形支持继续做描述性分析；正式 benchmark 的 split、物理同步和因果/生物解释仍需后续单独冻结。</div>
+<h2>规模摘要</h2>
+<table>
+<tr><th>Dataset / unit</th><th>Scale</th><th>Duration</th><th>Sampling / channels</th><th>Story coverage</th></tr>
+<tr><td>SparrKULee published derivative rows</td><td>666 rows; 85 subjects; 85 sessions</td><td>158.46 h total; 119.41–1191.42 s/row</td><td>64 Hz; 64 publisher derivative channels; Nyquist 32 Hz</td><td>72 story labels</td></tr>
+<tr><td>ds004703 original EDF</td><td>11 recordings; 319 eligible segments; 270 WAV files</td><td>8.83 h total; 1146.50–4687.50 s/recording</td><td>native 512 Hz, 1024 Hz; channel counts from recording QC</td><td>48 eligible story labels</td></tr>
+</table>
+<h2>1. Overview</h2>
+<figure><img src="overview_counts.png" alt="overview counts, duration, channel and story coverage"></figure>
+<p><strong>实际内容：</strong>对象数、时长、通道和 story 覆盖来自已有 full indexes；不同对象单位没有混为一个 n。</p>
+<p><strong>观察与可开展分析：</strong>Sparr derivative 行适合 64-Hz 短窗表征；ds 的 recording、segment 和 WAV 支持不同层级的描述性汇总。正式分析需按目标明确汇总层级。</p>
+<p><strong>后续 QC：</strong>故事版本、物理同步、通道处理和 split 仍需冻结。</p>
+<h2>2. SparrKULee signal examples</h2>
+<figure><img src="sparrkulee_signal_examples.png" alt="SparrKULee multi-channel traces and PSD"></figure>
+<p>发布方 64-Hz preprocessed EEG，PSD 不超过 32-Hz Nyquist；含 normal public pair 和 restricted raw、public derivative 示例。受限 raw 未读取，图形不能证明其原始单位或同步。</p>
+<h2>3. ds004703 signal examples</h2>
+<figure><img src="ds004703_signal_examples.png" alt="ds004703 original EDF multi-channel traces and PSD"></figure>
+<p>原 EDF 事件附近小窗和 eligible 通道；单位只在可核验时转换为 µV；PSD 上限为各样本的 fs/2。event alignment 不是物理同步证明。</p>
+<h2>4. Audio, envelope, neural index and event timeline</h2>
+<figure><img src="sparrkulee_audio_event_overlays.png" alt="SparrKULee audio envelope neural overlays"></figure>
+<p>Sparr 的 0 s 是 array common start，不是 hardware event；受限示例不请求 restricted raw。</p>
+<figure><img src="ds004703_audio_event_overlays.png" alt="ds004703 audio envelope neural event overlays"></figure>
+<p>ds 的 envelope 由公开 WAV 在服务器即时计算；0 s 是 metadata event onset，physical sync UNKNOWN。</p>
+<h2>5. Tail diagnostics</h2>
+<figure><img src="tail_overview.png" alt="all 26 tail length relations"><figcaption>All 26 LARGE_TAIL_REVIEW rows; 3 s is an advisory marker only.</figcaption></figure>
+<figure><img src="tail_example.png" alt="deterministic representative tail end example"></figure>
+<p>尾差是连续长度关系，不应简化为 3 s 二元准入；可作为 alignment diagnostic 或敏感性分层候选变量。</p>
+<h2>范围与运行材料</h2>
+<ul>
+<li>仅既有 full index + 确定性小样本；无全库重读、下载、受限载荷请求或训练。</li>
+<li>本批没有小样本读取失败。</li>
+<li>旧四个准入产物保留为历史 formal-admission 记录，本报告不把它们改写成探索阻碍。</li>
+</ul>
+<p><a href="sample_manifest.csv">sample_manifest.csv</a> · <a href="SAMPLE_PARAMETERS_COMMANDS.md">SAMPLE_PARAMETERS_COMMANDS.md</a> · <a href="plot_exploration.py">plot_exploration.py</a></p>
+</body>
+</html>

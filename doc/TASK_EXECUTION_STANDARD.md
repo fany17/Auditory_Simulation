@@ -28,7 +28,7 @@ doc/tasks/<TASK-ID>/
 
 - 每个 parent 的 S## 独立从 01 开始；
 - 编号不复用；
-- 禁止 sub-subtask；
+- 已有节点内追加工作使用 S##_SS##；
 - 独立 deliverable/acceptance/blocker 才建 S##；
 - 小实现细节写入当前 subtask Completion Record。
 
@@ -78,3 +78,13 @@ positive/no/negative transfer 均可验收。不得因阴性自动新增模型/�
 ## 10. Stop rule
 
 完成当前 S## 后更新 Completion Record 和 `SUBTASKS.md`，必要时更新 parent/TASKS/CURRENT_TASK，然后停止；不自动启动 sibling 或 downstream。
+
+## 追加工作与节点层级（2026-09-24 用户规则）
+
+- S## 表示父任务下的主节点；归属于已有节点的追加工作必须登记为该节点的 SS##，例如 PUB-01-S01_SS01，不得仅因追加时间较晚占用新的主节点编号。
+- SS## 在所属 S## 内从 01 独立编号；先查已有 owner，再决定新增。小修改留在现有完成记录；重复冻结流程仍使用 run，不创建 SS##。
+- 主任务登记仍集中在父任务 SUBTASKS.md：主节点表登记 S##，其下按 S## 分区登记 SS##，包含 Parent Node、依赖、状态、任务书和验收。不得创建第二份竞争登记表。
+- 子节点任务书路径：subtasks/<TASK-ID>-S##/<TASK-ID>-S##_SS##_<TITLE>.md；主节点任务书仍在 subtasks/<TASK-ID>-S##_<TITLE>.md。复用 SUBTASK_TEMPLATE，补 Parent Node 字段。
+- SS## 继承所属节点的范围、权限、验收边界；完成 SS## 不等于完成 S##。依赖可表达为“节点前置准入 → SS## → 节点最终验收”，不得写成互相等待的循环。
+- 只有超出已有节点职责的独立主阶段才分配新的 S##；不得因整理文档自动新增研究任务。更深层工作先写步骤，不自动递归建任务。
+- 编号迁移必须记录旧 ID、新 ID、任务书路径和原有产物位置。已发布旧编号不复用为另一任务；当前登记移除旧节点，历史报告/脚本/服务器路径保留别名说明，不批量搬动数据。

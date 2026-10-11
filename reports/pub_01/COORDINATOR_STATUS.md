@@ -1,5 +1,7 @@
 # PUB-01 协调核验记录
 
+> 2026-09-24 编号迁移：本报告中的原PUB-01-S06现归属PUB-01-S01_SS01。S06仅为历史别名；原验收结论、机器清单和产物路径保留，当前登记以doc/tasks/PUB-01/SUBTASKS.md为准。
+
 **2026-09-20 最终状态：S06已COMPLETED，获准公开范围数据下载/初步清洗与文档整理已独立验收PASS_WITH_LIMITATION。当前结论与证据入口见 [COORDINATOR_REVIEW.md](COORDINATOR_REVIEW.md)。以下为按时间保留的历史过程，不再代表当前执行状态。**
 
 2026-09-19 持续 goal：在 server2203 完成 SparrKULee 与 ds004703 的合规下载、初步清洗/QC及实际产物复核。goal 保持 ACTIVE，不能以已派发、已建进程或只写报告代替完成。

@@ -1,0 +1,71 @@
+{
+  "run_id": "PUB-01-S03_SS01-ENVELOPE-DECODE-20261011",
+  "status": "PASS_WITH_LIMITATION",
+  "scope_subjects": [
+    "sub-001"
+  ],
+  "scope_records": 10,
+  "usable_records": 10,
+  "skipped_records": 0,
+  "failed_subjects": [],
+  "summary": [
+    {
+      "model": "backward_trf",
+      "condition": "matched",
+      "subjects": 1,
+      "test_record_macro_r": 0.18049154868385542,
+      "test_record_macro_r2": 0.013282494787901037,
+      "test_pooled_r": 0.1795195191626563,
+      "test_pooled_r2": 0.0189540594925931,
+      "test_samples": 164055
+    },
+    {
+      "model": "backward_trf",
+      "condition": "null_shift13s",
+      "subjects": 1,
+      "test_record_macro_r": -0.003783819648024883,
+      "test_record_macro_r2": -0.019688582179212915,
+      "test_pooled_r": -0.005626355778660369,
+      "test_pooled_r2": -0.0143948411935646,
+      "test_samples": 164055
+    },
+    {
+      "model": "zero_lag_ridge",
+      "condition": "matched",
+      "subjects": 1,
+      "test_record_macro_r": 0.06145382457021742,
+      "test_record_macro_r2": -0.015158638280190076,
+      "test_pooled_r": 0.06092349478118436,
+      "test_pooled_r2": -0.009675866549674339,
+      "test_samples": 164055
+    },
+    {
+      "model": "zero_lag_ridge",
+      "condition": "null_shift13s",
+      "subjects": 1,
+      "test_record_macro_r": 0.008064482431624644,
+      "test_record_macro_r2": -0.01891960213156015,
+      "test_pooled_r": 0.0068335474250804515,
+      "test_pooled_r2": -0.01357378301369594,
+      "test_samples": 164055
+    }
+  ],
+  "elapsed_seconds": 6.595234394073486,
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.0",
+    "matplotlib": "3.11.1"
+  },
+  "finished_utc": "2026-10-10T16:58:57.690654+00:00",
+  "same_support_checked": true,
+  "split_family_disjoint_checked": true,
+  "limitations": [
+    "initial first-10 within-subject cross-source-family only",
+    "publisher origin not physical synchronization",
+    "offline future EEG up to 500ms",
+    "single descriptive mismatch, no significance test",
+    "no semantic/audio waveform reconstruction",
+    "no deep EEG decoder trained"
+  ]
+}
