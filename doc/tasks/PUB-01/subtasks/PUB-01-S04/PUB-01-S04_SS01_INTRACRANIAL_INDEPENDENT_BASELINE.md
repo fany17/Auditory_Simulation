@@ -12,7 +12,7 @@
 | Upstream | `PUB-01-S01` ds004703 已授权公开范围/QC，独立数据/时间/许可准入 |
 | Inputs | ds004703 公共 EDF/WAV、事件/刺激 pairing、现有319段 candidate virtual index、记录与通道 QC |
 | Deliverables | ds004703 独立数据/split/target 定义、最简单 EEG-like neural→声音表征基线、错误/可用性报告 |
-| Acceptance | 不依赖 EEG 已训练权重即可得到可复现 sEEG 基线或正式 not_est imable/HOLD；说明音频真实播放对应的限制 |
+| Acceptance | 不依赖 EEG 已训练权重即可得到可复现 sEEG 基线或正式 not_estimable/HOLD；说明音频真实播放对应的限制 |
 | Validation | 单位/时轴、样本对应、train/test leak、真正 held-out、独立复核 |
 | Go/Hold/Fail | audio pairing / physical sync /许可与可用性不满足→HOLD，不硬配对、不偷偷改对照 |
 | Files Allowed to Change | 公共 ds004703 任务/代码/config/轻量报告；既有 raw/virtual 索引只读 |
