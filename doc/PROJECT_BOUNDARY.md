@@ -3,7 +3,7 @@
 | 字段 | 内容 |
 |---|---|
 | 文档性质 | 本项目独立边界；不是执行 task spec |
-| 版本 | `v2.1` |
+| 版本 | `v2.2` |
 | 生效日期 | `2026-09-15` |
 | 状态 | `ACTIVE` |
 | 当前任务入口 | `doc/CURRENT_TASK.md` |
@@ -62,7 +62,7 @@ PUB-01 是患者侧 optional accelerator/comparator，不是 STN READ 的硬前�
 
 ## 5. Current task and historical provenance
 
-Current：`PUB-01 = ACTIVE`（2026-09-20；S01_SS01获准公开范围服务器下载与初步清洗已COMPLETED、独立验收PASS_WITH_LIMITATION；S01模型准入仍REVIEW，S02未启动，父任务整体尚未完成）。
+Current：`PUB-01 = ACTIVE`（2026-10-13）。S01数据准备/探索、S02声音特征→EEG encoding 已完成有限制；S03 SparrKULee EEG direct decoding 主线 ACTIVE，S03_SS01 TRF 已完成，**S03_SS02 Codex 强基线复现 READY**。S04 ds004703 独立 public intracranial baseline + transfer 支线 BACKLOG，S05 artifact 整合 BACKLOG。参见 `tasks/PUB-01/RESEARCH_BRANCHES.md` 与 `SUBTASKS.md`。原 2026-09-20 状态只属于历史报告。
 
 Historical：
 
@@ -75,9 +75,9 @@ Historical：
 ## 6. PUB-01 first-stage boundary
 
 Primary public EEG：SparrKULee。  
-Primary public intracranial transfer candidate：ds004703。
+Primary public intracranial **independent baseline + transfer** dataset：ds004703。
 
-必须先完成 access/license、subject/session/story/audio inventory、true pairing/timing、leak-safe grouped split、interpretable acoustic/onset baseline、held-out benchmark skeleton，再进入 neural encoder/contrastive/transfer。
+每个数据/实验分支须分别完成适用的 access/license、source/audio pairing 和 timing、leak-safe grouped split，方可对对应模型结果作正式 claim；描述性探索不要求先完成全部准入。SparrKULee 的 S03 优先复现强语音解码基线，再确定无候选输入直接输出声音特征的新架构；ds004703 的独立直接基线不等待 S03 完成，跨记录方式 transfer 需两线各自输出可验证的 frozen result。
 
 ## 7. Artifact boundary
 
