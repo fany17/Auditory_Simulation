@@ -132,3 +132,9 @@ positive / no transfer / negative transfer 均是合法结果。
 - 正式训练、性能比较、因果/生物学结论仍依赖适合相应问题的预处理与数据划分。探索不宣称这些已通过，也不以相关峰或好看的图证明硬件同步。
 - 数据/权重/信号读取与计算继续仅在2203。允许回传本轮必要的静态汇总/示例图及轻量HTML/Markdown报告供用户阅读；不回传原始音频/神经信号数组或嵌入它们的交互式载荷。
 - 不读取本项目私有患者/STN资料、不扩大下载范围、不自动训练；只有实际访问/读取失败或明确使用禁止才阻断受影响对象，其余可进行的分析继续。
+
+## 2026-10-13 当前执行路由（两条公开数据支线）
+
+当前 PUB-01 分支/依赖见 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`；强基线 registry 见 `doc/tasks/PUB-01/BENCHMARK_REGISTRY.md`。Codex 指令入口为 `doc/CODEX_START_HERE.md`。**唯一下一 READY 子节点为 `PUB-01-S03_SS02`**，先复现 HDPS/Transformer-CLIP-EEG 等公开强基线，不自动启动新模型或 GPT。公开 ds004703 是独立 `PUB-01-S04` 支线，处于 BACKLOG；其 SS01 独立 baseline 不依赖 EEG S03，跨记录方式迁移 SS02 才等待 S03 frozen result。已完成的 S01/S02/S03_SS01 结论不可改写。
+
+本条只补充执行入口，不放宽既有患者数据禁令、server2203 计算/本地 Git 边界、冻结 artifact 单向交付与三级验收规则。
