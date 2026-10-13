@@ -1,56 +1,34 @@
-# Auditory_Simulation Current Task
+# Auditory_Simulation Current Workboard
 
-> 当前更新（2026-10-11）：S02既有a063/2203交付已核验，COMPLETED / PASS_WITH_LIMITATION（HuBERT HOLD）。本轮PUB-01-S03_SS01已COMPLETED / PASS_WITH_LIMITATION：10名93条，EEG→包络backward TRF test r=0.1819、R²=0.0178，13秒非循环null r=−0.0033；zero-lag r=0.0737、R²=−0.0098。同支持test、首被试rerun与独立review已通过。报告：reports/pub_01/s03/envelope_decode_20261011/REPORT.md；周报WEEKLY_REPORT.md。本轮计算已结束；S03和PUB-01保持ACTIVE，完整neural/retrieval/held-out-subject未完成，不启动S04。以下9月正文为历史，冲突状态以本段和SUBTASKS最新登记为准。
+更新时间：`2026-10-13`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
 
-更新时间：`2026-10-11`
+## 现在要做什么（Codex 第一入口）
 
-| Field | Value |
-|---|---|
-| Primary Task | `PUB-01` |
-| Title | `Public Auditory–Neural Representation` |
-| Track | `PUBLIC_METHOD` |
-| Status | `ACTIVE` |
-| Patient Data | `FORBIDDEN` |
-| Parent Task | `doc/tasks/PUB-01/TASK.md` |
-| Subtask Registry | `doc/tasks/PUB-01/SUBTASKS.md` |
-| Current executable Subtask | 本轮S03_SS01已完成并停止；S03整体ACTIVE，无正在运行的本轮计算 |
-| Last completed Subtask | PUB-01-S03_SS01（2026-10-11 PASS_WITH_LIMITATION） |
-| Subtask Spec | doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS01_ENVELOPE_DECODING.md |
-| Blocking | `NO` for direct STN READ |
+- Parent：`PUB-01 — Public Auditory–Neural Representation`，`ACTIVE`。
+- 当前优先支线：**A / SparrKULee / EEG 听觉直接解码**，归属 `PUB-01-S03`，`ACTIVE`。
+- **唯一当前 READY 节点**：`PUB-01-S03_SS02 — Strong EEG Auditory Decoding Baseline Reproduction`。
+- 执行入口：`doc/CODEX_START_HERE.md` → `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`。
+- 任务：先核对并复现 HDPS 等百余候选强基线、Transformer-CLIP-EEG 二选一，以及审查官方挑战协议；**不启动架构研发和 GPT**。
+- `S03_SS03` 架构与 `S03_SS04` 统一验证均 `BACKLOG`，需要前一环节审阅后再决定。
 
-## Current result and next review
+## 两条数据支线
 
-`PUB-01-S01_SS01 — Server Dataset Download and Initial Cleaning` 已完成并通过协调者独立验收（获准公开范围，PASS_WITH_LIMITATION）。用户本次server2203下载、初步清洗和文档归档goal已达到；S01完整配对/时序及模型准入仍为REVIEW/HOLD，父任务PUB-01整体尚未完成。
+| 数据与职责 | 当前状态 | 阻塞关系 |
+|---|---|---|
+| A / SparrKULee EEG decoding / `S03` | ACTIVE；SS02 READY | 完成强基线后再由研究者指定架构 |
+| B / ds004703 public intracranial / `S04` | BACKLOG；SS01/SS02 尚未执行 | 自身 sEEG baseline 与 A 线可独立；**仅 EEG→sEEG 迁移需 A 线 frozen 模型** |
+| `S05` artifact integration | BACKLOG | 两条支线的结果与失败/许可验收后评估 |
 
-已完成技术、交付及父任务边界三层验证，详见 [最终独立验收](../reports/pub_01/COORDINATOR_REVIEW.md) 和 [执行报告](../reports/pub_01/s06/EXECUTION_AND_REVIEW.md)。
+参见 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md` 与 `BENCHMARK_REGISTRY.md`。
 
-后续审阅入口是S01的物理同步、26个大尾差、来源版本/访问限制及grouped split；这些科学准入问题没有因下载完成而自动解决。
+## 已经完成且不重跑的证据
 
-`PUB-01-S02` 保持BACKLOG，未启动模型训练。
+- `S01`：公开 SparrKULee / ds004703 数据可用范围下载、审计、初步虚拟清洗、图形化探索已阶段验收；历史 ds004703 319 候选片段**不等于正式模型输入合法性**。
+- `S02`：83 名参与者、659 条记录 acoustic/log-mel/frozen wav2vec2 → EEG encoding，完成有限制；HuBERT HOLD。
+- `S03_SS01`：10 人、93 条记录 64 Hz EEG→声音包络 backward TRF，test r≈0.1819、R²≈0.0178、错配 r≈−0.0033；2026-10-11 PASS_WITH_LIMITATION，证据 `reports/pub_01/s03/envelope_decode_20261011/REPORT.md`。
 
-## Scientific role
+## 硬边界 / Stop
 
-PUB-01 是 optional public prior/comparator；positive/no/negative transfer 都是合法结果，不阻塞 direct STN READ。
-
-## Historical review lane
-
-历史 temporal-architecture perturbation 仍为 `REVIEW`，但不是当前 primary task/subtask。
-
-## Stop rule
-
-本次数据准备执行和独立验收结束；不继续轮询下载或自动启动S02/INT-01。受限对象及科学限制保留在正式清单中，后续工作从新的明确任务或S01审阅决定接续。
-
-## 当前执行修订（2026-09-24）
-按用户最新要求，SS02先输出两套公开数据的实际波形、频谱、音频/事件和异常示例图及中文概览；正式准入的未决项不阻断描述性探索。旧Stop rule不阻止本轮已授权工作。S02训练尚未启动。
-
-## 用户阶段验收与后续安排
-
-用户明确接受S01作为“公开数据准备、内容理解及初步探索”阶段完成。SS01已完成公开范围下载/读取核验，SS02已提交真实信号、PSD、音频/事件和尾差图。现将S01及SS02标记COMPLETED / PASS_WITH_LIMITATION，转入S02。
-
-这是阶段范围与验收安排的显式修订，不是声称全部QC或模型准入已经解决。原准入报告中的640/26划分、ds004703 HOLD保留为历史判断，不再作为整体停止条件。仍有科学价值的问题随具体分析处理；3秒尾差提示不作为整条记录自动排除阈值。不能读取的对象跳过，不能配对的区间单独排除。受限载荷不请求，不读取私有患者/STN资料。
-
-S02先完成SparrKULee声学基线：复用发布方64Hz EEG/envelope，按实际共同区间分析；最小必要清洗、对齐和分组检查与实现同时完成。拟合前固定首次实验范围、时间滞后、正则化候选、分组和指标；选择只使用训练/验证数据，测试集不参与。分别说明新故事和新被试的评估目标，不能笼统要求所有分组维度同时不交叉。
-
-首个交付是可复现的ridge/TRF预测结果、时间错配对照、逐被试性能表和实际图文解释。先小规模跑通，再执行预定首轮范围；阴性或失败照实交付，不反复改方案追阳性。ds004703保留已有探索，不阻塞EEG首轮；其信号预处理在颅内分析时按实际需要处理。
-
-完成第一版声学基线后汇报；这不等于S02全部完成。深度特征与S03以后不自动启动。所有数据计算继续在2203，报告可回传静态图与轻量结果。无需补修上一版图形排版或重做全量审计作为本轮前置条件。
+- 所有数据、权重和实际计算 **server2203**；本地 Windows Git 只存轻量代码、配置和汇总；先只读盘点已有工作，不覆盖用户未提交内容。
+- 不读取任何患者/STN 数据与 embedding；公共模型只通过冻结、版本化 `ART-AUDREP-v1` artifact 向患者侧 `INT-01` 单向交付。当前尚未冻结。
+- 本次仅更新规划/任务文档，没有开启新训练。Codex 完成 `SS02` 后先独立验收并停止；不自启 `SS03 / S04 / GPT`。

@@ -28,7 +28,7 @@
 ## 2. Scope
 
 Primary public EEG：SparrKULee。  
-Primary public intracranial candidate：OpenNeuro `ds004703`，使用前必须完成 license/use-condition audit。
+Primary public intracranial candidate：OpenNeuro `ds004703`，其独立 baseline 和 transfer 需要分别完成对应 license/use-condition / pairing/timing audit。
 
 父任务覆盖：
 
@@ -63,10 +63,12 @@ Primary public intracranial candidate：OpenNeuro `ds004703`，使用前必须�
 父任务按 `SUBTASKS.md` 分解：
 
 1. `PUB-01-S01` Dataset / License / Timing Audit；
-2. `PUB-01-S02` Feature Bank and Leak-safe Baseline；
-3. `PUB-01-S03` Public EEG Representation Benchmark；
-4. `PUB-01-S04` Public Intracranial Transfer；
+2. `PUB-01-S02` Feature Bank and Leak-safe Baseline（已完成有限制的 acoustic/log-mel/frozen wav2vec2→EEG encoding）；
+3. **A 支线**：`PUB-01-S03` SparrKULee EEG 听觉直接解码（先复现强基线，再经研究者审阅确定新架构，最后做无候选直接重建与二选一/五选一/百余候选检索）；
+4. **B 支线**：`PUB-01-S04` ds004703 独立公开颅内基线与后续 EEG→sEEG 迁移（独立 sEEG 基线不依赖 S03，迁移阶段才依赖 S03 frozen output）；
 5. `PUB-01-S05` Artifact Candidate and Parent Integration Review。
+
+两条支线严格按 `RESEARCH_BRANCHES.md`、`SUBTASKS.md` 执行；当前唯一 READY 节点是 `PUB-01-S03_SS02`，详细 Codex 入口在 `doc/CODEX_START_HERE.md`。
 
 2026-09-19 用户要求持续推进至数据下载和初步清洗完成，新增 `PUB-01-S01_SS01 — Server Dataset Download and Initial Cleaning` 作为 S01 审计后的独立数据准备包。2026-09-24纠正原S06编号并嵌入S01；执行依赖为 S01许可/访问准入 → S01_SS01 → S01配对/时序与实验准入 → S02 → S03 → S04 → S05。S01_SS01 对已经完成许可/身份核验的数据可分支先行下载和非破坏性 QC，不绕过 S01 的 benchmark 准入验收。
 
@@ -85,8 +87,9 @@ Primary public intracranial candidate：OpenNeuro `ds004703`，使用前必须�
 - auditable dataset/license manifests；
 - frozen split manifest；
 - acoustic/timing baseline；
-- public EEG held-out benchmark；
-- public intracranial transfer/few-shot evidence；
+- SparrKULee EEG 无候选直接声音特征解码 + 2AFC/5AFC/100+ 候选分协议 benchmark、强基线与消融；
+- 严格记录是否只是在候选中匹配，不能将候选识别当成可听语音/语义重建；
+- ds004703 独立公开颅内基线及 public intracranial transfer/few-shot evidence；
 - negative-transfer/known-failures report；
 - `ART-AUDREP-v1` candidate manifest/schema/runtime/canary/provenance。
 
@@ -95,8 +98,8 @@ Primary public intracranial candidate：OpenNeuro `ds004703`，使用前必须�
 1. license/timing/pairing 可审计；
 2. split leak-safe；
 3. interpretable baseline 可复现；
-4. held-out subject/session/story 结果完整报告；
-5. transfer 按预定义条件执行；
+4. held-out subject/session/story 结果完整报告；明确 direct reconstruction 与候选检索任务的不同 protocol、分组和指标，不以不同数据集的分数声称同一 SOTA；
+5. ds004703 独立 baseline 及 transfer 按预定义条件执行；只有迁移依赖 S03 模型冻结；
 6. positive/no/negative transfer 全保留；
 7. candidate artifact 记录 provenance、license 与 known failures；
 8. patient/STN data boundary 未被突破。
@@ -128,6 +131,13 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 不得包含患者/STN 数据。
 
 ## 12. Amendment Record
+
+2026-10-13：研究者决定保持 `PUB-01` 同一父任务，明确两条并行公开数据研究支线（不新增患者项目或新 PUB 父任务）：
+- A / `PUB-01-S03`：SparrKULee EEG 听觉直接解码，近期 ICML 方向；主 decoder 在推理时不接受候选音频/候选答案，直接输出连续声音表示，候选任务为冻结输出的后验评估。
+- B / `PUB-01-S04`：ds004703 独立 sEEG 声音重建基线（可平行推进）+ 未来 EEG→sEEG 的受控迁移（依赖 S03 冻结 public model）。
+- 在 S03 下新增 SS02 强基线复现（READY）、SS03 架构（BACKLOG）、SS04 统一评测（BACKLOG）；在 S04 下新增 SS01 独立基线、SS02 transfer（均 BACKLOG）。原 S01/S02/S03_SS01 的全部历史产物与验收不变。
+- “60% 大候选 Top-1 / GPT 后 80%”仅为挑战愿景，不改变 baseline 任务难度、primary acceptance 或允许 test-driven selection；GPT 目前不是执行单元。
+- 此项属于父任务 scientific emphasis/acceptance 的正式 amendment；保留最终公共表征、迁移及 `ART-AUDREP-v1` 的原定含义，不将 EEG 结果直接外推至 STN。
 
 2026-10-11：统筹转达用户要求本周继续PUB并交实际初步解码结果。S02在a063/2203的已有交付核验后接续S03_SS01：同一公开SparrKULee cohort、既有split、ridge/TRF方法下增加EEG→envelope线性重建，冻结初步10名范围和null。该方向补充不改变父任务最终Acceptance或artifact语义，不替代S03 neural/retrieval/held-out-subject要求；不宣称语义重建/患者泛化。SS01完成后停止，父任务ACTIVE。
 

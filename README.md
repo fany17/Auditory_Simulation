@@ -38,24 +38,28 @@
 9. `doc/tasks/PUB-01/SUBTASKS.md`
 10. 当前指定 subtask
 
-## Current task tree — PUB-01
+## Current task tree — PUB-01（2026-10-13）
+
+当前两条支线及依赖详见 [RESEARCH_BRANCHES.md](doc/tasks/PUB-01/RESEARCH_BRANCHES.md)，状态以 [SUBTASKS.md](doc/tasks/PUB-01/SUBTASKS.md) 为准。
 
 ```text
-PUB-01  Public Auditory–Neural Representation
-│
-├─ PUB-01-S01  Dataset / License / Timing Audit          REVIEW
-├─ PUB-01-S01_SS01  Server Dataset Download / Initial Cleaning COMPLETED
-├─ PUB-01-S02  Feature Bank and Leak-safe Baseline       BACKLOG
-├─ PUB-01-S03  Public EEG Representation Benchmark       BACKLOG
-├─ PUB-01-S04  Public Intracranial Transfer              BACKLOG
-└─ PUB-01-S05  Artifact Candidate and Integration Review BACKLOG
+PUB-01  Public Auditory–Neural Representation                    ACTIVE
+├─ S01  数据准备/质量审计/探索                                    COMPLETED
+├─ S02  声音特征→EEG encoding baseline                           COMPLETED
+├─ S03  A线：SparrKULee EEG听觉直接解码                           ACTIVE
+│  ├─ SS01  EEG→声音包络线性TRF                                   COMPLETED
+│  ├─ SS02  Codex强基线复现                                      READY ← NEXT
+│  ├─ SS03  架构假设与直接解码                                    BACKLOG
+│  └─ SS04  直接重建 + 2AFC/5AFC/百余候选检索                    BACKLOG
+├─ S04  B线：ds004703公开颅内独立基线与后续transfer              BACKLOG
+│  ├─ SS01  独立sEEG→声音baseline                                BACKLOG
+│  └─ SS02  EEG→sEEG的少数据迁移                                 BACKLOG
+└─ S05  公开artifact整合                                        BACKLOG
 ```
 
-2026-09-20，`PUB-01-S01_SS01` 获准公开范围下载与初步清洗已通过独立验收（PASS_WITH_LIMITATION）。SparrKULee公开4,142对象已齐，ds004703复用377对象并完成盘点；受限对象及坏源文件明确列出。见 [最终验收](reports/pub_01/COORDINATOR_REVIEW.md)。2026-09-24将旧S06迁入S01_SS01；依赖为 S01许可准入 → S01_SS01 → S01最终验收 → S02 → S03 → S04 → S05；完整S01模型准入仍需审阅。
+**Codex 复现第一入口：[doc/CODEX_START_HERE.md](doc/CODEX_START_HERE.md)**。目标是先复现 HDPS 与 Transformer-CLIP-EEG 等强基线，明确不同候选规模/数据协议的实际成绩；不因 60%/80% 冲刺目标改动测试难度。**新模型必须在不输入候选语音的条件下直接预测连续声音表示**；候选识别只是同一输出的下游评价。此安排仅更新任务文档，未执行新实验。
 
-本次数据下载、初步清洗和文档归档目标已完成，所有载荷与处理留在2203。初步清洗使用已实际验证的虚拟索引/公共区间视图，不代表新增滤波信号或模型准入通过；S02仍为BACKLOG，未启动训练。
-
-PUB-01 是 patient-side READ 的 optional accelerator/comparator，不是硬前置。positive/no/negative transfer 均为合法结果。
+ds004703 的独立模型测试可以与 EEG 主线并列推进，但目前保留 BACKLOG；只有 EEG→公开颅内迁移需要来自 S03 的冻结输出。患者/STN 数据不进入公共项目。
 
 ## Task / subtask governance
 
