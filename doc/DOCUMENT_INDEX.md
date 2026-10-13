@@ -20,26 +20,17 @@
 
 `TASKS.md` 是父任务状态 source of truth；每个父任务的 `SUBTASKS.md` 是其 subtask 状态 source of truth。
 
-## B. Current executable task tree
+## B. Current executable task tree（2026-10-13）
 
-```text
-tasks/PUB-01/
-  TASK.md
-  SUBTASKS.md
-  subtasks/
-    PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md
-    PUB-01-S02_FEATURE_BANK_BASELINE.md
-    PUB-01-S03_PUBLIC_EEG_BENCHMARK.md
-    PUB-01-S04_INTRACRANIAL_TRANSFER.md
-    PUB-01-S05_ARTIFACT_INTEGRATION.md
-    PUB-01-S01/
-      PUB-01-S01_SS01_DOWNLOAD_INITIAL_CLEANING.md
-      PUB-01-S01_SS02_BENCHMARK_ADMISSION.md
-```
+- Parent：`tasks/PUB-01/TASK.md`；唯一子任务登记：`tasks/PUB-01/SUBTASKS.md`。
+- 科学支线与依赖：`tasks/PUB-01/RESEARCH_BRANCHES.md`。
+- 竞品/协议核对：`tasks/PUB-01/BENCHMARK_REGISTRY.md`。
+- **Codex 当前执行入口**：`../doc/CODEX_START_HERE.md` → `tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`（READY）。
+- A 线：S03 / SparrKULee EEG direct decoding；SS01历史 completed，SS02 READY，SS03/SS04 BACKLOG。
+- B 线：S04 / ds004703 intracranial baseline and transfer；SS01/SS02 BACKLOG。
+- S01/S02 completed，S05 artifact integration BACKLOG。
 
-`PUB-01-S01_SS01` 已COMPLETED，当前无ACTIVE执行子任务；S01完整模型准入仍REVIEW。数据准备交付与独立验收入口：[COORDINATOR_REVIEW.md](../reports/pub_01/COORDINATOR_REVIEW.md)。
-
-2026-09-19 用户设立的数据准备持续goal已于2026-09-20完成实际交付和独立验收；S02尚不执行。
+此索引只指路，实际执行状态始终按 `TASKS.md` / `CURRENT_TASK.md` / `tasks/PUB-01/SUBTASKS.md`。
 
 ## C. Templates / execution governance
 
