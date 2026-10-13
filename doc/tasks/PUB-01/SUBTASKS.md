@@ -1,45 +1,42 @@
 # PUB-01 Subtask Registry
 
-Parent task: `PUB-01 — Public Auditory–Neural Representation`
+唯一子任务状态登记表（2026-10-13）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。
 
-| Subtask ID | Title | Status | Blocking for Parent | Upstream | Task Spec | Validation |
+| Subtask ID | Title | Status | Blocking | Upstream | Task Spec | Validation |
 |---|---|---|---|---|---|---|
-| `PUB-01-S01` | Dataset preparation and initial exploration | COMPLETED | YES | NONE | `subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` | 用户阶段验收PASS_WITH_LIMITATION；剩余清洗/分组问题随具体分析处理 |
-| `PUB-01-S02` | Feature Bank and Leak-safe Baseline | COMPLETED | YES | S01阶段完成 | `subtasks/PUB-01-S02_FEATURE_BANK_BASELINE.md` | 2026-10-11核验a063及2203既有交付：83 subjects/659 records，acoustic/log-mel/frozen wav2vec2 encoding PASS_WITH_LIMITATION；HuBERT HOLD |
-| `PUB-01-S03` | Public EEG Representation Benchmark | ACTIVE | YES | S02已交公开分支 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01初步包络解码已COMPLETED / PASS_WITH_LIMITATION；完整S03 neural/retrieval/held-out-subject未完成 |
-| `PUB-01-S04` | Public Intracranial Transfer | BACKLOG | YES | S03 | `subtasks/PUB-01-S04_INTRACRANIAL_TRANSFER.md` | same |
-| `PUB-01-S05` | Artifact Candidate and Integration Review | BACKLOG | YES | S01–S04 | `subtasks/PUB-01-S05_ARTIFACT_INTEGRATION.md` | same + parent integration review |
+| `PUB-01-S01` | Public data preparation and exploration | `COMPLETED` | YES | NONE | `subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` | PASS_WITH_LIMITATION；许可/定向时序限制依任务保留 |
+| `PUB-01-S02` | Acoustic & frozen-audio feature → EEG encoding baseline | `COMPLETED` | YES | S01 | `subtasks/PUB-01-S02_FEATURE_BANK_BASELINE.md` | 83人/659录音；acoustic/log-mel/wav2vec2，HuBERT HOLD；PASS_WITH_LIMITATION |
+| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01已交；SS02 READY；SS03/04 未执行 |
+| `PUB-01-S04` | **B线：ds004703 independent intracranial baseline + transfer** | `BACKLOG` | YES | S01数据准入；仅 transfer 需 S03 | `subtasks/PUB-01-S04_INTRACRANIAL_TRANSFER.md` | SS01/02 未执行；两线不串行阻塞数据基线 |
+| `PUB-01-S05` | Public artifact candidate + parent integration review | `BACKLOG` | YES | S01–S04 | `subtasks/PUB-01-S05_ARTIFACT_INTEGRATION.md` | 阶段结果与失败/许可统一审核；未产生 ART-AUDREP-v1 |
 
-
-## S01 内部子节点
+## S01：已完成的数据准备 / 初探（保持历史）
 
 | Child ID | Parent Node | Title | Status | Upstream | Task Spec | Acceptance |
 |---|---|---|---|---|---|---|
-| PUB-01-S01_SS01 | PUB-01-S01 | Server Dataset Download and Initial Cleaning | COMPLETED | S01按数据集通过许可/访问门 | subtasks/PUB-01-S01/PUB-01-S01_SS01_DOWNLOAD_INITIAL_CLEANING.md | 2026-09-20 PASS_WITH_LIMITATION；下载、格式QC与虚拟筛选验收通过 |
+| `PUB-01-S01_SS01` | S01 | Server Dataset Download / Initial Cleaning | `COMPLETED` | S01许可/访问门 | `subtasks/PUB-01-S01/PUB-01-S01_SS01_DOWNLOAD_INITIAL_CLEANING.md` | 2026-09-20 PASS_WITH_LIMITATION；历史 S06 别名 |
+| `PUB-01-S01_SS02` | S01 | Data exploration and problem localization | `COMPLETED` | SS01 | `subtasks/PUB-01-S01/PUB-01-S01_SS02_BENCHMARK_ADMISSION.md` | 数据波形/频谱/时轴示例，用户阶段验收 |
 
-| PUB-01-S01_SS02 | PUB-01-S01 | 数据探索与问题定位 | COMPLETED | SS01 | subtasks/PUB-01-S01/PUB-01-S01_SS02_BENCHMARK_ADMISSION.md | 已交实际信号图和概览；用户接受阶段完成，未知项不阻止后续分析 |
-
-执行依赖：S01许可/访问准入 → S01_SS01数据准备 → S01_SS02配对/时序与实验准入收尾 → S01最终验收 → S02 → S03 → S04 → S05。
-S01及SS01/SS02已阶段完成；S02已有交付经2026-10-11只读核验。S03_SS01本轮已完成并停止；S03整体ACTIVE，当前无运行中的本轮计算；S04/S05保持BACKLOG。
-
-## S03 内部子节点
+## S03：优先执行的 SparrKULee EEG decoding 主线
 
 | Child ID | Parent Node | Title | Status | Upstream | Task Spec | Acceptance |
 |---|---|---|---|---|---|---|
-| PUB-01-S03_SS01 | PUB-01-S03 | 初步EEG→声音包络解码 | COMPLETED | S02阶段已交付的公开EEG与冻结split | subtasks/PUB-01-S03/PUB-01-S03_SS01_ENVELOPE_DECODING.md | 2026-10-11 PASS_WITH_LIMITATION：10名93条，TRF test r=0.1819/R²=0.0178，null r=−0.0033；同支持与rerun/独立review PASS，完整S03未完成 |
+| `PUB-01-S03_SS01` | S03 | EEG→envelope backward TRF | `COMPLETED` | S02 | `subtasks/PUB-01-S03/PUB-01-S03_SS01_ENVELOPE_DECODING.md` | 2026-10-11 PASS_WITH_LIMITATION；10 人 93 条，r≈0.1819，R²≈0.0178；只作为线性低层特征对照 |
+| `PUB-01-S03_SS02` | S03 | **Strong EEG auditory decoding baseline reproduction（Codex）** | **`READY`** | S01/S02+SS01 | `subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md` | 两套强基线的实际协议/结果或精确阻塞 + 独立 reviewer pass |
+| `PUB-01-S03_SS03` | S03 | Architecture hypothesis and direct decoder | `BACKLOG` | SS02 validated + researcher architecture decision | `subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md` | 新结构机制明确，同预算消融，不依靠候选训练成“伪直接解码” |
+| `PUB-01-S03_SS04` | S03 | Direct reconstruction + 2AFC/5AFC/large-pool evaluation | `BACKLOG` | SS02+SS03 | `subtasks/PUB-01-S03/PUB-01-S03_SS04_DIRECT_RECONSTRUCTION_AND_RETRIEVAL.md` | 分协议公平评价 / 强对照 / 跨被试 / 消融 |
 
-## 编号迁移（2026-09-24）
+## S04：独立保留的 ds004703 公共颅内支线
 
-原 PUB-01-S06 误将 S01 内部追加工作登记成主节点，现纠正为 PUB-01-S01_SS01。旧任务书仅保留迁移链接，S06退役，不复用；当前没有需要规划的新S06。未来已有节点内追加工作使用各自SS##，仅真正独立的新主阶段另行分配未占用S##。
+| Child ID | Parent Node | Title | Status | Upstream | Task Spec | Acceptance |
+|---|---|---|---|---|---|---|
+| `PUB-01-S04_SS01` | S04 | ds004703 independent direct baseline | `BACKLOG` | S01公开数据准入，**不依赖 S03** | `subtasks/PUB-01-S04/PUB-01-S04_SS01_INTRACRANIAL_INDEPENDENT_BASELINE.md` | 独立 sEEG→声音目标基线或明确 HOLD |
+| `PUB-01-S04_SS02` | S04 | Public EEG→sEEG fixed-budget transfer | `BACKLOG` | SS01 + S03 frozen public representation | `subtasks/PUB-01-S04/PUB-01-S04_SS02_PUBLIC_CROSS_RECORDING_TRANSFER.md` | from-scratch/frozen/small adapter，正/无/负迁移全部保留 |
 
-历史 reports/pub_01/s06/、服务器 pub_01/s06/、pub_01_s06_* 脚本与清单中的旧ID保留，均映射到S01_SS01；不改写历史数据或重跑验收。最终证据见 reports/pub_01/COORDINATOR_REVIEW.md。
+## Governance, branch dependencies and historical mapping
 
-## Rules
-
-- 本表统一登记PUB-01的S##及SS##，状态以本表为准。
-- 同一执行链只运行一个明确的当前节点；依赖按前置准入与最终验收分开描述。
-- 小修改写已有完成记录，冻结流程重复执行使用run。
-- 子节点继承父节点权限和科学边界；不得因阴性结果自动扩展任务。
-2026-09-24执行修订：SS02探索性绘图在SS01已具备数据后直接开始；上述S01最终验收依赖仅约束正式benchmark，不阻止当前描述性分析。
-
-当前状态以本表和最新用户阶段验收为准，早期REVIEW/HOLD说明保留为历史。
+- S03 和 S04 是两条并列数据研究支线；**S04_SS01 可独立审计/跑自己的 baseline，不依赖 S03/SOTA；S04_SS02 的 cross-recording transfer 才依赖 S03**。
+- 现在明确的**唯一下一执行单元**是 `PUB-01-S03_SS02 READY`。其余 BACKLOG 不得自动启动；SS02 完成后需停止并由研究者选择架构。
+- `S03_SS01` 与 `S02` 已有科学结果不改写；之前的 PUB-01-S06 错号只作为历史 `S01_SS01` 别名，其历史报告、脚本、server路径均不重命名。
+- 阴性结果合法；模型名/性能目标不能触发额外模型、更改 split 或候选难度。
+- SS## 只在已有 S## 内，不建立更深层级；同一执行链一次一个节点；Technical/Acceptance/Parent consistency 三级验收，S05 还需父整合审核。
