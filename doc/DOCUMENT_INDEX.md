@@ -1,6 +1,6 @@
 # Auditory_Simulation Document Index
 
-更新时间：`2026-09-20`
+更新时间：`2026-10-13`
 
 ## A. Authoritative current documents
 
@@ -25,7 +25,7 @@
 - Parent：`tasks/PUB-01/TASK.md`；唯一子任务登记：`tasks/PUB-01/SUBTASKS.md`。
 - 科学支线与依赖：`tasks/PUB-01/RESEARCH_BRANCHES.md`。
 - 竞品/协议核对：`tasks/PUB-01/BENCHMARK_REGISTRY.md`。
-- **Codex 当前执行入口**：`../doc/CODEX_START_HERE.md` → `tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`（READY）。
+- **Codex 当前执行入口**：`CODEX_START_HERE.md` → `tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`（READY）。
 - A 线：S03 / SparrKULee EEG direct decoding；SS01历史 completed，SS02 READY，SS03/SS04 BACKLOG。
 - B 线：S04 / ds004703 intracranial baseline and transfer；SS01/SS02 BACKLOG。
 - S01/S02 completed，S05 artifact integration BACKLOG。
