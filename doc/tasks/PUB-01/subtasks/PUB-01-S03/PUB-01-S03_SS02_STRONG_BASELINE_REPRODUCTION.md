@@ -12,7 +12,7 @@
 | Upstream | `S01` / `S02` COMPLETED, `S03_SS01` COMPLETED / PASS_WITH_LIMITATION |
 | Inputs | server2203 已授权公开 SparrKULee、官方论文与开源代码（先独立核对）、冻结 protocol/data manifests |
 | Deliverables | 文献/代码对标矩阵、复现环境与运行日志、完整指标/逐被试表、误差分析、可复现审阅报告 |
-| Acceptance | 至少两套独立强基线按各自原文协议完成有证据的复现或记录真实 blocker；一套为百余候选 HDPS，另一套优先为 transformer-CLIP EEG / Challenge match-mismatch；不伪造接近论文数值 |
+| Acceptance | 目标：HDPS + Transformer-CLIP-EEG 至少两套独立强基线完成实际结果与可复现审计；若任一缺资源/许可/官方测试定义只能标 HOLD/PASS_WITH_LIMITATION，不能伪称两套成功；challenge 先审查协议；不伪造接近论文数值 |
 | Validation | Technical → Acceptance（PASS/PASS_WITH_LIMITATION/REWORK/HOLD/NO_GO）→ Parent consistency；独立审阅 |
 | Go/Hold/Fail | 作者数据划分/候选构造无法获得→该 protocol HOLD；可复现部分单列；绝不调整测试难度追成绩 |
 | Files Allowed to Change | `doc/tasks/PUB-01/**`、`doc/CODEX_START_HERE.md`、`configs/pub_01_s03*`、`scripts/pub_01_s03*`、`src/**`（限新复现适配）、`tests/test_pub_01_s03*`、`reports/pub_01/s03/**`；禁止改写历史产物 |
