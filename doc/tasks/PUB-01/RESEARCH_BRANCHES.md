@@ -14,7 +14,7 @@
 
 - `PUB-01-S03_SS01`：已完成 10 人 / 93 条 EEG→包络 backward TRF（历史证据完整保留，**不代表语音内容解码或 SOTA**）。
 - `PUB-01-S03_SS02`：2026-10-15 **COMPLETED / PASS_WITH_LIMITATION**。HDPS76人原100Hz/M，Top1/5/10=12.03/30.45/42.10%；Transformer70训练/69seen/13heldout，2AFC加权82.38%，EEG-only包络加权r=.1593；三运行独立review完成。完整论文/official test/ensemble等价性未通过；不同候选任务分开报告。当前停止，后续需研究者指定。
-- `PUB-01-S03_SS03`：只有 SS02 的误差、输入输出和复现证据通过独立 review 后，研究者才决定架构；要求少数针对性模型假设、相同预算和消融，不为漂亮结果随意换模型。
+- `PUB-01-S03_SS03`：2026-10-19获研究者授权，**ACTIVE / PROTOTYPE**。选择多时间尺度卷积（dilation 1/4/16）对比参数量匹配单尺度（1/1/1，4/4/4，16/16/16）；只有协议与源码，没有实际server训练成绩。
 - `PUB-01-S03_SS04`：锁定单一 decoder，比较直接特征预测、二选一、五选一、百余候选检索；分别保留原论文 protocol 和统一的内部 benchmark，不混用准确率。
 - S03 parent 完成需要 S03 范围内的跨 story/subject、强对照、负例和消融证据；未达到则保持 ACTIVE/REVIEW。
 
@@ -33,9 +33,10 @@
 
 `PUB-01-S05`：整合 A/B 两支线的真实 benchmark、失败、许可证和版本，决定能否形成 `ART-AUDREP-v1` candidate。S04 transfer 阴性不导致重追网络阳性。所有公共载荷/权重/训练留在 server2203，Windows Git 只存轻量代码/报告。患者数据和 STN embeddings 禁止进入公开项目；只有冻结的公共 artifact 可单向进入患者 `INT-01`。STN direct READ 完全独立推进。
 
-## 当前唯一明确启动顺序
+## 当前SS03执行顺序（2026-10-19）
 
-1. Codex 读取 `doc/CODEX_START_HERE.md` 与 `PUB-01-S03_SS02`，只做强基线复现。本轮已交明确阻塞/preflight审查包，等待许可/官方资源条件，不自动转下一节点。
-2. 研究者根据复现报告审阅后，确定新架构假设、计算预算和指标；不自动启动 SS03。
-3. 架构通过自身独立测试，再做多协议统一评估。
-4. ds004703 支线独立保留，不因 A 线推进而自动开工。
+1. `SS02` 已经 `COMPLETED / PASS_WITH_LIMITATION`，冻结为历史基线。原论文完整cohort和官方评价尚未复现，不能补称同等。
+2. 用户已批准 `SS03` 的第一项多时间尺度假设。当前 `ACTIVE / PROTOTYPE`；详见 `PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md`。**尚无2203模型训练或测试结果**。
+3. Codex应先在独立worktree运行代码与数据准入检查，做100步以内train/val工程pilot，冻结正式预算和测试前协议，然后运行参数匹配4种配置、多种子对照。
+4. `SS04` 仍BACKLOG；不得根据test挑选多尺度/单尺度、窗口、seed或负例，也不得把2AFC与HDPS百余候选任务的性能直接比较。
+5. ds004703公开颅内独立基线（S04_SS01）可以作为另一支线单独规划；本轮SS03不启动它、不读任何患者/STN数据。冻结且版本化artifact之前两项目不交换运行数据。
