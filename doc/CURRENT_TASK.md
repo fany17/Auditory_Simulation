@@ -1,8 +1,14 @@
 # Auditory_Simulation Current Workboard
 
-更新时间：`2026-10-15`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
+更新时间：`2026-10-19`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
 
 ## 现在要做什么（Codex 第一入口）
+
+2026-10-19 当前研究者授权**直接继续**：`PUB-01-S03_SS03`现为 **ACTIVE / PROTOTYPE**，首项研究假设“匹配参数量的多时间尺度卷积，能否超越同最大感受野单尺度卷积改善EEG→连续声音包络预测”。模型原型 `scripts/pub_01_s03_temporal_scales.py`，4种配置与冻结约束见 `configs/pub_01_s03_ss03_multiscale_20261019.json`；操作手册 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md`。**本提交只含任务协议与源码/单元测试，无2203新训练/科研数值，尚未通过执行验收。**
+
+Codex下一步：在**独立worktree**中使用SS03分支，不动本地未提交CNN/TRF；只读核验2203 SS02冻结输入/对齐/分组后，执行CPU/GPU smoke，按同一64Hz公开fold4和包络读出窗口实现直接预测数据加载；train/val 100步pilot，冻结正式预算/种子，之后再做多尺度与三单尺度同预算训练。**绝不在完成前提前打开test结果**。SS04/S04/S05不得启动。
+
+
 
 2026-10-15交付：用户授权“缺几个就缺几个”后，两套指定强基线及Transformer直接包络readout均完成真实训练/验证/一次测试与独立review。SS02 **COMPLETED / PASS_WITH_LIMITATION**；当前执行停止，没有自动下一READY节点。报告`reports/pub_01/s03/strong_baselines/REPRO_REPORT.md`。
 
@@ -18,7 +24,7 @@
 
 | 数据与职责 | 当前状态 | 阻塞关系 |
 |---|---|---|
-| A / SparrKULee EEG decoding / `S03` | ACTIVE；SS02 COMPLETED / PASS_WITH_LIMITATION | 两套公开可用条件基线已交；停止等待研究者指定后续架构 |
+| A / SparrKULee EEG decoding / `S03` | ACTIVE；SS02 COMPLETED / PASS_WITH_LIMITATION | 两套公开可用条件基线已交；SS03已授权原型启动，实验待运行 |
 | B / ds004703 public intracranial / `S04` | BACKLOG；SS01/SS02 尚未执行 | 自身 sEEG baseline 与 A 线可独立；**仅 EEG→sEEG 迁移需 A 线 frozen 模型** |
 | `S05` artifact integration | BACKLOG | 两条支线的结果与失败/许可验收后评估 |
 
