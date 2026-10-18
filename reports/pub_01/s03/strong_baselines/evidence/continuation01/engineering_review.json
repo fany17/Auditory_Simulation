@@ -1,0 +1,22 @@
+{
+  "technical": "PASS_ENGINEERING_ONLY",
+  "checks": {
+    "observer_bit_exact_output": false,
+    "observer_max_absolute_difference_microvolt": 1.6863133112110518e-10,
+    "observer_relative_l2_difference": 3.966949180889634e-12,
+    "observer_numerical_equivalence_under_BLAS_thread_count_change": true,
+    "scalar_numpy_vs_torch_Pearson_max_error": 1.1920928955078125e-07,
+    "Pearson_agrees_with_independent_reference": true,
+    "actual_audio_duration_preserved_at16k": true,
+    "stimulus_first_trigger_zero": true,
+    "brain_and_stimulus_trigger_count_equal": true,
+    "all_published_first_story_valid_indices_supported": true,
+    "real_input_model256_backward_finite": true,
+    "physical_hardware_synchronization_claim": "NOT_MADE",
+    "model_performance_claim": "NOT_MADE",
+    "author_weight_numerical_parity": "NOT_CHECKED_AUTHOR_WEIGHTS_UNAVAILABLE"
+  },
+  "acceptance": "HOLD_NO_SAME_CONDITION_TEST_RESULT",
+  "parent_consistency": "PASS_PUBLIC_ONLY",
+  "independent_review": "separate post-smoke numerical pass; same agent, independent NumPy calculation"
+}

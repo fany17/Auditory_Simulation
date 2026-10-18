@@ -1,0 +1,30 @@
+{
+  "records": [
+    {
+      "batch": 16,
+      "seconds": 1.4679853916168213,
+      "loss": 2.8267478942871094,
+      "finite_gradient": true,
+      "max_memory_GiB": [
+        0.7389073371887207,
+        0.6968197822570801
+      ],
+      "note": "resource smoke; repeat actual windows if fewer than batch; not a performance result"
+    },
+    {
+      "batch": 256,
+      "seconds": 0.3531043529510498,
+      "loss": 10.778984069824219,
+      "finite_gradient": true,
+      "max_memory_GiB": [
+        10.39020824432373,
+        10.261141777038574
+      ],
+      "note": "resource smoke; repeat actual windows if fewer than batch; not a performance result"
+    }
+  ],
+  "parameter_count": 12827056,
+  "source_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_smoke06/eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-01_desc-preproc-audio-audiobook_5_1_eeg.npy",
+  "real_valid_segments": 212,
+  "sampling_rate": 100
+}

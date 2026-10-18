@@ -1,0 +1,35 @@
+{
+  "post_test_descriptive_only": true,
+  "groups": [
+    {
+      "candidate_n_bin": "100\u2013150",
+      "subjects": 9,
+      "subject_macro_Top1": 0.14481481495830748,
+      "EEG_shuffle_Top1": 0.007222222267753548,
+      "analytic_chance": 0.009629629629629629
+    },
+    {
+      "candidate_n_bin": "151\u2013200",
+      "subjects": 61,
+      "subject_macro_Top1": 0.11655108438285648,
+      "EEG_shuffle_Top1": 0.005107541454070416,
+      "analytic_chance": 0.005889429941746489
+    },
+    {
+      "candidate_n_bin": "201\u2013235",
+      "subjects": 6,
+      "subject_macro_Top1": 0.12198580863575141,
+      "EEG_shuffle_Top1": 0.0042553190141916275,
+      "analytic_chance": 0.00425531914893617
+    }
+  ],
+  "subject_top1_min_median_max": [
+    0.016483517363667488,
+    0.097356166690588,
+    0.4258064329624176
+  ],
+  "subjects_above_own_analytic_chance": 76,
+  "subjects_above_shuffled_EEG": 76,
+  "candidate_n_vs_top1_Pearson_descriptive": -0.11226120810545219,
+  "interpretation": "candidate count is confounded with subject/story/duration; association is descriptive, not a candidate-size causal effect or independent significance test; no pooling or model settings changed"
+}

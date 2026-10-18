@@ -1,0 +1,242 @@
+[
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "story": "audiobook_5_1",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-01_desc-preproc-audio-audiobook_5_1_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      58176
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_1_envelope.npy",
+    "envelope_path_shape": [
+      57991,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 57991,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "story": "audiobook_5_2",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-02_desc-preproc-audio-audiobook_5_2_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      58368
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_2_envelope.npy",
+    "envelope_path_shape": [
+      58219,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 58219,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "story": "audiobook_5_3",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-03_desc-preproc-audio-audiobook_5_3_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      61120
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_3_envelope.npy",
+    "envelope_path_shape": [
+      60990,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 60990,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "story": "audiobook_1",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-04_desc-preproc-audio-audiobook_1_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      60096
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_1_envelope.npy",
+    "envelope_path_shape": [
+      59958,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 59958,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "story": "audiobook_2_1",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-05_desc-preproc-audio-audiobook_2_1_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      50752
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_2_1_envelope.npy",
+    "envelope_path_shape": [
+      50619,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 50619,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "story": "audiobook_2_2",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-06_desc-preproc-audio-audiobook_2_2_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      50752
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_2_2_envelope.npy",
+    "envelope_path_shape": [
+      48747,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 48747,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "story": "audiobook_4",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-07_desc-preproc-audio-audiobook_4_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      52224
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_4_envelope.npy",
+    "envelope_path_shape": [
+      52060,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 52060,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "story": "audiobook_3",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-08_desc-preproc-audio-audiobook_3_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      61760
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_3_envelope.npy",
+    "envelope_path_shape": [
+      61597,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 61597,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "story": "audiobook_6_1",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-09_desc-preproc-audio-audiobook_6_1_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      53440
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_1_envelope.npy",
+    "envelope_path_shape": [
+      53350,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 53350,
+    "status": "PASS_READABILITY"
+  },
+  {
+    "subject": "sub-001",
+    "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "story": "audiobook_6_2",
+    "sample_rate_hz": "64",
+    "rate_basis": "PUBLISHER_CONSUMPTION_CONTRACT",
+    "physical_sync": "UNKNOWN",
+    "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-10_desc-preproc-audio-audiobook_6_2_eeg.npy",
+    "eeg_path_shape": [
+      64,
+      53440
+    ],
+    "eeg_path_dtype": "float64",
+    "eeg_path_finite": true,
+    "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_2_envelope.npy",
+    "envelope_path_shape": [
+      53339,
+      1
+    ],
+    "envelope_path_dtype": "float64",
+    "envelope_path_finite": true,
+    "common_samples": 53339,
+    "status": "PASS_READABILITY"
+  }
+]

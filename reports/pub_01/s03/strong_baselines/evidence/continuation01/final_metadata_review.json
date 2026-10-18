@@ -1,0 +1,17 @@
+{
+  "technical": "PASS_ENGINEERING_AND_METADATA_ONLY",
+  "acceptance": "HOLD_NO_SAME_CONDITION_TEST",
+  "parent_consistency": "PASS_PUBLIC_ONLY",
+  "checks": {
+    "all81_jobs_finished": true,
+    "all_647_author_pairs_accounted": true,
+    "required47_distinguished_from49_restricted": true,
+    "required_phase_counts_match": true,
+    "Mel70_all_finite": true,
+    "no_fabricated_test_metrics": true,
+    "no_subset_scientific_training": true,
+    "no_binary_payload_local": true,
+    "mandatory_reports_present": true
+  },
+  "scientific_model_performance_validated": false
+}

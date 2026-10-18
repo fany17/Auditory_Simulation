@@ -1,0 +1,14 @@
+{
+  "task":"PUB-01-S03_SS02","patient_data":"FORBIDDEN",
+  "work":"/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01",
+  "encoder_run":"training_seed1024_attempt04","encoder_module":"pub_01_s03_transformer_train_v2",
+  "baseline_config":"input/pub_01_s03_transformer_available_20261015.json",
+  "output":"envelope_readout_seed1024",
+  "root":"/home/fanyu/auditory_simulation_m6a",
+  "index":"pub_01/s06/sparrkulee_virtual_20260919_v4/cleaning_index.csv",
+  "seed":1024,"fs":64,"window_samples":192,"hop_samples":96,
+  "readout":{"channels":8,"output_channels":1,"kernel_size":32,"padding":"same","activation":"LeakyReLU0.01","loss":"negative temporal Pearson per3s window, averaged","optimizer":"Adam","lr":0.001,"batch_size":64,"max_epochs":250,"patience":10,"shuffle":false},
+  "selection":"validation negative Pearson minimum; encoder fixed at its contrastive-validation-selected checkpoint",
+  "evaluation":{"segment_seconds":60,"aggregation":"segment Pearson→subject mean→group macro;2/3seen+1/3heldout","recombination":"50percent overlapping3s predictions with Hann overlap-add","control":"cyclic EEG-latent window permutation within recording before same readout/overlap-add","prediction_inputs":"EEG only; no candidate/audio at inference"},
+  "differences":["same available public author-fold cohort as contrastive baseline; no official test packet/ensemble","full available long-record60s chunks, no hidden task-half allocation","train-only channel scaling retained from baseline","original helper Conv32+LeakyReLU/Pearson/Adam1e-3/batch64/max250/patience10 reproduced functionally; author source not imported","fixed encoder and no test-driven readout settings; not comparable to original ensemble0.176 as an exact replication"]
+}

@@ -1,0 +1,18 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SAME_SS02_PUBLIC_ONLY_NO_NEXT_NODE",
+  "checks": {
+    "mandatory_files_present": true,
+    "seventeen_rows_with_ten_original_unrun": true,
+    "seven_actual_rows": true,
+    "unrun_numbers_empty": true,
+    "original_official_not_claimed_completed": true,
+    "actual_metrics_match_reviewed_evidence": true,
+    "all_actual_acceptance_limited": true,
+    "no_signal_or_weight_payload_in_returned_evidence": true
+  },
+  "maximum_metric_error": 0.0,
+  "review_type": "separate post-execution pass by same agent; not external scientific sign-off",
+  "scope": "authorized available-cohort method reproductions; official full-paper rows remain unrun"
+}

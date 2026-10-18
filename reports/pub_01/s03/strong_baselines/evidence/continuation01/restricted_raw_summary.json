@@ -1,0 +1,48 @@
+{
+  "restricted_raw_files": 49,
+  "subjects": {
+    "sub-019": 10,
+    "sub-020": 8,
+    "sub-021": 11,
+    "sub-022": 10,
+    "sub-026": 10
+  },
+  "exact_author_phase_rows": {
+    "val": 5,
+    "test": 5,
+    "train": 37,
+    "NO_EXACT_STORY_MATCH": 2
+  },
+  "missing_author_pairs": {
+    "sub-019": {
+      "train": [],
+      "val": [],
+      "test": []
+    },
+    "sub-020": {
+      "train": [],
+      "val": [],
+      "test": []
+    },
+    "sub-021": {
+      "train": [],
+      "val": [],
+      "test": []
+    },
+    "sub-022": {
+      "train": [
+        "audiobook_5_1"
+      ],
+      "val": [],
+      "test": []
+    },
+    "sub-026": {
+      "train": [],
+      "val": [],
+      "test": []
+    }
+  },
+  "all_affected_subjects_have_no_public_listening_BDF": false,
+  "no_data_download": true,
+  "no_restricted_requests": true
+}

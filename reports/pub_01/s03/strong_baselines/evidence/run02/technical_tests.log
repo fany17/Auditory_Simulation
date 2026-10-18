@@ -1,0 +1,9 @@
+test_outside_signal_paths_do_not_get_loaded (test_pub_01_s03_strong_preflight.AuditSafetyTests.test_outside_signal_paths_do_not_get_loaded) ... ok
+test_partial_split_coverage_does_not_claim_readiness (test_pub_01_s03_strong_preflight.AuditSafetyTests.test_partial_split_coverage_does_not_claim_readiness) ... ok
+test_path_escape_rejected (test_pub_01_s03_strong_preflight.AuditSafetyTests.test_path_escape_rejected) ... ok
+test_windows_cannot_read_signals (test_pub_01_s03_strong_preflight.AuditSafetyTests.test_windows_cannot_read_signals) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.064s
+
+OK

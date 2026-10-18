@@ -2,6 +2,10 @@
 
 **研究者明确的第一步是复现，不是设计新模型或追分。**
 
+2026-10-15最终交付：SS02 **COMPLETED / PASS_WITH_LIMITATION**。HDPS76人100Hz/M作者split，Top1/5/10=12.03/30.45/42.10%；Transformer原fold4、70人训练/69seen/13heldout，2AFC=83.53/80.08%（加权82.38%），冻结encoder原Conv32直接包络r=.1688/.1403（加权.1593）。各自一次test及独立review通过；完整论文cohort/隐藏test/ensemble仍未复现。见`reports/pub_01/s03/strong_baselines/REPRO_REPORT.md`。本轮停止，无自动下一READY节点，不启SS03/S04。
+
+2026-10-13追加执行已完成原raw100Hz、70story Mel及独立论文功能模型batch256工程smoke；602条产物对应作者647对中的600对就绪，必要47条raw仍受限，正式训练/论文测试NOT_RUN。Transformer对应冻结EEGcheckpoint失效、官方测试载荷未齐。SS02为 **WAITING_EXTERNAL / HOLD**，缺口与恢复位置见`reports/pub_01/s03/strong_baselines/RESOURCE_RECOVERY.md`；已启动作业全部结束，无后台替代训练。用户只要同论文对照，不跑缩减cohort/64Hz适配分数交付，不转SS03/S04。
+
 ## 权威执行顺序
 
 1. 当前研究者指令；
@@ -10,7 +14,7 @@
 4. `doc/TASKS.md`、`doc/CURRENT_TASK.md`；
 5. `doc/tasks/PUB-01/TASK.md`、`doc/tasks/PUB-01/SUBTASKS.md`；
 6. `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`；
-7. **唯一当前可执行节点** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`；
+7. **本轮完成节点（重新执行需研究者指定）** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`；
 8. `doc/tasks/PUB-01/BENCHMARK_REGISTRY.md`；
 9. 真实现存 S02/S03_SS01 数据/代码/config/reports。
 

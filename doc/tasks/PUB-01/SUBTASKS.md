@@ -1,12 +1,12 @@
 # PUB-01 Subtask Registry
 
-唯一子任务状态登记表（2026-10-13）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。
+唯一子任务状态登记表（2026-10-15）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。
 
 | Subtask ID | Title | Status | Blocking | Upstream | Task Spec | Validation |
 |---|---|---|---|---|---|---|
 | `PUB-01-S01` | Public data preparation and exploration | `COMPLETED` | YES | NONE | `subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` | PASS_WITH_LIMITATION；许可/定向时序限制依任务保留 |
 | `PUB-01-S02` | Acoustic & frozen-audio feature → EEG encoding baseline | `COMPLETED` | YES | S01 | `subtasks/PUB-01-S02_FEATURE_BANK_BASELINE.md` | 83人/659录音；acoustic/log-mel/wav2vec2，HuBERT HOLD；PASS_WITH_LIMITATION |
-| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01已交；SS02 READY；SS03/04 未执行 |
+| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01/SS02已交；SS02两套方法及包络readout PASS_WITH_LIMITATION；SS03/04 未执行，等待研究者指定 |
 | `PUB-01-S04` | **B线：ds004703 independent intracranial baseline + transfer** | `BACKLOG` | YES | S01数据准入；仅 transfer 需 S03 | `subtasks/PUB-01-S04_INTRACRANIAL_TRANSFER.md` | SS01/02 未执行；两线不串行阻塞数据基线 |
 | `PUB-01-S05` | Public artifact candidate + parent integration review | `BACKLOG` | YES | S01–S04 | `subtasks/PUB-01-S05_ARTIFACT_INTEGRATION.md` | 阶段结果与失败/许可统一审核；未产生 ART-AUDREP-v1 |
 
@@ -22,7 +22,7 @@
 | Child ID | Parent Node | Title | Status | Upstream | Task Spec | Acceptance |
 |---|---|---|---|---|---|---|
 | `PUB-01-S03_SS01` | S03 | EEG→envelope backward TRF | `COMPLETED` | S02 | `subtasks/PUB-01-S03/PUB-01-S03_SS01_ENVELOPE_DECODING.md` | 2026-10-11 PASS_WITH_LIMITATION；10 人 93 条，r≈0.1819，R²≈0.0178；只作为线性低层特征对照 |
-| `PUB-01-S03_SS02` | S03 | **Strong EEG auditory decoding baseline reproduction（Codex）** | **`READY`** | S01/S02+SS01 | `subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md` | 两套强基线的实际协议/结果或精确阻塞 + 独立 reviewer pass |
+| `PUB-01-S03_SS02` | S03 | **Strong EEG auditory decoding baseline reproduction（Codex）** | **`COMPLETED`** | S01/S02+SS01 | `subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md` | 2026-10-15 PASS_WITH_LIMITATION：HDPS76人Top1/5/10=12.03/30.45/42.10%；Transformer70训练、69seen/13heldout，2AFC加权82.38%、直接包络加权r=.1593；三运行独立review及交付检查；原完整论文条件未复现，不启下一节点 |
 | `PUB-01-S03_SS03` | S03 | Architecture hypothesis and direct decoder | `BACKLOG` | SS02 validated + researcher architecture decision | `subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md` | 新结构机制明确，同预算消融，不依靠候选训练成“伪直接解码” |
 | `PUB-01-S03_SS04` | S03 | Direct reconstruction + 2AFC/5AFC/large-pool evaluation | `BACKLOG` | SS02+SS03 | `subtasks/PUB-01-S03/PUB-01-S03_SS04_DIRECT_RECONSTRUCTION_AND_RETRIEVAL.md` | 分协议公平评价 / 强对照 / 跨被试 / 消融 |
 
@@ -36,7 +36,7 @@
 ## Governance, branch dependencies and historical mapping
 
 - S03 和 S04 是两条并列数据研究支线；**S04_SS01 可独立审计/跑自己的 baseline，不依赖 S03/SOTA；S04_SS02 的 cross-recording transfer 才依赖 S03**。
-- 现在明确的**唯一下一执行单元**是 `PUB-01-S03_SS02 READY`。其余 BACKLOG 不得自动启动；SS02 完成后需停止并由研究者选择架构。
+- 本轮指定执行单元 `PUB-01-S03_SS02` 已于2026-10-15 **COMPLETED / PASS_WITH_LIMITATION**；目前没有可自动启动的READY sibling。其余BACKLOG不得自动启动；由研究者审阅结果后选择架构。
 - `S03_SS01` 与 `S02` 已有科学结果不改写；之前的 PUB-01-S06 错号只作为历史 `S01_SS01` 别名，其历史报告、脚本、server路径均不重命名。
 - 阴性结果合法；模型名/性能目标不能触发额外模型、更改 split 或候选难度。
 - SS## 只在已有 S## 内，不建立更深层级；同一执行链一次一个节点；Technical/Acceptance/Parent consistency 三级验收，S05 还需父整合审核。

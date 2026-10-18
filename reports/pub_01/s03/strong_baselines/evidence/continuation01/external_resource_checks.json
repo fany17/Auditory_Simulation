@@ -1,0 +1,34 @@
+{
+  "checked_date": "2026-10-13",
+  "method": "bounded live web opens and official metadata/source inspection; no third-party contact",
+  "Transformer_checkpoint": [
+    {"url": "https://drive.google.com/file/d/1EO1BTlU2wb4S5x6BOeCfKEUFiKqhL7XO/view", "observed": "Google Drive page: requested file does not exist", "checkpoint_downloaded": false},
+    {"url": "https://homes.esat.kuleuven.be/~lbollens/sparrkulee/clip-transformer-eeg", "observed": "HTTP404", "checkpoint_downloaded": false}
+  ],
+  "bounded_Transformer_followups": "trailing slash, http variant, parent directory, zip, public issues/releases and two README commits; no working relocated checkpoint found; no repeated polling planned",
+  "HDPS_GroNLP_model_cards": {
+    "wav2vec2-dutch-base": "official HF card/API/tree contain no weight license declaration",
+    "gpt2-small-dutch": "HF card/API have no weight license declaration; associated gpt2-recycle repository Apache-2.0 explicitly describes source code, not independently verified to cover linked HF weights",
+    "weights_downloaded": false
+  },
+  "HDPS_paper": {
+    "doi": "10.1109/TNSRE.2026.3688564",
+    "fulltext_1": "https://www.researchgate.net/publication/404283818_Hierarchical_Decoding_of_Perceived_Speech_from_Non-Invasive_Brain_Recordings/fulltext/6a6fa73df7fdde46c0dcf0fe/Hierarchical-Decoding-of-Perceived-Speech-From-Non-Invasive-Brain-Recordings.pdf",
+    "fulltext_2": "https://www.researchgate.net/publication/404283818_Hierarchical_Decoding_of_Perceived_Speech_from_Non-Invasive_Brain_Recordings/fulltext/6a03f78a6afc63486edb2371/Hierarchical-Decoding-of-Perceived-Speech-From-Non-Invasive-Brain-Recordings.pdf",
+    "text_read": true,
+    "paper_license_observed": "CC BY4.0",
+    "table_I_II": "PDF page8 / printed2356; table numbers are raster; screenshot backends return text ImageDisplayed placeholder but no pixels; numeric M reference unverified",
+    "local_public_pdf_fetch": "RG returns403 HTML; IEEE publisher access page/robot check rather than PDF; failed fetches preserved under ignored source_inspection_only/paper",
+    "M_numeric_reference": null
+  },
+  "Transformer_audio_model": {
+    "model": "jonatasgrosman/wav2vec2-large-xlsr-53-dutch",
+    "revision": "46f221381d200f7bef268309b3f02023ccf11fcc",
+    "official_card_api_license": "Apache-2.0",
+    "weight_download_location": "server2203 only",
+    "used_for_model_performance": false
+  },
+  "no_missing_resource_inferred_from_generic_license_policy": true,
+  "no_restricted_data_requests": true,
+  "no_email_or_author_contact": true
+}

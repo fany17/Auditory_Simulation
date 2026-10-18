@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-10-13T11:10:45.237849+00:00",
+  "review_mode": "separate_post_execution_metadata_review",
+  "technical": "PASS",
+  "acceptance": "HOLD",
+  "parent_consistency": "PASS_SCOPE_LIMITED_NO_ARTIFACT",
+  "model_performance_validated": false,
+  "checks": [
+    {
+      "check": "mandatory_deliverables",
+      "pass": true
+    },
+    {
+      "check": "result_schema_no_extra_or_missing_columns",
+      "pass": true
+    },
+    {
+      "check": "ten_explicit_not_run_rows",
+      "pass": true
+    },
+    {
+      "check": "no_fabricated_metrics_or_actual_candidate_counts",
+      "pass": true
+    },
+    {
+      "check": "official_internal_separated",
+      "pass": true
+    },
+    {
+      "check": "run01_no_training_no_author_execution",
+      "pass": true
+    },
+    {
+      "check": "run01_no_payload_or_weight_download",
+      "pass": true
+    },
+    {
+      "check": "run02_no_training_no_author_execution",
+      "pass": true
+    },
+    {
+      "check": "run02_no_payload_or_weight_download",
+      "pass": true
+    },
+    {
+      "check": "37_pinned_sources_read_and_python_ast_pass",
+      "pass": true
+    },
+    {
+      "check": "no_payload_in_source_allowlist",
+      "pass": true
+    },
+    {
+      "check": "fixed_sub001_ten_real_records_readable",
+      "pass": true
+    },
+    {
+      "check": "unknown_physical_sync_not_upgraded",
+      "pass": true
+    },
+    {
+      "check": "actual_gpu_runtime_smoke",
+      "pass": true
+    },
+    {
+      "check": "HDPS_647_of_647_file_coverage_only",
+      "pass": true
+    },
+    {
+      "check": "Transformer_71_of_91_train_14_of_14_test_file_coverage",
+      "pass": true
+    },
+    {
+      "check": "four_technical_tests_passed",
+      "pass": true
+    },
+    {
+      "check": "failed_attempt_preserved",
+      "pass": true
+    }
+  ]
+}

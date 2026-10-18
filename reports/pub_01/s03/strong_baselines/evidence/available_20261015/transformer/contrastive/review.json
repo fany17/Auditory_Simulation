@@ -1,0 +1,36 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SAME_SS02_AVAILABLE_PUBLIC_AMENDMENT",
+  "maximum_metric_error": 0.0,
+  "checks": {
+    "checkpoint_minimizes_validation_only": true,
+    "seen_train_val_test_exact_story_disjoint": true,
+    "heldout_people_never_in_train": true,
+    "all_seen_people_in_train": true,
+    "train_only_normalization": true,
+    "test_query_count_preserved": true,
+    "unique_query_identities": true,
+    "one_frozen_test_pass": true,
+    "original_hidden_packet_not_claimed": true,
+    "stopped_at_fixed_rule": true,
+    "candidate_manifest_not_changed": true,
+    "all_candidates_same_record_plusminus4s_and_supported": true,
+    "independent_score_argmax_and_labels_match": true,
+    "independent_subject_macro_weighted_match": true
+  },
+  "limitations": [
+    "available authorized public data only; original180-person training and15-model ensemble not reproduced",
+    "single model reimplementation from published architecture/functional inspection; not clean-room; author model code not imported",
+    "existing published64Hz EEG derivative, actual common support, never reconstruct missing raw or download restricted objects",
+    "train-only channel normalization applied consistently; public training loader contains no explicit MVN despite eeg_norm flag, official helper also reports per-subject test MVN",
+    "derive local2AFC IDs/times from existing long records; original hidden test packet/IDs not available; not an official87.01% replication",
+    "fixed validation batches remove author loader's unseeded sampling noise; no test checkpoint selection",
+    "fixed3s recording grid and deterministic story blocks rather than re-origining grid at arbitrary raw sub-block boundaries",
+    "100epoch resource ceiling instead of public500; report budget limit if validation patience not reached; no test-driven extension",
+    "no memory-bank auxiliary gradient because original default lambda_sim_loss=0",
+    "PyTorch2.11/transformers5.14 numerical environment differs from original",
+    "bound each XLSR emission to actual8s core, including penultimate end-context edge; assert monotonic duration rather than duplicate a final context region"
+  ],
+  "model_performance_real": true
+}

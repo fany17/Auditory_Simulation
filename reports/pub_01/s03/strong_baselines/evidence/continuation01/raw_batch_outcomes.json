@@ -1,0 +1,754 @@
+[
+  {
+    "subject": "sub-005",
+    "exit_code": 0,
+    "seconds": 253.80626010894775,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-005",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-005.log",
+    "failed_records": [],
+    "record_count": 9
+  },
+  {
+    "subject": "sub-003",
+    "exit_code": 0,
+    "seconds": 275.3685796260834,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-003",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-003.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-006",
+    "exit_code": 0,
+    "seconds": 277.7994635105133,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-006",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-006.log",
+    "failed_records": [
+      {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author01_sub-006/sub-006/ses-shortstories01/eeg/sub-006_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "error": "ValueError('Number of triggers does not match (in eeg 847 were found, in stimulus 911)')"
+      }
+    ],
+    "record_count": 9
+  },
+  {
+    "subject": "sub-009",
+    "exit_code": 0,
+    "seconds": 282.3144578933716,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-009",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-009.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-002",
+    "exit_code": 0,
+    "seconds": 287.3735830783844,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-002",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-002.log",
+    "failed_records": [],
+    "record_count": 11
+  },
+  {
+    "subject": "sub-007",
+    "exit_code": 0,
+    "seconds": 290.7305037975311,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-007",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-007.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-001",
+    "exit_code": 0,
+    "seconds": 298.0581669807434,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-001",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-001.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-008",
+    "exit_code": 0,
+    "seconds": 298.39040756225586,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-008",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-008.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-010",
+    "exit_code": 0,
+    "seconds": 271.3398587703705,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-010",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-010.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-019",
+    "exit_code": 1,
+    "seconds": 1.4805443286895752,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-019",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-019.log",
+    "failed_records": [
+      "process did not reach loader"
+    ],
+    "record_count": 0
+  },
+  {
+    "subject": "sub-020",
+    "exit_code": 1,
+    "seconds": 1.5368866920471191,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-020",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-020.log",
+    "failed_records": [
+      "process did not reach loader"
+    ],
+    "record_count": 0
+  },
+  {
+    "subject": "sub-021",
+    "exit_code": 1,
+    "seconds": 1.4580106735229492,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-021",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-021.log",
+    "failed_records": [
+      "process did not reach loader"
+    ],
+    "record_count": 0
+  },
+  {
+    "subject": "sub-022",
+    "exit_code": 1,
+    "seconds": 1.576949119567871,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-022",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-022.log",
+    "failed_records": [
+      {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author01_sub-022/sub-022/ses-shortstories01/eeg/sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "error": "FileNotFoundError(2, 'No such file or directory')"
+      }
+    ],
+    "record_count": 0
+  },
+  {
+    "subject": "sub-011",
+    "exit_code": 0,
+    "seconds": 265.28060150146484,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-011",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-011.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-013",
+    "exit_code": 0,
+    "seconds": 268.1968128681183,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-013",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-013.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-014",
+    "exit_code": 0,
+    "seconds": 267.5081739425659,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-014",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-014.log",
+    "failed_records": [],
+    "record_count": 11
+  },
+  {
+    "subject": "sub-026",
+    "exit_code": 1,
+    "seconds": 1.5276808738708496,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-026",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-026.log",
+    "failed_records": [
+      "process did not reach loader"
+    ],
+    "record_count": 0
+  },
+  {
+    "subject": "sub-012",
+    "exit_code": 0,
+    "seconds": 280.4807026386261,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-012",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-012.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-015",
+    "exit_code": 0,
+    "seconds": 272.54533886909485,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-015",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-015.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-018",
+    "exit_code": 0,
+    "seconds": 275.7785978317261,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-018",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-018.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-016",
+    "exit_code": 0,
+    "seconds": 279.9924511909485,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-016",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-016.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-027",
+    "exit_code": 0,
+    "seconds": 210.88084435462952,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-027",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-027.log",
+    "failed_records": [],
+    "record_count": 12
+  },
+  {
+    "subject": "sub-028",
+    "exit_code": 0,
+    "seconds": 217.92281246185303,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-028",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-028.log",
+    "failed_records": [],
+    "record_count": 12
+  },
+  {
+    "subject": "sub-029",
+    "exit_code": 0,
+    "seconds": 216.22619032859802,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-029",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-029.log",
+    "failed_records": [],
+    "record_count": 12
+  },
+  {
+    "subject": "sub-031",
+    "exit_code": 0,
+    "seconds": 216.0127592086792,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-031",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-031.log",
+    "failed_records": [],
+    "record_count": 12
+  },
+  {
+    "subject": "sub-030",
+    "exit_code": 0,
+    "seconds": 221.252521276474,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-030",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-030.log",
+    "failed_records": [],
+    "record_count": 12
+  },
+  {
+    "subject": "sub-025",
+    "exit_code": 0,
+    "seconds": 245.2825837135315,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-025",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-025.log",
+    "failed_records": [],
+    "record_count": 9
+  },
+  {
+    "subject": "sub-023",
+    "exit_code": 0,
+    "seconds": 272.0019247531891,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-023",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-023.log",
+    "failed_records": [],
+    "record_count": 11
+  },
+  {
+    "subject": "sub-024",
+    "exit_code": 0,
+    "seconds": 271.02167677879333,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-024",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-024.log",
+    "failed_records": [],
+    "record_count": 10
+  },
+  {
+    "subject": "sub-032",
+    "exit_code": 0,
+    "seconds": 211.02971124649048,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-032",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-032.log",
+    "failed_records": [],
+    "record_count": 8
+  },
+  {
+    "subject": "sub-033",
+    "exit_code": 0,
+    "seconds": 213.02372550964355,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-033",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-033.log",
+    "failed_records": [],
+    "record_count": 8
+  },
+  {
+    "subject": "sub-034",
+    "exit_code": 0,
+    "seconds": 213.28749251365662,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-034",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-034.log",
+    "failed_records": [],
+    "record_count": 8
+  },
+  {
+    "subject": "sub-038",
+    "exit_code": 0,
+    "seconds": 191.12471389770508,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-038",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-038.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-037",
+    "exit_code": 0,
+    "seconds": 203.35423755645752,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-037",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-037.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-039",
+    "exit_code": 0,
+    "seconds": 191.7104194164276,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-039",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-039.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-035",
+    "exit_code": 0,
+    "seconds": 212.17485213279724,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-035",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-035.log",
+    "failed_records": [],
+    "record_count": 8
+  },
+  {
+    "subject": "sub-036",
+    "exit_code": 0,
+    "seconds": 214.74182558059692,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-036",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-036.log",
+    "failed_records": [],
+    "record_count": 8
+  },
+  {
+    "subject": "sub-043",
+    "exit_code": 0,
+    "seconds": 164.97599339485168,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-043",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-043.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-040",
+    "exit_code": 0,
+    "seconds": 193.19321870803833,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-040",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-040.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-046",
+    "exit_code": 0,
+    "seconds": 168.5076458454132,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-046",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-046.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-044",
+    "exit_code": 0,
+    "seconds": 176.15329480171204,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-044",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-044.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-045",
+    "exit_code": 0,
+    "seconds": 174.38523530960083,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-045",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-045.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-041",
+    "exit_code": 0,
+    "seconds": 196.20152115821838,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-041",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-041.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-042",
+    "exit_code": 0,
+    "seconds": 195.27186608314514,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-042",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-042.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-047",
+    "exit_code": 0,
+    "seconds": 187.24084329605103,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-047",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-047.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-048",
+    "exit_code": 0,
+    "seconds": 160.1126194000244,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-048",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-048.log",
+    "failed_records": [
+      {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author01_sub-048/sub-048/ses-varyingStories05/eeg/sub-048_ses-varyingStories05_task-listeningActive_run-04_eeg.bdf.gz",
+        "error": "ValueError('Number of triggers does not match (in eeg 622 were found, in stimulus 1155)')"
+      }
+    ],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-049",
+    "exit_code": 0,
+    "seconds": 170.3094244003296,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-049",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-049.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-053",
+    "exit_code": 0,
+    "seconds": 168.1098554134369,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-053",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-053.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-051",
+    "exit_code": 0,
+    "seconds": 179.38861727714539,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-051",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-051.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-052",
+    "exit_code": 0,
+    "seconds": 180.11426734924316,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-052",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-052.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-054",
+    "exit_code": 0,
+    "seconds": 171.08318519592285,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-054",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-054.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-055",
+    "exit_code": 0,
+    "seconds": 176.55362606048584,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-055",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-055.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-056",
+    "exit_code": 0,
+    "seconds": 172.99645733833313,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-056",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-056.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-057",
+    "exit_code": 0,
+    "seconds": 196.87959122657776,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-057",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-057.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-060",
+    "exit_code": 0,
+    "seconds": 166.43158340454102,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-060",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-060.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-058",
+    "exit_code": 0,
+    "seconds": 191.9765555858612,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-058",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-058.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-059",
+    "exit_code": 0,
+    "seconds": 197.5039837360382,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-059",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-059.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-062",
+    "exit_code": 0,
+    "seconds": 194.117999792099,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-062",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-062.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-061",
+    "exit_code": 0,
+    "seconds": 197.0112476348877,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-061",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-061.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-063",
+    "exit_code": 0,
+    "seconds": 201.84855961799622,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-063",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-063.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-064",
+    "exit_code": 0,
+    "seconds": 209.5118567943573,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-064",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-064.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-065",
+    "exit_code": 0,
+    "seconds": 202.0110309123993,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-065",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-065.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-066",
+    "exit_code": 0,
+    "seconds": 204.28787469863892,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-066",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-066.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-067",
+    "exit_code": 0,
+    "seconds": 198.303772687912,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-067",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-067.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-068",
+    "exit_code": 0,
+    "seconds": 194.3473415374756,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-068",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-068.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-069",
+    "exit_code": 0,
+    "seconds": 202.45988821983337,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-069",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-069.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-070",
+    "exit_code": 0,
+    "seconds": 201.83105945587158,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-070",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-070.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-072",
+    "exit_code": 0,
+    "seconds": 175.37316489219666,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-072",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-072.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-071",
+    "exit_code": 0,
+    "seconds": 199.052330493927,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-071",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-071.log",
+    "failed_records": [],
+    "record_count": 7
+  },
+  {
+    "subject": "sub-077",
+    "exit_code": 0,
+    "seconds": 97.30926156044006,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-077",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-077.log",
+    "failed_records": [],
+    "record_count": 3
+  },
+  {
+    "subject": "sub-073",
+    "exit_code": 0,
+    "seconds": 173.82788491249084,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-073",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-073.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-074",
+    "exit_code": 0,
+    "seconds": 173.8703260421753,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-074",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-074.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-075",
+    "exit_code": 0,
+    "seconds": 171.87763333320618,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-075",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-075.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-076",
+    "exit_code": 0,
+    "seconds": 174.1397361755371,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-076",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-076.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-078",
+    "exit_code": 0,
+    "seconds": 175.42135214805603,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-078",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-078.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-079",
+    "exit_code": 0,
+    "seconds": 176.81592655181885,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-079",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-079.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-080",
+    "exit_code": 0,
+    "seconds": 171.41044688224792,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-080",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-080.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-082",
+    "exit_code": 0,
+    "seconds": 164.8703258037567,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-082",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-082.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-083",
+    "exit_code": 0,
+    "seconds": 165.8324704170227,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-083",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-083.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-084",
+    "exit_code": 0,
+    "seconds": 169.6834614276886,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-084",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-084.log",
+    "failed_records": [],
+    "record_count": 6
+  },
+  {
+    "subject": "sub-085",
+    "exit_code": 0,
+    "seconds": 164.43095064163208,
+    "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author01_sub-085",
+    "log": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_batch01/sub-085.log",
+    "failed_records": [],
+    "record_count": 6
+  }
+]

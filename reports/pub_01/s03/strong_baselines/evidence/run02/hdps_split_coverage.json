@@ -1,0 +1,4531 @@
+[
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-001",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_1_artefact",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-002",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-003",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-005",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-006",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-007",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-008",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-009",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-010",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-011",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-012",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-013",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_1_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-014",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-015",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-016",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-018",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-019",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-020",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_1_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-021",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_1_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-022",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_1_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-023",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-024",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-025",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_2_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_2_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_5_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_5_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "train",
+    "story": "audiobook_5_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "val",
+    "story": "audiobook_6_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-026",
+    "phase": "test",
+    "story": "audiobook_6_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "train",
+    "story": "podcast_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "train",
+    "story": "podcast_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "train",
+    "story": "podcast_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "train",
+    "story": "podcast_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "val",
+    "story": "audiobook_7_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "val",
+    "story": "audiobook_7_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "val",
+    "story": "audiobook_7_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "test",
+    "story": "audiobook_7_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "test",
+    "story": "audiobook_7_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-027",
+    "phase": "test",
+    "story": "audiobook_7_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "train",
+    "story": "podcast_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "train",
+    "story": "podcast_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "train",
+    "story": "podcast_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "train",
+    "story": "podcast_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "val",
+    "story": "audiobook_7_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "val",
+    "story": "audiobook_7_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "val",
+    "story": "audiobook_7_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "test",
+    "story": "audiobook_7_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "test",
+    "story": "audiobook_7_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-028",
+    "phase": "test",
+    "story": "audiobook_7_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "train",
+    "story": "podcast_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "train",
+    "story": "podcast_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "train",
+    "story": "podcast_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "train",
+    "story": "podcast_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "val",
+    "story": "audiobook_7_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "val",
+    "story": "audiobook_7_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "val",
+    "story": "audiobook_7_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "test",
+    "story": "audiobook_7_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "test",
+    "story": "audiobook_7_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-029",
+    "phase": "test",
+    "story": "audiobook_7_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "train",
+    "story": "podcast_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "train",
+    "story": "podcast_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "train",
+    "story": "podcast_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "train",
+    "story": "podcast_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "val",
+    "story": "audiobook_7_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "val",
+    "story": "audiobook_7_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "val",
+    "story": "audiobook_7_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "test",
+    "story": "audiobook_7_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "test",
+    "story": "audiobook_7_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-030",
+    "phase": "test",
+    "story": "audiobook_7_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "train",
+    "story": "podcast_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "train",
+    "story": "podcast_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "train",
+    "story": "podcast_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "train",
+    "story": "podcast_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "val",
+    "story": "audiobook_7_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "val",
+    "story": "audiobook_7_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "val",
+    "story": "audiobook_7_3",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "test",
+    "story": "audiobook_7_4",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "test",
+    "story": "audiobook_7_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-031",
+    "phase": "test",
+    "story": "audiobook_7_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "train",
+    "story": "podcast_8",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "train",
+    "story": "podcast_7",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "train",
+    "story": "podcast_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "train",
+    "story": "podcast_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "val",
+    "story": "audiobook_8_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-032",
+    "phase": "test",
+    "story": "audiobook_8_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "train",
+    "story": "podcast_7",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "train",
+    "story": "podcast_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "train",
+    "story": "podcast_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "train",
+    "story": "podcast_8",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "val",
+    "story": "audiobook_8_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-033",
+    "phase": "test",
+    "story": "audiobook_8_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "train",
+    "story": "podcast_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "train",
+    "story": "podcast_8",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "train",
+    "story": "podcast_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "train",
+    "story": "podcast_7",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "val",
+    "story": "audiobook_8_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-034",
+    "phase": "test",
+    "story": "audiobook_8_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "train",
+    "story": "podcast_8",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "train",
+    "story": "podcast_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "train",
+    "story": "podcast_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "train",
+    "story": "podcast_7",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "val",
+    "story": "audiobook_8_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-035",
+    "phase": "test",
+    "story": "audiobook_8_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "train",
+    "story": "podcast_6",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "train",
+    "story": "podcast_5",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "train",
+    "story": "podcast_8",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "train",
+    "story": "podcast_7",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "val",
+    "story": "audiobook_8_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-036",
+    "phase": "test",
+    "story": "audiobook_8_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-037",
+    "phase": "train",
+    "story": "podcast_9",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-037",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-037",
+    "phase": "train",
+    "story": "podcast_12",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-037",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-037",
+    "phase": "train",
+    "story": "podcast_11",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-037",
+    "phase": "val",
+    "story": "audiobook_9_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-037",
+    "phase": "test",
+    "story": "audiobook_9_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-038",
+    "phase": "train",
+    "story": "podcast_9",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-038",
+    "phase": "train",
+    "story": "podcast_12",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-038",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-038",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-038",
+    "phase": "train",
+    "story": "podcast_11",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-038",
+    "phase": "val",
+    "story": "audiobook_9_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-038",
+    "phase": "test",
+    "story": "audiobook_9_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-039",
+    "phase": "train",
+    "story": "podcast_11",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-039",
+    "phase": "train",
+    "story": "podcast_9",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-039",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-039",
+    "phase": "train",
+    "story": "podcast_12",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-039",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-039",
+    "phase": "val",
+    "story": "audiobook_9_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-039",
+    "phase": "test",
+    "story": "audiobook_9_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-040",
+    "phase": "train",
+    "story": "podcast_12",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-040",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-040",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-040",
+    "phase": "train",
+    "story": "podcast_9",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-040",
+    "phase": "train",
+    "story": "podcast_11",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-040",
+    "phase": "val",
+    "story": "audiobook_9_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-040",
+    "phase": "test",
+    "story": "audiobook_9_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-041",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-041",
+    "phase": "train",
+    "story": "podcast_9",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-041",
+    "phase": "train",
+    "story": "podcast_12",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-041",
+    "phase": "train",
+    "story": "podcast_11",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-041",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-041",
+    "phase": "val",
+    "story": "audiobook_9_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-041",
+    "phase": "test",
+    "story": "audiobook_9_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-042",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-042",
+    "phase": "train",
+    "story": "podcast_9",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-042",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-042",
+    "phase": "train",
+    "story": "podcast_12",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-042",
+    "phase": "train",
+    "story": "podcast_11",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-042",
+    "phase": "val",
+    "story": "audiobook_9_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-042",
+    "phase": "test",
+    "story": "audiobook_9_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-043",
+    "phase": "train",
+    "story": "podcast_13",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-043",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-043",
+    "phase": "train",
+    "story": "podcast_14",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-043",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-043",
+    "phase": "train",
+    "story": "podcast_15",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-043",
+    "phase": "val",
+    "story": "audiobook_10_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-043",
+    "phase": "test",
+    "story": "audiobook_10_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-044",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-044",
+    "phase": "train",
+    "story": "podcast_13",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-044",
+    "phase": "train",
+    "story": "podcast_15",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-044",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-044",
+    "phase": "train",
+    "story": "podcast_14",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-044",
+    "phase": "val",
+    "story": "audiobook_10_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-044",
+    "phase": "test",
+    "story": "audiobook_10_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-045",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-045",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-045",
+    "phase": "train",
+    "story": "podcast_14",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-045",
+    "phase": "train",
+    "story": "podcast_15",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-045",
+    "phase": "train",
+    "story": "podcast_13",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-045",
+    "phase": "val",
+    "story": "audiobook_10_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-045",
+    "phase": "test",
+    "story": "audiobook_10_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-046",
+    "phase": "train",
+    "story": "podcast_13",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-046",
+    "phase": "train",
+    "story": "podcast_15",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-046",
+    "phase": "train",
+    "story": "podcast_10",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-046",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-046",
+    "phase": "train",
+    "story": "podcast_14",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-046",
+    "phase": "val",
+    "story": "audiobook_10_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-046",
+    "phase": "test",
+    "story": "audiobook_10_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-047",
+    "phase": "train",
+    "story": "podcast_18",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-047",
+    "phase": "train",
+    "story": "podcast_19",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-047",
+    "phase": "train",
+    "story": "podcast_17",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-047",
+    "phase": "train",
+    "story": "podcast_16",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-047",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-047",
+    "phase": "val",
+    "story": "audiobook_11_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-047",
+    "phase": "test",
+    "story": "audiobook_11_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-048",
+    "phase": "train",
+    "story": "podcast_19",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-048",
+    "phase": "train",
+    "story": "podcast_16",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-048",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-048",
+    "phase": "train",
+    "story": "podcast_17",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-048",
+    "phase": "val",
+    "story": "audiobook_11_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-048",
+    "phase": "test",
+    "story": "audiobook_11_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-049",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-049",
+    "phase": "train",
+    "story": "podcast_23",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-049",
+    "phase": "train",
+    "story": "podcast_20",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-049",
+    "phase": "train",
+    "story": "podcast_22",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-049",
+    "phase": "train",
+    "story": "podcast_21",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-049",
+    "phase": "val",
+    "story": "audiobook_12_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-049",
+    "phase": "test",
+    "story": "audiobook_12_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-051",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-051",
+    "phase": "train",
+    "story": "podcast_23",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-051",
+    "phase": "train",
+    "story": "podcast_22",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-051",
+    "phase": "train",
+    "story": "podcast_21",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-051",
+    "phase": "train",
+    "story": "podcast_20",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-051",
+    "phase": "val",
+    "story": "audiobook_12_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-051",
+    "phase": "test",
+    "story": "audiobook_12_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-052",
+    "phase": "train",
+    "story": "podcast_23",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-052",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-052",
+    "phase": "train",
+    "story": "podcast_20",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-052",
+    "phase": "train",
+    "story": "podcast_22",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-052",
+    "phase": "train",
+    "story": "podcast_21",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-052",
+    "phase": "val",
+    "story": "audiobook_12_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-052",
+    "phase": "test",
+    "story": "audiobook_12_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-053",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-053",
+    "phase": "train",
+    "story": "podcast_23",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-053",
+    "phase": "train",
+    "story": "podcast_21",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-053",
+    "phase": "train",
+    "story": "podcast_20",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-053",
+    "phase": "train",
+    "story": "podcast_22",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-053",
+    "phase": "val",
+    "story": "audiobook_12_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-053",
+    "phase": "test",
+    "story": "audiobook_12_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-054",
+    "phase": "train",
+    "story": "podcast_23",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-054",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-054",
+    "phase": "train",
+    "story": "podcast_21",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-054",
+    "phase": "train",
+    "story": "podcast_22",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-054",
+    "phase": "train",
+    "story": "podcast_20",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-054",
+    "phase": "val",
+    "story": "audiobook_12_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-054",
+    "phase": "test",
+    "story": "audiobook_12_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-055",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-055",
+    "phase": "train",
+    "story": "podcast_22",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-055",
+    "phase": "train",
+    "story": "podcast_23",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-055",
+    "phase": "train",
+    "story": "podcast_20",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-055",
+    "phase": "train",
+    "story": "podcast_21",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-055",
+    "phase": "val",
+    "story": "audiobook_12_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-055",
+    "phase": "test",
+    "story": "audiobook_12_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-056",
+    "phase": "train",
+    "story": "podcast_20",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-056",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-056",
+    "phase": "train",
+    "story": "podcast_22",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-056",
+    "phase": "train",
+    "story": "podcast_23",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-056",
+    "phase": "train",
+    "story": "podcast_21",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-056",
+    "phase": "val",
+    "story": "audiobook_12_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-056",
+    "phase": "test",
+    "story": "audiobook_12_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-057",
+    "phase": "train",
+    "story": "podcast_26",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-057",
+    "phase": "train",
+    "story": "podcast_24",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-057",
+    "phase": "train",
+    "story": "podcast_27",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-057",
+    "phase": "train",
+    "story": "podcast_25",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-057",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-057",
+    "phase": "val",
+    "story": "audiobook_13_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-057",
+    "phase": "test",
+    "story": "audiobook_13_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-058",
+    "phase": "train",
+    "story": "podcast_27",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-058",
+    "phase": "train",
+    "story": "podcast_24",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-058",
+    "phase": "train",
+    "story": "podcast_26",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-058",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-058",
+    "phase": "train",
+    "story": "podcast_25",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-058",
+    "phase": "val",
+    "story": "audiobook_13_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-058",
+    "phase": "test",
+    "story": "audiobook_13_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-059",
+    "phase": "train",
+    "story": "podcast_27",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-059",
+    "phase": "train",
+    "story": "podcast_26",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-059",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-059",
+    "phase": "train",
+    "story": "podcast_24",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-059",
+    "phase": "train",
+    "story": "podcast_25",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-059",
+    "phase": "val",
+    "story": "audiobook_13_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-059",
+    "phase": "test",
+    "story": "audiobook_13_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-060",
+    "phase": "train",
+    "story": "podcast_25",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-060",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-060",
+    "phase": "train",
+    "story": "podcast_24",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-060",
+    "phase": "train",
+    "story": "podcast_26",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-060",
+    "phase": "val",
+    "story": "audiobook_13_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-060",
+    "phase": "test",
+    "story": "audiobook_13_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-061",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-061",
+    "phase": "train",
+    "story": "podcast_25",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-061",
+    "phase": "train",
+    "story": "podcast_26",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-061",
+    "phase": "train",
+    "story": "podcast_24",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-061",
+    "phase": "train",
+    "story": "podcast_27",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-061",
+    "phase": "val",
+    "story": "audiobook_13_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-061",
+    "phase": "test",
+    "story": "audiobook_13_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-062",
+    "phase": "train",
+    "story": "podcast_24",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-062",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-062",
+    "phase": "train",
+    "story": "podcast_27",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-062",
+    "phase": "train",
+    "story": "podcast_26",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-062",
+    "phase": "train",
+    "story": "podcast_25",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-062",
+    "phase": "val",
+    "story": "audiobook_13_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-062",
+    "phase": "test",
+    "story": "audiobook_13_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-063",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-063",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-063",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-063",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-063",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-063",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-063",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-064",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-064",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-064",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-064",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-064",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-064",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-064",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-065",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-065",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-065",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-065",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-065",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-065",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-065",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-066",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-066",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-066",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-066",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-066",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-066",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-066",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-067",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-067",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-067",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-067",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-067",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-067",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-067",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-068",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-068",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-068",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-068",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-068",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-068",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-068",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-069",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-069",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-069",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-069",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-069",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-069",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-069",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-070",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-070",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-070",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-070",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-070",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-070",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-070",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-071",
+    "phase": "train",
+    "story": "podcast_28",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-071",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-071",
+    "phase": "train",
+    "story": "podcast_30",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-071",
+    "phase": "train",
+    "story": "podcast_29",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-071",
+    "phase": "train",
+    "story": "podcast_31",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-071",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-071",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-072",
+    "phase": "train",
+    "story": "podcast_32",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-072",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-072",
+    "phase": "train",
+    "story": "podcast_34",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-072",
+    "phase": "train",
+    "story": "podcast_33",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-072",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-072",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-073",
+    "phase": "train",
+    "story": "podcast_33",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-073",
+    "phase": "train",
+    "story": "podcast_34",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-073",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-073",
+    "phase": "train",
+    "story": "podcast_32",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-073",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-073",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-074",
+    "phase": "train",
+    "story": "podcast_32",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-074",
+    "phase": "train",
+    "story": "podcast_33",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-074",
+    "phase": "train",
+    "story": "podcast_34",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-074",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-074",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-074",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-075",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-075",
+    "phase": "train",
+    "story": "podcast_32",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-075",
+    "phase": "train",
+    "story": "podcast_34",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-075",
+    "phase": "train",
+    "story": "podcast_33",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-075",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-075",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-076",
+    "phase": "train",
+    "story": "podcast_32",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-076",
+    "phase": "train",
+    "story": "podcast_33",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-076",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-076",
+    "phase": "train",
+    "story": "podcast_34",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-076",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-076",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-077",
+    "phase": "train",
+    "story": "podcast_34",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-077",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-077",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-078",
+    "phase": "train",
+    "story": "podcast_34",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-078",
+    "phase": "train",
+    "story": "podcast_33",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-078",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-078",
+    "phase": "train",
+    "story": "podcast_32",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-078",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-078",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-079",
+    "phase": "train",
+    "story": "podcast_37",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-079",
+    "phase": "train",
+    "story": "podcast_35",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-079",
+    "phase": "train",
+    "story": "podcast_36",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-079",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-079",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-079",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-080",
+    "phase": "train",
+    "story": "podcast_36",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-080",
+    "phase": "train",
+    "story": "podcast_37",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-080",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-080",
+    "phase": "train",
+    "story": "podcast_35",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-080",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-080",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-082",
+    "phase": "train",
+    "story": "podcast_36",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-082",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-082",
+    "phase": "train",
+    "story": "podcast_35",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-082",
+    "phase": "train",
+    "story": "podcast_37",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-082",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-082",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-083",
+    "phase": "train",
+    "story": "podcast_35",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-083",
+    "phase": "train",
+    "story": "podcast_37",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-083",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-083",
+    "phase": "train",
+    "story": "podcast_36",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-083",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-083",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-084",
+    "phase": "train",
+    "story": "podcast_35",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-084",
+    "phase": "train",
+    "story": "podcast_37",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-084",
+    "phase": "train",
+    "story": "podcast_36",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-084",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-084",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-084",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-085",
+    "phase": "train",
+    "story": "audiobook_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-085",
+    "phase": "train",
+    "story": "podcast_37",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-085",
+    "phase": "train",
+    "story": "podcast_35",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-085",
+    "phase": "train",
+    "story": "podcast_36",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-085",
+    "phase": "val",
+    "story": "audiobook_14_1",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  },
+  {
+    "subject": "sub-085",
+    "phase": "test",
+    "story": "audiobook_14_2",
+    "existing_64hz_record": true,
+    "official_100hz_feature": "NOT_VERIFIED"
+  }
+]

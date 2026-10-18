@@ -1,0 +1,430 @@
+{
+  "raw_batch_completed": true,
+  "subject_jobs_finished": 81,
+  "subject_jobs_expected": 81,
+  "processed_100Hz_records": 602,
+  "subjects_with_some100Hz": 77,
+  "failed_subject_processes": [
+    "sub-019",
+    "sub-020",
+    "sub-021",
+    "sub-022",
+    "sub-026"
+  ],
+  "repairs": [
+    {
+      "subject": "sub-022",
+      "output": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_author02_sub-022",
+      "repair": "public events container, no APR/SNR in EEG numerical path"
+    }
+  ],
+  "record_processing_failures": [
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author01_sub-006/sub-006/ses-shortstories01/eeg/sub-006_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "error": "ValueError('Number of triggers does not match (in eeg 847 were found, in stimulus 911)')"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author01_sub-022/sub-022/ses-shortstories01/eeg/sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author01_sub-048/sub-048/ses-varyingStories05/eeg/sub-048_ses-varyingStories05_task-listeningActive_run-04_eeg.bdf.gz",
+      "error": "ValueError('Number of triggers does not match (in eeg 622 were found, in stimulus 1155)')"
+    }
+  ],
+  "author_pairs": 647,
+  "author_pair_status": {
+    "ORIGINAL100Hz_M_ENGINEERING_READY": 600,
+    "MISSING_OR_UNSUPPORTED": 47
+  },
+  "missing_or_unsupported_by_phase": {
+    "train": 37,
+    "val": 5,
+    "test": 5
+  },
+  "missing_or_unsupported_pairs": [
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_2_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_5_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_2_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_4",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_5_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_5_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "train",
+      "story": "audiobook_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "val",
+      "story": "audiobook_6_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-019",
+      "phase": "test",
+      "story": "audiobook_6_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "train",
+      "story": "audiobook_5_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "train",
+      "story": "audiobook_5_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "train",
+      "story": "audiobook_2_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "train",
+      "story": "audiobook_2_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "train",
+      "story": "audiobook_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "train",
+      "story": "audiobook_5_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "val",
+      "story": "audiobook_6_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-020",
+      "phase": "test",
+      "story": "audiobook_6_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_2_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_1_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_4",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_5_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_5_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_2_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "train",
+      "story": "audiobook_5_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "val",
+      "story": "audiobook_6_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-021",
+      "phase": "test",
+      "story": "audiobook_6_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "train",
+      "story": "audiobook_4",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "train",
+      "story": "audiobook_2_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "train",
+      "story": "audiobook_5_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "train",
+      "story": "audiobook_1_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "train",
+      "story": "audiobook_2_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "train",
+      "story": "audiobook_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "train",
+      "story": "audiobook_5_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "val",
+      "story": "audiobook_6_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-022",
+      "phase": "test",
+      "story": "audiobook_6_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_2_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_4",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_2_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_5_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_5_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "train",
+      "story": "audiobook_5_3",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "val",
+      "story": "audiobook_6_1",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    },
+    {
+      "subject": "sub-026",
+      "phase": "test",
+      "story": "audiobook_6_2",
+      "status": "MISSING_OR_UNSUPPORTED",
+      "processed_records": 0,
+      "valid_segment_n": 0
+    }
+  ],
+  "mel_stories": 70,
+  "mel_failures": [],
+  "scientific_training": "NOT_RUN",
+  "published_test_evaluation": "NOT_RUN",
+  "partial_cohort_substitute": "NOT_RUN_USER_DOES_NOT_WANT_SUBSTITUTE",
+  "performance_metrics": "NOT_ESTIMABLE",
+  "paper_consistency": "NOT_TESTED_SAME_CONDITIONS"
+}

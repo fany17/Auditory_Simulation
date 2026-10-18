@@ -13,7 +13,7 @@
 归属：`PUB-01-S03`；前置 `S01` 数据准备与 `S02` 声音→EEG 编码/特征基线均为 COMPLETED / PASS_WITH_LIMITATION。
 
 - `PUB-01-S03_SS01`：已完成 10 人 / 93 条 EEG→包络 backward TRF（历史证据完整保留，**不代表语音内容解码或 SOTA**）。
-- `PUB-01-S03_SS02`：**下一可执行单元 READY**。让 Codex 核对前人代码/论文协议并复现至少两套有竞争力且可复现的 EEG 听觉解码基线；HDPS 百余候选、多选 match-mismatch 为不同 protocol，不可混报 SOTA。
+- `PUB-01-S03_SS02`：2026-10-15 **COMPLETED / PASS_WITH_LIMITATION**。HDPS76人原100Hz/M，Top1/5/10=12.03/30.45/42.10%；Transformer70训练/69seen/13heldout，2AFC加权82.38%，EEG-only包络加权r=.1593；三运行独立review完成。完整论文/official test/ensemble等价性未通过；不同候选任务分开报告。当前停止，后续需研究者指定。
 - `PUB-01-S03_SS03`：只有 SS02 的误差、输入输出和复现证据通过独立 review 后，研究者才决定架构；要求少数针对性模型假设、相同预算和消融，不为漂亮结果随意换模型。
 - `PUB-01-S03_SS04`：锁定单一 decoder，比较直接特征预测、二选一、五选一、百余候选检索；分别保留原论文 protocol 和统一的内部 benchmark，不混用准确率。
 - S03 parent 完成需要 S03 范围内的跨 story/subject、强对照、负例和消融证据；未达到则保持 ACTIVE/REVIEW。
@@ -35,7 +35,7 @@
 
 ## 当前唯一明确启动顺序
 
-1. Codex 读取 `doc/CODEX_START_HERE.md` 与 `PUB-01-S03_SS02`，只做强基线复现。结果可以是可复现、部分可复现或明确阻塞。
+1. Codex 读取 `doc/CODEX_START_HERE.md` 与 `PUB-01-S03_SS02`，只做强基线复现。本轮已交明确阻塞/preflight审查包，等待许可/官方资源条件，不自动转下一节点。
 2. 研究者根据复现报告审阅后，确定新架构假设、计算预算和指标；不自动启动 SS03。
 3. 架构通过自身独立测试，再做多协议统一评估。
 4. ds004703 支线独立保留，不因 A 线推进而自动开工。

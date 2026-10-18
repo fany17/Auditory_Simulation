@@ -1,13 +1,15 @@
 # PUB-01 — EEG 听觉解码竞品与任务基准表
 
-状态：`CANDIDATE_PROTOCOL_AUDIT`（2026-10-13）。**入口仓库存在已核实；模型是否能复现、论文报告的结果数值/测试定义还必须由 `S03_SS02` 在执行中验证。**
+2026-10-15交付：SS02 COMPLETED / PASS_WITH_LIMITATION。HDPS原100Hz/M、76人599对、test12776query：Top1/5/10=12.03/30.45/42.10%，shuffle Top1=.53%；Transformer原架构/public fold4/XLSR19、70训练/69seen/13heldout：2AFC=83.53/80.08%（加权82.38%）、EEG-only原Conv32包络r=.1688/.1403（加权.1593）。三运行独立review通过，完整论文条件未复现。M论文数字仍未核实，不与MWG20%比差；100–235候选原本存在固定公开索引。下述10-13等待记录为历史。
+
+状态：`PROTOCOL_AUDITED / REPRODUCTION_HOLD`（2026-10-13追加）。原raw100Hz/M70story与独立HDPS论文功能模型batch256工程smoke已完成；原split600/647对就绪，必要47条raw受限。**A+B同条件正式训练/测试NOT_RUN，不能判断一致性**。Transformer EEGcheckpoint失效且official test未齐；XLSR原声音权重已取得。恢复清单/三级review见`reports/pub_01/s03/strong_baselines/`；无76人/64Hz替代分数，SS02 WAITING_EXTERNAL / HOLD，无后台作业。
 
 | Baseline / 代码仓库 | 首要研究任务 | 本项目角色 | 首先要核对的不可比因素 | 当前状态 |
 |---|---|---|---|---|
-| HDPS — https://github.com/bobwangPKU/HDPS | 语音片段多候选检索 | SparrKULee 百余候选强基线优先 | 预处理 fs、片段时长、受试者 train/test、候选构造、是否有 GPT-2 特征与候选依赖 | NOT_REPRODUCED |
-| Transformer-CLIP-EEG — https://github.com/exporl/transformer-clip-eeg | 脑电—声音 match/mismatch；论文实际任务须复核 | 二选一强基线优先 | 输入/输出、数据集/split、窗口长度、负例难度、指标宏平均 | NOT_REPRODUCED |
-| Auditory EEG Challenge 2023 — https://github.com/exporl/auditory-eeg-challenge-2023-code | 按官方任务定义检查二选一等 | 官方二选一评估协议候选 | 原 challenge 数据与 SparrKULee 是否相同、盲测标签和评测脚本可得性 | PROTOCOL_AUDIT_PENDING |
-| Auditory EEG Challenge 2024 — https://github.com/exporl/auditory-eeg-challenge-2024-code | 按官方任务定义检查多候选匹配 | 官方五选一评估协议候选 | 官方数据/候选集、是否隐藏测试、是否能在相同划分下比较 | PROTOCOL_AUDIT_PENDING |
+| HDPS — https://github.com/bobwangPKU/HDPS | 语音片段多候选检索 | SparrKULee 强基线 | 100Hz/3s；作者split；候选=subject phase全部有效片段，非固定100；本轮M-only不含GPT2 | 可用76人功能复现COMPLETED/PASS_WITH_LIMITATION；Top1=12.03%；完整cohort/MWG仍NOT_RUN |
+| Transformer-CLIP-EEG — https://github.com/exporl/transformer-clip-eeg | contrastive representation + 二选一/envelope回归 | 二选一及直接包络强基线 | 64Hz/3s；fold4；70train/69seen/13heldout；Dutch XLSR19；derived longrecord，不同于官方packet/ensemble | 单模型功能复现COMPLETED/PASS_WITH_LIMITATION；加权2AFC82.38%、包络r=.1593；完整official条件NOT_RUN |
+| Auditory EEG Challenge 2023 — https://github.com/exporl/auditory-eeg-challenge-2023-code | 3s二选一 + 30s envelope | 官方二选一评估协议 | GPL3+；84人官方test，标签脚本公开；现有普通记录不替代candidate/test包 | PROTOCOL_AUDITED_WITH_LIMITATION；模型NOT_RUN / HOLD |
+| Auditory EEG Challenge 2024 — https://github.com/exporl/auditory-eeg-challenge-2024-code | 5s五选一 + 30s Mel10 | 官方五选一评估协议 | GPL3+；20新被试官方mapping；任务2对齐revision与提交轴方向需核验 | PROTOCOL_AUDITED_WITH_LIMITATION；模型NOT_RUN / HOLD |
 | S03_SS01 backward TRF | EEG→一维声音包络 | 已完成的可解释直接解码基线 | 64 Hz derivative、10 人 93 条、被试内跨 source-family；与上述 paper protocol 不同 | COMPLETED / PASS_WITH_LIMITATION |
 | S02 acoustic/log-mel/wav2vec2 ridge/TRF | 声音特征→EEG encoding | 参考声音 feature bank 和正向编码对照 | 方向相反，不能作为 EEG decoder 的性能结果 | COMPLETED / PASS_WITH_LIMITATION |
 

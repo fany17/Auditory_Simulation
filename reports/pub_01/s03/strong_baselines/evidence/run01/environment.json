@@ -1,0 +1,27 @@
+{
+  "host": "nercn",
+  "platform": "Linux-4.18.0-553.137.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python": "3.11.15",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.0",
+    "torch": "2.11.0+cu128",
+    "torchaudio": "NOT_INSTALLED",
+    "transformers": "5.14.1",
+    "mne": "1.11.0",
+    "brain-pipe": "NOT_INSTALLED",
+    "brainpipe": "NOT_INSTALLED",
+    "tensorflow": "NOT_INSTALLED",
+    "librosa": "NOT_INSTALLED",
+    "pytest": "9.0.2",
+    "braindecode": "NOT_INSTALLED",
+    "einops": "NOT_INSTALLED"
+  },
+  "gpu_smoke": {
+    "available": true,
+    "cuda": "12.8",
+    "device_count": 2,
+    "finite_tensor_operation": true
+  },
+  "nvidia_smi": "NVIDIA L40, 46068 MiB, 44912 MiB\nNVIDIA L40, 46068 MiB, 45444 MiB\n"
+}

@@ -1,0 +1,32 @@
+{
+  "task": "PUB-01-S03_SS02", "patient_data": "FORBIDDEN",
+  "root": "/home/fanyu/auditory_simulation_m6a",
+  "work": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01",
+  "protocol": "Transformer_CLIP_public_available_author_fold4_derived_2AFC_v1",
+  "user_authorization": "2026-10-15 user accepts missing data, continue same SS02 actual baselines",
+  "paper": "https://www.nature.com/articles/s41598-025-13646-4",
+  "author_commit": "8be963abe5be5c0568e54df3bceb2600861f895b",
+  "author_fold_json": "fold_split.json", "validation_fold": "4", "seen_test_fold": "test_set_2023_1",
+  "index": "pub_01/s06/sparrkulee_virtual_20260919_v4/cleaning_index.csv",
+  "record_readiness": "pub_01/s02_acoustic_baseline_20260924/split_manifest.csv",
+  "source_audio_metadata": "pub_01/s02_feature_cache_20250925",
+  "xlsr_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/models/xlsr_dutch_46f221381d200f7bef268309b3f02023ccf11fcc",
+  "xlsr_revision": "46f221381d200f7bef268309b3f02023ccf11fcc", "xlsr_license": "Apache-2.0 official card/API",
+  "audio": {"sampling_rate":16000,"core_seconds":8,"context_seconds":1,"layer_tuple_index":19,"native_fs":50,"fs":64,"feature_dim":1024,"inference_batch":8,"precision":"float32","amplitude_normalization":false},
+  "transformer": {"depth":10,"width":64,"heads":8,"ff_multiplier":4,"latent_dim":8,"conv_kernel":64,"conv_dropout":0.2,"attention_dropout":0.5,"speech_conv_kernel":32,"speech_dropout":0.4,"speech_lstm_hidden":128,"initial_logit_parameter":0.075},
+  "training": {"seed":1024,"fs":64,"segment_samples":192,"batch_size":128,"epochs":100,"patience":15,"lr":0.001,"optimizer":"AdamW","weight_decay":0.01,"scheduler_step":10,"scheduler_gamma":0.1,"selection":"minimum fixed validation symmetric InfoNCE loss","batching":"same-story128 distinct times, subject shuffled per time, per-story blocks as original loader","eeg_normalization":"global per-channel train-only mean/std; frozen for val/test","augmentation":false,"memory_loss_weight":0},
+  "evaluation": {"primary":"derived long-record2AFC;3s query, same-story mismatch starts±4s with seeded sign/support fallback; balanced seeded candidate order","seen":"author test_set_2023_1 stories in available train_subs","exclude_seen_subjects":["sub-001"],"exclude_seen_reason":"official2023 test has no sub001; no restriction on its training/validation","heldout":"available author test_subs, all available records","aggregate":"per-subject macro, separately seen/heldout;2/3seen+1/3heldout only when both groups exist","test_after_selection_once":true,"control":"EEG embeddings cyclically permuted within recording","official_sample_ID_equivalence":false},
+  "precommitted_differences": [
+    "available authorized public data only; original180-person training and15-model ensemble not reproduced",
+    "single model reimplementation from published architecture/functional inspection; not clean-room; author model code not imported",
+    "existing published64Hz EEG derivative, actual common support, never reconstruct missing raw or download restricted objects",
+    "train-only channel normalization applied consistently; public training loader contains no explicit MVN despite eeg_norm flag, official helper also reports per-subject test MVN",
+    "derive local2AFC IDs/times from existing long records; original hidden test packet/IDs not available; not an official87.01% replication",
+    "fixed validation batches remove author loader's unseeded sampling noise; no test checkpoint selection",
+    "fixed3s recording grid and deterministic story blocks rather than re-origining grid at arbitrary raw sub-block boundaries",
+    "100epoch resource ceiling instead of public500; report budget limit if validation patience not reached; no test-driven extension",
+    "no memory-bank auxiliary gradient because original default lambda_sim_loss=0",
+    "PyTorch2.11/transformers5.14 numerical environment differs from original",
+    "bound each XLSR emission to actual8s core, including penultimate end-context edge; assert monotonic duration rather than duplicate a final context region"
+  ]
+}

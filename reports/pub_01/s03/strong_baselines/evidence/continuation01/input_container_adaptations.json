@@ -1,0 +1,15 @@
+[
+  {
+    "record": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author02_sub-022/sub-022/ses-shortstories01/eeg/sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "missing_apr": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_author02_sub-022/sub-022/ses-shortstories01/eeg/sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.apr",
+    "public_events_snr": [
+      "100.00"
+    ],
+    "fields_APR_would_add": [
+      "snr"
+    ],
+    "EEG_numeric_steps_consume_snr": false,
+    "trigger_and_time_coordinates_changed": false,
+    "restricted_APR_requested_or_read": false
+  }
+]

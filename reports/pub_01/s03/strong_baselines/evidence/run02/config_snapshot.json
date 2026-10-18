@@ -1,0 +1,82 @@
+{
+  "run_id": "PUB-01-S03_SS02-20261013-run02",
+  "source_commit": "ec3adefc5c7d3dd37e1b043fb1956a7dda11cda1",
+  "patient_data": "FORBIDDEN",
+  "server_root": "/home/fanyu/auditory_simulation_m6a",
+  "output_relative": "pub_01/s03_strong_baselines_20261013/run02",
+  "source_staging": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/input_run02/source",
+  "index_relative": "pub_01/s06/sparrkulee_virtual_20260919_v4/cleaning_index.csv",
+  "split_relative": "pub_01/s02_acoustic_baseline_20260924/split_manifest.csv",
+  "asset_smoke": "first lexically sorted subject; all indexed records; no replacement; shapes/finite checks only",
+  "training": "NOT_RUN unless license, required data, feature identity and protocol gates all pass; this audit runner never trains",
+  "internal_protocol": "NOT_FROZEN_FOR_TRAINING; existing 64Hz S02 split is inventory evidence only",
+  "payload_download": false,
+  "weight_download": false,
+  "repos": [
+    {
+      "name": "HDPS",
+      "repo": "bobwangPKU/HDPS",
+      "commit": "42a5e1ec9649f4a673bfc018d377bbf38e289ed4",
+      "files": [
+        "readme.md",
+        "config.py",
+        "model_config.py",
+        "model.py",
+        "data.py",
+        "utils.py",
+        "environment.yml",
+        "sparrKULee_100Hz.py",
+        "train_clip_SparrKULee.py",
+        "train_reg_SparrKULee.py",
+        "derivatives/SparrKULee/split.json"
+      ]
+    },
+    {
+      "name": "Transformer-CLIP-EEG",
+      "repo": "exporl/transformer-clip-eeg",
+      "commit": "8be963abe5be5c0568e54df3bceb2600861f895b",
+      "files": [
+        "README.md",
+        "clip_model.py",
+        "dataset_loader.py",
+        "fold_split.json",
+        "train_clip_final.py",
+        "train_clip_helper_functions.py",
+        "preprocess_audio/create_wav2vec.py",
+        "vlaai.py"
+      ]
+    },
+    {
+      "name": "Challenge2023",
+      "repo": "exporl/auditory-eeg-challenge-2023-code",
+      "commit": "8de4eb84c37f7a6455ace94eff8709e515eae09a",
+      "files": [
+        "README.md",
+        "LICENSE",
+        "requirements.txt",
+        "task1_match_mismatch/util/dataset_generator.py",
+        "task1_match_mismatch/create_data/split_and_normalize.py",
+        "task1_match_mismatch/experiments/dilated_convolutional_model.py",
+        "test_scripts/score_match_mismatch.py",
+        "test_scripts/score_regression.py",
+        "task2_regression/experiments/linear_baseline.py"
+      ]
+    },
+    {
+      "name": "Challenge2024",
+      "repo": "exporl/auditory-eeg-challenge-2024-code",
+      "commit": "bd6b018ffd11c0f6a9bfdf4ac40bdf6ce846d365",
+      "files": [
+        "README.md",
+        "LICENSE",
+        "requirements.txt",
+        "util/dataset_generator.py",
+        "preprocessing_code/split_and_normalize.py",
+        "task1_match_mismatch/experiments/dilated_convolutional_model.py",
+        "task1_match_mismatch/experiments/test_match_mismatch.py",
+        "task2_regression/experiments/test_regression.py",
+        "task2_regression/experiments/linear_baseline.py"
+      ]
+    }
+  ]
+}

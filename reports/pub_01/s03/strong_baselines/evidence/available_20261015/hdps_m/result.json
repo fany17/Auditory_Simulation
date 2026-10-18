@@ -1,0 +1,660 @@
+{
+  "protocol": "HDPS_100Hz_M_available_complete_subjects_20261015_v1",
+  "feature": "M_only",
+  "seed": 1024,
+  "test": {
+    "Top1": 0.12032716228675686,
+    "Top5": 0.30445360460955845,
+    "Top10": 0.42100367165709796,
+    "subjects": 76,
+    "queries": 12776,
+    "candidate_min": 100,
+    "candidate_median": 175.0,
+    "candidate_max": 235,
+    "EEG_shuffle_Top1": 0.005290683463068777,
+    "Top1_subject_bootstrap95": [
+      0.10366035327560416,
+      0.13867863945258585
+    ],
+    "EEG_shuffle_Top5": 0.029253432943828796,
+    "Top5_subject_bootstrap95": [
+      0.27661655060701856,
+      0.3348476823639909
+    ],
+    "EEG_shuffle_Top10": 0.06057668180744115,
+    "Top10_subject_bootstrap95": [
+      0.3907778919723473,
+      0.4543447232266006
+    ],
+    "chance_Top1": 0.0062033395790371,
+    "chance_Top5": 0.03101669789518549,
+    "chance_Top10": 0.06203339579037098
+  },
+  "best_epoch": 3,
+  "best_validation_top10": 0.4369774367660284,
+  "epochs": 9,
+  "stopping": "VALIDATION_TOP10_PATIENCE5",
+  "seconds": 936.3112177848816,
+  "strict_published_cohort_match": false,
+  "input_failure_count": 47,
+  "incomplete_subjects": [
+    "sub-019",
+    "sub-020",
+    "sub-021",
+    "sub-022",
+    "sub-026"
+  ],
+  "actual_subjects": [
+    "sub-001",
+    "sub-002",
+    "sub-003",
+    "sub-005",
+    "sub-006",
+    "sub-007",
+    "sub-008",
+    "sub-009",
+    "sub-010",
+    "sub-011",
+    "sub-012",
+    "sub-013",
+    "sub-014",
+    "sub-015",
+    "sub-016",
+    "sub-018",
+    "sub-023",
+    "sub-024",
+    "sub-025",
+    "sub-027",
+    "sub-028",
+    "sub-029",
+    "sub-030",
+    "sub-031",
+    "sub-032",
+    "sub-033",
+    "sub-034",
+    "sub-035",
+    "sub-036",
+    "sub-037",
+    "sub-038",
+    "sub-039",
+    "sub-040",
+    "sub-041",
+    "sub-042",
+    "sub-043",
+    "sub-044",
+    "sub-045",
+    "sub-046",
+    "sub-047",
+    "sub-048",
+    "sub-049",
+    "sub-051",
+    "sub-052",
+    "sub-053",
+    "sub-054",
+    "sub-055",
+    "sub-056",
+    "sub-057",
+    "sub-058",
+    "sub-059",
+    "sub-060",
+    "sub-061",
+    "sub-062",
+    "sub-063",
+    "sub-064",
+    "sub-065",
+    "sub-066",
+    "sub-067",
+    "sub-068",
+    "sub-069",
+    "sub-070",
+    "sub-071",
+    "sub-072",
+    "sub-073",
+    "sub-074",
+    "sub-075",
+    "sub-076",
+    "sub-077",
+    "sub-078",
+    "sub-079",
+    "sub-080",
+    "sub-082",
+    "sub-083",
+    "sub-084",
+    "sub-085"
+  ],
+  "excluded_subjects": [
+    {
+      "subject": "sub-019",
+      "reason": "required_input_missing_or_invalid",
+      "missing_phase_story_pairs": [
+        [
+          "test",
+          "audiobook_6_2"
+        ],
+        [
+          "train",
+          "audiobook_1"
+        ],
+        [
+          "train",
+          "audiobook_2_1"
+        ],
+        [
+          "train",
+          "audiobook_2_2"
+        ],
+        [
+          "train",
+          "audiobook_3"
+        ],
+        [
+          "train",
+          "audiobook_4"
+        ],
+        [
+          "train",
+          "audiobook_5_1"
+        ],
+        [
+          "train",
+          "audiobook_5_2"
+        ],
+        [
+          "train",
+          "audiobook_5_3"
+        ],
+        [
+          "val",
+          "audiobook_6_1"
+        ]
+      ],
+      "input_failures": [
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_2_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_5_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_2_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_4",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_5_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_5_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "train",
+          "story": "audiobook_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "val",
+          "story": "audiobook_6_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-019",
+          "phase": "test",
+          "story": "audiobook_6_2",
+          "type": "raw100Hz_unavailable"
+        }
+      ]
+    },
+    {
+      "subject": "sub-020",
+      "reason": "required_input_missing_or_invalid",
+      "missing_phase_story_pairs": [
+        [
+          "test",
+          "audiobook_6_2"
+        ],
+        [
+          "train",
+          "audiobook_2_1"
+        ],
+        [
+          "train",
+          "audiobook_2_2"
+        ],
+        [
+          "train",
+          "audiobook_3"
+        ],
+        [
+          "train",
+          "audiobook_5_1"
+        ],
+        [
+          "train",
+          "audiobook_5_2"
+        ],
+        [
+          "train",
+          "audiobook_5_3"
+        ],
+        [
+          "val",
+          "audiobook_6_1"
+        ]
+      ],
+      "input_failures": [
+        {
+          "subject": "sub-020",
+          "phase": "train",
+          "story": "audiobook_5_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-020",
+          "phase": "train",
+          "story": "audiobook_5_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-020",
+          "phase": "train",
+          "story": "audiobook_2_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-020",
+          "phase": "train",
+          "story": "audiobook_2_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-020",
+          "phase": "train",
+          "story": "audiobook_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-020",
+          "phase": "train",
+          "story": "audiobook_5_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-020",
+          "phase": "val",
+          "story": "audiobook_6_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-020",
+          "phase": "test",
+          "story": "audiobook_6_2",
+          "type": "raw100Hz_unavailable"
+        }
+      ]
+    },
+    {
+      "subject": "sub-021",
+      "reason": "required_input_missing_or_invalid",
+      "missing_phase_story_pairs": [
+        [
+          "test",
+          "audiobook_6_2"
+        ],
+        [
+          "train",
+          "audiobook_1_1"
+        ],
+        [
+          "train",
+          "audiobook_2_1"
+        ],
+        [
+          "train",
+          "audiobook_2_2"
+        ],
+        [
+          "train",
+          "audiobook_3"
+        ],
+        [
+          "train",
+          "audiobook_4"
+        ],
+        [
+          "train",
+          "audiobook_5_1"
+        ],
+        [
+          "train",
+          "audiobook_5_2"
+        ],
+        [
+          "train",
+          "audiobook_5_3"
+        ],
+        [
+          "val",
+          "audiobook_6_1"
+        ]
+      ],
+      "input_failures": [
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_2_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_1_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_4",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_5_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_5_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_2_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "train",
+          "story": "audiobook_5_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "val",
+          "story": "audiobook_6_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-021",
+          "phase": "test",
+          "story": "audiobook_6_2",
+          "type": "raw100Hz_unavailable"
+        }
+      ]
+    },
+    {
+      "subject": "sub-022",
+      "reason": "required_input_missing_or_invalid",
+      "missing_phase_story_pairs": [
+        [
+          "test",
+          "audiobook_6_2"
+        ],
+        [
+          "train",
+          "audiobook_1_1"
+        ],
+        [
+          "train",
+          "audiobook_2_1"
+        ],
+        [
+          "train",
+          "audiobook_2_2"
+        ],
+        [
+          "train",
+          "audiobook_3"
+        ],
+        [
+          "train",
+          "audiobook_4"
+        ],
+        [
+          "train",
+          "audiobook_5_2"
+        ],
+        [
+          "train",
+          "audiobook_5_3"
+        ],
+        [
+          "val",
+          "audiobook_6_1"
+        ]
+      ],
+      "input_failures": [
+        {
+          "subject": "sub-022",
+          "phase": "train",
+          "story": "audiobook_4",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "train",
+          "story": "audiobook_2_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "train",
+          "story": "audiobook_5_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "train",
+          "story": "audiobook_1_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "train",
+          "story": "audiobook_2_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "train",
+          "story": "audiobook_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "train",
+          "story": "audiobook_5_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "val",
+          "story": "audiobook_6_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-022",
+          "phase": "test",
+          "story": "audiobook_6_2",
+          "type": "raw100Hz_unavailable"
+        }
+      ]
+    },
+    {
+      "subject": "sub-026",
+      "reason": "required_input_missing_or_invalid",
+      "missing_phase_story_pairs": [
+        [
+          "test",
+          "audiobook_6_2"
+        ],
+        [
+          "train",
+          "audiobook_1"
+        ],
+        [
+          "train",
+          "audiobook_2_1"
+        ],
+        [
+          "train",
+          "audiobook_2_2"
+        ],
+        [
+          "train",
+          "audiobook_3"
+        ],
+        [
+          "train",
+          "audiobook_4"
+        ],
+        [
+          "train",
+          "audiobook_5_1"
+        ],
+        [
+          "train",
+          "audiobook_5_2"
+        ],
+        [
+          "train",
+          "audiobook_5_3"
+        ],
+        [
+          "val",
+          "audiobook_6_1"
+        ]
+      ],
+      "input_failures": [
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_2_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_4",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_2_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_5_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_5_2",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "train",
+          "story": "audiobook_5_3",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "val",
+          "story": "audiobook_6_1",
+          "type": "raw100Hz_unavailable"
+        },
+        {
+          "subject": "sub-026",
+          "phase": "test",
+          "story": "audiobook_6_2",
+          "type": "raw100Hz_unavailable"
+        }
+      ]
+    }
+  ],
+  "cohort_policy": {
+    "mode": "available_complete_subjects",
+    "user_authorization": "2026-10-15 human: \u7f3a\u51e0\u4e2a\u5c31\u7f3a\u51e0\u4e2a \u6ca1\u5173\u7cfb; relayed by coordination thread01a134e4-2036-7e02-81e9-1289a07606f2",
+    "selection": "include subject only if every author-listed train/val/test story has original100Hz/M support; exclude entire incomplete subject before fitting",
+    "decision_uses_test_performance": false,
+    "strict_mode_retained": true
+  },
+  "precommitted_differences": [
+    "public split lists81 subjects; paper dataset description85; do not claim cohort equivalence before verification",
+    "paper lr1e-3 instead of public ConvConcatNet config5e-5; no test-dependent choice",
+    "paper FFL final linear instead of public1x1Conv+GELU",
+    "paper log(eps+Mel) instead of public SpeechBrain log(clamp(Mel,min=eps))",
+    "read NPZ source fs and resample directly to16k; do not write16k array with original source fs header",
+    "paper no scheduler specified; omit public StepLR20/gamma0.1",
+    "maximum300 epochs borrowed as resource ceiling from public implementation; if reached before early stopping, report budget-limited",
+    "current numerical framework PyTorch2.11/cuda12.8 and librosa0.11 instead of author pinned environment",
+    "missing APR input-container repair: only SNR added by APR; selected grouper/EEG numerical steps do not consume SNR; public events includes explicit SNR; record adaptation, do not request APR",
+    "2026-10-15 user authorizes missing records: input-only complete-subject subset of original81; keep each included author split and full valid candidates, no test-based selection"
+  ],
+  "paper_M_reference": "NOT_YET_VISUALLY_VERIFIED",
+  "MWG20percent_comparison": "FORBIDDEN",
+  "test_evaluations": 1,
+  "trained_parameters": 12315056
+}

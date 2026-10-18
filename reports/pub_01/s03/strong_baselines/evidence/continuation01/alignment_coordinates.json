@@ -1,0 +1,20 @@
+[
+  {
+    "brain_fs": 1024.0,
+    "stimulus_trigger_fs": 48000.0,
+    "brain_trigger_count": 908,
+    "stimulus_trigger_count": 908,
+    "brain_first_last_seconds": [
+      29.38671875,
+      935.4619140625
+    ],
+    "stimulus_first_last_seconds": [
+      0.0,
+      906.1075833333333
+    ],
+    "aligned_samples": 930815,
+    "aligned_duration_seconds": 908.9990234375,
+    "coordinate_zero": "first EEG trigger after official drift correction; corresponding first stimulus trigger",
+    "record": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/raw_view_smoke06/sub-001/ses-shortstories01/eeg/sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz"
+  }
+]

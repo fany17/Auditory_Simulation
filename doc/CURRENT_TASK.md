@@ -1,21 +1,24 @@
 # Auditory_Simulation Current Workboard
 
-更新时间：`2026-10-13`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
+更新时间：`2026-10-15`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
 
 ## 现在要做什么（Codex 第一入口）
 
+2026-10-15交付：用户授权“缺几个就缺几个”后，两套指定强基线及Transformer直接包络readout均完成真实训练/验证/一次测试与独立review。SS02 **COMPLETED / PASS_WITH_LIMITATION**；当前执行停止，没有自动下一READY节点。报告`reports/pub_01/s03/strong_baselines/REPRO_REPORT.md`。
+
 - Parent：`PUB-01 — Public Auditory–Neural Representation`，`ACTIVE`。
 - 当前优先支线：**A / SparrKULee / EEG 听觉直接解码**，归属 `PUB-01-S03`，`ACTIVE`。
-- **唯一当前 READY 节点**：`PUB-01-S03_SS02 — Strong EEG Auditory Decoding Baseline Reproduction`。
+- **本轮完成节点**：`PUB-01-S03_SS02 — Strong EEG Auditory Decoding Baseline Reproduction`，**COMPLETED / PASS_WITH_LIMITATION**。
 - 执行入口：`doc/CODEX_START_HERE.md` → `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`。
-- 任务：先核对并复现 HDPS 等百余候选强基线、Transformer-CLIP-EEG 二选一，以及审查官方挑战协议；**不启动架构研发和 GPT**。
+- 任务：按冻结的可执行公开条件复现HDPS与Transformer-CLIP-EEG，明确原论文条件差异；当前HDPS仅M，Transformer仅单模型及其原方法包络readout，不启动新架构/GPT重排序。
+- 实际结果：HDPS 76人、100Hz/M、作者split及valid索引，Top1/5/10=12.03/30.45/42.10%，shuffle Top1=0.53%。Transformer作者fold4、70人训练、69seen/13heldout，64Hz/XLSR19；2AFC=83.53/80.08%，加权82.38%；冻结encoder原Conv32直接包络r=.1688/.1403，加权.1593，错配近0。三运行均review PASS_WITH_LIMITATION；官方完整cohort/hidden test/ensemble未复现。
 - `S03_SS03` 架构与 `S03_SS04` 统一验证均 `BACKLOG`，需要前一环节审阅后再决定。
 
 ## 两条数据支线
 
 | 数据与职责 | 当前状态 | 阻塞关系 |
 |---|---|---|
-| A / SparrKULee EEG decoding / `S03` | ACTIVE；SS02 READY | 完成强基线后再由研究者指定架构 |
+| A / SparrKULee EEG decoding / `S03` | ACTIVE；SS02 COMPLETED / PASS_WITH_LIMITATION | 两套公开可用条件基线已交；停止等待研究者指定后续架构 |
 | B / ds004703 public intracranial / `S04` | BACKLOG；SS01/SS02 尚未执行 | 自身 sEEG baseline 与 A 线可独立；**仅 EEG→sEEG 迁移需 A 线 frozen 模型** |
 | `S05` artifact integration | BACKLOG | 两条支线的结果与失败/许可验收后评估 |
 
@@ -31,4 +34,4 @@
 
 - 所有数据、权重和实际计算 **server2203**；本地 Windows Git 只存轻量代码、配置和汇总；先只读盘点已有工作，不覆盖用户未提交内容。
 - 不读取任何患者/STN 数据与 embedding；公共模型只通过冻结、版本化 `ART-AUDREP-v1` artifact 向患者侧 `INT-01` 单向交付。当前尚未冻结。
-- 本次仅更新规划/任务文档，没有开启新训练。Codex 完成 `SS02` 后先独立验收并停止；不自启 `SS03 / S04 / GPT`。
+- 当前两套方法的可用条件复现不等于完整论文数值一致性；完成SS02三级审阅后停止，不自启SS03/S04或GPT新模型。

@@ -1,0 +1,39 @@
+[38;20m2026-10-13 20:11:16,099 | 2553295 | INFO     | Retrieving BIDS layout...[0m
+[33;20m2026-10-13 20:11:16,100 | 2553295 | WARNING  | Emulate MATLAB mode is on, all (keyword) arguments will be overwritten to match MATLAB's (sos)filtfilt.[0m
+[38;20m2026-10-13 20:11:16,100 | 2553295 | INFO     | Starting with the EEG preprocessing[0m
+[38;20m2026-10-13 20:11:16,100 | 2553295 | INFO     | ===================================[0m
+[33;20m2026-10-13 20:11:16,100 | 2553295 | WARNING  | Emulate MATLAB mode is on, all (keyword) arguments will be overwritten to match MATLAB's (sos)filtfilt.[0m
+[38;20m2026-10-13 20:11:16,101 | 2553295 | INFO     | Starting HDPSPipeline (11 steps)...[0m
+[38;20m2026-10-13 20:11:16,101 | 2553295 | INFO     | 0. Running LinkStimulusToBrainResponse...[0m
+[38;20m2026-10-13 20:11:16,103 | 2553295 | INFO     | Starting HDPSPipeline (1 steps)...[0m
+[38;20m2026-10-13 20:11:16,103 | 2553295 | INFO     | 0. Running LoadStimuli...[0m
+[38;20m2026-10-13 20:11:22,863 | 2553295 | INFO     | 0. Finished LoadStimuli in 6.76 seconds.[0m
+[38;20m2026-10-13 20:11:22,864 | 2553295 | INFO     | Finished HDPSPipeline in 6.76 seconds.[0m
+[38;20m2026-10-13 20:11:22,864 | 2553295 | INFO     | 0. Finished LinkStimulusToBrainResponse in 6.76 seconds.[0m
+[38;20m2026-10-13 20:11:22,864 | 2553295 | INFO     | 1. Running LoadEEGNumpy...[0m
+Extracting EDF parameters from /tmp/tmphr9wstom.bdf...
+BDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+Reading 0 ... 1054719  =      0.000 ...  1029.999 secs...
+[38;20m2026-10-13 20:11:25,984 | 2553295 | INFO     | 1. Finished LoadEEGNumpy in 3.12 seconds.[0m
+[38;20m2026-10-13 20:11:25,984 | 2553295 | INFO     | 2. Running SosFiltFilt...[0m
+[38;20m2026-10-13 20:11:27,183 | 2553295 | INFO     | 2. Finished SosFiltFilt in 1.19 seconds.[0m
+[38;20m2026-10-13 20:11:27,183 | 2553295 | INFO     | 3. Running InterpolateArtifacts...[0m
+[38;20m2026-10-13 20:11:27,471 | 2553295 | INFO     | 3. Finished InterpolateArtifacts in 0.28 seconds.[0m
+[38;20m2026-10-13 20:11:27,471 | 2553295 | INFO     | 4. Running AlignPeriodicBlockTriggers...[0m
+[38;20m2026-10-13 20:11:29,449 | 2553295 | INFO     | 4. Finished AlignPeriodicBlockTriggers in 1.97 seconds.[0m
+[38;20m2026-10-13 20:11:29,449 | 2553295 | INFO     | 5. Running SplitEpochs...[0m
+[38;20m2026-10-13 20:11:29,469 | 2553295 | INFO     | 5. Finished SplitEpochs in 0.01 seconds.[0m
+[38;20m2026-10-13 20:11:29,469 | 2553295 | INFO     | 6. Running ArtifactRemovalMWF...[0m
+[38;20m2026-10-13 20:11:44,681 | 2553295 | INFO     | 6. Finished ArtifactRemovalMWF in 15.20 seconds.[0m
+[38;20m2026-10-13 20:11:44,681 | 2553295 | INFO     | 7. Running CommonAverageRereference...[0m
+[38;20m2026-10-13 20:11:44,947 | 2553295 | INFO     | 7. Finished CommonAverageRereference in 0.26 seconds.[0m
+[38;20m2026-10-13 20:11:44,947 | 2553295 | INFO     | 8. Running ResamplePoly...[0m
+[38;20m2026-10-13 20:11:46,314 | 2553295 | INFO     | 8. Finished ResamplePoly in 1.36 seconds.[0m
+[38;20m2026-10-13 20:11:46,314 | 2553295 | INFO     | 9. Running SosFiltFilt...[0m
+[38;20m2026-10-13 20:11:46,439 | 2553295 | INFO     | 9. Finished SosFiltFilt in 0.12 seconds.[0m
+[38;20m2026-10-13 20:11:46,439 | 2553295 | INFO     | 10. Running DefaultSave...[0m
+[38;20m2026-10-13 20:11:46,633 | 2553295 | INFO     | 10. Finished DefaultSave in 0.19 seconds.[0m
+[38;20m2026-10-13 20:11:46,633 | 2553295 | INFO     | Finished HDPSPipeline in 30.53 seconds.[0m
+[{"path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/continuation01/preprocessing100_smoke06/eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-01_desc-preproc-audio-audiobook_5_1_eeg.npy", "shape": [64, 90900], "dtype": "float64", "finite": true, "sampling_rate": 100}]

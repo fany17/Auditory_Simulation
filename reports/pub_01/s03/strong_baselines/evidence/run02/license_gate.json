@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "HDPS",
+    "license_paths": [],
+    "license_gate": "HOLD_NO_LICENSE_FILE"
+  },
+  {
+    "repo": "Transformer-CLIP-EEG",
+    "license_paths": [],
+    "license_gate": "HOLD_NO_LICENSE_FILE"
+  },
+  {
+    "repo": "Challenge2023",
+    "license_paths": [
+      "LICENSE"
+    ],
+    "license_gate": "NEEDS_TEXT_REVIEW"
+  },
+  {
+    "repo": "Challenge2024",
+    "license_paths": [
+      "LICENSE"
+    ],
+    "license_gate": "NEEDS_TEXT_REVIEW"
+  }
+]

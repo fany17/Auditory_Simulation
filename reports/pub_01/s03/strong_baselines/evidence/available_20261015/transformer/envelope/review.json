@@ -1,0 +1,27 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SAME_SS02_DIRECT_RECONSTRUCTION",
+  "checks": {
+    "readout_selected_by_validation_only": true,
+    "encoder_selected_before_readout": true,
+    "encoder_frozen_and_EEG_only": true,
+    "one_test_evaluation": true,
+    "same_frozen_records": true,
+    "fixed_stopping": true,
+    "unique_segments": true,
+    "all_test_segments_accounted": true,
+    "independent_CPU_prediction_correlation": true,
+    "independent_aggregation": true
+  },
+  "max_CPU_prediction_error": 8.183411835532839e-06,
+  "max_aggregate_error": 0.0,
+  "excluded_segments": 0,
+  "limitations": [
+    "same available public author-fold cohort as contrastive baseline; no official test packet/ensemble",
+    "full available long-record60s chunks, no hidden task-half allocation",
+    "train-only channel scaling retained from baseline",
+    "original helper Conv32+LeakyReLU/Pearson/Adam1e-3/batch64/max250/patience10 reproduced functionally; author source not imported",
+    "fixed encoder and no test-driven readout settings; not comparable to original ensemble0.176 as an exact replication"
+  ]
+}

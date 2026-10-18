@@ -1,0 +1,38 @@
+{
+  "protocol": "Transformer_frozen_encoder_Conv32_envelope_available_public",
+  "test": {
+    "test_seen": {
+      "subjects": 69,
+      "pearson_r": 0.16880988663426613,
+      "subject_bootstrap95": [
+        0.15105282006805051,
+        0.18766667471660076
+      ],
+      "EEG_shuffle_r": 0.0013923962183403596
+    },
+    "test_heldout": {
+      "subjects": 13,
+      "pearson_r": 0.14031357403160144,
+      "subject_bootstrap95": [
+        0.10906317716822277,
+        0.16935871284518283
+      ],
+      "EEG_shuffle_r": -0.0027398699292604774
+    },
+    "weighted_pearson_r": 0.15931111576671123,
+    "excluded_segments": 0
+  },
+  "epochs": 250,
+  "best_epoch": 249,
+  "stopping": "RESOURCE_CEILING250",
+  "seconds": 994.2814247608185,
+  "test_evaluations": 1,
+  "candidate_input_at_prediction": false,
+  "differences": [
+    "same available public author-fold cohort as contrastive baseline; no official test packet/ensemble",
+    "full available long-record60s chunks, no hidden task-half allocation",
+    "train-only channel scaling retained from baseline",
+    "original helper Conv32+LeakyReLU/Pearson/Adam1e-3/batch64/max250/patience10 reproduced functionally; author source not imported",
+    "fixed encoder and no test-driven readout settings; not comparable to original ensemble0.176 as an exact replication"
+  ]
+}
