@@ -4,12 +4,12 @@
 |---|---|
 | Subtask ID | `PUB-01-S03_SS03` |
 | Parent Node | `PUB-01-S03` / `PUB-01` |
-| Status | **`ACTIVE — TRAIN_VAL_FROZEN`** (2026-10-19; real CPU/GPU smoke and100step pilot PASS; formal4×3 running) |
+| Status | **`COMPLETED / PASS_WITH_LIMITATION`** (2026-10-19; real4×3 formal train/val/test and same-agent separate review completed) |
 | Upstream | `PUB-01-S03_SS02` `COMPLETED / PASS_WITH_LIMITATION`; baseline source `c7b23648b5a443ac9d4cba534493c5ae7d3a4c74` |
 | Research data | `PUBLIC_ONLY`; patient data and STN-derived embeddings **FORBIDDEN** |
 | Model prototype | `scripts/pub_01_s03_temporal_scales.py` |
 | Config | `configs/pub_01_s03_ss03_multiscale_20261019.json` |
-| Completion | Requires equal-data/equal-budget multi-seed train/val and held-out test, ablations, and independent review; **not achieved by this planning commit** |
+| Completion | Equal-data/equal-budget four-variant three-seed train/val/test and separate review achieved; restricted prototype H1 supported, no physiology/SOTA claim; SS04 remains BACKLOG |
 
 ## 1. Core scientific hypothesis
 
@@ -105,4 +105,14 @@ PR#3 head9ffef26在独立managed worktree `C:/Users/fanyu/.codex/worktrees/pub-0
 
 4个计划contrast（两个组×multiscale对long/middle）先人内平均3seed，再person bootstrap10000；给95%CI及Bonferroni family95%区间（各98.75%），不以只胜短感受野声称H1。源/config/contract身份在formal_protocol及DATA_CONTRACT中限定记录，不引入全量raw hash审计。可选线性参考/时序jitter诊断NOT_RUN，不扩大预设架构。
 
-正式配置`configs/pub_01_s03_ss03_multiscale_formal_20261019.json`，数据、预算、命令与预实验轻量证据见`reports/pub_01/s03/architecture/{DATA_CONTRACT.md,EXPERIMENT_MATRIX.md,COMMANDS.md,evidence/bootstrap01/}`。当前继续实际4×3结果及独立review，不能因工程阶段完成停止，亦不启动SS04。
+正式配置`configs/pub_01_s03_ss03_multiscale_formal_20261019.json`，数据、预算、命令与预实验轻量证据见`reports/pub_01/s03/architecture/{DATA_CONTRACT.md,EXPERIMENT_MATRIX.md,COMMANDS.md,evidence/bootstrap01/}`。后续实际4×3已完成，见以下Completion Record；不启动SS04。
+
+## 8. Completion Record — 2026-10-19
+
+- 真实输入、normalization、619记录与窗口身份见上一节；4variant×3seed全部从头、每次25000 optimizer steps、10次完整val，无early-stop；所有12训练完并检查预算后才打开test，各selected checkpoint一次评分。训练源码/config按formal_protocol SHA256校验，主执行代码已提交4661439，基于PR head9ffef26；最后报告/图表提交见PR#3，不将初始commit冒充新增源码。
+- 3seed平均seen/heldout r：short .078403/.084156，middle .092966/.104134，long .064112/.069788，multiscale .103053/.113798；multiscale加权.106635。其对long Δ=.038941/.044010、对middle Δ=.010087/.009664，四计划contrast Bonferroni family95%区间下界均>0。H1仅在当前四原型/fold/预算内获支持；长组最差有稀疏采样等替代解释；原型绝对r仍低于SS02参考.1593，不称超过强基线或生理机制。
+- 错误EEG近0，constant train mean零方差Pearson未定义（非填0）；12个EEG-only canary通过。测试完整段无效排除0，所有人保留；未满60s尾段沿冻结规则不评价。
+- 技术/审阅：5结构unit tests和真实CPU/GPU梯度/latency smoke PASS，100步pilot无test；全部源hash/步数/val selection/test_once/逐段逐人macro/weighted独立重算通过（汇总误差0）；另从原始EEG独立CPU重建24个首60s段，maxr误差7.41e-6。审阅为同一agent separate post-execution pass，非第三方独立签署。最终包检查见package_review.json。
+- 输出：`reports/pub_01/s03/architecture/{REPORT.md,REVIEW.md,RESULTS.csv,SUMMARY.csv,per_subject_all_seeds.csv,paired_comparisons.csv,SERVER_MANIFEST.csv}`、两张静态图、freeze/pilot/12run轻量证据及源码/config。36结果行含每组每seed和加权，未选择性保留。新增执行代码为scripts/pub_01_s03_ss03_*.py；只维护相关task/入口/登记状态，SS02及旧CNN/TRF资料未覆盖。raw/cache/target/weight/逐窗数组仅2203，Windows仅轻量文件。
+- 失败/偏差：本轮没有工程失败重启，保留全部12结果；一个available public fold、三seed/13heldout人、共享故事/有限预算、物理同步UNKNOWN和原型容量限制保留。可选同fold linear/jitter等未跑，未擅自增加数据、权重、模型或retrieval。
+- 三级验收：Technical PASS，Acceptance PASS_WITH_LIMITATION，Parent consistency PASS。SS03 COMPLETED不等于S03/PUB完成；S03/PUB仍ACTIVE、SS04/S04/S05 BACKLOG，无ART-AUDREP-v1。当前停止，PR保持Draft、不自行合并main；后续由研究者决定。

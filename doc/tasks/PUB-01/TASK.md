@@ -17,7 +17,7 @@
 | Go/No-go | positive/no/negative transfer all valid; never blocks direct STN science |
 | Downstream | `INT-01` optional comparator |
 | Subtask Registry | `doc/tasks/PUB-01/SUBTASKS.md` |
-| Last Updated | `2026-10-15` |
+| Last Updated | `2026-10-19` |
 
 ## 1. Scientific question
 
@@ -68,7 +68,7 @@ Primary public intracranial candidate：OpenNeuro `ds004703`，其独立 baselin
 4. **B 支线**：`PUB-01-S04` ds004703 独立公开颅内基线与后续 EEG→sEEG 迁移（独立 sEEG 基线不依赖 S03，迁移阶段才依赖 S03 frozen output）；
 5. `PUB-01-S05` Artifact Candidate and Parent Integration Review。
 
-两条支线严格按 `RESEARCH_BRANCHES.md`、`SUBTASKS.md` 执行；当前唯一 READY 节点是 `PUB-01-S03_SS02`，详细 Codex 入口在 `doc/CODEX_START_HERE.md`。
+两条支线严格按 `RESEARCH_BRANCHES.md`、`SUBTASKS.md` 执行；SS02/SS03已完成有限制，当前停止，无自动下一READY节点。详细Codex入口在`doc/CODEX_START_HERE.md`。
 
 2026-09-19 用户要求持续推进至数据下载和初步清洗完成，新增 `PUB-01-S01_SS01 — Server Dataset Download and Initial Cleaning` 作为 S01 审计后的独立数据准备包。2026-09-24纠正原S06编号并嵌入S01；执行依赖为 S01许可/访问准入 → S01_SS01 → S01配对/时序与实验准入 → S02 → S03 → S04 → S05。S01_SS01 对已经完成许可/身份核验的数据可分支先行下载和非破坏性 QC，不绕过 S01 的 benchmark 准入验收。
 
@@ -132,6 +132,8 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 
 ## 12. Amendment Record
 
+2026-10-19：研究者正式批准从冻结SS02推进既有S03_SS03，多时间尺度与三种参数匹配单尺度对照；原64Hz available-fold4/target/normalization不改，全部raw EEG从头训练，不插入Transformer encoder，无新增下载。授权先100步以内train/val工程pilot，再冻结共同预算/验证选择/三seed，随后4×3正式测试与review自主完成；仅当前SS03，SS04/S04不启动。代码/轻量报告在PR#3独立worktree分支提交推送、保持Draft，不合并main、不碰主目录CNN/TRF或stash。该项为既有架构阶段的明确研究者promotion，不放宽父科学边界或artifact语义。
+
 2026-10-15：用户明确“缺几个就缺几个，没关系”，经协调会话转达，授权SS02在现有合法可用数据上正式训练/验证/测试，不再要求凑齐原cohort。采用只依据输入可用性的完整被试子集：纳入者保留作者全部train/val/test story及有效候选，缺任一必要输入则整名排除；冻结在拟合前，禁止test成绩筛人。沿用原100Hz/M、seed1024、预算/validation early stopping，M只对照M；此为cohort偏差的显式父amendment，不把子集成绩等同完整论文结果，不放宽权限/患者禁令或A+B两套结果验收，不启SS03/S04。严格完整模式保留，可用子集模式明确记录此次授权。
 
 2026-10-13：研究者决定保持 `PUB-01` 同一父任务，明确两条并行公开数据研究支线（不新增患者项目或新 PUB 父任务）：
@@ -146,6 +148,8 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 2026-09-19：用户明确要求设置持续 goal，至少完成 PUB-01 数据集下载及初步清洗，并跟进执行而非仅派发后停止。此处将“初步清晰”按上下文落实为初步清洗/质量核验。新增 S01_SS01 数据准备交付；范围仍为 SparrKULee 与 ds004703，全部数据工作在 server2203，原始数据只读保留，清洗产物另存。许可不明/访问受限必须记录真实阻塞，不能绕过；不授权模型训练、患者资料或改变科学 endpoint。协调者在 S01及其SS01 之间核验后推进，无需重复询问已有启动授权。
 
 ## 13. Completion Record
+
+2026-10-19：S03_SS03完成4×3真实原始EEG→包络比较，每次25000步同数据/参数/名义MACC，test前冻结、val-only选checkpoint、所有训练完成后各一次test。multiscale seen/heldout r=.10305/.11380（加权.10663），long .06411/.06979、middle .09297/.10413；四计划配对对照family95%区间>0，仅限当前四原型/fold/预算的H1，不作生理机制或超过SS02声明。5tests/真实CPU-GPU smoke/100步pilot/12run完整结果与same-agent separate review通过，Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；24段原始EEG独立CPU重建maxr差7.41e-6、聚合误差0。报告`reports/pub_01/s03/architecture/REPORT.md`，source执行提交4661439及最终PR#3报告commit；主目录用户改动/SS02保持不变，无新下载、患者数据或远端Git。S03/PUB仍ACTIVE，无artifact，SS04/S04/S05 BACKLOG，当前停止。
 
 2026-10-15：同SS02按事先授权的可用公开条件完成两套方法及直接包络endpoint，Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；SS02 COMPLETED。HDPS复用100Hz/M、作者split/valid，输入完整76人（排除019/020/021/022/026），Top1/5/10=12.03/30.45/42.10%。Transformer按原fold4/READY记录冻结70train、69seen/13heldout，XLSR19；2AFC加权82.38%、冻结EEG编码器原Conv32包络加权r=.1593；所有选择validation-only、一次test，独立review含逐条评分/CPU重建。两者条件不同，未形成统一协议优劣判定；原完整cohort/隐藏packet/ensemble/M论文数字等限制保留。报告`reports/pub_01/s03/strong_baselines/REPRO_REPORT.md`，7行真实结果与10行原条件NOT_RUN分开。代码/config/命令和2203路径见该包；main起点ec3adef、新增代码未提交，不冒充source commit。未改变S01/S02/SS01、患者边界或artifact语义；S03/PUB仍ACTIVE，无ART-AUDREP-v1。停止SS02，后续研究需研究者指定。
 

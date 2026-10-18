@@ -1,0 +1,144 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SAME_SS03_PUBLIC_ONLY_NO_SS04",
+  "runs": [
+    {
+      "variant": "short",
+      "seed": 1024,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "short",
+      "seed": 2026,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "short",
+      "seed": 31415,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "middle",
+      "seed": 1024,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "middle",
+      "seed": 2026,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "middle",
+      "seed": 31415,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "long",
+      "seed": 1024,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "long",
+      "seed": 2026,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "long",
+      "seed": 31415,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "multiscale",
+      "seed": 1024,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "multiscale",
+      "seed": 2026,
+      "budget_selection_identity_and_test_once": "PASS"
+    },
+    {
+      "variant": "multiscale",
+      "seed": 31415,
+      "budget_selection_identity_and_test_once": "PASS"
+    }
+  ],
+  "same_source_config_hashes": true,
+  "maximum_aggregate_error": 0.0,
+  "independent_CPU_first60s_segments_checked": 24,
+  "maximum_raw_EEG_CPU_r_error": 7.412511266261142e-06,
+  "constant_train_mean_control": {
+    "fit_phase": "train_only",
+    "mean": 0.5607723793405311,
+    "prediction_peak_to_peak": 0.0,
+    "Pearson_r": null,
+    "reason": "UNDEFINED_ZERO_VARIANCE",
+    "test_access": false,
+    "utc_epoch": 1792357481.3824904
+  },
+  "H1_decision": "SUPPORTED_IN_BOTH_GROUPS",
+  "group_support": {
+    "test_seen": true,
+    "test_heldout": true
+  },
+  "comparisons": [
+    {
+      "group": "test_seen",
+      "contrast": "multiscale_minus_long",
+      "subjects": 69,
+      "mean_delta_r": 0.03894098278866127,
+      "CI95_low": 0.03349308218843268,
+      "CI95_high": 0.04490041049441303,
+      "Bonferroni_family95_low": 0.03206964106763448,
+      "Bonferroni_family95_high": 0.046628927242866526,
+      "persons_positive": 69,
+      "support_predeclared": true
+    },
+    {
+      "group": "test_seen",
+      "contrast": "multiscale_minus_middle",
+      "subjects": 69,
+      "mean_delta_r": 0.010087131293350576,
+      "CI95_low": 0.0075653032085992965,
+      "CI95_high": 0.012742171058323351,
+      "Bonferroni_family95_low": 0.0069228750526059805,
+      "Bonferroni_family95_high": 0.01368271316477159,
+      "persons_positive": 58,
+      "support_predeclared": true
+    },
+    {
+      "group": "test_heldout",
+      "contrast": "multiscale_minus_long",
+      "subjects": 13,
+      "mean_delta_r": 0.04400998619282836,
+      "CI95_low": 0.03466634121029481,
+      "CI95_high": 0.05291122534268186,
+      "Bonferroni_family95_low": 0.03225958255000438,
+      "Bonferroni_family95_high": 0.05530545773101247,
+      "persons_positive": 13,
+      "support_predeclared": true
+    },
+    {
+      "group": "test_heldout",
+      "contrast": "multiscale_minus_middle",
+      "subjects": 13,
+      "mean_delta_r": 0.009663527733783353,
+      "CI95_low": 0.005772991201827025,
+      "CI95_high": 0.013144668310551066,
+      "Bonferroni_family95_low": 0.004631051926205258,
+      "Bonferroni_family95_high": 0.013954090808639193,
+      "persons_positive": 12,
+      "support_predeclared": true
+    }
+  ],
+  "review_type": "separate same-agent post-execution pass; not external scientific signoff",
+  "limitations": [
+    "single public available fold4",
+    "three model seeds; subject bootstrap does not cover all shared-story or training-set uncertainty",
+    "physical_sync UNKNOWN; computational scales are not neural latencies",
+    "small one-layer temporal prototype; no general architecture/SOTA conclusion",
+    "dilation matches parameters and nominal MACCs, not hardware latency",
+    "fixed25000 steps; validation-only checkpoint; no test-driven extension"
+  ]
+}

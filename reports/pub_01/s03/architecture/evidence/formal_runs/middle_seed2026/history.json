@@ -1,0 +1,82 @@
+[
+  {
+    "step": 2500,
+    "train_negative_Pearson_interval_mean": -0.09806090534999967,
+    "validation_subject_macro_60s_r": 0.08262812472829109,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 5.4554260559380054
+  },
+  {
+    "step": 5000,
+    "train_negative_Pearson_interval_mean": -0.10450089443996549,
+    "validation_subject_macro_60s_r": 0.08403616710413615,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 11.08913105726242
+  },
+  {
+    "step": 7500,
+    "train_negative_Pearson_interval_mean": -0.10568214490935206,
+    "validation_subject_macro_60s_r": 0.08515274391053664,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 16.14878266118467
+  },
+  {
+    "step": 10000,
+    "train_negative_Pearson_interval_mean": -0.10603703773990274,
+    "validation_subject_macro_60s_r": 0.08565683037280376,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 21.275906435213983
+  },
+  {
+    "step": 12500,
+    "train_negative_Pearson_interval_mean": -0.10864894503057003,
+    "validation_subject_macro_60s_r": 0.08761851157598079,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 26.345408628694713
+  },
+  {
+    "step": 15000,
+    "train_negative_Pearson_interval_mean": -0.10952948602810501,
+    "validation_subject_macro_60s_r": 0.08726744246080498,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 31.306542800739408
+  },
+  {
+    "step": 17500,
+    "train_negative_Pearson_interval_mean": -0.10946261046528816,
+    "validation_subject_macro_60s_r": 0.08726175571610711,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 36.26145101618022
+  },
+  {
+    "step": 20000,
+    "train_negative_Pearson_interval_mean": -0.11071220120340586,
+    "validation_subject_macro_60s_r": 0.08738155463103554,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 41.27635553851724
+  },
+  {
+    "step": 22500,
+    "train_negative_Pearson_interval_mean": -0.11113968206644058,
+    "validation_subject_macro_60s_r": 0.08810027475547719,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 46.2987140789628
+  },
+  {
+    "step": 25000,
+    "train_negative_Pearson_interval_mean": -0.11105663953572512,
+    "validation_subject_macro_60s_r": 0.0890456514853951,
+    "validation_subjects": 49,
+    "validation_excluded_segments": 0,
+    "seconds": 51.39084067475051
+  }
+]

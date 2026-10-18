@@ -1,4 +1,4 @@
-> **当前执行入口（2026-10-19；仅SS03多尺度原型）**：`PUB-01-S03_SS03` ACTIVE / PROTOTYPE。阅读 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md` 与 `configs/pub_01_s03_ss03_multiscale_20261019.json`，检查 `scripts/pub_01_s03_temporal_scales.py` 及 `tests/test_pub_01_s03_temporal_scales.py`。先在独立 worktree/2203执行输入审计及 CPU/GPU smoke，再进行 train/val pilot；未经固定正式预算、模型种子和验证选择规则，不读取test科研结果。该任务无患者数据、无候选输入、无SS04自动启动。现阶段尚无新训练成果。
+> **2026-10-19交付/停止入口**：`PUB-01-S03_SS03` **COMPLETED / PASS_WITH_LIMITATION**。真实64Hz EEG→包络四组×三seed、每次25000步完成；multiscale seen/heldout r=.10305/.11380，高于同参数long .06411/.06979及middle .09297/.10413，预设四contrast family95%区间均>0。本结论只限当前原型/数据/预算，不证明生理时标，也未超过SS02强基线参考。报告`reports/pub_01/s03/architecture/REPORT.md`，同agent separate review见REVIEW.md。PR#3保持Draft，主目录CNN/TRF/stash未动；当前停止，不合并main、不启动SS04/S04，无自动下一READY节点。
 
 > 下列SS02基线复现指令为历史说明，不能作为当前READY节点覆盖上方入口。
 

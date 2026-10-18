@@ -4,9 +4,9 @@
 
 ## 现在要做什么（Codex 第一入口）
 
-2026-10-19 当前研究者授权**直接继续**：`PUB-01-S03_SS03`现为 **ACTIVE / PROTOTYPE**，首项研究假设“匹配参数量的多时间尺度卷积，能否超越同最大感受野单尺度卷积改善EEG→连续声音包络预测”。模型原型 `scripts/pub_01_s03_temporal_scales.py`，4种配置与冻结约束见 `configs/pub_01_s03_ss03_multiscale_20261019.json`；操作手册 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md`。**本提交只含任务协议与源码/单元测试，无2203新训练/科研数值，尚未通过执行验收。**
+2026-10-19交付：`PUB-01-S03_SS03` **COMPLETED / PASS_WITH_LIMITATION**。真实输入对齐/CPU-GPU smoke/100步pilot→测试前预算冻结→4×3正式训练及每模型一次test→同agent separate review已完成。multiscale seen/heldout r=.10305/.11380；long .06411/.06979；middle .09297/.10413。当前四原型/固定数据预算下的H1获支持，不是生理机制或超过SS02。报告`reports/pub_01/s03/architecture/REPORT.md`。
 
-Codex下一步：在**独立worktree**中使用SS03分支，不动本地未提交CNN/TRF；只读核验2203 SS02冻结输入/对齐/分组后，执行CPU/GPU smoke，按同一64Hz公开fold4和包络读出窗口实现直接预测数据加载；train/val 100步pilot，冻结正式预算/种子，之后再做多尺度与三单尺度同预算训练。**绝不在完成前提前打开test结果**。SS04/S04/S05不得启动。
+当前STOP：PR#3保留Draft，工作分支work/pub-01-s03-ss03-multiscale/独立managed worktree；主目录未提交CNN/TRF和stash未动。S03/PUB仍ACTIVE，SS04/S04/S05保持BACKLOG，未产生ART-AUDREP-v1。后续须研究者指定，无自动下一READY节点。下方10-15为SS02历史交付。
 
 
 

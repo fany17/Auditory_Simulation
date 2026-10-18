@@ -1,0 +1,18 @@
+{
+  "variant": "multiscale",
+  "seed": 31415,
+  "optimizer_steps": 25000,
+  "best_step": 22500,
+  "best_validation_r": 0.10078521773797948,
+  "parameters": 6001,
+  "seconds": 48.27430136222392,
+  "test_scores_computed": false,
+  "identity_canary": {
+    "only_EEG_in_signature": true,
+    "prediction_identical_without_any_target_argument": true,
+    "EEG_time_perturbation_changes_prediction": true,
+    "no_pretrained_encoder": true
+  },
+  "batch_schedule": "numpy.default_rng(seed).choice(train_windows,64,replace=False) independently each step; same every variant",
+  "protocol_sha256": "88462540b6b461ac13baab8d76121f05654acfbdc22254bcbdc6d96fe4873ee1"
+}
