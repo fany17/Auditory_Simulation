@@ -1,0 +1,69 @@
+{
+  "seed": 1024,
+  "variant": "multiscale",
+  "optimizer_steps": 100,
+  "history": [
+    {
+      "step": 10,
+      "train_loss": -0.023875070735812187,
+      "validation_first512_window_loss_engineering": -0.0014773823786526918,
+      "seconds": 0.06787769496440887
+    },
+    {
+      "step": 20,
+      "train_loss": -0.023600896820425987,
+      "validation_first512_window_loss_engineering": -0.009210575371980667,
+      "seconds": 0.10233539808541536
+    },
+    {
+      "step": 30,
+      "train_loss": -0.07860861718654633,
+      "validation_first512_window_loss_engineering": -0.02063446119427681,
+      "seconds": 0.1344676846638322
+    },
+    {
+      "step": 40,
+      "train_loss": -0.07350815832614899,
+      "validation_first512_window_loss_engineering": -0.025873981416225433,
+      "seconds": 0.16608318593353033
+    },
+    {
+      "step": 50,
+      "train_loss": -0.07098525017499924,
+      "validation_first512_window_loss_engineering": -0.024895530194044113,
+      "seconds": 0.19753187708556652
+    },
+    {
+      "step": 60,
+      "train_loss": -0.03454513102769852,
+      "validation_first512_window_loss_engineering": -0.02801387384533882,
+      "seconds": 0.22872254624962807
+    },
+    {
+      "step": 70,
+      "train_loss": -0.061891548335552216,
+      "validation_first512_window_loss_engineering": -0.028010522946715355,
+      "seconds": 0.25960448011755943
+    },
+    {
+      "step": 80,
+      "train_loss": -0.0546281635761261,
+      "validation_first512_window_loss_engineering": -0.040779925882816315,
+      "seconds": 0.29023913107812405
+    },
+    {
+      "step": 90,
+      "train_loss": -0.04075312241911888,
+      "validation_first512_window_loss_engineering": -0.049776870757341385,
+      "seconds": 0.32156743202358484
+    },
+    {
+      "step": 100,
+      "train_loss": -0.09170984476804733,
+      "validation_first512_window_loss_engineering": -0.05481526628136635,
+      "seconds": 0.3521429402753711
+    }
+  ],
+  "test_access": false,
+  "formal_weights_reused": false
+}

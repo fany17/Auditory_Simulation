@@ -1,0 +1,11 @@
+{
+  "technical": "PASS",
+  "scope": "common budget/model/seed/selection frozen before any SS03 scientific test",
+  "test_scores_seen": false,
+  "parameters_matched": true,
+  "nominal_MACCs_matched": true,
+  "train_val_pilot_steps": 100,
+  "same_upstream_inputs": true,
+  "no_pretrained_encoder": true,
+  "formal_protocol_sha256": "88462540b6b461ac13baab8d76121f05654acfbdc22254bcbdc6d96fe4873ee1"
+}

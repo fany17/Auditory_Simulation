@@ -1,0 +1,87 @@
+{
+  "task": "PUB-01-S03_SS03",
+  "experiment_id": "PUB-01-S03-SS03-MULTISCALE-v1",
+  "status": "TRAIN_VAL_FROZEN_BEFORE_TEST",
+  "baseline_source_commit": "c7b23648b5a443ac9d4cba534493c5ae7d3a4c74",
+  "patient_data": "FORBIDDEN",
+  "server_root": "/home/fanyu/auditory_simulation_m6a",
+  "new_output_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_architecture_20261019",
+  "upstream_public_available": "pub_01/s03_strong_baselines_20261015/transformer_available01",
+  "upstream_frozen_encoder_readout": "pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024",
+  "reuse_frozen_phase_records": true,
+  "create_new_train_val_test_labels_from_frozen_manifest": true,
+  "no_new_data_download": true,
+  "dataset": {
+    "eeg_rate_hz": 64,
+    "eeg_shape": "[N,192,64]",
+    "target": "observed auditory envelope at 64 Hz (same existing readout target)",
+    "window_samples": 192,
+    "hop_samples": 96,
+    "normalization": "reuse train_only_normalization.npz; never refit on val/test",
+    "split": "author fold4 available public; preserve exact records and test_seen/test_heldout distinction",
+    "physical_sync": "UNKNOWN (not for latency neurophysiology claims)"
+  },
+  "architecture": {
+    "module": "scripts/pub_01_s03_temporal_scales.py",
+    "input_channels": 64,
+    "output_channels": 1,
+    "width": 48,
+    "kernel_size": 9,
+    "branches": 3,
+    "variants": {
+      "short": [
+        1,
+        1,
+        1
+      ],
+      "middle": [
+        4,
+        4,
+        4
+      ],
+      "long": [
+        16,
+        16,
+        16
+      ],
+      "multiscale": [
+        1,
+        4,
+        16
+      ]
+    },
+    "hypothesis": "multiscale improves held-out 60-s envelope reconstruction beyond long single-scale, not only beyond short single-scale",
+    "all_offline_noncausal": true,
+    "parameter_and_nominal_MACC_match_required": true
+  },
+  "training": {
+    "pilot_seed": 1024,
+    "formal_seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "batch_size": 64,
+    "pilot_steps_max": 100,
+    "formal_budget": 25000,
+    "loss": "negative within-3s-window Pearson, matching prior direct-envelope readout objective",
+    "checkpoint_selection": "maximum validation subject-macro 60s Pearson r over all fixed validation records; first step wins exact tie; no early stop; full equal optimizer budget",
+    "formal_test_access": "after fixed variants, seeds, checkpoint rule, and budget are frozen; exactly once",
+    "no_pretrained_audio_model_input": true,
+    "no_candidate_input_at_inference": true,
+    "validation_every_steps": 2500
+  },
+  "evaluation": {
+    "primary": "test_seen and test_heldout subject-macro Pearson r on 60-s envelope after Hann 50%-overlap-add; separate groups",
+    "secondary": "2/3 seen +1/3 heldout r; paired subject differences, permutation null and time-lag sensitivity on train/validation only",
+    "candidate_retrieval": "SS04 only; no candidate-derived model changes here",
+    "controls": "EEG temporal mismatch within same record, constant/mean envelope, parameter-equal uniform short/middle/long",
+    "report": "all subjects, all seeds, failures, and predeclared group weights; bootstrap at subject level",
+    "no_test_driven_choice": true
+  },
+  "stop_rule": "Engineering smoke plus 1-seed train/val feasibility -> freeze full design -> 3-seed comparison -> one frozen test -> independent review. No S04, S04 branch or artifact before new authorization.",
+  "limitations": "Raw EEG direct model versus pretrained Transformer encoder must be labeled as different training budgets; old 10-subject TRF r must never be treated as same-cohort head-to-head."
+}

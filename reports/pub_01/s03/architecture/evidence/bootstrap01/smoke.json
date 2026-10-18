@@ -1,0 +1,78 @@
+{
+  "status": "ACTUAL_CPU_GPU_SMOKE_PASS",
+  "checks": [
+    {
+      "device": "cpu",
+      "variant": "short",
+      "parameters": 6001,
+      "train_loss_engineering": 0.011832591146230698,
+      "val_loss_engineering": 0.0046384697780013084,
+      "batch64_inference_seconds": 0.001825139345601201,
+      "memory_allocated": null
+    },
+    {
+      "device": "cpu",
+      "variant": "middle",
+      "parameters": 6001,
+      "train_loss_engineering": 0.015273704193532467,
+      "val_loss_engineering": 0.002371356822550297,
+      "batch64_inference_seconds": 0.002979583200067282,
+      "memory_allocated": null
+    },
+    {
+      "device": "cpu",
+      "variant": "long",
+      "parameters": 6001,
+      "train_loss_engineering": 0.021331826224923134,
+      "val_loss_engineering": 0.005337325856089592,
+      "batch64_inference_seconds": 0.0027765109203755855,
+      "memory_allocated": null
+    },
+    {
+      "device": "cpu",
+      "variant": "multiscale",
+      "parameters": 6001,
+      "train_loss_engineering": 0.01877380907535553,
+      "val_loss_engineering": 0.003342779353260994,
+      "batch64_inference_seconds": 0.002458077063784003,
+      "memory_allocated": null
+    },
+    {
+      "device": "cuda:0",
+      "variant": "short",
+      "parameters": 6001,
+      "train_loss_engineering": 0.011847557500004768,
+      "val_loss_engineering": 0.004582876805216074,
+      "batch64_inference_seconds": 0.0002763765398412943,
+      "memory_allocated": 18277376
+    },
+    {
+      "device": "cuda:0",
+      "variant": "middle",
+      "parameters": 6001,
+      "train_loss_engineering": 0.015289245173335075,
+      "val_loss_engineering": 0.0023669498041272163,
+      "batch64_inference_seconds": 0.0002685238141566515,
+      "memory_allocated": 18277888
+    },
+    {
+      "device": "cuda:0",
+      "variant": "long",
+      "parameters": 6001,
+      "train_loss_engineering": 0.021350085735321045,
+      "val_loss_engineering": 0.005334680899977684,
+      "batch64_inference_seconds": 0.00026987032033503054,
+      "memory_allocated": 18277888
+    },
+    {
+      "device": "cuda:0",
+      "variant": "multiscale",
+      "parameters": 6001,
+      "train_loss_engineering": 0.01879078522324562,
+      "val_loss_engineering": 0.0033415481448173523,
+      "batch64_inference_seconds": 0.00026876651681959627,
+      "memory_allocated": 18277888
+    }
+  ],
+  "scientific_test_scores_computed": false
+}

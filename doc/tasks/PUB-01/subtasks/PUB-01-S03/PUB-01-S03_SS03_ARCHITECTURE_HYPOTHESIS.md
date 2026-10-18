@@ -4,7 +4,7 @@
 |---|---|
 | Subtask ID | `PUB-01-S03_SS03` |
 | Parent Node | `PUB-01-S03` / `PUB-01` |
-| Status | **`ACTIVE — CODE/PROTOCOL BOOTSTRAP`** (2026-10-19; actual 2203 training **NOT_RUN**) |
+| Status | **`ACTIVE — TRAIN_VAL_FROZEN`** (2026-10-19; real CPU/GPU smoke and100step pilot PASS; formal4×3 running) |
 | Upstream | `PUB-01-S03_SS02` `COMPLETED / PASS_WITH_LIMITATION`; baseline source `c7b23648b5a443ac9d4cba534493c5ae7d3a4c74` |
 | Research data | `PUBLIC_ONLY`; patient data and STN-derived embeddings **FORBIDDEN** |
 | Model prototype | `scripts/pub_01_s03_temporal_scales.py` |
@@ -96,3 +96,13 @@ Status progression: `ACTIVE / PROTOTYPE` → `SMOKE_PASS` → `TRAIN_VAL_FROZEN`
 ## 6. Boundary with the STN project
 
 `Auditory_Simulation` does public representations and methods (M6A). `STN_Decoding_Encoding` handles patients, STN recordings and individual adaptation (M6B). Transfer only through a **frozen versioned artifact** if later approved; no patient data or embedding travels back.
+
+## 7. Execution Record — 2026-10-19
+
+PR#3 head9ffef26在独立managed worktree `C:/Users/fanyu/.codex/worktrees/pub-01-s03-ss03/Auditory_Simulation` 接续，分支work/pub-01-s03-ss03-multiscale；原main/CNN/TRF/stash未动。2203新根`pub_01/s03_architecture_20261019`，619记录全部同坐标target float32逐元素一致，70train/49val/69seen/13heldout，窗口252454/30500/36573/48119。原数据与SS02结果只读。
+
+5结构tests、四组真实window CPU/GPU forward/backward PASS；每组6001参数/1124352 nominal conv MACC每3s窗。seed1024 multiscale100步pilot仅train/val，有限且loss可下降，不复用其权重。正式方案在任何SS03 test成绩前write-once冻结：每组25000 optimizer steps，每2500步完整val49人60s subject-macro r选最高、相同值选最早，无early-stop；3seed1024/2026/31415，共12次，全部训练后统一核验预算再开放一次test。常数train mean也在test前保存，其Pearson零方差未定义而非0。
+
+4个计划contrast（两个组×multiscale对long/middle）先人内平均3seed，再person bootstrap10000；给95%CI及Bonferroni family95%区间（各98.75%），不以只胜短感受野声称H1。源/config/contract身份在formal_protocol及DATA_CONTRACT中限定记录，不引入全量raw hash审计。可选线性参考/时序jitter诊断NOT_RUN，不扩大预设架构。
+
+正式配置`configs/pub_01_s03_ss03_multiscale_formal_20261019.json`，数据、预算、命令与预实验轻量证据见`reports/pub_01/s03/architecture/{DATA_CONTRACT.md,EXPERIMENT_MATRIX.md,COMMANDS.md,evidence/bootstrap01/}`。当前继续实际4×3结果及独立review，不能因工程阶段完成停止，亦不启动SS04。
