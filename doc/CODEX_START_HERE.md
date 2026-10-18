@@ -1,3 +1,7 @@
+> **当前执行入口（2026-10-19；仅SS03多尺度原型）**：`PUB-01-S03_SS03` ACTIVE / PROTOTYPE。阅读 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md` 与 `configs/pub_01_s03_ss03_multiscale_20261019.json`，检查 `scripts/pub_01_s03_temporal_scales.py` 及 `tests/test_pub_01_s03_temporal_scales.py`。先在独立 worktree/2203执行输入审计及 CPU/GPU smoke，再进行 train/val pilot；未经固定正式预算、模型种子和验证选择规则，不读取test科研结果。该任务无患者数据、无候选输入、无SS04自动启动。现阶段尚无新训练成果。
+
+> 下列SS02基线复现指令为历史说明，不能作为当前READY节点覆盖上方入口。
+
 # Codex 启动入口 — PUB-01 SparrKULee 强基线复现
 
 **研究者明确的第一步是复现，不是设计新模型或追分。**
@@ -14,7 +18,7 @@
 4. `doc/TASKS.md`、`doc/CURRENT_TASK.md`；
 5. `doc/tasks/PUB-01/TASK.md`、`doc/tasks/PUB-01/SUBTASKS.md`；
 6. `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`；
-7. **本轮完成节点（重新执行需研究者指定）** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`；
+7. **当前SS03 ACTIVE执行节点** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md`；**SS02历史复现节点** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`只读；
 8. `doc/tasks/PUB-01/BENCHMARK_REGISTRY.md`；
 9. 真实现存 S02/S03_SS01 数据/代码/config/reports。
 
