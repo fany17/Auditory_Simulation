@@ -5,7 +5,7 @@
 | Subtask ID | `PUB-01-S03` |
 | Parent Task | `PUB-01` |
 | Title | SparrKULee EEG Direct Auditory Decoding & Representation Benchmark |
-| Status | `ACTIVE`（SS01/SS02/SS03已交有限制；SS03四原型×三seed实际结果/review已完成；SS05已获授权进行历史记忆探索（仅合成结果）；SS04 BACKLOG） |
+| Status | `ACTIVE`（SS01/SS02/SS03已交有限制；SS03四原型×三seed实际结果/review已完成；SS05为READY_FOR_CODEX，由Codex独立复核既有合成原型并执行新的公开EEG实验；SS04 BACKLOG） |
 | Blocking for Parent | YES |
 | Patient Data | `FORBIDDEN` |
 | Upstream | `PUB-01-S01` / `PUB-01-S02` 完成有限制阶段交付 |
@@ -17,6 +17,12 @@
 | Subnodes | `SUBTASKS.md` 中 S03_SS01..SS04 |
 | Files Allowed to Change | public EEG model/scripts/configs/tests/reports、`doc/tasks/PUB-01/**`，历史 frozen 文件只读 |
 | Last Updated | 2026-10-19 |
+
+## 当前S03任务优先级（2026-10-19）
+
+- SS01/SS02/SS03保留 `COMPLETED / PASS_WITH_LIMITATION`，其测试与报告只读。
+- 研究者已明确授权 `SS05` 历史联系/记忆结构研究，但**要求Codex，而非协调助手，执行源码审计、仿真及2203训练**；既有合成报告标待Codex核验。Codex目前尚未真实接手，不可写 `CODEX_RUNNING`。
+- `SS05` 先验证关联记忆与预测误差的独立贡献，再在新冻结公共EEG分组上报告结果。SS04多种候选评测仍需另行验收/授权。
 
 ## 1. Scientific question
 
