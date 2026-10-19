@@ -1,3 +1,5 @@
+> **Codex执行入口**：GitHub Issue [#5](https://github.com/fany17/Auditory_Simulation/issues/5)。此 issue 是任务交接，不代表Codex已启动。
+
 # SUBTASK — PUB-01-S03_SS05 — 跨窗口历史记忆与选择性信息更新
 
 | 字段 | 值 |
