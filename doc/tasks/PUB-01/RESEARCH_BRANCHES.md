@@ -15,6 +15,7 @@
 - `PUB-01-S03_SS01`：已完成 10 人 / 93 条 EEG→包络 backward TRF（历史证据完整保留，**不代表语音内容解码或 SOTA**）。
 - `PUB-01-S03_SS02`：2026-10-15 **COMPLETED / PASS_WITH_LIMITATION**。HDPS76人原100Hz/M，Top1/5/10=12.03/30.45/42.10%；Transformer70训练/69seen/13heldout，2AFC加权82.38%，EEG-only包络加权r=.1593；三运行独立review完成。完整论文/official test/ensemble等价性未通过；不同候选任务分开报告。当前停止，后续需研究者指定。
 - `PUB-01-S03_SS03`：2026-10-19 **COMPLETED / PASS_WITH_LIMITATION**。多尺度对三单尺度、4×3真实同预算训练/test；seen/heldout r=.10305/.11380，高于long .06411/.06979及middle .09297/.10413。限四原型/当前fold预算，非生理机制或超过SS02；报告与same-agent separate review在`reports/pub_01/s03/architecture/`。
+- `PUB-01-S03_SS05`：**ACTIVE / SYNTHETIC_PROBE_COMPLETED**。历史预测误差、多速率状态和关联记忆已实现并通过本地合成任务；公开EEG/新heldout均未执行。保留阴性事实：未证明预测误差更新额外有效。旧SS03 test不能重复用于SS05选结构；下一步按 `PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。SS05在逻辑上为SS04前的独立探索，编号保留以保护既有任务文件。
 - `PUB-01-S03_SS04`：锁定单一 decoder，比较直接特征预测、二选一、五选一、百余候选检索；分别保留原论文 protocol 和统一的内部 benchmark，不混用准确率。
 - S03 parent 完成需要 S03 范围内的跨 story/subject、强对照、负例和消融证据；未达到则保持 ACTIVE/REVIEW。
 
@@ -37,6 +38,6 @@
 
 1. `SS02` 已经 `COMPLETED / PASS_WITH_LIMITATION`，冻结为历史基线。原论文完整cohort和官方评价尚未复现，不能补称同等。
 2. 用户批准的SS03多时间尺度单假设已完成：真实window audit/smoke/100步pilot→冻结25000步/2500步验证/3seed→12run实际test→separate review。当前COMPLETED/PASS_WITH_LIMITATION，详见任务书与REPORT。
-3. 当前停止，研究者决定后续研究；PR#3保持Draft、不得自行合并main，不因H1在本轮支持而自动增加架构。
+3. 研究者2026-10-19已明确授权新的SS05历史记忆探索：当前只有合成CPU结果；PR#3仍Draft，不合并main；SS05在独立分支开展，不修改历史SS03。公开EEG真实训练/SS04尚未开始。
 4. `SS04` 仍BACKLOG；不得根据test挑选多尺度/单尺度、窗口、seed或负例，也不得把2AFC与HDPS百余候选任务的性能直接比较。
 5. ds004703公开颅内独立基线（S04_SS01）可以作为另一支线单独规划；本轮SS03不启动它、不读任何患者/STN数据。冻结且版本化artifact之前两项目不交换运行数据。
