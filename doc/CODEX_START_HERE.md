@@ -1,3 +1,5 @@
+> **Codex任务已整理为 [GitHub Issue #5](https://github.com/fany17/Auditory_Simulation/issues/5)**。从Issue #5进入，工作分支 `work/pub-01-s03-ss05-predictive-memory`。**任务书已就绪，尚未通过本聊天启动Codex进程。**
+
 # Codex 启动入口 — Auditory_Simulation（2026-10-19最新）
 
 **唯一当前执行任务：`PUB-01-S03_SS05`（跨窗口历史记忆与选择性信息更新），状态 `READY_FOR_CODEX`。** 研究者已授权 Codex 继续执行。**协调助手只更新/复核任务书，不运行 Python、不做实验、不代替 Codex 执行。**
