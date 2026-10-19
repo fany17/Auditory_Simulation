@@ -1,0 +1,121 @@
+{
+  "status": "SYNTHETIC_EXPLORATORY_ONLY",
+  "date": "2026-10-19",
+  "compute": "local CPU PyTorch 2.10.0+cpu; not server2203 EEG",
+  "random_seed": 1024,
+  "common": {
+    "train_records": 1024,
+    "validation_records": 128,
+    "test_records": 128,
+    "steps": 160,
+    "batch_size": 48,
+    "optimizer": "Adam",
+    "learning_rate": 0.007,
+    "criterion": "query-only masked MSE",
+    "checkpoint": "lowest validation query MSE among prelisted checks"
+  },
+  "probe_a": {
+    "name": "single_cue_delayed_recall",
+    "sequence_length": 32,
+    "cue_indices": "2..6",
+    "query_indices": "25..30",
+    "results": [
+      {
+        "variant": "local",
+        "params": 6014,
+        "test_accuracy": 0.484375,
+        "test_mse": 1.0001804828643799
+      },
+      {
+        "variant": "state",
+        "params": 6014,
+        "test_accuracy": 1,
+        "test_mse": 0.001872637658379972
+      },
+      {
+        "variant": "predictive_state",
+        "params": 6014,
+        "test_accuracy": 1,
+        "test_mse": 0.002325096633285284
+      },
+      {
+        "variant": "assoc_no_pred",
+        "params": 6014,
+        "test_accuracy": 1,
+        "test_mse": 0.0001322620955761522
+      },
+      {
+        "variant": "full",
+        "params": 6014,
+        "test_accuracy": 1,
+        "test_mse": 0.00018352500046603382
+      },
+      {
+        "variant": "gru",
+        "params": 5801,
+        "test_accuracy": 1,
+        "test_mse": 0.0002132415393134579
+      }
+    ]
+  },
+  "probe_b": {
+    "name": "two_key_last_write_with_interference",
+    "sequence_length": 48,
+    "query_indices": "39..46",
+    "results": [
+      {
+        "variant": "local",
+        "params": 6014,
+        "test_accuracy": 0.5078125,
+        "test_mse": 1.0226463079452515
+      },
+      {
+        "variant": "state",
+        "params": 6014,
+        "test_accuracy": 0.71875,
+        "test_mse": 0.7342444658279419
+      },
+      {
+        "variant": "predictive_state",
+        "params": 6014,
+        "test_accuracy": 0.703125,
+        "test_mse": 0.7230805158615112
+      },
+      {
+        "variant": "assoc_no_pred",
+        "params": 6014,
+        "test_accuracy": 1,
+        "test_mse": 0.0017291841795668006
+      },
+      {
+        "variant": "full",
+        "params": 6014,
+        "test_accuracy": 1,
+        "test_mse": 0.0014781230129301548
+      },
+      {
+        "variant": "gru",
+        "params": 5801,
+        "test_accuracy": 0.625,
+        "test_mse": 0.9230708479881287
+      }
+    ],
+    "exploratory_budget_mismatched_followup": {
+      "variant": "gru",
+      "steps": 600,
+      "params": 5801,
+      "test_accuracy": 1,
+      "test_mse": 0.0015682348748669028,
+      "interpretation": "GRU can learn the task too; 600-step result is NOT a fair head-to-head to 160-step models"
+    }
+  },
+  "toy_safety_and_limits": [
+    "one seed",
+    "artificial cue/query signals not EEG",
+    "small toy test",
+    "active parameters/FLOPs not matched by instantiated-parameter count",
+    "no evidence predictive-error mechanism improves over association without prediction",
+    "no novelty or clinical claim",
+    "all real EEG and STN tests NOT_RUN"
+  ]
+}
