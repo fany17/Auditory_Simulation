@@ -9,8 +9,8 @@
 ## 最新执行决策（2026-10-19）
 
 - `PUB-01` 仍 `ACTIVE`。研究者明确分工：**协调者制定/审阅任务，Codex负责具体实现和全部实验执行**。未经研究者要求协调者不自行运行模拟或EEG任务。
-- 当前唯一 `READY_FOR_CODEX` 子节点为 **`PUB-01-S03_SS05`**：研究跨窗口历史记忆、选择性关联读写和预测误差更新。此前由协调者添加的代码/合成实验仅作待Codex独立复现的原型记录；**未完成2203真实公开EEG训练/测试，不声称SS05实验成功**。
-- SS01/SS02/SS03冻结，不能用已打开的SS03 test为SS05改架构。SS04、公开颅内S04、公共artifact S05仍BACKLOG。当前工作分支 `work/pub-01-s03-ss05-predictive-memory` / PR#4 Draft，`main`与旧CNN/TRF工作目录保留。
+- 当前SS05为 **ACTIVE / TRAIN_VAL_FROZEN**：Codex已重跑原合成/15tests、真实EEG五组四lag pilot，修正local历史对照及新train-only归一化；15run正式训练中，未读取新holdout成绩。原报告与新Codex实测证据分开，不冒称正式验收成功。
+- SS01/SS02/SS03冻结，旧test不供SS05调参。用户最新授权已合并PR#3到main@8d21d0a；PR#4 base main且仍Draft。SS04/S04/父S05 BACKLOG；主目录CNN/TRF/stash不动，不自行合并#4。
 - 运行/交付与患者数据禁止边界详见 `doc/CODEX_START_HERE.md`、`doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。
 
 ## Current scientific branches

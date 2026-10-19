@@ -1,14 +1,14 @@
-> **Codex执行入口**：GitHub Issue [#5](https://github.com/fany17/Auditory_Simulation/issues/5)。此 issue 是任务交接，不代表Codex已启动。
+> **Codex实际接续（2026-10-19）**：Issue#5已启动，实测审计/pilot完成，正式15run训练中，见codex_run01/EXECUTION_LOG。最新用户授权下PR#3已由协调者合并main@8d21d0a；PR#4仍Draft、base main，旧“PR#3保持Draft”仅为历史限制。
 
 # SUBTASK — PUB-01-S03_SS05 — 跨窗口历史记忆与选择性信息更新
 
 | 字段 | 值 |
 |---|---|
 | 子任务 | `PUB-01-S03_SS05`，从属于 `PUB-01-S03` / `PUB-01` |
-| 当前状态 | **`READY_FOR_CODEX`**：研究者已批准继续，等待 Codex 实际接手执行；**2203 公开 EEG 训练/评估尚无 SS05 结果** |
+| 当前状态 | **`TRAIN_VAL_FROZEN`**：真实元数据/15tests/合成审查/五组四lag pilot已完成；新train归一化修正，15run正式训练中，新holdout尚未评分 |
 | 唯一执行者 | **Codex** 负责代码审查、实现、真实运行、数据统计、结果记录；协调助手仅更新任务书、复核提交和把关结论 |
 | 上游 | `SS02` 强基线与 `SS03` 多尺度实验已完成有限制；只读、不得覆盖 |
-| 当前 Git | `work/pub-01-s03-ss05-predictive-memory`，PR #4 Draft；PR #3/SS03 为父分支，`main` 不动 |
+| 当前 Git | `work/pub-01-s03-ss05-predictive-memory`，独立managed worktree/PR#4 Draft，base main；PR#3按新授权已合并8d21d0a，主目录CNN/TRF/stash不动 |
 | 现有原型 | `scripts/pub_01_s03_ss05_predictive_memory.py`、`scripts/pub_01_s03_ss05_window_decoder.py` 等 |
 | 患者数据 | **FORBIDDEN**：本任务仅 `Auditory_Simulation` 的公开 EEG/公开模型，不读 STN/患者数据或 embedding |
 | 本轮验收 | 可验证的历史依赖、真实 EEG train/validation 与预先冻结的内部 heldout（若符合准入）；明确阴性、运行失败和证据边界 |
@@ -75,7 +75,7 @@ Codex 的第一步是只读检查上述代码和数据来源，独立重跑必�
 
 - 服务器仅保留公开 EEG/声音、缓存、权重、测试逐时间窗预测：在 `/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/<new-run>`，新目录不可覆盖旧SS02/SS03。
 - 本地 Git 仅收录**自有代码、config、轻量 JSON/CSV、静态图、Markdown**，不收原始数据、权重、派生个人神经表示、大量数组、外部未授权源码。
-- 本轮提交到 `work/pub-01-s03-ss05-predictive-memory` / PR #4 Draft；保持 PR#3 Draft 与 `main` 原状，不主动 merge/force-push。
+- 本轮提交到 `work/pub-01-s03-ss05-predictive-memory` / PR#4 Draft；PR#3已按用户新授权合并main@8d21d0a，不回退此事实。当前Codex不主动merge#4/修改占用中的main或force-push。
 - 没有自动开启 SS04 大候选检索、S04公开颅内迁移、S05父任务 artifact，也不接触 `STN_Decoding_Encoding`。
 - 若结构需要独立的声音/模拟神经元输入任务，可在 SS05 的**公共方法探索**下明示，不能凭此声称真实 EEG 已验证。
 
@@ -91,3 +91,11 @@ Codex 的第一步是只读检查上述代码和数据来源，独立重跑必�
 - 若没有合格的新 holdout：只能交 train/val 的真实探索结果和 `HOLD_NEW_TEST`，不能标 `COMPLETED`。
 
 **状态顺序**：`READY_FOR_CODEX` → `CODEX_RUNNING`（有真实执行记录）→ `PILOT_COMPLETE` → `TRAIN_VAL_FROZEN` → `TEST_REVIEW` → `COMPLETED/PASS_WITH_LIMITATION` 或 `HOLD/REWORK`。只有 Codex 的真实运行证据满足节点验收，才能提升状态；协调者不能代跑或替代 Codex 的结果。
+
+## 5. Codex执行记录（2026-10-19）
+
+独立managed worktree为C:/Users/fanyu/.codex/worktrees/pub-01-s03-ss05/Auditory_Simulation，起点5724a4ac；新2203根pub_01/s03_history_memory_20261019/codex_run01。真实source-family元数据一次冻结23/7/7组、353/26/47记录、70/17/21人，仅来自旧SS03train；为prospective INTERNAL而非外部复现。旧norm含新holdout，已在353新train单独重拟合，旧norm/SS02/SS03不改。
+
+原10tests/合成A/B/GRU600重跑及5新增tests、实际CPU/GPU smoke通过；原local隐含两past窗在新wrapper修正。每query前20连续窗、当前窗20query构成60s段，有限context reset，全部21token BPTT；共用120s元数据warmup以支持错时历史，不跨record/state。预测头无显式forecast目标，full仅按learned history-residual分支解释。
+
+五组×四lag×100步train/val pilot选择lag8；在新holdout payload前冻结2000步/200步val/三seed/同批序/七历史条件、六primary contrasts/source环境于FORMAL_PROTOCOL。全部15训练完核对预算后才构建holdout并一次评分。容量审计同时给实例化、tensor-reachable、实际标量梯度活动，不声称全部消融等容量或等墙钟成本。当前继续真实结果/review，不能停在准备阶段；详见codex_run01。

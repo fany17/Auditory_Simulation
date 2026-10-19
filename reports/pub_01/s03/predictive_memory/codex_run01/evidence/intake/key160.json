@@ -1,0 +1,105 @@
+{
+  "task": "two-key delayed last-write retrieval with competing event",
+  "real_EEG_used": false,
+  "patient_data_used": false,
+  "task_definition": "cue writes key0 then key1, later overwrite one key; late query asks key-specific most recent value",
+  "label_use": "train/val checkpoint, test one final assessment (synthetic exploratory only)",
+  "limitations": [
+    "single seed",
+    "one synthesized distribution",
+    "not a novelty benchmark",
+    "no equalized active parameters/FLOPs"
+  ],
+  "runs": [
+    {
+      "variant": "local",
+      "parameters": 6014,
+      "seed": 1024,
+      "steps": 160,
+      "best_validation_step": 80,
+      "validation": {
+        "mse": 0.9707649350166321,
+        "accuracy": 0.5859375
+      },
+      "test": {
+        "mse": 1.0226463079452515,
+        "accuracy": 0.5078125
+      }
+    },
+    {
+      "variant": "state",
+      "parameters": 6014,
+      "seed": 1024,
+      "steps": 160,
+      "best_validation_step": 120,
+      "validation": {
+        "mse": 0.7376258969306946,
+        "accuracy": 0.6796875
+      },
+      "test": {
+        "mse": 0.7342445850372314,
+        "accuracy": 0.71875
+      }
+    },
+    {
+      "variant": "predictive_state",
+      "parameters": 6014,
+      "seed": 1024,
+      "steps": 160,
+      "best_validation_step": 80,
+      "validation": {
+        "mse": 0.7114942669868469,
+        "accuracy": 0.7109375
+      },
+      "test": {
+        "mse": 0.7230805158615112,
+        "accuracy": 0.703125
+      }
+    },
+    {
+      "variant": "assoc_no_pred",
+      "parameters": 6014,
+      "seed": 1024,
+      "steps": 160,
+      "best_validation_step": 160,
+      "validation": {
+        "mse": 0.0018487314227968454,
+        "accuracy": 1.0
+      },
+      "test": {
+        "mse": 0.001729180570691824,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "variant": "full",
+      "parameters": 6014,
+      "seed": 1024,
+      "steps": 160,
+      "best_validation_step": 160,
+      "validation": {
+        "mse": 0.001569925108924508,
+        "accuracy": 1.0
+      },
+      "test": {
+        "mse": 0.0014781263889744878,
+        "accuracy": 1.0
+      }
+    },
+    {
+      "variant": "gru",
+      "parameters": 5801,
+      "seed": 1024,
+      "steps": 160,
+      "best_validation_step": 160,
+      "validation": {
+        "mse": 0.9219329357147217,
+        "accuracy": 0.6875
+      },
+      "test": {
+        "mse": 0.923071026802063,
+        "accuracy": 0.625
+      }
+    }
+  ]
+}

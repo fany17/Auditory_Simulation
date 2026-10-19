@@ -1,4 +1,4 @@
-> **Codex任务已整理为 [GitHub Issue #5](https://github.com/fany17/Auditory_Simulation/issues/5)**。从Issue #5进入，工作分支 `work/pub-01-s03-ss05-predictive-memory`。**任务书已就绪，尚未通过本聊天启动Codex进程。**
+> **Codex已从Issue#5实质启动SS05**：2203新train数据/归一化、原合成复核、15tests及五组四lag真实pilot已完成；现TRAIN_VAL_FROZEN，15run正式训练中。报告/日志在predictive_memory/codex_run01，旧SS03 test不使用。PR#3按新授权已合并8d21d0a，PR#4仍Draft。
 
 # Auditory_Simulation Current Workboard
 
@@ -6,9 +6,9 @@
 
 ## 当前正在交接给 Codex
 
-- **任务：`PUB-01-S03_SS05`，状态 `READY_FOR_CODEX`（尚无新的Codex运行证明）。** 研究者要求从 SS03 的多尺度感受野，转向跨窗口历史记忆、关联检索及预测误差更新的机制检验。
+- **任务：`PUB-01-S03_SS05`，ACTIVE / TRAIN_VAL_FROZEN。** 已有真实运行/冻结证据；继续15run正式结果和同agent后置review，不停在准备，不启动SS04/S04/父S05。
 - **执行归属**：Codex 写代码、运行 tests/合成验证/2203公开EEG、复核与提交；协调助手只维护总任务和科学验收。旧协调助手合成结果属于待核验初稿，不能标成Codex通过。
-- **工作位置**：`work/pub-01-s03-ss05-predictive-memory`（PR #4 Draft，叠在 PR #3 冻结 SS03 分支之上）；`main`/原本地CNN/TRF/stash只读。
+- **工作位置**：独立managed worktree pub-01-s03-ss05，分支work/pub-01-s03-ss05-predictive-memory/PR#4 Draft、base main。PR#3已由协调者按新授权合并8d21d0a；当前Codex不更动主目录CNN/TRF/stash或合并#4。
 - **立刻执行**：阅读 `doc/CODEX_START_HERE.md` 和 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。先独立源码+合成审查，再用2203真实公开资源核对分组/时轴，创建仅来自先前训练池的新 prospective internal heldout（若可行），进行新的train/validation，不使用已经打开的SS03测试集调参。
 - **当下不可声称**：新架构相对GRU/SS02/SS03已优于强基线、预测误差模块有效、公开EEG复现完成、已有SS05新的heldout分数。当前SS05 **真实公开EEG训练/正式测试 NOT_RUN**。
 - **其他状态**：SS01/SS02/SS03已完成有限制并冻结；SS04 BACKLOG；S04公开颅内支线BACKLOG；S05版本化artifact整合BACKLOG；公共项目与患者/STN项目单向版本化衔接，禁止患者数据进入本项目。

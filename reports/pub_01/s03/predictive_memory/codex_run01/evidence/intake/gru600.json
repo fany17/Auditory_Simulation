@@ -1,0 +1,30 @@
+{
+  "task": "two-key delayed last-write retrieval with competing event",
+  "real_EEG_used": false,
+  "patient_data_used": false,
+  "task_definition": "cue writes key0 then key1, later overwrite one key; late query asks key-specific most recent value",
+  "label_use": "train/val checkpoint, test one final assessment (synthetic exploratory only)",
+  "limitations": [
+    "single seed",
+    "one synthesized distribution",
+    "not a novelty benchmark",
+    "no equalized active parameters/FLOPs"
+  ],
+  "runs": [
+    {
+      "variant": "gru",
+      "parameters": 5801,
+      "seed": 1024,
+      "steps": 600,
+      "best_validation_step": 600,
+      "validation": {
+        "mse": 0.0012429284397512674,
+        "accuracy": 1.0
+      },
+      "test": {
+        "mse": 0.0015632681315764785,
+        "accuracy": 1.0
+      }
+    }
+  ]
+}

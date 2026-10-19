@@ -1,0 +1,142 @@
+{
+  "task": "synthetic_long_lag_cue_recall",
+  "real_EEG_used": false,
+  "patient_data_used": false,
+  "task_definition": "cue sign at t2..6, query at t25..30, identical present-window distribution",
+  "input_shape": "[N,32,6]",
+  "data_sizes": {
+    "train": 1024,
+    "validation": 128,
+    "test": 128
+  },
+  "purpose": "capability smoke; NOT model novelty or EEG result",
+  "limitations": [
+    "one seed",
+    "small synthetic data",
+    "GRU trained as standard comparator",
+    "ablations match instantiated, not active parameters",
+    "GRU has a slightly different parameter count"
+  ],
+  "runs": [
+    {
+      "variant": "local",
+      "seed": 1024,
+      "steps": 160,
+      "selected_step": 80,
+      "instantiated_parameters": 6014,
+      "validation": {
+        "query_mse": 1.00071120262146,
+        "query_sign_accuracy": 0.4453125,
+        "counterfactual_cue_flip_prediction_delta": 0.0,
+        "counterfactual_accuracy_original_labels": 0.4453125
+      },
+      "test": {
+        "query_mse": 1.0001804828643799,
+        "query_sign_accuracy": 0.484375,
+        "counterfactual_cue_flip_prediction_delta": 0.0,
+        "counterfactual_accuracy_original_labels": 0.484375
+      },
+      "seconds": 10.91
+    },
+    {
+      "variant": "state",
+      "seed": 1024,
+      "steps": 160,
+      "selected_step": 160,
+      "instantiated_parameters": 6014,
+      "validation": {
+        "query_mse": 0.001444899127818644,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9899513721466064,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "test": {
+        "query_mse": 0.0018726352136582136,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9948124885559082,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "seconds": 7.52
+    },
+    {
+      "variant": "predictive_state",
+      "seed": 1024,
+      "steps": 160,
+      "selected_step": 160,
+      "instantiated_parameters": 6014,
+      "validation": {
+        "query_mse": 0.0022940561175346375,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9723762273788452,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "test": {
+        "query_mse": 0.002325094537809491,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9667704105377197,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "seconds": 8.33
+    },
+    {
+      "variant": "assoc_no_pred",
+      "seed": 1024,
+      "steps": 160,
+      "selected_step": 160,
+      "instantiated_parameters": 6014,
+      "validation": {
+        "query_mse": 4.12007502745837e-05,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9971154928207397,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "test": {
+        "query_mse": 5.731860801461153e-05,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9960408210754395,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "seconds": 24.91
+    },
+    {
+      "variant": "full",
+      "seed": 1024,
+      "steps": 160,
+      "selected_step": 160,
+      "instantiated_parameters": 6014,
+      "validation": {
+        "query_mse": 0.00014153851952869445,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9930012226104736,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "test": {
+        "query_mse": 0.0001834482536651194,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9914096593856812,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "seconds": 19.06
+    },
+    {
+      "variant": "gru",
+      "seed": 1024,
+      "steps": 160,
+      "selected_step": 160,
+      "instantiated_parameters": 5801,
+      "validation": {
+        "query_mse": 0.0002049422764685005,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.9805986881256104,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "test": {
+        "query_mse": 0.0002134003589162603,
+        "query_sign_accuracy": 1.0,
+        "counterfactual_cue_flip_prediction_delta": 1.981276512145996,
+        "counterfactual_accuracy_original_labels": 0.0
+      },
+      "seconds": 2.83
+    }
+  ]
+}

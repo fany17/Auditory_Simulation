@@ -6,7 +6,7 @@
 |---|---|---|---|---|---|---|
 | `PUB-01-S01` | Public data preparation and exploration | `COMPLETED` | YES | NONE | `subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` | PASS_WITH_LIMITATION；许可/定向时序限制依任务保留 |
 | `PUB-01-S02` | Acoustic & frozen-audio feature → EEG encoding baseline | `COMPLETED` | YES | S01 | `subtasks/PUB-01-S02_FEATURE_BANK_BASELINE.md` | 83人/659录音；acoustic/log-mel/wav2vec2，HuBERT HOLD；PASS_WITH_LIMITATION |
-| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01/SS02/SS03已交有限制；SS05已获研究者授权且等待Codex独立执行；旧合成报告待复核，公开EEG尚未跑；SS04 BACKLOG |
+| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01/SS02/SS03冻结；SS05已实测审计/真实pilot并冻结15run训练；新holdout待一次评分/review；SS04 BACKLOG |
 | `PUB-01-S04` | **B线：ds004703 independent intracranial baseline + transfer** | `BACKLOG` | YES | S01数据准入；仅 transfer 需 S03 | `subtasks/PUB-01-S04_INTRACRANIAL_TRANSFER.md` | SS01/02 未执行；两线不串行阻塞数据基线 |
 | `PUB-01-S05` | Public artifact candidate + parent integration review | `BACKLOG` | YES | S01–S04 | `subtasks/PUB-01-S05_ARTIFACT_INTEGRATION.md` | 阶段结果与失败/许可统一审核；未产生 ART-AUDREP-v1 |
 
@@ -25,7 +25,7 @@
 | `PUB-01-S03_SS02` | S03 | **Strong EEG auditory decoding baseline reproduction（Codex）** | **`COMPLETED`** | S01/S02+SS01 | `subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md` | 2026-10-15 PASS_WITH_LIMITATION：HDPS76人Top1/5/10=12.03/30.45/42.10%；Transformer70训练、69seen/13heldout，2AFC加权82.38%、直接包络加权r=.1593；三运行独立review及交付检查；原完整论文条件未复现，不启下一节点 |
 | `PUB-01-S03_SS03` | S03 | Architecture hypothesis and direct decoder | **`COMPLETED`** | SS02 PASS_WITH_LIMITATION + researcher authorization 2026-10-19 | `subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md` | 2026-10-19 PASS_WITH_LIMITATION：4×3真实同预算训练/test；multiscale seen/heldout r=.10305/.11380，高于long/middle，四预设contrast family95%区间>0；same-agent separate review，非生理机制/强基线超越声明；SS04不启动 |
 | `PUB-01-S03_SS04` | S03 | Direct reconstruction + 2AFC/5AFC/large-pool evaluation | `BACKLOG` | SS02+SS03 | `subtasks/PUB-01-S03/PUB-01-S03_SS04_DIRECT_RECONSTRUCTION_AND_RETRIEVAL.md` | 分协议公平评价 / 强对照 / 跨被试 / 消融 |
-| `PUB-01-S03_SS05` | S03 | History-aware predictive/associative memory (Codex execution) | **`READY_FOR_CODEX`** | SS03 frozen + 2026-10-19 researcher authorizes Codex | `subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` | 旧合成原型/报告由协调助手编写，需Codex独立复核；新公开 EEG/2203训练/测试 **NOT_RUN**，仅真实日志出现后可转 CODEX_RUNNING |
+| `PUB-01-S03_SS05` | S03 | History-aware predictive/associative memory (Codex execution) | **`ACTIVE / TRAIN_VAL_FROZEN`** | SS03 frozen + 2026-10-19 researcher authorizes Codex | `subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` | Codex原合成/15tests/真实CPU-GPU与五组四lag pilot已执行；新train norm防泄漏修正，lag8/2000步/三seed冻结；15run正式训练，新family holdout尚未评分；证据codex_run01 |
 
 ## S04：独立保留的 ds004703 公共颅内支线
 

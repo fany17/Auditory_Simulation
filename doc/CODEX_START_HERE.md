@@ -1,8 +1,8 @@
-> **Codex任务已整理为 [GitHub Issue #5](https://github.com/fany17/Auditory_Simulation/issues/5)**。从Issue #5进入，工作分支 `work/pub-01-s03-ss05-predictive-memory`。**任务书已就绪，尚未通过本聊天启动Codex进程。**
+> **Codex已实际执行Issue #5（2026-10-19）**：SS05已完成15项tests、独立合成重跑、真实连续EEG pilot及新train归一化，现为TRAIN_VAL_FROZEN / 15run正式训练中。运行证据在reports/pub_01/s03/predictive_memory/codex_run01与2203新根；新holdout信号在全部训练后才读取。工作分支work/pub-01-s03-ss05-predictive-memory / PR#4 Draft。
 
 # Codex 启动入口 — Auditory_Simulation（2026-10-19最新）
 
-**唯一当前执行任务：`PUB-01-S03_SS05`（跨窗口历史记忆与选择性信息更新），状态 `READY_FOR_CODEX`。** 研究者已授权 Codex 继续执行。**协调助手只更新/复核任务书，不运行 Python、不做实验、不代替 Codex 执行。**
+**唯一当前执行任务：`PUB-01-S03_SS05`（跨窗口历史记忆与选择性信息更新），TRAIN_VAL_FROZEN / 正式训练中。** 最新用户授权已由协调者审查合并PR#3，main merge8d21d0a；PR#4已改base main，当前Codex不再被旧“#3保持Draft”约束阻断，也不自行合并#4。协调者只制定/复核任务，Codex执行实际代码与实验。
 
 ## 立即读取（按顺序）
 
