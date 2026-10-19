@@ -1,6 +1,17 @@
 # Auditory_Simulation Current Workboard
 
-更新时间：`2026-10-19`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
+更新时间：2026-10-19（Codex 分工纠偏）。父任务状态由 `doc/TASKS.md` 定义，子任务状态由 `doc/tasks/PUB-01/SUBTASKS.md` 定义。**以下当前区是唯一执行路由，其下为历史记录。**
+
+## 当前正在交接给 Codex
+
+- **任务：`PUB-01-S03_SS05`，状态 `READY_FOR_CODEX`（尚无新的Codex运行证明）。** 研究者要求从 SS03 的多尺度感受野，转向跨窗口历史记忆、关联检索及预测误差更新的机制检验。
+- **执行归属**：Codex 写代码、运行 tests/合成验证/2203公开EEG、复核与提交；协调助手只维护总任务和科学验收。旧协调助手合成结果属于待核验初稿，不能标成Codex通过。
+- **工作位置**：`work/pub-01-s03-ss05-predictive-memory`（PR #4 Draft，叠在 PR #3 冻结 SS03 分支之上）；`main`/原本地CNN/TRF/stash只读。
+- **立刻执行**：阅读 `doc/CODEX_START_HERE.md` 和 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。先独立源码+合成审查，再用2203真实公开资源核对分组/时轴，创建仅来自先前训练池的新 prospective internal heldout（若可行），进行新的train/validation，不使用已经打开的SS03测试集调参。
+- **当下不可声称**：新架构相对GRU/SS02/SS03已优于强基线、预测误差模块有效、公开EEG复现完成、已有SS05新的heldout分数。当前SS05 **真实公开EEG训练/正式测试 NOT_RUN**。
+- **其他状态**：SS01/SS02/SS03已完成有限制并冻结；SS04 BACKLOG；S04公开颅内支线BACKLOG；S05版本化artifact整合BACKLOG；公共项目与患者/STN项目单向版本化衔接，禁止患者数据进入本项目。
+
+## 历史执行/状态快照（仅供追溯）
 
 ## 现在要做什么（Codex 第一入口）
 
