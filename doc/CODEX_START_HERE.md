@@ -1,8 +1,30 @@
-> **当前最新入口（2026-10-19）**：研究者已授权独立节点 `PUB-01-S03_SS05`（History-Aware Predictive / Associative Memory）；**合成原型与10项本地CPU测试完成，公开EEG在2203真实训练/测试尚未运行**。先读 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`、`reports/pub_01/s03/predictive_memory/REPORT.md` 与 `NEXT_PUBLIC_EEG_PROTOCOL.md`。Codex只能从新分支独立worktree、只读盘点公开旧训练记录并准备新分组协议，不得直接打开已使用的SS03 test_seen/test_heldout，也不得读任何患者/STN数据。旧SS03/SS02指令均属冻结历史。
+# Codex 启动入口 — Auditory_Simulation（2026-10-19最新）
 
-> **2026-10-19交付/停止入口**：`PUB-01-S03_SS03` **COMPLETED / PASS_WITH_LIMITATION**。真实64Hz EEG→包络四组×三seed、每次25000步完成；multiscale seen/heldout r=.10305/.11380，高于同参数long .06411/.06979及middle .09297/.10413，预设四contrast family95%区间均>0。本结论只限当前原型/数据/预算，不证明生理时标，也未超过SS02强基线参考。报告`reports/pub_01/s03/architecture/REPORT.md`，同agent separate review见REVIEW.md。PR#3保持Draft，主目录CNN/TRF/stash未动；当前停止，不合并main、不启动SS04/S04，无自动下一READY节点。
+**唯一当前执行任务：`PUB-01-S03_SS05`（跨窗口历史记忆与选择性信息更新），状态 `READY_FOR_CODEX`。** 研究者已授权 Codex 继续执行。**协调助手只更新/复核任务书，不运行 Python、不做实验、不代替 Codex 执行。**
 
-> 下列SS02基线复现指令为历史说明，不能作为当前READY节点覆盖上方入口。
+## 立即读取（按顺序）
+
+1. `doc/TASKS.md` → `doc/tasks/PUB-01/TASK.md` → `doc/tasks/PUB-01/SUBTASKS.md`：父任务与唯一状态源。
+2. `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`：**唯一完整执行任务书及验收规则**。
+3. `reports/pub_01/s03/predictive_memory/NEXT_PUBLIC_EEG_PROTOCOL.md`：公开 EEG 连续历史/split/lag/跨记录 reset；仅作为实验契约，若与 SS05 完整任务书冲突，以后者为准。
+4. `reports/pub_01/s03/predictive_memory/REPORT.md`、`SYNTHETIC_RESULTS.json` 以及对应 `scripts/pub_01_s03_ss05_*.py`：**以前由协调助手编写的原型/声称结果，仅作待独立审查资料，不能当作 Codex 已复现的事实**。
+5. 冻结历史：SS03 `reports/pub_01/s03/architecture/REPORT.md`，SS02 `reports/pub_01/s03/strong_baselines/REPRO_REPORT.md`；只读，绝不根据已打开的test结果调新模型。
+
+## 直接行动（Codex自己完成）
+
+- 在 Windows 上采用**独立worktree**进入 `work/pub-01-s03-ss05-predictive-memory` / PR #4；先检查工作树，保留本地主目录未提交的 CNN/TRF 和 stash。不要 checkout/reset/force-push/merge `main` 或 PR#3。
+- **先独立审计现有源码及合成实验结果**，保留可复现与不可复现项；检查新状态模块与标准GRU、窗口因果性、状态跨记录 reset；不能以已有报告 PASS 代替自己的执行。
+- 若 server2203 SSH 可访问，首先只读确认公开数据、subject/story/source_family 和可建立的**新内部分组**。既有 SS03 test_seen/test_heldout 已被打开，**不得再次用于SS05模型选择和确认性研究**。
+- 再完成真实 EEG 连续窗口 loader、真实数据train/validation pilot；在触及新的预留 heldout 之前冻结 protocol、3+ seeds、预算与 lag。符合准入才一次评估。若不具备可用新test或服务器不可访问，分别标 `HOLD_NEW_TEST`/`HOLD_RUNTIME`；不要虚构结果。
+- **由Codex提交并push** 自有代码、配置及轻量报告到同一SS05分支；新运行结果存server2203公开目录，Git不收原始EEG/音频/权重。每阶段更新 `reports/pub_01/s03/predictive_memory/codex_run01/EXECUTION_LOG.md`，合成与EEG结果严格分列。
+
+## 停止条件
+
+完成SS05限定验收后停止汇报；SS04、S04、父任务S05、GPT重排与患者实验不自动启动。`Auditory_Simulation` 只处理公开数据与通用表征（M6A）；`STN_Decoding_Encoding` 只处理患者实验与STN特异适配（M6B）；仅冻结版本化artifact可单向衔接。
+
+---
+
+## 历史入口（归档，不再作为执行授权）
 
 # Codex 启动入口 — PUB-01 SparrKULee 强基线复现
 
