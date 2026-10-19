@@ -1,3 +1,5 @@
+> **Codex任务已整理为 [GitHub Issue #5](https://github.com/fany17/Auditory_Simulation/issues/5)**。从Issue #5进入，工作分支 `work/pub-01-s03-ss05-predictive-memory`。**任务书已就绪，尚未通过本聊天启动Codex进程。**
+
 # Auditory_Simulation Current Workboard
 
 更新时间：2026-10-19（Codex 分工纠偏）。父任务状态由 `doc/TASKS.md` 定义，子任务状态由 `doc/tasks/PUB-01/SUBTASKS.md` 定义。**以下当前区是唯一执行路由，其下为历史记录。**
