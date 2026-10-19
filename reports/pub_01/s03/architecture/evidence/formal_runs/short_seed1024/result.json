@@ -1,0 +1,40 @@
+{
+  "variant": "short",
+  "seed": 1024,
+  "groups": {
+    "test_seen": {
+      "phase": "test_seen",
+      "subjects": 69,
+      "segments": 872,
+      "excluded_segments": 0,
+      "pearson_r": 0.07874092712359065,
+      "wrong_EEG_r": 0.0009296096900842411,
+      "constant_train_mean_envelope_Pearson": null,
+      "constant_control_reason": "UNDEFINED_ZERO_VARIANCE; not fabricated as r=0",
+      "candidate_input": false
+    },
+    "test_heldout": {
+      "phase": "test_heldout",
+      "subjects": 13,
+      "segments": 1172,
+      "excluded_segments": 0,
+      "pearson_r": 0.0843229962517378,
+      "wrong_EEG_r": -0.0017649233544583243,
+      "constant_train_mean_envelope_Pearson": null,
+      "constant_control_reason": "UNDEFINED_ZERO_VARIANCE; not fabricated as r=0",
+      "candidate_input": false
+    }
+  },
+  "weighted_2to1_r": 0.08060161683297304,
+  "test_evaluations": 1,
+  "checkpoint_step": 22500,
+  "identity_canary": {
+    "only_EEG_in_signature": true,
+    "prediction_identical_without_any_target_argument": true,
+    "EEG_time_perturbation_changes_prediction": true,
+    "no_pretrained_encoder": true
+  },
+  "constant_mean_control": "Pearson_UNDEFINED_ZERO_VARIANCE",
+  "raw_EEG_only": true,
+  "formal_protocol_sha256": "88462540b6b461ac13baab8d76121f05654acfbdc22254bcbdc6d96fe4873ee1"
+}

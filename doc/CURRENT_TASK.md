@@ -1,8 +1,14 @@
 # Auditory_Simulation Current Workboard
 
-更新时间：`2026-10-15`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
+更新时间：`2026-10-19`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
 
 ## 现在要做什么（Codex 第一入口）
+
+2026-10-19交付：`PUB-01-S03_SS03` **COMPLETED / PASS_WITH_LIMITATION**。真实输入对齐/CPU-GPU smoke/100步pilot→测试前预算冻结→4×3正式训练及每模型一次test→同agent separate review已完成。multiscale seen/heldout r=.10305/.11380；long .06411/.06979；middle .09297/.10413。当前四原型/固定数据预算下的H1获支持，不是生理机制或超过SS02。报告`reports/pub_01/s03/architecture/REPORT.md`。
+
+当前STOP：PR#3保留Draft，工作分支work/pub-01-s03-ss03-multiscale/独立managed worktree；主目录未提交CNN/TRF和stash未动。S03/PUB仍ACTIVE，SS04/S04/S05保持BACKLOG，未产生ART-AUDREP-v1。后续须研究者指定，无自动下一READY节点。下方10-15为SS02历史交付。
+
+
 
 2026-10-15交付：用户授权“缺几个就缺几个”后，两套指定强基线及Transformer直接包络readout均完成真实训练/验证/一次测试与独立review。SS02 **COMPLETED / PASS_WITH_LIMITATION**；当前执行停止，没有自动下一READY节点。报告`reports/pub_01/s03/strong_baselines/REPRO_REPORT.md`。
 
@@ -18,7 +24,7 @@
 
 | 数据与职责 | 当前状态 | 阻塞关系 |
 |---|---|---|
-| A / SparrKULee EEG decoding / `S03` | ACTIVE；SS02 COMPLETED / PASS_WITH_LIMITATION | 两套公开可用条件基线已交；停止等待研究者指定后续架构 |
+| A / SparrKULee EEG decoding / `S03` | ACTIVE；SS02 COMPLETED / PASS_WITH_LIMITATION | 两套公开可用条件基线已交；SS03已授权原型启动，实验待运行 |
 | B / ds004703 public intracranial / `S04` | BACKLOG；SS01/SS02 尚未执行 | 自身 sEEG baseline 与 A 线可独立；**仅 EEG→sEEG 迁移需 A 线 frozen 模型** |
 | `S05` artifact integration | BACKLOG | 两条支线的结果与失败/许可验收后评估 |
 

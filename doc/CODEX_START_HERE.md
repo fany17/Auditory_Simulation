@@ -1,3 +1,7 @@
+> **2026-10-19交付/停止入口**：`PUB-01-S03_SS03` **COMPLETED / PASS_WITH_LIMITATION**。真实64Hz EEG→包络四组×三seed、每次25000步完成；multiscale seen/heldout r=.10305/.11380，高于同参数long .06411/.06979及middle .09297/.10413，预设四contrast family95%区间均>0。本结论只限当前原型/数据/预算，不证明生理时标，也未超过SS02强基线参考。报告`reports/pub_01/s03/architecture/REPORT.md`，同agent separate review见REVIEW.md。PR#3保持Draft，主目录CNN/TRF/stash未动；当前停止，不合并main、不启动SS04/S04，无自动下一READY节点。
+
+> 下列SS02基线复现指令为历史说明，不能作为当前READY节点覆盖上方入口。
+
 # Codex 启动入口 — PUB-01 SparrKULee 强基线复现
 
 **研究者明确的第一步是复现，不是设计新模型或追分。**
@@ -14,7 +18,7 @@
 4. `doc/TASKS.md`、`doc/CURRENT_TASK.md`；
 5. `doc/tasks/PUB-01/TASK.md`、`doc/tasks/PUB-01/SUBTASKS.md`；
 6. `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`；
-7. **本轮完成节点（重新执行需研究者指定）** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`；
+7. **当前SS03 ACTIVE执行节点** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md`；**SS02历史复现节点** `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md`只读；
 8. `doc/tasks/PUB-01/BENCHMARK_REGISTRY.md`；
 9. 真实现存 S02/S03_SS01 数据/代码/config/reports。
 

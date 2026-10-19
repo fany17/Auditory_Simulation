@@ -1,0 +1,166 @@
+{
+  "task": "PUB-01-S03_SS03",
+  "version": "SS03-MULTISCALE-FORMAL-v1",
+  "frozen_utc_epoch": 1792357388.2460222,
+  "variants": [
+    "short",
+    "middle",
+    "long",
+    "multiscale"
+  ],
+  "dilations": {
+    "short": [
+      1,
+      1,
+      1
+    ],
+    "middle": [
+      4,
+      4,
+      4
+    ],
+    "long": [
+      16,
+      16,
+      16
+    ],
+    "multiscale": [
+      1,
+      4,
+      16
+    ]
+  },
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "parameters": {
+    "short": 6001,
+    "middle": 6001,
+    "long": 6001,
+    "multiscale": 6001
+  },
+  "nominal_conv_MACCs_per_192sample_window": 1124352,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 64,
+  "optimizer_steps": 25000,
+  "validation_every_steps": 2500,
+  "early_stopping": false,
+  "selection": "max complete validation subject-macro60s Pearson r; exact tie picks earliest step",
+  "validation_subjects": 49,
+  "batch_schedule": "same numpy.default_rng(seed) uniform64 distinct window IDs each step in every variant",
+  "formal_weights_from_scratch": true,
+  "pilot_weights_discarded": true,
+  "test_access_before_freeze": false,
+  "test_rule": "all12 training runs complete and reviewed before each selected checkpoint is tested exactly once; no fit after test",
+  "primary": "separate seen/heldout subject-macro60s Pearson; paired multiscale-minus-long and minus-middle, seed means within person",
+  "decision": "group-specific support requires both paired deltas positive with Bonferroni family95% intervals across4 comparisons; overall H1 only if both groups support; otherwise mixed/negative",
+  "intervals": "subject bootstrap10000,seed20261019; report95% descriptive and98.75% Bonferroni for4 planned contrasts",
+  "secondary": "2/3seen+1/3heldout; every seed and wrong-EEG control; no ranking against unlike SS02/TRF protocols",
+  "constant_control": "constant train mean; Pearson undefined for zero variance; report null with reason, never fabricated0",
+  "optional_linear_reference": "NOT_RUN; not needed for the fixed dilation hypothesis",
+  "optional_temporal_diagnostics": "NOT_RUN; no validation jitter/modulation inference will be promoted into an unplanned test claim",
+  "config": {
+    "task": "PUB-01-S03_SS03",
+    "experiment_id": "PUB-01-S03-SS03-MULTISCALE-v1",
+    "status": "TRAIN_VAL_FROZEN_BEFORE_TEST",
+    "baseline_source_commit": "c7b23648b5a443ac9d4cba534493c5ae7d3a4c74",
+    "patient_data": "FORBIDDEN",
+    "server_root": "/home/fanyu/auditory_simulation_m6a",
+    "new_output_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_architecture_20261019",
+    "upstream_public_available": "pub_01/s03_strong_baselines_20261015/transformer_available01",
+    "upstream_frozen_encoder_readout": "pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024",
+    "reuse_frozen_phase_records": true,
+    "create_new_train_val_test_labels_from_frozen_manifest": true,
+    "no_new_data_download": true,
+    "dataset": {
+      "eeg_rate_hz": 64,
+      "eeg_shape": "[N,192,64]",
+      "target": "observed auditory envelope at 64 Hz (same existing readout target)",
+      "window_samples": 192,
+      "hop_samples": 96,
+      "normalization": "reuse train_only_normalization.npz; never refit on val/test",
+      "split": "author fold4 available public; preserve exact records and test_seen/test_heldout distinction",
+      "physical_sync": "UNKNOWN (not for latency neurophysiology claims)"
+    },
+    "architecture": {
+      "module": "scripts/pub_01_s03_temporal_scales.py",
+      "input_channels": 64,
+      "output_channels": 1,
+      "width": 48,
+      "kernel_size": 9,
+      "branches": 3,
+      "variants": {
+        "short": [
+          1,
+          1,
+          1
+        ],
+        "middle": [
+          4,
+          4,
+          4
+        ],
+        "long": [
+          16,
+          16,
+          16
+        ],
+        "multiscale": [
+          1,
+          4,
+          16
+        ]
+      },
+      "hypothesis": "multiscale improves held-out 60-s envelope reconstruction beyond long single-scale, not only beyond short single-scale",
+      "all_offline_noncausal": true,
+      "parameter_and_nominal_MACC_match_required": true
+    },
+    "training": {
+      "pilot_seed": 1024,
+      "formal_seeds": [
+        1024,
+        2026,
+        31415
+      ],
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "batch_size": 64,
+      "pilot_steps_max": 100,
+      "formal_budget": 25000,
+      "loss": "negative within-3s-window Pearson, matching prior direct-envelope readout objective",
+      "checkpoint_selection": "maximum validation subject-macro 60s Pearson r over all fixed validation records; first step wins exact tie; no early stop; full equal optimizer budget",
+      "formal_test_access": "after fixed variants, seeds, checkpoint rule, and budget are frozen; exactly once",
+      "no_pretrained_audio_model_input": true,
+      "no_candidate_input_at_inference": true,
+      "validation_every_steps": 2500
+    },
+    "evaluation": {
+      "primary": "test_seen and test_heldout subject-macro Pearson r on 60-s envelope after Hann 50%-overlap-add; separate groups",
+      "secondary": "2/3 seen +1/3 heldout r; paired subject differences, permutation null and time-lag sensitivity on train/validation only",
+      "candidate_retrieval": "SS04 only; no candidate-derived model changes here",
+      "controls": "EEG temporal mismatch within same record, constant/mean envelope, parameter-equal uniform short/middle/long",
+      "report": "all subjects, all seeds, failures, and predeclared group weights; bootstrap at subject level",
+      "no_test_driven_choice": true
+    },
+    "stop_rule": "Engineering smoke plus 1-seed train/val feasibility -> freeze full design -> 3-seed comparison -> one frozen test -> independent review. No S04, S04 branch or artifact before new authorization.",
+    "limitations": "Raw EEG direct model versus pretrained Transformer encoder must be labeled as different training budgets; old 10-subject TRF r must never be treated as same-cohort head-to-head."
+  },
+  "source_sha256": {
+    "pub_01_s03_temporal_scales.py": "aff6273459bfec46523c79dbeac4ecc2939335bef7def7b2594d9a550bead3f9",
+    "pub_01_s03_ss03_data.py": "ef34c42f169e9f27a559da95a27b11438c899e3fcd657280fa0a6ccf0e0ac4ac",
+    "pub_01_s03_ss03_bootstrap.py": "e17368110714c6545ea9a5a15c0dd08790cf11f0c20185b183bacea07c015da4",
+    "pub_01_s03_ss03_eval.py": "8e86580856403db40af637cece89a7c84efa022d7eb3ceac22c86c87b69259e4",
+    "pub_01_s03_ss03_train.py": "e8d756a45446f9d73943148714ea7f46abf5cf02e96124f1372d1eb36507bba0",
+    "pub_01_s03_ss03_test.py": "85aa76ba884df6c7459e563c7b471d365601fee44dd0fd31d4334cb2d785a93f",
+    "pub_01_s03_ss03_freeze.py": "23044232ac478a529d9233d4e5775ceafdf06ace93f67150982b0dddc4cdd9fe",
+    "pub_01_s03_ss03_run.py": "cd4c6dec9a259e5a49a5322fd87cad2b4d8b0a02faac8262a7e8749b74c16ecf",
+    "pub_01_s03_ss03_multiscale_formal_20261019.json": "8f12f628c35c70d2e22c756631941afa253dd91bc2be85fbe1194298dd8d61fd"
+  },
+  "input_contract_sha256": "65d40cbaff5812de546eaedb71246b7767e7a6780691993db65e9bbe600fdbbe",
+  "test_target_structural_checks_only_before_freeze": true
+}

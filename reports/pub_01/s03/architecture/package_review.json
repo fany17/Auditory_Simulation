@@ -1,0 +1,20 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SS03_ONLY",
+  "checks": {
+    "mandatory_outputs": true,
+    "twelve_runs_thirtysix_result_rows": true,
+    "all_seeds_and_variants": true,
+    "all_runs_same6001params25000steps": true,
+    "actual_test_counts_fixed": true,
+    "source_run_metrics_and_summary_equal": true,
+    "prior_separate_review_pass": true,
+    "four_preplanned_pairs_and_family_intervals": true,
+    "same_agent_review_disclosed": true,
+    "no_array_or_weight_payload_returned": true,
+    "upstream_input_identity_checks": true
+  },
+  "maximum_report_metric_error": 0.0,
+  "scope": "same-agent separate post-execution report/evidence check; not third-party scientific signoff"
+}

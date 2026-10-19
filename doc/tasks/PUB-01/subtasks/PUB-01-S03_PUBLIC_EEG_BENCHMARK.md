@@ -5,7 +5,7 @@
 | Subtask ID | `PUB-01-S03` |
 | Parent Task | `PUB-01` |
 | Title | SparrKULee EEG Direct Auditory Decoding & Representation Benchmark |
-| Status | `ACTIVE`（SS01/SS02已交；SS02可用公开条件两基线及包络readout PASS_WITH_LIMITATION；后续架构待研究者指定） |
+| Status | `ACTIVE`（SS01/SS02/SS03已交有限制；SS03四原型×三seed实际结果/review已完成；SS04等待研究者指定） |
 | Blocking for Parent | YES |
 | Patient Data | `FORBIDDEN` |
 | Upstream | `PUB-01-S01` / `PUB-01-S02` 完成有限制阶段交付 |
@@ -16,7 +16,7 @@
 | Go/Hold/Fail | 官方代码或数据不可用时记录 HOLD/内部协议，不编造 SOTA；模型无收益保留阴性并重新审议架构 |
 | Subnodes | `SUBTASKS.md` 中 S03_SS01..SS04 |
 | Files Allowed to Change | public EEG model/scripts/configs/tests/reports、`doc/tasks/PUB-01/**`，历史 frozen 文件只读 |
-| Last Updated | 2026-10-15 |
+| Last Updated | 2026-10-19 |
 
 ## 1. Scientific question
 
@@ -37,10 +37,10 @@
 
 1. `S03_SS01` — 2026-10-11 已完成：10 人/93 条 backward TRF EEG→声音包络，test r≈0.1819 / R²≈0.0178、13 秒错配 null r≈−0.0033（单被试内跨音源条件，有限制，不是语音识别）。
 2. `S03_SS02` — **COMPLETED / PASS_WITH_LIMITATION**（2026-10-15）：按用户事先授权的可用公开条件，HDPS76人原100Hz/M Top1/5/10=12.03/30.45/42.10%；Transformer70训练/69seen/13heldout，2AFC加权82.38%、冻结EEG编码器原Conv32包络加权r=.1593。两套方法及直接endpoint均有真实test/独立review；原完整论文条件未复现，差异与失败见`reports/pub_01/s03/strong_baselines/REPRO_REPORT.md`。当前停止，不自动研发下一架构。
-3. `S03_SS03` — **BACKLOG**：研究者审阅复现结果后锁定一个可证伪的结构问题和候选算子，在同预算条件下开发/消融。
+3. `S03_SS03` — **COMPLETED / PASS_WITH_LIMITATION（2026-10-19）**：参数匹配四原型×三seed各25000步，直接包络multiscale seen/heldout r=.10305/.11380，高于long/middle，预设配对区间均>0。仅支持当前数据预算下结构比较，非生理机制/强基线超越；报告`reports/pub_01/s03/architecture/REPORT.md`。
 4. `S03_SS04` — **BACKLOG**：固定一份主 decoder，在直接特征重建、二选一、五选一、百余候选检索和跨人/跨内容条件下统一验证，严格区分不同任务指标。
 
-当前只批准 **SS02** 作为下一可执行节点；不自动启动 SS03/SS04。Codex 入口：`doc/CODEX_START_HERE.md`。
+当前SS03执行已停止，PR#3保持Draft，不自动启动SS04/S04。后续需研究者指定；Codex入口：`doc/CODEX_START_HERE.md`。
 
 ## 4. Scientific controls and acceptance
 
@@ -52,4 +52,4 @@
 
 ## 5. Completion and evidence
 
-`IN_PROGRESS`。现有已验收成果完整保留在 `reports/pub_01/s03/envelope_decode_20261011/` 和 `PUB-01-S03_SS01`。本次 2026-10-13 仅为 parent/subnode 规划调整；尚未运行新基线、新架构、新的 EEG→音频实验。S03 parent 保持 ACTIVE。
+`IN_PROGRESS`（S03 parent）。SS01/SS02科学结果冻结不变，SS03在2026-10-19真实完成有限制，Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；同agent separate review，不称第三方。S03/PUB仍ACTIVE，SS04 BACKLOG，没有ART-AUDREP-v1。旧CNN/TRF未提交修改与stash保持原状；当前停止。
