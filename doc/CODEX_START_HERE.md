@@ -1,8 +1,8 @@
-> **Codex已实际执行Issue #5（2026-10-19）**：SS05已完成15项tests、独立合成重跑、真实连续EEG pilot及新train归一化，现为TRAIN_VAL_FROZEN / 15run正式训练中。运行证据在reports/pub_01/s03/predictive_memory/codex_run01与2203新根；新holdout信号在全部训练后才读取。工作分支work/pub-01-s03-ss05-predictive-memory / PR#4 Draft。
+> **Issue#5已实际完成（2026-10-19）**：SS05 COMPLETED / PASS_WITH_LIMITATION。五组×三seed正式训练及105个历史条件结果已交；新内部holdout21人/47record/7family的r约.091–.092，关联/历史残差额外收益的六预设区间均跨0，为有效阴性。新train-only norm、后置same-agent review和实测图表见reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md。当前停止，PR#4仍Draft，不合并、不启动SS04/S04/父S05。
 
 # Codex 启动入口 — Auditory_Simulation（2026-10-19最新）
 
-**唯一当前执行任务：`PUB-01-S03_SS05`（跨窗口历史记忆与选择性信息更新），TRAIN_VAL_FROZEN / 正式训练中。** 最新用户授权已由协调者审查合并PR#3，main merge8d21d0a；PR#4已改base main，当前Codex不再被旧“#3保持Draft”约束阻断，也不自行合并#4。协调者只制定/复核任务，Codex执行实际代码与实验。
+**本轮完成任务：`PUB-01-S03_SS05`，有效阴性/完成有限制。** PR#3已按用户新授权由协调者合并main@8d21d0a，SS05在PR#4独立分支交付、base main。当前无自动下一READY节点，不因阴性追加模型；报告和核验不称第三方科学签署。
 
 ## 立即读取（按顺序）
 

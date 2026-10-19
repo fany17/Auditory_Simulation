@@ -1,0 +1,13 @@
+{
+  "variant": "gru",
+  "seed": 2026,
+  "optimizer_steps": 2000,
+  "best_step": 1600,
+  "best_validation_r": 0.11477010038880503,
+  "seconds": 34.366881147027016,
+  "holdout_access": false,
+  "protocol_sha256": "9fa78d00704fa53df8378790c99f9b52d84545cf43afbdcb6883bde4edf159fb",
+  "instantiated_parameters": 70449,
+  "all_training_blocks_same_record": true,
+  "batch_order": "numpy.default_rng(seed).choice(train_segments,2,replace=False) each step; same for all variants"
+}

@@ -1,21 +1,21 @@
-> **Codex已从Issue#5实质启动SS05**：2203新train数据/归一化、原合成复核、15tests及五组四lag真实pilot已完成；现TRAIN_VAL_FROZEN，15run正式训练中。报告/日志在predictive_memory/codex_run01，旧SS03 test不使用。PR#3按新授权已合并8d21d0a，PR#4仍Draft。
+> **Issue#5 / SS05已完成有限制并停止**：15run真实训练/一次新holdout测试、7种同当前EEG历史条件及后置review已完成。五组r约.091–.092，六预设比较区间均跨0，未检出复杂记忆额外收益。报告predictive_memory/codex_run01/REPORT.md。PR#3已按新授权合并8d21d0a，PR#4保持Draft，不合并/不扩实验。
 
 # Auditory_Simulation Current Workboard
 
 更新时间：2026-10-19（Codex 分工纠偏）。父任务状态由 `doc/TASKS.md` 定义，子任务状态由 `doc/tasks/PUB-01/SUBTASKS.md` 定义。**以下当前区是唯一执行路由，其下为历史记录。**
 
-## 当前正在交接给 Codex
+## 当前交付与停止
 
-- **任务：`PUB-01-S03_SS05`，ACTIVE / TRAIN_VAL_FROZEN。** 已有真实运行/冻结证据；继续15run正式结果和同agent后置review，不停在准备，不启动SS04/S04/父S05。
-- **执行归属**：Codex 写代码、运行 tests/合成验证/2203公开EEG、复核与提交；协调助手只维护总任务和科学验收。旧协调助手合成结果属于待核验初稿，不能标成Codex通过。
+- **任务：`PUB-01-S03_SS05`，COMPLETED / PASS_WITH_LIMITATION。** 已交真实内部holdout阴性证据及同agent separate pass；协调只核对轻量文件，不称第三方科学签署。当前STOP，无自动下一READY节点，不启动SS04/S04/父S05。
+- **执行归属**：Codex 写代码、运行 tests/合成验证/2203公开EEG、复核与提交；协调助手维护总任务并核对指定轻量文件。旧协调助手合成初稿已另由Codex实际复核，accuracy复现而A-assoc MSE有差异，详见CODE_AUDIT；不称第三方科学签署。
 - **工作位置**：独立managed worktree pub-01-s03-ss05，分支work/pub-01-s03-ss05-predictive-memory/PR#4 Draft、base main。PR#3已由协调者按新授权合并8d21d0a；当前Codex不更动主目录CNN/TRF/stash或合并#4。
-- **立刻执行**：阅读 `doc/CODEX_START_HERE.md` 和 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。先独立源码+合成审查，再用2203真实公开资源核对分组/时轴，创建仅来自先前训练池的新 prospective internal heldout（若可行），进行新的train/validation，不使用已经打开的SS03测试集调参。
-- **当下不可声称**：新架构相对GRU/SS02/SS03已优于强基线、预测误差模块有效、公开EEG复现完成、已有SS05新的heldout分数。当前SS05 **真实公开EEG训练/正式测试 NOT_RUN**。
+- **证据入口**：codex_run01/REPORT.md、REVIEW.md、FORMAL_PROTOCOL.json、105行RESULTS及15run轻量证据；新holdout来源限旧train，重拟合统计防泄漏，没有用旧SS03 test调参。原始EEG独立CPU90相关复核max差8.13e-6，全部汇总误差0。
+- **不可外推**：本轮没有支持关联/历史残差的额外收益，不等于证明所有历史记忆无用；不能声称超过GRU/旧SS02/SS03、预测误差机制成立或第三方科学签署。PR#4继续Draft，后续由研究者另行决定。
 - **其他状态**：SS01/SS02/SS03已完成有限制并冻结；SS04 BACKLOG；S04公开颅内支线BACKLOG；S05版本化artifact整合BACKLOG；公共项目与患者/STN项目单向版本化衔接，禁止患者数据进入本项目。
 
 ## 历史执行/状态快照（仅供追溯）
 
-## 现在要做什么（Codex 第一入口）
+### 历史：SS05启动前入口（已被上方交付状态取代）
 
 **2026-10-19新授权 SS05：ACTIVE / SYNTHETIC_PROBE_COMPLETED；正式公开EEG TRAIN/TEST NOT_RUN。** 已写PI-MRAM（预测误差＋多速率状态＋关联delta记忆）及同窗口GRU控制、10项本地CPU单元测试与两套合成实验。延迟两键干扰160步：full/assoc_no_pred 100%，GRU62.5%；GRU600步也100%，不能声称不可替代的算法能力；预测误差独立贡献尚不成立。代码和结果仅在PR#4独立工作分支。下一步按 `PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` 与 `reports/pub_01/s03/predictive_memory/NEXT_PUBLIC_EEG_PROTOCOL.md`，先做公开source-family和新内部测试划分可行性审计，SS03旧测试集不可再用于SS05选模型。**不自动启动SS04/S04/S05，不产生artifact。**
 

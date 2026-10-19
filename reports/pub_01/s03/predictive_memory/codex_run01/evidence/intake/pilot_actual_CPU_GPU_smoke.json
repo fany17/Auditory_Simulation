@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "profiles": [
+    {
+      "variant": "local",
+      "device": "cpu",
+      "batch1_60s_inference_seconds": 0.013304627314209939,
+      "same_current_history_reverse_max_prediction_delta": 0.0,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 62209,
+      "nonzero_gradient_parameter_tensors_elements": 62209,
+      "gradient_disconnected_parameter_names": [
+        "base.memory.predict_local.weight",
+        "base.memory.predict_local.bias",
+        "base.memory.query.weight",
+        "base.memory.query.bias",
+        "base.memory.key.weight",
+        "base.memory.key.bias",
+        "base.memory.value.weight",
+        "base.memory.value.bias",
+        "base.memory.write_gate.weight",
+        "base.memory.write_gate.bias"
+      ],
+      "executed_conv_linear_GRU_MACCs_per_batch": 156590080,
+      "associative_read_write_MACCs_approx_per_batch": 0,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "state",
+      "device": "cpu",
+      "batch1_60s_inference_seconds": 0.017524998262524606,
+      "same_current_history_reverse_max_prediction_delta": 0.0002523064613342285,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 62209,
+      "nonzero_gradient_parameter_tensors_elements": 62209,
+      "gradient_disconnected_parameter_names": [
+        "base.memory.predict_local.weight",
+        "base.memory.predict_local.bias",
+        "base.memory.query.weight",
+        "base.memory.query.bias",
+        "base.memory.key.weight",
+        "base.memory.key.bias",
+        "base.memory.value.weight",
+        "base.memory.value.bias",
+        "base.memory.write_gate.weight",
+        "base.memory.write_gate.bias"
+      ],
+      "executed_conv_linear_GRU_MACCs_per_batch": 172974080,
+      "associative_read_write_MACCs_approx_per_batch": 0,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "assoc_no_pred",
+      "device": "cpu",
+      "batch1_60s_inference_seconds": 0.02636461453512311,
+      "same_current_history_reverse_max_prediction_delta": 0.0002537965774536133,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 65442,
+      "nonzero_gradient_parameter_tensors_elements": 65442,
+      "gradient_disconnected_parameter_names": [
+        "base.memory.predict_local.weight",
+        "base.memory.predict_local.bias"
+      ],
+      "executed_conv_linear_GRU_MACCs_per_batch": 174304640,
+      "associative_read_write_MACCs_approx_per_batch": 645120,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "full",
+      "device": "cpu",
+      "batch1_60s_inference_seconds": 0.03636388685554266,
+      "same_current_history_reverse_max_prediction_delta": 0.00025334954261779785,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 68546,
+      "nonzero_gradient_parameter_tensors_elements": 68546,
+      "gradient_disconnected_parameter_names": [],
+      "executed_conv_linear_GRU_MACCs_per_batch": 174304640,
+      "associative_read_write_MACCs_approx_per_batch": 645120,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "gru",
+      "device": "cpu",
+      "batch1_60s_inference_seconds": 0.010967964306473732,
+      "same_current_history_reverse_max_prediction_delta": 0.0008797943592071533,
+      "instantiated_parameters": 70449,
+      "gradient_reachable_parameters": 70449,
+      "nonzero_gradient_parameter_tensors_elements": 70449,
+      "gradient_disconnected_parameter_names": [],
+      "executed_conv_linear_GRU_MACCs_per_batch": 174990080,
+      "associative_read_write_MACCs_approx_per_batch": 0,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "local",
+      "device": "cuda:0",
+      "batch1_60s_inference_seconds": 0.002249632403254509,
+      "same_current_history_reverse_max_prediction_delta": 0.0,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 62209,
+      "nonzero_gradient_parameter_tensors_elements": 62209,
+      "gradient_disconnected_parameter_names": [
+        "base.memory.predict_local.weight",
+        "base.memory.predict_local.bias",
+        "base.memory.query.weight",
+        "base.memory.query.bias",
+        "base.memory.key.weight",
+        "base.memory.key.bias",
+        "base.memory.value.weight",
+        "base.memory.value.bias",
+        "base.memory.write_gate.weight",
+        "base.memory.write_gate.bias"
+      ],
+      "executed_conv_linear_GRU_MACCs_per_batch": 156590080,
+      "associative_read_write_MACCs_approx_per_batch": 0,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "state",
+      "device": "cuda:0",
+      "batch1_60s_inference_seconds": 0.014402477070689201,
+      "same_current_history_reverse_max_prediction_delta": 0.00025218725204467773,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 62209,
+      "nonzero_gradient_parameter_tensors_elements": 62209,
+      "gradient_disconnected_parameter_names": [
+        "base.memory.predict_local.weight",
+        "base.memory.predict_local.bias",
+        "base.memory.query.weight",
+        "base.memory.query.bias",
+        "base.memory.key.weight",
+        "base.memory.key.bias",
+        "base.memory.value.weight",
+        "base.memory.value.bias",
+        "base.memory.write_gate.weight",
+        "base.memory.write_gate.bias"
+      ],
+      "executed_conv_linear_GRU_MACCs_per_batch": 172974080,
+      "associative_read_write_MACCs_approx_per_batch": 0,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "assoc_no_pred",
+      "device": "cuda:0",
+      "batch1_60s_inference_seconds": 0.05288336537778378,
+      "same_current_history_reverse_max_prediction_delta": 0.0002536773681640625,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 65442,
+      "nonzero_gradient_parameter_tensors_elements": 65442,
+      "gradient_disconnected_parameter_names": [
+        "base.memory.predict_local.weight",
+        "base.memory.predict_local.bias"
+      ],
+      "executed_conv_linear_GRU_MACCs_per_batch": 174304640,
+      "associative_read_write_MACCs_approx_per_batch": 645120,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "full",
+      "device": "cuda:0",
+      "batch1_60s_inference_seconds": 0.05202970625832677,
+      "same_current_history_reverse_max_prediction_delta": 0.00025323033332824707,
+      "instantiated_parameters": 68546,
+      "gradient_reachable_parameters": 68546,
+      "nonzero_gradient_parameter_tensors_elements": 68546,
+      "gradient_disconnected_parameter_names": [],
+      "executed_conv_linear_GRU_MACCs_per_batch": 174304640,
+      "associative_read_write_MACCs_approx_per_batch": 645120,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    },
+    {
+      "variant": "gru",
+      "device": "cuda:0",
+      "batch1_60s_inference_seconds": 0.004086366947740316,
+      "same_current_history_reverse_max_prediction_delta": 0.0008799135684967041,
+      "instantiated_parameters": 70449,
+      "gradient_reachable_parameters": 70449,
+      "nonzero_gradient_parameter_tensors_elements": 70449,
+      "gradient_disconnected_parameter_names": [],
+      "executed_conv_linear_GRU_MACCs_per_batch": 174990080,
+      "associative_read_write_MACCs_approx_per_batch": 0,
+      "MACC_limit": "bias, normalization, gates/activations/pointwise arithmetic excluded; inactive prediction Linear still executes in historical prototype"
+    }
+  ],
+  "holdout_access": false
+}

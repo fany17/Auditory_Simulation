@@ -1,0 +1,16 @@
+{
+  "upstream_actual_phase_counts": {
+    "train": 426,
+    "val": 49,
+    "test_seen": 69,
+    "test_heldout": 75
+  },
+  "SS05_used_oldtrain_records": 426,
+  "excluded_old_validation_records": 49,
+  "excluded_old_test_records": 144,
+  "excluded_all_nontrain_records": 193,
+  "legacy_split_field_note": "excluded_old_SS03_test_records=193 is a field-label misnomer; actual count is all nontrain, not test alone",
+  "frozen_split_bytes_unchanged": true,
+  "record_membership_unchanged": true,
+  "scientific_metrics_changed": false
+}

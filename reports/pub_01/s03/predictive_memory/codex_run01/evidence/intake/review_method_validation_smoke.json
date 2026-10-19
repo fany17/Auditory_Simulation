@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "variant": "local",
+      "max_raw_CPU_CUDA_r_error": 1.0322248782682064e-05
+    },
+    {
+      "variant": "state",
+      "max_raw_CPU_CUDA_r_error": 1.0345940342361415e-05
+    }
+  ],
+  "holdout_payload_used": false,
+  "optimizer_steps": 0
+}

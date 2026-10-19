@@ -9,13 +9,13 @@
 ## 最新执行决策（2026-10-19）
 
 - `PUB-01` 仍 `ACTIVE`。研究者明确分工：**协调者制定/审阅任务，Codex负责具体实现和全部实验执行**。未经研究者要求协调者不自行运行模拟或EEG任务。
-- 当前SS05为 **ACTIVE / TRAIN_VAL_FROZEN**：Codex已重跑原合成/15tests、真实EEG五组四lag pilot，修正local历史对照及新train-only归一化；15run正式训练中，未读取新holdout成绩。原报告与新Codex实测证据分开，不冒称正式验收成功。
+- SS05已 **COMPLETED / PASS_WITH_LIMITATION**：Codex完成原合成审查/15tests、真实pilot、新train norm、15run训练与105条件测试。新内部holdout21人/47record/7family的五组r约.091–.092，六预设区间均跨0，未检出复杂记忆额外收益；同agent separate review和轻量文件复核范围已说明。有效阴性限定本轮数据/目标/模型/2000步，不代表历史记忆普遍无用。
 - SS01/SS02/SS03冻结，旧test不供SS05调参。用户最新授权已合并PR#3到main@8d21d0a；PR#4 base main且仍Draft。SS04/S04/父S05 BACKLOG；主目录CNN/TRF/stash不动，不自行合并#4。
 - 运行/交付与患者数据禁止边界详见 `doc/CODEX_START_HERE.md`、`doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。
 
 ## Current scientific branches
 
-2026-10-19：研究者授权独立 `PUB-01-S03_SS05` 历史记忆结构探索，当前只完成合成实验与10项本地测试；2203公开EEG正式评估尚未执行。SS03既有结果依旧冻结不变，SS04/S04/S05保持BACKLOG；新任务完整边界见子任务登记与 `reports/pub_01/s03/predictive_memory/`。
+2026-10-19：SS05真实内部holdout阴性结果与报告已交，当前停止。见reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md；SS01/SS02/SS03科学结果冻结，SS04/S04/父S05 BACKLOG，无自动下一READY节点。PR#3按新授权已合并8d21d0a，PR#4仍Draft不自行合并。
 
 
 2026-10-19：SS03 **COMPLETED / PASS_WITH_LIMITATION**，真实公开fold4四组×三seed各25000步，EEG-only直接包络multiscale seen/heldout r=.10305/.11380（加权.10663），同最大RF long .06411/.06979，middle .09297/.10413。预设配对差值family95%区间均>0，限当前四原型/数据/预算，不证明生理时标或超过SS02。报告/同agent separate review在`reports/pub_01/s03/architecture/`；PR#3 Draft，当前停止。SS04/S04/S05 BACKLOG，未冻结artifact。

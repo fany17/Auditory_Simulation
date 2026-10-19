@@ -1,11 +1,11 @@
-> **Codex实际接续（2026-10-19）**：Issue#5已启动，实测审计/pilot完成，正式15run训练中，见codex_run01/EXECUTION_LOG。最新用户授权下PR#3已由协调者合并main@8d21d0a；PR#4仍Draft、base main，旧“PR#3保持Draft”仅为历史限制。
+> **Codex已实际完成（2026-10-19）**：Issue#5的审计/pilot/15run×7条件新内部holdout及review完成，COMPLETED/PASS_WITH_LIMITATION，六预设比较区间均跨0，见codex_run01/REPORT与EXECUTION_LOG。PR#3已按新授权合并main@8d21d0a；PR#4仍Draft，当前停止、不扩实验。
 
 # SUBTASK — PUB-01-S03_SS05 — 跨窗口历史记忆与选择性信息更新
 
 | 字段 | 值 |
 |---|---|
 | 子任务 | `PUB-01-S03_SS05`，从属于 `PUB-01-S03` / `PUB-01` |
-| 当前状态 | **`TRAIN_VAL_FROZEN`**：真实元数据/15tests/合成审查/五组四lag pilot已完成；新train归一化修正，15run正式训练中，新holdout尚未评分 |
+| 当前状态 | **`COMPLETED / PASS_WITH_LIMITATION`**：合格的新内部family holdout、五组×三seed真实测试及same-agent separate review完成；有效阴性，限定当前数据/目标/模型/2000步 |
 | 唯一执行者 | **Codex** 负责代码审查、实现、真实运行、数据统计、结果记录；协调助手仅更新任务书、复核提交和把关结论 |
 | 上游 | `SS02` 强基线与 `SS03` 多尺度实验已完成有限制；只读、不得覆盖 |
 | 当前 Git | `work/pub-01-s03-ss05-predictive-memory`，独立managed worktree/PR#4 Draft，base main；PR#3按新授权已合并8d21d0a，主目录CNN/TRF/stash不动 |
@@ -99,3 +99,13 @@ Codex 的第一步是只读检查上述代码和数据来源，独立重跑必�
 原10tests/合成A/B/GRU600重跑及5新增tests、实际CPU/GPU smoke通过；原local隐含两past窗在新wrapper修正。每query前20连续窗、当前窗20query构成60s段，有限context reset，全部21token BPTT；共用120s元数据warmup以支持错时历史，不跨record/state。预测头无显式forecast目标，full仅按learned history-residual分支解释。
 
 五组×四lag×100步train/val pilot选择lag8；在新holdout payload前冻结2000步/200步val/三seed/同批序/七历史条件、六primary contrasts/source环境于FORMAL_PROTOCOL。全部15训练完核对预算后才构建holdout并一次评分。容量审计同时给实例化、tensor-reachable、实际标量梯度活动，不声称全部消融等容量或等墙钟成本。当前继续真实结果/review，不能停在准备阶段；详见codex_run01。
+
+## 6. Completion Record（2026-10-19）
+
+15run均完成2000步/10次val，best均1600；之后新holdout47record/21person/7family/517段各模型一次评分七条件。true r三seed均值local.091448、state.091769、assoc.091829、full.091652、GRU.091947；六primary分组校正区间均跨0，H1未建稳定历史收益，H2/H3未建关联/残差额外贡献，H4有标签toy能力不能外推EEG。未发现收益不等于普遍无用或严格等价；未追加架构、seed、预算或lag。
+
+逐段→record→person→macro后置重算误差0，原始EEG独立CPU90个60s相关max差8.13e-6，15tests、source/norm/split/时间门/一次test核验通过。same-agent separate pass非第三方；协调另核对指定轻量文件，非独立训练重跑或科学签署。旧193条排除计数经manifest核验为49val+144test，legacy字段名不准确但成员/hash不变，sidecar更正文案。
+
+必交付位于reports/pub_01/s03/predictive_memory/codex_run01：EXECUTION_LOG、CODE_AUDIT、DATA_CONTRACT、真实FORMAL_PROTOCOL、105行RESULTS、REPORT/REVIEW、机器review/package_review、逐record/逐人/primary/history表、三图、15run轻量证据及路径清单。执行/冻结源码提交2d69ccfdbffe15d9d66294a1e61441501ecf2e54，最后报告commit见PR#4；不把5724起点冒作新运行代码。新SS05代码/config/data/observer均在SS05分支；主目录CNN/TRF/stash、旧SS02/SS03不改，数据/normalizer/cache/权重仅2203，无新下载/server Git/患者数据。
+
+Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；SS05 COMPLETED，S03/PUB仍ACTIVE，SS04/S04/父S05 BACKLOG，无artifact。当前停止，#4继续Draft、不自行合并；#3已按新用户授权合并的事实保留。

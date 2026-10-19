@@ -4,7 +4,9 @@
 
 ## 实际分组及来源限制
 
-旧SS03 cache manifest仅取phase=train的426记录，其余193旧test仅按元数据身份排除，未读payload。逐record/subject/story匹配S02实际split_manifest的source_family/family_mapping_basis，得到37个family。它们曾进入SS03训练，因此只称SS05前瞻INTERNAL family holdout，不是未知外部数据。
+按实际SS03 cache manifest，上游619条为train426、validation49、test_seen69、test_heldout75。SS05只取426条旧train，排除其余193条非train（49 validation+144 test），未读它们的payload。逐record/subject/story匹配S02实际split_manifest的source_family/family_mapping_basis，得到37个family。它们曾进入SS03训练，因此只称SS05前瞻INTERNAL family holdout，不是未知外部数据。
+
+冻结split中的legacy字段excluded_old_SS03_test_records=193名称不准确，实际为全部nontrain数；数据成员始终正确。已用upstream_phase_audit.json核对并更正文案，不改冻结split字节/hash或科学指标。
 
 真实family排序后用numpy RNG20261019一次置换，前7holdout、后7validation、其余23train；在新拟合前write-once保存split_frozen.json，未按成绩挑组。
 
@@ -12,7 +14,7 @@
 |---|---:|---:|---:|---:|
 | train | 23 | 353 | 70 | 4427 |
 | validation | 7 | 26 | 17 | 308 |
-| holdout | 7 | 47 | 21 | 正式freeze后按相同规则处理信号 |
+| holdout | 7 | 47 | 21 | 517（正式freeze且15次训练完成后才处理） |
 
 validation：audiobook_10/8/11、podcast_19/7/11/17。holdout：podcast_24/26/16/3/20、audiobook_12/13。三组family/record无交集，人可跨phase，故非新被试泛化。完整真实ID和映射在split证据，不随机拆相邻窗口。
 

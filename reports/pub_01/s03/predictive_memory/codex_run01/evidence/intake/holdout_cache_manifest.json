@@ -1,0 +1,5375 @@
+{
+  "records": [
+    {
+      "subject": "sub-057",
+      "story": "podcast_24",
+      "phase": "holdout",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-057/ses-varyingStories07/sub-057_ses-varyingStories07_task-listeningActive_run-04_desc-preproc-audio-podcast_24_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_24.npz",
+      "indexed_samples": 63544,
+      "source_duration_seconds": 992.8620416666666,
+      "common_samples": 63542,
+      "windows": 330,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "readout_windows": 660,
+      "phase_offset": 206987,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_24",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 0,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r000_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r000_envelope.npy",
+      "window_count": 330,
+      "segments": 14
+    },
+    {
+      "subject": "sub-058",
+      "story": "podcast_24",
+      "phase": "holdout",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-058/ses-varyingStories07/sub-058_ses-varyingStories07_task-listeningActive_run-07_desc-preproc-audio-podcast_24_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_24.npz",
+      "indexed_samples": 63544,
+      "source_duration_seconds": 992.8620416666666,
+      "common_samples": 63542,
+      "windows": 330,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "readout_windows": 660,
+      "phase_offset": 210042,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_24",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 1,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r001_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r001_envelope.npy",
+      "window_count": 330,
+      "segments": 14
+    },
+    {
+      "subject": "sub-059",
+      "story": "podcast_24",
+      "phase": "holdout",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-059/ses-varyingStories07/sub-059_ses-varyingStories07_task-listeningActive_run-07_desc-preproc-audio-podcast_24_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_24.npz",
+      "indexed_samples": 63544,
+      "source_duration_seconds": 992.8620416666666,
+      "common_samples": 63542,
+      "windows": 330,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "readout_windows": 660,
+      "phase_offset": 213097,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_24",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 2,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r002_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r002_envelope.npy",
+      "window_count": 330,
+      "segments": 14
+    },
+    {
+      "subject": "sub-060",
+      "story": "podcast_24",
+      "phase": "holdout",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-060/ses-varyingStories07/sub-060_ses-varyingStories07_task-listeningActive_run-04_desc-preproc-audio-podcast_24_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_24.npz",
+      "indexed_samples": 63544,
+      "source_duration_seconds": 992.8620416666666,
+      "common_samples": 63542,
+      "windows": 330,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "readout_windows": 660,
+      "phase_offset": 216152,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_24",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 3,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r003_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r003_envelope.npy",
+      "window_count": 330,
+      "segments": 14
+    },
+    {
+      "subject": "sub-061",
+      "story": "podcast_24",
+      "phase": "holdout",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-061/ses-varyingStories07/sub-061_ses-varyingStories07_task-listeningActive_run-05_desc-preproc-audio-podcast_24_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_24.npz",
+      "indexed_samples": 63544,
+      "source_duration_seconds": 992.8620416666666,
+      "common_samples": 63542,
+      "windows": 330,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "readout_windows": 660,
+      "phase_offset": 218626,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_24",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 4,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r004_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r004_envelope.npy",
+      "window_count": 330,
+      "segments": 14
+    },
+    {
+      "subject": "sub-062",
+      "story": "podcast_24",
+      "phase": "holdout",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-062/ses-varyingStories07/sub-062_ses-varyingStories07_task-listeningActive_run-03_desc-preproc-audio-podcast_24_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_24.npz",
+      "indexed_samples": 63544,
+      "source_duration_seconds": 992.8620416666666,
+      "common_samples": 63542,
+      "windows": 330,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "readout_windows": 660,
+      "phase_offset": 221681,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_24",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 5,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r005_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r005_envelope.npy",
+      "window_count": 330,
+      "segments": 14
+    },
+    {
+      "subject": "sub-057",
+      "story": "podcast_26",
+      "phase": "holdout",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-057/ses-varyingStories07/sub-057_ses-varyingStories07_task-listeningActive_run-05_desc-preproc-audio-podcast_26_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_26.npz",
+      "indexed_samples": 50538,
+      "source_duration_seconds": 789.652625,
+      "common_samples": 50537,
+      "windows": 263,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "readout_windows": 525,
+      "phase_offset": 207647,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_26",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 6,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r006_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r006_envelope.npy",
+      "window_count": 263,
+      "segments": 11
+    },
+    {
+      "subject": "sub-058",
+      "story": "podcast_26",
+      "phase": "holdout",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-058/ses-varyingStories07/sub-058_ses-varyingStories07_task-listeningActive_run-08_desc-preproc-audio-podcast_26_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_26.npz",
+      "indexed_samples": 50538,
+      "source_duration_seconds": 789.652625,
+      "common_samples": 50537,
+      "windows": 263,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "readout_windows": 525,
+      "phase_offset": 210702,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_26",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 7,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r007_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r007_envelope.npy",
+      "window_count": 263,
+      "segments": 11
+    },
+    {
+      "subject": "sub-059",
+      "story": "podcast_26",
+      "phase": "holdout",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-059/ses-varyingStories07/sub-059_ses-varyingStories07_task-listeningActive_run-08_desc-preproc-audio-podcast_26_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_26.npz",
+      "indexed_samples": 50538,
+      "source_duration_seconds": 789.652625,
+      "common_samples": 50537,
+      "windows": 263,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "readout_windows": 525,
+      "phase_offset": 213757,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_26",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 8,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r008_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r008_envelope.npy",
+      "window_count": 263,
+      "segments": 11
+    },
+    {
+      "subject": "sub-060",
+      "story": "podcast_26",
+      "phase": "holdout",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-060/ses-varyingStories07/sub-060_ses-varyingStories07_task-listeningActive_run-03_desc-preproc-audio-podcast_26_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_26.npz",
+      "indexed_samples": 50538,
+      "source_duration_seconds": 789.652625,
+      "common_samples": 50537,
+      "windows": 263,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "readout_windows": 525,
+      "phase_offset": 216812,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_26",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 9,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r009_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r009_envelope.npy",
+      "window_count": 263,
+      "segments": 11
+    },
+    {
+      "subject": "sub-061",
+      "story": "podcast_26",
+      "phase": "holdout",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-061/ses-varyingStories07/sub-061_ses-varyingStories07_task-listeningActive_run-07_desc-preproc-audio-podcast_26_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_26.npz",
+      "indexed_samples": 50538,
+      "source_duration_seconds": 789.652625,
+      "common_samples": 50537,
+      "windows": 263,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "readout_windows": 525,
+      "phase_offset": 219286,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_26",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 10,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r010_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r010_envelope.npy",
+      "window_count": 263,
+      "segments": 11
+    },
+    {
+      "subject": "sub-062",
+      "story": "podcast_26",
+      "phase": "holdout",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-062/ses-varyingStories07/sub-062_ses-varyingStories07_task-listeningActive_run-04_desc-preproc-audio-podcast_26_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_26.npz",
+      "indexed_samples": 50538,
+      "source_duration_seconds": 789.652625,
+      "common_samples": 50537,
+      "windows": 263,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "readout_windows": 525,
+      "phase_offset": 222341,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_26",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 11,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r011_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r011_envelope.npy",
+      "window_count": 263,
+      "segments": 11
+    },
+    {
+      "subject": "sub-047",
+      "story": "podcast_16",
+      "phase": "holdout",
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-047/ses-varyingStories05/sub-047_ses-varyingStories05_task-listeningActive_run-09_desc-preproc-audio-podcast_16_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_16.npz",
+      "indexed_samples": 49451,
+      "source_duration_seconds": 772.6672291666666,
+      "common_samples": 49450,
+      "windows": 257,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_16_envelope.npy",
+      "readout_windows": 514,
+      "phase_offset": 179882,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_16",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 12,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r012_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r012_envelope.npy",
+      "window_count": 257,
+      "segments": 10
+    },
+    {
+      "subject": "sub-048",
+      "story": "podcast_16",
+      "phase": "holdout",
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-02_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-048/ses-varyingStories05/sub-048_ses-varyingStories05_task-listeningActive_run-02_desc-preproc-audio-podcast_16_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_16.npz",
+      "indexed_samples": 49451,
+      "source_duration_seconds": 772.6672291666666,
+      "common_samples": 49450,
+      "windows": 257,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_16_envelope.npy",
+      "readout_windows": 514,
+      "phase_offset": 183600,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_16",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 13,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r013_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r013_envelope.npy",
+      "window_count": 257,
+      "segments": 10
+    },
+    {
+      "subject": "sub-027",
+      "story": "podcast_3",
+      "phase": "holdout",
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-027/ses-varyingStories01/sub-027_ses-varyingStories01_task-listeningActive_run-13_desc-preproc-audio-podcast_3_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_3.npz",
+      "indexed_samples": 46544,
+      "source_duration_seconds": 727.249,
+      "common_samples": 46543,
+      "windows": 242,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "readout_windows": 483,
+      "phase_offset": 111818,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_3",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 14,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r014_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r014_envelope.npy",
+      "window_count": 242,
+      "segments": 10
+    },
+    {
+      "subject": "sub-028",
+      "story": "podcast_3",
+      "phase": "holdout",
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-028/ses-varyingStories01/sub-028_ses-varyingStories01_task-listeningActive_run-11_desc-preproc-audio-podcast_3_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_3.npz",
+      "indexed_samples": 46544,
+      "source_duration_seconds": 727.249,
+      "common_samples": 46543,
+      "windows": 242,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "readout_windows": 483,
+      "phase_offset": 114868,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_3",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 15,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r015_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r015_envelope.npy",
+      "window_count": 242,
+      "segments": 10
+    },
+    {
+      "subject": "sub-029",
+      "story": "podcast_3",
+      "phase": "holdout",
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-029/ses-varyingStories01/sub-029_ses-varyingStories01_task-listeningActive_run-01_desc-preproc-audio-podcast_3_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_3.npz",
+      "indexed_samples": 46544,
+      "source_duration_seconds": 727.249,
+      "common_samples": 46543,
+      "windows": 242,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "readout_windows": 483,
+      "phase_offset": 117918,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_3",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 16,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r016_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r016_envelope.npy",
+      "window_count": 242,
+      "segments": 10
+    },
+    {
+      "subject": "sub-030",
+      "story": "podcast_3",
+      "phase": "holdout",
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-030/ses-varyingStories01/sub-030_ses-varyingStories01_task-listeningActive_run-10_desc-preproc-audio-podcast_3_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_3.npz",
+      "indexed_samples": 46544,
+      "source_duration_seconds": 727.249,
+      "common_samples": 46543,
+      "windows": 242,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "readout_windows": 483,
+      "phase_offset": 120968,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_3",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 17,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r017_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r017_envelope.npy",
+      "window_count": 242,
+      "segments": 10
+    },
+    {
+      "subject": "sub-031",
+      "story": "podcast_3",
+      "phase": "holdout",
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-031/ses-varyingStories01/sub-031_ses-varyingStories01_task-listeningActive_run-04_desc-preproc-audio-podcast_3_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_3.npz",
+      "indexed_samples": 46544,
+      "source_duration_seconds": 727.249,
+      "common_samples": 46543,
+      "windows": 242,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "readout_windows": 483,
+      "phase_offset": 124018,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_3",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 18,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r018_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r018_envelope.npy",
+      "window_count": 242,
+      "segments": 10
+    },
+    {
+      "subject": "sub-049",
+      "story": "podcast_20",
+      "phase": "holdout",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-049/ses-varyingStories06/sub-049_ses-varyingStories06_task-listeningActive_run-06_desc-preproc-audio-podcast_20_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_20.npz",
+      "indexed_samples": 50958,
+      "source_duration_seconds": 796.21225,
+      "common_samples": 50957,
+      "windows": 265,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "readout_windows": 529,
+      "phase_offset": 186967,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_20",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 19,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r019_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r019_envelope.npy",
+      "window_count": 265,
+      "segments": 11
+    },
+    {
+      "subject": "sub-051",
+      "story": "podcast_20",
+      "phase": "holdout",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-051/ses-varyingStories06/sub-051_ses-varyingStories06_task-listeningActive_run-02_desc-preproc-audio-podcast_20_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_20.npz",
+      "indexed_samples": 50958,
+      "source_duration_seconds": 796.21225,
+      "common_samples": 50957,
+      "windows": 265,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "readout_windows": 529,
+      "phase_offset": 191316,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_20",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 20,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r020_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r020_envelope.npy",
+      "window_count": 265,
+      "segments": 11
+    },
+    {
+      "subject": "sub-052",
+      "story": "podcast_20",
+      "phase": "holdout",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-052/ses-varyingStories06/sub-052_ses-varyingStories06_task-listeningActive_run-05_desc-preproc-audio-podcast_20_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_20.npz",
+      "indexed_samples": 50958,
+      "source_duration_seconds": 796.21225,
+      "common_samples": 50957,
+      "windows": 265,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "readout_windows": 529,
+      "phase_offset": 193974,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_20",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 21,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r021_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r021_envelope.npy",
+      "window_count": 265,
+      "segments": 11
+    },
+    {
+      "subject": "sub-053",
+      "story": "podcast_20",
+      "phase": "holdout",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-053/ses-varyingStories06/sub-053_ses-varyingStories06_task-listeningActive_run-07_desc-preproc-audio-podcast_20_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_20.npz",
+      "indexed_samples": 50958,
+      "source_duration_seconds": 796.21225,
+      "common_samples": 50957,
+      "windows": 265,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "readout_windows": 529,
+      "phase_offset": 196632,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_20",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 22,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r022_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r022_envelope.npy",
+      "window_count": 265,
+      "segments": 11
+    },
+    {
+      "subject": "sub-054",
+      "story": "podcast_20",
+      "phase": "holdout",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-054/ses-varyingStories06/sub-054_ses-varyingStories06_task-listeningActive_run-04_desc-preproc-audio-podcast_20_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_20.npz",
+      "indexed_samples": 50958,
+      "source_duration_seconds": 796.21225,
+      "common_samples": 50957,
+      "windows": 265,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "readout_windows": 529,
+      "phase_offset": 199290,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_20",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 23,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r023_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r023_envelope.npy",
+      "window_count": 265,
+      "segments": 11
+    },
+    {
+      "subject": "sub-055",
+      "story": "podcast_20",
+      "phase": "holdout",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-055/ses-varyingStories06/sub-055_ses-varyingStories06_task-listeningActive_run-02_desc-preproc-audio-podcast_20_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_20.npz",
+      "indexed_samples": 50958,
+      "source_duration_seconds": 796.21225,
+      "common_samples": 50957,
+      "windows": 265,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "readout_windows": 529,
+      "phase_offset": 201948,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_20",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 24,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r024_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r024_envelope.npy",
+      "window_count": 265,
+      "segments": 11
+    },
+    {
+      "subject": "sub-056",
+      "story": "podcast_20",
+      "phase": "holdout",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-056/ses-varyingStories06/sub-056_ses-varyingStories06_task-listeningActive_run-04_desc-preproc-audio-podcast_20_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/podcast_20.npz",
+      "indexed_samples": 50958,
+      "source_duration_seconds": 796.21225,
+      "common_samples": 50957,
+      "windows": 265,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "readout_windows": 529,
+      "phase_offset": 204606,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "podcast_20",
+      "family_mapping_basis": "podcast_exact_source_label",
+      "old_phase": "SS03_train",
+      "record_id": 25,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r025_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r025_envelope.npy",
+      "window_count": 265,
+      "segments": 11
+    },
+    {
+      "subject": "sub-049",
+      "story": "audiobook_12_1",
+      "phase": "holdout",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-049/ses-varyingStories06/sub-049_ses-varyingStories06_task-listeningActive_run-02_desc-preproc-audio-audiobook_12_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_1.npz",
+      "indexed_samples": 42239,
+      "source_duration_seconds": 659.9820416666666,
+      "common_samples": 42237,
+      "windows": 219,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "readout_windows": 438,
+      "phase_offset": 186024,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 26,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r026_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r026_envelope.npy",
+      "window_count": 219,
+      "segments": 8
+    },
+    {
+      "subject": "sub-049",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-049/ses-varyingStories06/sub-049_ses-varyingStories06_task-listeningActive_run-03_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 186462,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 27,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r027_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r027_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-050",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-050_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-050/ses-varyingStories06/sub-050_ses-varyingStories06_task-listeningActive_run-02_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 188682,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 28,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r028_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r028_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-051",
+      "story": "audiobook_12_1",
+      "phase": "holdout",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-051/ses-varyingStories06/sub-051_ses-varyingStories06_task-listeningActive_run-05_desc-preproc-audio-audiobook_12_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_1.npz",
+      "indexed_samples": 42239,
+      "source_duration_seconds": 659.9820416666666,
+      "common_samples": 42237,
+      "windows": 219,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "readout_windows": 438,
+      "phase_offset": 190373,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 29,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r029_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r029_envelope.npy",
+      "window_count": 219,
+      "segments": 8
+    },
+    {
+      "subject": "sub-051",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-051/ses-varyingStories06/sub-051_ses-varyingStories06_task-listeningActive_run-06_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 190811,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 30,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r030_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r030_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-052",
+      "story": "audiobook_12_1",
+      "phase": "holdout",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-052/ses-varyingStories06/sub-052_ses-varyingStories06_task-listeningActive_run-03_desc-preproc-audio-audiobook_12_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_1.npz",
+      "indexed_samples": 42239,
+      "source_duration_seconds": 659.9820416666666,
+      "common_samples": 42237,
+      "windows": 219,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "readout_windows": 438,
+      "phase_offset": 193031,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 31,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r031_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r031_envelope.npy",
+      "window_count": 219,
+      "segments": 8
+    },
+    {
+      "subject": "sub-052",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-052/ses-varyingStories06/sub-052_ses-varyingStories06_task-listeningActive_run-04_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 193469,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 32,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r032_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r032_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-053",
+      "story": "audiobook_12_1",
+      "phase": "holdout",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-053/ses-varyingStories06/sub-053_ses-varyingStories06_task-listeningActive_run-02_desc-preproc-audio-audiobook_12_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_1.npz",
+      "indexed_samples": 42239,
+      "source_duration_seconds": 659.9820416666666,
+      "common_samples": 42237,
+      "windows": 219,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "readout_windows": 438,
+      "phase_offset": 195689,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 33,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r033_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r033_envelope.npy",
+      "window_count": 219,
+      "segments": 8
+    },
+    {
+      "subject": "sub-053",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-053/ses-varyingStories06/sub-053_ses-varyingStories06_task-listeningActive_run-03_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 196127,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 34,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r034_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r034_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-054",
+      "story": "audiobook_12_1",
+      "phase": "holdout",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-054/ses-varyingStories06/sub-054_ses-varyingStories06_task-listeningActive_run-02_desc-preproc-audio-audiobook_12_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_1.npz",
+      "indexed_samples": 42239,
+      "source_duration_seconds": 659.9820416666666,
+      "common_samples": 42237,
+      "windows": 219,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "readout_windows": 438,
+      "phase_offset": 198347,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 35,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r035_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r035_envelope.npy",
+      "window_count": 219,
+      "segments": 8
+    },
+    {
+      "subject": "sub-054",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-054/ses-varyingStories06/sub-054_ses-varyingStories06_task-listeningActive_run-03_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 198785,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 36,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r036_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r036_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-055",
+      "story": "audiobook_12_1",
+      "phase": "holdout",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-055/ses-varyingStories06/sub-055_ses-varyingStories06_task-listeningActive_run-03_desc-preproc-audio-audiobook_12_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_1.npz",
+      "indexed_samples": 42239,
+      "source_duration_seconds": 659.9820416666666,
+      "common_samples": 42237,
+      "windows": 219,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "readout_windows": 438,
+      "phase_offset": 201005,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 37,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r037_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r037_envelope.npy",
+      "window_count": 219,
+      "segments": 8
+    },
+    {
+      "subject": "sub-055",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-055/ses-varyingStories06/sub-055_ses-varyingStories06_task-listeningActive_run-04_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 201443,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 38,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r038_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r038_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-056",
+      "story": "audiobook_12_1",
+      "phase": "holdout",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-056/ses-varyingStories06/sub-056_ses-varyingStories06_task-listeningActive_run-05_desc-preproc-audio-audiobook_12_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_1.npz",
+      "indexed_samples": 42239,
+      "source_duration_seconds": 659.9820416666666,
+      "common_samples": 42237,
+      "windows": 219,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "readout_windows": 438,
+      "phase_offset": 203663,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 39,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r039_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r039_envelope.npy",
+      "window_count": 219,
+      "segments": 8
+    },
+    {
+      "subject": "sub-056",
+      "story": "audiobook_12_2",
+      "phase": "holdout",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-056/ses-varyingStories06/sub-056_ses-varyingStories06_task-listeningActive_run-06_desc-preproc-audio-audiobook_12_2_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_12_2.npz",
+      "indexed_samples": 48639,
+      "source_duration_seconds": 759.9820416666666,
+      "common_samples": 48637,
+      "windows": 253,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "readout_windows": 505,
+      "phase_offset": 204101,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_12",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 40,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r040_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r040_envelope.npy",
+      "window_count": 253,
+      "segments": 10
+    },
+    {
+      "subject": "sub-057",
+      "story": "audiobook_13_1",
+      "phase": "holdout",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-057/ses-varyingStories07/sub-057_ses-varyingStories07_task-listeningActive_run-06_desc-preproc-audio-audiobook_13_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_13_1.npz",
+      "indexed_samples": 64094,
+      "source_duration_seconds": 1001.4587708333333,
+      "common_samples": 64092,
+      "windows": 333,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "readout_windows": 666,
+      "phase_offset": 206321,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_13",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 41,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r041_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r041_envelope.npy",
+      "window_count": 333,
+      "segments": 14
+    },
+    {
+      "subject": "sub-058",
+      "story": "audiobook_13_1",
+      "phase": "holdout",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-058/ses-varyingStories07/sub-058_ses-varyingStories07_task-listeningActive_run-03_desc-preproc-audio-audiobook_13_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_13_1.npz",
+      "indexed_samples": 64094,
+      "source_duration_seconds": 1001.4587708333333,
+      "common_samples": 64092,
+      "windows": 333,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "readout_windows": 666,
+      "phase_offset": 209376,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_13",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 42,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r042_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r042_envelope.npy",
+      "window_count": 333,
+      "segments": 14
+    },
+    {
+      "subject": "sub-059",
+      "story": "audiobook_13_1",
+      "phase": "holdout",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-059/ses-varyingStories07/sub-059_ses-varyingStories07_task-listeningActive_run-03_desc-preproc-audio-audiobook_13_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_13_1.npz",
+      "indexed_samples": 64094,
+      "source_duration_seconds": 1001.4587708333333,
+      "common_samples": 64092,
+      "windows": 333,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "readout_windows": 666,
+      "phase_offset": 212431,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_13",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 43,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r043_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r043_envelope.npy",
+      "window_count": 333,
+      "segments": 14
+    },
+    {
+      "subject": "sub-060",
+      "story": "audiobook_13_1",
+      "phase": "holdout",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-060/ses-varyingStories07/sub-060_ses-varyingStories07_task-listeningActive_run-06_desc-preproc-audio-audiobook_13_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_13_1.npz",
+      "indexed_samples": 64094,
+      "source_duration_seconds": 1001.4587708333333,
+      "common_samples": 64092,
+      "windows": 333,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "readout_windows": 666,
+      "phase_offset": 215486,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_13",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 44,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r044_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r044_envelope.npy",
+      "window_count": 333,
+      "segments": 14
+    },
+    {
+      "subject": "sub-061",
+      "story": "audiobook_13_1",
+      "phase": "holdout",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-061/ses-varyingStories07/sub-061_ses-varyingStories07_task-listeningActive_run-01_desc-preproc-audio-audiobook_13_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_13_1.npz",
+      "indexed_samples": 64094,
+      "source_duration_seconds": 1001.4587708333333,
+      "common_samples": 64092,
+      "windows": 333,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "readout_windows": 666,
+      "phase_offset": 217960,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_13",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 45,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r045_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r045_envelope.npy",
+      "window_count": 333,
+      "segments": 14
+    },
+    {
+      "subject": "sub-062",
+      "story": "audiobook_13_1",
+      "phase": "holdout",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "eeg_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-062/ses-varyingStories07/sub-062_ses-varyingStories07_task-listeningActive_run-05_desc-preproc-audio-audiobook_13_1_eeg.npy",
+      "audio_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_format_qc_20260919_v1/expanded_archives/audiobook_13_1.npz",
+      "indexed_samples": 64094,
+      "source_duration_seconds": 1001.4587708333333,
+      "common_samples": 64092,
+      "windows": 333,
+      "envelope_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "readout_windows": 666,
+      "phase_offset": 221015,
+      "alignment_max_absolute_error": 0.0,
+      "eeg_orientation": "time_by64",
+      "target_reference": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "source_family": "audiobook_13",
+      "family_mapping_basis": "audiobook_source_prefix_parts_shifted_artefact",
+      "old_phase": "SS03_train",
+      "record_id": 46,
+      "cache_eeg": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r046_eeg.npy",
+      "cache_envelope": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01/cache_holdout/r046_envelope.npy",
+      "window_count": 333,
+      "segments": 14
+    }
+  ],
+  "segments": [
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 0,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_24",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 1,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_24",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 2,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_24",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 3,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_24",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 4,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_24",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 5,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_24",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 6,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "podcast_26",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 7,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "podcast_26",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 8,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "podcast_26",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 9,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "podcast_26",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 10,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "podcast_26",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 11,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "podcast_26",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 12,
+      "phase": "holdout",
+      "subject": "sub-047",
+      "source_family": "podcast_16",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 13,
+      "phase": "holdout",
+      "subject": "sub-048",
+      "source_family": "podcast_16",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 14,
+      "phase": "holdout",
+      "subject": "sub-027",
+      "source_family": "podcast_3",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 15,
+      "phase": "holdout",
+      "subject": "sub-028",
+      "source_family": "podcast_3",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 16,
+      "phase": "holdout",
+      "subject": "sub-029",
+      "source_family": "podcast_3",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 17,
+      "phase": "holdout",
+      "subject": "sub-030",
+      "source_family": "podcast_3",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 18,
+      "phase": "holdout",
+      "subject": "sub-031",
+      "source_family": "podcast_3",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 19,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "podcast_20",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 20,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "podcast_20",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 21,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "podcast_20",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 22,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "podcast_20",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 23,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "podcast_20",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 24,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "podcast_20",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 25,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "podcast_20",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 26,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 27,
+      "phase": "holdout",
+      "subject": "sub-049",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 28,
+      "phase": "holdout",
+      "subject": "sub-050",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 29,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 30,
+      "phase": "holdout",
+      "subject": "sub-051",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 31,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 32,
+      "phase": "holdout",
+      "subject": "sub-052",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 33,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 34,
+      "phase": "holdout",
+      "subject": "sub-053",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 35,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 36,
+      "phase": "holdout",
+      "subject": "sub-054",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 37,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 38,
+      "phase": "holdout",
+      "subject": "sub-055",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 39,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 40,
+      "phase": "holdout",
+      "subject": "sub-056",
+      "source_family": "audiobook_12",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 41,
+      "phase": "holdout",
+      "subject": "sub-057",
+      "source_family": "audiobook_13",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 42,
+      "phase": "holdout",
+      "subject": "sub-058",
+      "source_family": "audiobook_13",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 43,
+      "phase": "holdout",
+      "subject": "sub-059",
+      "source_family": "audiobook_13",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 44,
+      "phase": "holdout",
+      "subject": "sub-060",
+      "source_family": "audiobook_13",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 45,
+      "phase": "holdout",
+      "subject": "sub-061",
+      "source_family": "audiobook_13",
+      "start_window": 300,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 40,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 60,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 80,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 100,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 120,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 140,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 160,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 180,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 200,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 220,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 240,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 260,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 280,
+      "windows": 20
+    },
+    {
+      "record_id": 46,
+      "phase": "holdout",
+      "subject": "sub-062",
+      "source_family": "audiobook_13",
+      "start_window": 300,
+      "windows": 20
+    }
+  ],
+  "excluded_records": [],
+  "window_samples": 192,
+  "history_windows": 20,
+  "prior_gap_windows": 20,
+  "score_windows": 20,
+  "first_target_window": 40,
+  "target_lag_formula": "env[t-lag:t-lag+192]; positive lag means EEG response after sound",
+  "history_is_contiguous_within_same_record": true,
+  "boundary_rule": "each query starts a fresh bounded60s past context; no state handed across query/record",
+  "normalization": "newtrain_normalization.npz exclusively SS05_train fit",
+  "stage": "holdout"
+}

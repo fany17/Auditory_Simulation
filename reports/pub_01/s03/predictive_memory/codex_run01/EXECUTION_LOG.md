@@ -30,4 +30,12 @@ cd "$TASKROOT/input"
 
 各阶段nohup/独立log与started/status JSON持久运行，cache/协议/run目录默认exist即拒绝；不覆盖SS02/SS03。SHA256仅本任务明确要求的轻量source/config/契约身份，不做全量raw checksum审计。evidence/intake保存实测轻量复核资料。
 
-目前无工程失败重启。A-assoc合成MSE差异、未显式训练forecast误差等局限已披露。当前继续正式结果/review，不能因准备完成停止；完成SS05后停，不启动SS04/S04/父S05。
+## 最终结果与复核
+
+15run全部2000步、10次完整val，best均1600；all_training_review通过后才处理47条新holdout，得到517个完整60s段/21人/7family，15模型各一次test×7条件。true-history三seed均值r：local.091448、state.091769、assoc.091829、full.091652、GRU.091947。六primary contrasts的分组校正区间全部跨0；没有为阴性追加训练、换lag或加架构。
+
+同agent后置review逐段→record→person→macro重算误差0，独立原始EEG→CPU90个60s条件对照maxr差8.13e-6，source/norm/split/时间顺序和一次test均通过。三张实测图、105行RESULTS、逐人/逐record/配对/历史干预表和15run轻量证据已保存。协调会话只做指定轻量文件复核，不视为第三方科学签署。
+
+协调指出上游193条文案误称全test，经实际manifest核验应为49val+69seen+75heldout的非train总和。冻结split的legacy字段名不改；upstream_phase_audit确认成员和hash未变，修正文案，不影响任何科学数值。
+
+执行源码/预实验与冻结证据已提交2d69ccfdbffe15d9d66294a1e61441501ecf2e54，最终报告/状态提交见PR#4。无工程失败重启；A-assoc合成MSE差异、未显式forecast监督等局限保留。Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；SS05完成且停止，不合并#4，不启动SS04/S04/父S05。

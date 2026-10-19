@@ -68,7 +68,7 @@ Primary public intracranial candidate：OpenNeuro `ds004703`，其独立 baselin
 4. **B 支线**：`PUB-01-S04` ds004703 独立公开颅内基线与后续 EEG→sEEG 迁移（独立 sEEG 基线不依赖 S03，迁移阶段才依赖 S03 frozen output）；
 5. `PUB-01-S05` Artifact Candidate and Parent Integration Review。
 
-两条支线严格按 `RESEARCH_BRANCHES.md`、`SUBTASKS.md` 执行；SS02/SS03已完成有限制并冻结。**SS05当前唯一 `READY_FOR_CODEX`**，研究者授权Codex独立审查历史记忆原型、开展新的公开EEG实验。当前没有新SS05公开EEG训练结果；SS04、S04、父S05仍BACKLOG。详细入口：`doc/CODEX_START_HERE.md`。
+两条支线严格按 `RESEARCH_BRANCHES.md`、`SUBTASKS.md` 执行；SS02/SS03已完成有限制并冻结。**SS05已COMPLETED/PASS_WITH_LIMITATION，当前停止**：Codex完成源码/合成复核和15run真实EEG新内部holdout研究，六预设区间均跨0，未检出复杂记忆额外收益。无自动下一READY；SS04、S04、父S05仍BACKLOG。详细入口：`doc/CODEX_START_HERE.md`。
 
 2026-09-19 用户要求持续推进至数据下载和初步清洗完成，新增 `PUB-01-S01_SS01 — Server Dataset Download and Initial Cleaning` 作为 S01 审计后的独立数据准备包。2026-09-24纠正原S06编号并嵌入S01；执行依赖为 S01许可/访问准入 → S01_SS01 → S01配对/时序与实验准入 → S02 → S03 → S04 → S05。S01_SS01 对已经完成许可/身份核验的数据可分支先行下载和非破坏性 QC，不绕过 S01 的 benchmark 准入验收。
 
@@ -173,6 +173,8 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 - 不读取本项目私有患者/STN资料、不扩大下载范围、不自动训练；只有实际访问/读取失败或明确使用禁止才阻断受影响对象，其余可进行的分析继续。
 
 ## 用户阶段验收与后续安排
+
+2026-10-19 SS05执行交付追加：Codex在2203完成15tests/合成审查、train-val pilot、重新拟合新353train统计及冻结2000步×三seed×五组。全部训练完成后一次开放新47record/21person/7family holdout，每模型一次测试七历史条件，共105结果行；五组r约.091–.092，六预设校正区间均跨0，未检出复杂记忆额外收益，不是普遍无效或等价证明。Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；同agent separate post-execution review聚合误差0、90个原始EEG CPU相关max差8.13e-6，协调另核对指定轻量文件。报告`reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md`。来源仅旧SS03train、统计无新holdout泄漏；旧193条排除为49val+144test，legacy字段名用sidecar更正而不改冻结成员/hash。source执行/冻结提交2d69ccf，最终报告commit见PR#4。SS05 COMPLETED后停止；S03/PUB仍ACTIVE，SS04/S04/父S05 BACKLOG，无artifact。PR#3按后续用户授权已合并8d21d0a，#4仍Draft，不自行合并；主目录CNN/TRF/stash不动。
 
 用户明确接受S01作为“公开数据准备、内容理解及初步探索”阶段完成。SS01已完成公开范围下载/读取核验，SS02已提交真实信号、PSD、音频/事件和尾差图。现将S01及SS02标记COMPLETED / PASS_WITH_LIMITATION，转入S02。
 
