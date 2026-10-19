@@ -1,3 +1,5 @@
+> **当前最新入口（2026-10-19）**：研究者已授权独立节点 `PUB-01-S03_SS05`（History-Aware Predictive / Associative Memory）；**合成原型与10项本地CPU测试完成，公开EEG在2203真实训练/测试尚未运行**。先读 `doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`、`reports/pub_01/s03/predictive_memory/REPORT.md` 与 `NEXT_PUBLIC_EEG_PROTOCOL.md`。Codex只能从新分支独立worktree、只读盘点公开旧训练记录并准备新分组协议，不得直接打开已使用的SS03 test_seen/test_heldout，也不得读任何患者/STN数据。旧SS03/SS02指令均属冻结历史。
+
 > **2026-10-19交付/停止入口**：`PUB-01-S03_SS03` **COMPLETED / PASS_WITH_LIMITATION**。真实64Hz EEG→包络四组×三seed、每次25000步完成；multiscale seen/heldout r=.10305/.11380，高于同参数long .06411/.06979及middle .09297/.10413，预设四contrast family95%区间均>0。本结论只限当前原型/数据/预算，不证明生理时标，也未超过SS02强基线参考。报告`reports/pub_01/s03/architecture/REPORT.md`，同agent separate review见REVIEW.md。PR#3保持Draft，主目录CNN/TRF/stash未动；当前停止，不合并main、不启动SS04/S04，无自动下一READY节点。
 
 > 下列SS02基线复现指令为历史说明，不能作为当前READY节点覆盖上方入口。
