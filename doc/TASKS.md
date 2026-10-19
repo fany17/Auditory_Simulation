@@ -8,6 +8,9 @@
 
 ## Current scientific branches
 
+2026-10-19：研究者授权独立 `PUB-01-S03_SS05` 历史记忆结构探索，当前只完成合成实验与10项本地测试；2203公开EEG正式评估尚未执行。SS03既有结果依旧冻结不变，SS04/S04/S05保持BACKLOG；新任务完整边界见子任务登记与 `reports/pub_01/s03/predictive_memory/`。
+
+
 2026-10-19：SS03 **COMPLETED / PASS_WITH_LIMITATION**，真实公开fold4四组×三seed各25000步，EEG-only直接包络multiscale seen/heldout r=.10305/.11380（加权.10663），同最大RF long .06411/.06979，middle .09297/.10413。预设配对差值family95%区间均>0，限当前四原型/数据/预算，不证明生理时标或超过SS02。报告/同agent separate review在`reports/pub_01/s03/architecture/`；PR#3 Draft，当前停止。SS04/S04/S05 BACKLOG，未冻结artifact。
 
 
