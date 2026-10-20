@@ -1,0 +1,233 @@
+{
+  "old_number_comparison": [
+    {
+      "probe": "probe_a",
+      "variant": "local",
+      "old_accuracy": 0.484375,
+      "Codex_accuracy": 0.484375,
+      "old_mse": 1.0001804828643799,
+      "Codex_mse": 1.0001804828643799,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 0.0
+    },
+    {
+      "probe": "probe_a",
+      "variant": "state",
+      "old_accuracy": 1,
+      "Codex_accuracy": 1.0,
+      "old_mse": 0.001872637658379972,
+      "Codex_mse": 0.0018726352136582136,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 2.444721758365631e-09
+    },
+    {
+      "probe": "probe_a",
+      "variant": "predictive_state",
+      "old_accuracy": 1,
+      "Codex_accuracy": 1.0,
+      "old_mse": 0.002325096633285284,
+      "Codex_mse": 0.002325094537809491,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 2.0954757928848267e-09
+    },
+    {
+      "probe": "probe_a",
+      "variant": "assoc_no_pred",
+      "old_accuracy": 1,
+      "Codex_accuracy": 1.0,
+      "old_mse": 0.0001322620955761522,
+      "Codex_mse": 5.731860801461153e-05,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 7.494348756154068e-05
+    },
+    {
+      "probe": "probe_a",
+      "variant": "full",
+      "old_accuracy": 1,
+      "Codex_accuracy": 1.0,
+      "old_mse": 0.00018352500046603382,
+      "Codex_mse": 0.0001834482536651194,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 7.674680091440678e-08
+    },
+    {
+      "probe": "probe_a",
+      "variant": "gru",
+      "old_accuracy": 1,
+      "Codex_accuracy": 1.0,
+      "old_mse": 0.0002132415393134579,
+      "Codex_mse": 0.0002134003589162603,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 1.5881960280239582e-07
+    },
+    {
+      "probe": "probe_b",
+      "variant": "local",
+      "old_accuracy": 0.5078125,
+      "Codex_accuracy": 0.5078125,
+      "old_mse": 1.0226463079452515,
+      "Codex_mse": 1.0226463079452515,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 0.0
+    },
+    {
+      "probe": "probe_b",
+      "variant": "state",
+      "old_accuracy": 0.71875,
+      "Codex_accuracy": 0.71875,
+      "old_mse": 0.7342444658279419,
+      "Codex_mse": 0.7342445850372314,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 1.1920928955078125e-07
+    },
+    {
+      "probe": "probe_b",
+      "variant": "predictive_state",
+      "old_accuracy": 0.703125,
+      "Codex_accuracy": 0.703125,
+      "old_mse": 0.7230805158615112,
+      "Codex_mse": 0.7230805158615112,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 0.0
+    },
+    {
+      "probe": "probe_b",
+      "variant": "assoc_no_pred",
+      "old_accuracy": 1,
+      "Codex_accuracy": 1.0,
+      "old_mse": 0.0017291841795668006,
+      "Codex_mse": 0.001729180570691824,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 3.6088749766349792e-09
+    },
+    {
+      "probe": "probe_b",
+      "variant": "full",
+      "old_accuracy": 1,
+      "Codex_accuracy": 1.0,
+      "old_mse": 0.0014781230129301548,
+      "Codex_mse": 0.0014781263889744878,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 3.3760443329811096e-09
+    },
+    {
+      "probe": "probe_b",
+      "variant": "gru",
+      "old_accuracy": 0.625,
+      "Codex_accuracy": 0.625,
+      "old_mse": 0.9230708479881287,
+      "Codex_mse": 0.923071026802063,
+      "accuracy_absolute_difference": 0.0,
+      "mse_absolute_difference": 1.7881393432617188e-07
+    }
+  ],
+  "labeled_event_counterfactuals": [
+    {
+      "variant": "state",
+      "training_steps": 160,
+      "ground_truth_relevant_event": "last write to queried key; exact synthetic labels only",
+      "original_sign_accuracy": 0.71875,
+      "relevant_flip_accuracy_reversed_truth": 0.78125,
+      "irrelevant_flip_accuracy_original_truth": 0.7265625,
+      "relevant_flip_mean_abs_prediction_delta": 0.5933252573013306,
+      "irrelevant_flip_mean_abs_prediction_delta": 0.6298750042915344,
+      "gap_queries": [
+        {
+          "additional_gap_tokens": 0,
+          "sign_accuracy": 0.71875
+        },
+        {
+          "additional_gap_tokens": 16,
+          "sign_accuracy": 0.71875
+        },
+        {
+          "additional_gap_tokens": 32,
+          "sign_accuracy": 0.671875
+        }
+      ]
+    },
+    {
+      "variant": "assoc_no_pred",
+      "training_steps": 160,
+      "ground_truth_relevant_event": "last write to queried key; exact synthetic labels only",
+      "original_sign_accuracy": 1.0,
+      "relevant_flip_accuracy_reversed_truth": 1.0,
+      "irrelevant_flip_accuracy_original_truth": 1.0,
+      "relevant_flip_mean_abs_prediction_delta": 1.9594159126281738,
+      "irrelevant_flip_mean_abs_prediction_delta": 0.039536457508802414,
+      "gap_queries": [
+        {
+          "additional_gap_tokens": 0,
+          "sign_accuracy": 1.0
+        },
+        {
+          "additional_gap_tokens": 16,
+          "sign_accuracy": 1.0
+        },
+        {
+          "additional_gap_tokens": 32,
+          "sign_accuracy": 1.0
+        }
+      ]
+    },
+    {
+      "variant": "full",
+      "training_steps": 160,
+      "ground_truth_relevant_event": "last write to queried key; exact synthetic labels only",
+      "original_sign_accuracy": 1.0,
+      "relevant_flip_accuracy_reversed_truth": 1.0,
+      "irrelevant_flip_accuracy_original_truth": 1.0,
+      "relevant_flip_mean_abs_prediction_delta": 2.0101723670959473,
+      "irrelevant_flip_mean_abs_prediction_delta": 0.04118841886520386,
+      "gap_queries": [
+        {
+          "additional_gap_tokens": 0,
+          "sign_accuracy": 1.0
+        },
+        {
+          "additional_gap_tokens": 16,
+          "sign_accuracy": 1.0
+        },
+        {
+          "additional_gap_tokens": 32,
+          "sign_accuracy": 1.0
+        }
+      ]
+    },
+    {
+      "variant": "gru",
+      "training_steps": 160,
+      "ground_truth_relevant_event": "last write to queried key; exact synthetic labels only",
+      "original_sign_accuracy": 0.625,
+      "relevant_flip_accuracy_reversed_truth": 0.6875,
+      "irrelevant_flip_accuracy_original_truth": 0.734375,
+      "relevant_flip_mean_abs_prediction_delta": 0.11592495441436768,
+      "irrelevant_flip_mean_abs_prediction_delta": 0.14739345014095306,
+      "gap_queries": [
+        {
+          "additional_gap_tokens": 0,
+          "sign_accuracy": 0.625
+        },
+        {
+          "additional_gap_tokens": 16,
+          "sign_accuracy": 0.6484375
+        },
+        {
+          "additional_gap_tokens": 32,
+          "sign_accuracy": 0.6796875
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "compute": "server2203 CPU"
+  },
+  "real_EEG": false,
+  "limits": [
+    "single synthetic seed",
+    "query-delay extrapolation exploratory",
+    "no EEG relevant-event ground truth",
+    "not novelty or clinical evidence"
+  ]
+}

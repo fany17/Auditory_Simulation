@@ -1,8 +1,24 @@
+> **Issue#5 / SS05已完成有限制并停止**：15run真实训练/一次新holdout测试、7种同当前EEG历史条件及后置review已完成。五组r约.091–.092，六预设比较区间均跨0，未检出复杂记忆额外收益。报告predictive_memory/codex_run01/REPORT.md。PR#3已按新授权合并8d21d0a，PR#4保持Draft，不合并/不扩实验。
+
 # Auditory_Simulation Current Workboard
 
-更新时间：`2026-10-19`。父任务状态来源：`doc/TASKS.md`；子节点状态来源：`doc/tasks/PUB-01/SUBTASKS.md`。
+更新时间：2026-10-19（Codex 分工纠偏）。父任务状态由 `doc/TASKS.md` 定义，子任务状态由 `doc/tasks/PUB-01/SUBTASKS.md` 定义。**以下当前区是唯一执行路由，其下为历史记录。**
 
-## 现在要做什么（Codex 第一入口）
+## 当前交付与停止
+
+- **任务：`PUB-01-S03_SS05`，COMPLETED / PASS_WITH_LIMITATION。** 已交真实内部holdout阴性证据及同agent separate pass；协调只核对轻量文件，不称第三方科学签署。当前STOP，无自动下一READY节点，不启动SS04/S04/父S05。
+- **执行归属**：Codex 写代码、运行 tests/合成验证/2203公开EEG、复核与提交；协调助手维护总任务并核对指定轻量文件。旧协调助手合成初稿已另由Codex实际复核，accuracy复现而A-assoc MSE有差异，详见CODE_AUDIT；不称第三方科学签署。
+- **工作位置**：独立managed worktree pub-01-s03-ss05，分支work/pub-01-s03-ss05-predictive-memory/PR#4 Draft、base main。PR#3已由协调者按新授权合并8d21d0a；当前Codex不更动主目录CNN/TRF/stash或合并#4。
+- **证据入口**：codex_run01/REPORT.md、REVIEW.md、FORMAL_PROTOCOL.json、105行RESULTS及15run轻量证据；新holdout来源限旧train，重拟合统计防泄漏，没有用旧SS03 test调参。原始EEG独立CPU90相关复核max差8.13e-6，全部汇总误差0。
+- **不可外推**：本轮没有支持关联/历史残差的额外收益，不等于证明所有历史记忆无用；不能声称超过GRU/旧SS02/SS03、预测误差机制成立或第三方科学签署。PR#4继续Draft，后续由研究者另行决定。
+- **其他状态**：SS01/SS02/SS03已完成有限制并冻结；SS04 BACKLOG；S04公开颅内支线BACKLOG；S05版本化artifact整合BACKLOG；公共项目与患者/STN项目单向版本化衔接，禁止患者数据进入本项目。
+
+## 历史执行/状态快照（仅供追溯）
+
+### 历史：SS05启动前入口（已被上方交付状态取代）
+
+**2026-10-19新授权 SS05：ACTIVE / SYNTHETIC_PROBE_COMPLETED；正式公开EEG TRAIN/TEST NOT_RUN。** 已写PI-MRAM（预测误差＋多速率状态＋关联delta记忆）及同窗口GRU控制、10项本地CPU单元测试与两套合成实验。延迟两键干扰160步：full/assoc_no_pred 100%，GRU62.5%；GRU600步也100%，不能声称不可替代的算法能力；预测误差独立贡献尚不成立。代码和结果仅在PR#4独立工作分支。下一步按 `PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` 与 `reports/pub_01/s03/predictive_memory/NEXT_PUBLIC_EEG_PROTOCOL.md`，先做公开source-family和新内部测试划分可行性审计，SS03旧测试集不可再用于SS05选模型。**不自动启动SS04/S04/S05，不产生artifact。**
+
 
 2026-10-19交付：`PUB-01-S03_SS03` **COMPLETED / PASS_WITH_LIMITATION**。真实输入对齐/CPU-GPU smoke/100步pilot→测试前预算冻结→4×3正式训练及每模型一次test→同agent separate review已完成。multiscale seen/heldout r=.10305/.11380；long .06411/.06979；middle .09297/.10413。当前四原型/固定数据预算下的H1获支持，不是生理机制或超过SS02。报告`reports/pub_01/s03/architecture/REPORT.md`。
 

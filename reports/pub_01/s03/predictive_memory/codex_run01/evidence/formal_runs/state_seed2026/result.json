@@ -1,0 +1,61 @@
+{
+  "variant": "state",
+  "seed": 2026,
+  "conditions": {
+    "true": {
+      "subjects": 21,
+      "records": 47,
+      "segments": 517,
+      "subject_macro_r": 0.09143882724615919
+    },
+    "reset": {
+      "subjects": 21,
+      "records": 47,
+      "segments": 517,
+      "subject_macro_r": 0.09148285797878197
+    },
+    "wrong_record": {
+      "subjects": 21,
+      "records": 47,
+      "segments": 517,
+      "subject_macro_r": 0.09143451379293427
+    },
+    "wrong_time": {
+      "subjects": 21,
+      "records": 47,
+      "segments": 517,
+      "subject_macro_r": 0.09144073397292511
+    },
+    "shuffled": {
+      "subjects": 21,
+      "records": 47,
+      "segments": 517,
+      "subject_macro_r": 0.09142817026239365
+    },
+    "replace_high_similarity": {
+      "subjects": 21,
+      "records": 47,
+      "segments": 517,
+      "subject_macro_r": 0.09143307333865365
+    },
+    "replace_low_similarity": {
+      "subjects": 21,
+      "records": 47,
+      "segments": 517,
+      "subject_macro_r": 0.09144014166155294
+    }
+  },
+  "selected_step": 1600,
+  "lag_samples": 8,
+  "test_evaluations": 1,
+  "canary": {
+    "inference_argument_EEG_only": true,
+    "same_EEG_repeats_identically": true,
+    "local_past_has_exactly_zero_influence": null,
+    "same_current_EEG_when_history_changed": true,
+    "no_state_carried_across_records": true
+  },
+  "protocol_sha256": "9fa78d00704fa53df8378790c99f9b52d84545cf43afbdcb6883bde4edf159fb",
+  "constant_prediction_control": "Pearson_UNDEFINED_ZERO_VARIANCE; training mean pre-fitted and frozen",
+  "interpretation": "prospective INTERNAL family holdout sourced from prior SS03train; not external independent cohort"
+}

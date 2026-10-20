@@ -1,0 +1,62 @@
+[
+  {
+    "step": 200,
+    "train_window_negative_Pearson": -0.08620259016868659,
+    "validation_record_then_subject_macro_60s_r": 0.10105481600629244,
+    "seconds": 4.322007750160992
+  },
+  {
+    "step": 400,
+    "train_window_negative_Pearson": -0.10504528205143288,
+    "validation_record_then_subject_macro_60s_r": 0.10665914491906536,
+    "seconds": 7.366892036981881
+  },
+  {
+    "step": 600,
+    "train_window_negative_Pearson": -0.10268203142564744,
+    "validation_record_then_subject_macro_60s_r": 0.09597141136590098,
+    "seconds": 10.360144718550146
+  },
+  {
+    "step": 800,
+    "train_window_negative_Pearson": -0.10460772740072571,
+    "validation_record_then_subject_macro_60s_r": 0.10634120967643694,
+    "seconds": 13.11523147020489
+  },
+  {
+    "step": 1000,
+    "train_window_negative_Pearson": -0.11408746463246644,
+    "validation_record_then_subject_macro_60s_r": 0.10616480111407653,
+    "seconds": 16.1773983258754
+  },
+  {
+    "step": 1200,
+    "train_window_negative_Pearson": -0.10664115898776799,
+    "validation_record_then_subject_macro_60s_r": 0.11189213540269907,
+    "seconds": 19.180688341148198
+  },
+  {
+    "step": 1400,
+    "train_window_negative_Pearson": -0.110230586247053,
+    "validation_record_then_subject_macro_60s_r": 0.11150116298728356,
+    "seconds": 22.339426167309284
+  },
+  {
+    "step": 1600,
+    "train_window_negative_Pearson": -0.10698638950358146,
+    "validation_record_then_subject_macro_60s_r": 0.1134893991040572,
+    "seconds": 25.462291337549686
+  },
+  {
+    "step": 1800,
+    "train_window_negative_Pearson": -0.1157698026066646,
+    "validation_record_then_subject_macro_60s_r": 0.10681448110281047,
+    "seconds": 28.154316866770387
+  },
+  {
+    "step": 2000,
+    "train_window_negative_Pearson": -0.11631817283574492,
+    "validation_record_then_subject_macro_60s_r": 0.10830024103063111,
+    "seconds": 31.202248491346836
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "technical": "PASS",
+  "newholdout_signal_access": false,
+  "same_current_EEG_history_controls_frozen": true,
+  "split_group_disjoint": true,
+  "normalization_newtrain_only": true,
+  "lag_trainval_only": true,
+  "selected_lag": 8,
+  "formal_runs": 15,
+  "optimizer_steps_perrun": 2000,
+  "protocol_sha256": "9fa78d00704fa53df8378790c99f9b52d84545cf43afbdcb6883bde4edf159fb"
+}

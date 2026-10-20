@@ -1,0 +1,92 @@
+{
+  "task": "PUB-01-S03_SS05",
+  "experiment": "PI-MRAM-20261019-prototype-v0",
+  "status": "SYNTHETIC_PROBES_COMPLETED_PUBLIC_EEG_NOT_RUN",
+  "source_commit": "43cea34749a985b4e3ac051860be193b5dc379f4",
+  "patient_data": "FORBIDDEN",
+  "run_location": "server2203 public-only; independent new run directory",
+  "inputs": {
+    "reference": "SS03 public 64Hz SparrKULee train manifest + frozen train-only normalization",
+    "forbidden": [
+      "SS03 test_seen score/model selection",
+      "SS03 test_heldout score/model selection",
+      "patient or STN data"
+    ],
+    "eeg": [
+      "B",
+      "N_windows",
+      192,
+      64
+    ],
+    "audio_target": [
+      "B",
+      "N_windows",
+      192,
+      1
+    ]
+  },
+  "windowing": {
+    "window_seconds": 3,
+    "sampling_hz": 64,
+    "stride_samples": 192,
+    "sequence_target": "20 nonoverlapping 3s windows form one 60s continuous record segment",
+    "causality": "inter-window history causal; intra-window encoder uses complete 3s offline EEG"
+  },
+  "structure": {
+    "variants": [
+      "local",
+      "state",
+      "predictive_state",
+      "assoc_no_pred",
+      "full",
+      "gru"
+    ],
+    "model": "WindowPredictiveDecoder or WindowGRUDecoder",
+    "full_parameter_count": 68546,
+    "gru_parameter_count": 70449,
+    "parameter_matching_limit": "within 2.78% only; active parameter/FLOP/latency not guaranteed equal"
+  },
+  "synthetic": {
+    "seed": 1024,
+    "sequence_sizes": [
+      32,
+      48
+    ],
+    "train": 1024,
+    "validation": 128,
+    "test": 128,
+    "optimizer": "Adam",
+    "lr": 0.007,
+    "max_steps": 160,
+    "batch_size": 48,
+    "grU_600_step_diagnostic": "NOT_SAME_BUDGET"
+  },
+  "public_eeg_protocol": {
+    "status": "NOT_RUN",
+    "first_gate": "read-only metadata audit: grouping by source_family or story is feasible and leak-free",
+    "split": "new heldout derived solely from SS03 train pool and frozen before fitting; prospective INTERNAL only, not external replication",
+    "fixed_group_units": "record/subject/story/source_family, not independent 3s windows",
+    "inference_controls": [
+      "correct contiguous history",
+      "same-present wrong-record history",
+      "history shuffled",
+      "reset history",
+      "local reference"
+    ],
+    "lag_candidate_samples": [
+      0,
+      8,
+      16,
+      32
+    ],
+    "lag_selection": "training/validation only; no SS03 test scores",
+    "primary": "60s segment Pearson -> subject macro; both actual history contribution and model-quality gain",
+    "core_hypotheses": [
+      "assoc_no_pred vs state",
+      "full vs assoc_no_pred",
+      "full vs GRU"
+    ],
+    "training": "bounded one-seed training/validation pilot then freeze seeds, compute budget and validation rules before prospective internal holdout evaluation",
+    "stop": "Do not start SS04 or publish artifact from SS05 without new decision"
+  }
+}

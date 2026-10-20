@@ -1,0 +1,101 @@
+{
+  "task": "PUB-01-S03_SS05",
+  "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019/codex_run01",
+  "patient_data": "FORBIDDEN",
+  "variants": [
+    "local",
+    "state",
+    "assoc_no_pred",
+    "full",
+    "gru"
+  ],
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "optimizer_steps": 2000,
+  "validation_every_steps": 200,
+  "batch_60s_segments": 2,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "gradient_clip_norm": 1.0,
+  "optimizer": "AdamW",
+  "lag_selection": "pilot validation mean across five100step variants; freeze selected lag before any newholdout payload",
+  "model_version": "FiniteHistoryDecoder on original window prototypes; local reset corrected; no explicit auxiliary forecasting loss",
+  "history_windows": 20,
+  "query_windows_per_score_segment": 20,
+  "input_windows_per_training_block": 40,
+  "first_target_window": 40,
+  "history_conditions": [
+    "true",
+    "reset",
+    "wrong_record",
+    "wrong_time",
+    "shuffled",
+    "replace_high_similarity",
+    "replace_low_similarity"
+  ],
+  "primary_statistic": "60s Pearson -> equal record means -> equal subject macro",
+  "primary_contrasts": [
+    "assoc_no_pred_minus_state",
+    "assoc_no_pred_minus_gru",
+    "full_minus_assoc_no_pred",
+    "full_minus_gru",
+    "assoc_true_minus_wrong_record",
+    "full_true_minus_wrong_record"
+  ],
+  "intervals": "10000 bootstrap draws at subject level and crossed subject/source_family cluster level; six planned contrast family95% intervals(99.1666667% each)",
+  "secondary": "reset/wrong_time/shuffle/high-vs-low EEGtoken-similarity replacement; descriptive95% only; EEGevent semantic relevance unannotated",
+  "fairness": "same examples, optimizer steps, target, loss and validation rule; actual active parameters, nominal MACCs and latency explicitly differ",
+  "training_objective": "negative3s-window Pearson averaged across40 current windows perbatch",
+  "selection": "highest complete validation record-then-subject macro60s r; exact tie earliest; no early stopping",
+  "boundary_rule": "percurrent query reset at20window context start; all20 past contiguous within same record; full BPTT21 tokens, no states shared across records or examples",
+  "test_rule": "all15 train/val complete and budget reviewed, then build frozen holdout signal cache and test eachselected checkpoint once with all predeclared history conditions; no fitting afterholdout opened",
+  "protocol_scope": "prospective INTERNAL source-family holdout from former SS03train; no old exposed SS03test or old checkpoint use; no patient or newdata download",
+  "version": "SS05-EEG-FORMAL-v1",
+  "lag_samples": 8,
+  "frozen_utc_epoch": 1792417427.6293335,
+  "holdout_payload_seen_before_freeze": false,
+  "pilot_weights_reused": false,
+  "constant_train_mean_control": {
+    "fit_phase": "SS05_train_only",
+    "mean": 0.5440052622357007,
+    "Pearson_r": null,
+    "reason": "constant_zero_variance",
+    "frozen_before_holdout_payload": true
+  },
+  "source_sha256": {
+    "pub_01_s03_ss05_predictive_memory.py": "a059cf0dc763813a3f52472b0367c3e3e19e326b764405e3a26dc9d4698a81dd",
+    "pub_01_s03_ss05_window_decoder.py": "5414a8baeb8598ae48d868e13f4f00e570a9879c02ab96f70a43e42c0010f4ed",
+    "pub_01_s03_ss05_finite_history.py": "85aa080d734f96d8707247f36bd4cd7b79a63415b237caf01dea1ddd3573f33c",
+    "pub_01_s03_ss05_data.py": "dd65298391ba3900b2c937f970374b67fa358bf7abe0425551154dd1bc4c8a06",
+    "pub_01_s03_ss05_evaluate.py": "99f04e26b7bf462d5c09395e04037f6665b509b1885e8d7e6c6fe4d2e77693eb",
+    "pub_01_s03_ss05_train.py": "eb451889c135372aa2d73726633b3207eb00992e3a9e4b51af0dc9c1c12c5b2b",
+    "pub_01_s03_ss05_test.py": "371628cc39e40d41e7ac373b49bf8837e21f6d427c24dc9c1df4d868f7def5ba",
+    "pub_01_s03_ss05_freeze.py": "a082302f230a946412db8b6ef0d89a661126b8a8fa3af269c28b87780d20c5d4",
+    "pub_01_s03_ss05_run.py": "a8e7dea0c06665ed4a7146a727f24730cb4a3b3c6e025df571b46f3b12d0821a",
+    "pub_01_s03_ss05_eeg_formal_20261019.json": "bbb5e7ed1bef25f01d6e0b44041e722c735ee111edc2d9a3c16c3db3aba8327e"
+  },
+  "input_contract_sha256": {
+    "split": "70281c6a64085db0331700d2c9dae30db8d7f535ed118bd6dfca3258d88ea971",
+    "normalizer": "2b713839081460d2ecab6bcbfe1f0d0fb621b1ab03129f16514c1309472133c8",
+    "trainval_cache_manifest": "77a1e6e6eb09bcd4e0c6f34d669122709eb77460b58ec2dd765aa3cc0d00826a"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "GPU": [
+      "NVIDIA L40",
+      "NVIDIA L40"
+    ]
+  },
+  "expected_holdout_from_metadata": {
+    "eligible_records": 47,
+    "subjects": 21,
+    "source_families": 7
+  },
+  "caveat": "full-minus-assoc isolates learned history-residual branch and extra reachable predictor weights, not a proven forecasting-error objective; high/low similarity is not EEG semantic relevance groundtruth"
+}

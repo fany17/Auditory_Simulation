@@ -1,0 +1,22 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_CURRENT_SS05_ONLY",
+  "checks": {
+    "required_outputs": true,
+    "15actual_runs_105condition_rows": true,
+    "all_five_variants_three_seeds": true,
+    "same_frozen_budget_lag": true,
+    "prospective_group_counts": true,
+    "six_frozen_primary_contrasts": true,
+    "numbers_equal_actual_evidence": true,
+    "new_normalization_fit_only_newtrain": true,
+    "old_exposed_test_excluded": true,
+    "upstream_exclusion_label_corrected": true,
+    "same_agent_disclosed": true,
+    "preceding_separate_review_pass": true,
+    "no_signal_or_weight_payload_in_Git_package": true
+  },
+  "maximum_metric_difference": 0.0,
+  "review_scope": "same-agent separate report/source-evidence pass; scientific positive/negative outcome is not a technical gate"
+}

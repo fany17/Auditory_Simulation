@@ -1,0 +1,37 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SS05_ONLY_PUBLIC_INTERNAL_HOLDOUT",
+  "same_agent_separate_pass": true,
+  "third_party_review": false,
+  "runs": 15,
+  "test_conditions": 7,
+  "maximum_aggregation_error": 0.0,
+  "raw_EEG_CPU_60s_correlations_checked": 90,
+  "maximum_raw_CPU_r_error": 8.12726704192343e-06,
+  "newtrain_only_normalization_verified": true,
+  "holdout_family_disjoint": true,
+  "old_exposed_test_payloads_used": false,
+  "same_frozen_sources": true,
+  "prospective_internal_not_external": true,
+  "primary_support_flags": {
+    "assoc_no_pred_minus_state": false,
+    "assoc_no_pred_minus_gru": false,
+    "full_minus_assoc_no_pred": false,
+    "full_minus_gru": false,
+    "assoc_true_minus_wrong_record": false,
+    "full_true_minus_wrong_record": false
+  },
+  "bootstrap": "10000 draws; first average seeds perrecord; record-equal/person-equal; subject CI and crossed independent subject/family multinomial weights; six primary contrasts Bonferroni99.1667% intervals",
+  "limits": [
+    "7 heldout families/21 people; small grouped uncertainty",
+    "source previously used in SS03train",
+    "20window bounded context, not indefinite streaming",
+    "3s centered-Pearson objective does not calibrate window mean/scale",
+    "full residual is not supervised forecasting error",
+    "active parameter/runtime differences disclosed",
+    "EEG token similarity is not event relevance groundtruth",
+    "physical_sync UNKNOWN",
+    "no direct SS02/SS03 metric ranking"
+  ]
+}
