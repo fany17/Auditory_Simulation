@@ -1,3 +1,4 @@
+> 当前入口更新（2026-10-23）：用户已启动SS06真实EEG阶段，先读CODEX_START_HERE.md和tasks/PUB-01/subtasks/PUB-01-S03/SS06_REAL_EEG_EXECUTION.md。下方“仅原型”描述保留为交付时点历史。
 # Auditory_Simulation Document Index
 
 更新时间：`2026-10-13`

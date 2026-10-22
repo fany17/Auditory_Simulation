@@ -1,3 +1,16 @@
+# 当前执行：SS06 真实公开 EEG（2026-10-23）
+
+用户最新明确“启动吧”。**PUB-01-S03_SS06 ACTIVE / REAL_EEG_EXECUTION**。此前仅原型/禁止训练/完成后停止仅描述prototype01历史；当前可以读取既有合法公开EEG，完成真实loader、train/val pilot、协议冻结、训练及合格评估，无需重复询问启动许可。
+
+首先读取 `doc/tasks/PUB-01/subtasks/PUB-01-S03/SS06_REAL_EEG_EXECUTION.md` 与 SS06 五框架任务书。执行会话继续使用 `codex/pub-01-s03-ss06-continuity` / PR #6 独立worktree；模型仍按既有指定6.1-sol/high。代码/轻量报告在Windows；数据和训练只在2203新eeg_run01目录。
+
+只使用旧公开资产，禁止SS03/SS05已看test调参；可从原SS05 train按元数据冻结本轮前瞻内部审计划分，诚实注明历史训练暴露，不能当完全独立确认。缺独立test不阻断合法train/val探索。优先启动M1/local真实pilot，然后五框架和既定对照；不要在smoke或准备清单停工。
+
+代码和轻量报告推送PR#6分支，不自行合并；SS02/03/05冻结，不启动SS04/S04/父S05。问题和结果向协调会话汇报。当前真实运行状态见 `reports/pub_01/s03/continuity/eeg_run01/EXECUTION_LOG.md`（由执行者按实际进展创建，未启动的阶段不能写已完成）。
+
+---
+
+## prototype01 历史入口（由上方最新授权取代）
 # Codex 启动入口 — SS06 连续信息原型（2026-10-23）
 
 本轮仅 PUB-01-S03_SS06：用户已授权五种框架任务书、基本实现和合成工程测试。**真实数据加载、预训练、pilot、参数优化与正式评估均未启动，也不自动启动。** 工程审阅与交付已完成：SS06 COMPLETED/PASS_WITH_LIMITATION，当前停止。

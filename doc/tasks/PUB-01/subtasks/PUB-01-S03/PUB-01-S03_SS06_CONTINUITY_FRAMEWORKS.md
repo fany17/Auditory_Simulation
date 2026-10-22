@@ -4,7 +4,7 @@
 |---|---|
 | Subtask ID | `PUB-01-S03_SS06` |
 | Parent Node / Task | `PUB-01-S03` / `PUB-01` |
-| Status | `COMPLETED` — `PROTOTYPE_ONLY / PASS_WITH_LIMITATION` |
+| Status | `ACTIVE` — `REAL_EEG_EXECUTION`；prototype01 保留 PASS_WITH_LIMITATION |
 | Blocking for Parent | NO；此包不替代 S03 最终 benchmark |
 | Patient Data | `FORBIDDEN` |
 | Upstream | SS02/SS03/SS05 冻结报告；2026-10-23 用户明确授权 |
@@ -16,7 +16,11 @@
 | Files Allowed to Change | 本任务书/接口契约；`src/m6a_public/continuity/`；`tests/test_ss06_*.py`；SS06 script/config/report；当前入口/登记的必要更新 |
 | Last Updated | 2026-10-23 |
 
-## 1. 授权与本轮目标
+## 当前授权更新（2026-10-23）
+
+用户在原型交付后明确“启动吧”，现授权既定五框架进入真实公开EEG训练与比较。执行以 [SS06_REAL_EEG_EXECUTION.md](SS06_REAL_EEG_EXECUTION.md) 为最新补充，先实际train/val pilot，再冻结预算/对照/划分并推进合格评估。以下PROTOTYPE_ONLY与NOT_RUN描述为prototype01历史，不再阻止本轮已授权实验；旧SS02/03/05结果仍冻结。
+
+## 1. prototype01 历史授权与目标
 
 用户原话：“先把这五种框架细化成任务书，写清网络结构、训练目标和对照。然后快速搭建基本框架，实际训练和执行暂不开始，确保能跑通先。”
 

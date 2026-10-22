@@ -1,3 +1,4 @@
+> 2026-10-23最新授权：用户“启动吧”，SS06已转ACTIVE真实EEG执行，prototype01历史完成记录不再阻止训练。参见SS06_REAL_EEG_EXECUTION.md；PUB-01仍ACTIVE，尚无SS06真实性能结果。
 # Auditory_Simulation Parent Task Registry
 
 更新时间：`2026-10-19`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。

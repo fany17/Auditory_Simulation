@@ -1,3 +1,10 @@
+# 当前任务 — SS06 真实实验已获授权（2026-10-23）
+
+用户在五原型工程交付后明确“启动吧”。SS06重新ACTIVE，按SS06_REAL_EEG_EXECUTION.md执行真实loader、train/val pilot、冻结方案、训练及合格评估；尚无真实SS06性能结果。由原PUB会话实施，协调跟进审阅。旧test不调参，内部audit_holdout保留历史开发暴露限制；无独立test时继续可行探索。
+
+当前分支codex/pub-01-s03-ss06-continuity / PR#6；prototype01冻结报告保留，新的报告只写eeg_run01。2203计算/公开范围/原CNN-TRF-stash保护不变，SS04/S04/父S05不启动。
+
+## prototype01 历史状态（以下非当前训练禁令）
 # 当前任务 — PUB-01-S03_SS06（2026-10-23）
 
 用户批准五种连续信息框架的任务书和基本代码，仅做合成工程检查。五模型已在2203完成前向/梯度/状态测试，独立代码/运行证据审阅已完成，原型包COMPLETED/PASS_WITH_LIMITATION；真实EEG、预训练、pilot、正式训练/测试全部NOT_RUN。本原型包已完成，当前STOP，不自动训练。
