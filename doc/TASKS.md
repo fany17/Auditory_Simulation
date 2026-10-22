@@ -6,7 +6,11 @@
 |---|---|---|---|---|---|---|---|---|---|
 | `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | **`ACTIVE`** | NO | FORBIDDEN | `doc/tasks/PUB-01/TASK.md` | `doc/tasks/PUB-01/SUBTASKS.md` | public EEG benchmark + public sEEG benchmark/transfer + eventual `ART-AUDREP-v1` candidate |
 
-## 最新执行决策（2026-10-19）
+## 最新执行决策（2026-10-23）
+
+PUB-01仍ACTIVE。SS06获得用户明确的“任务书+基本框架+跑通”授权；仅合成工程验证，不加载真实数据、不训练。五框架文档/实现/审阅交付后停止，未来实验须另行明确启动。SS02/SS03/SS05冻结，PR#3/#4已合并，main为60c3404；S03/SS04/S04/父S05状态不被本原型工程PASS替代。当前入口见CODEX_START_HERE.md及SUBTASKS.md。
+
+## 历史执行决策（2026-10-19）
 
 - `PUB-01` 仍 `ACTIVE`。研究者明确分工：**协调者制定/审阅任务，Codex负责具体实现和全部实验执行**。未经研究者要求协调者不自行运行模拟或EEG任务。
 - SS05已 **COMPLETED / PASS_WITH_LIMITATION**：Codex完成原合成审查/15tests、真实pilot、新train norm、15run训练与105条件测试。新内部holdout21人/47record/7family的五组r约.091–.092，六预设区间均跨0，未检出复杂记忆额外收益；同agent separate review和轻量文件复核范围已说明。有效阴性限定本轮数据/目标/模型/2000步，不代表历史记忆普遍无用。

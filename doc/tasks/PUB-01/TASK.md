@@ -132,6 +132,8 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 
 ## 12. Amendment Record
 
+2026-10-23：研究者明确要求“先把这五种框架细化成任务书……快速搭建基本框架，实际训练和执行暂不开始，确保能跑通先”。登记同一S03下的SS06作为独立原型工作包。授权五种连续信息框架的结构/目标/对照与合成前向、求导、状态测试和代码审阅；不读真实EEG，不做任何参数优化、预训练、pilot或正式测试。未来split/lag/预算待另行方案冻结和执行授权；不修改父科学问题、主要endpoint、数据范围或最终验收。PR#4已按后续用户指令合并60c3404，旧Draft条目为历史。原型完成不等于性能改进、S03完成或科学签署。
+
 2026-10-19（最新执行分工纠偏）：研究者要求**协调助手只负责审查与更新整体任务书，实际代码和实验必须交由 Codex 执行**；此前协调助手自行编写/声称完成的合成任务及PI-MRAM模型作为待核查历史，不代表 Codex 执行，更不能作为公开EEG研究结果。现确立 `PUB-01-S03_SS05` 为唯一 `READY_FOR_CODEX`；Codex可在独立SS05工作分支按冻结边界完成源码/合成审计、公开EEG连续记录与新内部分组、train/val pilot、正式预算冻结及满足准入后一次新holdout测试；不需要重复申请本节点启动许可，但**不得重用SS03已查看测试集选择模型**，不得自动转SS04/S04/S05。真实训练由Codex实施并提交来源、日志、review；未执行保留NOT_RUN。双方仍严格遵守 `Auditory_Simulation`公共M6A与患者STN M6B的单向冻结artifact边界。PR#4仅Draft，不合并main、不改本地主目录CNN/TRF。
 
 

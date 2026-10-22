@@ -14,11 +14,15 @@
 | Acceptance | 冻结输出含直接声音特征；与强基线在可比较协议下公平对照；结果保留不同候选池规模、被试/刺激拆分、错误/阴性和时间信息局限 |
 | Validation | 复现 code/config/metric、test leakage / negative pools、模型无候选输入 canary、独立 review + parent consistency |
 | Go/Hold/Fail | 官方代码或数据不可用时记录 HOLD/内部协议，不编造 SOTA；模型无收益保留阴性并重新审议架构 |
-| Subnodes | `SUBTASKS.md` 中 S03_SS01..SS05 |
+| Subnodes | `SUBTASKS.md` 中 S03_SS01..SS06 |
 | Files Allowed to Change | public EEG model/scripts/configs/tests/reports、`doc/tasks/PUB-01/**`，历史 frozen 文件只读 |
 | Last Updated | 2026-10-19 |
 
-## 当前S03任务优先级（2026-10-19）
+## 当前S03任务优先级（2026-10-23）
+
+SS06：用户已批准五种连续信息框架的任务书与基础实现，仅合成工程验证；真实数据/训练不启动。任务书位于PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md，报告在reports/pub_01/s03/continuity/prototype01/。SS02/03/05冻结，PR#3/#4均已合并；本轮工程验收后停止，不等于S03最终benchmark完成。
+
+## 历史S03任务优先级（2026-10-19）
 
 - SS01/SS02/SS03保留 `COMPLETED / PASS_WITH_LIMITATION`，其测试与报告只读。
 - 研究者授权的 `SS05` 已由Codex在2203完成源码/仿真复核及公开EEG实验。15run×7条件完成，新内部holdout五组r约.091–.092，六预设区间均跨0；未支持复杂记忆额外收益，保留有效阴性。

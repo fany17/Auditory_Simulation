@@ -1,3 +1,18 @@
+# Codex 启动入口 — SS06 连续信息原型（2026-10-23）
+
+本轮仅 PUB-01-S03_SS06：用户已授权五种框架任务书、基本实现和合成工程测试。**真实数据加载、预训练、pilot、参数优化与正式评估均未启动，也不自动启动。** 工程审阅与交付已完成：SS06 COMPLETED/PASS_WITH_LIMITATION，当前停止。
+
+1. 读取最新用户指令、AGENTS.md 与父任务登记。
+2. 读取 doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md（五模型结构/训练目标/对照/验收）。
+3. 接口契约为同目录 SS06_IMPLEMENTATION_CONTRACT.md；运行证据/审阅入口为 reports/pub_01/s03/continuity/prototype01/REPORT.md。
+4. 代码 src/m6a_public/continuity/，配置 configs/pub_01_s03_ss06_prototype_20261023.json。所有数值测试在2203；Windows仅代码轻量报告。当前无真实loader或训练命令。
+5. 独立 worktree 分支 codex/pub-01-s03-ss06-continuity；保护主目录CNN/TRF、stash和旧worktree。main起点60c3404，PR#3/#4已合并；SS02/03/05结论只读，不重跑旧test。
+
+当前 split/声学lag/实际公平预算均未冻结，不能从工程PASS推断EEG性能改善。S03/PUB仍ACTIVE；SS04、S04和父S05不启动。
+
+---
+
+## 历史启动入口（以下均为快照，不构成当前授权）
 > **Issue#5已实际完成（2026-10-19）**：SS05 COMPLETED / PASS_WITH_LIMITATION。五组×三seed正式训练及105个历史条件结果已交；新内部holdout21人/47record/7family的r约.091–.092，关联/历史残差额外收益的六预设区间均跨0，为有效阴性。新train-only norm、后置same-agent review和实测图表见reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md。当前停止，PR#4仍Draft，不合并、不启动SS04/S04/父S05。
 
 # Codex 启动入口 — Auditory_Simulation（2026-10-19最新）

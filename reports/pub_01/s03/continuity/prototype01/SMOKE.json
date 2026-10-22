@@ -1,0 +1,169 @@
+{
+  "task_id": "PUB-01-S03_SS06",
+  "status": "PASS",
+  "evidence_type": "SYNTHETIC_ENGINEERING_ONLY",
+  "utc": "2026-10-22T18:29:17.868028+00:00",
+  "hostname": "nercn",
+  "python": "3.11.15",
+  "torch": "2.11.0+cu128",
+  "device": "cpu",
+  "config": {
+    "task_id": "PUB-01-S03_SS06",
+    "phase": "PROTOTYPE_ONLY",
+    "real_data_training_authorized": false,
+    "optimizer_steps": 0,
+    "input_channels": 64,
+    "hidden": 32,
+    "sample_rate_hz": 64,
+    "eeg_lookahead_samples": 0,
+    "acoustic_lag_status": "UNFROZEN_NOT_APPLIED",
+    "synthetic_seed": 601,
+    "smoke_samples": 256,
+    "long_forward_samples": 3840,
+    "frameworks": [
+      "dense_multiscale",
+      "persistent_state",
+      "predictive",
+      "adaptive_alignment",
+      "innovation_state"
+    ],
+    "dense_multiscale": {
+      "branch_mode": "multi"
+    },
+    "predictive": {
+      "horizons": [
+        4,
+        16,
+        64
+      ],
+      "mode": "finetune"
+    },
+    "adaptive_alignment": {
+      "lags": [
+        0,
+        4,
+        8,
+        16
+      ],
+      "mode": "adaptive"
+    },
+    "innovation_state": {
+      "mode": "full"
+    },
+    "proposed_objective": {
+      "continuous_seconds": 60,
+      "mse_weight": 0.1,
+      "status": "DESIGN_ONLY_UNFROZEN"
+    },
+    "data_manifest": null,
+    "formal_split": null,
+    "checkpoint": null
+  },
+  "optimizer_steps": 0,
+  "real_data_reads": 0,
+  "pretraining": "NOT_RUN",
+  "real_training": "NOT_RUN",
+  "formal_test": "NOT_RUN",
+  "models": {
+    "dense_multiscale": {
+      "short_output_shape": [
+        2,
+        256,
+        1
+      ],
+      "long_output_shape": [
+        1,
+        3840,
+        1
+      ],
+      "registered_parameters": 40481,
+      "requires_grad_parameters": 40481,
+      "gradient_participating_parameters": 40481,
+      "nonzero_gradient_scalars": 35361,
+      "short_forward_backward_seconds": 0.18229309003800154,
+      "long_forward_seconds": 0.014281945303082466,
+      "all_finite": true,
+      "parameters_unchanged": true
+    },
+    "persistent_state": {
+      "short_output_shape": [
+        2,
+        256,
+        1
+      ],
+      "long_output_shape": [
+        1,
+        3840,
+        1
+      ],
+      "registered_parameters": 29345,
+      "requires_grad_parameters": 29345,
+      "gradient_participating_parameters": 29345,
+      "nonzero_gradient_scalars": 29345,
+      "short_forward_backward_seconds": 0.06912229396402836,
+      "long_forward_seconds": 0.2115496313199401,
+      "all_finite": true,
+      "parameters_unchanged": true
+    },
+    "predictive": {
+      "short_output_shape": [
+        2,
+        256,
+        1
+      ],
+      "long_output_shape": [
+        1,
+        3840,
+        1
+      ],
+      "registered_parameters": 47105,
+      "requires_grad_parameters": 25153,
+      "gradient_participating_parameters": 25153,
+      "nonzero_gradient_scalars": 25153,
+      "short_forward_backward_seconds": 0.047695803456008434,
+      "long_forward_seconds": 0.12492997292429209,
+      "all_finite": true,
+      "parameters_unchanged": true
+    },
+    "adaptive_alignment": {
+      "short_output_shape": [
+        2,
+        256,
+        1
+      ],
+      "long_output_shape": [
+        1,
+        3840,
+        1
+      ],
+      "registered_parameters": 18950,
+      "requires_grad_parameters": 18950,
+      "gradient_participating_parameters": 18950,
+      "nonzero_gradient_scalars": 18950,
+      "short_forward_backward_seconds": 0.023380203172564507,
+      "long_forward_seconds": 0.10048146825283766,
+      "all_finite": true,
+      "parameters_unchanged": true
+    },
+    "innovation_state": {
+      "short_output_shape": [
+        2,
+        256,
+        1
+      ],
+      "long_output_shape": [
+        1,
+        3840,
+        1
+      ],
+      "registered_parameters": 23009,
+      "requires_grad_parameters": 23009,
+      "gradient_participating_parameters": 23009,
+      "nonzero_gradient_scalars": 23009,
+      "short_forward_backward_seconds": 0.052358198910951614,
+      "long_forward_seconds": 0.18712818529456854,
+      "all_finite": true,
+      "parameters_unchanged": true
+    }
+  }
+}

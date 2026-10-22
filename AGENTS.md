@@ -138,3 +138,7 @@ positive / no transfer / negative transfer 均是合法结果。
 当前 PUB-01 分支/依赖见 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`；强基线 registry 见 `doc/tasks/PUB-01/BENCHMARK_REGISTRY.md`。Codex 指令入口为 `doc/CODEX_START_HERE.md`。**唯一下一 READY 子节点为 `PUB-01-S03_SS02`**，先复现 HDPS/Transformer-CLIP-EEG 等公开强基线，不自动启动新模型或 GPT。公开 ds004703 是独立 `PUB-01-S04` 支线，处于 BACKLOG；其 SS01 独立 baseline 不依赖 EEG S03，跨记录方式迁移 SS02 才等待 S03 frozen result。已完成的 S01/S02/S03_SS01 结论不可改写。
 
 本条只补充执行入口，不放宽既有患者数据禁令、server2203 计算/本地 Git 边界、冻结 artifact 单向交付与三级验收规则。
+
+## 2026-10-23 当前授权：SS06 仅任务书与基础框架
+
+用户明确授权细化五种连续信息框架，快速实现并确保跑通；实际训练/执行暂不开始。本轮唯一节点 PUB-01-S03_SS06，范围为任务书、五原型、合成前向/反向/状态测试与审阅；不读取真实数据、不进行参数优化/预训练/pilot/正式测试。旧 SS02/SS03/SS05 冻结；PR#4 已于后续用户授权下合并 main@60c3404，历史 Draft/禁止合并描述只为追溯。入口以最新 doc/CODEX_START_HERE.md 为准，工程验收后停止。此为已授权的同一 S03 架构工作包，不放宽 public/2203/患者禁令。

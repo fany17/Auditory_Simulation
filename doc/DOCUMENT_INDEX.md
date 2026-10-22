@@ -20,7 +20,11 @@
 
 `TASKS.md` 是父任务状态 source of truth；每个父任务的 `SUBTASKS.md` 是其 subtask 状态 source of truth。
 
-## B. Current executable task tree（2026-10-13）
+## B. Current executable task tree（2026-10-23）
+
+最新入口：CODEX_START_HERE.md → tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md；仅任务书与五原型合成检查，真实实验未授权启动。代码src/m6a_public/continuity/，报告reports/pub_01/s03/continuity/prototype01/REPORT.md。旧SS02/03/05完成并冻结，PR#3/#4已合并。
+
+### 历史任务树快照（2026-10-13；仅追溯）
 
 - Parent：`tasks/PUB-01/TASK.md`；唯一子任务登记：`tasks/PUB-01/SUBTASKS.md`。
 - 科学支线与依赖：`tasks/PUB-01/RESEARCH_BRANCHES.md`。

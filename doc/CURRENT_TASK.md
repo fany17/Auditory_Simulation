@@ -1,3 +1,13 @@
+# 当前任务 — PUB-01-S03_SS06（2026-10-23）
+
+用户批准五种连续信息框架的任务书和基本代码，仅做合成工程检查。五模型已在2203完成前向/梯度/状态测试，独立代码/运行证据审阅已完成，原型包COMPLETED/PASS_WITH_LIMITATION；真实EEG、预训练、pilot、正式训练/测试全部NOT_RUN。本原型包已完成，当前STOP，不自动训练。
+
+- 任务书：doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md。
+- 证据：reports/pub_01/s03/continuity/prototype01/REPORT.md；状态以PUB-01/SUBTASKS.md为准。
+- 独立worktree分支codex/pub-01-s03-ss06-continuity；main起点60c3404。PR#3/#4均已按既有授权合并，旧模型/结果冻结；主目录CNN/TRF与stash不动。
+- S03/PUB保持ACTIVE，SS04/S04/父S05 BACKLOG；未生成ART-AUDREP-v1。
+
+## 历史工作板快照（以下非当前执行指令）
 > **Issue#5 / SS05已完成有限制并停止**：15run真实训练/一次新holdout测试、7种同当前EEG历史条件及后置review已完成。五组r约.091–.092，六预设比较区间均跨0，未检出复杂记忆额外收益。报告predictive_memory/codex_run01/REPORT.md。PR#3已按新授权合并8d21d0a，PR#4保持Draft，不合并/不扩实验。
 
 # Auditory_Simulation Current Workboard
