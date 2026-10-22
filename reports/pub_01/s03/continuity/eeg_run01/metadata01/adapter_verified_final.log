@@ -1,0 +1,14 @@
+.......                                                                  [100%]
+=============================== warnings summary ===============================
+../../../../../.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/jit/_script.py:1488
+../../../../../.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/jit/_script.py:1488
+../../../../../.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/jit/_script.py:1488
+  /home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+tests/test_ss06_execution.py::test_cuda_actual_dimensions_output_gradient_and_chunk_parity
+  /home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run01/input/src/m6a_public/continuity/execution.py:30: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1479.)
+    return torch._VF.gru(features,initial.unsqueeze(0),
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+7 passed, 4 warnings in 5.42s
