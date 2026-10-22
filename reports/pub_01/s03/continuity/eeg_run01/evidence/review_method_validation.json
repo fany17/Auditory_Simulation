@@ -1,0 +1,15 @@
+{
+  "technical": "PASS",
+  "phase": "validation_only_before_audit",
+  "raw_original_CPU_vs_cached_GPU_correlations": 36,
+  "max_r_error": 9.10412892331236e-08,
+  "max_MSE_error": 2.8379337102535374e-08,
+  "formal_guards_rejected": [
+    "formal_pretrain_wrong_seed",
+    "formal_pretrain_wrong_budget",
+    "reject_pilot_pretrained"
+  ],
+  "predicted_output_AR_recurrence_and_causality": "PASS",
+  "no_parameter_updates_or_new_model_selection": true,
+  "epoch": 1792695927.761476
+}

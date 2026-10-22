@@ -1,0 +1,216 @@
+{
+  "rows": [
+    {
+      "variant": "local",
+      "device": "cpu",
+      "registered_parameters": 18817,
+      "60s_inference_ms_after_warmup": 3.048418089747429,
+      "approximate_MACCs_per60s": 72007680,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m1_short",
+      "device": "cpu",
+      "registered_parameters": 40481,
+      "60s_inference_ms_after_warmup": 8.746475353837013,
+      "approximate_MACCs_per60s": 154583040,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m1_long",
+      "device": "cpu",
+      "registered_parameters": 40481,
+      "60s_inference_ms_after_warmup": 6.8930089473724365,
+      "approximate_MACCs_per60s": 154583040,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m1_multi",
+      "device": "cpu",
+      "registered_parameters": 40481,
+      "60s_inference_ms_after_warmup": 6.6920895129442215,
+      "approximate_MACCs_per60s": 154583040,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m2",
+      "device": "cpu",
+      "registered_parameters": 29345,
+      "60s_inference_ms_after_warmup": 67.39299092441797,
+      "approximate_MACCs_per60s": 111329280,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "gru",
+      "device": "cpu",
+      "registered_parameters": 47105,
+      "60s_inference_ms_after_warmup": 65.71013201028109,
+      "approximate_MACCs_per60s": 95600640,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m3_frozen",
+      "device": "cpu",
+      "registered_parameters": 47105,
+      "60s_inference_ms_after_warmup": 79.1182978078723,
+      "approximate_MACCs_per60s": 95600640,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m3_finetune",
+      "device": "cpu",
+      "registered_parameters": 47105,
+      "60s_inference_ms_after_warmup": 65.0068286806345,
+      "approximate_MACCs_per60s": 95600640,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m4_fixed",
+      "device": "cpu",
+      "registered_parameters": 18950,
+      "60s_inference_ms_after_warmup": 3.238321654498577,
+      "approximate_MACCs_per60s": 72499200,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m4_adaptive",
+      "device": "cpu",
+      "registered_parameters": 18950,
+      "60s_inference_ms_after_warmup": 4.068197682499886,
+      "approximate_MACCs_per60s": 72990720,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m5_eeg",
+      "device": "cpu",
+      "registered_parameters": 23009,
+      "60s_inference_ms_after_warmup": 2.701118029654026,
+      "approximate_MACCs_per60s": 72007680,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m5_prior",
+      "device": "cpu",
+      "registered_parameters": 23009,
+      "60s_inference_ms_after_warmup": 25.01469273120165,
+      "approximate_MACCs_per60s": 4055040,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "m5_full",
+      "device": "cpu",
+      "registered_parameters": 23009,
+      "60s_inference_ms_after_warmup": 90.63188564032316,
+      "approximate_MACCs_per60s": 87736320,
+      "GPU_peak_allocated_bytes": 0
+    },
+    {
+      "variant": "local",
+      "device": "cuda:0",
+      "registered_parameters": 18817,
+      "60s_inference_ms_after_warmup": 0.24080947041511536,
+      "approximate_MACCs_per60s": 72007680,
+      "GPU_peak_allocated_bytes": 15485440
+    },
+    {
+      "variant": "m1_short",
+      "device": "cuda:0",
+      "registered_parameters": 40481,
+      "60s_inference_ms_after_warmup": 0.6594425067305565,
+      "approximate_MACCs_per60s": 154583040,
+      "GPU_peak_allocated_bytes": 23998464
+    },
+    {
+      "variant": "m1_long",
+      "device": "cuda:0",
+      "registered_parameters": 40481,
+      "60s_inference_ms_after_warmup": 0.6581081077456474,
+      "approximate_MACCs_per60s": 154583040,
+      "GPU_peak_allocated_bytes": 25042944
+    },
+    {
+      "variant": "m1_multi",
+      "device": "cuda:0",
+      "registered_parameters": 40481,
+      "60s_inference_ms_after_warmup": 0.6584163755178452,
+      "approximate_MACCs_per60s": 154583040,
+      "GPU_peak_allocated_bytes": 24331264
+    },
+    {
+      "variant": "m2",
+      "device": "cuda:0",
+      "registered_parameters": 29345,
+      "60s_inference_ms_after_warmup": 1.4797504991292953,
+      "approximate_MACCs_per60s": 111329280,
+      "GPU_peak_allocated_bytes": 33380352
+    },
+    {
+      "variant": "gru",
+      "device": "cuda:0",
+      "registered_parameters": 47105,
+      "60s_inference_ms_after_warmup": 0.9365903213620186,
+      "approximate_MACCs_per60s": 95600640,
+      "GPU_peak_allocated_bytes": 32961024
+    },
+    {
+      "variant": "m3_frozen",
+      "device": "cuda:0",
+      "registered_parameters": 47105,
+      "60s_inference_ms_after_warmup": 0.9381445124745369,
+      "approximate_MACCs_per60s": 95600640,
+      "GPU_peak_allocated_bytes": 32961024
+    },
+    {
+      "variant": "m3_finetune",
+      "device": "cuda:0",
+      "registered_parameters": 47105,
+      "60s_inference_ms_after_warmup": 0.9366178885102272,
+      "approximate_MACCs_per60s": 95600640,
+      "GPU_peak_allocated_bytes": 32961024
+    },
+    {
+      "variant": "m4_fixed",
+      "device": "cuda:0",
+      "registered_parameters": 18950,
+      "60s_inference_ms_after_warmup": 0.3695571795105934,
+      "approximate_MACCs_per60s": 72499200,
+      "GPU_peak_allocated_bytes": 20471808
+    },
+    {
+      "variant": "m4_adaptive",
+      "device": "cuda:0",
+      "registered_parameters": 18950,
+      "60s_inference_ms_after_warmup": 1.0805802419781685,
+      "approximate_MACCs_per60s": 72990720,
+      "GPU_peak_allocated_bytes": 20655616
+    },
+    {
+      "variant": "m5_eeg",
+      "device": "cuda:0",
+      "registered_parameters": 23009,
+      "60s_inference_ms_after_warmup": 0.2552695572376251,
+      "approximate_MACCs_per60s": 72007680,
+      "GPU_peak_allocated_bytes": 16566272
+    },
+    {
+      "variant": "m5_prior",
+      "device": "cuda:0",
+      "registered_parameters": 23009,
+      "60s_inference_ms_after_warmup": 90.71559645235538,
+      "approximate_MACCs_per60s": 4055040,
+      "GPU_peak_allocated_bytes": 17036288
+    },
+    {
+      "variant": "m5_full",
+      "device": "cuda:0",
+      "registered_parameters": 23009,
+      "60s_inference_ms_after_warmup": 296.90842274576426,
+      "approximate_MACCs_per60s": 87736320,
+      "GPU_peak_allocated_bytes": 23923712
+    }
+  ],
+  "input": "same real newtrain60s after60s prefix",
+  "weights": "initialization, no optimization",
+  "MACC_convention": "multiply-accumulate in affine/conv/readout/lag mixture; excludes bias/nonlinear/elementwise scan/data movement; not equal wallclock",
+  "interpretation": "same-device timings available; actual training M5 CPU and other models GPU must still be disclosed"
+}

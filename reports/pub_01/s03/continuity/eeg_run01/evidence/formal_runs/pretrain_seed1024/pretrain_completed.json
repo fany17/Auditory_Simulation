@@ -1,0 +1,1371 @@
+{
+  "seed": 1024,
+  "steps": 3511,
+  "samples": 13482240,
+  "seconds": 25.717343722470105,
+  "eligible_records": [
+    "sub-032_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-033_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-034_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-035_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-036_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-004_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-063_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-064_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-065_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-066_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-067_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-068_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-069_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-070_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-071_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-043_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-044_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-045_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-046_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-037_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-038_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-039_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-040_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-041_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-042_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-004_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-032_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-033_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-034_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-035_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-036_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-037_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-038_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-039_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-040_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-041_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-042_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-043_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-044_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-045_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-046_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-047_ses-varyingStories05_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-048_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-049_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-050_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-051_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-052_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-053_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-054_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-055_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-056_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-057_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-058_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-059_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-060_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-061_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-062_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-063_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-064_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-065_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-066_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-067_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-068_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-069_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-070_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-071_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-049_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-050_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-051_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-052_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-053_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-054_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-055_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-056_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-047_ses-varyingStories05_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-032_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-033_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-034_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-035_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-036_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-037_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-038_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-039_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-040_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-041_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-042_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-043_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-044_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-045_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-046_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz"
+  ],
+  "actual_records": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-002_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-004_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-004_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-005_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-006_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-007_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-008_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-009_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-010_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-011_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-012_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-013_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-014_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-015_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-016_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-018_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-019_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-020_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-021_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-022_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-023_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-024_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-025_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-026_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-027_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-028_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-029_ses-varyingStories01_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+    "sub-030_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-031_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+    "sub-032_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-032_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-032_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-033_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-033_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-033_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-034_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-034_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-034_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-035_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-035_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-035_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-036_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-036_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-036_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-037_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-037_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-037_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-038_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-038_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-038_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-039_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-039_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-039_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-040_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-040_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-040_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-041_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-041_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-041_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-042_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-042_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-042_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-043_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-043_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-043_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-044_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-044_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-044_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-045_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-045_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-045_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-046_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-046_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-046_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-047_ses-varyingStories05_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-047_ses-varyingStories05_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-048_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-049_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-049_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-050_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-050_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-051_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-051_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-052_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-052_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-053_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-053_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-054_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-054_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-055_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-055_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+    "sub-056_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-056_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-057_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-058_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-059_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-060_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-061_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-062_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-063_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-063_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-064_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-064_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-065_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-065_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-066_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-066_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-067_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-067_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-068_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-068_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-069_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+    "sub-069_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+    "sub-070_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+    "sub-070_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+    "sub-071_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-071_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz"
+  ],
+  "actual_spans": 3511,
+  "unique_actual_records": 249,
+  "teacher_EMA_after_optimizer_only": true,
+  "fresh_state_complete_segments": true,
+  "history": [
+    {
+      "step": 25,
+      "loss": 0.7768656611442566,
+      "prediction_loss": 0.6998372077941895,
+      "variance_loss": 0.7702842950820923
+    },
+    {
+      "step": 50,
+      "loss": 0.715526282787323,
+      "prediction_loss": 0.6505740284919739,
+      "variance_loss": 0.6495225429534912
+    },
+    {
+      "step": 75,
+      "loss": 0.7970974445343018,
+      "prediction_loss": 0.7434500455856323,
+      "variance_loss": 0.5364741683006287
+    },
+    {
+      "step": 100,
+      "loss": 0.8564395308494568,
+      "prediction_loss": 0.8089159727096558,
+      "variance_loss": 0.47523537278175354
+    },
+    {
+      "step": 125,
+      "loss": 0.8023715615272522,
+      "prediction_loss": 0.7546766996383667,
+      "variance_loss": 0.47694867849349976
+    },
+    {
+      "step": 150,
+      "loss": 0.8163795471191406,
+      "prediction_loss": 0.7691565752029419,
+      "variance_loss": 0.4722294211387634
+    },
+    {
+      "step": 175,
+      "loss": 0.753362238407135,
+      "prediction_loss": 0.7131566405296326,
+      "variance_loss": 0.40205609798431396
+    },
+    {
+      "step": 200,
+      "loss": 0.7383189797401428,
+      "prediction_loss": 0.7004588842391968,
+      "variance_loss": 0.37860098481178284
+    },
+    {
+      "step": 225,
+      "loss": 0.7455489039421082,
+      "prediction_loss": 0.7072131633758545,
+      "variance_loss": 0.38335728645324707
+    },
+    {
+      "step": 250,
+      "loss": 0.7607436180114746,
+      "prediction_loss": 0.7221083641052246,
+      "variance_loss": 0.38635239005088806
+    },
+    {
+      "step": 275,
+      "loss": 0.7633485794067383,
+      "prediction_loss": 0.721765398979187,
+      "variance_loss": 0.41583162546157837
+    },
+    {
+      "step": 300,
+      "loss": 0.738957941532135,
+      "prediction_loss": 0.7010499835014343,
+      "variance_loss": 0.37907978892326355
+    },
+    {
+      "step": 325,
+      "loss": 0.7597720623016357,
+      "prediction_loss": 0.7178561091423035,
+      "variance_loss": 0.41915926337242126
+    },
+    {
+      "step": 350,
+      "loss": 0.7167772054672241,
+      "prediction_loss": 0.6816319227218628,
+      "variance_loss": 0.3514525294303894
+    },
+    {
+      "step": 375,
+      "loss": 0.6478697657585144,
+      "prediction_loss": 0.6138255000114441,
+      "variance_loss": 0.34044238924980164
+    },
+    {
+      "step": 400,
+      "loss": 0.7196456789970398,
+      "prediction_loss": 0.6838216185569763,
+      "variance_loss": 0.3582404553890228
+    },
+    {
+      "step": 425,
+      "loss": 0.6979120373725891,
+      "prediction_loss": 0.6629649996757507,
+      "variance_loss": 0.34947019815444946
+    },
+    {
+      "step": 450,
+      "loss": 0.6919945478439331,
+      "prediction_loss": 0.6571163535118103,
+      "variance_loss": 0.3487820029258728
+    },
+    {
+      "step": 475,
+      "loss": 0.6886812448501587,
+      "prediction_loss": 0.6549664735794067,
+      "variance_loss": 0.33714771270751953
+    },
+    {
+      "step": 500,
+      "loss": 0.6832370162010193,
+      "prediction_loss": 0.6516777873039246,
+      "variance_loss": 0.31559252738952637
+    },
+    {
+      "step": 525,
+      "loss": 0.7124696969985962,
+      "prediction_loss": 0.6724187731742859,
+      "variance_loss": 0.40050897002220154
+    },
+    {
+      "step": 550,
+      "loss": 0.7079933881759644,
+      "prediction_loss": 0.6746694445610046,
+      "variance_loss": 0.3332393169403076
+    },
+    {
+      "step": 575,
+      "loss": 0.7107827067375183,
+      "prediction_loss": 0.6773495674133301,
+      "variance_loss": 0.33433136343955994
+    },
+    {
+      "step": 600,
+      "loss": 0.6773441433906555,
+      "prediction_loss": 0.6458890438079834,
+      "variance_loss": 0.31455111503601074
+    },
+    {
+      "step": 625,
+      "loss": 0.6634523272514343,
+      "prediction_loss": 0.6332772970199585,
+      "variance_loss": 0.30175039172172546
+    },
+    {
+      "step": 650,
+      "loss": 0.638272762298584,
+      "prediction_loss": 0.6127356290817261,
+      "variance_loss": 0.25537145137786865
+    },
+    {
+      "step": 675,
+      "loss": 0.6636417508125305,
+      "prediction_loss": 0.6347965002059937,
+      "variance_loss": 0.28845274448394775
+    },
+    {
+      "step": 700,
+      "loss": 0.6756414175033569,
+      "prediction_loss": 0.6480478048324585,
+      "variance_loss": 0.2759363651275635
+    },
+    {
+      "step": 725,
+      "loss": 0.7068542838096619,
+      "prediction_loss": 0.6685130000114441,
+      "variance_loss": 0.38341277837753296
+    },
+    {
+      "step": 750,
+      "loss": 0.6708216071128845,
+      "prediction_loss": 0.6428520083427429,
+      "variance_loss": 0.2796962559223175
+    },
+    {
+      "step": 775,
+      "loss": 0.6667519807815552,
+      "prediction_loss": 0.6378365755081177,
+      "variance_loss": 0.2891543209552765
+    },
+    {
+      "step": 800,
+      "loss": 0.6349325776100159,
+      "prediction_loss": 0.6110239028930664,
+      "variance_loss": 0.23908698558807373
+    },
+    {
+      "step": 825,
+      "loss": 0.6443265080451965,
+      "prediction_loss": 0.6193375587463379,
+      "variance_loss": 0.24988970160484314
+    },
+    {
+      "step": 850,
+      "loss": 0.6040658354759216,
+      "prediction_loss": 0.5804793238639832,
+      "variance_loss": 0.23586536943912506
+    },
+    {
+      "step": 875,
+      "loss": 0.6506549119949341,
+      "prediction_loss": 0.6255204677581787,
+      "variance_loss": 0.2513442039489746
+    },
+    {
+      "step": 900,
+      "loss": 0.6704317331314087,
+      "prediction_loss": 0.6416759490966797,
+      "variance_loss": 0.2875578999519348
+    },
+    {
+      "step": 925,
+      "loss": 0.6466681957244873,
+      "prediction_loss": 0.6230149269104004,
+      "variance_loss": 0.23653239011764526
+    },
+    {
+      "step": 950,
+      "loss": 0.6503275632858276,
+      "prediction_loss": 0.6272251009941101,
+      "variance_loss": 0.23102442920207977
+    },
+    {
+      "step": 975,
+      "loss": 0.668877899646759,
+      "prediction_loss": 0.6413101553916931,
+      "variance_loss": 0.2756775915622711
+    },
+    {
+      "step": 1000,
+      "loss": 0.6313212513923645,
+      "prediction_loss": 0.6080375909805298,
+      "variance_loss": 0.23283642530441284
+    },
+    {
+      "step": 1025,
+      "loss": 0.6136658191680908,
+      "prediction_loss": 0.5900228023529053,
+      "variance_loss": 0.23643018305301666
+    },
+    {
+      "step": 1050,
+      "loss": 0.6472339034080505,
+      "prediction_loss": 0.6237651109695435,
+      "variance_loss": 0.23468804359436035
+    },
+    {
+      "step": 1075,
+      "loss": 0.5926756262779236,
+      "prediction_loss": 0.5712102055549622,
+      "variance_loss": 0.21465422213077545
+    },
+    {
+      "step": 1100,
+      "loss": 0.6003867387771606,
+      "prediction_loss": 0.5772501826286316,
+      "variance_loss": 0.23136569559574127
+    },
+    {
+      "step": 1125,
+      "loss": 0.6301542520523071,
+      "prediction_loss": 0.6089005470275879,
+      "variance_loss": 0.2125370353460312
+    },
+    {
+      "step": 1150,
+      "loss": 0.6576254963874817,
+      "prediction_loss": 0.6340169906616211,
+      "variance_loss": 0.23608505725860596
+    },
+    {
+      "step": 1175,
+      "loss": 0.6265811920166016,
+      "prediction_loss": 0.6043375730514526,
+      "variance_loss": 0.22243647277355194
+    },
+    {
+      "step": 1200,
+      "loss": 0.6743268370628357,
+      "prediction_loss": 0.6461566686630249,
+      "variance_loss": 0.2817016541957855
+    },
+    {
+      "step": 1225,
+      "loss": 0.6595886945724487,
+      "prediction_loss": 0.6349058747291565,
+      "variance_loss": 0.2468281239271164
+    },
+    {
+      "step": 1250,
+      "loss": 0.6320105791091919,
+      "prediction_loss": 0.6120505332946777,
+      "variance_loss": 0.19960056245326996
+    },
+    {
+      "step": 1275,
+      "loss": 0.6507149934768677,
+      "prediction_loss": 0.628349781036377,
+      "variance_loss": 0.22365202009677887
+    },
+    {
+      "step": 1300,
+      "loss": 0.6292855143547058,
+      "prediction_loss": 0.607381284236908,
+      "variance_loss": 0.21904213726520538
+    },
+    {
+      "step": 1325,
+      "loss": 0.6009162664413452,
+      "prediction_loss": 0.5822522640228271,
+      "variance_loss": 0.1866399645805359
+    },
+    {
+      "step": 1350,
+      "loss": 0.6256455183029175,
+      "prediction_loss": 0.6019613742828369,
+      "variance_loss": 0.23684124648571014
+    },
+    {
+      "step": 1375,
+      "loss": 0.6095629334449768,
+      "prediction_loss": 0.5921227931976318,
+      "variance_loss": 0.174401193857193
+    },
+    {
+      "step": 1400,
+      "loss": 0.6005389094352722,
+      "prediction_loss": 0.5829121470451355,
+      "variance_loss": 0.17626738548278809
+    },
+    {
+      "step": 1425,
+      "loss": 0.639004647731781,
+      "prediction_loss": 0.6179466247558594,
+      "variance_loss": 0.21058028936386108
+    },
+    {
+      "step": 1450,
+      "loss": 0.6209805011749268,
+      "prediction_loss": 0.6024024486541748,
+      "variance_loss": 0.18578031659126282
+    },
+    {
+      "step": 1475,
+      "loss": 0.630296528339386,
+      "prediction_loss": 0.6115257740020752,
+      "variance_loss": 0.18770763278007507
+    },
+    {
+      "step": 1500,
+      "loss": 0.6393559575080872,
+      "prediction_loss": 0.6182371973991394,
+      "variance_loss": 0.21118757128715515
+    },
+    {
+      "step": 1525,
+      "loss": 0.6255266666412354,
+      "prediction_loss": 0.6045607924461365,
+      "variance_loss": 0.20965875685214996
+    },
+    {
+      "step": 1550,
+      "loss": 0.6428699493408203,
+      "prediction_loss": 0.6207336187362671,
+      "variance_loss": 0.22136352956295013
+    },
+    {
+      "step": 1575,
+      "loss": 0.6337794661521912,
+      "prediction_loss": 0.6135393381118774,
+      "variance_loss": 0.20240114629268646
+    },
+    {
+      "step": 1600,
+      "loss": 0.6193805932998657,
+      "prediction_loss": 0.599128246307373,
+      "variance_loss": 0.20252323150634766
+    },
+    {
+      "step": 1625,
+      "loss": 0.6135030388832092,
+      "prediction_loss": 0.5964311957359314,
+      "variance_loss": 0.1707184612751007
+    },
+    {
+      "step": 1650,
+      "loss": 0.61793053150177,
+      "prediction_loss": 0.5989458560943604,
+      "variance_loss": 0.18984660506248474
+    },
+    {
+      "step": 1675,
+      "loss": 0.6361290216445923,
+      "prediction_loss": 0.6155984997749329,
+      "variance_loss": 0.20530544221401215
+    },
+    {
+      "step": 1700,
+      "loss": 0.6121742129325867,
+      "prediction_loss": 0.5943963527679443,
+      "variance_loss": 0.17777881026268005
+    },
+    {
+      "step": 1725,
+      "loss": 0.5846620798110962,
+      "prediction_loss": 0.5684962868690491,
+      "variance_loss": 0.16165778040885925
+    },
+    {
+      "step": 1750,
+      "loss": 0.640149712562561,
+      "prediction_loss": 0.621015191078186,
+      "variance_loss": 0.1913454234600067
+    },
+    {
+      "step": 1775,
+      "loss": 0.6184508800506592,
+      "prediction_loss": 0.5994898676872253,
+      "variance_loss": 0.18961019814014435
+    },
+    {
+      "step": 1800,
+      "loss": 0.6171149015426636,
+      "prediction_loss": 0.5993766784667969,
+      "variance_loss": 0.17738224565982819
+    },
+    {
+      "step": 1825,
+      "loss": 0.6168299317359924,
+      "prediction_loss": 0.5981605052947998,
+      "variance_loss": 0.18669451773166656
+    },
+    {
+      "step": 1850,
+      "loss": 0.619422197341919,
+      "prediction_loss": 0.5979562997817993,
+      "variance_loss": 0.2146589756011963
+    },
+    {
+      "step": 1875,
+      "loss": 0.6053970456123352,
+      "prediction_loss": 0.5897367000579834,
+      "variance_loss": 0.1566033959388733
+    },
+    {
+      "step": 1900,
+      "loss": 0.5950449109077454,
+      "prediction_loss": 0.5792534351348877,
+      "variance_loss": 0.15791477262973785
+    },
+    {
+      "step": 1925,
+      "loss": 0.5578950643539429,
+      "prediction_loss": 0.541553795337677,
+      "variance_loss": 0.16341255605220795
+    },
+    {
+      "step": 1950,
+      "loss": 0.5516682267189026,
+      "prediction_loss": 0.5385336875915527,
+      "variance_loss": 0.13134564459323883
+    },
+    {
+      "step": 1975,
+      "loss": 0.6061663627624512,
+      "prediction_loss": 0.5884848833084106,
+      "variance_loss": 0.17681454122066498
+    },
+    {
+      "step": 2000,
+      "loss": 0.6229150891304016,
+      "prediction_loss": 0.6030006408691406,
+      "variance_loss": 0.19914421439170837
+    },
+    {
+      "step": 2025,
+      "loss": 0.6135230660438538,
+      "prediction_loss": 0.5969011783599854,
+      "variance_loss": 0.16621865332126617
+    },
+    {
+      "step": 2050,
+      "loss": 0.5888780355453491,
+      "prediction_loss": 0.5734074115753174,
+      "variance_loss": 0.15470628440380096
+    },
+    {
+      "step": 2075,
+      "loss": 0.6343327164649963,
+      "prediction_loss": 0.6148253083229065,
+      "variance_loss": 0.19507421553134918
+    },
+    {
+      "step": 2100,
+      "loss": 0.618155300617218,
+      "prediction_loss": 0.5998703241348267,
+      "variance_loss": 0.18284976482391357
+    },
+    {
+      "step": 2125,
+      "loss": 0.6240012645721436,
+      "prediction_loss": 0.6056791543960571,
+      "variance_loss": 0.18322104215621948
+    },
+    {
+      "step": 2150,
+      "loss": 0.6029989123344421,
+      "prediction_loss": 0.5842450857162476,
+      "variance_loss": 0.18753847479820251
+    },
+    {
+      "step": 2175,
+      "loss": 0.6256860494613647,
+      "prediction_loss": 0.6109043955802917,
+      "variance_loss": 0.14781664311885834
+    },
+    {
+      "step": 2200,
+      "loss": 0.6197134256362915,
+      "prediction_loss": 0.6042987108230591,
+      "variance_loss": 0.15414723753929138
+    },
+    {
+      "step": 2225,
+      "loss": 0.6238390803337097,
+      "prediction_loss": 0.607093334197998,
+      "variance_loss": 0.167457714676857
+    },
+    {
+      "step": 2250,
+      "loss": 0.6258379220962524,
+      "prediction_loss": 0.6062111258506775,
+      "variance_loss": 0.19626779854297638
+    },
+    {
+      "step": 2275,
+      "loss": 0.6276829242706299,
+      "prediction_loss": 0.6084550619125366,
+      "variance_loss": 0.19227881729602814
+    },
+    {
+      "step": 2300,
+      "loss": 0.6231414675712585,
+      "prediction_loss": 0.6050354838371277,
+      "variance_loss": 0.1810598224401474
+    },
+    {
+      "step": 2325,
+      "loss": 0.5977528095245361,
+      "prediction_loss": 0.5820859670639038,
+      "variance_loss": 0.15666846930980682
+    },
+    {
+      "step": 2350,
+      "loss": 0.6177380681037903,
+      "prediction_loss": 0.6028242111206055,
+      "variance_loss": 0.1491386890411377
+    },
+    {
+      "step": 2375,
+      "loss": 0.608869194984436,
+      "prediction_loss": 0.5934762954711914,
+      "variance_loss": 0.1539286971092224
+    },
+    {
+      "step": 2400,
+      "loss": 0.6385753154754639,
+      "prediction_loss": 0.6191427111625671,
+      "variance_loss": 0.19432590901851654
+    },
+    {
+      "step": 2425,
+      "loss": 0.6105743050575256,
+      "prediction_loss": 0.5977300405502319,
+      "variance_loss": 0.1284426897764206
+    },
+    {
+      "step": 2450,
+      "loss": 0.6317803263664246,
+      "prediction_loss": 0.6164023876190186,
+      "variance_loss": 0.15377956628799438
+    },
+    {
+      "step": 2475,
+      "loss": 0.6033894419670105,
+      "prediction_loss": 0.5894856452941895,
+      "variance_loss": 0.13903795182704926
+    },
+    {
+      "step": 2500,
+      "loss": 0.6220609545707703,
+      "prediction_loss": 0.6079720258712769,
+      "variance_loss": 0.14088934659957886
+    },
+    {
+      "step": 2525,
+      "loss": 0.632301926612854,
+      "prediction_loss": 0.6146442890167236,
+      "variance_loss": 0.17657633125782013
+    },
+    {
+      "step": 2550,
+      "loss": 0.6390082240104675,
+      "prediction_loss": 0.6201709508895874,
+      "variance_loss": 0.1883729249238968
+    },
+    {
+      "step": 2575,
+      "loss": 0.6171628832817078,
+      "prediction_loss": 0.5974692106246948,
+      "variance_loss": 0.19693659245967865
+    },
+    {
+      "step": 2600,
+      "loss": 0.6067396402359009,
+      "prediction_loss": 0.5929073691368103,
+      "variance_loss": 0.13832242786884308
+    },
+    {
+      "step": 2625,
+      "loss": 0.6024845242500305,
+      "prediction_loss": 0.5884237289428711,
+      "variance_loss": 0.140608012676239
+    },
+    {
+      "step": 2650,
+      "loss": 0.6029139757156372,
+      "prediction_loss": 0.5904524922370911,
+      "variance_loss": 0.12461505830287933
+    },
+    {
+      "step": 2675,
+      "loss": 0.6218641996383667,
+      "prediction_loss": 0.6023342609405518,
+      "variance_loss": 0.19529962539672852
+    },
+    {
+      "step": 2700,
+      "loss": 0.6195312142372131,
+      "prediction_loss": 0.6033393740653992,
+      "variance_loss": 0.16191831231117249
+    },
+    {
+      "step": 2725,
+      "loss": 0.607996940612793,
+      "prediction_loss": 0.5921064019203186,
+      "variance_loss": 0.15890562534332275
+    },
+    {
+      "step": 2750,
+      "loss": 0.6128301024436951,
+      "prediction_loss": 0.5950076580047607,
+      "variance_loss": 0.17822447419166565
+    },
+    {
+      "step": 2775,
+      "loss": 0.6097936630249023,
+      "prediction_loss": 0.5948074460029602,
+      "variance_loss": 0.14986202120780945
+    },
+    {
+      "step": 2800,
+      "loss": 0.6074666976928711,
+      "prediction_loss": 0.5921134948730469,
+      "variance_loss": 0.1535322666168213
+    },
+    {
+      "step": 2825,
+      "loss": 0.6292746067047119,
+      "prediction_loss": 0.6079220175743103,
+      "variance_loss": 0.2135259509086609
+    },
+    {
+      "step": 2850,
+      "loss": 0.6220454573631287,
+      "prediction_loss": 0.6061702966690063,
+      "variance_loss": 0.15875133872032166
+    },
+    {
+      "step": 2875,
+      "loss": 0.6021051406860352,
+      "prediction_loss": 0.5881223678588867,
+      "variance_loss": 0.13982777297496796
+    },
+    {
+      "step": 2900,
+      "loss": 0.5855576992034912,
+      "prediction_loss": 0.5715632438659668,
+      "variance_loss": 0.1399446576833725
+    },
+    {
+      "step": 2925,
+      "loss": 0.5932020545005798,
+      "prediction_loss": 0.5817806720733643,
+      "variance_loss": 0.11421357095241547
+    },
+    {
+      "step": 2950,
+      "loss": 0.6058818697929382,
+      "prediction_loss": 0.5935064554214478,
+      "variance_loss": 0.12375436723232269
+    },
+    {
+      "step": 2975,
+      "loss": 0.6141484975814819,
+      "prediction_loss": 0.5942059755325317,
+      "variance_loss": 0.19942544400691986
+    },
+    {
+      "step": 3000,
+      "loss": 0.6084440350532532,
+      "prediction_loss": 0.5924742221832275,
+      "variance_loss": 0.15969829261302948
+    },
+    {
+      "step": 3025,
+      "loss": 0.6125656366348267,
+      "prediction_loss": 0.5988315939903259,
+      "variance_loss": 0.1373407244682312
+    },
+    {
+      "step": 3050,
+      "loss": 0.6075637340545654,
+      "prediction_loss": 0.5930873155593872,
+      "variance_loss": 0.14476394653320312
+    },
+    {
+      "step": 3075,
+      "loss": 0.6079590916633606,
+      "prediction_loss": 0.5919963121414185,
+      "variance_loss": 0.15962791442871094
+    },
+    {
+      "step": 3100,
+      "loss": 0.5981974005699158,
+      "prediction_loss": 0.582399308681488,
+      "variance_loss": 0.15798112750053406
+    },
+    {
+      "step": 3125,
+      "loss": 0.6230533719062805,
+      "prediction_loss": 0.6095820665359497,
+      "variance_loss": 0.13471299409866333
+    },
+    {
+      "step": 3150,
+      "loss": 0.6221950054168701,
+      "prediction_loss": 0.6060197949409485,
+      "variance_loss": 0.16175207495689392
+    },
+    {
+      "step": 3175,
+      "loss": 0.6185940504074097,
+      "prediction_loss": 0.6027218699455261,
+      "variance_loss": 0.15872181951999664
+    },
+    {
+      "step": 3200,
+      "loss": 0.6096881031990051,
+      "prediction_loss": 0.595669150352478,
+      "variance_loss": 0.14018961787223816
+    },
+    {
+      "step": 3225,
+      "loss": 0.5910915732383728,
+      "prediction_loss": 0.5792309045791626,
+      "variance_loss": 0.11860675364732742
+    },
+    {
+      "step": 3250,
+      "loss": 0.5961022973060608,
+      "prediction_loss": 0.5833965539932251,
+      "variance_loss": 0.12705720961093903
+    },
+    {
+      "step": 3275,
+      "loss": 0.627842903137207,
+      "prediction_loss": 0.6111623644828796,
+      "variance_loss": 0.1668054163455963
+    },
+    {
+      "step": 3300,
+      "loss": 0.6282607316970825,
+      "prediction_loss": 0.6116275787353516,
+      "variance_loss": 0.16633129119873047
+    },
+    {
+      "step": 3325,
+      "loss": 0.6337383389472961,
+      "prediction_loss": 0.6190640330314636,
+      "variance_loss": 0.14674295485019684
+    },
+    {
+      "step": 3350,
+      "loss": 0.6195249557495117,
+      "prediction_loss": 0.5992646813392639,
+      "variance_loss": 0.20260286331176758
+    },
+    {
+      "step": 3375,
+      "loss": 0.6057668328285217,
+      "prediction_loss": 0.5889295339584351,
+      "variance_loss": 0.16837279498577118
+    },
+    {
+      "step": 3400,
+      "loss": 0.598025381565094,
+      "prediction_loss": 0.5849581956863403,
+      "variance_loss": 0.13067162036895752
+    },
+    {
+      "step": 3425,
+      "loss": 0.614217221736908,
+      "prediction_loss": 0.5946799516677856,
+      "variance_loss": 0.1953727900981903
+    },
+    {
+      "step": 3450,
+      "loss": 0.625988781452179,
+      "prediction_loss": 0.6102465391159058,
+      "variance_loss": 0.15742260217666626
+    },
+    {
+      "step": 3475,
+      "loss": 0.6583229303359985,
+      "prediction_loss": 0.6448383331298828,
+      "variance_loss": 0.13484621047973633
+    },
+    {
+      "step": 3500,
+      "loss": 0.5748521089553833,
+      "prediction_loss": 0.5595306158065796,
+      "variance_loss": 0.1532149314880371
+    },
+    {
+      "step": 3511,
+      "loss": 0.5698011517524719,
+      "prediction_loss": 0.5549229383468628,
+      "variance_loss": 0.14878197014331818
+    }
+  ],
+  "stage": "formal",
+  "checkpoint_sha256": "abaaed7d362dc9b346cf05844db0dab5983fb9e8b119a9650d481325a0514868",
+  "protocol_sha256": "07204af637d82eb3c68c22f0a24bd964d8939726183d41cea19075a2df0f781b",
+  "split_sha256": "46bb9dc97b1f0e5a810e2d26d1db2c43282a876ca82d446ee13b215ea21bad3a",
+  "normalization_sha256": "ed6b1df91994e7a22b03e3915cf5f61d7cf411347e03ca988dcedd9268583c58",
+  "evidence_compaction": {
+    "full_source_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run01/formal01/pretrain_seed1024/pretrain_completed.json",
+    "full_metadata_sha256": "80e2dfb53a5a628d6d1a2b513ac3ff3facf3741698070a6ba1c468ce3d1b6d7e",
+    "actual_span_sequence_verified_against_expected": true,
+    "actual_span_count": 3511
+  }
+}

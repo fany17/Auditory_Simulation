@@ -1,0 +1,41 @@
+{
+  "variant": "m3_finetune",
+  "seed": 31415,
+  "steps": 3262,
+  "samples": 12526080,
+  "selected_step": 3000,
+  "selected_score": 0.10193969037399442,
+  "seconds": 24.322381882928312,
+  "train_step_seconds": 14.601421824656427,
+  "device": "cuda:1",
+  "unique_training_records": 249,
+  "parameter_counts": {
+    "registered": 47105,
+    "requires_grad": 25153,
+    "gradient_tensor_reachable": 25153,
+    "nonzero_gradient_scalars_first_real_batch": 25153
+  },
+  "max_GPU_allocated_bytes": 48177152,
+  "audit_signal_read": false,
+  "pretraining_checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run01/formal01/pretrain_seed31415/pretrained.pt",
+  "pretrained_identity": {
+    "seed": 31415,
+    "steps": 3511,
+    "checkpoint_sha256": "670711ea75238e7f2b54c51b7b818d59f1a791fc5548411bba43afab99d204a6",
+    "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run01/formal01/pretrain_seed31415/pretrained.pt"
+  },
+  "checkpoint_sha256": "cd518f72a1d5d8b80189de5e4edcf347549ad97c4da2f655e249dd08ae96b19d",
+  "protocol_sha256": "07204af637d82eb3c68c22f0a24bd964d8939726183d41cea19075a2df0f781b",
+  "split_sha256": "46bb9dc97b1f0e5a810e2d26d1db2c43282a876ca82d446ee13b215ea21bad3a",
+  "normalization_sha256": "ed6b1df91994e7a22b03e3915cf5f61d7cf411347e03ca988dcedd9268583c58",
+  "continuous_60s_loss": true,
+  "state_detach_not_reset_between_adjacent_updates": true,
+  "selection_metric": "validation_macro_r",
+  "evidence_compaction": {
+    "full_source_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run01/formal01/m3_finetune_seed31415/train_completed.json",
+    "full_metadata_sha256": "9839e14f4eb2e6003e0fc6a6fc90a67bd8d7f5f5dc3da6ae0948f7e461345b37",
+    "training_sequence_verified_by_all_training_gate": true,
+    "actual_sequence_steps": 3262,
+    "actual_unique_records": 249
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "variant": "m1_multi",
+  "seed": 31415,
+  "selected_step": 3000,
+  "conditions": {
+    "true": {
+      "endpoint": "all_complete60s_after60s_warmup",
+      "r": 0.12118079962188058,
+      "mse": 0.818772683649406,
+      "persons": 36,
+      "records": 41,
+      "blocks": 538,
+      "undefined_r_blocks": 0
+    },
+    "history_true": {
+      "endpoint": "first60s_score_after_equal60s_prefix_only",
+      "r": 0.14268410895105266,
+      "mse": 0.904295375249872,
+      "persons": 36,
+      "records": 41,
+      "blocks": 41,
+      "undefined_r_blocks": 0
+    },
+    "history_state_reset": {
+      "endpoint": "first60s_score_after_equal60s_prefix_only",
+      "r": 0.14375955996729903,
+      "mse": 0.9040088489334361,
+      "persons": 36,
+      "records": 41,
+      "blocks": 41,
+      "undefined_r_blocks": 0
+    },
+    "history_state_wrong": {
+      "endpoint": "first60s_score_after_equal60s_prefix_only",
+      "r": 0.14199605788682632,
+      "mse": 0.9044813338363594,
+      "persons": 36,
+      "records": 41,
+      "blocks": 41,
+      "undefined_r_blocks": 0
+    },
+    "history_prefix_reset": {
+      "endpoint": "first60s_score_after_equal60s_prefix_only",
+      "r": 0.14401730274432128,
+      "mse": 0.9039188741321994,
+      "persons": 36,
+      "records": 41,
+      "blocks": 41,
+      "undefined_r_blocks": 0
+    },
+    "history_prefix_wrong": {
+      "endpoint": "first60s_score_after_equal60s_prefix_only",
+      "r": 0.1412486958743047,
+      "mse": 0.9046711145277843,
+      "persons": 36,
+      "records": 41,
+      "blocks": 41,
+      "undefined_r_blocks": 0
+    }
+  },
+  "history_canaries": [
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    },
+    {
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-01_eeg.bdf.gz",
+      "current_EEG_fixed": true,
+      "state_only_current_local_features_exactly_equal": true,
+      "same_phase_different_record_person_family_donor": true,
+      "equal_60s_prefix_duration": true
+    }
+  ],
+  "audit_assessments": 1,
+  "interpretation": "INTERNAL/EXPLORATORY, prior SS03/SS05 training exposure",
+  "history_endpoint_is_separate_from_full_record_primary": true
+}

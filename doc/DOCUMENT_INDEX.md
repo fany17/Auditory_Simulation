@@ -1,6 +1,7 @@
+> 当前入口更新（2026-10-23）：SS06真实EEG已完成有限制并STOP。先读CODEX_START_HERE.md及continuity/eeg_run01/REPORT.md/REVIEW.md；旧启动和“仅原型”描述仅为历史。
 # Auditory_Simulation Document Index
 
-更新时间：`2026-10-13`
+更新时间：`2026-10-23`
 
 ## A. Authoritative current documents
 
@@ -20,7 +21,11 @@
 
 `TASKS.md` 是父任务状态 source of truth；每个父任务的 `SUBTASKS.md` 是其 subtask 状态 source of truth。
 
-## B. Current executable task tree（2026-10-13）
+## B. Current executable task tree（2026-10-23）
+
+最新入口：CODEX_START_HERE.md → reports/pub_01/s03/continuity/eeg_run01/REPORT.md/REVIEW.md；SS06真实实验COMPLETED/PASS_WITH_LIMITATION，39run/3SSL/243结果与四图已交，当前STOP。执行契约SS06_REAL_EEG_EXECUTION.md及SS06任务书保留；prototype01只为历史工程证据。代码src/m6a_public/continuity/及scripts/pub_01_s03_ss06_*.py；#6仍Draft，旧SS02/03/05冻结，SS04/S04/父S05不启动。
+
+### 历史任务树快照（2026-10-13；仅追溯）
 
 - Parent：`tasks/PUB-01/TASK.md`；唯一子任务登记：`tasks/PUB-01/SUBTASKS.md`。
 - 科学支线与依赖：`tasks/PUB-01/RESEARCH_BRANCHES.md`。

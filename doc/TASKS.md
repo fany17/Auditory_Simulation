@@ -1,19 +1,24 @@
+> 2026-10-23最新交付：SS06 COMPLETED/PASS_WITH_LIMITATION，39监督+3SSL真实结果/一次内部审计/后置复核完成；当前STOP。见continuity/eeg_run01/REPORT.md；PUB-01仍ACTIVE，无自动下一READY。
 # Auditory_Simulation Parent Task Registry
 
-更新时间：`2026-10-19`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。
+更新时间：`2026-10-23`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。
 
 | Task ID | Title | Track | Class | Status | Blocking for STN direct READ | Patient Data | Parent Task Spec | Subtask Registry | Output |
 |---|---|---|---|---|---|---|---|---|---|
 | `PUB-01` | Public Auditory–Neural Representation | PUBLIC_METHOD | MAINLINE_EXECUTION | **`ACTIVE`** | NO | FORBIDDEN | `doc/tasks/PUB-01/TASK.md` | `doc/tasks/PUB-01/SUBTASKS.md` | public EEG benchmark + public sEEG benchmark/transfer + eventual `ART-AUDREP-v1` candidate |
 
-## 最新执行决策（2026-10-19）
+## 最新执行决策（2026-10-23）
+
+PUB-01仍ACTIVE。SS06已COMPLETED/PASS_WITH_LIMITATION：39×3262监督/3×3511 SSL、243真实条件结果及四图齐备；原型CPU222r max差1.55e-7，协调独立SUMMARY重算max差5.55e-17，完整/精简包12checks均PASS。八primary只有多尺度胜matched long、M3微调胜冻结、M4自适应胜均匀固定三项为正；M2最高点估计但不稳健胜GRU，SSL额外收益/M5额外收益/内容特异历史收益未建立。5family、历史训练暴露限定INTERNAL/EXPLORATORY，非SOTA或外部确认。source提交ea5a1b5，报告见continuity/eeg_run01；旧SS02/03/05冻结，#3/#4已合并，#6仍Draft不自行合并。当前停止，SS04/S04/父S05不启动，无artifact。
+
+## 历史执行决策（2026-10-19）
 
 - `PUB-01` 仍 `ACTIVE`。研究者明确分工：**协调者制定/审阅任务，Codex负责具体实现和全部实验执行**。未经研究者要求协调者不自行运行模拟或EEG任务。
 - SS05已 **COMPLETED / PASS_WITH_LIMITATION**：Codex完成原合成审查/15tests、真实pilot、新train norm、15run训练与105条件测试。新内部holdout21人/47record/7family的五组r约.091–.092，六预设区间均跨0，未检出复杂记忆额外收益；同agent separate review和轻量文件复核范围已说明。有效阴性限定本轮数据/目标/模型/2000步，不代表历史记忆普遍无用。
 - SS01/SS02/SS03冻结，旧test不供SS05调参。用户最新授权已合并PR#3到main@8d21d0a；PR#4 base main且仍Draft。SS04/S04/父S05 BACKLOG；主目录CNN/TRF/stash不动，不自行合并#4。
 - 运行/交付与患者数据禁止边界详见 `doc/CODEX_START_HERE.md`、`doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。
 
-## Current scientific branches
+## 历史支线快照（2026-10-19）
 
 2026-10-19：SS05真实内部holdout阴性结果与报告已交，当前停止。见reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md；SS01/SS02/SS03科学结果冻结，SS04/S04/父S05 BACKLOG，无自动下一READY节点。PR#3按新授权已合并8d21d0a，PR#4仍Draft不自行合并。
 
