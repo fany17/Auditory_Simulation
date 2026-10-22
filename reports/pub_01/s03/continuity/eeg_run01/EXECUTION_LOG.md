@@ -22,3 +22,15 @@
 M1三组各四个独立活跃分支，short全dilation1、long全256、multi1/8/64/256，消除以失活参数伪装容量匹配的问题。M5实现同方程显式一阶BPTT避免大量细粒度autograd节点，已与原型参数/输入/初始状态及观测loss梯度核验；不支持高阶导，不改变训练方程。
 
 FORMAL_PROTOCOL write-once冻结后，调度PID3535778通过input/pub_01_s03_ss06_run.py实际启动。三seed1024/2026/31415；每1000步及最终3262步完整val，仅val选checkpoint；CPU六个M5任务并行、其余两GPU任务队列。全部训练/预训练的预算、source/split/norm、实际样本、预训练checkpoint和最优val选择均须核验，之后输出先验系数仅val选择，最后才允许原子开audit。当前未宣称audit性能或验收完成。
+
+## 最终实际结果与审阅
+
+39监督和3SSL全部跑满，all_training_complete及独立post-training gate核验PASS后才冻结EMA/AR选择、写ready；waiter3545290随后原子写audit_opened并读取41条新audit。每selected模型一次assessment含全部预定条件，39assessment完成后observer重算243行结果。五主框架r：M1multi.122913、M2.128164、M3finetune.123747、M4adaptive.113400、M5full.114178；GRU.125221、local.107432。八primary仅M1multi−long、M3ft−frozen、M4adaptive−uniformfixed的交叉分组/八项校正区间为正；其余跨0，不把M3ft胜frozen当预训练胜GRU，也不称M2稳健最高或M5必要。五主框架真实−错配state的secondary crossed95%均跨0。
+
+后置逐段→record→person重算误差0；原始64Hz输入资产重新标准化+原型CPU222个有效r max差1.55e-7、234个MSE max差6.52e-8、12未定义相关一致。协调会话另外在2203从per_record_all_seeds独立按seed/person重算全部SUMMARY，max差5.55e-17，核对全部primary/history/开封门与统计代码。这不是外部完整科学签署，原始输入CPU复算由执行者另作。
+
+四张静态图已在2203由真实review CSV生成并逐张可视检查；只修正了prior未定义r注释位置，不改科学数值。REPORT/REVIEW、全部逐seed/逐record/逐人表及冻结/运行/验证证据完成。执行/冻结source提交ea5a1b5b50293f36a4d55ab602f39ba4f096140e，最终observer/报告/状态提交见PR#6。
+
+元数据打包首次误用系统python3缺NumPy，切回已指定env01后成功，无科学管线/结果改变。回传完整轻量包时E盘0空闲导致SCP部分写入失败；仅将本轮未提交partial evidence移到C盘任务备份，未永久删除。完整delivery01另保留2203与C:/Users/fanyu/.codex/backups/Auditory_Simulation_ss06_20261023/delivery01；Git精简逐run JSON只去重复访问序列（保留路径/身份/真实覆盖核验），所有指标/四图与source/config不变。完整包与精简包分别技术校验，信号/权重/normalizer/cache未回传。E盘接近满的收尾不涉及原始资料、旧worktree或主目录CNN/TRF/stash清理。
+
+Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。SS06完成并STOP，父S03/PUB仍ACTIVE；#6保持Draft不自行合并，不启动SS04/S04/父S05/GPT/artifact。

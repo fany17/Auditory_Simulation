@@ -4,21 +4,23 @@
 |---|---|
 | Subtask ID | `PUB-01-S03_SS06` |
 | Parent Node / Task | `PUB-01-S03` / `PUB-01` |
-| Status | `ACTIVE` — `REAL_EEG_EXECUTION`；prototype01 保留 PASS_WITH_LIMITATION |
+| Status | `COMPLETED` / `PASS_WITH_LIMITATION` — eeg_run01真实比较及review完成；prototype01历史保留 |
 | Blocking for Parent | NO；此包不替代 S03 最终 benchmark |
 | Patient Data | `FORBIDDEN` |
 | Upstream | SS02/SS03/SS05 冻结报告；2026-10-23 用户明确授权 |
-| Inputs | 现有方法证据、随机合成张量；本轮不读取 EEG/声音载荷 |
-| Deliverables | 五框架结构/目标/对照、统一接口、可运行原型、合成工程测试及独立代码审阅 |
-| Acceptance | 五模型前向/反向、分块连续性、因果性及核心对照通过；真实训练为 NOT_RUN |
-| Validation | Technical → Engineering acceptance → Parent consistency；不冒称科学验收 |
-| Go/Hold/Fail | 工程通过后停止；运行失败修复；服务器不可用记 HOLD_RUNTIME，不转本地计算 |
+| Inputs | 既有合法公开SparrKULee EEG/envelope、SS05原train来源谱系；prototype01工程证据 |
+| Deliverables | 真实连续loader/新train统计、pilot、冻结协议、五框架与既定对照真实指标及逐seed/逐人证据、报告/审阅 |
+| Acceptance | 按SS06_REAL_EEG_EXECUTION完成实际训练/合格评估；保留阴性及内部审计/历史暴露限制，不以smoke结束 |
+| Validation | Technical → Acceptance → Parent consistency；独立源码审阅与后置指标/原始输入复算分开，不称外部科学签署 |
+| Go/Hold/Fail | 完成真实结果后停止；工程失败在授权内修复；缺独立test继续可行探索并诚实限定，服务器不可用不转本地 |
 | Files Allowed to Change | 本任务书/接口契约；`src/m6a_public/continuity/`；`tests/test_ss06_*.py`；SS06 script/config/report；当前入口/登记的必要更新 |
 | Last Updated | 2026-10-23 |
 
 ## 当前授权更新（2026-10-23）
 
 用户在原型交付后明确“启动吧”，现授权既定五框架进入真实公开EEG训练与比较。执行以 [SS06_REAL_EEG_EXECUTION.md](SS06_REAL_EEG_EXECUTION.md) 为最新补充，先实际train/val pilot，再冻结预算/对照/划分并推进合格评估。以下PROTOTYPE_ONLY与NOT_RUN描述为prototype01历史，不再阻止本轮已授权实验；旧SS02/03/05结果仍冻结。
+
+实际eeg_run01：源码/真实pilot与正式冻结已提交ea5a1b5，13候选×3seed各3262步完整记录监督训练，M3各3511段正式SSL；共同60s整段目标、跨块detach保留状态。元数据先冻结249/63/41record、13/5/5family，所有来源限SS05旧train，结果只作前瞻INTERNAL/EXPLORATORY。当前实际进展与最终review以reports/pub_01/s03/continuity/eeg_run01/为准；审计门须核对全部训练/选择/来源身份，不把原型报告当真实结果。原型历史Completion Record不覆盖本阶段。
 
 ## 1. prototype01 历史授权与目标
 
@@ -139,6 +141,18 @@ SS05 在既定五模型、数据和预算下未检出历史/关联残差额外�
 - 本项目直接证据：SS03 `reports/pub_01/s03/architecture/REPORT.md`；SS05 `reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md`。结论不被本设计修改。
 
 ## 12. Completion Record
+
+### eeg_run01真实执行交付（2026-10-23，当前）
+
+执行/冻结source提交ea5a1b5b50293f36a4d55ab602f39ba4f096140e。2203新根s03_continuity_20261023/eeg_run01，元数据先冻结249/63/41record、13/5/5family，重新拟合新train EEG及目标统计；真实pilot各100步后冻结39run各3262步全record同序监督、3SSL各3511段，全部训练/验证选择及实质门核验后一次开audit。243条件结果，36人/5family/538评分块。M1multi/M2/M3ft/M4adaptive/M5full r=.122913/.128164/.123747/.113400/.114178，GRU=.125221。
+
+八primary只有M1multi−容量/最长span匹配long、M3ft−frozen、M4adaptive−uniformfixed交叉分组/多重校正区间>0。M2稳健胜GRU、SSL相对从头、M5额外收益与内容特异历史收益未建立。M4缺最优静态非均匀控制、M3SSL逐段fresh-state、历史开发暴露/只有5family/人员重叠/单pass/physical_sync UNKNOWN明确保留，不称外部确认或语义/生理机制。
+
+Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。原型38tests/71子测试及首版3适配测试、最终7适配（含CUDA长段/参数梯度/分块及M5观测/初态BPTT）通过；后置汇总误差0、222有效原型CPU r max差1.55e-7、234MSE max差6.52e-8、12null一致。协调独立SUMMARY从record/seed重算max差5.55e-17；区别于执行者原始输入复算，不称外部科学签署。完整与精简包12checks均PASS。
+
+交付eeg_run01/EXECUTION_LOG、SPLIT_PROVENANCE、FORMAL_PROTOCOL、CODE_AUDIT、RESULTS、REPORT、REVIEW、四图及逐seed/逐record/逐人证据。E满仅将本轮未提交partial副本移C备份，Git精简JSON省重复访问序列而不改指标，完整轻量包仍2203+C；数据/权重/cache/normalizer仅2203。主目录CNN/TRF/stash、旧worktree和SS02/03/05未改。SS06完成后STOP，父S03/PUB ACTIVE，#6仍Draft不合并，SS04/S04/父S05/GPT/artifact不启动。最终报告commit见PR#6。
+
+### prototype01历史工程交付
 
 2026-10-23：五种原型、统一接口/目标/核心对照及任务书完成。server2203 Python3.11.15/PyTorch2.11.0 CPU实测38测试+71子测试通过；相关DE警告断言detach修正后10测试+26子测试无警告通过。五默认64ch/32hidden模型的60秒合成前向/257样本分块max差<1e-7，短段梯度有限；主smoke参数不变，optimizer steps=0。AB/DE跨作者源码审阅及AB对实际日志/JSON/修正代码的独立闭环，发现全部关闭；root汇总核验。Technical PASS / Engineering acceptance PASS_WITH_LIMITATION / Parent consistency PASS。详情reports/pub_01/s03/continuity/prototype01/REPORT.md、REVIEW_CDE.md、SMOKE_FINAL.json；代码/config/命令同报告。
 

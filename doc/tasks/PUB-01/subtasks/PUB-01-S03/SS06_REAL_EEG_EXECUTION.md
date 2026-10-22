@@ -4,7 +4,7 @@
 |---|---|
 | Task / Session | PUB-01-S03_SS06 / eeg_run01 |
 | Parent | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE / APPROVED_FOR_EXECUTION |
+| Status | COMPLETED / PASS_WITH_LIMITATION — eeg_run01实际结果及后置review已交 |
 | 人工依据 | 2026-10-23，在五原型交付后用户明确：“启动吧” |
 | 范围 | 既定五框架及任务书对照的真实公开 EEG 数据加载、train/val pilot、方案冻结、训练和合格评估 |
 | 执行者 | 原 PUB 会话 01a134e7-c257-7821-838c-b380642787f5；原指定 gpt-6.1-sol / high |
@@ -59,3 +59,7 @@
 启动后给协调会话回报具体入口、服务器目录/进程或调度标识、当前实际阶段；问题与结果向协调会话汇报，授权沿用用户先前“有问题/结果要向你汇报”。不要把内部准备报告反复推给用户。可解决工程问题自行推进；只把不可自行解决且需要用户行动的最小问题上报。
 
 最终完成真实结果和代码/指标复核后停止；若没有可信新test，明确限定为训练/验证探索并列出阻碍，不把合成/验证分数装成独立测试。不得凭阴性自动新增模型、数据或下游任务。
+
+## 7. 实际完成与停止（2026-10-23）
+
+本授权已执行：39监督run各3262步、3SSL各3511段；全部训练/val选择和实质门核验后一次内部audit，243行结果/四图/逐seed人与record表。8primary三项为正，M2最高点估计但未稳健胜GRU，SSL相对从头GRU/M5额外收益/内容特异历史收益未建立。完整报告continuity/eeg_run01/REPORT.md和REVIEW.md；222原型CPU r max差1.55e-7、协调独立SUMMARY复算5.55e-17，完整/精简包均PASS。SS06 COMPLETED/PASS_WITH_LIMITATION；当前STOP，#6仍Draft，不合并或启动下游。prototype01/旧SS02/03/05 frozen证据保持不变；无患者、新下载或artifact。

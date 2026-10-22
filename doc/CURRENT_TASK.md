@@ -1,8 +1,8 @@
-# 当前任务 — SS06 真实实验已获授权（2026-10-23）
+# 当前交付 — SS06 已完成有限制并停止（2026-10-23）
 
-用户在五原型工程交付后明确“启动吧”。SS06重新ACTIVE，按SS06_REAL_EEG_EXECUTION.md执行真实loader、train/val pilot、冻结方案、训练及合格评估；尚无真实SS06性能结果。由原PUB会话实施，协调跟进审阅。旧test不调参，内部audit_holdout保留历史开发暴露限制；无独立test时继续可行探索。
+用户“启动吧”授权的SS06真实实验已完成：39×3262监督、3×3511 SSL，新train统计/完整连续record/一次内部审计/后置复核齐备。M1multi .122913、M2 .128164、M3finetune .123747、M4adaptive .113400、M5full .114178；GRU .125221。八primary三项为正，其余跨0；不把M2点估计当稳健胜出，未建立SSL相对GRU或M5额外收益、内容特异历史收益。只5family且旧训练暴露，INTERNAL/EXPLORATORY，非外部确认。
 
-当前分支codex/pub-01-s03-ss06-continuity / PR#6；prototype01冻结报告保留，新的报告只写eeg_run01。2203计算/公开范围/原CNN-TRF-stash保护不变，SS04/S04/父S05不启动。
+报告reports/pub_01/s03/continuity/eeg_run01/REPORT.md及REVIEW.md；243真实结果/四图/逐seed人表及机器review可读。原型CPU222r max差1.55e-7、协调SUMMARY独立重算max差5.55e-17，完整与精简包检查PASS。SS06 COMPLETED/PASS_WITH_LIMITATION；当前STOP，无自动下一READY。分支codex/pub-01-s03-ss06-continuity / PR#6 Draft、不自行合并；S03/PUB ACTIVE，SS04/S04/父S05 BACKLOG。E盘回传空间不足已用本轮C盘备份及精简JSON收束，原资料/旧worktree不删；数据/权重继续只在2203。
 
 ## prototype01 历史状态（以下非当前训练禁令）
 # 当前任务 — PUB-01-S03_SS06（2026-10-23）

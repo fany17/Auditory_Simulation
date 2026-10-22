@@ -1,0 +1,36 @@
+{
+  "variant": "local",
+  "seed": 31415,
+  "steps": 3262,
+  "samples": 12526080,
+  "selected_step": 3262,
+  "selected_score": 0.08562738762177892,
+  "seconds": 12.721074846573174,
+  "train_step_seconds": 7.646572671830654,
+  "device": "cuda:0",
+  "unique_training_records": 249,
+  "parameter_counts": {
+    "registered": 18817,
+    "requires_grad": 18817,
+    "gradient_tensor_reachable": 18817,
+    "nonzero_gradient_scalars_first_real_batch": 18817
+  },
+  "max_GPU_allocated_bytes": 26745344,
+  "audit_signal_read": false,
+  "pretraining_checkpoint": null,
+  "pretrained_identity": null,
+  "checkpoint_sha256": "b86c20a4bf27caee810ee023f26134e983cf75f7d62aa9003ae4cf71269a562f",
+  "protocol_sha256": "07204af637d82eb3c68c22f0a24bd964d8939726183d41cea19075a2df0f781b",
+  "split_sha256": "46bb9dc97b1f0e5a810e2d26d1db2c43282a876ca82d446ee13b215ea21bad3a",
+  "normalization_sha256": "ed6b1df91994e7a22b03e3915cf5f61d7cf411347e03ca988dcedd9268583c58",
+  "continuous_60s_loss": true,
+  "state_detach_not_reset_between_adjacent_updates": true,
+  "selection_metric": "validation_macro_r",
+  "evidence_compaction": {
+    "full_source_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run01/formal01/local_seed31415/train_completed.json",
+    "full_metadata_sha256": "ce749d527dfea29805520fbb6ab6352975e121adfeee3a372c7f3cbaa793487d",
+    "training_sequence_verified_by_all_training_gate": true,
+    "actual_sequence_steps": 3262,
+    "actual_unique_records": 249
+  }
+}

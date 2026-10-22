@@ -1,4 +1,14 @@
-# 当前执行：SS06 真实公开 EEG（2026-10-23）
+# 当前交付：SS06 COMPLETED / PASS_WITH_LIMITATION（2026-10-23）
+
+39次完整record监督训练（各3262步）、3次正式SSL（各3511段）及一次前瞻INTERNAL/EXPLORATORY审计完成。M2最高点估计r=.128164，但未稳健胜GRU；八primary只有M1multi−matched long、M3finetune−frozen、M4adaptive−uniformfixed区间为正。预训练相对从头GRU、M5额外收益和内容特异历史收益未建立，不宣称外部确认/时延机制/SOTA。
+
+入口：reports/pub_01/s03/continuity/eeg_run01/REPORT.md、REVIEW.md、FORMAL_PROTOCOL.json、243行RESULTS、四图及逐seed/逐record/逐人证据。后置汇总误差0，222个原型CPU相关max差1.55e-7；协调独立SUMMARY重算max差5.55e-17。完整与精简交付包12项检查均PASS。执行/冻结source commit ea5a1b5，最终报告commit见PR#6。
+
+**当前STOP，无自动下一READY。** SS06完成不等于S03/PUB完成；SS04/S04/父S05/GPT/artifact不启动。#6仍Draft，不自行合并。旧SS02/03/05、主目录CNN/TRF/stash和其他worktree不改；载荷/权重只在2203。下方启动指令是已执行历史，不重新运行。
+
+---
+
+# 历史启动：SS06 真实公开 EEG（2026-10-23）
 
 用户最新明确“启动吧”。**PUB-01-S03_SS06 ACTIVE / REAL_EEG_EXECUTION**。此前仅原型/禁止训练/完成后停止仅描述prototype01历史；当前可以读取既有合法公开EEG，完成真实loader、train/val pilot、协议冻结、训练及合格评估，无需重复询问启动许可。
 

@@ -17,7 +17,7 @@
 | Go/No-go | positive/no/negative transfer all valid; never blocks direct STN science |
 | Downstream | `INT-01` optional comparator |
 | Subtask Registry | `doc/tasks/PUB-01/SUBTASKS.md` |
-| Last Updated | `2026-10-19` |
+| Last Updated | `2026-10-23` |
 
 ## 1. Scientific question
 
@@ -68,7 +68,7 @@ Primary public intracranial candidate：OpenNeuro `ds004703`，其独立 baselin
 4. **B 支线**：`PUB-01-S04` ds004703 独立公开颅内基线与后续 EEG→sEEG 迁移（独立 sEEG 基线不依赖 S03，迁移阶段才依赖 S03 frozen output）；
 5. `PUB-01-S05` Artifact Candidate and Parent Integration Review。
 
-两条支线严格按 `RESEARCH_BRANCHES.md`、`SUBTASKS.md` 执行；SS02/SS03已完成有限制并冻结。**SS05已COMPLETED/PASS_WITH_LIMITATION，当前停止**：Codex完成源码/合成复核和15run真实EEG新内部holdout研究，六预设区间均跨0，未检出复杂记忆额外收益。无自动下一READY；SS04、S04、父S05仍BACKLOG。详细入口：`doc/CODEX_START_HERE.md`。
+两条支线严格按 `RESEARCH_BRANCHES.md`、`SUBTASKS.md` 执行；SS02/SS03/SS05科学结果冻结。**SS06真实连续EEG比较已COMPLETED/PASS_WITH_LIMITATION，当前STOP**：39×3262监督、3×3511 SSL及一次INTERNAL/EXPLORATORY审计完成，243结果/四图/后置复核已交。八primary三项为正，但M2最高点估计不等于稳健胜GRU，SSL额外收益/M5额外收益/内容特异历史收益未建立。无自动下一READY；SS04/S04/父S05 BACKLOG。详细入口：`doc/CODEX_START_HERE.md`。
 
 2026-09-19 用户要求持续推进至数据下载和初步清洗完成，新增 `PUB-01-S01_SS01 — Server Dataset Download and Initial Cleaning` 作为 S01 审计后的独立数据准备包。2026-09-24纠正原S06编号并嵌入S01；执行依赖为 S01许可/访问准入 → S01_SS01 → S01配对/时序与实验准入 → S02 → S03 → S04 → S05。S01_SS01 对已经完成许可/身份核验的数据可分支先行下载和非破坏性 QC，不绕过 S01 的 benchmark 准入验收。
 
@@ -177,6 +177,10 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 - 不读取本项目私有患者/STN资料、不扩大下载范围、不自动训练；只有实际访问/读取失败或明确使用禁止才阻断受影响对象，其余可进行的分析继续。
 
 ## 用户阶段验收与后续安排
+
+2026-10-23 SS06限定真实执行完成：用户“启动吧”授权落实为五框架及既定对照、完整record监督一轮/新train统计、三seed/共同样本顺序与有限预算，全部训练/验证选择及实质来源/检查点/覆盖门通过后一次内部audit。249/63/41record，13/5/5family，audit36人/538块；M1multi/M2/M3ft/M4adaptive/M5full r=.122913/.128164/.123747/.113400/.114178，GRU=.125221。八primary仅多尺度胜matched long、M3微调胜冻结、M4自适应胜均匀固定为正；其余跨0，内容特异历史收益未建立。只5family/历史训练暴露/人员重叠/单pass/M4缺最优静态控制等限定明确，不声称外部确认/SOTA/生理机制。
+
+Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS：后置汇总误差0、222原型CPU r max差1.55e-7、234MSE max差6.52e-8/12null一致；协调独立SUMMARY重算5.55e-17（非第三方完整科学签署），完整/精简包12项检查通过。报告reports/pub_01/s03/continuity/eeg_run01/REPORT.md；source执行/冻结提交ea5a1b5，最终报告commit见#6。E盘满仅本轮未提交副本移C备份，所有CSV/图/精简逐run证据在Git，完整轻量JSON在2203+C；不改旧模型/结果、主目录CNN/TRF/stash，无新下载/患者/远端Git或artifact。SS06完成后停止，S03/PUB ACTIVE，SS04/S04/父S05 BACKLOG，#6 Draft不合并。
 
 2026-10-19 SS05执行交付追加：Codex在2203完成15tests/合成审查、train-val pilot、重新拟合新353train统计及冻结2000步×三seed×五组。全部训练完成后一次开放新47record/21person/7family holdout，每模型一次测试七历史条件，共105结果行；五组r约.091–.092，六预设校正区间均跨0，未检出复杂记忆额外收益，不是普遍无效或等价证明。Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；同agent separate post-execution review聚合误差0、90个原始EEG CPU相关max差8.13e-6，协调另核对指定轻量文件。报告`reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md`。来源仅旧SS03train、统计无新holdout泄漏；旧193条排除为49val+144test，legacy字段名用sidecar更正而不改冻结成员/hash。source执行/冻结提交2d69ccf，最终报告commit见PR#4。SS05 COMPLETED后停止；S03/PUB仍ACTIVE，SS04/S04/父S05 BACKLOG，无artifact。PR#3按后续用户授权已合并8d21d0a，#4仍Draft，不自行合并；主目录CNN/TRF/stash不动。
 

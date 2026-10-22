@@ -1,7 +1,7 @@
-> 2026-10-23最新授权：用户“启动吧”，SS06已转ACTIVE真实EEG执行，prototype01历史完成记录不再阻止训练。参见SS06_REAL_EEG_EXECUTION.md；PUB-01仍ACTIVE，尚无SS06真实性能结果。
+> 2026-10-23最新交付：SS06 COMPLETED/PASS_WITH_LIMITATION，39监督+3SSL真实结果/一次内部审计/后置复核完成；当前STOP。见continuity/eeg_run01/REPORT.md；PUB-01仍ACTIVE，无自动下一READY。
 # Auditory_Simulation Parent Task Registry
 
-更新时间：`2026-10-19`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。
+更新时间：`2026-10-23`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。
 
 | Task ID | Title | Track | Class | Status | Blocking for STN direct READ | Patient Data | Parent Task Spec | Subtask Registry | Output |
 |---|---|---|---|---|---|---|---|---|---|
@@ -9,7 +9,7 @@
 
 ## 最新执行决策（2026-10-23）
 
-PUB-01仍ACTIVE。SS06获得用户明确的“任务书+基本框架+跑通”授权；仅合成工程验证，不加载真实数据、不训练。五框架文档/实现/审阅交付后停止，未来实验须另行明确启动。SS02/SS03/SS05冻结，PR#3/#4已合并，main为60c3404；S03/SS04/S04/父S05状态不被本原型工程PASS替代。当前入口见CODEX_START_HERE.md及SUBTASKS.md。
+PUB-01仍ACTIVE。SS06已COMPLETED/PASS_WITH_LIMITATION：39×3262监督/3×3511 SSL、243真实条件结果及四图齐备；原型CPU222r max差1.55e-7，协调独立SUMMARY重算max差5.55e-17，完整/精简包12checks均PASS。八primary只有多尺度胜matched long、M3微调胜冻结、M4自适应胜均匀固定三项为正；M2最高点估计但不稳健胜GRU，SSL额外收益/M5额外收益/内容特异历史收益未建立。5family、历史训练暴露限定INTERNAL/EXPLORATORY，非SOTA或外部确认。source提交ea5a1b5，报告见continuity/eeg_run01；旧SS02/03/05冻结，#3/#4已合并，#6仍Draft不自行合并。当前停止，SS04/S04/父S05不启动，无artifact。
 
 ## 历史执行决策（2026-10-19）
 
@@ -18,7 +18,7 @@ PUB-01仍ACTIVE。SS06获得用户明确的“任务书+基本框架+跑通”�
 - SS01/SS02/SS03冻结，旧test不供SS05调参。用户最新授权已合并PR#3到main@8d21d0a；PR#4 base main且仍Draft。SS04/S04/父S05 BACKLOG；主目录CNN/TRF/stash不动，不自行合并#4。
 - 运行/交付与患者数据禁止边界详见 `doc/CODEX_START_HERE.md`、`doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md`。
 
-## Current scientific branches
+## 历史支线快照（2026-10-19）
 
 2026-10-19：SS05真实内部holdout阴性结果与报告已交，当前停止。见reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md；SS01/SS02/SS03科学结果冻结，SS04/S04/父S05 BACKLOG，无自动下一READY节点。PR#3按新授权已合并8d21d0a，PR#4仍Draft不自行合并。
 
