@@ -9,3 +9,5 @@
 协调已核对C/O/P矩阵并明确授权通过必要测试后冻结启动，无须等待额外回复。正式FORMAL_PROTOCOL.json已冻结：C/O3262step、1000/2000/3000/3262验证；Ppre639/head2035step各季度验证；三seed从头。C/O单次60s目标完全一致，O重叠计算另计；P额外声学预训练/重复监督单列。参数C3,128,137/O3,372,617/head257，C逐层pastKV191/conv63/head31，60s内无detach。
 
 正式已启动：C1024 driverPID2170298，C2026 PID2170299，C31415 PID2170300，offline_reference PID2170301串行O三seed再P每seed两阶段。两L40共享：C1024/31415在cuda0、C2026与offline lane在cuda1。墙时仅实际资源记录，不作独占效率比较。formal_started.json和日志留2203。保持run01冻结，统一audit等待全部训练/选择/来源与覆盖检查完成。
+
+协调原方法审查指出P不应沿用C/O优化器：已核实SS02原pretrain无clip，head=Adam/无wd无clip/无shuffle。P尚0 formal更新时冻结P_NATIVE_AMENDMENT→_02、新独立native入口及实际native03 pilot；原pilot与所有源/日志保留（旧native01字节hash匹配恢复）。不改C/O、不改预算、不依据成绩。仅终止旧offline driver父、保留当时O子进程；新driver2179322完成/跳过O后用nativeP入口三seed。具体PROTOCOL_NOTES.md。source5b93ca5已push，P新source另提交。C/O和本轮统一audit仍按原协议；新增observer只做复算，不改模型/选择。

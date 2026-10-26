@@ -32,6 +32,8 @@ C/O每seed目标12,526,080；O额外重叠EEG窗呈现24,425,856，warmup另计�
 
 协调2026-10-26消息明确通过矩阵并授权通过必要测试后冻结/正式，无需再次等待回复。正式FORMAL_PROTOCOL.json、INTAKE.json及ENGINEERING_CHECK.json在run02轻量报告与2203同名根。真实pilot：C/O各20step、Ppre20step/head3step；未来扰动1.79e-7、full/chunk8.35e-7、跨块8.94e-7、Hann identity2.38e-7、跨microchunk梯度非零、实际60s全部应训梯度finite。pilot权重不复用。正式三seed已启动，所有训练/val完成且实质检查通过后才统一audit。
 
+P生效补充：协调原协议审阅后，P尚0 formal更新时以P_NATIVE_AMENDMENT→_02冻结独立native入口；Ppre恢复原AdamW无clip，head恢复原Adam无wd/clip、manifest顺序shuffle=false，centered-cosine eps1e-6及本seed head初始化。C/O源与预算不改，旧pilot/源保留，新native03 pilot成功；不存在受影响P正式权重复用或按成绩选择。详见run02 PROTOCOL_NOTES.md；首版Protocol对应P字段以amendment为准。
+
 ## 执行与验收
 
 先只读核验固定metadata/normalizer及特征覆盖，完成新loader/三条件真实train-val工程pilot。每阶段初始最多100更新步，pilot权重不进入正式结果。依据真实吞吐/内存/曲线完善矩阵和有限正式预算，**协调完成共同协议/预算核对后才正式训练**，不再索用户启动许可；此前可独立推进工程。
