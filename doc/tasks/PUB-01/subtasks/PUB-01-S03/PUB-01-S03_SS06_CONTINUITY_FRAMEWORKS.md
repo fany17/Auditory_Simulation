@@ -4,7 +4,7 @@
 |---|---|
 | Subtask ID | `PUB-01-S03_SS06` |
 | Parent Node / Task | `PUB-01-S03` / `PUB-01` |
-| Status | `ACTIVE` — run02 matched baseline；eeg_run01 COMPLETED/PASS_WITH_LIMITATION与prototype01历史保留 |
+| Status | `COMPLETED` / `PASS_WITH_LIMITATION` — run02 matched baseline完成；eeg_run01与prototype01历史保留 |
 | Blocking for Parent | NO；此包不替代 S03 最终 benchmark |
 | Patient Data | `FORBIDDEN` |
 | Upstream | SS02/SS03/SS05 冻结报告；2026-10-23 用户明确授权 |
@@ -14,11 +14,11 @@
 | Validation | Technical → Acceptance → Parent consistency；独立源码审阅与后置指标/原始输入复算分开，不称外部科学签署 |
 | Go/Hold/Fail | 完成真实结果后停止；工程失败在授权内修复；缺独立test继续可行探索并诚实限定，服务器不可用不转本地 |
 | Files Allowed to Change | 本任务书/接口契约；`src/m6a_public/continuity/`；`tests/test_ss06_*.py`；SS06 script/config/report；当前入口/登记的必要更新 |
-| Last Updated | 2026-10-23 |
+| Last Updated | 2026-10-26 |
 
 ## 当前授权更新（2026-10-23）
 
-**2026-10-26最新**：用户已授权匹配训练规模/把强框架置于本轮规模，SS06恢复ACTIVE，执行[SS06_MATCHED_BASELINE_EXECUTION.md](SS06_MATCHED_BASELINE_EXECUTION.md)，run02独立保存，旧run01不改。共同矩阵/预算由协调核对后正式，先自主完成已有资产/loader及真实pilot；已看audit仅POST-HOC INTERNAL EXPLORATORY，不加载旧强encoder，不新增创新架构或启下游。以下10-23完成记录为run01历史。
+**2026-10-26最新交付**：用户匹配强基线规模授权已执行，SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP；C/O/P三seed r=.123014/.151762/.141466，六项C配对校正区间均跨0。执行[SS06_MATCHED_BASELINE_EXECUTION.md](SS06_MATCHED_BASELINE_EXECUTION.md)，报告continuity/eeg_run02_matched_baseline/REPORT.md/REVIEW.md。run01不改；已看audit仅POST-HOC INTERNAL EXPLORATORY，禁旧强权重，原始CPU与协调独立汇总已核验，#6 Draft不合并，不启下游。以下10-23原文为run01历史。
 
 用户在原型交付后明确“启动吧”，现授权既定五框架进入真实公开EEG训练与比较。执行以 [SS06_REAL_EEG_EXECUTION.md](SS06_REAL_EEG_EXECUTION.md) 为最新补充，先实际train/val pilot，再冻结预算/对照/划分并推进合格评估。以下PROTOTYPE_ONLY与NOT_RUN描述为prototype01历史，不再阻止本轮已授权实验；旧SS02/03/05结果仍冻结。
 
@@ -143,6 +143,16 @@ SS05 在既定五模型、数据和预算下未检出历史/关联残差额外�
 - 本项目直接证据：SS03 `reports/pub_01/s03/architecture/REPORT.md`；SS05 `reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md`。结论不被本设计修改。
 
 ## 12. Completion Record
+
+### eeg_run02 matched baseline交付（2026-10-26，当前）
+
+用户授权将强框架放到当前规模。共同源5b93ca5、P原法amendment55ddd40、observer82f3001；新2203 run02独立，不改run01。固定249/63/41、新train统计/lag8/538共同评分块，三seed新初始化，禁见过audit的旧EEG/head。真实pilot/全time-op因果和Hann/60s梯度检查后冻结C/O各3262×3840同序目标/optimizer/val；P完整native对比639步+冻结encoder读出2035步、原Adam/无shuffle，额外预算单列。P优化器偏离在0正式更新时以独立入口纠正、历史源/pilot保留。
+
+全部12阶段及来源/选点/顺序/覆盖实质门通过后一次统一9模型seed assessment。C/O/P r=.123014/.151762/.141466；C六项Bonferroni交叉99.167%区间全跨0，不是等价/非劣证明；O/P离线/不同流程不能解释为纯future因果，P单轮不否定预训练。C三seed最佳均预算末端，未据此延长。5family、已看audit/历史暴露/人员重叠/derivative因果与物理UNKNOWN等明确限制，POST-HOC INTERNAL EXPLORATORY。
+
+Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。executor后置聚合误差0、18原预处理EEG CPU r max3.3624e-8/MSE2.3583e-7；协调2203标准库独立369行record→person→seed SUMMARY max2.7756e-17、六配对均值max6.9389e-18（非协调重跑原始CPU/全模型）。三图视觉检查、约1.21MB允许轻量包及中文REPORT/REVIEW齐备；完整访问序列/张量/权重留2203，C轻量备份。无下载/患者/原资料覆盖/远端Git；同#6 Draft，完成后STOP，无下游。
+
+以下run01 Completion Record原文保留，其中“当前”仅指当时交付。
 
 ### eeg_run01真实执行交付（2026-10-23，当前）
 

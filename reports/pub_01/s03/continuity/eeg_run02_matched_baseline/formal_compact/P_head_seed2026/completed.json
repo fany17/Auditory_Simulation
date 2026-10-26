@@ -1,0 +1,26 @@
+{
+  "seed": 2026,
+  "steps": 2035,
+  "selected_step": 2035,
+  "validation_3s_negative_r": -0.11406650739112122,
+  "head_parameters": 257,
+  "target_sample_presentations": 25004352,
+  "unique_window_indices": 130231,
+  "cache_windows": {
+    "train": 130231,
+    "validation": 39137
+  },
+  "seconds_head_optimization": 4.172738884575665,
+  "pretrain_checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run02_matched_baseline/formal01/P_pretrain_seed2026/best_validation.pt",
+  "pretrain_checkpoint_sha256": "f128432e0003423698bd306e9e59529fe8b27c5aad2d2c67ae4fad308e47f2b6",
+  "audit_read": false,
+  "actual_window_index_summary": {
+    "count": 130231,
+    "unique": 130231,
+    "min": 0,
+    "max": 130230,
+    "sequential": true
+  },
+  "canonical_full_metadata_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run02_matched_baseline/formal01/P_head_seed2026/completed.json",
+  "canonical_full_metadata_sha256": "8f867f1ca4ec8d6dd6455f6da4dd230cf80272ffd6eb1a33bd0aeea5ed6d3745"
+}

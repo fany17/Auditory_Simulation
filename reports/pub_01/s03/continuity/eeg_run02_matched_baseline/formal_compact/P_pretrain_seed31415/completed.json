@@ -1,0 +1,31 @@
+{
+  "seed": 31415,
+  "steps": 639,
+  "selected_step": 479,
+  "validation_InfoNCE": 4.300966765514757,
+  "EEG_and_audio_sample_presentations": 12526080,
+  "parameters": 3800713,
+  "seconds": 289.2718326430768,
+  "old_checkpoints_loaded": false,
+  "audit_read": false,
+  "max_GPU_bytes": 13573117952,
+  "actual_visitation_summary": {
+    "rows": 65240,
+    "unique_records": 249,
+    "repeat_anchor_windows": 0,
+    "first": {
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "start": 18048,
+      "repeat_anchor": false,
+      "samples": 192
+    },
+    "last": {
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+      "start": 15168,
+      "repeat_anchor": false,
+      "samples": 192
+    }
+  },
+  "canonical_full_metadata_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run02_matched_baseline/formal01/P_pretrain_seed31415/completed.json",
+  "canonical_full_metadata_sha256": "1d4617d4fea9f854eb2c743566e8e67d97d26801bbf9c1be8fc1e0a71c265f8c"
+}

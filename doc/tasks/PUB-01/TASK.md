@@ -17,7 +17,7 @@
 | Go/No-go | positive/no/negative transfer all valid; never blocks direct STN science |
 | Downstream | `INT-01` optional comparator |
 | Subtask Registry | `doc/tasks/PUB-01/SUBTASKS.md` |
-| Last Updated | `2026-10-23` |
+| Last Updated | `2026-10-26` |
 
 ## 1. Scientific question
 
@@ -178,7 +178,7 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 
 ## 用户阶段验收与后续安排
 
-2026-10-26用户授权“起码训练规模一致，或者之前框架在我们的训练规模下完成”。同SS06恢复ACTIVE/run02，保留run01结果，补齐既有强Transformer C因果适配/O原生离线直接监督/P完整两阶段低预算参考。协调核对矩阵、实际pilot/因果与Hann/60s梯度检查及精确预算通过后已冻结三seed正式训练。C/O同3262×3840监督目标及共同验证，P额外预训练/重叠访问单列；固定249/63/41、新train统计，禁旧EEG/head初始化。audit既已看，全部新增结果POST-HOC INTERNAL EXPLORATORY；共同audit只在全部训练/选择/实质门核验后，不追阳性延长。执行SS06_MATCHED_BASELINE_EXECUTION.md，同#6 Draft；不改parent科学问题/患者边界、不启下游，旧CNN/TRF/stash不动。
+2026-10-26匹配强基线授权已完成，同SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP。C/O各3×3262×3840同监督目标/顺序/共同验证；P原完整两阶段3×639pre+2035head、额外声学预训练/重叠监督另计，原法修正在P0更新时冻结。全部12阶段/选点/实质门通过后统一9模型seed assessment，C/O/P r=.123014/.151762/.141466；C对五框架/GRU六项校正交叉区间均跨0，不是等效或纯future因果证据。executor聚合0、18原始derivative CPU r max3.36e-8/MSE2.36e-7；协调独立SUMMARY2.78e-17/六配对均值6.94e-18。固定249/63/41新train统计，禁旧EEG/head，run01原文/结果不改；已看audit/5family/单pass等限定POST-HOC INTERNAL EXPLORATORY。报告continuity/eeg_run02_matched_baseline/REPORT.md/REVIEW.md与三图/轻量证据。执行SS06_MATCHED_BASELINE_EXECUTION.md，同#6 Draft不合并；PUB/S03仍ACTIVE、不启下游/患者、旧CNN/TRF/stash不动。
 
 2026-10-23 SS06限定真实执行完成：用户“启动吧”授权落实为五框架及既定对照、完整record监督一轮/新train统计、三seed/共同样本顺序与有限预算，全部训练/验证选择及实质来源/检查点/覆盖门通过后一次内部audit。249/63/41record，13/5/5family，audit36人/538块；M1multi/M2/M3ft/M4adaptive/M5full r=.122913/.128164/.123747/.113400/.114178，GRU=.125221。八primary仅多尺度胜matched long、M3微调胜冻结、M4自适应胜均匀固定为正；其余跨0，内容特异历史收益未建立。只5family/历史训练暴露/人员重叠/单pass/M4缺最优静态控制等限定明确，不声称外部确认/SOTA/生理机制。
 

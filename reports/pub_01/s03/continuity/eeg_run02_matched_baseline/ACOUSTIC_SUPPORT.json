@@ -1,0 +1,25 @@
+{
+  "record_time_target_samples": 12526080,
+  "story_time_target_support_samples": 771840,
+  "story_time_3s_windows": 4020,
+  "stories": 15,
+  "families": 13,
+  "per_story_score_blocks_union": {
+    "podcast_14": 15,
+    "audiobook_5_1": 14,
+    "audiobook_9_1": 9,
+    "podcast_1": 14,
+    "audiobook_6_1": 12,
+    "podcast_10": 12,
+    "audiobook_2_1": 12,
+    "audiobook_6_2": 12,
+    "audiobook_5_3": 14,
+    "podcast_28": 12,
+    "podcast_2": 17,
+    "podcast_6": 13,
+    "podcast_18": 18,
+    "audiobook_1": 14,
+    "podcast_23": 13
+  },
+  "note": "unique EEG record-time count is not independent acoustic evidence: same story-time targets repeat across participants; Ppretrain acoustic presentation count includes these repetitions"
+}

@@ -1,6 +1,6 @@
-# 当前任务 — SS06 run02 ACTIVE（2026-10-26）
+# 当前交付 — SS06 run02 COMPLETED / PASS_WITH_LIMITATION（2026-10-26）
 
-用户新授权强基线/训练规模匹配，执行SS06_MATCHED_BASELINE_EXECUTION.md。C/O同监督目标预算，P完整两阶段另计成本；实际矩阵/样本账本经协调核对后正式开训，此前自主完成train-val pilot。run01固定split/stats/score和全部冻结证据不改，旧SS02任何encoder/head不加载，三seed1024/2026/31415。已看audit全部标POST-HOC INTERNAL EXPLORATORY。同PR#6 Draft，不启SS04/S04/父S05；原资料/CNN-TRF/stash保护不变。实际状态见eeg_run02_matched_baseline/EXECUTION_LOG.md。
+用户授权的匹配比较已完成：C/O各3×3262、P各639pre/2035head三seed、统一9模型seed/538块、原始derivative CPU/独立汇总复算与3图齐备。C/O/P r=.123014/.151762/.141466；C相对五框架/GRU六校正区间全跨0，不能认定普遍不如强因果控制或等价。O/P未来信息、P额外学习/不同loss与单轮限制明确，POST-HOC INTERNAL EXPLORATORY/5family。报告continuity/eeg_run02_matched_baseline/REPORT.md、REVIEW.md。Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；协调独立SUMMARY误差2.78e-17。当前STOP，无自动下一READY，同#6 Draft不合并。run01冻结与原资料/CNN-TRF/stash不动；无下载/患者/远端Git，下游不启动。
 
 ## run01历史交付（已被新启动授权覆盖STOP）
 

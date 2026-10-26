@@ -1,8 +1,8 @@
-# 当前执行：SS06 run02 强基线规模匹配（2026-10-26）
+# 当前交付：SS06 run02 COMPLETED / PASS_WITH_LIMITATION（2026-10-26）
 
-用户已授权“起码训练规模一致，或者之前框架在我们的规模下完成”。SS06重新ACTIVE，唯一run为eeg_run02_matched_baseline，执行SS06_MATCHED_BASELINE_EXECUTION.md；先C/O/P最小矩阵、真实工程pilot，协调核对共同协议/预算后正式训练/统一评估。此授权覆盖旧STOP，不重复申请启动许可。
+用户授权的强基线同规模比较已完成：C/O各3×3262完整60s目标，P完整两阶段3×639pre/2035head，全部训练/验证选点与实质门核验后统一9模型seed assessment。C/O/P r=.123014/.151762/.141466，旧M2=.128164；C对五框架/GRU六项Bonferroni交叉99.167%区间全跨0，不是等效/非劣证明。O/P离线未来信息与P额外预算单列，不能归因为纯future/训练量；全部POST-HOC INTERNAL EXPLORATORY。
 
-同SS06 worktree/分支/PR#6 Draft，所有计算仅2203；只用run01固定249/63/41和新train统计，禁旧SS02 EEG/对比/head权重。audit已看，新增结果POST-HOC INTERNAL EXPLORATORY。run01全部冻结不改，不重跑39模型或自动扩五框架预算。进展见continuity/eeg_run02_matched_baseline/EXECUTION_LOG.md。旧CNN/TRF/stash/工作树不动，无下载/患者/远端Git；不合并#6或启下游。
+入口continuity/eeg_run02_matched_baseline/REPORT.md、REVIEW.md及3图/逐record-person/机器证据。executor聚合误差0、18 raw-derivative CPU r max3.36e-8/MSE2.36e-7；协调独立SUMMARY2.78e-17/六配对均值6.94e-18。P原法修正在P0正式更新前冻结；源5b93ca5/55ddd40/observer82f3001。三seed/5family/单pass、C末端最佳与非纯组件对比等限制明确。**当前STOP，无自动下一READY；#6仍Draft不合并。** run01/旧CNN-TRF/stash/工作树不改，所有计算/张量仅2203，SS04/S04/父S05/GPT/artifact不启动。
 
 ---
 

@@ -1,6 +1,6 @@
 # SS06 run02 — 强基线与训练规模匹配
 
-日期2026-10-26。用户明确：“按照你说的吧，起码我们的训练规模要和之前一致，或者让之前的框架也在我们的训练规模下完成吧”。此授权覆盖SS06 run01后的STOP；SS06重新ACTIVE，唯一当前run为`eeg_run02_matched_baseline`。旧run01/prototype01及SS02/03/05证据只读，不新建研究节点、不自动启动下游、不合并PR#6。
+日期2026-10-26。**当前COMPLETED / PASS_WITH_LIMITATION / STOP**，实际交付见run02 REPORT/REVIEW。用户明确：“按照你说的吧，起码我们的训练规模要和之前一致，或者让之前的框架也在我们的训练规模下完成吧”。执行时此授权覆盖run01 STOP、恢复SS06 ACTIVE，唯一run为`eeg_run02_matched_baseline`，现已完整交付。旧run01/prototype01及SS02/03/05证据只读，不新建研究节点、不自动启动下游、不合并PR#6。
 
 ## 目标与边界
 
@@ -41,3 +41,9 @@ P生效补充：协调原协议审阅后，P尚0 formal更新时以P_NATIVE_AMEN
 正式前冻结所有候选、seed、样本顺序、val选择规则、预算与统计；所有训练/选择完成后统一评估已看audit，不依audit延长/换模型。技术检查包含因果后缀扰动、分块一致性、同目标样本账本、初始化/预训练来源、无旧权重、metric独立重算和parent一致性。既有强架构/方法确实执行、三seed/真实比较和限制齐备后可PASS_WITH_LIMITATION；阳性非验收前提。
 
 允许改本补充/必要任务登记、新SS06强基线适配/loader/trainer/tests/config、run02轻量报告。完整run02交EXECUTION_LOG、矩阵/ledger、FORMAL_PROTOCOL、RESULTS、REPORT、REVIEW和逐seed/record/person证据，commit/push同PR#6，完成后STOP。旧run01文件不改。
+
+## Completion Record
+
+三seed C/O各3262监督，P各639pre/2035head，全部12阶段完成，统一9模型seed评估与独立后置复核通过。C/O/P均值r=.123014/.151762/.141466；C六项交叉99.167%校正区间均跨0，不声称等效/非劣或未来信息单一因果。C三seed最佳末端，预算照冻结停止，P单轮/额外预算不称原文上限。技术PASS/验收PASS_WITH_LIMITATION/parent一致PASS_SS06_ONLY。
+
+executor聚合误差0、18原derivative CPU r max3.36e-8/MSE2.36e-7；协调独立SUMMARY2.78e-17/六配对均值6.94e-18，范围非协调重跑全模型/CPU。三图视觉核对、1.21MB允许轻量包、中文REPORT/REVIEW/完整参数与访问账本齐备。source5b93ca5/P原法amendment55ddd40/observer82f3001，最终报告commit见Git/PR#6。run01冻结不改，全部数组/cache/权重留2203，只有元数据/汇总/静态图回本地及C备份。SS06完成，#6 Draft不合并；PUB/S03仍ACTIVE，无自动下一READY或下游artifact。

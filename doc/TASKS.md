@@ -1,7 +1,7 @@
-> 2026-10-26最新：用户授权SS06 run02匹配强基线规模，SS06恢复ACTIVE；C/O/P协议经协调核对、真实pilot/必要检查完成，已冻结启动3seed。执行SS06_MATCHED_BASELINE_EXECUTION.md；run01冻结保留，新增结果POST-HOC INTERNAL EXPLORATORY；PUB-01仍ACTIVE，不启下游。
+> 2026-10-26最新：SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP，C/O/P r=.123014/.151762/.141466；匹配监督规模/3seed、一次统一assessment及CPU/协调汇总复核完成，六项C配对校正区间全跨0。详见continuity/eeg_run02_matched_baseline/REPORT.md；POST-HOC INTERNAL EXPLORATORY，PUB-01仍ACTIVE，不启下游。
 # Auditory_Simulation Parent Task Registry
 
-更新时间：`2026-10-23`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。
+更新时间：`2026-10-26`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。
 
 | Task ID | Title | Track | Class | Status | Blocking for STN direct READ | Patient Data | Parent Task Spec | Subtask Registry | Output |
 |---|---|---|---|---|---|---|---|---|---|
