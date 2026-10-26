@@ -1,4 +1,10 @@
-# 当前交付 — SS06 已完成有限制并停止（2026-10-23）
+# 当前任务 — SS06 run02 ACTIVE（2026-10-26）
+
+用户新授权强基线/训练规模匹配，执行SS06_MATCHED_BASELINE_EXECUTION.md。C/O同监督目标预算，P完整两阶段另计成本；实际矩阵/样本账本经协调核对后正式开训，此前自主完成train-val pilot。run01固定split/stats/score和全部冻结证据不改，旧SS02任何encoder/head不加载，三seed1024/2026/31415。已看audit全部标POST-HOC INTERNAL EXPLORATORY。同PR#6 Draft，不启SS04/S04/父S05；原资料/CNN-TRF/stash保护不变。实际状态见eeg_run02_matched_baseline/EXECUTION_LOG.md。
+
+## run01历史交付（已被新启动授权覆盖STOP）
+
+# 历史交付 — SS06 run01 已完成有限制（2026-10-23）
 
 用户“启动吧”授权的SS06真实实验已完成：39×3262监督、3×3511 SSL，新train统计/完整连续record/一次内部审计/后置复核齐备。M1multi .122913、M2 .128164、M3finetune .123747、M4adaptive .113400、M5full .114178；GRU .125221。八primary三项为正，其余跨0；不把M2点估计当稳健胜出，未建立SSL相对GRU或M5额外收益、内容特异历史收益。只5family且旧训练暴露，INTERNAL/EXPLORATORY，非外部确认。
 

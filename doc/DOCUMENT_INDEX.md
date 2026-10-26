@@ -1,4 +1,4 @@
-> 当前入口更新（2026-10-23）：SS06真实EEG已完成有限制并STOP。先读CODEX_START_HERE.md及continuity/eeg_run01/REPORT.md/REVIEW.md；旧启动和“仅原型”描述仅为历史。
+> 当前入口更新（2026-10-26）：SS06 run02 ACTIVE，用户授权匹配强基线/预算，协议/必要检查冻结后已启动3seed。先读CODEX_START_HERE.md及SS06_MATCHED_BASELINE_EXECUTION.md/continuity/eeg_run02_matched_baseline/EXECUTION_LOG.md；run01全部冻结保留，其STOP已被新授权覆盖。
 # Auditory_Simulation Document Index
 
 更新时间：`2026-10-23`

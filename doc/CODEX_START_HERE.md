@@ -1,4 +1,12 @@
-# 当前交付：SS06 COMPLETED / PASS_WITH_LIMITATION（2026-10-23）
+# 当前执行：SS06 run02 强基线规模匹配（2026-10-26）
+
+用户已授权“起码训练规模一致，或者之前框架在我们的规模下完成”。SS06重新ACTIVE，唯一run为eeg_run02_matched_baseline，执行SS06_MATCHED_BASELINE_EXECUTION.md；先C/O/P最小矩阵、真实工程pilot，协调核对共同协议/预算后正式训练/统一评估。此授权覆盖旧STOP，不重复申请启动许可。
+
+同SS06 worktree/分支/PR#6 Draft，所有计算仅2203；只用run01固定249/63/41和新train统计，禁旧SS02 EEG/对比/head权重。audit已看，新增结果POST-HOC INTERNAL EXPLORATORY。run01全部冻结不改，不重跑39模型或自动扩五框架预算。进展见continuity/eeg_run02_matched_baseline/EXECUTION_LOG.md。旧CNN/TRF/stash/工作树不动，无下载/患者/远端Git；不合并#6或启下游。
+
+---
+
+# 历史交付：SS06 run01 COMPLETED / PASS_WITH_LIMITATION（2026-10-23）
 
 39次完整record监督训练（各3262步）、3次正式SSL（各3511段）及一次前瞻INTERNAL/EXPLORATORY审计完成。M2最高点估计r=.128164，但未稳健胜GRU；八primary只有M1multi−matched long、M3finetune−frozen、M4adaptive−uniformfixed区间为正。预训练相对从头GRU、M5额外收益和内容特异历史收益未建立，不宣称外部确认/时延机制/SOTA。
 

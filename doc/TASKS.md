@@ -1,4 +1,4 @@
-> 2026-10-23最新交付：SS06 COMPLETED/PASS_WITH_LIMITATION，39监督+3SSL真实结果/一次内部审计/后置复核完成；当前STOP。见continuity/eeg_run01/REPORT.md；PUB-01仍ACTIVE，无自动下一READY。
+> 2026-10-26最新：用户授权SS06 run02匹配强基线规模，SS06恢复ACTIVE；C/O/P协议经协调核对、真实pilot/必要检查完成，已冻结启动3seed。执行SS06_MATCHED_BASELINE_EXECUTION.md；run01冻结保留，新增结果POST-HOC INTERNAL EXPLORATORY；PUB-01仍ACTIVE，不启下游。
 # Auditory_Simulation Parent Task Registry
 
 更新时间：`2026-10-23`；父任务唯一状态源。子节点请查 `doc/tasks/PUB-01/SUBTASKS.md`；路线图 `doc/tasks/PUB-01/RESEARCH_BRANCHES.md`。

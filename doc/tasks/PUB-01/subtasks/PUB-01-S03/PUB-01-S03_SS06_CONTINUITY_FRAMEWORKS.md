@@ -4,7 +4,7 @@
 |---|---|
 | Subtask ID | `PUB-01-S03_SS06` |
 | Parent Node / Task | `PUB-01-S03` / `PUB-01` |
-| Status | `COMPLETED` / `PASS_WITH_LIMITATION` — eeg_run01真实比较及review完成；prototype01历史保留 |
+| Status | `ACTIVE` — run02 matched baseline；eeg_run01 COMPLETED/PASS_WITH_LIMITATION与prototype01历史保留 |
 | Blocking for Parent | NO；此包不替代 S03 最终 benchmark |
 | Patient Data | `FORBIDDEN` |
 | Upstream | SS02/SS03/SS05 冻结报告；2026-10-23 用户明确授权 |
@@ -17,6 +17,8 @@
 | Last Updated | 2026-10-23 |
 
 ## 当前授权更新（2026-10-23）
+
+**2026-10-26最新**：用户已授权匹配训练规模/把强框架置于本轮规模，SS06恢复ACTIVE，执行[SS06_MATCHED_BASELINE_EXECUTION.md](SS06_MATCHED_BASELINE_EXECUTION.md)，run02独立保存，旧run01不改。共同矩阵/预算由协调核对后正式，先自主完成已有资产/loader及真实pilot；已看audit仅POST-HOC INTERNAL EXPLORATORY，不加载旧强encoder，不新增创新架构或启下游。以下10-23完成记录为run01历史。
 
 用户在原型交付后明确“启动吧”，现授权既定五框架进入真实公开EEG训练与比较。执行以 [SS06_REAL_EEG_EXECUTION.md](SS06_REAL_EEG_EXECUTION.md) 为最新补充，先实际train/val pilot，再冻结预算/对照/划分并推进合格评估。以下PROTOTYPE_ONLY与NOT_RUN描述为prototype01历史，不再阻止本轮已授权实验；旧SS02/03/05结果仍冻结。
 

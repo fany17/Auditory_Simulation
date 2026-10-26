@@ -178,6 +178,8 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 
 ## 用户阶段验收与后续安排
 
+2026-10-26用户授权“起码训练规模一致，或者之前框架在我们的训练规模下完成”。同SS06恢复ACTIVE/run02，保留run01结果，补齐既有强Transformer C因果适配/O原生离线直接监督/P完整两阶段低预算参考。协调核对矩阵、实际pilot/因果与Hann/60s梯度检查及精确预算通过后已冻结三seed正式训练。C/O同3262×3840监督目标及共同验证，P额外预训练/重叠访问单列；固定249/63/41、新train统计，禁旧EEG/head初始化。audit既已看，全部新增结果POST-HOC INTERNAL EXPLORATORY；共同audit只在全部训练/选择/实质门核验后，不追阳性延长。执行SS06_MATCHED_BASELINE_EXECUTION.md，同#6 Draft；不改parent科学问题/患者边界、不启下游，旧CNN/TRF/stash不动。
+
 2026-10-23 SS06限定真实执行完成：用户“启动吧”授权落实为五框架及既定对照、完整record监督一轮/新train统计、三seed/共同样本顺序与有限预算，全部训练/验证选择及实质来源/检查点/覆盖门通过后一次内部audit。249/63/41record，13/5/5family，audit36人/538块；M1multi/M2/M3ft/M4adaptive/M5full r=.122913/.128164/.123747/.113400/.114178，GRU=.125221。八primary仅多尺度胜matched long、M3微调胜冻结、M4自适应胜均匀固定为正；其余跨0，内容特异历史收益未建立。只5family/历史训练暴露/人员重叠/单pass/M4缺最优静态控制等限定明确，不声称外部确认/SOTA/生理机制。
 
 Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS：后置汇总误差0、222原型CPU r max差1.55e-7、234MSE max差6.52e-8/12null一致；协调独立SUMMARY重算5.55e-17（非第三方完整科学签署），完整/精简包12项检查通过。报告reports/pub_01/s03/continuity/eeg_run01/REPORT.md；source执行/冻结提交ea5a1b5，最终报告commit见#6。E盘满仅本轮未提交副本移C备份，所有CSV/图/精简逐run证据在Git，完整轻量JSON在2203+C；不改旧模型/结果、主目录CNN/TRF/stash，无新下载/患者/远端Git或artifact。SS06完成后停止，S03/PUB ACTIVE，SS04/S04/父S05 BACKLOG，#6 Draft不合并。
