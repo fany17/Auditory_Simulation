@@ -1,0 +1,75 @@
+{
+  "frozen": true,
+  "epoch": 1793486817.0469563,
+  "parent_protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+  "selected_family_condition_ids": [
+    "m1_h16",
+    "m2_h16",
+    "m3_h16",
+    "m4_h16",
+    "m5_h16"
+  ],
+  "approved_condition_ids": [
+    "m1_current_h16",
+    "m1_h16",
+    "m2_current_h16",
+    "m2_h16",
+    "m3_current_h16",
+    "m3_h16",
+    "m3_reconstruct_h16",
+    "m4_current_h16",
+    "m4_h16",
+    "m5_current_h16",
+    "m5_h16",
+    "m5_prior_h16",
+    "output_prior_h16",
+    "output_prior_h32",
+    "static_alignment",
+    "static_m1_h16",
+    "static_m2_h16",
+    "static_m3_h16",
+    "static_m4_h16",
+    "static_m5_h16"
+  ],
+  "full_initial_seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "full_budget": {
+    "epochs": 250,
+    "patience": 10,
+    "updates_per_epoch": 3945,
+    "max_updates_per_condition_seed": 986250
+  },
+  "ranking_means_all18": {
+    "m1_h16": 0.15897470279899095,
+    "m1_h32": 0.15846670624683754,
+    "m2_h16": 0.1587129094055558,
+    "m2_h32": 0.15864426352644007,
+    "m3_h16": 0.15860172441025258,
+    "m3_h32": 0.1582263701777202,
+    "m4_h16": 0.15970552892327453,
+    "m4_h32": 0.15933197323316464,
+    "m5_h16": 0.16054263848587455,
+    "m5_h32": 0.15675008008076374,
+    "native": 0.15903795869294443,
+    "static_m2_h16": 0.16313061655631264,
+    "m2_current_h16": 0.15984080952533974,
+    "static_alignment": 0.16036423322505725,
+    "m3_reconstruct_h16": 0.15899658619873916,
+    "m3_reconstruct_h32": 0.15854194742201977,
+    "output_prior_h16": 0.15994315710974658,
+    "m5_prior_h16": 0.018375853832684027
+  },
+  "required_successful_paired_seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "all54_success_and_common49person752block_coverage_verified": true,
+  "failure_handling": "no missing/failed-seed averaging; failure would have blocked this selection",
+  "controls_not_yet_started": "approved deterministic family/width catalog, scheduled only by immutable later final-primary child",
+  "test_read": false,
+  "screen_weights_reused": false
+}

@@ -69,3 +69,25 @@ INDEPENDENT_RAW_INPUT_VAL_CHECK：真实已完成P1024与拟合非零M2的两合
 原始3s验证r的initial→selected分别为1024 .148761→.157074、2026 .146341→.157230、31415 .151965→.160609、42 .151830→.160529、12345 .149835→.159814；均仍在预算末端改善，不能称收敛、最优微调、60s/person指标改善或测试胜出。记录runtime约3226–4016秒，受同期GPU作业影响，不作隔离推理延迟/效率对比。最终测试及外部主比较仍待全量筛选/full完成。
 
 新增EVIDENCE_MATRIX仅汇总父任务接受所需的已有直接证据、权威待交产物和外推限制，不增加模型、数据、终点或准入门。当前关键缺口仍是真实候选full、全部匹配比较/历史干预、独立实际复算和方法新意/泛化接受判断；不会用验证曲线替代这些缺口。
+
+## 全54筛选完成，五family全预算阶段已启动
+
+FULL_SELECTION已按原18条件×3seed完整结果冻结，sha256为be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80。每个已选checkpoint仍由原3s VAL准则选择；下表是其完整record Hann融合后60s→人macro r的三seed均值，仅用于预设选宽度，不是最终主模型选择或测试成绩。
+
+| Family | H16 验证均值 | H32 验证均值 | 预定规则选择 |
+|---|---:|---:|---|
+| M1 | .158975 | .158467 | H16 |
+| M2 | .158713 | .158644 | H16 |
+| M3 | .158602 | .158226 | H16 |
+| M4 | .159706 | .159332 | H16 |
+| M5 | .160543 | .156750 | H16 |
+
+协调端另行从2203完成记录独立重算18组均值、覆盖、预算及tie规则，确认五类H16。执行者新screen_review又用math.fsum从所有40608个已保存VAL block r重新按人汇总，核对2646个人均值、54个macro和全ledger：macro最大差5.56e−17、18个原均值及宽度选择逐项吻合。此为**已保存相关系数的聚合复算**，未重新读取信号/预测或重算r，不冒充原始输入复核；后者仍由冻结最终链执行。来源和轻量证据见SCREEN_SELECTION_REVIEW、SCREEN_WIDTHS及SCREEN_INDEPENDENT_VAL。
+
+全试验账本保留54行，无失败/缺seed平均。原SCREEN_LEDGER的target_presentations列来自supervised_target_samples，单位实际为目标sample呈现而非窗口；原文件保留不改，新独立CSV明确分开supervised_window_presentations与supervised_target_sample_presentations并核验后者=192×前者。最终COSTS仍直接读取completed里的明确单位，不从这个简写列猜测成本。
+
+本阶段screen-native架构控制（上限12轮）的验证均值.159038，static_m2_h16为.163131，五个历史family最高为M5的.160543。这些是同一筛选阶段的描述性结果，**没有建立历史超越静态容量控制的收益**，不能将其当正式强基线胜负；native完整250轮和FT控制另按统一最终评估。保留全部五family继续既定full，不因该现象增加/替换候选、改窗口或另选negative sampling。
+
+初始full按五family×三seed共15cell启动，预算仍250epoch/pat10、3945更新/epoch，fresh初始化，不继承screen权重。实际首批m1_h16：1024 PID156906/cuda0、2026 PID156904/cuda1、31415 PID156905/cuda0；FULL_START_VERIFIED快照分别已完成5/6/5epoch和19725/23670/19725更新，resolved_config的各自encoder与既有cache匹配、engineering amendment相符。full7、eval25、review8个冻结source逐项仍匹配原protocol。14537/88448/113154实际argv在线，primary selection和READY尚无，未读实际test/DTU NN成绩。
+
+FULL_QUEUE_V2_STATUS仍保留最后一次WAIT_ALL54_SCREEN文字，是旧等待快照；当前阶段以FULL_SELECTION、full目录、实际子进程argv及更新判断，不为状态文字停/重启控制器，也不手改它。完整15full后的primary/controls、五seed配对、统一内外评估、实际raw/metrics复核与科学接受仍待，goal ACTIVE。

@@ -102,3 +102,5 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 五FT现已全完成，各5epoch/19725更新/1262270额外窗口呈现，selected均0-based4；仅用服务器metadata生成FINETUNE_CURVES/CSV/SNAPSHOT，原始3s验证r提高但不能替代60s/person测试或收敛证据。结果前EVIDENCE_MATRIX已按本任务交付要求列出baseline/容量与历史控制/共享刺激/外部/实际复核/新意等直接证据与明确缺口，不新增实验或阈值。最新screen40/54，14537/88448/113154实际argv仍live，最终训练和评估继续。
 
 等待实际训练期间，完成RELATED_WORK_COMPARISON的9份一手来源/实际冻结代码核对，补入SCIENTIFIC_DESIGN_REVIEW和EVIDENCE_MATRIX。明确已有组件不冒充新意、窗口/目标/任务不同不直接比r，尤其output_prior非完整DECAF、M3非CPC、M4非物理delay估计、M5非校准Kalman及无低秩约束。Lin/Li原论文alpha文字与Table1算术差异另记为来源不一致，不修订本轮权重。只读论文/方法边界文档，不改模型、数据白名单、训练目标或冻结流程。
+
+全54screen现已完成，FULL_SELECTION（be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80）按原三seed VAL规则五类均选H16，协调独立重算全部18组均值/预算/覆盖和tie通过；执行者又独立重聚合40608个保存VAL block r/2646个人均值，macro差≤5.56e−17，见SCREEN_SELECTION_REVIEW与CSV。不是原始信号/r复算或正式胜负；静态容量控制screen均值高于五类历史候选，按冻结矩阵继续而不追阳性改分支。初始15full已自动开始，三m1_h16实际PID156906/156904/156905在线并已5/6/5epoch，resolved/cache/amendment和冻结7/25/8来源吻合。FULL_QUEUE_V2_STATUS旧WAIT文字不作当前stage依据；原controller不重启。primary、READY和最终科学成绩尚无，SS07/goal ACTIVE。
