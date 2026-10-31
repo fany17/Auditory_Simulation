@@ -91,3 +91,15 @@ FULL_SELECTION已按原18条件×3seed完整结果冻结，sha256为be938571b243
 初始full按五family×三seed共15cell启动，预算仍250epoch/pat10、3945更新/epoch，fresh初始化，不继承screen权重。实际首批m1_h16：1024 PID156906/cuda0、2026 PID156904/cuda1、31415 PID156905/cuda0；FULL_START_VERIFIED快照分别已完成5/6/5epoch和19725/23670/19725更新，resolved_config的各自encoder与既有cache匹配、engineering amendment相符。full7、eval25、review8个冻结source逐项仍匹配原protocol。14537/88448/113154实际argv在线，primary selection和READY尚无，未读实际test/DTU NN成绩。
 
 FULL_QUEUE_V2_STATUS仍保留最后一次WAIT_ALL54_SCREEN文字，是旧等待快照；当前阶段以FULL_SELECTION、full目录、实际子进程argv及更新判断，不为状态文字停/重启控制器，也不手改它。完整15full后的primary/controls、五seed配对、统一内外评估、实际raw/metrics复核与科学接受仍待，goal ACTIVE。
+
+## 最终呈现代码准备（尚无真实结果图）
+
+新增result_figures及其synthetic检查，不进入或修改冻结的训练/评估/独立复核来源。其真实main必须先满足INDEPENDENT_REVIEW_COMPLETED技术通过、完整gated及实际raw/metrics proof与最终checkpoint清单对应，才读取五个final_summary结果JSON。没有启动呈现等待队列，也未调用真实结果入口。
+
+准备输出五张静态图：固定M6/7主差值（内外两支分开）、前三seed五family探索M5、六history各自同key子集/覆盖/缺分层、全部main五seed绝对值、全搜索成本；另自动写NUMERICAL_SUMMARY数值表，明确科学解释待完成。只转述已有区间，不重采样、不挑模型/seed/排序、不重新赋权；τ0对照保留重复M，且内外contrast与absolute的别名一致性显式核对。history缺分层显示Endpoint unavailable，不能画成0。对近似区间不强制点估计落在区间内，不平移/重居中。成本用log点图和数字，区分逐run elapsed之和、服务器wall time与隔离计时；不因预训练监督窗口列为0而忽略其数据/负样本预算。
+
+RESULT_FIGURE_ENGINEERING_CHECK只用隔离合成输入，完整覆盖M6与M7两种五图/数值表路径、bad order/坏τ0别名/缺main seed/未知cost stage拒绝、缺history分层、点估计落在区间外、提前复核门的gated/renderer调用0及输入summary不改。所有图面均标SYNTHETIC；执行者已查看M7五图及M6主图确认可读。原成功fixture与旧source/proof保留，后续修改只改善alias夹具自洽、mean/seed图注、log成本呈现和补足M6覆盖，没有实际数据/成绩参与。合成预览仅放本地visualizations目录，不作为真实报告图进入Git。
+
+最近实核初始full已有1/15完成：M1seed1024正常结束后自动进入M2seed1024（PID163617），另两M1继续；控制器14537/88448/113154实际argv在线、root无failure、primary selection仍无。完整五seed科学差值与实际呈现仍待，不将工程图通过或首个full完成当科学成功。
+
+协调独立读完renderer/check并查看合成主比较、history覆盖和log成本图后审阅通过；最新M6/M7 proof hash af3a87ede51d3268c1104556d56a00ed5581898fc0bc81d7fe0764a0ed85e672、renderer hash c6b60bb032538a54a55676f1c3337031285fe2e71f5b114642d2c0b4bd27b42f已由执行者在2203再次核验。真实复核齐备后可直接在2203生成呈现，不另索许可；实际图仍须按真实值看是否裁切/重叠并完成科学解释。首个M1 full1024实际22epoch、selected11、pat10、86790更新/5553988窗口呈现亦已双侧从completed/history核对；这只是一个完成cell，不能代表三seed family或最终胜负。

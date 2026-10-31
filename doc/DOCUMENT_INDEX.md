@@ -6,6 +6,8 @@ SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/increment
 
 [`SCREEN_SELECTION_REVIEW`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_SELECTION_REVIEW.json)与[`SCREEN_WIDTHS`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_WIDTHS.csv)记录54/54完整筛选、全部已存VAL r的独立聚合核对和五类H16；[`FULL_START_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FULL_START_VERIFIED.json)记录实际初始full进程与来源。不是最终primary或测试结果。
 
+[`RESULT_FIGURE_ENGINEERING_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/RESULT_FIGURE_ENGINEERING_CHECK.json)仅为最终呈现入口的synthetic M6/M7检查，非真实成绩；实际图表入口`pub_01_s03_ss07_result_figures.py`必须等待统一评估和实际独立复核通过，不能提前运行读取结果。
+
 > 当前入口更新（2026-10-26）：SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP，C/O/P三seed真实比较及复核完成。先读CODEX_START_HERE.md、continuity/eeg_run02_matched_baseline/REPORT.md/REVIEW.md；run01全部冻结保留，无自动下游。
 # Auditory_Simulation Document Index
 

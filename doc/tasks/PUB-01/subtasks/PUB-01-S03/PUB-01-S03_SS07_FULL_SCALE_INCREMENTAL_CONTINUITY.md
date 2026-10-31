@@ -104,3 +104,5 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 等待实际训练期间，完成RELATED_WORK_COMPARISON的9份一手来源/实际冻结代码核对，补入SCIENTIFIC_DESIGN_REVIEW和EVIDENCE_MATRIX。明确已有组件不冒充新意、窗口/目标/任务不同不直接比r，尤其output_prior非完整DECAF、M3非CPC、M4非物理delay估计、M5非校准Kalman及无低秩约束。Lin/Li原论文alpha文字与Table1算术差异另记为来源不一致，不修订本轮权重。只读论文/方法边界文档，不改模型、数据白名单、训练目标或冻结流程。
 
 全54screen现已完成，FULL_SELECTION（be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80）按原三seed VAL规则五类均选H16，协调独立重算全部18组均值/预算/覆盖和tie通过；执行者又独立重聚合40608个保存VAL block r/2646个人均值，macro差≤5.56e−17，见SCREEN_SELECTION_REVIEW与CSV。不是原始信号/r复算或正式胜负；静态容量控制screen均值高于五类历史候选，按冻结矩阵继续而不追阳性改分支。初始15full已自动开始，三m1_h16实际PID156906/156904/156905在线并已5/6/5epoch，resolved/cache/amendment和冻结7/25/8来源吻合。FULL_QUEUE_V2_STATUS旧WAIT文字不作当前stage依据；原controller不重启。primary、READY和最终科学成绩尚无，SS07/goal ACTIVE。
+
+最终图表/数值表呈现入口已准备，严格在真实完整评估及独立raw/metrics复核通过后读取summary；合成M6/M7五图路径、缺分层/seed/别名/排序/成本拒绝和早期gate已检查，未读实际测试或外部成绩，冻结来源不改。首个full M1seed1024完成后已自动进入M2，另两M1继续；本阶段仍为ACTIVE，实际结果图/逐图中文解释及科学验收尚待。
