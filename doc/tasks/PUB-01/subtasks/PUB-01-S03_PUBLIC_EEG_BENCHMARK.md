@@ -5,7 +5,7 @@
 | Subtask ID | `PUB-01-S03` |
 | Parent Task | `PUB-01` |
 | Title | SparrKULee EEG Direct Auditory Decoding & Representation Benchmark |
-| Status | `ACTIVE`（SS01/SS02/SS03/SS05已交有限制；SS05真实内部holdout阴性证据及review完成；当前停止，SS04 BACKLOG） |
+| Status | `ACTIVE`（SS01/02/03/05/06冻结；2026-11-01授权SS07全量原强基线+连续残差，SS04 BACKLOG） |
 | Blocking for Parent | YES |
 | Patient Data | `FORBIDDEN` |
 | Upstream | `PUB-01-S01` / `PUB-01-S02` 完成有限制阶段交付 |
@@ -14,11 +14,15 @@
 | Acceptance | 冻结输出含直接声音特征；与强基线在可比较协议下公平对照；结果保留不同候选池规模、被试/刺激拆分、错误/阴性和时间信息局限 |
 | Validation | 复现 code/config/metric、test leakage / negative pools、模型无候选输入 canary、独立 review + parent consistency |
 | Go/Hold/Fail | 官方代码或数据不可用时记录 HOLD/内部协议，不编造 SOTA；模型无收益保留阴性并重新审议架构 |
-| Subnodes | `SUBTASKS.md` 中 S03_SS01..SS05 |
+| Subnodes | `SUBTASKS.md` 中 S03_SS01..SS07 |
 | Files Allowed to Change | public EEG model/scripts/configs/tests/reports、`doc/tasks/PUB-01/**`，历史 frozen 文件只读 |
-| Last Updated | 2026-10-19 |
+| Last Updated | 2026-11-01 |
 
-## 当前S03任务优先级（2026-10-19）
+## 当前S03任务优先级（2026-10-23）
+
+SS06真实实验已COMPLETED/PASS_WITH_LIMITATION：39×3262监督/3×3511 SSL/243结果、四图与后置复核齐备。M1multi胜matched long、M3ft胜frozen、M4adaptive胜uniformfixed；M2最高点估计但不稳健胜GRU，SSL/M5额外收益和内容特异历史收益未建立。只5family且历史开发暴露，INTERNAL/EXPLORATORY，不完成S03最终benchmark。报告continuity/eeg_run01/REPORT.md；source ea5a1b5，#6仍Draft。当前STOP，无自动下一READY；旧SS02/03/05冻结，SS04/S04/父S05不启动。
+
+## 历史S03任务优先级（2026-10-19）
 
 - SS01/SS02/SS03保留 `COMPLETED / PASS_WITH_LIMITATION`，其测试与报告只读。
 - 研究者授权的 `SS05` 已由Codex在2203完成源码/仿真复核及公开EEG实验。15run×7条件完成，新内部holdout五组r约.091–.092，六预设区间均跨0；未支持复杂记忆额外收益，保留有效阴性。
@@ -58,6 +62,8 @@
 - 无法发表某官方 SOTA 声明时，也可以用透明、公平的内部协议完成方法研究；不可冒称官方刷新纪录。
 
 ## 5. Completion and evidence
+
+2026-10-23 SS06：Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。完整记录与新train统计/预训练身份/同序目标预算/全部训练后一次审计均核验；222原型CPU r max差1.55e-7、234MSE max差6.52e-8/12null、逐级汇总误差0，协调独立SUMMARY复算5.55e-17。审阅范围分开说明，非第三方完整科学签核。完整/精简包通过；E满的本轮未提交副本移C备份，不涉及原资料/旧worktree；数据/权重只在2203。SS06完成后停止，S03/PUB仍ACTIVE，无artifact，#6 Draft不自行合并。
 
 2026-10-19 SS05追加交付：Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。新内部holdout21人/47record/7family、517个60s段，五组×三seed，六primary区间跨0。逐级聚合复核误差0、90个原始EEG CPU相关max差8.13e-6；同agent separate pass，协调仅核对指定轻量文件。数据/权重仅2203，不改父scope/既有结论，不产生artifact。SS05完成后停止，#4仍Draft。
 

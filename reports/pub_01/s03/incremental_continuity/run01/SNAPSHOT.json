@@ -1,0 +1,91 @@
+{
+  "time": 1793481840.034079,
+  "all5_native_two_stage_runs_completed": true,
+  "train_val_only_no_test_data": true,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed1024/history.json": "c41b504f86c523025b4d44a5a29fa433da00dd194a531084e784691e5dc592d5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed1024/completed.json": "6790f607ddf65f70fe09804ee4fc65542628ffd163c9c1fec72b70cc79ffa25f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/history.json": "2ded6e9a932aad4bf67cbb130fdf949b4810facc1a2f5ec431d17953b4a67b67",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/completed.json": "0c22721f33dd8347e7b1089982c5e28116ac621320fab423460fcd9bb9860c29",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed2026/history.json": "17cc00d4a3dc4bcbf24c2d88d1e10f88f999f738f814c129667f70cebedb8b2d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed2026/completed.json": "e37de70373223fe7d584e9aa8792b13266eff9c9a476380702905627722fa7a5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/history.json": "321530689dc2935fc21b678bf4f053db87c576f17a8a729040626122d94c13da",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/completed.json": "0360e4aca4b446fafb923e36a8616b4175929efb5267c096b28f629a32eda93d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed31415/history.json": "fca956e974ab93aa739caac6edf449148edcd6ea8c696edd2d7c33821c028d1f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed31415/completed.json": "9a391135317902eb7b1bbfa3144beb22733f2177a533d3afd32815a76a4eab01",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/history.json": "fa13e30089ed81d253cb2336150d92bd67fb33d565f53d44bf2e0a90e693c292",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/completed.json": "2ef25a6591409347af5fe3ddd6d1cdf50c8565ac8d5b9651bc411301c5bb6e48",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed42/history.json": "09dd86ae338ddabee3bc975554e45a080b2a35c88829219179b2f6ff917a2f89",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed42/completed.json": "b2c4e15b45b8da097297993d9f8250a5bdcd6dd7c8ad78b4de4fcad1ac1acf47",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed42/history.json": "6862268e481e12cc92f1089e889033fc202e07b5cbdff09449a15c752c623dee",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed42/completed.json": "ef3b125e1d15df0ace5fc3f64d140b99077ebfef5e8e169422779d3a1d3a097c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed12345/history.json": "f050d6c960c28fa359ff68b1b98709835ed18ed1c3e15778939c1f9f8ca40fbc",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed12345/completed.json": "6e9335ac9e0c834ecd344f0aedf3c22a7c0b425025c0d2b511dbab706a279f48",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed12345/history.json": "767a29e17300990381ad42e1af16bb01981b23ad9bc5d4d427b3856b2841a26a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed12345/completed.json": "b6c7b3aa933911f30af27b6e8db2bb47bc75b5980b9724a2177d12410c025204"
+  },
+  "rows": [
+    {
+      "seed": 1024,
+      "pretrain_epochs": 24,
+      "pretrain_updates": 19680,
+      "pretrain_selected_epoch_0based": 8,
+      "pretrain_stopping": "VALIDATION_PATIENCE15",
+      "head_epochs": 250,
+      "head_updates": 986250,
+      "head_selected_epoch_0based": 249,
+      "head_stopping": "RESOURCE_CEILING250",
+      "head_best_validation_3s_r": 0.14876085354949609
+    },
+    {
+      "seed": 2026,
+      "pretrain_epochs": 27,
+      "pretrain_updates": 22140,
+      "pretrain_selected_epoch_0based": 11,
+      "pretrain_stopping": "VALIDATION_PATIENCE15",
+      "head_epochs": 250,
+      "head_updates": 986250,
+      "head_selected_epoch_0based": 249,
+      "head_stopping": "RESOURCE_CEILING250",
+      "head_best_validation_3s_r": 0.14634140256486955
+    },
+    {
+      "seed": 31415,
+      "pretrain_epochs": 26,
+      "pretrain_updates": 21320,
+      "pretrain_selected_epoch_0based": 10,
+      "pretrain_stopping": "VALIDATION_PATIENCE15",
+      "head_epochs": 250,
+      "head_updates": 986250,
+      "head_selected_epoch_0based": 249,
+      "head_stopping": "RESOURCE_CEILING250",
+      "head_best_validation_3s_r": 0.15196461358129001
+    },
+    {
+      "seed": 42,
+      "pretrain_epochs": 24,
+      "pretrain_updates": 19680,
+      "pretrain_selected_epoch_0based": 8,
+      "pretrain_stopping": "VALIDATION_PATIENCE15",
+      "head_epochs": 250,
+      "head_updates": 986250,
+      "head_selected_epoch_0based": 244,
+      "head_stopping": "RESOURCE_CEILING250",
+      "head_best_validation_3s_r": 0.15183015767570401
+    },
+    {
+      "seed": 12345,
+      "pretrain_epochs": 25,
+      "pretrain_updates": 20500,
+      "pretrain_selected_epoch_0based": 9,
+      "pretrain_stopping": "VALIDATION_PATIENCE15",
+      "head_epochs": 250,
+      "head_updates": 986250,
+      "head_selected_epoch_0based": 249,
+      "head_stopping": "RESOURCE_CEILING250",
+      "head_best_validation_3s_r": 0.1498351025395706
+    }
+  ],
+  "interpretation": "markers selected checkpoints; patience stop vs budget ceiling distinct; no claim of convergence or superiority",
+  "metric_warning": "readout panel is original3s checkpoint criterion, not60s person-level primary test endpoint"
+}

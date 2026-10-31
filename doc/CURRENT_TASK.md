@@ -1,3 +1,36 @@
+# 当前执行：SS07 全量原强基线+连续残差（2026-11-01）
+
+用户最新明确授权尽快全量实验、设goal、使用2203全部可用算力，研究目标超过原baseline并积累ICML/NeurIPS级证据。SS07 ACTIVE；旧STOP/单pass/NO_GO不覆盖本授权，旧结果保持只读。先执行PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md及本轮INTAKE/BASELINE_PROTOCOL，原完整Transformer/XLSR19两阶段、fold完整train/val、100epoch/pat15预训练与250epoch/pat10head至少3seed；仅在强模型上增加五类有界残差，精确矩阵协调审阅。开发只train/val，旧test均内部暴露，未冻全计划不评估。无阳性/论文接收保证。
+
+唯一计算2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101；本地reports/pub_01/s03/incremental_continuity/run01。新cache≤25GB、余量≥20GB、best/latest有界，不删历史/不动他人进程。沿用SS06 worktree/branch/PR6 Draft，可commit/push、不合并，不动主目录CNN/TRF/stash，无患者/远端Git/擅自新数据。持续goal不以smoke、技术PASS或单seed分数完成。
+
+2026-11-01执行接续：五native完整两阶段及五FT均已完成（FT各5epoch/19725更新），screen/full按冻结矩阵继续；full v2 controller14537。最终调用链source4e33d69、自动队列88448依全部固定训练完成→最终checkpoint→实际最终权重VAL桥→mask→一次内外评估→聚合接续；真实READY尚未建立。独立read-only复核source2f699c2经协调审阅、37项数学/77482项合成caller/实际VAL原始输入检查后冻结INDEPENDENT_REVIEW_PROTOCOL（5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795），队列113154实际live/WAIT_COMPLETE_FIXED_EVALUATION，核对上游88448。其只在完整final_summary+ready后按预先metadata选定3条Sparr/6条DTU×5seed全main重放raw，并复算全部保存预测/统计；精确常数两侧拒绝，任一技术失败保留不重试。不得重启或改活跃冻结源、不提前读分数。实际计数看服务器status，不以文档快照代替进程核验。DTU仅原两文件白名单；不扩大下载。复核排队/工程PASS不代表实际复核已完成，图文解释与科学验收仍待。
+
+---
+以下是旧交付/STOP历史，非当前路由。
+# 当前交付 — SS06 run02 COMPLETED / PASS_WITH_LIMITATION（2026-10-26）
+
+用户授权的匹配比较已完成：C/O各3×3262、P各639pre/2035head三seed、统一9模型seed/538块、原始derivative CPU/独立汇总复算与3图齐备。C/O/P r=.123014/.151762/.141466；C相对五框架/GRU六校正区间全跨0，不能认定普遍不如强因果控制或等价。O/P未来信息、P额外学习/不同loss与单轮限制明确，POST-HOC INTERNAL EXPLORATORY/5family。报告continuity/eeg_run02_matched_baseline/REPORT.md、REVIEW.md。Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；协调独立SUMMARY误差2.78e-17。当前STOP，无自动下一READY，同#6 Draft不合并。run01冻结与原资料/CNN-TRF/stash不动；无下载/患者/远端Git，下游不启动。
+
+## run01历史交付（已被新启动授权覆盖STOP）
+
+# 历史交付 — SS06 run01 已完成有限制（2026-10-23）
+
+用户“启动吧”授权的SS06真实实验已完成：39×3262监督、3×3511 SSL，新train统计/完整连续record/一次内部审计/后置复核齐备。M1multi .122913、M2 .128164、M3finetune .123747、M4adaptive .113400、M5full .114178；GRU .125221。八primary三项为正，其余跨0；不把M2点估计当稳健胜出，未建立SSL相对GRU或M5额外收益、内容特异历史收益。只5family且旧训练暴露，INTERNAL/EXPLORATORY，非外部确认。
+
+报告reports/pub_01/s03/continuity/eeg_run01/REPORT.md及REVIEW.md；243真实结果/四图/逐seed人表及机器review可读。原型CPU222r max差1.55e-7、协调SUMMARY独立重算max差5.55e-17，完整与精简包检查PASS。SS06 COMPLETED/PASS_WITH_LIMITATION；当前STOP，无自动下一READY。分支codex/pub-01-s03-ss06-continuity / PR#6 Draft、不自行合并；S03/PUB ACTIVE，SS04/S04/父S05 BACKLOG。E盘回传空间不足已用本轮C盘备份及精简JSON收束，原资料/旧worktree不删；数据/权重继续只在2203。
+
+## prototype01 历史状态（以下非当前训练禁令）
+# 当前任务 — PUB-01-S03_SS06（2026-10-23）
+
+用户批准五种连续信息框架的任务书和基本代码，仅做合成工程检查。五模型已在2203完成前向/梯度/状态测试，独立代码/运行证据审阅已完成，原型包COMPLETED/PASS_WITH_LIMITATION；真实EEG、预训练、pilot、正式训练/测试全部NOT_RUN。本原型包已完成，当前STOP，不自动训练。
+
+- 任务书：doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md。
+- 证据：reports/pub_01/s03/continuity/prototype01/REPORT.md；状态以PUB-01/SUBTASKS.md为准。
+- 独立worktree分支codex/pub-01-s03-ss06-continuity；main起点60c3404。PR#3/#4均已按既有授权合并，旧模型/结果冻结；主目录CNN/TRF与stash不动。
+- S03/PUB保持ACTIVE，SS04/S04/父S05 BACKLOG；未生成ART-AUDREP-v1。
+
+## 历史工作板快照（以下非当前执行指令）
 > **Issue#5 / SS05已完成有限制并停止**：15run真实训练/一次新holdout测试、7种同当前EEG历史条件及后置review已完成。五组r约.091–.092，六预设比较区间均跨0，未检出复杂记忆额外收益。报告predictive_memory/codex_run01/REPORT.md。PR#3已按新授权合并8d21d0a，PR#4保持Draft，不合并/不扩实验。
 
 # Auditory_Simulation Current Workboard

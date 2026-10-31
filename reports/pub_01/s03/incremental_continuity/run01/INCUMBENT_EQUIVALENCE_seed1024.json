@@ -1,0 +1,10 @@
+{
+  "raw_reencoded_B64_validation_loss": -0.14876086750479994,
+  "original_cached_B512_validation_loss": -0.14876085354949609,
+  "absolute_difference": 1.3955303856949541e-08,
+  "prespecified_absolute_tolerance": 0.0001,
+  "passed": true,
+  "full_validation_windows": 30500,
+  "optimizer_steps_before_check": 0,
+  "test_read": false
+}

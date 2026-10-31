@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": 25,
+  "all_canonical_scalar_and_nested_metrics_equal": true,
+  "every_block_table538": true,
+  "only_allowed_light_types": true,
+  "assessment_after_last_fit": true,
+  "no_neural_signal_weight_tensor_files": true
+}

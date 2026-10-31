@@ -2,6 +2,10 @@
 
 此文件是父任务 `TASK.md` 的执行路线图，**不构成第二份状态登记**；状态一律以 `SUBTASKS.md` 和 `doc/TASKS.md` 为准。
 
+## 当前交付与停止（2026-10-23）
+
+SS06真实连续EEG比较COMPLETED/PASS_WITH_LIMITATION：39监督+3SSL、243真实结果、四图和后置原型CPU/独立汇总复核已交。八primary三项为正（M1multi−matched long、M3ft−frozen、M4adaptive−uniformfixed），M2最高点估计但未稳健胜GRU，SSL额外收益/M5额外收益/内容特异历史收益未建立。报告continuity/eeg_run01/REPORT.md及REVIEW.md；INTERNAL/5family/历史暴露限制保留。当前STOP，SS04/S04/父S05 BACKLOG，无artifact。PR#3/#4已按后续授权合并，#6仍Draft，不自行合并。下方10-19执行路由及#4 Draft仅为历史，不重新启动。
+
 ## 科学与论文目标
 
 近期 ICML 方法论文的优先目标：研究一个**不依赖候选声音作为模型输入**的 EEG→连续听觉表征解码架构，并在同一模型冻结输出下评估直接重建、二选一、五选一、百余候选声音片段检索。追求公开可比协议上的强基线/SOTA；60%/80% 是研究者提出的冲刺愿景，**不是已实现效果、验收硬阈值或允许更改测试集的理由**。
@@ -34,7 +38,7 @@
 
 `PUB-01-S05`：整合 A/B 两支线的真实 benchmark、失败、许可证和版本，决定能否形成 `ART-AUDREP-v1` candidate。S04 transfer 阴性不导致重追网络阳性。所有公共载荷/权重/训练留在 server2203，Windows Git 只存轻量代码/报告。患者数据和 STN embeddings 禁止进入公开项目；只有冻结的公共 artifact 可单向进入患者 `INT-01`。STN direct READ 完全独立推进。
 
-## 当前执行路由：SS05交付后停止（2026-10-19）
+## 历史执行路由：SS05交付后停止（2026-10-19）
 
 - **科研问题**：历史信息如何持续参与当前 EEG→连续声音特征预测；真实历史是否优于错配历史；关联读写是否优于GRU/状态更新；预测误差项是否提供进一步增益。维持通用时序模型和公开方法学定位，不把合成任务阳性等同于听觉生物学证据。
 - **已交付节点**：`PUB-01-S03_SS05` = `COMPLETED / PASS_WITH_LIMITATION`。353/26/47条、23/7/7family的新内部划分；全部训练完成才开放holdout，新train-only归一化/预算/一次测试核验通过。人与训练重叠，来源曾用于SS03，不是外部独立复制。
@@ -42,7 +46,7 @@
 - **停止**：无自动下一READY节点。SS04、S04、父S05依旧BACKLOG；阴性不触发换架构/扩预算或新artifact。
 - **边界**：SS05未用旧SS03 test选模型/lag。患者/STN禁止；数据/模型/计算仅2203，Windows/Git只轻量代码/报告/必要静态图。PR#3按用户新授权已合并8d21d0a；PR#4仍Draft，不自行合并。
 
-## 当前SS03执行顺序（2026-10-19）
+## 历史SS03执行顺序（2026-10-19）
 
 1. `SS02` 已经 `COMPLETED / PASS_WITH_LIMITATION`，冻结为历史基线。原论文完整cohort和官方评价尚未复现，不能补称同等。
 2. 用户批准的SS03多时间尺度单假设已完成：真实window audit/smoke/100步pilot→冻结25000步/2500步验证/3seed→12run实际test→separate review。当前COMPLETED/PASS_WITH_LIMITATION，详见任务书与REPORT。

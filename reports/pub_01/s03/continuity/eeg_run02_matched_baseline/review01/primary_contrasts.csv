@@ -1,0 +1,7 @@
+contrast,delta_r,crossed_Bonferroni_CI_low,crossed_Bonferroni_CI_high,interval_percent,positive_interval,negative_interval,families,subjects,kind
+C_minus_m1_multi,0.00010163538393480022,-0.014713244139781895,0.005438554980210489,99.16666666666667,False,False,5,36,predeclared this-round EXPLORATORY; run01 already seen
+C_minus_m2,-0.005150131080981016,-0.011411296630100395,0.0003055056324986939,99.16666666666667,False,False,5,36,predeclared this-round EXPLORATORY; run01 already seen
+C_minus_m3_finetune,-0.0007324695333909318,-0.012559075922213957,0.0036681540718990664,99.16666666666667,False,False,5,36,predeclared this-round EXPLORATORY; run01 already seen
+C_minus_m4_adaptive,0.009613811095648234,-0.010117339545784707,0.01655781634523119,99.16666666666667,False,False,5,36,predeclared this-round EXPLORATORY; run01 already seen
+C_minus_m5_full,0.008835864348506254,-0.0070552033787276485,0.014020087588622372,99.16666666666667,False,False,5,36,predeclared this-round EXPLORATORY; run01 already seen
+C_minus_gru,-0.002206521254703646,-0.01435369919286283,0.0023190774978861946,99.16666666666667,False,False,5,36,predeclared this-round EXPLORATORY; run01 already seen

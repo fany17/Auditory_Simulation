@@ -1,0 +1,79 @@
+{
+  "phases": [
+    {
+      "phase": "train",
+      "records": 249,
+      "blocks": 3262
+    },
+    {
+      "phase": "validation",
+      "records": 63,
+      "blocks": 980
+    }
+  ],
+  "normalizer": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run01/newtrain_EEG_target_normalization.npz",
+  "normalization_contract_sha256": "20dbae6448e849be1b58bf6f0bba61a61e5740fb3a20d8172703083773ea3913",
+  "split_sha256": "46bb9dc97b1f0e5a810e2d26d1db2c43282a876ca82d446ee13b215ea21bad3a",
+  "feature_manifest_sha256": "85a8b4a39c0b9bcf7e4c76e5d20ca36e89c0980d993c34851aaff4bbb3cc0d17",
+  "matched_targets_per_seed": 12526080,
+  "O_EEG_window_presentations": 24425856,
+  "P_pretrain": {
+    "1024": {
+      "contrastive_steps": 639,
+      "unique_3s_windows": 65240,
+      "anchor_repeat_windows": 0,
+      "actual_EEG_and_audio_sample_presentations": 12526080,
+      "batch_sizes": {
+        "4": 13,
+        "24": 118,
+        "44": 4,
+        "52": 6,
+        "84": 5,
+        "104": 1,
+        "112": 102,
+        "128": 390
+      }
+    },
+    "2026": {
+      "contrastive_steps": 639,
+      "unique_3s_windows": 65240,
+      "anchor_repeat_windows": 0,
+      "actual_EEG_and_audio_sample_presentations": 12526080,
+      "batch_sizes": {
+        "4": 13,
+        "24": 118,
+        "44": 4,
+        "52": 6,
+        "84": 5,
+        "104": 1,
+        "112": 102,
+        "128": 390
+      }
+    },
+    "31415": {
+      "contrastive_steps": 639,
+      "unique_3s_windows": 65240,
+      "anchor_repeat_windows": 0,
+      "actual_EEG_and_audio_sample_presentations": 12526080,
+      "batch_sizes": {
+        "4": 13,
+        "24": 118,
+        "44": 4,
+        "52": 6,
+        "84": 5,
+        "104": 1,
+        "112": 102,
+        "128": 390
+      }
+    }
+  },
+  "P_head": {
+    "windows": 130231,
+    "target_presentations": 25004352,
+    "steps": 2035,
+    "unique_scored_target_support": 12526080
+  },
+  "audit_payload_read": false,
+  "old_checkpoints_loaded": false,
+  "kind": "POST-HOC INTERNAL EXPLORATORY"
+}

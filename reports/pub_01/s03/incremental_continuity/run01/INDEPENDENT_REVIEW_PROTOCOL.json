@@ -1,0 +1,58 @@
+{
+  "frozen": true,
+  "time": 1793483977.62972,
+  "source_commit": "2f699c217537fed010aa48e0ad6ee8783f14060d",
+  "independent_code_review_completed": true,
+  "independent_review_note": "Independent coordinator chat 01a134e4-2036-7e02-81e9-1289a07606f2 reviewed eight sources and three proofs against commit2f699c217537fed010aa48e0ad6ee8783f14060d, approved freeze and automatic read-only queue; confirmed exact-constant rejection,77482 checks,actualVAL raw replay and deduplicated3Sparr records.",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_math.py": "0fadae373c195b5f9fe081d975cbe64f01971ce9ea17ef4244697d6f956be11f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_metrics.py": "0d431392bea41f2dd4814ba45bb410b0e4221937375cfd0b50bd20bceccb17ed",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_raw.py": "6aae9b95c2d7a45a9ea2a40c4b429a30d95e640e019301bdbd45236c10452999",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_queue.py": "d6160ef27685059e99e9a54cfbabda7a756a03dddf829d7aeb0b5f6674269d17",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_math_check.py": "df70e1d1f341461afb06a65769a58318a9fcc7b0ae6a464ea2910bc61886c04b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_raw_check.py": "0b9b6552c45371abef8ffbecc4c2a425f5fad8cc7b1ca3b9ea0b6dce465e06de",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_pipeline_check.py": "ff300622518c57e472c12a3e2f8c1b7910e59c6ab4e9310770a5a631bed832ca",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_prepare.py": "69b6ed7e8f05ae33b472098a91d3f7e18124116bc4edab0fb533f4582e417371"
+  },
+  "proofs": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INDEPENDENT_METRIC_MATH_CHECK.json": "e883ab8daa402b1c5a18c8336021a68497c39ab06c112ea41c49a37a40a03247",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INDEPENDENT_METRIC_PIPELINE_CHECK.json": "f264f09d4a5b7e2b191e0b72a7dbc9bf35fd5319712bc968737218fc1267a0fb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INDEPENDENT_RAW_INPUT_VAL_CHECK.json": "7709439efa221a0482d4f7f65974dda9b24effad290d2143ab9497365d66387b"
+  },
+  "executor_protocol_sha256": "24fffddda54be91ca3dea9c5024e903ef88f92d06331e22fbf93603b6aef56a4",
+  "upstream_final_evaluation_not_modified": true,
+  "start_gate": "complete full five-seed fixed evaluation AND require_ready before any actual test/DTU load",
+  "Sparr_metadata_only_rule": "per phase lexicographic first and first non64-aligned origin; deduplicate",
+  "Sparr_records": [
+    "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+    "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+    "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz"
+  ],
+  "Sparr_manifest_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/manifest_frozen.json",
+  "Sparr_manifest_sha256": "395ffef0765ce595e897f85c7483f2a07816c0266d27f5e4e2e8d0d5959f84d5",
+  "DTU_representative_subjects": [
+    "S1",
+    "S11",
+    "S18"
+  ],
+  "DTU_representative_trials": [
+    1,
+    60
+  ],
+  "S11_rationale": "prespecified input-scale outlier, not selected using model outcomes",
+  "raw_scope": "all five seeds/all main models on the fixed selected records/trials",
+  "raw_neural_architecture_and_forward_reused": true,
+  "raw_independence": "separate readers, checkpoint roles, B256 encoder, raw global64 FT neighboring batch fill, adapter, fusion",
+  "raw_limitations": "representative not exhaustive; no independent neural arithmetic or history-intervention raw replay",
+  "waveform_absolute_tolerance": 1e-06,
+  "metric_absolute_tolerance": 1e-10,
+  "MSE_tolerance": "absolute difference divided by max(1, abs(original MSE)) <=1e-10",
+  "exact_nonbinary_constant_prediction_or_target": "technical review failure; no epsilon/zero-r substitution/exclusion",
+  "metric_scope": "all saved fused predictions vs original targets; all internal models/history/family cells; all external1080/main/5seed",
+  "statistics": "all main M6/7, exploratory M5, matched-history subsets and Exp sensitivity; external separate family; same20k RNG chronology",
+  "math_independence": "centered dot Pearson, frequency/weight matrices and einsum; sorted explicit linear quantiles",
+  "no_new_model_choice_threshold_lag_exclusion_fitting_or_download": true,
+  "all_signal_reads_and_computation_only_server2203": true,
+  "no_automatic_retry_or_original_prediction_overwrite": true,
+  "technical_pass_does_not_complete_scientific_goal": true
+}

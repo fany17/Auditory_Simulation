@@ -1,0 +1,60 @@
+--- ema_v1.py
++++ ema_v2.py
+@@ -4,7 +4,7 @@
+ import numpy as np
+ import torch
+ from pub_01_s03_ss07_baseline import ROOT,read,dump,sha
+-from pub_01_s03_ss07_train import NativeHead,LatentData
++from pub_01_s03_ss07_train import NativeHead,LatentData,forward_global_batch
+ from pub_01_s03_ss07_history import causal_ema
+ 
+ 
+@@ -33,12 +33,23 @@
+     return {'macro_r':float(np.mean([r['r'] for r in people])),'subjects':49,'blocks':752},people,segments
+ 
+ 
++@torch.no_grad()
++def predict_validation(model,data):
++    model.eval();state=None;active=None;pieces=[];data.reset_count=0
++    for first in range(0,len(data.x),64):
++        last=min(first+64,len(data.x))
++        prediction,state,active,_,_=forward_global_batch(model,data,first,last,state,active)
++        pieces.append(prediction[:,0].cpu().numpy())
++    assert data.reset_count==len(data.rows)
++    return np.concatenate(pieces)
++
++
+ def main(device='cuda:0'):
+-    phase=read(ROOT/'EMA_PROTOCOL.json');assert phase['frozen']
++    phase=read(ROOT/'EMA_PROTOCOL_V2.json');assert phase['frozen']
+     assert phase['incremental_protocol_sha256']==sha(ROOT/'INCREMENTAL_PROTOCOL.json')
+     for path,digest in phase['sources'].items():assert sha(path)==digest
+     p=read(ROOT/'INCREMENTAL_PROTOCOL.json');seeds=p['screening_seeds'];taus=p['EMA_control']['taus_seconds']
+-    folder=ROOT/'ema_validation';folder.mkdir(exist_ok=False);all_scores={tau:[] for tau in taus}
++    folder=ROOT/'ema_validation_v2';folder.mkdir(exist_ok=False);all_scores={tau:[] for tau in taus}
+     torch.set_num_threads(2);torch.backends.cuda.matmul.allow_tf32=p['precision']['TF32_matmul']
+     torch.backends.cudnn.allow_tf32=p['precision']['TF32_cudnn']
+     for seed in seeds:
+@@ -46,10 +57,7 @@
+         checkpoint=torch.load(source/'best_validation.pt',map_location=device,weights_only=True)
+         assert checkpoint['seed']==seed
+         model=NativeHead().to(device).eval();model.head.load_state_dict(checkpoint['head'])
+-        data=LatentData(seed,'val',device);predictions=[]
+-        with torch.no_grad():
+-            for first in range(0,len(data.x),64):predictions.append(model(data.x[first:first+64])[0][:,0].cpu().numpy())
+-        predictions=np.concatenate(predictions)
++        data=LatentData(seed,'val',device);predictions=predict_validation(model,data)
+         for tau in taus:
+             summary,people,segments=score_windows(predictions,data,tau);assert math.isfinite(summary['macro_r'])
+             all_scores[tau].append(summary['macro_r'])
+@@ -62,8 +70,8 @@
+     dump(ROOT/'EMA_SELECTION.json',{'frozen':True,'tau_seconds':best,'validation_means':means,
+         'screening_seeds':seeds,'paired_scores':all_scores,'apply_same_tau_to_all_final5seeds':p['final_seeds'],
+         'selection':'mean3seed original fullrecord Hann60s->person validation macro; exacttie smaller tau',
+-        'parent_protocol_sha256':sha(ROOT/'INCREMENTAL_PROTOCOL.json'),'EMA_protocol_sha256':sha(ROOT/'EMA_PROTOCOL.json'),
+-        'extra_NN_training':False,'test_read':False})
++        'parent_protocol_sha256':sha(ROOT/'INCREMENTAL_PROTOCOL.json'),'EMA_protocol_sha256':sha(ROOT/'EMA_PROTOCOL_V2.json'),
++        'numerical_amendment_sha256':sha(ROOT/'EMA_NUMERICAL_AMENDMENT.json'),'extra_NN_training':False,'test_read':False})
+     print(json.dumps(read(ROOT/'EMA_SELECTION.json')),flush=True)
+ 
+ 

@@ -1,0 +1,29 @@
+{
+  "frozen": true,
+  "time": 1793477845.3011503,
+  "incremental_protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_select.py": "60121e464246e36911e6f224cbda9fd8aec082ce15ee3f2446c7644b43eb3673",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue.py": "3fea34ed9eb9099294e57609667567b793bcb87817ce2aee7fda3d43eb82e707",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py": "fa0fa9ce975e1655c6e3c6b05f48f7c8e8ea54b6a326dddcd36d4825a4ab5c62",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue_v2.py": "2d1693b01ad8f3a665a81868ac4a73397d90b2a24234c2fd71aaee169a814d15"
+  },
+  "test_operations": false,
+  "screen_cells_required": 54,
+  "initial_full_cells": 15,
+  "final_seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "failure_disposition": "preserve all cells, explicit review, no automatic retry or missing-seed average",
+  "lease": "exclusive file; no restart on interrupted controller",
+  "controls": "deterministic primary width catalog; no new screening candidates; separate EMA/finetune pending",
+  "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5",
+  "controller": "v2, separate lease/status/handoff; original waiting controller retired only after live checks"
+}

@@ -1,0 +1,56 @@
+{
+  "frozen": true,
+  "time": 1793477025.218832,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_statistics.py": "c96644d4040054994cca33589b00ccb650106cef19f5822b1000981cf208c9e7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_statistics_check.py": "785d24819a82d570f560c980a38cd8df97cf85d4582113ce38eb0cb1d3d805a8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_history.py": "07dbced7ea1feb325b1d8e00298f27e96d105a8d4e14a0cc0d3c7b5e2a2b098e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_history_check.py": "0194135f8300421cdc840d1772f7f5b1b14c0abb5b061e676ce1a63e1ed913d4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_freeze_eval_rules.py": "ec5735a93c13339ab4ae10213668814a841fdbf065a08ea90437edb9f15651bf"
+  },
+  "review": "coordinator accepted rules with5 clarifications before new test results",
+  "exposure": "ALL existing test POST-HOC INTERNAL EXPLORATORY; no independent confirmation",
+  "primary_endpoint": "mean r over blocks per person, equal people within group, 2/3 seen+1/3 heldout, mean paired5seeds",
+  "primary_contrast_ids": [
+    "primary-native_P",
+    "primary-current",
+    "primary-static",
+    "primary-output_prior",
+    "primary-P_EMA",
+    "primary-P_FT"
+  ],
+  "additional_contrast_rule": {
+    "m1": null,
+    "m2": null,
+    "m3": "primary-current_teacher",
+    "m4": "primary-static_alignment",
+    "m5": "primary-prior_only"
+  },
+  "multiplicity": "M6/7 applies ONLY original weighted endpoint; Bonferroni-adjusted APPROXIMATE bootstrap intervals; no finite-sample/confirmatory guarantee",
+  "supporting_endpoints": "seen/heldout95% exploratory intervals, not covered by weighted M; no joint3M claim",
+  "bootstrap": {
+    "draws": 20000,
+    "rng": 20261101,
+    "method": "CROSSED seed/person, one seed vector and one person vector per stratum shared across ALL sampled seeds/models/contrasts"
+  },
+  "family_sensitivity": {
+    "draws": 20000,
+    "rng": 20261103,
+    "method": "positive Exp1 person and shared stimulus-family weights; not calibrated frequentist CI",
+    "LOFO_and_per_family": "descriptive with exact eligible people/blocks; no silent coverage change"
+  },
+  "family3seed_exploration": "separate five-contrast M5 family, no jointFWER/independent replication claim with main5seed family",
+  "shuffle": {
+    "rng": 20261102,
+    "record_order": "lexical",
+    "offline_only": true,
+    "future_observation_possible": true
+  },
+  "older_history": "ctx_before(i-1), last source i-3; both recency and parity change; audit actual Hann support, no pure-delay causal claim",
+  "content_blind": "same update count and elapsed time, train-only neutral mean, distinct from reset",
+  "donor_plan_sha256": "328af96ddf341560e358b2ef383788a2c1c2d7f6a8a0a8c621495fe21b1dd28e",
+  "source_family_join_sha256": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb",
+  "required_later_child": "immutable checkpoint/selection/mask/source manifest AFTER all main5seed/controls/nativeFT/EMA complete and BEFORE any prediction",
+  "test_read_or_inference_authorized_by_this_file": false,
+  "external_DTU": "separate adaptation/endpoint/split protocol, never pooled with existing tests"
+}

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "fixture_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/synthetic_independent_review_j2f0e0of",
+  "synthetic_loader_calls": {
+    "synthetic_external_predictions": 37800,
+    "synthetic_MAT_subjects": 18
+  },
+  "internal_cells": 77,
+  "all_block_metrics": 447,
+  "checks": 77482,
+  "maximum_absolute_difference": {
+    "internal_r": 5.551115123125783e-16,
+    "internal_MSE_descriptive": 6.661338147750939e-16,
+    "internal_R2_descriptive": 1.3322676295501878e-15,
+    "absolute_phase": 2.220446049250313e-16,
+    "absolute_weighted": 3.3306690738754696e-16,
+    "internal_seed_differences": 2.498001805406602e-16,
+    "internal_point": 1.1102230246251565e-16,
+    "internal_95": 1.942890293094024e-16,
+    "internal_Bonferroni": 2.0816681711721685e-16,
+    "internal_family_sensitivity": 1.214306433183765e-16,
+    "internal_support_point": 1.3877787807814457e-16,
+    "internal_support_95": 2.7755575615628914e-16,
+    "history_seeds": 2.498001805406602e-16,
+    "history_point": 5.551115123125783e-17,
+    "history_95": 1.942890293094024e-16,
+    "history_sensitivity": 1.6653345369377348e-16,
+    "history_matched_true_absolute": 1.1102230246251565e-16,
+    "DTU_rA": 6.661338147750939e-16,
+    "DTU_rB": 2.498001805406602e-16,
+    "DTU_absolute": 1.1102230246251565e-16,
+    "DTU_person_absolute": 1.6653345369377348e-16,
+    "DTU_accuracy": 0.0,
+    "DTU_person_accuracy": 0.0,
+    "DTU_point": 3.469446951953614e-18,
+    "DTU_seed_diff": 1.3877787807814457e-17,
+    "DTU_person_diff": 2.7755575615628914e-17,
+    "DTU_95": 4.163336342344337e-17,
+    "DTU_Bonferroni": 1.3877787807814457e-17,
+    "DTU_LOPO": 2.7755575615628914e-17
+  },
+  "all_six_history_diagnostics_including_missing_stratum_no_renormalization": true,
+  "production_full_aggregation_then_independent_metric_actor": true,
+  "corrupt_r_rejected": true,
+  "no_actual_test_or_DTU_payload_read": true,
+  "source_sha256": {
+    "pub_01_s03_ss07_review_math.py": "0fadae373c195b5f9fe081d975cbe64f01971ce9ea17ef4244697d6f956be11f",
+    "pub_01_s03_ss07_review_metrics.py": "0d431392bea41f2dd4814ba45bb410b0e4221937375cfd0b50bd20bceccb17ed",
+    "pub_01_s03_ss07_review_pipeline_check.py": "ff300622518c57e472c12a3e2f8c1b7910e59c6ab4e9310770a5a631bed832ca"
+  }
+}

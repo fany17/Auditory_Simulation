@@ -1,0 +1,54 @@
+[
+  {
+    "step": 1000,
+    "mean_loss": 1.0267387433052062,
+    "validation": {
+      "r": 0.09765786011872005,
+      "mse": 1.1057954446599885,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "elapsed_seconds": 530.0801274562255
+  },
+  {
+    "step": 2000,
+    "mean_loss": 0.9994627817869186,
+    "validation": {
+      "r": 0.0934598892821171,
+      "mse": 1.1402819231662251,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "elapsed_seconds": 1060.4343548947945
+  },
+  {
+    "step": 3000,
+    "mean_loss": 0.9927582720518112,
+    "validation": {
+      "r": 0.10224710885899066,
+      "mse": 1.0500061482037308,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "elapsed_seconds": 1598.3943427875638
+  },
+  {
+    "step": 3262,
+    "mean_loss": 0.9677883752884756,
+    "validation": {
+      "r": 0.10574834400643197,
+      "mse": 1.0615879684507155,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "elapsed_seconds": 1846.1888481890783
+  }
+]

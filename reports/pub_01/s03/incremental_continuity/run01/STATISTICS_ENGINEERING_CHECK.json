@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "test_read": false,
+  "constant_effect_and_zero_effect_preserved": true,
+  "manual_crossed_seed_person_replicate_verified": true,
+  "all_contrasts_share_draws": true,
+  "nonfinite_rejected": true,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_statistics.py": "c96644d4040054994cca33589b00ccb650106cef19f5822b1000981cf208c9e7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_statistics_check.py": "785d24819a82d570f560c980a38cd8df97cf85d4582113ce38eb0cb1d3d805a8"
+  }
+}

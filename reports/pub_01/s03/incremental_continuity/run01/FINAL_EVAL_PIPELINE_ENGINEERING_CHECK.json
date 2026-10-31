@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "entirely_synthetic_fixture": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/synthetic_final_pipeline_hjqo0ad_",
+  "real_test_or_DTU_payload_read": false,
+  "actual_model_scientific_performance_computed": false,
+  "one_seed_full_caller_executed_with_synthetic_signals_small_models": true,
+  "five_seed_aggregation_used_explicit_synthetic_metadata_clones": true,
+  "calls": {
+    "adapter": 1080,
+    "P_encode": 1080,
+    "FT_external": 1080,
+    "FT_internal": 1
+  },
+  "native_EMA_tau0_waveform_digests_identical": true,
+  "FT_distinct_prediction_source_used": true,
+  "all1080_external_keys_each_condition": true,
+  "different_donor_subset_true_keys_matched": true,
+  "missing_stratum_not_silently_reweighted": true,
+  "separate_main_M6_exploratory_M5_external_M6_families": true,
+  "production_ready_gate_tested_separately_with_zero_premature_payload_reads": true
+}

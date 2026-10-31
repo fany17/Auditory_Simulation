@@ -1,3 +1,59 @@
+# 当前执行：SS07 全量原强基线+连续残差（2026-11-01）
+
+用户最新明确授权尽快全量实验、设goal、使用2203全部可用算力，研究目标超过原baseline并积累ICML/NeurIPS级证据。SS07 ACTIVE；旧STOP/单pass/NO_GO不覆盖本授权，旧结果保持只读。先执行PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md及本轮INTAKE/BASELINE_PROTOCOL，原完整Transformer/XLSR19两阶段、fold完整train/val、100epoch/pat15预训练与250epoch/pat10head至少3seed；仅在强模型上增加五类有界残差，精确矩阵协调审阅。开发只train/val，旧test均内部暴露，未冻全计划不评估。无阳性/论文接收保证。
+
+唯一计算2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101；本地reports/pub_01/s03/incremental_continuity/run01。新cache≤25GB、余量≥20GB、best/latest有界，不删历史/不动他人进程。沿用SS06 worktree/branch/PR6 Draft，可commit/push、不合并，不动主目录CNN/TRF/stash，无患者/远端Git/擅自新数据。持续goal不以smoke、技术PASS或单seed分数完成。
+
+2026-11-01执行接续：五native完整两阶段及五FT均已完成（FT各5epoch/19725更新），screen/full按冻结矩阵继续；full v2 controller14537。最终调用链source4e33d69、自动队列88448依全部固定训练完成→最终checkpoint→实际最终权重VAL桥→mask→一次内外评估→聚合接续；真实READY尚未建立。独立read-only复核source2f699c2经协调审阅、37项数学/77482项合成caller/实际VAL原始输入检查后冻结INDEPENDENT_REVIEW_PROTOCOL（5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795），队列113154实际live/WAIT_COMPLETE_FIXED_EVALUATION，核对上游88448。其只在完整final_summary+ready后按预先metadata选定3条Sparr/6条DTU×5seed全main重放raw，并复算全部保存预测/统计；精确常数两侧拒绝，任一技术失败保留不重试。不得重启或改活跃冻结源、不提前读分数。实际计数看服务器status，不以文档快照代替进程核验。DTU仅原两文件白名单；不扩大下载。复核排队/工程PASS不代表实际复核已完成，图文解释与科学验收仍待。
+
+---
+以下是旧交付/STOP历史，非当前路由。
+# 当前交付：SS06 run02 COMPLETED / PASS_WITH_LIMITATION（2026-10-26）
+
+用户授权的强基线同规模比较已完成：C/O各3×3262完整60s目标，P完整两阶段3×639pre/2035head，全部训练/验证选点与实质门核验后统一9模型seed assessment。C/O/P r=.123014/.151762/.141466，旧M2=.128164；C对五框架/GRU六项Bonferroni交叉99.167%区间全跨0，不是等效/非劣证明。O/P离线未来信息与P额外预算单列，不能归因为纯future/训练量；全部POST-HOC INTERNAL EXPLORATORY。
+
+入口continuity/eeg_run02_matched_baseline/REPORT.md、REVIEW.md及3图/逐record-person/机器证据。executor聚合误差0、18 raw-derivative CPU r max3.36e-8/MSE2.36e-7；协调独立SUMMARY2.78e-17/六配对均值6.94e-18。P原法修正在P0正式更新前冻结；源5b93ca5/55ddd40/observer82f3001。三seed/5family/单pass、C末端最佳与非纯组件对比等限制明确。**当前STOP，无自动下一READY；#6仍Draft不合并。** run01/旧CNN-TRF/stash/工作树不改，所有计算/张量仅2203，SS04/S04/父S05/GPT/artifact不启动。
+
+---
+
+# 历史交付：SS06 run01 COMPLETED / PASS_WITH_LIMITATION（2026-10-23）
+
+39次完整record监督训练（各3262步）、3次正式SSL（各3511段）及一次前瞻INTERNAL/EXPLORATORY审计完成。M2最高点估计r=.128164，但未稳健胜GRU；八primary只有M1multi−matched long、M3finetune−frozen、M4adaptive−uniformfixed区间为正。预训练相对从头GRU、M5额外收益和内容特异历史收益未建立，不宣称外部确认/时延机制/SOTA。
+
+入口：reports/pub_01/s03/continuity/eeg_run01/REPORT.md、REVIEW.md、FORMAL_PROTOCOL.json、243行RESULTS、四图及逐seed/逐record/逐人证据。后置汇总误差0，222个原型CPU相关max差1.55e-7；协调独立SUMMARY重算max差5.55e-17。完整与精简交付包12项检查均PASS。执行/冻结source commit ea5a1b5，最终报告commit见PR#6。
+
+**当前STOP，无自动下一READY。** SS06完成不等于S03/PUB完成；SS04/S04/父S05/GPT/artifact不启动。#6仍Draft，不自行合并。旧SS02/03/05、主目录CNN/TRF/stash和其他worktree不改；载荷/权重只在2203。下方启动指令是已执行历史，不重新运行。
+
+---
+
+# 历史启动：SS06 真实公开 EEG（2026-10-23）
+
+用户最新明确“启动吧”。**PUB-01-S03_SS06 ACTIVE / REAL_EEG_EXECUTION**。此前仅原型/禁止训练/完成后停止仅描述prototype01历史；当前可以读取既有合法公开EEG，完成真实loader、train/val pilot、协议冻结、训练及合格评估，无需重复询问启动许可。
+
+首先读取 `doc/tasks/PUB-01/subtasks/PUB-01-S03/SS06_REAL_EEG_EXECUTION.md` 与 SS06 五框架任务书。执行会话继续使用 `codex/pub-01-s03-ss06-continuity` / PR #6 独立worktree；模型仍按既有指定6.1-sol/high。代码/轻量报告在Windows；数据和训练只在2203新eeg_run01目录。
+
+只使用旧公开资产，禁止SS03/SS05已看test调参；可从原SS05 train按元数据冻结本轮前瞻内部审计划分，诚实注明历史训练暴露，不能当完全独立确认。缺独立test不阻断合法train/val探索。优先启动M1/local真实pilot，然后五框架和既定对照；不要在smoke或准备清单停工。
+
+代码和轻量报告推送PR#6分支，不自行合并；SS02/03/05冻结，不启动SS04/S04/父S05。问题和结果向协调会话汇报。当前真实运行状态见 `reports/pub_01/s03/continuity/eeg_run01/EXECUTION_LOG.md`（由执行者按实际进展创建，未启动的阶段不能写已完成）。
+
+---
+
+## prototype01 历史入口（由上方最新授权取代）
+# Codex 启动入口 — SS06 连续信息原型（2026-10-23）
+
+本轮仅 PUB-01-S03_SS06：用户已授权五种框架任务书、基本实现和合成工程测试。**真实数据加载、预训练、pilot、参数优化与正式评估均未启动，也不自动启动。** 工程审阅与交付已完成：SS06 COMPLETED/PASS_WITH_LIMITATION，当前停止。
+
+1. 读取最新用户指令、AGENTS.md 与父任务登记。
+2. 读取 doc/tasks/PUB-01/subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md（五模型结构/训练目标/对照/验收）。
+3. 接口契约为同目录 SS06_IMPLEMENTATION_CONTRACT.md；运行证据/审阅入口为 reports/pub_01/s03/continuity/prototype01/REPORT.md。
+4. 代码 src/m6a_public/continuity/，配置 configs/pub_01_s03_ss06_prototype_20261023.json。所有数值测试在2203；Windows仅代码轻量报告。当前无真实loader或训练命令。
+5. 独立 worktree 分支 codex/pub-01-s03-ss06-continuity；保护主目录CNN/TRF、stash和旧worktree。main起点60c3404，PR#3/#4已合并；SS02/03/05结论只读，不重跑旧test。
+
+当前 split/声学lag/实际公平预算均未冻结，不能从工程PASS推断EEG性能改善。S03/PUB仍ACTIVE；SS04、S04和父S05不启动。
+
+---
+
+## 历史启动入口（以下均为快照，不构成当前授权）
 > **Issue#5已实际完成（2026-10-19）**：SS05 COMPLETED / PASS_WITH_LIMITATION。五组×三seed正式训练及105个历史条件结果已交；新内部holdout21人/47record/7family的r约.091–.092，关联/历史残差额外收益的六预设区间均跨0，为有效阴性。新train-only norm、后置same-agent review和实测图表见reports/pub_01/s03/predictive_memory/codex_run01/REPORT.md。当前停止，PR#4仍Draft，不合并、不启动SS04/S04/父S05。
 
 # Codex 启动入口 — Auditory_Simulation（2026-10-19最新）

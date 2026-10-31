@@ -1,0 +1,5079 @@
+{
+  "frozen": true,
+  "prediction_or_target_read": false,
+  "records": [
+    {
+      "target_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-003_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-004_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-004_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-005_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-005_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 7,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-006_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-006_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 7,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-007_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-007_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-008_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-008_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-009_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-009_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-010_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-010_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-011_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-011_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-012_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-012_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-013_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-013_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-014_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-014_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 7,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-015_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-015_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-016_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-016_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-018_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-018_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-019_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-019_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-020_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-020_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-021_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-021_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 7,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-022_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-022_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 7,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-023_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-023_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 7,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-024_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-024_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-025_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-025_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 7,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-026_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 506,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-026_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 8,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 23,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-027_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 657,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-027_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 1,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-028_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-028_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 657,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-028_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 1,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-027_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-029_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 657,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-029_ses-varyingStories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 1,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-027_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-030_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 657,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-030_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 1,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-027_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-031_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 657,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-031_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 1,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-027_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-032_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 518,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-032_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-033_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-033_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 518,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-033_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-032_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-034_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 518,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-034_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-032_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-035_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 518,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-035_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-032_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-036_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 518,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-036_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-032_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 4,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-037_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 586,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-037_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-038_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-038_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 586,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-038_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-037_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-039_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 586,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-039_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-037_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-040_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 586,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-040_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-037_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-041_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 586,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-041_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-037_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-042_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 586,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-042_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-037_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-043_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 433,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-043_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-044_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 3,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-044_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 433,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-044_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-043_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 3,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-045_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 433,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-045_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-043_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 3,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-046_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 433,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-046_ses-varyingStories04_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-043_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 3,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-047_ses-varyingStories05_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 395,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-047_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-048_ses-varyingStories05_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 1,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-048_ses-varyingStories05_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 395,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-048_ses-varyingStories05_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-047_ses-varyingStories05_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 1,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-050_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-050_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-050_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-051_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-051_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-052_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-052_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-053_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-053_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-054_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-054_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-055_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-055_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-056_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 417,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-056_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 6,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-049_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 7,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-057_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 645,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-057_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-058_ses-varyingStories07_task-listeningActive_run-09_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-058_ses-varyingStories07_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 645,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-058_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-057_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-059_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 645,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-059_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-057_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-060_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 645,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-060_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-057_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-061_ses-varyingStories07_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 645,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-061_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-057_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-062_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 645,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-062_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-057_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-064_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-064_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-064_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-065_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-065_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-066_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-066_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-067_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-067_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-068_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-068_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-069_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-069_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-070_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-070_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_seen",
+      "target_windows": 590,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_seen",
+        "candidate_count": 8,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-072_ses-varyingStories09_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-072_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 628,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-073_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 472,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-073_ses-varyingStories09_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-072_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 640,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-073_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-073_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-073_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-073_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-073_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-073_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 628,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-073_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-073_ses-varyingStories09_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 472,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-073_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-073_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 640,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-073_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-074_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-074_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-074_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-074_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-074_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 628,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-074_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-074_ses-varyingStories09_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 472,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-074_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-074_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 640,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-074_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-075_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-075_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-075_ses-varyingStories09_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-075_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-075_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 628,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-075_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-075_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 472,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-075_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-075_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 640,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-075_ses-varyingStories09_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-076_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-076_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-076_ses-varyingStories09_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-076_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-076_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 628,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-076_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-076_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 472,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-076_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-076_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 640,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-076_ses-varyingStories09_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-078_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-078_ses-varyingStories09_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-078_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-078_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-078_ses-varyingStories09_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 628,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-078_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-078_ses-varyingStories09_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 472,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-078_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-078_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 640,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-078_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-072_ses-varyingStories09_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-079_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-079_ses-varyingStories10_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-079_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-079_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-080_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 614,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-080_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-079_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf",
+      "target_phase": "test_heldout",
+      "target_windows": 568,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-080_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-080_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-080_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-080_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-080_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-080_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-080_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-080_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 614,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-080_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-080_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 568,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-080_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-081_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-081_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 614,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-081_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 1,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-081_ses-varyingStories10_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 568,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-081_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 2,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-082_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-082_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-082_ses-varyingStories10_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-082_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-082_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-082_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-082_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 614,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-082_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-082_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 568,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-082_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-083_ses-varyingStories10_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-083_ses-varyingStories10_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-083_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-083_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-083_ses-varyingStories10_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-083_ses-varyingStories10_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-083_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 614,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-083_ses-varyingStories10_task-listeningActive_run-01_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-083_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 568,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-083_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-084_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-084_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-084_ses-varyingStories10_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-084_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-084_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-084_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-084_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 614,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-084_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-084_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 568,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-084_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-085_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-085_ses-varyingStories10_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 77,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-085_ses-varyingStories10_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 700,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-085_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 764,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760,
+        57600,
+        61440,
+        65280,
+        69120
+      ],
+      "same_person_wrong_family": {
+        "eligible": false,
+        "donor_record": null,
+        "donor_phase": null,
+        "candidate_count": 0,
+        "reason": "no_metadata_eligible_full_length_donor_no_fallback"
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "train",
+        "candidate_count": 20,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-085_ses-varyingStories10_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 623,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-085_ses-varyingStories10_task-listeningActive_run-05_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 3,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-08_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-085_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 614,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920,
+        53760
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-085_ses-varyingStories10_task-listeningActive_run-04_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 4,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    },
+    {
+      "target_record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_phase": "test_heldout",
+      "target_windows": 568,
+      "geometry_60s_block_starts": [
+        0,
+        3840,
+        7680,
+        11520,
+        15360,
+        19200,
+        23040,
+        26880,
+        30720,
+        34560,
+        38400,
+        42240,
+        46080,
+        49920
+      ],
+      "same_person_wrong_family": {
+        "eligible": true,
+        "donor_record": "sub-085_ses-varyingStories10_task-listeningActive_run-03_eeg.bdf.gz",
+        "donor_phase": "test_heldout",
+        "candidate_count": 5,
+        "reason": null
+      },
+      "same_story_wrong_person": {
+        "eligible": true,
+        "donor_record": "sub-079_ses-varyingStories10_task-listeningActive_run-07_eeg.bdf",
+        "donor_phase": "test_heldout",
+        "candidate_count": 6,
+        "reason": null
+      }
+    }
+  ],
+  "pool": "original619 public records; cross-phase donors OFFLINE distribution intervention only",
+  "selection": "full target window length required, minimum excess length then lexical record; no fallback",
+  "true_and_intervention_must_share_final_target_mask_keys": true,
+  "eligible_block_keys": "geometry starts shown; target/coverage eligibility frozen later BEFORE predictions",
+  "source_family_join_sha256": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb"
+}

@@ -1,0 +1,73 @@
+{
+  "frozen": true,
+  "time": 1793482482.5966215,
+  "task": "PUB-01-S03_SS07",
+  "source_git_commit": "4e33d69c8657440c052dbba09dea9e089ff0c53f",
+  "review": "coordinator independently reviewed full caller, guard, numerical/budget/subset/statistical proofs and approved automatic execution at preexisting gates",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_common.py": "0993e684213c576a7979dba9d15aef45c84559c24eacd40acb88f6d626c2b654",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_io.py": "16549123db038df1a5c0b6b1d37f4941b2741dbcadb22911970689ab11223772",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_masks.py": "06f4ee5c63f59cdb307150da52550d7dca654216b0c4aa73b1ac94ba76a785a1",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_seed.py": "7687ad7b157b9a852cf855237078fb204c932853575d8b12fc16301cc3463a23",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_aggregate.py": "ec4ed4f3c4c3fdc3b2e391ebb58b0bfda0b2a1f913b5fb8d554f4009db081fc7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_queue.py": "2be5862c41605187a7a428d66bbeca3d981d56682897aaad0901d87cdc245789",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_final_manifest.py": "666de4f882c64cd496e89d09fc7bb13b35f4f23d4b90ab9833ce0a60279c3d33",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_final_val_bridge.py": "b282547513b56d0c91f4bce226b3d633a110533f8d5138e3628772059fcf3a2e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_common_check.py": "1b274afef7a395efadafa404980f979d0ff4728a992a0b5f7baa9c043c7552d4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_pipeline_check.py": "c8cef4d16ccaa6369e30cd3959c8e2911b39533b1c87a778840e15ed15594a39",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_final_manifest_check.py": "b693ddb1101950fe07b2a31f0750230de263d5813fa944144923b2aaabefcf83",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py": "536889345d3b5a35d16ef53ef600e5cf5ec064e59bcfc259c9a3a0a98882def2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_history.py": "07dbced7ea1feb325b1d8e00298f27e96d105a8d4e14a0cc0d3c7b5e2a2b098e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_statistics.py": "c96644d4040054994cca33589b00ccb650106cef19f5822b1000981cf208c9e7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_dtu_adapter.py": "9f610ea9e2bb57d7eb8ec8f53653334ebb8ec49f86f3647ad83e9d42c43f3f4d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_dtu_statistics.py": "7858c967ad3382a6269d8eea8ac0e2ab2dec2373d14fbe8db47e491cb9d208f1",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2.py": "aaa4244289d6a0f2256a71b1208c61cb7a2f51d2632431349d75158352d3154e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_queue_v2.py": "ae3f788ffa83c32436e7961e46cc1ae4e24c95f232c717762d0123399df2acbd",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2_check.py": "62f08b8800cffca59fea4034433b7f7b140197e1d811c92c0b92ededff46ed0a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_method_models.py": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/BASELINE_METADATA_CLARIFICATION.json": "6736589ff976d1612260ef95bfdefcf9eea3fd66e5931c87990334a6d5340b4a"
+  },
+  "proofs": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/FINAL_EVAL_COMMON_ENGINEERING_CHECK_v2.json": "e94806c5e847397117497100874ca5f669c6659640e358b1bce916abfd4074ff",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/FINAL_EVAL_PIPELINE_ENGINEERING_CHECK_v2.json": "037ba4ead40eea1b90ad22263c82770359a5e359ce29c651be00c585d1c60268",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/FINAL_MANIFEST_ENGINEERING_CHECK.json": "dad3a11d8e088a80218792a5fe9fb730a26068d8de92ae855c48ca5a3e4e2fad",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/FINAL_EVAL_RESOURCE_PREFLIGHT.json": "b57da15db7a76109c2c427edced7e622aecd810e732390da3f3bd3be8cedb54a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/EMA_V2_ACTUAL_WEIGHT_CHECK.json": "b1baf2d88056fcf824f4cf3fb271e4d1470b0182658c89902d7097ff5827ca20"
+  },
+  "phase_sequence": [
+    "wait all fixed screen/full/primary-controls5seed/native5seed/FT5seed/EMA choices",
+    "lock FINAL_CHECKPOINT_MANIFEST with strict state keys/shapes/seed/epoch and recomputed predeclared rankings",
+    "actual final primary5seed VAL bridge on >=2records each including non64 origin, fixed1e-6 and EMA0 identity",
+    "freeze target/geometry/donor/shuffle masks and EVALUATION_READY before any test prediction",
+    "evaluate fixed internal plus external models once, arrays server-only",
+    "strict paired5seed aggregation/separate M5 exploration/external M6or7",
+    "independent raw-input prediction/metric review, figures and scientific acceptance remain pending"
+  ],
+  "prediction_partition": {
+    "P_encoder": "original per-record256 cache",
+    "P_incremental_history": "original phase-global64 split at record boundaries",
+    "FT_internal": "own fine-tuned encoder/head, whole mixed-record global64 raw batches",
+    "DTU": "unique fixed adapter, per-trial32windows/reset,3166/3200 fixed support",
+    "EMA": "reuse nativeP exact same predictions, selectedtau0 alias retained in prespecified M"
+  },
+  "internal_technical_failure": "preserve partial evidence and stop that seed before opening external model stage; low/negative correlations do NOT trigger this stop",
+  "no_retry_or_reselection": true,
+  "all_conditions_and_seeds_fixed_before_scores": true,
+  "cost_accounting": "all54 screen including unselected + five shared pretrain charged once + nativehead + FT + deduplicated full; search vs winner budgets separate, engineering probes explicitly excluded",
+  "resource_contract": "new arrays cap25GiB, disk reserve20GiB, preflight worst-case planned9.06GB + existing8.69GB, final live budget before inference",
+  "runtime_recorded": {
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "CUDA": "12.8",
+    "cudnn": 91900
+  },
+  "test_predictions_so_far": false,
+  "external_fit": false,
+  "no_patient_or_new_download_or_PR_merge": true,
+  "automatic_aggregation_is_not_scientific_goal_completion": true
+}

@@ -1,0 +1,36 @@
+{
+  "frozen": true,
+  "time": 1793476766.3346062,
+  "incremental_protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py": "536889345d3b5a35d16ef53ef600e5cf5ec064e59bcfc259c9a3a0a98882def2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py": "105595992cc628b400c927321bbd19655880f54a8f93fae3029e7967dee143c2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_method_models.py": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/manifest_frozen.json": "4c0c2bcc6841437752fbc2c302e5df0693b9db120c19e68d7360d5125bd0c5e0",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/manifest_frozen.json": "395ffef0765ce595e897f85c7483f2a07816c0266d27f5e4e2e8d0d5959f84d5"
+  },
+  "test_operations": false,
+  "seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "budget": {
+    "method": "nativeP encoder+head finetuning, priorbest same seed; separate phase protocol beforetest",
+    "max_epochs": 5,
+    "patience": 3,
+    "EEG_lr": 1e-05,
+    "head_lr": 0.001,
+    "all_extra_costs_disclosed": true
+  },
+  "incumbent_loss_absolute_tolerance": 0.0001,
+  "incumbent_epoch_minus1_eligible": true,
+  "additional_initial_validation_pass_disclosed": true,
+  "review": "coordinator independently reviewed source/check JSON; real incumbent guard required before updates"
+}

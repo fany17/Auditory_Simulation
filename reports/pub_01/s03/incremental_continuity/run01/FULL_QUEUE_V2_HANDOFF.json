@@ -1,0 +1,22 @@
+{
+  "time": 1793477897.1316216,
+  "old_pid": 4176245,
+  "old_exact_cmdline": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue.py"
+  ],
+  "old_children": "",
+  "old_status": {
+    "stage": "WAIT_ALL54_SCREEN",
+    "missing_cells": 47,
+    "time": 1793477867.4580698
+  },
+  "full_cells_before_handoff": 0,
+  "old_lease_status_retained": true,
+  "no_training_process_stopped": true,
+  "new_pid": 14537,
+  "new_cmdline": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue_v2.py"
+  ]
+}
