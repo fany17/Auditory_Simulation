@@ -94,3 +94,5 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 后续快照：五个native均完成完整两阶段，pre24/27/26/24/25按pat15、head均250/986250按预算上限停止；五条实际曲线及CSV已交，不声称收敛。FT五个incumbent全通过，最大差3.70e−8；1024/31415正式FT各5epoch完成。screen已24/54（PROGRESS_02快照）。EMA数值修正独立amendment不改科学tau/seed规则，真实VAL752块tau0差0，最终预设tau0；旧source和未启动等待driver的安全接管证据保留。DTU唯一adapter/endpoint已协调冻结、未作实际NN评分。
 
 最终调用链及全账本/同key子集/实际批次边界经真实VAL与隔离synthetic检查、协调独立复核通过，批准冻结EVALUATION_EXECUTOR_PROTOCOL并按既定门自动接续。门序为全部固定训练/选择完成→最终checkpoint锁定→每五seed真实最终权重VAL桥（至少两record且含非64起点）→预测无关mask/shuffle锁定→一次内/外评估→严格聚合。内部技术失败停止该seed后续外部、低分不停止；所有54screen与5shared pretrain全成本入账、共享仅计一次。工程通过/自动聚合均不代表科学goal完成；真实结果和原始预测独立复算/解释仍待后续。
+
+结果前新增独立read-only复核链，保留原25个冻结训练/评估来源。独立矩阵/centered-dot指标及20k统计逐sample核对、五seed/1080外部key的隔离synthetic完整caller通过77482次核对；真实已完成P/非零M2/FT1024两VAL原始输入重放通过，FT严格包含global64前后record填充，未读实际test/DTU NN成绩。协调发现并要求修复新review的非二进制常数Pearson拒绝边界，已精确max==min两侧拒绝并保留旧proof，不改生产算法或阈值。代表性raw抽样按metadata固定，全部指标复算与代表性raw重放范围/限制明确见EXECUTION_REVIEW_01。最近screen36/54，仍等待全部固定训练，当前ACTIVE。

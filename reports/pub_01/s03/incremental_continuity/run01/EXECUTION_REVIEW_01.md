@@ -41,3 +41,19 @@ FINAL_EVAL_COMMON_ENGINEERING_CHECK_v2：真实native VAL752块r差0，实际拟
 协调端已独立读取上述当前代码、实际proof和source hash并批准按原门冻结/自动排队；无新增用户审批。最终实际checkpoint manifest/READY目前未创建，无真实test或DTU NN成绩。预估最坏8主条件的新数组约9.06GB，加现有8.69GB低于25GiB并保留磁盘20GiB。正式权重桥、真实推理、原始预测复算、图表和科学验收仍待完成，goal保持ACTIVE。
 
 当前代码已提交推送4e33d69，22个本地/服务器执行脚本逐项SHA一致；EVALUATION_EXECUTOR_PROTOCOL锁25个source及5份proof，PID88448实际ps/argv核对通过并在WAIT_ALL_FIXED_TRAINING，等待handle14537及三个尚在运行的FT driver均live。协议hash24fffddda54be91ca3dea9c5024e903ef88f92d06331e22fbf93603b6aef56a4。未创建真实FINAL_CHECKPOINT_MANIFEST/READY；此排队不等于已经进行了测试或完成研究goal。
+
+## 结果产生前固定独立复核
+
+新增 review_math/metrics/raw 与独立 review_queue，完全在原冻结调用链之外。实际复核必须先有全部固定评估的 final_summary/COMPLETED，再通过 require_ready 和新复核来源/proof 协议门；不得提前读取实际 test/DTU 预测、目标或神经输入。原14537/88448及其25个冻结来源不改。复核不训练、不换模型、不重试、不覆盖原结果，技术通过仍不代表科学验收。
+
+数学实现不调用生产相关/统计函数：centered dot Pearson、显式块到人矩阵、频数矩阵/einsum实现相同跨seed/person重采样，手工排序/线性插值分位数；共享family的Exp权重敏感性另以block权重矩阵复算。全量检查所有保存预测与原目标、内外key/metadata、EMA0同波形、主M6/7、探索M5、六历史干预各自相同key子集以及外部18×60×5seed。MSE采用max(1,原MSE)缩放误差≤1e−10，其余指标/区间绝对误差≤1e−10，阈值在实际分数产生前固定。
+
+协调独立审阅发现非二进制常数可能被中心化舍入错误放行，已只在新review Pearson增加精确max==min拒绝；3840×.1、3166×.3、3×.1的预测/目标两侧共6项拒绝测试通过，不加epsilon，不把常数结果替换为0或排除。旧proof及来源在engineering_history/independent_review_before_exact_constant_rejection保留。若实际触发则技术review失败，生产结果保留待判断。
+
+INDEPENDENT_METRIC_MATH_CHECK：37次数值核对，20k内部crossed与Exp逐sample最大差4.17e−17，外部区间及手工quantile吻合，11类拒绝与提前gate payload0。INDEPENDENT_METRIC_PIPELINE_CHECK：隔离合成信号、全部五seed和18×60外部keys、生产聚合后独立caller共77482次数值核对，含缺stratum不重权、同key donor和故意改r拒绝；不是实际科学结果。首math fixture缺story、首pipeline fixture缺来源副本均保留原fixture/source后只修夹具，未改实际数据或生产算法。
+
+INDEPENDENT_RAW_INPUT_VAL_CHECK：真实已完成P1024与拟合非零M2的两合法VAL（offset0/605），fresh raw→B256 encoder与原cache差0，独立head全局分块差0、独立Hann融合最大5.69e−14；已完成FT1024的独立snap全局64重放包含前后record填充、与完整raw流最大差0。DTU合成66通道乱序、尺度异常、时常数三案适配逐float32相等；未来非common扰动不改变第一当前窗，提前gate读取0。未对实际test或DTU做NN推理。
+
+代表性raw复核在看分数前按metadata固定：每Sparr phase按record字典序取首记录及首个非64对齐起点（去重，最多4）；DTU S1/S11/S18的trial1/60，S11因既有输入尺度审计异常预先纳入；五seed全部main条件，波形绝对误差门1e−6。独立读取raw、核对checkpoint角色、B256编码/FT自身完整raw64/通道映射与融合，但复用冻结神经forward；不称全量raw重放、独立神经数学或history干预NN重放，后者仅全量独立复算保存预测指标。
+
+最近实际训练快照screen36/54、full0；FT1024/31415完成5epoch/19725更新，另三已完成epoch3/15780更新并继续；最终checkpoint/READY仍不存在。磁盘42.67GiB，控制器14537/88448的实际argv仍匹配。此处不据不完整screen排名或改变矩阵，SS07和goal保持ACTIVE。
