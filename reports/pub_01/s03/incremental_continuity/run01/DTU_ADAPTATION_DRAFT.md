@@ -1,6 +1,6 @@
-# DTU 无目标域模型拟合的外部适配方案（待协调冻结）
+# DTU 无目标域模型拟合的外部适配方案（已协调批准冻结；保留历史文件名）
 
-2026-11-01。依据已下载数据、输入量纲审计和官方处理代码提出，仅单一预定adapter；没有计算模型分数，也不依据外部表现选择适配、lag或排除trial。Sparr主模型/controls/五seed/EMA锁定后才做一次外部评估。本文件未授权执行该评估。
+2026-11-01。协调已独立审阅实际数据/代码/审计并批准下述唯一adapter/endpoint，执行规则冻结DTU_PROTOCOL.json；最后checkpoint清单child仍须等待所有模型锁定。没有计算模型分数，也不依据外部表现选择适配、lag或排除trial。Sparr主模型/controls/五seed/EMA锁定后才做一次外部评估。本文件及DTU_PROTOCOL单独均不授权跳过该gate。
 
 ## 实际差异与量纲审计
 
@@ -12,11 +12,13 @@ INPUT_DIMENSIONAL_AUDIT仅计算描述性整trial均值/std，没有把整50s统
 
 ## 建议唯一primary adapter
 
-为了不依赖未证实的µV换算，建议每个native **当前3s窗**独立、无标签标准化；保留所有1080trial，不追加幅度排除或剪裁。顺序为：按64物理名称重排→逐sample scalp CAR→原192点窗/96点hop→各channel用该192点自身mean和population std标准化。std精确为0时该channel置0，其他不设按单位变化的绝对epsilon，不插值坏道、不增高通/低通、不重做MWF。输出float32，所有baseline、primary及controls用同一个适配和相同窗。
+为了不依赖未证实的µV换算，每个native **当前3s窗**独立、无标签标准化；保留所有1080trial，不追加幅度排除或剪裁。顺序为：按64物理名称重排→逐sample scalp CAR→原192点窗/96点hop→各channel用该192点自身mean和population std标准化。current max==min检测精确恒定列并置0（避免重复常数的浮点mean舍入使std非零），其他不设按单位变化的绝对epsilon，不插值坏道、不增高通/低通、不重做MWF。输出float32，所有baseline、primary及controls用同一个适配和相同窗。
 
 该变换不使用整50s统计、未来窗、其他trial、包络、模型成绩或目标域训练参数；全局正比例单位缩放会相消。它是预声明的当前窗输入变换，**改变了原baseline固定train-only标准化的输入定义**，必须称“外部固定适配条件下的无目标域模型拟合”，不称逐项原生预处理复现。不另外叠加源µV mean/std到已无量纲结果，不擅自运行第二种adapter并择优。若协调更偏向物理单位已确认后的固定source-norm，需要在任何外部成绩前另定，本轮不以成绩决定。
 
 工程已用真实S1 EEG检查：正比例×1e−6/×1e6后float32输出最大差0；改变首窗之后的EEG不改首窗；任意重排66列后按名称选通道仍逐点相同；常量输入全0有限。没有调用任何神经模型或使用MAT中加载的包络数值。
+
+v1测试的未来扰动是所有channel同加offset，会被CAR消去，不能作为未来权限证明。v2已改为192之后特定channel的非共同、非恒定时间扰动：首窗完全不变、后续窗口最大变化4.3258；另加入非零/各channel不同的精确常量输入，全0有限。旧源码及v1证据保留，不追溯改写其含义。冻结采用ADAPTER_GEOMETRY_ENGINEERING_CHECK_v2.json，非v1。
 
 ## 精确时间、覆盖与状态
 
@@ -28,6 +30,6 @@ Hann192、covered>1e−8，固定可评分样本为0-based 1…3166（3166点）
 
 不做目标域模型拟合时不强行新建DTU train/dev；全部18人60trial作为锁定模型的外部评估，权重、宽度、EMA tau不重选。主endpoint：每trial在同一3166点上Pearson(pred,wavA attended)，60trial等权到person，18person等权，再五训练seed等权。次指标仅预设attended-vs-unattended辅助正确率：同trial比较rA和rB，rA>rB计1、相等计.5，不增lag搜索；与主相关指标分开。
 
-主比较和固定controls可沿用预先确定的6/7 contrast族，但使用18person外部平均，不能套Sparr seen/heldout的2/3+1/3权重。建议另冻交叉训练seed/person20k重采样、主要r的固定M近似Bonferroni区间；辅助正确率仅支持性描述。此数据集的trial共享刺激依赖仍在，完整story/room信息未恢复前只称条件于这些外部样本的泛化，不能用1080trial当独立n或宣称独立刺激/房间泛化。
+主比较和固定controls使用预先确定的6/7 contrast族及18person外部平均，不能套Sparr seen/heldout的2/3+1/3权重。交叉训练seed/person20k重采样、RNG20261105、主要r固定M近似Bonferroni区间；辅助正确率仅支持性描述。外部比较族与内部族分开、不宣称联合FWER。合成测试覆盖constant/shared draw/LOPO轴/nonfinite，未输入实际模型成绩。此数据集的trial共享刺激依赖仍在，完整story/room信息未恢复前只称条件于这些外部样本的泛化，不能用1080trial当独立n或宣称独立刺激/房间泛化。
 
 任何恒定/非有限模型预测导致相应condition失败，不能选择性丢trial。输入幅度离群保留并描述，不为提高结果临时删S11。可报告预声明逐人、leave-one-person-out敏感性及实际覆盖；不据此重新选模型。任何DTU训练/校准需要另冻同预算baseline+方法方案，与此无目标域模型拟合评估分开。

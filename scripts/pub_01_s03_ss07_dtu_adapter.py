@@ -1,6 +1,6 @@
-"""Proposed no-label/current3s DTU adapter. Not an evaluation launcher.
+"""Approved no-label/current3s DTU adapter. Not an evaluation launcher.
 
-Proposal only until external protocol review; no fitted target-domain stats.
+No fitted target-domain stats; model evaluation requires final checkpoint gate.
 """
 import numpy as np
 
@@ -15,7 +15,7 @@ def native_windows(eeg,labels,scalp_names):
     starts=np.arange(0,len(x)-192+1,96);windows=[];zero_variance=[]
     for s in starts:
         current=x[s:s+192];mean=current.mean(0);std=current.std(0,ddof=0)
-        constant=std==0
+        constant=current.max(0)==current.min(0)
         normalized=(current-mean)/np.where(constant,1.,std)
         normalized[:,constant]=0.
         assert np.isfinite(normalized).all()
