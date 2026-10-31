@@ -86,3 +86,7 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 强FT及EMA新入口已完成真实train/val工程检查（随机权重/预测只为验证，全部丢弃，不作性能选择），独立phase审阅/冻结推进中。暴露核查确认sub-077旧HDPS train/val/test，sub-017独立性未证及run05质量分层；没有新增补充模型分数。外部数据仅官方metadata查询及具体提案，未下载载荷。证据与限制见本轮EXPOSURE_AUDIT.md、INCREMENTAL_MATRIX_DRAFT.md、各ENGINEERING_CHECK.json；仍ACTIVE，未到科学验收或goal完成。
 
 2026-11-01后续：31415预训练26epoch/21320更新、best10按patience15完成；1024/31415均自动进入native head与真实18条件screen。强FT/EMA获协调审阅并冻结排队，FT先以固定1e−4误差核对真实原P incumbent完整val loss才允许更新。EVALUATION_RULES冻结原weighted endpoint、交叉seed/person重采样、M6/7近似调整区间、共享音频family敏感性与固定donor；最终模型/checkpoint/mask清单锁定前仍不test。协调按用户全量公开EEG目标批准唯一DTU DATA_preproc.zip/preproc_data.m两文件扩展，2203 range确认18MAT、zip+extraction3.43GiB，白名单下载/验证/安全提取及schema审计排队，无外部模型成绩。此协调范围决定不写成用户点名DTU；未批准AUDIO.zip/EEG.zip/Dryad/新权重，主Sparr split/norm不改。
+
+首个完整native两阶段seed1024现已完成：pre24epoch/19680更新、head250epoch/986250更新，head选249（原预算上限结束，不宣称已收敛）。随后FT真实incumbent的raw/B64 loss与cached/B512绝对差1.3955e−8，30500窗/0optimizer-step核对PASS，FT已进入训练。DTU两文件官方MD5/提取及全18人1080trial可读性/通道/事件审计完成，3200×66/64Hz，wavA/B各3200；详细限制见DTU_INTAKE_REPORT，未评分。
+
+协调批准仅未来full阶段采用工程v2：逐tensor finite的CPU同步改为GPU stack/all后一次host bool，保留完整每步检查。FINITE_PROFILE同真实梯度/初始权重/Adam状态差0、逐tensor NaN/±Inf检测一致，计时为共享GPU上的工程参考，不称整训练bitwise。FULL_ENGINEERING_AMENDMENT及精确FULL_V1_V2_SOURCE.diff冻结；接管前实核旧等待controller exact argv/无children/WAIT54/无fullcells，仅停止其等待进程，旧source/lease/status保留，所有baseline/screen/FT/EMA不重启。新full controller PID14537独立lease/status，future full产物同时关联原科学protocol与amendment。当前screen完成7/54，仍无完整三seed比较或test，SS07 ACTIVE。
