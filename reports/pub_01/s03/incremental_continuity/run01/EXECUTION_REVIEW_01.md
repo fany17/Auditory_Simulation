@@ -59,3 +59,13 @@ INDEPENDENT_RAW_INPUT_VAL_CHECK：真实已完成P1024与拟合非零M2的两合
 最近实际训练快照screen36/54、full0；FT1024/31415完成5epoch/19725更新，另三已完成epoch3/15780更新并继续；最终checkpoint/READY仍不存在。磁盘42.67GiB，控制器14537/88448的实际argv仍匹配。此处不据不完整screen排名或改变矩阵，SS07和goal保持ACTIVE。
 
 协调端独立读完8个review源/3proof并核验hash后批准冻结和自动等待。来源commit2f699c217537fed010aa48e0ad6ee8783f14060d已推送；INDEPENDENT_REVIEW_PROTOCOL的hash为5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795。实际metadata去重选中3条Sparr（seen2、heldout1，heldout字典首本身即非64起点），不为凑4而补选。新队列PID113154经ps/完整argv/lease核验live、WAIT_COMPLETE_FIXED_EVALUATION，实际上游88448，payload读取false；failure文件不存在。14537/88448原controller及来源不变。此时screen37/54，最终checkpoint/READY仍无，真实raw/metrics review尚未执行。冻结protocol和handoff/lease/status已回传本地，数据/权重/预测数组仍仅在2203。
+
+## 五seed微调控制已完整完成
+
+五个FT均完成预设5epoch/19725更新，每seed额外1262270个监督窗口呈现、含incumbent共6次VAL，selected均为0-based4（最终预算轮）。FINETUNE_SNAPSHOT/CSV与图仅从2203 completed/history/初始一致性metadata生成，不读取信号或测试分数；图中横轴0表示原P raw/global64 incumbent，方框是选中checkpoint。原预训练和head成本另外计入，不因微调只5轮而忽略上游成本。
+
+![五个FT的完整验证曲线](FINETUNE_CURVES.png)
+
+原始3s验证r的initial→selected分别为1024 .148761→.157074、2026 .146341→.157230、31415 .151965→.160609、42 .151830→.160529、12345 .149835→.159814；均仍在预算末端改善，不能称收敛、最优微调、60s/person指标改善或测试胜出。记录runtime约3226–4016秒，受同期GPU作业影响，不作隔离推理延迟/效率对比。最终测试及外部主比较仍待全量筛选/full完成。
+
+新增EVIDENCE_MATRIX仅汇总父任务接受所需的已有直接证据、权威待交产物和外推限制，不增加模型、数据、终点或准入门。当前关键缺口仍是真实候选full、全部匹配比较/历史干预、独立实际复算和方法新意/泛化接受判断；不会用验证曲线替代这些缺口。
