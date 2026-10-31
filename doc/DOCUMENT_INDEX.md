@@ -2,6 +2,8 @@
 
 SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/incremental_continuity/run01/EXECUTION_REVIEW_01.md)（实际运行与工程/独立审阅）、[`EVIDENCE_MATRIX`](../reports/pub_01/s03/incremental_continuity/run01/EVIDENCE_MATRIX.md)（结果前投稿证据缺口）、[`FINETUNE_SNAPSHOT`](../reports/pub_01/s03/incremental_continuity/run01/FINETUNE_SNAPSHOT.json)（五FT完整训练验证预算）。真实科学结果仍待全训练/统一评估/实际复算，不把以上准备当科学验收。
 
+[`RELATED_WORK_COMPARISON`](../reports/pub_01/s03/incremental_continuity/run01/RELATED_WORK_COMPARISON.md)补充9份已实际浏览的一手论文与冻结代码/任务可比性，区分已有组件、研究假说与未建立的新意，不据此自动扩实验。
+
 > 当前入口更新（2026-10-26）：SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP，C/O/P三seed真实比较及复核完成。先读CODEX_START_HERE.md、continuity/eeg_run02_matched_baseline/REPORT.md/REVIEW.md；run01全部冻结保留，无自动下游。
 # Auditory_Simulation Document Index
 

@@ -34,3 +34,9 @@ native每个3s latent受整个EEG窗影响。当前窗起点s，主历史仅允�
 - [Cawley & Talbot](https://www.jmlr.org/beta/papers/v11/cawley10a.html)说明有限验证准则亦会过拟合；有界配置/预定seed/全失败记录不能省略。
 
 上述入口已由执行者2026-11-01实际浏览一手页面，协调亦独立审阅。需要回答的是：原强模型已充分使用当前窗时，**真实且不重复的历史是否提供超出容量、输出先验、平滑与额外学习预算的可重复增益**。仅包络单数据集的小幅增益不足以宣称ICML/NeurIPS程度。所有现有测试已暴露，外部确认/其他任务/新竞品公平比较仍是明确证据缺口，不因暂无新holdout阻断train/val研究。
+
+## 结果前一手核对补充
+
+新增[RELATED_WORK_COMPARISON](RELATED_WORK_COMPARISON.md)，逐项将实际代码与既有SHINE/DECAF/Transformer-XL/CPC/Dynamic Filter Networks/KalmanNet及三份邻近EEG/AAD一手工作比较。协调提供后三份入口后，执行者亦实际读取原文：Lin与Li的[S4+U-Net](https://yueqianlin.com/assets/files/ncmmsc23.pdf)含双向S4和5s分段；[MSM v1](https://arxiv.org/html/2602.13447v1)用候选包络差和forward-backward/EM，涉及音频参与及未来平滑；[contrastive PCC v3](https://arxiv.org/html/2601.20542v3)以多说话者相关差为目标并在目标域内训练。这些已有组件/相邻任务不自动构成本轮新意，也不将其数值搬入本轮榜单。
+
+核对实际实现后明确：output_prior没有过去最终融合输出反馈，不能冒充完整DECAF；M3是摘要MSE辅助而非CPC/InfoNCE；M4是无约束latent移位组合，不证明生理延迟；M5未校准为条件均值/Kalman gain；8×8混合无rank<8约束，不能因上下文投影称低秩；历史支持不重复不等于当前3s离线Transformer逐sample因果。此为结论边界澄清，原冻结实现/实验协议保持不变。
