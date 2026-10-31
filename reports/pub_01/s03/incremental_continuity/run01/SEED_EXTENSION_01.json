@@ -1,0 +1,27 @@
+{
+  "frozen_epoch": 1793472570.8650732,
+  "parent_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+  "authorization": "coordinator relays approved five-seed final comparison; early baseline encoders allowed before candidate performance",
+  "screening_seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "final_seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "new_seeds": [
+    42,
+    12345
+  ],
+  "same_full_budget_native_source": true,
+  "test_not_read": true,
+  "not_chosen_by_results": true,
+  "five_seed_latent_estimate_bytes": 8692346880,
+  "cache_cap_bytes": 26843545600,
+  "reserve_bytes": 21474836480
+}

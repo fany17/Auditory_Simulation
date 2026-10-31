@@ -1,12 +1,12 @@
 # PUB-01 Subtask Registry
 
-唯一子任务状态登记表（2026-10-23）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。
+唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
 
 | Subtask ID | Title | Status | Blocking | Upstream | Task Spec | Validation |
 |---|---|---|---|---|---|---|
 | `PUB-01-S01` | Public data preparation and exploration | `COMPLETED` | YES | NONE | `subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` | PASS_WITH_LIMITATION；许可/定向时序限制依任务保留 |
 | `PUB-01-S02` | Acoustic & frozen-audio feature → EEG encoding baseline | `COMPLETED` | YES | S01 | `subtasks/PUB-01-S02_FEATURE_BANK_BASELINE.md` | 83人/659录音；acoustic/log-mel/wav2vec2，HuBERT HOLD；PASS_WITH_LIMITATION |
-| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01/02/03/05冻结；SS06真实39run+3SSL/审计/review完成有限制，当前停止；SS04 BACKLOG |
+| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01/02/03/05/06冻结；新授权SS07全量原强基线+连续残差，SS04 BACKLOG |
 | `PUB-01-S04` | **B线：ds004703 independent intracranial baseline + transfer** | `BACKLOG` | YES | S01数据准入；仅 transfer 需 S03 | `subtasks/PUB-01-S04_INTRACRANIAL_TRANSFER.md` | SS01/02 未执行；两线不串行阻塞数据基线 |
 | `PUB-01-S05` | Public artifact candidate + parent integration review | `BACKLOG` | YES | S01–S04 | `subtasks/PUB-01-S05_ARTIFACT_INTEGRATION.md` | 阶段结果与失败/许可统一审核；未产生 ART-AUDREP-v1 |
 
@@ -27,6 +27,8 @@
 | `PUB-01-S03_SS04` | S03 | Direct reconstruction + 2AFC/5AFC/large-pool evaluation | `BACKLOG` | SS02+SS03 | `subtasks/PUB-01-S03/PUB-01-S03_SS04_DIRECT_RECONSTRUCTION_AND_RETRIEVAL.md` | 分协议公平评价 / 强对照 / 跨被试 / 消融 |
 | `PUB-01-S03_SS05` | S03 | History-aware predictive/associative memory (Codex execution) | **`COMPLETED`** | SS03 frozen + 2026-10-19 researcher authorizes Codex | `subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` | 2026-10-19 PASS_WITH_LIMITATION：新train norm、15tests/pilot/15run×7条件完成；21人/47record/7family五组r约.091–.092，六primary区间跨0，真实阴性不扩架构；同agent separate review，历史STOP；#4已合并60c3404 |
 | `PUB-01-S03_SS06` | S03 | Five continuity frameworks and matched strong-baseline comparison | **`COMPLETED`** | run01 frozen + 2026-10-26 matched-scale authorization executed | `subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md` | PASS_WITH_LIMITATION：run02 C/O各3×3262/P完整两阶段3×639pre+2035head，r=.123014/.151762/.141466，六项C配对校正区间全跨0；18原始CPU r差3.36e-8、协调SUMMARY2.78e-17；已看audit/5family/单pass及权限/额外预算限制，报告3图/轻量证据齐备；run01不改，#6 Draft，STOP |
+
+| `PUB-01-S03_SS07` | S03 | Full-scale native strong baseline + incremental continuity research | **`ACTIVE`** | SS02/SS06 frozen + explicit2026-11-01 full-scale goal authorization | `subtasks/PUB-01-S03/PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md` | 原完整Transformer/XLSR19两阶段/原fold train-val，至少3seed；五类有界增量精确矩阵待审阅；目标稳健超过基线与机制/投稿证据，旧test内部暴露，未宣称增益 |
 
 ## S04：独立保留的 ds004703 公共颅内支线
 

@@ -1,3 +1,11 @@
+# 当前执行：SS07 全量原强基线+连续残差（2026-11-01）
+
+用户最新明确授权尽快全量实验、设goal、使用2203全部可用算力，研究目标超过原baseline并积累ICML/NeurIPS级证据。SS07 ACTIVE；旧STOP/单pass/NO_GO不覆盖本授权，旧结果保持只读。先执行PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md及本轮INTAKE/BASELINE_PROTOCOL，原完整Transformer/XLSR19两阶段、fold完整train/val、100epoch/pat15预训练与250epoch/pat10head至少3seed；仅在强模型上增加五类有界残差，精确矩阵协调审阅。开发只train/val，旧test均内部暴露，未冻全计划不评估。无阳性/论文接收保证。
+
+唯一计算2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101；本地reports/pub_01/s03/incremental_continuity/run01。新cache≤25GB、余量≥20GB、best/latest有界，不删历史/不动他人进程。沿用SS06 worktree/branch/PR6 Draft，可commit/push、不合并，不动主目录CNN/TRF/stash，无患者/远端Git/擅自新数据。持续goal不以smoke、技术PASS或单seed分数完成。
+
+---
+以下是旧交付/STOP历史，非当前路由。
 # 当前交付：SS06 run02 COMPLETED / PASS_WITH_LIMITATION（2026-10-26）
 
 用户授权的强基线同规模比较已完成：C/O各3×3262完整60s目标，P完整两阶段3×639pre/2035head，全部训练/验证选点与实质门核验后统一9模型seed assessment。C/O/P r=.123014/.151762/.141466，旧M2=.128164；C对五框架/GRU六项Bonferroni交叉99.167%区间全跨0，不是等效/非劣证明。O/P离线未来信息与P额外预算单列，不能归因为纯future/训练量；全部POST-HOC INTERNAL EXPLORATORY。

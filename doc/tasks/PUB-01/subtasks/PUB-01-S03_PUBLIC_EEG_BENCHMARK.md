@@ -5,7 +5,7 @@
 | Subtask ID | `PUB-01-S03` |
 | Parent Task | `PUB-01` |
 | Title | SparrKULee EEG Direct Auditory Decoding & Representation Benchmark |
-| Status | `ACTIVE`（SS01/02/03/05冻结；SS06真实39run/3SSL/内部审计及review完成有限制，当前停止；SS04 BACKLOG） |
+| Status | `ACTIVE`（SS01/02/03/05/06冻结；2026-11-01授权SS07全量原强基线+连续残差，SS04 BACKLOG） |
 | Blocking for Parent | YES |
 | Patient Data | `FORBIDDEN` |
 | Upstream | `PUB-01-S01` / `PUB-01-S02` 完成有限制阶段交付 |
@@ -14,9 +14,9 @@
 | Acceptance | 冻结输出含直接声音特征；与强基线在可比较协议下公平对照；结果保留不同候选池规模、被试/刺激拆分、错误/阴性和时间信息局限 |
 | Validation | 复现 code/config/metric、test leakage / negative pools、模型无候选输入 canary、独立 review + parent consistency |
 | Go/Hold/Fail | 官方代码或数据不可用时记录 HOLD/内部协议，不编造 SOTA；模型无收益保留阴性并重新审议架构 |
-| Subnodes | `SUBTASKS.md` 中 S03_SS01..SS06 |
+| Subnodes | `SUBTASKS.md` 中 S03_SS01..SS07 |
 | Files Allowed to Change | public EEG model/scripts/configs/tests/reports、`doc/tasks/PUB-01/**`，历史 frozen 文件只读 |
-| Last Updated | 2026-10-23 |
+| Last Updated | 2026-11-01 |
 
 ## 当前S03任务优先级（2026-10-23）
 

@@ -132,6 +132,8 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 
 ## 12. Amendment Record
 
+2026-11-01最新：用户明确“尽快推进全量实验，目标找到超过原有baseline的方法框架；设定goal，允许调用2203的全部权限和算力，目标ICML/NeurIPS研究程度”。执行S03_SS07，覆盖旧STOP/单pass/仅原型限制，旧科学结论不改。保留完整原Transformer/XLSR19 backbone、两阶段目标/native权限/head；在原合法fold完整train/val上恢复SS02预训练100epoch/pat15、读出250epoch/pat10与至少3seed，五类连续残差有界矩阵另审阅。全量不将val/test并入train；旧test均POST-HOC INTERNAL EXPLORATORY，开发仅train/val，失败全部保留，不追test/承诺接收。只读并行寻找独立确认资产，需扩新数据先具体提案。患者/server2203/Git保护不变，新root s03_incremental_continuity_20261101，SS07轻报告，沿用worktree/分支允许commit/push不合并#6。新cache≤25GB且余量≥20GB，best/latest有界，历史不删；持续goal不以工程PASS或单seed阳性结束。精确基线核验后可直接全量运行，无额外用户许可门。
+
 2026-10-23（原型交付后最新）：用户明确“启动吧”，授权SS06五框架及任务书对照的真实公开EEG执行，先loader/train-val pilot，再冻结共同协议/预算/至少3seed并完成训练和合格评估。原型禁训练条目转为历史；本轮前瞻内部审计划分可取旧SS05 train但必须披露历史模型训练暴露，不能冒充完全独立test；无可信新test时继续可行train/val探索并限定结论。新train-only归一化/teacher，旧SS03/SS05已看test不调参。不扩大数据/模型下载范围，不更改父科学问题/患者禁令，不自启SS04/S04/父S05。具体执行补充为SS06_REAL_EEG_EXECUTION.md。
 
 2026-10-23：研究者明确要求“先把这五种框架细化成任务书……快速搭建基本框架，实际训练和执行暂不开始，确保能跑通先”。登记同一S03下的SS06作为独立原型工作包。授权五种连续信息框架的结构/目标/对照与合成前向、求导、状态测试和代码审阅；不读真实EEG，不做任何参数优化、预训练、pilot或正式测试。未来split/lag/预算待另行方案冻结和执行授权；不修改父科学问题、主要endpoint、数据范围或最终验收。PR#4已按后续用户指令合并60c3404，旧Draft条目为历史。原型完成不等于性能改进、S03完成或科学签署。
