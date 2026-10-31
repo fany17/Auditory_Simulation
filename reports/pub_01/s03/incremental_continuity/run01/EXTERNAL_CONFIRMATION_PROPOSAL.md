@@ -1,4 +1,4 @@
-# 外部确认最小方案（仅提案，未下载载荷）
+# 外部确认最小方案（提案及后续DTU有界批准记录）
 
 2026-11-01。原数据已有暴露，sub-017至多一人补充个案；外部公开EEG是论文泛化证据的实际缺口。已在2203请求官方JSON元数据、在本地查阅许可/说明网页；未下载数据zip、EEG、音频或权重。官方API摘要保存EXTERNAL_METADATA_ONLY.json。
 
@@ -16,3 +16,11 @@
 A应预设完整trial→subject的相关endpoint及3s窗口辅助指标，不能事后裁成好看的片段；不与主数据60s weighted r混合。B只有连续记录满足时才用60s；不同预处理/语言/刺激域不直接比较跨数据集r绝对值。冻结SS07主候选、全部controls及五seed之后一次执行确认；可读性/适配失败照实报告。新外部协议仍属SS07确认工作，不启动S04颅内支线。
 
 本提案等待协调端在既有授权范围内决定具体数据范围；没有授权前继续现有train/val训练和机制实现，不下载新载荷。
+
+## 后续决定（2026-11-01；取代上文待定状态）
+
+协调端基于用户11/1全量公开EEG研究与投稿证据目标，独立核对官方API/页面/脚本后批准SS07扩展；这是协调研究范围决定，不是用户点名DTU。唯一载荷白名单为DATA_preproc.zip（1,838,947,136 bytes，官方MD5 1c1ca1390ad99ff41c33f36ca67f8418）及preproc_data.m（6252 bytes，官方MD5 7723ddc5334f5aa1f473143251fdcffd），非商业科研、署名/来源保留。AUDIO.zip、EEG.zip、Dryad及新权重均未批准，本轮不下载。
+
+2203 range探测成功，只读取ZIP中央目录：18个S*_data_preproc.mat，解压总1,838,944,108 bytes，archive+extraction约3.43GiB，低于12GiB；磁盘检查同时为原5seed尚未生成latent cache留预算，始终保留≥20GiB。已启动仅白名单下载/官方MD5核对及验证路径留在独立external_dtu/extracted的提取，保留archive/partial/旧资料，无永久删除。schema/header检查排队，尚未作外部模型表现或调整Sparr候选。
+
+官方脚本审阅发现预处理会移除无wavB的单人trial，不能由原实验说明推断预处理包包含单人trial；EXG1/2 mastoid可能仍参与平均参考，必须读实际label选scalp并报告参考，不能仅取前64列；wavA/B是filterbank/abs^.3后的64Hz envelope，不能当raw audio提XLSR。后续正式适配与独立trial→person评估另冻协议，Sparr全部选择完成后一次评估，零样本与外部训练/校准分开。

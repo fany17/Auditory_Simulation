@@ -72,7 +72,8 @@ def main(seed,device):
     mod=native();original=mod.TransformerCLIP(cfg()).to(device)
     checkpoint=torch.load(pre/'best_validation.pt',map_location=device,weights_only=True);assert checkpoint['seed']==seed
     original.load_state_dict(checkpoint['model']);model=Decoder(original.eeg).to(device)
-    model.head.load_state_dict(torch.load(head/'best_validation.pt',map_location=device,weights_only=True)['head'])
+    head_checkpoint=torch.load(head/'best_validation.pt',map_location=device,weights_only=True)
+    assert head_checkpoint['seed']==seed;model.head.load_state_dict(head_checkpoint['head'])
     del original,checkpoint
     folder=ROOT/f'finetune/native_P_seed{seed}';folder.mkdir(parents=True,exist_ok=False)
     dump(folder/'resolved_config.json',{'seed':seed,'budget':budget,'initial_encoder_sha256':sha(pre/'best_validation.pt'),
@@ -81,6 +82,13 @@ def main(seed,device):
         'objective':'original global64 3s negativePearson eps1e-6','test_read':False})
     train=RawWindows('train');val=RawWindows('val');started=time.time()
     best=validate(model,val,device);initial=best;selected=-1;stale=0;updates=0;history=[]
+    reference=read(head/'completed.json')['best_validation'];difference=abs(best-reference)
+    tolerance=protocol['incumbent_loss_absolute_tolerance'];assert tolerance==1e-4
+    dump(folder/'INCUMBENT_EQUIVALENCE.json',{'raw_reencoded_B64_validation_loss':best,
+        'original_cached_B512_validation_loss':reference,'absolute_difference':difference,
+        'prespecified_absolute_tolerance':tolerance,'passed':difference<=tolerance,
+        'full_validation_windows':30500,'optimizer_steps_before_check':0,'test_read':False})
+    assert difference<=tolerance,'native P incumbent mismatch; investigate paths/norm/grid/source before any training'
     torch.save({'model':model.state_dict(),'seed':seed,'epoch':-1,'validation_loss':best},folder/'best_validation.pt')
     opt=torch.optim.Adam([{'params':model.encoder.parameters(),'lr':budget['EEG_lr']},
         {'params':model.head.parameters(),'lr':budget['head_lr']}],weight_decay=0.)

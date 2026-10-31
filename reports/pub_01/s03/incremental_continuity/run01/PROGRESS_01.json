@@ -1,0 +1,97 @@
+{
+  "epoch": 1793477159.4133835,
+  "source_guards_all_match": {
+    "BASELINE_PROTOCOL.json": true,
+    "INCREMENTAL_PROTOCOL.json": true,
+    "FULL_QUEUE_PROTOCOL.json": true,
+    "FINETUNE_PROTOCOL.json": true,
+    "EMA_PROTOCOL.json": true,
+    "EVALUATION_RULES.json": true
+  },
+  "pretrain_completed": {
+    "1024": {
+      "seed": 1024,
+      "epochs": 24,
+      "updates": 19680,
+      "selected_epoch": 8,
+      "best_validation": 3.9736979688916887,
+      "stopping": "VALIDATION_PATIENCE15",
+      "seconds": 4051.133745908737,
+      "peak_GPU_bytes": 5508522496,
+      "test_payload_loaded": false,
+      "stochastic_actual_presentations": 2519040,
+      "sample_presentations": 483655680,
+      "source_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+      "fresh_initialization": true
+    },
+    "31415": {
+      "seed": 31415,
+      "epochs": 26,
+      "updates": 21320,
+      "selected_epoch": 10,
+      "best_validation": 4.01541793346405,
+      "stopping": "VALIDATION_PATIENCE15",
+      "seconds": 4394.759388685226,
+      "peak_GPU_bytes": 5508522496,
+      "test_payload_loaded": false,
+      "stochastic_actual_presentations": 2728960,
+      "sample_presentations": 523960320,
+      "source_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+      "fresh_initialization": true
+    }
+  },
+  "screen_completed_cells": [
+    {
+      "run": "native_seed1024",
+      "epochs": 12,
+      "updates": 47340
+    },
+    {
+      "run": "m2_h16_seed1024",
+      "epochs": 9,
+      "updates": 35505
+    },
+    {
+      "run": "native_seed31415",
+      "epochs": 12,
+      "updates": 47340
+    }
+  ],
+  "actual_processes": [
+    "4114164    01:22:37  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline_seed1024_driver.py",
+    "4114165    01:22:37  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline_seed2026_driver.py",
+    "4114166    01:22:37  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline_seed31415_driver.py",
+    "4114168    01:22:37 99.2 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py pretrain --seed 2026 --device cuda:1",
+    "4119956    01:16:29  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline_seed42_driver.py",
+    "4119957    01:16:29  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline_seed12345_driver.py",
+    "4119958    01:16:29 99.7 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py pretrain --seed 12345 --device cuda:1",
+    "4119959    01:16:29 99.7 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py pretrain --seed 42 --device cuda:1",
+    "4152294       43:45  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/screen_seed1024_driver.py",
+    "4152295       43:45  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/screen_seed2026_driver.py",
+    "4152296       43:45  0.0 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/screen_seed31415_driver.py",
+    "4176245       18:14  0.1 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue.py",
+    "4179822       15:02 96.7 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py head --seed 1024 --device cuda:0",
+    "4184997       09:19 99.1 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py head --seed 31415 --device cuda:0",
+    "4186123       08:18  0.6 python3 /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_dtu_fetch.py",
+    "4187869       06:33  0.2 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py --kind finetune --seed 1024 --device cuda:0",
+    "4187870       06:33  0.2 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py --kind finetune --seed 2026 --device cuda:1",
+    "4187871       06:33  0.2 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py --kind finetune --seed 31415 --device cuda:0",
+    "4187872       06:33  0.3 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py --kind finetune --seed 42 --device cuda:1",
+    "4187873       06:33  0.3 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py --kind finetune --seed 12345 --device cuda:1",
+    "4187874       06:33  0.2 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py --kind ema",
+    "4188511       05:43 99.1 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py --condition m2_h16 --seed 31415 --device cuda:0 --stage screen",
+    "4189803       04:39  4.7 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_dtu_schema.py",
+    "4192942       01:31 98.8 /home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py --condition static_m2_h16 --seed 1024 --device cuda:0 --stage screen"
+  ],
+  "GPU": "0, 99 %, 9838 MiB, 46068 MiB\n1, 100 %, 17643 MiB, 46068 MiB\n",
+  "disk_free_bytes": 53652590592,
+  "external_download": {
+    "file": "DATA_preproc.zip",
+    "bytes": 1241513984,
+    "expected": 1838947136,
+    "elapsed_seconds": 494.64043164253235,
+    "state": "DOWNLOADING"
+  },
+  "test_read": false,
+  "performance_conclusion": null
+}

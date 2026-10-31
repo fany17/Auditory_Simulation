@@ -84,3 +84,5 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 18条件×3seed矩阵已获协调独立审阅并冻结INCREMENTAL_PROTOCOL.json。真实两forward TBPTT、global64混record单次更新、teacher同mask/统计、固定6104train/752val有效块等工程检查通过；三screen driver等待各自完整pretrain/cache。独立FULL_QUEUE控制器已启动，严格54完整screen→五family×3full→固定主模型五seed/匹配controls，不丢失败seed、不继承screen权重、不读test；协调复核source/实际状态通过。历史wrapper六family非零残差复现误差0，15组Hann支持范围和EMA边界通过。原活跃baseline/inc/train来源不再编辑。
 
 强FT及EMA新入口已完成真实train/val工程检查（随机权重/预测只为验证，全部丢弃，不作性能选择），独立phase审阅/冻结推进中。暴露核查确认sub-077旧HDPS train/val/test，sub-017独立性未证及run05质量分层；没有新增补充模型分数。外部数据仅官方metadata查询及具体提案，未下载载荷。证据与限制见本轮EXPOSURE_AUDIT.md、INCREMENTAL_MATRIX_DRAFT.md、各ENGINEERING_CHECK.json；仍ACTIVE，未到科学验收或goal完成。
+
+2026-11-01后续：31415预训练26epoch/21320更新、best10按patience15完成；1024/31415均自动进入native head与真实18条件screen。强FT/EMA获协调审阅并冻结排队，FT先以固定1e−4误差核对真实原P incumbent完整val loss才允许更新。EVALUATION_RULES冻结原weighted endpoint、交叉seed/person重采样、M6/7近似调整区间、共享音频family敏感性与固定donor；最终模型/checkpoint/mask清单锁定前仍不test。协调按用户全量公开EEG目标批准唯一DTU DATA_preproc.zip/preproc_data.m两文件扩展，2203 range确认18MAT、zip+extraction3.43GiB，白名单下载/验证/安全提取及schema审计排队，无外部模型成绩。此协调范围决定不写成用户点名DTU；未批准AUDIO.zip/EEG.zip/Dryad/新权重，主Sparr split/norm不改。
