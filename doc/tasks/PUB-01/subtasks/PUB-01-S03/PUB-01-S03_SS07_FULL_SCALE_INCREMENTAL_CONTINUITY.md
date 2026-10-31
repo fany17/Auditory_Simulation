@@ -79,4 +79,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 
 ## 6. 执行记录
 
-2026-11-01：协调端已创建持续goal；核对SS06结束、worktree干净、2×L40空闲。当前为授权后准备/启动阶段，尚未宣称任何SS07训练完成或性能提升。
+2026-11-01：协调端已创建持续goal；原完整baseline五seed预先冻结并运行。seed1024已完成24epoch/19680更新预训练、按patience15停止、选择epoch8；其余seed仍运行。此为新随机初始化的正式结果，不是重用旧EEG权重，也未宣称包络提升。
+
+18条件×3seed矩阵已获协调独立审阅并冻结INCREMENTAL_PROTOCOL.json。真实两forward TBPTT、global64混record单次更新、teacher同mask/统计、固定6104train/752val有效块等工程检查通过；三screen driver等待各自完整pretrain/cache。独立FULL_QUEUE控制器已启动，严格54完整screen→五family×3full→固定主模型五seed/匹配controls，不丢失败seed、不继承screen权重、不读test；协调复核source/实际状态通过。历史wrapper六family非零残差复现误差0，15组Hann支持范围和EMA边界通过。原活跃baseline/inc/train来源不再编辑。
+
+强FT及EMA新入口已完成真实train/val工程检查（随机权重/预测只为验证，全部丢弃，不作性能选择），独立phase审阅/冻结推进中。暴露核查确认sub-077旧HDPS train/val/test，sub-017独立性未证及run05质量分层；没有新增补充模型分数。外部数据仅官方metadata查询及具体提案，未下载载荷。证据与限制见本轮EXPOSURE_AUDIT.md、INCREMENTAL_MATRIX_DRAFT.md、各ENGINEERING_CHECK.json；仍ACTIVE，未到科学验收或goal完成。

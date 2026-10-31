@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "kind": "REAL_TRAIN_ENGINEERING_RANDOM_NATIVE_ENCODER; no performance/config selection",
+  "global_train_windows": 252454,
+  "updates_per_full_epoch": 3945,
+  "mixed_record_batches": 420,
+  "mixed_record_once_loss_and_once_optimizer_forward_max": 0.0,
+  "mixed_record_optimizer_weight_max": 9.313225746154785e-10,
+  "two_forward_no_detach_first_input_gradient": 0.0005814491305500269,
+  "explicit_detach_first_input_gradient": null,
+  "detach_preserves_numeric_state_prediction_exact": true,
+  "cross_record_state_rejected": true,
+  "record_phase_epoch_state_restart_repeated_val_identical": true,
+  "prior_only_validation_equals_manual": true,
+  "same_teacher_valid_counts": {
+    "future": 1145,
+    "current": 1145
+  },
+  "teacher_scaling": "one common TRAIN-only mean/std for current/future",
+  "actual_records": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz"
+  ],
+  "old_checkpoint_or_latent_loaded": false,
+  "test_payload_or_scores": false,
+  "all_probe_weights_discarded": true,
+  "fixed_prediction_independent_masks": {
+    "train": {
+      "eligible": 6104,
+      "excluded": 0
+    },
+    "val": {
+      "eligible": 752,
+      "excluded": 0
+    }
+  }
+}

@@ -1,0 +1,485 @@
+{
+  "frozen": true,
+  "epoch": 1793474534.4691758,
+  "authorization": "coordinator approved18x3screen -> each5family full -> fixed5seed primary/controls after actual engineering checks; no extra permission wait",
+  "parent_baseline_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+  "seed_extension_sha256": "f77efa810671f26122a5c71b48721a6388665bfb3c61df2a97f9e291e6b031b1",
+  "screening_seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "final_seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301"
+  },
+  "conditions": [
+    {
+      "id": "m1_h16",
+      "family": "m1",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m1_h32",
+      "family": "m1",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m2_h16",
+      "family": "m2",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m2_h32",
+      "family": "m2",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m3_h16",
+      "family": "m3",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "future",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "m3_h32",
+      "family": "m3",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "future",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "m4_h16",
+      "family": "m4",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m4_h32",
+      "family": "m4",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m5_h16",
+      "family": "m5",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m5_h32",
+      "family": "m5",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "native",
+      "family": "native"
+    },
+    {
+      "id": "static_m2_h16",
+      "family": "static",
+      "reference_family": "m2",
+      "width": 16
+    },
+    {
+      "id": "m2_current_h16",
+      "family": "m2",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_alignment",
+      "family": "static_alignment"
+    },
+    {
+      "id": "m3_reconstruct_h16",
+      "family": "m3",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "current",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "m3_reconstruct_h32",
+      "family": "m3",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "current",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "output_prior_h16",
+      "family": "output_prior",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m5_prior_h16",
+      "family": "m5",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past",
+      "mode": "prior_only"
+    }
+  ],
+  "full_conditions": [
+    {
+      "id": "m1_h16",
+      "family": "m1",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m1_h32",
+      "family": "m1",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m2_h16",
+      "family": "m2",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m2_h32",
+      "family": "m2",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m3_h16",
+      "family": "m3",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "future",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "m3_h32",
+      "family": "m3",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "future",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "m4_h16",
+      "family": "m4",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m4_h32",
+      "family": "m4",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m5_h16",
+      "family": "m5",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m5_h32",
+      "family": "m5",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "native",
+      "family": "native"
+    },
+    {
+      "id": "static_m2_h16",
+      "family": "static",
+      "reference_family": "m2",
+      "width": 16
+    },
+    {
+      "id": "m2_current_h16",
+      "family": "m2",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_alignment",
+      "family": "static_alignment"
+    },
+    {
+      "id": "m3_reconstruct_h16",
+      "family": "m3",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "current",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "m3_reconstruct_h32",
+      "family": "m3",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past",
+      "teacher": "current",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "output_prior_h16",
+      "family": "output_prior",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m5_prior_h16",
+      "family": "m5",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "past",
+      "mode": "prior_only"
+    },
+    {
+      "id": "m1_current_h16",
+      "family": "m1",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_m1_h16",
+      "family": "static",
+      "reference_family": "m1",
+      "width": 16
+    },
+    {
+      "id": "m1_current_h32",
+      "family": "m1",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_m1_h32",
+      "family": "static",
+      "reference_family": "m1",
+      "width": 32
+    },
+    {
+      "id": "m2_current_h32",
+      "family": "m2",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_m2_h32",
+      "family": "static",
+      "reference_family": "m2",
+      "width": 32
+    },
+    {
+      "id": "m3_current_h16",
+      "family": "m3",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "current",
+      "teacher": "future",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "static_m3_h16",
+      "family": "static",
+      "reference_family": "m3",
+      "width": 16
+    },
+    {
+      "id": "m3_current_h32",
+      "family": "m3",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "current",
+      "teacher": "future",
+      "aux_weight": 0.01
+    },
+    {
+      "id": "static_m3_h32",
+      "family": "static",
+      "reference_family": "m3",
+      "width": 32
+    },
+    {
+      "id": "m4_current_h16",
+      "family": "m4",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_m4_h16",
+      "family": "static",
+      "reference_family": "m4",
+      "width": 16
+    },
+    {
+      "id": "m4_current_h32",
+      "family": "m4",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_m4_h32",
+      "family": "static",
+      "reference_family": "m4",
+      "width": 32
+    },
+    {
+      "id": "m5_current_h16",
+      "family": "m5",
+      "width": 16,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_m5_h16",
+      "family": "static",
+      "reference_family": "m5",
+      "width": 16
+    },
+    {
+      "id": "m5_current_h32",
+      "family": "m5",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "current"
+    },
+    {
+      "id": "static_m5_h32",
+      "family": "static",
+      "reference_family": "m5",
+      "width": 32
+    },
+    {
+      "id": "output_prior_h32",
+      "family": "output_prior",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past"
+    },
+    {
+      "id": "m5_prior_h32",
+      "family": "m5",
+      "width": 32,
+      "tau": 30.0,
+      "conditioning": "past",
+      "mode": "prior_only"
+    }
+  ],
+  "screen_budget": {
+    "epochs": 12,
+    "patience": 4,
+    "window_presentations_per_epoch": 252454,
+    "updates_per_epoch": 3945,
+    "max_updates_per_condition_seed": 47340
+  },
+  "full_budget": {
+    "epochs": 250,
+    "patience": 10,
+    "updates_per_epoch": 3945,
+    "max_updates_per_condition_seed": 986250
+  },
+  "precision": {
+    "dtype": "float32",
+    "TF32_matmul": false,
+    "TF32_cudnn": true
+  },
+  "optimizer": "Adam.001/no weightdecay/no clip,shuffle=false,original global64 grouping",
+  "checkpoint_selection": "min all30500val3s negativePearson each epoch,earliest exact tie; mode identical to training including prioronly",
+  "configuration_selection": "mean3seed native fullrecord Hann60s->person valmacro; never changes checkpoint rule",
+  "tie_break": [
+    "smaller width for equal unrounded mean",
+    "family order m1,m2,m3,m4,m5",
+    "lexical condition id"
+  ],
+  "full_selection_rules": "after all18x3 completed/failed logged choose bestwidth per eachfamily on paired3 val means; EACH5family fresh full250/pat10 x3; then bestfull-val primary x5 with family/width exact current+static controls x5 and applicable teacher/staticlag/outputprior/prioronly controls, ALL samefull headbudget; never inherit screen weights",
+  "full_stage_gate": "immutable FULL_SELECTION.json child with parent protocol hash/approved ids; protocol never rewritten for selections",
+  "history": "native rawsupport i-2/i-4..., parity streams,record/phase/epoch reset; global64 mixed-record parts share ONE loss/optimizer;detach only afterstep",
+  "first_two_windows": "included nohistory, no selective exclusion",
+  "teacher": {
+    "future_index_shift": 2,
+    "both_modes_valid_mask": "i+2<record_end",
+    "fit_mean_std": "same perseed allTRAIN pooled48 latent features only; std floor1e-5",
+    "aux_weight": 0.01,
+    "student_support_end_equals_future_teacher_start": true,
+    "extra_costs_separate": true
+  },
+  "fixed_masks": {
+    "train": "c92ea1d38a7262273a20dba4e305e56be7f44aea9d89ba56fcbfffdee03ec73e",
+    "val": "c655eda48e136de39c686bcedd04049d4bfc4414bfd201d38119aea36f869c22"
+  },
+  "prediction_failures": "nonfinite/constant prediction fails condition,never removes eligible blocks; allmacro finite required",
+  "EMA_control": {
+    "taus_seconds": [
+      0,
+      0.0625,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "where": "entire nativeP record prediction AFTER originalHann fusion; resetrecord/coveragegap",
+    "selection": "one tau by mean paired3 valmacro, exacttie smaller tau; lockbeforetest and reuse5seed",
+    "extra_NN_training": false
+  },
+  "strong_control": {
+    "method": "nativeP encoder+head finetuning, priorbest same seed; separate phase protocol beforetest",
+    "max_epochs": 5,
+    "patience": 3,
+    "EEG_lr": 1e-05,
+    "head_lr": 0.001,
+    "all_extra_costs_disclosed": true
+  },
+  "test_operations_in_this_protocol": false,
+  "claims": "only train/val exploration; all oldtests exposed/internal; no innovation claim fromfive names; goalnotcomplete byengineeringPASS"
+}
