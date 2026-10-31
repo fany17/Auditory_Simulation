@@ -4,6 +4,8 @@
 
 唯一计算2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101；本地reports/pub_01/s03/incremental_continuity/run01。新cache≤25GB、余量≥20GB、best/latest有界，不删历史/不动他人进程。沿用SS06 worktree/branch/PR6 Draft，可commit/push、不合并，不动主目录CNN/TRF/stash，无患者/远端Git/擅自新数据。持续goal不以smoke、技术PASS或单seed分数完成。
 
+2026-11-01执行接续：五native完整两阶段已完成，screen/full/FT按冻结矩阵继续；full v2 controller14537。最终调用链经实际VAL与隔离synthetic检查、协调独立审阅，source commit4e33d69；EVALUATION_EXECUTOR_PROTOCOL冻结，自动队列88448已实际live/WAIT_ALL_FIXED_TRAINING。不得重启或改活跃冻结源。其依既定门完成最终checkpoint→五seed实际最终weights的VAL桥→固定mask→一次内/外评估→聚合，真实READY尚未建立，不读test/外部NN提前成绩。具体状态看服务器status与本轮协议/proof，不以历史快照计数代替进程核验。DTU仅DATA_preproc.zip/preproc_data.m已协调批准并核验，唯一当前3s适配/endpoint已冻结；不扩大下载白名单。原始预测独立复算、图文解释及科学验收仍待完成。
+
 ---
 以下是旧交付/STOP历史，非当前路由。
 # 当前交付：SS06 run02 COMPLETED / PASS_WITH_LIMITATION（2026-10-26）
