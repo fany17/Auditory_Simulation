@@ -90,3 +90,7 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 首个完整native两阶段seed1024现已完成：pre24epoch/19680更新、head250epoch/986250更新，head选249（原预算上限结束，不宣称已收敛）。随后FT真实incumbent的raw/B64 loss与cached/B512绝对差1.3955e−8，30500窗/0optimizer-step核对PASS，FT已进入训练。DTU两文件官方MD5/提取及全18人1080trial可读性/通道/事件审计完成，3200×66/64Hz，wavA/B各3200；详细限制见DTU_INTAKE_REPORT，未评分。
 
 协调批准仅未来full阶段采用工程v2：逐tensor finite的CPU同步改为GPU stack/all后一次host bool，保留完整每步检查。FINITE_PROFILE同真实梯度/初始权重/Adam状态差0、逐tensor NaN/±Inf检测一致，计时为共享GPU上的工程参考，不称整训练bitwise。FULL_ENGINEERING_AMENDMENT及精确FULL_V1_V2_SOURCE.diff冻结；接管前实核旧等待controller exact argv/无children/WAIT54/无fullcells，仅停止其等待进程，旧source/lease/status保留，所有baseline/screen/FT/EMA不重启。新full controller PID14537独立lease/status，future full产物同时关联原科学protocol与amendment。当前screen完成7/54，仍无完整三seed比较或test，SS07 ACTIVE。
+
+后续快照：五个native均完成完整两阶段，pre24/27/26/24/25按pat15、head均250/986250按预算上限停止；五条实际曲线及CSV已交，不声称收敛。FT五个incumbent全通过，最大差3.70e−8；1024/31415正式FT各5epoch完成。screen已24/54（PROGRESS_02快照）。EMA数值修正独立amendment不改科学tau/seed规则，真实VAL752块tau0差0，最终预设tau0；旧source和未启动等待driver的安全接管证据保留。DTU唯一adapter/endpoint已协调冻结、未作实际NN评分。
+
+最终调用链及全账本/同key子集/实际批次边界经真实VAL与隔离synthetic检查、协调独立复核通过，批准冻结EVALUATION_EXECUTOR_PROTOCOL并按既定门自动接续。门序为全部固定训练/选择完成→最终checkpoint锁定→每五seed真实最终权重VAL桥（至少两record且含非64起点）→预测无关mask/shuffle锁定→一次内/外评估→严格聚合。内部技术失败停止该seed后续外部、低分不停止；所有54screen与5shared pretrain全成本入账、共享仅计一次。工程通过/自动聚合均不代表科学goal完成；真实结果和原始预测独立复算/解释仍待后续。

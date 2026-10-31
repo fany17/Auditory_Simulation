@@ -1,0 +1,22 @@
+{
+  "old_pid": 4187874,
+  "exact_argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py",
+    "--kind",
+    "ema"
+  ],
+  "children": "",
+  "status": {
+    "state": "WAIT_COMPLETE_NATIVE_HEAD",
+    "required_seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "time": 1793479827.5407555
+  },
+  "EMA_selection_and_results_absent": true,
+  "time": 1793479838.7710931,
+  "scope": "stop only waiting EMA driver for numerical-alignment amendment; all training untouched"
+}
