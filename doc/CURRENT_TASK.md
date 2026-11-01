@@ -1,6 +1,8 @@
-# 当前执行：SS07 warm round02全训练/汇总完成，隔离修复wholeVAL复核（2026-11-01）
+# 当前执行：SS07 warm round02复核完成，交付报告并准备D4方案（2026-11-01）
 
-最新实际状态：18/18fit全部5epoch完成，合计90epoch/355050更新/22720860监督窗，results01全格CSV/三图已生成；训练不重启。wholeVAL v1在首格frozen_p/1024的wave门失败（reset49正确，global64重编码与record256缓存执行坐标不同，另有stack/astype布局和encoder参数grad标志路径差），旧source/日志/失败保留。三个有界probe已定位原cache/fullnative路径可稳定精确重现；独立v2候选2df9f4fce5b3f8d5971734b6a48b52eae54cac003e0c6eae14b891d66e5dd9c1恢复原执行方式，绝对wave1e−6及原所有r门不变，normalized仅另报，待协调核查后执行。当前不称wholeVAL通过或科学goal完成；以下启动记录为历史。追加TRAIN诊断已完成有限制并归档，不改变warm设计。
+最新实际状态：18/18fit全部5epoch完成，90epoch/355050更新/22720860监督窗，全格CSV/三图齐备；训练不重启。wholeVAL v1首格失败原样保留，恢复真实cache/RawWindows执行路径的独立v2（source2df9f4f、协议6fc0f00a…4d2c9）已实际完成18格/549000窗/13536块，wave绝对差全0，原1e−6主门全部通过，未改训练/权重/分数/选点。协调原样写入COORDINATOR_RESULT_REVIEW，technical PASS_WITH_LIMITATIONS / scientific NO_STABLE_INCREMENTAL_HISTORY_BENEFIT_ESTABLISHED，goal仍ACTIVE。run02/REPORT.md逐图解释及完整限制已写；以下启动/失败进度均为历史。
+
+当前仅准备最小D4可审方案，检验控制当前EEG/原P后的dense历史相对summary条件预测贡献；尚未执行新拟合。依据是已完成SOURCE-TRAIN D1/D2/D3，不凭13%能量直接扩容，也不推进负向的仿射校正。只既有TRAIN/VAL、固定3seed、有限线性/岭probe、同容量当前/更早past控制；方案交协调审定后再执行，无新NN架构/下载/test/DTU推理。warm中文报告/轻量归档/提交仍优先。
 
 唯一当前节点仍PUB-01-S03_SS07 / ACTIVE，持续goal尚未达到。round01全部54screen、37唯一full、五native/FT、五seed统一内部/DTU评分及实际raw v1/metric v2复核已完成；该轮controller/eval/review正常结束。实际M4−P内部−.000621、DTU+.000149，M7近似区间均跨0；未建立稳健超越、历史机制或投稿充分性。当前后续warm round02正式训练见下段。
 

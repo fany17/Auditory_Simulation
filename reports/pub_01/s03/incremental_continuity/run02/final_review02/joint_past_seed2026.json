@@ -1,0 +1,55 @@
+{
+  "condition": "joint_past",
+  "seed": 2026,
+  "selected_epoch": 4,
+  "windows": 30500,
+  "records": 49,
+  "persons": 49,
+  "blocks": 752,
+  "checkpoint_sha256": "f3b7d4133e3d36f0632f192dabbcbb85daba22d816d5762581455e44a4d9352c",
+  "actual_weight_changes": {
+    "encoder": {
+      "scalars": 3372360,
+      "changed_scalars": 3372063,
+      "max_absolute_change": 0.035964250564575195,
+      "tensors": 164
+    },
+    "head": {
+      "scalars": 257,
+      "changed_scalars": 257,
+      "max_absolute_change": 2.438201904296875,
+      "tensors": 2
+    },
+    "context_core": {
+      "scalars": 4496,
+      "changed_scalars": 4496,
+      "max_absolute_change": 0.7933945059776306,
+      "tensors": 9
+    },
+    "residual": {
+      "scalars": 408,
+      "changed_scalars": 408,
+      "max_absolute_change": 1.1029443740844727,
+      "tensors": 2
+    }
+  },
+  "fresh_minus_primary_reference_wave_max_absolute": 0.0,
+  "reference_wave_max_absolute": 377.5572204589844,
+  "fresh_wave_max_absolute": 377.5572204589844,
+  "normalized_wave_error": 0.0,
+  "original_absolute_wave_gate_1e6_passed": true,
+  "normalized_wave_gate_1e6_passed": true,
+  "encoder_geometry": "joint original global64",
+  "encoder_eval_and_no_grad": true,
+  "encoder_parameter_grad_flags_match_original_forward": true,
+  "fresh_VAL3s_r": 0.15700532892753213,
+  "fresh_VAL60s_person_r": 0.17297709144951723,
+  "VAL3s_absolute_difference": 7.556466286029462e-10,
+  "VAL60s_absolute_difference": 0.0,
+  "max_block_difference": 3.3306690738754696e-16,
+  "max_person_difference": 5.551115123125783e-17,
+  "same_array_independent_formula_max_difference": 3.3306690738754696e-16,
+  "primary_wave_acceptance": "original absolute1e-6, normalized reported only",
+  "passed": true,
+  "test_read": false
+}

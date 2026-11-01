@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — round01有限制交付；warm round02源码/实际a04工程独立复核通过，18格共同实现正式两GPU train/val |
+| Status | ACTIVE — round01/warm round02实际结果与复核有限制交付；未建立稳定历史增益，现仅准备D4最小方案 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -82,6 +82,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 三级审阅：技术可复现；科学结论与证据相称；父任务公开/患者边界和原有冻结结果不变。仅就已授权公开EEG方法目标持续推进，不把本任务完成等同PUB-01全部完成或论文接受。
 
 ## 6. 执行记录
+
+2026-11-01 warm round02最终交付：18fit/90epoch/355050更新/22720860窗完整完成。v1首格wave检查失败保留；三个有界probe定位encoder原record256/tail、np.stack/astype stride、原wrapper/grad标志上下文不符。独立v2 source2df9f4f/协议6fc0f00a恢复原实际路径后，全18/549000窗/13536块重放完成，wave绝对差0，原1e−6主门全部通过；mean3s最大9.35e−10/mean60s5.55e−17，未改阈值/训练/权重/分数/选点。协调独立读31source/proof、90输入、18checkpoint与三图并原样写入RESULT_REVIEW；frozen past胜继续P3/3但对current2/3较低，joint past对current3/3较低，未建立稳定历史收益。技术PASS_WITH_LIMITATIONS、本轮阴性有效、Parent PASS，科学goal仍ACTIVE。中文REPORT/全格CSV/三图和旧失败在run02；只原TRAIN/VAL，没有新测试或其他支线。随后按明确指令准备D4最小可审条件预测probe方案，未执行新拟合，仍不据13%能量直接扩容。
 
 2026-11-01追加SOURCE-TRAIN诊断：协调明确授权后先冻结独立train_diagnostics/run01/DEFINITION及13项source协议，在2203仅CPU1线程、CUDA不可见、nice15/idle I/O执行一次，3seed各426 TRAIN/252454窗/252028相邻对、共享目标D3仅一次，零记录错误。六bin保留centered窗内latent能量12.84%/13.52%/13.25%；双向跨半段正仿射held/raw误差比均>1，未获稳定校正；D3固定3/6/12s相关仅描述，不能推出条件历史无用。协调另行核验全部source/cache映射/CSV重聚合及三张实际图，接受有限制描述性证据；Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS，非新方法/有用信息损失证明。三图中文REPORT/静态HTML已保存，归档run_id=20261101_pub01_s03_ss07_train_diagnostics。70人/426record/41story标识与目标路径明确区分，不把426当独立刺激。warm18fit与其报告/复核完全不变，仍优先完整真实结果交付；不新增测试/拟合/下载，goal ACTIVE。更丰富历史需先审查条件预测贡献，未据能量比例直接扩容。
 
