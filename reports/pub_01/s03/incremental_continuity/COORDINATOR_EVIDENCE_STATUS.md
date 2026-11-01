@@ -16,6 +16,7 @@
 | 输出一致性能否代替准确度 | [D6图三及review](readout_attribution/run01/REVIEW.md)：P* overlap误差最小而r最低；固定Hann误差恒等已实际验证 | 不能由一致性单独推断准确度，亦不能据此直接训练一致性loss；r、target MSE与融合分散收益需同时解释 |
 | 固定读出增益是否在旧内部测试仍存在 | [D7](internal_generalization/run01/REPORT.md)：36/36固定角色–split；P*/P-only/Ccap三seed加权r=.160248/.164642/.168943，Ccap对前两者在seen/held-out每个seed均正；全部36聚合和72缓存重建已独立核验 | 支持相对原冻结P和输出再读出的内部可重复点增益；旧测试已暴露，没有新的独立确认或历史机制证据 |
 | 是否已经超过原完整微调强基线 | [同三seed历史参考](internal_generalization/run01/COORDINATOR_HISTORICAL_FT_REFERENCE.json)：原P_FT均r=.1689447264，Ccap=.1689434862，配对均差−.0000012402且逐seed符号混合；同2044块/原2:1口径 | 点均值几乎一样，不能宣称优势、等效或非劣。P_FT额外5epoch联合微调与冻结encoder的TRAIN岭拟合/λ搜索成本不同；此项是事后历史参考，未改变D7预设矩阵 |
+| 读出改进在完整微调后的强encoder上是否仍存在 | [D8](finetuned_readout_transfer/run01/REPORT.md)：27/27固定岭解；P_FT/P-only/C/Ccap三seed VAL r=.174141/.177842/.180541/.182340，Ccap−P_FT均差+.008199、对P-only+.004498，各seed均正；3个原FT桥差0、全部30评分及18独立缓存重建通过 | 已得到定义明确的强FT之上的重复VAL开发增益，不能全归因原encoder较弱。尚未测该FT+Ccap的新测试表现；没有历史输入、新意或独立确认，不能把.182340直接与D7测试值相减 |
 
 D4–D6使用原3个seed、重复source VAL（49人/5个clip标识，部分与TRAIN同书家族）。它们不是独立复现实验，也不把多组λ或重复窗当独立样本。D6当前最强读出相对原P的开发差值不等同连续性收益或同容量、同优化成本优势。后续必须保留P-only及C/Ccap等强控制，不能退回只与原257参数head相比。
 
@@ -23,7 +24,7 @@ D4–D6使用原3个seed、重复source VAL（49人/5个clip标识，部分与TR
 
 | 目标要求 | 当前状态 | 可证明它的证据，而非替代品 |
 |---|---|---|
-| 可重复超过原强baseline | 已有相对冻结P/P-only的内部三seed增益；尚未超过完整P_FT强参考 | 强baseline下固定方法的逐seed/逐人结果，以及进一步可信新确认。不能把冻结P当唯一baseline，或将点均值接近称为等效 |
+| 可重复超过原强baseline | D8已在重复VAL上超过定义明确的完整P_FT，三seed方向一致；该新方法的测试泛化尚未验证 | 固定强baseline下的逐seed/逐人泛化，以及进一步可信确认。不能混用D8的VAL与D7的测试分数，或把开发增益当独立确认 |
 | 连续性独立贡献 | 迄今未建立；已有多种有效阴性 | 在强current与输出prior/容量/预算控制下的历史增量，以及保持当前EEG不变的内容/时间干预结果 |
 | 方法新意 | 未建立；常见模块、岭读出及平方扩展本身不构成充分贡献 | 对照一手相关工作明确新的可检验方法贡献，辅以相应消融/效率/适用边界。换名称不解决缺口 |
 | 泛化与统计 | 原Sparr测试及DTU已有暴露；同人/同刺激依赖存在 | 新的可信确认范围、预先冻结适配/评分，明确被试与刺激层级；不能将旧test改名新holdout |
@@ -36,6 +37,8 @@ D4–D6使用原3个seed、重复source VAL（49人/5个clip标识，部分与TR
 
 D7是**POST-HOC INTERNAL EXPLORATORY**。预设主要比较Ccap−P*、Ccap−Ponly的均差分别+.008695、+.004301，沿用原2/3 seen+1/3 heldout计权；不根据结果调整本轮模型或扩大网格。原完整P_FT在相同三seed/块/计权下与Ccap点均值几乎一样。该正向审计未补足超强baseline、独立确认、历史机制或创新缺口；完整review及归档由D7产物记录实际完成状态。
 
-下一步仅准备对应P_FT的TRAIN/VAL读出转移诊断，以D6开发证据和强baseline要求为依据，先核实FT缓存/归一化/选点/一次前向成本。不能直接把nativeP的统计和系数套到FT latent，也不以D7旧测试决定下一模型/λ/预算。新的连续性假说需给出强current、输出prior与历史干预对照，不能把重复岭调参当方法创新。
+D8已完成对应P_FT的TRAIN/VAL读出转移诊断：原426 TRAIN/49 VAL、三seed、三个角色×三个原定λ共27解，重新拟合FT TRAIN统计与a,b。原global64前向与历史FT验证loss差均0，主run wall386.589秒、848862主前向窗+300工程窗、NN更新0；全部27正规方程、30评分聚合及18独立缓存重建已核验，block r最大差3.33e−16。全文/三实际PNG已审阅，最终root review为PASS_WITH_LIMITATIONS，goal仍未完成。
+
+下一步准备以已建立的强FT+Ccap为共同起点的监督连续目标实验。先明确相同Hann物理目标支持下逐窗加权MSE与融合MSE的区别、岭正则在sum-output/mean-output尺度的换算、同初始化/更新/目标呈现及有限预算；若包含PCC，需单列块边缘部分窗口的目标支持差异。仅TRAIN/VAL开发，不因D7旧测试排名选模型，不扩大D8 λ网格。没有历史输入的融合监督也不能冒称历史贡献；新的状态方法仍需强current/输出prior及固定当前输入的历史干预。
 
 所有信号、权重、系数和数值计算仍在2203；本地仅代码与轻量报告。旧各轮结果冻结，PR#6不自动合并，不启动患者/STN或无关任务。

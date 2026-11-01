@@ -1,6 +1,6 @@
-# 当前入口：SS07 D7已交付冻结；D8强FT TRAIN/VAL正式执行
+# 当前入口：SS07 D8交付冻结；D9连续监督精确方案准备
 
-D7固定36项与独立72缓存重建全部完成、图文HTML归档冻结；Ccap与同三seed强P_FT近均值不证明超越/等效。D8具体[PLAN](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/PLAN.md)已批准，source/protocol已b659d39冻结；唯一PID541227正式原global64 FT TRAIN/VAL一次编码与27固定岭解，首seed VAL历史loss/首尾raw桥差0后进入TRAIN。FT TRAIN统计/a,b重拟合，原EEG输入norm不变；无NN更新、旧test/DTU/下载，旧D4-D7不重开。完整结果/独立review待，科学goal ACTIVE。CURRENT_TASK顶部为最新入口，以下运行/准备描述为历史。
+D8全部27解、实际30聚合/18缓存重建及全文三图独立review已有限制通过，完整[REPORT](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/REVIEW.md)与HTML run_id20261101_pub01_s03_ss07_finetuned_readout_transfer已归档。强FT当前读出VAL增益三seed正，仍非独立泛化/历史/创新；goal ACTIVE。当前D9仅准备同FT+Ccap起点、同Hann物理点/target的weighted-window vs fused-physical MSE具体PLAN/正则尺度/求解预算，先协调审定再执行。旧run均退出不重启，旧test/DTU关闭、无新数据；CURRENT_TASK顶部为最新入口，以下进度均历史。
 
 D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)实际独立review与中文HTML归档已完成有限制。当前只读盘点/准备D7冻结36角色-split方案，原3seed/已选λ/强current控制、仅既有seen/heldout，全部POST-HOC INTERNAL EXPLORATORY；先交协调审定，尚不测试/新拟合，不碰DTU/下载。旧D4-D6不按新结果重开，最新路由CURRENT_TASK顶部。
 

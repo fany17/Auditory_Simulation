@@ -1,5 +1,7 @@
 # PUB-01 — EEG 听觉解码竞品与任务基准表
 
+2026-11-01 SS07 D8：强FT epoch4冻结encoder/head上的27固定岭解完成，P_FT*/Ponly/C/Ccap三seed VAL r=.174141/.177842/.180541/.182340，Ccap两个primary均三seed正。全部FT历史loss/raw桥差0；实际27系数/30聚合/18缓存重建和全文三PNG独立review有限制通过，完整finetuned_readout_transfer/run01图文表/REVIEW与HTML归档齐备。新增TRAIN岭/标定/搜索成本真实，重复known-person VAL不称独立泛化或纯loss因果；普通ridge与平方不是方法创新，无历史输入，goal ACTIVE。D9仅精确连续监督PLAN准备，不打开旧test/DTU、不改D8λ。
+
 2026-11-01 SS07 D7：冻结current读出的36项旧内部评分完成、独立36聚合/72缓存重建及全文三图审阅通过，完整internal_generalization/run01/REPORT.md与REVIEW.md/HTML归档齐备。P*/P-only/Ccap原2:1加权r=.160248/.164642/.168943；Ccap对前两者每seed/组均正。同三seed历史完整P_FT=.168944726，与Ccap点均值几乎相同，配对方向混合，不能宣称超越/等效/非劣；额外预算与边界策略不同。旧测试POST-HOC INTERNAL EXPLORATORY，无独立确认或连续历史收益，goal ACTIVE。下一步仅准备P_FT TRAIN/VAL最小读出诊断及资源PLAN，不用旧test排名调参。
 
 2026-10-15交付：SS02 COMPLETED / PASS_WITH_LIMITATION。HDPS原100Hz/M、76人599对、test12776query：Top1/5/10=12.03/30.45/42.10%，shuffle Top1=.53%；Transformer原架构/public fold4/XLSR19、70训练/69seen/13heldout：2AFC=83.53/80.08%（加权82.38%）、EEG-only原Conv32包络r=.1688/.1403（加权.1593）。三运行独立review通过，完整论文条件未复现。M论文数字仍未核实，不与MWG20%比差；100–235候选原本存在固定公开索引。下述10-13等待记录为历史。

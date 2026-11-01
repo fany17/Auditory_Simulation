@@ -1,0 +1,92 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "goal_complete": false,
+  "scope": "D8 complete strong-FT TRAIN/VAL current-readout transfer; 27 learned fits plus3 frozen PFT baselines.",
+  "scientific_conclusion": "REPEATABLE_DEVELOPMENT_SET_GAIN_OVER_DEFINED_FULL_FT_BASELINE_AND_PONLY; INDEPENDENT_GENERALIZATION_HISTORY_AND_METHOD_NOVELTY_NOT_ESTABLISHED",
+  "reviewer": "Root coordinator, separate review of execution and actual artifacts; not external peer review.",
+  "evidence": {
+    "protocol_sha256": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+    "source_sha256": "3f4d4786daa1533b504d48300dd287ef36044d3e498425a9ce4b7456955365a0",
+    "numerical_audit_sha256": "f800ba4a3a860254ee9396bdb3c56e7ca056d43adb58cf48d8c2986e839009bd",
+    "audit_implementation_note_sha256": "dda13e11437f964da8112c005471202aba37d1cb3f35dac4d80a5dd7173f338c",
+    "audit_code_sha256": "68d23c1e7de206b7bf0f618f061ff5ee9a945412e626c20e994abe0fda8af3c9",
+    "completion_sha256": "dc99e0b3590645dba06ffb42e71dc52719cb46d2835e60c53fd7ad70952c7887"
+  },
+  "actual_review": {
+    "source_pins": 247,
+    "input_fingerprints": 523,
+    "full_actual_fit_count": 27,
+    "baseline_count": 3,
+    "exact_VAL_records": 49,
+    "exact_VAL_people": 49,
+    "exact_VAL_blocks": 752,
+    "all3_historical_FT_scalar_differences": 0,
+    "all6_samepath_original_unit_wave_differences": 0,
+    "normal_equation_max": 2.2415879916137804e-17,
+    "bias_constraint_max": 0,
+    "allscore_aggregation_max": 0,
+    "selected_cached_reconstructions": 18,
+    "cached_block_r_max": 3.3306690738754696e-16,
+    "cached_MSE_Hann_max": 5.095750210681871e-18,
+    "cached_3s_and_first4_max": 0,
+    "selection_exact": true,
+    "undefined3s": 0
+  },
+  "development_results": {
+    "P_FT_mean_r": 0.17414107459879757,
+    "Ponly_mean_r": 0.1778418093111921,
+    "C_mean_r": 0.18054058334553788,
+    "Ccap_mean_r": 0.18233993959935071,
+    "selected_lambdas": {
+      "Ponly": 0.01,
+      "C": 0.0001,
+      "Ccap": 0.01
+    },
+    "Ccap_minus_PFT": [
+      0.009059513957201282,
+      0.008437778220538344,
+      0.0070993028239197675
+    ],
+    "Ccap_minus_Ponly": [
+      0.0047208124916865435,
+      0.004718988381730127,
+      0.004054589991059204
+    ]
+  },
+  "presentation": {
+    "complete_Chinese_REPORT_actually_read": true,
+    "all_three_actual_PNGs_viewed": true,
+    "all27_and_alllambda_contrasts_shown": true,
+    "negative_lowregularization_Ccap_minus_C_retained": true,
+    "r_MSE_disagreement_mismatch_explained": true,
+    "Windows_raw_REPORT_sha256": "eb04fd407f92e148bc00d1c9fb03f15917026a3bbd8ce61ec128f1480db3912c",
+    "figures_sha256": {
+      "01_COMPLETE_MATRIX.png": "bf6efa00767fc48d92cebedd1e203f74946259aace2c3c040a68791bb04bbc00",
+      "02_FIXED_CONTRASTS.png": "2514d366c7ad6eb90222a206a9b0a80afa129fc879814b2fd800f85d233c99f2",
+      "03_CONTINUITY_MSE.png": "a10152617bf2542abb86b2a68b526106675c3c3ed2e34059e9a6b81d4bdbea30"
+    }
+  },
+  "limits": [
+    "Repeated development VAL with49known people and partial book-family overlap, no unseen-person/story or newtest confirmation.",
+    "Source_family fallback is story/clip ID, not proven independent book/speaker family. Root initial metadata-schema audit failure and exact correction preserved before any reconstruction.",
+    "27 supervised ridge fits, TRAIN calibration and extra encoding have real additionalcost; not equalcapacity/budget or pure objective-change control.",
+    "Ccap selectedlambda differs from C; squaredfeature gain depends onregularization. At1e-4 Ccap-minusC negative all3seeds.",
+    "Ccap improvesr but worsens fusedMSE versusC; loweroverlap notaccuracy proof.",
+    "Nohistory input or continuity training inD8; previoushistorynegative results remain.",
+    "Full prescribed P_FT budget means5extraepochs, not proof of convergence or bestpossible baseline; no SOTA claim.",
+    "OriginalFT has no saved fullVALwaveform: historical scalar plus bounded samepathwave bridges are asdeclared, not fullhistoricalwave replay.",
+    "Commonridge andsquare expansion do not establish ICML/NeurIPS novelty or submission sufficiency."
+  ],
+  "budget": {
+    "main_wall_seconds": 386.58878469467163,
+    "main_CPU_seconds": 1183.993830264,
+    "main_encoder_head_windows": 848862,
+    "extra_bridge_windows": 300,
+    "NN_updates": 0,
+    "new_NPY_total_bytes": 5867335680,
+    "combined_NPY_bytes": 24469431456,
+    "source_and_alloldruns_unchanged": true
+  },
+  "close_this_run": "Archive actual REPORT/REVIEW/figures and unchanged coordinator evidence, normal commit/push PR6 branch withoutmerge. Do not modify frozenD8 or markparentgoal complete.",
+  "next_authorized_preparation": "Develop precise bounded continuous supervised objective plan on strongFT+Ccap starting point, preserving strongcurrent andoutput-only references; exactcommon physicaltarget support, Hann weights, regularizer scale, initialization, step/samplebudget and validation-only selection. No automatic newmodel fit/test/DTU before concreteplan frozen."
+}
