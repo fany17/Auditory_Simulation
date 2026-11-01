@@ -1,4 +1,12 @@
-# 当前执行：SS07 全量原强基线+连续残差（2026-11-01）
+# 当前入口：SS07 round01结果已交付，持续goal ACTIVE
+
+以[CURRENT_TASK](CURRENT_TASK.md)顶部为唯一现行路由。全部训练/统一评分/实际独立复核已完成，非等待队列；九图中文解读和轻量HTML已归档。M4−P两域主区间均跨0，本轮PASS_WITH_LIMITATION而非科学目标完成。现只准备测试前train/val依据的下一方案草案，无新fit；不合并PR#6，不启动患者/其他支线或下载，不把已暴露测试重新命名为新确认。
+
+报告：[REPORT](../reports/pub_01/s03/incremental_continuity/run01/REPORT.md) / [REVIEW](../reports/pub_01/s03/incremental_continuity/run01/REVIEW.md)。SS07及持续goal保持ACTIVE。
+
+---
+
+## 历史：SS07 round01执行过程
 
 用户最新明确授权尽快全量实验、设goal、使用2203全部可用算力，研究目标超过原baseline并积累ICML/NeurIPS级证据。SS07 ACTIVE；旧STOP/单pass/NO_GO不覆盖本授权，旧结果保持只读。先执行PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md及本轮INTAKE/BASELINE_PROTOCOL，原完整Transformer/XLSR19两阶段、fold完整train/val、100epoch/pat15预训练与250epoch/pat10head至少3seed；仅在强模型上增加五类有界残差，精确矩阵协调审阅。开发只train/val，旧test均内部暴露，未冻全计划不评估。无阳性/论文接收保证。
 

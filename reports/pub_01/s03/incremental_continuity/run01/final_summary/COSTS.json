@@ -1,0 +1,4685 @@
+{
+  "actual_training_costs": [
+    {
+      "stage": "screen",
+      "kind": "m1_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 9,
+        "best_validation_negative_Pearson": -0.1470095280320918,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 3169,
+          "gradient_reachable": 3169,
+          "nonzero_gradient_scalars": 3169
+        },
+        "test_read": false,
+        "seconds": 647.5766708850861,
+        "validation_macro": {
+          "macro_r": 0.15913851506550925,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m1_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14321336811194654,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 3169,
+          "gradient_reachable": 3169,
+          "nonzero_gradient_scalars": 3169
+        },
+        "test_read": false,
+        "seconds": 808.9730911254883,
+        "validation_macro": {
+          "macro_r": 0.1555323555843668,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m1_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14965287627743892,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 3169,
+          "gradient_reachable": 3169,
+          "nonzero_gradient_scalars": 3169
+        },
+        "test_read": false,
+        "seconds": 644.2225656509399,
+        "validation_macro": {
+          "macro_r": 0.16225323774709682,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m1_h32",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m1_h32",
+          "family": "m1",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 9,
+        "best_validation_negative_Pearson": -0.1455839077615347,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 8065,
+          "gradient_reachable": 8065,
+          "nonzero_gradient_scalars": 8065
+        },
+        "test_read": false,
+        "seconds": 644.6996667385101,
+        "validation_macro": {
+          "macro_r": 0.15704357826245743,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m1_h32",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m1_h32",
+          "family": "m1",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 10,
+        "best_validation_negative_Pearson": -0.1427683073936916,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 8065,
+          "gradient_reachable": 8065,
+          "nonzero_gradient_scalars": 8065
+        },
+        "test_read": false,
+        "seconds": 813.1842818260193,
+        "validation_macro": {
+          "macro_r": 0.15501118811922093,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m1_h32",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m1_h32",
+          "family": "m1",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 10,
+        "updates": 39450,
+        "selected_epoch": 5,
+        "best_validation_negative_Pearson": -0.15006685576477988,
+        "supervised_window_presentations": 2524540,
+        "supervised_target_samples": 484711680,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 8065,
+          "gradient_reachable": 8065,
+          "nonzero_gradient_scalars": 8065
+        },
+        "test_read": false,
+        "seconds": 540.587085723877,
+        "validation_macro": {
+          "macro_r": 0.1633453523588342,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m2_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 9,
+        "updates": 35505,
+        "selected_epoch": 4,
+        "best_validation_negative_Pearson": -0.1460527587327801,
+        "supervised_window_presentations": 2272086,
+        "supervised_target_samples": 436240512,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 471.8692774772644,
+        "validation_macro": {
+          "macro_r": 0.15749222167489216,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m2_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14347355802528194,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 582.6580195426941,
+        "validation_macro": {
+          "macro_r": 0.1553038617336169,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m2_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14981345992303285,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 602.9311802387238,
+        "validation_macro": {
+          "macro_r": 0.16334264480815827,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_h32",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m2_h32",
+          "family": "m2",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 10,
+        "best_validation_negative_Pearson": -0.14609159704016858,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 13921,
+          "gradient_reachable": 13921,
+          "nonzero_gradient_scalars": 13921
+        },
+        "test_read": false,
+        "seconds": 969.1597208976746,
+        "validation_macro": {
+          "macro_r": 0.1584791267513174,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_h32",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m2_h32",
+          "family": "m2",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14366653434370386,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 13921,
+          "gradient_reachable": 13921,
+          "nonzero_gradient_scalars": 13921
+        },
+        "test_read": false,
+        "seconds": 1304.6254818439484,
+        "validation_macro": {
+          "macro_r": 0.1555998476340002,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_h32",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m2_h32",
+          "family": "m2",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 8,
+        "best_validation_negative_Pearson": -0.15000885444586395,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 13921,
+          "gradient_reachable": 13921,
+          "nonzero_gradient_scalars": 13921
+        },
+        "test_read": false,
+        "seconds": 1010.5548610687256,
+        "validation_macro": {
+          "macro_r": 0.1618538161940026,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m3_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 10,
+        "updates": 39450,
+        "selected_epoch": 5,
+        "best_validation_negative_Pearson": -0.1458932138534843,
+        "supervised_window_presentations": 2524540,
+        "supervised_target_samples": 484711680,
+        "teacher_presentations": 2516020,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 964.3188962936401,
+        "validation_macro": {
+          "macro_r": 0.1582490706619914,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m3_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 9,
+        "updates": 35505,
+        "selected_epoch": 4,
+        "best_validation_negative_Pearson": -0.1428806117841455,
+        "supervised_window_presentations": 2272086,
+        "supervised_target_samples": 436240512,
+        "teacher_presentations": 2264418,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 942.3902268409729,
+        "validation_macro": {
+          "macro_r": 0.15515056983365397,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m3_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1498084546327591,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 3019224,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 830.2373535633087,
+        "validation_macro": {
+          "macro_r": 0.16240553273511235,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_h32",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m3_h32",
+          "family": "m3",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 8,
+        "updates": 31560,
+        "selected_epoch": 3,
+        "best_validation_negative_Pearson": -0.1452189938816868,
+        "supervised_window_presentations": 2019632,
+        "supervised_target_samples": 387769344,
+        "teacher_presentations": 2012816,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 392.0513491630554,
+        "validation_macro": {
+          "macro_r": 0.15736454645551448,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_h32",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m3_h32",
+          "family": "m3",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1425623231041627,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 3019224,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 358.6501896381378,
+        "validation_macro": {
+          "macro_r": 0.15498351651442308,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_h32",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m3_h32",
+          "family": "m3",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 9,
+        "best_validation_negative_Pearson": -0.15022252672715264,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 3019224,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 463.98103857040405,
+        "validation_macro": {
+          "macro_r": 0.16233104756322309,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m4_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 11,
+        "updates": 43395,
+        "selected_epoch": 6,
+        "best_validation_negative_Pearson": -0.1483272933842706,
+        "supervised_window_presentations": 2776994,
+        "supervised_target_samples": 533182848,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 387.8207278251648,
+        "validation_macro": {
+          "macro_r": 0.16020399394208246,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m4_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1448923185203896,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 340.8945758342743,
+        "validation_macro": {
+          "macro_r": 0.1564041497184673,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m4_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.15045830505890925,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 451.58631563186646,
+        "validation_macro": {
+          "macro_r": 0.16250844310927381,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m4_h32",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m4_h32",
+          "family": "m4",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 10,
+        "updates": 39450,
+        "selected_epoch": 5,
+        "best_validation_negative_Pearson": -0.14772088422052196,
+        "supervised_window_presentations": 2524540,
+        "supervised_target_samples": 484711680,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 12601,
+          "gradient_reachable": 12601,
+          "nonzero_gradient_scalars": 12601
+        },
+        "test_read": false,
+        "seconds": 361.02711820602417,
+        "validation_macro": {
+          "macro_r": 0.15975675171979156,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m4_h32",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m4_h32",
+          "family": "m4",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14492226170516406,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 12601,
+          "gradient_reachable": 12601,
+          "nonzero_gradient_scalars": 12601
+        },
+        "test_read": false,
+        "seconds": 349.50588846206665,
+        "validation_macro": {
+          "macro_r": 0.1563391347903445,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m4_h32",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m4_h32",
+          "family": "m4",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14995163421845828,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 12601,
+          "gradient_reachable": 12601,
+          "nonzero_gradient_scalars": 12601
+        },
+        "test_read": false,
+        "seconds": 427.2472925186157,
+        "validation_macro": {
+          "macro_r": 0.16190003318935786,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m5_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 9,
+        "updates": 35505,
+        "selected_epoch": 4,
+        "best_validation_negative_Pearson": -0.14797267329790553,
+        "supervised_window_presentations": 2272086,
+        "supervised_target_samples": 436240512,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 325.27392077445984,
+        "validation_macro": {
+          "macro_r": 0.15911522324032507,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m5_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 9,
+        "best_validation_negative_Pearson": -0.14435466490221804,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 342.4974944591522,
+        "validation_macro": {
+          "macro_r": 0.15826420147894657,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m5_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1518282676173038,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 426.50282621383667,
+        "validation_macro": {
+          "macro_r": 0.16424849073835202,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_h32",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m5_h32",
+          "family": "m5",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 7,
+        "updates": 27615,
+        "selected_epoch": 2,
+        "best_validation_negative_Pearson": -0.14653894773467643,
+        "supervised_window_presentations": 1767178,
+        "supervised_target_samples": 339298176,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 255.05510878562927,
+        "validation_macro": {
+          "macro_r": 0.1567271317128749,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_h32",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m5_h32",
+          "family": "m5",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 6,
+        "updates": 23670,
+        "selected_epoch": 1,
+        "best_validation_negative_Pearson": -0.14314009532478988,
+        "supervised_window_presentations": 1514724,
+        "supervised_target_samples": 290827008,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 172.5490961074829,
+        "validation_macro": {
+          "macro_r": 0.15308206020321616,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_h32",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m5_h32",
+          "family": "m5",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 8,
+        "updates": 31560,
+        "selected_epoch": 3,
+        "best_validation_negative_Pearson": -0.15097779921332344,
+        "supervised_window_presentations": 2019632,
+        "supervised_target_samples": 387769344,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 301.49872183799744,
+        "validation_macro": {
+          "macro_r": 0.16044104832620015,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "native",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "native",
+          "family": "native"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14709118732370313,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 257,
+          "gradient_reachable": 257,
+          "nonzero_gradient_scalars": 257
+        },
+        "test_read": false,
+        "seconds": 179.1731197834015,
+        "validation_macro": {
+          "macro_r": 0.15884312894275693,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "native",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "native",
+          "family": "native"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14379045189697234,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 257,
+          "gradient_reachable": 257,
+          "nonzero_gradient_scalars": 257
+        },
+        "test_read": false,
+        "seconds": 210.44094586372375,
+        "validation_macro": {
+          "macro_r": 0.1556060058426639,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "native",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "native",
+          "family": "native"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1496692694738263,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 257,
+          "gradient_reachable": 257,
+          "nonzero_gradient_scalars": 257
+        },
+        "test_read": false,
+        "seconds": 102.85081481933594,
+        "validation_macro": {
+          "macro_r": 0.1626647412934124,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "static_m2_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "static_m2_h16",
+          "family": "static",
+          "reference_family": "m2",
+          "width": 16
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1474421415583032,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 221.70832538604736,
+        "validation_macro": {
+          "macro_r": 0.16104987088727993,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "static_m2_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "static_m2_h16",
+          "family": "static",
+          "reference_family": "m2",
+          "width": 16
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14689484081160828,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 219.78935980796814,
+        "validation_macro": {
+          "macro_r": 0.16158276341064168,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "static_m2_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "static_m2_h16",
+          "family": "static",
+          "reference_family": "m2",
+          "width": 16
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.15193638568823456,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 211.73847842216492,
+        "validation_macro": {
+          "macro_r": 0.1667592153710163,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_current_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m2_current_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14719834725290049,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 476.46242022514343,
+        "validation_macro": {
+          "macro_r": 0.15788820624194466,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_current_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m2_current_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14634152066707612,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 585.0836832523346,
+        "validation_macro": {
+          "macro_r": 0.15895812307520424,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m2_current_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m2_current_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.15162547875818658,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 690.4027767181396,
+        "validation_macro": {
+          "macro_r": 0.16267609925887033,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "static_alignment",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14892245527271364,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 106.75796508789062,
+        "validation_macro": {
+          "macro_r": 0.16089809490212906,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "static_alignment",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14538187764707158,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 84.84966707229614,
+        "validation_macro": {
+          "macro_r": 0.15665308929945043,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "static_alignment",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1508068126703872,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 110.11731505393982,
+        "validation_macro": {
+          "macro_r": 0.16354151547359225,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_reconstruct_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m3_reconstruct_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "current",
+          "aux_weight": 0.01
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 9,
+        "best_validation_negative_Pearson": -0.1464180697144055,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 3019224,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 470.0660831928253,
+        "validation_macro": {
+          "macro_r": 0.15837689321969864,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_reconstruct_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m3_reconstruct_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "current",
+          "aux_weight": 0.01
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 9,
+        "updates": 35505,
+        "selected_epoch": 4,
+        "best_validation_negative_Pearson": -0.14318161565065385,
+        "supervised_window_presentations": 2272086,
+        "supervised_target_samples": 436240512,
+        "teacher_presentations": 2264418,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 277.19137144088745,
+        "validation_macro": {
+          "macro_r": 0.1551934471501289,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_reconstruct_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m3_reconstruct_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "current",
+          "aux_weight": 0.01
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.15064357398181666,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 3019224,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 482.97041940689087,
+        "validation_macro": {
+          "macro_r": 0.16341941822638992,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_reconstruct_h32",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m3_reconstruct_h32",
+          "family": "m3",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "current",
+          "aux_weight": 0.01
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14565642410321314,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 3019224,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 472.725017786026,
+        "validation_macro": {
+          "macro_r": 0.15805522265109997,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_reconstruct_h32",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m3_reconstruct_h32",
+          "family": "m3",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "current",
+          "aux_weight": 0.01
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 10,
+        "updates": 39450,
+        "selected_epoch": 5,
+        "best_validation_negative_Pearson": -0.1426401090993256,
+        "supervised_window_presentations": 2524540,
+        "supervised_target_samples": 484711680,
+        "teacher_presentations": 2516020,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 304.0155394077301,
+        "validation_macro": {
+          "macro_r": 0.15420090309721374,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m3_reconstruct_h32",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m3_reconstruct_h32",
+          "family": "m3",
+          "width": 32,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "current",
+          "aux_weight": 0.01
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 9,
+        "best_validation_negative_Pearson": -0.1505055514534966,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 3019224,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 15505,
+          "gradient_reachable": 15505,
+          "nonzero_gradient_scalars": 15505
+        },
+        "test_read": false,
+        "seconds": 469.9808785915375,
+        "validation_macro": {
+          "macro_r": 0.16336971651774562,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "output_prior_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 10,
+        "best_validation_negative_Pearson": -0.14841413994988456,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 439.51580023765564,
+        "validation_macro": {
+          "macro_r": 0.16021339460916975,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "output_prior_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.14439871783041563,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 340.2802746295929,
+        "validation_macro": {
+          "macro_r": 0.15583759829813895,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "output_prior_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 12,
+        "updates": 47340,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.15072768312888069,
+        "supervised_window_presentations": 3029448,
+        "supervised_target_samples": 581654016,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 348.9599804878235,
+        "validation_macro": {
+          "macro_r": 0.16377847842193102,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_prior_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m5_prior_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "mode": "prior_only"
+        },
+        "seed": 1024,
+        "stage": "screen",
+        "epochs": 8,
+        "updates": 31560,
+        "selected_epoch": 3,
+        "best_validation_negative_Pearson": -0.02405390302470473,
+        "supervised_window_presentations": 2019632,
+        "supervised_target_samples": 387769344,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 5569,
+          "nonzero_gradient_scalars": 5569
+        },
+        "test_read": false,
+        "seconds": 280.11447072029114,
+        "validation_macro": {
+          "macro_r": 0.019593634262582288,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 1024,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_prior_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m5_prior_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "mode": "prior_only"
+        },
+        "seed": 2026,
+        "stage": "screen",
+        "epochs": 7,
+        "updates": 27615,
+        "selected_epoch": 2,
+        "best_validation_negative_Pearson": -0.025476439115453938,
+        "supervised_window_presentations": 1767178,
+        "supervised_target_samples": 339298176,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 5569,
+          "nonzero_gradient_scalars": 5569
+        },
+        "test_read": false,
+        "seconds": 193.7769365310669,
+        "validation_macro": {
+          "macro_r": 0.01800226959802102,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 2026,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "screen",
+      "kind": "m5_prior_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m5_prior_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "mode": "prior_only"
+        },
+        "seed": 31415,
+        "stage": "screen",
+        "epochs": 10,
+        "updates": 39450,
+        "selected_epoch": 5,
+        "best_validation_negative_Pearson": -0.022280773564806726,
+        "supervised_window_presentations": 2524540,
+        "supervised_target_samples": 484711680,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 5569,
+          "nonzero_gradient_scalars": 5569
+        },
+        "test_read": false,
+        "seconds": 280.14683842658997,
+        "validation_macro": {
+          "macro_r": 0.017531657637448777,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45"
+      },
+      "shared_pretrain_seed": 31415,
+      "includes_unselected_conditions": true
+    },
+    {
+      "stage": "shared_pretrain",
+      "kind": "TransformerCLIP",
+      "seed": 1024,
+      "training": {
+        "seed": 1024,
+        "epochs": 24,
+        "updates": 19680,
+        "selected_epoch": 8,
+        "best_validation": 3.9736979688916887,
+        "stopping": "VALIDATION_PATIENCE15",
+        "seconds": 4051.133745908737,
+        "peak_GPU_bytes": 5508522496,
+        "test_payload_loaded": false,
+        "stochastic_actual_presentations": 2519040,
+        "sample_presentations": 483655680,
+        "source_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+        "fresh_initialization": true
+      },
+      "charged_once_in_search_total": true,
+      "shared_by_all_same_seed_frozen_encoder_conditions": true
+    },
+    {
+      "stage": "native_head",
+      "kind": "native_P",
+      "seed": 1024,
+      "training": {
+        "seed": 1024,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "stopping": "RESOURCE_CEILING250",
+        "best_validation": -0.14876085354949609,
+        "seconds_including_cache": 1502.5930078029633,
+        "test_payload_loaded": false,
+        "encoder_sha256": "75860bfb1bbeed03eab32c25baaa37338f60dcc6214c6f340da9742ae1fd99d8",
+        "target_window_presentations": 63113500,
+        "target_sample_presentations": 12117792000,
+        "head_parameters": 257
+      },
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "finetune",
+      "kind": "P_FT",
+      "seed": 1024,
+      "training": {
+        "seed": 1024,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "initial_validation_negative_Pearson": -0.14876086750479994,
+        "best_validation_negative_Pearson": -0.15707376345259244,
+        "target_window_presentations": 1262270,
+        "validation_passes_including_incumbent": 6,
+        "seconds": 3257.197015762329,
+        "peak_GPU_bytes": 2512312320,
+        "registered_trainable_parameters": 3372617,
+        "all_extra_costs_separate": true,
+        "test_read": false,
+        "protocol_sha256": "b6482614c37df9dc80b4a658d31888d8608bf9587f7cd332389e9c4d3e48da6f"
+      },
+      "warmstart_pretrain_and_native_head_not_recharged": true
+    },
+    {
+      "stage": "shared_pretrain",
+      "kind": "TransformerCLIP",
+      "seed": 2026,
+      "training": {
+        "seed": 2026,
+        "epochs": 27,
+        "updates": 22140,
+        "selected_epoch": 11,
+        "best_validation": 4.002065344732635,
+        "stopping": "VALIDATION_PATIENCE15",
+        "seconds": 6112.8350784778595,
+        "peak_GPU_bytes": 5508522496,
+        "test_payload_loaded": false,
+        "stochastic_actual_presentations": 2833920,
+        "sample_presentations": 544112640,
+        "source_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+        "fresh_initialization": true
+      },
+      "charged_once_in_search_total": true,
+      "shared_by_all_same_seed_frozen_encoder_conditions": true
+    },
+    {
+      "stage": "native_head",
+      "kind": "native_P",
+      "seed": 2026,
+      "training": {
+        "seed": 2026,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "stopping": "RESOURCE_CEILING250",
+        "best_validation": -0.14634140256486955,
+        "seconds_including_cache": 1533.7738671302795,
+        "test_payload_loaded": false,
+        "encoder_sha256": "20036e59d62b4295a3bf62e21a18f96c9dc27bb6b9990faf52fb76ead81a08d2",
+        "target_window_presentations": 63113500,
+        "target_sample_presentations": 12117792000,
+        "head_parameters": 257
+      },
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "finetune",
+      "kind": "P_FT",
+      "seed": 2026,
+      "training": {
+        "seed": 2026,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "initial_validation_negative_Pearson": -0.14634139147254288,
+        "best_validation_negative_Pearson": -0.15723008397758984,
+        "target_window_presentations": 1262270,
+        "validation_passes_including_incumbent": 6,
+        "seconds": 4013.4077484607697,
+        "peak_GPU_bytes": 2512312320,
+        "registered_trainable_parameters": 3372617,
+        "all_extra_costs_separate": true,
+        "test_read": false,
+        "protocol_sha256": "b6482614c37df9dc80b4a658d31888d8608bf9587f7cd332389e9c4d3e48da6f"
+      },
+      "warmstart_pretrain_and_native_head_not_recharged": true
+    },
+    {
+      "stage": "shared_pretrain",
+      "kind": "TransformerCLIP",
+      "seed": 31415,
+      "training": {
+        "seed": 31415,
+        "epochs": 26,
+        "updates": 21320,
+        "selected_epoch": 10,
+        "best_validation": 4.01541793346405,
+        "stopping": "VALIDATION_PATIENCE15",
+        "seconds": 4394.759388685226,
+        "peak_GPU_bytes": 5508522496,
+        "test_payload_loaded": false,
+        "stochastic_actual_presentations": 2728960,
+        "sample_presentations": 523960320,
+        "source_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+        "fresh_initialization": true
+      },
+      "charged_once_in_search_total": true,
+      "shared_by_all_same_seed_frozen_encoder_conditions": true
+    },
+    {
+      "stage": "native_head",
+      "kind": "native_P",
+      "seed": 31415,
+      "training": {
+        "seed": 31415,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "stopping": "RESOURCE_CEILING250",
+        "best_validation": -0.15196461358129001,
+        "seconds_including_cache": 1364.6672563552856,
+        "test_payload_loaded": false,
+        "encoder_sha256": "4e3fa89d6498a41979d8dbc2251eb4cea7a39eb5c8727822ca21535de2aaef7a",
+        "target_window_presentations": 63113500,
+        "target_sample_presentations": 12117792000,
+        "head_parameters": 257
+      },
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "finetune",
+      "kind": "P_FT",
+      "seed": 31415,
+      "training": {
+        "seed": 31415,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "initial_validation_negative_Pearson": -0.1519646189632963,
+        "best_validation_negative_Pearson": -0.16060895846124557,
+        "target_window_presentations": 1262270,
+        "validation_passes_including_incumbent": 6,
+        "seconds": 3225.6097860336304,
+        "peak_GPU_bytes": 2512312320,
+        "registered_trainable_parameters": 3372617,
+        "all_extra_costs_separate": true,
+        "test_read": false,
+        "protocol_sha256": "b6482614c37df9dc80b4a658d31888d8608bf9587f7cd332389e9c4d3e48da6f"
+      },
+      "warmstart_pretrain_and_native_head_not_recharged": true
+    },
+    {
+      "stage": "shared_pretrain",
+      "kind": "TransformerCLIP",
+      "seed": 42,
+      "training": {
+        "seed": 42,
+        "epochs": 24,
+        "updates": 19680,
+        "selected_epoch": 8,
+        "best_validation": 4.014383741787502,
+        "stopping": "VALIDATION_PATIENCE15",
+        "seconds": 5830.9372498989105,
+        "peak_GPU_bytes": 5508522496,
+        "test_payload_loaded": false,
+        "stochastic_actual_presentations": 2519040,
+        "sample_presentations": 483655680,
+        "source_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+        "fresh_initialization": true
+      },
+      "charged_once_in_search_total": true,
+      "shared_by_all_same_seed_frozen_encoder_conditions": true
+    },
+    {
+      "stage": "native_head",
+      "kind": "native_P",
+      "seed": 42,
+      "training": {
+        "seed": 42,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 244,
+        "stopping": "RESOURCE_CEILING250",
+        "best_validation": -0.15183015767570401,
+        "seconds_including_cache": 1537.9822714328766,
+        "test_payload_loaded": false,
+        "encoder_sha256": "436d8f642c109accdb8ab81c881603cf720f77952711e56199ec58641d0dde85",
+        "target_window_presentations": 63113500,
+        "target_sample_presentations": 12117792000,
+        "head_parameters": 257
+      },
+      "shared_pretrain_seed": 42
+    },
+    {
+      "stage": "finetune",
+      "kind": "P_FT",
+      "seed": 42,
+      "training": {
+        "seed": 42,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "initial_validation_negative_Pearson": -0.15183016995719223,
+        "best_validation_negative_Pearson": -0.16052906980280016,
+        "target_window_presentations": 1262270,
+        "validation_passes_including_incumbent": 6,
+        "seconds": 4016.0692138671875,
+        "peak_GPU_bytes": 2512312320,
+        "registered_trainable_parameters": 3372617,
+        "all_extra_costs_separate": true,
+        "test_read": false,
+        "protocol_sha256": "b6482614c37df9dc80b4a658d31888d8608bf9587f7cd332389e9c4d3e48da6f"
+      },
+      "warmstart_pretrain_and_native_head_not_recharged": true
+    },
+    {
+      "stage": "shared_pretrain",
+      "kind": "TransformerCLIP",
+      "seed": 12345,
+      "training": {
+        "seed": 12345,
+        "epochs": 25,
+        "updates": 20500,
+        "selected_epoch": 9,
+        "best_validation": 4.012794594375455,
+        "stopping": "VALIDATION_PATIENCE15",
+        "seconds": 6013.9646537303925,
+        "peak_GPU_bytes": 5508522496,
+        "test_payload_loaded": false,
+        "stochastic_actual_presentations": 2624000,
+        "sample_presentations": 503808000,
+        "source_protocol_sha256": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+        "fresh_initialization": true
+      },
+      "charged_once_in_search_total": true,
+      "shared_by_all_same_seed_frozen_encoder_conditions": true
+    },
+    {
+      "stage": "native_head",
+      "kind": "native_P",
+      "seed": 12345,
+      "training": {
+        "seed": 12345,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "stopping": "RESOURCE_CEILING250",
+        "best_validation": -0.1498351025395706,
+        "seconds_including_cache": 1328.0296850204468,
+        "test_payload_loaded": false,
+        "encoder_sha256": "59c8e8988f369ac2c58a867ef34d9d6dec216f439faf6672947e2d937bc9d328",
+        "target_window_presentations": 63113500,
+        "target_sample_presentations": 12117792000,
+        "head_parameters": 257
+      },
+      "shared_pretrain_seed": 12345
+    },
+    {
+      "stage": "finetune",
+      "kind": "P_FT",
+      "seed": 12345,
+      "training": {
+        "seed": 12345,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "initial_validation_negative_Pearson": -0.1498351394900533,
+        "best_validation_negative_Pearson": -0.15981401753621025,
+        "target_window_presentations": 1262270,
+        "validation_passes_including_incumbent": 6,
+        "seconds": 4016.1929638385773,
+        "peak_GPU_bytes": 2512312320,
+        "registered_trainable_parameters": 3372617,
+        "all_extra_costs_separate": true,
+        "test_read": false,
+        "protocol_sha256": "b6482614c37df9dc80b4a658d31888d8608bf9587f7cd332389e9c4d3e48da6f"
+      },
+      "warmstart_pretrain_and_native_head_not_recharged": true
+    },
+    {
+      "stage": "full",
+      "kind": "m1_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 22,
+        "updates": 86790,
+        "selected_epoch": 11,
+        "best_validation_negative_Pearson": -0.1466334046203582,
+        "supervised_window_presentations": 5553988,
+        "supervised_target_samples": 1066365696,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 3169,
+          "gradient_reachable": 3169,
+          "nonzero_gradient_scalars": 3169
+        },
+        "test_read": false,
+        "seconds": 392.25832414627075,
+        "validation_macro": {
+          "macro_r": 0.15926925931474648,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "m1_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 61,
+        "updates": 240645,
+        "selected_epoch": 50,
+        "best_validation_negative_Pearson": -0.14573597825648354,
+        "supervised_window_presentations": 15399694,
+        "supervised_target_samples": 2956741248,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 3169,
+          "gradient_reachable": 3169,
+          "nonzero_gradient_scalars": 3169
+        },
+        "test_read": false,
+        "seconds": 973.3160974979401,
+        "validation_macro": {
+          "macro_r": 0.15914551799572207,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "m1_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 52,
+        "updates": 205140,
+        "selected_epoch": 41,
+        "best_validation_negative_Pearson": -0.15036765081081235,
+        "supervised_window_presentations": 13127608,
+        "supervised_target_samples": 2520500736,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 3169,
+          "gradient_reachable": 3169,
+          "nonzero_gradient_scalars": 3169
+        },
+        "test_read": false,
+        "seconds": 956.0651817321777,
+        "validation_macro": {
+          "macro_r": 0.16370058878621307,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "m2_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m2_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 15,
+        "updates": 59175,
+        "selected_epoch": 4,
+        "best_validation_negative_Pearson": -0.14602676814892254,
+        "supervised_window_presentations": 3786810,
+        "supervised_target_samples": 727067520,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 416.8765411376953,
+        "validation_macro": {
+          "macro_r": 0.15744685831099528,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "m2_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m2_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 49,
+        "updates": 193305,
+        "selected_epoch": 38,
+        "best_validation_negative_Pearson": -0.1442401825023479,
+        "supervised_window_presentations": 12370246,
+        "supervised_target_samples": 2375087232,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 1447.5964596271515,
+        "validation_macro": {
+          "macro_r": 0.15703361987834955,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "m2_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m2_h16",
+          "family": "m2",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 32,
+        "updates": 126240,
+        "selected_epoch": 21,
+        "best_validation_negative_Pearson": -0.14984894679413469,
+        "supervised_window_presentations": 8078528,
+        "supervised_target_samples": 1551077376,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5841,
+          "gradient_reachable": 5841,
+          "nonzero_gradient_scalars": 5841
+        },
+        "test_read": false,
+        "seconds": 882.7088689804077,
+        "validation_macro": {
+          "macro_r": 0.16260980711624795,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "m3_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m3_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 16,
+        "updates": 63120,
+        "selected_epoch": 5,
+        "best_validation_negative_Pearson": -0.14603047730395052,
+        "supervised_window_presentations": 4039264,
+        "supervised_target_samples": 775538688,
+        "teacher_presentations": 4025632,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 496.4125916957855,
+        "validation_macro": {
+          "macro_r": 0.15833209746750945,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "m3_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m3_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 28,
+        "updates": 110460,
+        "selected_epoch": 17,
+        "best_validation_negative_Pearson": -0.14349039803372055,
+        "supervised_window_presentations": 7068712,
+        "supervised_target_samples": 1357192704,
+        "teacher_presentations": 7044856,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 827.9662108421326,
+        "validation_macro": {
+          "macro_r": 0.156218306335438,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "m3_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m3_h16",
+          "family": "m3",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past",
+          "teacher": "future",
+          "aux_weight": 0.01
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 26,
+        "updates": 102570,
+        "selected_epoch": 15,
+        "best_validation_negative_Pearson": -0.1498710248841614,
+        "supervised_window_presentations": 6563804,
+        "supervised_target_samples": 1260250368,
+        "teacher_presentations": 6541652,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 799.8616771697998,
+        "validation_macro": {
+          "macro_r": 0.16155321934158376,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "m4_current_h16",
+      "seed": 42,
+      "training": {
+        "condition": {
+          "id": "m4_current_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 42,
+        "stage": "full",
+        "epochs": 47,
+        "updates": 185415,
+        "selected_epoch": 36,
+        "best_validation_negative_Pearson": -0.15301913630376096,
+        "supervised_window_presentations": 11865338,
+        "supervised_target_samples": 2278144896,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 964.9386141300201,
+        "validation_macro": {
+          "macro_r": 0.16603114422740609,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 42
+    },
+    {
+      "stage": "full",
+      "kind": "m4_current_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m4_current_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 17,
+        "updates": 67065,
+        "selected_epoch": 6,
+        "best_validation_negative_Pearson": -0.14902582285247865,
+        "supervised_window_presentations": 4291718,
+        "supervised_target_samples": 824009856,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 342.26868176460266,
+        "validation_macro": {
+          "macro_r": 0.1609182271730483,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "m4_current_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m4_current_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 41,
+        "updates": 161745,
+        "selected_epoch": 30,
+        "best_validation_negative_Pearson": -0.1478401326644616,
+        "supervised_window_presentations": 10350614,
+        "supervised_target_samples": 1987317888,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 875.2416682243347,
+        "validation_macro": {
+          "macro_r": 0.1573263817194678,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "m4_current_h16",
+      "seed": 12345,
+      "training": {
+        "condition": {
+          "id": "m4_current_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 12345,
+        "stage": "full",
+        "epochs": 41,
+        "updates": 161745,
+        "selected_epoch": 30,
+        "best_validation_negative_Pearson": -0.1502770720930373,
+        "supervised_window_presentations": 10350614,
+        "supervised_target_samples": 1987317888,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 837.4121265411377,
+        "validation_macro": {
+          "macro_r": 0.16140541439800027,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 12345
+    },
+    {
+      "stage": "full",
+      "kind": "m4_current_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m4_current_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "current"
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 51,
+        "updates": 201195,
+        "selected_epoch": 40,
+        "best_validation_negative_Pearson": -0.15190144852634335,
+        "supervised_window_presentations": 12875154,
+        "supervised_target_samples": 2472029568,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 1035.7300736904144,
+        "validation_macro": {
+          "macro_r": 0.16458439137734251,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "m4_h16",
+      "seed": 42,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 42,
+        "stage": "full",
+        "epochs": 21,
+        "updates": 82845,
+        "selected_epoch": 10,
+        "best_validation_negative_Pearson": -0.151753911130741,
+        "supervised_window_presentations": 5301534,
+        "supervised_target_samples": 1017894528,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 619.8278157711029,
+        "validation_macro": {
+          "macro_r": 0.16424089067210734,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "selected_primary_final5",
+      "shared_pretrain_seed": 42
+    },
+    {
+      "stage": "full",
+      "kind": "m4_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 17,
+        "updates": 67065,
+        "selected_epoch": 6,
+        "best_validation_negative_Pearson": -0.14831826701320586,
+        "supervised_window_presentations": 4291718,
+        "supervised_target_samples": 824009856,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 521.3752181529999,
+        "validation_macro": {
+          "macro_r": 0.1601974387152457,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "selected_primary_final5",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "m4_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 55,
+        "updates": 216975,
+        "selected_epoch": 44,
+        "best_validation_negative_Pearson": -0.14603510247390777,
+        "supervised_window_presentations": 13884970,
+        "supervised_target_samples": 2665914240,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 1562.3030490875244,
+        "validation_macro": {
+          "macro_r": 0.158199676737302,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "selected_primary_final5",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "m4_h16",
+      "seed": 12345,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 12345,
+        "stage": "full",
+        "epochs": 35,
+        "updates": 138075,
+        "selected_epoch": 24,
+        "best_validation_negative_Pearson": -0.15053192527176903,
+        "supervised_window_presentations": 8835890,
+        "supervised_target_samples": 1696490880,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 1109.8821732997894,
+        "validation_macro": {
+          "macro_r": 0.1621906838638914,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "selected_primary_final5",
+      "shared_pretrain_seed": 12345
+    },
+    {
+      "stage": "full",
+      "kind": "m4_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m4_h16",
+          "family": "m4",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 71,
+        "updates": 280095,
+        "selected_epoch": 60,
+        "best_validation_negative_Pearson": -0.15226853050169398,
+        "supervised_window_presentations": 17924234,
+        "supervised_target_samples": 3441452928,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 1969.2536635398865,
+        "validation_macro": {
+          "macro_r": 0.1656389902960282,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "selected_primary_final5",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "m5_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "m5_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 15,
+        "updates": 59175,
+        "selected_epoch": 4,
+        "best_validation_negative_Pearson": -0.14797844399975948,
+        "supervised_window_presentations": 3786810,
+        "supervised_target_samples": 727067520,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 438.73610496520996,
+        "validation_macro": {
+          "macro_r": 0.15911606723502206,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "m5_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "m5_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 16,
+        "updates": 63120,
+        "selected_epoch": 5,
+        "best_validation_negative_Pearson": -0.14418779872577697,
+        "supervised_window_presentations": 4039264,
+        "supervised_target_samples": 775538688,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 437.1371371746063,
+        "validation_macro": {
+          "macro_r": 0.15739425156303308,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "m5_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "m5_h16",
+          "family": "m5",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": 9,
+        "best_validation_negative_Pearson": -0.15178102923807552,
+        "supervised_window_presentations": 5049080,
+        "supervised_target_samples": 969423360,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 6657,
+          "gradient_reachable": 6657,
+          "nonzero_gradient_scalars": 6657
+        },
+        "test_read": false,
+        "seconds": 556.1463093757629,
+        "validation_macro": {
+          "macro_r": 0.16441857189615533,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "family_candidate_initial3",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "output_prior_h16",
+      "seed": 42,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 42,
+        "stage": "full",
+        "epochs": 52,
+        "updates": 205140,
+        "selected_epoch": 41,
+        "best_validation_negative_Pearson": -0.15190812922012611,
+        "supervised_window_presentations": 13127608,
+        "supervised_target_samples": 2520500736,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 1534.3405756950378,
+        "validation_macro": {
+          "macro_r": 0.16634448516832365,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 42
+    },
+    {
+      "stage": "full",
+      "kind": "output_prior_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 27,
+        "updates": 106515,
+        "selected_epoch": 16,
+        "best_validation_negative_Pearson": -0.1485017836494524,
+        "supervised_window_presentations": 6816258,
+        "supervised_target_samples": 1308721536,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 769.5365891456604,
+        "validation_macro": {
+          "macro_r": 0.16032357198177397,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "output_prior_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 61,
+        "updates": 240645,
+        "selected_epoch": 50,
+        "best_validation_negative_Pearson": -0.146000418188142,
+        "supervised_window_presentations": 15399694,
+        "supervised_target_samples": 2956741248,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 1816.1956787109375,
+        "validation_macro": {
+          "macro_r": 0.1586151829265365,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "output_prior_h16",
+      "seed": 12345,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 12345,
+        "stage": "full",
+        "epochs": 73,
+        "updates": 287985,
+        "selected_epoch": 62,
+        "best_validation_negative_Pearson": -0.15001266058937449,
+        "supervised_window_presentations": 18429142,
+        "supervised_target_samples": 3538395264,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 2262.8207125663757,
+        "validation_macro": {
+          "macro_r": 0.16264234445506243,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 12345
+    },
+    {
+      "stage": "full",
+      "kind": "output_prior_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "output_prior_h16",
+          "family": "output_prior",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 37,
+        "updates": 145965,
+        "selected_epoch": 26,
+        "best_validation_negative_Pearson": -0.15155048587478576,
+        "supervised_window_presentations": 9340798,
+        "supervised_target_samples": 1793433216,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 2167,
+          "gradient_reachable": 2167,
+          "nonzero_gradient_scalars": 2167
+        },
+        "test_read": false,
+        "seconds": 1074.7180910110474,
+        "validation_macro": {
+          "macro_r": 0.1648021726234473,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "static_alignment",
+      "seed": 42,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 42,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.15341826036719025,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 2000.3095054626465,
+        "validation_macro": {
+          "macro_r": 0.16750182403221392,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 42
+    },
+    {
+      "stage": "full",
+      "kind": "static_alignment",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.15017823503935923,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 1958.1257762908936,
+        "validation_macro": {
+          "macro_r": 0.16255469401654285,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "static_alignment",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.14759613944516808,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 2083.6541340351105,
+        "validation_macro": {
+          "macro_r": 0.15993167810211048,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "static_alignment",
+      "seed": 12345,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 12345,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.15095415145696187,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 1843.4990899562836,
+        "validation_macro": {
+          "macro_r": 0.16354637540124664,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 12345
+    },
+    {
+      "stage": "full",
+      "kind": "static_alignment",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "static_alignment",
+          "family": "static_alignment"
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.15352671151376163,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 281,
+          "gradient_reachable": 281,
+          "nonzero_gradient_scalars": 281
+        },
+        "test_read": false,
+        "seconds": 1850.129442691803,
+        "validation_macro": {
+          "macro_r": 0.1673454773807749,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 31415
+    },
+    {
+      "stage": "full",
+      "kind": "static_m4_h16",
+      "seed": 42,
+      "training": {
+        "condition": {
+          "id": "static_m4_h16",
+          "family": "static",
+          "reference_family": "m4",
+          "width": 16
+        },
+        "seed": 42,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 248,
+        "best_validation_negative_Pearson": -0.1537679046128617,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 2250.073370695114,
+        "validation_macro": {
+          "macro_r": 0.17074884096140908,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 42
+    },
+    {
+      "stage": "full",
+      "kind": "static_m4_h16",
+      "seed": 1024,
+      "training": {
+        "condition": {
+          "id": "static_m4_h16",
+          "family": "static",
+          "reference_family": "m4",
+          "width": 16
+        },
+        "seed": 1024,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.14978330496979542,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 2043.956657409668,
+        "validation_macro": {
+          "macro_r": 0.16427700806437334,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 1024
+    },
+    {
+      "stage": "full",
+      "kind": "static_m4_h16",
+      "seed": 2026,
+      "training": {
+        "condition": {
+          "id": "static_m4_h16",
+          "family": "static",
+          "reference_family": "m4",
+          "width": 16
+        },
+        "seed": 2026,
+        "stage": "full",
+        "epochs": 170,
+        "updates": 670650,
+        "selected_epoch": 159,
+        "best_validation_negative_Pearson": -0.14854304142271887,
+        "supervised_window_presentations": 42917180,
+        "supervised_target_samples": 8240098560,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 1476.0800938606262,
+        "validation_macro": {
+          "macro_r": 0.16416633391664043,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 2026
+    },
+    {
+      "stage": "full",
+      "kind": "static_m4_h16",
+      "seed": 12345,
+      "training": {
+        "condition": {
+          "id": "static_m4_h16",
+          "family": "static",
+          "reference_family": "m4",
+          "width": 16
+        },
+        "seed": 12345,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.15140476714685314,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 2183.7122571468353,
+        "validation_macro": {
+          "macro_r": 0.1672307445131221,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 12345
+    },
+    {
+      "stage": "full",
+      "kind": "static_m4_h16",
+      "seed": 31415,
+      "training": {
+        "condition": {
+          "id": "static_m4_h16",
+          "family": "static",
+          "reference_family": "m4",
+          "width": 16
+        },
+        "seed": 31415,
+        "stage": "full",
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "best_validation_negative_Pearson": -0.15354435580578008,
+        "supervised_window_presentations": 63113500,
+        "supervised_target_samples": 12117792000,
+        "teacher_presentations": 0,
+        "teacher_target48_scalar_cost_separate": true,
+        "gradient_parameters": {
+          "registered": 5161,
+          "gradient_reachable": 5161,
+          "nonzero_gradient_scalars": 5161
+        },
+        "test_read": false,
+        "seconds": 2067.0583488941193,
+        "validation_macro": {
+          "macro_r": 0.16970178380759196,
+          "subjects": 49,
+          "blocks": 752
+        },
+        "record_resets_per_train_epoch": 426,
+        "validation_record_resets": 49,
+        "protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5"
+      },
+      "role": "matched_control_final5",
+      "shared_pretrain_seed": 31415
+    }
+  ],
+  "stage_totals": {
+    "screen": {
+      "cells": 54,
+      "epochs": 597,
+      "optimizer_updates": 2355165,
+      "actual_seconds_including_any_reported_cache": 24693.248526096344,
+      "supervised_window_presentations": 150715038,
+      "aux_teacher_presentations": 32708260,
+      "aux_teacher48_scalar_targets": 1569996480
+    },
+    "shared_pretrain": {
+      "cells": 5,
+      "epochs": 126,
+      "optimizer_updates": 103320,
+      "actual_seconds_including_any_reported_cache": 26403.630116701126,
+      "supervised_window_presentations": 0,
+      "aux_teacher_presentations": 0,
+      "aux_teacher48_scalar_targets": 0
+    },
+    "native_head": {
+      "cells": 5,
+      "epochs": 1250,
+      "optimizer_updates": 4931250,
+      "actual_seconds_including_any_reported_cache": 7267.046087741852,
+      "supervised_window_presentations": 315567500,
+      "aux_teacher_presentations": 0,
+      "aux_teacher48_scalar_targets": 0
+    },
+    "finetune": {
+      "cells": 5,
+      "epochs": 25,
+      "optimizer_updates": 98625,
+      "actual_seconds_including_any_reported_cache": 18528.476727962494,
+      "supervised_window_presentations": 6311350,
+      "aux_teacher_presentations": 0,
+      "aux_teacher48_scalar_targets": 0
+    },
+    "full": {
+      "cells": 37,
+      "epochs": 3418,
+      "optimizer_updates": 13484010,
+      "actual_seconds_including_any_reported_cache": 45677.52491211891,
+      "supervised_window_presentations": 862887772,
+      "aux_teacher_presentations": 17612140,
+      "aux_teacher48_scalar_targets": 845382720
+    }
+  },
+  "whole_method_search_includes_all54_screen_and_all_full_candidates_controls": true,
+  "winner_formal_budget_separate_from_entire_search_cost": true,
+  "five_shared_pretraining_runs_charged_once_not_per_condition": true,
+  "engineering_probes_and_profiling_excluded_from_scientific_training_totals": true,
+  "actual_evaluation_cost_components": [
+    {
+      "seed": 1024,
+      "all_conditions_complete": true,
+      "failed_conditions": [],
+      "seconds": 154.14999079704285,
+      "cost_components_seconds_including_transfer_scoring_writing": {
+        "shared_native_P_encoder_testcache": 35.70070219878107,
+        "train_only_neutral_summary": 0.49557134229689837,
+        "P_FT_full_raw_phase_inference": 23.449877245351672,
+        "native_P": 1.0966129964217544,
+        "P_EMA": 0.6575257265940309,
+        "P_FT": 0.6660602753981948,
+        "m4_h16": 3.692953866906464,
+        "m4_current_h16": 2.501343386247754,
+        "static_m4_h16": 1.350349766202271,
+        "output_prior_h16": 3.4696327866986394,
+        "static_alignment": 1.2798256343230605,
+        "m1_h16": 2.827277702279389,
+        "m2_h16": 3.3396891690790653,
+        "m3_h16": 3.336414755322039,
+        "m5_h16": 3.4238665075972676,
+        "history__reset": 3.577441886998713,
+        "history__content_blind": 3.5026232609525323,
+        "history__shuffled": 3.527855932712555,
+        "history__older_outside_fused_support": 3.581035228446126,
+        "history__same_person_wrong_family": 2.9314646860584617,
+        "history__same_story_wrong_person": 3.705674341879785,
+        "DTU__native_P": 1.1192682413384318,
+        "DTU__P_EMA": 0.7490589115768671,
+        "DTU__P_FT": 7.104181602597237,
+        "DTU__m4_h16": 3.1661207415163517,
+        "DTU__m4_current_h16": 2.321917009539902,
+        "DTU__static_m4_h16": 1.3414625702425838,
+        "DTU__output_prior_h16": 3.045506415888667,
+        "DTU__static_alignment": 1.3819773169234395
+      },
+      "head_condition_costs_exclude_separately_reported_shared_P_encoding": true,
+      "FT_encoder_and_head_inference_reported_separately_from_FT_scoring": true,
+      "parameter_counts": {
+        "P_FT": {
+          "registered_model_parameters": 3372617,
+          "structural_parameters_affecting_prediction": 3372617,
+          "shared_P_encoder_parameters_separate": 0,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "native_P": {
+          "registered_model_parameters": 257,
+          "structural_parameters_affecting_prediction": 257,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_current_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "output_prior_h16": {
+          "registered_model_parameters": 2167,
+          "structural_parameters_affecting_prediction": 2167,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_alignment": {
+          "registered_model_parameters": 281,
+          "structural_parameters_affecting_prediction": 281,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m1_h16": {
+          "registered_model_parameters": 3169,
+          "structural_parameters_affecting_prediction": 3169,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m2_h16": {
+          "registered_model_parameters": 5841,
+          "structural_parameters_affecting_prediction": 5841,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m3_h16": {
+          "registered_model_parameters": 6657,
+          "structural_parameters_affecting_prediction": 5841,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m5_h16": {
+          "registered_model_parameters": 6657,
+          "structural_parameters_affecting_prediction": 6657,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        }
+      },
+      "peak_GPU_bytes": 704129024,
+      "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+      "no_training_or_model_reselection": true,
+      "arrays_stay_on_server": true
+    },
+    {
+      "seed": 2026,
+      "all_conditions_complete": true,
+      "failed_conditions": [],
+      "seconds": 153.4463336467743,
+      "cost_components_seconds_including_transfer_scoring_writing": {
+        "shared_native_P_encoder_testcache": 35.74902127124369,
+        "train_only_neutral_summary": 0.5604259259998798,
+        "P_FT_full_raw_phase_inference": 23.003253245726228,
+        "native_P": 1.0905626378953457,
+        "P_EMA": 0.665562991052866,
+        "P_FT": 0.678266397677362,
+        "m4_h16": 3.6578792640939355,
+        "m4_current_h16": 2.4912190288305283,
+        "static_m4_h16": 1.3514163102954626,
+        "output_prior_h16": 3.451050323434174,
+        "static_alignment": 1.2735002767294645,
+        "m1_h16": 2.8137754052877426,
+        "m2_h16": 3.32164612878114,
+        "m3_h16": 3.3200123431161046,
+        "m5_h16": 3.4071470741182566,
+        "history__reset": 3.5501693096011877,
+        "history__content_blind": 3.4771962026134133,
+        "history__shuffled": 3.503582613542676,
+        "history__older_outside_fused_support": 3.561474159359932,
+        "history__same_person_wrong_family": 2.936298401094973,
+        "history__same_story_wrong_person": 3.682284090667963,
+        "DTU__native_P": 1.1260364558547735,
+        "DTU__P_EMA": 0.7541313832625747,
+        "DTU__P_FT": 7.044280123896897,
+        "DTU__m4_h16": 3.1403856249526143,
+        "DTU__m4_current_h16": 2.3418257236480713,
+        "DTU__static_m4_h16": 1.3481777580454946,
+        "DTU__output_prior_h16": 3.0415325704962015,
+        "DTU__static_alignment": 1.3846745481714606
+      },
+      "head_condition_costs_exclude_separately_reported_shared_P_encoding": true,
+      "FT_encoder_and_head_inference_reported_separately_from_FT_scoring": true,
+      "parameter_counts": {
+        "P_FT": {
+          "registered_model_parameters": 3372617,
+          "structural_parameters_affecting_prediction": 3372617,
+          "shared_P_encoder_parameters_separate": 0,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "native_P": {
+          "registered_model_parameters": 257,
+          "structural_parameters_affecting_prediction": 257,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_current_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "output_prior_h16": {
+          "registered_model_parameters": 2167,
+          "structural_parameters_affecting_prediction": 2167,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_alignment": {
+          "registered_model_parameters": 281,
+          "structural_parameters_affecting_prediction": 281,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m1_h16": {
+          "registered_model_parameters": 3169,
+          "structural_parameters_affecting_prediction": 3169,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m2_h16": {
+          "registered_model_parameters": 5841,
+          "structural_parameters_affecting_prediction": 5841,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m3_h16": {
+          "registered_model_parameters": 6657,
+          "structural_parameters_affecting_prediction": 5841,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m5_h16": {
+          "registered_model_parameters": 6657,
+          "structural_parameters_affecting_prediction": 6657,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        }
+      },
+      "peak_GPU_bytes": 704129024,
+      "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+      "no_training_or_model_reselection": true,
+      "arrays_stay_on_server": true
+    },
+    {
+      "seed": 31415,
+      "all_conditions_complete": true,
+      "failed_conditions": [],
+      "seconds": 144.18031215667725,
+      "cost_components_seconds_including_transfer_scoring_writing": {
+        "shared_native_P_encoder_testcache": 26.06769976299256,
+        "train_only_neutral_summary": 0.44741535745561123,
+        "P_FT_full_raw_phase_inference": 23.125964839942753,
+        "native_P": 1.0857057673856616,
+        "P_EMA": 0.6573077933862805,
+        "P_FT": 0.6688563944771886,
+        "m4_h16": 3.6866807378828526,
+        "m4_current_h16": 2.5118080396205187,
+        "static_m4_h16": 1.3481158893555403,
+        "output_prior_h16": 3.478449842892587,
+        "static_alignment": 1.2832000525668263,
+        "m1_h16": 2.835646509192884,
+        "m2_h16": 3.351052012294531,
+        "m3_h16": 3.350419062189758,
+        "m5_h16": 3.438496452756226,
+        "history__reset": 3.5942338174209,
+        "history__content_blind": 3.5205796910449862,
+        "history__shuffled": 3.5457072779536247,
+        "history__older_outside_fused_support": 3.6015446856617928,
+        "history__same_person_wrong_family": 2.926487515680492,
+        "history__same_story_wrong_person": 3.6947089983150363,
+        "DTU__native_P": 1.1254350012168288,
+        "DTU__P_EMA": 0.7427197666838765,
+        "DTU__P_FT": 7.122968435287476,
+        "DTU__m4_h16": 3.161750663071871,
+        "DTU__m4_current_h16": 2.3316523795947433,
+        "DTU__static_m4_h16": 1.3426606738939881,
+        "DTU__output_prior_h16": 3.0507603464648128,
+        "DTU__static_alignment": 1.3850105768069625
+      },
+      "head_condition_costs_exclude_separately_reported_shared_P_encoding": true,
+      "FT_encoder_and_head_inference_reported_separately_from_FT_scoring": true,
+      "parameter_counts": {
+        "P_FT": {
+          "registered_model_parameters": 3372617,
+          "structural_parameters_affecting_prediction": 3372617,
+          "shared_P_encoder_parameters_separate": 0,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "native_P": {
+          "registered_model_parameters": 257,
+          "structural_parameters_affecting_prediction": 257,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_current_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "output_prior_h16": {
+          "registered_model_parameters": 2167,
+          "structural_parameters_affecting_prediction": 2167,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_alignment": {
+          "registered_model_parameters": 281,
+          "structural_parameters_affecting_prediction": 281,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m1_h16": {
+          "registered_model_parameters": 3169,
+          "structural_parameters_affecting_prediction": 3169,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m2_h16": {
+          "registered_model_parameters": 5841,
+          "structural_parameters_affecting_prediction": 5841,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m3_h16": {
+          "registered_model_parameters": 6657,
+          "structural_parameters_affecting_prediction": 5841,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m5_h16": {
+          "registered_model_parameters": 6657,
+          "structural_parameters_affecting_prediction": 6657,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        }
+      },
+      "peak_GPU_bytes": 704129024,
+      "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+      "no_training_or_model_reselection": true,
+      "arrays_stay_on_server": true
+    },
+    {
+      "seed": 42,
+      "all_conditions_complete": true,
+      "failed_conditions": [],
+      "seconds": 129.97838616371155,
+      "cost_components_seconds_including_transfer_scoring_writing": {
+        "shared_native_P_encoder_testcache": 25.8727569822222,
+        "train_only_neutral_summary": 0.5512938741594553,
+        "P_FT_full_raw_phase_inference": 23.16667057108134,
+        "native_P": 1.0902910381555557,
+        "P_EMA": 0.6568459188565612,
+        "P_FT": 0.6680894689634442,
+        "m4_h16": 3.6463035559281707,
+        "m4_current_h16": 2.4722149278968573,
+        "static_m4_h16": 1.334606514312327,
+        "output_prior_h16": 3.410240612924099,
+        "static_alignment": 1.269146773032844,
+        "history__reset": 3.5259716426953673,
+        "history__content_blind": 3.451681710779667,
+        "history__shuffled": 3.4773696940392256,
+        "history__older_outside_fused_support": 3.5345280915498734,
+        "history__same_person_wrong_family": 2.8851259257644415,
+        "history__same_story_wrong_person": 3.6377426516264677,
+        "DTU__native_P": 1.1045699790120125,
+        "DTU__P_EMA": 0.7384151685982943,
+        "DTU__P_FT": 6.9839301547035575,
+        "DTU__m4_h16": 3.1088374499231577,
+        "DTU__m4_current_h16": 2.291682466864586,
+        "DTU__static_m4_h16": 1.3180717322975397,
+        "DTU__output_prior_h16": 2.991496553644538,
+        "DTU__static_alignment": 1.3620540788397193
+      },
+      "head_condition_costs_exclude_separately_reported_shared_P_encoding": true,
+      "FT_encoder_and_head_inference_reported_separately_from_FT_scoring": true,
+      "parameter_counts": {
+        "P_FT": {
+          "registered_model_parameters": 3372617,
+          "structural_parameters_affecting_prediction": 3372617,
+          "shared_P_encoder_parameters_separate": 0,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "native_P": {
+          "registered_model_parameters": 257,
+          "structural_parameters_affecting_prediction": 257,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_current_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "output_prior_h16": {
+          "registered_model_parameters": 2167,
+          "structural_parameters_affecting_prediction": 2167,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_alignment": {
+          "registered_model_parameters": 281,
+          "structural_parameters_affecting_prediction": 281,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        }
+      },
+      "peak_GPU_bytes": 704129024,
+      "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+      "no_training_or_model_reselection": true,
+      "arrays_stay_on_server": true
+    },
+    {
+      "seed": 12345,
+      "all_conditions_complete": true,
+      "failed_conditions": [],
+      "seconds": 130.20044016838074,
+      "cost_components_seconds_including_transfer_scoring_writing": {
+        "shared_native_P_encoder_testcache": 25.636214478872716,
+        "train_only_neutral_summary": 0.45038467086851597,
+        "P_FT_full_raw_phase_inference": 22.771356544457376,
+        "native_P": 1.077223153784871,
+        "P_EMA": 0.6534644765779376,
+        "P_FT": 0.6654411945492029,
+        "m4_h16": 3.6824284000322223,
+        "m4_current_h16": 2.5047994507476687,
+        "static_m4_h16": 1.338799387216568,
+        "output_prior_h16": 3.4759632237255573,
+        "static_alignment": 1.275840318761766,
+        "history__reset": 3.587404848076403,
+        "history__content_blind": 3.5146046495065093,
+        "history__shuffled": 3.540079239755869,
+        "history__older_outside_fused_support": 3.597500958479941,
+        "history__same_person_wrong_family": 2.920510577969253,
+        "history__same_story_wrong_person": 3.679739293642342,
+        "DTU__native_P": 1.1151779787614942,
+        "DTU__P_EMA": 0.7428448293358088,
+        "DTU__P_FT": 7.078601697459817,
+        "DTU__m4_h16": 3.1507531236857176,
+        "DTU__m4_current_h16": 2.3211623281240463,
+        "DTU__static_m4_h16": 1.3328989064320922,
+        "DTU__output_prior_h16": 3.047345587052405,
+        "DTU__static_alignment": 1.3758141305297613
+      },
+      "head_condition_costs_exclude_separately_reported_shared_P_encoding": true,
+      "FT_encoder_and_head_inference_reported_separately_from_FT_scoring": true,
+      "parameter_counts": {
+        "P_FT": {
+          "registered_model_parameters": 3372617,
+          "structural_parameters_affecting_prediction": 3372617,
+          "shared_P_encoder_parameters_separate": 0,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "native_P": {
+          "registered_model_parameters": 257,
+          "structural_parameters_affecting_prediction": 257,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "m4_current_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_m4_h16": {
+          "registered_model_parameters": 5161,
+          "structural_parameters_affecting_prediction": 5161,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "output_prior_h16": {
+          "registered_model_parameters": 2167,
+          "structural_parameters_affecting_prediction": 2167,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        },
+        "static_alignment": {
+          "registered_model_parameters": 281,
+          "structural_parameters_affecting_prediction": 281,
+          "shared_P_encoder_parameters_separate": 3372360,
+          "unused_prior_only_correction_not_counted_active": false,
+          "runtime_still_includes_any_computed_but_unused_branch": true
+        }
+      },
+      "peak_GPU_bytes": 704129024,
+      "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+      "no_training_or_model_reselection": true,
+      "arrays_stay_on_server": true
+    }
+  ],
+  "shared_encoder_cost_not_hidden_in_head_only_timings": true,
+  "timing_is_runtime_not_isolated_deployment_latency_or_FLOP_claim": true
+}

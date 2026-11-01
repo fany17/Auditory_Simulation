@@ -1,5 +1,7 @@
 # PUB-01-S03_SS07 — 全量强基线上的连续性增量研究
 
+> 2026-11-01最新Completion Record：round01全部训练、五seed内部/DTU评分与实际raw v1/metric v2复核完成；raw360项最大波形差1.82e−12，metric583129项通过，综合V2 PASS。M4−P内部−.000621、DTU+.000149的M7近似区间均跨0，matched current亦跨0；未建立稳健增益或机制。Technical PASS / 本轮Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。九张真实图已实际查看、逐图中文解释及协调独立审阅，REPORT/REVIEW/final_summary在reports/pub_01/s03/incremental_continuity/run01；轻量HTML归档run_id=20261101_pub01_s03_ss07_round01。所有worker正常结束，无新fit。SS07和持续goal仍ACTIVE，现仅准备测试前train/val依据的下一方案草案；不以阴性交付/工程PASS关闭目标，不以暴露测试调参，不改旧结论/其他节点/患者边界。下文执行进度按历史保留。
+
 | Field | Value |
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |

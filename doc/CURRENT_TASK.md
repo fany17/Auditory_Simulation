@@ -1,4 +1,14 @@
-# 当前执行：SS07 全量原强基线+连续残差（2026-11-01）
+# 当前执行：SS07 round01交付；后续仅方案草案（2026-11-01）
+
+唯一当前节点仍PUB-01-S03_SS07 / ACTIVE，持续goal尚未达到。round01全部54screen、37唯一full、五native/FT、五seed统一内部/DTU评分及实际raw v1/metric v2复核已完成；旧controller/eval/review正常结束，无后续训练。实际M4−P内部−.000621、DTU+.000149，M7近似区间均跨0；未建立稳健超越、历史机制或投稿充分性。
+
+本轮Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；报告入口[REPORT](../reports/pub_01/s03/incremental_continuity/run01/REPORT.md)、[REVIEW](../reports/pub_01/s03/incremental_continuity/run01/REVIEW.md)。九张实际图已逐图解释并协调独立审阅；轻量HTML归档run_id=20261101_pub01_s03_ss07_round01，路径E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_round01/report.html，九图/说明/副本/链接检查通过。
+
+下一工作只整理基于测试前train/val的已训练P起点、encoder联合更新及matched current控制方案草案，尚未执行新fit；旧内部测试和已暴露DTU不可重新当新确认测试。沿用SS06 worktree/branch/PR#6 Draft，允许提交推送不合并；患者/STN FORBIDDEN，信号/权重/预测只在2203。无新下载、患者或其他支线启动，不以本轮有限制阴性交付标整个goal完成。
+
+---
+
+## 历史：SS07 round01执行过程
 
 用户最新明确授权尽快全量实验、设goal、使用2203全部可用算力，研究目标超过原baseline并积累ICML/NeurIPS级证据。SS07 ACTIVE；旧STOP/单pass/NO_GO不覆盖本授权，旧结果保持只读。先执行PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md及本轮INTAKE/BASELINE_PROTOCOL，原完整Transformer/XLSR19两阶段、fold完整train/val、100epoch/pat15预训练与250epoch/pat10head至少3seed；仅在强模型上增加五类有界残差，精确矩阵协调审阅。开发只train/val，旧test均内部暴露，未冻全计划不评估。无阳性/论文接收保证。
 
