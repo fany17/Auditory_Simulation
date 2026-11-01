@@ -1,6 +1,8 @@
-# 当前执行：SS07 D7固定内部泛化审计正式运行（2026-11-01）
+# 当前执行：SS07 D7交付冻结；D8仅强FT TRAIN/VAL方案准备（2026-11-01）
 
-D7独立代码/协议审阅已通过并正式授权（COORDINATOR_CODE_REVIEW原样SHA0b1b82fc…3b68f）；34cdc53 source13a02bb16bf7a221b24786d6f382fdf59cae46014773f6d12d660cf7ebb127a2/core729218…与protocoleed8be9f…冻结，实际18格固定VAL桥主差≤5.55e−17、MSE/Hann差0。唯一正式PID535287在2203 ROOT pub_01/s03_current_readout_internal_audit_20261101运行36角色-split；先每seed144原P未缩放fused桥，再5冻结readout。新fit/encoder/rawEEG/DTU/下载0，λ固定，全部POST-HOC INTERNAL EXPLORATORY，不因分数重选或重跑。尚待实际完整结果/独立review/图文交付，goal ACTIVE。
+D7固定36/36角色-split已完成，PID535287正常退出。Ccap对P*/P-only原2:1加权r均差+.008695/+.004301，seen/held-out每seed均正；但同三seed历史P_FT=.168944726、Ccap=.168943486，差−.000001240且seed方向混合，未证明超过P_FT、等效或非劣。全部POST-HOC INTERNAL EXPLORATORY，不据旧测试重选。实际独立286来源/893输入/36聚合及72缓存重建通过（块r差≤2.78e−16，432原P未缩放桥差0），全文/三图已审阅；原样review57072ffe…b45f，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REVIEW.md)及HTML run_id20261101_pub01_s03_ss07_internal_generalization已归档，三图说明/副本/链接通过。无新fit/encoder/rawEEG/DTU/下载，wall75.177s、CPU504.670s；科学goal ACTIVE。
+
+下一步D8仅盘点原三seed P_FT TRAIN/VAL资产并准备P_FT/Ponly/C/Ccap最小强encoder读出迁移方案。原FT无TRAIN/VAL latent cache，不能用nativeP缓存代替；先给精确空间/新前向预算、原global64/layout桥与对应FT TRAIN统计/a,b重拟合方案交协调审定，不直接新缓存/拟合、不读取D7旧测试/DTU。不扩大D4-D6网格，不新增模型或下载；SS07节点保持ACTIVE。
 
 以下准备记录为历史，原D4-D6不改。
 

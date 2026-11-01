@@ -14,6 +14,8 @@
 | 历史是否改变当前映射 | [D5](history_interaction_probe/run01/REPORT.md)：36闭式解；Near对共同加性控制仅1/3 seed正，对同容量CC三个seed全负 | 所测低维双线性交互未获预设支持，不排除其他状态时标/非线性机制。不能用极小的Near−Anchor正值替代控制 |
 | current 增益来自哪些读出变化 | [D6](readout_attribution/run01/REPORT.md)：27新解+18原样复用；P/Ponly/S32/U32/C/Ccap VAL r=.162362/.171837/.174284/.173867/.174789/.176897 | 原输出后处理已有重要增益；latent映射另有增量。解除共享不是选定收益来源；完整latent支持与容量共同改变；平方增益依赖正则 |
 | 输出一致性能否代替准确度 | [D6图三及review](readout_attribution/run01/REVIEW.md)：P* overlap误差最小而r最低；固定Hann误差恒等已实际验证 | 不能由一致性单独推断准确度，亦不能据此直接训练一致性loss；r、target MSE与融合分散收益需同时解释 |
+| 固定读出增益是否在旧内部测试仍存在 | [D7](internal_generalization/run01/REPORT.md)：36/36固定角色–split；P*/P-only/Ccap三seed加权r=.160248/.164642/.168943，Ccap对前两者在seen/held-out每个seed均正；全部36聚合和72缓存重建已独立核验 | 支持相对原冻结P和输出再读出的内部可重复点增益；旧测试已暴露，没有新的独立确认或历史机制证据 |
+| 是否已经超过原完整微调强基线 | [同三seed历史参考](internal_generalization/run01/COORDINATOR_HISTORICAL_FT_REFERENCE.json)：原P_FT均r=.1689447264，Ccap=.1689434862，配对均差−.0000012402且逐seed符号混合；同2044块/原2:1口径 | 点均值几乎一样，不能宣称优势、等效或非劣。P_FT额外5epoch联合微调与冻结encoder的TRAIN岭拟合/λ搜索成本不同；此项是事后历史参考，未改变D7预设矩阵 |
 
 D4–D6使用原3个seed、重复source VAL（49人/5个clip标识，部分与TRAIN同书家族）。它们不是独立复现实验，也不把多组λ或重复窗当独立样本。D6当前最强读出相对原P的开发差值不等同连续性收益或同容量、同优化成本优势。后续必须保留P-only及C/Ccap等强控制，不能退回只与原257参数head相比。
 
@@ -21,7 +23,7 @@ D4–D6使用原3个seed、重复source VAL（49人/5个clip标识，部分与TR
 
 | 目标要求 | 当前状态 | 可证明它的证据，而非替代品 |
 |---|---|---|
-| 可重复超过原强baseline | 三seed验证集读出增益已成立；测试泛化尚待D7 | 固定模型在清晰暴露记录下的逐seed/逐人配对结果；进一步的新确认数据。验证最高值或技术PASS不够 |
+| 可重复超过原强baseline | 已有相对冻结P/P-only的内部三seed增益；尚未超过完整P_FT强参考 | 强baseline下固定方法的逐seed/逐人结果，以及进一步可信新确认。不能把冻结P当唯一baseline，或将点均值接近称为等效 |
 | 连续性独立贡献 | 迄今未建立；已有多种有效阴性 | 在强current与输出prior/容量/预算控制下的历史增量，以及保持当前EEG不变的内容/时间干预结果 |
 | 方法新意 | 未建立；常见模块、岭读出及平方扩展本身不构成充分贡献 | 对照一手相关工作明确新的可检验方法贡献，辅以相应消融/效率/适用边界。换名称不解决缺口 |
 | 泛化与统计 | 原Sparr测试及DTU已有暴露；同人/同刺激依赖存在 | 新的可信确认范围、预先冻结适配/评分，明确被试与刺激层级；不能将旧test改名新holdout |
@@ -30,8 +32,10 @@ D4–D6使用原3个seed、重复source VAL（49人/5个clip标识，部分与TR
 
 ## 当前下一步的精确状态
 
-[D7 PLAN](internal_generalization/run01/PLAN.md)已审阅，正在实现必要核验与固定内部审计：P*/Ponly/S32/U32/C/Ccap × 3 seed × seen/heldout，共36角色-split。只用已选λ及既有参数，不新拟合；69名seen、13名heldout被试，共144记录。三seed的原测试latent及原P融合输出经只读盘点齐备，仅需恢复原head窗口输出，不重放encoder。
+[D7 PLAN](internal_generalization/run01/PLAN.md)的P*/Ponly/S32/U32/C/Ccap × 3 seed × seen/heldout共36角色-split已实际完成。只用已选λ及既有参数，不新拟合；69名seen、13名heldout被试，共144记录。原P未缩放波形的432record桥差均0，独立72缓存重建最大block r差2.78e−16，全36聚合差0；协调已实际读完整中文报告及三图。主run wall75.177秒，没有encoder/raw EEG前向或新训练。
 
-D7是**POST-HOC INTERNAL EXPLORATORY**。主要比较已固定Ccap−P*、Ccap−Ponly，沿用原2/3 seen+1/3 heldout计权；不根据结果调整本轮模型或扩大网格。当前尚无D7新性能结果。即使D7为正，也不能单独补足独立确认、历史机制或创新缺口。
+D7是**POST-HOC INTERNAL EXPLORATORY**。预设主要比较Ccap−P*、Ccap−Ponly的均差分别+.008695、+.004301，沿用原2/3 seen+1/3 heldout计权；不根据结果调整本轮模型或扩大网格。原完整P_FT在相同三seed/块/计权下与Ccap点均值几乎一样。该正向审计未补足超强baseline、独立确认、历史机制或创新缺口；完整review及归档由D7产物记录实际完成状态。
+
+下一步仅准备对应P_FT的TRAIN/VAL读出转移诊断，以D6开发证据和强baseline要求为依据，先核实FT缓存/归一化/选点/一次前向成本。不能直接把nativeP的统计和系数套到FT latent，也不以D7旧测试决定下一模型/λ/预算。新的连续性假说需给出强current、输出prior与历史干预对照，不能把重复岭调参当方法创新。
 
 所有信号、权重、系数和数值计算仍在2203；本地仅代码与轻量报告。旧各轮结果冻结，PR#6不自动合并，不启动患者/STN或无关任务。

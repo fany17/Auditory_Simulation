@@ -1,5 +1,7 @@
 # PUB-01 — EEG 听觉解码竞品与任务基准表
 
+2026-11-01 SS07 D7：冻结current读出的36项旧内部评分完成、独立36聚合/72缓存重建及全文三图审阅通过，完整internal_generalization/run01/REPORT.md与REVIEW.md/HTML归档齐备。P*/P-only/Ccap原2:1加权r=.160248/.164642/.168943；Ccap对前两者每seed/组均正。同三seed历史完整P_FT=.168944726，与Ccap点均值几乎相同，配对方向混合，不能宣称超越/等效/非劣；额外预算与边界策略不同。旧测试POST-HOC INTERNAL EXPLORATORY，无独立确认或连续历史收益，goal ACTIVE。下一步仅准备P_FT TRAIN/VAL最小读出诊断及资源PLAN，不用旧test排名调参。
+
 2026-10-15交付：SS02 COMPLETED / PASS_WITH_LIMITATION。HDPS原100Hz/M、76人599对、test12776query：Top1/5/10=12.03/30.45/42.10%，shuffle Top1=.53%；Transformer原架构/public fold4/XLSR19、70训练/69seen/13heldout：2AFC=83.53/80.08%（加权82.38%）、EEG-only原Conv32包络r=.1688/.1403（加权.1593）。三运行独立review通过，完整论文条件未复现。M论文数字仍未核实，不与MWG20%比差；100–235候选原本存在固定公开索引。下述10-13等待记录为历史。
 
 状态：`PROTOCOL_AUDITED / REPRODUCTION_HOLD`（2026-10-13追加）。原raw100Hz/M70story与独立HDPS论文功能模型batch256工程smoke已完成；原split600/647对就绪，必要47条raw受限。**A+B同条件正式训练/测试NOT_RUN，不能判断一致性**。Transformer EEGcheckpoint失效且official test未齐；XLSR原声音权重已取得。恢复清单/三级review见`reports/pub_01/s03/strong_baselines/`；无76人/64Hz替代分数，SS02 WAITING_EXTERNAL / HOLD，无后台作业。

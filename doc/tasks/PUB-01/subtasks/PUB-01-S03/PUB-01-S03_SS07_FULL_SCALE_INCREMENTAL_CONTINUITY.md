@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D6有限制交付；D7独立代码审阅/18VAL桥通过并已正式执行36固定角色-split，真实交付待，科学goal未达到 |
+| Status | ACTIVE — D4-D7有限制交付；D7未超过同三seed强P_FT，当前仅准备D8 FT TRAIN/VAL最小迁移PLAN，科学goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -82,6 +82,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 三级审阅：技术可复现；科学结论与证据相称；父任务公开/患者边界和原有冻结结果不变。仅就已授权公开EEG方法目标持续推进，不把本任务完成等同PUB-01全部完成或论文接受。
 
 ## 6. 执行记录
+
+2026-11-01 D7 Completion Record：固定36角色-split全部完成，原P未缩放432record桥差0、P* block r差≤3.33e−16；无新fit/encoder/rawEEG/DTU/下载。Ccap对P*/P-only原2:1加权均差+.008695/+.004301，两组每seed均正；相同三seed历史P_FT=.168944726、Ccap=.168943486，差−.000001240且seed方向混合，未证明超强微调baseline、等效或非劣。独立286source/893header/36聚合及72缓存重建通过，block r差≤2.78e−16，全文/三图/FT注释实际审阅；review57072ffe…b45f原样保留。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS；全部POST-HOC INTERNAL EXPLORATORY，goal仍ACTIVE。internal_generalization/run01完整REPORT/REVIEW/全表与HTML run_id20261101_pub01_s03_ss07_internal_generalization已归档并检查三图/说明/副本/链接。主run wall75.177s、CPU504.670s、RSS1.03GiB、driver520MiB，新派生223.32MiB，全七root NPY18.602GB。原D4-D6不改、不重测；D8仅准备对应P_FT TRAIN/VAL资产/准确空间/一次前向及最小P_FT/Ponly/C/Ccap读出转移PLAN，重拟合FT统计/a,b，不套native系数，先协调审定再执行。
 
 2026-11-01 D6：27新闭式模型+18D4精确复用/45候选完成。P-only/S32/U32/C/Ccap均r=.171837/.174284/.173867/.174789/.176897（P*.162362），P输出再读出已有增益，完整latent C对U32全部3λ×3seed正；解除共享/平方收益并非无条件。原P*最overlap一致却r最低，固定Hann误差分解不当优化目标。协调实际52来源/12输入/45共同mask/27coef约束与正规方程核验，9所选新模型独立缓存输入重建块r差≤4.44e−16、secondary≤3.44e−16，三图/全文读看；原样review7a9a621d…6077、audit54a778a9…86d3。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整readout_attribution/run01图文表与HTML run_id20261101_pub01_s03_ss07_readout_attribution三图/副本/链接检查通过；wall62.767/CPU348.898秒，无新TRAIN载荷、NN、GPU、test/DTU。D7仅准备36角色-split旧seen/heldout内部泛化审计PLAN/只读输入盘点，先协调审定再测试；冻结强current及已选λ不重训，全部POST-HOC INTERNAL EXPLORATORY。goal仍ACTIVE，不改旧阴性或扩大旧矩阵。
 

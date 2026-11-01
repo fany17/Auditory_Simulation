@@ -1,0 +1,60 @@
+{
+  "scope": "POST_RESULT_HISTORICAL_REFERENCE_ONLY_NOT_ADDED_REGISTERED_D7_ROLE_OR_SELECTION",
+  "reason": "Do not obscure existing stronger fine-tuned baseline when interpreting new native-P readout gain.",
+  "new_inference_or_fit": false,
+  "old_P_FT_sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/final_results/seed1024/INTERNAL_P_FT.json": "72967ae094d2acdaeacaaf21ce648d7dbc65c65bbff180b3359a723b929b109f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed1024/best_validation.pt": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/final_results/seed2026/INTERNAL_P_FT.json": "e9312f4013741f6e360e102927405d2094a38e440d41b83ed762c7ca8d2d820b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed2026/best_validation.pt": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/final_results/seed31415/INTERNAL_P_FT.json": "3f8671ad65533b9c1ce6c85667117befd3d52547ab3d6119641c3a3d223ef4e0",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed31415/best_validation.pt": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9"
+  },
+  "rows": [
+    {
+      "seed": 1024,
+      "P_FT_seen": 0.17832795636890725,
+      "P_FT_heldout": 0.14938716981579814,
+      "P_FT_weighted": 0.16868102751787087,
+      "Ccap_minus_P_FT_seen": -0.0015472955168553681,
+      "Ccap_minus_P_FT_heldout": -0.001983991303698751,
+      "Ccap_minus_P_FT_weighted": -0.0016928607791364958,
+      "P_FT_selected_epoch": 4,
+      "P_FT_parameters": 3372617
+    },
+    {
+      "seed": 2026,
+      "P_FT_seen": 0.17942392977807695,
+      "P_FT_heldout": 0.1482955320168699,
+      "P_FT_weighted": 0.16904779719100793,
+      "Ccap_minus_P_FT_seen": 0.0010473995712687867,
+      "Ccap_minus_P_FT_heldout": 0.0009166314312744339,
+      "Ccap_minus_P_FT_weighted": 0.0010038101912706598,
+      "P_FT_selected_epoch": 4,
+      "P_FT_parameters": 3372617
+    },
+    {
+      "seed": 31415,
+      "P_FT_seen": 0.1805412519836557,
+      "P_FT_heldout": 0.14623355922410003,
+      "P_FT_weighted": 0.16910535439713714,
+      "Ccap_minus_P_FT_seen": 0.0012501138099083597,
+      "Ccap_minus_P_FT_heldout": -0.0004442373250017895,
+      "Ccap_minus_P_FT_weighted": 0.0006853300982716526,
+      "P_FT_selected_epoch": 4,
+      "P_FT_parameters": 3372617
+    }
+  ],
+  "means": {
+    "P_FT_seen": 0.17943104604354662,
+    "P_FT_heldout": 0.1479720870189227,
+    "P_FT_weighted": 0.16894472636867197,
+    "Ccap_minus_P_FT_seen": 0.0002500726214405928,
+    "Ccap_minus_P_FT_heldout": -0.0005038657324753689,
+    "Ccap_minus_P_FT_weighted": -1.240163198061121e-06
+  },
+  "all_same_2044_block_keys": true,
+  "budget_note": "P_FT is previously completed native encoder+head5epoch supervised finetuning; Ccap freezes encoder and uses extra TRAIN ridge readout/search. Additional training and optimization costs differ; not an equal-budget loss/architecture ablation.",
+  "conclusion": "Ccap and historical same3seed P_FT weighted point means are nearly identical; no superiority/equivalence/noninferiority proven. Ccap-P_FT seed signs are mixed. Original D7 six roles and prespecified contrasts remain unchanged.",
+  "goal_complete": false
+}
