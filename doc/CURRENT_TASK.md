@@ -4,7 +4,7 @@
 
 本轮Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；报告入口[REPORT](../reports/pub_01/s03/incremental_continuity/run01/REPORT.md)、[REVIEW](../reports/pub_01/s03/incremental_continuity/run01/REVIEW.md)。九张实际图已逐图解释并协调独立审阅；轻量HTML归档run_id=20261101_pub01_s03_ss07_round01，路径E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_round01/report.html，九图/说明/副本/链接检查通过。
 
-下一工作只整理基于测试前train/val的已训练P起点、encoder联合更新及matched current控制方案草案，尚未执行新fit；旧内部测试和已暴露DTU不可重新当新确认测试。沿用SS06 worktree/branch/PR#6 Draft，允许提交推送不合并；患者/STN FORBIDDEN，信号/权重/预测只在2203。无新下载、患者或其他支线启动，不以本轮有限制阴性交付标整个goal完成。
+下一工作见[NEXT_TRAIN_VAL_PLAN](../reports/pub_01/s03/incremental_continuity/run01/NEXT_TRAIN_VAL_PLAN.md)：基于测试前train/val的已训练P起点、encoder联合更新及matched current六格三seed草案，DRAFT_REVIEW_ONLY / NOT_RUN；原FT满足严格来源/批次/RNG等一致才复用。尚未执行新fit；旧内部测试和已暴露DTU不可重新当新确认测试。沿用SS06 worktree/branch/PR#6 Draft，允许提交推送不合并；患者/STN FORBIDDEN，信号/权重/预测只在2203。无新下载、患者或其他支线启动，不以本轮有限制阴性交付标整个goal完成。
 
 ---
 
