@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4/D5/D6实际独立review与图文归档有限制交付；D7仅只读盘点/精确PLAN准备，科学goal未达到 |
+| Status | ACTIVE — D4-D6有限制交付；D7独立代码审阅/18VAL桥通过并已正式执行36固定角色-split，真实交付待，科学goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |

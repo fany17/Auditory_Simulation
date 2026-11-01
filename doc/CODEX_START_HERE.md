@@ -1,4 +1,6 @@
-# 当前入口：SS07 D6已归档，D7内部泛化审计只读准备，goal ACTIVE
+# 当前入口：SS07 D7固定内部泛化审计正式运行，goal ACTIVE
+
+D7源码/协议和实际18VAL桥已34cdc53冻结、独立审阅正式批准，PID535287唯一运行，36角色-split/原3seed/已选λ，先全144原P未缩放桥再固定候选。只head/cached代数，无新fit/encoder/DTU；全部POST-HOC INTERNAL EXPLORATORY，真实完整结果与独立review仍待。CURRENT_TASK顶部为最新入口，以下只读准备描述为历史。
 
 D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)实际独立review与中文HTML归档已完成有限制。当前只读盘点/准备D7冻结36角色-split方案，原3seed/已选λ/强current控制、仅既有seen/heldout，全部POST-HOC INTERNAL EXPLORATORY；先交协调审定，尚不测试/新拟合，不碰DTU/下载。旧D4-D6不按新结果重开，最新路由CURRENT_TASK顶部。
 

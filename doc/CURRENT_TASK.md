@@ -1,4 +1,8 @@
-# 当前执行：SS07 D6完整交付，D7内部泛化审计只读准备（2026-11-01）
+# 当前执行：SS07 D7固定内部泛化审计正式运行（2026-11-01）
+
+D7独立代码/协议审阅已通过并正式授权（COORDINATOR_CODE_REVIEW原样SHA0b1b82fc…3b68f）；34cdc53 source13a02bb16bf7a221b24786d6f382fdf59cae46014773f6d12d660cf7ebb127a2/core729218…与protocoleed8be9f…冻结，实际18格固定VAL桥主差≤5.55e−17、MSE/Hann差0。唯一正式PID535287在2203 ROOT pub_01/s03_current_readout_internal_audit_20261101运行36角色-split；先每seed144原P未缩放fused桥，再5冻结readout。新fit/encoder/rawEEG/DTU/下载0，λ固定，全部POST-HOC INTERNAL EXPLORATORY，不因分数重选或重跑。尚待实际完整结果/独立review/图文交付，goal ACTIVE。
+
+以下准备记录为历史，原D4-D6不改。
 
 D6最终实际独立review有限制通过（52来源/12输入/27coef约束/45共mask；9个选定新模型独立缓存输入重建，块r差≤4.44e−16），原样audit/review齐备。完整[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)、三图中文解释与全部表、轻量HTML归档run_id=20261101_pub01_s03_ss07_readout_attribution已完成（E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_readout_attribution/report.html，三图/副本/链接检查通过）。current开发增益有限归因成立，科学goal仍ACTIVE。
 

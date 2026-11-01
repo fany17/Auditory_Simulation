@@ -1,0 +1,15 @@
+{
+  "pid": 535287,
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "-u",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization.py",
+    "run",
+    "--device",
+    "cuda:0"
+  ],
+  "source_sha": "13a02bb16bf7a221b24786d6f382fdf59cae46014773f6d12d660cf7ebb127a2",
+  "live": true,
+  "time": 1793517434.0431242,
+  "proc_cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python -u /home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization.py run --device cuda:0 "
+}
