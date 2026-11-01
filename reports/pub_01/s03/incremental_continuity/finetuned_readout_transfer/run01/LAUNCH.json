@@ -1,0 +1,16 @@
+{
+  "pid": 541227,
+  "time": 1793519309.727995,
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/input/pub_01_s03_ss07_ft_readout.py",
+    "run",
+    "--device",
+    "cuda:0"
+  ],
+  "uid": 1012,
+  "source_sha": "3f4d4786daa1533b504d48300dd287ef36044d3e498425a9ce4b7456955365a0",
+  "protocol_sha": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+  "source_commit": "b659d39",
+  "new_test_DTU": false
+}

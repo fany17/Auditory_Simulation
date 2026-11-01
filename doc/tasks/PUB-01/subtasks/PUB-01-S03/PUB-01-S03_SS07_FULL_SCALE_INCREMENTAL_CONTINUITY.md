@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D7有限制交付；D7未超过同三seed强P_FT，当前仅准备D8 FT TRAIN/VAL最小迁移PLAN，科学goal未达到 |
+| Status | ACTIVE — D4-D7有限制交付；D7未超过同三seed强P_FT；D8 PLAN已批准/source冻结，PID541227正式一次FT TRAIN/VAL编码与27岭解，结果待 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |

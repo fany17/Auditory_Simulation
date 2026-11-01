@@ -1,8 +1,8 @@
-# 当前执行：SS07 D7交付冻结；D8仅强FT TRAIN/VAL方案准备（2026-11-01）
+# 当前执行：SS07 D7交付冻结；D8强FT TRAIN/VAL正式执行（2026-11-01）
 
 D7固定36/36角色-split已完成，PID535287正常退出。Ccap对P*/P-only原2:1加权r均差+.008695/+.004301，seen/held-out每seed均正；但同三seed历史P_FT=.168944726、Ccap=.168943486，差−.000001240且seed方向混合，未证明超过P_FT、等效或非劣。全部POST-HOC INTERNAL EXPLORATORY，不据旧测试重选。实际独立286来源/893输入/36聚合及72缓存重建通过（块r差≤2.78e−16，432原P未缩放桥差0），全文/三图已审阅；原样review57072ffe…b45f，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REVIEW.md)及HTML run_id20261101_pub01_s03_ss07_internal_generalization已归档，三图说明/副本/链接通过。无新fit/encoder/rawEEG/DTU/下载，wall75.177s、CPU504.670s；科学goal ACTIVE。
 
-下一步D8仅盘点原三seed P_FT TRAIN/VAL资产并准备P_FT/Ponly/C/Ccap最小强encoder读出迁移方案。原FT无TRAIN/VAL latent cache，不能用nativeP缓存代替；先给精确空间/新前向预算、原global64/layout桥与对应FT TRAIN统计/a,b重拟合方案交协调审定，不直接新缓存/拟合、不读取D7旧测试/DTU。不扩大D4-D6网格，不新增模型或下载；SS07节点保持ACTIVE。
+D8具体[PLAN](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/PLAN.md)已协调明确审定；b659d39 source3f4d4786…365a0/protocol54d424d5…0c980在任何新前向前冻结。唯一PID541227（UID1012/start_ticks744655443）正式执行三seed frozen P_FT当前读出迁移：每phase一次global64编码，同次P/Z，先VAL历史scalar loss门1e−7及首尾raw波形门1e−6，再TRAIN对应统计/正a,b和Ponly/C/Ccap×3λ×3seed=27岭解。首seed实际VAL scalar/raw差0，TRAIN cache运行中；不得重启。新NPY5.867GB、全8根预计24.469GB<25GiB，whole新root≤7GiB/free reserve≥20GiB；NN更新/旧test/DTU/下载0。prepare01仅审阅schema键不符失败，无数值，原source/RECORD保留后按实际批准status+hash修复；不放宽任何科学门。完整结果/实际review/图文仍待，SS07及goal保持ACTIVE，旧D4-D7冻结。
 
 以下准备记录为历史，原D4-D6不改。
 
