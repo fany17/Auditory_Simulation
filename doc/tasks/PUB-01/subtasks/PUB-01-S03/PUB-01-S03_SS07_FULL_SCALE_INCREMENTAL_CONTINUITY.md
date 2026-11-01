@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — round01/warm round02实际结果与复核有限制交付；未建立稳定历史增益，现仅准备D4最小方案 |
+| Status | ACTIVE — round01/warm及TRAIN诊断有限制交付；D4方案已审定、54解正式执行中，未建立稳定历史增益 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |

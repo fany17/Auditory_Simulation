@@ -1,4 +1,8 @@
-# 当前执行：SS07 warm round02复核完成，交付报告并准备D4方案（2026-11-01）
+# 当前执行：SS07 D4条件历史probe正式求解（2026-11-01）
+
+D4方案4f59651已协调明确审定；源码a8e4c12、PROTOCOL及必要公式/无未来/PCA矩变换检查已冻结，实际PID521141/source0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410在2203正式执行。ROOT=pub_01/s03_conditional_history_probe_20261101；本地[PLAN](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/PLAN.md)。原TRAIN/VAL、三seed、C/Ccap/CS/CF/CO/CF48六臂×三λ共54闭式解；先原P评分核对，TRAIN-only统计/正仿射/PCA，共同i≥4拟合、首4窗共同P回退，原49人752块评分。无新NN/encoder forward/test/DTU/下载。源码静态审阅并行，不增新用户等待门。全部结果/成本/失败与完整报告仍待，不把工程PASS/正式启动当goal完成。
+
+以下warm轮次已交付，旧“仅准备D4”是当时进度，以上段最新执行为准。
 
 最新实际状态：18/18fit全部5epoch完成，90epoch/355050更新/22720860监督窗，全格CSV/三图齐备；训练不重启。wholeVAL v1首格失败原样保留，恢复真实cache/RawWindows执行路径的独立v2（source2df9f4f、协议6fc0f00a…4d2c9）已实际完成18格/549000窗/13536块，wave绝对差全0，原1e−6主门全部通过，未改训练/权重/分数/选点。协调原样写入COORDINATOR_RESULT_REVIEW，technical PASS_WITH_LIMITATIONS / scientific NO_STABLE_INCREMENTAL_HISTORY_BENEFIT_ESTABLISHED，goal仍ACTIVE。run02/REPORT.md逐图解释及完整限制已写；以下启动/失败进度均为历史。
 
