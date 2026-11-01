@@ -1,0 +1,58 @@
+{
+  "frozen": true,
+  "time": 1793509204.4062097,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_train_diagnostics_20261101/input/pub_01_s03_ss07_train_diagnostics.py": "e0a2fdd577167e25766b4683b5e85f12ce55cfd7b28eee36367748ea6ff81512",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_train_diagnostics_20261101/DEFINITION.md": "abbc23c6245e9950ea3724147da97735e106aa53e58c20c771511f1bf8a5b80b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/manifest_frozen.json": "395ffef0765ce595e897f85c7483f2a07816c0266d27f5e4e2e8d0d5959f84d5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_train_diagnostics_20261101/TRAIN_RECORDS.json": "104086c2db0c9fc5ce4d46abcc8467e955d191c9c3977e2aa462068d76312b76",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/cache_manifest.json": "5f2f6a4ff24c2dfb8168c2c9119ca3c1383b8ab930f04076e5f774bcf293596b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/best_validation.pt": "d1fe16d1598887c72b5912e9f111c0234e1e10b5430bc0e44f25a79dc3caee44",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed1024/best_validation.pt": "75860bfb1bbeed03eab32c25baaa37338f60dcc6214c6f340da9742ae1fd99d8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/cache_manifest.json": "8c2579606986c740b1958b12bec7f8b4d710111538da2b7e4a28333d6286b330",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/best_validation.pt": "3add5850f47d197b4e1bcf2fd48380bf18981bdaaabade2b0efb20ae91beb4b4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed2026/best_validation.pt": "20036e59d62b4295a3bf62e21a18f96c9dc27bb6b9990faf52fb76ead81a08d2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/cache_manifest.json": "6d5554285dee829c2a0c4dd33d90e67527dac9db6fe78e1af16cf959cf955052",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/best_validation.pt": "c1d5efb56dd074a67e406ecf3b44fc1110bf60f58d97ddec205a70d38a8d3f9c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed31415/best_validation.pt": "4e3fa89d6498a41979d8dbc2251eb4cea7a39eb5c8727822ca21535de2aaef7a"
+  },
+  "inputs": {
+    "1024": {
+      "train_latent": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/train_latent.npy",
+      "bytes": 1551077504,
+      "checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/best_validation.pt",
+      "cache_manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/cache_manifest.json"
+    },
+    "2026": {
+      "train_latent": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/train_latent.npy",
+      "bytes": 1551077504,
+      "checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/best_validation.pt",
+      "cache_manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/cache_manifest.json"
+    },
+    "31415": {
+      "train_latent": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/train_latent.npy",
+      "bytes": 1551077504,
+      "checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/best_validation.pt",
+      "cache_manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/cache_manifest.json"
+    }
+  },
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "records": 426,
+  "windows_per_seed": 252454,
+  "phase": "TRAIN_ONLY",
+  "batch": 256,
+  "compute_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "",
+  "D1": "all adjacent96 overlaps; two fixed48 fit/held directions; strict positive scale; paired raw denominator; no labels",
+  "D2": "center each channel/window; six nonoverlapping32 means, piecewise reconstruction; E6/E0 and zero-energy coverage",
+  "D3": "original sharedTRAIN target lags192/384/768 once, centered pair Pearson within record",
+  "new_NN_fits": false,
+  "encoder_forward": false,
+  "VAL_test_DTU_reads": false,
+  "new_cache_or_payload_download": false,
+  "bad_record_policy": "record error/coverage and continue other records; no source repair, replacement or automatic retry"
+}
