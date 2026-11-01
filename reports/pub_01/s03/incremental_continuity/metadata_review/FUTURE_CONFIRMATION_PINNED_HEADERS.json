@@ -1,0 +1,52 @@
+{
+  "scope": "METADATA_ONLY_NO_PAYLOAD_DOWNLOAD_NO_PREPROCESSING_NO_PREDICTION",
+  "repository": "OpenNeuroDatasets/ds004408",
+  "pinned_commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+  "reviewed_on": "2026-11-01",
+  "files": [
+    {
+      "path": "README",
+      "git_blob_sha": "d940f210921ff8b56ce720c83d8fd956b96be861",
+      "url": "https://github.com/OpenNeuroDatasets/ds004408/blob/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be/README",
+      "reported": "128-channel BioSemi ActiveTwo; unfiltered, unreferenced512Hz; one record per audio segment; starts aligned, EEG longer to variable extent; citesDiLiberto2015 andBroderick2018."
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "84de42c847b21f0cc1cb4832f3594e2985179f6e",
+      "url": "https://github.com/OpenNeuroDatasets/ds004408/blob/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be/sub-001/eeg/sub-001_task-listening_run-01_channels.tsv",
+      "reported": "Exactly128 listed EEG rows A1..D32; unitsV,512Hz,statusgood. No mastoid/EXG rows and no position/reference column. These are metadata declarations, not actual unit or signal-quality verification."
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-01_eeg.json",
+      "git_blob_sha": "495bcdd13f928fb31668cf2411687d6c25feeb32",
+      "url": "https://github.com/OpenNeuroDatasets/ds004408/blob/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be/sub-001/eeg/sub-001_task-listening_run-01_eeg.json",
+      "reported": {
+        "Manufacturer": "Brain Products",
+        "SamplingFrequency": 512,
+        "RecordingDuration": 195.998046875,
+        "EEGChannelCount": 128,
+        "EEGReference": "n/a",
+        "EEGPlacementScheme": "n/a",
+        "EOGChannelCount": 0,
+        "MiscChannelCount": 0,
+        "TriggerChannelCount": 0
+      }
+    }
+  ],
+  "folder_inventory": {
+    "path": "sub-001/eeg",
+    "git_tree_sha": "27adfe2684e9ed85386bc40f91f198c95d8b9e3f",
+    "entries": 100,
+    "run_labels": "01..20",
+    "electrodes_coordsystem_events_files_listed": false,
+    "scope_note": "Only sub001 directory inventoried; do not generalize missing files or quality to allsubjects."
+  },
+  "interpretation": [
+    "The sample BIDS sidecar still conflicts with README/paper regarding manufacturer; no actualgeometry proof.",
+    "Paper-linked mastoid reference cannot be directly promised when the sampled channel table includes only128 scalp labels; actual file inspection and explicit adaptation would be required if later authorized.",
+    "The channel table reportsV; do not infer EEGLab payload units or apply a scale solely from format conventions without actual payload validation.",
+    "Recording195.998s and READMEnote of variable trailingEEG support the need to align/crop by actual audio coverage; exact onset/drift still unverified.",
+    "Do not silently exclude2subjects from the19 based on a different28trial paper or rename interpolation as identity mapping."
+  ],
+  "authorization": "Future candidate metadata only. No .set/.fdt/.wav/array payload requested, no newdataset/model scope approved, no performance-based adapter choice."
+}
