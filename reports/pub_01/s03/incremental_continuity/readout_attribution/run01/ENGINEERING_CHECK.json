@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "shared_Schur_vs_augmented_coeff_max_abs": 1.1657341758564144e-15,
+  "coupled_df_vs_explicit_hat_abs": 3.552713678800501e-15,
+  "normal_residual": 1.1102230246251565e-16,
+  "same_local_padding_band_canaries": true,
+  "Hann_identity_max_abs": 3.552713678800501e-15
+}

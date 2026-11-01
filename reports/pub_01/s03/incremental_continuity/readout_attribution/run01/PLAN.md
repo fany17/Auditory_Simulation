@@ -15,6 +15,7 @@ D4 C/Ccap开发VAL高于原P，但同时改变原Conv32共享约束、latent支�
 | 条件 | Z残差约束 | 共同P分支/截距 | 参数总数 | 本轮求解 |
 |---|---|---|---:|---|
 | P* | 无新残差 | 无 | 0 | 不拟合 |
+| P-only | B_Z=0，仅对原P输出再读出 | dense P192×192 + b192 | 37056 | 新拟合 |
 | S32 | 相对offset−15…+16的8×32系数跨192输出位置共享 | dense P192×192 + b192 | 37312 | 新拟合 |
 | U32 | 与S32逐输出相同local32支持，各位置独立系数 | 同上 | 84160 | 新拟合 |
 | C | 完整current Z1536→192，无共享约束 | 同上 | 331968 | **精确复用D4** |
@@ -28,7 +29,7 @@ D4 C/Ccap开发VAL高于原P，但同时改变原Conv32共享约束、latent支�
 
 若offset k在192输出中出现m_k=192−|k|次，以θ_(channel,k)=sqrt(m_k) w_(channel,k)参数化，共享feature为local Z/sqrt(m_k)，于是||B_Z||²_F=||θ||²。每个位置的P分支可用同一(G_PP+λI)消元，256维共享θ通过Schur complement求解；再回代各位置P系数。U32每个位置仅解有效Z local列与共同P列对应的中心化ridge，统一一个λ，不对192个输出单独选择λ。
 
-直接复用D4 TRAIN_MOMENTS的centered G/H、x_mean/residual_mean，无新TRAIN latent/target统计遍历；只取current Z/P相关块。C/Ccap的18套原D4系数、λ和评分来源原样复用，不为D6重新拟合。新S32/U32×3seed×3λ=**18套model-λ解**，另18套D4精确复用，共36套评分表；U32内部1728个按输出的小线性系统、S32九个共享Schur系统及P回代的实际开销单列，不把18套模型虚称18次标量求解。PCA/新normalization拟合0。
+直接复用D4 TRAIN_MOMENTS的centered G/H、x_mean/residual_mean，无新TRAIN latent/target统计遍历；只取current Z/P相关块。C/Ccap的18套原D4系数、λ和评分来源原样复用，不为D6重新拟合。新P-only/S32/U32×3seed×3λ=**27套model-λ解**，另18套D4精确复用，共45套评分表；U32内部1728个按输出的小线性系统、S32九个共享Schur系统及P回代、P-only九个联合输出解的实际开销单列，不把模型数虚称标量求解数。PCA/新normalization拟合0。P-only是在看到D6任何分数前由协调要求补入的必要归因控制，不是结果后追分。
 
 有效df统一报告整个192输出系统（不含192截距）：U32按各输出之和，C/Ccap以D4每输出df×192，S32按其耦合正则化系统hat trace。名义参数匹配不保证有效容量匹配；S32与U32参数数有意不同，差值是解除共享约束的开发证据而非等参数性能优越。
 
@@ -36,7 +37,7 @@ D4 C/Ccap开发VAL高于原P，但同时改变原Conv32共享约束、latent支�
 
 每臂一个跨3seed共享λ，原VAL60秒/person宏均值选择，零残差P*亦为候选，严格高于P*才选拟合；同分优先P*，其次更大λ。C/Ccap必须重现原D4共享选择，否则先定位实现差异，不能改λ找一致。保留全部三个λ/逐seed/逐人/逐块/3秒与60秒，不据次要指标挑选。
 
-主要预设描述比较：U32−S32（同支持、解除共享），C−U32（扩大Z latent读出支持），Ccap−C（平方特征扩展，容量亦增）；分别报告相同三个λ及各臂共享选择后的配对结果。S32−P*只说明整个新MSE残差实现的变化，**不单独归因loss、原生卷积能力或共同P分支**。若共同P分支可能解释收益，当前矩阵不进一步分离，明确为缺口，不悄悄加P-only模型。
+主要预设描述比较：U32−S32（同支持、解除共享），C−U32（扩大Z latent读出支持），Ccap−C（平方特征扩展，容量亦增）；分别报告相同三个λ及各臂共享选择后的配对结果。辅助预设S32−P-only及各臂−P-only，以区分共同P再读出与新增latent映射贡献。S32−P*只说明整个新MSE残差实现的变化，**不单独归因loss或原生卷积能力**；P-only相对P*也改变solver/正则/容量，非纯loss因果。
 
 预设次要描述：所有原VAL相邻窗同物理96点overlap在Hann融合前的预测差异，每record reset，共30500−49=30451对/seed。报告同单位pooled overlap MSE、record分布/有效非恒定覆盖，必要NRMSE按双方中心化方差均值计算并明示分母无效覆盖，不按预测删掉准确度评分样本。比较所有模型与P*（不是任意scale原P）；不做逐窗/逐record仿射拟合/校正，不用未来窗帮助预测当前窗。
 
@@ -50,8 +51,8 @@ D4 C/Ccap开发VAL高于原P，但同时改变原Conv32共享约束、latent支�
 
 新2203 ROOT=/home/fanyu/auditory_simulation_m6a/pub_01/s03_readout_attribution_20261101。源码/PLAN、D4原协议/实际review/moments/transforms/全部被复用coef/P_CHECK、公共mask及VAL latent/P/targets shape/dtype/size/mtime、record长度在正式拟合前冻结。无覆盖D4/D5、服务器Git、患者或其他节点。
 
-必要验证仅：小合成多输出系统共享Schur解对直接增广受约束最小二乘（含m_k重复权重）；S/U相同padding/offset和非局部Z扰动不影响该Z输出的canary（共同P输入保持固定）；U32 band约束、共同P/截距与首4回退；复用C/Ccap实际原评分/共享选择一致；独立review源码/实际18新解+18复用/共同mask与关键聚合。不得另建NN raw重放。
+必要验证仅：小合成多输出系统共享Schur解对直接增广受约束最小二乘（含m_k重复权重），并核对整个耦合系统有效df与显式hat trace；S/U相同padding/offset和非局部Z扰动不影响该Z输出的canary（共同P输入保持固定）；U32 band约束、共同P/截距与首4回退；复用C/Ccap实际原评分/共享选择一致；独立review源码/实际27新解+18复用/共同mask与关键聚合。不得另建NN raw重放。
 
-CPU/BLAS/OMP≤8、GPU0、RAM≤8GiB、wall≤30分钟、新派生磁盘≤512MiB，余量≥20GiB、cache总上限不变；顺序seed，流式VAL预测/overlap统计，不写N×d新特征cache。仅复用TRAIN moments求解，VAL新计算36组模型和3个P*的描述评分，精确计次数；source/hash、求解/预测/score/secondary指标与共享上游成本分列。达到上限或实际错误保留失败，不自动扩预算/重试。
+CPU/BLAS/OMP≤8、GPU0、RAM≤8GiB、wall≤30分钟、新派生磁盘≤512MiB，余量≥20GiB、cache总上限不变；顺序seed，流式VAL预测/overlap统计，不写N×d新特征cache。仅复用TRAIN moments求解，VAL新计算45组模型和3个P*的描述评分，精确计次数；source/hash、求解/预测/score/secondary指标与共享上游成本分列。达到上限或实际错误保留失败，不自动扩预算/重试。
 
 本地仅轻量代码/协议/结构化表/静态图/完整中文REPORT/REVIEW；moments、coef和预测仍2203。方案先交协调审定，当前NOT_RUN；无论正负，D4/D5结论不改，持续goal不因工程PASS或反复VAL阳性完成。
