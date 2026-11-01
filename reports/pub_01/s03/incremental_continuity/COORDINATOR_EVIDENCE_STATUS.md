@@ -39,6 +39,8 @@ D7是**POST-HOC INTERNAL EXPLORATORY**。预设主要比较Ccap−P*、Ccap−Po
 
 D8已完成对应P_FT的TRAIN/VAL读出转移诊断：原426 TRAIN/49 VAL、三seed、三个角色×三个原定λ共27解，重新拟合FT TRAIN统计与a,b。原global64前向与历史FT验证loss差均0，主run wall386.589秒、848862主前向窗+300工程窗、NN更新0；全部27正规方程、30评分聚合及18独立缓存重建已核验，block r最大差3.33e−16。全文/三实际PNG已审阅，最终root review为PASS_WITH_LIMITATIONS，goal仍未完成。
 
-下一步准备以已建立的强FT+Ccap为共同起点的监督连续目标实验。先明确相同Hann物理目标支持下逐窗加权MSE与融合MSE的区别、岭正则在sum-output/mean-output尺度的换算、同初始化/更新/目标呈现及有限预算；若包含PCC，需单列块边缘部分窗口的目标支持差异。仅TRAIN/VAL开发，不因D7旧测试排名选模型，不扩大D8 λ网格。没有历史输入的融合监督也不能冒称历史贡献；新的状态方法仍需强current/输出prior及固定当前输入的历史干预。
+以已建立的强FT+Ccap为共同起点，[D9具体方案](physical_objective/run01/PLAN.md)已在51abaea版本获协调审阅通过，实际批准记录为[COORDINATOR_PLAN_REVIEW.json](physical_objective/run01/COORDINATOR_PLAN_REVIEW.json)。固定W/F两目标×三seed，共6个FP64解：共同24112044个TRAIN物理目标、相同参数起点、首4窗固定上下文、Hann端点约束与λ=.01/192，只比较逐窗加权MSE和融合MSE。原D8完整窗支持不同，不能把其差值解释为纯loss缩放。共同有界PCG和真残差标准，不根据VAL延长求解；仅TRAIN/VAL，旧test/DTU关闭。
+
+协调已在2203用小合成物理设计矩阵核对输出列j与j+96的成对算子，Gram/RHS最大差8.9e−16，Hann恒等式差1.8e−15。完整首可学习边界和末尾单窗支持可识别有效bias；此项不是EEG性能结果，也不替代新实现的真实输入桥/求解核对。本记录更新时D9真实6解尚未报告。没有历史输入的融合监督不能冒称历史贡献或充分创新；新的状态方法仍需强current/输出prior及固定当前输入的历史干预。
 
 所有信号、权重、系数和数值计算仍在2203；本地仅代码与轻量报告。旧各轮结果冻结，PR#6不自动合并，不启动患者/STN或无关任务。

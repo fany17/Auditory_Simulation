@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "synthetic changed operator/PCG only; no real arrays",
+  "direct_physical_W_F_max_abs": 0.0,
+  "Hessian_symmetry_max_abs": 5.551115123125783e-17,
+  "directional_gradient_max_abs": 2.3030743978580404e-12,
+  "PCG_direct_max_abs": 3.3928415632544784e-13,
+  "PCG_hessian_actions": 12,
+  "fixed_endpoints_and_first4": true
+}
