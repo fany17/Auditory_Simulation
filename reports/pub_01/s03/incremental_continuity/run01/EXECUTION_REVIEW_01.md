@@ -117,3 +117,19 @@ INDEPENDENT_METRIC_MATH_CHECK_V2通过38个数值核对与原常数拒绝，补�
 协调随后独立核验18source/8proof与8342字符exact diff、38/77482数值及3760合法VAL，批准v2正式接续。正式INDEPENDENT_REVIEW_PROTOCOL_V2 hash为97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d，source commit1153dbf207aa47175efeb9e43c58459635bb8970。临执行实核旧113154 UID四项1012、exact argv、无children、WAIT/无actual review与READY，再保存最终lease/status至备份并仅终止该等待父进程。新233443的UID/argv/无children/WAIT实核通过，遍历/proc确认唯一review queue为[233443]；14537/88448前后argv及start_ticks完全相同，未触训练或最终评估。
 
 PRECHECK及HANDOFF_COMPLETED、v2 lease/status/protocol已回传。旧协议/source/proof/lease/status原位保留，备份engineering_history/independent_review_v1_before_R2_scaled；新的combined为INDEPENDENT_REVIEW_COMPLETED_V2，raw v1与metric v2各自protocol hash明确区分，实际呈现只用result_figures_v2入口。协调亦实际复核接续和无双队列通过，不再新增许可门。最新full13/15，尚无primary/READY/实际review结果；工程交接后继续原全量流水线，goal ACTIVE。
+
+## 初始15个full完成，M4主模型冻结
+
+FULL_PRIMARY_SELECTION已建立，sha256为d43da5b521af0cabfed6a2a6fc4ce968ae39f20824411d07c305fb1fa08b69d2。按原三个seed（1024/2026/31415）的VAL60s→被试macro r均值及原tie规则，选择m4_h16；新增seed不参与重新选择。primary_review从11280个已保存VAL block r独立重聚合735个人均值，最大macro差2.78e−17，并核对全部15cell的各自encoder/cache、配置、history最早选点、patience、更新/窗口/样本/teacher预算及相同49人/752keys，见PRIMARY_SELECTION_REVIEW与FULL_INITIAL15_BUDGET。这是保存指标和metadata的核对，不冒充原始预测或神经前向复核。协调端也已独立重算选择、全部预算和覆盖，确认按原方案继续。
+
+| full候选 | 三seed VAL60s/person均值 | 相对原P的均值差 | 实际epoch数（1024/2026/31415） |
+|---|---:|---:|---|
+| M1 H16 | .160705122 | −.001657365 | 22 / 61 / 52 |
+| M2 H16 | .159030095 | −.003332392 | 15 / 49 / 32 |
+| M3 H16 | .158701208 | −.003661279 | 16 / 28 / 26 |
+| M4 H16（冻结primary） | .161345369 | −.001017118 | 17 / 55 / 71 |
+| M5 H16 | .160309630 | −.002052857 | 15 / 16 / 20 |
+
+全部15cell按patience10停止，不称全局收敛。原P同三seed/同VAL60s/person均值为.162362487（冻结EMA tau0与原P精确别名）。五候选均低于原P，且M4逐seed差为−.000952139 / −.001387850 / −.000711367，见PRIMARY_NATIVE_VAL_COMPARISON。这是合法验证集负向证据，不是测试或外部结论，不因M4候选中最高而写成已超过原P。不据此改预算、候选、划分或启动额外分支。
+
+四控制冻结为m4_current_h16、static_m4_h16、output_prior_h16、static_alignment；最终固定五seed为1024/2026/31415/42/12345。原三seed各训练四控制，额外两个seed先训练冻结M4再训练四控制，追加22cell，总唯一full37（主比较25，另四family各原三seed共12）。FINAL_CONTROL_START_VERIFIED记录首批PID237174–237178、各自argv/resolved/cache/amendment和250/pat10预算；这是启动快照，不作永久活跃PID表。后续实核seed1024的current控制已完成并进入static_m4，其余四worker继续；14537/88448/233443仍工作，无真实READY。继续完整比较、实际raw/metric复核与科学判断，不以本次选择或阴性VAL完成goal。

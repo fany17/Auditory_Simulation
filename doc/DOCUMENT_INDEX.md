@@ -4,7 +4,9 @@ SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/increment
 
 [`RELATED_WORK_COMPARISON`](../reports/pub_01/s03/incremental_continuity/run01/RELATED_WORK_COMPARISON.md)补充9份已实际浏览的一手论文与冻结代码/任务可比性，区分已有组件、研究假说与未建立的新意，不据此自动扩实验。
 
-[`SCREEN_SELECTION_REVIEW`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_SELECTION_REVIEW.json)与[`SCREEN_WIDTHS`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_WIDTHS.csv)记录54/54完整筛选、全部已存VAL r的独立聚合核对和五类H16；[`FULL_START_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FULL_START_VERIFIED.json)记录实际初始full进程与来源。不是最终primary或测试结果。
+[`SCREEN_SELECTION_REVIEW`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_SELECTION_REVIEW.json)与[`SCREEN_WIDTHS`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_WIDTHS.csv)记录54/54完整筛选、全部已存VAL r的独立聚合核对和五类H16；[`FULL_START_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FULL_START_VERIFIED.json)是初始full启动快照。
+
+初始15full完成后的[`PRIMARY_SELECTION_REVIEW`](../reports/pub_01/s03/incremental_continuity/run01/PRIMARY_SELECTION_REVIEW.json)、[`FULL_INITIAL15_BUDGET`](../reports/pub_01/s03/incremental_continuity/run01/FULL_INITIAL15_BUDGET.csv)核对原规则冻结M4及预算；[`PRIMARY_NATIVE_VAL_COMPARISON`](../reports/pub_01/s03/incremental_continuity/run01/PRIMARY_NATIVE_VAL_COMPARISON.json)保留五family均值/M4逐seed低于原P的合法VAL证据；[`FINAL_CONTROL_START_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_CONTROL_START_VERIFIED.json)记录固定五seed/四控制接续（唯一full总37）。不是测试胜负或科学目标完成。
 
 [`RESULT_FIGURE_ENGINEERING_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/RESULT_FIGURE_ENGINEERING_CHECK.json)仅为最终呈现入口的synthetic M6/M7检查，非真实成绩；实际图表入口`pub_01_s03_ss07_result_figures.py`必须等待统一评估和实际独立复核通过，不能提前运行读取结果。
 

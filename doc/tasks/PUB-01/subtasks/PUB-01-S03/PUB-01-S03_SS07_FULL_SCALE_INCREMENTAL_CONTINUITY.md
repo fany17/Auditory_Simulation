@@ -110,3 +110,5 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 review工程v2准备：协调及执行者在五native合法VAL共3760block复现描述性大幅度R²正常舍入被旧绝对门误拒绝1例，最大缩放差7.35e−16。仅R²与现有MSE同用scaled≤1e−10；r/CI绝对1e−10、raw1e−6/常数拒绝/训练及科学选择均不变。新v2源、38数值/77482放大synthetic caller/混协议gate证明已备；旧8/3及原protocol原位+备份，raw v1不动，metrics v2与combined显式区分。协调核验候选后仅替换旧WAIT review父进程，训练/最终评估继续，无实际test/DTU读取或科学失败。
 
 v2经协调独立核验18source/8proof/exact diff后冻结97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d；临执行核对UID1012/exact argv/无children/无actual review/READY，仅旧113154等待父退出，新233443已WAIT且唯一review queue。14537/88448前后argv/start_ticks未变，旧文件原位+备份保留。实际复核完成标记和呈现入口都严格V2；最新full13/15，继续既定研究流水线，不在工程交付处完成goal。
+
+初始15full已全部按patience10完成，FULL_PRIMARY_SELECTION冻结d43da5b521af0cabfed6a2a6fc4ce968ae39f20824411d07c305fb1fa08b69d2：原三seed VAL60s/person规则选m4_h16。独立重聚合11280保存block r/735个人均值及全部history/预算/同key核验通过，协调也独立确认；不是raw预测复核。M4均值.161345369，原P同三seed.162362487，M4各seed及全部五family均值均低于P，保存合法VAL阴性证据，不据此改变矩阵。四控制m4_current_h16/static_m4_h16/output_prior_h16/static_alignment与五seed1024/2026/31415/42/12345自动继续；追加22、总唯一full37。首批五worker来源/预算已实核，seed1024当前控制后已进入静态控制；最终READY/test/DTU NN结果仍无。继续全训练/统一评估/实际复核/科学判断，SS07与goal仍ACTIVE。
