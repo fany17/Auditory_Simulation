@@ -1,0 +1,153 @@
+{
+  "reviewer": "root scientific coordinator",
+  "review_time_remote": 1793513339.292883,
+  "status": "PASS_WITH_LIMITATIONS",
+  "scientific_status": "CURRENT_READOUT_VALIDATION_GAIN; NO_ADDITIONAL_HISTORY_BENEFIT_ESTABLISHED",
+  "goal_achieved": false,
+  "source_sha256": "0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410",
+  "protocol_sha256": "22bdfb1c0ed22f40930d906c0748a07b016fb956068a40c4a75bc6f1077b7a8b",
+  "actual_evidence": {
+    "solutions": 54,
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "independently_matched_source_pins": 17,
+    "unchanged_target_file_size_mtime_fingerprints": 48,
+    "all54_coefficient_arrays_finite_and_match_declared_shapes": true,
+    "all54_exact_block_subject_sample_masks_match_originalP": true,
+    "common_VAL_people": 49,
+    "common_VAL_blocks": 752,
+    "common_VAL_windows": 30500,
+    "independent_stored_block_to_person_to_macro_and_record_to_3s_aggregation_max_difference": 1.1102230246251565e-16,
+    "all_shared_lambda_and_P_incumbent_selection_checks": true,
+    "max_reported_normal_equation_residual": 1.1145598333150986e-16,
+    "all_three_P_VAL60s_differences": 0,
+    "all_three_positive_TRAIN_affine_Pearson_max_difference": 2.7755575615628914e-16
+  },
+  "base_VAL60s_by_seed": [
+    0.16114962185630383,
+    0.15958751709930216,
+    0.1663503174047233
+  ],
+  "base_VAL60s_mean": 0.1623624854534431,
+  "selected_VAL60s_by_seed": {
+    "C": [
+      0.17228173077330955,
+      0.17544741155447147,
+      0.1766378925871232
+    ],
+    "Ccap": [
+      0.17488125238242647,
+      0.17691445940261935,
+      0.17889636537874465
+    ],
+    "CS": [
+      0.17188376072211445,
+      0.17549430856166987,
+      0.17623526611250062
+    ],
+    "CF": [
+      0.17204992090531848,
+      0.17401597871572488,
+      0.17620512916376324
+    ],
+    "CO": [
+      0.17198527822834614,
+      0.1734145509695452,
+      0.17641836747322429
+    ],
+    "CF48": [
+      0.17142172672278055,
+      0.17510499745865865,
+      0.17538448577799856
+    ]
+  },
+  "selected_VAL60s_means": {
+    "C": 0.1747890116383014,
+    "Ccap": 0.17689735905459683,
+    "CS": 0.1745377784654283,
+    "CF": 0.17409034292826886,
+    "CO": 0.17393939889037188,
+    "CF48": 0.1739704033198126
+  },
+  "paired_development_differences_by_seed": {
+    "C_minus_P": [
+      0.011132108917005723,
+      0.015859894455169304,
+      0.010287575182399894
+    ],
+    "Ccap_minus_P": [
+      0.01373163052612264,
+      0.01732694230331719,
+      0.01254604797402134
+    ],
+    "CF_minus_C": [
+      -0.0002318098679910674,
+      -0.0014314328387465824,
+      -0.0004327634233599609
+    ],
+    "CF_minus_Ccap": [
+      -0.0028313314771079845,
+      -0.002898480686894467,
+      -0.0026912362149814073
+    ],
+    "CF_minus_CS": [
+      0.0001661601832040338,
+      -0.0014783298459449812,
+      -3.0136948737380376e-05
+    ],
+    "CF_minus_CO": [
+      6.464267697234294e-05,
+      0.0006014277461796891,
+      -0.0002132383094610446
+    ],
+    "CF48_minus_CS": [
+      -0.000462033999333894,
+      -0.00038931110301121397,
+      -0.0008507803345020604
+    ]
+  },
+  "costs": {
+    "solutions": 54,
+    "seeds": 3,
+    "wall_seconds": 410.3034179210663,
+    "peak_RSS_bytes": 6775738368,
+    "peak_GPU_bytes": 840704,
+    "derived_disk_bytes": 1882540241,
+    "test_DTU_reads": false,
+    "encoder_forward": false,
+    "new_NN_fits": false
+  },
+  "cost_scope_notes": [
+    "410.303s excludes already performed encoder pretraining/head fits and original cache formation",
+    "PyTorch allocator peak840704bytes is not full device use; observer actual driverGPU500MiB",
+    "observer finalCPU sample2634.42s is a lower bound; per-lambda time combines coefficient formation,prediction,scoring and excludes shared eigendecomposition",
+    "54closedform solutions; no new encoder forward, backpropagation, TEST or DTU scoring"
+  ],
+  "visual_review": {
+    "actually_viewed": [
+      "01_COMPLETE_LAMBDA_MATRIX.png",
+      "02_FIXED_CONTRASTS.png",
+      "03_CAPACITY_COST.png"
+    ],
+    "assessment": "Allseed/full-lambda positiveandnegative contrasts, originalP reference,per-output DF andcostscope visible; no clipped materialdata."
+  },
+  "conclusions": [
+    "Current-only nonlinear readoutCcap improves over originalP inall3seeds on reusedsourceVAL; this is a useful development lead",
+    "Full additive historyCF is below bothC andsame-nominal-capacityCcap inall3seeds at predeclared shared-selectedlambda",
+    "PCA48history is below six-bin summary at shared-selectedlambda; D2energy loss does not establish useful predictive loss",
+    "Current readout gain is not evidence for history contribution, independent generalization, methodological novelty or sufficient ICML/NeurIPS result",
+    "Warm jointP comparison differs in training/selection/cost protocol; not an equal-budget superiorityclaim"
+  ],
+  "limitations": [
+    "TRAIN_VALdevelopment; VAL used for lambda choice and reported performance, not independent confirmation or significance",
+    "frozen shared pretrained representation; this additive linear residual probe does not cover nonlinear history-current state interactions",
+    "nominal equal coefficientcounts differ in effectiveDF; P-output features redundant with currentlatent",
+    "near[-3,0) andolder[-6,-3) are boundedshort history, not longmemory orcausalidentification",
+    "inputtargetfingerprints/resource supplement addedafter18solutions; originalmisstatedtiming preservedandcorrected, not a pre-run freeze",
+    "independent audit covers code/formula,actualartifacts andmetricaggregation; no independent fullraw EEG or54prediction waveform replay"
+  ],
+  "next_scope": "FreezeandarchiveallD4results; retain strongcurrentreadout comparator in any later mechanism study. Next concrete design requires scientificreview before newfits; do notexpand orreselectD4."
+}

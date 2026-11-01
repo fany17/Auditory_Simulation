@@ -1,4 +1,10 @@
-# 当前执行：SS07 D4条件历史probe正式求解（2026-11-01）
+# 当前执行：SS07 D4交付完成，准备映射交互机制设计（2026-11-01）
+
+D4固定54解已全部正常完成，实际独立结果review PASS_WITH_LIMITATIONS，重聚合最大差1.11e−16。P/C/Ccap/CS/CF/CO/CF48选定VAL60s均r=.162362/.174789/.176897/.174538/.174090/.173939/.173970；current读出开发增益三seed为正，CF对C/Ccap三seed均负，未建立额外历史收益。完整[REPORT](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REVIEW.md)、54全λ/逐人/逐块与三图齐备。轻量归档run_id=20261101_pub01_s03_ss07_conditional_probe，E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_conditional_probe/report.html，三图/说明/副本/HTML链接检查通过；科学goal仍ACTIVE，不称独立确认或新方法。
+
+本D4矩阵冻结，不新增解/距离/NN。下一步只提出“历史是否改变当前EEG→包络映射”的最小二阶交互probe，保留D4强current Ccap作锚点和同容量current控制，另冻结run供协调审定，不直接追阴性扩容。无新test/DTU/下载/encoder forward/患者或其他节点。
+
+以下为D4实际启动历史，PID已正常结束，不重启。
 
 D4方案4f59651已协调明确审定；源码a8e4c12、PROTOCOL及必要公式/无未来/PCA矩变换检查已冻结，实际PID521141/source0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410在2203正式执行。ROOT=pub_01/s03_conditional_history_probe_20261101；本地[PLAN](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/PLAN.md)。原TRAIN/VAL、三seed、C/Ccap/CS/CF/CO/CF48六臂×三λ共54闭式解；先原P评分核对，TRAIN-only统计/正仿射/PCA，共同i≥4拟合、首4窗共同P回退，原49人752块评分。无新NN/encoder forward/test/DTU/下载。源码静态审阅并行，不增新用户等待门。全部结果/成本/失败与完整报告仍待，不把工程PASS/正式启动当goal完成。
 

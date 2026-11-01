@@ -1,6 +1,6 @@
-# 当前入口：SS07 D4条件历史probe正式求解，持续goal ACTIVE
+# 当前入口：SS07 D4已交付，准备映射交互设计，持续goal ACTIVE
 
-以[CURRENT_TASK](CURRENT_TASK.md)顶部为唯一现行路由。round01/warm round02及TRAIN诊断均有限制交付并冻结，未建立稳定历史额外收益。D4 [PLAN](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/PLAN.md)已协调审定，a8e4c12源码/协议冻结，PID521141在2203执行固定6臂×3seed×3λ=54闭式解；实际结果及完整报告仍待。只原TRAIN/VAL，无新NN架构/encoder forward/数据/test/DTU推理；不合并PR#6，不启动患者或其他支线。goal保持ACTIVE。
+以[CURRENT_TASK](CURRENT_TASK.md)顶部为唯一现行路由。D4固定54解已实际完成、独立审阅有限制通过并归档，[REPORT](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REVIEW.md)。强current Ccap VAL=.176897，完整历史=.174090，未建立额外历史收益。当前只准备另一个最小历史×当前映射交互设计，保留强current锚点，先交协调审定；不扩大已完成D4网格。只原TRAIN/VAL，无新NN架构/encoder forward/数据/test/DTU推理；不合并PR#6，不启动患者或其他支线。goal保持ACTIVE。
 
 报告：[REPORT](../reports/pub_01/s03/incremental_continuity/run01/REPORT.md) / [REVIEW](../reports/pub_01/s03/incremental_continuity/run01/REVIEW.md)。SS07及持续goal保持ACTIVE。
 

@@ -81,7 +81,7 @@ PCA48按无监督方差选择，不是监督最优压缩；CF48的阴性不排�
 
 ## 5. 可信度、来源与限制
 
-增广最小二乘对照的岭系数最大差2.22e−15；record内近/远索引与PCA矩变换检查通过。实际54解normal equation最大绝对残差≤1.12e−16；全部原P核对通过、无常量输入坐标，三个PCA均48个正分量。独立代码审阅实际核对17来源，原样见[COORDINATOR_CODE_REVIEW](COORDINATOR_CODE_REVIEW.json)；最终实际结果审阅见本目录REVIEW入口。
+增广最小二乘对照的岭系数最大差2.22e−15；record内近/远索引与PCA矩变换检查通过。实际54解normal equation最大绝对残差≤1.12e−16；全部原P核对通过、无常量输入坐标，三个PCA均48个正分量。独立代码审阅实际核对17来源，原样见[COORDINATOR_CODE_REVIEW](COORDINATOR_CODE_REVIEW.json)；最终[原样结果审阅](COORDINATOR_RESULT_REVIEW.json)独立重聚合最大差1.11e−16、核对54组系数与完全相同mask，并实际查看三图。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；科学判断为当前读出VAL增益、未建立额外历史贡献，详见[REVIEW](REVIEW.md)，goal不完成。
 
 原正式source SHA=0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410；protocol SHA=22bdfb1c0ed22f40930d906c0748a07b016fb956068a40c4a75bc6f1077b7a8b。数据target载荷shape/dtype/size/mtime/record长度的补充指纹在运行中加入，不冒充run前冻结。补充文件最初timing文本误写首seed Gram，已保留并在[时点与成本澄清](SUPPLEMENT_TIMING_AND_COST_CLARIFICATION.json)明确：首个观察实际是seed2026统计阶段、18个解已完成。补充后目标文件size/mtime未变化；不宣称覆盖之前全程的独立payload完整性证明。
 
