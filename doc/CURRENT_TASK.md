@@ -1,4 +1,4 @@
-# 当前执行：SS07 D10旧内部审计已归档；D11仅原TRAIN/VAL观测状态假说准备（2026-11-01）
+# 当前执行：SS07 D11固定观测状态探针正在原TRAIN/VAL执行（2026-11-01）
 
 D7固定36/36角色-split已完成，PID535287正常退出。Ccap对P*/P-only原2:1加权r均差+.008695/+.004301，seen/held-out每seed均正；但同三seed历史P_FT=.168944726、Ccap=.168943486，差−.000001240且seed方向混合，未证明超过P_FT、等效或非劣。全部POST-HOC INTERNAL EXPLORATORY，不据旧测试重选。实际独立286来源/893输入/36聚合及72缓存重建通过（块r差≤2.78e−16，432原P未缩放桥差0），全文/三图已审阅；原样review57072ffe…b45f，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REVIEW.md)及HTML run_id20261101_pub01_s03_ss07_internal_generalization已归档，三图说明/副本/链接通过。无新fit/encoder/rawEEG/DTU/下载，wall75.177s、CPU504.670s；科学goal ACTIVE。
 
@@ -8,7 +8,7 @@ D8固定27/27岭解已完成，PID541227正常退出不重启。P_FT*/P-only/C/C
 
 D10固定36项全部完成，PID599747退出不重启。PFT*/Ponly/C/Ccap/W/F原2:1 r=.168945/.170374/.171197/.173348/.173393/.174284，三个primary F−W/Ccap−PFT*/Ccap−Ponly在两组各seed全正，weighted均+.000892/+.004403/+.002973；C−Ponly heldout全负、W−Ccap mixed、F单窗表示严重退化均保留。全部POST-HOC INTERNAL EXPLORATORY，非新确认/历史/创新。三个VAL gold/636Decoder/432旧FT未缩放fused桥差0，旧FT均值精确恢复；独立306来源/600输入/36聚合差0及72缓存block r≤2.78e−16、MSE/Hann≤2.70e−14通过。全文三实际PNG实际审阅，原样review f4dcfaa3…bedef；Technical PASS_WITH_LIMITATIONS / 本内部审计Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REVIEW.md)与HTML run_id20261101_pub01_s03_ss07_finetuned_internal_audit已归档，三图说明/副本/链接通过。主wall147.210/CPU539.147秒、255012主+工程NN窗、无新fit/统计重拟合/λ选择；独立audit另3.087秒。全NPY24.4245GiB<25GiB、free25.86GB>20GiB，presenter失败原样保留、科学run未重跑，D4-D9冻结。
 
-科学goal仍ACTIVE。D11最小[PLAN](../reports/pub_01/s03/incremental_continuity/observation_state_probe/run01/PLAN.md)已准备并提交协调独立审阅，尚未批准/执行：D8强Ccap anchor，Add/当前协方差/record前缀/leave-record-out TRAIN被试参考/30秒Past共5臂×3seed×固定λ.01=15岭解，Older/Neutral无拟合干预。共同i>=41，严格止于当前Hann输入并集前，全部VAL保留；新增state NPY约45.27MB，ROOT<=256MiB、RSS8GiB、CPU16/GPU0、wall60min。不主张新颖或端到端在线因果，统计仅TRAIN。具体审定前不新拟合/扩网格、不再读旧test/DTU；OpenNeuro新scope仍待用户明确答复，不取payload。
+科学goal仍ACTIVE。D11最小[PLAN](../reports/pub_01/s03/incremental_continuity/observation_state_probe/run01/PLAN.md)及来源/工程门已独立审阅冻结，source commit5c50719、PROTOCOL a238ed63…b5f11。2203单次正式PID656537（UID1012/start_ticks745413342）已启动：D8强Ccap anchor，Add/当前协方差/record前缀/leave-record-out TRAIN被试参考/30秒Past共5臂×3seed×固定λ.01=15岭解，Older/Neutral六个无拟合干预；每seed8角色合计24评分。先三个原Ccap完整VAL桥，再state PCA和拟合；共同i>=41，严格止于当前Hann输入并集前，完整VAL保留。新增state NPY约45.27MB，ROOT<=256MiB、RSS8GiB、CPU16/GPU0、wall60min；NN新增前向/更新0。不主张新颖或端到端在线因果，统计仅TRAIN，warm/cold原网格固定。无旧test/DTU/新下载/自动重试；新OpenNeuro scope仍待用户明确答复，不取payload。实际结果和独立数值复核尚待。
 
 以下准备记录为历史，原D4-D6不改。
 
