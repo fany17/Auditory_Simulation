@@ -1,0 +1,24 @@
+{
+  "reviewed_on": "2026-11-01",
+  "scope": "Metadata and primary literature only; no new dataset payload, mapping matrix, model inference, or exclusion performed.",
+  "openneuro_readme_rechecked": {
+    "url": "https://github.com/OpenNeuroDatasets/ds004408/blob/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be/README",
+    "blob_sha": "d940f210921ff8b56ce720c83d8fd956b96be861",
+    "facts": "The deposited README describes BioSemi ActiveTwo 128 channels, 512 Hz, unfiltered/unreferenced recordings, audio-aligned starts and variable additional EEG duration. It does not resolve the conflicting Manufacturer sidecar or provide subject-specific coordinates."
+  },
+  "author_primary_reuse_paper": {
+    "title": "Cortical Tracking of Complex Sound Envelopes: Modeling the Changes in Response with Intensity",
+    "doi": "10.1523/ENEURO.0082-19.2019",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6597859/",
+    "actually_read_sections": ["Subjects", "Experimental procedure", "EEG acquisition"],
+    "facts": "This paper cites the same Dryad speech data and describes 128 equiradial BioSemi scalp electrodes plus mastoids. It reports excluding two of 19 speech participants because acquisition differences left timing uncertain, without identifying them in these sections.",
+    "protocol_discrepancy": "It describes 28 approximately 155-second speech trials, whereas the previously reviewed original paper and pinned OpenNeuro scope describe 20 segments. This unresolved difference prevents treating this source as definitive metadata for every record in the pinned BIDS version."
+  },
+  "interpretation": [
+    "The equiradial description provides primary-literature support for the general cap layout; it does not establish an exact 128-to-64 map for the pinned files.",
+    "Do not infer an automatic exclusion of two OpenNeuro participants or select them using model performance. Their identities and the relationship between releases remain unresolved.",
+    "Third-party loader search results using biosemi128 are implementation choices, not acquisition provenance.",
+    "The original 2018 DOI full-text redirect was unavailable in this follow-up; no additional original-paper montage detail was verified."
+  ],
+  "authorization_unchanged": "Future metadata candidate only. No new payload download or confirmation experiment was authorized or executed."
+}
