@@ -46,4 +46,12 @@ PID409806已正常结束，实际18格×30500 VAL起点及合成检查通过，�
 
 report queue PID423181的实际argv已核实，WAIT_ALL18_TRAIN_VAL，按/proc argv/start_ticks验证上游416910活跃，不把状态文件当进程证据。训练/汇总均无自动重试；异常保留证据。实际检查时已完成7/18，frozen_p/current前三seed全完成、past1024完成，其余按固定队列继续，未按途中成绩改变设计。汇总后还需实际图解、独立复核和科学判断，自动报表不是验收。
 
+## 最终选中checkpoint只读复核准备
+
+新增隔离report_input/warm_verify，source SHA87d230eaf13839243138aa998bb53f73c48ef3119dd1cc4434dc1e4698b5cc66，只在18格训练及完整报表结束后运行；训练source/protocol/报告source不变。固定检查全部18格，逐tensor比较原P/warm初始与所选权重，冻结encoder必须精确不变，epoch−1选择时全部权重必须不变；其他参数的实际变化完整报告，不因某参数未变而补跑。
+
+复核从既有未归一化EEG derivative重建原VAL的global64输入及M4状态，复用冻结neural模块，不调用主Data.batch/latent_forward/validate/macro；独立调用者和float64公式重算30500窗与49人/752块，每格都保留差异。frozen格另对同权重的既有latent cache波形；最终3s/60s均值容差1e−7、块/人1e−6、raw/cache波形1e−6，同一数组两套Pearson数学保持1e−10。上述为数值复现检查，不能当科学增益阈值。不是原BDF/音频预处理重做或独立neural数学，也不是测试、拟合或新选择规则。
+
+在2203已做独立公式合成检查：非二进制常量pred/target拒绝通过，正常公式与corrcoef差2.43e−17；最终证据见FINAL_REVIEW_MATH_CHECK_FINAL。此前初稿检查单独保留。全18格真实权重/重放尚未运行，不预报PASS。脚本等待实际report handle和完整标记，无自动重试，异常保留；随后协调端仍需实际查看结果与图表作科学判断。
+
 frozen/joint行同时改变encoder train/eval随机行为，交互不能作为纯encoder梯度因果效应。warm vs旧随机起点还改变上游head训练与预算，不是严格初始化因果消融。旧内部测试和DTU已暴露；后续确认资格另审，不以本轮工程通过或VAL改善完成科学goal。
