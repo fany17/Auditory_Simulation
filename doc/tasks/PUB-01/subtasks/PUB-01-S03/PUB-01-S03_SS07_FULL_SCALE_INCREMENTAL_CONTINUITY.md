@@ -108,3 +108,5 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 最终图表/数值表呈现入口已准备，严格在真实完整评估及独立raw/metrics复核通过后读取summary；合成M6/M7五图路径、缺分层/seed/别名/排序/成本拒绝和早期gate已检查，未读实际测试或外部成绩，冻结来源不改。首个full M1seed1024完成后已自动进入M2，另两M1继续；本阶段仍为ACTIVE，实际结果图/逐图中文解释及科学验收尚待。
 
 review工程v2准备：协调及执行者在五native合法VAL共3760block复现描述性大幅度R²正常舍入被旧绝对门误拒绝1例，最大缩放差7.35e−16。仅R²与现有MSE同用scaled≤1e−10；r/CI绝对1e−10、raw1e−6/常数拒绝/训练及科学选择均不变。新v2源、38数值/77482放大synthetic caller/混协议gate证明已备；旧8/3及原protocol原位+备份，raw v1不动，metrics v2与combined显式区分。协调核验候选后仅替换旧WAIT review父进程，训练/最终评估继续，无实际test/DTU读取或科学失败。
+
+v2经协调独立核验18source/8proof/exact diff后冻结97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d；临执行核对UID1012/exact argv/无children/无actual review/READY，仅旧113154等待父退出，新233443已WAIT且唯一review queue。14537/88448前后argv/start_ticks未变，旧文件原位+备份保留。实际复核完成标记和呈现入口都严格V2；最新full13/15，继续既定研究流水线，不在工程交付处完成goal。

@@ -8,6 +8,8 @@ SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/increment
 
 [`RESULT_FIGURE_ENGINEERING_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/RESULT_FIGURE_ENGINEERING_CHECK.json)仅为最终呈现入口的synthetic M6/M7检查，非真实成绩；实际图表入口`pub_01_s03_ss07_result_figures.py`必须等待统一评估和实际独立复核通过，不能提前运行读取结果。
 
+当前review/呈现入口已接续V2：[`R2合法VAL证明`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_R2_LEGAL_VAL_CHECK_V2.json)、[`工程amendment`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_R2_AMENDMENT_V2.json)、[`正式V2协议`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_PROTOCOL_V2.json)、[`安全handoff`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_V2_HANDOFF_COMPLETED.json)。新队列233443只接替旧等待父113154，训练/评估不变；实际图表使用`pub_01_s03_ss07_result_figures_v2.py`，严格等INDEPENDENT_REVIEW_COMPLETED_V2。旧入口/证据保留，不据工程交付完成科学目标。
+
 > 当前入口更新（2026-10-26）：SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP，C/O/P三seed真实比较及复核完成。先读CODEX_START_HERE.md、continuity/eeg_run02_matched_baseline/REPORT.md/REVIEW.md；run01全部冻结保留，无自动下游。
 # Auditory_Simulation Document Index
 

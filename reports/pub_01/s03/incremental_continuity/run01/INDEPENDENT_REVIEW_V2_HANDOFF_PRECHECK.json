@@ -1,0 +1,50 @@
+{
+  "time": 1793491836.5993996,
+  "uid": 1012,
+  "old_waiting_parent": {
+    "pid": 113154,
+    "cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_queue.py ",
+    "uids": [
+      1012,
+      1012,
+      1012,
+      1012
+    ],
+    "children": [],
+    "start_ticks": "741122257"
+  },
+  "old_status": {
+    "stage": "WAIT_COMPLETE_FIXED_EVALUATION",
+    "actual_live_upstream_pid": 88448,
+    "time": 1793491809.0919054,
+    "test_or_DTU_payload_read": false
+  },
+  "protected_processes": {
+    "14537": {
+      "pid": 14537,
+      "cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue_v2.py ",
+      "uids": [
+        1012,
+        1012,
+        1012,
+        1012
+      ],
+      "children": [],
+      "start_ticks": "740514193"
+    },
+    "88448": {
+      "pid": 88448,
+      "cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_queue.py ",
+      "uids": [
+        1012,
+        1012,
+        1012,
+        1012
+      ],
+      "children": [],
+      "start_ticks": "740972737"
+    }
+  },
+  "actual_review_not_opened": true,
+  "protocol_v2_sha256": "97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d"
+}

@@ -4,7 +4,11 @@
 
 唯一计算2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101；本地reports/pub_01/s03/incremental_continuity/run01。新cache≤25GB、余量≥20GB、best/latest有界，不删历史/不动他人进程。沿用SS06 worktree/branch/PR6 Draft，可commit/push、不合并，不动主目录CNN/TRF/stash，无患者/远端Git/擅自新数据。持续goal不以smoke、技术PASS或单seed分数完成。
 
-2026-11-01执行接续：五native完整两阶段及五FT均已完成；54/54筛选完成、五类均H16，初始15full（250epoch/pat10）已自动启动，首批三m1_h16实际PID156906/156904/156905。FULL_SELECTION与独立保存VAL聚合复算/实际启动证据已回传；当前primary尚未选择。full v2 controller14537的旧WAIT状态文字可能过时，以selection和实际full子进程/更新判断，不重启。最终调用链source4e33d69、自动队列88448依全部固定训练完成→最终checkpoint→实际最终权重VAL桥→mask→一次内外评估→聚合接续；真实READY尚未建立。独立read-only复核source2f699c2经协调审阅、37项数学/77482项合成caller/实际VAL原始输入检查后冻结INDEPENDENT_REVIEW_PROTOCOL（5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795），队列113154实际live/WAIT_COMPLETE_FIXED_EVALUATION，核对上游88448。其只在完整final_summary+ready后按预先metadata选定3条Sparr/6条DTU×5seed全main重放raw，并复算全部保存预测/统计；精确常数两侧拒绝，任一技术失败保留不重试。不得重启或改活跃冻结源、不提前读分数。实际计数看服务器status，不以文档快照代替进程核验。DTU仅原两文件白名单；不扩大下载。复核排队/工程PASS不代表实际复核已完成，图文解释与科学验收仍待。
+2026-11-01执行接续：五native完整两阶段及五FT已完成；54/54筛选齐备、五类均H16，初始15full按250epoch/pat10运行，最新核验13/15。full controller14537的旧WAIT文字不作当前stage依据，以实际子进程/更新及完成记录判断。最终评估source4e33d69、队列88448依全部固定训练→最终checkpoint→实际权重VAL桥→mask→一次内外评估→严格聚合接续；primary/真实READY尚未建立。
+
+独立复核现用v2：source1153dbf、INDEPENDENT_REVIEW_PROTOCOL_V2（97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d），18source/8proof已协调独立核验。五native合法VAL3760块复现大R²舍入误拒绝1例；仅R²改用既有MSE的scaled≤1e−10核验，r/差值/CI仍绝对1e−10，raw绝对1e−6、精确常量拒绝均不变。原raw v1几何/源/协议与旧8/3原位保留并备份；旧等待父113154经UID/argv/无children/无actual review核验后仅该父进程退出。新PID233443实际live/WAIT_COMPLETE_FIXED_EVALUATION，上游88448；遍历/proc仅此一个review queue，14537/88448未动。
+
+复核只在完整final_summary+ready后执行原raw v1→metrics v2；完成标记为INDEPENDENT_REVIEW_COMPLETED_V2.json，实际图表入口为pub_01_s03_ss07_result_figures_v2.py。按既定metadata固定3条Sparr/6条DTU×5seed全main重放raw，全部保存预测/统计另复算；不运行旧queue/旧呈现main。任一失败保留不自动重试，不提前读成绩，不改活跃冻结源。实际计数看服务器状态与进程；DTU仍原两文件白名单。工程修正和排队不代表实际复核或科学目标完成，继续训练/固定评估/实际复核及科学解释。
 
 ---
 以下是旧交付/STOP历史，非当前路由。
