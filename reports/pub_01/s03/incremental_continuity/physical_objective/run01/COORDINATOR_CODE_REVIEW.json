@@ -1,0 +1,58 @@
+{
+  "status": "CODE_REVIEW_PASS_WITH_LIMITATIONS",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "scope": "Actual D9 core and driver, frozen protocol and completed changed-path evidence; formal queue already started under prior authorization",
+  "commit": "a27c620",
+  "source_sha256": {
+    "driver": "61f80f5c312a5698b38b5041170faac31cdb75978186a07688524123c413f38f",
+    "core": "daa4d5c75012265ab6539c741aa2e181eddfdb99aa3e88e931693d9faf058628",
+    "protocol": "867042734282eeb7f9c7bf70e381996cb50072893afaedabd7075c30ee4f1499"
+  },
+  "actual_checks": {
+    "all_current_source_pin_mismatches": [],
+    "all_inherited_D8_source_mismatches": [],
+    "synthetic_direct_physical_W_F_max_abs": 0,
+    "synthetic_Hessian_symmetry_max_abs": 5.551115123125783e-17,
+    "synthetic_directional_gradient_max_abs": 2.3030743978580404e-12,
+    "synthetic_PCG_direct_max_abs": 3.3928415632544784e-13,
+    "TRAIN_windows_exact_duplicate_and_raw_float32_target": 252454,
+    "physical_targets": 24112044,
+    "geometry_max_abs": 0,
+    "D8_initial_VAL_records": 6,
+    "D8_prediction_max_abs": 2.220446049250313e-16,
+    "D8_block_r_max_abs": 0
+  },
+  "source_review": [
+    "Builder uses original per-record D8 FT features/statistics; first four rows have zero learned feature/bias contribution. No record-crossing left/right pairs.",
+    "Full calibrated baseline remains in first fixed context window. Common-support first zero current Hann contribution is excluded; tail uses original 95 positive points.",
+    "W adjoint applies alpha to individual residuals; F adjoint applies alpha to fused residual. Both divide by the same actual T and use same weights-only lambda. Bias remains unpenalized.",
+    "Columns0/191 remain fixed to original D8 coefficients for scoring; they have no Hann training contribution.",
+    "Original D8 parameters initialize both solves separately, so F does not warm-start from fitted W.",
+    "214-Hessian cap was fixed before protocol freeze, including final true-residual capacity; all actual updates/actions and unconverged finite solutions are retained.",
+    "Six solves and original VAL only; role/iteration/lambda not selected by VAL, no encoder/head forwards or new NPY."
+  ],
+  "limitations": [
+    "This is whole-record offline fixed-feature supervised loss comparison, not new causal/history inference.",
+    "Actual preconditioners differ deterministically by objective. Shared cap does not mean equal actual compute; convergence and costs must be reported.",
+    "Global 180min queue assertion does not itself reap children. Per-worker90min alarm applies; coordinator/executor must watch actual owned processes if global cap is approached, without extra budget.",
+    "No result or convergence claim yet; source review is not independent numerical audit of final coefficients/metrics."
+  ],
+  "observed_launch": {
+    "queue_pid": 563655,
+    "workers": [
+      {
+        "seed": 1024,
+        "pid": 563760,
+        "device": "cuda:0"
+      },
+      {
+        "seed": 2026,
+        "pid": 563761,
+        "device": "cuda:1"
+      }
+    ],
+    "pending_seed": 31415,
+    "initial_failures": []
+  },
+  "goal_complete": false
+}

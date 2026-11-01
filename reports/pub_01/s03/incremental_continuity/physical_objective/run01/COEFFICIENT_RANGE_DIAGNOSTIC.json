@@ -1,0 +1,77 @@
+{
+  "scope": "POST_RESULT_VALIDATION_OF_OBSERVED_DEGENERACY; unchanged saved coefficient algebra only, no fit/selection/inference/test",
+  "results": [
+    {
+      "seed": 1024,
+      "role": "W",
+      "bias_max_abs": 0.25060192427556544,
+      "bias_max_column": 190,
+      "bias_norm": 0.3563882491605927,
+      "coefficient_Frobenius": 2.713439239689707,
+      "interior_Hann_bias_pair_max_abs": 0.006270024727942075,
+      "bias_col1": -0.0038698340435198613,
+      "bias_col97": 0.0015741327381507666,
+      "pair_col1": 0.0015726595569706904
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "bias_max_abs": 252.63293058770137,
+      "bias_max_column": 1,
+      "bias_norm": 262.4970235192143,
+      "coefficient_Frobenius": 2.9222422470634934,
+      "interior_Hann_bias_pair_max_abs": 0.005869049546921983,
+      "bias_col1": 252.63293058770137,
+      "bias_col97": -0.06669374362222745,
+      "pair_col1": 0.0016888064018974608
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "bias_max_abs": 0.24559116907384482,
+      "bias_max_column": 190,
+      "bias_norm": 0.3445533321136698,
+      "coefficient_Frobenius": 2.7266324610699955,
+      "interior_Hann_bias_pair_max_abs": 0.0049479232675051455,
+      "bias_col1": 0.0024818914949894725,
+      "bias_col97": 0.0005354950865346661,
+      "pair_col1": 0.0005360217970516293
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "bias_max_abs": 253.1717535650612,
+      "bias_max_column": 1,
+      "bias_norm": 262.9516712253309,
+      "coefficient_Frobenius": 2.9147876519792506,
+      "interior_Hann_bias_pair_max_abs": 0.004806973153129751,
+      "bias_col1": 253.1717535650612,
+      "bias_col97": -0.06787626749490921,
+      "pair_col1": 0.0006524123594402326
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "bias_max_abs": 0.2448183576603282,
+      "bias_max_column": 190,
+      "bias_norm": 0.3466992183018004,
+      "coefficient_Frobenius": 2.6606885025477545,
+      "interior_Hann_bias_pair_max_abs": 0.005015128305460576,
+      "bias_col1": -0.0018389287318249317,
+      "bias_col97": 0.0007680361574091419,
+      "pair_col1": 0.0007673306917503744
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "bias_max_abs": 247.37598443574686,
+      "bias_max_column": 1,
+      "bias_norm": 257.1536917474691,
+      "coefficient_Frobenius": 2.9126185250296754,
+      "interior_Hann_bias_pair_max_abs": 0.005280367915468959,
+      "bias_col1": 247.37598443574686,
+      "bias_col97": -0.06607875281092328,
+      "pair_col1": 0.0008810588976959077
+    }
+  ]
+}

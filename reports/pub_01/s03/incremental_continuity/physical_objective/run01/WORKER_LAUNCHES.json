@@ -1,0 +1,47 @@
+[
+  {
+    "seed": 1024,
+    "device": "cuda:0",
+    "pid": 563760,
+    "argv": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/input/pub_01_s03_ss07_physical_run.py",
+      "worker",
+      "--seed",
+      "1024",
+      "--device",
+      "cuda:0"
+    ],
+    "time": 1793521621.4296205
+  },
+  {
+    "seed": 2026,
+    "device": "cuda:1",
+    "pid": 563761,
+    "argv": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/input/pub_01_s03_ss07_physical_run.py",
+      "worker",
+      "--seed",
+      "2026",
+      "--device",
+      "cuda:1"
+    ],
+    "time": 1793521621.4301383
+  },
+  {
+    "seed": 31415,
+    "device": "cuda:0",
+    "pid": 565393,
+    "argv": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/input/pub_01_s03_ss07_physical_run.py",
+      "worker",
+      "--seed",
+      "31415",
+      "--device",
+      "cuda:0"
+    ],
+    "time": 1793521721.438353
+  }
+]
