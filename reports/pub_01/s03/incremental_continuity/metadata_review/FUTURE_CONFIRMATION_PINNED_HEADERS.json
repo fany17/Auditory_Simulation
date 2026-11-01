@@ -14,7 +14,8 @@
       "path": "sub-001/eeg/sub-001_task-listening_run-01_channels.tsv",
       "git_blob_sha": "84de42c847b21f0cc1cb4832f3594e2985179f6e",
       "url": "https://github.com/OpenNeuroDatasets/ds004408/blob/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be/sub-001/eeg/sub-001_task-listening_run-01_channels.tsv",
-      "reported": "Exactly128 listed EEG rows A1..D32; unitsV,512Hz,statusgood. No mastoid/EXG rows and no position/reference column. These are metadata declarations, not actual unit or signal-quality verification."
+      "reported": "Exactly128 listed EEG rows A1..D32; unitsV,512Hz. There are123 statusgood rows and5 statusbad rows: B2,C20,C21,C24,C25. No mastoid/EXG rows and no position/reference column. These are metadata declarations, not actual unit or signal-quality verification.",
+      "correction_2026_11_01": "Independent reread of this exact unchanged pinned blob found the previous all-good wording incorrect. No EEG payload or experimental result was used; no exclusion or preprocessing rule is selected by this correction."
     },
     {
       "path": "sub-001/eeg/sub-001_task-listening_run-01_eeg.json",
