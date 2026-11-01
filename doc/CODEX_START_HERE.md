@@ -1,4 +1,6 @@
-# 当前入口：SS07 D4已交付，准备映射交互设计，持续goal ACTIVE
+# 当前入口：SS07 D5映射交互正式求解，持续goal ACTIVE
+
+D5已审定并冻结cdb970b，PID525296在2203执行[PLAN](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/PLAN.md)固定36解，锚点D4强current Ccap，全部learned共有加性A，CC/near/older交互与Add对照。仅CPU、原TRAIN/VAL，实际结果仍待，源码静态review并行；无新NN/encoder/head前向或test/DTU。下段D4交付历史保留，当前路由见CURRENT_TASK顶部。
 
 以[CURRENT_TASK](CURRENT_TASK.md)顶部为唯一现行路由。D4固定54解已实际完成、独立审阅有限制通过并归档，[REPORT](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REVIEW.md)。强current Ccap VAL=.176897，完整历史=.174090，未建立额外历史收益。当前只准备另一个最小历史×当前映射交互设计，保留强current锚点，先交协调审定；不扩大已完成D4网格。只原TRAIN/VAL，无新NN架构/encoder forward/数据/test/DTU推理；不合并PR#6，不启动患者或其他支线。goal保持ACTIVE。
 

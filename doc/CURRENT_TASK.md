@@ -1,4 +1,8 @@
-# 当前执行：SS07 D4交付完成，准备映射交互机制设计（2026-11-01）
+# 当前执行：SS07 D5映射交互probe正式求解（2026-11-01）
+
+D5具体[PLAN](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/PLAN.md)已协调明确审定，cdb970b源码/协议/实际目标及D4锚点输入指纹冻结；必要双线性等价/增广岭/record边界/共同主效应检查通过，sourceSHA fb40aec382b560df1e31ec7bea36733372de5e335ee4f5961b964f63c4912df2，PID525296在2203 ROOT pub_01/s03_history_interaction_probe_20261101正式执行固定4臂×3seed×3λ=36解。冻结D4 Ccap(.01)作纯current anchor，所有learned共享current/near/older加性A；Add无交互、CC当前交互、Near/Older历史交互。CC仍含共同历史加性，不称纯current。只CPU8线程、GPU0、无新NN/test/DTU/下载，完整结果待；goal不以工程PASS完成。
+
+以下D4交付保持冻结，旧“准备D5”描述为当时进度，不重启D4。
 
 D4固定54解已全部正常完成，实际独立结果review PASS_WITH_LIMITATIONS，重聚合最大差1.11e−16。P/C/Ccap/CS/CF/CO/CF48选定VAL60s均r=.162362/.174789/.176897/.174538/.174090/.173939/.173970；current读出开发增益三seed为正，CF对C/Ccap三seed均负，未建立额外历史收益。完整[REPORT](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/conditional_history_probe/run01/REVIEW.md)、54全λ/逐人/逐块与三图齐备。轻量归档run_id=20261101_pub01_s03_ss07_conditional_probe，E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_conditional_probe/report.html，三图/说明/副本/HTML链接检查通过；科学goal仍ACTIVE，不称独立确认或新方法。
 
