@@ -1,6 +1,6 @@
 # SS07 下一阶段train/val方案草案
 
-**APPROVED_FOR_IMPLEMENTATION / ENGINEERING_NOT_YET_RUN。** 2026-11-01协调端独立审阅8701673后批准隔离warm round02实现、2203工程核验和后续正式train/val；用户持续goal授权覆盖该范围，不重复询问。当前尚无新fit，不开放测试。沿用SS07，不新增编号；round01源码/预测/权重/报告完全冻结，使用独立ROOT与run02结果目录，持续goal ACTIVE。
+**ACTIVE_TRAIN_VAL / PROTOCOL_FROZEN。** 2026-11-01协调端独立审阅8701673方案及7fb74d6最终源码/a04实际证据后批准正式执行；[独立review](../run02/INDEPENDENT_CODE_REVIEW.json)原样保留，[WARM_PROTOCOL](../run02/WARM_PROTOCOL.json)冻结a9e1d220…481a8，预先固定18格共同实现，队列416910已启动。用户持续goal授权覆盖该范围，不重复询问，不开放旧test/DTU新推理。沿用SS07，不新增编号；round01源码/预测/权重/报告冻结，独立ROOT与run02目录，持续goal ACTIVE。
 
 批准补充：总预算预先最多18fits。若执行前工程证据不能证明旧FT三格满足下述条件，固定在共同实现重跑三格P_joint，保留旧FT为历史参考；不按新分数或seed挑选是否重跑，不再为已授权重跑另设许可门。具体源码/diff、RNG复用决定与工程证据交协调端独立代码核查后冻结并进入正式train/val。frozen/joint两行还同时改变encoder train/eval随机行为，交互不能解释为单纯encoder梯度效应。没有新确认测试授权。
 

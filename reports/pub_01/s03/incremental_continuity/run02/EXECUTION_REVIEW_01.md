@@ -40,4 +40,10 @@ PID409806已正常结束，实际18格×30500 VAL起点及合成检查通过，�
 
 已调用已审prepare --freeze，[WARM_PROTOCOL](WARM_PROTOCOL.json) SHA=a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8。18fits/355050更新/22720860监督窗上限在任何正式fit前固定，无test操作。两GPU队列416910启动，首批frozen_p/1024 PID416911与frozen_p/2026 PID416912；实际/proc UID1012、argv与start_ticks见[START_VERIFIED](START_VERIFIED.json)。启动不是完成，后续全18格结果与科学接受仍待。
 
+## 全矩阵汇总排队
+
+独立`report_input/`放置warm_report及report_queue，与冻结训练`input/`分开；不改变其24 source/7 proof。REPORT_PROTOCOL SHA217a3e41758b600add934659c7126d1e08f605182d1d483868f36d61c7a060bb，固定只在18格全部完成后运行一次，全格/全seed/全部配对差与完整成本，不训练、重选模型或读取测试。静态语法检查通过，实际报表运行/图形检查尚待。
+
+report queue PID423181的实际argv已核实，WAIT_ALL18_TRAIN_VAL，按/proc argv/start_ticks验证上游416910活跃，不把状态文件当进程证据。训练/汇总均无自动重试；异常保留证据。实际检查时已完成7/18，frozen_p/current前三seed全完成、past1024完成，其余按固定队列继续，未按途中成绩改变设计。汇总后还需实际图解、独立复核和科学判断，自动报表不是验收。
+
 frozen/joint行同时改变encoder train/eval随机行为，交互不能作为纯encoder梯度因果效应。warm vs旧随机起点还改变上游head训练与预算，不是严格初始化因果消融。旧内部测试和DTU已暴露；后续确认资格另审，不以本轮工程通过或VAL改善完成科学goal。
