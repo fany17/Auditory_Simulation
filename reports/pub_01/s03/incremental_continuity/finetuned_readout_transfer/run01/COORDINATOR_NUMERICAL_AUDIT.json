@@ -1,0 +1,276 @@
+{
+  "status": "PASS_ACTUAL_NUMERICAL_RESULTS",
+  "goal_complete": false,
+  "protocol_sha256": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+  "review_scope_sha256": "b748be09b492da89f7b938e5342f1b727556324b06174476c7341c04b188eadd",
+  "source_pins_verified": 247,
+  "input_fingerprints_verified": 523,
+  "learned_scores": 27,
+  "baseline_scores": 3,
+  "all_original_VAL_masks_exact": true,
+  "raw_FT_bridges": [
+    {
+      "seed": 1024,
+      "loss_difference": 0.0,
+      "wave_max": 0.0
+    },
+    {
+      "seed": 2026,
+      "loss_difference": 0.0,
+      "wave_max": 0.0
+    },
+    {
+      "seed": 31415,
+      "loss_difference": 0.0,
+      "wave_max": 0.0
+    }
+  ],
+  "all27_coefficient_normal_max": 2.2415879916137804e-17,
+  "bias_constraint_max": 0.0,
+  "aggregation_max": 0.0,
+  "cached_cases": 18,
+  "cached_block_r_max": 3.3306690738754696e-16,
+  "cached_MSE_Hann_max": 5.095750210681871e-18,
+  "cached_3s_r_max": 0.0,
+  "first4_max": 0.0,
+  "Hann_aggregate_identity_max": 2.9528246167642713e-16,
+  "undefined3s": {
+    "1024:P_FT": 0,
+    "1024:Ponly_lambda0.0001": 0,
+    "1024:Ponly_lambda0.01": 0,
+    "1024:Ponly_lambda1": 0,
+    "1024:C_lambda0.0001": 0,
+    "1024:C_lambda0.01": 0,
+    "1024:C_lambda1": 0,
+    "1024:Ccap_lambda0.0001": 0,
+    "1024:Ccap_lambda0.01": 0,
+    "1024:Ccap_lambda1": 0,
+    "2026:P_FT": 0,
+    "2026:Ponly_lambda0.0001": 0,
+    "2026:Ponly_lambda0.01": 0,
+    "2026:Ponly_lambda1": 0,
+    "2026:C_lambda0.0001": 0,
+    "2026:C_lambda0.01": 0,
+    "2026:C_lambda1": 0,
+    "2026:Ccap_lambda0.0001": 0,
+    "2026:Ccap_lambda0.01": 0,
+    "2026:Ccap_lambda1": 0,
+    "31415:P_FT": 0,
+    "31415:Ponly_lambda0.0001": 0,
+    "31415:Ponly_lambda0.01": 0,
+    "31415:Ponly_lambda1": 0,
+    "31415:C_lambda0.0001": 0,
+    "31415:C_lambda0.01": 0,
+    "31415:C_lambda1": 0,
+    "31415:Ccap_lambda0.0001": 0,
+    "31415:Ccap_lambda0.01": 0,
+    "31415:Ccap_lambda1": 0
+  },
+  "selection_verified": true,
+  "means": {
+    "P_FT": 0.17414107459879757,
+    "Ponly": 0.1778418093111921,
+    "C": 0.18054058334553788,
+    "Ccap": 0.18233993959935071
+  },
+  "contrasts": {
+    "Ccap-P_FT": {
+      "by_seed": [
+        0.009059513957201282,
+        0.008437778220538344,
+        0.0070993028239197675
+      ],
+      "mean": 0.008198865000553132
+    },
+    "Ccap-Ponly": {
+      "by_seed": [
+        0.0047208124916865435,
+        0.004718988381730127,
+        0.004054589991059204
+      ],
+      "mean": 0.004498130288158625
+    },
+    "C-Ponly": {
+      "by_seed": [
+        0.0028541877830215723,
+        0.0027714456739655613,
+        0.002470688646050212
+      ],
+      "mean": 0.002698774034345782
+    },
+    "Ccap-C": {
+      "by_seed": [
+        0.0018666247086649712,
+        0.0019475427077645657,
+        0.0015839013450089923
+      ],
+      "mean": 0.0017993562538128431
+    }
+  },
+  "reconstruction_cases": [
+    {
+      "seed": 1024,
+      "arm": "Ponly",
+      "lam": 0.01,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 2.220446049250313e-16,
+      "MSE_and_Hann_max": 2.7647155398380363e-18
+    },
+    {
+      "seed": 1024,
+      "arm": "Ponly",
+      "lam": 0.01,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 4.065758146820642e-18
+    },
+    {
+      "seed": 1024,
+      "arm": "C",
+      "lam": 0.0001,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 3.2526065174565133e-18
+    },
+    {
+      "seed": 1024,
+      "arm": "C",
+      "lam": 0.0001,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 8.326672684688674e-17,
+      "MSE_and_Hann_max": 3.3610267347050637e-18
+    },
+    {
+      "seed": 1024,
+      "arm": "Ccap",
+      "lam": 0.01,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 2.220446049250313e-16,
+      "MSE_and_Hann_max": 3.848917712323541e-18
+    },
+    {
+      "seed": 1024,
+      "arm": "Ccap",
+      "lam": 0.01,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.1102230246251565e-16,
+      "MSE_and_Hann_max": 4.038653092508504e-18
+    },
+    {
+      "seed": 2026,
+      "arm": "Ponly",
+      "lam": 0.01,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.1102230246251565e-16,
+      "MSE_and_Hann_max": 4.9873299934333204e-18
+    },
+    {
+      "seed": 2026,
+      "arm": "Ponly",
+      "lam": 0.01,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.942890293094024e-16,
+      "MSE_and_Hann_max": 3.415236843329339e-18
+    },
+    {
+      "seed": 2026,
+      "arm": "C",
+      "lam": 0.0001,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.3877787807814457e-16,
+      "MSE_and_Hann_max": 4.662069341687669e-18
+    },
+    {
+      "seed": 2026,
+      "arm": "C",
+      "lam": 0.0001,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.1102230246251565e-16,
+      "MSE_and_Hann_max": 4.9873299934333204e-18
+    },
+    {
+      "seed": 2026,
+      "arm": "Ccap",
+      "lam": 0.01,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 3.3306690738754696e-16,
+      "MSE_and_Hann_max": 3.903127820947816e-18
+    },
+    {
+      "seed": 2026,
+      "arm": "Ccap",
+      "lam": 0.01,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 6.938893903907228e-17,
+      "MSE_and_Hann_max": 3.1712913545201005e-18
+    },
+    {
+      "seed": 31415,
+      "arm": "Ponly",
+      "lam": 0.01,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 4.553649124439119e-18
+    },
+    {
+      "seed": 31415,
+      "arm": "Ponly",
+      "lam": 0.01,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 8.326672684688674e-17,
+      "MSE_and_Hann_max": 3.198396408832238e-18
+    },
+    {
+      "seed": 31415,
+      "arm": "C",
+      "lam": 0.0001,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 3.63207727782644e-18
+    },
+    {
+      "seed": 31415,
+      "arm": "C",
+      "lam": 0.0001,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.942890293094024e-16,
+      "MSE_and_Hann_max": 5.095750210681871e-18
+    },
+    {
+      "seed": 31415,
+      "arm": "Ccap",
+      "lam": 0.01,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 2.220446049250313e-16,
+      "MSE_and_Hann_max": 3.0899761915836876e-18
+    },
+    {
+      "seed": 31415,
+      "arm": "Ccap",
+      "lam": 0.01,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.1102230246251565e-16,
+      "MSE_and_Hann_max": 3.74049749507499e-18
+    }
+  ],
+  "completion": {
+    "new_ridge_fits": 27,
+    "wall_seconds": 386.58878469467163,
+    "CPU_seconds": 1183.993830264,
+    "peak_RSS_bytes": 6107082752,
+    "peak_GPU_allocated_bytes": 193490432,
+    "new_root_bytes": 6236879663,
+    "all_SS07_npy_bytes": 24469431456,
+    "free_disk_bytes": 27709083648,
+    "inputs_unchanged": true,
+    "test_DTU": false,
+    "goal_complete": false
+  },
+  "review_cost": {
+    "wall_seconds": 1.729884386062622,
+    "CPU_seconds": 12.110466991000001,
+    "peak_RSS_bytes": 439910400,
+    "encoder_or_head_forward": 0,
+    "newfits": 0
+  }
+}
