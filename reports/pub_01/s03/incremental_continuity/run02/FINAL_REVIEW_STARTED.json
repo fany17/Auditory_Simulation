@@ -1,0 +1,16 @@
+{
+  "time": 1793505210.2911005,
+  "pid": 433261,
+  "source_sha256": "87d230eaf13839243138aa998bb53f73c48ef3119dd1cc4434dc1e4698b5cc66",
+  "protocol_sha256": "a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8",
+  "target": "all18 selected wholeVAL,original derivative and targets only",
+  "tolerances": {
+    "same_array_r": 1e-10,
+    "raw_vs_cache_wave": 1e-06,
+    "mean3s_60s_r": 1e-07,
+    "block_person_r": 1e-06
+  },
+  "frozen_neural_modules_reused_not_independent_neural_math": true,
+  "test_operations": false,
+  "new_fits": false
+}

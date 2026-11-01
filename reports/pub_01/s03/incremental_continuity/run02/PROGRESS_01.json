@@ -1,0 +1,138 @@
+{
+  "time": 1793505376.105918,
+  "completed_cells": [
+    {
+      "condition": "frozen_p",
+      "seed": 1024
+    },
+    {
+      "condition": "frozen_p",
+      "seed": 2026
+    },
+    {
+      "condition": "frozen_p",
+      "seed": 31415
+    },
+    {
+      "condition": "frozen_current",
+      "seed": 1024
+    },
+    {
+      "condition": "frozen_current",
+      "seed": 2026
+    },
+    {
+      "condition": "frozen_current",
+      "seed": 31415
+    },
+    {
+      "condition": "frozen_past",
+      "seed": 1024
+    },
+    {
+      "condition": "frozen_past",
+      "seed": 2026
+    },
+    {
+      "condition": "frozen_past",
+      "seed": 31415
+    }
+  ],
+  "remaining_not_started": 7,
+  "controller": {
+    "pid": 416910,
+    "handle_present": true,
+    "argv": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_queue.py"
+    ],
+    "state": "S",
+    "start_ticks": 743141234
+  },
+  "reporter": {
+    "pid": 423181,
+    "handle_present": true,
+    "argv": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_report_queue.py"
+    ],
+    "state": "S",
+    "start_ticks": 743180426
+  },
+  "verification": {
+    "pid": 433261,
+    "handle_present": true,
+    "argv": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_verify.py",
+      "--wait",
+      "--device",
+      "cuda:0",
+      "--expected-sha",
+      "87d230eaf13839243138aa998bb53f73c48ef3119dd1cc4434dc1e4698b5cc66"
+    ],
+    "state": "S",
+    "start_ticks": 743245390
+  },
+  "workers": [
+    {
+      "GPU": 1,
+      "pid": 423819,
+      "condition": "joint_p",
+      "seed": 1024,
+      "actual_process": {
+        "pid": 423819,
+        "handle_present": true,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm.py",
+          "--condition",
+          "joint_p",
+          "--seed",
+          "1024",
+          "--device",
+          "cuda:1"
+        ],
+        "state": "R",
+        "start_ticks": 743185345
+      },
+      "progress": {
+        "epoch": 3,
+        "updates": 14800,
+        "windows_epoch": 189760,
+        "seconds": 758.4248039722443
+      }
+    },
+    {
+      "GPU": 0,
+      "pid": 425660,
+      "condition": "joint_p",
+      "seed": 2026,
+      "actual_process": {
+        "pid": 425660,
+        "handle_present": true,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm.py",
+          "--condition",
+          "joint_p",
+          "--seed",
+          "2026",
+          "--device",
+          "cuda:0"
+        ],
+        "state": "R",
+        "start_ticks": 743197346
+      },
+      "progress": {
+        "epoch": 3,
+        "updates": 12400,
+        "windows_epoch": 36160,
+        "seconds": 641.1197037696838
+      }
+    }
+  ],
+  "test_read": false,
+  "new_fits_authorized": 18,
+  "scientific_goal_complete": false
+}
