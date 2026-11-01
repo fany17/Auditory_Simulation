@@ -1,4 +1,6 @@
-# 当前执行：SS07 warm round02正式train/val（2026-11-01）
+# 当前执行：SS07 warm round02全训练/汇总完成，隔离修复wholeVAL复核（2026-11-01）
+
+最新实际状态：18/18fit全部5epoch完成，合计90epoch/355050更新/22720860监督窗，results01全格CSV/三图已生成；训练不重启。wholeVAL v1在首格frozen_p/1024的wave门失败（reset49正确，global64重编码与record256缓存执行坐标不同，另有stack/astype布局和encoder参数grad标志路径差），旧source/日志/失败保留。三个有界probe已定位原cache/fullnative路径可稳定精确重现；独立v2候选2df9f4fce5b3f8d5971734b6a48b52eae54cac003e0c6eae14b891d66e5dd9c1恢复原执行方式，绝对wave1e−6及原所有r门不变，normalized仅另报，待协调核查后执行。当前不称wholeVAL通过或科学goal完成；以下启动记录为历史。追加TRAIN诊断已完成有限制并归档，不改变warm设计。
 
 唯一当前节点仍PUB-01-S03_SS07 / ACTIVE，持续goal尚未达到。round01全部54screen、37唯一full、五native/FT、五seed统一内部/DTU评分及实际raw v1/metric v2复核已完成；该轮controller/eval/review正常结束。实际M4−P内部−.000621、DTU+.000149，M7近似区间均跨0；未建立稳健超越、历史机制或投稿充分性。当前后续warm round02正式训练见下段。
 

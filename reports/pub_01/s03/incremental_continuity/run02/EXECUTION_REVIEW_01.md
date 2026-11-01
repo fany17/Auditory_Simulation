@@ -54,4 +54,14 @@ report queue PID423181的实际argv已核实，WAIT_ALL18_TRAIN_VAL，按/proc a
 
 在2203已做独立公式合成检查：非二进制常量pred/target拒绝通过，正常公式与corrcoef差2.43e−17；最终证据见FINAL_REVIEW_MATH_CHECK_FINAL。此前初稿检查单独保留。全18格真实权重/重放尚未运行，不预报PASS。脚本等待实际report handle和完整标记，无自动重试，异常保留；随后协调端仍需实际查看结果与图表作科学判断。
 
+## 18格实际完成及wholeVAL v1失败
+
+全部18fit已完成，90epoch/355050更新/22720860窗；results01统一CSV/三图已生成，训练/权重/选点/成绩保持冻结。wholeVAL v1的PID433261已退出，首格frozen_p/1024在reset/wave复合断言失败，尚未形成任何单格通过。原source87d230、FINAL_REVIEW_FAILURE/STARTED及日志原位保留，并复制到verification_failure_probe01；不称已通过wholeVAL。
+
+只读probe01给出实际量：reset49正确；global0/576处独立loader与原RawWindows输入/target差0。按global64重编码相对原cache，latent max差.0006798506、wave max差.005340576，参考wave max313.445/RMS128.351；改为原record256批次后仍有latent差3.814697e−6、wave差6.103516e−5，均未过绝对1e−6。原输出峰值处FP32一步约3.051758e−5，不能以指标小或相对误差小伪称原门通过。
+
+probe02/03继续有界检查dtype/stride/原wrapper及3次重复：原np.stack(...).astype保留输入stride[12288,1,192]，v1 np.asarray(list)变为[12288,64,1]，虽数值相同但执行布局不同。原fullnative encoder(eval/no_grad、参数grad原True)在三个检查block（含54窗tail）对cache三次均差0，重复差0；selected frozen wrapper参数grad=False的tail固定差2.384186e−6，重新启用原参数grad标志时该tail差0。神经record/eeg_path/common_samples无不一致；原预训练catalog不含envelope_path字段，非神经载荷差异。
+
+独立v2候选恢复原stack/astype布局；frozen使用原fullnative encoder、record256/tail及原参数grad标志，只做eval/no_grad，先逐tensor证实与选中frozen encoder相同，再按既定global64 head/state；joint仍原global64/RawWindows布局。参考分支为各行冻结primary Data.batch，独立分支自建loader/readout和数学。原绝对wave1e−6仍为主检查；normalized maxdiff/max(1,maxref,maxfresh)仅逐格另报。mean3s/60s1e−7、block/person1e−6、同数组数学1e−10全部不变；任一主门失败保留并停止，不自动放宽。候选与全部probe轻量JSON/source已提供协调核查，实际v2尚未执行。没有新fit、checkpoint/成绩/选择更改或测试。
+
 frozen/joint行同时改变encoder train/eval随机行为，交互不能作为纯encoder梯度因果效应。warm vs旧随机起点还改变上游head训练与预算，不是严格初始化因果消融。旧内部测试和DTU已暴露；后续确认资格另审，不以本轮工程通过或VAL改善完成科学goal。

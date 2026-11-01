@@ -1,0 +1,58 @@
+{
+  "seed": 1024,
+  "condition": "frozen_p",
+  "selected_checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed1024/best_validation.pt",
+  "checkpoint_sha256": "1a605cad608a9a88eac2b24c31bc8857e1437bcc79fe170f7b45bcab565b947d",
+  "failed_verify_source_sha256": "87d230eaf13839243138aa998bb53f73c48ef3119dd1cc4434dc1e4698b5cc66",
+  "loader_against_original_RawWindows": [
+    {
+      "global_start": 0,
+      "neural_input_max_diff": 0.0,
+      "target_max_diff": 0.0
+    },
+    {
+      "global_start": 576,
+      "neural_input_max_diff": 0.0,
+      "target_max_diff": 0.0
+    }
+  ],
+  "cache_creation_source": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py",
+  "cache_creation_geometry_from_frozen_source": "per-record blocks of256, partial record tail; original encoder eval",
+  "results": [
+    {
+      "encoder_geometry": "global64",
+      "head_geometry": "fixed_global64",
+      "state_record_starts": 49,
+      "latent_max_absolute_difference": 0.0006798505783081055,
+      "waveform_max_absolute_difference": 0.005340576171875,
+      "reference_waveform_max_absolute": 313.4454650878906,
+      "reference_waveform_RMS": 128.35113854310674,
+      "waveform_max_difference_over_reference_max": 1.7038294589387323e-05,
+      "max_difference_witness": {
+        "global_window": 9445,
+        "time_index": 130,
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz"
+      },
+      "unchanged_wave_gate_1e6_pass": false
+    },
+    {
+      "encoder_geometry": "per_record256",
+      "head_geometry": "fixed_global64",
+      "state_record_starts": 49,
+      "latent_max_absolute_difference": 3.814697265625e-06,
+      "waveform_max_absolute_difference": 6.103515625e-05,
+      "reference_waveform_max_absolute": 313.4454650878906,
+      "reference_waveform_RMS": 128.35113854310674,
+      "waveform_max_difference_over_reference_max": 1.9472336673585513e-07,
+      "max_difference_witness": {
+        "global_window": 22967,
+        "time_index": 125,
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz"
+      },
+      "unchanged_wave_gate_1e6_pass": false
+    }
+  ],
+  "changed_training_or_checkpoint_or_tolerance": false,
+  "new_fit": false,
+  "test_read": false
+}
