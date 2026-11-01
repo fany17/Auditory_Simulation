@@ -1,0 +1,425 @@
+{
+  "status": "PASS_WITH_SCIENTIFIC_LIMITATIONS",
+  "stage": "PUB-01-S03_SS07_D11",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "reviewed_on": "2026-11-01",
+  "archive_root": "E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_observation_state_probe",
+  "actual_checks": [
+    "Full archived HTML read before presentation repair; corrected visible limitations section independently read",
+    "All seven visible caveats exactly equal summary.json caveats",
+    "Old HTML retained byte-exact; unchanged ordered src/href list",
+    "All 54 archived artifacts independently verified by byte size and SHA256 after HTML repair",
+    "Full REPORT/REVIEW and all three actual PNG images previously reviewed; scientific content hashes unchanged"
+  ],
+  "manifest_sha256": "608a8f6743144736b3adddf24a919a440298f19a6a1c730dd384106f9f9a4feb",
+  "html_sha256": "4f760cb3a1f79349dbfce4471659c1f577a40b4588001542df46fb0ea9b7a10f",
+  "previous_html_backup": "E:\\实验室-科研工作-文件\\00_ChatGPT\\CodexResult\\Result\\runs\\20261101_pub01_s03_ss07_observation_state_probe\\presentation_before_caveats_visible_01\\report.html",
+  "previous_html_sha256": "f2c68b5e61f59227a88a20520519b0a92698f6c45b17b70032e32afcaf4194df",
+  "visible_caveats": 7,
+  "media_resource_urls_unchanged": true,
+  "artifact_count": 54,
+  "artifact_counts_by_kind": [
+    {
+      "kind": "config",
+      "count": 37
+    },
+    {
+      "kind": "figure",
+      "count": 3
+    },
+    {
+      "kind": "table",
+      "count": 11
+    },
+    {
+      "kind": "text",
+      "count": 3
+    }
+  ],
+  "all_artifact_hashes_and_sizes_match": true,
+  "artifact_count_clarification": "54 total = 3 text + 3 figures + 11 tables + 37 configs. A prior description of 43 omitted the 11 tables; all 54 are checked here.",
+  "artifacts": [
+    {
+      "path": "artifacts/text/REPORT.md",
+      "kind": "text",
+      "bytes": 14166,
+      "sha256": "e4bd82b34ba633d6cece2c8d6f5ea54f050c9a55b80f072601de60e0d0f273eb",
+      "match": true
+    },
+    {
+      "path": "artifacts/text/REVIEW.md",
+      "kind": "text",
+      "bytes": 3265,
+      "sha256": "1b1c6bacaebdf46f3a13851dace8f9084a3b1a4cdbf4f1e1103244cca064feb1",
+      "match": true
+    },
+    {
+      "path": "artifacts/text/PLAN.md",
+      "kind": "text",
+      "bytes": 11927,
+      "sha256": "d24597073f89b80950c4bf43f178051fc6ebcf5684187acbdeabb3de4500a8b4",
+      "match": true
+    },
+    {
+      "path": "artifacts/figure/01_COMPLETE_MATRIX.png",
+      "kind": "figure",
+      "bytes": 125886,
+      "sha256": "cfb1f90aaa1c3e54dcade5ac7ed2c36a1e1f7ad30b2afeca9b7c726a8ed3ac5d",
+      "match": true
+    },
+    {
+      "path": "artifacts/figure/02_FIXED_CONTRASTS.png",
+      "kind": "figure",
+      "bytes": 263873,
+      "sha256": "a5ddccef1dc041641b1730f3b63a0a34c700ad7f81acca6ea29d33752333d8c9",
+      "match": true
+    },
+    {
+      "path": "artifacts/figure/03_ERROR_AND_STATE.png",
+      "kind": "figure",
+      "bytes": 180611,
+      "sha256": "1d960e057f965ff278661abdfe11140b58c2731484ab79e1549156b1526bb546",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/ABSOLUTE.csv",
+      "kind": "table",
+      "bytes": 6259,
+      "sha256": "065964340c3be3302465ab20c3e2260a9389ec2fb69baadb0250ebc51a34a2ce",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/ALL_BLOCK.csv",
+      "kind": "table",
+      "bytes": 7589477,
+      "sha256": "b3aa9c5bc8cf9995a8b059c3fab1df1bfb7a89ac5ea4c2174e3c6cbf5a76300b",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/ALL_PERSON.csv",
+      "kind": "table",
+      "bytes": 418446,
+      "sha256": "2fffdaf8d19c616851dd1bb8c50b52732769401ac30abfd25410d0d91b6e9863",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/ALL_RECORD.csv",
+      "kind": "table",
+      "bytes": 360035,
+      "sha256": "ee843cd014594ced9b6de7c2bfef2a8dbd430fd82e831a3eedf4871c9d3b6f7b",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/F_FROZEN_FULL_REFERENCE.csv",
+      "kind": "table",
+      "bytes": 1158,
+      "sha256": "e9ec3be4166fe977b412792de1cc931a9a9b326bc3e63cbdabb33c979380bed5",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/FAMILY_DESCRIPTIVE.csv",
+      "kind": "table",
+      "bytes": 14129,
+      "sha256": "0482e284e248e28347e27838d883b46eb44ab1c89028422188b6c9154668c378",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/FIT_DIAGNOSTICS.csv",
+      "kind": "table",
+      "bytes": 1167,
+      "sha256": "a2532e64b7d4ee420debe57a40b1de6d9211dc3dd9d39efe3c33c1dd1a0ebc9c",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/PAIRED_CONTRASTS.csv",
+      "kind": "table",
+      "bytes": 3441,
+      "sha256": "f7ddcd82a2ab826f1d283b721772d2d14cdddb292b5ed87fea187874e9330a57",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/PERSON_DIFFERENCES.csv",
+      "kind": "table",
+      "bytes": 190063,
+      "sha256": "ee6e1074703d34c2af5e638004048993b74ec55f174a79ec013cde5d08d443b9",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/SECONDARY_PAST_MINUS_ADD.csv",
+      "kind": "table",
+      "bytes": 492,
+      "sha256": "69441763616a15ed1405e585162dedfdc633767646adb18b86138779401c38de",
+      "match": true
+    },
+    {
+      "path": "artifacts/table/SECONDARY_PAST_MINUS_ADD_PERSON.csv",
+      "kind": "table",
+      "bytes": 25493,
+      "sha256": "a7f1331ee403670b70ce0dd3bc801127bdc0bde85cd19746d4bcfccb59e17135",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/ANCHOR_CHECK_seed1024.json",
+      "kind": "config",
+      "bytes": 1200652,
+      "sha256": "8f4ddc3adc906dec153294fb6f424f09169ef0191aa07b72560c1de592838e0c",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/ANCHOR_CHECK_seed2026.json",
+      "kind": "config",
+      "bytes": 1200650,
+      "sha256": "d55e8e0f6d0b565b23f07b0626cd6cb1e5036f84a4472cb8e9c2725dbdd69942",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/ANCHOR_CHECK_seed31415.json",
+      "kind": "config",
+      "bytes": 1200466,
+      "sha256": "a632f1ad3ad334fb693d05cfb8262577b25384221cd38d24939062a5bbdc6c64",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/ARCHIVE_SUMMARY.json",
+      "kind": "config",
+      "bytes": 4734,
+      "sha256": "124ec53576f53e329c5a0e891097bf1666a531cf79a0decb7ee1c65af1c6688f",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COMPLETED.json",
+      "kind": "config",
+      "bytes": 281,
+      "sha256": "0603181e60ab815b95db2b637b95ebd290e157c9ba4497521b7b3cf2e5da6ee0",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_NUMERICAL_AUDIT.json",
+      "kind": "config",
+      "bytes": 39876,
+      "sha256": "4103d153c297dcf04300cba24487b1f9dd203d3ad81be0a945ce9eb9e587b649",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_NUMERICAL_REVIEW_SCOPE.json",
+      "kind": "config",
+      "bytes": 2977,
+      "sha256": "ba327ea69e82b120746b5d4e32bbeb8cec6154e2fb826e796ed172f2a770e9c6",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_PLAN_REVIEW.json",
+      "kind": "config",
+      "bytes": 2073,
+      "sha256": "637ed2a445b4cccf95ff55c58957661d7aaa4426fd6e1ac7b5ed0d7d386c3953",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_REFERENCE_AUDIT.json",
+      "kind": "config",
+      "bytes": 1327,
+      "sha256": "ea101fb749bbab57f9f7c9594456fb27d548705aa7ac0fcc11c65ba61d07ceb8",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_RESULT_REVIEW.json",
+      "kind": "config",
+      "bytes": 5213,
+      "sha256": "9713aed236d71eaa0233c1a414edfce178752972f6bd53ea5d57364ebcd55f8a",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COST.json",
+      "kind": "config",
+      "bytes": 2831,
+      "sha256": "27ef792308934bc47ba0118ddeeba83b4d7cc8bdf23c1f7337b4a68e88240e99",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/ENGINEERING_SYNTHETIC.json",
+      "kind": "config",
+      "bytes": 227,
+      "sha256": "6837bd1e1a66911f4fd73d6e798e0222d5bcee0ba7e149b91e4c0243c90c24e7",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/INPUT_INVENTORY.json",
+      "kind": "config",
+      "bytes": 227151,
+      "sha256": "4e4c9807982ddd7efd3b9ff82236a20a1df19b259842a9d1092dbcacef039f3b",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/LAUNCH.json",
+      "kind": "config",
+      "bytes": 536,
+      "sha256": "75adf15937b3bfe6a2392e65cb4e2197fe61564c09bee1f0ed6cbe77dfe9e4e8",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/MASK_COUNTS.json",
+      "kind": "config",
+      "bytes": 346,
+      "sha256": "2984f14663a9af2e931e7d5345d81839926222439cde15fbebd7f99219c026f8",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/MATH_CHECK.json",
+      "kind": "config",
+      "bytes": 634,
+      "sha256": "a22e0b60f867101ff40bd9713148296e4a36d947538a3a26ed238431a8d4a2da",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/PERSON_REFERENCE_PROVENANCE.json",
+      "kind": "config",
+      "bytes": 34256,
+      "sha256": "1df6a8befc8c1951a0a18a772ef7ac8059dedcee8d02d0629d284aff05f9f869",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/PROTOCOL.json",
+      "kind": "config",
+      "bytes": 841571,
+      "sha256": "a238ed63fd5c050fd66e88c07cf5b998f3bd15690bbe989d609459c947cb5f11",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/RUNTIME_AFTER_LAUNCH.json",
+      "kind": "config",
+      "bytes": 839,
+      "sha256": "f9b8ca54560875057222545a11e370fc49d02f7d8e08d288cf8fc07fb41565d8",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/STARTED.json",
+      "kind": "config",
+      "bytes": 219,
+      "sha256": "2851a9d7585e56ea7b860eb2e18c8610d5d90d994ad7ea86e4254e721a0803f4",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/STATE_NUMERICS.json",
+      "kind": "config",
+      "bytes": 8151,
+      "sha256": "ab8620eefc7786fcbd62c6fd38c079fb2aaa98cf336d754baea1159519e3eb0c",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/STATUS.json",
+      "kind": "config",
+      "bytes": 120,
+      "sha256": "3281c123a3d9a7de034636bf6e767bcfd6ff0f54e34f9b71679a6815710ad6a1",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/SUMMARY.json",
+      "kind": "config",
+      "bytes": 19334,
+      "sha256": "49aa4dff84b72fb267818b9f4206cb71a113ad2788738fd40e1454784d2c5e48",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COMPLETED_2.json",
+      "kind": "config",
+      "bytes": 147,
+      "sha256": "a93cb9447e5cfdf9b8c2a5d1f5526da0716e7c438fce3f2dcd9e055a6e165df7",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/NUMERICAL_DETAILS.json",
+      "kind": "config",
+      "bytes": 25327,
+      "sha256": "7aed66e91d549db9999817ff53c17d788ac3ba924df56ca4a64ff960b84249f5",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/NUMERICAL_SUMMARY.json",
+      "kind": "config",
+      "bytes": 21916,
+      "sha256": "efc10ee7f7f2428e3415d219f078181a35faec04f1d4c7cbadd8fc7ce678becf",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/REFERENCE_PROVENANCE.json",
+      "kind": "config",
+      "bytes": 641,
+      "sha256": "05a8051d759587507b366c93595a51a6d2d1478f44f387509f9ac742a1ee4364",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/pub_01_s03_ss07_observation_state_core.py",
+      "kind": "config",
+      "bytes": 8131,
+      "sha256": "2de1842d4797ea0005eb3d43e087715ae039682b89b64a7cc5fee63819ff219b",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/pub_01_s03_ss07_observation_state_run.py",
+      "kind": "config",
+      "bytes": 21280,
+      "sha256": "6f2897afcd586325db002ad97f72bc9d823efde51e90fff3a3b1fe843401b83f",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/pub_01_s03_ss07_observation_state_inventory.py",
+      "kind": "config",
+      "bytes": 5290,
+      "sha256": "ee9cf1d5863cf71f07d8583af5ebdbc5b8cd0c767d09287aceb1f079368a6ffd",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/pub_01_s03_ss07_observation_state_report.py",
+      "kind": "config",
+      "bytes": 9622,
+      "sha256": "c0fb05c17b97d9edf2b70318bf7bc70032fdbe78bd0244f2802df026deb7b238",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_NUMERICAL_AUDIT.py",
+      "kind": "config",
+      "bytes": 13588,
+      "sha256": "f2ce771988e6c58a4f48764557f2c8c3c3c65ddf2e6c0b4156efd71156c5a5be",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/CONTINUITY_STATE_PRIOR_ART_NOTES.json",
+      "kind": "config",
+      "bytes": 4234,
+      "sha256": "4c67e6c8503693fd002793af3610eae842d32ebef5bc2475160f1f8a0b2c9191",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/ADAPTIVE_AUDITORY_PRIOR_ART_UPDATE.json",
+      "kind": "config",
+      "bytes": 2879,
+      "sha256": "f7947986cd235f910e7f71b0fcbc2344c8e8e22fdd4a7372767e53b6b9e88fd3",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/COVARIANCE_AUDITORY_AND_ARTIFACT_PRIOR_ART.json",
+      "kind": "config",
+      "bytes": 2437,
+      "sha256": "9b41eca74fa9985450d901a0ba80026ebe83030ed5da0578fc7feb02fbcaf482",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/PREPROCESSING_OBSERVATION_STATE_CONSTRAINTS.json",
+      "kind": "config",
+      "bytes": 2940,
+      "sha256": "09979b878f25c97382617b9e523437b32a77ecb2822dd9b8b3a763215c3d511f",
+      "match": true
+    },
+    {
+      "path": "artifacts/config/OBSERVATION_STATE_INPUT_FEASIBILITY.json",
+      "kind": "config",
+      "bytes": 2423,
+      "sha256": "7ea725712d7b9121ea23d862778809e43e8a70ccdbce897d9a29b18d50f5b909",
+      "match": true
+    }
+  ],
+  "scientific_candidate_status": "NOT_SUPPORTED_FOR_PREDEFINED_HISTORY_CONDITIONS",
+  "goal_complete": false,
+  "recursive_rearchive": false,
+  "new_scientific_runs_or_inference": 0
+}
