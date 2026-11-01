@@ -133,3 +133,19 @@ FULL_PRIMARY_SELECTION已建立，sha256为d43da5b521af0cabfed6a2a6fc4ce968ae39f
 全部15cell按patience10停止，不称全局收敛。原P同三seed/同VAL60s/person均值为.162362487（冻结EMA tau0与原P精确别名）。五候选均低于原P，且M4逐seed差为−.000952139 / −.001387850 / −.000711367，见PRIMARY_NATIVE_VAL_COMPARISON。这是合法验证集负向证据，不是测试或外部结论，不因M4候选中最高而写成已超过原P。不据此改预算、候选、划分或启动额外分支。
 
 四控制冻结为m4_current_h16、static_m4_h16、output_prior_h16、static_alignment；最终固定五seed为1024/2026/31415/42/12345。原三seed各训练四控制，额外两个seed先训练冻结M4再训练四控制，追加22cell，总唯一full37（主比较25，另四family各原三seed共12）。FINAL_CONTROL_START_VERIFIED记录首批PID237174–237178、各自argv/resolved/cache/amendment和250/pat10预算；这是启动快照，不作永久活跃PID表。后续实核seed1024的current控制已完成并进入static_m4，其余四worker继续；14537/88448/233443仍工作，无真实READY。继续完整比较、实际raw/metric复核与科学判断，不以本次选择或阴性VAL完成goal。
+
+## 初始15个full的实际曲线与验证差值
+
+新增initial_full_curves仅在2203读取已完成history/completed、冻结PRIMARY/EMA选择metadata，不载入信号、checkpoint或预测数组，不训练、不新增评分。完整495条epoch记录及15个选中点均与预算/早期选择记录吻合；差值均值与PRIMARY_NATIVE_VAL_COMPARISON逐项相符。FULL_INITIAL15_HISTORY与CURVE_SUMMARY为图的轻量数值入口，CURVE_SNAPSHOT记录来源。两张实际图已检查无裁切/点标注重叠；第一版标注位置不佳的源与输出保留在2203 engineering_history/initial_full_curves_v1.py及initial_full_curves01，当前交付取initial_full_curves02，仅改呈现。
+
+![初始15个full的真实训练和验证曲线](FULL_INITIAL15_CURVES.png)
+
+左列为训练过程中各batch的在线3s相关均值，右列为每轮完成后的固定验证遍历；空方框是最早最佳3s验证checkpoint。左右来自不同样本池且训练值随轮内权重变化，不能把两线数值差直接当成同一checkpoint的泛化误差估计。所有曲线使用原max250/pat10；实际终止轮数见上表，不把未跑满250误称预算违约，也不称全局收敛。
+
+M2、M3的若干曲线在训练目标继续改善时，验证表现已持平或下降；M5的三个验证峰分别位于第5/6/10轮，之后没有恢复到更高值。这种轨迹与拟合训练数据而未获得相应验证收益相容，但仅凭曲线不能确定原因或证明历史普遍无用。M4三个seed最佳轮次相差较大（第7/45/61轮），本轮按既定耐心规则处理，不据此延长其中某个seed或换挑选准则。
+
+![初始三seed候选相对原P的验证差值](FULL_INITIAL15_VAL60S.png)
+
+第二图在每个seed内比较同一VAL60s→被试macro指标；点是seed配对差，黑横线为三seed均值，不是置信区间。基准是原P精确EMA tau0别名。实际15个逐seed差全部小于0，M4均值差约−.001017，是五family中最小的下降。3s checkpoint选择曲线与融合后60s/person终点不同，不能用某条3s曲线较高替代后者。此处VAL同时用于训练/候选选择，不是独立确认或最终内部/外部测试。
+
+随后两个额外M4 seed也已完成：42为21epoch/82845更新、选中0-based10；12345为35epoch/138075更新、选中0-based24，均pat10。仅重聚合保存VAL块、核对history/预算/各自encoder/cache和共同49人/752keys通过，未读任何权重或预测载荷，也未重选primary。其VAL60s/person r分别.164240891/.162190684；既有EMA选择不含这两个seed的P60s值，不拼凑不存在的配对比较。最新运行快照full20/37：M4五seed、原三seed current控制完成；三static控制及其余current控制仍实际运行，无失败或真实READY。最终五seed统一比较/实际复核及goal继续。
