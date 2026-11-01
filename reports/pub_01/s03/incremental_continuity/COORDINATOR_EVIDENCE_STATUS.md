@@ -52,3 +52,15 @@ D10已完成上述固定36角色-split；原FT实际每phase全局64跨record批
 D10所有结果仍是POST-HOC INTERNAL EXPLORATORY，不能升级为独立确认。已准备OpenNeuro ds004408 v1.0.8的精确公开数据范围提案（19人、380记录、20音频、CC0），向用户询问新增数据范围，**答复尚未到达，未取payload**。已有任务继续；不把未答复视为批准，亦不因此重开旧test或DTU。
 
 所有信号、权重、系数和数值计算仍在2203；本地仅代码与轻量报告。旧各轮结果冻结，PR#6不自动合并，不启动患者/STN或无关任务。
+
+## D11 已完成的状态探针与实际独立核验
+
+协调已实际全文审阅 [D11 最终方案](observation_state_probe/run01/PLAN.md)、core/run 源码与 D8 centered Gram 构造；PLAN hash `d24597073f89b80950c4bf43f178051fc6ebcf5684187acbdeabb3de4500a8b4` 对应 [批准记录](observation_state_probe/run01/COORDINATOR_PLAN_REVIEW.json)。原 TRAIN/VAL 上固定五臂×三 seed 共15个岭解、6个无拟合干预与24组评分；过去状态使用完整当前 Hann 输入并集之前30秒的发布预处理 EEG 二阶统计。静态记录前缀、同人其他 TRAIN 记录和当前协方差均为既定控制；不改旧 test/DTU。
+
+本轮在2203唯一进程 PID656537 完成全部15解、6个无拟合干预、24组评分，协议 hash `a238ed63fd5c050fd66e88c07cf5b998f3bd15690bbe989d609459c947cb5f11`。主run wall3023.156秒、CPU11262.107秒，无重启/失败/NN更新。协调实际首尝试独立审计通过：26来源hash、551输入size/mtime（未重做全部输入内容hash）、475记录支持、15正规方程最大差7.03e−17、60原EEG状态cache差最大1.135e−7（原固定容差内）、48缓存重建和24聚合r/MSE/r3s差均0；三seed原Ccap全部VAL block-r桥差均0。独立审核3.276秒，无新fit/NN/NPY，不能将技术通过当作历史机制通过。
+
+六个预设primary未满足：PastCov均r=.182062532，低于Ccap .182339940，差−.000277407且三seed均负；对静态Prefix、Person、Older、Neutral也各三seed负。只有对CurrentCov的full差全正（+.000110279），warm降为2/3正。Past−Add secondary均−.000293257、对已有F full均−.001811310，均三个seed负；没有新增F warm评分。Prefix .182615451、Person .182595426虽略高Ccap，仍低于现有F .183873843，不能据此称动态连续性改善。Past的MSE .241838737优于Ccap .242378889，故不能说全部指标恶化；主Pearson条件仍失败。三图已实际查看，F三份原来源hash及9个Past−Add full/warm/cold CSV差值另行核对一致。
+
+这是所选30秒/PCA8状态和固定读出族的有界阴性，不证明所有历史无信息。协方差分类与动态伪迹校正已有一手先例，见 [补充文献核查](metadata_review/COVARIANCE_AUDITORY_AND_ARTIFACT_PRIOR_ART.json)。没有建立噪声机制、端到端因果性、方法新意或独立泛化；不因阴性自动扩λ/时长/PCA或新增backbone。完整报告、最终审阅与归档状态由本轮产物记录，goal仍ACTIVE。
+
+独立验证准备另有实际元数据进展：固定OpenNeuro版本119种channel TSV已全部读取并关联380记录，285记录带declared bad（每记录0–34）；旧sample“全good”表述已透明纠正为5个bad。2203既有MNE1.6.1的64/128通道软件模板只有34个目标位置精确重合，且C1..C6同名异位，不能按字符串直接映射。这些只是元数据及软件模板证据，不是实际电极位置、插值算子或数据集实验。新EEG/audio范围仍待真实用户答复，未取载荷。对应更正与两份核查已实际核对local/remote提交 `6269a51c877e3b7ba306d7857be64ce9ab0834e5`。

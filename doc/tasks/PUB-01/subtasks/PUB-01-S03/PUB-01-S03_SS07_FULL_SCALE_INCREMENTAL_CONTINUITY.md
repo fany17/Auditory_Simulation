@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D10实际review/归档冻结；内部点增益不等于历史/创新/新确认，D11已按独立审定矩阵在原TRAIN/VAL运行15fit+6干预，source5c50719/PID656537；goal未达到 |
+| Status | ACTIVE — D4-D10实际review/归档冻结；内部点增益不等于历史/创新/新确认，D11全部15fit/6干预/24评分完整阴性，独立数值与全文三图通过、HTML归档完成；goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -82,6 +82,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 三级审阅：技术可复现；科学结论与证据相称；父任务公开/患者边界和原有冻结结果不变。仅就已授权公开EEG方法目标持续推进，不把本任务完成等同PUB-01全部完成或论文接受。
 
 ## 6. 执行记录
+
+2026-11-01 D11 Completion Record：固定15岭解、6干预、24评分全部完成，PID656537正常退出；强Ccap/Past r=.182339940/.182062532，Past−Ccap均−.000277407三个seed负，−Prefix/Person/Older/Neutral及Add/F亦全负。仅Past−Current full+.000110全正、warm2/3正；六条件不满足，静态参考略益不称动态贡献，Past MSE改善.241838737<.242378889保留。三Ccap桥差0、32实际descriptor差≤1.0814e−13、floor/clip0；独立26source/551input/475支持/15正规方程/60原状态/48缓存/24聚合全PASS，正规方程7.03e−17、cache1.135e−7、r/MSE/r3s聚合差0。全文三PNG实际独立审阅，PCA缩放措辞已修正但数值不变；Technical PASS_WITH_LIMITATIONS / 本诊断Acceptance PASS_WITH_LIMITATION / Parent PASS。observation_state_probe/run01 REPORT/REVIEW及三图HTML run_id20261101_pub01_s03_ss07_observation_state_probe实际归档完成，说明/副本/链接通过。wall3023.156/CPU11262.107秒、RSS2.61GiB，NN前向/更新0；audit另3.276/CPU20.704秒。新state NPY45.27MB、全26.27088GB<25GiB，数值101.04MB<128MiB/root<256MiB/free>20GiB。source5c50719/protocol a238ed63…b5f11冻结，未重跑/换split或扩λ/时长/PCA，旧test/DTU/新载荷关闭；无患者，goal ACTIVE，未自动启动后续实验。
 
 2026-11-01 D10 Completion Record：冻结6角色×3seed×seen/heldout=36项完成，PID599747正常退出。原2:1 r PFT/Ponly/C/Ccap/W/F=.168945/.170374/.171197/.173348/.173393/.174284，F−W/Ccap−PFT/Ccap−Ponly weighted均+.000892/+.004403/+.002973且两组各seed全正；C−Ponly heldout三seed负、W−Ccap mixed、F窗口MSE约352/r3s约.004/近相消bias限制不省略。全部POST-HOC INTERNAL EXPLORATORY，无新确认/历史/创新。36VAL映射桥、300VAL Z/P gold、636testDecoder及432旧FT原单位fused桥通过且后三项差0；旧三seedFT均值恢复.1689447264。独立306source/600input/36mask聚合差0、72cached blockr≤2.78e−16/MSE≤2.70e−14，全文三PNG实际审阅，原样reviewf4dcfaa3…bedef/audit475caa27…584f88。Technical PASS_WITH_LIMITATIONS / 本内部审计Acceptance PASS_WITH_LIMITATION / Parent PASS；finetuned_internal_audit/run01 REPORT/REVIEW/全表与HTML run_id20261101_pub01_s03_ss07_finetuned_internal_audit已归档，三图说明/副本/链接检查通过。main wall147.210/CPU539.147秒、255012实际NN窗；独立audit另3.087/CPU17.644秒，非新fit/统计重拟合/λ选择。新NPY1.756GB、全24.4245GiB/free25.86GB守界，图表schema失败原样保留而正式run未重跑。goal继续ACTIVE；D11仅在原TRAIN/VAL准备慢观测状态假说，核M2/M5/D4/D5及EA/AEA先例、强current/static控制/真错历史干预和精确预算，具体审定前不新fit、不读旧test/DTU，新OpenNeuroscope仍待用户答复不取payload。
 

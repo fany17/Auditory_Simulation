@@ -1,4 +1,10 @@
-# 当前执行：SS07 D11固定观测状态探针正在原TRAIN/VAL执行（2026-11-01）
+# 当前执行：SS07 D11完整阴性结果已独立核验；三图归档完成（2026-11-01）
+
+D11固定15岭解、6无拟合干预、24评分集合已完整完成，PID656537正常退出。Ccap/Past r=.182339940/.182062532，Past−Ccap均−.000277407三个seed负；Past−Prefix/Person/Older/Neutral亦三seed负，仅Past−Current full正、warm2/3正。Past−Add−.000293257、−既有F−.001811310皆三seed负；MSE改善.241838737<.242378889保留。预设六条件不满足，不支持本有界状态的额外历史机制，不等于所有指标恶化或所有历史无用。独立26source/551inputs/475支持/15正规方程/60原状态/48缓存/24聚合通过，缓存及聚合差0；全文三PNG实际独立审阅，PCA缩放措辞已修正。Technical PASS_WITH_LIMITATIONS / 本诊断Acceptance PASS_WITH_LIMITATION / Parent PASS，REPORT/REVIEW及三图HTML已实际归档，run_id20261101_pub01_s03_ss07_observation_state_probe，说明/副本/链接通过。主wall3023.156秒、CPU11262.107秒、RSS2.61GiB，新NN前向/更新0；audit另3.276秒。state新45.27MB、全部NPY26.27088GB<25GiB，数值101.04MB<128MiB/root<256MiB/free>20GiB。原λ/时长/PCA/seed/split和D4-D10不重开；旧test/DTU/新载荷关闭，SS07和科学goal ACTIVE。
+
+完整[REPORT](../reports/pub_01/s03/incremental_continuity/observation_state_probe/run01/REPORT.md) / [REVIEW](../reports/pub_01/s03/incremental_continuity/observation_state_probe/run01/REVIEW.md)。新OpenNeuro载荷scope仍待实际用户答复，不因本轮阴性自动扩搜索或另起实验。
+
+## 历史冻结结果与执行记录
 
 D7固定36/36角色-split已完成，PID535287正常退出。Ccap对P*/P-only原2:1加权r均差+.008695/+.004301，seen/held-out每seed均正；但同三seed历史P_FT=.168944726、Ccap=.168943486，差−.000001240且seed方向混合，未证明超过P_FT、等效或非劣。全部POST-HOC INTERNAL EXPLORATORY，不据旧测试重选。实际独立286来源/893输入/36聚合及72缓存重建通过（块r差≤2.78e−16，432原P未缩放桥差0），全文/三图已审阅；原样review57072ffe…b45f，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REVIEW.md)及HTML run_id20261101_pub01_s03_ss07_internal_generalization已归档，三图说明/副本/链接通过。无新fit/encoder/rawEEG/DTU/下载，wall75.177s、CPU504.670s；科学goal ACTIVE。
 

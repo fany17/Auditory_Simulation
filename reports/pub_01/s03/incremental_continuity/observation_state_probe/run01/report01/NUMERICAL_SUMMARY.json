@@ -1,0 +1,738 @@
+{
+  "means": [
+    {
+      "role": "Ccap",
+      "seed_r": [
+        0.18188879428826338,
+        0.1817561196902157,
+        0.18337490481957303
+      ],
+      "r": 0.18233993959935071,
+      "r3s": 0.16206725967609972,
+      "MSE": 0.24237888898863477,
+      "window_MSE": 0.2551693865599919,
+      "weighted_single_MSE": 0.24274061588869136,
+      "disagreement": 0.0003617269000565633,
+      "overlap_MSE": 0.0034860799270254373,
+      "warm_r": 0.1817956948700953,
+      "cold_r": 0.17039674248232725
+    },
+    {
+      "role": "Add",
+      "seed_r": [
+        0.1818323197196452,
+        0.1817859692688803,
+        0.1834490779309071
+      ],
+      "r": 0.1823557889731442,
+      "r3s": 0.16199668411432555,
+      "MSE": 0.24276489191800846,
+      "window_MSE": 0.2556163286342871,
+      "weighted_single_MSE": 0.243146913648844,
+      "disagreement": 0.00038202173083556326,
+      "overlap_MSE": 0.0036593086444968188,
+      "warm_r": 0.18184541361353587,
+      "cold_r": 0.17039674248232725
+    },
+    {
+      "role": "CurrentCov",
+      "seed_r": [
+        0.18136985114409268,
+        0.18137348847046186,
+        0.18311342030981012
+      ],
+      "r": 0.18195225330812156,
+      "r3s": 0.16207909559751632,
+      "MSE": 0.24191494225653024,
+      "window_MSE": 0.25462753238558067,
+      "weighted_single_MSE": 0.24230907856667408,
+      "disagreement": 0.0003941363101437922,
+      "overlap_MSE": 0.003753014451898993,
+      "warm_r": 0.181508118424108,
+      "cold_r": 0.17039674248232725
+    },
+    {
+      "role": "RecordPrefix",
+      "seed_r": [
+        0.18201196910723097,
+        0.1821379262938182,
+        0.1836964588706048
+      ],
+      "r": 0.18261545142388466,
+      "r3s": 0.1621635548511341,
+      "MSE": 0.2413900967633432,
+      "window_MSE": 0.25407892919154934,
+      "weighted_single_MSE": 0.24177348298338663,
+      "disagreement": 0.00038338622004343144,
+      "overlap_MSE": 0.003665412800863826,
+      "warm_r": 0.18209390950400786,
+      "cold_r": 0.17039674248232725
+    },
+    {
+      "role": "PersonTRAIN",
+      "seed_r": [
+        0.18211722003492184,
+        0.18202939370069846,
+        0.18363966548979768
+      ],
+      "r": 0.18259542640847268,
+      "r3s": 0.16221705457031135,
+      "MSE": 0.24194361983401147,
+      "window_MSE": 0.25466651711672883,
+      "weighted_single_MSE": 0.24232493278450087,
+      "disagreement": 0.00038131295048940086,
+      "overlap_MSE": 0.003644798288932908,
+      "warm_r": 0.1820121958579699,
+      "cold_r": 0.17039674248232725
+    },
+    {
+      "role": "PastCov",
+      "seed_r": [
+        0.1814744309454858,
+        0.18151857220683285,
+        0.18319459415844186
+      ],
+      "r": 0.18206253243692017,
+      "r3s": 0.16209881942093993,
+      "MSE": 0.24183873708280124,
+      "window_MSE": 0.25451788437849504,
+      "weighted_single_MSE": 0.2422212538203581,
+      "disagreement": 0.00038251673755688976,
+      "overlap_MSE": 0.003657938608489378,
+      "warm_r": 0.18153530522328154,
+      "cold_r": 0.17039674248232725
+    },
+    {
+      "role": "PastOlder",
+      "seed_r": [
+        0.1819659764710386,
+        0.18196857454862506,
+        0.18366678553532317
+      ],
+      "r": 0.18253377885166225,
+      "r3s": 0.1620610766476469,
+      "MSE": 0.24179663832291012,
+      "window_MSE": 0.25446542502397956,
+      "weighted_single_MSE": 0.24217913015857628,
+      "disagreement": 0.00038249183566612684,
+      "overlap_MSE": 0.0036581178366170107,
+      "warm_r": 0.18211308202233412,
+      "cold_r": 0.17039674248232725
+    },
+    {
+      "role": "PastNeutral",
+      "seed_r": [
+        0.18186790185502286,
+        0.1818372191127724,
+        0.18356472927707862
+      ],
+      "r": 0.18242328341495795,
+      "r3s": 0.1619882762694941,
+      "MSE": 0.2427762935053108,
+      "window_MSE": 0.2556360128400707,
+      "weighted_single_MSE": 0.24315723322042992,
+      "disagreement": 0.0003809397151191606,
+      "overlap_MSE": 0.003651015032910128,
+      "warm_r": 0.18192153250608922,
+      "cold_r": 0.17039674248232725
+    }
+  ],
+  "primary_contrasts": {
+    "PastCov-Ccap": {
+      "seed_differences": [
+        -0.000414363342777585,
+        -0.00023754748338286613,
+        -0.00018031066113116667
+      ],
+      "mean": -0.00027740716243053926,
+      "all3positive": false
+    },
+    "PastCov-CurrentCov": {
+      "seed_differences": [
+        0.00010457980139311207,
+        0.00014508373637098226,
+        8.117384863173815e-05
+      ],
+      "mean": 0.00011027912879861083,
+      "all3positive": true
+    },
+    "PastCov-RecordPrefix": {
+      "seed_differences": [
+        -0.0005375381617451769,
+        -0.000619354086985352,
+        -0.0005018647121629305
+      ],
+      "mean": -0.0005529189869644865,
+      "all3positive": false
+    },
+    "PastCov-PersonTRAIN": {
+      "seed_differences": [
+        -0.0006427890894360466,
+        -0.0005108214938656097,
+        -0.000445071331355823
+      ],
+      "mean": -0.0005328939715524931,
+      "all3positive": false
+    },
+    "PastCov-PastOlder": {
+      "seed_differences": [
+        -0.0004915455255528056,
+        -0.00045000234179221055,
+        -0.00047219137688131463
+      ],
+      "mean": -0.00047124641474211026,
+      "all3positive": false
+    },
+    "PastCov-PastNeutral": {
+      "seed_differences": [
+        -0.00039347090953706365,
+        -0.00031864690593955136,
+        -0.00037013511863676074
+      ],
+      "mean": -0.00036075097803779194,
+      "all3positive": false
+    }
+  },
+  "fit_diagnostics": [
+    {
+      "seed": 1024,
+      "role": "Add",
+      "dimension": 32,
+      "parameters": 6336,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 24.24233961170342,
+      "normal_equation_max_abs": 3.415236843329339e-18
+    },
+    {
+      "seed": 1024,
+      "role": "CurrentCov",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 126.56966443630093,
+      "normal_equation_max_abs": 3.2959746043559335e-17
+    },
+    {
+      "seed": 1024,
+      "role": "RecordPrefix",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 94.33216636924006,
+      "normal_equation_max_abs": 2.7972416050126014e-17
+    },
+    {
+      "seed": 1024,
+      "role": "PersonTRAIN",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 82.14127197971652,
+      "normal_equation_max_abs": 1.452830911130576e-17
+    },
+    {
+      "seed": 1024,
+      "role": "PastCov",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 99.25818237419641,
+      "normal_equation_max_abs": 7.025630077706069e-17
+    },
+    {
+      "seed": 2026,
+      "role": "Add",
+      "dimension": 32,
+      "parameters": 6336,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 24.242340173737826,
+      "normal_equation_max_abs": 7.48099499014998e-18
+    },
+    {
+      "seed": 2026,
+      "role": "CurrentCov",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 126.49694888441229,
+      "normal_equation_max_abs": 5.187907395343139e-17
+    },
+    {
+      "seed": 2026,
+      "role": "RecordPrefix",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 94.52911603314791,
+      "normal_equation_max_abs": 4.8138576458356397e-17
+    },
+    {
+      "seed": 2026,
+      "role": "PersonTRAIN",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 82.33653309890558,
+      "normal_equation_max_abs": 2.816215143031098e-17
+    },
+    {
+      "seed": 2026,
+      "role": "PastCov",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 99.38887616898418,
+      "normal_equation_max_abs": 5.022566564039099e-17
+    },
+    {
+      "seed": 31415,
+      "role": "Add",
+      "dimension": 32,
+      "parameters": 6336,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 24.24235523537082,
+      "normal_equation_max_abs": 3.916680348103885e-18
+    },
+    {
+      "seed": 31415,
+      "role": "CurrentCov",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 126.39371524264857,
+      "normal_equation_max_abs": 3.5439858513119926e-17
+    },
+    {
+      "seed": 31415,
+      "role": "RecordPrefix",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 94.40974567403302,
+      "normal_equation_max_abs": 3.389487041732808e-17
+    },
+    {
+      "seed": 31415,
+      "role": "PersonTRAIN",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 82.31986479965974,
+      "normal_equation_max_abs": 2.949029909160572e-17
+    },
+    {
+      "seed": 31415,
+      "role": "PastCov",
+      "dimension": 296,
+      "parameters": 57024,
+      "lambda_value": 0.01,
+      "effective_df_excludes_intercept": 99.38310822267196,
+      "normal_equation_max_abs": 2.6020852139652106e-17
+    }
+  ],
+  "secondary_Past_minus_Add": [
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 1024,
+      "subset": "full",
+      "delta_r": -0.0003578887741594039
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 1024,
+      "subset": "warm",
+      "delta_r": -0.0003705369804475611
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 1024,
+      "subset": "cold",
+      "delta_r": 0.0
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 2026,
+      "subset": "full",
+      "delta_r": -0.00026739706204745306
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 2026,
+      "subset": "warm",
+      "delta_r": -0.0002741024065779918
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 2026,
+      "subset": "cold",
+      "delta_r": 0.0
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 31415,
+      "subset": "full",
+      "delta_r": -0.00025448377246523046
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 31415,
+      "subset": "warm",
+      "delta_r": -0.00028568578373736053
+    },
+    {
+      "comparison": "PastCov-Add",
+      "status": "secondary",
+      "seed": 31415,
+      "subset": "cold",
+      "delta_r": 0.0
+    }
+  ],
+  "frozen_F_full_references": [
+    {
+      "seed": 1024,
+      "role": "D9_F_existing_full_VAL_only",
+      "source_file": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed1024/F_METRICS.json",
+      "source_sha256": "94108cf0ef0ce918c1b722242aebab88fe2b5c483688ced35ca3da1a62f45b91",
+      "r": 0.18341714403611428,
+      "MSE": 0.2419868058000209,
+      "r3s": 0.0034258798151363024,
+      "window_MSE": 356.4566480936511,
+      "disagreement": 0.33337092253728307,
+      "PastCov_r": 0.1814744309454858,
+      "PastCov_minus_F": -0.0019427130906284895,
+      "new_prediction_or_scoring": false
+    },
+    {
+      "seed": 2026,
+      "role": "D9_F_existing_full_VAL_only",
+      "source_file": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed2026/F_METRICS.json",
+      "source_sha256": "f9dc92e78651672eebadcd3d44ce220c82ac6c0c00828c1d75de1f1bf8596d0e",
+      "r": 0.1834474280222463,
+      "MSE": 0.2420397121156885,
+      "r3s": 0.003379808381218257,
+      "window_MSE": 357.66137131455673,
+      "disagreement": 0.3346303652541731,
+      "PastCov_r": 0.18151857220683285,
+      "PastCov_minus_F": -0.001928855815413466,
+      "new_prediction_or_scoring": false
+    },
+    {
+      "seed": 31415,
+      "role": "D9_F_existing_full_VAL_only",
+      "source_file": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed31415/F_METRICS.json",
+      "source_sha256": "dea43c188392780c12816559f5071c7b1cbfd869df32b9b86fef0bad60673c24",
+      "r": 0.18475695590747657,
+      "MSE": 0.2424401919371972,
+      "r3s": 0.003498552263972147,
+      "window_MSE": 342.0849258337225,
+      "disagreement": 0.32385556794841336,
+      "PastCov_r": 0.18319459415844186,
+      "PastCov_minus_F": -0.0015623617490347075,
+      "new_prediction_or_scoring": false
+    }
+  ],
+  "condition_met": false,
+  "cost": {
+    "new_ridge_fits": 15,
+    "wall_seconds": 3023.156286239624,
+    "CPU_seconds": 11262.106785528002,
+    "peak_RSS_bytes": 2800222208,
+    "all_SS07_NPY_bytes": 26270880224,
+    "new_root_bytes": 133219178,
+    "free_disk_bytes": 25604460544,
+    "test_DTU": false,
+    "goal_complete": false
+  },
+  "state": {
+    "counts": {
+      "negative_variance_roundoff": 0,
+      "diagonal_floor": 0,
+      "correlation_roundoff_clip": 0
+    },
+    "actual_direct_checks": [
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 41,
+        "role": "CurrentCov",
+        "max_absolute": 5.218048215738236e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 41,
+        "role": "RecordPrefix",
+        "max_absolute": 9.992007221626409e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 41,
+        "role": "PastCov",
+        "max_absolute": 1.4432899320127035e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 41,
+        "role": "OlderCov",
+        "max_absolute": 9.992007221626409e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 622,
+        "role": "CurrentCov",
+        "max_absolute": 8.83182416089312e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 622,
+        "role": "RecordPrefix",
+        "max_absolute": 9.992007221626409e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 622,
+        "role": "PastCov",
+        "max_absolute": 2.220446049250313e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "window": 622,
+        "role": "OlderCov",
+        "max_absolute": 2.1760371282653068e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "CurrentCov",
+        "max_absolute": 5.329070518200751e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "RecordPrefix",
+        "max_absolute": 9.71445146547012e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "PastCov",
+        "max_absolute": 1.4432899320127035e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "OlderCov",
+        "max_absolute": 9.71445146547012e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 598,
+        "role": "CurrentCov",
+        "max_absolute": 8.038014698286133e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 598,
+        "role": "RecordPrefix",
+        "max_absolute": 9.71445146547012e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 598,
+        "role": "PastCov",
+        "max_absolute": 1.9539925233402755e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "train",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 598,
+        "role": "OlderCov",
+        "max_absolute": 1.7208456881689926e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "CurrentCov",
+        "max_absolute": 6.5503158452884236e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "RecordPrefix",
+        "max_absolute": 1.1102230246251565e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "PastCov",
+        "max_absolute": 1.2212453270876722e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 41,
+        "role": "OlderCov",
+        "max_absolute": 1.1102230246251565e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 604,
+        "role": "CurrentCov",
+        "max_absolute": 7.915890165577366e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 604,
+        "role": "RecordPrefix",
+        "max_absolute": 1.1102230246251565e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 604,
+        "role": "PastCov",
+        "max_absolute": 1.687538997430238e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "window": 604,
+        "role": "OlderCov",
+        "max_absolute": 1.199040866595169e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 41,
+        "role": "CurrentCov",
+        "max_absolute": 4.773959005888173e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 41,
+        "role": "RecordPrefix",
+        "max_absolute": 8.881784197001252e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 41,
+        "role": "PastCov",
+        "max_absolute": 1.1102230246251565e-15,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 41,
+        "role": "OlderCov",
+        "max_absolute": 8.881784197001252e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 646,
+        "role": "CurrentCov",
+        "max_absolute": 1.0813572259849025e-13,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 646,
+        "role": "RecordPrefix",
+        "max_absolute": 8.881784197001252e-16,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 646,
+        "role": "PastCov",
+        "max_absolute": 1.9317880628477724e-14,
+        "tolerance": 1e-08
+      },
+      {
+        "phase": "val",
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "window": 646,
+        "role": "OlderCov",
+        "max_absolute": 2.2648549702353193e-14,
+        "tolerance": 1e-08
+      }
+    ],
+    "PCA_eigenvalues": [
+      333.4509828270512,
+      240.03281013343803,
+      128.7353360310753,
+      107.5695912645865,
+      91.25433968760831,
+      76.35698947228897,
+      73.00727405775723,
+      51.80410554234513
+    ],
+    "fit_phase": "train_only",
+    "cache_quantization": "float32 then FP64 for every downstream calculation"
+  },
+  "maximum_Hann_identity": 3.624474310091885e-15,
+  "actual_scoring_roles_per_seed": 8,
+  "new_VAL_score_sets": 24,
+  "first_warm_grid_start": 7680,
+  "cold_block_start": 0,
+  "goal_complete": false,
+  "scientific_status": "REPEATED_KNOWN_PERSON_TRAIN_VAL_DEVELOPMENT_ONLY"
+}
