@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D9实际review/归档冻结；D9固定Hann微增益和严重单窗近相消并存，D10仅固定旧内部审计PLAN准备；goal未达到 |
+| Status | ACTIVE — D4-D9归档冻结；D10精确PLAN已审定/source协议冻结/36VAL桥过，PID599747正式一次FT旧内部36项审计；goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |

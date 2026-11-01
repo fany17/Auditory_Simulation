@@ -1,6 +1,6 @@
-# 当前入口：SS07 D9已交付冻结；D10旧内部泛化PLAN准备
+# 当前入口：SS07 D9冻结；D10旧内部FT读出36项正式运行
 
-D9六解/全TRAIN物理轴/全VAL/12缓存及全文四图实际review已有限制通过，完整[REPORT](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/REVIEW.md)与HTML run_id20261101_pub01_s03_ss07_physical_objective已归档。F−W固定Hann VALr+.001400，但F单窗表示严重退化/内部近相消；不等同最终连续输出无效，也未建立通用稳健/历史/创新/独立确认。所有D4-D9run冻结退出。当前D10仅固定6角色×3seed×seen/heldout的36项旧内部审计PLAN/资产/准确空间准备，先查原FT test实际签名与raw桥，具体矩阵审定前不编码/评分，DTU关闭。goal ACTIVE；CURRENT_TASK顶部为最新入口，以下均历史。
+D9实际review/四图HTML归档冻结；固定融合r微正与单窗退化并存。D10[PLAN](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/PLAN.md)已审定/source协议57a09ff冻结，36cached VAL映射桥通过后唯一PID599747正式FT原global64两phase编码+36固定角色-split；首seed旧VALcapture Z/P差0，先全144raw PFT fused桥再readout，完整结果与review待。所有旧test仍POST-HOC INTERNAL EXPLORATORY、无新fit/λ/DTU；NPY总量预计26.226GB低于25GiB界，goal ACTIVE。CURRENT_TASK顶部为最新入口，以下历史run不重启。
 
 D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)实际独立review与中文HTML归档已完成有限制。当前只读盘点/准备D7冻结36角色-split方案，原3seed/已选λ/强current控制、仅既有seen/heldout，全部POST-HOC INTERNAL EXPLORATORY；先交协调审定，尚不测试/新拟合，不碰DTU/下载。旧D4-D6不按新结果重开，最新路由CURRENT_TASK顶部。
 

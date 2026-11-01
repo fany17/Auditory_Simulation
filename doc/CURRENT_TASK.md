@@ -1,4 +1,4 @@
-# 当前执行：SS07 D9六解已审阅归档；D10仅FT旧内部审计方案准备（2026-11-01）
+# 当前执行：SS07 D9已冻结；D10旧内部FT读出36项正式执行（2026-11-01）
 
 D7固定36/36角色-split已完成，PID535287正常退出。Ccap对P*/P-only原2:1加权r均差+.008695/+.004301，seen/held-out每seed均正；但同三seed历史P_FT=.168944726、Ccap=.168943486，差−.000001240且seed方向混合，未证明超过P_FT、等效或非劣。全部POST-HOC INTERNAL EXPLORATORY，不据旧测试重选。实际独立286来源/893输入/36聚合及72缓存重建通过（块r差≤2.78e−16，432原P未缩放桥差0），全文/三图已审阅；原样review57072ffe…b45f，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REVIEW.md)及HTML run_id20261101_pub01_s03_ss07_internal_generalization已归档，三图说明/副本/链接通过。无新fit/encoder/rawEEG/DTU/下载，wall75.177s、CPU504.670s；科学goal ACTIVE。
 
@@ -6,7 +6,7 @@ D8固定27/27岭解已完成，PID541227正常退出不重启。P_FT*/P-only/C/C
 
 科学goal保持ACTIVE。D9固定W/F×3seed六解均实际收敛，queue563655和workers均已退出，不重启。Ccap/W/F VALr=.182340/.182474/.183874，F−W+.001400且每seed正、fused MSE−.000126614；但F窗口MSE352.068/r3s.003435/overlap706.180，巨大bias在固定Hann下近相消。内部/首学习边界/tail物理bias≤.00587/.12165/.30603，未证明融合输出无效或通用稳健可用；无历史输入/新确认/创新claim。独立275来源/535输入、六套完整TRAIN物理轴梯度/目标/真残差、全VAL聚合和12缓存重建通过（目标≤2.69e−14、残差差≤1.31e−16、block r≤2.22e−16），全文四实际PNG已审阅；review4e3a8163…d2e16原样保存，Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/REVIEW.md)和HTML run_id20261101_pub01_s03_ss07_physical_objective归档完成，四图/说明/副本/链接通过。wall185.396s/CPUworker和347.091s、355CG/386Hessian；独立audit另69.714s。encoder/head/新NPY/旧test/DTU0，六解/λ/bias不再改，D4-D8冻结。
 
-D10仅准备固定已选P_FT/P-only/C/Ccap/W/F×3seed×seen/heldout的36角色-split事后内部审计PLAN与只读资产/空间盘点。先查原FT测试实际batch/layout/grad/eval签名、旧raw输出及FT latent/P资产；若缺缓存，准确估算一次编码与25GiB总NPY/20GiB余量。具体矩阵/桥/预算审定前不真实test编码/评分；所有旧test仍POST-HOC INTERNAL EXPLORATORY，不按结果新fit/换λ，DTU不再前向。
+D10[精确PLAN](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/PLAN.md)b5d5e37已明确审定，57a09ff source2ce7df72…/protocol14b2cedd…在真实test前冻结；36 cached VAL读出桥全过。唯一PID599747（UID1012/start_ticks745101269）正式执行PFT*/P-only/C/Ccap/W/F×3seed×seen/heldout=36角色-split；seed1024新capture旧VAL Z/P gold均差0，原global64 actual layout/grad/eval签名匹配，进入原两phase测试编码。主254076窗/3972batch+300VAL/636test工程窗；每seed先全144原FT未缩放fused桥及旧blockr门，再5固定readout，不重启/换λ/新fit。新12NPY1.756GB、全NPY预计26.226GB<25GiB（26.844GB），root≤2GiB/free≥20GiB；完整结果/实际review/图文待。所有旧test仍POST-HOC INTERNAL EXPLORATORY，不称新确认，不据排名再训练；DTU关闭，科学goal ACTIVE。
 
 以下准备记录为历史，原D4-D6不改。
 
