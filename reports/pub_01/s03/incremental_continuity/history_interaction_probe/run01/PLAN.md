@@ -34,11 +34,13 @@ J^N的线性读出Σ_jk u_j(current) v_k(near) B_jk等于让current因子的系�
 |---|---|---:|---:|
 | Anchor | 冻结D4 Ccap，无新拟合 | — | 0（既有626880另列） |
 | Add | 无，只有A | 64 | 12480 |
-| CC | J^C：current×current | 320 | 61632 |
+| CC | J^C：current×current；仍含共同历史加性主效应A | 320 | 61632 |
 | Near | J^N：current×near | 320 | 61632 |
 | Older | J^O：current×older | 320 | 61632 |
 
 每臂固定λ={.0001,.01,1}，float64中心化多输出岭解，目标 (1/N)||Y−Anchor−XB−b||²_F+λ||B||²_F，b不惩罚。4臂×3seed×3λ=**36个闭式解**，另3个无监督PCA32；没有SGD/NN、维数/距离/λ网格扩展、额外seed或失败自动重试。Anchor重建/校验和共享PCA/统计成本全部计账。
+
+CC应完整称为“当前交互＋共同历史加性主效应”，不是完全无历史模型；纯current参照只有冻结Ccap。Add保留同一A而不加交互，是判断交互增量的必要对照。
 
 每臂一个跨三seed共享λ，按原VAL60秒/person均值选择；冻结Anchor零新残差亦为候选，必须严格超过才选拟合，否则回退Anchor，完全相同优先Anchor，其次更大λ。不是按seed选λ。保存全部36格/anchor/逐seed/逐人/逐块/3秒与60秒，以及有效df和常量覆盖，不只报胜者。
 
