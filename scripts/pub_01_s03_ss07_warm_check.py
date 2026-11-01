@@ -6,12 +6,40 @@ import argparse
 import copy
 import json
 import platform
+from unittest.mock import patch
 import time
 import numpy as np
 import torch
 from pub_01_s03_ss07_warm import (ROOT,ROUND01,OLD,SEEDS,CONDITIONS,Data,WarmDecoder,
     original_p,make,rng_snapshot,rng_restore,rng_equal,optimizer,objective,detach,
-    validate,read,dump,update,sha,disk_guard,precision)
+    validate,read,dump,update,sha,disk_guard,precision,macro_from_predictions,correlation)
+
+def metric_checks(folder):
+    constant=np.full(3839,.1);target=np.sin(np.arange(3839)*.021)
+    assert np.std(constant)>0,'fixture must expose nonbinary mean-rounding'
+    for a,b in [(constant,target),(target,constant)]:
+        try:correlation(a,b)
+        except AssertionError:pass
+        else:raise AssertionError('nonbinary constant accepted')
+    wave=np.cos(np.arange(3840)*.013)+.2*np.sin(np.arange(3840)*.041)
+    truth=np.sin(np.arange(3840)*.021);path=folder/'synthetic_metric_target.npy'
+    np.save(path,truth)
+    class Fixture:
+        phase='val'
+        rows=[{'common_samples':3840,'offset':0,'windows':39,'record':'synthetic','subject':'fixture','story':'fixture','envelope_path':str(path)}]
+        def __len__(self):return 39
+    mask={'records':['synthetic'],'blocks':[{'record':'synthetic','start':0,'samples':3838,'eligible':True}],'eligible_blocks':1}
+    predictions=np.stack([wave[i*96:i*96+192] for i in range(39)])
+    with patch('pub_01_s03_ss07_warm.read',return_value=mask):
+        try:macro_from_predictions(np.full_like(predictions,.1),Fixture())
+        except AssertionError:pass
+        else:raise AssertionError('actual macro accepted globally constant nonbinary windows')
+        result=macro_from_predictions(predictions,Fixture())
+    old=float(np.corrcoef(wave[1:-1],truth[1:-1])[0,1]);difference=abs(old-result['macro_r'])
+    assert difference<=1e-12
+    return {'nonbinary_constant_pred_and_target_rejected':True,'nonbinary_constant_actual_macro_rejected':True,
+        'normal_actual_macro_versus_original_corrcoef_abs_difference':difference,'normal_r_finite':True,
+        'fixture_server_only':True,'no_real_data_optimizer_steps':True}
 
 def tensors(state):
     if torch.is_tensor(state):return [state]
@@ -153,6 +181,7 @@ def main(device,attempt):
     assert torch.cuda.is_available();disk_guard()
     assert attempt.isalnum();folder=ROOT/f'engineering_{attempt}';folder.mkdir(exist_ok=False)
     started=time.time();synthetic=synthetic_checks(device);dump(folder/'SYNTHETIC_GRADIENT_STATE.json',synthetic)
+    dump(folder/'METRIC_CONSTANT_CHECK.json',metric_checks(folder))
     actual=actual_checks(device,folder);dump(folder/'ACTUAL_ZERO_VAL_RNG.json',actual)
     # Direct historical runtime RNG/backend snapshots were not persisted by FT.
     # Current-source reconstruction passes, but choose common implementation
@@ -167,7 +196,7 @@ def main(device,attempt):
         'actual_VAL_cells':len(actual['epoch_minus1_actual_all49_VAL_rows']),'actual_VAL_windows_per_cell':30500,
         'synthetic_optimizer_steps_disclosed':18,'real_data_optimizer_steps':0,'test_read':False,
         'reuse_decision_sha256':sha(ROOT/'LEGACY_FT_REUSE_DECISION.json'),'sources':sources,
-        'proofs':{str(folder/n):sha(folder/n) for n in ['SYNTHETIC_GRADIENT_STATE.json','ACTUAL_ZERO_VAL_RNG.json']},
+        'proofs':{str(folder/n):sha(folder/n) for n in ['SYNTHETIC_GRADIENT_STATE.json','METRIC_CONSTANT_CHECK.json','ACTUAL_ZERO_VAL_RNG.json']},
         'environment':{'python':platform.python_version(),'torch':torch.__version__,'numpy':np.__version__,
             'cuda':torch.version.cuda,'cudnn':torch.backends.cudnn.version(),'precision':precision(),
             'cudnn_benchmark':torch.backends.cudnn.benchmark,'cudnn_deterministic':torch.backends.cudnn.deterministic,

@@ -128,8 +128,17 @@ class Data:
         p,state,active=model.latent_forward(z,list(self.spans(first,last)),state,active)
         return p,y,state,active
 
+def correlation(pred,target):
+    assert np.isfinite(pred).all() and np.isfinite(target).all()
+    # std(0.1 repeated N) can be positive from mean-rounding alone.
+    assert np.max(pred)!=np.min(pred) and np.max(target)!=np.min(target),'exact constant prediction or target'
+    assert np.std(pred)>0 and np.std(target)>0
+    result=float(np.corrcoef(pred,target)[0,1]);assert np.isfinite(result)
+    return result
+
 def macro_from_predictions(pred,data):
-    assert data.phase=='val' and pred.shape==(30500,192)
+    assert data.phase=='val' and pred.shape==(len(data),192)
+    assert np.isfinite(pred).all() and np.max(pred)!=np.min(pred),'exact constant prediction'
     mask=read(ROUND01/'block_eligibility/val.json')
     assert mask['records']==[r['record'] for r in data.rows]
     eligible={(r['record'],r['start']):r for r in mask['blocks']};segments=[];window=np.hanning(192)
@@ -143,8 +152,7 @@ def macro_from_predictions(pred,data):
             k=keep[s:s+3840];e=eligible[(row['record'],s)];assert int(k.sum())==e['samples']
             if not e['eligible']:continue
             p=total[s:s+3840][k];t=np.asarray(target[s:s+3840])[k]
-            assert np.isfinite(p).all() and np.isfinite(t).all() and np.std(p)>0 and np.std(t)>0
-            segments.append({'record':row['record'],'subject':row['subject'],'story':row['story'],'start':s,'samples':len(p),'r':float(np.corrcoef(p,t)[0,1])})
+            segments.append({'record':row['record'],'subject':row['subject'],'story':row['story'],'start':s,'samples':len(p),'r':correlation(p,t)})
     assert len(segments)==mask['eligible_blocks']
     people=[{'subject':s,'r':float(np.mean([r['r'] for r in segments if r['subject']==s]))} for s in sorted({r['subject'] for r in segments})]
     return {'macro_r':float(np.mean([r['r'] for r in people])),'subjects':len(people),'blocks':len(segments),'people':people,'segments':segments}
