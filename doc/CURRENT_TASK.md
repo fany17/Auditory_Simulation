@@ -8,7 +8,7 @@ D8固定27/27岭解已完成，PID541227正常退出不重启。P_FT*/P-only/C/C
 
 D10固定36项全部完成，PID599747退出不重启。PFT*/Ponly/C/Ccap/W/F原2:1 r=.168945/.170374/.171197/.173348/.173393/.174284，三个primary F−W/Ccap−PFT*/Ccap−Ponly在两组各seed全正，weighted均+.000892/+.004403/+.002973；C−Ponly heldout全负、W−Ccap mixed、F单窗表示严重退化均保留。全部POST-HOC INTERNAL EXPLORATORY，非新确认/历史/创新。三个VAL gold/636Decoder/432旧FT未缩放fused桥差0，旧FT均值精确恢复；独立306来源/600输入/36聚合差0及72缓存block r≤2.78e−16、MSE/Hann≤2.70e−14通过。全文三实际PNG实际审阅，原样review f4dcfaa3…bedef；Technical PASS_WITH_LIMITATIONS / 本内部审计Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REVIEW.md)与HTML run_id20261101_pub01_s03_ss07_finetuned_internal_audit已归档，三图说明/副本/链接通过。主wall147.210/CPU539.147秒、255012主+工程NN窗、无新fit/统计重拟合/λ选择；独立audit另3.087秒。全NPY24.4245GiB<25GiB、free25.86GB>20GiB，presenter失败原样保留、科学run未重跑，D4-D9冻结。
 
-科学goal仍ACTIVE。D11仅准备原TRAIN/VAL“长过去EEG是否提供缓慢观测/噪声状态”的最小科学PLAN和既有源码/资产/资源盘点，不据D10分数选架构。先区分M2/M5、D4/D5与EA/AEA/自适应听觉先例，保留强FT+Ccap/当前协方差/静态状态对照及固定当前输入的真/错历史干预，明确统计仅TRAIN、过去支持/边界及非因果预处理限制。具体审定前不新训练/扩网格、不再读旧test/DTU；OpenNeuro新scope仍待用户明确答复，不取payload。
+科学goal仍ACTIVE。D11最小[PLAN](../reports/pub_01/s03/incremental_continuity/observation_state_probe/run01/PLAN.md)已准备并提交协调独立审阅，尚未批准/执行：D8强Ccap anchor，Add/当前协方差/record前缀/leave-record-out TRAIN被试参考/30秒Past共5臂×3seed×固定λ.01=15岭解，Older/Neutral无拟合干预。共同i>=41，严格止于当前Hann输入并集前，全部VAL保留；新增state NPY约45.27MB，ROOT<=256MiB、RSS8GiB、CPU16/GPU0、wall60min。不主张新颖或端到端在线因果，统计仅TRAIN。具体审定前不新拟合/扩网格、不再读旧test/DTU；OpenNeuro新scope仍待用户明确答复，不取payload。
 
 以下准备记录为历史，原D4-D6不改。
 

@@ -1,0 +1,60 @@
+{
+  "scope": "Original D8 TRAIN/VAL metadata and NPY headers only; no signalvalues/fit/validation score/test",
+  "phases": {
+    "train": {
+      "records": 426,
+      "subjects": 70,
+      "readout_windows": 252454,
+      "min_windows": 409,
+      "min_common_samples": 39389,
+      "EEG_file_bytes": 12472500480,
+      "header_orientation_dtype": {
+        "channels_by_time:float64": 426
+      },
+      "all_lengths_valid": true,
+      "hypothetical_30s_past_ending_at_96i_minus96_full_history_windows": 243508,
+      "hypothetical_warmup_windows": 8946
+    },
+    "val": {
+      "records": 49,
+      "subjects": 49,
+      "readout_windows": 30500,
+      "min_windows": 566,
+      "min_common_samples": 54492,
+      "EEG_file_bytes": 1506646144,
+      "header_orientation_dtype": {
+        "channels_by_time:float64": 49
+      },
+      "all_lengths_valid": true,
+      "hypothetical_30s_past_ending_at_96i_minus96_full_history_windows": 29471,
+      "hypothetical_warmup_windows": 1029
+    }
+  },
+  "TRAIN_records_per_subject_min_max": [
+    3,
+    8
+  ],
+  "VAL_subjects_already_in_TRAIN": 49,
+  "not_frozen": "Candidate30s/21windowwarmup metadata only; do not treat as frozen model choice.",
+  "resources": {
+    "free_disk_bytes": 25757130752,
+    "cpu_count": 112,
+    "all_SS07_NPY_bytes": 26225606304,
+    "gpu": "0, NVIDIA L40, 46068 MiB, 14 MiB, 0 %\n1, NVIDIA L40, 46068 MiB, 14 MiB, 0 %",
+    "own_ss07_script_processes": []
+  },
+  "correction_record": {
+    "status": "INVALID_LOCAL_METADATA_PRESENTATION_ASSUMPTION",
+    "explanation": "Coordinator read headers as if time×channels; actual published assets arechannels×time. Incorrect len(a) length check produced a huge false mismatchlist; output truncated andJSONparsefailed. No signalvalues read, no filesmutated, no scores/fits, no dataset failure.",
+    "next": "Use actualoriginalSparrRecords.raw_windows source axes before correctedmetadata-onlyread."
+  },
+  "input_axis_source": "scripts/pub_01_s03_ss07_eval_io.py:raw_windows (raw.T iff raw.shape[0]==64)",
+  "candidate_history_support": {
+    "frame_input": "[96i,96i+192)",
+    "earliest_Hann_current_input_union": "96(i-1) for interior window",
+    "candidate_past_interval": "[96(i-1)-1920,96(i-1))",
+    "candidate_first_full_index": 21,
+    "reason": "Do not count overlap-covered currentEEG as extra past input; candidate only, not a final matrix."
+  },
+  "no_training_or_new_data": true
+}

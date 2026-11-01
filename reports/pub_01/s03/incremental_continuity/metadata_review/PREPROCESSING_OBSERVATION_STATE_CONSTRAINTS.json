@@ -1,0 +1,37 @@
+{
+  "status": "READ_ONLY_SOURCE_FINDINGS_FOR_NEXT_STATE_PROPOSAL",
+  "date": "2026-11-01",
+  "scope": "No numerical experiment, payload download, preprocessing change, or test access.",
+  "local_contract": "reports/pub_01/s01/ss02/timing_preprocessing_contract.md",
+  "publisher_repository": "exporl/auditory-eeg-dataset",
+  "inspected_commit": "e617dd211de60e976835a15b3ec025dad5f371ab",
+  "sources": [
+    {
+      "path": "preprocessing_code/README.md",
+      "blob": "eb639806678d1e90e803f5ddb9ea8f0cd6922bba",
+      "url": "https://github.com/exporl/auditory-eeg-dataset/blob/e617dd211de60e976835a15b3ec025dad5f371ab/preprocessing_code/README.md"
+    },
+    {
+      "path": "preprocessing_code/sparrKULee.yaml",
+      "blob": "80c725742ad6d8309d50a8884e86d33e683dfd22",
+      "url": "https://github.com/exporl/auditory-eeg-dataset/blob/e617dd211de60e976835a15b3ec025dad5f371ab/preprocessing_code/sparrKULee.yaml"
+    },
+    {
+      "path": "preprocessing_code/sparrKULee.py",
+      "blob": "1404f334860d1ae3e1a67b4e6adeff4c59bc3163",
+      "url": "https://github.com/exporl/auditory-eeg-dataset/blob/e617dd211de60e976835a15b3ec025dad5f371ab/preprocessing_code/sparrKULee.py"
+    }
+  ],
+  "actual_source_findings": [
+    "Published Python/YAML specify first64 EEG channels and unit_multiplier1e6, order1 0.5Hz high-pass via SosFiltFilt at1024Hz, artifact interpolation, periodic-trigger alignment, epoch splitting, MWF artifact removal, common-average reference, and resample_poly64.",
+    "No per-record z-score step appears in the inspected pipeline. Do not infer actual derivative scale/statistics from this absence; original TRAIN normalization remains separately inherited.",
+    "Existing local contract identifies consumed assets as publisher64Hz derivatives with unknown historical generation revision and unverified physical synchronization. Current upstream commit is not proof of their exact generating code."
+  ],
+  "required_interpretation": [
+    "Name the proposed input 'pre-encoder64-channel publisher-preprocessed EEG', not original raw EEG/BDF; no raw source retrieval or preprocessing rerun.",
+    "Past-only state in derivative-array coordinates does not establish end-to-end online causality: the publisher pipeline explicitly contains forward/backward filtering, while exact historical derivative provenance is unknown.",
+    "Under actual common-average referencing the spatial covariance has a constrained common-mode direction; any covariance inverse/square-root/log operation needs a stated finite/rank/regularization rule. Do not assume full-rank SPD or tune shrinkage on old tests.",
+    "Preserve original TRAIN-only normalization, record resets, exact current3s/Hann union supports, and fixed current encoder cache for interventions.",
+    "Covariance contains neural signal as well as nuisance; without separate evidence it cannot be labeled a measured noise covariance or causal biological state."
+  ]
+}
