@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "rolling_direct_descriptor_max_abs": 5.162537064506978e-15,
+  "ridge_augmented_lstsq_max_abs": 2.400857290751901e-15,
+  "singular_CAR_legal": true,
+  "strict_past_support": true,
+  "synthetic_only": true,
+  "metric": {
+    "passed": true,
+    "current_only_and_first4_canaries": true,
+    "Ponly_zeroZ": true,
+    "exact_constant_rejection": true,
+    "Hann_identity_max_abs": 3.0097452308197603e-16,
+    "complete_60s_block_and_person_macro_and_weighted_split": true,
+    "undefined_auxiliary_3s_null_without_dropping_primary": true
+  },
+  "warm_first_original_grid_start": 7680,
+  "cold_first_block_start": 0
+}

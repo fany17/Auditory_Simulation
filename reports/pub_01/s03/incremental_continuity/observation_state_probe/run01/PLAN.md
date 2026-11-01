@@ -30,11 +30,11 @@ TRAIN有70人426record、每人3–8record；VAL49人全部见于TRAIN，因此 
 
 ## 3. 状态与读出（不改 encoder）
 
-1. 继承原 EEG TRAIN-only 通道归一化，逐record读取既有64×T float64 derivative；不得重新预处理或重新估计原归一化。对每个区间局部去均值，K=mean(xxᵀ)−mean(x)mean(x)ᵀ。
-2. d(K) 为64个 log(max(Kcc,1e−8)) 加2016个上三角相关系数 Kab/sqrt(max(Kaa,1e−8)max(Kbb,1e−8))，共2080维。极小负对角只允许FP64相对舍入容差1e−10；超出即技术失败，不静默裁掉record。相关数超出[-1,1]的舍入量同容差，报告floor/clip计数；明显异常停止受影响流程。
+1. 继承原 EEG TRAIN-only 通道归一化，逐record读取既有64×T float64 derivative，转T×64；严格原raw_windows数值路径：原始值先float32、使用保存mean/std归一化、最终float32，再转FP64累计；不得重新预处理或重新估计原归一化。对每个区间局部去均值，K=mean(xxᵀ)−mean(x)mean(x)ᵀ。
+2. d(K) 为64个 log(max(Kcc,1e−8)) 加2016个上三角相关系数 Kab/sqrt(max(Kaa,1e−8)max(Kbb,1e−8))，共2080维。每坐标负variance舍入界为1e−10×max(1,未中心化二阶矩绝对值,均值平方)；超界技术失败，界内修正至0后再应用floor，不静默裁掉record。相关数超出[-1,1]的舍入量同容差，报告floor/clip计数；明显异常停止受影响流程。
    只对对角取log，不做协方差逆、矩阵log或SPD假设，允许CAR秩亏。协方差包含神经信号和其他成分，不直接命名噪声。
-3. 仅用 TRAIN i>=41 上 CurrentCov/RecordPrefix/PersonTRAIN/PastCov 四类、等臂等窗权重，学习共同 descriptor 均值/方差及 PCA8；静态状态按该record有效窗数加权，不重复写大矩阵。OlderCov/VAL不进入统计拟合。标准化方差0坐标置0；特征值<=0的PCA列置0且披露有效秩，不换维数。
-4. 每seed从该 D8 TRAIN_MOMENTS 当前 latent 子块恢复 TRAIN PCA32（G[:1536,:1536]×1536），继承 D8 TRAIN_TRANSFORMS 的latent归一化；这是原TRAIN统计复用，不用VAL重估。特征向量按最大绝对元素正号固定，非正特征值列置0，不另寻方向。
+3. 仅用 TRAIN i>=41 上 CurrentCov/RecordPrefix/PersonTRAIN/PastCov 四类、等臂等窗权重，学习共同 descriptor 均值/方差及 PCA8；静态状态按该record有效窗数加权，不重复写大矩阵。OlderCov/VAL不进入统计拟合。PersonTRAIN先对其他record的前30秒协方差等记录平均，再取descriptor，不能平均descriptor。PCA8先统一缓存float32；后续h/product TRAIN统计、拟合和评分均基于同一缓存值转FP64，不能混用量化前后数值。标准化方差0坐标置0；特征值<=0的PCA列置0且披露有效秩，不换维数。
+4. 每seed从该 D8 TRAIN_MOMENTS 当前 latent 子块恢复 TRAIN PCA32（G[:1536,:1536]×1536），继承 D8 TRAIN_TRANSFORMS 的latent归一化；实际D8源码以标准化current latent/sqrt(1536)计算centered G，因此乘1536恢复标准化latent协方差；其支持是旧TRAIN i>=4，后续factor/product/残差支持才是i>=41。不用VAL重估。特征向量按最大绝对元素正号固定，非正特征值列置0，不另寻方向。
 5. q_i 为32维current latent PCA，h_i 为8维state PCA。q 与 h、q⊗h 的归一化统计仅来自共同有效 TRAIN；h及乘积使用四状态等权 pooled 统计，所有状态臂共享同一变换。原始标准化量为0表示TRAIN pooled均值，Neutral在h归一化后置0，乘积仍按既定TRAIN product统计转换，不把常数项误删。
 6. Add 特征 q/sqrt(32)；四状态特征 [q/sqrt(32),h/sqrt(8),standardize(q⊗h)/16]，296维，均加未惩罚192维截距。统一窗口 residual 目标 y−Ccap，loss=mean_windows(mean192(error²))+(.01/192)||B||F²。故求解 (G+.01I)B=H；不是物理fused目标，不重新引入D9近零偏置解。
 7. 每seed×每臂只求解一次 λ=.01；不做新网格、不选择窗口/时长/PCA维度。零残差 Ccap 始终并列显示，不据VAL删负分seed或隐藏原解。
@@ -44,12 +44,12 @@ TRAIN有70人426record、每人3–8record；VAL49人全部见于TRAIN，因此 
 seed固定1024/2026/31415：
 - Add、CurrentCov、RecordPrefix、PersonTRAIN、PastCov：5×3=15个新岭解。
 - 已拟合 PastCov 分别以 OlderCov、Neutral 重新预测：2×3=6个无拟合干预。保持当前EEG、全部current latent、P_FT、Ccap、q、模型系数、输出mask完全一致。
-- 无额外NN前向/优化、无新权重、无目标历史、无test-time拟合；9个拟合/干预角色全部原VAL评分。TRAIN可做协方差状态稳定性/任务残差描述，不能用稳定性替代任务增益。
+- 无额外NN前向/优化、无新权重、无目标历史、无test-time拟合；每seed5拟合+2干预+Ccap=8个实际VAL评分角色，合计24个新评分集合；既有F等VAL参考只读单列。TRAIN可做协方差状态稳定性/任务残差描述，不能用稳定性替代任务增益。
 
 primary描述性对比为 PastCov−Ccap、PastCov−CurrentCov、PastCov−RecordPrefix、PastCov−PersonTRAIN，以及 true−Older/Neutral。
-只有上述六个差值在三个seed均正，才记“本有界探针支持额外观测状态的任务相关条件信号”。任一不满足，记未满足；完整数值与区间照报，不改矩阵追阳性。
+只有上述六个差值在三个seed均正，才记“本有界探针支持额外观测状态的任务相关条件信号”。任一不满足，记未满足；完整逐seed/逐人差值照报，不新增CI或显著性检验，不改矩阵追阳性。
 这不是显著性/独立泛化/慢噪声机制或创新的充分证据。PastCov−Add只作secondary；PastCov与既有F并列，即使超过Ccap却未超过F，也不能称最强当前方法已超越。
-按人配对差值、每seed、family描述性、cold-start和warm-only敏感性共同报告；主评分仍原完整60秒/person宏平均。报告fused/window MSE、3s r、Hann weightedSingle/disagreement/identity，避免仅报r。
+判读仅限所选8维二阶状态的任务条件信息；未拆分h加性与q⊗h，不能证明交互本身或排除全部协方差信息。按人配对差值、每seed、family描述性、cold-start和warm-only敏感性共同报告；warm-only固定使用原60秒网格中全部Hann贡献窗i>=41的完整块，保守start>=4032，原网格首个为7680。首个start0块作cold-start精确一致性；start3840过渡块只计full主评分。先按实际非零Hann支持核对，不据结果改mask；既有F仅full参考。主评分仍原完整60秒/person宏平均。报告fused/window MSE、3s r、Hann weightedSingle/disagreement/identity，避免仅报r。
 Current3秒与Past30秒存在估计样本数差异，RecordPrefix/PersonTRAIN控制静态与身份但不完美匹配动态分布；Older/Neutral干预也不能单独排除分布偏移。协方差的刺激成分仍是替代解释。
 
 ## 5. 既有资产、精确新增与限额
@@ -78,4 +78,3 @@ D9只读既有VAL JSON参考，不读其test。新独占ROOT=s03_observation_sta
 工程校验只用隔离synthetic及原TRAIN/VAL：区间边界与无current支持相交、record reset、同人leave-record-out、维度/常数/floor、rolling/direct covariance、PCA矩与ridge augmented-lstsq、相同current干预、原Ccap完整VAL复现<=1e−10及cold-start精确相等。不为工程重复NN前向。
 正式完整运行后独立重算15解normal equation和状态支持/来源、原Ccap桥、全部聚合、代表性缓存预测；三静态图与中文逐图说明/失败与成本齐备，随后独立acceptance及parent consistency review/归档。
 无论阴阳均不自动扩时长、PCA维数、正则、预处理、baseline或旧test。本PLAN的技术通过不等于SS07科学goal完成。
-
