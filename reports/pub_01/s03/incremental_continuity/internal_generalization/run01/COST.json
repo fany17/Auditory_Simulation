@@ -1,0 +1,188 @@
+{
+  "stages": [
+    {
+      "stage": "head_only_full_original_P_bridge",
+      "seed": 1024,
+      "wall_seconds": 4.361262321472168,
+      "CPU_seconds": 3.7386639880000003,
+      "records": 144,
+      "head_windows": 84692,
+      "encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.721818447113037,
+      "CPU_seconds": 29.681204277,
+      "role": "Ponly",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.6820569038391113,
+      "CPU_seconds": 29.416697671,
+      "role": "S32",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.6879518032073975,
+      "CPU_seconds": 29.450287568000007,
+      "role": "U32",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.674539089202881,
+      "CPU_seconds": 29.335947741,
+      "role": "C",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 5.0022993087768555,
+      "CPU_seconds": 39.933018911999994,
+      "role": "Ccap",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "head_only_full_original_P_bridge",
+      "seed": 2026,
+      "wall_seconds": 3.7387492656707764,
+      "CPU_seconds": 3.549398786000012,
+      "records": 144,
+      "head_windows": 84692,
+      "encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 3.7972402572631836,
+      "CPU_seconds": 30.290961656000007,
+      "role": "Ponly",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 3.801938772201538,
+      "CPU_seconds": 30.362913587999998,
+      "role": "S32",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 3.8024051189422607,
+      "CPU_seconds": 30.370313132000007,
+      "role": "U32",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 3.7874019145965576,
+      "CPU_seconds": 30.250404911000032,
+      "role": "C",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 5.1167967319488525,
+      "CPU_seconds": 40.868238597000015,
+      "role": "Ccap",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "head_only_full_original_P_bridge",
+      "seed": 31415,
+      "wall_seconds": 3.711313247680664,
+      "CPU_seconds": 3.6986583120000205,
+      "records": 144,
+      "head_windows": 84692,
+      "encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 4.008065223693848,
+      "CPU_seconds": 31.964751029000013,
+      "role": "Ponly",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 4.064867973327637,
+      "CPU_seconds": 32.46114755599996,
+      "role": "S32",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 4.018165111541748,
+      "CPU_seconds": 32.087213518,
+      "role": "U32",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 4.019136428833008,
+      "CPU_seconds": 32.09387103199998,
+      "role": "C",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 5.311115026473999,
+      "CPU_seconds": 42.41176604999998,
+      "role": "Ccap",
+      "records": 144,
+      "windows": 84692,
+      "head_encoder_forwards": 0
+    }
+  ],
+  "wall_seconds": 75.17672944068909,
+  "CPU_seconds": 504.670142727,
+  "head_windows": 254076,
+  "encoder_forwards": 0,
+  "new_NN_updates": 0,
+  "role_split_scores": 36,
+  "record_role_scores": 2592
+}
