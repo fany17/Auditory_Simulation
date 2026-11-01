@@ -23,6 +23,8 @@
 
 只读盘点现有SS07各root NPY合计18406879264B；新float32 window P预计195130368B payload（另432个轻header），合计约18602009632B，低于25GiB；盘点磁盘余量约34.19GB。只新增必要P window cache，latent/fused旧P不复制；首实际运行仍复核余量/计数。
 
+上述原inventory实际只列四个具体root，不能称完整allSS07。协调全七个s03_*_20261101根独立补数18406910112B，额外warm NPY30848B；正式PROTOCOL前的INPUT_INVENTORY_SUPPLEMENT逐root列清全部7根（含warm/diagnostics/本D7），预算与runtime guard以该完整范围为准，原盘点文件不覆盖。
+
 ## 冻结36角色-split矩阵
 
 seed固定1024/2026/31415，原P encoder/head、D4 TRAIN transforms/正仿射a,b、D4/D6已选系数只读。
@@ -42,7 +44,7 @@ seed固定1024/2026/31415，原P encoder/head、D4 TRAIN transforms/正仿射a,b
 
 ## 先桥接，再候选推理，失败保留
 
-先冻结新源码/PLAN/全部角色与λ、旧FINAL_CHECKPOINT_MANIFEST/EVALUATION_READY/SPARR_TEST_MASK、old raw/metric review证据、原head/native预测helper及依赖、D4/D6协议/实际review/TRAIN transforms/P_CHECK/18套选定角色系数的来源。缓存/旧P/target的shape/dtype/size/mtime与record长度在新预测前固定；沿用旧已核验provenance，不新增全库hash流程。
+先冻结新源码/PLAN/全部角色与λ、旧FINAL_CHECKPOINT_MANIFEST/EVALUATION_READY/SPARR_TEST_MASK、old raw/metric review证据、原head/native预测helper及依赖、D4/D6协议/实际review/TRAIN transforms/P_CHECK/3套原head及15套选定ridge系数的来源。缓存/旧P/target的shape/dtype/size/mtime与record长度在新预测前固定；沿用旧已核验provenance，不新增全库hash流程。
 
 正式测试前协调审定source/协议与必要合成/VAL桥。实际模型评分门为：各seed重放原head全部144record并存只在2203的window P→原helper Hann融合与旧原P fused比较最大绝对差≤1e−6（**原P输出单位**，含全部既定坐标）→同一原mask的P*逐块r与旧P差≤1e−10及正仿射不变性→整个seed门通过才读出5候选，不以任何分数好坏开关门。bridge不是允许放宽阈值或重选路径；失败原位记录，不自动重跑/换实现。
 
@@ -55,6 +57,8 @@ old P raw bridge沿用冻结head代码的torch.no_grad、原精度/backend flags
 主要比较预先固定**Ccap−P***与**Ccap−Ponly**；Ccap−C、S32−Ponly、U32−S32、C−U32为解释性次要。逐seen/heldout/person宏r及原2/3 seen+1/3 heldout加权，逐seed/人/record/60秒块完整报告，不按最高分选模型。所有角色-seed用完全相同872/1172块、69/13person；无预测依赖排除。
 
 同时报告3秒r、同单位target MSE（块→person）与必要source-family描述，始终区分角色/seed/person/family；不将17来源或82人冒充独立试验。仅描述配对点差/seed方向，不新增确认性p值/CI或根据test分层调整模型。连续性/固定Hann分解可按D6同公式作预设次要描述（不参与选择），必须并报r/MSE，不能把更一致当胜出。
+
+3秒r仅辅助：若任何窗口target或预测恰为常量，其record/split全量3秒r记null并给defined/undefined覆盖数，不挑有效子集均值，也不因此删除/停掉仍合法的60秒主endpoint；MSE仍全量计算。60秒主块常量预测/真值仍严格失败，含防止恒定输入经Hann舍入伪造微小方差的检查，不改变原mask。3秒window target按原监督缓存float32表达，连续60秒truth沿用原文件数值。VAL桥同时核对3秒/60秒和target MSE/固定Hann分解，合成覆盖完整60秒块、person宏计权/2:1及辅助undefined口径。
 
 ## 预算、产物与停止边界
 

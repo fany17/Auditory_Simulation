@@ -1,0 +1,44 @@
+{
+  "roots": [
+    {
+      "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_conditional_history_probe_20261101",
+      "npy_count": 6,
+      "bytes": 651926784
+    },
+    {
+      "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101",
+      "npy_count": 0,
+      "bytes": 0
+    },
+    {
+      "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_interaction_probe_20261101",
+      "npy_count": 0,
+      "bytes": 0
+    },
+    {
+      "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101",
+      "npy_count": 57132,
+      "bytes": 17754952480
+    },
+    {
+      "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101",
+      "npy_count": 1,
+      "bytes": 30848
+    },
+    {
+      "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_readout_attribution_20261101",
+      "npy_count": 0,
+      "bytes": 0
+    },
+    {
+      "root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_train_diagnostics_20261101",
+      "npy_count": 0,
+      "bytes": 0
+    }
+  ],
+  "existing_npy_bytes": 18406910112,
+  "proposed_P_window_bytes_including_headers": 195185664,
+  "combined_proposed_npy_bytes": 18602095776,
+  "correction": "Original inventory counted four explicit roots. This supplement enumerates ALL seven dated SS07 roots including warm/diagnostics; no value reads or inference here.",
+  "parameter_sources": "3 original head checkpoints and15 ridge coefficient files; not18 ridge models"
+}

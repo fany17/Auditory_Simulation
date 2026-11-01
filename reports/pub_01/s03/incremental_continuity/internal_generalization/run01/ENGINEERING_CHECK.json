@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "cells": [
+    {
+      "seed": 1024,
+      "role": "P",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 0.0,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 0.0,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "S32",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "U32",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 0.0,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 5.551115123125783e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "P",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "S32",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 0.0,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "U32",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 0.0,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 5.551115123125783e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "P",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 0.0,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "S32",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "U32",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "people": 49,
+      "blocks": 752,
+      "windows": 30500,
+      "primary_max_abs": 2.7755575615628914e-17,
+      "secondary_max_abs": 0.0
+    }
+  ],
+  "cell_count": 18,
+  "source_sha": "13a02bb16bf7a221b24786d6f382fdf59cae46014773f6d12d660cf7ebb127a2",
+  "core_sha": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+  "protocol_sha": "eed8be9fbd1d5c2a182f90f10bc3fcb4128468da15f0eff84554e55e3d149886",
+  "wall_seconds": 21.891377925872803,
+  "CPU_seconds": 173.46628350699999,
+  "no_head_or_encoder_forward": true,
+  "no_test_values_or_predictions": true
+}
