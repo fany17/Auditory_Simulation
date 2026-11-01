@@ -1,0 +1,277 @@
+{
+  "counts": {
+    "negative_variance_roundoff": 0,
+    "diagonal_floor": 0,
+    "correlation_roundoff_clip": 0
+  },
+  "actual_direct_checks": [
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 41,
+      "role": "CurrentCov",
+      "max_absolute": 5.218048215738236e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 41,
+      "role": "RecordPrefix",
+      "max_absolute": 9.992007221626409e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 41,
+      "role": "PastCov",
+      "max_absolute": 1.4432899320127035e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 41,
+      "role": "OlderCov",
+      "max_absolute": 9.992007221626409e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 622,
+      "role": "CurrentCov",
+      "max_absolute": 8.83182416089312e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 622,
+      "role": "RecordPrefix",
+      "max_absolute": 9.992007221626409e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 622,
+      "role": "PastCov",
+      "max_absolute": 2.220446049250313e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "window": 622,
+      "role": "OlderCov",
+      "max_absolute": 2.1760371282653068e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "CurrentCov",
+      "max_absolute": 5.329070518200751e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "RecordPrefix",
+      "max_absolute": 9.71445146547012e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "PastCov",
+      "max_absolute": 1.4432899320127035e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "OlderCov",
+      "max_absolute": 9.71445146547012e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 598,
+      "role": "CurrentCov",
+      "max_absolute": 8.038014698286133e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 598,
+      "role": "RecordPrefix",
+      "max_absolute": 9.71445146547012e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 598,
+      "role": "PastCov",
+      "max_absolute": 1.9539925233402755e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 598,
+      "role": "OlderCov",
+      "max_absolute": 1.7208456881689926e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "CurrentCov",
+      "max_absolute": 6.5503158452884236e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "RecordPrefix",
+      "max_absolute": 1.1102230246251565e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "PastCov",
+      "max_absolute": 1.2212453270876722e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 41,
+      "role": "OlderCov",
+      "max_absolute": 1.1102230246251565e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 604,
+      "role": "CurrentCov",
+      "max_absolute": 7.915890165577366e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 604,
+      "role": "RecordPrefix",
+      "max_absolute": 1.1102230246251565e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 604,
+      "role": "PastCov",
+      "max_absolute": 1.687538997430238e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "window": 604,
+      "role": "OlderCov",
+      "max_absolute": 1.199040866595169e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 41,
+      "role": "CurrentCov",
+      "max_absolute": 4.773959005888173e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 41,
+      "role": "RecordPrefix",
+      "max_absolute": 8.881784197001252e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 41,
+      "role": "PastCov",
+      "max_absolute": 1.1102230246251565e-15,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 41,
+      "role": "OlderCov",
+      "max_absolute": 8.881784197001252e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 646,
+      "role": "CurrentCov",
+      "max_absolute": 1.0813572259849025e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 646,
+      "role": "RecordPrefix",
+      "max_absolute": 8.881784197001252e-16,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 646,
+      "role": "PastCov",
+      "max_absolute": 1.9317880628477724e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "window": 646,
+      "role": "OlderCov",
+      "max_absolute": 2.2648549702353193e-14,
+      "tolerance": 1e-08
+    }
+  ],
+  "PCA_eigenvalues": [
+    333.4509828270512,
+    240.03281013343803,
+    128.7353360310753,
+    107.5695912645865,
+    91.25433968760831,
+    76.35698947228897,
+    73.00727405775723,
+    51.80410554234513
+  ],
+  "fit_phase": "train_only",
+  "cache_quantization": "float32 then FP64 for every downstream calculation"
+}
