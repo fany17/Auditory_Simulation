@@ -1,6 +1,6 @@
-# 当前入口：SS07 D10已审阅归档；D11仅TRAIN/VAL观测状态假说准备
+# 当前入口：SS07 D11固定15解+6干预正在原TRAIN/VAL执行
 
-D10完整[REPORT](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REVIEW.md)与三图HTML已实际review/归档，36聚合/72缓存通过，旧FT raw桥全0。PFT/Ccap/F加权r=.168945/.173348/.174284，内部点增益和F单窗退化并存；旧test暴露标签不变，无独立确认/历史/创新，D4-D10均冻结退出。D11仅准备原TRAIN/VAL慢观测状态假说的精简PLAN/源码资产与资源，先对照M2/M5/D4/D5和EA/AEA；具体审定前不新train、旧test/DTU关闭。OpenNeuro新scope仍待用户明确答复，不取payload；goal ACTIVE，CURRENT_TASK顶部为最新入口。
+D10完整[REPORT](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/finetuned_internal_audit/run01/REVIEW.md)与三图HTML已实际review/归档，36聚合/72缓存通过，旧FT raw桥全0。PFT/Ccap/F加权r=.168945/.173348/.174284，内部点增益和F单窗退化并存；旧test暴露标签不变，无独立确认/历史/创新，D4-D10均冻结退出。D11精简PLAN/源码/工程门已独立通过，source5c50719、PROTOCOL a238ed63…b5f11，PID656537实际运行15固定岭解+6无拟合干预；三个原Ccap完整VAL桥通过。仅原TRAIN/VAL，i>=41/当前与静态控制/全部评分mask冻结，NN新增前向与优化0；旧test/DTU关闭，结果和独立数值复核尚待。OpenNeuro新scope仍待用户明确答复，不取payload；goal ACTIVE，CURRENT_TASK顶部为最新入口。
 
 D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)实际独立review与中文HTML归档已完成有限制。当前只读盘点/准备D7冻结36角色-split方案，原3seed/已选λ/强current控制、仅既有seen/heldout，全部POST-HOC INTERNAL EXPLORATORY；先交协调审定，尚不测试/新拟合，不碰DTU/下载。旧D4-D6不按新结果重开，最新路由CURRENT_TASK顶部。
 

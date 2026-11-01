@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D10实际review/归档冻结；内部点增益不等于历史/创新/新确认，D11仅原TRAIN/VAL慢观测状态科学PLAN准备；goal未达到 |
+| Status | ACTIVE — D4-D10实际review/归档冻结；内部点增益不等于历史/创新/新确认，D11已按独立审定矩阵在原TRAIN/VAL运行15fit+6干预，source5c50719/PID656537；goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
