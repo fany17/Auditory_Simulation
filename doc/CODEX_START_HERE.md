@@ -1,4 +1,8 @@
-# 当前入口：SS07 D5已交付，准备current读出归因，持续goal ACTIVE
+# 当前入口：SS07 D6已归档，D7内部泛化审计只读准备，goal ACTIVE
+
+D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)实际独立review与中文HTML归档已完成有限制。当前只读盘点/准备D7冻结36角色-split方案，原3seed/已选λ/强current控制、仅既有seen/heldout，全部POST-HOC INTERNAL EXPLORATORY；先交协调审定，尚不测试/新拟合，不碰DTU/下载。旧D4-D6不按新结果重开，最新路由CURRENT_TASK顶部。
+
+D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)已实际交付27新解+18精确复用与三图；P-only已有current再读出增益，完整latent映射相对同local U32稳定正向，低overlap不是准确度保证。结果review/归档收束中，暂不新拟合，不扩旧矩阵/下载/test/DTU。最新路由CURRENT_TASK顶部；以下准备记录为历史。
 
 D5实际36解与独立review已完成有限制并归档，[REPORT](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REVIEW.md)，未建立历史交互增益。当前仅准备最小shared local32 / unshared同local32 / dense C / Ccap归因方案供协调审定，原P*残差/MSE/精确D4复用/连续性次要指标，尚不拟合。旧D4/D5网格不扩大，无新NN/test/DTU/下载，goal ACTIVE。以下启动快照为历史。
 

@@ -93,7 +93,7 @@ P-only辅助比较也保留全部λ。S32−P-only共享选择均+.002448；U32/
 
 全run wall62.767秒、process CPU348.898秒，peakRSS2522185728B（约2.35GiB）、主派生94125140B（约89.76MiB），GPU未初始化、NN更新和encoder/head forward0；报告/图形呈现另计。已记录stage wall和60.806秒、CPU346.905秒，文件/来源及记账开销不在stage和内。共享CPU计时不宣称隔离延迟、FLOPs或效率优势。
 
-必要合成验证：共享Schur系数对显式增广受约束解最大差1.17e−15，整个耦合df对显式hat trace差3.55e−15，S/U同支持/非local扰动canary及Hann恒等检查通过。实际new/reused normal equation最大残差1.06e−16；原C/Ccap重评分最大差1.67e−16，选择规则不变。最终独立实际review与三层结论见本目录配套REVIEW。
+必要合成验证：共享Schur系数对显式增广受约束解最大差1.17e−15，整个耦合df对显式hat trace差3.55e−15，S/U同支持/非local扰动canary及Hann恒等检查通过。实际new/reused normal equation最大残差1.06e−16；原C/Ccap重评分最大差1.67e−16，选择规则不变。[原样独立数值audit](COORDINATOR_NUMERICAL_AUDIT.json)核对52来源/12输入、45共mask/选择与27组系数约束，并从冻结缓存输入独立重建选定9个新模型，另写Hann/NumPy相关评分；块r最大差4.44e−16、secondary重算≤3.44e−16。[最终review](COORDINATOR_RESULT_REVIEW.json)已实际读全文和三图；Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS，详见[REVIEW](REVIEW.md)。复用cached latent/P，不是raw EEG/encoder重放，goal未达到。
 
 ## 6. 解释边界与后续
 

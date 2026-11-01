@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4全部54解/D5全部36解与独立review有限制交付，current开发收益保留，无额外加性/双线性历史收益；准备最小current归因方案 |
+| Status | ACTIVE — D4/D5/D6实际独立review与图文归档有限制交付；D7仅只读盘点/精确PLAN准备，科学goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -82,6 +82,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 三级审阅：技术可复现；科学结论与证据相称；父任务公开/患者边界和原有冻结结果不变。仅就已授权公开EEG方法目标持续推进，不把本任务完成等同PUB-01全部完成或论文接受。
 
 ## 6. 执行记录
+
+2026-11-01 D6：27新闭式模型+18D4精确复用/45候选完成。P-only/S32/U32/C/Ccap均r=.171837/.174284/.173867/.174789/.176897（P*.162362），P输出再读出已有增益，完整latent C对U32全部3λ×3seed正；解除共享/平方收益并非无条件。原P*最overlap一致却r最低，固定Hann误差分解不当优化目标。协调实际52来源/12输入/45共同mask/27coef约束与正规方程核验，9所选新模型独立缓存输入重建块r差≤4.44e−16、secondary≤3.44e−16，三图/全文读看；原样review7a9a621d…6077、audit54a778a9…86d3。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整readout_attribution/run01图文表与HTML run_id20261101_pub01_s03_ss07_readout_attribution三图/副本/链接检查通过；wall62.767/CPU348.898秒，无新TRAIN载荷、NN、GPU、test/DTU。D7仅准备36角色-split旧seen/heldout内部泛化审计PLAN/只读输入盘点，先协调审定再测试；冻结强current及已选λ不重训，全部POST-HOC INTERNAL EXPLORATORY。goal仍ACTIVE，不改旧阴性或扩大旧矩阵。
 
 2026-11-01 D5：固定Add/CC/Near/Older×3seed×3λ=36解完成，Near未达到同时胜Add/CC且三个seed一致的预设门，Near−CC三seed全负；四臂均选λ=1，分数约.17690、近冻结Ccap，不能用微小Near−Anchor正值归因历史。协调独立21source/60input/36coef、精确共同mask/共享λ/聚合核验最大差1.11e−16，三图及中文REPORT实际审阅。原样review97b6d4…f833，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS，goal false。源码PCA在anchor检查前的顺序偏差明确保留，全部新岭解前真实anchor差0。wall69.045/CPU493.421秒、GPU/NN/encoder/head forward0，无新test/DTU/下载。history_interaction_probe/run01完整REPORT/REVIEW及HTML run_id=20261101_pub01_s03_ss07_interaction_probe已完成三图/副本/链接检查。下一步只准备最小current读出归因/连续输出一致性次要描述设计，先协调审定，不扩D4/D5网格。
 

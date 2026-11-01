@@ -1,4 +1,14 @@
-# 当前执行：SS07 D5交付完成，准备current读出归因方案（2026-11-01）
+# 当前执行：SS07 D6完整交付，D7内部泛化审计只读准备（2026-11-01）
+
+D6最终实际独立review有限制通过（52来源/12输入/27coef约束/45共mask；9个选定新模型独立缓存输入重建，块r差≤4.44e−16），原样audit/review齐备。完整[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)、三图中文解释与全部表、轻量HTML归档run_id=20261101_pub01_s03_ss07_readout_attribution已完成（E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_readout_attribution/report.html，三图/副本/链接检查通过）。current开发增益有限归因成立，科学goal仍ACTIVE。
+
+协调同意下一D7一次有界内部泛化审计的只读盘点/精确PLAN准备：P*/Ponly/S32/U32/C/Ccap×3已定seed×seen/heldout=36角色-split，只用D6已选λ/冻结权重与TRAIN transforms，无新拟合/选点/下载/DTU。先查既有cache/原P输出/bridge/mask来源，冻结具体矩阵与预算交协调审定后才能实际测试。所有结果必须POST-HOC INTERNAL EXPLORATORY，不称独立确认，不按D7重新选择/训练。当前尚无D7测试推理。
+
+以下D6完成/启动描述均为当时进度，不重启其矩阵。
+
+D6最终PLAN已协调审定含P-only；源码/协议2534b28在任何D6拟合前冻结，实际PID529076已正常结束。27新model-λ解+18原D4精确复用/45候选+3P*评分，完整REPORT/三图/逐seed逐人逐块及Hann分解已bbf7f08交付。P*/P-only/S32/U32/C/Ccap选定VAL60s均r=.162362/.171837/.174284/.173867/.174789/.176897。C−U32全部3λ×3seed正，解除共享U−S选定三seed负，平方收益正则依赖；P*overlap最一致却r最低，不能把低overlap当目标。source b0e4336…/core5b9cb9de…；wall62.767s/CPU348.898s，GPU/NN/新TRAIN载荷遍历0。独立实际review和轻量归档收束中，旧D4/D5不扩，goal ACTIVE。下一阶段仅给有界研究建议供协调评估，不自动新拟合。
+
+以下D5交付与D6准备是历史进度，当前以本段为准。
 
 D5实际独立review PASS_WITH_LIMITATIONS，21来源/60输入/36系数/共同mask/共享λ核对，关键重聚合差≤1.11e−16，报告全文及三图实际查看；原样review SHA97b6d4a3545eafad9e4b4ea742de6f0b93787cf36093543d0849f6a32079f833。完整[REPORT](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REVIEW.md)及全36格/成本/三图中文解释已收束。轻量归档run_id=20261101_pub01_s03_ss07_interaction_probe，E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_interaction_probe/report.html，三图说明/副本/HTML链接检查通过。未建立额外双线性历史映射收益，goal仍ACTIVE。
 
