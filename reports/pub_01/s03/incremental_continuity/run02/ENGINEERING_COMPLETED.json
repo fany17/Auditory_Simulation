@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "time": 1793504007.863551,
+  "seconds": 79.31988906860352,
+  "actual_VAL_cells": 18,
+  "actual_VAL_windows_per_cell": 30500,
+  "synthetic_optimizer_steps_disclosed": 18,
+  "real_data_optimizer_steps": 0,
+  "test_read": false,
+  "reuse_decision_sha256": "a82f08d1346178cc30b4a15ba863ebb9998833b407d2e44d13e3a9663a7064c6",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm.py": "2a8f923bfd60cd2606aa08ba80e2ac3ed0cfcd12a03a4d4225ecca51d622e6dc",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_check.py": "0475c70979d46cff763574bdd384f2757c78883de6cbe11e83d54a539b7c3282",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_prepare.py": "0adc21c8a8dab11cd5a8523bb4e4036809f67a9549d1626bb135d16d54bd37f6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_queue.py": "40a736f096d8906d26dd73c62a5b37a6babbdc2e47d2524766bd225357883424"
+  },
+  "proofs": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/engineering_a04/SYNTHETIC_GRADIENT_STATE.json": "787cea7a68c849a809e39b4a940280059ad125b662e68e6b2bb0456d1c08dd32",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/engineering_a04/METRIC_CONSTANT_CHECK.json": "11c09f7c795802b970a2427d4c5cfb54246d2e7b83db5f8bd1a35ec676ed23ad",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/engineering_a04/ACTUAL_ZERO_VAL_RNG.json": "806370403072894ba72dd3060a23bba52dd9e0346dcba09c043a5a34a68332e1"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "precision": {
+      "dtype": "float32",
+      "TF32_matmul": false,
+      "TF32_cudnn": true
+    },
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false
+  }
+}

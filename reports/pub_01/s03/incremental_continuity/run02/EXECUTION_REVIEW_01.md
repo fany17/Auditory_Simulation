@@ -26,10 +26,12 @@ PID409806已正常结束，实际18格×30500 VAL起点及合成检查通过，�
 
 实现另将M4的transform按record计算后拼回global64，再一次调用原head。原H16/core/shift/.1公式与参数不变，同一完整64上直接对照冻结NativeResidual；避免零残差时因拆head batch改变cuDNN卷积内核。旧FT历史runtime RNG/backend快照未记录，当前重建等价不证明历史逐bit路径；执行前固定18格共同实现，不是发现旧函数/seed不匹配，也不读新成绩触发。
 
-## 工程attempt04（最终评分修正后重验）
+## 工程attempt04（最终评分修正后实际通过）
 
 协调独立代码核查指出，np.std单独判常量可能接受0.1重复导致的均值舍入伪方差。新warm实际correlation加入精确max==min拒绝并断言r有限；macro全常量窗亦先拒绝。补实际评分函数的非二进制常量pred/target及macro拒绝、正常非恒定macro与原corrcoef不变检查。round01代码不改。a03结束后才修改源码，其综合标记/复用决定移入engineering_a03原位保留，不将新hash冒充已验证的旧内存版本。
 
-完整a04重新执行合成及18格真实epoch−1 VAL，使用独立engineering04.log/engineering_a04/；最终工程标记仅由a04实际运行生成。此时无正式fit或测试评分。源码/实际最终证据交协调端独立核验后冻结正式train/val。
+完整a04已正常完成，79.32秒，18格×30500实际VAL。各行current/past与P的波形和loss最大差均0；9例构造CPU/全部CUDA RNG/完整global64 dropout重建及训练零投影波形差0；对旧FT initial VAL loss最大差1.48767e−8。新评分常量pred/target与实际macro拒绝通过，正常非恒定macro与原corrcoef差3.12e−17。实际旧FT checkpoint keys只有epoch/model/seed/validation_loss，复用技术边界如上。
+
+独立engineering04.log/engineering_a04/及最终ENGINEERING_COMPLETED仅由a04运行生成。ENGINEERING_COMPLETED SHA=5318eb3c4dd98241d8c5f73cb5a18edc72cf0e52c24f992d7bb365440f0265bf；复用决定SHA=a82f08d1346178cc30b4a15ba863ebb9998833b407d2e44d13e3a9663a7064c6。最终源码7fb74d6，SOURCE_REVIEW_BUNDLE绑定全部来源；轻量JSON已回传，不含synthetic/真实信号数组。此时无正式fit或测试评分。已交协调端做最终独立核验，通过后冻结并进入正式train/val，goal不在工程PASS处完成。
 
 frozen/joint行同时改变encoder train/eval随机行为，交互不能作为纯encoder梯度因果效应。warm vs旧随机起点还改变上游head训练与预算，不是严格初始化因果消融。旧内部测试和DTU已暴露；后续确认资格另审，不以本轮工程通过或VAL改善完成科学goal。

@@ -1,0 +1,58 @@
+{
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm.py": "2a8f923bfd60cd2606aa08ba80e2ac3ed0cfcd12a03a4d4225ecca51d622e6dc",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_check.py": "0475c70979d46cff763574bdd384f2757c78883de6cbe11e83d54a539b7c3282",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_prepare.py": "0adc21c8a8dab11cd5a8523bb4e4036809f67a9549d1626bb135d16d54bd37f6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_queue.py": "40a736f096d8906d26dd73c62a5b37a6babbdc2e47d2524766bd225357883424",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py": "536889345d3b5a35d16ef53ef600e5cf5ec064e59bcfc259c9a3a0a98882def2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_method_models.py": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/training_seed1024_attempt04/config_frozen.json": "09e18b9096c85bf4f83c9e6fa8d9d742580d11df57e40503391fd378279cb173",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/manifest_frozen.json": "395ffef0765ce595e897f85c7483f2a07816c0266d27f5e4e2e8d0d5959f84d5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INCREMENTAL_PROTOCOL.json": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/block_eligibility/val.json": "c655eda48e136de39c686bcedd04049d4bfc4414bfd201d38119aea36f869c22",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed1024/best_validation.pt": "75860bfb1bbeed03eab32c25baaa37338f60dcc6214c6f340da9742ae1fd99d8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/best_validation.pt": "d1fe16d1598887c72b5912e9f111c0234e1e10b5430bc0e44f25a79dc3caee44",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/cache_manifest.json": "5f2f6a4ff24c2dfb8168c2c9119ca3c1383b8ab930f04076e5f774bcf293596b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed2026/best_validation.pt": "20036e59d62b4295a3bf62e21a18f96c9dc27bb6b9990faf52fb76ead81a08d2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/best_validation.pt": "3add5850f47d197b4e1bcf2fd48380bf18981bdaaabade2b0efb20ae91beb4b4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/cache_manifest.json": "8c2579606986c740b1958b12bec7f8b4d710111538da2b7e4a28333d6286b330",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed31415/best_validation.pt": "4e3fa89d6498a41979d8dbc2251eb4cea7a39eb5c8727822ca21535de2aaef7a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/best_validation.pt": "c1d5efb56dd074a67e406ecf3b44fc1110bf60f58d97ddec205a70d38a8d3f9c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/cache_manifest.json": "6d5554285dee829c2a0c4dd33d90e67527dac9db6fe78e1af16cf959cf955052"
+  },
+  "engineering_sha256": "5318eb3c4dd98241d8c5f73cb5a18edc72cf0e52c24f992d7bb365440f0265bf",
+  "reuse_decision_sha256": "a82f08d1346178cc30b4a15ba863ebb9998833b407d2e44d13e3a9663a7064c6",
+  "actual_cells": 18,
+  "same_row_wave_max_diff": 0.0,
+  "same_row_loss_max_diff": 0.0,
+  "legacy_initial_loss_max_diff": 1.4876733039903556e-08,
+  "rng_cases": 9,
+  "zero_train_wave_max_diff": 0.0,
+  "legacy_checkpoint_actual_keys": {
+    "1024": [
+      "epoch",
+      "model",
+      "seed",
+      "validation_loss"
+    ],
+    "2026": [
+      "epoch",
+      "model",
+      "seed",
+      "validation_loss"
+    ],
+    "31415": [
+      "epoch",
+      "model",
+      "seed",
+      "validation_loss"
+    ]
+  },
+  "new_formal_fits_started": false,
+  "scientific_goal_achieved_claimed": false
+}

@@ -1,0 +1,14 @@
+{
+  "legacy_FT_reused": false,
+  "new_fits": 18,
+  "decision_basis": "historical per-device runtime RNG/backend snapshots absent; reconstructed legacy equivalence is engineering evidence, not direct provenance of historical stochastic streams; use common round02 implementation for all six cells",
+  "decision_before_any_new_fit": true,
+  "old_FT_preserved_as_historical_reference": true,
+  "legacy_checkpoint_recorded_keys": [
+    "model",
+    "seed",
+    "epoch",
+    "validation_loss"
+  ],
+  "score_triggered": false
+}
