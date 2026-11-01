@@ -1,0 +1,21 @@
+{
+  "arithmetic_from_frozen_summary_only": true,
+  "Ccap_minus_C": {
+    "weighted_single_MSE": -7.772290532337411e-06,
+    "fused_MSE": 0.000102576322985104,
+    "disagreement": -0.00011034861351747063,
+    "overlap_MSE": -0.000865859043984635,
+    "r60s": 0.002108347416295425
+  },
+  "metrics_count": {
+    "candidate_scores": 45,
+    "baseline_scores": 3,
+    "VAL_window_presentations": 1464000,
+    "VAL_block_presentations": 36096,
+    "overlap_pair_presentations": 1461648
+  },
+  "cost_stage_sums": {
+    "wall_seconds": 60.80553698539734,
+    "CPU_seconds": 346.90485659199993
+  }
+}
