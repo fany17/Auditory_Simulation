@@ -8,6 +8,8 @@
 
 基线全量P是主锚点。后续必须有原生O直接监督或原encoder微调强控制，预算在train/val有界冻结并单列，不能仅战胜较弱冻结head而宣称超过最强同协议基线。增量保留原head、匹配初始化与同seed完整encoder；关闭模块在eval数值恒等。只把最终残差投影置零，不同时将门/残差全置零；还须验证首步末投影和后续内部参数可学习。
 
+本轮冻结矩阵的执行含义：每seed的P与五family共用同一个本轮新预训练encoder，冻结其表征；保留的是原257参数head的结构及相同随机初始化，head与残差共同训练。零残差初始恒等指向该随机head，并非训练完成的P head。本轮未检验从已训练P head继续加入历史；只有FT训练臂加载训完P encoder/head，EMA另为无拟合后处理。该未覆盖问题仍保留，不据本轮阴性缩小或完成持续研究目标。源码及15项配对VAL/预算见[FAILURE_MECHANISM_CHECK](FAILURE_MECHANISM_CHECK.md)，其中也记录3s改善与60s下降的实际反例；在线train曲线不当同checkpoint泛化误差或单一机制证明。
+
 ## Pearson可辨识性
 
 3s negative Pearson对正缩放和常量偏置基本不敏感。慢状态仅输出每窗标量gain/bias，可能没有有效梯度，不能作为有效历史模型。主增量改变8通道组合、时间形状或滤波内容，例如历史条件8×8混合；真实梯度/active容量另验。若改MSE/60s目标，则baseline同目标/同预算，不仅改候选。
