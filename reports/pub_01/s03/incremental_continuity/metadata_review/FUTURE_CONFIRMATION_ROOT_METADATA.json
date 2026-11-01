@@ -1,0 +1,41 @@
+{
+  "status": "metadata_only_no_payload_or_experiment_authorized",
+  "reviewed_on": "2026-11-01",
+  "dryad": {
+    "doi": "10.5061/dryad.070jc",
+    "selected_candidate": "NaturalSpeech.zip",
+    "size_display": "3.46 GB",
+    "license": "CC0",
+    "payload_inspected": false
+  },
+  "paper": {
+    "url": "https://doi.org/10.1016/j.cub.2018.01.080",
+    "facts": "19 natural-speech subjects, 20 just-under-180s narrative segments, The Old Man and the Sea; BioSemi 128 plus mastoids, acquired512Hz. Paper analysis1-8Hz,128Hz,mastoidreference; archive actual preprocessing unknown. Do not confuse with Alice in Wonderland or 64 channels."
+  },
+  "openneuro": {
+    "repository": "OpenNeuroDatasets/ds004408",
+    "current_commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+    "current_doi": "10.18112/openneuro.ds004408.v1.0.8",
+    "license": "CC0",
+    "current_root_subjects": "sub-001..019",
+    "readme": "128BioSemi; raw512Hz/unfiltered/unreferenced; onset aligned but EEG may extend audio; wav/TextGrid included in repo listing, not downloaded",
+    "old_tag_1_0_0_warning": "Different metadata/name/authors and README includes additional100..113 multispeaker subjects, not present currentroot. Never silently use v1.0.0 as current19subject version.",
+    "sidecar_conflict": "current sub001run01 Manufacturer=Brain Products, while paper/README BioSemi; channel labelsA1..D32 and no placement/reference. Needs provenance resolution, not automatic claim correct."
+  },
+  "next_requirements": [
+    "Keep as future metadata candidate only, no payload acquisition",
+    "Pin exactversion and19subjectscope if authorized",
+    "Verify128-to64physical mapping, no first64slice",
+    "Verify actualunits/filter/reference/eventaudio alignment and overlap with source/DTU",
+    "Freeze eligible confirmation before newmodel predictions; all old tests nowexploratory"
+  ],
+  "montage_addendum": {
+    "scope": "Literature/metadata only. No matrix constructed, payload downloaded, or inference run.",
+    "manufacturer_source": "https://www.biosemi.com/headcap.htm",
+    "manufacturer_fact": "Standard64 electrodes use10/20, standard128 use radialABC; layouts only partly overlap. Official coordinate file linked. Custom layouts possible, so A1..D32 names alone do not establish actual geometry.",
+    "secondary_primary_software_source": "https://mne.tools/stable/auto_examples/preprocessing/interpolate_to.html",
+    "software_fact": "MNE documents interpolation to another EEG montage using spherical splines or minimum-norm mapping. This is a potential label-free fixed adapter, not identity channel mapping or proof of this dataset's cap.",
+    "unresolved": "Dataset-specific cap/coordinate provenance required before selecting physical mapping or interpolation. Treat 128→64 interpolation and preprocessing differences explicitly as adaptations; do not use validation/test performance to choose them.",
+    "forum_search_hint_not_full_read": "BioSemi technical forum search excerpt https://www.biosemi.nl/forum/viewtopic.php?p=1357 states22coincident positions; fullpage timedout, so22not independently verified fromcoordinatefile."
+  }
+}

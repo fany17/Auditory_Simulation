@@ -83,6 +83,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 
 ## 6. 执行记录
 
+2026-11-01追加SOURCE-TRAIN诊断：协调明确授权后先冻结独立train_diagnostics/run01/DEFINITION及13项source协议，在2203仅CPU1线程、CUDA不可见、nice15/idle I/O执行一次，3seed各426 TRAIN/252454窗/252028相邻对、共享目标D3仅一次，零记录错误。六bin保留centered窗内latent能量12.84%/13.52%/13.25%；双向跨半段正仿射held/raw误差比均>1，未获稳定校正；D3固定3/6/12s相关仅描述，不能推出条件历史无用。协调另行核验全部source/cache映射/CSV重聚合及三张实际图，接受有限制描述性证据；Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS，非新方法/有用信息损失证明。三图中文REPORT/静态HTML已保存，归档run_id=20261101_pub01_s03_ss07_train_diagnostics。70人/426record/41story标识与目标路径明确区分，不把426当独立刺激。warm18fit与其报告/复核完全不变，仍优先完整真实结果交付；不新增测试/拟合/下载，goal ACTIVE。更丰富历史需先审查条件预测贡献，未据能量比例直接扩容。
+
 2026-11-01 warm round02：协调端独立审阅8701673方案及7fb74d6最终源码/实际a04证据后，直接在2203写入PASS_FOR_TRAIN_VAL review（SHA0d208252…c87587）。六格×三seed epoch−1全部30500 VAL窗，同一行P/current/past波形及loss差均0；GPU参数/历史梯度、CPU double结构状态、实际常量拒绝与正常评分检查通过。旧FT没有历史runtime RNG/backend直接快照，执行前固定18格共同实现，不宣称已发现旧函数不匹配。WARM_PROTOCOL冻结a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8，队列416910/首批416911+416912实际UID/argv/start_ticks已核验。独立ROOT s03_incremental_warm_20261101及本地run02；固定5epoch、epoch−1候选、原3s选点、所选VAL60s，仅原train/val，无旧test/DTU新推理。工程attempt01/02失败及a03旧版PASS原位保留，最终证据只由a04绑定。矩阵训练与科学判断仍待，不以工程PASS/启动完成goal。
 
 2026-11-01：协调端已创建持续goal；原完整baseline五seed预先冻结并运行。seed1024已完成24epoch/19680更新预训练、按patience15停止、选择epoch8；其余seed仍运行。此为新随机初始化的正式结果，不是重用旧EEG权重，也未宣称包络提升。
