@@ -1,5 +1,7 @@
 # PUB-01 — EEG 听觉解码竞品与任务基准表
 
+2026-11-01 SS07 D10：旧内部36项全部完成，PFT*/Ponly/C/Ccap/W/F加权r=.168945/.170374/.171197/.173348/.173393/.174284，三个主要内部配对各组/seed全正；C−Ponly held全负、W−Ccap mixed和F窗口退化完整保留。306source/600inputs/36聚合/72cached、全部rawFT桥及全文三图实际review有限制通过，finetuned_internal_audit/run01 REPORT/REVIEW/HTML归档完成。旧test仍POST-HOC INTERNAL EXPLORATORY，无新fit/λ/DTU或独立确认；D11仅原TRAIN/VAL慢观测状态最小PLAN/源码资产盘点，未新增方法/数据授权，goal ACTIVE。
+
 2026-11-01 SS07 D9：六个匹配物理目标解完成，Ccap/W/F VALr=.182340/.182474/.183874，F−W三seed正均+.001400；F单窗MSE352.068/r3s.003435、巨大bias在原Hann近相消，固定融合点增益和严重窗口表示退化并存。全TRAIN独立梯度/目标/真残差、全VAL及12缓存重建、全文四图实际review有限制通过，physical_objective/run01/REPORT/REVIEW与HTML已归档；未建立通用稳健、历史或独立确认，goal ACTIVE。D10仅固定6角色×3seed旧seen/held事后内部审计的PLAN/资产/预算准备，不能据旧test调参，DTU关闭。
 
 2026-11-01 SS07 D8：强FT epoch4冻结encoder/head上的27固定岭解完成，P_FT*/Ponly/C/Ccap三seed VAL r=.174141/.177842/.180541/.182340，Ccap两个primary均三seed正。全部FT历史loss/raw桥差0；实际27系数/30聚合/18缓存重建和全文三PNG独立review有限制通过，完整finetuned_readout_transfer/run01图文表/REVIEW与HTML归档齐备。新增TRAIN岭/标定/搜索成本真实，重复known-person VAL不称独立泛化或纯loss因果；普通ridge与平方不是方法创新，无历史输入，goal ACTIVE。D9仅精确连续监督PLAN准备，不打开旧test/DTU、不改D8λ。

@@ -1,0 +1,32 @@
+{
+  "status": "PRIMARY_SOURCE_REVIEW_ONLY_NO_NEW_EXPERIMENT",
+  "date": "2026-11-01",
+  "purpose": "Clarify prior art before any slow observation-state experiment; does not change D10.",
+  "sources": [
+    {
+      "title": "Time-adaptive Unsupervised Auditory Attention Decoding Using EEG-based Stimulus Reconstruction",
+      "authors": "Simon Geirnaert; Tom Francart; Alexander Bertrand",
+      "year": 2022,
+      "url": "https://simongeirnaert.com/publication/timeadaptive2022geirnaert/timeAdaptive2022geirnaert.pdf",
+      "actual_read": "Author-hosted 12-page PDF parsed: abstract/introduction and SectionII.A through covariance/shrinkage equations4–7; further recursive-section find timed out. No full implementation audit.",
+      "supported": "Adaptive auditory stimulus reconstruction with sliding-window/recursive updates predates this project. It consumes streaming EEG and competing speech envelopes; absence of attention labels is not absence of speech input. Generic time adaptation to EEG nonstationarity is prior art.",
+      "implication": "A proposed EEG-only slow-state model must specify no inference audio/target access and identify a task-relevant contribution beyond adaptive covariance or relabeled time adaptation."
+    },
+    {
+      "title": "Fast, accurate, unsupervised, and time-adaptive EEG-based auditory attention decoding for neuro-steered hearing devices",
+      "authors": "Simon Geirnaert; Rob Zink; Tom Francart; Alexander Bertrand",
+      "url": "https://simongeirnaert.com/publication/fast2024geirnaert/fast2024geirnaert.pdf",
+      "actual_read": "Author-hosted chapter, parsed abstract and Sections1–2.1 plus opening2.2 only; not used as independent performance evidence.",
+      "supported": "Authors distinguish user-specific adaptation from fixed user-independent models and summarize EEG-plus-speech unsupervised stimulus reconstruction. Not evidence for our EEG-only envelope protocol."
+    },
+    {
+      "title": "Mutual information-guided subject disentanglement for cross-subject EEG speech envelope reconstruction",
+      "doi": "10.1016/j.array.2026.101052",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590005626003759",
+      "actual_read": "Primary publisher search-rendered abstract/bibliography only; full page open returned403.",
+      "supported": "Publisher lists SDN-Net in Array31, September2026, article101052. Subject-disentanglement envelope reconstruction already has contemporary task-specific prior art.",
+      "limits": "Do not import their improvement numbers, assume identical splits, or claim their implementation reviewed. Existing arXiv2501.08693v1 note remains explicitly abstract-level."
+    }
+  ],
+  "scientific_limit": "Prior-art notes do not establish useful raw-covariance history, method novelty, independent generalization, or any additional training authorization."
+}

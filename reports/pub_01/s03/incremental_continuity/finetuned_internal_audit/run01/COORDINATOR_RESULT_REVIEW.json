@@ -1,0 +1,124 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "goal_complete": false,
+  "reviewer_role": "Coordinating agent; separate reconstruction code, same overall research team",
+  "scientific_status": "POST-HOC INTERNAL EXPLORATORY",
+  "reviewed_scope": {
+    "formal_scores": 36,
+    "all_original_masks_and_person_weights": true,
+    "cached_reconstructions": 72,
+    "source_pins": 306,
+    "input_fingerprints": 600,
+    "full_REPORT_read": true,
+    "actual_PNGs_viewed": 3,
+    "previous_D8_D9_solver_checks": "Frozen completed audits not repeated"
+  },
+  "protocol_sha256": "14b2cedd0df026637624afbc63004c3803644d420e7966bad234cab33babb78e",
+  "numerical_audit_sha256": "475caa270497f9ee5f9f0e61dea9b595c33d82d92367bdafd08af2445b584f88",
+  "actual_numeric_checks": {
+    "aggregation": 0,
+    "cached_block_r": 2.7755575615628914e-16,
+    "cached_MSE_Hann": 2.6922908347160046e-14,
+    "first4": 0,
+    "original_FT_raw_wave": 0,
+    "original_FT_all_block_r": 4.440892098500626e-16,
+    "VAL_capture": 0,
+    "original_Decoder": 0
+  },
+  "means": {
+    "P_FT": {
+      "seen": 0.17943104604354662,
+      "heldout": 0.1479720870189227,
+      "weighted": 0.16894472636867197,
+      "weighted_MSE": 0.26384688129967754
+    },
+    "Ponly": {
+      "seen": 0.18098073499547473,
+      "heldout": 0.14916144662974193,
+      "weighted": 0.17037430554023048,
+      "weighted_MSE": 0.26364020019865114
+    },
+    "C": {
+      "seen": 0.1826713281640815,
+      "heldout": 0.1482472951508116,
+      "weighted": 0.1711966504929915,
+      "weighted_MSE": 0.26144146430824455
+    },
+    "Ccap": {
+      "seen": 0.18457456100632605,
+      "heldout": 0.1508939011122083,
+      "weighted": 0.17334767437495344,
+      "weighted_MSE": 0.26177044648108616
+    },
+    "W": {
+      "seen": 0.18464770281768347,
+      "heldout": 0.15088231655771092,
+      "weighted": 0.1733925740643593,
+      "weighted_MSE": 0.26169984285394887
+    },
+    "F": {
+      "seen": 0.18538094652436135,
+      "heldout": 0.15209103412234246,
+      "weighted": 0.17428430905702172,
+      "weighted_MSE": 0.26161215510349217
+    }
+  },
+  "supported_findings": [
+    "Frozen FT+Ccap exceeds original complete FT and P-only in each old internal phase and each of3seeds; original weighted r=.1689447264 vsCcap=.1733476744.",
+    "F relative to parameter/feature/support-matched W has positive r deltas in all3seeds and both old phases; mean original2:1 delta=.00089173499; fused MSE decreases. This is fixed offline Hann readout/objective evidence.",
+    "FT baseline original wave and scoring exactly recovered within frozen tolerances. No new fits, lambda selection, added training or data inD10."
+  ],
+  "negative_and_limitations": [
+    "C minus P-only is negative on heldout for all3seeds; W minus Ccap has mixed signs and only1/3positive weighted.",
+    "F retains severe single-window distortion and large uniform overlap error. D9 coefficient evidence identifies near-cancelling bias coordinates; fixed-fusion gain is real but standalone-window/alternative-fusion/robust low-precision usability unproven.",
+    "No extra past EEG input inD10; neither historical memory benefit nor novel mechanism established.",
+    "Original tests previously exposed; three seeds share subjects/stimuli. No fresh confirmation, significance, equivalence, general SOTA or ICML/NeurIPS readiness.",
+    "Shared pretrained/FT and D8/D9 fitting/search costs remain nonzero; no equal-total-cost claim.",
+    "New OpenNeuro dataset scope awaits actual human answer; no payload authorized by this result review."
+  ],
+  "presentation_review": {
+    "figures_sha256": [
+      {
+        "file": "01_ABSOLUTE_PAIRED.png",
+        "sha256": "1ffa7013bf20b75aec08a3fd14ed834f914a0f9a46c387e9e050f06ca5019148"
+      },
+      {
+        "file": "02_FROZEN_CONTRASTS.png",
+        "sha256": "7c268247070b193ae4edb42c754f8faa7fbafdc344525ffc52359c8f0ffccd32"
+      },
+      {
+        "file": "03_CONTINUITY_MSE.png",
+        "sha256": "279f81d51f179a6dad8b922c640331db03c11d38c8c904f884763dc29dc39faa"
+      }
+    ],
+    "all_negative_controls_visible": true,
+    "axis_scales_and_no_CI_described": true,
+    "presentation_failure": "Original renderer field-name error and partial outputs retained; presentation-only correction, no scientific rerun.",
+    "minor_wording_followups": "Both requested role definitions and fitting/inference clarification actually verified in current REPORT; scientific source and numeric values unchanged."
+  },
+  "actual_cost": {
+    "role_split_scores": 36,
+    "wall_seconds": 147.21012377738953,
+    "CPU_seconds": 539.146830068,
+    "peak_RSS_bytes": 2002989056,
+    "peak_GPU_allocated_bytes": 193392128,
+    "new_root_bytes": 1793587668,
+    "all_SS07_NPY_bytes": 26225606304,
+    "free_disk_bytes": 25860456448,
+    "old_test_label": "POST-HOC INTERNAL EXPLORATORY",
+    "new_fit_selection": false,
+    "DTU": false,
+    "goal_complete": false
+  },
+  "independent_review_cost": {
+    "wall_seconds": 3.0869808197021484,
+    "CPU_seconds": 17.644014623,
+    "peak_RSS_bytes": 518979584,
+    "encoder_or_head_forwards": 0,
+    "newfits": 0,
+    "new_NPY": 0,
+    "cached_readout_windows": 41166
+  },
+  "decision": "Freeze D10 scientific results; archive reviewed report/figures/evidence and commit/push. Keep goal ACTIVE. Continue bounded originalTRAIN/VAL scientific planning separately, not test-driven retuning; no rerun of closedD10.",
+  "report_sha256_at_review": "748e9167199fccf62cd45a1dbe9287a772ede91e599b2b979a396c1ff165a94c"
+}

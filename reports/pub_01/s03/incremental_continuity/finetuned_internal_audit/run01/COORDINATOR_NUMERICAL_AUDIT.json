@@ -1,0 +1,991 @@
+{
+  "status": "PASS_ACTUAL_NUMERICAL_RESULTS",
+  "goal_complete": false,
+  "scientific_status": "POST-HOC INTERNAL EXPLORATORY",
+  "protocol_sha256": "14b2cedd0df026637624afbc63004c3803644d420e7966bad234cab33babb78e",
+  "scope_sha256": "6117f196b4fa1f577704748a5d5f052a02879fe3195a1c83b4fe7c8c1edf27d8",
+  "source_pins_verified": 306,
+  "input_fingerprints_verified": 600,
+  "all36_original_masks_exact": true,
+  "score_cells": 36,
+  "aggregation_max_abs": 0.0,
+  "cached_reconstructions": 72,
+  "cached_block_r_max_abs": 2.7755575615628914e-16,
+  "cached_MSE_Hann_max_abs": 2.6922908347160046e-14,
+  "cached_3s_r_max_abs": 5.551115123125783e-17,
+  "first4_fallback_max_abs": 0.0,
+  "Hann_aggregate_identity_max_abs": 2.7033930649622562e-14,
+  "original_FT_raw_bridge_records": 432,
+  "original_FT_raw_wave_max_abs": 0.0,
+  "original_FT_all_block_r_max_abs": 4.440892098500626e-16,
+  "VAL_gold_capture_max_abs": 0.0,
+  "original_Decoder_max_abs": 0.0,
+  "actual_main_NN_windows": 254076,
+  "actual_extra_VAL_windows": 300,
+  "actual_extra_Decoder_windows": 636,
+  "actual_global64_batches": 3972,
+  "new12cache_bytes": 1756174848,
+  "undefined3s_by_cell": {
+    "1024:P_FT:test_seen": 0,
+    "1024:P_FT:test_heldout": 0,
+    "1024:Ponly:test_seen": 0,
+    "1024:Ponly:test_heldout": 0,
+    "1024:C:test_seen": 0,
+    "1024:C:test_heldout": 0,
+    "1024:Ccap:test_seen": 0,
+    "1024:Ccap:test_heldout": 0,
+    "1024:W:test_seen": 0,
+    "1024:W:test_heldout": 0,
+    "1024:F:test_seen": 0,
+    "1024:F:test_heldout": 0,
+    "2026:P_FT:test_seen": 0,
+    "2026:P_FT:test_heldout": 0,
+    "2026:Ponly:test_seen": 0,
+    "2026:Ponly:test_heldout": 0,
+    "2026:C:test_seen": 0,
+    "2026:C:test_heldout": 0,
+    "2026:Ccap:test_seen": 0,
+    "2026:Ccap:test_heldout": 0,
+    "2026:W:test_seen": 0,
+    "2026:W:test_heldout": 0,
+    "2026:F:test_seen": 0,
+    "2026:F:test_heldout": 0,
+    "31415:P_FT:test_seen": 0,
+    "31415:P_FT:test_heldout": 0,
+    "31415:Ponly:test_seen": 0,
+    "31415:Ponly:test_heldout": 0,
+    "31415:C:test_seen": 0,
+    "31415:C:test_heldout": 0,
+    "31415:Ccap:test_seen": 0,
+    "31415:Ccap:test_heldout": 0,
+    "31415:W:test_seen": 0,
+    "31415:W:test_heldout": 0,
+    "31415:F:test_seen": 0,
+    "31415:F:test_heldout": 0
+  },
+  "means": {
+    "P_FT": {
+      "seen": 0.17943104604354662,
+      "heldout": 0.1479720870189227,
+      "weighted": 0.16894472636867197,
+      "weighted_MSE": 0.26384688129967754
+    },
+    "Ponly": {
+      "seen": 0.18098073499547473,
+      "heldout": 0.14916144662974193,
+      "weighted": 0.17037430554023048,
+      "weighted_MSE": 0.26364020019865114
+    },
+    "C": {
+      "seen": 0.1826713281640815,
+      "heldout": 0.1482472951508116,
+      "weighted": 0.1711966504929915,
+      "weighted_MSE": 0.26144146430824455
+    },
+    "Ccap": {
+      "seen": 0.18457456100632605,
+      "heldout": 0.1508939011122083,
+      "weighted": 0.17334767437495344,
+      "weighted_MSE": 0.26177044648108616
+    },
+    "W": {
+      "seen": 0.18464770281768347,
+      "heldout": 0.15088231655771092,
+      "weighted": 0.1733925740643593,
+      "weighted_MSE": 0.26169984285394887
+    },
+    "F": {
+      "seen": 0.18538094652436135,
+      "heldout": 0.15209103412234246,
+      "weighted": 0.17428430905702172,
+      "weighted_MSE": 0.26161215510349217
+    }
+  },
+  "contrasts": [
+    {
+      "pair": "F-W",
+      "seen": {
+        "mean": 0.0007332437066779052,
+        "by_seed": [
+          0.0007916652149210501,
+          0.0007433097188437043,
+          0.000664756186268961
+        ]
+      },
+      "heldout": {
+        "mean": 0.001208717564631534,
+        "by_seed": [
+          0.001279046409992074,
+          0.0012635565441889152,
+          0.001083549739713613
+        ]
+      },
+      "weighted": {
+        "mean": 0.0008917349926624388,
+        "by_seed": [
+          0.0009541256132780396,
+          0.0009167253272921172,
+          0.0008043540374171598
+        ]
+      },
+      "weighted_MSE": {
+        "mean": -8.768775045675525e-05,
+        "by_seed": [
+          -0.000116386399074353,
+          -7.508647095655352e-05,
+          -7.159038133935924e-05
+        ]
+      }
+    },
+    {
+      "pair": "Ccap-P_FT",
+      "seen": {
+        "mean": 0.005143514962779418,
+        "by_seed": [
+          0.005385254799524425,
+          0.005384128192676446,
+          0.0046611618961373835
+        ]
+      },
+      "heldout": {
+        "mean": 0.0029218140932855963,
+        "by_seed": [
+          0.0023967020182968923,
+          0.0034520036950680677,
+          0.0029167365664918288
+        ]
+      },
+      "weighted": {
+        "mean": 0.004402948006281475,
+        "by_seed": [
+          0.004389070539115247,
+          0.004740086693473644,
+          0.004079686786255532
+        ]
+      },
+      "weighted_MSE": {
+        "mean": -0.0020764348185913586,
+        "by_seed": [
+          -0.00237256601162672,
+          -0.002016344804569692,
+          -0.0018403936395776643
+        ]
+      }
+    },
+    {
+      "pair": "Ccap-Ponly",
+      "seen": {
+        "mean": 0.0035938260108512956,
+        "by_seed": [
+          0.003597289810712695,
+          0.0038678693032824507,
+          0.0033163189185587416
+        ]
+      },
+      "heldout": {
+        "mean": 0.0017324544824663761,
+        "by_seed": [
+          0.0011781502086352924,
+          0.00249260696716061,
+          0.0015266062716032258
+        ]
+      },
+      "weighted": {
+        "mean": 0.002973368834722989,
+        "by_seed": [
+          0.0027909099433535423,
+          0.0034094485245751704,
+          0.002719748036240255
+        ]
+      },
+      "weighted_MSE": {
+        "mean": -0.0018697537175649999,
+        "by_seed": [
+          -0.002106916606404885,
+          -0.001919526117251713,
+          -0.0015828184290384018
+        ]
+      }
+    },
+    {
+      "pair": "F-Ccap",
+      "seen": {
+        "mean": 0.0008063855180353111,
+        "by_seed": [
+          0.0008357702737279149,
+          0.0009267586799548144,
+          0.0006566276004232041
+        ]
+      },
+      "heldout": {
+        "mean": 0.0011971330101341697,
+        "by_seed": [
+          0.00115180625364808,
+          0.0014051105812102893,
+          0.0010344821955441397
+        ]
+      },
+      "weighted": {
+        "mean": 0.000936634682068264,
+        "by_seed": [
+          0.0009411156003679699,
+          0.0010862093137066486,
+          0.0007825791321301734
+        ]
+      },
+      "weighted_MSE": {
+        "mean": -0.00015829137759404421,
+        "by_seed": [
+          -0.00019073846316103316,
+          -0.00015463676126903358,
+          -0.0001294989083520659
+        ]
+      }
+    },
+    {
+      "pair": "W-Ccap",
+      "seen": {
+        "mean": 7.314181135740598e-05,
+        "by_seed": [
+          4.410505880686477e-05,
+          0.0001834489611111101,
+          -8.12858584575693e-06
+        ]
+      },
+      "heldout": {
+        "mean": -1.158455449736436e-05,
+        "by_seed": [
+          -0.000127240156343994,
+          0.00014155403702137415,
+          -4.906754416947323e-05
+        ]
+      },
+      "weighted": {
+        "mean": 4.4899689405825116e-05,
+        "by_seed": [
+          -1.3010012910069646e-05,
+          0.00016948398641453144,
+          -2.1774905286986446e-05
+        ]
+      },
+      "weighted_MSE": {
+        "mean": -7.060362713728896e-05,
+        "by_seed": [
+          -7.435206408668016e-05,
+          -7.955029031248007e-05,
+          -5.7908527012706656e-05
+        ]
+      }
+    },
+    {
+      "pair": "C-Ponly",
+      "seen": {
+        "mean": 0.0016905931686067206,
+        "by_seed": [
+          0.0017062831902172337,
+          0.0017893524260845506,
+          0.0015761438895183777
+        ]
+      },
+      "heldout": {
+        "mean": -0.0009141514789303232,
+        "by_seed": [
+          -0.0014507274587731156,
+          -0.0006434241677701347,
+          -0.0006483028102477195
+        ]
+      },
+      "weighted": {
+        "mean": 0.0008223449527610394,
+        "by_seed": [
+          0.0006539463072204321,
+          0.0009784268947996555,
+          0.0008346616562630305
+        ]
+      },
+      "weighted_MSE": {
+        "mean": -0.002198735890406626,
+        "by_seed": [
+          -0.0022777390971310263,
+          -0.00220448741642737,
+          -0.002113981157661482
+        ]
+      }
+    }
+  ],
+  "per_seed": [
+    {
+      "seed": 1024,
+      "role": "P_FT",
+      "seen": 0.17832795636890725,
+      "heldout": 0.14938716981579814,
+      "weighted": 0.16868102751787087,
+      "weighted_MSE": 0.26395639835750595
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "seen": 0.18011592135771898,
+      "heldout": 0.15060572162545974,
+      "weighted": 0.17027918811363257,
+      "weighted_MSE": 0.2636907489522841
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "seen": 0.1818222045479362,
+      "heldout": 0.14915499416668662,
+      "weighted": 0.170933134420853,
+      "weighted_MSE": 0.2614130098551531
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "seen": 0.18371321116843167,
+      "heldout": 0.15178387183409503,
+      "weighted": 0.17307009805698612,
+      "weighted_MSE": 0.26158383234587923
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "seen": 0.18375731622723854,
+      "heldout": 0.15165663167775104,
+      "weighted": 0.17305708804407605,
+      "weighted_MSE": 0.26150948028179255
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "seen": 0.1845489814421596,
+      "heldout": 0.1529356780877431,
+      "weighted": 0.17401121365735409,
+      "weighted_MSE": 0.2613930938827182
+    },
+    {
+      "seed": 2026,
+      "role": "P_FT",
+      "seen": 0.17942392977807695,
+      "heldout": 0.1482955320168699,
+      "weighted": 0.16904779719100793,
+      "weighted_MSE": 0.2636095488407576
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "seen": 0.18094018866747094,
+      "heldout": 0.14925492874477736,
+      "weighted": 0.1703784353599064,
+      "weighted_MSE": 0.2635127301534396
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "seen": 0.1827295410935555,
+      "heldout": 0.14861150457700723,
+      "weighted": 0.17135686225470606,
+      "weighted_MSE": 0.26130824273701225
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "seen": 0.1848080579707534,
+      "heldout": 0.15174753571193797,
+      "weighted": 0.17378788388448158,
+      "weighted_MSE": 0.2615932040361879
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "seen": 0.1849915069318645,
+      "heldout": 0.15188908974895934,
+      "weighted": 0.1739573678708961,
+      "weighted_MSE": 0.26151365374587543
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "seen": 0.1857348166507082,
+      "heldout": 0.15315264629314826,
+      "weighted": 0.17487409319818822,
+      "weighted_MSE": 0.2614385672749189
+    },
+    {
+      "seed": 31415,
+      "role": "P_FT",
+      "seen": 0.1805412519836557,
+      "heldout": 0.14623355922410003,
+      "weighted": 0.16910535439713714,
+      "weighted_MSE": 0.263974696700769
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "seen": 0.18188609496123434,
+      "heldout": 0.14762368951898863,
+      "weighted": 0.17046529314715242,
+      "weighted_MSE": 0.26371712149022974
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "seen": 0.18346223885075272,
+      "heldout": 0.1469753867087409,
+      "weighted": 0.17129995480341545,
+      "weighted_MSE": 0.26160314033256826
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "seen": 0.18520241387979308,
+      "heldout": 0.14915029579059186,
+      "weighted": 0.17318504118339267,
+      "weighted_MSE": 0.26213430306119134
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "seen": 0.18519428529394732,
+      "heldout": 0.14910122824642238,
+      "weighted": 0.1731632662781057,
+      "weighted_MSE": 0.26207639453417864
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "seen": 0.18585904148021629,
+      "heldout": 0.150184777986136,
+      "weighted": 0.17396762031552285,
+      "weighted_MSE": 0.2620048041528393
+    }
+  ],
+  "reconstruction_cases": [
+    {
+      "seed": 1024,
+      "role": "P_FT",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 3.3068166260807885e-18
+    },
+    {
+      "seed": 1024,
+      "role": "P_FT",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 3.279711571768651e-18
+    },
+    {
+      "seed": 1024,
+      "role": "P_FT",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 2.220446049250313e-16,
+      "MSE_Hann_max_abs": 3.957337929572091e-18
+    },
+    {
+      "seed": 1024,
+      "role": "P_FT",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 2.6020852139652106e-18
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 4.228388472693467e-18
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 3.496552006265752e-18
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 2.7755575615628914e-16,
+      "MSE_Hann_max_abs": 4.0115480381963664e-18
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 9.71445146547012e-17,
+      "MSE_Hann_max_abs": 4.065758146820642e-18
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 2.220446049250313e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 4.336808689942018e-18
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 2.220446049250313e-16,
+      "MSE_Hann_max_abs": 8.326672684688674e-17
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.6756374893466273e-14
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 6.938893903907228e-17,
+      "MSE_Hann_max_abs": 2.681188604469753e-14
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 2.681188604469753e-14
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 2.681188604469753e-14
+    },
+    {
+      "seed": 2026,
+      "role": "P_FT",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 3.2526065174565133e-18
+    },
+    {
+      "seed": 2026,
+      "role": "P_FT",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.0755285551056204e-16,
+      "MSE_Hann_max_abs": 2.8731357570865868e-18
+    },
+    {
+      "seed": 2026,
+      "role": "P_FT",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 4.7704895589362195e-18
+    },
+    {
+      "seed": 2026,
+      "role": "P_FT",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.7647155398380363e-18
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 5.551115123125783e-17,
+      "MSE_Hann_max_abs": 4.607859233063394e-18
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 4.7704895589362195e-18
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 3.415236843329339e-18
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 3.5236570605778894e-18
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 9.71445146547012e-17,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 3.144186300207963e-18
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 2.220446049250313e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 2.6867397195928788e-14
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.6867397195928788e-14
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 2.6922908347160046e-14
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 2.6867397195928788e-14
+    },
+    {
+      "seed": 31415,
+      "role": "P_FT",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 2.498001805406602e-16,
+      "MSE_Hann_max_abs": 3.63207727782644e-18
+    },
+    {
+      "seed": 31415,
+      "role": "P_FT",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 6.938893903907228e-17,
+      "MSE_Hann_max_abs": 4.174178364069192e-18
+    },
+    {
+      "seed": 31415,
+      "role": "P_FT",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 3.415236843329339e-18
+    },
+    {
+      "seed": 31415,
+      "role": "P_FT",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 2.8189256484623115e-18
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 3.144186300207963e-18
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.249000902703301e-16,
+      "MSE_Hann_max_abs": 4.2825985813177425e-18
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 3.577867169202165e-18
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 6.938893903907228e-17,
+      "MSE_Hann_max_abs": 4.2825985813177425e-18
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 8.326672684688674e-17
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 1.6653345369377348e-16
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 8.326672684688674e-17
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 1.3877787807814457e-16,
+      "MSE_Hann_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "r_max_abs": 1.6653345369377348e-16,
+      "MSE_Hann_max_abs": 2.5701663020072374e-14
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 1.1102230246251565e-16,
+      "MSE_Hann_max_abs": 2.5701663020072374e-14
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "r_max_abs": 2.498001805406602e-16,
+      "MSE_Hann_max_abs": 2.5646151868841116e-14
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max_abs": 8.326672684688674e-17,
+      "MSE_Hann_max_abs": 2.5701663020072374e-14
+    }
+  ],
+  "completion": {
+    "role_split_scores": 36,
+    "wall_seconds": 147.21012377738953,
+    "CPU_seconds": 539.146830068,
+    "peak_RSS_bytes": 2002989056,
+    "peak_GPU_allocated_bytes": 193392128,
+    "new_root_bytes": 1793587668,
+    "all_SS07_NPY_bytes": 26225606304,
+    "free_disk_bytes": 25860456448,
+    "old_test_label": "POST-HOC INTERNAL EXPLORATORY",
+    "new_fit_selection": false,
+    "DTU": false,
+    "goal_complete": false
+  },
+  "review_cost": {
+    "wall_seconds": 3.0869808197021484,
+    "CPU_seconds": 17.644014623,
+    "peak_RSS_bytes": 518979584,
+    "encoder_or_head_forwards": 0,
+    "newfits": 0,
+    "new_NPY": 0,
+    "cached_readout_windows": 41166
+  }
+}

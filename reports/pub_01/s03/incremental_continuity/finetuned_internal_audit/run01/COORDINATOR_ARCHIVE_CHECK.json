@@ -1,0 +1,33 @@
+{
+  "status": "PASS_ACTUAL_ARCHIVE_IDENTITY",
+  "scope": "Only D10 light archive, no scientific numerical recomputation",
+  "path": "E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_finetuned_internal_audit",
+  "artifact_count": 37,
+  "mismatches": [],
+  "hashes": [
+    {
+      "path": "report.html",
+      "sha256": "9d84e10f369e02f8d9e6f7d5f2fd861038e70235e8575d7f9fdfc3793af538c5"
+    },
+    {
+      "path": "artifacts/text/REPORT.md",
+      "sha256": "748e9167199fccf62cd45a1dbe9287a772ede91e599b2b979a396c1ff165a94c"
+    },
+    {
+      "path": "artifacts/text/REVIEW.md",
+      "sha256": "5d66f4979ee32b275bd949b6ede7dbe0edc1ddc8bb0575ad312884d29f80284b"
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_RESULT_REVIEW.json",
+      "sha256": "f4dcfaa3650d85e725ac97040416ce2e21f157f08f9d9124c8dd49f6ab4bedef"
+    },
+    {
+      "path": "artifacts/config/COORDINATOR_NUMERICAL_AUDIT.json",
+      "sha256": "475caa270497f9ee5f9f0e61dea9b595c33d82d92367bdafd08af2445b584f88"
+    }
+  ],
+  "REPORT_and_REVIEW_actually_read": true,
+  "HTML_actually_read": true,
+  "actual_PNGs_viewed_before_archive": 3,
+  "goal_complete": false
+}

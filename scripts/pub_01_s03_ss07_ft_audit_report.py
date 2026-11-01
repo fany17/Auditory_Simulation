@@ -32,7 +32,7 @@ for seed in SEEDS:
         absolute.append(dict(seed=seed,role=role,phase='weighted_2to1',**{k:m['weighted'][k] for k in ('r','MSE','weighted_single_MSE','disagreement')}))
 csvfile(OUT/'ALL_PERSON.csv',people);csvfile(OUT/'ALL_BLOCK.csv',blocks);csvfile(OUT/'ALL_RECORD.csv',records);csvfile(OUT/'FAMILY_DESCRIPTIVE.csv',families)
 csvfile(OUT/'ABSOLUTE.csv',absolute)
-pairs=[tuple(p) for p in protocol['primary_comparisons']+protocol['secondary_comparisons']];contrasts=[];contrasts_summary=[]
+pairs=[tuple(p) for p in protocol['primary_pairs']+protocol['secondary_pairs']];contrasts=[];contrasts_summary=[]
 for index,(a,b) in enumerate(pairs):
     for phase in PHASES+('weighted_2to1',):
         vals=[]
