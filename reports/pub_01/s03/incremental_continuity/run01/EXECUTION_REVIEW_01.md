@@ -151,3 +151,25 @@ M2、M3的若干曲线在训练目标继续改善时，验证表现已持平或�
 随后两个额外M4 seed也已完成：42为21epoch/82845更新、选中0-based10；12345为35epoch/138075更新、选中0-based24，均pat10。仅重聚合保存VAL块、核对history/预算/各自encoder/cache和共同49人/752keys通过，未读任何权重或预测载荷，也未重选primary。其VAL60s/person r分别.164240891/.162190684；既有EMA选择不含这两个seed的P60s值，不拼凑不存在的配对比较。最新运行快照full20/37：M4五seed、原三seed current控制完成；三static控制及其余current控制仍实际运行，无失败或真实READY。最终五seed统一比较/实际复核及goal继续。
 
 协调请求的简短机制核查已完成：FAILURE_MECHANISM_CHECK与INITIAL15_PAIRED_VALIDATION_METADATA将15候选的best3s、VAL60s、选中epoch/实际预算/停止原因与同seed P并列。源码/来源核对确认同seed共享冻结encoder并从相同随机head联合训练残差，不是训完P head上的历史增量；训练中只有FT加载训完P head，EMA另为无拟合后处理。M4/31415的3s高P .000303917但60s低P .000711367，说明指标排序可不一致，不能把所有阴性单独归因于过拟合或信息不足。事实/可证伪假说/无法区分机制分开，不设计或启动下一轮，原评估不改。
+
+## 37个full完成，冻结权重与统一评估实际接续
+
+全部37个唯一full已完成：主模型/四控制×五seed共25，加其他四family原三seed共12；原M4三seed只计一次。协调独立核对全部seed/协议/amendment、history最早best、停止规则及每轮3945更新/252454窗通过；执行者又从最终manifest重加总一致。全37搜索/对照共3418epoch、13,484,010更新、862,887,772监督窗口重复呈现、165,674,452,224目标sample呈现。这不是仅主模型的成本；最终总研究账本还包括54screen、5shared pretrain、5native head、5FT，各共享预训练只计一次。
+
+FULL_SELECTED_CONDITIONS_COMPLETED保存以下五seed**验证**均值，不是测试或独立确认，primary不重新选择：
+
+| 固定full条件 | 五seed VAL60s/person r |
+|---|---:|
+| m4_h16 | .162093536 |
+| m4_current_h16 | .162053112 |
+| static_m4_h16 | .167224942 |
+| output_prior_h16 | .162545551 |
+| static_alignment | .164176010 |
+
+M4与current的验证均值接近，低于其余三控制的均值；不据此改模型、预算或终点。原三seed候选对P的阴性记录保留，且不把三seed P与五seed候选拼成配对比较。该完成文件的generic FT/EMA pending字段不是当前状态依据；最终manifest已实际核验五FT及EMA。
+
+FINAL_CHECKPOINT_MANIFEST已冻结94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817：5个原encoder、47个checkpoint角色、14份协议及106个训练成本条目，M4/五seed/8main/M7保持原规则。协调另行核对来源与SHA通过。五seed×2条真实最终权重VAL桥（包括global offset605非64起点）全部差0、当前z不变、P/EMA0精确恒等，见FINAL_WEIGHT_VAL_BRIDGE；没有新增fits或阈值调整。
+
+EVALUATION_READY已在预测前冻结02c474c140c0bdb46ea841880d27ba1848dd497ecf3b47f7980a6dda21d23a43，记录checkpoint/VAL桥/四mask的关联。当前数组8,762,245,632 bytes，新增上界9,055,582,784 bytes，合计小于25GiB cap并保留20GiB余量，见FINAL_EVAL_ARRAY_BUDGET。模型/信号/预测数组仍仅2203；仅上述约181KB轻量JSON回传。
+
+full父14537正常结束；原评估父88448实际启动seed1024/cuda0 PID359965与seed2026/cuda1 PID359966，FINAL_EVALUATION_HANDOFF_VERIFIED保存当时argv/来源关联与检查，PID是观察快照。后续顺序仍cuda0的1024→31415→12345、cuda1的2026→42，每seed先内部后DTU；不因低r停外部，技术失败保留并停止受影响seed。复核父233443继续等待完整summary，随后原raw v1→metric v2；只有INDEPENDENT_REVIEW_COMPLETED_V2通过才用result_figures_v2。实际NN结果、raw/metric复核和科学判断仍待，不以训练/工程完成结束goal。

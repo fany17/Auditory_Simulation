@@ -4,7 +4,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — 执行者接管；精确baseline协议核验后直接全量，增量矩阵另审阅 |
+| Status | ACTIVE — 37full与冻结门完成，实际统一评估中；raw/metric复核与科学验收待 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -118,3 +118,5 @@ v2经协调独立核验18source/8proof/exact diff后冻结97c7686b94d63836c59d83
 等待对照期间补交初始15full的实际训练/VAL曲线、495条epoch CSV及同seed VAL60s对P差值图，服务器metadata-only生成、数值与来源核验及视觉检查通过；逐图中文说明见EXECUTION_REVIEW_01，全部15配对验证差为负。M4两个额外seed42/12345也已21/35轮pat10结束且来源/预算/同key核对通过，M4五seed齐备；不重选primary，不把3s/60s混用或称测试结论。当前20/37full，固定对照继续，统一实际评估与review未执行。
 
 协调要求的metadata机制核查见FAILURE_MECHANISM_CHECK及INITIAL15_PAIRED_VALIDATION_METADATA：明确每seed共享encoder/同随机head联合训练，并非从已训练P head增量；15候选与P两种VAL/预算并列，M4/31415出现3s改善但60s下降。事实、假说及不可区分机制分列，不以在线train–VAL差证明过拟合，不设计或启动新轮次，原流水线继续。
+
+全部37唯一full完成，协调独立核验全预算/来源/最早选点/停止规则，执行者从manifest复加总一致：3418epoch/13,484,010更新/862,887,772窗/165,674,452,224目标sample呈现。FINAL_CHECKPOINT_MANIFEST冻结47角色/5encoder/14协议/106成本条目（54screen+5pretrain+5head+5FT+37full）；M4及五seed/M7不改。五seed×2真实最终权重VAL桥差均0，四mask和READY在预测前锁定，88448已实际启动两卡统一推理，14537正常完成。技术handoff轻量证据已回传，实际raw v1/metric v2与科学判断仍待；仅V2复核通过后绘实际结果图，不以37训练或工程PASS完成持续goal。

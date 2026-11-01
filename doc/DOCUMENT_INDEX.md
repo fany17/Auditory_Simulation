@@ -12,6 +12,8 @@ SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/increment
 
 [`FAILURE_MECHANISM_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/FAILURE_MECHANISM_CHECK.md)及[`INITIAL15_PAIRED_VALIDATION_METADATA`](../reports/pub_01/s03/incremental_continuity/run01/INITIAL15_PAIRED_VALIDATION_METADATA.csv)明确同seed encoder/随机head联合训练与已训练head增量的区别，并列原P两种VAL指标/预算，区分事实、假说与未识别机制，不追加实验。
 
+当前37full已完成，实际统一评估启动：[`FINAL_CHECKPOINT_MANIFEST`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_CHECKPOINT_MANIFEST.json)冻结47角色/106成本条目；[`FINAL_WEIGHT_VAL_BRIDGE`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_WEIGHT_VAL_BRIDGE.json)为五seed×2VAL差均0；[`EVALUATION_READY`](../reports/pub_01/s03/incremental_continuity/run01/EVALUATION_READY.json)绑定预测前掩码；[`FINAL_EVALUATION_HANDOFF_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_EVALUATION_HANDOFF_VERIFIED.json)是当时两卡实际worker/来源快照。实际评分及raw/metric复核仍待，不以训练或工程通过完成goal。
+
 [`RESULT_FIGURE_ENGINEERING_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/RESULT_FIGURE_ENGINEERING_CHECK.json)仅为最终呈现入口的synthetic M6/M7检查，非真实成绩；实际图表入口`pub_01_s03_ss07_result_figures.py`必须等待统一评估和实际独立复核通过，不能提前运行读取结果。
 
 当前review/呈现入口已接续V2：[`R2合法VAL证明`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_R2_LEGAL_VAL_CHECK_V2.json)、[`工程amendment`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_R2_AMENDMENT_V2.json)、[`正式V2协议`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_PROTOCOL_V2.json)、[`安全handoff`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_V2_HANDOFF_COMPLETED.json)。新队列233443只接替旧等待父113154，训练/评估不变；实际图表使用`pub_01_s03_ss07_result_figures_v2.py`，严格等INDEPENDENT_REVIEW_COMPLETED_V2。旧入口/证据保留，不据工程交付完成科学目标。

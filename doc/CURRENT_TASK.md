@@ -4,11 +4,11 @@
 
 唯一计算2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101；本地reports/pub_01/s03/incremental_continuity/run01。新cache≤25GB、余量≥20GB、best/latest有界，不删历史/不动他人进程。沿用SS06 worktree/branch/PR6 Draft，可commit/push、不合并，不动主目录CNN/TRF/stash，无患者/远端Git/擅自新数据。持续goal不以smoke、技术PASS或单seed分数完成。
 
-2026-11-01执行接续：五native完整两阶段及五FT已完成；54/54筛选齐备、五类均H16，初始15full已全部完成，原三seed VAL规则冻结m4_h16（FULL_PRIMARY_SELECTION d43da5b521af0cabfed6a2a6fc4ce968ae39f20824411d07c305fb1fa08b69d2）。五family验证均值及M4三个seed均低于原P；保留阴性证据，不改矩阵。M4与四控制固定五seed继续，追加22、总唯一full37。full controller14537的旧WAIT文字不作当前stage依据，以实际子进程/更新及完成记录判断。最终评估source4e33d69、队列88448依全部固定训练→最终checkpoint→实际权重VAL桥→mask→一次内外评估→严格聚合接续；primary已冻结，真实READY尚未建立。
+2026-11-01执行接续：五native完整两阶段及五FT已完成；54/54筛选齐备、五类均H16，初始15full已全部完成，原三seed VAL规则冻结m4_h16（FULL_PRIMARY_SELECTION d43da5b521af0cabfed6a2a6fc4ce968ae39f20824411d07c305fb1fa08b69d2）。五family验证均值及M4三个seed均低于原P；保留阴性证据，不改矩阵。现37/37full全部完成（主比较25+其余family12），协调独立核验全部预算/选点/来源通过，14537正常结束。FINAL_CHECKPOINT_MANIFEST锁定47角色/106成本条目；五seed×2VAL实际最终权重bridge差均0，EVALUATION_READY已在预测前冻结。原source4e33d69、队列88448已自动启动两卡统一推理；primary/M7/五seed保持原冻结。下一步等待完整summary与实际raw v1/metric v2，实际图表使用v2入口，goal仍ACTIVE。
 
-独立复核现用v2：source1153dbf、INDEPENDENT_REVIEW_PROTOCOL_V2（97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d），18source/8proof已协调独立核验。五native合法VAL3760块复现大R²舍入误拒绝1例；仅R²改用既有MSE的scaled≤1e−10核验，r/差值/CI仍绝对1e−10，raw绝对1e−6、精确常量拒绝均不变。原raw v1几何/源/协议与旧8/3原位保留并备份；旧等待父113154经UID/argv/无children/无actual review核验后仅该父进程退出。新PID233443实际live/WAIT_COMPLETE_FIXED_EVALUATION，上游88448；遍历/proc仅此一个review queue，14537/88448未动。
+独立复核现用v2：source1153dbf、INDEPENDENT_REVIEW_PROTOCOL_V2（97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d），18source/8proof已协调独立核验。五native合法VAL3760块复现大R²舍入误拒绝1例；仅R²改用既有MSE的scaled≤1e−10核验，r/差值/CI仍绝对1e−10，raw绝对1e−6、精确常量拒绝均不变。原raw v1几何/源/协议与旧8/3原位保留并备份；旧等待父113154经UID/argv/无children/无actual review核验后仅该父进程退出。新PID233443实际live/WAIT_COMPLETE_FIXED_EVALUATION，上游88448；handoff时仅此一个review queue且14537/88448未动；现14537已正常完成，88448继续实际评估。
 
-复核只在完整final_summary+ready后执行原raw v1→metrics v2；完成标记为INDEPENDENT_REVIEW_COMPLETED_V2.json，实际图表入口为pub_01_s03_ss07_result_figures_v2.py。按既定metadata固定3条Sparr/6条DTU×5seed全main重放raw，全部保存预测/统计另复算；不运行旧queue/旧呈现main。任一失败保留不自动重试，不提前读成绩，不改活跃冻结源。实际计数看服务器状态与进程；DTU仍原两文件白名单。工程修正和排队不代表实际复核或科学目标完成，继续训练/固定评估/实际复核及科学解释。
+复核只在完整final_summary+ready后执行原raw v1→metrics v2；完成标记为INDEPENDENT_REVIEW_COMPLETED_V2.json，实际图表入口为pub_01_s03_ss07_result_figures_v2.py。按既定metadata固定3条Sparr/6条DTU×5seed全main重放raw，全部保存预测/统计另复算；不运行旧queue/旧呈现main。任一失败保留不自动重试，不提前读成绩，不改活跃冻结源。实际计数看服务器状态与进程；DTU仍原两文件白名单。工程修正和排队不代表实际复核或科学目标完成，继续统一评估、实际复核及科学解释。
 
 ---
 以下是旧交付/STOP历史，非当前路由。
