@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "unchanged_raw_v1_and_metrics_v2_combination_checked": true,
+  "rejected_mixed_protocols": [
+    "raw_wrong_protocol",
+    "metrics_wrong_protocol",
+    "old_metrics_not_accepted_as_v2",
+    "mismatched_checkpoints"
+  ],
+  "premature_gated_and_renderer_calls": 0,
+  "actual_outcome_summaries_loaded": 0,
+  "source_sha256": {
+    "pub_01_s03_ss07_result_figures_v2.py": "6ee20bb4181d51132e9d4ca6749f98ddff1cab351b12c65f2162baa0737bfbb7",
+    "pub_01_s03_ss07_review_v2_gate_check.py": "178e494acb80afa3473ad34cb40a328a260544a5f97bc633d6782ae1b74db9ca"
+  }
+}

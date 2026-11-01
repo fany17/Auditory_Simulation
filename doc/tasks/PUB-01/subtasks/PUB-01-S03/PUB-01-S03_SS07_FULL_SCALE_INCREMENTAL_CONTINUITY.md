@@ -106,3 +106,5 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 全54screen现已完成，FULL_SELECTION（be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80）按原三seed VAL规则五类均选H16，协调独立重算全部18组均值/预算/覆盖和tie通过；执行者又独立重聚合40608个保存VAL block r/2646个人均值，macro差≤5.56e−17，见SCREEN_SELECTION_REVIEW与CSV。不是原始信号/r复算或正式胜负；静态容量控制screen均值高于五类历史候选，按冻结矩阵继续而不追阳性改分支。初始15full已自动开始，三m1_h16实际PID156906/156904/156905在线并已5/6/5epoch，resolved/cache/amendment和冻结7/25/8来源吻合。FULL_QUEUE_V2_STATUS旧WAIT文字不作当前stage依据；原controller不重启。primary、READY和最终科学成绩尚无，SS07/goal ACTIVE。
 
 最终图表/数值表呈现入口已准备，严格在真实完整评估及独立raw/metrics复核通过后读取summary；合成M6/M7五图路径、缺分层/seed/别名/排序/成本拒绝和早期gate已检查，未读实际测试或外部成绩，冻结来源不改。首个full M1seed1024完成后已自动进入M2，另两M1继续；本阶段仍为ACTIVE，实际结果图/逐图中文解释及科学验收尚待。
+
+review工程v2准备：协调及执行者在五native合法VAL共3760block复现描述性大幅度R²正常舍入被旧绝对门误拒绝1例，最大缩放差7.35e−16。仅R²与现有MSE同用scaled≤1e−10；r/CI绝对1e−10、raw1e−6/常数拒绝/训练及科学选择均不变。新v2源、38数值/77482放大synthetic caller/混协议gate证明已备；旧8/3及原protocol原位+备份，raw v1不动，metrics v2与combined显式区分。协调核验候选后仅替换旧WAIT review父进程，训练/最终评估继续，无实际test/DTU读取或科学失败。

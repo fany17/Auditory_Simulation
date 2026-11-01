@@ -103,3 +103,13 @@ RESULT_FIGURE_ENGINEERING_CHECK只用隔离合成输入，完整覆盖M6与M7两
 最近实核初始full已有1/15完成：M1seed1024正常结束后自动进入M2seed1024（PID163617），另两M1继续；控制器14537/88448/113154实际argv在线、root无failure、primary selection仍无。完整五seed科学差值与实际呈现仍待，不将工程图通过或首个full完成当科学成功。
 
 协调独立读完renderer/check并查看合成主比较、history覆盖和log成本图后审阅通过；最新M6/M7 proof hash af3a87ede51d3268c1104556d56a00ed5581898fc0bc81d7fe0764a0ed85e672、renderer hash c6b60bb032538a54a55676f1c3337031285fe2e71f5b114642d2c0b4bd27b42f已由执行者在2203再次核验。真实复核齐备后可直接在2203生成呈现，不另索许可；实际图仍须按真实值看是否裁切/重叠并完成科学解释。首个M1 full1024实际22epoch、selected11、pat10、86790更新/5553988窗口呈现亦已双侧从completed/history核对；这只是一个完成cell，不能代表三seed family或最终胜负。
+
+## 独立review v2：仅修正无界描述性R²的舍入核验
+
+协调在五native全部合法VAL上发现旧R²绝对1e−10门会误拒绝正常sum/dot舍入。执行者独立重跑五已完成head各49record/752block，共245record/3760block/11280项比较，0新fits、0test/DTU：旧门误拒绝1个R²，new scaled全部通过；五seed最大缩放差7.3515e−16。具体原值/独立值、record/start、逐seed范围与误差均保存INDEPENDENT_R2_LEGAL_VAL_CHECK_V2，不是实际科学试验失败。Pearson训练未校准幅度，描述性R²绝对值可达约10^5，不能套同r的绝对误差解释。
+
+v2仅将R2_descriptive加入既有MSE_descriptive的|差|/max(1,|原值|)≤1e−10核验；r、全部相关差值和CI仍绝对1e−10，raw waveform仍绝对1e−6，精确常数拒绝不变。模型/训练/科学终点/原分数/纳排/选择均不改。这是test尚未开启前的review工程修订，不以test结果放松标准。
+
+旧8source/3proof/protocol/lease/status/handoff已核验并备份至engineering_history/independent_review_v1_before_R2_scaled，原文件仍原位保留。旧raw完全不改、继续用原几何协议和原gate；新metrics_v2使用新R²数值核验，新combined完成标记显式区分raw v1与metric v2，呈现v2入口只读新的combined并复用原已审纯render。新协议同时pin旧依赖与新source/proof，避免混用。当前只准备新文件，不触14537/88448或任何训练/评估源。
+
+INDEPENDENT_METRIC_MATH_CHECK_V2通过38个数值核对与原常数拒绝，补大R²合法舍入可过、明显错误R²及r/CI错误仍拒绝；预期错误使用单独counter，旧draft proof/source保留。INDEPENDENT_METRIC_PIPELINE_CHECK_V2在放大合成预测的完整caller/五seed聚合上仍通过77482项核对，R²绝对舍入差超过旧1e−10而缩放差合格，故意破坏R²也被拒绝。INDEPENDENT_REVIEW_V2_GATE_CHECK验证raw v1/metric v2正确组合、4种混协议/版本/checkpoint拒绝和提前gated/render调用0。原真实VAL raw与M6/M7纯render工程证据继续复用，来源不变。v2候选协议待协调核验后仅交接113154等待父进程；真实review仍未执行。
