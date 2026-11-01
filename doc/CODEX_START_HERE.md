@@ -1,6 +1,6 @@
-# 当前入口：SS07 D8冻结；D9六解物理监督目标正式执行
+# 当前入口：SS07 D9已交付冻结；D10旧内部泛化PLAN准备
 
-D8完整REPORT/REVIEW/三图HTML归档冻结。D9[PLAN](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/PLAN.md)已审定，a27c620冻结source/core/protocol，合成PCG与真实标签/初始D8恢复桥通过后唯一queue563655正式执行W/F×三seed=6解，563760/563761两GPU首发、31415排队。共同FT+Ccap起点/同Hann物理target，200更新/214Hessian硬界，有限未收敛结果保留；不重启、不扩λ/模型。无encoder/head/新NPY/旧test/DTU或下载，真实完整结果与review仍待，goal ACTIVE；CURRENT_TASK顶部为最新入口，以下进度均历史。
+D9六解/全TRAIN物理轴/全VAL/12缓存及全文四图实际review已有限制通过，完整[REPORT](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/REVIEW.md)与HTML run_id20261101_pub01_s03_ss07_physical_objective已归档。F−W固定Hann VALr+.001400，但F单窗表示严重退化/内部近相消；不等同最终连续输出无效，也未建立通用稳健/历史/创新/独立确认。所有D4-D9run冻结退出。当前D10仅固定6角色×3seed×seen/heldout的36项旧内部审计PLAN/资产/准确空间准备，先查原FT test实际签名与raw桥，具体矩阵审定前不编码/评分，DTU关闭。goal ACTIVE；CURRENT_TASK顶部为最新入口，以下均历史。
 
 D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)实际独立review与中文HTML归档已完成有限制。当前只读盘点/准备D7冻结36角色-split方案，原3seed/已选λ/强current控制、仅既有seen/heldout，全部POST-HOC INTERNAL EXPLORATORY；先交协调审定，尚不测试/新拟合，不碰DTU/下载。旧D4-D6不按新结果重开，最新路由CURRENT_TASK顶部。
 

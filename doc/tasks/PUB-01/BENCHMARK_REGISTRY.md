@@ -1,5 +1,7 @@
 # PUB-01 — EEG 听觉解码竞品与任务基准表
 
+2026-11-01 SS07 D9：六个匹配物理目标解完成，Ccap/W/F VALr=.182340/.182474/.183874，F−W三seed正均+.001400；F单窗MSE352.068/r3s.003435、巨大bias在原Hann近相消，固定融合点增益和严重窗口表示退化并存。全TRAIN独立梯度/目标/真残差、全VAL及12缓存重建、全文四图实际review有限制通过，physical_objective/run01/REPORT/REVIEW与HTML已归档；未建立通用稳健、历史或独立确认，goal ACTIVE。D10仅固定6角色×3seed旧seen/held事后内部审计的PLAN/资产/预算准备，不能据旧test调参，DTU关闭。
+
 2026-11-01 SS07 D8：强FT epoch4冻结encoder/head上的27固定岭解完成，P_FT*/Ponly/C/Ccap三seed VAL r=.174141/.177842/.180541/.182340，Ccap两个primary均三seed正。全部FT历史loss/raw桥差0；实际27系数/30聚合/18缓存重建和全文三PNG独立review有限制通过，完整finetuned_readout_transfer/run01图文表/REVIEW与HTML归档齐备。新增TRAIN岭/标定/搜索成本真实，重复known-person VAL不称独立泛化或纯loss因果；普通ridge与平方不是方法创新，无历史输入，goal ACTIVE。D9仅精确连续监督PLAN准备，不打开旧test/DTU、不改D8λ。
 
 2026-11-01 SS07 D7：冻结current读出的36项旧内部评分完成、独立36聚合/72缓存重建及全文三图审阅通过，完整internal_generalization/run01/REPORT.md与REVIEW.md/HTML归档齐备。P*/P-only/Ccap原2:1加权r=.160248/.164642/.168943；Ccap对前两者每seed/组均正。同三seed历史完整P_FT=.168944726，与Ccap点均值几乎相同，配对方向混合，不能宣称超越/等效/非劣；额外预算与边界策略不同。旧测试POST-HOC INTERNAL EXPLORATORY，无独立确认或连续历史收益，goal ACTIVE。下一步仅准备P_FT TRAIN/VAL最小读出诊断及资源PLAN，不用旧test排名调参。

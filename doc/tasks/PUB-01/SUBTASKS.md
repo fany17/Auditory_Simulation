@@ -28,7 +28,7 @@
 | `PUB-01-S03_SS05` | S03 | History-aware predictive/associative memory (Codex execution) | **`COMPLETED`** | SS03 frozen + 2026-10-19 researcher authorizes Codex | `subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` | 2026-10-19 PASS_WITH_LIMITATION：新train norm、15tests/pilot/15run×7条件完成；21人/47record/7family五组r约.091–.092，六primary区间跨0，真实阴性不扩架构；同agent separate review，历史STOP；#4已合并60c3404 |
 | `PUB-01-S03_SS06` | S03 | Five continuity frameworks and matched strong-baseline comparison | **`COMPLETED`** | run01 frozen + 2026-10-26 matched-scale authorization executed | `subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md` | PASS_WITH_LIMITATION：run02 C/O各3×3262/P完整两阶段3×639pre+2035head，r=.123014/.151762/.141466，六项C配对校正区间全跨0；18原始CPU r差3.36e-8、协调SUMMARY2.78e-17；已看audit/5family/单pass及权限/额外预算限制，报告3图/轻量证据齐备；run01不改，#6 Draft，STOP |
 
-| `PUB-01-S03_SS07` | S03 | Full-scale native strong baseline + incremental continuity research | **`ACTIVE`** | SS02/SS06 frozen + explicit2026-11-01 full-scale goal authorization | `subtasks/PUB-01-S03/PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md` | D4-D8review/归档冻结，D8强FT读出仅开发增益。D9 PLAN已审定、a27c620冻结source/protocol，必要真实桥通过；唯一queue563655正式W/F×三seed=6解、两GPU，不重启。固定同物理target/强FT+Ccap起点/λ与200更新214Hessian界，完整结果待。无encoder/新NPY/旧test/DTU/下载，goal ACTIVE |
+| `PUB-01-S03_SS07` | S03 | Full-scale native strong baseline + incremental continuity research | **`ACTIVE`** | SS02/SS06 frozen + explicit2026-11-01 full-scale goal authorization | `subtasks/PUB-01-S03/PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md` | D4-D9实际review/HTML冻结。D9六解收敛，F−W VALr+.001400但单窗表示退化/固定Hann近相消，未证明融合无效或通用可用；全TRAIN独立梯度/目标、全VAL/12重建及四图通过。D10仅6固定角色×3seed旧seen/held内部审计PLAN/资产与空间准备，审定前不编码/评分；DTU关闭，goal ACTIVE |
 
 ## S04：独立保留的 ds004703 公共颅内支线
 

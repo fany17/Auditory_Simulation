@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D8归档冻结；D9精确PLAN已审定/source协议冻结/真实桥通过，queue563655两GPU正式W/F六解；科学goal未达到 |
+| Status | ACTIVE — D4-D9实际review/归档冻结；D9固定Hann微增益和严重单窗近相消并存，D10仅固定旧内部审计PLAN准备；goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -82,6 +82,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 三级审阅：技术可复现；科学结论与证据相称；父任务公开/患者边界和原有冻结结果不变。仅就已授权公开EEG方法目标持续推进，不把本任务完成等同PUB-01全部完成或论文接受。
 
 ## 6. 执行记录
+
+2026-11-01 D9 Completion Record：同强FT+Ccap/物理target/参数/正则下W/F×三seed六解完成，355CG/386Hessian均真残差<1e−8，queue563655和三worker已退出。Ccap/W/F VALr=.182340/.182474/.183874，F−W+.001400且每seed正、fused MSE−.000126614；F windowMSE352.068/r3s.003435/overlap706.180、bias247–253为严重单窗近相消表示，内部/首学习边界/tail物理bias≤.00587/.12165/.30603，不据此否定固定融合主输出亦不称通用稳健可用。独立275来源/535输入、六套全TRAIN独立物理轴梯度/目标/真残差（≤2.69e−14/1.31e−16）、全VAL聚合差0及12缓存重建blockr≤2.22e−16；全文四PNG实际审阅，原样review4e3a8163…d2e16/audit339a8be2…34211/bias8c36e80e…1e4ff。Technical PASS_WITH_LIMITATIONS / 本诊断Acceptance PASS_WITH_LIMITATION / Parent PASS；physical_objective/run01完整图文表/REVIEW与HTML run_id20261101_pub01_s03_ss07_physical_objective已归档，四图说明/副本/链接通过。主wall185.396s、workerCPU和347.091s、GPU8.54GiB/RSS3.19GiB；独立audit另69.714s/CPU72.972s。encoder/head、新NPY、旧test/DTU、下载0；六解不改bias/λ/Hann或重跑，goal继续ACTIVE。D10仅准备固定已选PFT/Ponly/C/Ccap/W/F×三seed×旧seen/held的36项事后审计PLAN及原FT input/cache/raw桥和准确25GiB/20GiB预算，具体矩阵审定前不新test编码/评分，DTU关闭。
 
 2026-11-01 D8 Completion Record：三seed原P_FT epoch4 frozen、原global64每TRAIN/VAL一次编码，同次P/Z；全部30500窗历史VAL scalar与首尾raw桥差0。27固定岭解完成，PFT*/Ponly/C/Ccap均VAL r=.174141/.177842/.180541/.182340；Ccap−PFT*/Ponly均+.008199/+.004498且各seed正。仍重复source VAL、无历史输入，不称独立泛化/机制/新方法。独立247来源/523输入、27系数/30聚合（差0）及18预定缓存重建（block r≤3.33e−16，MSE/Hann≤5.10e−18）与全文三实际PNG审阅通过，原样review a059476a…26a9/audit f800ba4a…009bd。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS；完整finetuned_readout_transfer/run01/REPORT与REVIEW/三图全表、HTML run_id20261101_pub01_s03_ss07_finetuned_readout_transfer已归档且说明/副本/链接通过。wall386.589/CPU1183.994秒、RSS5.69GiB、848862主+300工程前向窗，NN更新0，全NPY24.469GB/free27.709GB守预算。prepare01接口和audit首版metadata错误原样保留，正式run无重启/科学门放宽。PID541227已退出。goal仍ACTIVE，D9仅准备强FT+Ccap共同起点、同Hann物理点/target、weighted-window vs fused-physical MSE精确PLAN与正则/求解/计次预算，具体审定前不新fit，不读旧test/DTU，不扩大旧λ/seed。
 
