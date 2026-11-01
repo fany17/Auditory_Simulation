@@ -16,4 +16,6 @@
 
 指标必须与结论范围一致：3s验证准则用于训练选择；主结论用原60s有效块→人→seen/heldout原权重；外部以trial attended r→人→五seed。验证曲线不替代上述测试终点，辅助2AFC仅描述。原内部主M6/7、五family探索M5、历史诊断和外部比较各自解释，不主张跨所有表的联合FWER。
 
+初始化/失败归因边界见[FAILURE_MECHANISM_CHECK](FAILURE_MECHANISM_CHECK.md)及15行[配对metadata](INITIAL15_PAIRED_VALIDATION_METADATA.csv)：同seed共享本轮encoder，P与五family同随机head起点，候选联合训练head/残差；未检验从训完P head接入历史。14/15的3s VAL也较低，M4/31415却3s较高而60s较低；信息贡献、初始化/优化与目标/连续评分差异尚无法区分。在线train曲线不当同checkpoint泛化误差，阴性不单独证明过拟合或历史信息不存在。
+
 实际数据和计算继续仅在2203，Windows/Git仅保存代码、协议、轻量结构化汇总、静态图和记录；不回传raw、权重、预测数组或交互载荷。SS07和持续goal均ACTIVE，父任务及其他支线不因此启动或完成。

@@ -149,3 +149,5 @@ M2、M3的若干曲线在训练目标继续改善时，验证表现已持平或�
 第二图在每个seed内比较同一VAL60s→被试macro指标；点是seed配对差，黑横线为三seed均值，不是置信区间。基准是原P精确EMA tau0别名。实际15个逐seed差全部小于0，M4均值差约−.001017，是五family中最小的下降。3s checkpoint选择曲线与融合后60s/person终点不同，不能用某条3s曲线较高替代后者。此处VAL同时用于训练/候选选择，不是独立确认或最终内部/外部测试。
 
 随后两个额外M4 seed也已完成：42为21epoch/82845更新、选中0-based10；12345为35epoch/138075更新、选中0-based24，均pat10。仅重聚合保存VAL块、核对history/预算/各自encoder/cache和共同49人/752keys通过，未读任何权重或预测载荷，也未重选primary。其VAL60s/person r分别.164240891/.162190684；既有EMA选择不含这两个seed的P60s值，不拼凑不存在的配对比较。最新运行快照full20/37：M4五seed、原三seed current控制完成；三static控制及其余current控制仍实际运行，无失败或真实READY。最终五seed统一比较/实际复核及goal继续。
+
+协调请求的简短机制核查已完成：FAILURE_MECHANISM_CHECK与INITIAL15_PAIRED_VALIDATION_METADATA将15候选的best3s、VAL60s、选中epoch/实际预算/停止原因与同seed P并列。源码/来源核对确认同seed共享冻结encoder并从相同随机head联合训练残差，不是训完P head上的历史增量；训练中只有FT加载训完P head，EMA另为无拟合后处理。M4/31415的3s高P .000303917但60s低P .000711367，说明指标排序可不一致，不能把所有阴性单独归因于过拟合或信息不足。事实/可证伪假说/无法区分机制分开，不设计或启动下一轮，原评估不改。

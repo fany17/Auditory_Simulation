@@ -10,6 +10,8 @@ SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/increment
 
 [`FULL_INITIAL15_CURVES`](../reports/pub_01/s03/incremental_continuity/run01/FULL_INITIAL15_CURVES.png)与[`FULL_INITIAL15_VAL60S`](../reports/pub_01/s03/incremental_continuity/run01/FULL_INITIAL15_VAL60S.png)呈现495条实际epoch日志和原三seed验证差值；同目录HISTORY/CURVE_SUMMARY CSV与CURVE_SNAPSHOT保存数值/来源。仅VAL描述图，不代替最终gated测试结果图；中文逐图解释见EXECUTION_REVIEW_01。
 
+[`FAILURE_MECHANISM_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/FAILURE_MECHANISM_CHECK.md)及[`INITIAL15_PAIRED_VALIDATION_METADATA`](../reports/pub_01/s03/incremental_continuity/run01/INITIAL15_PAIRED_VALIDATION_METADATA.csv)明确同seed encoder/随机head联合训练与已训练head增量的区别，并列原P两种VAL指标/预算，区分事实、假说与未识别机制，不追加实验。
+
 [`RESULT_FIGURE_ENGINEERING_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/RESULT_FIGURE_ENGINEERING_CHECK.json)仅为最终呈现入口的synthetic M6/M7检查，非真实成绩；实际图表入口`pub_01_s03_ss07_result_figures.py`必须等待统一评估和实际独立复核通过，不能提前运行读取结果。
 
 当前review/呈现入口已接续V2：[`R2合法VAL证明`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_R2_LEGAL_VAL_CHECK_V2.json)、[`工程amendment`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_R2_AMENDMENT_V2.json)、[`正式V2协议`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_PROTOCOL_V2.json)、[`安全handoff`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_V2_HANDOFF_COMPLETED.json)。新队列233443只接替旧等待父113154，训练/评估不变；实际图表使用`pub_01_s03_ss07_result_figures_v2.py`，严格等INDEPENDENT_REVIEW_COMPLETED_V2。旧入口/证据保留，不据工程交付完成科学目标。
