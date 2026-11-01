@@ -1,6 +1,6 @@
-# 当前入口：SS07 D8交付冻结；D9连续监督精确方案准备
+# 当前入口：SS07 D8冻结；D9六解物理监督目标正式执行
 
-D8全部27解、实际30聚合/18缓存重建及全文三图独立review已有限制通过，完整[REPORT](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/REVIEW.md)与HTML run_id20261101_pub01_s03_ss07_finetuned_readout_transfer已归档。强FT当前读出VAL增益三seed正，仍非独立泛化/历史/创新；goal ACTIVE。当前D9仅准备同FT+Ccap起点、同Hann物理点/target的weighted-window vs fused-physical MSE具体PLAN/正则尺度/求解预算，先协调审定再执行。旧run均退出不重启，旧test/DTU关闭、无新数据；CURRENT_TASK顶部为最新入口，以下进度均历史。
+D8完整REPORT/REVIEW/三图HTML归档冻结。D9[PLAN](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/PLAN.md)已审定，a27c620冻结source/core/protocol，合成PCG与真实标签/初始D8恢复桥通过后唯一queue563655正式执行W/F×三seed=6解，563760/563761两GPU首发、31415排队。共同FT+Ccap起点/同Hann物理target，200更新/214Hessian硬界，有限未收敛结果保留；不重启、不扩λ/模型。无encoder/head/新NPY/旧test/DTU或下载，真实完整结果与review仍待，goal ACTIVE；CURRENT_TASK顶部为最新入口，以下进度均历史。
 
 D6[REPORT](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/readout_attribution/run01/REVIEW.md)实际独立review与中文HTML归档已完成有限制。当前只读盘点/准备D7冻结36角色-split方案，原3seed/已选λ/强current控制、仅既有seen/heldout，全部POST-HOC INTERNAL EXPLORATORY；先交协调审定，尚不测试/新拟合，不碰DTU/下载。旧D4-D6不按新结果重开，最新路由CURRENT_TASK顶部。
 

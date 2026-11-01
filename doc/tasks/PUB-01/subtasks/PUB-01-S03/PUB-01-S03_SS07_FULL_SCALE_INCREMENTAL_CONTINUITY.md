@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D8实际review/归档冻结；D8强FT读出开发增益成立，独立泛化/历史/创新未建立；D9仅同物理点连续监督目标PLAN准备 |
+| Status | ACTIVE — D4-D8归档冻结；D9精确PLAN已审定/source协议冻结/真实桥通过，queue563655两GPU正式W/F六解；科学goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |

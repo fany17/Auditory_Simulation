@@ -1,10 +1,10 @@
-# 当前执行：SS07 D8已归档冻结；D9仅连续监督目标具体方案准备（2026-11-01）
+# 当前执行：SS07 D8冻结；D9六解连续监督目标正式运行（2026-11-01）
 
 D7固定36/36角色-split已完成，PID535287正常退出。Ccap对P*/P-only原2:1加权r均差+.008695/+.004301，seen/held-out每seed均正；但同三seed历史P_FT=.168944726、Ccap=.168943486，差−.000001240且seed方向混合，未证明超过P_FT、等效或非劣。全部POST-HOC INTERNAL EXPLORATORY，不据旧测试重选。实际独立286来源/893输入/36聚合及72缓存重建通过（块r差≤2.78e−16，432原P未缩放桥差0），全文/三图已审阅；原样review57072ffe…b45f，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS。完整[REPORT](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/internal_generalization/run01/REVIEW.md)及HTML run_id20261101_pub01_s03_ss07_internal_generalization已归档，三图说明/副本/链接通过。无新fit/encoder/rawEEG/DTU/下载，wall75.177s、CPU504.670s；科学goal ACTIVE。
 
 D8固定27/27岭解已完成，PID541227正常退出不重启。P_FT*/P-only/C/Ccap三seed VAL60s/person r=.174141/.177842/.180541/.182340，Ccap对P_FT*/P-only均差+.008199/+.004498且各seed全正；支持强FT encoder也有当前读出开发增益，不是连续历史/独立泛化或新方法证据。三个完整历史VAL loss及首尾raw桥差0，无NN更新/旧test/DTU/下载。独立247来源/523输入、全部27系数/30聚合及18缓存重建通过（聚合0、block r≤3.33e−16），全文/三实际PNG已审阅，review a059476a…26a9原样回传。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS；完整[REPORT](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/finetuned_readout_transfer/run01/REVIEW.md)与HTML run_id20261101_pub01_s03_ss07_finetuned_readout_transfer归档完成，三图说明/副本/链接检查通过。wall386.589/CPU1183.994秒、RSS5.69GiB、全NPY24.469GB/free27.709GB守预算。prepare01接口与audit首版metadata失败保留，正式run不重跑/门不放宽，旧D4-D7冻结。
 
-科学goal保持ACTIVE。D9仅准备强FT+Ccap共同起点、相同Hann物理点/target/固定当前输入的weighted-window MSE与fused-physical MSE精确最小比较，明确与统一window MSE的支持/计权及λ尺度差、初始化/求解步数/真实目标计次/资源。具体PLAN先交协调审定，不直接新拟合/NN/网格、旧test/DTU；没有历史输入的融合监督不称历史贡献或创新。
+科学goal保持ACTIVE。D9[具体PLAN](../reports/pub_01/s03/incremental_continuity/physical_objective/run01/PLAN.md)51abaea已明确审定，source/core/protocola27c620在真实新计算前冻结（61f80f5c…/daa4d5c7…/86704273…）。必要合成W/F算子/梯度/PCG直接解通过；TRAIN252454窗重复标签及原目标float32完全一致，T24112044/geometry差0，三seed首尾6个VAL初始恢复D8 prediction≤2.22e−16、block r差0。唯一queue563655（UID1012/start_ticks744886466）正式执行W/F×3seed共6解，首workers563760/563761在cuda0/1、31415排队；不得重复启动。共同强FT+Ccap起点、完整Hann含首4fixed贡献、0/191端点固定、λ=.01/192；PCG每解200更新/214Hessian硬上限及真实残差1e−8，有限cap结果也一次评分保留。只缓存特征上的FP64读出求解，encoder/head0/新NPY0/旧test及DTU0；GPU16GiB/RSS8GiB/新root256MiB/free20GiB界冻结。完整结果/实际review与图文待，没有历史推理输入或创新claim。
 
 以下准备记录为历史，原D4-D6不改。
 
