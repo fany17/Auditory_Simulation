@@ -1,10 +1,10 @@
-# 当前执行：SS07 warm round02实现与2203工程核验（2026-11-01）
+# 当前执行：SS07 warm round02正式train/val（2026-11-01）
 
 唯一当前节点仍PUB-01-S03_SS07 / ACTIVE，持续goal尚未达到。round01全部54screen、37唯一full、五native/FT、五seed统一内部/DTU评分及实际raw v1/metric v2复核已完成；旧controller/eval/review正常结束，无后续训练。实际M4−P内部−.000621、DTU+.000149，M7近似区间均跨0；未建立稳健超越、历史机制或投稿充分性。
 
 本轮Technical PASS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；报告入口[REPORT](../reports/pub_01/s03/incremental_continuity/run01/REPORT.md)、[REVIEW](../reports/pub_01/s03/incremental_continuity/run01/REVIEW.md)。九张实际图已逐图解释并协调独立审阅；轻量HTML归档run_id=20261101_pub01_s03_ss07_round01，路径E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_round01/report.html，九图/说明/副本/链接检查通过。
 
-下一工作见[NEXT_TRAIN_VAL_PLAN](../reports/pub_01/s03/incremental_continuity/run01/NEXT_TRAIN_VAL_PLAN.md)：8701673已协调独立审阅通过，批准warm round02六格三seed、固定5epoch/epoch−1候选/原3s选点/所选VAL60s。当前实现与2203工程核验，具体源码/RNG复用结论/实际工程证据独立核查后冻结并正式train/val。最多18fits已授权；旧FT若不能技术证明一致则在任何正式fit前固定重跑三格联合P，不按新分数触发。新ROOT=2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101，新本地run02；round01产物冻结。尚未执行新fit，旧内部测试和已暴露DTU无新推理/调参授权。沿用SS06 worktree/branch/PR#6 Draft，不合并；患者/STN FORBIDDEN，信号/权重/预测只在2203。无新下载、患者或其他支线启动，goal ACTIVE。
+当前见[NEXT_TRAIN_VAL_PLAN](../reports/pub_01/s03/incremental_continuity/run01/NEXT_TRAIN_VAL_PLAN.md)及run02/WARM_PROTOCOL.json。8701673方案及7fb74d6最终源码、a04实际18格VAL/合成证据已协调独立审阅通过；review SHA0d208252…c87587。正式协议已冻结a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8，六格三seed、固定5epoch/epoch−1候选/原3s选点/所选VAL60s，预先固定18新fits共同实现；旧FT仅历史参考，不按新分数选择是否重跑。队列416910及首批frozen_p worker416911/416912的UID/实际argv/start_ticks已核实，START_VERIFIED在run02；当前两GPU正式train/val，未完成全部矩阵，不在工程PASS处收工。新ROOT=2203:/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101，本地run02；round01产物冻结。旧内部测试及已暴露DTU无新推理/调参授权。沿用SS06 worktree/branch/PR#6 Draft，不合并；患者/STN FORBIDDEN，信号/权重/预测只在2203。无新下载、患者或其他支线启动，goal ACTIVE。
 
 ---
 

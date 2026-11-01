@@ -34,4 +34,10 @@ PID409806已正常结束，实际18格×30500 VAL起点及合成检查通过，�
 
 独立engineering04.log/engineering_a04/及最终ENGINEERING_COMPLETED仅由a04运行生成。ENGINEERING_COMPLETED SHA=5318eb3c4dd98241d8c5f73cb5a18edc72cf0e52c24f992d7bb365440f0265bf；复用决定SHA=a82f08d1346178cc30b4a15ba863ebb9998833b407d2e44d13e3a9663a7064c6。最终源码7fb74d6，SOURCE_REVIEW_BUNDLE绑定全部来源；轻量JSON已回传，不含synthetic/真实信号数组。此时无正式fit或测试评分。已交协调端做最终独立核验，通过后冻结并进入正式train/val，goal不在工程PASS处完成。
 
+## 独立核查、冻结与实际启动
+
+协调端直接在2203写入[INDEPENDENT_CODE_REVIEW](INDEPENDENT_CODE_REVIEW.json)，decision=PASS_FOR_TRAIN_VAL，SHA0d208252e5ad26328237721aeeea2197b096088f3c1beff1a806ee59dac87587；24项current source、a04和三份proof/复用决定实际核验，round01训练/eval/review来源仍匹配。此文件原样回传，执行者未改写独立归因。
+
+已调用已审prepare --freeze，[WARM_PROTOCOL](WARM_PROTOCOL.json) SHA=a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8。18fits/355050更新/22720860监督窗上限在任何正式fit前固定，无test操作。两GPU队列416910启动，首批frozen_p/1024 PID416911与frozen_p/2026 PID416912；实际/proc UID1012、argv与start_ticks见[START_VERIFIED](START_VERIFIED.json)。启动不是完成，后续全18格结果与科学接受仍待。
+
 frozen/joint行同时改变encoder train/eval随机行为，交互不能作为纯encoder梯度因果效应。warm vs旧随机起点还改变上游head训练与预算，不是严格初始化因果消融。旧内部测试和DTU已暴露；后续确认资格另审，不以本轮工程通过或VAL改善完成科学goal。

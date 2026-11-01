@@ -1,6 +1,6 @@
-# 当前入口：SS07 warm round02实现/2203工程核验，持续goal ACTIVE
+# 当前入口：SS07 warm round02正式train/val，持续goal ACTIVE
 
-以[CURRENT_TASK](CURRENT_TASK.md)顶部为唯一现行路由。round01训练/评分/实际复核和九图报告已交付，M4−P两域主区间均跨0，PASS_WITH_LIMITATION而非科学目标完成。8701673下一方案已协调独立审阅通过，现隔离warm round02六格三seed/固定5epoch的实现与2203工程核验；源码/实际证据独立核查后冻结并正式train/val，最多18fit已授权。无旧test/DTU新推理或新下载；不合并PR#6，不启动患者/其他支线，不把暴露测试当新确认。
+以[CURRENT_TASK](CURRENT_TASK.md)顶部为唯一现行路由。round01训练/评分/实际复核和九图报告已交付，M4−P两域主区间均跨0，PASS_WITH_LIMITATION而非科学目标完成。warm round02最终源码/a04实际证据已协调独立核查通过，WARM_PROTOCOL已冻结，18格共同实现×固定5epoch正式两GPU train/val已启动（队列416910）。只原train/val，epoch−1候选/原3s选点/所选VAL60s；实际来源与PID见run02。无旧test/DTU新推理或新下载；不合并PR#6，不启动患者/其他支线，不把暴露测试当新确认。
 
 报告：[REPORT](../reports/pub_01/s03/incremental_continuity/run01/REPORT.md) / [REVIEW](../reports/pub_01/s03/incremental_continuity/run01/REVIEW.md)。SS07及持续goal保持ACTIVE。
 

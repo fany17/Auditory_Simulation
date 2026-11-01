@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — round01已有限制交付；warm round02方案独立审阅通过，现实现及2203工程核验 |
+| Status | ACTIVE — round01有限制交付；warm round02源码/实际a04工程独立复核通过，18格共同实现正式两GPU train/val |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -82,6 +82,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 三级审阅：技术可复现；科学结论与证据相称；父任务公开/患者边界和原有冻结结果不变。仅就已授权公开EEG方法目标持续推进，不把本任务完成等同PUB-01全部完成或论文接受。
 
 ## 6. 执行记录
+
+2026-11-01 warm round02：协调端独立审阅8701673方案及7fb74d6最终源码/实际a04证据后，直接在2203写入PASS_FOR_TRAIN_VAL review（SHA0d208252…c87587）。六格×三seed epoch−1全部30500 VAL窗，同一行P/current/past波形及loss差均0；GPU参数/历史梯度、CPU double结构状态、实际常量拒绝与正常评分检查通过。旧FT没有历史runtime RNG/backend直接快照，执行前固定18格共同实现，不宣称已发现旧函数不匹配。WARM_PROTOCOL冻结a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8，队列416910/首批416911+416912实际UID/argv/start_ticks已核验。独立ROOT s03_incremental_warm_20261101及本地run02；固定5epoch、epoch−1候选、原3s选点、所选VAL60s，仅原train/val，无旧test/DTU新推理。工程attempt01/02失败及a03旧版PASS原位保留，最终证据只由a04绑定。矩阵训练与科学判断仍待，不以工程PASS/启动完成goal。
 
 2026-11-01：协调端已创建持续goal；原完整baseline五seed预先冻结并运行。seed1024已完成24epoch/19680更新预训练、按patience15停止、选择epoch8；其余seed仍运行。此为新随机初始化的正式结果，不是重用旧EEG权重，也未宣称包络提升。
 
