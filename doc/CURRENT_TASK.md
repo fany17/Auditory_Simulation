@@ -1,4 +1,14 @@
-# 当前执行：SS07 D5映射交互probe正式求解（2026-11-01）
+# 当前执行：SS07 D5交付完成，准备current读出归因方案（2026-11-01）
+
+D5实际独立review PASS_WITH_LIMITATIONS，21来源/60输入/36系数/共同mask/共享λ核对，关键重聚合差≤1.11e−16，报告全文及三图实际查看；原样review SHA97b6d4a3545eafad9e4b4ea742de6f0b93787cf36093543d0849f6a32079f833。完整[REPORT](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REVIEW.md)及全36格/成本/三图中文解释已收束。轻量归档run_id=20261101_pub01_s03_ss07_interaction_probe，E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261101_pub01_s03_ss07_interaction_probe/report.html，三图说明/副本/HTML链接检查通过。未建立额外双线性历史映射收益，goal仍ACTIVE。
+
+下一步只准备最小current读出归因方案：相同MSE/P*残差起点下，shared local32与unshared local32必须同支持，再与完整dense C/Ccap比较；可复用D4一致解/moments，不重跑旧矩阵。Hann前同物理点overlap一致性只作预设次要描述，必须同时报告r/MSE、不据此选模型。尚未新增拟合，先交协调审定。
+
+以下D5完成/启动快照保留，PID均已退出。
+
+D5实际36解已正常完成，PID525296已退出，不重启；Anchor/Add/CC/Near/Older共享选择VAL=.176897359/.176902435/.176905911/.176902047/.176903531，全部选固定网格最强λ=1。Near−CC三seed全负、Near−Add仅1/3正，未达到预设交互线索门；不能用Near−Anchor微正证明机制。完整三图中文REPORT/全λ/逐seed逐人逐块及成本已685850e交付；实际结果review和轻量归档收束中。wall69.045s、CPU493.421s、GPU/encoder/head forward/NN更新0。PCA先于锚点检查的顺序差异已披露，所有岭解前锚点评分差0。goal保持ACTIVE，下一轮先协调有界假说，不扩大D4/D5网格。
+
+以下D5启动描述为历史，原冻结source/协议不变。
 
 D5具体[PLAN](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/PLAN.md)已协调明确审定，cdb970b源码/协议/实际目标及D4锚点输入指纹冻结；必要双线性等价/增广岭/record边界/共同主效应检查通过，sourceSHA fb40aec382b560df1e31ec7bea36733372de5e335ee4f5961b964f63c4912df2，PID525296在2203 ROOT pub_01/s03_history_interaction_probe_20261101正式执行固定4臂×3seed×3λ=36解。冻结D4 Ccap(.01)作纯current anchor，所有learned共享current/near/older加性A；Add无交互、CC当前交互、Near/Older历史交互。CC仍含共同历史加性，不称纯current。只CPU8线程、GPU0、无新NN/test/DTU/下载，完整结果待；goal不以工程PASS完成。
 

@@ -1,0 +1,102 @@
+{
+  "reviewer": "root scientific coordinator",
+  "review_time_remote": 1793514380.9641201,
+  "technical_status": "PASS_WITH_LIMITATIONS",
+  "scientific_status": "NO_ADDITIONAL_BILINEAR_HISTORY_MAPPING_BENEFIT_ESTABLISHED",
+  "goal_achieved": false,
+  "source_sha": "fb40aec382b560df1e31ec7bea36733372de5e335ee4f5961b964f63c4912df2",
+  "protocol_sha": "d0619f2a127fcf42f2d50d481f00d0306d07786c07c86b8b21fbfe112fac32db",
+  "static_code_review": [
+    "FrozenD4Ccapcalibration/current-P-quadraticfeatures/coefficient reconstruction",
+    "SameTRAINcurrentPCA32coordinates atall3timestamps; mainA64shared; currentfirst16 x partnerlast16",
+    "Withinrecord i-2/i-4 support andallconditionsfirst4anchor fallback",
+    "TRAIN-onlyfactors/productmoments; centeredridgeformula; sharedlambda andzeroresidualanchor candidate",
+    "CPUonly/resourcelimits andsource/inputpins; no TEST/DTU route executed"
+  ],
+  "actual_checks": {
+    "all36coefficient_shapes_finite_and_parameters": true,
+    "all36_exact_blocks_subjects_samples_match_anchor": true,
+    "source_pins_matched": 21,
+    "input_shape_dtype_size_mtime_matched": 60,
+    "common_VAL_people": 49,
+    "common_VAL_blocks": 752,
+    "common_VAL_windows": 30500,
+    "independent_stored_metric_aggregation_max_abs": 1.1102230246251565e-16,
+    "all_shared_selection_rules": true,
+    "all3_real_anchor_metric_differences": 0,
+    "max_reported_normal_equation_residual": 1.4606236142453155e-16,
+    "synthetic_bilinear_equivalence": 8.881784197001252e-15,
+    "synthetic_augmented_ridge_difference": 3.2460145682478014e-14
+  },
+  "anchor_mean_VAL60s": 0.17689735905459683,
+  "selected_means_VAL60s": {
+    "Add": 0.176902435418156,
+    "CC": 0.1769059106402951,
+    "Near": 0.17690204731525477,
+    "Older": 0.1769035313781565
+  },
+  "selected_pair_differences": {
+    "Near_minus_Add": [
+      1.3716583541212302e-07,
+      -9.605750770358412e-07,
+      -3.408994621312278e-07
+    ],
+    "Near_minus_CC": [
+      -3.2700801400054047e-07,
+      -5.27906407885026e-06,
+      -5.983903028139448e-06
+    ],
+    "Older_minus_Add": [
+      1.4418113632452823e-06,
+      5.524224953035173e-07,
+      1.2936461429302604e-06
+    ],
+    "Older_minus_CC": [
+      9.776375138326188e-07,
+      -3.766066506510901e-06,
+      -4.34935742307796e-06
+    ],
+    "Near_minus_Older": [
+      -1.3046455278331592e-06,
+      -1.5129975723393585e-06,
+      -1.6345456050614882e-06
+    ]
+  },
+  "decision": "Near does not exceedAddandCC inall3seeds aspredefined; nohistorymechanismclaim from tinyNear-anchorpositive values; D4currentreadoutgain remains unchanged",
+  "costs": {
+    "solutions": 36,
+    "seeds": 3,
+    "wall_seconds": 69.04534339904785,
+    "CPU_seconds": 493.420708328,
+    "peak_RSS_bytes": 3579019264,
+    "GPU_initialized": false,
+    "derived_disk_bytes": 44818802,
+    "inputs_unchanged": true,
+    "test_DTU": false
+  },
+  "cost_review": {
+    "stage_count": 108,
+    "measured_stage_wall_sum": 67.35646152496338,
+    "measured_stage_CPU_sum": 491.68047742600015,
+    "note": "Somefile/sourcebookkeeping excludedfromstage sums; originalD4andpretrainingupstreamcostsharednotzero"
+  },
+  "visual_review": {
+    "actually_viewed": [
+      "01_COMPLETE_LAMBDA_MATRIX.png",
+      "02_FIXED_CONTRASTS.png",
+      "03_CAPACITY_COST.png"
+    ],
+    "assessment": "Fullgrid negativeandtinypositive values retained; all5predefined contrasts, commonA/CCscopeandcostscope readable; no clippedmaterialdata"
+  },
+  "REPORT_md_read_and_consistent": true,
+  "protocol_deviation": "PCA32 eigendecomposition fromfrozen TRAINcovariance precedesanchor check despitePLAN anynewfitafteranchor; retainedanddisclosed; allnewridge solutionsafteranchorpassed; noVALfitting, sourcechange orrerun",
+  "scope_and_limitations": [
+    "Knownsubjects:TRAIN70subjects41clips,VAL49subjects5clips,all49knownTRAIN; clip/pathsetsdisjoint butaudiobook5/13familiesoverlap",
+    "RepeatedsourceVAL selection/report, noindependentconfirmation,significance,equivalence,biologicalcausalityorpublicationclaim",
+    "FixedPCA32and16x16bilinear probe/shortpast; doesnotexcludeothernonlinearrepresentations",
+    "CCcontainscommonhistoricaladditivemain effects; frozenCcapisthepurecurrentreference",
+    "Nominalparametersnotexacteffectivecapacity; stronglambda1selectedall4arms andtinychangesnotmeaningfulhistorygain",
+    "Auditindependentlyreadscode,artifactsandaggregatearithmetic, notindependentrawEEG/NNwaveformreplay"
+  ],
+  "next": "CloseD5archivewithoutgridexpansion. Prepareminimalmatchedreadoutattribution/continuity-consistency design toexplain realD4positivegain before furtherNNmechanism search; scientificreviewbefore newfits."
+}

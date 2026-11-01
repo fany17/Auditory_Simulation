@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4全部54解及独立review有限制交付，current读出VAL增益成立于开发范围；无额外历史收益，准备最小交互机制设计 |
+| Status | ACTIVE — D4全部54解/D5全部36解与独立review有限制交付，current开发收益保留，无额外加性/双线性历史收益；准备最小current归因方案 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
@@ -82,6 +82,8 @@ Windows只保留轻量代码、JSON/CSV汇总与图表。复用既有SS06独立w
 三级审阅：技术可复现；科学结论与证据相称；父任务公开/患者边界和原有冻结结果不变。仅就已授权公开EEG方法目标持续推进，不把本任务完成等同PUB-01全部完成或论文接受。
 
 ## 6. 执行记录
+
+2026-11-01 D5：固定Add/CC/Near/Older×3seed×3λ=36解完成，Near未达到同时胜Add/CC且三个seed一致的预设门，Near−CC三seed全负；四臂均选λ=1，分数约.17690、近冻结Ccap，不能用微小Near−Anchor正值归因历史。协调独立21source/60input/36coef、精确共同mask/共享λ/聚合核验最大差1.11e−16，三图及中文REPORT实际审阅。原样review97b6d4…f833，Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent PASS，goal false。源码PCA在anchor检查前的顺序偏差明确保留，全部新岭解前真实anchor差0。wall69.045/CPU493.421秒、GPU/NN/encoder/head forward0，无新test/DTU/下载。history_interaction_probe/run01完整REPORT/REVIEW及HTML run_id=20261101_pub01_s03_ss07_interaction_probe已完成三图/副本/链接检查。下一步只准备最小current读出归因/连续输出一致性次要描述设计，先协调审定，不扩D4/D5网格。
 
 2026-11-01 D4：54/54固定岭解、完整source TRAIN/VAL矩阵及三图中文解释已完成。原P/C/Ccap/CS/CF/CO/CF48 VAL60s均r=.162362/.174789/.176897/.174538/.174090/.173939/.173970；Ccap对P三个seed均正，CF对C/Ccap三个seed均负，额外历史收益未建立。协调独立17source/48后补target指纹、54系数形状/finite/共同mask/共享λ、逐块重聚合及三张实际图核验，误差≤1.11e−16；Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS，goal false。REPORT/REVIEW及原样最终review（aa67f423…d87f）在conditional_history_probe/run01，轻量HTML归档run_id=20261101_pub01_s03_ss07_conditional_probe已检查三图/说明/副本/链接。wall410.303s、peakRSS约6.31GiB，无NN优化、新test/DTU或下载。补充输入指纹/监控为运行中加入，原时点误写保留+澄清，不冒充预冻结；无额外重放。下一步只提交独立D5最小双线性映射假说方案，冻结本轮强current锚点，不扩大D4网格，具体PLAN在history_interaction_probe/run01，尚未拟合。
 

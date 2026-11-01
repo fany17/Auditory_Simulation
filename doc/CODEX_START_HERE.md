@@ -1,4 +1,6 @@
-# 当前入口：SS07 D5映射交互正式求解，持续goal ACTIVE
+# 当前入口：SS07 D5已交付，准备current读出归因，持续goal ACTIVE
+
+D5实际36解与独立review已完成有限制并归档，[REPORT](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REPORT.md)/[REVIEW](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/REVIEW.md)，未建立历史交互增益。当前仅准备最小shared local32 / unshared同local32 / dense C / Ccap归因方案供协调审定，原P*残差/MSE/精确D4复用/连续性次要指标，尚不拟合。旧D4/D5网格不扩大，无新NN/test/DTU/下载，goal ACTIVE。以下启动快照为历史。
 
 D5已审定并冻结cdb970b，PID525296在2203执行[PLAN](../reports/pub_01/s03/incremental_continuity/history_interaction_probe/run01/PLAN.md)固定36解，锚点D4强current Ccap，全部learned共有加性A，CC/near/older交互与Add对照。仅CPU、原TRAIN/VAL，实际结果仍待，源码静态review并行；无新NN/encoder/head前向或test/DTU。下段D4交付历史保留，当前路由见CURRENT_TASK顶部。
 

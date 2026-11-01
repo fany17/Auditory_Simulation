@@ -68,7 +68,7 @@ Older−Add在λ=1虽三个seed微正，但Older未一致胜CC，不能把辅助
 
 ## 5. 验证、限制与交付
 
-必要合成核验通过：乘积张量与手算双线性最大差8.88e−15，增广岭系数最大差3.25e−14，共同A和record近远索引检查通过。三个seed实际锚点逐块/总体差均0；所有target/缓存/既有transforms/coeff/source指纹在本轮新拟合前固定，结束时输入size/mtime保持不变。完整原样协调review及三层判定见配套REVIEW。
+必要合成核验通过：乘积张量与手算双线性最大差8.88e−15，增广岭系数最大差3.25e−14，共同A和record近远索引检查通过。三个seed实际锚点逐块/总体差均0；所有target/缓存/既有transforms/coeff/source指纹在本轮新拟合前固定，结束时输入size/mtime保持不变。[原样协调review](COORDINATOR_RESULT_REVIEW.json)实际核对21来源、60个shape/dtype/size/mtime输入、36组系数/完全相同mask/共享λ，独立聚合最大差1.11e−16，已读全文和实际查看三图。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS；科学NO_ADDITIONAL_BILINEAR_HISTORY_MAPPING_BENEFIT_ESTABLISHED，详见[REVIEW](REVIEW.md)，不完成goal。
 
 这是固定PCA32/16×16双线性投影的阴性/近零开发证据，不排除其他历史×当前非线性，也不覆盖全部current函数类。PCA按无监督方差而非目标优化，冻结current anchor也已由同VAL选择；共享被试/刺激和重复选参限制结论。没有统计显著性、等价/非劣、信息论独立、硬件同步或生物学机制证明，更没有新数据泛化或投稿充分性。
 
