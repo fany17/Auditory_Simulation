@@ -1,0 +1,35 @@
+{
+  "correction": "POST_LAUNCH_INPUT_RESOURCE_SUPPLEMENT timing string inaccurately says seed1024 first Gram. Actual first observation is authoritative: seed2026 TRAIN_statistics,18 completed solution files. The supplement was not pre-run or before first solve. No change to original supplement/source/formal calculation.",
+  "actual_first_observation": {
+    "time": 1793512883.6816463,
+    "elapsed_from_launch": 145.34004521369934,
+    "stage": "TRAIN_statistics",
+    "seed": 2026,
+    "arm": null,
+    "cpu_seconds": 908.39,
+    "rss_bytes": 2352979968,
+    "process_threads": 25,
+    "GPU_MiB": 500,
+    "finished_solution_files": 18
+  },
+  "cost_counts_basis": "Deterministic completed source traversal counts, not independent per-function runtime instrumentation",
+  "per_seed": {
+    "head_forward_train_windows": 252454,
+    "head_forward_val_windows": 30500,
+    "TRAIN_statistic_or_Gram_passes": 3,
+    "TRAIN_common_windows_per_pass": 250750,
+    "TRAIN_calibration_physical_points": 24275628,
+    "VAL_feature_windows": 30304,
+    "VAL_full_scores": 20,
+    "VAL_windows_per_score": 30500,
+    "VAL_eligible_blocks_per_score": 752,
+    "VAL_people_per_score": 49,
+    "ridge_solutions": 18
+  },
+  "total_fixed_seeds": 3,
+  "not_separately_measured": [
+    "CPU by function",
+    "shared eigendecomposition time",
+    "coefficient time separate from prediction/score"
+  ]
+}
