@@ -17,3 +17,8 @@
 训练网络/参数FP32；冻结anchor、原float32目标的FP64表示、残差scale/add/MSE和最终Hann均FP64，不按成绩选precision。前9窗Ccap fallback；完整原VAL752块不删除，固定warm辅助、逐人逐块、窗口/overlap/极值和边界tail随既有selected预测数组记录。最终selected重放及H的older干预前向事先纳入成本，不为诊断另重编码。
 
 queue启动前检查GPU compute PID为空且free>=4GiB，至多每卡一worker，不停止他人进程。异常/总6h超时按自有Popen PID/UID/start_ticks/argv核身份后有界终止自有worker并保留失败，无自动重试或追加预算。正式模型按20轮最早VAL60s/person最佳（含incumbent−1）选择，全部跑满；任何终点/支持或源发生变化需留痕，不能按中途成绩修改。
+
+
+## 正式启动快照
+
+code commit e62a70b90f726ed029f86378f494a8caf116a5b6；PROTOCOL SHA b8e3552f33557be86609aa244c6d837ef63d9d765f518b5e3df58b46d89289f3。queue PID1585992/UID1012/start754213642，首H1024 PID1586000/cuda0/start754213754，C1024 PID1586008/cuda1/start754213761；prelaunch compute PID均空。正式20轮全部执行和结果/独立review仍待，不在启动处完成goal。源/科学协议不再修改。

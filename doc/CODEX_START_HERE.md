@@ -1,3 +1,6 @@
+# 当前入口：SS07完整FT条件历史九fit正式运行
+
+先读[CURRENT_TASK](CURRENT_TASK.md)和[FULL_FT_HISTORY_STATUS](../reports/pub_01/s03/incremental_continuity/research_gap/run01/FULL_FT_HISTORY_STATUS.md)。协调审定单结构/三seed/九fit各20轮，正式queue1585992已启动；工程/初始Ccap/梯度/严格过去/输入身份检查通过，源commit e62a70b。当前结果尚待，不能用工程PASS完成goal；不重启旧PID、旧test/DTU/ds004408，不追加模型/预算或碰患者。下方“待审定/只读”属于先前快照。
 # 当前入口：SS07持续goal，原TRAIN/VAL研究缺口盘点与单候选待协调审定
 
 先读[CURRENT_TASK](CURRENT_TASK.md)、[只读盘点](../reports/pub_01/s03/incremental_continuity/research_gap/run01/REPORT.md)、[具体候选](../reports/pub_01/s03/incremental_continuity/research_gap/run01/CANDIDATE_PLAN.md)。盘点新fit/NN/数组值读取0；完整FT时序条件历史尚未实际测试，候选未冻结未运行。协调可在既有授权内审定原TRAIN/VAL执行，当前不自动启动拟合；旧test/DTU/ds004408已看结果冻结，不再用于选模型/新适配或评分。“无自动新实验”不终止原持续goal。以下外部阶段已完成，科学结论和限制原样保留。

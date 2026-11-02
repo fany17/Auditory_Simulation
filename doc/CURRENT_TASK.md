@@ -1,3 +1,10 @@
+# 当前执行：完整FT条件历史九fit正式训练已启动（2026-11-02）
+
+协调已审定唯一结构：H_full/C_match/P_prior × seed1024/2026/31415，各20epoch/78900更新，总710100；固定强FT+Ccap、K2严格过去i−5/i−3、i>=9、窗口逐点MSE/Adam.001、最早VAL60s/person best含incumbent，全部跑满。两空闲GPU并行不同fit，总6h，每worker RSS8GiB/GPU2GiB、新run128MiB，历史磁盘副本0。方案、协调决定和实际源冻结见[STATUS](../reports/pub_01/s03/incremental_continuity/research_gap/run01/FULL_FT_HISTORY_STATUS.md)。
+
+源码commit e62a70b90f726ed029f86378f494a8caf116a5b6，PROTOCOL SHA b8e3552f33557be86609aa244c6d837ef63d9d765f518b5e3df58b46d89289f3。必要工程9实例/三seed初始完整VAL FP64 Ccap逐值/聚合差0、全参数第二步非零梯度和非零头历史干预通过；18临时更新独立计账并弃用。首次GRU eval反传工程失败/原源留痕，正式模型干净重建。
+
+实际queue PID1585992 UID1012/start754213642，首H1024 PID1586000 cuda0、C1024 PID1586008 cuda1，prelaunch compute PID均空，其他7fit按冻结队列接续。当前仅开始，不是训练/科学验收完成；后续完整20轮、selected/older实际结果与独立审阅仍待。旧test/DTU/ds004408冻结，患者FORBIDDEN、所有信号/NN/计算仅2203，PR6不合并；科学goal继续ACTIVE。下方只读/等待入口是先前快照，不覆盖当前正式执行。
 # 当前执行：SS07持续研究，原TRAIN/VAL只读缺口盘点与具体候选待协调审定（2026-11-02）
 
 持续goal继续；本轮不是停止研究，也不自动重开已看外部集。已完成只读元数据/源码盘点，见[research_gap报告](../reports/pub_01/s03/incremental_continuity/research_gap/run01/REPORT.md)、[单候选设计](../reports/pub_01/s03/incremental_continuity/research_gap/run01/CANDIDATE_PLAN.md)及[协调一手文献核验](../reports/pub_01/s03/incremental_continuity/research_gap/run01/LITERATURE_CHECK.md)。明确D4完整1536历史仅native P、D5 native低维双线性、D11 FT+Ccap二阶PCA8状态；完整FT时序＋非线性条件历史＋同容量current组合尚未实际测，不能补写阴性。
