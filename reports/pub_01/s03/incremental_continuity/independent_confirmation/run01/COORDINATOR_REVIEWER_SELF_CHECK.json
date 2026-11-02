@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-02",
+  "source_sha256": "c7e07eefb561ac317d8d89dd6b59e32732c813fa3e5b686671c9f744db0823a9",
+  "execution_host": "server2203",
+  "mode": "self-check",
+  "passed": true,
+  "checks": [
+    "Direct sample-index overlap reconstruction recovers a known signal",
+    "Known additive offset preserves block Pearson r and yields expected physical MSE",
+    "Constant predictions remain undefined",
+    "Explicit sparse readout formula agrees in FP64 and FP32, including first-four fallback",
+    "Sign-flip implementation agrees with independent itertools enumeration"
+  ],
+  "real_NN": 0,
+  "real_EEG_read": false,
+  "actual_result_review": "NOT_RUN: awaiting frozen formal evaluation",
+  "owner": "root coordinator"
+}
