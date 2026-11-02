@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "scope": "Seed1024 H/C initial frozen-Ccap metrics only; not trained predictions, not all seeds, and not an independent neural replay.",
+  "old_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_token_normalization_20261102/fits/H_full_seed1024/INCUMBENT.json",
+  "old_sha256": "a904835f2876db7448f17a1841cc62004e517a45ca6ee1b98669bec3a0f03ce1",
+  "new": [
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed1024/INCUMBENT.json.gz",
+      "sha256": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9",
+      "counts": {
+        "numeric": 11491,
+        "metadata": 6360
+      },
+      "source_family_descriptive_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed1024/INCUMBENT.json.gz",
+      "sha256": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9",
+      "counts": {
+        "numeric": 11491,
+        "metadata": 6360
+      },
+      "source_family_descriptive_max_abs": 2.7755575615628914e-17
+    }
+  ],
+  "covered_roots": [
+    "phases",
+    "weighted",
+    "people",
+    "segments",
+    "records",
+    "Hann_identity_max_abs",
+    "boundary_tail_records"
+  ],
+  "numeric_scalar_comparisons": 22982,
+  "metadata_scalar_comparisons": 12720,
+  "max_abs_metric_difference": 0.0,
+  "records": 49,
+  "people": 49,
+  "blocks": 752,
+  "H_C_all_fields_exact": true,
+  "intentional_exclusions": {
+    "source_family": "Old story label replaced with previously frozen source-family join; independently checked.",
+    "family_mapping_basis": "New provenance annotation, independently checked against frozen join."
+  },
+  "source_family_join_sha256": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb",
+  "audit_source_sha256": "b225805d87c8aafc2da2ebdc69cf412ea58abaaddab3452fa15c772a6bb3e1c8",
+  "new_NN": 0,
+  "new_backward": 0,
+  "new_optimizer_updates": 0,
+  "new_scientific_array_values_read": false,
+  "CPU_seconds": 0.046538194000000005,
+  "wall_seconds": 0.046662330627441406,
+  "peak_RSS_KiB": 24128,
+  "no_training_or_selection_change": true,
+  "goal_complete": false,
+  "superseded_draft_audit": {
+    "sha256": "eab226342961dad6989618390ddb5c38246136ce8b2b8be31ad17c9b15fbb80b",
+    "CPU_seconds": 0.044440986999999994,
+    "wall_seconds": 0.044589996337890625,
+    "new_NN": 0,
+    "new_backward": 0,
+    "new_optimizer_updates": 0,
+    "correction": "The initial draft excluded boundary diagnostics based on an unverified assumption that their coordinates differed. Inspection showed matching definitions; this revision actually compares all boundary values as well. The original compared metrics and their zero differences remain valid."
+  }
+}
