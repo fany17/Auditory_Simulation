@@ -1,0 +1,119 @@
+{
+  "status": "METADATA_VERIFIED_NO_EXPERIMENT_CHANGE",
+  "train_records": 426,
+  "val_records": 49,
+  "sets": {
+    "record": {
+      "train_unique": 426,
+      "val_unique": 49,
+      "intersection_count": 0,
+      "validation_unseen_count": 49
+    },
+    "subject": {
+      "train_unique": 70,
+      "val_unique": 49,
+      "intersection_count": 49,
+      "validation_unseen_count": 0
+    },
+    "story": {
+      "train_unique": 41,
+      "val_unique": 5,
+      "intersection_count": 0,
+      "validation_unseen_count": 5,
+      "intersection_values": []
+    },
+    "source_family": {
+      "train_unique": 37,
+      "val_unique": 5,
+      "intersection_count": 2,
+      "validation_unseen_count": 3,
+      "intersection_values": [
+        "audiobook_13",
+        "audiobook_5"
+      ]
+    },
+    "eeg_path": {
+      "train_unique": 426,
+      "val_unique": 49,
+      "intersection_count": 0,
+      "validation_unseen_count": 49
+    },
+    "envelope_path": {
+      "train_unique": 41,
+      "val_unique": 5,
+      "intersection_count": 0,
+      "validation_unseen_count": 5
+    }
+  },
+  "validation_source_families": [
+    {
+      "source_family": "audiobook_13",
+      "seen_in_frozen_train": true,
+      "records": 6,
+      "subjects": 6,
+      "windows": 3396,
+      "story_labels": [
+        "audiobook_13_2"
+      ]
+    },
+    {
+      "source_family": "audiobook_5",
+      "seen_in_frozen_train": true,
+      "records": 23,
+      "subjects": 23,
+      "windows": 13915,
+      "story_labels": [
+        "audiobook_5_2"
+      ]
+    },
+    {
+      "source_family": "podcast_15",
+      "seen_in_frozen_train": false,
+      "records": 4,
+      "subjects": 4,
+      "windows": 2452,
+      "story_labels": [
+        "podcast_15"
+      ]
+    },
+    {
+      "source_family": "podcast_21",
+      "seen_in_frozen_train": false,
+      "records": 7,
+      "subjects": 7,
+      "windows": 4914,
+      "story_labels": [
+        "podcast_21"
+      ]
+    },
+    {
+      "source_family": "podcast_30",
+      "seen_in_frozen_train": false,
+      "records": 9,
+      "subjects": 9,
+      "windows": 5823,
+      "story_labels": [
+        "podcast_30"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/PROTOCOL.json": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/SOURCE_FAMILY_JOIN.json": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb"
+  },
+  "interpretation": [
+    "All49validation participants are also in frozenTRAIN. No unseen-participant generalization claim from this split.",
+    "Five validation story labels and recording paths are absent fromTRAIN, but two of five frozen source-family groups overlapTRAIN. Not all validation source families are unseen.",
+    "The remaining three source families are unseen relative to this frozenTRAIN list only; this is not evidence they were never exposed in earlier project development.",
+    "Distinct file paths/story labels do not prove acoustic-content independence; no audio array or waveform comparison was performed.",
+    "The original full49person primary metric, split, training budget and selection rule remain unchanged. Any source-family breakdown is descriptive, not a new tuning or acceptance criterion.",
+    "All validation data were previously used for model development. This remains an internal repeated-development comparison, not a fresh confirmatory test."
+  ],
+  "new_scientific_arrays_read": false,
+  "new_NN": 0,
+  "new_backward": 0,
+  "new_optimizer_updates": 0,
+  "CPU_seconds": 0.006916397000000001,
+  "wall_seconds": 0.006937503814697266,
+  "goal_complete": false
+}
