@@ -203,3 +203,6 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 
 
 2026-11-02 D17固定TRAIN历史敏感性诊断已收束：四既有H检查点、单sub-001/8story/48有效窗，384残差NN窗/8输入backward/0fit一次完成。selected2026 near/older输入差RMS1.358、LN后.09491、末h6.396e−6、实际gain差0、最终预测差9.392e−9；三个last19最终预测差.033526/.019122/.047253，不能统称所有模型忽略历史。固定输出投影输入梯度均非零，非有用信息或收益证明。协调0NN标量一致性1325检查PASS、完整中文REPORT/REVIEW科学审阅通过；仅源码/metadata/标量算术，不称神经/激活独立重放。完整HTML run_id20261102_pub01_s03_ss07_history_sensitivity含已审全文/3可读表，34manifest产物、56节点/4cp/8梯度CSV、10限制与链接/source_bundle/receipt绑定交付核验PASS。Technical PASS_WITH_LIMITATIONS / 局部诊断Acceptance PASS_WITH_LIMITATION / Parent PASS。D16及更早阴性保持冻结，历史收益/独立泛化与创新目标未建立，SS07/科研goal仍ACTIVE；下一实质方法由协调依据目标与已有证据具体界定，不自动在梯度小修线上循环、新fit/改LN或LR/旧test及外部重开。
+
+
+D17封存后的有限实现审计已交：reports/pub_01/s03/incremental_continuity/implementation_path_audit/run01/REPORT.md，25函数/类SOURCE_INDEX与AUDIT_SCOPE明确0数组/构模/NN/fit。核实warm18fit已联合训练原encoder，不能重复声称首次end-to-end；新缺口限定64→8前192×64逐时间token/query-dependent memory。D12–D16仅冻结FT缓存，D9近null输出抵消不能靠feature fusion自动消除。DECAF作者README实际指carankt，所读teacher/eval入口与本项目output_prior不同，SHINE尚未代码发布，均未运行作者入口。协调下一已选H/C/T/P四臂×3seed、共同FT+Ccap(.01)/可微固定readout、当前Eθ/head可训/历史E0eval冻结、zero-output memory、near5/3/older9/7/i>=9、首9冻结anchor、D16共同目标shuffle与60s选点；拟20轮/24h/两GPU各一fit。现在只进入实际源/协议/必要工程准备，正式fits须具体冻结/实际工程与源审阅通过；不重开旧外部，D9坐标替代不混入本候选。

@@ -1,0 +1,41 @@
+{
+  "scope": "READ_ONLY_SOURCE_EXISTING_JSON_PRIMARY_WEB_NO_ARRAY_VALUES",
+  "reference_commit": "fe70a051548933e8824926f17daa51d76baaf552",
+  "local_source_files": [
+    "pub_01_s03_method_models.py",
+    "pub_01_s03_ss07_finetune.py",
+    "pub_01_s03_ss07_ft_readout.py",
+    "pub_01_s03_ss07_incremental.py",
+    "pub_01_s03_ss07_warm.py",
+    "pub_01_s03_ss07_full_ft_history_core.py",
+    "pub_01_s03_ss07_full_ft_history_train.py",
+    "pub_01_s03_ss07_token_norm_core.py",
+    "pub_01_s03_ss07_token_norm_train.py",
+    "pub_01_s03_ss07_physical_core.py",
+    "pub_01_s03_ss07_generalization_core.py"
+  ],
+  "server_text_only_reads": [
+    "s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py",
+    "s03_strong_baselines_20261015/transformer_available01/training_seed1024_attempt04/config_frozen.json"
+  ],
+  "new_NN": 0,
+  "new_backward": 0,
+  "new_fits": 0,
+  "scientific_array_values_read": false,
+  "model_constructed": false,
+  "new_weights_or_dataset_downloaded": false,
+  "existing_results_modified": false,
+  "new_method_implemented": false,
+  "new_method_protocol_frozen": false,
+  "author_entrypoints_executed": false,
+  "decaf": {
+    "repository": "carankt/DECAF",
+    "head_commit": "f4c5dbeafa93e97abb32bf189d6d1b5cb6df3332",
+    "recursive_model_blob": "6a821e9e73ef807b9a69869f7710023fe0c344fa",
+    "trainer_blob": "9ab04f098358cd210bb40938e4dcc913aade700e",
+    "readme_source": "https://github.com/JHU-LCAP/DECAF/blob/main/README.md",
+    "SHINE_source": "https://github.com/xuxiran/SHINE/blob/main/README.md"
+  },
+  "next_direction": "Four-arm preprojection memory adaptation authorized for concrete source/protocol/engineering; formal fits require specific freeze and review; not launched by this audit",
+  "goal_complete": false
+}
