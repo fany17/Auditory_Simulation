@@ -1,3 +1,7 @@
+# 当前入口：D15固定目标对照九fit按5+4正式并发执行中
+
+2026-11-02 D15 v2经协调实际六源/123pins/63input与480NN工程审阅批准（review2e29bcb6...，protocolb80f9aef...），正式queue1769088已启动；九worker按cuda0五/cuda1四全部登记PID/UID/startticks与实际资源，均已完成epoch0/3945更新并进入epoch1，首batch已有梯度日志可读。原fresh零头上游0为预期；epoch1九组GRU日志均存在非零值，仅活动诊断，不作为选点。正式59473248残差NN窗/710100更新/9fit，原矩阵和NN预算不变；独立review由协调结果后运行一次。当前尚无完整结果/新科学结论，无FAILURE，不改冻结源，不重启旧外部或患者，SS07 ACTIVE。
+
 # 当前入口：D15 v2工程通过，固定目标对照待协调执行审阅
 
 2026-11-02 D15唯一float64负cosine目标对照已具备v2冻结协议b80f9aeffada112c012ce23f944279027d4219250fdf2999a28c4878d336506f。原288NN数值工程/target12个TRAIN eps窗、无常量，追加192NN fresh非零输出通路probe通过；旧late H/C该批token/GRU饱和与零/近零输入梯度保留为限制，不调LR/结构。IO竞态修复0NN mock、28MiB在途reserve及epoch首batch既有梯度日志均无额外forward/update，数学函数AST同v1。累计工程480NN/0fit/opt；v1所有源/协议/证据保留。协调仅将新root存储上限160MiB并批准最多9jobs/两GPU5+4，仍6h/8GiB RSS/2GiB allocated/两盘20GiB；正式59473248NN/710100更新不变。正式仍0，待协调绑定实际v2源/工程执行review后启动，旧D14及外部冻结。

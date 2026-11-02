@@ -1,0 +1,48 @@
+{
+  "time": 1793625984.8515103,
+  "coordinator_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "approved_for_execution": true,
+  "protocol_sha256": "b80f9aeffada112c012ce23f944279027d4219250fdf2999a28c4878d336506f",
+  "engineering_sha256": "fb2b17a0179d9fdc35410c78f63e4e4ed0a2e5c01731e2a8f20e4bff9e7b1590",
+  "path_probe_sha256": "ed74ee171ce060fb069eb6e5b9df909cf3a91a8bc053f72779ac1c174d8fcfc6",
+  "guard_proof_sha256": "b83e1783a03ccc87c03d15313b21dfdb8605885a2e7b191338ade155d5c4eff6",
+  "review": "Coordinator read actual six source files, PLAN/amendment, full numerical/probe evidence; all123 source pins and63 input stat identities verified; local six source hashes match server. Both L40 GPUs actually idle before approval.",
+  "scope": "Only D14 MSE to native-formula float64 centered negative cosine eps1e-6. Same H/C/P,3seeds,20epochs,clean component init,shuffle,Adam,all fallback windows,VAL selection and history intervention. No new test/external/data/weights.",
+  "formal_NN_windows": 59473248,
+  "optimizer_updates": 710100,
+  "engineering_NN_windows": 480,
+  "engineering_optimizer_updates": 0,
+  "engineering_cost_note": "ENGINEERING_CHECK top-level time/RSS fields refer to original288NN pass only; report192NN path probe and0NN storage/refreeze separately, sum CPU/wall where appropriate and take maximum peak memory, never label copied v1 timing cumulative.",
+  "resource_scope": {
+    "max_jobs": 9,
+    "per_GPU": {
+      "cuda:0": 5,
+      "cuda:1": 4
+    },
+    "root_bytes": 167772160,
+    "inflight_reserve_bytes": 29360128,
+    "queue_wall_cap_seconds": 21600,
+    "verified_own_PID_only": true
+  },
+  "findings": [
+    "Independent NumPy objective and finite difference agree; exact-zero versus rounded constant semantics explicit",
+    "12 TRAIN targets below epsilon norm retained; no rows dropped or weighted by observed performance",
+    "Fresh H/C probe admits history-input and GRU gradients; formal zero-output initialization unchanged",
+    "Old D14 seed1024 late small batch has saturated states and zero/near-zero history gradients; limited diagnostic, not all-data causal explanation",
+    "First existing shuffled batch gradient logs add0forward/update and never govern selection",
+    "Concurrent atomic-replacement stat race handled; unrelated IO errors propagate"
+  ],
+  "independent_review": {
+    "source_sha256": "36e9eebda70a7b60d8bb1cbc1ac27785cf36cd29fe403f260b2cd94d8731385b",
+    "max_NN_windows": 631239,
+    "run_only_after_all9_complete": true,
+    "coordinator_runs": true
+  },
+  "limits": [
+    "Repeated original VAL, not independent confirmation",
+    "Known objective adaptation is not architectural novelty",
+    "No performance-based budget/LR/model changes or automatic PR6 merge"
+  ],
+  "action": "Launch frozen nine-fit queue now under existing user authorization and report actual process identity/updates; continue through all fits and report, with coordinator numerical review.",
+  "goal_complete": false
+}
