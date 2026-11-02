@@ -1,0 +1,65 @@
+{
+  "raw_as_declared": {
+    "shape": [
+      123,
+      100352
+    ],
+    "minimum": -8901934284.800001,
+    "maximum": 15139138764.800001,
+    "channel_std_min_median_max": [
+      33452629.453006227,
+      90089571.21413603,
+      418779995.7066349
+    ]
+  },
+  "processed_as_declared": {
+    "shape": [
+      64,
+      12544
+    ],
+    "minimum": -94668432.0,
+    "maximum": 139603504.0,
+    "channel_std_min_median_max": [
+      4195995.9283319125,
+      6235982.294445591,
+      14097258.574919159
+    ]
+  },
+  "old_TRAIN_std": [
+    3.8875801307465925,
+    4.955751227566358,
+    12.17947075379466
+  ],
+  "normalized_input_absolute_quantiles": [
+    581170.3636349582,
+    2295563.747876184,
+    4725138.815470606,
+    30721785.263554733
+  ],
+  "excluded_only_curator_bad": [
+    "B2",
+    "C20",
+    "C21",
+    "C24",
+    "C25"
+  ],
+  "geometry": {
+    "good_channels": 123,
+    "target_channels": 64,
+    "constant_preservation_max_abs": 2.649547248267936e-12,
+    "maximum_abs_coefficient": 0.5240200693409393,
+    "maximum_row_L1": 3.506586012311679,
+    "source_template": "biosemi128",
+    "target_template": "biosemi64",
+    "head_size_m": 0.095,
+    "alpha": 1e-05,
+    "mne_version": "1.6.1",
+    "positions_are_assumed_templates": true
+  },
+  "source_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/canary_raw/sub-001_task-listening_run-01_eeg.eeg",
+  "source_sha256": "3b4cc81b17535ce2f4a9accdbd1e5a30f7bec5484b8648ac474b0f139044ff96",
+  "interpretation": "Header-declared microvolt scale; physical calibration unresolved. Reader equality is not unit ground truth.",
+  "decision": "No correction inferred from amplitude, TRAIN statistics or target/model correlation; no NN.",
+  "NN_forwards": 0,
+  "wall_seconds": 3.0339863300323486
+}

@@ -1,4 +1,16 @@
-# 当前执行：SS07 D11完整阴性结果已独立核验；三图归档完成（2026-11-01）
+# 当前执行：SS07无标签增益校准定案，全量EEG获取/预处理进行（2026-11-02）
+
+单位来源的有界核查未确认512Hz发布转换链；协调已在0 NN/0新模型成绩时批准[唯一整体gain修订](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/AMENDMENT_GAIN_CALIBRATION.md)：每record固定DSP/共同长度FP64信号的整体RMS校准到原TRAIN std的RMS，不用目标值、无逐道缩放/clamp/成绩选择，之后才float32+原TRAIN norm。物理单位仍UNVERIFIED，本轮明确是offline/transductive无标签输入校准后的外部迁移，不称纯零校准确认。正倍率不变/record独立/原good道filter前时间常量拒绝与精确paired block身份合成反例、真实canary检查均通过，前方案/源码/检查保留。
+
+PREPROCESSING_PROTOCOL已实际冻结，2203 ROOT s03_openneuro_confirmation_20261102/PID1379762（UID1012/start_ticks753013869）开始380条固定预处理，4网络/BLAS2/8GiB/4h，除首canary外raw只入内存，校验后保存校准64Hz EEG，既有3GiB/28GiB/20GiB预算不变。中文[四图数据概览](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/PREPROCESSING_REPORT.md)已交；20音频包络196.609秒完成。正式新模型预测仍需完整实际数据/mask/模型/统计freeze和一次协调审阅，无新fit/预测分数。以下为本轮先前进展。
+
+真人已明确授权OpenNeuro ds004408 v1.0.8，固定commit b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be。授权证据见[OPENNEURO_SCOPE_AUTHORIZATION](../reports/pub_01/s03/incremental_continuity/metadata_review/OPENNEURO_SCOPE_AUTHORIZATION_20261102.json)；此前“等待答复/不取新载荷”只属于下方历史，不再限制此指定数据集。仍仅2203、既有SS07/同worktree/PR6 Draft，无患者或新权重。
+
+当前[PLAN](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/PLAN.md)已协调设计审阅通过，四角色P_FT*/Ccap/W/F、三seed、两primary和唯一共享适配固定；无新数据训练/选模。760header/119唯一坏道表核验通过，20WAV及首EEG共21载荷全部长度/SHA通过、failures=[]。音频165.7–202.1秒、完整左右声道不全相同，固定librosa mono/gammatone SUM/64Hz已启动。
+
+真实EEG首条canary：按header .1µV解析与MNE差0，但坏道排除/固定滤波映射后通道std中位仍6.236e6个header声明µV，旧TRAIN std中位4.956µV。此为单位来源异常，不凭幅度或新成绩拟合缩放；物理校准未解决前不运行新模型评分。音频/机械mask/统计实现与描述图继续，数据/信号/数组留2203。SS07科学目标未达到，D11及更早证据不重开。
+
+## 历史：D11完整阴性结果已独立核验；三图归档完成（2026-11-01）
 
 D11固定15岭解、6无拟合干预、24评分集合已完整完成，PID656537正常退出。Ccap/Past r=.182339940/.182062532，Past−Ccap均−.000277407三个seed负；Past−Prefix/Person/Older/Neutral亦三seed负，仅Past−Current full正、warm2/3正。Past−Add−.000293257、−既有F−.001811310皆三seed负；MSE改善.241838737<.242378889保留。预设六条件不满足，不支持本有界状态的额外历史机制，不等于所有指标恶化或所有历史无用。独立26source/551inputs/475支持/15正规方程/60原状态/48缓存/24聚合通过，缓存及聚合差0；全文三PNG实际独立审阅，PCA缩放措辞已修正。Technical PASS_WITH_LIMITATIONS / 本诊断Acceptance PASS_WITH_LIMITATION / Parent PASS，REPORT/REVIEW及三图HTML已实际归档，run_id20261101_pub01_s03_ss07_observation_state_probe，说明/副本/链接通过。主wall3023.156秒、CPU11262.107秒、RSS2.61GiB，新NN前向/更新0；audit另3.276秒。state新45.27MB、全部NPY26.27088GB<25GiB，数值101.04MB<128MiB/root<256MiB/free>20GiB。原λ/时长/PCA/seed/split和D4-D10不重开；旧test/DTU/新载荷关闭，SS07和科学goal ACTIVE。
 

@@ -1,4 +1,10 @@
-# 当前入口：SS07 D11完整阴性结果已独立核验；三图归档完成
+# 当前入口：SS07已授权ds004408外部迁移，全量校准预处理进行
+
+当前唯一共享适配已按[AMENDMENT](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/AMENDMENT_GAIN_CALIBRATION.md)改为预测前无标签全record整体gain，物理单位仍UNVERIFIED；offline/transductive，不称纯零校准确认。实际canary/数学/常量/paired block支持检查通过，380条内存获取/校验/预处理PID1379762进行。20音频处理和[四图中文概览](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/PREPROCESSING_REPORT.md)完成；最终实际mask/模型/统计freeze和一次协调审阅前不预测。当前细节以CURRENT_TASK顶部为准，以下早先单位等待为历史。
+
+2026-11-02真人授权指定ds004408 v1.0.8范围，见[授权原文](../reports/pub_01/s03/incremental_continuity/metadata_review/OPENNEURO_SCOPE_AUTHORIZATION_20261102.json)。[共享适配与统计PLAN](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/PLAN.md)已协调设计审阅通过；760header/119坏道表、20WAV+首EEG已完整核验，固定音频包络处理进行。首EEG按header与MNE一致但幅度异常，单位provenance未解决前不预测、不按成绩或TRAIN std配缩放。无单位依赖的描述性图、mask和统计实现继续。唯一现行路由为[CURRENT_TASK](CURRENT_TASK.md)顶部；以下“等待数据授权/禁止新载荷”是历史快照，不覆盖此新明确授权。D11及以前保持冻结，SS07目标未达到，不合并PR6/不碰患者。
+
+## 历史：D11完整阴性结果已独立核验；三图归档完成
 
 D11 [REPORT](../reports/pub_01/s03/incremental_continuity/observation_state_probe/run01/REPORT.md) / [REVIEW](../reports/pub_01/s03/incremental_continuity/observation_state_probe/run01/REVIEW.md)：固定15fit/6干预/24评分完成。Past r=.182063<Ccap .182340，−Prefix/Person/Older/Neutral及Add/F各三seed负；Past MSE改善保留。六条件不满足，不支持额外历史机制。独立26/551/475/15/60/48/24核验和全文三PNG实际审阅通过，PCA缩放措辞修正；三图HTML实际归档及说明/副本/链接通过，goal ACTIVE。原TRAIN/VAL以外不新拟合/旧test/DTU/新载荷，具体最新记录见CURRENT_TASK顶部。
 

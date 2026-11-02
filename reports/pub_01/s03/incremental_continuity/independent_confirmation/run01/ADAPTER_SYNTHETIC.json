@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "template_constant_canary": {
+    "good_channels": 128,
+    "target_channels": 64,
+    "constant_preservation_max_abs": 7.492229059380406e-12,
+    "maximum_abs_coefficient": 0.5239381877959025,
+    "maximum_row_L1": 3.5189236400059096,
+    "source_template": "biosemi128",
+    "target_template": "biosemi64",
+    "head_size_m": 0.095,
+    "alpha": 1e-05,
+    "mne_version": "1.6.1",
+    "positions_are_assumed_templates": true
+  },
+  "physical_unit_pointwise_exact": true,
+  "resample512_to64": true,
+  "CAR64_max_abs": 2.87545844912529e-08,
+  "synthetic_only": true,
+  "no_NN": true
+}

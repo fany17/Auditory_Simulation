@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "A_source": 5.662644679918114,
+  "positive_scale_invariance": [
+    {
+      "positive_unit_multiplier": 1e-09,
+      "output_max_abs": 5.684341886080802e-14
+    },
+    {
+      "positive_unit_multiplier": 0.01,
+      "output_max_abs": 1.1368683772161603e-13
+    },
+    {
+      "positive_unit_multiplier": 1.0,
+      "output_max_abs": 0.0
+    },
+    {
+      "positive_unit_multiplier": 1000000.0,
+      "output_max_abs": 1.1368683772161603e-13
+    },
+    {
+      "positive_unit_multiplier": 1000000000.0,
+      "output_max_abs": 5.684341886080802e-14
+    }
+  ],
+  "record_independence": true,
+  "constant_record_rejected": true,
+  "numeric_contract": "offline full-record scalar gain; not physical unit correction",
+  "NN_forwards": 0,
+  "real_canary": {
+    "shape": [
+      64,
+      11365
+    ],
+    "calibration": {
+      "A_record": 6659423.37711397,
+      "A_source": 5.662644679918114,
+      "gain": 8.503205697025626e-07,
+      "time_support": [
+        0,
+        11365
+      ],
+      "variance_ddof": 0,
+      "channels": 64,
+      "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+      "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+      "uses_full_record_future_EEG": true,
+      "label_free": true,
+      "clamp": null
+    },
+    "normalized_input_absolute_quantiles": [
+      0.4835116110297907,
+      1.8654954428668789,
+      3.6186507700209956,
+      26.123140462110733
+    ],
+    "output_channel_std_min_median_max": [
+      3.4125940799713135,
+      5.078403472900391,
+      11.20291519165039
+    ],
+    "not_saved_EEG": true
+  },
+  "source_sha256": "17f3005e3a7dc92d9162c465f3b2d365c6659d5e1787523be42add2bc8e6632f"
+}

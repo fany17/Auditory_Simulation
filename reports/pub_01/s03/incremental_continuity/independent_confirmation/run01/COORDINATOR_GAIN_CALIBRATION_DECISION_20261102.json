@@ -1,0 +1,85 @@
+{
+  "status": "APPROVED_PREPREDICTION_SHARED_LABEL_FREE_GAIN_CALIBRATION",
+  "decision_date": "2026-11-02",
+  "stage": "PUB-01-S03_SS07",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "trigger": "Pinned first EEG SHA is correct and MNE/manual header readers agree exactly, but decoded channel standard deviations are tens to hundreds of volts. The physical units/conversion provenance cannot be established from searched primary release/author sources.",
+  "decision_type": "Coordinator implementation/scientific interpretation amendment within authorized dataset scope; not a new quoted human authorization",
+  "prior_protocol": "Preserve the header-unit-only PLAN and COORDINATOR_PLAN_REVIEW_01.json as earlier design. No claims of completing that fixed-gain protocol.",
+  "revised_estimand": "Prospectively frozen external comparison of four fixed source-trained models with one common per-record unlabeled offline gain calibration; conditional on the shared story/speaker. Not uncalibrated zero-shot transfer, physical unit repair, or evidence of a continuity mechanism.",
+  "scope_unchanged": {
+    "dataset": "ds004408 v1.0.8",
+    "commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+    "max_participants": 19,
+    "max_records": 380,
+    "roles": [
+      "P_FT_star",
+      "Ccap",
+      "W",
+      "F"
+    ],
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "primary": [
+      "Ccap-P_FT_star",
+      "F-W"
+    ],
+    "new_datasets_or_model_weights": false
+  },
+  "formula": {
+    "input": "X:64 by T after frozen bad-channel template mapping, CAR, high-pass and64Hz resampling, using the mechanically fixed EEG/audio common support",
+    "record_amplitude": "sqrt(mean_over_channels(mean_over_time((X[channel,:]-mean_time(X[channel,:]))**2))) in FP64, ddof=0",
+    "source_amplitude": "sqrt(mean(original_TRAIN_std**2)) from the existing frozen normalization file",
+    "gain": "source_amplitude/record_amplitude, one positive scalar for the whole record",
+    "apply": "Multiply all X by gain, then existing float32/original TRAIN mean/std/float32 model preprocessing",
+    "guards": "Nonfinite or <=0 record amplitude is a mechanical input failure before prediction; no tunable clamp or thresholds",
+    "testable_property": "Invariant to a positive overall input unit multiplier; preserves relative within-record channel amplitudes"
+  },
+  "prohibited": [
+    "No target/envelope/prediction values used to choose calibration",
+    "No gain grid, per-model adapter, performance-selected scales, or per-channel recalibration",
+    "No changes to original TRAIN normalization or frozen model/readout parameters",
+    "No physical-microvolt claim for calibrated values",
+    "No reinterpretation as online/causal input: calibration uses the full record",
+    "No reopening previous tests or adding models"
+  ],
+  "evidence": {
+    "first_canary_header_resolution_microvolt": 0.1,
+    "actual_declared_microvolt_std_median": 90121938.5123305,
+    "original_train_std_median": 4.955751227566358,
+    "reader_max_abs_V": 0,
+    "interpretation": "Agreement validates declared header parsing only. Difference in source and target amplitude also mixes raw/preprocessed domains and is not evidence for any exact SI correction.",
+    "independent_reader_report": {
+      "repository": "faisalmushtaq/ElectroTag",
+      "ref": "f50af8fe17a4a1ea722aa6cac8432965616d9d40",
+      "path": "docs/testing_guide.md",
+      "blob": "5c070f5616bbd8d577e05084c6ad2f5eadab6f95",
+      "url": "https://github.com/faisalmushtaq/ElectroTag/blob/f50af8fe17a4a1ea722aa6cac8432965616d9d40/docs/testing_guide.md",
+      "actually_read_lines": [
+        177,
+        182
+      ],
+      "conclusion": "Independent software reports the same abnormal amplitude and agreement with MNE. Its approximate million-fold explanation is a hypothesis, not conversion provenance."
+    },
+    "author_source_checked": {
+      "repository": "OleBialas/stationarity",
+      "ref": "9fe2af44ca868663381fc0426bb235193cfbb692",
+      "path": "code/utils.py",
+      "blob": "473bd884e76fa84b10d83138bb603c2aa018d422",
+      "finding": "Uses MNE, filtering/resampling/CAR and later segment standardization; does not establish physical units."
+    },
+    "not_unit_evidence": [
+      "OpenNeuro CHANGES says redo EEG files but provides no unit conversion explanation",
+      "Initial repository trees contain no conversion source",
+      "Other later papers' Dryad loaders use128Hz inputs and contradictory scaling; not the512Hz pinned export chain",
+      "No new upstream EEG payload was obtained"
+    ]
+  },
+  "timing": "Decision made before any new-dataset model prediction or score. Only authorized acquisition, metadata, canary units, audio envelopes and mechanical masks have been inspected.",
+  "next_actions": "Executor preserves prior documents, implements this sole input-calibration amendment, checks synthetic positive-unit invariance and existing canary without model inference, then proceeds with the380record acquisition/processing. Final model/config/source/mask/statistical freeze is reviewed before one evaluation.",
+  "physical_units_status": "UNVERIFIED",
+  "goal_complete": false
+}

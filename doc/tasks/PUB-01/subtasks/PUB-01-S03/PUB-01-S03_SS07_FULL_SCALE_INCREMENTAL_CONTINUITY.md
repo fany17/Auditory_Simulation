@@ -6,15 +6,19 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D4-D10实际review/归档冻结；内部点增益不等于历史/创新/新确认，D11全部15fit/6干预/24评分完整阴性，独立数值与全文三图通过、HTML归档完成；goal未达到 |
+| Status | ACTIVE — D11及以前冻结；2026-11-02真人授权ds004408，物理单位UNVERIFIED；协调唯一无标签整体gain已修订、实际canary/数学/paired支持检查通过，20包络/四图中文概览完成，380条内存获取/校验/预处理进行，最终预测freeze仍待；goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
-| Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置 |
+| Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置；2026-11-02真人授权的ds004408 v1.0.8公开EEG/对应音频/必要metadata（固定b2d91784，唯一新范围） |
 | Deliverables | 原强基线全预算复跑、五类增量框架筛选、配对多 seed 验证、历史贡献与容量控制、可追溯结果及投稿证据缺口 |
 | Acceptance | 有效的同协议性能增益与机制证据；阴性实验照实交付，不以跑通或最高单 seed 作为研究目标完成 |
 | Validation | Technical / Acceptance / Parent consistency + 协调端独立复核 |
 | Files Allowed to Change | 本任务书、SS07 新代码/config/tests/reports、父任务 amendment/登记/入口；旧结果只读 |
 | Last Updated | 2026-11-01 |
+
+2026-11-02后续修订：0 NN/0新成绩时协调明确唯一无标签全record整体gain，见independent_confirmation/run01/AMENDMENT_GAIN_CALIBRATION.md与COORDINATOR_GAIN_CALIBRATION_DECISION；不是SI修复/纯零校准确认，是offline/transductive输入校准后的外部迁移。adapter_v2 FP64 DSP→共同长度→单gain→float32→原TRAIN norm；五固定正倍率不变性≤1.137e−13、record独立性/原good道filter前全常量拒绝、精确paired block身份反例及真实canary均实际通过。原header-gain PLAN快照/源/check保留。20包络及四图中文PREPROCESSING_REPORT完成，PREPROCESSING_PROTOCOL已冻结，PID1379762在2203批量380条内存获取/完整SHA/预处理，raw只保留首canary。新NN/fit/分数0，完整实际mask/模型/统计freeze仍待，科学goal未达到。
+
+2026-11-02追加进展（非完成验收）：真人已授权ds004408 v1.0.8；具体授权metadata_review/OPENNEURO_SCOPE_AUTHORIZATION_20261102.json，唯一执行run independent_confirmation/run01。协调设计review允许获取/预处理，统计精确澄清已并入PLAN。760header/119唯一坏道表及20WAV+首EEG完整核验；原始19.4GB不整套落盘。真实单位canary与MNE逐值差0但幅度异常，需核物理单位来源，不据新成绩/训练std拟合scale；固定音频包络、静态描述图、mask和统计实现继续。模型新评分/训练均0，D11和更早结论不改，科学goal未达到。
 
 ## 1. 研究者决定与持续目标
 

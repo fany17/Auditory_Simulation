@@ -1,0 +1,22 @@
+{
+  "time": 1793600208.312591,
+  "source": "PINNED_ANNEX_SIZE_AND_ALL_HEADER_FORMAT_ONLY",
+  "EEG_payload_total": 19435625984,
+  "raw_frame_min_max": [
+    86438,
+    244567
+  ],
+  "processed64_float32_upper_bytes": 1214814720,
+  "uncropped_window_upper_bound": 48867,
+  "three_seed_Z_P_cache_upper_bytes": 1013306880,
+  "audio_persisted_bytes": 640222064,
+  "one_EEG_canary_bytes": 51380224,
+  "metadata_report_and_code_reserve_bytes": 134217728,
+  "projected_root_upper_bytes": 3053941616,
+  "root_cap_bytes": 3221225472,
+  "fits_with_cache": true,
+  "existing_all_SS07_NPY_bytes": 26270880224,
+  "projected_all_SS07_NPY_upper_bytes": 28499925984,
+  "total_NPY_cap_bytes": 30064771072,
+  "free_now": 25546674176
+}

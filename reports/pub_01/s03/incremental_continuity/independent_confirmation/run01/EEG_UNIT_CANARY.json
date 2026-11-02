@@ -1,0 +1,38 @@
+{
+  "kind": "EEG_canary",
+  "path": "sub-001/eeg/sub-001_task-listening_run-01_eeg.eeg",
+  "bytes": 51380224,
+  "sha256": "3b4cc81b17535ce2f4a9accdbd1e5a30f7bec5484b8648ac474b0f139044ff96",
+  "frames": 100352,
+  "sampling_rate": 512,
+  "channels": 128,
+  "MNE_version": "1.6.1",
+  "MNE_vs_declared_float32_resolution_to_V_max_abs": 0.0,
+  "conversion_to_microvolt": ".eeg stored float32 times0.1, not times1e6",
+  "microvolt_range": [
+    -8901934284.800001,
+    15139138764.800001
+  ],
+  "channel_std_microvolt_min_median_max": [
+    33452629.453005973,
+    90121938.5123305,
+    418779995.70663357
+  ],
+  "original_TRAIN_normalization": {
+    "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz",
+    "sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+    "mean_shape": [
+      64
+    ],
+    "std_shape": [
+      64
+    ],
+    "std_min_median_max": [
+      3.8875801307465925,
+      4.955751227566358,
+      12.17947075379466
+    ],
+    "units": "source LoadEEGNumpy unit_multiplier1e6, original saved microvolt normalization reused"
+  },
+  "no_new_norm_fit": true
+}

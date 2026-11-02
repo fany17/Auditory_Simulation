@@ -1,0 +1,40 @@
+{
+  "frozen_before_bulk_preprocessing": true,
+  "source_pins": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/pub_01_s03_ss07_openneuro_prepare.py": "05be2c37035fc4b2207055237d75789e4edd5ce938dbd818298275af6d7d2cd4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/pub_01_s03_ss07_openneuro_adapter_v2.py": "fd5fc6d0e597f748e1573620a8c6de2ef67e937cffc0fc8dc21909bf89db0585",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/pub_01_s03_ss07_openneuro_adapter.py": "e22f7804fdaa6bfb62f434c3d78dbdb8cfadc78f51d681784a289b44551c679d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/pub_01_s03_ss07_openneuro_metrics.py": "823141f2f56c001f7303ce3a73d9a66927c400c7cfba00d38660a4cf5433537f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/pub_01_s03_ss07_openneuro_stream.py": "c12c8f95bacd7c508dfd40c9b72996b3420ddae86aa671bf1d0f16b4abc45d6f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/pub_01_s03_ss07_openneuro_transport.py": "db12250af18fb3d4d600a103e1f6fdc2eedc10176707655c812fd23ec9b81424",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/PLAN.md": "09182835a844b24efda80805fbaffcc76eddfb73a468c72d352393fefc777928",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/AMENDMENT_GAIN_CALIBRATION.md": "fc711b908cce4a99856cee0fb2c31ca4f9bb5bb803048da7dd10307c162dff72",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/COORDINATOR_GAIN_CALIBRATION_DECISION_20261102.json": "dce50b2791a09ab2ad316b37fda4a88cc5e13874fcfa9ada2f3d41e9523133c1",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/HUMAN_AUTHORIZATION.json": "9b81b1267bd406e537826d365e6d628ae65d2fb92d92c7bde2c6f2b422b2f773",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/ADAPTER_V2_CALIBRATION_CHECK_V2.json": "8a6d3215ae6492e0a4403d5665750520c4fc35f9a79f2c9dc4833a2cb4ab1615",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/STATISTICS_SYNTHETIC_CHECK_V2.json": "4c3ba33302cfb630a8b5112a9175379fd8c2471873414a9a1e3e862951b6d604",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/AUDIO_PREPARE_COMPLETED.json": "d5e911e74d069adc0911ecd80fb066eb2818249cc5edcc263baec06920670915",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/HEADERS_AND_SIZES_V2.json": "736130c98734e18e7d03ebc8536360fdd2056d141537aebe6eb1faa27d577beb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/ANNEX_CATALOG_V2.json": "a394531249e53f95cb876bd7542f30e880cbb503f72e27cdca41b76219cf6ea6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/PROVISIONAL_DATA_MASK.json": "ade5f9e567a0c856f96e5a11c25c12b6b520e60f7053d39ccb7ee4e94cacb6cf",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8"
+  },
+  "records": 380,
+  "network_threads": 4,
+  "BLAS_threads": 2,
+  "stage_cap_seconds": 14400,
+  "per_object_cap_seconds": 1800,
+  "raw_body_persistence": "Only first existing canary",
+  "chunk_bytes": 2097152,
+  "source_amplitude": 5.662644679918114,
+  "scale": "Single full-common-record label-free scalar gain",
+  "physical_unit_status": "UNVERIFIED",
+  "offline_transductive": true,
+  "NN_forwards": 0,
+  "final_prediction_freeze_still_required": true,
+  "resource": {
+    "root_bytes": 702741334,
+    "all_SS07_NPY_bytes": 26271811956,
+    "free_bytes": 24855343104
+  }
+}

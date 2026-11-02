@@ -1,0 +1,22 @@
+{
+  "records": 380,
+  "declared_bad_records": 285,
+  "bad_min": 0,
+  "bad_max": 34,
+  "EEG_length_seconds_min_max": [
+    168.82421875,
+    477.669921875
+  ],
+  "EEG_minus_audio_seconds_min_max": [
+    1.3896130952381043,
+    300.1069286777211
+  ],
+  "full_EEG_payloads_read": 1,
+  "full_EEG_payloads_NOT_read": 379,
+  "figures": [
+    "audio_structure_v2.png",
+    "header_layout_overview.png"
+  ],
+  "corrected_display": "v1 audio fraction axis0..1 hid sparse differences; v1 retained, v2 shows percentage0..0.3",
+  "NN_forwards": 0
+}
