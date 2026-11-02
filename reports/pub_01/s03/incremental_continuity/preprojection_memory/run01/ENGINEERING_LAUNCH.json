@@ -1,0 +1,16 @@
+{
+  "pid": 1983247,
+  "uid": 1012,
+  "start_ticks": "756762297",
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_engineering.py",
+    "--device",
+    "cuda:0"
+  ],
+  "source_commit": "49b223239611cfd52a41da185ca5b49705d23090",
+  "launched_unix": 1793640378.2709277,
+  "automatic_retry": false,
+  "engineering_total_temporary_updates_cap": 28,
+  "prior4_updates_preserved": true
+}
