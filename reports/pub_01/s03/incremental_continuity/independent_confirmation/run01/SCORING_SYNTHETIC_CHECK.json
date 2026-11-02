@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "Hann_identity": 1.9255430583342559e-16,
+  "dense_vs_split_readout_max_abs": 4.440892098500626e-16,
+  "constant_predictions_preserved_as_undefined": true,
+  "full_FP32_readout_dtype": true,
+  "no_real_data_or_NN": true,
+  "source_sha256": "ce98be0c89618e6f82a6c53e75c63cc9fecce3ea69b1ccffe6628d8172f2b959"
+}

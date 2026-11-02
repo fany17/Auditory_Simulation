@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "source_sha256": "fd5fc6d0e597f748e1573620a8c6de2ef67e937cffc0fc8dc21909bf89db0585",
+  "first_record": "sub-001_task-listening_run-01_eeg",
+  "FP32_output_max_abs": 4.76837158203125e-07,
+  "exact_array_equal": false,
+  "calibration": {
+    "A_record": 6659423.37711397,
+    "A_source": 5.662644679918114,
+    "gain": 8.503205697025626e-07,
+    "time_support": [
+      0,
+      11365
+    ],
+    "variance_ddof": 0,
+    "channels": 64,
+    "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+    "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+    "uses_full_record_future_EEG": true,
+    "label_free": true,
+    "clamp": null
+  },
+  "NN_forwards": 0,
+  "reference_sha256": "46a0c6244cb5801cdf4a2e8a8266ceb61b5e237486008adcf35a434228419786"
+}

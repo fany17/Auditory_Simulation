@@ -1,5 +1,7 @@
 # TASK — PUB-01 — Public Auditory–Neural Representation
 
+2026-11-02现行路由补充：SS07全量强基线与有界连续性研究ACTIVE，D11及以前冻结；真人已授权同SS07内ds004408 v1.0.8外部迁移。当前唯一共享适配为预测前固定的无标签全record整体gain，物理单位UNVERIFIED、offline/transductive，不称纯零校准确认；380条2203预处理进行，原三seed/P_FT*/Ccap/W/F不新拟合，正式预测需最终实际freeze/协调审阅。具体状态以CURRENT_TASK与唯一SUBTASKS登记为准；下方SS06 STOP属于其历史交付，不覆盖SS07新明确授权。父科学问题、患者禁令、其他支线BACKLOG不变。
+
 | Field | Value |
 |---|---|
 | Task ID | `PUB-01` |

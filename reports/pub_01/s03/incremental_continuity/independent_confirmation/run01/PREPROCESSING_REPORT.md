@@ -6,7 +6,7 @@
 
 ## 数据身份、规模和独立性
 
-真人已授权[该范围](../metadata_review/OPENNEURO_SCOPE_AUTHORIZATION_20261102.json)。固定[OpenNeuro ds004408](https://openneuro.org/datasets/ds004408/versions/1.0.8)，CC0，DOI10.18112/openneuro.ds004408.v1.0.8，[Git commit b2d91784](https://github.com/OpenNeuroDatasets/ds004408/tree/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be)。19人×20条记录；20音频是同一《The Old Man and the Sea》叙述的连续片段，不是20个独立故事/说话人。
+真人已授权[该范围](../../metadata_review/OPENNEURO_SCOPE_AUTHORIZATION_20261102.json)。固定[OpenNeuro ds004408](https://openneuro.org/datasets/ds004408/versions/1.0.8)，CC0，DOI10.18112/openneuro.ds004408.v1.0.8，[Git commit b2d91784](https://github.com/OpenNeuroDatasets/ds004408/tree/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be)。19人×20条记录；20音频是同一《The Old Man and the Sea》叙述的连续片段，不是20个独立故事/说话人。
 
 全部实际header声明128通道A1..D32、512Hz、MULTIPLEXED/IEEE_FLOAT_32、resolution0.1µV；380个marker文件均无marker。README声明EEG与音频起点已对齐，并允许EEG拖尾。这支持预先固定零偏移的来源假设，不证明硬件同步；不搜索相关峰或拟合lag。
 

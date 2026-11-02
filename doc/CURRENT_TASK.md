@@ -1,5 +1,9 @@
 # 当前执行：SS07无标签增益校准定案，全量EEG获取/预处理进行（2026-11-02）
 
+当前实际入口为**传输v2 PID1395718（UID1012/start_ticks753103322）**：原v1 PID1379762已按身份核验终止，16个完整processed输出逐SHA/shape/finite及原mask核验复用，孤立备份0/删除0；119 TSV Gitblob与20target原SHA通过。8网络/BLAS1/最多2路DSP、原存储/RSS边界不变，新stage4h与原耗时分别记账，见[TRANSPORT_AMENDMENT](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/TRANSPORT_AMENDMENT.md)。前方案/源/protocol/失败均保留，科学公式/角色/版本不变。
+
+19个原模型/统计/标定/读出资产与历史清单54个path→digest关联相符；SOURCE_ASSETS_V2、9个读出数学桥、常量预测保留及统计失败家族规则已实际通过并经协调预审。统计协议冻结后，新学习模型fit和真实NN仍0；每record新增无标签gain统计另列。**编排PID1426629**只等待全量预处理→最终实际source/model/mask/statistics freeze→协调一次实际审阅；review须绑定protocol及queue源码SHA才能启动3seed原global64预测。无自动重试、选模型/precision或旧test/DTU推理；完成正式评分后仍需独立结果审核，不能在工程PASS或启动处完成goal。以下v1启动/单位排查为本轮先前记录。
+
 单位来源的有界核查未确认512Hz发布转换链；协调已在0 NN/0新模型成绩时批准[唯一整体gain修订](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/AMENDMENT_GAIN_CALIBRATION.md)：每record固定DSP/共同长度FP64信号的整体RMS校准到原TRAIN std的RMS，不用目标值、无逐道缩放/clamp/成绩选择，之后才float32+原TRAIN norm。物理单位仍UNVERIFIED，本轮明确是offline/transductive无标签输入校准后的外部迁移，不称纯零校准确认。正倍率不变/record独立/原good道filter前时间常量拒绝与精确paired block身份合成反例、真实canary检查均通过，前方案/源码/检查保留。
 
 PREPROCESSING_PROTOCOL已实际冻结，2203 ROOT s03_openneuro_confirmation_20261102/PID1379762（UID1012/start_ticks753013869）开始380条固定预处理，4网络/BLAS2/8GiB/4h，除首canary外raw只入内存，校验后保存校准64Hz EEG，既有3GiB/28GiB/20GiB预算不变。中文[四图数据概览](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/PREPROCESSING_REPORT.md)已交；20音频包络196.609秒完成。正式新模型预测仍需完整实际数据/mask/模型/统计freeze和一次协调审阅，无新fit/预测分数。以下为本轮先前进展。

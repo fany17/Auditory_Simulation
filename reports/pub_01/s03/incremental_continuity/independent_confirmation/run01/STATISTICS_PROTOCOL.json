@@ -1,0 +1,39 @@
+{
+  "frozen_before_any_real_NN": true,
+  "source_sha256": "5cb22466a5e0cd96f3bb768cccce5a60b664b350964bdff4ddefecbdc5b21b4e",
+  "source_metric_sha256": "823141f2f56c001f7303ce3a73d9a66927c400c7cfba00d38660a4cf5433537f",
+  "primary_pairs": [
+    [
+      "Ccap",
+      "P_FT_star"
+    ],
+    [
+      "F",
+      "W"
+    ]
+  ],
+  "independent_unit": "person, maximum19",
+  "aggregation": "Separate Pearson per fixed record/block; equal blocks within person, then3seeds within person; no cross-record concatenation",
+  "exact_signflip": {
+    "statistic": "abs(mean(person differences))",
+    "all_signs_including_observed": true,
+    "tie_absolute": 1e-15,
+    "assumption": "Independent people and symmetric/exchangeable signs under null"
+  },
+  "multiplicity": "Holm over2 fixed hypotheses; unestimable endpoint reserves its slot at p=1 internally but is reported undefined",
+  "bootstrap": {
+    "people_paired": true,
+    "shared_draws_across_primary": true,
+    "replicates": 20000,
+    "seed": 20261102,
+    "quantiles": [
+      0.0125,
+      0.9875
+    ],
+    "meaning": "Bonferroni family95 approximate percentile intervals"
+  },
+  "failures": "No prediction/role-dependent input exclusion; constant/nonfinite or missing fixed block makes affected model/primary unestimable",
+  "precision": "W/F fullFP32 readout and Hann is separate diagnostic; a diagnostic failure does not delete valid FP64 primary data",
+  "synthetic_checks_passed": true,
+  "real_NN_forwards": 0
+}
