@@ -158,3 +158,6 @@ v2经协调独立核验18source/8proof/exact diff后冻结97c7686b94d63836c59d83
 Ccap相对强FT Δr+.008040823，family95近似CI[.00511387,.01097443]，Holm2 p5.34e−5，3seed全正/18人正；F−W+.000151871区间跨0/p.345627，F窗MSE343.20/r3s.01053和融合MSE更差保留。不证明历史机制/新意或ICML/NeurIPS充分性。5结果图/完整seed-person表及中文解释已交，全文/图实际独立审阅通过，最终轻量审阅通过，13图完整HTML归档及交付核验完成。
 
 Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent PASS；见 reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/REPORT.md 和 REVIEW.md。SS07 ACTIVE、goal未达到；不因当前静态迁移阳性重开旧test/DTU、追加模型/窗口/数据、开其他节点或合并PR6。所有信号/计算在2203，本地仅轻量交付。
+### 2026-11-02 research_gap/run01只读盘点 Completion Record
+
+按持续goal指令核round01/warm/D4/D5/D11历史输入、目标、实际参数与current控制；D4 full1536仅native、D5 native低维交互、D11 FT+Ccap仅PCA8二阶状态，未测试组合不补写阴性。2203只读475 TRAIN/VAL元数据、14共同/FT缓存header及46target header；无数组值读取/新fit/NN，旧test/DTU/ds004408未访问。已交依赖/参数清单、文献核验及完整FT时序单候选：冻结强锚点、同活跃current、语义output-prior、更早历史干预、统一mask/九fit预算与选点建议，尚待协调审定，不是已运行/科学验收。目录research_gap/run01，不建新节点；后续原TRAIN/VAL执行在既有授权范围，不因旧“无自动新实验”误停持续goal。

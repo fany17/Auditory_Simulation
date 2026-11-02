@@ -1,0 +1,41 @@
+{
+  "train": {
+    "same_story_other_subject": {
+      "records_with_any_donor": 425,
+      "minimum_donors": 0,
+      "maximum_donors": 64,
+      "records_with_full_window_length_donor": 425,
+      "records": 426
+    },
+    "same_person_other_family": {
+      "records_with_any_donor": 426,
+      "minimum_donors": 2,
+      "maximum_donors": 7,
+      "records_with_full_window_length_donor": 347,
+      "records": 426
+    }
+  },
+  "val": {
+    "same_story_other_subject": {
+      "records_with_any_donor": 49,
+      "minimum_donors": 3,
+      "maximum_donors": 22,
+      "records_with_full_window_length_donor": 49,
+      "records": 49
+    },
+    "same_person_other_family": {
+      "records_with_any_donor": 0,
+      "minimum_donors": 0,
+      "maximum_donors": 0,
+      "records_with_full_window_length_donor": 0,
+      "records": 49
+    }
+  },
+  "VAL_person_different_family_TRAIN_only_donor": {
+    "records_with_any": 49,
+    "records_with_full_window_length": 42
+  },
+  "scope": "Metadata-only existence/length availability, not selected donors, not signal similarity, no validation outcomes",
+  "new_NN": 0,
+  "new_fits": 0
+}

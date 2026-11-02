@@ -1,3 +1,6 @@
+# 当前入口：SS07持续goal，原TRAIN/VAL研究缺口盘点与单候选待协调审定
+
+先读[CURRENT_TASK](CURRENT_TASK.md)、[只读盘点](../reports/pub_01/s03/incremental_continuity/research_gap/run01/REPORT.md)、[具体候选](../reports/pub_01/s03/incremental_continuity/research_gap/run01/CANDIDATE_PLAN.md)。盘点新fit/NN/数组值读取0；完整FT时序条件历史尚未实际测试，候选未冻结未运行。协调可在既有授权内审定原TRAIN/VAL执行，当前不自动启动拟合；旧test/DTU/ds004408已看结果冻结，不再用于选模型/新适配或评分。“无自动新实验”不终止原持续goal。以下外部阶段已完成，科学结论和限制原样保留。
 # 当前入口：SS07 ds004408固定读出迁移已完成，独立数值复核通过
 
 Ccap强FT基线r=.164518/.156477，Δ+.008041、Holm2 p5.34e−5，3seed/18人正；F−W区间跨0、F单窗退化/MSE更差保留。完整380条、19人、988块，独立4560记录/11856块/2280FP32复算通过。见[CURRENT_TASK](CURRENT_TASK.md)、[结果报告](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/report01/REPORT.md)、[阶段REVIEW](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/REVIEW.md)。本阶段有限制通过，不等于连续历史机制/投稿充分性或SS07 goal完成；旧作业已结束，勿重启旧PID。当前无自动下游/新模型/新数据，患者FORBIDDEN，PR6仍Draft。最终全文/图表/表与成本独立审阅已通过；13PNG完整中文HTML归档及链接/限制可见性核验完成（run_id20261102_pub01_s03_ss07_openneuro_gain_transfer）。

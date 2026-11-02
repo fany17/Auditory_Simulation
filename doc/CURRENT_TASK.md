@@ -1,3 +1,10 @@
+# 当前执行：SS07持续研究，原TRAIN/VAL只读缺口盘点与具体候选待协调审定（2026-11-02）
+
+持续goal继续；本轮不是停止研究，也不自动重开已看外部集。已完成只读元数据/源码盘点，见[research_gap报告](../reports/pub_01/s03/incremental_continuity/research_gap/run01/REPORT.md)、[单候选设计](../reports/pub_01/s03/incremental_continuity/research_gap/run01/CANDIDATE_PLAN.md)及[协调一手文献核验](../reports/pub_01/s03/incremental_continuity/research_gap/run01/LITERATURE_CHECK.md)。明确D4完整1536历史仅native P、D5 native低维双线性、D11 FT+Ccap二阶PCA8状态；完整FT时序＋非线性条件历史＋同容量current组合尚未实际测，不能补写阴性。
+
+2203仅JSON/stat/NPY headers核475 TRAIN/VAL记录、三seed现有FT Z/P，未读取数组值/分数筛分，新fit/NN0。VAL49人全见TRAIN，story不重合但两family共享。具体候选为强FT+Ccap冻结、两完整过去token的单非线性条件器，H/current匹配及输出prior，共九fit建议；本轮状态PROPOSED_NOT_FROZEN_NOT_RUN，须协调审定后执行，无需重复向用户要已有启动许可。旧test/DTU/ds004408冻结不再新评分/训练；server2203/患者FORBIDDEN边界不变，不新建节点/会话或合并PR6。
+
+## 已冻结完成的外部阶段（下方历史结果不变）
 # 当前执行：ds004408三seed完整外部迁移完成，独立数值复核通过（2026-11-02）
 
 本阶段PASS_WITH_LIMITATION，SS07保持ACTIVE、科学goal未达到。全380条/19人/988块/45429窗，三seed四角色全部完成；Ccap/P_FT* r=.164517594/.156476771，Δ+.008040823，family95近似CI[.00511387,.01097443]、Holm2 p5.34058e−5，3seed全正/18人正。F−W+.000151871，区间跨0/p=.345627，2seed正1负；F窗口MSE343.20/r3s.01053及融合MSE更差保留。支持当前读出迁移，不支持连续历史机制或投稿充分性。

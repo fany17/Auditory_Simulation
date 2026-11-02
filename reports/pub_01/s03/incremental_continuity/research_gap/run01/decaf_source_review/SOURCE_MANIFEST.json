@@ -1,0 +1,52 @@
+{
+  "repository": "https://github.com/carankt/DECAF",
+  "revision": "f4c5dbeafa93e97abb32bf189d6d1b5cb6df3332",
+  "accessed_utc": "2026-11-02T10:03:34.5697217Z",
+  "source_files_only": true,
+  "code_executed": false,
+  "data_or_weights_downloaded": false,
+  "files": [
+    {
+      "file": "configs__two_branch_base_config.py",
+      "path": "configs/two_branch_base_config.py",
+      "sha256": "204bc5e8bb563c853af0495bdc6ee8b1aca56fe1d067af646218c97f1dd577aa",
+      "bytes": 2813
+    },
+    {
+      "file": "LICENSE",
+      "path": "LICENSE",
+      "sha256": "ffecac1bfb9aece4e86318ef06a37f6d64c35253051148001b135ed0f9d5aa73",
+      "bytes": 1070
+    },
+    {
+      "file": "src__data__data_utils.py",
+      "path": "src/data/data_utils.py",
+      "sha256": "e4a2e9c16f45797d3c66305fb15335a83b1ddb7fbf6deb193410437e37b72868",
+      "bytes": 12182
+    },
+    {
+      "file": "src__data__eeg_dataloader.py",
+      "path": "src/data/eeg_dataloader.py",
+      "sha256": "3d1406a50a7db1024f70755cfe432df353cb5adb61140ad3cd26aa9b9d04f114",
+      "bytes": 23786
+    },
+    {
+      "file": "src__models__registry.py",
+      "path": "src/models/registry.py",
+      "sha256": "e136069168be63b971145cbd2f297ec3307e6b99f062344f310db790d5a4536e",
+      "bytes": 12655
+    },
+    {
+      "file": "src__models__two_branch_model_recursive.py",
+      "path": "src/models/two_branch_model_recursive.py",
+      "sha256": "c0090b6b52cb8bba7e6a2c1ce30ef033c2d38cb3b6f4c3d6a6fb74a82b090049",
+      "bytes": 25987
+    },
+    {
+      "file": "src__train__trainer.py",
+      "path": "src/train/trainer.py",
+      "sha256": "96eb1f9c826df75bf1b69b608b087b92736d86f26ca777dca470a56eabf87333",
+      "bytes": 35050
+    }
+  ]
+}

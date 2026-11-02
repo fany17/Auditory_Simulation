@@ -1,0 +1,5713 @@
+{
+  "frozen": true,
+  "source_pins": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_core.py": "8462420104388b461708f8cf3261a59451740af2b7f855a635bf34c1844d77e5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_train.py": "f7706357f7814d6c27e575d01d68101db0c549f30fd04387f1ee2d4f38905c04",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_prepare.py": "bf94155952e6d7065fff89b73790afb6eac2c86602d6b0d41b8a56524912cc8e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_queue.py": "1ad8493a58439d0545ae3fcd432aa970d87c9450607c5310f3a1124877ccb1e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/PLAN.md": "a073b050d6d3255896014e4bfec6804da4d9b5a3ec5fd70a6080fd15c7810e57",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/COORDINATOR_DECISION.md": "28ef71a9d287301349b76b75513d0ae997a9bd2016be3d1e98f6407dbce27252",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/PROTOCOL.json": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization_core.py": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/TRAIN_TRANSFORMS.npz": "b61d80fa5af2ef81b241ab26c1e77d9221ca06a2a5f2acc51d1dbd6f9647507c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/Ccap_lambda0.01_COEFFICIENTS.npz": "d85075dc49ffb0e5c1cae56821428333f072afe5ef97ed69f96b243128db2b12",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/P_FT_BASELINE.json": "8b6231b512e947cda9880568f4d8e10ab4d044e0042b7e060d44c417961eb287",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/Ccap_lambda0.01_METRICS.json": "ebbda4abdabfcbc8a2bbce2bba697e38e48692243fdada01149176d9a1ee5eb6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/TRAIN_TRANSFORMS.npz": "f5de93ec1c8225fa940525618c5dc457d2deb822f52da32475ee53aae05c4392",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/Ccap_lambda0.01_COEFFICIENTS.npz": "871743334b85c7ed55ab2eac824508e82e53d82cd8df53e3b969b7e60684d609",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/P_FT_BASELINE.json": "0747207d9583d9b9644f4265bd3b50af6dd7bb12962a046bf0ecb9dbdeda0eb3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/Ccap_lambda0.01_METRICS.json": "c4fa39337606469190890866d1dd3610ca1bb6b9d5ac91090dbf71d59ebb5be7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/TRAIN_TRANSFORMS.npz": "5ac2ce2e9f469276f284bc77a313ca183cb8a81440ca8d96453a856848095ff3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/Ccap_lambda0.01_COEFFICIENTS.npz": "0660f10af60d68af1ff4f5cd7e4d853b934667dc6d0868380ef44559b673fcba",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/P_FT_BASELINE.json": "fa7d7b24c65a9f0714da414ecaffea3ceac5f6a622a4fc9728b053d5e2f01c27",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/Ccap_lambda0.01_METRICS.json": "3e763b0faffce1e3ffdb438454feebba5c49ec5ae1fb805584c159be6cd69cbb"
+  },
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "arms": [
+    "H_full",
+    "C_match",
+    "P_prior"
+  ],
+  "epochs": 20,
+  "fits": 9,
+  "updates_per_fit": 78900,
+  "total_updates": 710100,
+  "target_window_presentations": 45441720,
+  "effective_residual_TRAIN_presentations": 44751600,
+  "train_windows": 252454,
+  "val_windows": 30500,
+  "common_local_start": 9,
+  "history_indices": [
+    -5,
+    -3
+  ],
+  "older_indices": [
+    -9,
+    -7
+  ],
+  "mask": {
+    "phase": "val",
+    "records": [
+      "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+      "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz"
+    ],
+    "blocks": [
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+        "start": 61440,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 61440,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 61440,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 61440,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 61440,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 61440,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 61440,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 0,
+        "samples": 3839,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 3840,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 7680,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 11520,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 15360,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 19200,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 23040,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 26880,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 30720,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 34560,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 38400,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 42240,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 46080,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 49920,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 53760,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+        "start": 57600,
+        "samples": 3840,
+        "eligible": true,
+        "reason": null
+      }
+    ],
+    "eligible_blocks": 752,
+    "excluded_blocks": [],
+    "prediction_independent": true,
+    "test_read": false
+  },
+  "cache_metadata": [
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_latent.npy",
+      "bytes": 1551077504,
+      "mtime_ns": 1793519380466263092
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_P.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1793519380466263092
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_latent.npy",
+      "bytes": 187392128,
+      "mtime_ns": 1793519319851260499
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_P.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1793519319851260499
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_latent.npy",
+      "bytes": 1551077504,
+      "mtime_ns": 1793519515987268891
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_P.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1793519515987268891
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_latent.npy",
+      "bytes": 187392128,
+      "mtime_ns": 1793519455105266286
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_P.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1793519455105266286
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_latent.npy",
+      "bytes": 1551077504,
+      "mtime_ns": 1793519641003274240
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_P.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1793519641003274240
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_latent.npy",
+      "bytes": 187392128,
+      "mtime_ns": 1793519580706271660
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_P.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1793519580706271660
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1792065674893059646
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/val_envelope.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1792065675067059654
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_10_1_envelope.npy",
+      "bytes": 315256,
+      "mtime_ns": 1789831812611473625
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_11_1_envelope.npy",
+      "bytes": 405320,
+      "mtime_ns": 1789831822235474037
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "bytes": 338040,
+      "mtime_ns": 1789831814755473717
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "bytes": 389240,
+      "mtime_ns": 1789831818403473873
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "bytes": 512880,
+      "mtime_ns": 1789831846100475058
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_2_envelope.npy",
+      "bytes": 436080,
+      "mtime_ns": 1789831827920474280
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_1_envelope.npy",
+      "bytes": 538880,
+      "mtime_ns": 1789831849401475199
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_2_envelope.npy",
+      "bytes": 588032,
+      "mtime_ns": 1789831851453475287
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_1_envelope.npy",
+      "bytes": 479792,
+      "mtime_ns": 1789831837941474709
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_2_1_envelope.npy",
+      "bytes": 405080,
+      "mtime_ns": 1789831822127474032
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_3_envelope.npy",
+      "bytes": 492904,
+      "mtime_ns": 1789831840503474818
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_4_envelope.npy",
+      "bytes": 416608,
+      "mtime_ns": 1789831824131474118
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_1_envelope.npy",
+      "bytes": 464056,
+      "mtime_ns": 1789831834016474541
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_2_envelope.npy",
+      "bytes": 465880,
+      "mtime_ns": 1789831834542474563
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_3_envelope.npy",
+      "bytes": 488048,
+      "mtime_ns": 1789831839457474774
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_1_envelope.npy",
+      "bytes": 426928,
+      "mtime_ns": 1789831825857474192
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_2_envelope.npy",
+      "bytes": 426840,
+      "mtime_ns": 1789831824598474138
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_8_1_envelope.npy",
+      "bytes": 382672,
+      "mtime_ns": 1789831818336473870
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_9_1_envelope.npy",
+      "bytes": 331400,
+      "mtime_ns": 1789831814495473706
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_10_envelope.npy",
+      "bytes": 427816,
+      "mtime_ns": 1789831826037474199
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_11_envelope.npy",
+      "bytes": 460936,
+      "mtime_ns": 1789831832522474477
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_12_envelope.npy",
+      "bytes": 538840,
+      "mtime_ns": 1789831848431475158
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_13_envelope.npy",
+      "bytes": 360320,
+      "mtime_ns": 1789831816416473788
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_14_envelope.npy",
+      "bytes": 515144,
+      "mtime_ns": 1789831846432475072
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_15_envelope.npy",
+      "bytes": 472072,
+      "mtime_ns": 1789831835985474625
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_16_envelope.npy",
+      "bytes": 395736,
+      "mtime_ns": 1789831820255473952
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_17_envelope.npy",
+      "bytes": 467328,
+      "mtime_ns": 1789831835515474605
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_18_envelope.npy",
+      "bytes": 590744,
+      "mtime_ns": 1789831852141475316
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_19_envelope.npy",
+      "bytes": 523816,
+      "mtime_ns": 1789831848079475143
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_1_envelope.npy",
+      "bytes": 488544,
+      "mtime_ns": 1789831840197474805
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "bytes": 407792,
+      "mtime_ns": 1789831822688474056
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_21_envelope.npy",
+      "bytes": 540304,
+      "mtime_ns": 1789831850088475229
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_23_envelope.npy",
+      "bytes": 433496,
+      "mtime_ns": 1789831828143474290
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "bytes": 508480,
+      "mtime_ns": 1789831844472474988
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "bytes": 404432,
+      "mtime_ns": 1789831820455473961
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_27_envelope.npy",
+      "bytes": 447568,
+      "mtime_ns": 1789831829988474369
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_28_envelope.npy",
+      "bytes": 413736,
+      "mtime_ns": 1789831824005474113
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_29_envelope.npy",
+      "bytes": 461640,
+      "mtime_ns": 1789831833504474519
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_2_envelope.npy",
+      "bytes": 581136,
+      "mtime_ns": 1789831850462475245
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_30_envelope.npy",
+      "bytes": 498336,
+      "mtime_ns": 1789831842498474904
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "bytes": 372480,
+      "mtime_ns": 1789831816641473797
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_5_envelope.npy",
+      "bytes": 509736,
+      "mtime_ns": 1789831845417475029
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_6_envelope.npy",
+      "bytes": 432640,
+      "mtime_ns": 1789831826821474233
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_7_envelope.npy",
+      "bytes": 504480,
+      "mtime_ns": 1789831843454474945
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_8_envelope.npy",
+      "bytes": 518840,
+      "mtime_ns": 1789831847373475112
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_9_envelope.npy",
+      "bytes": 610136,
+      "mtime_ns": 1789831852801475345
+    }
+  ],
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0,
+    "grad_clip": null
+  },
+  "loss": "Unweighted pointwise192 window MSE, full original global64 including constant fallback positions",
+  "selection": "Incumbent -1 and epochs0..19 complete VAL60s/person r; strict improvement, earliest ties; always20epochs",
+  "budget": {
+    "wall_seconds": 21600,
+    "max_workers": 2,
+    "worker_RSS_bytes": 8589934592,
+    "worker_GPU_allocated_bytes": 2147483648,
+    "new_root_bytes": 134217728,
+    "history_disk_cache_bytes": 0,
+    "each_filesystem_free_bytes": 21474836480,
+    "all_SS07_NPY_bytes": 30064771072
+  },
+  "precision": {
+    "new_residual": "FP32",
+    "fixed_anchor_and_Hann": "FP64",
+    "matmul_TF32": false,
+    "cudnn_TF32": true
+  },
+  "forbidden": [
+    "test",
+    "DTU",
+    "ds004408",
+    "new encoder/head forward",
+    "new datasets/weights",
+    "patients"
+  ],
+  "scientific_status": "Repeated original TRAIN/VAL development",
+  "engineering_updates_separate": true,
+  "formal_clean_initialization": true
+}

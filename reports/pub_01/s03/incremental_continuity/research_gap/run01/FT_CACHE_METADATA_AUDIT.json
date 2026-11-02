@@ -1,0 +1,816 @@
+{
+  "scope": "Existing FT TRAIN/VAL JSON/stat/NPY headers only; no array payload values, scores, model construction or forward",
+  "source_sha256": "132c3bd7e38c7756855baf21c4ad8d3c3120a763d40c0c6fa6e615a016aafe5f",
+  "assets": [
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_latent.npy",
+      "shape": [
+        252454,
+        8,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 1551077504,
+      "mtime_ns": 1793519380466263092
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_P.npy",
+      "shape": [
+        252454,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 193884800,
+      "mtime_ns": 1793519380466263092
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_latent.npy",
+      "shape": [
+        252454,
+        8,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 1551077504,
+      "mtime_ns": 1793519515987268891
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_P.npy",
+      "shape": [
+        252454,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 193884800,
+      "mtime_ns": 1793519515987268891
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_latent.npy",
+      "shape": [
+        252454,
+        8,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 1551077504,
+      "mtime_ns": 1793519641003274240
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_P.npy",
+      "shape": [
+        252454,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 193884800,
+      "mtime_ns": 1793519641003274240
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "shape": [
+        252454,
+        1,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 193884800,
+      "mtime_ns": 1792065674893059646
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_latent.npy",
+      "shape": [
+        30500,
+        8,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 187392128,
+      "mtime_ns": 1793519319851260499
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_P.npy",
+      "shape": [
+        30500,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 23424128,
+      "mtime_ns": 1793519319851260499
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_latent.npy",
+      "shape": [
+        30500,
+        8,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 187392128,
+      "mtime_ns": 1793519455105266286
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_P.npy",
+      "shape": [
+        30500,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 23424128,
+      "mtime_ns": 1793519455105266286
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_latent.npy",
+      "shape": [
+        30500,
+        8,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 187392128,
+      "mtime_ns": 1793519580706271660
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_P.npy",
+      "shape": [
+        30500,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 23424128,
+      "mtime_ns": 1793519580706271660
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/val_envelope.npy",
+      "shape": [
+        30500,
+        1,
+        192
+      ],
+      "dtype": "float32",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 23424128,
+      "mtime_ns": 1792065675067059654
+    }
+  ],
+  "distinct_target_headers": [
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_1_envelope.npy",
+      "shape": [
+        59958,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 479792,
+      "mtime_ns": 1789831837941474709
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_2_1_envelope.npy",
+      "shape": [
+        50619,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 405080,
+      "mtime_ns": 1789831822127474032
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_3_envelope.npy",
+      "shape": [
+        61597,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 492904,
+      "mtime_ns": 1789831840503474818
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_4_envelope.npy",
+      "shape": [
+        52060,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 416608,
+      "mtime_ns": 1789831824131474118
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_1_envelope.npy",
+      "shape": [
+        57991,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 464056,
+      "mtime_ns": 1789831834016474541
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_3_envelope.npy",
+      "shape": [
+        60990,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 488048,
+      "mtime_ns": 1789831839457474774
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_1_envelope.npy",
+      "shape": [
+        53350,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 426928,
+      "mtime_ns": 1789831825857474192
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_2_envelope.npy",
+      "shape": [
+        53339,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 426840,
+      "mtime_ns": 1789831824598474138
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_1_envelope.npy",
+      "shape": [
+        61052,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 488544,
+      "mtime_ns": 1789831840197474805
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_10_envelope.npy",
+      "shape": [
+        53461,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 427816,
+      "mtime_ns": 1789831826037474199
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_2_envelope.npy",
+      "shape": [
+        72626,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 581136,
+      "mtime_ns": 1789831850462475245
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "shape": [
+        46544,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 372480,
+      "mtime_ns": 1789831816641473797
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_8_1_envelope.npy",
+      "shape": [
+        47818,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 382672,
+      "mtime_ns": 1789831818336473870
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_5_envelope.npy",
+      "shape": [
+        63701,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 509736,
+      "mtime_ns": 1789831845417475029
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_6_envelope.npy",
+      "shape": [
+        54064,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 432640,
+      "mtime_ns": 1789831826821474233
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_7_envelope.npy",
+      "shape": [
+        63044,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 504480,
+      "mtime_ns": 1789831843454474945
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_8_envelope.npy",
+      "shape": [
+        64839,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 518840,
+      "mtime_ns": 1789831847373475112
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_9_1_envelope.npy",
+      "shape": [
+        41409,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 331400,
+      "mtime_ns": 1789831814495473706
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_11_envelope.npy",
+      "shape": [
+        57601,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 460936,
+      "mtime_ns": 1789831832522474477
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_12_envelope.npy",
+      "shape": [
+        67339,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 538840,
+      "mtime_ns": 1789831848431475158
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_9_envelope.npy",
+      "shape": [
+        76251,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 610136,
+      "mtime_ns": 1789831852801475345
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_10_1_envelope.npy",
+      "shape": [
+        39391,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 315256,
+      "mtime_ns": 1789831812611473625
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_13_envelope.npy",
+      "shape": [
+        45024,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 360320,
+      "mtime_ns": 1789831816416473788
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_14_envelope.npy",
+      "shape": [
+        64377,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 515144,
+      "mtime_ns": 1789831846432475072
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_11_1_envelope.npy",
+      "shape": [
+        50649,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 405320,
+      "mtime_ns": 1789831822235474037
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_16_envelope.npy",
+      "shape": [
+        49451,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 395736,
+      "mtime_ns": 1789831820255473952
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_17_envelope.npy",
+      "shape": [
+        58400,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 467328,
+      "mtime_ns": 1789831835515474605
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_18_envelope.npy",
+      "shape": [
+        73827,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 590744,
+      "mtime_ns": 1789831852141475316
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_19_envelope.npy",
+      "shape": [
+        65461,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 523816,
+      "mtime_ns": 1789831848079475143
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "shape": [
+        42239,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 338040,
+      "mtime_ns": 1789831814755473717
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "shape": [
+        48639,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 389240,
+      "mtime_ns": 1789831818403473873
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "shape": [
+        50958,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 407792,
+      "mtime_ns": 1789831822688474056
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_23_envelope.npy",
+      "shape": [
+        54171,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 433496,
+      "mtime_ns": 1789831828143474290
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "shape": [
+        64094,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 512880,
+      "mtime_ns": 1789831846100475058
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "shape": [
+        63544,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 508480,
+      "mtime_ns": 1789831844472474988
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "shape": [
+        50538,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 404432,
+      "mtime_ns": 1789831820455473961
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_27_envelope.npy",
+      "shape": [
+        55930,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 447568,
+      "mtime_ns": 1789831829988474369
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_1_envelope.npy",
+      "shape": [
+        67344,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 538880,
+      "mtime_ns": 1789831849401475199
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_2_envelope.npy",
+      "shape": [
+        73488,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 588032,
+      "mtime_ns": 1789831851453475287
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_28_envelope.npy",
+      "shape": [
+        51701,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 413736,
+      "mtime_ns": 1789831824005474113
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_29_envelope.npy",
+      "shape": [
+        57689,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 461640,
+      "mtime_ns": 1789831833504474519
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_2_envelope.npy",
+      "shape": [
+        58219,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 465880,
+      "mtime_ns": 1789831834542474563
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_15_envelope.npy",
+      "shape": [
+        58993,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 472072,
+      "mtime_ns": 1789831835985474625
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_21_envelope.npy",
+      "shape": [
+        67522,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 540304,
+      "mtime_ns": 1789831850088475229
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_2_envelope.npy",
+      "shape": [
+        54494,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 436080,
+      "mtime_ns": 1789831827920474280
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_30_envelope.npy",
+      "shape": [
+        62276,
+        1
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128,
+      "bytes": 498336,
+      "mtime_ns": 1789831842498474904
+    }
+  ],
+  "all_headers_and_offsets_passed": true,
+  "strict_history": {
+    "window": "[96i,96i+192) at64Hz",
+    "fused_current_union_earliest": "96i-96 (interior)",
+    "token_indices": "i-3, i-5, ..., i-(2K+1), chronological order reversed for input",
+    "raw_support_union": "[96i-96-192K, 96i-96)",
+    "required_i": "max(4,2K+1)",
+    "record_phase_boundary": "Never use global offset subtraction without same-record checks; leading windows keep frozen anchor"
+  },
+  "geometry_examples_not_hyperparameter_grid": {
+    "train": [
+      {
+        "history_tokens": 1,
+        "history_duration_seconds": 3,
+        "first_local_window": 4,
+        "residual_eligible_windows": 250750,
+        "cold_fallback_windows": 1704,
+        "new_materialized_history_bytes_if_copied": 1551077376,
+        "global64_history_float32_input_bytes": 393216
+      },
+      {
+        "history_tokens": 2,
+        "history_duration_seconds": 6,
+        "first_local_window": 5,
+        "residual_eligible_windows": 250324,
+        "cold_fallback_windows": 2130,
+        "new_materialized_history_bytes_if_copied": 3102154752,
+        "global64_history_float32_input_bytes": 786432
+      },
+      {
+        "history_tokens": 10,
+        "history_duration_seconds": 30,
+        "first_local_window": 21,
+        "residual_eligible_windows": 243508,
+        "cold_fallback_windows": 8946,
+        "new_materialized_history_bytes_if_copied": 15510773760,
+        "global64_history_float32_input_bytes": 3932160
+      }
+    ],
+    "val": [
+      {
+        "history_tokens": 1,
+        "history_duration_seconds": 3,
+        "first_local_window": 4,
+        "residual_eligible_windows": 30304,
+        "cold_fallback_windows": 196,
+        "new_materialized_history_bytes_if_copied": 187392000,
+        "global64_history_float32_input_bytes": 393216
+      },
+      {
+        "history_tokens": 2,
+        "history_duration_seconds": 6,
+        "first_local_window": 5,
+        "residual_eligible_windows": 30255,
+        "cold_fallback_windows": 245,
+        "new_materialized_history_bytes_if_copied": 374784000,
+        "global64_history_float32_input_bytes": 786432
+      },
+      {
+        "history_tokens": 10,
+        "history_duration_seconds": 30,
+        "first_local_window": 21,
+        "residual_eligible_windows": 29471,
+        "cold_fallback_windows": 1029,
+        "new_materialized_history_bytes_if_copied": 1873920000,
+        "global64_history_float32_input_bytes": 3932160
+      }
+    ]
+  },
+  "all_FT_Z_P_existing_bytes": 5867335680,
+  "current_home_free_bytes": 23165661184,
+  "home_reserve_bytes": 21474836480,
+  "free_above_reserve": 1690824704,
+  "recommended_new_history_cache_bytes": 0,
+  "resource_note": "Index existing memmaps by batch; copied K-token full dataset could exceed free/cumulative caps. No new compute budget authorized.",
+  "new_NN": 0,
+  "new_fits": 0,
+  "array_values_read": false,
+  "new_external_access": false,
+  "wall_seconds": 0.028807401657104492
+}
