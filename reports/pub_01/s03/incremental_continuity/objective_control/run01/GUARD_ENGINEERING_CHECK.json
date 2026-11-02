@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "source_sha256": "cef64d9395442afe5f1c2f636181dd55d05b5b15b3cd224420c57ad8b5bb6c14",
+  "mathematical_function_AST_unchanged": true,
+  "checks": {
+    "passed": true,
+    "disappeared_path_ignored": true,
+    "other_OSError_propagates": true,
+    "inflight_reserve_bytes": 29360128,
+    "NN": 0,
+    "optimizer_updates": 0
+  },
+  "new_NN": 0,
+  "extra_optimizer_updates": 0,
+  "CPU_seconds": 0.09119554000000019,
+  "wall_seconds": 0.0914762020111084
+}

@@ -179,3 +179,6 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 
 
 2026-11-02 D14九fit×20epoch全部完成，710100更新/61710828正式残差NN窗；成功工程1230、失败路径362、独立631239另计，总已知62343659，0新encoder/head。TRAIN固定last windowMSE H/C/P=.194114/.194091/.194101，较旧.202329/.202466/.202579及anchor.196161均改善；TRAIN r=.257599/.256791/.256759。VAL selected H/C/P=.182404586/.182339940/.182468347，H仅2026微增、H-P混合，near/older极小差处于实现数值误差尺度，历史收益门FALSE。独立48624比较/180排列/54TRAIN聚合/18旧对照通过，额外CPU72.036s；四图/完整中文全文协调审阅、HTML162产物/7限制/链接版本交付检查通过。Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS；run_id20261102_pub01_s03_ss07_order_control。科研goal ACTIVE，D14已封存不重启。协调授权下一D15仅目标对照的PLAN/source/必要工程准备：沿D14三臂/三seed/初始化/排列/20epoch/Adam预算，仅float64 p/y centered negative cosine eps1e-6，正式拟合仍待其实际冻结源审阅。旧test/DTU/ds004408/D12/D13冻结，患者FORBIDDEN，PR6 Draft不合并。
+
+
+2026-11-02 D15唯一float64负cosine目标对照已具备v2冻结协议b80f9aeffada112c012ce23f944279027d4219250fdf2999a28c4878d336506f。原288NN数值工程/target12个TRAIN eps窗、无常量，追加192NN fresh非零输出通路probe通过；旧late H/C该批token/GRU饱和与零/近零输入梯度保留为限制，不调LR/结构。IO竞态修复0NN mock、28MiB在途reserve及epoch首batch既有梯度日志均无额外forward/update，数学函数AST同v1。累计工程480NN/0fit/opt；v1所有源/协议/证据保留。协调仅将新root存储上限160MiB并批准最多9jobs/两GPU5+4，仍6h/8GiB RSS/2GiB allocated/两盘20GiB；正式59473248NN/710100更新不变。正式仍0，待协调绑定实际v2源/工程执行review后启动，旧D14及外部冻结。

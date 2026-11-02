@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "source_sha256": "34f3f705b49c3768259da42778ace0212f3112bd2781d241bcbc501159631c12",
+  "rows": [
+    {
+      "arm": "H_full",
+      "stage": "fresh_fixed_nonzero_output_probe",
+      "NN_windows": 48,
+      "loss": -0.20135888731651458,
+      "token": {
+        "max_abs": 0.13817505538463593,
+        "RMS": 0.03301438271762587,
+        "fraction_abs_ge_10": 0.0,
+        "fraction_abs_ge_20": 0.0,
+        "fraction_abs_ge_one_minus_1e6": 0.0
+      },
+      "GRU_states": {
+        "max_abs": 0.1566968411207199,
+        "RMS": 0.06276287465800513,
+        "fraction_abs_ge_10": 0.0,
+        "fraction_abs_ge_20": 0.0,
+        "fraction_abs_ge_one_minus_1e6": 0.0
+      },
+      "token_input_gradient": {
+        "nonzero_scalars": 147456,
+        "norm": 2.3779469781348068e-07,
+        "max_abs": 7.050041883616132e-09
+      },
+      "token_output_gradient": {
+        "nonzero_scalars": 3072,
+        "norm": 7.50885393306979e-06,
+        "max_abs": 1.3406407788352226e-06
+      },
+      "GRU_state_output_gradient": {
+        "nonzero_scalars": 1536,
+        "norm": 2.16904652735913e-05,
+        "max_abs": 3.63798494618095e-06
+      },
+      "GRU_hh_gradient": {
+        "nonzero_scalars": 3072,
+        "norm": 7.487710714618672e-07,
+        "max_abs": 1.297764242735866e-07
+      },
+      "GRU_ih_gradient": {
+        "nonzero_scalars": 3072,
+        "norm": 1.9885739147338612e-06,
+        "max_abs": 3.0738780765204865e-07
+      },
+      "module_gradient_snapshot": {
+        "token": {
+          "nonzero_scalars": 101824,
+          "L2_norm": 1.9362901519592968e-05
+        },
+        "gru": {
+          "nonzero_scalars": 6336,
+          "L2_norm": 8.710991146355247e-06
+        },
+        "film": {
+          "nonzero_scalars": 2112,
+          "L2_norm": 2.1682070730036116e-05
+        },
+        "current": {
+          "nonzero_scalars": 49184,
+          "L2_norm": 0.007866320174607032
+        },
+        "output": {
+          "nonzero_scalars": 6336,
+          "L2_norm": 0.016643772817344707
+        }
+      },
+      "optimizer_updates": 0,
+      "learning_model_fit": false
+    },
+    {
+      "arm": "H_full",
+      "stage": "unchanged_D14_last",
+      "NN_windows": 48,
+      "loss": -0.21288484621184617,
+      "token": {
+        "max_abs": 3880.688720703125,
+        "RMS": 551.3244343546587,
+        "fraction_abs_ge_10": 0.19498697916666666,
+        "fraction_abs_ge_20": 0.19401041666666666,
+        "fraction_abs_ge_one_minus_1e6": 0.19661458333333334
+      },
+      "GRU_states": {
+        "max_abs": 1.0,
+        "RMS": 0.9185586535436918,
+        "fraction_abs_ge_10": 0.0,
+        "fraction_abs_ge_20": 0.0,
+        "fraction_abs_ge_one_minus_1e6": 0.84375
+      },
+      "token_input_gradient": {
+        "nonzero_scalars": 0,
+        "norm": 0.0,
+        "max_abs": 0.0
+      },
+      "token_output_gradient": {
+        "nonzero_scalars": 0,
+        "norm": 0.0,
+        "max_abs": 0.0
+      },
+      "GRU_state_output_gradient": {
+        "nonzero_scalars": 1536,
+        "norm": 0.0005672918189901008,
+        "max_abs": 5.847767533850856e-05
+      },
+      "GRU_hh_gradient": {
+        "nonzero_scalars": 0,
+        "norm": 0.0,
+        "max_abs": 0.0
+      },
+      "GRU_ih_gradient": {
+        "nonzero_scalars": 0,
+        "norm": 0.0,
+        "max_abs": 0.0
+      },
+      "module_gradient_snapshot": {
+        "token": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0
+        },
+        "gru": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0
+        },
+        "film": {
+          "nonzero_scalars": 1792,
+          "L2_norm": 0.0011290646899582448
+        },
+        "current": {
+          "nonzero_scalars": 49184,
+          "L2_norm": 0.05422719184937027
+        },
+        "output": {
+          "nonzero_scalars": 6336,
+          "L2_norm": 0.10719647492275675
+        }
+      },
+      "optimizer_updates": 0,
+      "learning_model_fit": false
+    },
+    {
+      "arm": "C_match",
+      "stage": "fresh_fixed_nonzero_output_probe",
+      "NN_windows": 48,
+      "loss": -0.20135901890654043,
+      "token": {
+        "max_abs": 0.12020953744649887,
+        "RMS": 0.03326109561326145,
+        "fraction_abs_ge_10": 0.0,
+        "fraction_abs_ge_20": 0.0,
+        "fraction_abs_ge_one_minus_1e6": 0.0
+      },
+      "GRU_states": {
+        "max_abs": 0.17189320921897888,
+        "RMS": 0.06319159112044744,
+        "fraction_abs_ge_10": 0.0,
+        "fraction_abs_ge_20": 0.0,
+        "fraction_abs_ge_one_minus_1e6": 0.0
+      },
+      "token_input_gradient": {
+        "nonzero_scalars": 147456,
+        "norm": 2.3715840463368268e-07,
+        "max_abs": 1.3489929173715609e-08
+      },
+      "token_output_gradient": {
+        "nonzero_scalars": 3072,
+        "norm": 7.511433632930531e-06,
+        "max_abs": 1.339323148386029e-06
+      },
+      "GRU_state_output_gradient": {
+        "nonzero_scalars": 1536,
+        "norm": 2.169013296599962e-05,
+        "max_abs": 3.6379565244715195e-06
+      },
+      "GRU_hh_gradient": {
+        "nonzero_scalars": 3072,
+        "norm": 7.499056699904562e-07,
+        "max_abs": 1.421558124548028e-07
+      },
+      "GRU_ih_gradient": {
+        "nonzero_scalars": 3072,
+        "norm": 2.666609464435851e-06,
+        "max_abs": 3.9599069623363903e-07
+      },
+      "module_gradient_snapshot": {
+        "token": {
+          "nonzero_scalars": 101824,
+          "L2_norm": 2.824282740977526e-05
+        },
+        "gru": {
+          "nonzero_scalars": 6336,
+          "L2_norm": 8.904213275697817e-06
+        },
+        "film": {
+          "nonzero_scalars": 2112,
+          "L2_norm": 2.156017273755261e-05
+        },
+        "current": {
+          "nonzero_scalars": 49184,
+          "L2_norm": 0.007865492541225488
+        },
+        "output": {
+          "nonzero_scalars": 6336,
+          "L2_norm": 0.01664336631462866
+        }
+      },
+      "optimizer_updates": 0,
+      "learning_model_fit": false
+    },
+    {
+      "arm": "C_match",
+      "stage": "unchanged_D14_last",
+      "NN_windows": 48,
+      "loss": -0.20959688650390315,
+      "token": {
+        "max_abs": 568.3513793945312,
+        "RMS": 118.43784317152851,
+        "fraction_abs_ge_10": 0.20833333333333334,
+        "fraction_abs_ge_20": 0.19661458333333334,
+        "fraction_abs_ge_one_minus_1e6": 0.216796875
+      },
+      "GRU_states": {
+        "max_abs": 1.0,
+        "RMS": 0.9185586535436918,
+        "fraction_abs_ge_10": 0.0,
+        "fraction_abs_ge_20": 0.0,
+        "fraction_abs_ge_one_minus_1e6": 0.84375
+      },
+      "token_input_gradient": {
+        "nonzero_scalars": 66045,
+        "norm": 1.9235226942660648e-27,
+        "max_abs": 2.0156474649165708e-28
+      },
+      "token_output_gradient": {
+        "nonzero_scalars": 1376,
+        "norm": 5.47163344850619e-28,
+        "max_abs": 1.5548518738349113e-28
+      },
+      "GRU_state_output_gradient": {
+        "nonzero_scalars": 1536,
+        "norm": 0.0003308761555935841,
+        "max_abs": 3.6475536035140976e-05
+      },
+      "GRU_hh_gradient": {
+        "nonzero_scalars": 0,
+        "norm": 0.0,
+        "max_abs": 0.0
+      },
+      "GRU_ih_gradient": {
+        "nonzero_scalars": 59,
+        "norm": 7.826152941837995e-25,
+        "max_abs": 5.191539469799595e-25
+      },
+      "module_gradient_snapshot": {
+        "token": {
+          "nonzero_scalars": 34190,
+          "L2_norm": 7.966761192679835e-26
+        },
+        "gru": {
+          "nonzero_scalars": 73,
+          "L2_norm": 7.826181332795815e-25
+        },
+        "film": {
+          "nonzero_scalars": 1792,
+          "L2_norm": 0.0012884237131796476
+        },
+        "current": {
+          "nonzero_scalars": 49184,
+          "L2_norm": 0.04030408879899836
+        },
+        "output": {
+          "nonzero_scalars": 6336,
+          "L2_norm": 0.11747380550333816
+        }
+      },
+      "optimizer_updates": 0,
+      "learning_model_fit": false
+    }
+  ],
+  "NN_windows": 192,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "new_encoder_head": 0,
+  "probe_only_output_weight": ".01*sin(arange(numel)*.017), bias0; never used for formal init",
+  "limits": "Fixed64 metadata batch; C token input is duplicated current, not actual temporal history; late-state saturation/gradient evidence does not identify all optimization causes or justify LR/model change",
+  "wall_seconds": 10.032045602798462,
+  "CPU_seconds": 35.823060946000005,
+  "peak_RSS_KiB": 5142216,
+  "peak_GPU_allocated_bytes": 33846784
+}

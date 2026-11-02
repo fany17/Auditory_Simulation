@@ -1,0 +1,11 @@
+# D15正式0更新时的IO与诊断amendment
+
+2026-11-02。v1实际数值工程通过288残差窗，协议7b78b356a5565ae72f5ae3486f832c8f428ba88d50672202c001174e7257016b、0fit/optimizer；原source/PLAN/protocol/工程/log保留engineering_v1。不是失败重试，正式更新仍0。
+
+协调指出9并发下临时best_validation.pt.writing/QUEUE_STATUS.writing原子替换可在rglob/stat之间消失。新大小统计每路径只stat一次，忽略FileNotFoundError，其他OSError继续抛出。无训练mock覆盖消失路径和PermissionError传播。硬门为实际观察大小+28MiB在途保留<160MiB：每9worker预留3MiB（一个完整离线统计及一个checkpoint临时写入）并额外1MiB日志/status。实际离线统计逐float保守展开1.767MB、checkpoint约0.67MB，每worker3MiB足够本轮既定写入形状；原保守134376176B+29360128B=163736304B<167772160B。没有删证据或改变训练预算。
+
+原工程显示旧D14 late H/C在固定小批的GRU recurrent梯度0。协调授权仅192额外残差NN窗、0fit/optimizer的通路探针：同固定64混record/48有效窗，H/C fresh模型仅把output.weight临时置为0.01*sin(arange(numel)*.017)、bias0，验证token输入/GRU可获得非零梯度；再对完全不改的D14 late权重hook token/GRU状态及相应梯度描述饱和/敏感性。探针权重绝不成为正式初始化，不调LR/模型。v1288窗不重复，累计工程480窗，仍在4096上限；实际以PATH_PROBE.json为准。
+
+另按协调授权，正式每epoch既定首个训练batch在原loss.backward后/opt.step前只记录token/gru/film/current/output五模块梯度nonzero与L2、原global indices/有效与fallback数。0新forward/update，不改变batch或选点/earlystop。epoch0零头上游0为预期；后续首批随既定shuffle改变，不能冒充固定输入的梯度趋势。
+
+新v2通过AST核window_losses/objective/target_counts/train_score与v1逐函数完全相同；仅IO门、上述既有梯度日志与独立探针/metadata冻结。复用原288窗数值证明，0NN guard mock与192窗probe另计。保留原160MiB纯存储决定，科学矩阵/目标/初始化/20epoch/Adam/59473248正式NN与710100更新均不变，最终源/协议仍送协调独立审阅后才正式启动。

@@ -1,0 +1,20 @@
+{
+  "sample_actual_bytes": 1543726,
+  "sample_every_float32char_bound_bytes": 1767140,
+  "components": {
+    "offline45_worst": 79521300,
+    "checkpoints": 12007098,
+    "other_fit_outputs_with_margin": 20490314,
+    "independent_review_with_margin": 19211736,
+    "source_protocol_plots_logs_reserve": 3145728
+  },
+  "conservative_total_bytes": 134376176,
+  "root_cap_bytes": 134217728,
+  "direct_whitelist_SCP_no_server_tar": true,
+  "NN": 0,
+  "fit": 0,
+  "optimizer_updates": 0,
+  "wall_seconds": 12.23649525642395,
+  "CPU_seconds": 43.337547479,
+  "peak_RSS_KiB": 5027124
+}
