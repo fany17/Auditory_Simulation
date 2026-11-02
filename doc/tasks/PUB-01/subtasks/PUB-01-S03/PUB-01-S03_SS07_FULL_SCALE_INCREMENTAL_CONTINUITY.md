@@ -200,3 +200,6 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 
 
 2026-11-02 D16九fit/20epoch、710100更新及59473248正式残差NN窗全部完成；816工程与631239独立另列，总60105303NN。独立48624比较、180排列/梯度日志、45离线TRAIN聚合通过，五PNG/完整中文全文与账本经协调实际科学审阅，回执绑定最终REPORT/REVIEW。完整HTML run_id20261102_pub01_s03_ss07_token_normalization交付核验PASS：170清单产物、5图/5说明/10限制可见、全部HTML/全文链接与最新source_bundle通过，无信号/权重/数组。H抽样通路活动改善和TRAIN拟合增强，但仅2026小增且低于P、另两H回锚；last VAL三臂均低于D15/overlap增大，历史收益门FALSE。Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS；goal/SS07仍ACTIVE。D16已收束，不重跑。协调下一D17仅原固定TRAIN48有效窗、四既有H检查点的near/older历史敏感性诊断源/身份/预算准备，待其具体源码审阅后执行；0新fit，不改LN位置/LR或重开外部。
+
+
+2026-11-02 D17固定TRAIN历史敏感性诊断已收束：四既有H检查点、单sub-001/8story/48有效窗，384残差NN窗/8输入backward/0fit一次完成。selected2026 near/older输入差RMS1.358、LN后.09491、末h6.396e−6、实际gain差0、最终预测差9.392e−9；三个last19最终预测差.033526/.019122/.047253，不能统称所有模型忽略历史。固定输出投影输入梯度均非零，非有用信息或收益证明。协调0NN标量一致性1325检查PASS、完整中文REPORT/REVIEW科学审阅通过；仅源码/metadata/标量算术，不称神经/激活独立重放。完整HTML run_id20261102_pub01_s03_ss07_history_sensitivity含已审全文/3可读表，34manifest产物、56节点/4cp/8梯度CSV、10限制与链接/source_bundle/receipt绑定交付核验PASS。Technical PASS_WITH_LIMITATIONS / 局部诊断Acceptance PASS_WITH_LIMITATION / Parent PASS。D16及更早阴性保持冻结，历史收益/独立泛化与创新目标未建立，SS07/科研goal仍ACTIVE；下一实质方法由协调依据目标与已有证据具体界定，不自动在梯度小修线上循环、新fit/改LN或LR/旧test及外部重开。

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "protocol_sha256": "1791ab561d6faf1505855df1d691be83b7e2bd3eb26bc091276ab110422d883e",
+  "residual_NN_windows": 384,
+  "forward_calls": 8,
+  "history_input_backward_calls": 8,
+  "new_encoder_head": 0,
+  "optimizer_updates": 0,
+  "fits": 0,
+  "CPU_seconds": 2.186963157,
+  "wall_seconds": 1.2373802661895752,
+  "peak_RSS_KiB": 1106752,
+  "peak_GPU_allocated_bytes": 36940288,
+  "checkpoint_files": 4,
+  "root_bytes_before_receipt": 425062,
+  "new_array_files": [],
+  "timer_scope": "run() after imports, includes source verification/GPU wait/load/subset statistics/forward/backward, excludes imports and final receipt serialization",
+  "goal_complete": false,
+  "limits": [
+    "48 fixed effective TRAIN windows only",
+    "near/older jointly alter content and recency; older may preserve information",
+    "one fixed local direction per forward, not full Jacobian or all directions",
+    "float32 exact equality is local arithmetic, not global information proof",
+    "No target loss, new VAL/test or training; next method requires separate coordinator decision"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "time": 1793633134.302896,
+  "resources": [
+    {
+      "device": "cuda:0",
+      "free_GPU_MiB": 45446,
+      "compute_pids": [],
+      "MemAvailable_bytes": 1598862974976,
+      "admitted": true
+    },
+    {
+      "device": "cuda:1",
+      "free_GPU_MiB": 45446,
+      "compute_pids": [],
+      "MemAvailable_bytes": 1598863056896,
+      "admitted": true
+    }
+  ],
+  "chosen": "cuda:0"
+}

@@ -1,0 +1,27 @@
+{
+  "time": 1793634277.509,
+  "coordinator_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "scientific_review_complete": true,
+  "accepted_for_archival": true,
+  "report_sha256": "44d6e84a5da042e3885c4ce8e35bbc70dc4f35ccc66646a40a8de13a19d07eea",
+  "review_markdown_sha256": "423a34cb2a51c8430deedc826cd4f7fc3a685022ad92a33f7b35623da817b80e",
+  "protocol_sha256": "1791ab561d6faf1505855df1d691be83b7e2bd3eb26bc091276ab110422d883e",
+  "scalar_review_sha256": "abe29a5f674e986e700a725e61558522c2cd61a4c09c55175c34fa3419e652f8",
+  "basis": "Coordinator read full final REPORT/REVIEW, actual four-checkpoint node statistics/gradients, completion and independent scalar consistency review; checked scope and arithmetic. No newPNG was needed for these tables.",
+  "technical": "PASS_WITH_LIMITATIONS",
+  "diagnostic_acceptance": "PASS_WITH_LIMITATIONS",
+  "findings": [
+    "Fixed48 effective windows are all sub-001,8records/8stories; no population or performance inference is warranted.",
+    "SelectedH2026 input/LN-token differences remain nonzero; lastGRUstate varies little andFiLM gain is equal locally. Final prediction difference RMS9.392e-9 is small but not exact independence.",
+    "All3last19 states are locally history-sensitive: final prediction difference RMS.033526/.019122/.047253. D16 VALnegatives therefore cannot be explained as allcheckpoints always ignoring history.",
+    "All8 fixed-output-projection input gradients are finite/nonzero. This does not establish useful information, global sensitivity or taskbenefit.",
+    "Cross-node RMS magnitudes/relative statistics do not identify causal attenuation or information-theoretic loss; report correctly retains this limitation.",
+    "384NN/8forward/8input-backward/0fit executed once.1325 scalar checks add0NN/0backward and do not constitute independent activation/neural replay.",
+    "Preparev1/v2,diagnosis,tables,ledger and scalarreview timings are separated with unmeasured administrative scopes disclosed."
+  ],
+  "history_benefit_established": false,
+  "independent_confirmation_established": false,
+  "publication_readiness_established": false,
+  "goal_complete": false,
+  "next_action": "Seal this local diagnostic, archive fulltext and alltables with thisreceipt, commit/push lightweight evidence. KeepD16/external results frozen. Nextmethod selection must address demonstrated generalization gap, not assume merely restoring gradients proves useful continuity."
+}
