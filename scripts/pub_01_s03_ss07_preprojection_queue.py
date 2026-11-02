@@ -27,11 +27,13 @@ def checks():
     assert allow({'cuda:0'},'cuda:1',[],40000,128*1024**3)
     return dict(passed=True,new_NN=0,one_per_GPU_and_foreign_PID_wait=True)
 def run():
-    start=time.time();p=read(ROOT/'PROTOCOL.json');verify(p);guard();checks()
+    attempt_start=time.time();amendment=ROOT/'RESOURCE_RECOVERY_AMENDMENT.json'
+    start=read(amendment)['original_queue_start_unix'] if amendment.exists() else attempt_start
+    p=read(ROOT/'PROTOCOL.json');verify(p);guard();checks()
     approval=read(ROOT/'COORDINATOR_EXECUTION_REVIEW.json');assert approval['approved_for_execution'] and approval['protocol_sha256']==sha(ROOT/'PROTOCOL.json')
     assert read(ROOT/'ENGINEERING_CHECK.json')['passed']
     pending=[(seed,arm) for seed in SEEDS for arm in ARMS];finished=[]
-    dump(ROOT/'QUEUE_STARTED.json',dict(time=start,pid=os.getpid(),uid=os.getuid(),wall_cap_seconds=86400,max_workers=2,one_per_GPU=True,protocol_sha256=sha(ROOT/'PROTOCOL.json')))
+    dump(ROOT/'QUEUE_STARTED.json',dict(time=start,queue_attempt_start_unix=attempt_start,pid=os.getpid(),uid=os.getuid(),wall_cap_seconds=86400,max_workers=2,one_per_GPU=True,protocol_sha256=sha(ROOT/'PROTOCOL.json')))
     while pending or RUNNING:
         assert time.time()-start<86400,'24h total cap; no automatic extension or retry'
         for pid,job in list(RUNNING.items()):

@@ -1,0 +1,8 @@
+{
+  "time": 1793642689.9419408,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_queue.py\", line 59, in <module>\n    try:run()\n        ^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_queue.py\", line 41, in run\n    assert code==0,f'Fit failed: {finished[-1]}'\n           ^^^^^^^\nAssertionError: Fit failed: {'seed': 1024, 'arm': 'C_current', 'pid': 1986345, 'returncode': 1}\n",
+  "own_workers_stopped": [
+    1986330
+  ],
+  "automatic_retry": false
+}

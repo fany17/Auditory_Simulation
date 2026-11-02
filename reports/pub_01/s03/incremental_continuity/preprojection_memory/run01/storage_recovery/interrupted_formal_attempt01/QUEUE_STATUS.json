@@ -1,0 +1,59 @@
+{
+  "time": 1793642684.5406277,
+  "elapsed_seconds": 2120.750081062317,
+  "pending": [
+    [
+      1024,
+      "T_continue"
+    ],
+    [
+      1024,
+      "P_prediction_history"
+    ],
+    [
+      2026,
+      "H_history"
+    ],
+    [
+      2026,
+      "C_current"
+    ],
+    [
+      2026,
+      "T_continue"
+    ],
+    [
+      2026,
+      "P_prediction_history"
+    ],
+    [
+      31415,
+      "H_history"
+    ],
+    [
+      31415,
+      "C_current"
+    ],
+    [
+      31415,
+      "T_continue"
+    ],
+    [
+      31415,
+      "P_prediction_history"
+    ]
+  ],
+  "running": {
+    "1986330": {
+      "seed": 1024,
+      "arm": "H_history",
+      "device": "cuda:0"
+    },
+    "1986345": {
+      "seed": 1024,
+      "arm": "C_current",
+      "device": "cuda:1"
+    }
+  },
+  "finished": []
+}
