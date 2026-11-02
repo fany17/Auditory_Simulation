@@ -1,0 +1,61 @@
+{
+  "time": 1793623302.4407074,
+  "pending": [],
+  "running": {},
+  "finished": [
+    {
+      "seed": 1024,
+      "arm": "C_match",
+      "returncode": 0,
+      "pid": 1692194
+    },
+    {
+      "seed": 1024,
+      "arm": "H_full",
+      "returncode": 0,
+      "pid": 1692186
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prior",
+      "returncode": 0,
+      "pid": 1698347
+    },
+    {
+      "seed": 2026,
+      "arm": "H_full",
+      "returncode": 0,
+      "pid": 1698683
+    },
+    {
+      "seed": 2026,
+      "arm": "C_match",
+      "returncode": 0,
+      "pid": 1704421
+    },
+    {
+      "seed": 2026,
+      "arm": "P_prior",
+      "returncode": 0,
+      "pid": 1705165
+    },
+    {
+      "seed": 31415,
+      "arm": "H_full",
+      "returncode": 0,
+      "pid": 1710294
+    },
+    {
+      "seed": 31415,
+      "arm": "C_match",
+      "returncode": 0,
+      "pid": 1711198
+    },
+    {
+      "seed": 31415,
+      "arm": "P_prior",
+      "returncode": 0,
+      "pid": 1716648
+    }
+  ]
+}

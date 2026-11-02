@@ -1,0 +1,29 @@
+{
+  "people": {
+    "n": 49,
+    "max_abs": 7.948651958855635e-09,
+    "mean_abs": 4.36772890247751e-10,
+    "positive": 20,
+    "negative": 29,
+    "zero": 0
+  },
+  "segments": {
+    "n": 752,
+    "max_abs": 1.5752830242327098e-07,
+    "mean_abs": 1.3678338605180062e-09,
+    "positive": 371,
+    "negative": 373,
+    "zero": 8
+  },
+  "seed": 2026,
+  "selected_epoch": 1,
+  "near_minus_older_macro": -2.5446220131009056e-10,
+  "source_sha256": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/fits/H_full_seed2026/SELECTED_METRICS.json": "a45537185f53e2d8cb315252f25d7615a928ae99dd4cb21602133a23f625b6bb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/fits/H_full_seed2026/OLDER_METRICS.json": "0d301f90c3c7379d5df1f7e9f2dde8770a0bc726b8cee70cf98032ae8f3b1c08"
+  },
+  "new_NN": 0,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "interpretation": "Differences for this substitution are near numerical precision. No positive or negative history benefit can be inferred from their signs; not proof that arbitrary histories yield identical predictions. Other H selected checkpoints are zero incumbents."
+}

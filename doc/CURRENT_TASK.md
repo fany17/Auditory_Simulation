@@ -1,3 +1,7 @@
+# 当前入口：D14顺序对照已封存，D15唯一目标对照准备中
+
+2026-11-02 D14九fit×20epoch全部完成，710100更新/61710828正式残差NN窗；成功工程1230、失败路径362、独立631239另计，总已知62343659，0新encoder/head。TRAIN固定last windowMSE H/C/P=.194114/.194091/.194101，较旧.202329/.202466/.202579及anchor.196161均改善；TRAIN r=.257599/.256791/.256759。VAL selected H/C/P=.182404586/.182339940/.182468347，H仅2026微增、H-P混合，near/older极小差处于实现数值误差尺度，历史收益门FALSE。独立48624比较/180排列/54TRAIN聚合/18旧对照通过，额外CPU72.036s；四图/完整中文全文协调审阅、HTML162产物/7限制/链接版本交付检查通过。Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS；run_id20261102_pub01_s03_ss07_order_control。科研goal ACTIVE，D14已封存不重启。协调授权下一D15仅目标对照的PLAN/source/必要工程准备：沿D14三臂/三seed/初始化/排列/20epoch/Adam预算，仅float64 p/y centered negative cosine eps1e-6，正式拟合仍待其实际冻结源审阅。旧test/DTU/ds004408/D12/D13冻结，患者FORBIDDEN，PR6 Draft不合并。
+
 # 当前入口：D14固定顺序对照正式九fit执行中
 
 2026-11-02 D14已获协调实际源/协议/工程独立审阅（COORDINATOR_EXECUTION_REVIEW approved=true），正式queue1692090已启动，首worker1692186(H1024/cuda0)/1692194(C1024/cuda1)均空闲GPU准入，真实epoch3/4及15780/19725更新已确认。协议83b05eaf...与源码f5134d7不变，正式9×20epoch/710100更新/61710828残差NN窗；后续协调独立数值复核最多631239另计，不加新fit/encoder。当前结果未齐，不下最终科学结论；D12/D13和旧外部冻结，不重启旧PID。
