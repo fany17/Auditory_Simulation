@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from pub_01_s03_ss07_full_ft_history_core import ROOT,SEEDS,ARMS,read,dump
+from pub_01_s03_ss07_full_ft_history_core import ROOT,SEEDS,ARMS,read,dump,sha
 
 def write_csv(p,rows):
     fields=list(dict.fromkeys(k for row in rows for k in row))
@@ -14,7 +14,10 @@ def write_csv(p,rows):
 
 assert read(ROOT/'QUEUE_COMPLETED.json')['new_fits']==9
 output=ROOT/'report01';output.mkdir(exist_ok=False);figures=output/'figures';figures.mkdir()
-fits=[];epochs=[];people=[];blocks=[];boundary=[];family=[];scores={};costs=[]
+dependency_path=ROOT.parent/'s03_research_gap_20261102/DEPENDENCY_RECORDS.csv'
+dependency=list(csv.DictReader(dependency_path.open()));mapping={r['record']:r['source_family'] for r in dependency}
+train_families={r['source_family'] for r in dependency if r['phase']=='train'}
+fits=[];epochs=[];people=[];blocks=[];boundary=[];family=[];scores={};costs=[];model_summary=[]
 for seed in SEEDS:
     anchor=read(ROOT/f'fits/H_full_seed{seed}/INCUMBENT.json');scores['Anchor',seed]=anchor
     for arm in ARMS:
@@ -30,21 +33,27 @@ for seed in SEEDS:
     scores['H_older',seed]=read(ROOT/f'fits/H_full_seed{seed}/OLDER_METRICS.json')
 for (role,seed),m in scores.items():
     for row in m['people']:people.append(dict(role=role,seed=seed,**row))
-    for row in m['segments']:blocks.append(dict(role=role,seed=seed,**row))
+    for row in m['segments']:blocks.append(dict(role=role,seed=seed,**row,frozen_source_family=mapping[row['record']]))
     for row in m['boundary_tail_records']:boundary.append(dict(role=role,seed=seed,**row))
-    for fam in sorted({b['source_family'] for b in m['segments']}):
-        bb=[b for b in m['segments'] if b['source_family']==fam];ss=sorted({b['subject'] for b in bb})
+    v=m['phases']['val'];model_summary.append(dict(role=role,seed=seed,r=v['r'],MSE=v['MSE'],window_MSE=v['window_MSE'],r3s=v['r3s'],
+        warm_r=m['fixed_warm_auxiliary']['r'],warm_blocks=m['fixed_warm_auxiliary']['blocks'],warm_people=m['fixed_warm_auxiliary']['people']))
+    for fam in sorted({mapping[b['record']] for b in m['segments']}):
+        bb=[b for b in m['segments'] if mapping[b['record']]==fam];ss=sorted({b['subject'] for b in bb})
         family.append(dict(role=role,seed=seed,source_family=fam,people=len(ss),blocks=len(bb),
-            r=float(np.mean([np.mean([b['r'] for b in bb if b['subject']==s]) for s in ss])),descriptive_only=True))
+            r=float(np.mean([np.mean([b['r'] for b in bb if b['subject']==s]) for s in ss])),descriptive_only=True,
+            shared_with_TRAIN=fam in train_families,raw_segment_source_family_values=';'.join(sorted({b['source_family'] for b in bb})),
+            mapping='Prediction-before record metadata SOURCE_FAMILY_JOIN; no waveform identity inference'))
 contrasts=[]
 for b in ['Anchor','C_match','P_prior','H_older']:
     diff=[scores['H_full',s]['phases']['val']['r']-scores[b,s]['phases']['val']['r'] for s in SEEDS]
-    contrasts.append(dict(comparison='H_full-'+b,mean_delta=float(np.mean(diff)),positive_seeds=sum(x>0 for x in diff),seed1024=diff[0],seed2026=diff[1],seed31415=diff[2]))
+    warm=[scores['H_full',s]['fixed_warm_auxiliary']['r']-scores[b,s]['fixed_warm_auxiliary']['r'] for s in SEEDS]
+    contrasts.append(dict(comparison='H_full-'+b,mean_delta=float(np.mean(diff)),positive_seeds=sum(x>0 for x in diff),seed1024=diff[0],seed2026=diff[1],seed31415=diff[2],
+        warm_mean_delta=float(np.mean(warm)),warm_positive_seeds=sum(x>0 for x in warm),warm_seed1024=warm[0],warm_seed2026=warm[1],warm_seed31415=warm[2]))
 summary=dict(fits=9,epochs=180,total_updates=sum(c['updates'] for c in costs),all_prespecified_seed_direction_conditions_met=all(c['positive_seeds']==3 for c in contrasts),
     contrasts=contrasts,selected_incumbents=sum(f['selected_epoch']==-1 for f in fits),new_encoder_head_forwards=0,
     formal_new_residual_NN_window_forwards=sum(c['new_residual_NN_window_forwards'] for c in costs),
     summed_CPU_seconds=sum(c['CPU_seconds'] for c in costs),parallel_fit_wall_times_not_total_wall=True,descriptive_development_only=True,new_report_NN=0,goal_complete=False)
-for name,rows in [('FIT_RESULTS.csv',fits),('ALL_EPOCHS.csv',epochs),('ALL_PERSON.csv',people),('ALL_BLOCKS.csv',blocks),('FAMILY_DESCRIPTIVE.csv',family),('CONTRASTS.csv',contrasts)]:write_csv(output/name,rows)
+for name,rows in [('FIT_RESULTS.csv',fits),('MODEL_SUMMARY.csv',model_summary),('ALL_EPOCHS.csv',epochs),('ALL_PERSON.csv',people),('ALL_BLOCKS.csv',blocks),('FAMILY_DESCRIPTIVE.csv',family),('CONTRASTS.csv',contrasts)]:write_csv(output/name,rows)
 dump(output/'NUMERICAL_SUMMARY.json',summary);dump(output/'BOUNDARY_TAIL.json',boundary);dump(output/'FORMAL_COSTS.json',costs)
 plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False})
 colors=['#6c757d','#457b9d','#e9a23b','#b23a48','#8b6bb1'];roles=['Anchor','H_full','C_match','P_prior','H_older']
@@ -75,5 +84,7 @@ fig,axes=plt.subplots(1,2,figsize=(12,4),layout='constrained');labels=[f"{f['arm
 axes[0].bar(range(9),[f['wall_seconds']/60 for f in fits],color=['#457b9d','#e9a23b','#b23a48']*3);axes[0].set(xticks=range(9),xticklabels=labels,ylabel='Fit elapsed minutes',title='Each fit: 20 epochs, 78,900 updates; parallel elapsed not summed')
 axes[1].bar(range(9),[f['selected_epoch']+1 for f in fits],color=['#457b9d','#e9a23b','#b23a48']*3);axes[1].set(xticks=range(9),xticklabels=labels,ylim=(0,21),ylabel='Selected added epoch (0 = incumbent)',title='Actual earliest checkpoint, including zero-residual incumbent')
 save(fig,'04_COSTS_AND_SELECTED_EPOCHS.png')
-dump(output/'PRESENTATION_COMPLETED.json',dict(figures=4,NN_forwards=0,all_nine_fits=True,independent_review_still_required=True))
+dump(output/'PRESENTATION_COMPLETED.json',dict(figures=4,NN_forwards=0,all_nine_fits=True,independent_review_still_required=True,
+    dependency_record_family_metadata_path=str(dependency_path),dependency_record_family_metadata_sha256=sha(dependency_path),
+    original_segment_source_family_retained=True,all_roles_warm_auxiliary_preserved=True))
 print(json.dumps(summary),flush=True)
