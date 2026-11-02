@@ -25,13 +25,19 @@ for seed in SEEDS:
         reference=read(folder/'OLD_LAST19_TRAIN_REFERENCE.json');inc=read(folder/'INCUMBENT.json')['phases']['val'];selected=read(folder/'SELECTED_METRICS.json')['phases']['val'];last=history[-1]['validation']
         older=read(folder/'OLDER_METRICS.json')['phases']['val'] if arm=='H_full' else None
         rows.append(dict(seed=seed,arm=arm,selected_epoch=cost['selected_epoch'],anchor_TRAIN_window_MSE=stages[-1]['window_MSE'],old_last_TRAIN_window_MSE=reference['window_MSE'],new_last_TRAIN_window_MSE=stages[19]['window_MSE'],delta_TRAIN_window_MSE_vs_old=stages[19]['window_MSE']-reference['window_MSE'],anchor_TRAIN_r=stages[-1]['physical60s_r'],old_last_TRAIN_r=reference['physical60s_r'],new_last_TRAIN_r=stages[19]['physical60s_r'],delta_TRAIN_r_vs_old=stages[19]['physical60s_r']-reference['physical60s_r'],anchor_TRAIN_MSE=stages[-1]['physical60s_MSE'],old_last_TRAIN_MSE=reference['physical60s_MSE'],new_last_TRAIN_MSE=stages[19]['physical60s_MSE'],anchor_VAL_r=inc['r'],old_last_VAL_r=oldhistory[-1]['validation']['r'],new_last_VAL_r=last['r'],new_selected_VAL_r=selected['r'],selected_delta_VAL_r_vs_anchor=selected['r']-inc['r'],last_delta_VAL_r_vs_anchor=last['r']-inc['r'],last_delta_VAL_r_vs_old=last['r']-oldhistory[-1]['validation']['r'],new_selected_VAL_MSE=selected['MSE'],H_older_VAL_r=older['r'] if older else None,H_near_minus_older=selected['r']-older['r'] if older else None))
+        rows[-1].update(best_trained_VAL_epoch=int(np.argmax([h['validation']['r'] for h in history])),best_trained_VAL_r=max(h['validation']['r'] for h in history),old_best_trained_VAL_r=max(h['validation']['r'] for h in oldhistory),old_online_last_window_MSE=oldhistory[-1]['train_window_MSE'],new_online_last_window_MSE=history[-1]['online_trajectory_window_MSE'])
 def csvwrite(name,rr):
     with (out/name).open('x',newline='') as f:w=csv.DictWriter(f,fieldnames=list(rr[0]));w.writeheader();w.writerows(rr)
 csvwrite('MATCHED_SUMMARY.csv',rows);csvwrite('OFFLINE_TRAIN.csv',offline);csvwrite('ONLINE_VAL_CURVES.csv',curves)
 means=[]
 for arm in ARMS:
-    rr=[r for r in rows if r['arm']==arm];means.append(dict(arm=arm,**{k:float(np.mean([r[k] for r in rr])) if all(r[k] is not None for r in rr) else None for k in rows[0] if k not in ('arm','seed','selected_epoch')}))
+    rr=[r for r in rows if r['arm']==arm];means.append(dict(arm=arm,**{k:float(np.mean([r[k] for r in rr])) if all(r[k] is not None for r in rr) else None for k in rows[0] if k not in ('arm','seed','selected_epoch','best_trained_VAL_epoch')}))
 csvwrite('THREE_SEED_MEANS.csv',means)
+paired=[]
+for seed in SEEDS:
+    hh,cc,pp=[next(r for r in rows if r['seed']==seed and r['arm']==a) for a in ARMS]
+    paired.append(dict(seed=seed,H_selected_epoch=hh['selected_epoch'],H_selected_is_zero_incumbent=hh['selected_epoch']==-1,H_minus_C_selected_r=hh['new_selected_VAL_r']-cc['new_selected_VAL_r'],H_minus_P_selected_r=hh['new_selected_VAL_r']-pp['new_selected_VAL_r'],H_minus_C_last19_r=hh['new_last_VAL_r']-cc['new_last_VAL_r'],H_minus_P_last19_r=hh['new_last_VAL_r']-pp['new_last_VAL_r'],H_near_minus_older=hh['H_near_minus_older']))
+csvwrite('PAIRED_COMPARISONS.csv',paired)
 plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False})
 colors=['#306998','#c86b31','#3f886e']
 def save(fig,name):fig.savefig(figs/name,dpi=160,bbox_inches='tight');plt.close(fig)
@@ -66,6 +72,6 @@ for ax,key,label in zip(axes,keys,labels):
     for i,seed in enumerate(SEEDS):ax.scatter(x+(i-1)*.08,[next(r[key] for r in rows if r['seed']==seed and r['arm']==a) for a in ARMS],label=str(seed),color=colors[i])
     ax.axhline(0,color='black',lw=.8);ax.set(xticks=x,xticklabels=ARMS,ylabel='Shuffled last19 minus old ordered last19',title=label);ax.legend(fontsize=8)
 save(fig,'04_MATCHED_LAST19_DIFFERENCES.png')
-summary=dict(rows=rows,three_seed_means=means,formal_fits=9,optimizer_updates=sum(x['updates'] for x in costs),formal_residual_NN_windows=sum(x['new_residual_NN_window_forwards'] for x in costs),engineering_success_NN=read(ROOT/'ENGINEERING_CHECK.json')['NN_windows'],engineering_failure_path_reconstruction_NN=362,new_encoder_head=0,CPU_worker_seconds=sum(x['CPU_seconds'] for x in costs),queue_wall_seconds=read(ROOT/'QUEUE_COMPLETED.json')['wall_seconds'],max_RSS_KiB=max(x['peak_RSS_KiB'] for x in costs),max_GPU_allocated_bytes=max(x['peak_GPU_allocated_bytes'] for x in costs),goal_complete=False,independent_review_required=True,new_NN_in_presentation=0)
+summary=dict(rows=rows,three_seed_means=means,paired_comparisons=paired,formal_fits=9,optimizer_updates=sum(x['updates'] for x in costs),formal_residual_NN_windows=sum(x['new_residual_NN_window_forwards'] for x in costs),engineering_success_NN=read(ROOT/'ENGINEERING_CHECK.json')['NN_windows'],engineering_failure_path_reconstruction_NN=362,new_encoder_head=0,CPU_worker_seconds=sum(x['CPU_seconds'] for x in costs),queue_wall_seconds=read(ROOT/'QUEUE_COMPLETED.json')['wall_seconds'],max_RSS_KiB=max(x['peak_RSS_KiB'] for x in costs),max_GPU_allocated_bytes=max(x['peak_GPU_allocated_bytes'] for x in costs),goal_complete=False,independent_review_required=True,new_NN_in_presentation=0)
 assert summary['formal_residual_NN_windows']==61710828 and summary['optimizer_updates']==710100
 (out/'SUMMARY.json').write_text(json.dumps(summary,indent=2,allow_nan=False));print(json.dumps(summary,allow_nan=False))
