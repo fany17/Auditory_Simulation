@@ -132,6 +132,12 @@ held-out subject weak、EEG→intracranial negative transfer、layer instability
 
 不得包含患者/STN 数据。
 
+## 2026-11-02 方法学研究设计提案：SS08（仅设计，非执行授权）
+
+研究者提出：固定EEG编码结构，比较（A）直接声音包络监督，（B）连续片段EEG遮挡/表征补全，（C）只用过去预测未来EEG表征，以及足够的额外训练成本对照；联合目标与通道遮挡后置。SS06 M3已做4/16/64个64Hz样本的未来表征EMA-teacher预测，预训练+微调未显示相对从头GRU的稳健增益；此前阴性证据必须保留，不能以“尚未试未来预测”重新立项。
+
+在S03内部提出 `PUB-01-S03_SS08`，当前仅 `BACKLOG / DESIGN_ONLY`，独立任务书：`subtasks/PUB-01-S03/PUB-01-S03_SS08_SELF_SUPERVISED_OBJECTIVE_COMPARISON.md`。**SS07继续唯一ACTIVE**，正在进行新的公开EEG外部确认，禁止抢占资源、修改其冻结protocol/工作队列，禁止以先前测试分数选SS08结构；SS08实验代码与训练交由Codex，在安全和数据准入满足后另行启动。此提案不改变两条公开支线、父任务最终验收、患者数据禁令或ART-AUDREP-v1范围。
+
 ## 12. Amendment Record
 
 2026-11-01最新：用户明确“尽快推进全量实验，目标找到超过原有baseline的方法框架；设定goal，允许调用2203的全部权限和算力，目标ICML/NeurIPS研究程度”。执行S03_SS07，覆盖旧STOP/单pass/仅原型限制，旧科学结论不改。保留完整原Transformer/XLSR19 backbone、两阶段目标/native权限/head；在原合法fold完整train/val上恢复SS02预训练100epoch/pat15、读出250epoch/pat10与至少3seed，五类连续残差有界矩阵另审阅。全量不将val/test并入train；旧test均POST-HOC INTERNAL EXPLORATORY，开发仅train/val，失败全部保留，不追test/承诺接收。只读并行寻找独立确认资产，需扩新数据先具体提案。患者/server2203/Git保护不变，新root s03_incremental_continuity_20261101，SS07轻报告，沿用worktree/分支允许commit/push不合并#6。新cache≤25GB且余量≥20GB，best/latest有界，历史不删；持续goal不以工程PASS或单seed阳性结束。精确基线核验后可直接全量运行，无额外用户许可门。
