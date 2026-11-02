@@ -1,3 +1,7 @@
+# 当前入口：D14工程通过，固定顺序对照待协调执行复核
+
+2026-11-02 D14仅顺序对照已冻结f5134d7，协议83b05eafcb126952d48750930106b5fb04c56d49f82d2b0128ba7d2c813d0172；engineering02 PASS：1230残差NN窗/0opt/fit/encoder，混record重排loss差0、参数grad≤3.49e-10，60排列双射/非空可学习batch及原record-local past通过。attempt01 eval-GRU backward失败source/protocol/log与映射原样保留，另362路径核算NN窗、资源峰未知。正式九fit尚0，待协调实际执行review后直接按原20epoch/710100更新/61710828残差NN窗运行，不再用户重复许可。源PLAN见 reports/pub_01/s03/incremental_continuity/order_control/run01/PLAN.md。旧D12/D13及外部冻结，SS07 ACTIVE。
+
 # 当前入口：D13固定误差诊断已封存，D14最小顺序对照准备中
 
 2026-11-02 D13已完成固定九last19误差分解：2508111残差NN窗、0新encoder/head/fit/update，61704主块投影；21375辅助行中21240投影已定义、135不足点保留。VAL MSE改善来自bias而r下降；TRAIN物理MSE升高、r下降，三对输出梯度在总体/record/person均正。独立真实TRAIN autograd3834record cos差5.55e-16、全块恒等及逐人/phase聚合通过，四图全文审阅与HTML归档交付检查通过；Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS。完整报告 reports/pub_01/s03/incremental_continuity/error_decomposition/run01/REPORT.md；run_id20261102_pub01_s03_ss07_error_decomposition。D12/D9和旧test/DTU/ds004408冻结。协调已授权D14唯一逐epoch全窗口顺序对照的最小方案/源准备与审阅，尚未新训练；不换loss/LR/容量，SS07/科研goal保持ACTIVE。

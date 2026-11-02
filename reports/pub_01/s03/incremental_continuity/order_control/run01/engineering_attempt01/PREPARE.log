@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/input/pub_01_s03_ss07_order_control_prepare.py", line 72, in <module>
+    if __name__=='__main__':prepare()
+                            ^^^^^^^^^
+  File "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/input/pub_01_s03_ss07_order_control_prepare.py", line 62, in prepare
+    loss=(pred-y).square().mean();loss.backward();outputs.append(pred.detach().cpu());losses.append(float(loss.detach()))
+                                  ^^^^^^^^^^^^^^^
+  File "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/autograd/__init__.py", line 381, in backward
+    _engine_run_backward(
+  File "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cudnn RNN backward can only be called in training mode
