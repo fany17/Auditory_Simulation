@@ -104,6 +104,25 @@ def finalize():
     p['engineering_measured_resource']=dict(peak_RSS_KiB=e['peak_RSS_KiB'],peak_GPU_allocated_bytes=e['peak_GPU_allocated_bytes'],CPU_seconds=e['CPU_seconds'],wall_seconds=e['wall_seconds'])
     dump(ROOT/'PROTOCOL.json',p);dump(ROOT/'FREEZE_RECORD.json',dict(passed=True,new_NN=0,new_backward=0,optimizer_updates=0,protocol_sha256=sha(ROOT/'PROTOCOL.json'),source_unchanged_from_engineering=True,CPU_seconds=time.process_time()-cpu,wall_seconds=time.time()-start));guard()
     print(json.dumps(dict(passed=True,protocol_sha256=sha(ROOT/'PROTOCOL.json'))))
+
+def rebind_metadata():
+    """Reuse validated permutations/size receipt after the narrow import repair."""
+    a=ROOT/'attempts/engineering_attempt01';p=read(a/'ENGINEERING_PROTOCOL.json')
+    assert not (ROOT/'ENGINEERING_PROTOCOL.json').exists()
+    for path,digest in p['source_pins'].items():
+        source=Path(path)
+        archived=a/'input'/source.name if source.parent==ROOT/'input' else a/'STORAGE_SCHEMA_CHECK.json' if source==ROOT/'STORAGE_SCHEMA_CHECK.json' else source
+        assert sha(archived)==digest,path
+    for source in sorted((ROOT/'input').glob('pub_01_s03_ss07_preprojection_*.py')):p['source_pins'][str(source)]=sha(source)
+    assert sha(ROOT/'input/pub_01_s03_ss07_preprojection_reference.py')=='19eaa95bcd166ae5c35c0d30000e50b92089af32864ac0165d62a1448f401d18'
+    with (ROOT/'STORAGE_SCHEMA_CHECK.json').open('xb') as f:f.write((a/'STORAGE_SCHEMA_CHECK.json').read_bytes())
+    failure=a/'ENGINEERING_FAILURE.json';e=read(failure);counts=dict(e['counts_completed_rows'])
+    for key,count in e['unfinished_model_invoked_component_counts'].items():counts[key]=counts.get(key,0)+count
+    p['source_pins'][str(failure)]=sha(failure)
+    p['prior_engineering_costs']=dict(production=counts,extra=e['extra_counts'],attempts=[dict(path=str(failure),sha256=sha(failure),CPU_seconds=None,wall_seconds=None,resource_timing_limitation='Attempt01 failed before timing receipt was implemented; do not infer zero cost')])
+    p['metadata_rebound_from_sha256']=sha(a/'ENGINEERING_PROTOCOL.json');verify(p);dump(ROOT/'ENGINEERING_PROTOCOL.json',p)
+    dump(ROOT/'METADATA_PREPARED.json',dict(passed=True,engineering_protocol_sha256=sha(ROOT/'ENGINEERING_PROTOCOL.json'),reuses_validated_metadata=str(a/'METADATA_PREPARED.json'),new_permutations=0,new_size_cases=0,new_encoder_head_forwards=0,scientific_array_values_read=False,new_fits=0))
+    print(json.dumps(dict(passed=True,engineering_protocol_sha256=sha(ROOT/'ENGINEERING_PROTOCOL.json'))))
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('action',choices=('metadata','finalize'));args=parser.parse_args()
-    metadata_prepare() if args.action=='metadata' else finalize()
+    parser=argparse.ArgumentParser();parser.add_argument('action',choices=('metadata','rebind','finalize'));args=parser.parse_args()
+    {'metadata':metadata_prepare,'rebind':rebind_metadata,'finalize':finalize}[args.action]()
