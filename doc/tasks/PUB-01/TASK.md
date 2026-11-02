@@ -205,3 +205,7 @@ S02先完成SparrKULee声学基线：复用发布方64Hz EEG/envelope，按实�
 真人授权ds004408 v1.0.8全380条/19人已在2203完成固定输入适配与三seed四角色一次推理，独立重建4560记录/11856块/2280完整FP32诊断及两主推断通过。Ccap−强FT Δr+.008040823、family95近似CI[.00511387,.01097443]、Holm2 p5.34e−5，三seed/18人正；F−W未达阈值，F窗口退化及融合MSE更差保留。当前窗口静态读出迁移不证明连续历史机制/新颖性/投稿充分性。
 
 Technical/阶段Acceptance PASS_WITH_LIMITATION、Parent consistency PASS；独立全文/图表/轻量表/成本最终审阅通过，13PNG完整中文HTML及相对链接/限制可见性核验完成。报告/验收/归档见reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/REPORT.md、REVIEW.md、ARCHIVE.md，run_id20261102_pub01_s03_ss07_openneuro_gain_transfer。380次含未来EEG无标签gain、SI未知、标准模板/零偏移、单一叙述及预训练接触限制保留。SS07与PUB-01 ACTIVE、科学goal未达到；旧结论冻结，无新模型/数据/患者/旧test或DTU推理、无自动下游或PR合并。
+
+### 2026-11-02 SS07完整FT条件历史阶段封存（不完成父任务）
+
+唯一H/current/prior三seed九fit20轮共710100更新完成，全部selected−1；H最佳已训练仍低于强FT+Ccap约.0063–.0079，收益门FALSE，last MSE改善/r下降均保留。独立selected/older/非零last19/目标/轻表与全文图文通过，5PNG完整中文HTML交付验证通过；Technical PASS / 阶段Acceptance PASS_WITH_LIMITATION / Parent PASS。详见full_ft_history/run01/REPORT.md、REVIEW.md、ARCHIVE.md。本候选冻结，SS07/PUB-01与持续goal ACTIVE，不自动扩模型/预算/数据、重开已看外部集、触碰患者或合并PR。

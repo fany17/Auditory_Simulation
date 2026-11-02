@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — ds004408本阶段三seed完整评估及独立4560记录/11856块/2280FP32复算完成；Ccap−PFT +.008040823、Holm5.34e−5、3seed/18人正；F−W未达阈值/单窗退化保留。阶段PASS_WITH_LIMITATION、全文/图实际审阅通过、轻量表/成本最终记录通过、13图HTML完整归档及交付核验完成；科学goal未达到，无自动新模型/数据/节点 |
+| Status | ACTIVE — 全量原强基线及D4-D11/授权ds004408结果冻结；最新完整FT条件历史9fit×20轮/710100更新完成，全部selected−1、best-trained H低于锚点.0063–.0079，收益门FALSE。独立手写/非零last19/目标/图文审阅通过，5PNG完整HTML已归档；本候选封存，持续goal未达到，无自动新实验/患者/外部重开/PR合并 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置；2026-11-02真人授权的ds004408 v1.0.8公开EEG/对应音频/必要metadata（固定b2d91784，唯一新范围） |
@@ -161,3 +161,10 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 ### 2026-11-02 research_gap/run01只读盘点 Completion Record
 
 按持续goal指令核round01/warm/D4/D5/D11历史输入、目标、实际参数与current控制；D4 full1536仅native、D5 native低维交互、D11 FT+Ccap仅PCA8二阶状态，未测试组合不补写阴性。2203只读475 TRAIN/VAL元数据、14共同/FT缓存header及46target header；无数组值读取/新fit/NN，旧test/DTU/ds004408未访问。已交依赖/参数清单、文献核验及完整FT时序单候选：冻结强锚点、同活跃current、语义output-prior、更早历史干预、统一mask/九fit预算与选点建议，尚待协调审定，不是已运行/科学验收。目录research_gap/run01，不建新节点；后续原TRAIN/VAL执行在既有授权范围，不因旧“无自动新实验”误停持续goal。
+### 2026-11-02 完整FT条件历史九fit Completion Record
+
+同SS07内唯一结构H/current/prior×原三seed，各20轮/78900更新，总180轮/710100更新完整完成，queue1585992正常退出。原FT+Ccap冻结、完整8×192输入经32瓶颈、严格6秒过去与i>=9/older、原752块/最早VAL60s选点不变；没有重开旧test/DTU/ds004408或新权重/患者。
+
+九fit均selected−1，selected平均r=.182339940为原锚点；H各seed最佳已训练r=.174152708/.173834694/.177039677，均低于锚点.0063–.0079，预定收益门FALSE。最后轮MSE改善但r下降保留；回退/older零差不等于新增非零函数等效或历史普遍无用。全部180曲线、9 best-trained与last表完整交付。
+
+独立手写selected/older/anchor60690项、全部9非零last19 72项、非零TRAIN CPU/GPU桥、完整目标映射和family/warm/轻表均通过；4主图+1历史显示图已实际看/完整中文解释、协调全文审阅、HTML版本/限制可见性/链接通过。Technical PASS / 阶段Acceptance PASS_WITH_LIMITATION / Parent PASS。报告、验收、归档位于reports/pub_01/s03/incremental_continuity/full_ft_history/run01/；run_id20261102_pub01_s03_ss07_full_ft_history。本候选封存，SS07/持续goal ACTIVE，当前不自动追加fit/epoch/loss/模型或下游，后续科学问题由协调另行界定。

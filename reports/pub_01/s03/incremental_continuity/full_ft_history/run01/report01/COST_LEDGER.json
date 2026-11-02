@@ -1,0 +1,583 @@
+{
+  "entries": [
+    {
+      "stage": "formal_C_match_seed1024",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed1024/COMPLETED.json",
+        "sha256": "a0936e79449c0bcec5d24c3c8214af4e607eeb59a41acc93d15848e840b80a08"
+      },
+      "measurements": {
+        "seed": 1024,
+        "arm": "C_match",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.18188879428826338,
+        "new_trainable_parameters": 165792,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5603639,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 339.04263496398926,
+        "CPU_seconds": 376.628197139,
+        "peak_RSS_KiB": 5139428,
+        "peak_GPU_allocated_bytes": 37858816,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_C_match_seed2026",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed2026/COMPLETED.json",
+        "sha256": "6e477c9ca76f53768c1d8b4bc69ed71a5046bd0ca216df48d2c42dff3979cac6"
+      },
+      "measurements": {
+        "seed": 2026,
+        "arm": "C_match",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.1817561196902157,
+        "new_trainable_parameters": 165792,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5603639,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 351.0656590461731,
+        "CPU_seconds": 379.02226719,
+        "peak_RSS_KiB": 5143300,
+        "peak_GPU_allocated_bytes": 37858816,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_C_match_seed31415",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed31415/COMPLETED.json",
+        "sha256": "176fe837989401e4485e1bee19658ecd620c6fffa226a361fa294fb71a0e0af2"
+      },
+      "measurements": {
+        "seed": 31415,
+        "arm": "C_match",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.18337490481957303,
+        "new_trainable_parameters": 165792,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5603639,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 326.1029314994812,
+        "CPU_seconds": 352.518406757,
+        "peak_RSS_KiB": 5136716,
+        "peak_GPU_allocated_bytes": 37858816,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_H_full_seed1024",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed1024/COMPLETED.json",
+        "sha256": "8c550cdc283e9186a129d470d3372090211dfabaa104e7b9773c6e0cc4f395c7"
+      },
+      "measurements": {
+        "seed": 1024,
+        "arm": "H_full",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.18188879428826338,
+        "new_trainable_parameters": 165792,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5633698,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 341.9211413860321,
+        "CPU_seconds": 376.60827194,
+        "peak_RSS_KiB": 5138152,
+        "peak_GPU_allocated_bytes": 37858816,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_H_full_seed2026",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed2026/COMPLETED.json",
+        "sha256": "1d997ff89d1834ab0fda0b933c1a16aa619bad0a0c5115acbd61e5f6ec90c2ce"
+      },
+      "measurements": {
+        "seed": 2026,
+        "arm": "H_full",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.1817561196902157,
+        "new_trainable_parameters": 165792,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5633698,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 340.43040323257446,
+        "CPU_seconds": 368.201020618,
+        "peak_RSS_KiB": 5144672,
+        "peak_GPU_allocated_bytes": 37858816,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_H_full_seed31415",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed31415/COMPLETED.json",
+        "sha256": "dab63c282049bc85d51a2b518959d3d537bfdb11313e1800b447ff6dec758ece"
+      },
+      "measurements": {
+        "seed": 31415,
+        "arm": "H_full",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.18337490481957303,
+        "new_trainable_parameters": 165792,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5633698,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 340.738826751709,
+        "CPU_seconds": 366.817053855,
+        "peak_RSS_KiB": 5098480,
+        "peak_GPU_allocated_bytes": 37858816,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_P_prior_seed1024",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed1024/COMPLETED.json",
+        "sha256": "6d98307e312583b3bb44f8a2e37a63fcbb60bed176cec2900079e6030a697423"
+      },
+      "measurements": {
+        "seed": 1024,
+        "arm": "P_prior",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.18188879428826338,
+        "new_trainable_parameters": 164784,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5603639,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 346.6450366973877,
+        "CPU_seconds": 372.54660125600003,
+        "peak_RSS_KiB": 5142692,
+        "peak_GPU_allocated_bytes": 37159936,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_P_prior_seed2026",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed2026/COMPLETED.json",
+        "sha256": "3f5a7667f8385758fcded4b97fbeea10e9071dea6f078c57b182c23797a727da"
+      },
+      "measurements": {
+        "seed": 2026,
+        "arm": "P_prior",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.1817561196902157,
+        "new_trainable_parameters": 164784,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5603639,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 325.22084975242615,
+        "CPU_seconds": 353.639404455,
+        "peak_RSS_KiB": 5140732,
+        "peak_GPU_allocated_bytes": 37159936,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "formal_P_prior_seed31415",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed31415/COMPLETED.json",
+        "sha256": "38d9fb8296b7b73c12854c5567e115e2c6e7ac463c23c4f13a753b09611785c5"
+      },
+      "measurements": {
+        "seed": 31415,
+        "arm": "P_prior",
+        "epochs": 20,
+        "updates": 78900,
+        "selected_epoch": -1,
+        "selected_validation_r": 0.18337490481957303,
+        "new_trainable_parameters": 164784,
+        "target_window_presentations": 5049080,
+        "effective_residual_TRAIN_presentations": 4972400,
+        "new_residual_NN_window_forwards": 5603639,
+        "new_encoder_head_forwards": 0,
+        "wall_seconds": 345.5937509536743,
+        "CPU_seconds": 371.291994275,
+        "peak_RSS_KiB": 5119348,
+        "peak_GPU_allocated_bytes": 37159936,
+        "test_or_external_access": false
+      }
+    },
+    {
+      "stage": "successful_disposable_engineering",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/ENGINEERING_CHECK.json",
+        "sha256": "50aed252737d02c7380c2789c14fbe3814479c215903145ccec64e8b41b23fce"
+      },
+      "measurements": {
+        "temporary_discarded_optimizer_steps": 18,
+        "temporary_residual_NN_window_forwards": 92046,
+        "wall_seconds": 47.61292839050293,
+        "CPU_seconds": 124.275500877,
+        "peak_RSS_KiB": 5892972,
+        "peak_GPU_allocated_bytes": 44781568
+      }
+    },
+    {
+      "stage": "independent_selected_and_older_review",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/coordinator_review/REVIEW.json",
+        "sha256": "b7df3325c23d125a8ef27ccce8913eeb049bf6e20673c9666419edad045a87db"
+      },
+      "measurements": {
+        "residual_NN_window_forwards": 360708,
+        "new_encoder_head_forwards": 0,
+        "optimizer_updates": 0,
+        "actual_input_sha256_bytes": 6105835072,
+        "wall_seconds": 19.94571042060852,
+        "CPU_seconds": 50.022376269999995,
+        "peak_RSS_KiB": 1217548,
+        "GPU_bytes": 0
+      }
+    },
+    {
+      "stage": "independent_all_last19_review",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/coordinator_last_review/REVIEW.json",
+        "sha256": "e075aa0d65ba01eea2591bdc4af03578de42e87d48ea053e55325f80a8af6648"
+      },
+      "measurements": {
+        "residual_NN_window_forwards": 270531,
+        "new_encoder_head_forwards": 0,
+        "optimizer_updates": 0,
+        "actual_input_sha256_bytes": 0,
+        "CPU_seconds": 35.524158588999995,
+        "wall_seconds": 10.612181186676025,
+        "peak_RSS_KiB": 1215468,
+        "GPU_bytes": 0
+      }
+    },
+    {
+      "stage": "nonzero_TRAIN_CPU_GPU_bridge",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/COORDINATOR_REVIEW_TRAIN_BRIDGE.json",
+        "sha256": "009b85276b1c081326248bcaba73ccea82209528bcdd7068d88f9e65c18e58aa"
+      },
+      "measurements": {
+        "residual_NN_window_forwards_CPU": 48,
+        "residual_NN_window_forwards_GPU": 48,
+        "CPU_seconds": 0.9327057900000002,
+        "wall_seconds": 0.5745127201080322,
+        "peak_RSS_KiB": 1000356,
+        "peak_GPU_allocated_bytes": 19036672
+      }
+    },
+    {
+      "stage": "complete_target_mapping",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/COORDINATOR_TARGET_MAPPING.json",
+        "sha256": "0edfa229073a139dd6651c40bde94ce26ab44da9a48dbd3557283b531803e11c"
+      },
+      "measurements": {
+        "NN_forwards": 0,
+        "wall_seconds": 0.21558833122253418,
+        "CPU_seconds": 0.21418780399999998
+      }
+    },
+    {
+      "stage": "synthetic_manual_GRU_and_Hann_check",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/COORDINATOR_REVIEW_SOURCE_CHECK.json",
+        "sha256": "7ca352d88a6411e2bfa799d4ecd94ef30aed567bebd148898a2447519143e587"
+      },
+      "measurements": {
+        "synthetic_GRU_sequences": 7,
+        "synthetic_GRU_steps_per_sequence": 2,
+        "CPU_seconds": 0.05665985500000015,
+        "wall_seconds": 0.022836923599243164
+      }
+    },
+    {
+      "stage": "failed_engineering_attempt01",
+      "inherited": false,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/engineering_attempt01/FAILURE_RECORD.json",
+        "sha256": "a767d1e1c4fe75ac22d277e0b6b10ba011c41beb18757b56c898b44127080d2c"
+      },
+      "measurements": {
+        "failure": "cuDNN GRU backward while model remained eval after initial prediction",
+        "formal_fits": 0,
+        "temporary_optimizer_updates": 0,
+        "disposable_NN_window_forwards_derived_from_executed_first_H_path": 30169,
+        "count_basis": "30500-window VAL prediction evaluates30059 nonfallback +55 initialTRAIN +55 failed backward forward; source/trace show first step failed before optimizer.step",
+        "wall_seconds": null,
+        "CPU_seconds": null,
+        "correction": "Explicit model.train before disposable updates; no change to scientific matrix. Also complete stream hashes, idle GPU PID checks and own-worker timeout cleanup before formal run",
+        "no_deletion": true
+      },
+      "counts_path_derived_not_runtime_counter": true
+    },
+    {
+      "stage": "inherited_pretraining_seed1024",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed1024/completed.json",
+        "sha256": "6790f607ddf65f70fe09804ee4fc65542628ffd163c9c1fec72b70cc79ffa25f"
+      },
+      "measurements": {
+        "wall_seconds": 4051.133745908737,
+        "CPU_seconds": null,
+        "epochs": 24,
+        "updates": 19680,
+        "selected_epoch": 8,
+        "target_window_presentations": null,
+        "stochastic_actual_presentations": 2519040,
+        "sample_presentations": 483655680,
+        "target_sample_presentations": null
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_head_including_cache_seed1024",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/completed.json",
+        "sha256": "0c22721f33dd8347e7b1089982c5e28116ac621320fab423460fcd9bb9860c29"
+      },
+      "measurements": {
+        "wall_seconds": 1502.5930078029633,
+        "CPU_seconds": null,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "target_window_presentations": 63113500,
+        "stochastic_actual_presentations": null,
+        "sample_presentations": null,
+        "target_sample_presentations": 12117792000
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_strong_FT_seed1024",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed1024/completed.json",
+        "sha256": "8ba7e14c2b29fc1285672c74419558aac5ef20b6752bbf52c7c12a8dac58572f"
+      },
+      "measurements": {
+        "wall_seconds": 3257.197015762329,
+        "CPU_seconds": null,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "target_window_presentations": 1262270,
+        "stochastic_actual_presentations": null,
+        "sample_presentations": null,
+        "target_sample_presentations": null
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_pretraining_seed2026",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed2026/completed.json",
+        "sha256": "e37de70373223fe7d584e9aa8792b13266eff9c9a476380702905627722fa7a5"
+      },
+      "measurements": {
+        "wall_seconds": 6112.8350784778595,
+        "CPU_seconds": null,
+        "epochs": 27,
+        "updates": 22140,
+        "selected_epoch": 11,
+        "target_window_presentations": null,
+        "stochastic_actual_presentations": 2833920,
+        "sample_presentations": 544112640,
+        "target_sample_presentations": null
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_head_including_cache_seed2026",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/completed.json",
+        "sha256": "0360e4aca4b446fafb923e36a8616b4175929efb5267c096b28f629a32eda93d"
+      },
+      "measurements": {
+        "wall_seconds": 1533.7738671302795,
+        "CPU_seconds": null,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "target_window_presentations": 63113500,
+        "stochastic_actual_presentations": null,
+        "sample_presentations": null,
+        "target_sample_presentations": 12117792000
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_strong_FT_seed2026",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed2026/completed.json",
+        "sha256": "4fe8b9e7e117d372713a6ec5791e0052f6690a5a1b0682a2c8cf34ad7fc30276"
+      },
+      "measurements": {
+        "wall_seconds": 4013.4077484607697,
+        "CPU_seconds": null,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "target_window_presentations": 1262270,
+        "stochastic_actual_presentations": null,
+        "sample_presentations": null,
+        "target_sample_presentations": null
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_pretraining_seed31415",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed31415/completed.json",
+        "sha256": "9a391135317902eb7b1bbfa3144beb22733f2177a533d3afd32815a76a4eab01"
+      },
+      "measurements": {
+        "wall_seconds": 4394.759388685226,
+        "CPU_seconds": null,
+        "epochs": 26,
+        "updates": 21320,
+        "selected_epoch": 10,
+        "target_window_presentations": null,
+        "stochastic_actual_presentations": 2728960,
+        "sample_presentations": 523960320,
+        "target_sample_presentations": null
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_head_including_cache_seed31415",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/completed.json",
+        "sha256": "2ef25a6591409347af5fe3ddd6d1cdf50c8565ac8d5b9651bc411301c5bb6e48"
+      },
+      "measurements": {
+        "wall_seconds": 1364.6672563552856,
+        "CPU_seconds": null,
+        "epochs": 250,
+        "updates": 986250,
+        "selected_epoch": 249,
+        "target_window_presentations": 63113500,
+        "stochastic_actual_presentations": null,
+        "sample_presentations": null,
+        "target_sample_presentations": 12117792000
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_strong_FT_seed31415",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed31415/completed.json",
+        "sha256": "1ea84c687b42b701663fdab1c0cb97cf51b3e8c4e43889762a91740d856eb4f3"
+      },
+      "measurements": {
+        "wall_seconds": 3225.6097860336304,
+        "CPU_seconds": null,
+        "epochs": 5,
+        "updates": 19725,
+        "selected_epoch": 4,
+        "target_window_presentations": 1262270,
+        "stochastic_actual_presentations": null,
+        "sample_presentations": null,
+        "target_sample_presentations": null
+      },
+      "missing_measurements": "Unrecorded fields remain null, not zero"
+    },
+    {
+      "stage": "inherited_D8_FT_cache_calibration_and_27_ridge_fits",
+      "inherited": true,
+      "reference": {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/COST.json",
+        "sha256": "c15115885d719d7fc3e0abb905f6afc6ed061fa97793316d779a50c234e734cd"
+      },
+      "measurements": {
+        "wall_seconds": 386.58805990219116,
+        "CPU_seconds": 1183.993107539,
+        "primary_encoder_head_windows": 848862,
+        "extra_bridge_encoder_head_windows": 300,
+        "new_ridge_fits": 27,
+        "NN_updates": 0,
+        "raw_VAL_scalar_bridges": 3,
+        "raw_VAL_batch_wave_bridges": 6,
+        "inherited_training_costs_not_zero": true,
+        "test_DTU": false
+      },
+      "all_stage_details_in_referenced_manifest": true
+    },
+    {
+      "stage": "unmeasured_overhead_and_upstream_cost",
+      "inherited": true,
+      "measurements": {
+        "wall_seconds": null,
+        "CPU_seconds": null
+      },
+      "scope": "Original published preprocessing/upstream XLSR pretraining/complete historic SS07 search; new inventory/source retrieval/report preparation not fully instrumented",
+      "unknown_is_not_zero": true
+    }
+  ],
+  "units": {
+    "wall_seconds": "seconds",
+    "CPU_seconds": "seconds",
+    "peak_RSS_KiB": "KiB",
+    "peak_GPU_allocated_bytes": "bytes, excludes driver/context"
+  },
+  "formal_updates": 710100,
+  "discarded_engineering_updates": 18,
+  "formal_new_residual_NN_windows": 50522928,
+  "successful_engineering_windows": 92046,
+  "failed_engineering_windows_path_derived": 30169,
+  "independent_review_windows": 631335,
+  "all_counted_full_residual_windows_including_path_derived_failure": 51276478,
+  "synthetic_short_GRU_sequences_separate": 7,
+  "new_encoder_head_windows": 0,
+  "new_external_access": false,
+  "actual_parallel_queue_wall_seconds": 1730.7780511379242,
+  "parallel_fit_wall_times_not_summed": true,
+  "ledger_not_complete_historic_search_cost": true
+}

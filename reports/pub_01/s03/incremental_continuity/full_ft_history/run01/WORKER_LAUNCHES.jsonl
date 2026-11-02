@@ -1,0 +1,9 @@
+{"seed": 1024, "arm": "H_full", "device": "cuda:0", "pid": 1586000, "uid": 1012, "start_ticks": "754213754", "time": 1793614892.8414805, "prelaunch_compute_pids": []}
+{"seed": 1024, "arm": "C_match", "device": "cuda:1", "pid": 1586008, "uid": 1012, "start_ticks": "754213761", "time": 1793614892.9053786, "prelaunch_compute_pids": []}
+{"seed": 1024, "arm": "P_prior", "device": "cuda:0", "pid": 1591762, "uid": 1012, "start_ticks": "754248771", "time": 1793615243.0078642, "prelaunch_compute_pids": []}
+{"seed": 2026, "arm": "H_full", "device": "cuda:1", "pid": 1591828, "uid": 1012, "start_ticks": "754248781", "time": 1793615243.110565, "prelaunch_compute_pids": []}
+{"seed": 2026, "arm": "C_match", "device": "cuda:0", "pid": 1598060, "uid": 1012, "start_ticks": "754283790", "time": 1793615593.199255, "prelaunch_compute_pids": []}
+{"seed": 2026, "arm": "P_prior", "device": "cuda:1", "pid": 1598068, "uid": 1012, "start_ticks": "754283797", "time": 1793615593.2650945, "prelaunch_compute_pids": []}
+{"seed": 31415, "arm": "H_full", "device": "cuda:1", "pid": 1603311, "uid": 1012, "start_ticks": "754316804", "time": 1793615923.337051, "prelaunch_compute_pids": []}
+{"seed": 31415, "arm": "C_match", "device": "cuda:0", "pid": 1603727, "uid": 1012, "start_ticks": "754319812", "time": 1793615953.4175508, "prelaunch_compute_pids": []}
+{"seed": 31415, "arm": "P_prior", "device": "cuda:1", "pid": 1608817, "uid": 1012, "start_ticks": "754351823", "time": 1793616273.5288684, "prelaunch_compute_pids": []}

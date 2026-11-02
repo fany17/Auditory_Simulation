@@ -1,3 +1,6 @@
+# 当前入口：完整FT历史条件器九fit已封存，收益门FALSE，持续goal未达到
+
+[完整结果](../reports/pub_01/s03/incremental_continuity/full_ft_history/run01/REPORT.md) / [独立验收](../reports/pub_01/s03/incremental_continuity/full_ft_history/run01/REVIEW.md) / [5PNG中文HTML归档](../reports/pub_01/s03/incremental_continuity/full_ft_history/run01/ARCHIVE.md)。9×20epoch/710100更新完成，全部selected−1；最佳已训练H仍低于强锚点.0063–.0079。技术及图文审阅通过不等于方法改进；MSE改善与r下降共存。见CURRENT_TASK顶部，旧PID均结束，不重启旧入口。当前不自动新fit/数据/模型/预算/患者/PR合并，后续问题由协调另行界定；整体SS07 ACTIVE。下方各启动入口仅历史。
 # 当前入口：SS07完整FT条件历史九fit正式运行
 
 先读[CURRENT_TASK](CURRENT_TASK.md)和[FULL_FT_HISTORY_STATUS](../reports/pub_01/s03/incremental_continuity/research_gap/run01/FULL_FT_HISTORY_STATUS.md)。协调审定单结构/三seed/九fit各20轮，正式queue1585992已启动；工程/初始Ccap/梯度/严格过去/输入身份检查通过，源commit e62a70b。当前结果尚待，不能用工程PASS完成goal；不重启旧PID、旧test/DTU/ds004408，不追加模型/预算或碰患者。下方“待审定/只读”属于先前快照。

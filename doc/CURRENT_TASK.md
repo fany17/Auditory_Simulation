@@ -1,3 +1,10 @@
+# 当前结果：完整FT条件历史九fit已封存，独立数值/图文通过，收益门FALSE（2026-11-02）
+
+180epoch/710100更新全部完成，九fit均按原VAL60s最早best规则选incumbent−1。selected r=.182339940为冻结FT+Ccap，不是新增方法同分成功。H各seed最佳已训练r=.174152708/.173834694/.177039677，均低于锚点约.0063–.0079；current/prior亦下降。最后轮MSE改善与r下降同时保留，不认定所有指标退化或全部历史无用。科学收益门FALSE，SS07/持续goal未达到。
+
+完整[REPORT](../reports/pub_01/s03/incremental_continuity/full_ft_history/run01/REPORT.md)、[阶段验收](../reports/pub_01/s03/incremental_continuity/full_ft_history/run01/REVIEW.md)、[协调原文](../reports/pub_01/s03/incremental_continuity/full_ft_history/run01/COORDINATOR_REVIEW.md)、[HTML归档](../reports/pub_01/s03/incremental_continuity/full_ft_history/run01/ARCHIVE.md)。独立selected/older/anchor手写回放60690项、全部九非零last19回放72项、非零TRAIN CPU/GPU桥、全target映射、75 family/15warm与轻表均通过；4主图+1历史图完整中文HTML/版本/限制/链接验证完成。Technical PASS / 阶段Acceptance PASS_WITH_LIMITATION / Parent PASS，不代表方法改进或投稿充分性。
+
+本候选queue已正常退出，9fit全部20轮/78900步；正式残差NN50522928窗，含工程/失败可追路径/独立审核总51276478窗，旧encoder/head新前向0。原代码/协议b8e3552f…289f3与全部失败/曲线/成本保留。所有信号/NN/计算仅2203，旧test/DTU/ds004408冻结、患者FORBIDDEN，PR6不合并。本阶段收束，不自启新模型、改loss/epoch或开其他节点；持续goal后续科学问题由协调依据既有证据另行界定。以下启动/等待内容均为历史快照。
 # 当前执行：完整FT条件历史九fit正式训练已启动（2026-11-02）
 
 协调已审定唯一结构：H_full/C_match/P_prior × seed1024/2026/31415，各20epoch/78900更新，总710100；固定强FT+Ccap、K2严格过去i−5/i−3、i>=9、窗口逐点MSE/Adam.001、最早VAL60s/person best含incumbent，全部跑满。两空闲GPU并行不同fit，总6h，每worker RSS8GiB/GPU2GiB、新run128MiB，历史磁盘副本0。方案、协调决定和实际源冻结见[STATUS](../reports/pub_01/s03/incremental_continuity/research_gap/run01/FULL_FT_HISTORY_STATUS.md)。

@@ -1,3 +1,4 @@
+> 最新完成：本候选9×20轮/710100更新已全部完成并封存；全部selected−1、科学收益门FALSE，独立数值及图文审阅通过。完整[REPORT](../../full_ft_history/run01/REPORT.md)、[REVIEW](../../full_ft_history/run01/REVIEW.md)、[HTML归档](../../full_ft_history/run01/ARCHIVE.md)。下方工程/启动状态保留为历史，不重启旧PID；SS07/持续goal ACTIVE。
 # 完整FT历史条件候选：工程完成、正式矩阵接续
 
 2026-11-02。协调已批准唯一结构，原TRAIN/VAL九fit×20epoch、710100更新，最多两张空闲GPU并行，整体6h。详细规则见[CANDIDATE_PLAN](CANDIDATE_PLAN.md)、[协调决定](COORDINATOR_DECISION.md)、[实际冻结协议](PROTOCOL.json)。本轮不是已完成科学结果；SS07/持续goal ACTIVE。

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "arm": "H_full",
+      "mean_best_trained_r": 0.17500902616672923,
+      "mean_anchor_r": 0.18233993959935071,
+      "mean_difference": -0.007330913432621479
+    },
+    {
+      "arm": "C_match",
+      "mean_best_trained_r": 0.1746680754195168,
+      "mean_anchor_r": 0.18233993959935071,
+      "mean_difference": -0.007671864179833926
+    },
+    {
+      "arm": "P_prior",
+      "mean_best_trained_r": 0.17487679672894174,
+      "mean_anchor_r": 0.18233993959935071,
+      "mean_difference": -0.007463142870408983
+    }
+  ],
+  "source": "Complete HISTORY.jsonl; existing validation scores only; no new selected checkpoint or NN",
+  "goal_complete": false
+}
