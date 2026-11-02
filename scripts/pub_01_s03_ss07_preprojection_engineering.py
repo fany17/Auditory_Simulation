@@ -48,7 +48,8 @@ def engineering(device):
         ids0=np.array(p['TRAIN_cases'][str(seed)]['shuffle0']);ids1=np.array(p['TRAIN_cases'][str(seed)]['shuffle1']);cold=np.array(p['TRAIN_cases'][str(seed)]['cold'])
         bridge=readout_bridge(data,device,ids0);dump(ROOT/f'ENGINEERING_READOUT_seed{seed}.json',bridge);reference_train=None;reference_rng_after=None;common_initial=None
         for arm in ARMS:
-            seed_all(seed,device);model=make_model(seed,arm,data,device);model.train()
+            seed_all(seed,device);cuda_before_constructor=torch.cuda.get_rng_state(device).clone();model=make_model(seed,arm,data,device);model.train()
+            assert torch.equal(cuda_before_constructor,torch.cuda.get_rng_state(device)),'CPU-only initialization must preserve CUDA RNG'
             LIVE_MODEL=model
             count_start=dict(model.count);initial={k:v.clone() for k,v in model.trainable_state().items()}
             frozen={k:v.detach().cpu().clone() for k,v in model.reference_encoder.state_dict().items()};buffers={k:v.detach().cpu().clone() for k,v in model.readout.named_buffers()}
@@ -128,7 +129,8 @@ def engineering(device):
             del model,opt,batch,target,cold_batch,pred,bypass,cached_capture,initial,frozen,buffers,hooks;gc.collect();torch.cuda.empty_cache();guard()
         del data;gc.collect()
     previous=p['prior_engineering_costs'];prior=previous['production'];prior_extra=previous['extra']
-    assert EXTRA['temporary_optimizer_updates']+prior_extra.get('temporary_optimizer_updates',0)==24
+    assert EXTRA['temporary_optimizer_updates']==24
+    assert EXTRA['temporary_optimizer_updates']+prior_extra.get('temporary_optimizer_updates',0)==p['engineering_caps']['temporary_optimizer_updates']==28
     assert TOTAL['current_encoder_prefix_windows']+EXTRA['reference_encoder_prefix_windows']+prior.get('current_encoder_prefix_windows',0)+prior_extra.get('reference_encoder_prefix_windows',0)<=8192
     assert TOTAL['current_head_windows']+EXTRA['reference_head_windows']+prior.get('current_head_windows',0)+prior_extra.get('reference_head_windows',0)<=8192
     assert TOTAL['frozen_encoder_prefix_windows']+prior.get('frozen_encoder_prefix_windows',0)<=16384

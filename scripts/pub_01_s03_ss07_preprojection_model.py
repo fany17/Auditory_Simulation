@@ -90,10 +90,10 @@ class AdaptedDecoder(nn.Module):
         self.readout=readout
         if arm!='T_continue':
             with torch.random.fork_rng(devices=[]):
-                torch.manual_seed(seed+18000);self.memory=TokenMemory()
+                torch.random.default_generator.manual_seed(seed+18000);self.memory=TokenMemory()
         if arm=='P_prediction_history':
             with torch.random.fork_rng(devices=[]):
-                torch.manual_seed(seed+18001);self.prior_projection=nn.Conv1d(1,64,9,padding=4)
+                torch.random.default_generator.manual_seed(seed+18001);self.prior_projection=nn.Conv1d(1,64,9,padding=4)
         self.count={k:0 for k in ('current_encoder_prefix_windows','current_projection_windows','current_head_windows','frozen_encoder_prefix_windows','attention_query_windows','prior_projection_windows')}
         self.capture=False;self.last_diagnostics=None
     def train(self,mode=True):

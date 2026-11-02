@@ -106,9 +106,9 @@ def finalize():
     print(json.dumps(dict(passed=True,protocol_sha256=sha(ROOT/'PROTOCOL.json'))))
 
 def rebind_metadata():
-    """Reuse validated permutations/size receipt after the narrow import repair."""
-    a=ROOT/'attempts/engineering_attempt01';p=read(a/'ENGINEERING_PROTOCOL.json')
-    assert not (ROOT/'ENGINEERING_PROTOCOL.json').exists()
+    """Reuse validated permutations/size after recorded narrow engineering repairs."""
+    attempts=sorted((ROOT/'attempts').glob('engineering_attempt*'));a=attempts[-1]
+    p=read(a/'ENGINEERING_PROTOCOL.json');assert not (ROOT/'ENGINEERING_PROTOCOL.json').exists()
     for path,digest in p['source_pins'].items():
         source=Path(path)
         archived=a/'input'/source.name if source.parent==ROOT/'input' else a/'STORAGE_SCHEMA_CHECK.json' if source==ROOT/'STORAGE_SCHEMA_CHECK.json' else source
@@ -116,10 +116,17 @@ def rebind_metadata():
     for source in sorted((ROOT/'input').glob('pub_01_s03_ss07_preprojection_*.py')):p['source_pins'][str(source)]=sha(source)
     assert sha(ROOT/'input/pub_01_s03_ss07_preprojection_reference.py')=='19eaa95bcd166ae5c35c0d30000e50b92089af32864ac0165d62a1448f401d18'
     with (ROOT/'STORAGE_SCHEMA_CHECK.json').open('xb') as f:f.write((a/'STORAGE_SCHEMA_CHECK.json').read_bytes())
-    failure=a/'ENGINEERING_FAILURE.json';e=read(failure);counts=dict(e['counts_completed_rows'])
-    for key,count in e['unfinished_model_invoked_component_counts'].items():counts[key]=counts.get(key,0)+count
-    p['source_pins'][str(failure)]=sha(failure)
-    p['prior_engineering_costs']=dict(production=counts,extra=e['extra_counts'],attempts=[dict(path=str(failure),sha256=sha(failure),CPU_seconds=None,wall_seconds=None,resource_timing_limitation='Attempt01 failed before timing receipt was implemented; do not infer zero cost')])
+    previous=dict(production={},extra={},attempts=[])
+    for attempt in attempts:
+        failure=attempt/'ENGINEERING_FAILURE.json';e=read(failure);p['source_pins'][str(failure)]=sha(failure)
+        for key in ('counts_completed_rows','unfinished_model_invoked_component_counts'):
+            for name,count in e[key].items():previous['production'][name]=previous['production'].get(name,0)+count
+        for name,count in e['extra_counts'].items():previous['extra'][name]=previous['extra'].get(name,0)+count
+        previous['attempts'].append(dict(path=str(failure),sha256=sha(failure),CPU_seconds=e.get('CPU_seconds'),wall_seconds=e.get('wall_seconds'),resource_timing_limitation='Attempt01 failed before timing receipt; do not infer zero cost' if 'CPU_seconds' not in e else None))
+    p['prior_engineering_costs']=previous
+    assert previous['extra']['temporary_optimizer_updates']==4
+    p['engineering_caps']['temporary_optimizer_updates']=28
+    p['engineering_repair_amendment']='Coordinator authorized four additional discarded updates for complete final-source revalidation after CPU-only RNG repair; 4prior+24final=28 total, all forward caps and numerical thresholds unchanged. No formal fits/VAL.'
     p['metadata_rebound_from_sha256']=sha(a/'ENGINEERING_PROTOCOL.json');verify(p);dump(ROOT/'ENGINEERING_PROTOCOL.json',p)
     dump(ROOT/'METADATA_PREPARED.json',dict(passed=True,engineering_protocol_sha256=sha(ROOT/'ENGINEERING_PROTOCOL.json'),reuses_validated_metadata=str(a/'METADATA_PREPARED.json'),new_permutations=0,new_size_cases=0,new_encoder_head_forwards=0,scientific_array_values_read=False,new_fits=0))
     print(json.dumps(dict(passed=True,engineering_protocol_sha256=sha(ROOT/'ENGINEERING_PROTOCOL.json'))))

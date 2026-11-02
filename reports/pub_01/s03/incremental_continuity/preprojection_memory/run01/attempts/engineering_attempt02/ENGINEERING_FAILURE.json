@@ -1,0 +1,35 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_engineering.py\", line 141, in <module>\n    try:engineering(args.device)\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_engineering.py\", line 82, in engineering\n    initial_bridge=error_check(prediction.detach().cpu().numpy(),reference_train,1e-6,0.)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_engineering.py\", line 14, in error_check\n    assert np.isfinite(a).all() and np.isfinite(b).all() and err<=bound,(err,bound)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (0.11927097593710506, 1e-06)\n",
+  "completed_rows": 2,
+  "counts_completed_rows": {
+    "current_encoder_prefix_windows": 384,
+    "current_projection_windows": 384,
+    "current_head_windows": 384,
+    "frozen_encoder_prefix_windows": 522,
+    "attention_query_windows": 348,
+    "prior_projection_windows": 0
+  },
+  "unfinished_model_invoked_component_counts": {
+    "current_encoder_prefix_windows": 64,
+    "current_projection_windows": 64,
+    "current_head_windows": 64,
+    "frozen_encoder_prefix_windows": 0,
+    "attention_query_windows": 0,
+    "prior_projection_windows": 0
+  },
+  "extra_counts": {
+    "reference_encoder_prefix_windows": 128,
+    "reference_projection_windows": 128,
+    "reference_head_windows": 128,
+    "readout_only_windows": 63,
+    "readout_VJP_calls": 1,
+    "attention_query_VJP_calls": 2,
+    "temporary_optimizer_updates": 4
+  },
+  "CPU_seconds": 4.831863065,
+  "wall_seconds": 4.788066625595093,
+  "peak_RSS_KiB": 2606532,
+  "peak_GPU_allocated_bytes": 2786356224,
+  "warning": "Invoked component windows include an incomplete operation if a kernel raised; exact completed internal operations are not fabricated",
+  "automatic_retry": false
+}
