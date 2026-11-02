@@ -1,6 +1,6 @@
 {
   "frozen": true,
-  "stage": "FORMAL_READY_PENDING_COORDINATOR_SOURCE_REVIEW",
+  "stage": "STORAGE_RECOVERY_READY_PENDING_COORDINATOR_EXECUTION_REVIEW",
   "source_pins": {
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/input/pub_01_s03_ss07_error_decomposition_core.py": "f1f69e250bc1c82a2d78968c9f40f20c8dd1f5e557dd46b6b007e7e5815f31de",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/input/pub_01_s03_ss07_error_decomposition_prepare.py": "1371fe888b5c23b7b2631db0adb552359e7b868fe5d371cf6fb7d07f6d6e9fa2",
@@ -479,7 +479,7 @@
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_metrics.py": "cd8cebec873c500a581e26f36e7bd0429339c3a67b3e02167ddfe2a6be87ff72",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_model.py": "3a62b40203dcac345a12aefcd0445566205f725c570cb00e7323d866f6151e66",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_prepare.py": "8c61f3e56e1a235e19dbe47f0b2c9cfd7c2fba29abf2c85fb2532d237dda5448",
-    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_queue.py": "89174313fff7029c352614cebe24b0b939352844040c09fd9d0d259a2a6aa391",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_queue.py": "a27ce59ef205d4dbc3eff202ac448bc7e4bf32cc7acf97491fe7669675706d07",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_reference.py": "19eaa95bcd166ae5c35c0d30000e50b92089af32864ac0165d62a1448f401d18",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_runtime.py": "d49fb980841b4302e080af4bfce8ee4d13c2679d7b207f571a0b0ffd2250d864",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py": "4cff782c4149f08f7cd6993e69b6b52082bff3b50bfbdc6b76ed19760368cd6d",
@@ -487,7 +487,11 @@
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/attempts/engineering_attempt01/ENGINEERING_FAILURE.json": "d25185efd1d78d92a05837d08e758c2d7526017dea1a7bd527f0268b32106521",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/attempts/engineering_attempt02/ENGINEERING_FAILURE.json": "5320b6ad12d36f9fb90bb3671d409ad75554a2c0c9fb97467bdb3a3eea62185a",
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/ENGINEERING_PROTOCOL.json": "bdabb49c9ef7eacadffe70e307f187967a437c949282d88f6c2fdb3b7a80181e",
-    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/ENGINEERING_CHECK.json": "3486f4b7618c98a93f4f9faff7e60d8c329c90c18f2ae8eea7f06b8110ccb32d"
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/ENGINEERING_CHECK.json": "3486f4b7618c98a93f4f9faff7e60d8c329c90c18f2ae8eea7f06b8110ccb32d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/RESOURCE_RECOVERY_AMENDMENT.json": "4f94454e01d144ffec08052a2a6b89a5d46e3844d3578eaaf6bd765961eb00ce",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/INTERRUPTED_FORMAL_COSTS.json": "6cd9015e317d7e014fa36097aaccaf73d160daf588cb6dc8ffab10019b369a3a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/attempts/formal_attempt01/PROTOCOL.json": "71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/d18_storage_recovery_20261103/COORDINATOR_RECOVERY_APPROVAL.json": "d412fe03eb71928b2a55cdf4bd7d740f8d76fda162294f179ff182fd3315a3db"
   },
   "inputs": {
     "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-04_desc-preproc-audio-audiobook_1_eeg.npy": {
@@ -7405,7 +7409,11 @@
     "inflight_reserve_bytes": 67108864,
     "each_disk_free_bytes": 21474836480,
     "BLAS_threads": 4,
-    "torch_threads": 2
+    "torch_threads": 2,
+    "physical_writable_ROOT": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+    "home_role": "Read-only existing inputs/provenance; no new large outputs. The20GiB guard applies to physicalSATA writerROOT and SATA, not home.",
+    "original_queue_start_unix": 1793640563.790547,
+    "original_absolute_deadline_unix": 1793726963.790547
   },
   "prediction_disk_arrays": false,
   "new_dataset_or_weight_download": false,
@@ -7479,11 +7487,14 @@
   "metadata_rebound_from_sha256": "03146e434623a69bf78290031c589722834cdc503f0daaddc64f8f0d98a9a292",
   "engineering_repair_amendment": "Coordinator authorized four additional discarded updates for complete final-source revalidation after CPU-only RNG repair; 4prior+24final=28 total, all forward caps and numerical thresholds unchanged. No formal fits/VAL.",
   "engineering_protocol_sha256": "bdabb49c9ef7eacadffe70e307f187967a437c949282d88f6c2fdb3b7a80181e",
-  "storage_estimated_upper_bytes": 609855720,
+  "storage_estimated_upper_bytes": 643174935,
   "engineering_measured_resource": {
     "peak_RSS_KiB": 2701316,
     "peak_GPU_allocated_bytes": 2861372928,
     "CPU_seconds": 15.346732677999999,
     "wall_seconds": 11.880187034606934
-  }
+  },
+  "retained_interrupted_fit_attempts": 2,
+  "formal_fit_attempts_including_recovery": 14,
+  "recovery_unchanged_completed_matrix_budget": true
 }

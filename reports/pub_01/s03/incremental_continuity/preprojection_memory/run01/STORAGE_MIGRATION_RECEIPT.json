@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "time_unix": 1793643564.1804483,
+  "canonical_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "physical_root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "untouched_original_home_backup": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103_home_backup_formal_attempt01",
+  "preserved_files": 131,
+  "preserved_bytes": 33319215,
+  "all_original_content_and_mtime_verified_before_switch": true,
+  "new_coordinator_metadata_copied": [],
+  "original_protocol_sha256": "71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367",
+  "new_protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "new_queue_sha256": "a27ce59ef205d4dbc3eff202ac448bc7e4bf32cc7acf97491fe7669675706d07",
+  "changed_source_files": [
+    "pub_01_s03_ss07_preprojection_queue.py"
+  ],
+  "physical_writer_free_bytes": 178615599104,
+  "home_free_bytes_for_disclosure": 20285218816,
+  "original_deadline_unix": 1793726963.790547,
+  "new_NN": 0,
+  "new_backward": 0,
+  "process_launches": 0,
+  "old_two_partial_fits_archived": true,
+  "ready_for_execution": false,
+  "requires_new_bound_execution_receipt": true
+}
