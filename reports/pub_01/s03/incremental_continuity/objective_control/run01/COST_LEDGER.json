@@ -1,0 +1,93 @@
+{
+  "stages": [
+    {
+      "stage": "formal_nine_fits_including_prespecified_evaluation",
+      "NN": 59473248,
+      "optimizer_updates": 710100,
+      "fits": 9,
+      "CPU_seconds": 8824.64224052,
+      "wall_seconds": 1010.7994871139526,
+      "wall_definition": "Concurrent queue elapsed, not worker elapsed sum",
+      "peak_RSS_KiB": 5120432,
+      "peak_GPU_allocated_bytes": 37170688
+    },
+    {
+      "stage": "original_v1_numerical_engineering",
+      "NN": 288,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 42.077980975,
+      "wall_seconds": 16.390446424484253,
+      "peak_RSS_KiB": 5137616,
+      "peak_GPU_allocated_bytes": 33908224
+    },
+    {
+      "stage": "authorized_fresh_and_late_path_probe",
+      "NN": 192,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 35.823060946000005,
+      "wall_seconds": 10.032045602798462,
+      "peak_RSS_KiB": 5142216,
+      "peak_GPU_allocated_bytes": 33846784
+    },
+    {
+      "stage": "storage_serialization_preflight_no_NN",
+      "NN": 0,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 43.337547479,
+      "wall_seconds": 12.23649525642395,
+      "peak_RSS_KiB": 5027124,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "IO_mock_AST_and_refreeze_proof_no_NN",
+      "NN": 0,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 0.09119554000000019,
+      "wall_seconds": 0.0914762020111084,
+      "peak_RSS_KiB": null,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "coordinator_independent_manual_neural_metrics_review",
+      "NN": 631239,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 70.841294524,
+      "wall_seconds": 23.458476781845093,
+      "peak_RSS_KiB": 1171360,
+      "peak_GPU_allocated_bytes": 0
+    }
+  ],
+  "total_known_residual_NN": 60104967,
+  "formal_residual_NN": 59473248,
+  "engineering_residual_NN": 480,
+  "independent_residual_NN": 631239,
+  "new_encoder_head": 0,
+  "total_learning_fits": 9,
+  "total_optimizer_updates": 710100,
+  "listed_instrumented_CPU_seconds": 9016.813319984,
+  "resource": {
+    "time": 1793627233.5845351,
+    "root_bytes": 116549108,
+    "root_cap_bytes": 167772160,
+    "inflight_reserve_during_training": 29360128,
+    "home_free_bytes": 22782140416,
+    "sata_free_bytes": 178649985024,
+    "each_disk_reserve": 21474836480,
+    "checkpoint_files": 18,
+    "new_disk_arrays": [],
+    "transport_tar_in_root": false
+  },
+  "notes": [
+    "ENGINEERING_CHECK v2 top-level timing is v1 only, not cumulative480NN; stages above separate actual costs",
+    "Queue wall and worker CPU answer different questions; parallelism is not method compute reduction",
+    "Recorded CPU sum covers listed instrumented stages, not all administration/import/presentation costs",
+    "Storage preflight serializes one full anchor summary; no learned-model fitting",
+    "No historical D12/D13/D14 costs silently counted as new or omitted from inherited provenance"
+  ],
+  "goal_complete": false
+}

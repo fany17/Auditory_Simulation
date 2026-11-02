@@ -185,3 +185,6 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 
 
 2026-11-02 D15 v2经协调实际六源/123pins/63input与480NN工程审阅批准（review2e29bcb6...，protocolb80f9aef...），正式queue1769088已启动；九worker按cuda0五/cuda1四全部登记PID/UID/startticks与实际资源，均已完成epoch0/3945更新并进入epoch1，首batch已有梯度日志可读。原fresh零头上游0为预期；epoch1九组GRU日志均存在非零值，仅活动诊断，不作为选点。正式59473248残差NN窗/710100更新/9fit，原矩阵和NN预算不变；独立review由协调结果后运行一次。当前尚无完整结果/新科学结论，无FAILURE，不改冻结源，不重启旧外部或患者，SS07 ACTIVE。
+
+
+2026-11-02 D15全部九fit/20epoch完成，正式59473248残差NN窗/710100更新；H/P三seed全选−1，C仅2026 epoch2微增1.23723e-5；H收益门FALSE。训练负cosine改善至约−.247，windowMSE约.1959较D14.1941差，TRAIN物理r约.2564–.2568无H特异稳定优势；late首批token/GRU仍零或极小，不称已解决退化。独立manual GRU/Hann631239窗、48624比较/180排列/180梯度日志/45聚合通过；480工程及0NN存储/guard成本分列，总已知60104967NN。协调实际全文/四PNG/成本科学审阅通过并绑定REPORT/REVIEW SHA；152产物/4图说明/9限制和真实HTML/全文链接、最新source_bundle版本核验通过。完整HTML run_id20261102_pub01_s03_ss07_objective_control；Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS，整体goal ACTIVE。D15已冻结不重启。协调具体D16决定已写token_normalization/run01/COORDINATOR_DECISION.md：仅token末端GELU后/GRU前无仿射LayerNorm32/eps1e-5，全三臂、无新参数；下一仅源/工程/实际冻结准备后审阅，不自动扩候选/外部/患者/PR合并。
