@@ -1,3 +1,7 @@
+# 当前入口：D13固定误差诊断已封存，D14最小顺序对照准备中
+
+2026-11-02 D13已完成固定九last19误差分解：2508111残差NN窗、0新encoder/head/fit/update，61704主块投影；21375辅助行中21240投影已定义、135不足点保留。VAL MSE改善来自bias而r下降；TRAIN物理MSE升高、r下降，三对输出梯度在总体/record/person均正。独立真实TRAIN autograd3834record cos差5.55e-16、全块恒等及逐人/phase聚合通过，四图全文审阅与HTML归档交付检查通过；Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS。完整报告 reports/pub_01/s03/incremental_continuity/error_decomposition/run01/REPORT.md；run_id20261102_pub01_s03_ss07_error_decomposition。D12/D9和旧test/DTU/ds004408冻结。协调已授权D14唯一逐epoch全窗口顺序对照的最小方案/源准备与审阅，尚未新训练；不换loss/LR/容量，SS07/科研goal保持ACTIVE。
+
 # 当前结果：完整FT条件历史九fit已封存，独立数值/图文通过，收益门FALSE（2026-11-02）
 
 180epoch/710100更新全部完成，九fit均按原VAL60s最早best规则选incumbent−1。selected r=.182339940为冻结FT+Ccap，不是新增方法同分成功。H各seed最佳已训练r=.174152708/.173834694/.177039677，均低于锚点约.0063–.0079；current/prior亦下降。最后轮MSE改善与r下降同时保留，不认定所有指标退化或全部历史无用。科学收益门FALSE，SS07/持续goal未达到。

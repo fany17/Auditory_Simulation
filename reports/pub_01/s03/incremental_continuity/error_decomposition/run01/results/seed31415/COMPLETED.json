@@ -1,0 +1,15 @@
+{
+  "seed": 31415,
+  "effective_residual_NN_windows": 836037,
+  "block_descriptive_projection_statistics": 20568,
+  "auxiliary_region_projection_statistics": 7080,
+  "learning_model_fits": 0,
+  "optimizer_updates": 0,
+  "new_encoder_head_windows": 0,
+  "wall_seconds": 41.54990768432617,
+  "CPU_seconds": 117.52454888,
+  "peak_RSS_KiB": 5130188,
+  "peak_GPU_allocated_bytes": 21325824,
+  "no_gradient_or_history_disk_cache": true,
+  "goal_complete": false
+}
