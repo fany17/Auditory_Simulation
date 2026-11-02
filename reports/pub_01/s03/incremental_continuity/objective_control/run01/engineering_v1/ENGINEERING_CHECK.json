@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "arm": "H_full",
+      "stage": "fresh_zero",
+      "NN_windows": 48,
+      "loss": -0.20140669195859223,
+      "independent_numpy_loss_abs": 0.0,
+      "output_finite_difference_abs": 4.297343730863545e-15,
+      "learnable_gradient_norm_ratio_PCC_over_MSE": 15.172262335845327,
+      "learnable_gradient_cosine": 0.7516815236666073,
+      "all_parameter_gradients_finite": true,
+      "GRU_recurrent_gradient_nonzero_scalars": 0,
+      "optimizer_updates": 0,
+      "batch_windows": 64,
+      "fallback_windows": 16,
+      "target_counts": {
+        "windows": 64,
+        "exact_raw_constant": 0,
+        "exact_centered_zero": 0,
+        "centered_norm_le_eps": 0
+      }
+    },
+    {
+      "arm": "H_full",
+      "stage": "nonzero_D14_last",
+      "NN_windows": 48,
+      "loss": -0.21288484621184617,
+      "independent_numpy_loss_abs": 0.0,
+      "output_finite_difference_abs": 1.4491943886238423e-12,
+      "learnable_gradient_norm_ratio_PCC_over_MSE": 14.81493878068285,
+      "learnable_gradient_cosine": 0.7602300899353795,
+      "all_parameter_gradients_finite": true,
+      "GRU_recurrent_gradient_nonzero_scalars": 0,
+      "optimizer_updates": 0,
+      "batch_windows": 64,
+      "fallback_windows": 16,
+      "target_counts": {
+        "windows": 64,
+        "exact_raw_constant": 0,
+        "exact_centered_zero": 0,
+        "centered_norm_le_eps": 0
+      }
+    },
+    {
+      "arm": "C_match",
+      "stage": "fresh_zero",
+      "NN_windows": 48,
+      "loss": -0.20140669195859223,
+      "independent_numpy_loss_abs": 0.0,
+      "output_finite_difference_abs": 5.424720460160681e-13,
+      "learnable_gradient_norm_ratio_PCC_over_MSE": 15.172262335845327,
+      "learnable_gradient_cosine": 0.7516815236666073,
+      "all_parameter_gradients_finite": true,
+      "GRU_recurrent_gradient_nonzero_scalars": 0,
+      "optimizer_updates": 0,
+      "batch_windows": 64,
+      "fallback_windows": 16,
+      "target_counts": {
+        "windows": 64,
+        "exact_raw_constant": 0,
+        "exact_centered_zero": 0,
+        "centered_norm_le_eps": 0
+      }
+    },
+    {
+      "arm": "C_match",
+      "stage": "nonzero_D14_last",
+      "NN_windows": 48,
+      "loss": -0.20959688650390315,
+      "independent_numpy_loss_abs": 2.7755575615628914e-17,
+      "output_finite_difference_abs": 1.6623373684521159e-12,
+      "learnable_gradient_norm_ratio_PCC_over_MSE": 14.746656626468127,
+      "learnable_gradient_cosine": 0.7519975550063044,
+      "all_parameter_gradients_finite": true,
+      "GRU_recurrent_gradient_nonzero_scalars": 0,
+      "optimizer_updates": 0,
+      "batch_windows": 64,
+      "fallback_windows": 16,
+      "target_counts": {
+        "windows": 64,
+        "exact_raw_constant": 0,
+        "exact_centered_zero": 0,
+        "centered_norm_le_eps": 0
+      }
+    },
+    {
+      "arm": "P_prior",
+      "stage": "fresh_zero",
+      "NN_windows": 48,
+      "loss": -0.20140669195859223,
+      "independent_numpy_loss_abs": 0.0,
+      "output_finite_difference_abs": 7.225143877284679e-13,
+      "learnable_gradient_norm_ratio_PCC_over_MSE": 15.172262335845327,
+      "learnable_gradient_cosine": 0.7516815236666073,
+      "all_parameter_gradients_finite": true,
+      "GRU_recurrent_gradient_nonzero_scalars": 0,
+      "optimizer_updates": 0,
+      "batch_windows": 64,
+      "fallback_windows": 16,
+      "target_counts": {
+        "windows": 64,
+        "exact_raw_constant": 0,
+        "exact_centered_zero": 0,
+        "centered_norm_le_eps": 0
+      }
+    },
+    {
+      "arm": "P_prior",
+      "stage": "nonzero_D14_last",
+      "NN_windows": 48,
+      "loss": -0.21263153941075874,
+      "independent_numpy_loss_abs": 2.7755575615628914e-17,
+      "output_finite_difference_abs": 5.1694911372413e-13,
+      "learnable_gradient_norm_ratio_PCC_over_MSE": 14.887926730543763,
+      "learnable_gradient_cosine": 0.7546457260899407,
+      "all_parameter_gradients_finite": true,
+      "GRU_recurrent_gradient_nonzero_scalars": 1170,
+      "optimizer_updates": 0,
+      "batch_windows": 64,
+      "fallback_windows": 16,
+      "target_counts": {
+        "windows": 64,
+        "exact_raw_constant": 0,
+        "exact_centered_zero": 0,
+        "centered_norm_le_eps": 0
+      }
+    }
+  ],
+  "scheduler": {
+    "passed": true,
+    "no_training": true,
+    "no_NN": true,
+    "nine_slots_5plus4": true,
+    "foreign_PID_rejected": true,
+    "UID_startticks_argv_mismatch_rejected": true,
+    "low_memory_or_VRAM_wait": true,
+    "no_global_GPU_setting_changes": true
+  },
+  "target_counts": {
+    "train": {
+      "windows": 252454,
+      "exact_raw_constant": 0,
+      "exact_centered_zero": 0,
+      "centered_norm_le_eps": 12
+    },
+    "val": {
+      "windows": 30500,
+      "exact_raw_constant": 0,
+      "exact_centered_zero": 0,
+      "centered_norm_le_eps": 0
+    }
+  },
+  "synthetic_constants": [
+    {
+      "value": 0.0,
+      "centered_exactly_zero": true,
+      "loss": 0.0,
+      "max_abs_gradient": 0.0
+    },
+    {
+      "value": 0.1,
+      "centered_exactly_zero": false,
+      "loss": -1.857925203976527e-27,
+      "max_abs_gradient": 7.573064690121713e-29
+    },
+    {
+      "value": 0.10000000149011612,
+      "centered_exactly_zero": true,
+      "loss": 0.0,
+      "max_abs_gradient": 0.0
+    }
+  ],
+  "exact_centered_zero_target_has_zero_objective_gradient": true,
+  "synthetic_constant_prediction_finite_eps_gradient": true,
+  "independent_numpy_separate_norm_floor": true,
+  "NN_windows": 288,
+  "new_encoder_head": 0,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "wall_seconds": 16.390446424484253,
+  "CPU_seconds": 42.077980975,
+  "peak_RSS_KiB": 5137616,
+  "peak_GPU_allocated_bytes": 33908224,
+  "device": "cuda:0",
+  "prelaunch_resources": [
+    {
+      "device": "cuda:0",
+      "free_GPU_MiB": 45444,
+      "observed_compute_pids": [],
+      "MemAvailable_bytes": 1598542688256
+    },
+    {
+      "device": "cuda:1",
+      "free_GPU_MiB": 45444,
+      "observed_compute_pids": [],
+      "MemAvailable_bytes": 1598541381632
+    }
+  ],
+  "formal_models_reconstructed_clean": true
+}
