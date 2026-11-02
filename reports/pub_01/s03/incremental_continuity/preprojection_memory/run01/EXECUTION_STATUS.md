@@ -1,6 +1,6 @@
-# D18 执行状态（正式拟合前）
+# D18 执行状态（正式矩阵运行中）
 
-2026-11-03：最终源 `49b223239611cfd52a41da185ca5b49705d23090`，最终工程矩阵12行×2次临时更新全部通过；正式源/输入/协议独立审阅待回执，未开始正式fit或新VAL/test。
+2026-11-03：最终源 `49b223239611cfd52a41da185ca5b49705d23090`，最终工程矩阵12行×2次临时更新全部通过；正式源/输入/协议独立审阅已通过，冻结12fit队列已启动；当前无完成结果，不作收益判断。未重开旧test或外部。
 
 正式协议SHA256：`71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367`。工程协议：`bdabb49c9ef7eacadffe70e307f187967a437c949282d88f6c2fdb3b7a80181e`。
 
@@ -13,3 +13,9 @@
 完整指标保留为gzip JSON，至多87文件×2MiB；元数据阶段尺寸压力case TRAIN5616853→820172字节、VAL696543→102876字节，无损往返相等。这是合成JSON尺寸检查，不是科学结果。按完整checkpoint实测13614175字节、24份，另174MiB大指标、32MiB其他和64MiB在途，正式总预算609855720字节，低于768MiB硬限。
 
 正式预算保持四臂H/C/T/P×三seed、各20epoch，946800更新位置、60588960监督目标窗；原TRAIN/VAL、固定强FT+Ccap基线和首9anchor不变。历史收益需完整结果及独立复核后判断。SS07与科研目标保持ACTIVE；不启动其他子节点或旧外部测试。
+
+
+2026-11-03 D18 projection前memory正式矩阵已启动：最终12行工程全部通过，累计28次临时更新（原失败4＋最终24）全部丢弃，数值/forward上限不变。协调独立重核486 source pins/547 input identities及12行工程，回执COORDINATOR_EXECUTION_REVIEW.json绑定正式协议71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367。正式H/C/T/P×3seed×20轮，946800更新位置/60588960监督窗，总24h/双GPU各一fit；当前Eθ/head可训、历史E0eval冻结、Ccap固定可微，near5/3、older9/7、首9anchor，原TRAIN/VAL和目标不变。唯一队列PID1986322，首H1024 PID1986330(cuda0)、C1024 PID1986345(cuda1)，UID1012/start_ticks/argv及空卡准入已记录；当前运行中，不称正式完成或历史增益。执行/失败/预算证据见reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/。SS07/科研goal保持ACTIVE，不重开旧test/DTU/ds004408，不新增分支或合并PR6。
+
+
+正式启动核验：STARTUP_VERIFIED.json的同一实际快照中H1024已700次、C1024已1000次Adam更新，empty均0；按/proc核验UID/start_ticks/argv通过，记录既有首batch梯度，0额外NN/backward。这不是完成或比较结论。

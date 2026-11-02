@@ -206,3 +206,6 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 
 
 D17封存后的有限实现审计已交：reports/pub_01/s03/incremental_continuity/implementation_path_audit/run01/REPORT.md，25函数/类SOURCE_INDEX与AUDIT_SCOPE明确0数组/构模/NN/fit。核实warm18fit已联合训练原encoder，不能重复声称首次end-to-end；新缺口限定64→8前192×64逐时间token/query-dependent memory。D12–D16仅冻结FT缓存，D9近null输出抵消不能靠feature fusion自动消除。DECAF作者README实际指carankt，所读teacher/eval入口与本项目output_prior不同，SHINE尚未代码发布，均未运行作者入口。协调下一已选H/C/T/P四臂×3seed、共同FT+Ccap(.01)/可微固定readout、当前Eθ/head可训/历史E0eval冻结、zero-output memory、near5/3/older9/7/i>=9、首9冻结anchor、D16共同目标shuffle与60s选点；拟20轮/24h/两GPU各一fit。现在只进入实际源/协议/必要工程准备，正式fits须具体冻结/实际工程与源审阅通过；不重开旧外部，D9坐标替代不混入本候选。
+
+
+2026-11-03 D18 projection前memory正式矩阵已启动：最终12行工程全部通过，累计28次临时更新（原失败4＋最终24）全部丢弃，数值/forward上限不变。协调独立重核486 source pins/547 input identities及12行工程，回执COORDINATOR_EXECUTION_REVIEW.json绑定正式协议71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367。正式H/C/T/P×3seed×20轮，946800更新位置/60588960监督窗，总24h/双GPU各一fit；当前Eθ/head可训、历史E0eval冻结、Ccap固定可微，near5/3、older9/7、首9anchor，原TRAIN/VAL和目标不变。唯一队列PID1986322，首H1024 PID1986330(cuda0)、C1024 PID1986345(cuda1)，UID1012/start_ticks/argv及空卡准入已记录；当前运行中，不称正式完成或历史增益。执行/失败/预算证据见reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/。SS07/科研goal保持ACTIVE，不重开旧test/DTU/ds004408，不新增分支或合并PR6。

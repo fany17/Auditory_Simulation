@@ -1,0 +1,79 @@
+{
+  "approved_for_execution": true,
+  "protocol_sha256": "71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367",
+  "source_commit": "49b223239611cfd52a41da185ca5b49705d23090",
+  "reviewed_at_unix": 1793640535.7625105,
+  "reviewer": "root scientific coordinator",
+  "scope": "Existing TRAIN/VAL only; exact frozen four-arm three-seed 20-epoch matrix; engineering weights discarded.",
+  "source_hashes": [
+    {
+      "name": "pub_01_s03_ss07_preprojection_data.py",
+      "sha256": "3ae4bc9b5a674df07001e687a6337b72c187595c5a9050069012dcf2e01e72d6"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_engineering.py",
+      "sha256": "3d91115ccb7ce231ff9b80b1c4852b5abade0707578b193ff7b5e9fa5f7ca80c"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_metrics.py",
+      "sha256": "cd8cebec873c500a581e26f36e7bd0429339c3a67b3e02167ddfe2a6be87ff72"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_model.py",
+      "sha256": "3a62b40203dcac345a12aefcd0445566205f725c570cb00e7323d866f6151e66"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_prepare.py",
+      "sha256": "8c61f3e56e1a235e19dbe47f0b2c9cfd7c2fba29abf2c85fb2532d237dda5448"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_queue.py",
+      "sha256": "89174313fff7029c352614cebe24b0b939352844040c09fd9d0d259a2a6aa391"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_reference.py",
+      "sha256": "19eaa95bcd166ae5c35c0d30000e50b92089af32864ac0165d62a1448f401d18"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_runtime.py",
+      "sha256": "d49fb980841b4302e080af4bfce8ee4d13c2679d7b207f571a0b0ffd2250d864"
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_train.py",
+      "sha256": "4cff782c4149f08f7cd6993e69b6b52082bff3b50bfbdc6b76ed19760368cd6d"
+    }
+  ],
+  "source_pins_independently_rechecked": 486,
+  "input_identities_independently_rechecked": 547,
+  "engineering_check_sha256": "3486f4b7618c98a93f4f9faff7e60d8c329c90c18f2ae8eea7f06b8110ccb32d",
+  "engineering_decision_sha256": "a67d3ec959a94831e0acf9cc5736f7c8a81962b81a1a3e431ce8ee773be0a266",
+  "engineering_rows_checked": 12,
+  "readout_and_raw_bridge_scalar_checks": 18,
+  "all_same_raw_initial_prediction_max_abs": 0.0,
+  "cumulative_engineering_production_windows": {
+    "current_encoder_prefix_windows": 2816,
+    "current_projection_windows": 2816,
+    "current_head_windows": 2816,
+    "frozen_encoder_prefix_windows": 2211,
+    "attention_query_windows": 1974,
+    "prior_projection_windows": 1798
+  },
+  "cumulative_engineering_extra_operations": {
+    "reference_encoder_prefix_windows": 640,
+    "reference_projection_windows": 640,
+    "reference_head_windows": 640,
+    "readout_only_windows": 314,
+    "readout_VJP_calls": 5,
+    "attention_query_VJP_calls": 11,
+    "temporary_optimizer_updates": 28
+  },
+  "storage_estimated_upper_bytes": 609855720,
+  "source_review": "All nine implementation/reference files read by root; import/RNG/storage/metadata corrections independently checked.",
+  "independent_review_new_NN": 0,
+  "independent_review_new_backward": 0,
+  "independent_review_optimizer_updates": 0,
+  "engineering_timing_limitation": "Attempt01 timing was not captured; retain null rather than fabricate zero. Other attempt and final-source timings are preserved.",
+  "science_scope": "Repeated-development VAL only. No new test or external evaluation; no claim of improvement, mechanism, novelty or goal achievement from engineering PASS.",
+  "completion_rule": "Complete frozen12fits; preserve failures and resource accounting. No automatic budget/architecture/tolerance change based on validation.",
+  "goal_complete": false
+}
