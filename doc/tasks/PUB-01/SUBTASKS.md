@@ -29,6 +29,9 @@
 | `PUB-01-S03_SS06` | S03 | Five continuity frameworks and matched strong-baseline comparison | **`COMPLETED`** | run01 frozen + 2026-10-26 matched-scale authorization executed | `subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md` | PASS_WITH_LIMITATION：run02 C/O各3×3262/P完整两阶段3×639pre+2035head，r=.123014/.151762/.141466，六项C配对校正区间全跨0；18原始CPU r差3.36e-8、协调SUMMARY2.78e-17；已看audit/5family/单pass及权限/额外预算限制，报告3图/轻量证据齐备；run01不改，#6 Draft，STOP |
 
 | `PUB-01-S03_SS07` | S03 | Full-scale native strong baseline + incremental continuity research | **`ACTIVE`** | SS02/SS06 frozen + explicit2026-11-01 full-scale goal authorization | `subtasks/PUB-01-S03/PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md` | D4-D11冻结；ds004408三seed完整380记录/19人/988块/45429窗及独立4560记录/11856块/2280FP32复算通过。Ccap−PFT +.008040823/Holm5.34e−5、3seed/18人正；F−W未达阈值/单窗退化和融合MSE更差保留。阶段PASS_WITH_LIMITATION，全文/图实际审阅通过、13图完整中文HTML与交付核验完成（同run ARCHIVE.md）；全record未来EEG gain/SI等限制保留，当前读出迁移不证明历史机制，goal未达到；无自动下游/新模型数据/患者/PR合并 |
+| `PUB-01-S03_SS08` | S03 | Fixed-backbone EEG SSL objective comparison (masked context vs causal future prediction) | **`BACKLOG / DESIGN_ONLY`** | SS06 M3/SS07 frozen evidence + explicit design authorization; **SS07 ACTIVE must not be interrupted** | `subtasks/PUB-01-S03/PUB-01-S03_SS08_SELF_SUPERVISED_OBJECTIVE_COMPARISON.md` | 已提交Codex拟议任务书；A/A+/B/C同主干/预算/泄漏约束，先只读审阅；**无SS08代码/训练/成绩**，不得自动变READY |
+
+> **2026-11-02 附加设计登记**：SS08仅`BACKLOG / DESIGN_ONLY`，可供Codex只读审阅；现行唯一执行仍为SS07，禁止新训练与资源抢占。SS06/SS07旧结果和外部确认protocol不变。
 
 ## S04：独立保留的 ds004703 公共颅内支线
 
