@@ -10,4 +10,6 @@
 
 协调会话单独提供 `pub_01_s03_ss07_openneuro_independent_review.py`；合成自检完成不代表实际结果review已完成，执行者不调用或修改该源。三seed实际结果完成后由协调独立执行，最终图表及中文结论仍须整体审阅。
 
+协调第二次schema审阅进一步要求保留继承阶段的重复窗口/sample呈现、FT验证pass/可训练参数计数与GPU原key。新增 `pub_01_s03_ss07_openneuro_report_v3.py` / `PRESENTATION_PROTOCOL_V3.json`，仍在真实NN为0时冻结，最终仅用v3呈现；v1/v2原位保留。v3明确秒、KiB和bytes，以及呈现数包含epoch重复、不是独立人/唯一数据量。
+
 资源限制说明：现有 queue 的8小时上限作用于轮询守卫；同步的freeze/statistics子进程没有独立timeout。此限制如实记录，不重启已在等待的队列。
