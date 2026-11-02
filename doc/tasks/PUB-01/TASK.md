@@ -199,3 +199,9 @@ S02先完成SparrKULee声学基线：复用发布方64Hz EEG/envelope，按实�
 首个交付是可复现的ridge/TRF预测结果、时间错配对照、逐被试性能表和实际图文解释。先小规模跑通，再执行预定首轮范围；阴性或失败照实交付，不反复改方案追阳性。ds004703保留已有探索，不阻塞EEG首轮；其信号预处理在颅内分析时按实际需要处理。
 
 完成第一版声学基线后汇报；这不等于S02全部完成。深度特征与S03以后不自动启动。所有数据计算继续在2203，报告可回传静态图与轻量结果。无需补修上一版图形排版或重做全量审计作为本轮前置条件。
+
+### 2026-11-02 SS07 ds004408固定读出迁移阶段验收（不完成父任务）
+
+真人授权ds004408 v1.0.8全380条/19人已在2203完成固定输入适配与三seed四角色一次推理，独立重建4560记录/11856块/2280完整FP32诊断及两主推断通过。Ccap−强FT Δr+.008040823、family95近似CI[.00511387,.01097443]、Holm2 p5.34e−5，三seed/18人正；F−W未达阈值，F窗口退化及融合MSE更差保留。当前窗口静态读出迁移不证明连续历史机制/新颖性/投稿充分性。
+
+Technical/阶段Acceptance PASS_WITH_LIMITATION、Parent consistency PASS；独立全文/图表/轻量表/成本最终审阅通过，13PNG完整中文HTML及相对链接/限制可见性核验完成。报告/验收/归档见reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/REPORT.md、REVIEW.md、ARCHIVE.md，run_id20261102_pub01_s03_ss07_openneuro_gain_transfer。380次含未来EEG无标签gain、SI未知、标准模板/零偏移、单一叙述及预训练接触限制保留。SS07与PUB-01 ACTIVE、科学goal未达到；旧结论冻结，无新模型/数据/患者/旧test或DTU推理、无自动下游或PR合并。

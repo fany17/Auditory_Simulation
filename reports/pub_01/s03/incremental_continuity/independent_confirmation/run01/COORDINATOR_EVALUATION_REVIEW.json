@@ -1,0 +1,26 @@
+{
+  "approved_for_execution": true,
+  "reviewer": "root coordinator independent input/model/code/statistics/resource audit",
+  "time": 1793611726.9994278,
+  "protocol_sha256": "5cb28c2cd219c25fc36ed5ea91d92572a9c6b61b0a3ae864a0f1fa5180cc76c5",
+  "queue_source_sha256": "c67f180839cef445d71e5d658548f2dc9cb570485efc4652acc697b178392a4b",
+  "final_input_audit_sha256": "d979ae7f60433843d5f69d784cbd63be8b0da162b1357ca622530a80eaca73c5",
+  "scope": "Exactly three frozen seeds and four readouts on all19 participants/380 records/988 blocks/45429 windows; no model fit or alternative adapter",
+  "evidence": {
+    "source_pins_verified": 1017,
+    "EEG_records_independently_checked": 380,
+    "TSV_Git_blobs": 119,
+    "target_hashes": 20,
+    "historical_model_assets_checked": 19,
+    "historical_path_digest_links": 54,
+    "calibrated_input_RMS_relative_max_error": 2.338609084162613e-09
+  },
+  "interpretation": "External transfer after shared offline/transductive unlabeled scalar gain; physical units remain UNVERIFIED",
+  "constraints": [
+    "No test-dependent adapter/model/precision/seed selection or retries",
+    "Both filesystems keep20GiB reserve; combined3GiB run and28GiB cumulative NPY budgets",
+    "Retain failure outcomes and fixed paired support",
+    "Actual output/cache/statistics/figure/cost review still required; goal not achieved by launch"
+  ],
+  "scientific_goal_complete": false
+}

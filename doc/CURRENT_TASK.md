@@ -1,4 +1,13 @@
-# 当前执行：SS07无标签增益校准定案，全量EEG获取/预处理进行（2026-11-02）
+# 当前执行：ds004408三seed完整外部迁移完成，独立数值复核通过（2026-11-02）
+
+本阶段PASS_WITH_LIMITATION，SS07保持ACTIVE、科学goal未达到。全380条/19人/988块/45429窗，三seed四角色全部完成；Ccap/P_FT* r=.164517594/.156476771，Δ+.008040823，family95近似CI[.00511387,.01097443]、Holm2 p5.34058e−5，3seed全正/18人正。F−W+.000151871，区间跨0/p=.345627，2seed正1负；F窗口MSE343.20/r3s.01053及融合MSE更差保留。支持当前读出迁移，不支持连续历史机制或投稿充分性。
+
+完整[结果与五图中文解释](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/report01/REPORT.md)、[实际输入概览](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/PREPROCESSING_REPORT.md)、[阶段验收](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/REVIEW.md)。协调独立重建4560记录/11856块/2280FP32及全部主统计通过；全文/图实际审阅通过，轻量表/成本最终独立记录通过，13图HTML归档与交付核验完成（见同run ARCHIVE.md）。无新学习模型fit/权重/患者/旧test或DTU推理；380次无标签全record gain（含未来EEG）另计，SI/模板/同步/单叙述/预训练接触限制保留。实际作业全部正常结束，不重启任何旧PID；不自动新增模型/数据/实验、不开其他节点、PR6不合并。
+
+## 以下为本阶段历史启动与等待快照
+# 当前执行：SS07全380条预处理与最终freeze完成，等待协调准入（2026-11-02）
+
+实际全部载荷读取/固定DSP/标量gain/最终掩码完成，380条failures=[]，19人/988完整60s块/45429窗。processed1129921792B；v2 wall7694.590s、CPU1190.573s、RSS1977676KiB，含v1接续总elapsed8590.281s另记。预处理1395718已正常结束，不重启。最终EVALUATION_PROTOCOL SHA `5cb28c2cd219c25fc36ed5ea91d92572a9c6b61b0a3ae864a0f1fa5180cc76c5`，queue_v2 1445704等待协调独立准入文件；新NN0/新学习模型fit0、380次新无标签gain统计另列，物理单位继续UNVERIFIED。最终报告用report_v3/PRESENTATION_PROTOCOL_V3，源SHA a1476b5f3a060f5eb1e755538d1c63c9329ad8dcaa932f900ecc87170761ea0d，旧呈现源/冻结保留。全部数值/逐图报告和实际独立复核仍待，SS07 ACTIVE、goal未达到。以下预处理进行及旧队列为历史快照。
 
 最新唯一推理入口已按实际磁盘投影修订为**evaluate_v3 + queue_v2 PID1445704（UID1012/start_ticks753381560）**，queue source c67f1808…392a4b。旧1426629只处等待、无children/无NN后已核身份终止并保留源/日志。当前数据预处理PID1395718不动；新queue仍只等待全380→最终freeze→协调绑定唯一protocol与新queue SHA才预测，不能运行旧queue/evaluate v1/v2。
 

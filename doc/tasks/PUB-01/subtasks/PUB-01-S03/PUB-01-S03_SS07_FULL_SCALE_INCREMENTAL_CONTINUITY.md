@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D11及以前冻结；真人授权ds004408，物理单位UNVERIFIED/唯一无标签整体gain已冻；20包络/四图/19历史资产与统计预审通过，380预处理1395718进行，后续唯一evaluate_v3/queue_v2 1445704等完整freeze/协调一次审阅；新cache在2203/sata5，两盘20GiB且合计caps不变；真实NN0，goal未达到 |
+| Status | ACTIVE — ds004408本阶段三seed完整评估及独立4560记录/11856块/2280FP32复算完成；Ccap−PFT +.008040823、Holm5.34e−5、3seed/18人正；F−W未达阈值/单窗退化保留。阶段PASS_WITH_LIMITATION、全文/图实际审阅通过、轻量表/成本最终记录通过、13图HTML完整归档及交付核验完成；科学goal未达到，无自动新模型/数据/节点 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置；2026-11-02真人授权的ds004408 v1.0.8公开EEG/对应音频/必要metadata（固定b2d91784，唯一新范围） |
@@ -150,3 +150,11 @@ v2经协调独立核验18source/8proof/exact diff后冻结97c7686b94d63836c59d83
 协调要求的metadata机制核查见FAILURE_MECHANISM_CHECK及INITIAL15_PAIRED_VALIDATION_METADATA：明确每seed共享encoder/同随机head联合训练，并非从已训练P head增量；15候选与P两种VAL/预算并列，M4/31415出现3s改善但60s下降。事实、假说及不可区分机制分列，不以在线train–VAL差证明过拟合，不设计或启动新轮次，原流水线继续。
 
 全部37唯一full完成，协调独立核验全预算/来源/最早选点/停止规则，执行者从manifest复加总一致：3418epoch/13,484,010更新/862,887,772窗/165,674,452,224目标sample呈现。FINAL_CHECKPOINT_MANIFEST冻结47角色/5encoder/14协议/106成本条目（54screen+5pretrain+5head+5FT+37full）；M4及五seed/M7不改。五seed×2真实最终权重VAL桥差均0，四mask和READY在预测前锁定，88448已实际启动两卡统一推理，14537正常完成。技术handoff轻量证据已回传，实际raw v1/metric v2与科学判断仍待；仅V2复核通过后绘实际结果图，不以37训练或工程PASS完成持续goal。
+
+### 2026-11-02 ds004408完整外部读出迁移 Completion Record
+
+全380预处理（16复用/364新增、failures0）与固定19人/988块/45429窗完成；全record无标签gain统计380次、物理增益仍UNVERIFIED。三seed四角色一次推理，九个Decoder桥batch差0；每seed45429主窗+181桥窗，无新学习模型fit。协调准入与独立全量数值复核通过，source/evaluate_v3/queue_v2原位冻结，作业正常退出。
+
+Ccap相对强FT Δr+.008040823，family95近似CI[.00511387,.01097443]，Holm2 p5.34e−5，3seed全正/18人正；F−W+.000151871区间跨0/p.345627，F窗MSE343.20/r3s.01053和融合MSE更差保留。不证明历史机制/新意或ICML/NeurIPS充分性。5结果图/完整seed-person表及中文解释已交，全文/图实际独立审阅通过，最终轻量审阅通过，13图完整HTML归档及交付核验完成。
+
+Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent PASS；见 reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/REPORT.md 和 REVIEW.md。SS07 ACTIVE、goal未达到；不因当前静态迁移阳性重开旧test/DTU、追加模型/窗口/数据、开其他节点或合并PR6。所有信号/计算在2203，本地仅轻量交付。

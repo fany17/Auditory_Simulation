@@ -1,0 +1,44 @@
+{
+  "windows": 45429,
+  "batches": 710,
+  "signature": {
+    "input_stride": [
+      12288,
+      1,
+      192
+    ],
+    "latent_stride": [
+      1536,
+      1,
+      8
+    ],
+    "prediction_stride": [
+      192,
+      192,
+      1
+    ],
+    "params_require_grad": true,
+    "eval": true,
+    "no_grad": true,
+    "inference_mode": false,
+    "dtype": "torch.float32"
+  },
+  "original_Decoder_checks": [
+    {
+      "global_start": 0,
+      "stop": 64,
+      "original_Decoder_max_abs": 0.0
+    },
+    {
+      "global_start": 64,
+      "stop": 128,
+      "original_Decoder_max_abs": 0.0
+    },
+    {
+      "global_start": 45376,
+      "stop": 45429,
+      "original_Decoder_max_abs": 0.0
+    }
+  ],
+  "extra_bridge_windows": 181
+}

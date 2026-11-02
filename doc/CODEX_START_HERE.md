@@ -1,4 +1,11 @@
-# 当前入口：SS07已授权ds004408外部迁移，全量校准预处理进行
+# 当前入口：SS07 ds004408固定读出迁移已完成，独立数值复核通过
+
+Ccap强FT基线r=.164518/.156477，Δ+.008041、Holm2 p5.34e−5，3seed/18人正；F−W区间跨0、F单窗退化/MSE更差保留。完整380条、19人、988块，独立4560记录/11856块/2280FP32复算通过。见[CURRENT_TASK](CURRENT_TASK.md)、[结果报告](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/report01/REPORT.md)、[阶段REVIEW](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/REVIEW.md)。本阶段有限制通过，不等于连续历史机制/投稿充分性或SS07 goal完成；旧作业已结束，勿重启旧PID。当前无自动下游/新模型/新数据，患者FORBIDDEN，PR6仍Draft。最终全文/图表/表与成本独立审阅已通过；13PNG完整中文HTML归档及链接/限制可见性核验完成（run_id20261102_pub01_s03_ss07_openneuro_gain_transfer）。
+
+## 下方是历史预处理/等待入口，不是当前运行状态
+# 当前入口：SS07全380条预处理与最终freeze完成，等待协调准入
+
+实际19人/380条/988块/45429窗，failures=[]；16条复用+364新增、380次无标签gain统计。最终协议SHA `5cb28c2cd219c25fc36ed5ea91d92572a9c6b61b0a3ae864a0f1fa5180cc76c5`；queue_v2 PID1445704等待协调独立绑定protocol及queue SHA，尚未新NN。最终结果呈现用report_v3/PRESENTATION_PROTOCOL_V3（统一示例纵轴、完整成本字段），旧版本保留。以下“预处理进行”及旧PID为历史状态，不重启。完整记录见CURRENT_TASK顶部与PREPROCESSING_REPORT。
 
 唯一后续推理为evaluate_v3/queue_v2 PID1445704；旧waiting队列已核验终止留痕。数据预处理1395718继续；未生成Z/P cache放同2203的/sata5自有目录，两盘各20GiB及两root合计3GiB/全SS07 NPY28GiB不变，不用19GiB备选。最终实际freeze及协调绑定新protocol/queue SHA前，真实新NN仍0。所有当前路径/证据见CURRENT_TASK顶部，不能按下方旧PID重启。
 
