@@ -1,3 +1,7 @@
+# 当前入口：D14固定顺序对照正式九fit执行中
+
+2026-11-02 D14已获协调实际源/协议/工程独立审阅（COORDINATOR_EXECUTION_REVIEW approved=true），正式queue1692090已启动，首worker1692186(H1024/cuda0)/1692194(C1024/cuda1)均空闲GPU准入，真实epoch3/4及15780/19725更新已确认。协议83b05eaf...与源码f5134d7不变，正式9×20epoch/710100更新/61710828残差NN窗；后续协调独立数值复核最多631239另计，不加新fit/encoder。当前结果未齐，不下最终科学结论；D12/D13和旧外部冻结，不重启旧PID。
+
 # 当前入口：D14工程通过，固定顺序对照待协调执行复核
 
 2026-11-02 D14仅顺序对照已冻结f5134d7，协议83b05eafcb126952d48750930106b5fb04c56d49f82d2b0128ba7d2c813d0172；engineering02 PASS：1230残差NN窗/0opt/fit/encoder，混record重排loss差0、参数grad≤3.49e-10，60排列双射/非空可学习batch及原record-local past通过。attempt01 eval-GRU backward失败source/protocol/log与映射原样保留，另362路径核算NN窗、资源峰未知。正式九fit尚0，待协调实际执行review后直接按原20epoch/710100更新/61710828残差NN窗运行，不再用户重复许可。源PLAN见 reports/pub_01/s03/incremental_continuity/order_control/run01/PLAN.md。旧D12/D13及外部冻结，SS07 ACTIVE。

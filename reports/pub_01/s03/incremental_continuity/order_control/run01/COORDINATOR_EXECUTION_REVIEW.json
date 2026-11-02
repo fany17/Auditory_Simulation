@@ -1,0 +1,36 @@
+{
+  "time": 1793621391.5936375,
+  "coordinator_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "approved_for_execution": true,
+  "protocol_sha256": "83b05eafcb126952d48750930106b5fb04c56d49f82d2b0128ba7d2c813d0172",
+  "engineering_sha256": "4f11bb4c4f5d782a7e404bf7058c21125b91c5146579def48cb1ec56229ef9b0",
+  "review": "Actual four source files, PLAN, v2 protocol, complete source pin verification and actual engineering result read by coordinator before formal work.",
+  "scope": "Nine fixed H/C/P fits,3seeds20epochs; only training order changes; prior record-local temporal context remains unchanged. Old9last TRAIN-only reference once. Same optimizer/loss/init/support/selection.",
+  "formal_NN_windows": 61710828,
+  "optimizer_updates": 710100,
+  "engineering_success_NN": 1230,
+  "engineering_failure_path_derived_NN": 362,
+  "engineering_failure_measurements_unavailable": [
+    "CPU_seconds",
+    "peak_memory"
+  ],
+  "checks": [
+    "gather/reference tensor exactness",
+    "nonzero reorder output/loss/parameter-gradient equivalence",
+    "all60 permutations bijective and each batch nonempty with lawful history",
+    "independent RNG and frozen order digest checked each epoch",
+    "zero formal optimizer state inherited from old reference",
+    "separate online and fixed offline TRAIN metrics",
+    "cost arithmetic corrected before formal updates",
+    "two idle GPUs and self-worker-only termination"
+  ],
+  "limits": [
+    "Optimization/order experiment, not architectural novelty",
+    "Original train/val only; not independent confirmation",
+    "No old test, DTU, ds004408 or new data/weights",
+    "No score-driven budget/loss/LR/capacity change",
+    "No automatic PR6 merge"
+  ],
+  "action": "Start frozen queue now under existing user authorization; report actual launch and substantive results/failures to coordinator.",
+  "goal_complete": false
+}
