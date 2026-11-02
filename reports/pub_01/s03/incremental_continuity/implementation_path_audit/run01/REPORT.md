@@ -58,13 +58,13 @@ E0 copy无历史encoder梯度，memory attention参数仍可从固定K/V学习�
 | 臂 | 当前E/head | memory内容 | 可回答的问题 |
 |---|---|---|---|
 | P_continue | 从同已选FT继续更新，共同固定Ccap map | 无新增memory | 继续FT本身能否解释改善；冻结A0另保留incumbent |
-| C_current | 同初始化/同可训练路径 | 同结构/参数/384长度memory槽，填两份当前192×64 token | 新增容量、query-dependent当前映射及其计算能否解释H收益 |
+| C_current | 同初始化/同可训练路径 | 同结构/参数/384长度memory槽，填两份冻结E0的当前192×64 token | 新增容量、query-dependent当前映射及其计算能否解释H收益 |
 | H_past | 同初始化/同可训练路径 | 两段真实过去192×64 token，经冻结E0 | 在上述控制下，过去内容是否带来额外开发收益 |
 | P_prior（协调已选第四臂） | 同初始化/同可训练路径 | 冻结Ccap过去预测包络，经单独1→64时序投影再同类attention | 区分高维EEG memory与预测输出先验；不称参数/有效capacity严格同H |
 
 四臂共同使用原全部252454 TRAIN/30500 VAL窗、global64/tail、record归属与全部cold-start目标，不按可取历史删窗；同seed、更新/epoch上限、目标dtype/eps、optimizer组与学习率、dropout/mode、验证选择及最早tie/−1规则都应在具体决定中一次冻结。本次不指定新epoch/LR或启动fits。前4窗可以一致走各臂当前路径，无memory；不能一臂丢弃、一臂参与分母。共同Ccap/目标/物理评估定义不变，不能同时把3s目标换D9物理目标。
 
-H/C需显式对齐新增attention形状、初始化及真实encoder调用成本。C若只复用当前token，就少两次冻结encoder前向；可在compute control中同样计算两段E0输出而丢弃，记实成本。T=P_continue较少adapter计算，作为继续训练控制不冒称逐FLOP相同；H−C才排查新增容量/计算。基本三臂只回答直接memory比较；协调为区分输出先验已明确加入第四臂P_prior。它可复用旧Ccap预测缓存，必须披露额外投影与encoder成本差，不能把单scalar复制64份后channel LayerNorm（会抹掉该scalar）。固定1→64的k9 Conv是待写入具体协议的单一投影候选，需实际验证P内容扰动进入K/V，而非在零输出attention上要求最终输出立即变化。四臂仍不是完整论文消融集，也不完成独立泛化或新颖性证明。
+H/C需显式对齐新增attention形状、初始化、监督/更新及RNG，并分别记真实encoder调用成本。C可只做一次冻结E0当前前向、把token复用到两槽；H需两段过去的E0前向，成本不能假称相同。**不为虚构FLOP公平而额外计算真实过去再丢弃**；若实际选择两次当前E0填槽，也只按真实调用记账。T=P_continue没有adapter计算，作为继续训练控制不冒称逐FLOP相同；H−C控制可训容量/结构和输入内容，仍需披露历史访问成本。基本三臂只回答直接memory比较；协调为区分输出先验已明确加入第四臂P_prior。它可复用旧Ccap预测缓存，必须披露额外投影与encoder成本差，不能把单scalar复制64份后channel LayerNorm（会抹掉该scalar）。固定1→64的k9 Conv是待写入具体协议的单一投影候选，需实际验证P内容扰动进入K/V，而非在零输出attention上要求最终输出立即变化。四臂仍不是完整论文消融集，也不完成独立泛化或新颖性证明。
 
 ### 时序支持：合法过去不等于全是fusion baseline之外的新信息
 
