@@ -1,5 +1,7 @@
 # 当前状态：SATA恢复正式队列已启动
 
+后续报告的划分解释以[协调元数据核验](COORDINATOR_SPLIT_SCOPE.md)及其[0NN receipt](COORDINATOR_SPLIT_SCOPE.json)为依据：49名VAL参与者全部见于TRAIN；29条VAL记录属于重叠的audiobook_13/audiobook_5来源组，20条仅相对当前TRAIN清单来源未见。record/story/EEG路径/包络路径无交集不证明音频波形无重叠，三个相对未见来源也不等于此前开发从未查看。本轮只能称已见参与者、混合来源的反复开发比较，不能称新参与者或全新来源独立泛化。最终保留全部49人的既定60秒块→逐人宏平均主指标及原逐来源描述；不把20条子集改为主结果/选点/验收，不将seed或重复参与者作新增独立样本。训练、预算、选择、验收与正在运行的冻结源均不变，本次仅补报告解释。
+
 恢复首真实更新已核验：同一STARTUP_VERIFIED快照H1024=1000/C1024=1400 Adam、empty0，实际UID/start_ticks/精确argv匹配，SATA writer free178586537984B，home_readonly单列20287533056B；新ROOT62816331B。只读取已有metadata/首batch梯度，0额外NN/backward。旧partial成本另列，尚无完整矩阵结论。
 
 新protocol255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632经独立审阅通过，review e051f5c2d5978d88c6f7c275b9f8ff56bc29c1455bb0c61cd03dbdec95487c63。新队列2050834，H/C1024 workers2050842/2050850；原24h总start保留，未重置。旧FREEZE_RECORD仅历史旧protocol，新恢复冻结由STORAGE_MIGRATION_RECEIPT与新review证明；旧工程不覆盖改动的queue时钟，后者以QUEUE_CLOCK_CHECK单独0NN核验。两中断fit的CPU/完整峰值与H精确终止计数未留存，记未知，不推断0。尚无完整矩阵/科学增益结论。
