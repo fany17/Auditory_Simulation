@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "Synthetic JSON serialization stress only; not data/model/metrics computation or a scientific result",
+  "cases": [
+    {
+      "phase": "train",
+      "records": 426,
+      "segments": 6104,
+      "uncompressed_bytes": 5616853,
+      "gzip_bytes": 820172,
+      "enforced_per_metric_file_bytes": 2097152,
+      "lossless_roundtrip": true
+    },
+    {
+      "phase": "val",
+      "records": 49,
+      "segments": 752,
+      "uncompressed_bytes": 696543,
+      "gzip_bytes": 102876,
+      "enforced_per_metric_file_bytes": 2097152,
+      "lossless_roundtrip": true
+    }
+  ],
+  "metric_file_count_upper": 87,
+  "metric_bytes_upper": 182452224,
+  "other_structured_and_source_bytes_upper": 33554432,
+  "new_array_values_read": false,
+  "new_NN": 0,
+  "new_backward": 0
+}

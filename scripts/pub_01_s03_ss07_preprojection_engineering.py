@@ -6,6 +6,7 @@ from pub_01_s03_ss07_preprojection_reference import ccap_value_and_vjp
 EXTRA=dict(reference_encoder_prefix_windows=0,reference_projection_windows=0,reference_head_windows=0,readout_only_windows=0,readout_VJP_calls=0,attention_query_VJP_calls=0,temporary_optimizer_updates=0)
 TOTAL={};ATTEMPT=[]
 LIVE_MODEL=None
+CLOCK={}
 def add_counts(count):
     for k,v in count.items():TOTAL[k]=TOTAL.get(k,0)+v
 def error_check(actual,reference,absolute,relative):
@@ -38,14 +39,14 @@ def native_prediction(model,batch,grad=True):
     return z,native,torch.where(batch['valid'][:,None],prediction,batch['anchor'])
 def engineering(device):
     global LIVE_MODEL
-    start=time.time();cpu=time.process_time();p=read(ROOT/'ENGINEERING_PROTOCOL.json');verify(p);guard()
+    start=time.time();cpu=time.process_time();CLOCK.update(wall=start,cpu=cpu);p=read(ROOT/'ENGINEERING_PROTOCOL.json');verify(p);guard()
     assert not (ROOT/'ENGINEERING_CHECK.json').exists()
     resource_before=admission(device);assert resource_before['admitted'];seed_all(1024,device);torch.cuda.reset_peak_memory_stats()
     results=[];reference_states={};checkpoint_sizes=[]
     for seed in SEEDS:
         data=RawPhase(seed,'train',ram_raw=False,lazy_anchor=True)
         ids0=np.array(p['TRAIN_cases'][str(seed)]['shuffle0']);ids1=np.array(p['TRAIN_cases'][str(seed)]['shuffle1']);cold=np.array(p['TRAIN_cases'][str(seed)]['cold'])
-        bridge=readout_bridge(data,device,ids0);reference_train=None;reference_rng_after=None;common_initial=None
+        bridge=readout_bridge(data,device,ids0);dump(ROOT/f'ENGINEERING_READOUT_seed{seed}.json',bridge);reference_train=None;reference_rng_after=None;common_initial=None
         for arm in ARMS:
             seed_all(seed,device);model=make_model(seed,arm,data,device);model.train()
             LIVE_MODEL=model
@@ -81,6 +82,7 @@ def engineering(device):
                     initial_bridge=error_check(prediction.detach().cpu().numpy(),reference_train,1e-6,0.)
                     assert_rng_equal(rng_state(device),reference_rng_after)
                     assert all(not x.training for x in model.reference_encoder.modules())
+                    dump(ROOT/f'ENGINEERING_INITIAL_{arm}_seed{seed}.json',dict(raw_cache_bridge=raw_bridge,initial_same_raw_bridge=initial_bridge,CPU_and_CUDA_RNG_equal=True,E0_eval=True))
                 if step==1 and arm!='T_continue':
                     scalar=(cached_capture['delta']*torch.sin(torch.arange(64,device=device)*.017)).sum()/cached_capture['delta'].numel()
                     dq=torch.autograd.grad(scalar,cached_capture['query'],retain_graph=True)[0];EXTRA['attention_query_VJP_calls']+=1
@@ -125,14 +127,17 @@ def engineering(device):
             LIVE_MODEL=None
             del model,opt,batch,target,cold_batch,pred,bypass,cached_capture,initial,frozen,buffers,hooks;gc.collect();torch.cuda.empty_cache();guard()
         del data;gc.collect()
-    assert EXTRA['temporary_optimizer_updates']==24
-    assert TOTAL['current_encoder_prefix_windows']+EXTRA['reference_encoder_prefix_windows']<=8192 and TOTAL['current_head_windows']+EXTRA['reference_head_windows']<=8192
-    assert TOTAL['frozen_encoder_prefix_windows']<=16384
+    previous=p['prior_engineering_costs'];prior=previous['production'];prior_extra=previous['extra']
+    assert EXTRA['temporary_optimizer_updates']+prior_extra.get('temporary_optimizer_updates',0)==24
+    assert TOTAL['current_encoder_prefix_windows']+EXTRA['reference_encoder_prefix_windows']+prior.get('current_encoder_prefix_windows',0)+prior_extra.get('reference_encoder_prefix_windows',0)<=8192
+    assert TOTAL['current_head_windows']+EXTRA['reference_head_windows']+prior.get('current_head_windows',0)+prior_extra.get('reference_head_windows',0)<=8192
+    assert TOTAL['frozen_encoder_prefix_windows']+prior.get('frozen_encoder_prefix_windows',0)<=16384
     result=dict(passed=True,engineering_protocol_sha256=sha(ROOT/'ENGINEERING_PROTOCOL.json'),results=results,production_component_counts=TOTAL,extra_component_counts=EXTRA,new_fits=0,formal_optimizer_updates=0,new_disk_arrays=0,CPU_seconds=time.process_time()-cpu,wall_seconds=time.time()-start,peak_RSS_KiB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,peak_GPU_allocated_bytes=torch.cuda.max_memory_allocated(),largest_parameter_checkpoint_bytes=max(checkpoint_sizes),checkpoint_24_copies_upper_bytes=24*max(checkpoint_sizes),resource_before=resource_before,reference_synthetic_receipt='COORDINATOR_REFERENCE_SELFCHECK.json, already executed independently, not repeated',goal_complete=False)
+    result['preserved_prior_attempt_costs']=previous
     dump(ROOT/'ENGINEERING_CHECK.json',result);print(json.dumps({k:v for k,v in result.items() if k!='results'}),flush=True)
 if __name__=='__main__':
     import argparse
     parser=argparse.ArgumentParser();parser.add_argument('--device',default='cuda:0');args=parser.parse_args()
     try:engineering(args.device)
     except BaseException:
-        dump(ROOT/'ENGINEERING_FAILURE.json',dict(traceback=traceback.format_exc(),completed_rows=len(ATTEMPT),counts_completed_rows=TOTAL,unfinished_model_invoked_component_counts=LIVE_MODEL.count if LIVE_MODEL is not None else {},extra_counts=EXTRA,warning='Invoked component windows include an incomplete operation if a kernel raised; exact completed internal operations are not fabricated',automatic_retry=False));raise
+        dump(ROOT/'ENGINEERING_FAILURE.json',dict(traceback=traceback.format_exc(),completed_rows=len(ATTEMPT),counts_completed_rows=TOTAL,unfinished_model_invoked_component_counts=LIVE_MODEL.count if LIVE_MODEL is not None else {},extra_counts=EXTRA,CPU_seconds=time.process_time()-CLOCK.get('cpu',time.process_time()),wall_seconds=time.time()-CLOCK.get('wall',time.time()),peak_RSS_KiB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,peak_GPU_allocated_bytes=torch.cuda.max_memory_allocated() if torch.cuda.is_initialized() else 0,warning='Invoked component windows include an incomplete operation if a kernel raised; exact completed internal operations are not fabricated',automatic_retry=False));raise

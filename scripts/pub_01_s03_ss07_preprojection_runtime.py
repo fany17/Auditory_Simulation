@@ -3,7 +3,7 @@ import os,sys,json,time,hashlib,resource,shutil,subprocess,stat,gzip
 from pathlib import Path
 import numpy as np
 import torch
-from pub_01_s03_ss07_preprojection_model import BASE,ARMS,AdaptedDecoder
+from pub_01_s03_ss07_preprojection_model import BASE,ARMS,AdaptedDecoder,objective
 from pub_01_s03_ss07_preprojection_data import D8,RawPhase,read
 ROOT=BASE/'s03_preprojection_memory_20261103'
 D16=BASE/'s03_full_ft_token_normalization_20261102'
