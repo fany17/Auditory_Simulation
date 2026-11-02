@@ -16,7 +16,7 @@ def rng_state(device):return torch.get_rng_state().clone(),torch.cuda.get_rng_st
 def restore_rng(state,device):torch.set_rng_state(state[0]);torch.cuda.set_rng_state(state[1],device)
 def assert_rng_equal(a,b):assert torch.equal(a[0],b[0]) and torch.equal(a[1],b[1])
 def parameter_bytes(state):
-    buffer=io.BytesIO();torch.save(dict(trainable_state=state,seed=1024,arm='P_prediction_history',epoch=19),buffer)
+    buffer=io.BytesIO();torch.save(dict(trainable_state=state,seed=31415,arm='P_prediction_history',epoch=19,validation_r=-.12345678901234567,protocol_sha256='0'*64,frozen_assets='Source pins only; no repeated E0/Ccap/position/optimizer'),buffer)
     size=buffer.tell();buffer.seek(0);loaded=torch.load(buffer,map_location='cpu',weights_only=True)['trainable_state'];assert state.keys()==loaded.keys() and all(torch.equal(state[k],loaded[k]) for k in state)
     return size
 def readout_bridge(data,device,ids):

@@ -56,4 +56,6 @@ RawPhase保留原np.asarray(window,f32)→减mean/除std→np.stack(...).astype(
 
 两GPU各一fit并行、总24h；每worker GPUallocated32GiB/RSS48GiB，BLAS4、torch2，新ROOT768MiB并保留64MiB在途，home/SATA各20GiB。仅核本队列PID/UID/start_ticks/argv，不杀他人；陌生占卡等空卡，不改MPS/全机设置。实际preflight核当前资源、参数字节/输出大小和吞吐，source、input identities、工程/预算经协调一次实际审阅再开完整矩阵。正式失败保留，停止本轮已核身份worker，不自动改上限或重跑。
 
+大指标采用无损gzip JSON，完整保留顶层及records内逐块信息、边界、逐人/来源和全部小指标；规范路径为`INCUMBENT.json.gz`、`OFFLINE_TRAIN_epoch{epoch}.json.gz`、`SELECTED_METRICS.json.gz`及H的`OLDER_METRICS.json.gz`，读取统一用runtime的`read_result`。最多87份，每份强制≤2MiB（174MiB总上限），其他源/小记录/日志32MiB，24个best/last参数checkpoint按工程实际完整metadata序列化最大值，另加64MiB在途。元数据阶段用现有逐块结果模板及真实426/49记录、6104/752块计数做新schema JSON尺寸压力核验；填入的独立随机full-precision浮点仅用于序列化，绝不作为科学结果落盘或报告。gzip往返验证全部字段相等；不删字段/降精度、不以旧D16紧凑格式外推新文件体积。
+
 Technical含工程及最终独立review pass；科学门为H三seed都超过C/T/P/旧Ccap且同checkpoint near/older一致获益，否则不认定额外历史贡献。反复开发VAL只是有限推进门，无独立确认或创新保证。Parent/public/server2203边界不变；旧内部test、DTU、ds004408不读取评分，不下载患者或其他载荷。任务不在smoke/工程PASS处停止，也不按阴性自动开新候选。

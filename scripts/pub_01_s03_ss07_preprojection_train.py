@@ -17,8 +17,8 @@ def run(seed,arm,device):
     legacy=read(D16/f'fits/H_full_seed{seed}/INCUMBENT.json');best=legacy['phases']['val']['r'];selected=-1
     incumbent,_=evaluate(model,val,device,anchor_only=True)
     assert abs(incumbent['phases']['val']['r']-best)<=1e-10,'OldCcap incumbent identity; do not reinterpret raw-path errors as gain'
-    incumbent['selection_reference_r_exact_from_frozen_D16']=best;dump(folder/'INCUMBENT.json',incumbent)
-    baseline_train,_=evaluate(model,train,device,anchor_only=True);dump(folder/'OFFLINE_TRAIN_epoch-1.json',baseline_train)
+    incumbent['selection_reference_r_exact_from_frozen_D16']=best;dump_metrics(folder/'INCUMBENT.json.gz',incumbent)
+    baseline_train,_=evaluate(model,train,device,anchor_only=True);dump_metrics(folder/'OFFLINE_TRAIN_epoch-1.json.gz',baseline_train)
     assert all(v==0 for v in model.count.values())
     save_checkpoint(folder/'best_validation.pt',model,seed,-1,best,pin)
     opt=torch.optim.Adam(model.trainable_groups(),weight_decay=0.);updates=0;positions=0;empty_positions=0;history=[];phase_counts=[]
@@ -52,7 +52,7 @@ def run(seed,arm,device):
         with (folder/'HISTORY.jsonl').open('a') as f:f.write(json.dumps(record,allow_nan=False)+'\n')
         print(json.dumps(dict(seed=seed,arm=arm,**record),allow_nan=False),flush=True)
         if epoch in (0,4,9,19):
-            before=dict(model.count);offline,_=evaluate(model,train,device);phase_counts.append(dict(stage='offline_TRAIN',epoch=epoch,**counters_delta(model.count,before)));dump(folder/f'OFFLINE_TRAIN_epoch{epoch}.json',offline)
+            before=dict(model.count);offline,_=evaluate(model,train,device);phase_counts.append(dict(stage='offline_TRAIN',epoch=epoch,**counters_delta(model.count,before)));dump_metrics(folder/f'OFFLINE_TRAIN_epoch{epoch}.json.gz',offline)
         guard()
     assert positions==78900 and updates+empty_positions==positions and empty_positions==0
     save_checkpoint(folder/'last.pt',model,seed,19,history[-1]['validation']['r'],pin)
@@ -61,8 +61,8 @@ def run(seed,arm,device):
     selected_metrics,older=evaluate(model,val,device,anchor_only=selected==-1,paired_older=arm=='H_history')
     phase_counts.append(dict(stage='selected_VAL_and_H_older_shared_query',selected_epoch=selected,**counters_delta(model.count,before)))
     assert abs(selected_metrics['phases']['val']['r']-best)<=1e-10
-    dump(folder/'SELECTED_METRICS.json',selected_metrics)
-    if older is not None:dump(folder/'OLDER_METRICS.json',older)
+    dump_metrics(folder/'SELECTED_METRICS.json.gz',selected_metrics)
+    if older is not None:dump_metrics(folder/'OLDER_METRICS.json.gz',older)
     assert all(torch.equal(frozen[k],v.detach().cpu()) for k,v in model.reference_encoder.state_dict().items())
     assert all(torch.equal(buffers[k],v.detach().cpu()) for k,v in model.readout.named_buffers())
     verify(p);guard();dump(folder/'COMPONENT_COUNTS.json',dict(stages=phase_counts,total=model.count,all_counts_are_invoked_windows_not_unique_examples=True))

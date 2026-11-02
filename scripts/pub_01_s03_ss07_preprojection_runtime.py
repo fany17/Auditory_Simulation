@@ -1,5 +1,5 @@
 """D18 bounded execution/identity/accounting helpers. No process launches on import."""
-import os,sys,json,time,hashlib,resource,shutil,subprocess,stat
+import os,sys,json,time,hashlib,resource,shutil,subprocess,stat,gzip
 from pathlib import Path
 import numpy as np
 import torch
@@ -9,6 +9,20 @@ ROOT=BASE/'s03_preprojection_memory_20261103'
 D16=BASE/'s03_full_ft_token_normalization_20261102'
 PYTHON=BASE/'s03_strong_baselines_20261013/env01/bin/python'
 SEEDS=(1024,2026,31415)
+METRIC_FILE_LIMIT=2*1024**2
+def read_result(path):
+    """Read lossless D18 metrics (.json.gz); also accepts provenance JSON."""
+    p=Path(path)
+    with (gzip.open(p,'rt') if p.suffix=='.gz' else p.open()) as f:return json.load(f)
+
+def dump_metrics(path,value):
+    p=Path(path);assert p.is_relative_to(ROOT) and p.name.endswith('.json.gz')
+    raw=json.dumps(value,separators=(',',':'),allow_nan=False).encode()
+    packed=gzip.compress(raw,compresslevel=6,mtime=0)
+    assert len(packed)<=METRIC_FILE_LIMIT,('Metric-file storage contract',p,len(packed))
+    assert json.loads(gzip.decompress(packed))==value,'Lossless JSON roundtrip'
+    with p.open('xb') as f:f.write(packed)
+    return dict(uncompressed_bytes=len(raw),gzip_bytes=len(packed),all_fields_preserved=True)
 def sha(p):
     h=hashlib.sha256()
     with Path(p).open('rb') as f:
