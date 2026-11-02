@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "source_sha256": "ae2d1e87cdd7d30f8aa2bd0d42da12a1300e7130682992cfd8199bec633caff0",
+  "independent_source_sha256": "1bd999ec8d1e09bb3f7141f4ee9f8ab54ad8594f8bcf333c1d1c0ccf814e15f2",
+  "independent_helper_sha256": "0113a30704b0fe2f13ae0e23aa53b2527afa29cfefc3c0c784789f384229cc64",
+  "rows": [
+    {
+      "seed": 1024,
+      "arm": "H_full",
+      "metadata_batch_windows": 64,
+      "effective_windows": 48,
+      "GPU_residual_NN": 48,
+      "manual_residual_NN": 48,
+      "max_abs_residual_output_difference": 4.76837158203125e-07,
+      "model": "fresh fixed nonzero output probe; never formal initialization",
+      "mode": "eval, no dropout or persistent state"
+    },
+    {
+      "seed": 1024,
+      "arm": "C_match",
+      "metadata_batch_windows": 64,
+      "effective_windows": 48,
+      "GPU_residual_NN": 48,
+      "manual_residual_NN": 48,
+      "max_abs_residual_output_difference": 1.0654330253601074e-06,
+      "model": "fresh fixed nonzero output probe; never formal initialization",
+      "mode": "eval, no dropout or persistent state"
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prior",
+      "metadata_batch_windows": 64,
+      "effective_windows": 48,
+      "GPU_residual_NN": 48,
+      "manual_residual_NN": 48,
+      "max_abs_residual_output_difference": 1.0617077350616455e-06,
+      "model": "fresh fixed nonzero output probe; never formal initialization",
+      "mode": "eval, no dropout or persistent state"
+    }
+  ],
+  "additional_GPU_residual_NN": 144,
+  "additional_manual_CPU_residual_NN": 144,
+  "NN_windows": 288,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "new_encoder_head": 0,
+  "scope": "Only fixed48-window per-arm output bridge; no repeated528-window engineering or full TRAIN traversal",
+  "wall_seconds": 14.921778202056885,
+  "CPU_seconds": 47.648009251000005,
+  "peak_RSS_KiB": 5117740,
+  "peak_GPU_allocated_bytes": 20024320
+}

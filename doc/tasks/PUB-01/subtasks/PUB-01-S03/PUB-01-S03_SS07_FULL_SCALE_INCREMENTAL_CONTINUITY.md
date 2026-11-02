@@ -188,3 +188,6 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 
 
 2026-11-02 D15全部九fit/20epoch完成，正式59473248残差NN窗/710100更新；H/P三seed全选−1，C仅2026 epoch2微增1.23723e-5；H收益门FALSE。训练负cosine改善至约−.247，windowMSE约.1959较D14.1941差，TRAIN物理r约.2564–.2568无H特异稳定优势；late首批token/GRU仍零或极小，不称已解决退化。独立manual GRU/Hann631239窗、48624比较/180排列/180梯度日志/45聚合通过；480工程及0NN存储/guard成本分列，总已知60104967NN。协调实际全文/四PNG/成本科学审阅通过并绑定REPORT/REVIEW SHA；152产物/4图说明/9限制和真实HTML/全文链接、最新source_bundle版本核验通过。完整HTML run_id20261102_pub01_s03_ss07_objective_control；Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS，整体goal ACTIVE。D15已冻结不重启。协调具体D16决定已写token_normalization/run01/COORDINATOR_DECISION.md：仅token末端GELU后/GRU前无仿射LayerNorm32/eps1e-5，全三臂、无新参数；下一仅源/工程/实际冻结准备后审阅，不自动扩候选/外部/患者/PR合并。
+
+
+2026-11-02 D16单一token末端GELU后/GRU前无仿射LayerNorm32 eps1e-5已具备v2冻结56f4be8214ec7b5402b1c6ea3e4ff2154f082150b95c30538743bd1fa170b3a2。首528NN必要工程PASS：CPU/GPU公式误差4.77e-7/2.38e-7，9初始化state/参数精确一致，轴/RNG/常量/fresh有效梯度/日志开关等价；后到独立手写参考桥GPU144+manual144逐点≤1.066e-6 PASS，累计816/0fit/optimizer。主四源未改，v1所有source/protocol/工程保留，v2仅绑定桥/证据及补充PLAN。正式预算仍59473248NN/710100更新/9fit，两GPU5+4/6h/160MiB含28在途，正式0更新，待协调绑定实际v2源/工程一次执行review后立即启动；D15及所有旧外部保持冻结。
