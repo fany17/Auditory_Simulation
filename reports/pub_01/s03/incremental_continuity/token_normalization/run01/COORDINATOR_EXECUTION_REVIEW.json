@@ -1,0 +1,52 @@
+{
+  "time": 1793630382.951,
+  "coordinator_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "approved_for_execution": true,
+  "protocol_sha256": "56f4be8214ec7b5402b1c6ea3e4ff2154f082150b95c30538743bd1fa170b3a2",
+  "engineering_sha256": "3ca3d3d0524cd8c68cd9c173b39e4aae38f8fa829bb55cdd0c2c6164e7b14ab5",
+  "reference_bridge_sha256": "b5449367eb30eec6ecb912e96f15867bd66d72d6f91dce743e4f6bc109407506",
+  "review": "Coordinator read core/train/prepare/queue, PLAN, bridge/refreeze and actual numerical records. All221 server source pins verified; all62 input stat identities match; local six production/engineering source hashes and both independent sources match server. Actual GPU0/1 idle before approval, both disks above frozen20GiB.",
+  "scope": "Only per-token affine-free last32 population LayerNorm eps1e-5 after token GELU before GRU, shared across H/C/P. Same D15 frozenFT+Ccap,3seeds,20epochs,clean component RNG/state,shuffle,Adam,float64 negative centered cosine,all targets/fallback,VAL selection and H older intervention.",
+  "formal_NN_windows": 59473248,
+  "optimizer_updates": 710100,
+  "formal_fits": 9,
+  "engineering_NN_windows": 816,
+  "engineering_GPU_NN_windows": 672,
+  "engineering_manual_CPU_NN_windows": 144,
+  "engineering_optimizer_updates": 0,
+  "engineering_cost_note": "Original528 engineering CPU42.855459813s/wall16.422217131s; bridge288 CPU47.648009251s/wall14.921778202s; refreeze0NN CPU0.167694262s/wall0.175885677s. Copied top-level engineering timing refers to528 only. Report stages separately and aggregate explicitly.",
+  "resource_scope": {
+    "max_jobs": 9,
+    "per_GPU": {
+      "cuda:0": 5,
+      "cuda:1": 4
+    },
+    "root_bytes": 167772160,
+    "inflight_reserve_bytes": 29360128,
+    "queue_wall_cap_seconds": 21600,
+    "verified_own_PID_only": true
+  },
+  "findings": [
+    "Last32 normalization formula/axis/RNG/finite constant-input gradients passed; fresh9 state_dicts exactly match D15 and parameters unchanged.",
+    "Zero output head recovers Ccap exactly. Fresh fixed nonzero probe allows history-input and recurrent-weight gradients in all3 arms.",
+    "Independent functional manual-normalized output bridge on48 effective realTRAIN windows per arm has max absolute residual difference1.065434e-6, within predeclared2e-6 tolerances.",
+    "D15 late seed1024 H/C same-weight small-batch diagnostic changes saturated states/zero gradients after normalization; only distribution-change evidence, not trained-candidate performance or global causal proof.",
+    "Existing first-batch diagnostics add no NN forward/update and never govern selection.",
+    "V1 retained; v2 changes only evidence/source pins and actual engineering ledger, not formal science or production sources."
+  ],
+  "independent_review": {
+    "source_sha256": "1bd999ec8d1e09bb3f7141f4ee9f8ab54ad8594f8bcf333c1d1c0ccf814e15f2",
+    "helper_sha256": "0113a30704b0fe2f13ae0e23aa53b2527afa29cfefc3c0c784789f384229cc64",
+    "max_NN_windows": 631239,
+    "run_only_after_all9_complete": true,
+    "coordinator_runs": true
+  },
+  "limits": [
+    "Original repeatedly viewed VAL, not independent confirmation.",
+    "Known normalization changes representation/inductive bias; no architecture novelty claim.",
+    "0newparameters does not mean equal arithmetic/runtime.",
+    "No score-driven extensions or norm/LR grid; no oldtest/DTU/ds004408 or newdata/weights; PR6 remainsDraft."
+  ],
+  "action": "Launch the frozen nine-fit queue now under existing user authorization; report actual queue/worker identities and updates. Continue through allfits/report/archive; coordinator runs independent numerical review once.",
+  "goal_complete": false
+}

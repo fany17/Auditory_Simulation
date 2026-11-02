@@ -191,3 +191,6 @@ Technical PASS_WITH_LIMITATION / 阶段Acceptance PASS_WITH_LIMITATION / Parent 
 
 
 2026-11-02 D16单一token末端GELU后/GRU前无仿射LayerNorm32 eps1e-5已具备v2冻结56f4be8214ec7b5402b1c6ea3e4ff2154f082150b95c30538743bd1fa170b3a2。首528NN必要工程PASS：CPU/GPU公式误差4.77e-7/2.38e-7，9初始化state/参数精确一致，轴/RNG/常量/fresh有效梯度/日志开关等价；后到独立手写参考桥GPU144+manual144逐点≤1.066e-6 PASS，累计816/0fit/optimizer。主四源未改，v1所有source/protocol/工程保留，v2仅绑定桥/证据及补充PLAN。正式预算仍59473248NN/710100更新/9fit，两GPU5+4/6h/160MiB含28在途，正式0更新，待协调绑定实际v2源/工程一次执行review后立即启动；D15及所有旧外部保持冻结。
+
+
+2026-11-02 D16已获协调实际六源/221pins/62输入/816NN工程与独立逐点桥审阅批准，协议56f4be82...，正式queue1832753/UID1012/ticks755734179已启动，九worker按5+4全部running且真实epoch4–5/19725–23670更新确认，无失败。首批detached记录post token RMS约1，GRU梯度非零，但部分状态仍近饱和；仅通路观察不作收益判定。独立依赖runner1834387已由协调部署，九组成功后自动一次≤631239NN，PUB不重复启动。正式59473248NN/710100更新不变；继续全九/图文/账本与独立验收，不按中途结果改source/预算或启其他模型/数据。
