@@ -1,3 +1,13 @@
+# 当前状态：SATA恢复正式队列已启动
+
+恢复首真实更新已核验：同一STARTUP_VERIFIED快照H1024=1000/C1024=1400 Adam、empty0，实际UID/start_ticks/精确argv匹配，SATA writer free178586537984B，home_readonly单列20287533056B；新ROOT62816331B。只读取已有metadata/首batch梯度，0额外NN/backward。旧partial成本另列，尚无完整矩阵结论。
+
+新protocol255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632经独立审阅通过，review e051f5c2d5978d88c6f7c275b9f8ff56bc29c1455bb0c61cd03dbdec95487c63。新队列2050834，H/C1024 workers2050842/2050850；原24h总start保留，未重置。旧FREEZE_RECORD仅历史旧protocol，新恢复冻结由STORAGE_MIGRATION_RECEIPT与新review证明；旧工程不覆盖改动的queue时钟，后者以QUEUE_CLOCK_CHECK单独0NN核验。两中断fit的CPU/完整峰值与H精确终止计数未留存，记未知，不推断0。尚无完整矩阵/科学增益结论。
+
+# 当前入口：D18已迁移SATA，恢复协议审阅中
+
+2026-11-03 D18首轮因home可用空间跌破20GiB触发既定停止；C1024确切23000更新、H1024保守[18400,18500]，无完整Adam/RNG可精确续跑。原131文件/33319215B内容及mtime全等备份后，原homeROOT完整保留在*_home_backup_formal_attempt01，canonical路径现指向SATA；两partial fits/旧队列/源/协议完整归档，未删除、未用于新选点或初始化。SATA真实写盘20GiB阈值，home只读且未声称空间已满足20GiB。仅queue小改沿用原24h绝对deadline1793726963.790547，8项神经相关源及科学配置逐字节不变；没有重复NN工程。新协议255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632、资源/迁移/0NN验证见preprojection_memory/run01；等待协调绑定实际新SHA后，按原四臂三seed各20轮干净重启12fits。保留2中断＋12完成预期=14attempt，原成本界独立列账；SS07/科研目标ACTIVE，不重开旧测试/外部或合并PR6。
+
 # D18 执行状态（正式矩阵运行中）
 
 2026-11-03：最终源 `49b223239611cfd52a41da185ca5b49705d23090`，最终工程矩阵12行×2次临时更新全部通过；正式源/输入/协议独立审阅已通过，冻结12fit队列已启动；当前无完成结果，不作收益判断。未重开旧test或外部。

@@ -1,0 +1,49 @@
+{
+  "approved_for_execution": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "reviewer": "root scientific coordinator",
+  "reviewed_unix": 1793643719.1118398,
+  "decision_id": "D18_STORAGE_RECOVERY_01",
+  "physical_output_root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "canonical_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "old_protocol_sha256": "71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367",
+  "original_execution_review_sha256": "76a5db7a532b6b6f17404548f653a6252092587ae73beb7dac0aa6362c2f9a90",
+  "resource_amendment_sha256": "4f94454e01d144ffec08052a2a6b89a5d46e3844d3578eaaf6bd765961eb00ce",
+  "migration_receipt_sha256": "9cc440e50ca496ac643f6c7b3a6a763f1ad604d740df1208d7392f4fa3f948f3",
+  "recovery_validation_sha256": "681fb7530619c479a29ba02d93f289ad8097adc14e45ba1a63790b9fb371f77b",
+  "source_pins_rechecked": 490,
+  "input_identities_rechecked": 547,
+  "home_backup_files_rechecked": 131,
+  "home_backup_bytes": 33319215,
+  "unchanged_scientific_source_files": [
+    "pub_01_s03_ss07_preprojection_runtime.py",
+    "pub_01_s03_ss07_preprojection_prepare.py",
+    "pub_01_s03_ss07_preprojection_data.py",
+    "pub_01_s03_ss07_preprojection_metrics.py",
+    "pub_01_s03_ss07_preprojection_engineering.py",
+    "pub_01_s03_ss07_preprojection_reference.py",
+    "pub_01_s03_ss07_preprojection_train.py",
+    "pub_01_s03_ss07_preprojection_model.py"
+  ],
+  "changed_queue_sha256": "a27ce59ef205d4dbc3eff202ac448bc7e4bf32cc7acf97491fe7669675706d07",
+  "change_scope": "Only physical output storage and queue clock preserving original24h deadline. All scientific settings and8model/train/data/metrics/runtime/reference/engineering/prepare sources byte-identical.",
+  "engineering_evidence_reused": "Existing final12row TRAIN proof applies to unchanged neural/data/scoring implementations; queue clock change separately reviewed and0NN validated. No repeated neural checks.",
+  "historical_freeze_note": "Top-level original FREEZE_RECORD.json still documents the original protocol; STORAGE_MIGRATION_RECEIPT and this bound review document the recovery protocol.",
+  "restart_scope": "Run exact12 planned complete fits cleanly from original FT+Ccap assets; retain2interrupted attempts for costs only. No partial checkpoint initialization or selection.",
+  "cumulative_formal_update_bounds": [
+    988200,
+    988300
+  ],
+  "cumulative_formal_target_presentation_bounds": [
+    63238326,
+    63244726
+  ],
+  "H_interrupted_exact_counter": null,
+  "interrupted_CPU_seconds": null,
+  "original_absolute_deadline_unix": 1793726963.790547,
+  "old_tests_and_external_data_remain_frozen": true,
+  "independent_review_new_NN": 0,
+  "independent_review_new_backward": 0,
+  "independent_review_new_optimizer_updates": 0,
+  "goal_complete": false
+}

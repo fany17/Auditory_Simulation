@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "scope": "Execute actual queue.run clock initialization AST only with controlled file-presence/time; no run body/processes/models",
+  "cases": [
+    {
+      "amendment_present": true,
+      "attempt_start": 1793644000.0,
+      "effective_queue_start": 1793640563.790547,
+      "absolute_deadline": 1793726963.790547
+    },
+    {
+      "amendment_present": false,
+      "attempt_start": 1793644000.0,
+      "effective_queue_start": 1793644000.0,
+      "absolute_deadline": 1793730400.0
+    }
+  ],
+  "new_NN": 0,
+  "new_backward": 0,
+  "process_launches": 0
+}
