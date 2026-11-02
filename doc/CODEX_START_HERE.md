@@ -1,3 +1,11 @@
+# 当前入口：D16完整封存，下一D17仅固定TRAIN诊断准备
+
+2026-11-02 D16九fit/20epoch、710100更新及59473248正式残差NN窗全部完成；816工程与631239独立另列，总60105303NN。独立48624比较、180排列/梯度日志、45离线TRAIN聚合通过，五PNG/完整中文全文与账本经协调实际科学审阅，回执绑定最终REPORT/REVIEW。完整HTML run_id20261102_pub01_s03_ss07_token_normalization交付核验PASS：170清单产物、5图/5说明/10限制可见、全部HTML/全文链接与最新source_bundle通过，无信号/权重/数组。H抽样通路活动改善和TRAIN拟合增强，但仅2026小增且低于P、另两H回锚；last VAL三臂均低于D15/overlap增大，历史收益门FALSE。Technical PASS_WITH_LIMITATIONS / 诊断Acceptance PASS_WITH_LIMITATION / Parent PASS；goal/SS07仍ACTIVE。D16已收束，不重跑。协调下一D17仅原固定TRAIN48有效窗、四既有H检查点的near/older历史敏感性诊断源/身份/预算准备，待其具体源码审阅后执行；0新fit，不改LN位置/LR或重开外部。
+
+# 当前入口：D16全九完成、独立数值通过，图文归档收束中
+
+2026-11-02 D16九fit×20epoch/710100更新全部成功，正式59473248残差NN窗；816工程、631239独立另列，总60105303NN。独立手写normalization/GRU/Hann48624比较、180排列/梯度日志、45离线TRAIN聚合通过，max r误差2.3282e−7/其他4.3531e−6。H首批epoch1…19 token/GRU均非零、post token RMS约1，抽样活动退化缓解；TRAIN r均值H/C/P=.262342/.260453/.257760改善。H仅2026 epoch5小增+.000116401且低于P .000130032，其他H回锚；非零H near−older约−1.43e−10处于数值误差尺度。三臂last VAL均值低于D15、overlap增大，历史收益门FALSE。五实际PNG已目视并写完整中文REPORT/REVIEW，协调全文审阅与HTML交付检查进行中；goal/SS07保持ACTIVE，不自启新fit/改LN位置/LR或重开外部。
+
 # 当前入口：D16单一token归一化九fit正式执行中
 
 2026-11-02 D16已获协调实际六源/221pins/62输入/816NN工程与独立逐点桥审阅批准，协议56f4be82...，正式queue1832753/UID1012/ticks755734179已启动，九worker按5+4全部running且真实epoch4–5/19725–23670更新确认，无失败。首批detached记录post token RMS约1，GRU梯度非零，但部分状态仍近饱和；仅通路观察不作收益判定。独立依赖runner1834387已由协调部署，九组成功后自动一次≤631239NN，PUB不重复启动。正式59473248NN/710100更新不变；继续全九/图文/账本与独立验收，不按中途结果改source/预算或启其他模型/数据。
