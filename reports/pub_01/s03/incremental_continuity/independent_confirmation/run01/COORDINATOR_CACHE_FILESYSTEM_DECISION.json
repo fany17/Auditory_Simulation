@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-02",
+  "decision": "APPROVED_STORAGE_ONLY_SECOND_FILESYSTEM",
+  "authority": "Coordinator implementation decision within the user's existing authorization to use server2203 resources; no additional dataset or model scope.",
+  "primary_project_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102",
+  "approved_new_cache_root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/caches",
+  "actual_metadata_review": {
+    "uid": 1012,
+    "home_filesystem_device": 2051,
+    "cache_filesystem_device": 2129,
+    "sata5_mode": "01777",
+    "sata5_free_bytes": 179592065024,
+    "home_free_bytes": 22932029440,
+    "proposed_sata5_fanyu_namespace_exists": false,
+    "proposed_components_symlinks": false
+  },
+  "allowed": "Only the three not-yet-created float32 Z/P cache sets and minimal cache path/provenance manifests for this same frozen run; existing computation/source/metadata/report/EEG locations remain.",
+  "bounds": {
+    "total_run_bytes_across_both_roots_max": 3221225472,
+    "all_SS07_NPY_bytes_including_new_cache_root_max": 30064771072,
+    "free_reserve_each_filesystem": 21474836480,
+    "three_seed_cache_bytes_expected": 942016512,
+    "home_report_allowance_bytes": 134217728
+  },
+  "requirements": [
+    "Create user-owned project directories without changing shared /sata5 permissions; reject symlinks and unexpected existing ownership.",
+    "Freeze physical cache paths and aggregate both filesystems in budget accounting and future-free projection; do not hide arrays by extension.",
+    "No scientific/input/model/precision/aggregation changes, deletion, moving existing evidence, or retries based on scores.",
+    "Only replace the verified waiting queue with no children or NN; preserve its source, logs, events and timing. Do not modify active preprocessing.",
+    "The final coordinator execution review must bind the new evaluation protocol and new queue source before any formal NN.",
+    "The 20GiB reserve remains unchanged. The earlier 19GiB alternative is not used."
+  ],
+  "real_NN_approved_now": false
+}

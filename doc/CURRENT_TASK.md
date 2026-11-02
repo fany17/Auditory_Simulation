@@ -1,5 +1,9 @@
 # 当前执行：SS07无标签增益校准定案，全量EEG获取/预处理进行（2026-11-02）
 
+最新唯一推理入口已按实际磁盘投影修订为**evaluate_v3 + queue_v2 PID1445704（UID1012/start_ticks753381560）**，queue source c67f1808…392a4b。旧1426629只处等待、无children/无NN后已核身份终止并保留源/日志。当前数据预处理PID1395718不动；新queue仍只等待全380→最终freeze→协调绑定唯一protocol与新queue SHA才预测，不能运行旧queue/evaluate v1/v2。
+
+仅未生成的三seed FP32 Z/P cache将写2203的/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/caches（UID1012/0700、无symlink），当前home ROOT/数据/源/历史不搬不删；两root合计仍3GiB、全部SS07数组合计28GiB、各盘仍20GiB及完整未来投影，见[CACHE_STORAGE_AMENDMENT](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/CACHE_STORAGE_AMENDMENT.md)。19GiB备选只有未启用projection，不是实际阈值。科学/模型/统计和FP32值均未改变；五结果图及首canonical记录/seed2026/前60秒示例的呈现规则已在真实NN0时预定，最终需逐seed/逐人数字及实际独立审核。以下旧队列与v1启动为历史。
+
 当前实际入口为**传输v2 PID1395718（UID1012/start_ticks753103322）**：原v1 PID1379762已按身份核验终止，16个完整processed输出逐SHA/shape/finite及原mask核验复用，孤立备份0/删除0；119 TSV Gitblob与20target原SHA通过。8网络/BLAS1/最多2路DSP、原存储/RSS边界不变，新stage4h与原耗时分别记账，见[TRANSPORT_AMENDMENT](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/TRANSPORT_AMENDMENT.md)。前方案/源/protocol/失败均保留，科学公式/角色/版本不变。
 
 19个原模型/统计/标定/读出资产与历史清单54个path→digest关联相符；SOURCE_ASSETS_V2、9个读出数学桥、常量预测保留及统计失败家族规则已实际通过并经协调预审。统计协议冻结后，新学习模型fit和真实NN仍0；每record新增无标签gain统计另列。**编排PID1426629**只等待全量预处理→最终实际source/model/mask/statistics freeze→协调一次实际审阅；review须绑定protocol及queue源码SHA才能启动3seed原global64预测。无自动重试、选模型/precision或旧test/DTU推理；完成正式评分后仍需独立结果审核，不能在工程PASS或启动处完成goal。以下v1启动/单位排查为本轮先前记录。

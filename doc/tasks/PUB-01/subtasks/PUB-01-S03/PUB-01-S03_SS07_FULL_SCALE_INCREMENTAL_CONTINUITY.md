@@ -6,7 +6,7 @@
 |---|---|
 | Subtask ID | PUB-01-S03_SS07 |
 | Parent Node / Task | PUB-01-S03 / PUB-01 |
-| Status | ACTIVE — D11及以前冻结；2026-11-02真人授权ds004408，物理单位UNVERIFIED；协调唯一无标签整体gain已修订、实际canary/数学/paired支持检查通过，20包络/四图中文概览完成，380条内存获取/校验/预处理进行，最终预测freeze仍待；goal未达到 |
+| Status | ACTIVE — D11及以前冻结；真人授权ds004408，物理单位UNVERIFIED/唯一无标签整体gain已冻；20包络/四图/19历史资产与统计预审通过，380预处理1395718进行，后续唯一evaluate_v3/queue_v2 1445704等完整freeze/协调一次审阅；新cache在2203/sata5，两盘20GiB且合计caps不变；真实NN0，goal未达到 |
 | Patient Data | FORBIDDEN |
 | Upstream | SS02 与 SS06 已冻结；不改写其结果 |
 | Inputs | 2203 上既有合法 SparrKULee 资产、原 Transformer/XLSR19 功能实现、原 fold4 清单及完整训练配置；2026-11-02真人授权的ds004408 v1.0.8公开EEG/对应音频/必要metadata（固定b2d91784，唯一新范围） |
@@ -15,6 +15,8 @@
 | Validation | Technical / Acceptance / Parent consistency + 协调端独立复核 |
 | Files Allowed to Change | 本任务书、SS07 新代码/config/tests/reports、父任务 amendment/登记/入口；旧结果只读 |
 | Last Updated | 2026-11-01 |
+
+2026-11-02资源/编排接续（0真实NN）：传输v2保持1395718，原16输出逐SHA复用、8网络/2DSP/BLAS1/4h新stage且记总elapsed。19历史模型资产/54历史关联与统计预审通过；最终仅新Z/P缓存使用2203/sata5自有0700无symlink目录，home+cache合计3GiB/全SS07 NPY28GiB/各盘20GiB，19GiB备选未启用。旧waiting队列1426629核UID/start_ticks/argv/无children/无NN后终止留痕，新唯一evaluate_v3+queue_v2 PID1445704只等全380实际freeze及协调绑定protocol/新queue SHA才能一次三seed预测。五实际结果图/228逐seed逐人表与事先固定示例呈现规则已预定，旧model/数学检查不重复。
 
 2026-11-02后续修订：0 NN/0新成绩时协调明确唯一无标签全record整体gain，见independent_confirmation/run01/AMENDMENT_GAIN_CALIBRATION.md与COORDINATOR_GAIN_CALIBRATION_DECISION；不是SI修复/纯零校准确认，是offline/transductive输入校准后的外部迁移。adapter_v2 FP64 DSP→共同长度→单gain→float32→原TRAIN norm；五固定正倍率不变性≤1.137e−13、record独立性/原good道filter前全常量拒绝、精确paired block身份反例及真实canary均实际通过。原header-gain PLAN快照/源/check保留。20包络及四图中文PREPROCESSING_REPORT完成，PREPROCESSING_PROTOCOL已冻结，PID1379762在2203批量380条内存获取/完整SHA/预处理，raw只保留首canary。新NN/fit/分数0，完整实际mask/模型/统计freeze仍待，科学goal未达到。
 

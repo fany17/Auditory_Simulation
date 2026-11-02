@@ -1,5 +1,7 @@
 # 当前入口：SS07已授权ds004408外部迁移，全量校准预处理进行
 
+唯一后续推理为evaluate_v3/queue_v2 PID1445704；旧waiting队列已核验终止留痕。数据预处理1395718继续；未生成Z/P cache放同2203的/sata5自有目录，两盘各20GiB及两root合计3GiB/全SS07 NPY28GiB不变，不用19GiB备选。最终实际freeze及协调绑定新protocol/queue SHA前，真实新NN仍0。所有当前路径/证据见CURRENT_TASK顶部，不能按下方旧PID重启。
+
 当前传输v2 PID1395718（8网络/最多2路DSP/BLAS1）复用原16条完整输出；原v1已核验终止，source/protocol/log保留。19历史模型资产及54历史关联、读出/统计检查已协调预审。queue PID1426629仅等待全量380→最终实际freeze→协调绑定protocol/queue SHA审阅，之后才运行3seed冻结四角色一次推理；当前真实NN/新学习模型fit0，每record无标签gain统计另列。最新实际入口和证据见CURRENT_TASK顶部。
 
 当前唯一共享适配已按[AMENDMENT](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/AMENDMENT_GAIN_CALIBRATION.md)改为预测前无标签全record整体gain，物理单位仍UNVERIFIED；offline/transductive，不称纯零校准确认。实际canary/数学/常量/paired block支持检查通过，380条内存获取/校验/预处理PID1379762进行。20音频处理和[四图中文概览](../reports/pub_01/s03/incremental_continuity/independent_confirmation/run01/PREPROCESSING_REPORT.md)完成；最终实际mask/模型/统计freeze和一次协调审阅前不预测。当前细节以CURRENT_TASK顶部为准，以下早先单位等待为历史。

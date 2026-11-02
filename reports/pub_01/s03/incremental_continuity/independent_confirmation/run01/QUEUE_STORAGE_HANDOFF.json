@@ -1,0 +1,16 @@
+{
+  "time": 1793606570.8956037,
+  "old_queue_pid": 1426629,
+  "old_identity": {
+    "pid": 1426629,
+    "UID": 1012,
+    "time": 1793605423.6152036,
+    "start_ticks": "753266832",
+    "argv": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/pub_01_s03_ss07_openneuro_queue.py ",
+    "source_sha256": "7eaa8090c9e3b1f24a3245ce927aa61bef35a330d1ce8f1cc0787d7247c674c0"
+  },
+  "reason": "Approved separate /sata5 cache; both filesystems retain20GiB; old waiting queue/source/log retained",
+  "no_children": true,
+  "no_real_NN": true,
+  "preprocessing_pid_untouched": 1395718
+}
