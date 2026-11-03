@@ -18,3 +18,6 @@ CSV保留逐seed、逐人、逐来源、逐块及边界标量、240epoch在线�
 
 
 修正版present源e0415dd74c62c045452556f81a824737ddcf5504422ec1a9301446e8d942f48b兼容dict/list审阅receipt；协调24文件/30行真实schema核验已复用，不重复。其他10完成fit必要字段/代表TRAIN schema检查通过，0NN/0重聚合。POSTPROCESS_PROTOCOL与WAIT_LAUNCH已绑定，一次等待器2591585在线，实际等待句柄不变；report01未创建，尚不称完整结果。完整后仍需实际图表目视、中文解释、科学审阅及静态归档。
+
+
+完整后由reporting/pub_01_s03_ss07_preprojection_numeric_facts.py仅标准库读取report01既有CSV/JSON，生成正文数值表、固定检查点三seed均值、逐人方向描述和包括partial的组件/更新界；不读数据/权重，不执行独立审阅或神经计算。该入口严格要求POSTPROCESS_COMPLETED及12fit，尚未执行。外部zongjie归档摘要/完整中文HTML与链接/源副本验证入口已准备，只在实际图文及科学审阅通过后运行，当前没有创建最终归档。
