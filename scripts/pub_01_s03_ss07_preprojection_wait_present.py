@@ -12,6 +12,7 @@ def dump(p,d):
     with p.open('x') as f:json.dump(d,f,indent=2,allow_nan=False)
 def run():
     protocol=read(ROOT/'POSTPROCESS_PROTOCOL.json');assert sha(PRESENT)==protocol['presentation_source_sha256']
+    assert sha(Path(__file__))==protocol['waiter_source_sha256']
     assert sha(ROOT/'PROTOCOL.json')==protocol['scientific_protocol_sha256']
     deadline=read(ROOT/'RESOURCE_RECOVERY_AMENDMENT.json')['absolute_deadline_unix']+3600
     dump(ROOT/'POSTPROCESS_WAIT_STARTED.json',dict(pid=os.getpid(),uid=os.getuid(),started_unix=START,wait_handle=str(ROOT/'QUEUE_COMPLETED.json'),presentation_source_sha256=sha(PRESENT),wait_deadline_unix=deadline,new_NN=0))

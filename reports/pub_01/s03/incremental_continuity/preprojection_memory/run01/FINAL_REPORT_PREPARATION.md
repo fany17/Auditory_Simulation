@@ -15,3 +15,6 @@ CSV保留逐seed、逐人、逐来源、逐块及边界标量、240epoch在线�
 成本保留完整12fits与2个中断attempt、H18400–18500/C23000更新界、28次丢弃工程更新；未知CPU/精确H终点为null/范围。queue总wall已包含原尝试/停机/等GPU，不再相加；fitCPU包含setup/train/eval，不加其嵌套子计时。review receipt逐文件列出，不无依据求和嵌套时钟。组件窗不是唯一数据或FLOPs；H冻结E0两窗、C一次复用、T无memory、P多640参数/既有prior上游共享成本，不能声称公平同算力或零上游成本。
 
 保留冻结历史643174935B估计，按真实checkpoint zip-name/header复核后719087919B保守投影单列，768MiB硬cap不变。不得改旧协议掩盖估计修正。协调已有选点/指标/检查点/配对审阅只引用、不重复执行；剩余第三seed完整检查点/最终独立审阅由协调完成。本轮即使收束也不等于总体goal实现，不自动开新结构/阶段或合并PR6。
+
+
+修正版present源e0415dd74c62c045452556f81a824737ddcf5504422ec1a9301446e8d942f48b兼容dict/list审阅receipt；协调24文件/30行真实schema核验已复用，不重复。其他10完成fit必要字段/代表TRAIN schema检查通过，0NN/0重聚合。POSTPROCESS_PROTOCOL与WAIT_LAUNCH已绑定，一次等待器2591585在线，实际等待句柄不变；report01未创建，尚不称完整结果。完整后仍需实际图表目视、中文解释、科学审阅及静态归档。
