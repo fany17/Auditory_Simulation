@@ -31,6 +31,16 @@ def csvwrite(path,rows):
         writer=csv.DictWriter(f,fieldnames=fields);writer.writeheader()
         writer.writerows({k:json.dumps(v,sort_keys=True) if isinstance(v,(dict,list)) else v for k,v in row.items()} for row in rows)
 
+def review_cost_entries(path,value):
+    # Some independent audits contain one receipt per fit in a top-level list.
+    entries=list(enumerate(value)) if isinstance(value,list) else [(None,value)]
+    rows=[]
+    for index,entry in entries:
+        assert isinstance(entry,dict),(str(path),index,type(entry).__name__)
+        timers={k:v for k,v in entry.items() if isinstance(v,(int,float)) and ('cpu' in k.lower() or 'wall' in k.lower()) and ('second' in k.lower() or k.lower().endswith('_s'))}
+        rows.append(dict(file=path.name,json_pointer='' if index is None else f'/{index}',fit=entry.get('fit'),reported_top_level_timers=json.dumps(timers,sort_keys=True),scope=entry.get('scope',entry.get('timer_scope','See full receipt')),not_summed_as_disjoint_CPU=True,note='Parent/child timers and stored evidence may overlap. Preserve individual receipts; do not add all nested timer values.'))
+    return rows
+
 def readiness():
     missing=[f'{arm}_seed{seed}' for seed in SEEDS for arm in ARMS if not (ROOT/f'fits/{arm}_seed{seed}/COMPLETED.json').exists()]
     ready=not missing and (ROOT/'QUEUE_COMPLETED.json').exists()
@@ -121,8 +131,7 @@ def main():
     assert eng_extra['temporary_optimizer_updates']==28
     review_costs=[]
     for path in sorted(ROOT.glob('COORDINATOR_*.json')):
-        value=read(path);timers={k:v for k,v in value.items() if isinstance(v,(int,float)) and ('cpu' in k.lower() or 'wall' in k.lower()) and ('second' in k.lower() or k.lower().endswith('_s'))}
-        review_costs.append(dict(file=path.name,reported_top_level_timers=json.dumps(timers,sort_keys=True),scope=value.get('scope',value.get('timer_scope','See full receipt')),not_summed_as_disjoint_CPU=True,note='Parent/child timers and stored evidence may overlap. Preserve individual receipts; do not add all nested timer values.'))
+        review_costs.extend(review_cost_entries(path,read(path)))
     csvwrite(out/'REVIEW_COST_INVENTORY.csv',review_costs)
     checkpoint_sizes=[dict(path=str(p),bytes=p.stat().st_size) for p in sorted((ROOT/'fits').glob('*/*.pt'))]
     assert len(checkpoint_sizes)==24;csvwrite(out/'CHECKPOINT_FILE_SIZES.csv',checkpoint_sizes)
