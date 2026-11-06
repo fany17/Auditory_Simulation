@@ -89,8 +89,8 @@ def fuse_latent(z, samples):
     return values.astype(np.float32), keep
 
 
-def load_phase(metadata, seed, phase, guard, first_record_only=False):
-    if phase not in ("train", "val") or (first_record_only and phase != "train"):
+def load_phase(metadata, seed, phase, guard, train_records_limit=None):
+    if phase not in ("train", "val") or (train_records_limit is not None and phase != "train"):
         raise ValueError("Unsupported phase")
     specification = metadata["phases"][phase]
     files = assets(seed)
@@ -101,7 +101,7 @@ def load_phase(metadata, seed, phase, guard, first_record_only=False):
     for block in specification["blocks"]:
         blocks[block["record"]].append(block)
     records = []
-    rows = specification["records"][:1] if first_record_only else specification["records"]
+    rows = specification["records"][:train_records_limit]
     for row in rows:
         start = row["offset"]
         end = start + row["windows"]
@@ -140,6 +140,11 @@ class Tables:
         self.stops = [r.stop for r in records]
         self.windows = [r.metadata["windows"] for r in records]
         self.frame_starts = np.cumsum([0] + self.windows, dtype=np.int64)
+        self.record_starts_gpu = torch.from_numpy(self.starts[:-1]).to(device)
+        self.frame_starts_gpu = torch.from_numpy(self.frame_starts[:-1]).to(device)
+        self.windows_gpu = torch.tensor(self.windows, device=device)
+        self.active_ends = torch.from_numpy(self.starts[1:] - FIRST_ACTIVE *
+                                            np.arange(1, len(records) + 1)).to(device)
         n = int(self.starts[-1])
         self.current = torch.empty((n, CHANNELS), dtype=torch.float32, device=device)
         self.eeg = torch.empty_like(self.current)
@@ -172,6 +177,12 @@ class Tables:
                                   for i, lo, hi in spans])
         return torch.from_numpy(indices).to(self.device)
 
+    def active_indices(self, points):
+        """Map global dense TRAIN active IDs to packed per-record physical IDs."""
+        dense = torch.from_numpy(points).to(device=self.device, dtype=torch.long)
+        record = torch.bucketize(dense, self.active_ends[:-1], right=True)
+        return dense + (record + 1) * FIRST_ACTIVE
+
     def history(self, indices, role, lag):
         if lag not in (NEAR, OLDER):
             raise ValueError("Unrecognized lag")
@@ -182,44 +193,24 @@ class Tables:
             return self.prior[end]
         raise ValueError(f"Unrecognized context role {role}")
 
-    def context_raw(self, indices, spans, role, lag=NEAR):
+    def context_raw(self, indices, role, lag=NEAR):
         if role == "C_current" and lag == NEAR:
-            frames = []
-            for i, lo, hi in spans:
-                points = np.arange(lo, hi)
-                first = np.maximum(0, (points - (FRAME - 2) + HOP - 1) // HOP)
-                last = np.minimum(self.windows[i] - 1, (points - 1) // HOP)
-                frames.append(np.stack((first, last), axis=1) + self.frame_starts[i])
-            positions = torch.from_numpy(np.concatenate(frames)).to(self.device)
+            record = torch.bucketize(indices, self.record_starts_gpu[1:], right=True)
+            points = indices - self.record_starts_gpu[record]
+            first = ((points - (FRAME - 2) + HOP - 1) // HOP).clamp_min(0)
+            last = torch.minimum(self.windows_gpu[record] - 1, (points - 1) // HOP)
+            positions = torch.stack((first, last), dim=1) + self.frame_starts_gpu[record, None]
             return self.frame_means[positions].flatten(1, 2)
         return self.history(indices, role, lag)
 
-    def context(self, indices, spans, role, stats, lag=NEAR):
-        return normalized(self.context_raw(indices, spans, role, lag), stats[role])
+    def context(self, indices, role, stats, lag=NEAR):
+        return normalized(self.context_raw(indices, role, lag), stats[role])
 
 
 def chunks(records):
     return [(i, start, min(start + BATCH, record.stop))
             for i, record in enumerate(records)
             for start in range(FIRST_ACTIVE, record.stop, BATCH)]
-
-
-def batches(spans, order):
-    """Shuffle whole record-local spans, then pack to one fixed-denominator batch."""
-    group = []
-    remaining = BATCH
-    for index in order:
-        record, start, stop = spans[index]
-        while start < stop:
-            end = min(stop, start + remaining)
-            group.append((record, start, end))
-            remaining -= end - start
-            start = end
-            if remaining == 0:
-                yield group
-                group, remaining = [], BATCH
-    if group:
-        yield group
 
 
 def fit_statistics(records, table, guard):
@@ -240,7 +231,7 @@ def fit_statistics(records, table, guard):
         squares = torch.zeros_like(sums)
         for i, start, stop in spans:
             indices = table.indices([(i, start, stop)])
-            values = table.context_raw(indices, [(i, start, stop)], role).double()
+            values = table.context_raw(indices, role).double()
             sums += values.sum(dim=(0, 1))
             squares += values.square().sum(dim=(0, 1))
             if stop == records[i].stop:
@@ -263,11 +254,10 @@ def normalized(value, statistics):
     return ((value - mean) / std).masked_fill(constant, 0)
 
 
-def batch_inputs(table, spans, role, stats):
-    indices = table.indices(spans)
+def batch_inputs(table, indices, role, stats):
     x = normalized(table.current[indices], stats["current"])
-    v = table.context(indices, spans, role, stats)
-    return indices, x, v, table.anchor[indices], table.target[indices]
+    v = table.context(indices, role, stats)
+    return x, v, table.anchor[indices], table.target[indices]
 
 
 class PhysicalDecoder(nn.Module):
@@ -334,14 +324,15 @@ def evaluate(records, table, stats, model, role, guard, count, paired=False):
         if model is not None:
             for start in range(FIRST_ACTIVE, record.stop, BATCH):
                 stop = min(start + BATCH, record.stop)
-                indices, x, v, b, _ = batch_inputs(table, [(i, start, stop)], role, stats)
+                indices = table.indices([(i, start, stop)])
+                x, v, b, _ = batch_inputs(table, indices, role, stats)
                 code = model.current_code(x)
                 waves["near"][start:stop] = (b + model.decode(code, v).double()).cpu().numpy()
                 count("current_stem_points", len(b))
                 count("context_output_points", len(b))
                 if paired:
                     # Same current tensor, code, anchor, coordinates and weights.
-                    v_old = table.context(indices, [(i, start, stop)], role, stats, OLDER)
+                    v_old = table.context(indices, role, stats, OLDER)
                     waves["older"][start:stop] = (b + model.decode(code, v_old).double()).cpu().numpy()
                     count("context_output_points", len(b))
         row = record.metadata

@@ -2,12 +2,14 @@
 
 import argparse
 from collections import Counter
+import hashlib
 import os
 from pathlib import Path
 import resource
 import shutil
 import signal
 import subprocess
+import sys
 import time
 
 import pub_01_s03_ss07_physical_stream_meta as m
@@ -73,25 +75,33 @@ class Receipt:
     def __init__(self, folder, stage, protocol_sha):
         self.folder = folder
         self.start = time.monotonic()
+        self.start_wall = time.time()
+        self.start_cpu = time.process_time()
         self.counters = Counter()
         self.scope = {}
         self.stage = stage
         self.protocol_sha = protocol_sha
         self.runtime = {}
+        self.identity = dict(pid=os.getpid(), uid=os.getuid(), argv=sys.argv,
+                             linux_startticks=int(Path("/proc/self/stat").read_text().rsplit(") ", 1)[1].split()[19]),
+                             stage_started_unix=self.start_wall,
+                             deadline_unix=self.start_wall + (MAX_ENGINEERING_SECONDS if stage == "engineer"
+                                                             else MAX_SECONDS),
+                             cuda_uuid=os.environ["CUDA_VISIBLE_DEVICES"])
+        self.versions = {"python": sys.version}
 
     def count(self, field, amount=1):
         self.counters[field] += int(amount)
 
     def snapshot(self):
-        return dict(stage=self.stage, protocol_sha256=self.protocol_sha,
+        return dict(stage=self.stage, protocol_sha256=self.protocol_sha, process=self.identity,
+                    runtime_versions=self.versions, CPU_seconds=time.process_time() - self.start_cpu,
                     elapsed_seconds=time.monotonic() - self.start, counters=dict(self.counters),
                     location=self.scope, resources=self.runtime,
                     new_encoder_head_windows=0, scientific_arrays_written=0)
 
     def checkpoint(self):
-        tmp = self.folder / "CURRENT_STATUS.json.tmp"
-        m.write_json(tmp, self.snapshot())
-        tmp.replace(self.folder / "CURRENT_STATUS.json")
+        atomic_json(self.folder / "CURRENT_STATUS.json", self.snapshot())
 
     def guard(self, torch):
         self.runtime = dict(peak_RSS_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * 1024,
@@ -104,15 +114,21 @@ class Receipt:
         require(self.runtime["writer_bytes"] <= 256 * 1024**2, "SATA output cap")
 
 
+def atomic_json(path, value):
+    tmp = path.with_suffix(".json.tmp")
+    m.write_json(tmp, value)
+    tmp.replace(path)
+
+
 def engineer(meta, receipt, core, torch, guard):
     np = core.np
     checks = []
     for seed in m.SEEDS:
-        receipt.scope = dict(seed=seed, phase="first_TRAIN_record")
-        records = core.load_phase(meta, seed, "train", guard, first_record_only=True)
+        receipt.scope = dict(seed=seed, phase="first_two_TRAIN_records")
+        records = core.load_phase(meta, seed, "train", guard, train_records_limit=2)
         record = records[0]
-        receipt.count("TRAIN_records_loaded")
-        receipt.count("TRAIN_cached_windows_loaded", record.metadata["windows"])
+        receipt.count("TRAIN_records_loaded", len(records))
+        receipt.count("TRAIN_cached_windows_loaded", sum(r.metadata["windows"] for r in records))
         receipt.scope["phase"] = "VAL_frozen_anchor_bridge"
         val = core.load_phase(meta, seed, "val", guard)
         receipt.count("VAL_records_loaded", len(val))
@@ -120,13 +136,23 @@ def engineer(meta, receipt, core, torch, guard):
         anchor = core.evaluate(val, None, None, None, None, guard, receipt.count)["near"]
         anchor_error = anchor_bridge(anchor, seed)
         del val
-        receipt.scope["phase"] = "first_TRAIN_record"
+        receipt.scope["phase"] = "first_two_TRAIN_records"
         table = core.Tables(records, "cuda:0", guard)
         stats, count = core.fit_statistics(records, table, guard)
         receipt.count("TRAIN_statistics_points", count)
         spans = [(0, m.FIRST_ACTIVE, m.FIRST_ACTIVE + 2048),
-                 (0, record.stop - 2048, record.stop)]
-        require(spans[0][2] < spans[1][1], "Engineering ranges overlap")
+                 (1, records[1].stop - 2048, records[1].stop)]
+        # Interleave two records in one batch, including the final dense point.
+        dense = np.column_stack((np.arange(2048), np.arange(count - 2048, count))).astype(np.int32)
+        batch_indices = table.active_indices(dense.ravel())
+        expected_indices = table.indices(spans).reshape(2, 2048).T.contiguous().flatten()
+        require(torch.equal(batch_indices, expected_indices), "Cross-record dense gather differs")
+        boundary = record.stop - m.FIRST_ACTIVE
+        check_indices = table.active_indices(np.array([boundary - 1, boundary], dtype=np.int32))
+        require(torch.equal(check_indices,
+                            table.indices([(0, record.stop - 1, record.stop),
+                                           (1, m.FIRST_ACTIVE, m.FIRST_ACTIVE + 1)])),
+                "Dense boundary switches records incorrectly")
         row = record.metadata
         cache = np.load(m.assets(seed)["folder"] / "train_latent.npy", mmap_mode="r",
                         allow_pickle=False)
@@ -158,7 +184,7 @@ def engineer(meta, receipt, core, torch, guard):
             means = raw.reshape(2, m.CHANNELS, m.FRAME // m.BIN_POINTS, m.BIN_POINTS).mean(
                 axis=-1, dtype=np.float64).transpose(0, 2, 1).reshape(m.BINS, m.CHANNELS)
             current_ref.append(means)
-        got = table.context_raw(indices, probe_spans, "C_current").cpu().numpy()
+        got = table.context_raw(indices, "C_current").cpu().numpy()
         current_error = float(np.max(np.abs(np.asarray(current_ref, dtype=np.float32) - got)))
         require(current_error <= 2e-6, "Positive-contributor current context bridge differs")
         history_error = 0.
@@ -170,6 +196,24 @@ def engineer(meta, receipt, core, torch, guard):
                 got = table.history(indices, role, lag).cpu().numpy()
                 history_error = max(history_error, float(np.max(np.abs(expected - got))))
         require(history_error <= 2e-6, "Ordered history bridge differs")
+        edge_records = ((record, record.stop - 1), (records[1], m.FIRST_ACTIVE))
+        for role in m.ROLES:
+            for lag in ((m.NEAR,) if role == "C_current" else (m.NEAR, m.OLDER)):
+                expected = []
+                for row_record, point in edge_records:
+                    if role == "C_current":
+                        first, last = m.raw_support(row_record.metadata["windows"], point)
+                        frame_ids = [first // m.HOP, (last - m.FRAME) // m.HOP]
+                        value = row_record.frame_means[frame_ids].reshape(m.BINS, m.CHANNELS)
+                    else:
+                        wave = row_record.latent if role == "H_past_eeg" else row_record.anchor
+                        value = (wave[point - lag - m.HISTORY + 1:point - lag + 1]
+                                 .reshape((m.BINS, m.BIN_POINTS) + wave.shape[1:])
+                                 .mean(axis=1, dtype=np.float64))
+                    expected.append(value)
+                got = table.context_raw(check_indices, role, lag).cpu().numpy()
+                require(np.max(np.abs(got - np.asarray(expected, dtype=np.float32))) <= 2e-6,
+                        "Cross-record context leaked or changed order")
         initialization, current_initialization = None, None
         for role in m.ROLES:
             receipt.scope["role"] = role
@@ -182,7 +226,7 @@ def engineer(meta, receipt, core, torch, guard):
             if role != "P_past_prediction":
                 require(torch.equal(flat, initialization), "C/H initialization differs")
             require(torch.equal(current, current_initialization), "Current initialization differs")
-            indices, x, v, b, y = core.batch_inputs(table, spans, role, stats)
+            x, v, b, y = core.batch_inputs(table, batch_indices, role, stats)
             gradients = []
             for nonzero in (False, True):
                 model.zero_grad(set_to_none=True)
@@ -218,7 +262,7 @@ def engineer(meta, receipt, core, torch, guard):
                         abs(float((prediction - y).square().mean() - (full - y).square().mean())) <= 2e-6,
                         "Batch split changed physical output or loss")
                 if role != "C_current":
-                    old_v = table.context(indices, spans, role, stats, m.OLDER)
+                    old_v = table.context(batch_indices, role, stats, m.OLDER)
                     old = b + model.decode(code, old_v).double()
                     receipt.count("context_output_points", len(b))
                     pair_delta = float((full - old).abs().max())
@@ -249,25 +293,47 @@ def small_metric(metric):
     return {key: val for key, val in metric.items() if key not in ("people", "blocks")}
 
 
+def initialization_sha(model):
+    sha = hashlib.sha256()
+    for name, value in model.state_dict().items():
+        sha.update(name.encode())
+        sha.update(value.detach().cpu().numpy().tobytes())
+    return sha.hexdigest()
+
+
 def fit_role(meta, receipt, core, torch, guard, seed, role, train, val, tables, stats, anchor):
     train_table, val_table = tables
     model = core.PhysicalDecoder(seed, role).cuda()
     require(sum(p.numel() for p in model.parameters()) == m.PARAMETERS[role], "Parameter count")
     optimizer = torch.optim.Adam(model.parameters(), lr=.001, betas=(.9, .999), eps=1e-8)
+    output = receipt.folder / f"seed{seed}_{role}"
+    output.mkdir()
+    recovery = output / "recovery"
+    recovery.mkdir()
+    m.write_json(output / "CONFIG.json", dict(seed=seed, role=role, batch=m.BATCH, epochs=m.EPOCHS,
+                 trainable_parameters=m.PARAMETERS[role], initialization_sha256=initialization_sha(model),
+                 TRAIN_stats=f"../seed{seed}_TRAIN_STATS.json", optimizer="Adam",
+                 lr=.001, betas=(.9, .999), eps=1e-8, weight_decay=0,
+                 shuffle="global_without_replacement_int32", shuffle_seed_recipe=[seed, 20261106, "epoch"],
+                 protocol_sha256=receipt.protocol_sha))
     score = lambda records, table, net, paired=False: core.evaluate(
         records, table, stats, net, role, guard, receipt.count, paired=paired)
     best_epoch, best, best_state = -1, anchor["val"], None
     epochs = [dict(epoch=-1, train=small_metric(anchor["train"]), val=small_metric(best))]
-    spans = core.chunks(train)
+    planned = meta["phases"]["train"]
     for epoch in range(m.EPOCHS):
         receipt.scope = dict(seed=seed, role=role, epoch=epoch, phase="TRAIN")
         model.train()
         rng = core.np.random.default_rng(core.np.random.SeedSequence([seed, 20261106, epoch]))
+        permutation = core.np.arange(planned["active_points"], dtype=core.np.int32)
+        rng.shuffle(permutation)
         total, updates, sse = 0, 0, torch.zeros((), dtype=torch.float64, device="cuda")
-        for group in core.batches(spans, rng.permutation(len(spans))):
-            _, x, v, b, y = core.batch_inputs(train_table, group, role, stats)
+        for start in range(0, len(permutation), m.BATCH):
+            indices = train_table.active_indices(permutation[start:start + m.BATCH])
+            x, v, b, y = core.batch_inputs(train_table, indices, role, stats)
             optimizer.zero_grad(set_to_none=True)
-            error = model(x, v, b) - y
+            prediction = model(x, v, b)
+            error = prediction - y
             receipt.count("current_stem_points", len(b))
             receipt.count("context_output_points", len(b))
             ssq = error.square().sum()
@@ -275,14 +341,22 @@ def fit_role(meta, receipt, core, torch, guard, seed, role, train, val, tables, 
             receipt.count("backward_points", len(b))
             optimizer.step()
             receipt.count("optimizer_updates")
+            if updates == 0:
+                with torch.no_grad():
+                    first = dict(epoch=epoch, active_points=len(b), physical_MSE=float(error.square().mean()),
+                                 residual_RMS=float((prediction - b).square().mean().sqrt()),
+                                 gradients={name: float(p.grad.detach().norm())
+                                            for name, p in model.named_parameters()})
+                m.write_json(output / f"epoch{epoch:02}_FIRST_BATCH.json", first)
+                receipt.checkpoint()
             total += len(b)
             updates += 1
             sse += ssq.detach()
             if updates % 64 == 0:
                 require(bool(torch.isfinite(sse)), "Non-finite training loss")
                 guard()
-        planned = meta["phases"]["train"]
-        require(total == planned["active_points"] and updates == planned["batches_per_pass"],
+        require(total == planned["active_points"] and updates == planned["batches_per_pass"]
+                and len(b) == planned["last_batch"],
                 "TRAIN coverage or update count differs")
         require(bool(torch.isfinite(sse)), "Non-finite training loss")
         model.eval()
@@ -292,13 +366,26 @@ def fit_role(meta, receipt, core, torch, guard, seed, role, train, val, tables, 
         if epoch in m.FIXED_TRAIN:
             receipt.scope["phase"] = "fixed_TRAIN"
             epoch_row["train"] = small_metric(score(train, train_table, model)["near"])
-        if val_metric["r"] > best["r"]:
+        improved = val_metric["r"] > best["r"]
+        if improved:
             best_epoch, best = epoch, val_metric
             best_state = {key: val.detach().cpu().clone() for key, val in model.state_dict().items()}
         epochs.append(epoch_row)
+        checkpoint = recovery / f"epoch{epoch:02}.pt"
+        partial = checkpoint.with_suffix(".pt.tmp")
+        torch.save(dict(epoch=epoch, next_epoch=epoch + 1, seed=seed, role=role, best_epoch=best_epoch,
+                        model=model.state_dict(), optimizer=optimizer.state_dict(),
+                        numpy_bit_generator=rng.bit_generator.state, torch_rng=torch.get_rng_state(),
+                        torch_cuda_rng=torch.cuda.get_rng_state(), scores=epochs,
+                        stage=receipt.snapshot()), partial)
+        partial.replace(checkpoint)
+        pointer = dict(epoch=epoch, path=str(checkpoint.relative_to(output)), best_epoch=best_epoch,
+                       r=val_metric["r"], protocol_sha256=receipt.protocol_sha)
+        atomic_json(output / "LAST.json", pointer)
+        if improved:
+            atomic_json(output / "BEST.json", pointer)
+        guard()
         receipt.checkpoint()
-    output = receipt.folder / f"seed{seed}_{role}"
-    output.mkdir()
     torch.save(model.state_dict(), output / "last.pt")
     near_older = None
     if best_state is not None:
@@ -390,6 +477,12 @@ def main():
         torch.use_deterministic_algorithms(True)
         torch.backends.cuda.matmul.allow_tf32 = False
         torch.cuda.reset_peak_memory_stats()
+        receipt.versions.update(torch=str(torch.__version__), numpy=core.np.__version__,
+                                torch_cuda=torch.version.cuda,
+                                driver=subprocess.check_output(
+                                    ["nvidia-smi", "-i", receipt.identity["cuda_uuid"],
+                                     "--query-gpu=driver_version", "--format=csv,noheader"],
+                                    text=True).strip())
         guard = lambda: receipt.guard(torch)
         receipt.checkpoint()
         worker = engineer if stage == "engineer" else fit

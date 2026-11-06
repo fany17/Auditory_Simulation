@@ -27,7 +27,7 @@ NEAR, OLDER = 288, 960
 BINS, BIN_POINTS, CHANNELS = 96, 4, 8
 HISTORY = BINS * BIN_POINTS
 WIDTH, CONTEXT_WIDTH = 32, 64
-CANDIDATE = "D19_ORDERED_16HZ_V1"
+CANDIDATE = "D19_ORDERED_16HZ_V2"
 CONTEXT_CHANNELS = {"C_current": CHANNELS, "H_past_eeg": CHANNELS, "P_past_prediction": 1}
 PARAMETERS = {
     role: ((CHANNELS + 1) * WIDTH + (BINS * width + 1) * CONTEXT_WIDTH
@@ -257,14 +257,15 @@ def inventory():
                               engineering_current_stem_points=9 * 3 * 4096,
                               engineering_context_output_points=(9 * 3 + 6) * 4096,
                               engineering_backward_points=9 * 2 * 4096,
-                              engineering_TRAIN_records=3, engineering_VAL_records=3 * EXPECTED["val"][0],
+                              engineering_TRAIN_records=6, engineering_VAL_records=3 * EXPECTED["val"][0],
                               engineering_optimizer_updates=0,
-                              engineering_TRAIN_cached_windows=3 * train["records"][0]["windows"],
+                              engineering_TRAIN_cached_windows=3 * sum(row["windows"] for row in train["records"][:2]),
                               engineering_VAL_cached_windows=3 * EXPECTED["val"][2],
                               formal_cache_records=3 * sum(len(p["records"]) for p in phases.values()),
                               formal_cache_windows=3 * sum(row["windows"] for p in phases.values()
                                                            for row in p["records"]),
                               persistent_cuda_table_bytes_per_seed=table_bytes,
+                              TRAIN_global_shuffle_bytes=train["active_points"] * 4,
                               batch_float32_context_bytes={k: BATCH * BINS * v * 4
                                                            for k, v in CONTEXT_CHANNELS.items()},
                               optimizer_updates=9 * EPOCHS * train["batches_per_pass"],

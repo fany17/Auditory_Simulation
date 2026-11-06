@@ -1,5 +1,5 @@
 {
-  "candidate": "D19_ORDERED_16HZ_V1",
+  "candidate": "D19_ORDERED_16HZ_V2",
   "stage": "SOURCE_METADATA_ONLY",
   "frozen_for_fit": false,
   "phases": {
@@ -35645,7 +35645,8 @@
       "coordinate_cases": 204480,
       "max_future_samples": 190,
       "batches_per_pass": 1447,
-      "last_batch": 12246
+      "last_batch": 12246,
+      "dense_mapping_boundary_cases": 852
     },
     "val": {
       "records": [
@@ -40005,7 +40006,8 @@
       "coordinate_cases": 23520,
       "max_future_samples": 190,
       "batches_per_pass": 175,
-      "last_batch": 15983
+      "last_batch": 15983,
+      "dense_mapping_boundary_cases": 98
     }
   },
   "inputs": {
@@ -40710,7 +40712,7 @@
     "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_data.py": "3ae4bc9b5a674df07001e687a6337b72c187595c5a9050069012dcf2e01e72d6"
   },
   "writer_root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106",
-  "writer_free_bytes": 178228056064,
+  "writer_free_bytes": 178226593792,
   "geometry": {
     "frame": 192,
     "hop": 96,
@@ -40748,14 +40750,15 @@
     "engineering_current_stem_points": 110592,
     "engineering_context_output_points": 135168,
     "engineering_backward_points": 73728,
-    "engineering_TRAIN_records": 3,
+    "engineering_TRAIN_records": 6,
     "engineering_VAL_records": 147,
     "engineering_optimizer_updates": 0,
-    "engineering_TRAIN_cached_windows": 1869,
+    "engineering_TRAIN_cached_windows": 3447,
     "engineering_VAL_cached_windows": 91500,
     "formal_cache_records": 1425,
     "formal_cache_windows": 848862,
     "persistent_cuda_table_bytes_per_seed": 2720148900,
+    "TRAIN_global_shuffle_bytes": 94814040,
     "batch_float32_context_bytes": {
       "C_current": 50331648,
       "H_past_eeg": 50331648,
@@ -40778,8 +40781,8 @@
   "formal_fits": 0,
   "goal_complete": false,
   "prepared_source_sha256": {
-    "pub_01_s03_ss07_physical_stream_core.py": "5715ccddd4668d1c8af5d7ce1cfd43c5e853e81abb95c70ff448c9bca318f9fb",
-    "pub_01_s03_ss07_physical_stream_meta.py": "f4ef1d4e423a443b4806bb1ada9bef6f36fdba4856d313b29059d347400c5622",
-    "pub_01_s03_ss07_physical_stream_run.py": "3b9a2900c6e41defbfb4b7a9562c01201abbe5ca233f012ad06756f7338d60e3"
+    "pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3",
+    "pub_01_s03_ss07_physical_stream_run.py": "59adb9f0046117117b73f74f3c084fb12d2ed934401e2dc6f9f126166d9855bd"
   }
 }
