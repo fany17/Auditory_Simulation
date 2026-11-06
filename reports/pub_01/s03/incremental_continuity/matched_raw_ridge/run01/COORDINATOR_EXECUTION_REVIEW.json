@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "reviewer": "coordinator/root",
+  "reviewed_at_utc": "2026-11-06T16:13:26.120908+00:00",
+  "protocol_sha256": "b9942886d0ddaa90919e7c9409dfd057003714dfe3bbb21b6b8427df54299500",
+  "inventory_sha256": "09ea7dc8b620c20f5159b69c780ab2b406207c41e3d58c470da7439d54d116d6",
+  "engineering_sha256": "417a16a636311d69e706e347bc0ba111718a42cc0ffb56372bf9ee0cdde3845b",
+  "source_pin_count": 17,
+  "input_stat_count": 522,
+  "all_source_hashes_verified": true,
+  "all_input_stat_identities_verified": true,
+  "source_commit": "4035ff2",
+  "checks": [
+    "Read frozen data, runner and engineering source; numerical inputs and target precision match D26/D27 conventions.",
+    "G uses 426 TRAIN records, I uses each of 49 people own TRAIN only; 70 raw uncentered sufficient statistics are shared without per-record centering.",
+    "Dense EEG t+0..32 design; lag-major/channel-minor; across-computation-block halo retained; only real record-end missing elements filled with zero before fit-specific normalization.",
+    "DSYRK lower triangle reconstructed without halving off-diagonals; exact population centering/scaling; intercept unpenalized; G/n+alpha I; no jitter or adaptive grid.",
+    "Fixed 9 alphas, 50 decompositions and 450 coefficient solutions; physical-target restoration before original common-support scoring.",
+    "G selects whole 49-person macro r; I selects own-person r; ties lower alpha; no VAL refit, no test reads.",
+    "Atomic per-record statistics, exact prefix identity and committed-record count checked; immutable equivalent receipts preserved and conflicting receipts rejected.",
+    "Bounded actual engineering receipt: 2 small solutions and 1 real 2112-feature/2048-row TRAIN solution; no extra fits repeated by reviewer.",
+    "Engineering direct coefficient max error 9.211261401207184e-15; real normal-equation residual 9.332812300755222e-15; original scoring max r error 2.7755575615628914e-17 and MSE error zero.",
+    "All 522 payload stat identities and 17 frozen source/artifact hashes checked directly on 2203; engineering log is empty, actual evidence is structured ENGINEERING.json plus source and saved synthetic resume canary."
+  ],
+  "execution_authorization": {
+    "full_matrix": true,
+    "CPU_only": true,
+    "max_threads": 16,
+    "RSS_GiB": 8,
+    "writer_GiB": 8,
+    "reserve_GiB": 64,
+    "parallel_D26_allowed": true,
+    "extra_engineering_required": false,
+    "new_user_permission_required": false
+  },
+  "limitations": [
+    "Classic custom raw EEG ridge baseline, not exact mTRF Toolbox implementation or a novel method.",
+    "Offline 0-500 ms EEG lead; temporal information differs from 3-second native Transformer and Sea-Wave.",
+    "Personal I adaptation has person-specific training and 49 validation-selected alphas; do not equate to shared G/Transformer.",
+    "Repeatedly developed internal VAL only, 49 people and five story IDs; no heldout SOTA claim.",
+    "D26 and D27 source/protocols unchanged; no additional NN/GPU/old-test computation authorized by this review."
+  ]
+}
