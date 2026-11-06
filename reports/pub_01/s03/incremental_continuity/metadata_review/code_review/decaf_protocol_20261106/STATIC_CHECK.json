@@ -1,0 +1,22 @@
+{
+  "commit": "f4c5dbeafa93e97abb32bf189d6d1b5cb6df3332",
+  "git_tree_paths": 117,
+  "verified_text_blobs": 49,
+  "parsed_python_sources": 39,
+  "archived_text_blobs": 21,
+  "archived_bytes": 252180,
+  "checks": [
+    "exact upstream Git blob bytes",
+    "recursive class has no forward_recursive",
+    "standard forward re-decodes EEG context, invokes direct forecaster",
+    "recursive teacher-forcing literals both 1",
+    "GRU/LSTM attention output has no consumer in direct forward",
+    "TRAIN generated hop is 89 samples for 448-point combined window"
+  ],
+  "author_modules_imported": 0,
+  "author_commands_executed": 0,
+  "model_weight_or_data_downloads": 0,
+  "new_NN_forwards": 0,
+  "new_fits": 0,
+  "external_datasets_read": 0
+}

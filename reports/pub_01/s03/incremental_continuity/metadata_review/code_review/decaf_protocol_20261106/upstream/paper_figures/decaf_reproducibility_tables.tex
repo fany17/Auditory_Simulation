@@ -1,0 +1,86 @@
+\begin{table}[t]
+\centering
+\caption{DECAF architecture specification (TwoBranchModelRecursive).}
+\label{tab:decaf_architecture}
+\begin{tabular}{lll}
+\toprule
+\textbf{Component} & \textbf{Layer} & \textbf{Specification} \\
+\midrule
+EEG encoder (HappyQuoka) & Input & 64 EEG channels \\
+ & Conv1d & 64 $\rightarrow$ 128, kernel=7, padding=3 \\
+ & Pre-LN FFT block $\times 8$ & d\_model=128, d\_inner=1024, n\_head=2 \\
+ &  & MHA: d\_k=d\_v=64 (d\_model / n\_head) \\
+ &  & FFN: Conv1d(128$\rightarrow$1024, k=9, p=4) + ReLU \\
+ &  & FFN: Conv1d(1024$\rightarrow$128, k=1, p=0) \\
+ & Output & Linear(128$\rightarrow$1) + Sigmoid \\
+ & Dropout & 0.6 (all FFT blocks) \\
+\midrule
+Envelope forecaster & Input & 3.0 s context @ 64 Hz (192 samples) \\
+(GRU + attention) & Input Conv1d & 1 $\rightarrow$ 128, kernel=7, padding=3 \\
+ & GRU & 2 layers, hidden=128, unidirectional \\
+ & Attention & MultiheadAttention, 4 heads \\
+ & Output & FC1: 128$\rightarrow$128 + ReLU + Dropout(0.1) \\
+ &  & FC2: 128$\rightarrow$224 (3.5 s @ 64 Hz) \\
+\midrule
+Dynamic fusion gate & Input & Concatenated predictions (2 channels) \\
+ & Conv1d & 2$\rightarrow$16, kernel=5, padding=2 + ReLU \\
+ & Conv1d & 16$\rightarrow$8, kernel=3, padding=1 + ReLU \\
+ & Conv1d & 8$\rightarrow$1, kernel=1 + Sigmoid \\
+\midrule
+Parameter counts & EEG encoder & 11,094,273 trainable parameters \\
+ & Envelope forecaster & 311,136 trainable parameters \\
+ & Fusion gate & 577 trainable parameters \\
+ & Total & 11,405,986 trainable parameters \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{DECAF training hyperparameters and optimization settings.}
+\label{tab:decaf_hyperparams}
+\begin{tabular}{ll}
+\toprule
+\textbf{Setting} & \textbf{Value} \\
+\midrule
+Optimizer & Adam \\
+Base learning rate & 3e-4 \\
+Fine-tune learning rate & 1e-7 (pretrained branches) \\
+Weight decay & 0.0 \\
+Scheduler & Transformer warmup + decay (Noam) \\
+Warmup epochs & 3 \\
+Batch size & 64 \\
+Epochs & 10 \\
+Early stopping & Patience=3 (validation loss) \\
+Loss & Pearson + 0.2 $\times$ L1 \\
+Dropout (EEG encoder) & 0.6 \\
+Dropout (forecaster) & 0.1 \\
+Fusion strategy & Dynamic gating \\
+Teacher forcing ratio & 1.0 (recursive training) \\
+Seed & 42 \\
+Num workers & 8 \\
+Prefetch factor & 8 \\
+Pin memory & False \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Dataset configuration for ICASSP 2023 EEG benchmark (Task 2).}
+\label{tab:decaf_dataset}
+\begin{tabular}{lll}
+\toprule
+\textbf{Split} & \textbf{Samples} & \textbf{Subjects} \\
+\midrule
+Train (80\% overlap) & 325,109 & 85 \\
+Validation (no overlap) & 7,788 & 85 \\
+Test (no overlap) & 7,788 & 85 \\
+\midrule
+Window length & 7.0 s (3.5 s past + 3.5 s present) & 64 Hz \\
+Context seconds & 3.0 s (192 samples) & \\
+Prediction seconds & 3.5 s (224 samples) & \\
+Stratification & Subject-independent (all subjects in each split) & \\
+\bottomrule
+\end{tabular}
+\end{table}
