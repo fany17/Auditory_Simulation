@@ -17,9 +17,9 @@
 
 开发数据的独立性层级已另作[实际元数据核验](../../seawave_seen_reference/run01/COHORT_INTERPRETATION.md)：49名VAL被试均见于TRAIN，49条记录只涉及5个故事标识；其中29人来源家族已见、20人来源家族未见。完整story/audio_path/record ID均不与TRAIN重复，但本检查不是波形或源时间区间去重。保留原49人主指标和完整整臂，另列5个故事的描述性汇总；不把被试数量冒充独立故事数量，不据此声称独立确认或广泛跨故事SOTA。
 
-| 方法 | 本次实际核实的一手依据 | 下一项可比性工作 |
+| 方法 | 本次实际核实的一手依据 | 比较状态及限制 |
 |---|---|---|
-| raw EEG backward ridge/TRF | [既有SS01实测](../../../envelope_decode_20261011/REPORT.md)仅10人/93记录、另一split、稀疏9lags与record宏平均；它的旧test r=0.18191不能参与当前49人/752块排名，latent ridge亦不能替代raw EEG基线。 | [D28固定为同426/49的G共享＋I个人ridge](../../matched_raw_ridge/run01/COORDINATOR_DECISION.md)，dense0..32 lag、九alpha、完整原支持评分。已下达CPU实现/有界工程，尚无本轮性能。确定性解不伪造3seed，不把经典方法增益冒充创新；时间权限与个人适配分别披露。 |
+| raw EEG backward ridge/TRF | [既有SS01实测](../../../envelope_decode_20261011/REPORT.md)仅10人/93记录、另一split、稀疏9lags与record宏平均；它的旧test r=0.18191不能参与当前49人/752块排名，latent ridge亦不能替代raw EEG基线。 | [D28全量已完成](../../matched_raw_ridge/run01/REPORT.md)：同426/49及原752块，dense0..32 lag、固定九alpha、50统计拟合/450候选解。共享G r=0.097929267，个人I r=0.158231016；[独立统计、全部系数和得分复核通过](../../matched_raw_ridge/run01/COORDINATOR_RESULT_REVIEW.json)。二者均低于本表已冻结神经开发参照，但本项仅补齐经典对照；离线500ms EEG lead、个人适配及逐人VAL选alpha另列，不称精确mTRF工具箱复现或独立SOTA证据，确定性解不伪造3seed。 |
 | Sea-Wave | 已实际核读正式PDF、表7/8及12份固定作者源码，见[完整审计与来源指纹](../../metadata_review/code_review/seawave_protocol_20261106/REPORT.md)。论文Small周期5与公开JSON周期4、FT损失/hop/入口存在差异；原开发test作VAL有明确split说明，不据文件名断言泄漏。 | 后续实际清单证明VAL49人均在TRAIN，故[D27固定为覆盖已见人适配的3个initial＋147个personal FT](../../seawave_seen_reference/run01/COORDINATOR_DECISION.md)。initial群体结果只作未globalFT参考，不冒称完整S2。尚未开始Sea-Wave正式训练；不将personal与共享参数结果混称同适配条件。 |
 | DECAF | [原文](https://arxiv.org/html/2602.19395v1)直接研究包络；本地已有[固定公开实现审计](../../metadata_review/code_review/decaf_protocol_20261106/REPORT.md)，包括HappyQuokka、forecaster、动态融合和训练入口。 | 完整方法是候选强对照；现有自定义P-prior不能替代它。代码的teacher验证、普通预测历史、3/3.5秒及500ms对齐差异须落实到同协议，不能直接跑自动test入口或以oracle评分充当EEG-only。 |
 | SHINE | [v2原文](https://arxiv.org/html/2602.23960v2)是30秒EEG、包络+10Mel联合目标，SparrKULee分配263/207/192；不同于本项目426/49和3秒局部权限。2026-11-06通过GitHub接口实读[作者仓库](https://github.com/xuxiran/SHINE)，根目录仅README，正文仍称代码待发布。 | 无现成作者代码可直接运行。若后续依论文实现，标明实现者及差异；不将3秒单目标删改版称完整SHINE。广义长窗重建SOTA主张仍需处理该对照缺口。 |
