@@ -1,4 +1,8 @@
-# 当前入口：D24 三折训练来源对照已封存
+# 当前入口：D25 固定权重来源诊断已封存
+
+2026-11-06。D25 在原 VAL 固定使用 D24 的 B_OOF/S_OOF 实际 epoch 0/19 权重。B 相对锚点的损失在六个 seed/epoch 都缩小，平均缓解 0.002741，同时六格均低于同折锚点、S 和全 TRAIN 强锚点。正式 170,634 编码窗、64,189,524 真实下游活动点、0 优化和统计拟合，独立全量评分复算通过。D24/D25 的输出历史后处理支线封存，SS07 总体继续 ACTIVE。[D25 报告](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md) · [独立复核](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REVIEW.md) · [归档](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/ARCHIVE.md)
+
+## D24 三折训练来源对照已封存
 
 2026-11-06。D24 完成 9 条上游、12 个下游拟合及独立核验。B_OOF 的 60 个已训练轮次均低于共同锚点，三个选中点均为锚点回退。最佳已训练开发 r 为 0.176480208，末轮 0.169019619，锚点 0.182339940。S_OOF 的选中均值为 0.183334318，活动 MSE 高于锚点。完整三 seed、逐人、轨迹、配对与调度修订成本已封存。当前证据限于原开发 VAL，SS07 仍为 ACTIVE。[D24 报告](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md) · [独立复核](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REVIEW.md) · [归档](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/ARCHIVE.md)
 

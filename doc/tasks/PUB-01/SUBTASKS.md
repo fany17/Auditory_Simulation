@@ -1,6 +1,8 @@
 # PUB-01 Subtask Registry
 
-2026-11-06 最新记录为 SS07 的 D24。9 条上游和 12 个下游拟合完成，三级核验通过。B_OOF 的 60 个训练轮次均低于共同锚点，三组回退。S_OOF 的开发相关小幅增加，活动 MSE 上升。D24 已封存，SS07 继续 ACTIVE。[D24 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md)
+2026-11-06 最新记录为 SS07 的 D25。固定 D24 B_OOF/S_OOF 的实际 0/19 轮权重，B 的相对损失六格均缓解，六格仍低于同折锚点、S 与全 TRAIN 强锚点。正式 0 fit、独立全量复算通过。输出历史后处理支线已封存，SS07 继续 ACTIVE。[D25 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md)
+
+2026-11-06 SS07 的 D24 记录。9 条上游和 12 个下游拟合完成，三级核验通过。B_OOF 的 60 个训练轮次均低于共同锚点，三组回退。S_OOF 的开发相关小幅增加，活动 MSE 上升。D24 已封存，SS07 继续 ACTIVE。[D24 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md)
 
 唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
 

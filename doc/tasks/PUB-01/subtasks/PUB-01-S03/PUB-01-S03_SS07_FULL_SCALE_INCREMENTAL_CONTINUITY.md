@@ -267,3 +267,10 @@ D19/D20/D22/D23 的 FT+Ccap 缓存溯源复核通过。三个 seed 的后处理 
 全 426 条 TRAIN 及 37 个音频源族三折，九条从头训练的上游与四臂三 seed 的十二个下游均完成。B_OOF 60/60 训练轮次低于共同锚点，三组回退，最佳已训练与末轮均值为 0.176480208 和 0.169019619。B_OOF−B_IS 的选中差为 −0.001940365，末轮差为 −0.011742468。S_OOF 选中较锚点 +0.000994379，活动 MSE 高于锚点。原 VAL 的重复开发、模型与输入差异及两次执行修订成本均保留。
 
 独立九组重放、下游统计/权重/选点、有限功能重放和科学复算通过。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。两图、全轨迹、逐人和预设配对已归档。SS07 目标继续 ACTIVE。[D24 报告](../../../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/ARCHIVE.md)
+
+
+### 2026-11-06 D25 Completion Record
+
+固定 D24 的实际 B_OOF/S_OOF 0/19 轮权重，按真实源族排除关系对原 VAL 完成 170,634 编码窗、2,673 批、36 个下游路由及 64,189,524 活动点。相对各自锚点，B 的六个来源对照均缓解，平均 +0.002740685；六格仍低于同折锚点、S 和原全 TRAIN 强锚点。全体、共享族、未见族及逐人逐块证据齐备。优化和统计拟合均为 0。
+
+独立复算 20,970 块、1,335 个逐记录评分与 36 个汇总通过。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。结果限于原重复开发 VAL。D24/D25 输出历史后处理支线封存，SS07 持续目标仍 ACTIVE。[D25 报告](../../../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/ARCHIVE.md)
