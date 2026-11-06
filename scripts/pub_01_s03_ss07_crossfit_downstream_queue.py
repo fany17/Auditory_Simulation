@@ -11,11 +11,11 @@ from pathlib import Path
 from pub_01_s03_ss07_crossfit_meta import ROOT, digest, read
 
 WORKER = Path(__file__).with_name("pub_01_s03_ss07_crossfit_downstream.py")
-WORKER_SHA = "947ed1677af9df2973c61d5d07ab937899799915e6cc9722a526a25a0a7ddf52"
-OUTPUT = ROOT / "downstream_queue"
+WORKER_SHA = "afffe133a001cfaa3553d62cd271fd622e9c8af5be53dfb69d3d28a93ca96f41"
+OUTPUT = ROOT / "downstream_queue_v02"
 UPSTREAM = ROOT / "queue"
-AUDIT = ROOT / "coordinator_upstream_audit_v01"
-GATE = ROOT / "DOWNSTREAM_FORMAL_GATE_V04.json"
+AUDIT = ROOT / "coordinator_upstream_audit_v02"
+GATE = ROOT / "DOWNSTREAM_FORMAL_GATE_V05.json"
 LANES = {"GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": (1024, 31415),
          "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": (2026,)}
 

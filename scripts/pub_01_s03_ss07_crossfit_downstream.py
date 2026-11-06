@@ -15,10 +15,10 @@ from pub_01_s03_ss07_crossfit_meta import D19, ROOT, SATA, SEEDS, digest, read
 D20 = SATA / "s03_recent_prediction_context_20261106"
 D22 = SATA / "s03_output_query_20261106"
 D23 = SATA / "s03_memoryless_output_20261106"
-REPLAY = ROOT / "coordinator_upstream_audit_v01"
-REPLAY_SOURCE = ROOT / "COORDINATOR_UPSTREAM_REPLAY.py"
-REPLAY_SOURCE_SHA = "d8016bbd5b171e2893fd80d6366552a5cd32115549137c25970b3efd7c877a14"
-FORMAL_GATE = ROOT / "DOWNSTREAM_FORMAL_GATE_V04.json"
+REPLAY = ROOT / "coordinator_upstream_audit_v02"
+REPLAY_SOURCE = ROOT / "COORDINATOR_UPSTREAM_REPLAY_V02.py"
+REPLAY_SOURCE_SHA = "6463ac6cf775e382a0199e25bfc11293447d0249f1a80d257d54120ada664912"
+FORMAL_GATE = ROOT / "DOWNSTREAM_FORMAL_GATE_V05.json"
 ROLE = "P_past_prediction"
 GIB = 1024**3
 
@@ -303,8 +303,10 @@ def freeze(meta, d20):
                 and len(replay_done["jobs"]) == 9 and replay_count["NN_windows"] <= 16384
                 and replay_count["fitting_updates"] == replay_count["labels_read"] == 0,
                 "Independent upstream replay has not passed")
-    d20.require(replay_done["process"]["source_sha256"] == digest(REPLAY_SOURCE) == REPLAY_SOURCE_SHA,
-                "Independent upstream replay source drift")
+    replay_process = replay_done["process"]
+    d20.require(replay_process["source_sha256"] == digest(REPLAY_SOURCE) == REPLAY_SOURCE_SHA
+                and not replay_process["TF32_matmul"] and replay_process["TF32_cudnn"],
+                "Independent upstream replay source/precision drift")
     candidate_path = ROOT / "FOLD_AND_BUDGET_CANDIDATE_V2.json"
     d20.require(upstream["candidate_sha256"] == digest(candidate_path), "Upstream candidate drift")
     candidate = read(candidate_path)
