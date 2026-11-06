@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "candidate_sha256": "efa8659619eead489a5d776a2830d1b55d24dfcc912746a08ff3daa8fba83d6a",
+  "routing_sha256": "a6074a541e2747ed2735d98672caa1c86dc02f72597a4b9409f014a7e32eaef1",
+  "source_family_join_sha256": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb",
+  "folds": {
+    "0": {
+      "windows": 13189,
+      "active_points": 1241164,
+      "VAL_blocks": 323,
+      "records": 20,
+      "shared_records": 0
+    },
+    "1": {
+      "windows": 30500,
+      "active_points": 2866799,
+      "VAL_blocks": 752,
+      "records": 49,
+      "shared_records": 29
+    },
+    "2": {
+      "windows": 13189,
+      "active_points": 1241164,
+      "VAL_blocks": 323,
+      "records": 20,
+      "shared_records": 0
+    }
+  },
+  "weights": [
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/B_OOF/seed1024_P_past_prediction/recovery/epoch00.pt",
+      "sha256": "158ddc284472888befdd38c7ab0221232bb75ae99ca043a9f55a7eed33cff1b0",
+      "epoch": 0,
+      "seed": 1024,
+      "variant": "B"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/B_OOF/seed1024_P_past_prediction/recovery/epoch19.pt",
+      "sha256": "4a0e4c5801a7799ef6e453f613cd9dda454a8af25c946071c9d441ed5a9f8d48",
+      "epoch": 19,
+      "seed": 1024,
+      "variant": "B"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/S_OOF/seed1024_P_past_prediction/recovery/epoch00.pt",
+      "sha256": "cc277dd38812fba332efefe7f3006b115c01c2fd4ca6392131d8d1a685e9447a",
+      "epoch": 0,
+      "seed": 1024,
+      "variant": "S"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/S_OOF/seed1024_P_past_prediction/recovery/epoch19.pt",
+      "sha256": "99ef22ccd0cedd077dfdebe95bd62d1e1665e90b109ab31fd60ef801d2483b6f",
+      "epoch": 19,
+      "seed": 1024,
+      "variant": "S"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/B_OOF/seed2026_P_past_prediction/recovery/epoch00.pt",
+      "sha256": "0701143c1ee47f115cadd72962c6b7763a5af907834df7f88889abcd69d3824e",
+      "epoch": 0,
+      "seed": 2026,
+      "variant": "B"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/B_OOF/seed2026_P_past_prediction/recovery/epoch19.pt",
+      "sha256": "49d62abd4f20d78820216948b2c8eca8ed78ae22cebfecfdd91cd2c25765e4b5",
+      "epoch": 19,
+      "seed": 2026,
+      "variant": "B"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/S_OOF/seed2026_P_past_prediction/recovery/epoch00.pt",
+      "sha256": "4d1a71b62747eb2b9370ee170d521b1b4867edf3dc2c288a800c3fee974fccab",
+      "epoch": 0,
+      "seed": 2026,
+      "variant": "S"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/S_OOF/seed2026_P_past_prediction/recovery/epoch19.pt",
+      "sha256": "9db4326c4eb8b47c48b435c0c9ac7865aaa61e0d36642c4d7db1a9209aa93b11",
+      "epoch": 19,
+      "seed": 2026,
+      "variant": "S"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/B_OOF/seed31415_P_past_prediction/recovery/epoch00.pt",
+      "sha256": "2a046c70651ff9af5172f63d8bd7f376cc123f5e010ab436ec0fc749fce82172",
+      "epoch": 0,
+      "seed": 31415,
+      "variant": "B"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/B_OOF/seed31415_P_past_prediction/recovery/epoch19.pt",
+      "sha256": "5d3e0f1e7fe7a507e1a2635fd1946b6ddaf526b74b86aed292f594bb0ab23d32",
+      "epoch": 19,
+      "seed": 31415,
+      "variant": "B"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/S_OOF/seed31415_P_past_prediction/recovery/epoch00.pt",
+      "sha256": "c32957ff402427360257d2a8850d1ba3a7f820b015ef2d80cf13432de10ef7c5",
+      "epoch": 0,
+      "seed": 31415,
+      "variant": "S"
+    },
+    {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/S_OOF/seed31415_P_past_prediction/recovery/epoch19.pt",
+      "sha256": "786705ea31c0c9de96c426e7d213618d65cd3d3e24a4720d7a84b760f1645508",
+      "epoch": 19,
+      "seed": 31415,
+      "variant": "S"
+    }
+  ],
+  "upstream_encoder_windows": 170634,
+  "downstream_active_points": 64189524,
+  "new_neural_forward": 0,
+  "new_array_payloads": 0,
+  "new_fit": 0,
+  "scope": "Independent metadata routing, source identities, geometry and fixed epoch checkpoint hashes. The nine upstream fold jobs are not nine neural minibatches. No numerical result or model execution approved by this metadata receipt alone."
+}
