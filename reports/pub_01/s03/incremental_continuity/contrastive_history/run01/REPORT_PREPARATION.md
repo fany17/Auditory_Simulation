@@ -9,3 +9,5 @@ V01 汇总演练发现旧锚点把 752 块保存为列表，正式解析现逐�
 等待进程 PID 1773218 / UID 1012 / startticks 791148839 已绑定原队列和汇总源。正式汇总仅使用 40–43 四个逻辑 CPU，为独立原始路径重放留出 44–47。实际训练和 D27 接续由各自现有进程推进。最终中文结果、独立重放及归档待完整正式结果。
 
 最终技术验收须合读正式结果与 V02 独立复算终态，分别报告执行完成、原阈值严格通过、校准输出通过及 raw MSE 超差。seed 1024 的三个案例已完成 14 项比较，全部 r 和校准 affine/Ccap 满足原 1e-4 门，三个 raw MSE 均超差。该首种子结果仅覆盖固定首块，数值差异成因待确认。V01 失败成本与 V02 实际成本分列，全部 42 项复算终态和三个种子的正式性能齐全后，再完成总体报告。[首种子复算回执](coordinator_final_replay_v02/FIRST_SEED_REVIEW.json) · [V02 复算计划](coordinator_final_replay_v02/COORDINATOR_FINAL_REPLAY_PLAN.md)
+
+固定 1024/HH 首块的 CPU 对照已完成。正式路径 40 窗与 64 窗的前 40 窗 query、latent 和预测逐元素相同。独立 CPU 路径与正式 CPU 路径的 raw MSE 差约 6.96×10⁻⁷，正式 CPU 64 窗与原 CUDA 保存结果的 raw MSE 仍差 1.309422，校准输出符合原容差。在该首块，CPU 批形和独立实现路径不足以解释跨端 raw 超差，具体 kernel 与 TF32 作用未确认，原严格失败保留。此诊断另记 378 个 backbone 窗、102 个未使用原生投影窗、144 个最终投影与 head 窗、31 个手算和 117 个库 MHA 查询窗，CPU 17.555 秒、墙钟 5.225 秒，0 GPU。该成本单列于 V01/V02 复算之外。[CPU 对照结果](coordinator_cpu_bridge_v01/RESULT.json)
