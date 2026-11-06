@@ -20,7 +20,7 @@
 | Sea-Wave | 已实际核读正式PDF、表7/8及12份固定作者源码，见[完整审计与来源指纹](../../metadata_review/code_review/seawave_protocol_20261106/REPORT.md)。论文Small周期5与公开JSON周期4、FT损失/hop/入口存在差异；原开发test作VAL有明确split说明，不据文件名断言泄漏。 | 后续实际清单证明VAL49人均在TRAIN，故[D27固定为覆盖已见人适配的3个initial＋147个personal FT](../../seawave_seen_reference/run01/COORDINATOR_DECISION.md)。initial群体结果只作未globalFT参考，不冒称完整S2。尚未开始Sea-Wave正式训练；不将personal与共享参数结果混称同适配条件。 |
 | DECAF | [原文](https://arxiv.org/html/2602.19395v1)直接研究包络；本地已有[固定公开实现审计](../../metadata_review/code_review/decaf_protocol_20261106/REPORT.md)，包括HappyQuokka、forecaster、动态融合和训练入口。 | 完整方法是候选强对照；现有自定义P-prior不能替代它。代码的teacher验证、普通预测历史、3/3.5秒及500ms对齐差异须落实到同协议，不能直接跑自动test入口或以oracle评分充当EEG-only。 |
 | SHINE | [v2原文](https://arxiv.org/html/2602.23960v2)是30秒EEG、包络+10Mel联合目标，SparrKULee分配263/207/192；不同于本项目426/49和3秒局部权限。2026-11-06通过GitHub接口实读[作者仓库](https://github.com/xuxiran/SHINE)，根目录仅README，正文仍称代码待发布。 | 无现成作者代码可直接运行。若后续依论文实现，标明实现者及差异；不将3秒单目标删改版称完整SHINE。广义长窗重建SOTA主张仍需处理该对照缺口。 |
-| DPT-Net | [ICASSP2026官方会议记录](https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=17226)确认论文与作者。 | 目前未核全文和作者实现，不能编造其成绩或排除其相关性；继续补一手来源，不把搜索标题当实验协议。 |
+| DPT-Net | [ICASSP2026官方会议记录](https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=17226)及出版社提交的[Crossref元数据](https://api.crossref.org/works/10.1109%2FICASSP55912.2026.11464366)相互确认题名、作者、DOI `10.1109/ICASSP55912.2026.11464366` 和页码6796–6800；[实际元数据回执](../../metadata_review/code_review/dptnet_access_20261106/CROSSREF_METADATA.json)已保存。 | 目前未核全文和作者实现。2026-11-06正常IEEE文章入口返回HTTP202但未返回可读正文，Crossref无摘要，仅列出用于similarity-checking的staging链接，未据此推断开放全文。不能编造成绩、结构或排除相关性；后续需要可核验原文或作者实现，不重复用题名代替协议。 |
 
 原文数字只用于定位强方法，不能构造跨协议虚假排行榜。尚未完成Sea-Wave/完整DECAF/SHINE的本项目同协议实测；也尚无充分证据称D26或现有锚点达到SOTA。
 
