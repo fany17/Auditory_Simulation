@@ -4,6 +4,7 @@ import hashlib
 import json
 import math
 import time
+from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 
@@ -29,7 +30,7 @@ def main():
     started, cpu = time.monotonic(), time.process_time()
     paths = {name: ROOT / name for name in (
         'COMPLETED.json', 'FORMAL_GATE.json', 'VAL_ROUTING_METADATA.json',
-        'ROUTING_AND_BUDGET_CANDIDATE.json', 'RECORD_SCORES.csv', 'RESULTS.csv',
+        'ROUTING_AND_BUDGET_CANDIDATE.json', 'RECORD_SCORES.csv', 'RESULTS.csv', 'BLOCK_SCORES.csv',
     )}
     done, gate = read(paths['COMPLETED.json']), read(paths['FORMAL_GATE.json'])
     assert done['passed'] and done['no_fit']
@@ -63,13 +64,33 @@ def main():
         rows = list(csv.DictReader(stream))
     with paths['RESULTS.csv'].open(newline='') as stream:
         reported = list(csv.DictReader(stream))
+    with paths['BLOCK_SCORES.csv'].open(newline='') as stream:
+        blocks = list(csv.DictReader(stream))
     assert len(rows) == 1335 and len(reported) == 36
+    assert len(blocks) == 20970
     actual = {}
     for r in rows:
         key = (int(r['seed']), r['variant'], int(r['epoch']) if r['epoch'] else None,
                r['record'], int(r['fold']))
         assert key not in actual, key
         actual[key] = r
+    block_groups = defaultdict(list)
+    for b in blocks:
+        key = (int(b['seed']), b['variant'], int(b['epoch']) if b['epoch'] else None,
+               b['record'], int(b['fold']))
+        assert key in actual, key
+        assert b['subject'] == actual[key]['subject']
+        block_groups[key].append(b)
+    metadata_path = ROOT.parent / 's03_physical_stream_20261106' / 'PREPARATION_METADATA.json'
+    masks = defaultdict(list)
+    for b in read(metadata_path)['phases']['val']['blocks']:
+        masks[b['record']].append((b['start'], b['samples']))
+    assert set(block_groups) == set(actual)
+    for key, group in block_groups.items():
+        coordinates = [(int(b['start']), int(b['samples'])) for b in group]
+        assert coordinates == masks[key[3]], (key, coordinates)
+        close(mean(float(b['r']) for b in group), float(actual[key]['r']), 'block-to-record r')
+        close(mean(float(b['MSE']) for b in group), float(actual[key]['MSE']), 'block-to-record MSE')
     reported_map = {}
     for r in reported:
         key = (int(r['seed']), r['variant'], int(r['epoch']), r['group'])
@@ -140,7 +161,8 @@ def main():
                            'B_minus_full_strong_anchor', 'B_delta_change')}
     result = dict(passed=True, source_sha256=digest(Path(__file__)),
         inputs={str(p): digest(p) for p in paths.values()}, full_score_sources=full_score_sources,
-        aggregates=aggregates,
+        aggregates=aggregates, original_block_metadata_sha256=digest(metadata_path),
+        independently_checked_blocks=len(blocks),
         comparisons=comparisons, summary=summary, actual_counters=counters,
         new_neural_forward=0, new_signal_arrays=0, new_fits=0,
         CPU_seconds=time.process_time()-cpu, wall_seconds=time.monotonic()-started,
