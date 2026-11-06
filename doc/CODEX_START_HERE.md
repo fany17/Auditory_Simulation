@@ -2,7 +2,7 @@
 
 用户最新：**有性能提升就行，核心目标SOTA**。性能优先，HH/CH/CC均可作为候选；不以历史机制未成立阻止实际性能路线，保持同任务强对照及诚实评估。
 
-2026-11-06，SS07继续ACTIVE。唯一下一轮为 [D26协调决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)：保留原强Transformer/XLSR目标，将历史在对比预训练阶段联合学习，HH/CH/CC三臂三seed，6个唯一预训练和9条监督链，配对共同预算。执行者先完成实际源/必要工程及冻结，再经协调核验接续全矩阵，不需用户重复许可。全部新计算在2203 SATA；旧test/DTU/ds004408关闭，无新数据/患者/PR合并。D24/D25封存，旧入口仅历史。
+2026-11-06，SS07继续ACTIVE。唯一下一轮为 [D26协调决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)：保留原强Transformer/XLSR目标，将历史在对比预训练阶段联合学习，HH/CH/CC三臂三seed，6个唯一预训练和9条监督链，配对共同预算。V05 已经独立工程核验并在 2203 正式启动，当前队列 PID 1622219，按 [CURRENT_TASK](CURRENT_TASK.md) 的实际运行状态接续。全部新计算在2203 SATA；旧test/DTU/ds004408关闭，无新数据/患者/PR合并。D24/D25封存，旧入口仅历史。
 
 # 历史入口：D25 固定权重来源诊断已封存
 

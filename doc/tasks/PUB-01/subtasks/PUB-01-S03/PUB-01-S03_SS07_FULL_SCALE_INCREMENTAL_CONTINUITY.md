@@ -278,3 +278,8 @@ D19/D20/D22/D23 的 FT+Ccap 缓存溯源复核通过。三个 seed 的后处理 
 固定 D24 的实际 B_OOF/S_OOF 0/19 轮权重，按真实源族排除关系对原 VAL 完成 170,634 编码窗、2,673 批、36 个下游路由及 64,189,524 活动点。相对各自锚点，B 的六个来源对照均缓解，平均 +0.002740685；六格仍低于同折锚点、S 和原全 TRAIN 强锚点。全体、共享族、未见族及逐人逐块证据齐备。优化和统计拟合均为 0。
 
 独立复算 20,970 块、1,335 个逐记录评分与 36 个汇总通过。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。结果限于原重复开发 VAL。D24/D25 输出历史后处理支线封存，SS07 持续目标仍 ACTIVE。[D25 报告](../../../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/ARCHIVE.md)
+
+
+### 2026-11-06 D26 正式执行记录
+
+D26 V05 独立工程验收通过，已在 2203 SATA 启动固定矩阵。正式队列 PID 1622219，UID 1012，startticks 790259158。seed 1024 的 H worker 1622229 / 790259172 与 C worker 1622239 / 790259176 各占一张 L40。共有 6 个唯一对比预训练、9 个 head、9 个固定 5 轮 FT 和 9 个 TRAIN-only Ccap。工程累计 14 次更新和 1 个独立读出数值核验，已单列。正式只读原公开 TRAIN/VAL，冻结首个完整候选矩阵，性能结果尚待。[实际协议](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/PROTOCOL_V05.json) · [工程记录](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/ENGINEERING_NOTES.md)

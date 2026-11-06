@@ -2,7 +2,7 @@
 
 用户最新优先级：**核心目标SOTA，有性能提升即保留；连续性是手段，历史机制不是性能准入硬门。** D26三臂都可以成为性能候选，完整披露来源与选择，协调同步核对最新同任务强方法和可比性。
 
-2026-11-06。协调已选定唯一实质训练阶段问题并授权执行者继续：[D26具体决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。HH/CH/CC三臂、3seed，共6个唯一从头对比预训练、9个head/FT及固定λ=.01新TRAIN读出。同结构、配对共同停止预算，严格过去且共享可训练encoder；最终FT固定5轮。现阶段实现/必要工程/实际协议冻结后协调审核即可正式运行，尚无本轮科学结果。SS07/持续goal ACTIVE；原D24/D25输出历史支线封存，不重开旧测试或外部、不增数据/患者/自动合并。
+2026-11-06。协调已选定唯一实质训练阶段问题并授权执行者继续：[D26具体决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。HH/CH/CC三臂、3seed，共6个唯一从头对比预训练、9个head/FT及固定λ=.01新TRAIN读出。同结构、配对共同停止预算，严格过去且共享可训练encoder；最终FT固定5轮。V05 独立工程审阅通过，正式队列 PID 1622219 已启动，seed1024 的 H/C workers 为 1622229/1622239，各占一张 L40。正式矩阵尚未结束，当前无科学结果。SS07/持续goal ACTIVE；原D24/D25输出历史支线封存，不重开旧测试或外部、不增数据/患者/自动合并。
 
 # 历史入口：D25 固定权重来源诊断已封存
 
