@@ -98,7 +98,9 @@ class Receipt:
                     runtime_versions=self.versions, CPU_seconds=time.process_time() - self.start_cpu,
                     elapsed_seconds=time.monotonic() - self.start, counters=dict(self.counters),
                     location=self.scope, resources=self.runtime,
-                    new_encoder_head_windows=0, scientific_arrays_written=0)
+                    new_encoder_head_windows=0, new_signal_feature_prediction_array_files=0,
+                    parameter_checkpoint_files=self.counters["parameter_checkpoint_files"],
+                    training_statistics_files=self.counters["training_statistics_files"])
 
     def checkpoint(self):
         atomic_json(self.folder / "CURRENT_STATUS.json", self.snapshot())
@@ -379,6 +381,7 @@ def fit_role(meta, receipt, core, torch, guard, seed, role, train, val, tables, 
                         torch_cuda_rng=torch.cuda.get_rng_state(), scores=epochs,
                         stage=receipt.snapshot()), partial)
         partial.replace(checkpoint)
+        receipt.count("parameter_checkpoint_files")
         pointer = dict(epoch=epoch, path=str(checkpoint.relative_to(output)), best_epoch=best_epoch,
                        r=val_metric["r"], protocol_sha256=receipt.protocol_sha)
         atomic_json(output / "LAST.json", pointer)
@@ -387,9 +390,11 @@ def fit_role(meta, receipt, core, torch, guard, seed, role, train, val, tables, 
         guard()
         receipt.checkpoint()
     torch.save(model.state_dict(), output / "last.pt")
+    receipt.count("parameter_checkpoint_files")
     near_older = None
     if best_state is not None:
         torch.save(best_state, output / "selected.pt")
+        receipt.count("parameter_checkpoint_files")
         if role != "C_current":
             receipt.scope["phase"] = "selected_VAL_pair"
             model.load_state_dict(best_state)
@@ -430,6 +435,7 @@ def fit(meta, receipt, core, torch, guard):
         m.write_json(receipt.folder / f"seed{seed}_TRAIN_STATS.json",
                      {name: dict(zip(("mean", "std", "constant"), (v.cpu().tolist() for v in values)))
                       for name, values in stats.items()})
+        receipt.count("training_statistics_files")
         results = {}
         for role in m.ROLES:
             results[role] = fit_role(meta, receipt, core, torch, guard, seed, role,
