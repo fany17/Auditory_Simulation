@@ -1,8 +1,8 @@
-# 当前入口：D18 已封存，D19 连续残差等待工程审阅
+# 当前入口：D18 已封存，D19 正式训练运行中
 
 2026-11-06，PUB-01-S03_SS07。D18 的 12 个正式 fit、科学审阅和归档均完成。H 对匹配当前 C 的开发 VAL r 三 seed 平均差为 −0.000004008，H 三个 seed 都低于 P。[D18 报告](../reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/REPORT.md)
 
-D19 源码和 2203 元数据核对已完成。每物理点只有一个可训练残差。H/P 使用完整 6 秒历史，固定为 96 个四点箱，C 使用当前点的正 Hann 贡献窗。共享冻结 FT+Ccap 锚点。下一步先做绑定实际源码和 protocol 的工程审阅及受控验收，再按正式审阅启动三角色×三 seed。当前 D19 模型前向、更新和拟合均为 0。旧 test、DTU、ds004408 与患者侧维持既有边界。[D19 执行方案](../reports/pub_01/s03/incremental_continuity/physical_stream/run01/PLAN.md)
+D19 每物理点只输出一个可训练残差。H/P 使用完整 6 秒历史，固定为 96 个四点箱，C 使用当前点的正 Hann 贡献窗。共享冻结 FT+Ccap 锚点。2203 有限工程验收一次通过，原 752 个 VAL 锚点评分块逐 seed 精确复现。协调正式审阅已绑定工程回执。九组正式训练于北京时间 15:19:06 在 2203 单进程启动，PID 1237393，原截止 21:19:06。固定三角色×三 seed×20 pass、260,460 更新；成绩待完整矩阵。旧 test、DTU、ds004408 与患者侧维持既有边界。[D19 执行方案](../reports/pub_01/s03/incremental_continuity/physical_stream/run01/PLAN.md) · [工程回执](../reports/pub_01/s03/incremental_continuity/physical_stream/run01/ENGINEERING_COMPLETED.json)
 
 # 历史入口：实现审计已交，projection前memory四臂源/协议准备
 
