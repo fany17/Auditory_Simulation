@@ -1,0 +1,59 @@
+{
+  "candidate": "D19_ORDERED_16HZ_V2",
+  "metadata_sha256": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+  "source_sha256": {
+    "pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "pub_01_s03_ss07_physical_stream_run.py": "9fb8d5d5ce22681d6b886c1a3987b9db1be6c942111de7d303cc0c2d21bf1978",
+    "pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3"
+  },
+  "authorized_stages": [
+    "engineer",
+    "fit"
+  ],
+  "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+  "source_commit": "a34f55cb83521a13600407249685113faffe3b35",
+  "scope": {
+    "train_records": 426,
+    "val_records": 49,
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "roles": [
+      "C_current",
+      "H_past_eeg",
+      "P_past_prediction"
+    ],
+    "epochs": 20,
+    "external_tests": "FROZEN_DO_NOT_OPEN"
+  },
+  "resources": {
+    "engineering_wall_seconds": 600,
+    "formal_wall_seconds": 21600,
+    "maximum_RSS_bytes": 12884901888,
+    "maximum_torch_allocated_bytes": 8589934592,
+    "maximum_writer_bytes": 268435456,
+    "minimum_writer_free_bytes": 21474836480
+  },
+  "engineering_budget": {
+    "current_stem_points": 110592,
+    "context_output_points": 135168,
+    "backward_points": 73728,
+    "optimizer_updates": 0,
+    "TRAIN_records_loaded": 6,
+    "TRAIN_cached_windows_loaded": 3447,
+    "VAL_frozen_anchor_records_loaded": 147,
+    "VAL_frozen_anchor_cached_windows_loaded": 91500,
+    "trainable_VAL_forward_points": 0
+  },
+  "formal_budget": {
+    "fits": 9,
+    "optimizer_updates": 260460,
+    "train_target_presentations": 4266631800,
+    "current_stem_points_max": 5653182774,
+    "context_output_points_max": 5670383568
+  },
+  "gates": "Engineering review permits only engineer. Fit separately requires EXECUTION_REVIEW bound to the successful actual engineering receipt.",
+  "goal_complete": false
+}
