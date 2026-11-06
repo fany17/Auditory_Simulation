@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "scope": "Independent static review of frozen reporting sources and deployed source hashes; not final scientific acceptance.",
+  "reviewed_at_server_utc": "2026-11-06T17:14:05Z",
+  "protocol_sha256": "8c249eabeb9edb9a5360006f1d3dabb9552e2a22ff649b9bae72801f75311b4d",
+  "report_sources": {
+    "D28_MATCHED_RAW_RIDGE_COMPLETED.json": "9be6b1dcc502318c4d6a1c7df734818af3deb5a64c76a2df739e2464599229f5",
+    "HISTORICAL_REFERENCES.json": "5c95ce13af5eecf960a74d9c935e626a232ad048ccf31b1e4f7a6de5bf51b1bc",
+    "pub_01_s03_ss07_contrastive_history_report_cost.py": "d07c8ab6bfb5fbae8292432da8ca4abac276846d8dadc780bf792c906709dbfd",
+    "pub_01_s03_ss07_contrastive_history_report_figures.py": "9650a02253958d217ed0d6c5af8c9b6ec7a252f5050181e74459cac837f093f9",
+    "pub_01_s03_ss07_contrastive_history_report.py": "550913f9c880c44687fbac280675db0285c42ee9bfeef18ee2b7a1619a149a08"
+  },
+  "original_training_source": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py": "fea00a3187b66e7c8078f943d1a1fb2834f3a45ef4d193accad67f50a9dc7903"
+  },
+  "report_waiter_identity": [
+    1773218,
+    1012,
+    791148839
+  ],
+  "report_trigger_sha256": "5493730bd9926d271dfff512628b026e60555b361e3611f6a372d91931589efa",
+  "resolved_question": "FT EPOCH_MINUS1 is a cached-head/raw-forward bridge receipt only. Job.best starts at +inf and is updated only by epochs 0..4. The report correctly distinguishes diagnostic selected_epoch from the used final epoch 4; no reporting or training change required.",
+  "source_checks": [
+    "Exact 9 seed-arm completions, fixed epoch 4 and lambda .01; mean-Ccap whole-arm choice with original CC/CH/HH tie order.",
+    "49 subjects, original 752 block keys/sample support, five stories, 29/20 source-family groups; saved block-to-person-to-macro reconstruction.",
+    "Full primary raw/affine/Ccap separated from fixed-query HH near/far/copy on identical pure-memory support starting at sample 960.",
+    "Same-seed original anchor checked on full 752-block support, including MSE; no mixing with historical active-support MSE.",
+    "6 CL, 9 head, 9 fixed-five-epoch FT stages plus 9 Ccap fits; used checkpoint prefix distinguished from actual full search cost.",
+    "Shared C pretraining charged once in total; 30 unique scheduled worker roles and retry/unknown-extra-work disclosures.",
+    "Per-worker CPU totals distinguished from interleaved Job timings and parallel matrix wall time.",
+    "All final models and scores remain required; synthetic fixtures do not establish neural correctness or performance."
+  ],
+  "publisher_fixture_receipts_reviewed_not_rerun": {
+    "REPORT_ENGINEERING_V03.json": {
+      "sha256": "ab22dd698758efb51151c738f0b87e8f893f8600e1986d2727555eab93288169",
+      "receipt": {
+        "passed": true,
+        "complete_real_gate_held": true,
+        "synthetic_score_conditions": 42,
+        "synthetic_blocks_checked": 31584,
+        "synthetic_paired_people_checked": 1176,
+        "wrong_pure_support_rejected": true,
+        "actual_completed_stage_metadata_checks": 5,
+        "figure_pipeline_smoke": 3,
+        "new_model_fits": 0,
+        "raw_signal_reads": 0,
+        "actual_formal_scores_read": 0
+      }
+    },
+    "REPORT_COST_ENGINEERING_V03.json": {
+      "sha256": "a6514491ce30d6b312b388858a6c932cd28f95358090d5d361967e47654a3aa6",
+      "receipt": {
+        "passed": true,
+        "synthetic_worker_roles": 30,
+        "synthetic_completed_training_stages": 24,
+        "synthetic_readouts": 9,
+        "synthetic_epoch_receipts": 249,
+        "verifies_actual_vs_prefix_and_shared_CL": true,
+        "raw_signal_reads": 0,
+        "new_model_fits": 0,
+        "actual_formal_scores_read": 0
+      }
+    }
+  },
+  "new_raw_signal_reads": 0,
+  "new_neural_forwards": 0,
+  "new_fits": 0,
+  "new_optimizer_updates": 0,
+  "final_review_pending": [
+    "Original complete 3-seed/3-arm matrix and clean exits",
+    "Actual saved-score aggregation and final figures",
+    "All 9 independently scheduled raw-path CPU replay receipts",
+    "Whole-arm improvements, full-support MSE, costs and generalization limitations"
+  ],
+  "interpretation": "Repeated development VAL, all 49 people previously seen in TRAIN, five stories. No independent test or SOTA claim from this source review."
+}
