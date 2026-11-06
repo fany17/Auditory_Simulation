@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "archive": "E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261106_pub01_s03_ss07_physical_stream",
+  "artifacts_checked": 27,
+  "local_links_checked": 29,
+  "bound_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "de5101d43f3de8aa4f12987025a5f755113fd4b1589304cd0489e426eff9d13b"
+    },
+    {
+      "file": "REVIEW.md",
+      "sha256": "4ece181ad1b26bf57e3e6118abbd6d419dc7b4664de18e355783370d4db324a1"
+    },
+    {
+      "file": "figures/01_val_trajectories.png",
+      "sha256": "923859d15c2ebcf466dac14a33d17daba74aed0dac92f4c4840b1af6787458f9"
+    },
+    {
+      "file": "figures/02_train_and_residual.png",
+      "sha256": "7a2378090026cd287a940ee45d1922bc658157517d409f8826e55a70bf4a3721"
+    },
+    {
+      "file": "figures/03_selection.png",
+      "sha256": "679f221b5450f3185e576d9653e4ad964db2e00a1cd53275aba05a7c33de9bd6"
+    },
+    {
+      "file": "figures/04_history_gate.png",
+      "sha256": "a96d951a2be9d30002eb2c3a33975ee357e421ba9a3b05d87ad2afd91a457703"
+    }
+  ],
+  "root_visually_inspected_four_actual_pngs": true,
+  "browser_rendering_checked": false,
+  "scope": "Static archive links/artifact existence and exact report/review/four figure binding; root separately read report/review and viewed four actual PNGs. Scientific nine-fit and functional audits are separate receipts.",
+  "new_model_forwards": 0,
+  "new_fits": 0,
+  "scientific_goal_complete": false
+}
