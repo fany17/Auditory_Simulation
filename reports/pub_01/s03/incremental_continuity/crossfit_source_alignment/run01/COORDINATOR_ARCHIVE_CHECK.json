@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "archive_path": "E:\\实验室-科研工作-文件\\00_ChatGPT\\CodexResult\\Result\\runs\\20261106_pub01_s03_ss07_crossfit_source_alignment",
+  "HTML_sha256": "57f981cf6d34a571a6a678e7ce612cbb527d7529194de538aabab9061310a332",
+  "archive_manifest_sha256": "2e9d79a4d059d9c6d18c1cf04b28edeee8c4d7d9cc70af54343a107f30179b96",
+  "manifest_count": 16,
+  "source_copies_verified": 21,
+  "local_HTML_links_verified": 19,
+  "figure_count": 1,
+  "table_count": 2,
+  "artifacts": [
+    {
+      "name": "PLAN.md",
+      "sha256": "7c1c923985ae9a79a82dfd9408f8153a2783dab9292fcfb238fe38a0362601ce"
+    },
+    {
+      "name": "REPORT.md",
+      "sha256": "c25af7ac7743aa992e755680a484feb750b86a1b62af92a3984763ab0588972b"
+    },
+    {
+      "name": "REVIEW.md",
+      "sha256": "a2cf1738d326e3ed6ed2c47d2653f63b6c3c013530bc7a1d663381e711d8b1b3"
+    },
+    {
+      "name": "FIXED_SOURCE_ALIGNMENT.png",
+      "sha256": "1eaca59fd3fbff8bf197d72c26e30702489319f391a9d5c3f79b755b589325ea"
+    },
+    {
+      "name": "BLOCK_SCORES.csv",
+      "sha256": "f31b41b8d8af8748316708b32811b4678152155e88dd4fd9b38f4434cd5e8936"
+    },
+    {
+      "name": "RECORD_SCORES.csv",
+      "sha256": "c48f0ad30bc8723bc6e19082266e047f66a06f298b569bbd2c40f12c44b05500"
+    },
+    {
+      "name": "RESULTS.csv",
+      "sha256": "e50737038417b926ba55d55a53c59f4a103f1100fa93b34ea3dc507551ac8542"
+    },
+    {
+      "name": "COMPLETED.json",
+      "sha256": "1226815357624a586162698df5765e6b713ff64af8018d11251fffdf62840a7c"
+    },
+    {
+      "name": "COORDINATOR_EXECUTION_REVIEW.json",
+      "sha256": "68c724640e573b7d24f2800e144b8bbcab835d58d6f5e391efd8a120cd9c2451"
+    },
+    {
+      "name": "COORDINATOR_RESULT_AUDIT.json",
+      "sha256": "d287180104d80a8d1a450bad23bc6ee36966f7733413b7f06788a6d0eb1e0a67"
+    },
+    {
+      "name": "COORDINATOR_ROUTING_REVIEW.json",
+      "sha256": "efd5e4785714d8ab86d6dc1fade4366d9695b04eb9c61e790939b5740a0f7e48"
+    },
+    {
+      "name": "ENGINEERING_COMPLETED.json",
+      "sha256": "45e2062581946d6feb9d46491c9e7fe0af47ac6a6cd86076c08c2d10a15df698"
+    },
+    {
+      "name": "FORMAL_GATE.json",
+      "sha256": "e7b458165025059156804e1097dcf8994b8c9e0ac27b3f611d32d91fc842c93a"
+    },
+    {
+      "name": "PROCESS.json",
+      "sha256": "774f77ef3da8e1bb8b2fec90fc038232e7015e8c6c4524ec049fab0e5bd26556"
+    },
+    {
+      "name": "ROUTING_AND_BUDGET_CANDIDATE.json",
+      "sha256": "efa8659619eead489a5d776a2830d1b55d24dfcc912746a08ff3daa8fba83d6a"
+    },
+    {
+      "name": "SUMMARY.json",
+      "sha256": "4780b8832a304d5a4b4dbd343997f6c65563ee1b9b7bcab9a90cc0e6d11637ec"
+    }
+  ],
+  "scope": "Root read full D25 REPORT and REVIEW and inspected the actual PNG; independently audited all saved block/record/aggregate results on 2203. This receipt checks archive hashes, source copies and static HTML targets, without claiming browser rendering or new neural replay.",
+  "technical_review": "PASS_WITH_LIMITATIONS",
+  "acceptance_review": "PASS_WITH_LIMITATION: D25 fixed diagnostic complete; partial reduction of relative deficit, all six fixed B results still below own anchor, S and full-TRAIN strong anchor",
+  "parent_consistency_review": "PASS: output-history branch sealed, SS07 and original scientific goal ACTIVE; no independent confirmation or publication-level success claimed"
+}
