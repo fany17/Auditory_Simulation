@@ -1,0 +1,3065 @@
+{
+  "fingerprint": {
+    "protocol_sha256": "b9942886d0ddaa90919e7c9409dfd057003714dfe3bbb21b6b8427df54299500",
+    "inventory_sha256": "09ea7dc8b620c20f5159b69c780ab2b406207c41e3d58c470da7439d54d116d6"
+  },
+  "subject": "G",
+  "record_ledger": [
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.190650389,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.237751348875463
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.89675173,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.2154206559062004
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.609155109,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.202903950586915
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.504299072999984,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 0.9232600163668394
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.812965604,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.0370047045871615
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 34.97202736699998,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.3014254411682487
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.99568975400001,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.151896738447249
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.217172523000016,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.057444048114121
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 32.34673172600003,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.2080345805734396
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 35.460719065000035,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.3100043712183833
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.478582907999964,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.0740475878119469
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.350205253000013,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.141347462311387
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 31.04436894600002,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.1854539578780532
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.98462704999997,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.253548339009285
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 35.203404447000025,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.3033445766195655
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 29.441159675999984,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.0965353725478053
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.56927158600001,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.2801512610167265
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 35.37908826799992,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.3308926485478878
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 34.81826839500002,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.3092159237712622
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.834863334000033,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.1099200211465359
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.894253311000057,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.1122491881251335
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.970521114000007,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.080006867647171
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 32.74103015000003,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.2157639553770423
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.948941625999964,
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.0414800029248
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.031342517999974,
+      "record": "sub-004_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.0525931539013982
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 34.419018540000025,
+      "record": "sub-004_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.274943944066763
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 32.64425111500009,
+      "record": "sub-004_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.2083103135228157
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.965803773999937,
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.166411572135985
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.792728671999953,
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.1487903874367476
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.47852753899997,
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.2520470274612308
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 36.07126417299992,
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.3340149456635118
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 35.27597618999994,
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.3059876933693886
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.600855164999984,
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.0304203853011131
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.4673191899999,
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.2399256899952888
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.506055679000156,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 0.9585356703028083
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.353045373999976,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.1271131904795766
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.622106135999957,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 0.9555229675024748
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.420840251000072,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 0.948110424913466
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.173149448000004,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.0457870364189148
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.977490305000174,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.1477627726271749
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 28.773733585999935,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.0678088907152414
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.038699838999946,
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 0.8962224796414375
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.46630630300001,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.1712644882500172
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 35.279089516999875,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.4320603301748633
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.497977839999976,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.1325410520657897
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.285974259999875,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 2.11056612059474
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.777744887000154,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 2.026086234487593
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 29.378816411000116,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.9440134931355715
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 29.410997513999973,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 2.0011072028428316
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.161975991999952,
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.9459048928692937
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 26.59461378800006,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.7470735758543015
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 31.494454021000138,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 2.1325050396844745
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.27527918099986,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.9943505506962538
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 35.65982179100001,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.446737077087164
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.937385421999807,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.9629659363999963
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.117677810000032,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.9320214381441474
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.672210502000098,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.9715272039175034
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.166496237000047,
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.6635686988011003
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.05139882000003,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.154266512952745
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.01812671400012,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.0925359493121505
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 26.614425729000004,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.772355374880135
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 26.043360285000063,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.738024316728115
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 30.42089276699994,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 2.0841150395572186
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.161583471000085,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.8995222905650735
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.86502595799993,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 2.3245862992480397
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.3063687089998,
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.8700734674930573
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.407567860999734,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.8591359853744507
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 26.354762961000233,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.7649694792926311
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.20420899999999,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 2.0270823687314987
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.118257083000117,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.9979518447071314
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.227316842000164,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.2394896298646927
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.232595081,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.2576596830040216
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.394039738000174,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.9098826069384813
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 28.19316806500001,
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.8782734656706452
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.41489407500012,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.6365771144628525
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.88668470399989,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.7604694245383143
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.410407323000072,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.0964527977630496
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.88429409199989,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.1472979029640555
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 31.148947760999818,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 2.142608406022191
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.089249035000194,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.989452346228063
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.24269341299987,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 2.284162627533078
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.050126211000133,
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.084355558268726
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.700583129999814,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.7395782973617315
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.722176407000006,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.853160735219717
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.853885583000192,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.8130543222650886
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 34.48358962500015,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.3389428053051233
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.59995104799964,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.7027610931545496
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.966289969999707,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 2.0017066169530153
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.329254002000198,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.8820420764386654
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.812148587000138,
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.120684253051877
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 29.744111570000314,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.9885688945651054
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.81665078199967,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.70210802834481
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.16530094100017,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.006168710999191
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 23.728004975000204,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.5610816637054086
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 26.790732538000157,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.7649510214105248
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.70959515100003,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.8913122480735183
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.822824114000014,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.856332790106535
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 26.69984157900035,
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.7736900551244617
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 23.670734831000118,
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.5826131952926517
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.85795729499978,
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.896541022695601
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 25.92179343199996,
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.704570754431188
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.324531822000154,
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.1910925479605794
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 26.604314582999905,
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.753906891681254
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 20.33578889899991,
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.3273261599242687
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 26.62180190900017,
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.7738229781389236
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.628850057999898,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.8574785748496652
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.552420771000016,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.8336813878268003
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 20.128209709000203,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.316397444345057
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 23.14435562699964,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.5159039068967104
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.99126126500005,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.8899129275232553
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.645800383999813,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.0318513978272676
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.535066172999905,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 2.0329706706106663
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.909113913000056,
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.0420037945732474
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.386879368000336,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.8251866279169917
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 34.492657525999675,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.346674288623035
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.497754364999764,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.2512596687301993
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.35211801300011,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0921002933755517
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.50782091000019,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.913149151019752
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 26.535262987999886,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.7620967235416174
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.96678642400002,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.869256711564958
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.10049557399998,
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.7264932552352548
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.5663911190004,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.8288680957630277
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.031724363000194,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.912324489094317
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 22.68260621899981,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.4913476584479213
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.67141615699984,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.299668309278786
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.03789923999966,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.6415091222152114
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.65137613199977,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.7029716884717345
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.959879896000075,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0059584798291326
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 22.721271486000205,
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.4895219337195158
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.779955480999888,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.8854721654206514
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.873987576999752,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.7181830648332834
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 29.264854717999697,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.9311675522476435
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.26296197300053,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.877740815281868
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 26.038418147999437,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.7192233074456453
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 20.293154693999895,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.336201647296548
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 23.167210003000037,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.552334489300847
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.943652107999696,
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.008285521529615
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 28.3183933170003,
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.8586914483457804
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.305770007999854,
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.9424657421186566
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.97180718599975,
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.064643398858607
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.487642854000114,
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.604747861623764
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.367907566999747,
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.5342786516994238
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.298551609000242,
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.5913474094122648
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 23.65692980499989,
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.579029648564756
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 21.73027734399966,
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.4268546244129539
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.48052267100047,
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.0397075209766626
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.581340196999918,
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.631308146752417
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.358983860999615,
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.6083993092179298
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.50303271699977,
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.7734331516548991
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 28.12775160199999,
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.86090549826622
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.24912092500017,
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.8176670223474503
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 22.085680047000096,
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.4496607379987836
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 29.698107622999487,
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 1.972449499182403
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.210949469000298,
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.530065349303186
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.089981493999403,
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.5112842302769423
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.20387565799956,
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.9998244103044271
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 25.638489818999915,
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.682989889755845
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 28.01812581500053,
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.8618290890008211
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.729261874000258,
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.5587000232189894
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 22.027471843999592,
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.4498032415285707
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.74025826200068,
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.9083984484896064
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.800401485999828,
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 2.1355998795479536
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.01610377599991,
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.7251421576365829
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.34734741900047,
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.07603491935879
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.290692885999306,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.095555553212762
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.185337647999404,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.6629973789677024
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 26.832284138000432,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.768717129714787
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 22.092735788999562,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.4561999114230275
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.498125349000475,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.5507285976782441
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.624773235000248,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.773120935074985
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.338509817999693,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.877286416478455
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.854648206999627,
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.8447081223130226
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.746949504999975,
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.2602639915421605
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.385536877999584,
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.9636471504345536
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.648553852000077,
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.9704187903553247
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 23.410279585999888,
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.5619616033509374
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.73283193299994,
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.27137893717736
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.546499495000717,
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.6145507330074906
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.800401272000272,
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.715493043884635
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 22.291032035999706,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 52059,
+      "wall_seconds": 1.4631826598197222
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 26.833943936999276,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 57990,
+      "wall_seconds": 1.756826945580542
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.17471488999945,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 60988,
+      "wall_seconds": 1.8708204245194793
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.38434813100048,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 61596,
+      "wall_seconds": 2.2503702184185386
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.539034022000124,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 50618,
+      "wall_seconds": 1.8373879184946418
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.992360571000063,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53349,
+      "wall_seconds": 1.6525574056431651
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 28.23292861600021,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 53338,
+      "wall_seconds": 1.9086637487635016
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.32573057100035,
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.2460378520190716
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.60065835000023,
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 2.0810100939124823
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.419399591,
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 61050,
+      "wall_seconds": 2.173475818708539
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 37.63782664199971,
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 72625,
+      "wall_seconds": 2.5208016326650977
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.430497357000604,
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.945848853327334
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 23.266247290000138,
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "target_times": 46543,
+      "wall_seconds": 1.549660798162222
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.74556141799985,
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 61050,
+      "wall_seconds": 2.2033974127843976
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.778889012000036,
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.6470530042424798
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 41.78754079800001,
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 72625,
+      "wall_seconds": 2.833290234208107
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 19.801098458000524,
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 46543,
+      "wall_seconds": 1.304397776722908
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.4574929800001,
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.1830201912671328
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 26.855187721999755,
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 46543,
+      "wall_seconds": 1.8252626843750477
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 18.23797833200024,
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.1919410973787308
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 34.87929548700049,
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 72625,
+      "wall_seconds": 2.303374582901597
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.761843901999782,
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 61050,
+      "wall_seconds": 2.0608359165489674
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.50822156600043,
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.819508065469563
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.283868358999825,
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 61050,
+      "wall_seconds": 1.940264723263681
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 38.06067263600016,
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 72625,
+      "wall_seconds": 2.5443890187889338
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 23.410786972000096,
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_times": 46543,
+      "wall_seconds": 1.5614728266373277
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.15685747399948,
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.94810052216053
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.645493267000347,
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.8607262121513486
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 31.124825629000043,
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 2.341944162733853
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 35.23396938699989,
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 72625,
+      "wall_seconds": 2.3531368328258395
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 24.07543443799932,
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 46543,
+      "wall_seconds": 1.62091716658324
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.83091261000027,
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.288685716688633
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.48251730100037,
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "target_times": 61050,
+      "wall_seconds": 2.2781085120514035
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.09574869700009,
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.9676469350233674
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.959707486999832,
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 64837,
+      "wall_seconds": 2.1398507971316576
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 22.38803106799969,
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 47817,
+      "wall_seconds": 1.4729805020615458
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.775576527999874,
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.8428613618016243
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.068723804,
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 63699,
+      "wall_seconds": 2.207994823344052
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.889467308999883,
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 54062,
+      "wall_seconds": 1.582464280538261
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 32.59669857100016,
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 63043,
+      "wall_seconds": 2.1797448797151446
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.45655647500007,
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 63043,
+      "wall_seconds": 2.0134650776162744
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 22.24432265300038,
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.4754305137321353
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.31824114599931,
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 63699,
+      "wall_seconds": 2.236006827093661
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 17.241447011000673,
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 47817,
+      "wall_seconds": 1.136328618042171
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 32.511437703999945,
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 64837,
+      "wall_seconds": 2.172539634630084
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.89278071999979,
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.9094343604519963
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.760524262999752,
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 54062,
+      "wall_seconds": 1.9935620920732617
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.904528655999457,
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 63043,
+      "wall_seconds": 2.140983335673809
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 30.07661350699982,
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 2.0257997503504157
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 22.140419661000124,
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 47817,
+      "wall_seconds": 1.4639539318159223
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.28210070299974,
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 64837,
+      "wall_seconds": 2.064435524865985
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 27.025060280000616,
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 63699,
+      "wall_seconds": 1.7666576756164432
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.50510876499993,
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 54062,
+      "wall_seconds": 1.8455307874828577
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 35.6461623339992,
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.4584221113473177
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.57268662700062,
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 64837,
+      "wall_seconds": 2.2440458992496133
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.4466084959995,
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.9909857856109738
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.62500162200013,
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.2057863492518663
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 23.709238467999967,
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 47817,
+      "wall_seconds": 1.5952427433803678
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.187427249999928,
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 54062,
+      "wall_seconds": 1.606889613904059
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 34.828087918000165,
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 63699,
+      "wall_seconds": 2.333666671998799
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 26.79244394500074,
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 63043,
+      "wall_seconds": 1.7566226171329618
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 21.995721144000527,
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.4519606158137321
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 25.21901616699961,
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 47817,
+      "wall_seconds": 1.6974215041846037
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.31228256600025,
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.8757953457534313
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 28.44995260700034,
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 54062,
+      "wall_seconds": 1.901572442613542
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 26.768317796999327,
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 64837,
+      "wall_seconds": 1.7512702932581306
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.44328067800052,
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 63699,
+      "wall_seconds": 2.007017245516181
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.03893055499975,
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 63043,
+      "wall_seconds": 1.9785110652446747
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 21.456283526000334,
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 41407,
+      "wall_seconds": 1.4450548011809587
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.125711474000127,
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.9638758525252342
+    },
+    {
+      "BLAS_blocks": 19,
+      "CPU_seconds": 38.27785382000002,
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 76250,
+      "wall_seconds": 2.5214258460327983
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 35.43484649699985,
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 67337,
+      "wall_seconds": 2.3709223959594965
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.379196615000183,
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0444538854062557
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.796822744000565,
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 57600,
+      "wall_seconds": 2.0801899014040828
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 23.016415482999946,
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 41407,
+      "wall_seconds": 1.5560334343463182
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.89191883700005,
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 57600,
+      "wall_seconds": 2.070078522898257
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.079015218000677,
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.9932402940467
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 37.61468286299987,
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 67337,
+      "wall_seconds": 2.52481098100543
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.98283147300026,
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.744342771358788
+    },
+    {
+      "BLAS_blocks": 19,
+      "CPU_seconds": 32.28100774299946,
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 76250,
+      "wall_seconds": 2.112623628228903
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 18.559885162999308,
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 41407,
+      "wall_seconds": 1.2223866609856486
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 34.37209434900069,
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.3320352640002966
+    },
+    {
+      "BLAS_blocks": 19,
+      "CPU_seconds": 38.61405673199988,
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 76250,
+      "wall_seconds": 2.5637414446100593
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 22.68247045299995,
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 57600,
+      "wall_seconds": 1.4854510966688395
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 30.81035049500042,
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 67337,
+      "wall_seconds": 2.017214061692357
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 31.470479313000396,
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 2.1464444287121296
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 19.91546781500074,
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 41407,
+      "wall_seconds": 1.322988510131836
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.98376111500056,
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 57600,
+      "wall_seconds": 1.9386814460158348
+    },
+    {
+      "BLAS_blocks": 19,
+      "CPU_seconds": 36.30705400900024,
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 76250,
+      "wall_seconds": 2.3826323794201016
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.82387171800019,
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 2.008535921573639
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.21912242899998,
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0729122376069427
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 30.87430721900091,
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 67337,
+      "wall_seconds": 2.0287428442388773
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 32.25636545999987,
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 67337,
+      "wall_seconds": 2.149440301582217
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.05686271599916,
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 57600,
+      "wall_seconds": 1.8625009376555681
+    },
+    {
+      "BLAS_blocks": 19,
+      "CPU_seconds": 35.905381519,
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 76250,
+      "wall_seconds": 2.363214885815978
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.25193598400074,
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.9667151467874646
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 17.72269761899952,
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 41407,
+      "wall_seconds": 1.169145884923637
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.108393729000454,
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.1701012374833226
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.10582124699977,
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.1907048327848315
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 18.68728706100046,
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 41407,
+      "wall_seconds": 1.2343422351405025
+    },
+    {
+      "BLAS_blocks": 19,
+      "CPU_seconds": 33.59750618600083,
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 76250,
+      "wall_seconds": 2.2104463456198573
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 31.154180781000832,
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 67337,
+      "wall_seconds": 2.0590163273736835
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 27.378704852999363,
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.8362612873315811
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.20926950499961,
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 57600,
+      "wall_seconds": 2.0277051497250795
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 22.802741798999705,
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 45023,
+      "wall_seconds": 1.5286953691393137
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.110460721998606,
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 64376,
+      "wall_seconds": 1.991255878470838
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.794523967000714,
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.1245660977438092
+    },
+    {
+      "BLAS_blocks": 10,
+      "CPU_seconds": 19.642497737000667,
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 39389,
+      "wall_seconds": 1.3121279226616025
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.95453758199983,
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.7362541034817696
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 23.356246724999437,
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 45023,
+      "wall_seconds": 1.57935063354671
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.19399115899978,
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0815827138721943
+    },
+    {
+      "BLAS_blocks": 10,
+      "CPU_seconds": 20.504946218999976,
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 39389,
+      "wall_seconds": 1.3886773949488997
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.53268390099947,
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 64376,
+      "wall_seconds": 2.236929058097303
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.370319976000246,
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.9827043013647199
+    },
+    {
+      "BLAS_blocks": 10,
+      "CPU_seconds": 16.54009143300027,
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 39389,
+      "wall_seconds": 1.0971253579482436
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 20.552172271000018,
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 45023,
+      "wall_seconds": 1.3642102545127273
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.734390411000277,
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 2.0157073894515634
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.54764978700041,
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 64376,
+      "wall_seconds": 2.1002037273719907
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.59287585600032,
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.114862530492246
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 24.264510077000523,
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 45023,
+      "wall_seconds": 1.6495719142258167
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.04441330100053,
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 53460,
+      "wall_seconds": 1.5925236539915204
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.242251572000896,
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 64376,
+      "wall_seconds": 2.0842842357233167
+    },
+    {
+      "BLAS_blocks": 10,
+      "CPU_seconds": 19.712041662000047,
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 39389,
+      "wall_seconds": 1.310809701681137
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.065064428999904,
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.9065900342538953
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 22.131287076999797,
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.462235557846725
+    },
+    {
+      "BLAS_blocks": 19,
+      "CPU_seconds": 31.797767492000276,
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 73825,
+      "wall_seconds": 2.0913550574332476
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.86627826699987,
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 50647,
+      "wall_seconds": 1.7966587375849485
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 29.756337636999888,
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 65459,
+      "wall_seconds": 1.9617208121344447
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 24.408979421001277,
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 58399,
+      "wall_seconds": 1.5973097831010818
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 19.65059809900049,
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 49450,
+      "wall_seconds": 1.3015950983390212
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.02573287299856,
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 58399,
+      "wall_seconds": 2.009116859175265
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 22.030825421001282,
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 49450,
+      "wall_seconds": 1.4484251542016864
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.246040464000544,
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 50647,
+      "wall_seconds": 1.683569266460836
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 27.141327843999534,
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 65459,
+      "wall_seconds": 1.8000752916559577
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.62076346899994,
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.9198876842856407
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 20.698869361000106,
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 42237,
+      "wall_seconds": 1.369065709412098
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 24.201923782999074,
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.6315711541101336
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 22.76715227100067,
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.4997535161674023
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 17.368597515000147,
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 50957,
+      "wall_seconds": 1.1362736644223332
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.243778185998963,
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.6722564166411757
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 24.976804183999775,
+      "record": "sub-050_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.6640911642462015
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 19.400795763000133,
+      "record": "sub-050_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.2616519900038838
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.47831626399966,
+      "record": "sub-050_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.958089828491211
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.18386074999944,
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 50957,
+      "wall_seconds": 1.5879230741411448
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 19.280074165999395,
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 42237,
+      "wall_seconds": 1.2711894027888775
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 23.532855815999937,
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.556051372550428
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.772814175999883,
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.993327527306974
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 34.2960797379983,
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.327750044874847
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 25.912423859999762,
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.714539629407227
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 21.344604001000334,
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 42237,
+      "wall_seconds": 1.4336568880826235
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 21.495658804000414,
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.4398404452949762
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.097376039000665,
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 50957,
+      "wall_seconds": 1.585932799614966
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 20.597056554999654,
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.3551352191716433
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 13.67138266800066,
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 42237,
+      "wall_seconds": 0.9043712206184864
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 20.6000995659997,
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.3490379294380546
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.071476199000244,
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.5035808812826872
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.582821070000136,
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0256499629467726
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.803739304001283,
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 50957,
+      "wall_seconds": 1.9436141531914473
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 22.336209413999313,
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 42237,
+      "wall_seconds": 1.492673521861434
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 24.893903722999312,
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.6654029367491603
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 22.562711337999644,
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 50957,
+      "wall_seconds": 1.4739236943423748
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.55874694100021,
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.9825241221114993
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.332687457999782,
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0255923736840487
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 33.82331441400129,
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.2841475307941437
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.297865950000414,
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 50957,
+      "wall_seconds": 1.590569163672626
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 19.142032817000654,
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 42237,
+      "wall_seconds": 1.268565820530057
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 21.506250583999645,
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.422317904420197
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.824619928000175,
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.5669040651991963
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 24.016663637999955,
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 54170,
+      "wall_seconds": 1.5719657726585865
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.189437237000675,
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0176030034199357
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.40463579900097,
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 50957,
+      "wall_seconds": 1.8986583752557635
+    },
+    {
+      "BLAS_blocks": 11,
+      "CPU_seconds": 20.650541883998812,
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 42237,
+      "wall_seconds": 1.3673422737047076
+    },
+    {
+      "BLAS_blocks": 12,
+      "CPU_seconds": 23.280888882,
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 48637,
+      "wall_seconds": 1.5427998267114162
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 28.689097300000867,
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 55928,
+      "wall_seconds": 1.9283669916912913
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 25.339884672001062,
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.669156264513731
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 28.951823815999887,
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 63542,
+      "wall_seconds": 1.9113931572064757
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 23.30297796999912,
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 50537,
+      "wall_seconds": 1.540916039608419
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 26.8512595659995,
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 64092,
+      "wall_seconds": 1.7509752791374922
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.762100321000617,
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.821690226905048
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.089600601999337,
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 64092,
+      "wall_seconds": 2.0691342735663056
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 23.29878913399989,
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 55928,
+      "wall_seconds": 1.5385476760566235
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 34.359125754999695,
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 63542,
+      "wall_seconds": 2.3155478835105896
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 23.702601684999536,
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 50537,
+      "wall_seconds": 1.5621688272804022
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 26.880261975000394,
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 55928,
+      "wall_seconds": 1.7797067668288946
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 28.17314676299975,
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 64092,
+      "wall_seconds": 1.8657158492133021
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.65126663599949,
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0453937305137515
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.550751856000716,
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 63542,
+      "wall_seconds": 2.0087978756055236
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.242309740000564,
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 50537,
+      "wall_seconds": 1.6122121419757605
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 30.92709239999931,
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 50537,
+      "wall_seconds": 2.122720118612051
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.439897185999143,
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 63542,
+      "wall_seconds": 2.0710364188998938
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.89794003499992,
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.2230087788775563
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 33.73320483799944,
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 64092,
+      "wall_seconds": 2.256422162987292
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.565607215001364,
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 64092,
+      "wall_seconds": 2.1014239275828004
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.564452542001163,
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.8282834673300385
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.372939658000178,
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 63542,
+      "wall_seconds": 1.994710361585021
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.803745306000565,
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 50537,
+      "wall_seconds": 1.7145991548895836
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 29.509705578999274,
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 55928,
+      "wall_seconds": 1.9792627906426787
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.49381366600028,
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.9654126493260264
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 31.573181822999686,
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 63542,
+      "wall_seconds": 2.103822423145175
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.362188570999933,
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 50537,
+      "wall_seconds": 1.907733341678977
+    },
+    {
+      "BLAS_blocks": 16,
+      "CPU_seconds": 30.986170656999093,
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 64092,
+      "wall_seconds": 2.0473594134673476
+    },
+    {
+      "BLAS_blocks": 14,
+      "CPU_seconds": 31.308187430000544,
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 55928,
+      "wall_seconds": 2.124765496701002
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 36.268448441000146,
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 2.4313720408827066
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 35.58309697100049,
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.350619056262076
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.533219086000827,
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.8372793067246675
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.23259178200169,
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.082817491143942
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 26.412656326001525,
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 1.7393408035859466
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.264028128000064,
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.8274681232869625
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 32.05406494499948,
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 2.123879556544125
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 35.721898992000206,
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.3496653474867344
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 28.31814908100023,
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.9074237802997231
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.481830628999887,
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 1.8850311525166035
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.426056561000223,
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 1.9415669795125723
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 30.322351536999122,
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 1.9831117233261466
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 34.930171816999064,
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.29480364266783
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.409767846998875,
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 2.0302187651395798
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.25794092599972,
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.771416543982923
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.568258412999057,
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 2.1075909696519375
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.32496695899863,
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0286880377680063
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 23.119139272999746,
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 1.5056753735989332
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 31.38178576500104,
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.0543433111160994
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 25.846286960000725,
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.7230422282591462
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.869158055998923,
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.145899023860693
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 35.06605699800093,
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 2.3380677588284016
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 37.88163358800011,
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.5121974665671587
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.785800879999442,
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 1.8461549645289779
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 26.57023349500014,
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.76449088845402
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.799969126999713,
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.120160287246108
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 29.6257123589985,
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 1.9739857614040375
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 33.0655642290003,
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 2.178918822668493
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 41.49476776299889,
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.8027265770360827
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 27.342883540000912,
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.8434770600870252
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 27.2060489480009,
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 1.8042238894850016
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 33.88080812099906,
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 2.2534500807523727
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 39.63172630600093,
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.6658915523439646
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.990964155000256,
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.6702240370213985
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.214023091000854,
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.0934984339401126
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 29.038095496000096,
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.972415842115879
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 39.42035192399999,
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 2.66738638933748
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 40.89792570099962,
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.7591731771826744
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 32.71789529999842,
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.222985180094838
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 28.44961517200136,
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 1.9049226539209485
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 31.00977538799998,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_times": 59956,
+      "wall_seconds": 2.097130224108696
+    },
+    {
+      "BLAS_blocks": 15,
+      "CPU_seconds": 30.485984360999282,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_times": 57687,
+      "wall_seconds": 2.0456807548180223
+    },
+    {
+      "BLAS_blocks": 13,
+      "CPU_seconds": 24.958841845998904,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_times": 51699,
+      "wall_seconds": 1.6409546164795756
+    },
+    {
+      "BLAS_blocks": 17,
+      "CPU_seconds": 36.74107091099904,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_times": 67342,
+      "wall_seconds": 2.4452455854043365
+    },
+    {
+      "BLAS_blocks": 18,
+      "CPU_seconds": 35.30892132199915,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_times": 73486,
+      "wall_seconds": 2.325172615237534
+    }
+  ],
+  "merged_subjects": [
+    "sub-001",
+    "sub-002",
+    "sub-003",
+    "sub-004",
+    "sub-005",
+    "sub-006",
+    "sub-007",
+    "sub-008",
+    "sub-009",
+    "sub-010",
+    "sub-011",
+    "sub-012",
+    "sub-013",
+    "sub-014",
+    "sub-015",
+    "sub-016",
+    "sub-018",
+    "sub-019",
+    "sub-020",
+    "sub-021",
+    "sub-022",
+    "sub-023",
+    "sub-024",
+    "sub-025",
+    "sub-026",
+    "sub-027",
+    "sub-028",
+    "sub-029",
+    "sub-030",
+    "sub-031",
+    "sub-032",
+    "sub-033",
+    "sub-034",
+    "sub-035",
+    "sub-036",
+    "sub-037",
+    "sub-038",
+    "sub-039",
+    "sub-040",
+    "sub-041",
+    "sub-042",
+    "sub-043",
+    "sub-044",
+    "sub-045",
+    "sub-046",
+    "sub-047",
+    "sub-048",
+    "sub-049",
+    "sub-050",
+    "sub-051",
+    "sub-052",
+    "sub-053",
+    "sub-054",
+    "sub-055",
+    "sub-056",
+    "sub-057",
+    "sub-058",
+    "sub-059",
+    "sub-060",
+    "sub-061",
+    "sub-062",
+    "sub-063",
+    "sub-064",
+    "sub-065",
+    "sub-066",
+    "sub-067",
+    "sub-068",
+    "sub-069",
+    "sub-070",
+    "sub-071"
+  ],
+  "merge_wall_seconds": 3.2479508640244603,
+  "merge_CPU_seconds": 3.189187893000053
+}

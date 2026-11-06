@@ -283,3 +283,9 @@ D19/D20/D22/D23 的 FT+Ccap 缓存溯源复核通过。三个 seed 的后处理 
 ### 2026-11-06 D26 正式执行记录
 
 D26 V05 独立工程验收通过，已在 2203 SATA 启动固定矩阵。正式队列 PID 1622219，UID 1012，startticks 790259158。seed 1024 的 H worker 1622229 / 790259172 与 C worker 1622239 / 790259176 各占一张 L40。共有 6 个唯一对比预训练、9 个 head、9 个固定 5 轮 FT 和 9 个 TRAIN-only Ccap。工程累计 14 次更新和 1 个独立读出数值核验，已单列。正式只读原公开 TRAIN/VAL，冻结首个完整候选矩阵，性能结果尚待。[实际协议](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/PROTOCOL_V05.json) · [工程记录](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/ENGINEERING_NOTES.md)
+
+### 2026-11-07 D28 完成记录与 D27 接续
+
+D28 完成 50 次特征分解、450 套候选、原 49 人/752 块的 13,536 个候选评分。G r/MSE 0.097929/0.249037，I r/MSE 0.158231/0.239358。49 人 r 均提高，36 人 MSE 降低。个人模型开发 r 仍低于 D22 B。独立核对原支持、全矩阵、逐人选点和残差，另登记启动 CPU 短时超额及同进程修复。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。 [D28 中文结果](../../../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [终验](../../../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/COORDINATOR_RESULT_REVIEW.json) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/ARCHIVE.md)。
+
+D26 V05 仍按原矩阵继续。D27 V03 等待进程 1748466 / UID 1012 / startticks 791000426 已部署，唯一用途是满足 D26 九个完整终态、全部登记进程退出及双卡空闲后启动审核过的 D27 V04。SS07 仍为 ACTIVE。 [D27 等待回执](../../../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_STARTED.json)。

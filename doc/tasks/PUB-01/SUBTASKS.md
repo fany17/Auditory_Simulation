@@ -1,5 +1,7 @@
 # PUB-01 Subtask Registry
 
+2026-11-07，D28 同协议原始 EEG 岭回归已完成并独立验收。开发 VAL 上 G/I r 为 0.097929/0.158231，最高历史冻结参照 D22 B 为 0.184581。D26 继续运行，D27 已部署独立等待门，正式队列待 D26 九行终态、进程退出和双卡准入。节点 SS07 保持 ACTIVE。[D28 结果](../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [D27 接续](../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_STARTED.json)。
+
 2026-11-06当前：用户明确核心目标为SOTA，性能提升优先，历史机制不是性能路线硬门。唯一既有节点 `PUB-01-S03_SS07` 保持 ACTIVE，D24/D25封存后接续 [D26对比预训练历史联合学习](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。同一目标下6个唯一pretrain/9条监督链，实际源/工程冻结经协调核验后全量执行。三臂均可作为性能候选，不启动其他节点、患者、新数据或自动合并；旧测试与外部集仍冻结。
 
 2026-11-06 最新记录为 SS07 的 D25。固定 D24 B_OOF/S_OOF 的实际 0/19 轮权重，B 的相对损失六格均缓解，六格仍低于同折锚点、S 与全 TRAIN 强锚点。正式 0 fit、独立全量复算通过。输出历史后处理支线已封存，SS07 继续 ACTIVE。[D25 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md)

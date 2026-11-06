@@ -1,0 +1,40 @@
+{
+  "continue_execution": true,
+  "reviewed_at_utc": "2026-11-06T16:16:24.357056+00:00",
+  "protocol_sha256": "b9942886d0ddaa90919e7c9409dfd057003714dfe3bbb21b6b8427df54299500",
+  "runtime_adjustment_sha256": "0682bded6d5d7203451254e9575c7588289d2716d8f9db0a85a0a4a2f2963fe9",
+  "process": {
+    "pid": 1725449,
+    "uid": 1012,
+    "startticks": 790888025
+  },
+  "independently_observed": {
+    "OS_registered_threads": 31,
+    "every_thread_affinity": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "VmHWM": "746168 kB",
+    "VmRSS": "735616 kB",
+    "frozen_sources_unchanged": true
+  },
+  "reported_by_executor": {
+    "startup_lifetime_average_logical_CPUs": 20.79,
+    "post_change_5s_CPU_per_wall": 12.490884316030849
+  },
+  "interpretation": "Two independently configured BLAS pools registered 31 threads. Initial source-level per-pool limit was not a hard total-CPU cap. Executor reported brief startup overuse; root independently verified subsequent all-thread affinity on exactly 16 logical CPUs and unchanged PID/source. No restart or scientific-source change. Retain actual complete CPU costs and disclose the deviation; do not state the 16-CPU hard cap held from launch. This operational correction does not establish performance or SOTA."
+}
