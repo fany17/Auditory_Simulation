@@ -2,7 +2,7 @@
 
 ## 当前执行入口
 
-D24 完整三折来源对照已进入 server2203 正式训练。当前节点为 PUB-01-S03_SS07。先核对队列 PID 1346529 及本轮 [正式准入](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_UPSTREAM_EXECUTION_REVIEW.json)，再从 [CURRENT_TASK](CURRENT_TASK.md) 查看上游与后处理状态。D23 已封存。
+D24 三折训练来源对照已封存。当前节点为 PUB-01-S03_SS07，仍为 ACTIVE。先从 [CURRENT_TASK](CURRENT_TASK.md) 查看 D24 的完整开发结果与验收，再读取协调决定。
 
 2026-11-06。D23 S 的两分支只用当前冻结预测，三 seed 各 20 pass 完成。S 的全部 60 个训练轮次高于锚点，选中均值 0.183899636。D22 B 的各自最佳在三 seed 高于 S，平均 +0.000681269；S 在 52/60 个同轮和三个末轮高于 B。B 的峰值差来自纯活动块，S/B 的输入维数和初始化仍限制历史机制解释。完整轨迹和独立审阅已归档，SS07 总体目标仍 ACTIVE。[D23 报告](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/ARCHIVE.md)
 

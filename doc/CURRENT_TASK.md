@@ -1,6 +1,6 @@
-# 当前入口：D24 三折端到端对照正在训练
+# 当前入口：D24 三折训练来源对照已封存
 
-2026-11-06。当前唯一执行节点仍为 PUB-01-S03_SS07。D24 的 9 个 source-family 上游全部完成，三阶段实际更新为 52,480 / 5,918,250 / 118,365。独立 V03 对 9 组共重放 4,068 NN 窗与 5,760 固定物理点，最大误差 2.22e−16。先前精度差异与 GPU 调度中断的原始回执保留，恢复只运行原未启动三项。V03 退出后，下游 V06 的 12 fit 已在 2203 开始，B_IS/S_IS/B_OOF/S_OOF 共用原 VAL49 锚点；待完整三 seed 和独立审核才汇总。SS07 总体目标仍 ACTIVE。[来源核查](../reports/pub_01/s03/incremental_continuity/stacking_input_audit/run01/REPORT.md) · [D24 决定](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_DECISION.md) · [上游恢复终态](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/UPSTREAM_RECOVERY_TERMINAL.json) · [下游启动](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/DOWNSTREAM_START.json)
+2026-11-06。D24 完成 9 条上游、12 个下游拟合及独立核验。B_OOF 的 60 个已训练轮次均低于共同锚点，三个选中点均为锚点回退。最佳已训练开发 r 为 0.176480208，末轮 0.169019619，锚点 0.182339940。S_OOF 的选中均值为 0.183334318，活动 MSE 高于锚点。完整三 seed、逐人、轨迹、配对与调度修订成本已封存。当前证据限于原开发 VAL，SS07 仍为 ACTIVE。[D24 报告](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md) · [独立复核](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REVIEW.md) · [归档](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/ARCHIVE.md)
 
 ## D23 无历史非线性竞争对照已封存
 

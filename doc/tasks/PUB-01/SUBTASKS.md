@@ -1,6 +1,6 @@
 # PUB-01 Subtask Registry
 
-2026-11-06 当前执行为 SS07 的 D24。三折和上游工程已经独立验证。三 seed × 三折完整上游已在 2203 启动，随后使用同一原 VAL49 锚点评估 IS/OOF 各两臂。SS07 继续 ACTIVE。[D24 决定](../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_DECISION.md)
+2026-11-06 最新记录为 SS07 的 D24。9 条上游和 12 个下游拟合完成，三级核验通过。B_OOF 的 60 个训练轮次均低于共同锚点，三组回退。S_OOF 的开发相关小幅增加，活动 MSE 上升。D24 已封存，SS07 继续 ACTIVE。[D24 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md)
 
 唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
 
