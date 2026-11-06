@@ -1,0 +1,18 @@
+{
+  "process": [
+    1822456,
+    1012,
+    791818365
+  ],
+  "source_sha256": "685ccbc0200b1d5817b6f6891656568f509aa6901cfe87622b48bcf17f73694a",
+  "plan_sha256": "c12f5249b994e0193d5e077eab9825435cfc46d783a9dfb8d6ffedf2b40e826d",
+  "exclusive_before_model_forward": true,
+  "planned_calls": {
+    "backbone_windows": 378,
+    "native_unused_projection_windows": 102,
+    "final_projection_windows": 144,
+    "head_windows": 144,
+    "manual_memory_query_windows": 31,
+    "library_memory_query_windows": 117
+  }
+}
