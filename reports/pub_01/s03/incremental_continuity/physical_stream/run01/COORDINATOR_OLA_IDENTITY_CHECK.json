@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "Synthetic independent window coordinates, n_windows=5, np.hanning(192), hop=96. No statement about rank/conditioning of learned shared-parameter D9 or D18 models.",
+  "checks": {
+    "AS_identity_valid": 4.440892098500626e-16,
+    "AP_equals_A": 2.220446049250313e-16,
+    "P_idempotent": 2.220446049250313e-16,
+    "nonzero_removed_window_component_max": 3.449681277041556,
+    "removed_component_physical_max": 3.885780586188048e-16,
+    "physical_loss_unchanged": 0.0,
+    "physical_loss_gradient_unchanged": 1.734723475976807e-18,
+    "valid_physical_points": 574,
+    "window_coordinates": 960
+  },
+  "conclusion": "Postcomposing window outputs with frame(OLA(.)) and using the same final OLA physical loss leaves prediction, loss and gradient unchanged; hidden window redundancy remains. A genuinely unique-time output parameterization is a different model class; it does not prove better generalization or remove all possible parameter nonidentifiability.",
+  "real_eeg_loaded": false,
+  "neural_forward": 0,
+  "backward": 0,
+  "optimizer_updates": 0,
+  "synthetic_gradient_analytic_check": true,
+  "pid": 1207369,
+  "source_sha256": "de6f7196479396f1c5c18c8d9db50118d7e83005cefcb2017c33533609663ae9",
+  "cpu_seconds": 0.0005774590000000024,
+  "wall_seconds": 0.0005805492401123047
+}
