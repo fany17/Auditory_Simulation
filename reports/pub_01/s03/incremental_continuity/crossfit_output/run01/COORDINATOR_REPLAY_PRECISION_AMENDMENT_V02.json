@@ -1,0 +1,21 @@
+{
+  "decision": "PASS_PRECISION_MATCHED_AUDIT_V02_NO_MODEL_CHANGE",
+  "reason": "CPU and CUDA cuDNN TF32=false reproduce the mismatch; original formal CUDA precision reproduces both fixed IS record probes to 2.23e-16. Retain original tolerances and independent NumPy readout/Hann. No model, training, record, label or score change.",
+  "old_CPU_max_abs": 5.139661767628034e-05,
+  "GPU_formal_precision_max_abs": 2.220446049250313e-16,
+  "GPU_noTF32_max_abs": 5.135851279036707e-05,
+  "previous_audit_and_diagnostic_NN_windows": 1076,
+  "previous_fitting_updates": 0,
+  "previous_label_reads": 0,
+  "normalization": "all fold TRAIN samples unchanged",
+  "probe_selection": "metadata first/last IS and OOF records; original physical points unchanged",
+  "source_sha": "6463ac6cf775e382a0199e25bfc11293447d0249f1a80d257d54120ada664912",
+  "preserved": {
+    "COORDINATOR_UPSTREAM_REPLAY.py": "d8016bbd5b171e2893fd80d6366552a5cd32115549137c25970b3efd7c877a14",
+    "coordinator_upstream_audit_v01/FAILURE.json": "17672250e9825555b97ee405aa9e64d4988956b369d218cda8a7dbd086851d57",
+    "COORDINATOR_REPLAY_DIAGNOSTIC_V01.json": "0b44ca8581fa93b47200a9f27e497f1a116b80945e263108a59997cb7929e0f7",
+    "COORDINATOR_REPLAY_DIAGNOSTIC_V02.json": "4df026d7b6da7ddb162e209e36778fe6e9eb666654260564d5da9a4aac03bb1e",
+    "downstream_queue/FAILURE.json": "6ec33bdf1b822c7ac7ff4f62ef3fac22abcbb465cdcfecd6cc68a0526124c5c2"
+  },
+  "next": "All 9 replay receipts still required before downstream; rebind downstream dependency to V02 with separate controller directory, preserving old failure."
+}
