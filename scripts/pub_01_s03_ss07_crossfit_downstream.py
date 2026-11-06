@@ -15,10 +15,14 @@ from pub_01_s03_ss07_crossfit_meta import D19, ROOT, SATA, SEEDS, digest, read
 D20 = SATA / "s03_recent_prediction_context_20261106"
 D22 = SATA / "s03_output_query_20261106"
 D23 = SATA / "s03_memoryless_output_20261106"
-REPLAY = ROOT / "coordinator_upstream_audit_v02"
-REPLAY_SOURCE = ROOT / "COORDINATOR_UPSTREAM_REPLAY_V02.py"
-REPLAY_SOURCE_SHA = "6463ac6cf775e382a0199e25bfc11293447d0249f1a80d257d54120ada664912"
-FORMAL_GATE = ROOT / "DOWNSTREAM_FORMAL_GATE_V05.json"
+REPLAY = ROOT / "coordinator_upstream_audit_v03"
+REPLAY_SOURCE = ROOT / "COORDINATOR_UPSTREAM_REPLAY_V03.py"
+REPLAY_SOURCE_SHA = "ac9e2b7ca4a6d2ee6d393c2e15cf140416451c64871378273419a7a4a69f03be"
+FORMAL_GATE = ROOT / "DOWNSTREAM_FORMAL_GATE_V06.json"
+RECOVERY = ROOT / "upstream_recovery_v01"
+RECOVERY_SOURCE = ROOT / "input_upstream_recovery_v01/pub_01_s03_ss07_crossfit_upstream_recovery.py"
+RECOVERY_SOURCE_SHA = "ff10edf3d8b7b347edd7823efc05e04d4bacec2ac9e117822655c5e31414e3ff"
+ORIGINAL_GPU0 = "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
 ROLE = "P_past_prediction"
 GIB = 1024**3
 
@@ -294,8 +298,23 @@ def freeze(meta, d20):
     """Admit only a completed and exact upstream matrix, without reading its tensors."""
     upstream_gate = ROOT / "UPSTREAM_FORMAL_GATE_V04.json"
     upstream = read(upstream_gate)
-    terminal = ROOT / "queue/TERMINAL.json"
-    d20.require(read(terminal)["passed"], "Upstream queue has not completed")
+    terminal = ROOT / "UPSTREAM_RECOVERY_TERMINAL.json"
+    matrix = read(terminal)
+    old_queue = ROOT / "queue"
+    old_terminal = old_queue / "TERMINAL.json"
+    old_failure = old_queue / f"{ORIGINAL_GPU0}_FAILURE.json"
+    plan = RECOVERY / "PLAN.json"
+    recovery_process = RECOVERY / "PROCESS.json"
+    audit_stop = ROOT / "COORDINATOR_UPSTREAM_REPLAY_V02_STOP.json"
+    d20.require(matrix["passed"] and len(matrix["jobs"]) == 9
+                and matrix["recovery_source_sha256"] == digest(RECOVERY_SOURCE) == RECOVERY_SOURCE_SHA
+                and matrix["process"] == read(recovery_process), "Recovered upstream matrix/source/identity")
+    d20.require(matrix["original_queue_terminal"] == str(old_terminal)
+                and matrix["original_queue_terminal_sha256"] == digest(old_terminal)
+                and not read(old_terminal)["passed"]
+                and read(old_terminal)["failures"] == [read(old_failure)]
+                and read(plan)["original_failure"] == read(old_failure),
+                "Original queue failure evidence")
     replay_done_path = REPLAY / "COMPLETED.json"
     replay_done = read(replay_done_path)
     replay_count = replay_done["counters"]
@@ -305,7 +324,9 @@ def freeze(meta, d20):
                 "Independent upstream replay has not passed")
     replay_process = replay_done["process"]
     d20.require(replay_process["source_sha256"] == digest(REPLAY_SOURCE) == REPLAY_SOURCE_SHA
-                and not replay_process["TF32_matmul"] and replay_process["TF32_cudnn"],
+                and not replay_process["TF32_matmul"] and replay_process["TF32_cudnn"]
+                and replay_process == read(REPLAY / "PROCESS.json")
+                and replay_done["upstream_matrix_receipt_sha256"] == digest(terminal),
                 "Independent upstream replay source/precision drift")
     candidate_path = ROOT / "FOLD_AND_BUDGET_CANDIDATE_V2.json"
     d20.require(upstream["candidate_sha256"] == digest(candidate_path), "Upstream candidate drift")
@@ -317,7 +338,9 @@ def freeze(meta, d20):
                D19 / "PREPARATION_METADATA.json",
                D19 / "PROTOCOL.json", D20 / "PROTOCOL.json", D22 / "PROTOCOL.json", D23 / "PROTOCOL.json",
                ROOT / "downstream_engineer/seed1024/COMPLETED.json",
-               ROOT / "DOWNSTREAM_INPUT_PREFLIGHT_V03.json", replay_done_path, REPLAY_SOURCE}
+               ROOT / "DOWNSTREAM_INPUT_PREFLIGHT_V03.json", replay_done_path, REPLAY_SOURCE,
+               REPLAY / "PROCESS.json", RECOVERY_SOURCE, plan, recovery_process,
+               old_terminal, old_failure, audit_stop}
     module_paths = {Path(module.__file__).resolve() for module in list(sys.modules.values())
                     if getattr(module, "__file__", None)
                     and Path(module.__file__).name.startswith("pub_01_")}
@@ -339,6 +362,8 @@ def freeze(meta, d20):
         completed_path = folder / "COMPLETED.json"
         frozen_path = folder / "UPSTREAM_FROZEN.json"
         completed, frozen = read(completed_path), read(frozen_path)
+        d20.require(matrix["jobs"][job_key]["completed_sha256"] == digest(completed_path),
+                    "Upstream matrix receipt drift")
         ids = {row["record"] for row in manifest if row["OOF_model_fold"] != fold}
         d20.require(set(completed["fit_records"]) == set(frozen["fit_records"]) == ids
                     and set(completed["contrastive"]["record_presentations"]) <= ids, "Actual TRAIN fence")
