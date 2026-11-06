@@ -4,7 +4,7 @@
 
 2026-11-06。协调已选定唯一实质训练阶段问题并授权执行者继续：[D26具体决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。HH/CH/CC三臂、3seed，共6个唯一从头对比预训练、9个head/FT及固定λ=.01新TRAIN读出。同结构、配对共同停止预算，严格过去且共享可训练encoder；最终FT固定5轮。V05 独立工程审阅通过，正式队列 PID 1622219 已启动，seed1024 的 H/C workers 为 1622229/1622239，各占一张 L40。正式矩阵尚未结束，当前无科学结果。SS07/持续goal ACTIVE；原D24/D25输出历史支线封存，不重开旧测试或外部、不增数据/患者/自动合并。
 
-并行准备：[D27 Sea-Wave-Small已见被试对照](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_DECISION.md)。实际清单证实VAL49人均在TRAIN，故采用3个共享initial及147个独立personal FT，完整保留公开初始201轮上限和固定个人21轮/patience5。现在允许代码/2203有界CPU工程；正式训练接在D26计算结束及具体源/工程审核后，不影响其运行。personal与共享参数方法分栏，当前VAL非独立SOTA证据。[几何和预算来源](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/GEOMETRY_RECEIPT.json)
+已核验待执行：[D27 Sea-Wave-Small已见被试对照](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_DECISION.md)。实际清单证实VAL49人均在TRAIN，故采用3个共享initial及147个独立personal FT，完整保留初始201轮和固定个人21轮/patience5。input_v04 / PROTOCOL_V04 的16源、522输入及有界CPU工程已由协调实际审核通过，[审阅与执行回执](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_ENGINEERING_REVIEW.md)。D26完整矩阵结束、精确PID退出且GPU空闲后直接接续，不再等待许可；当前D27无正式训练结果。personal与共享参数方法分栏，当前VAL非独立SOTA证据，已核实旧整臂性能候选仍保留。
 
 D27 Sea-Wave-Small 已见被试强对照已完成 CPU 工程与 V04 独立准入。150,433 参数、感受野 249 点，正式含 3 个 initial 与 147 个个人 FT。GPU 队列等待 D26 完整真实终态、原进程退出及空卡准入，D27 目前只有三次 CPU 工程更新。[D27 计划](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/PLAN_V04.md) · [冻结门](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/PROTOCOL_V04.json) · [原整臂性能参照](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/HISTORICAL_REFERENCES.json)
 

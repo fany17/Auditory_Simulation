@@ -4,7 +4,7 @@
 
 2026-11-06，SS07继续ACTIVE。唯一下一轮为 [D26协调决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)：保留原强Transformer/XLSR目标，将历史在对比预训练阶段联合学习，HH/CH/CC三臂三seed，6个唯一预训练和9条监督链，配对共同预算。V05 已经独立工程核验并在 2203 正式启动，当前队列 PID 1622219，按 [CURRENT_TASK](CURRENT_TASK.md) 的实际运行状态接续。全部新计算在2203 SATA；旧test/DTU/ds004408关闭，无新数据/患者/PR合并。D24/D25封存，旧入口仅历史。
 
-D26运行期间，可并行落实[D27 Sea-Wave已见被试强对照](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_DECISION.md)的代码与有界2203 CPU工程。49个VAL被试全部见于TRAIN，D27包括3个initial和147个personal FT；正式训练须源/工程核验并等D26计算结束，不抢两卡、不重开旧测试。initial群体行未做global FT，不能冒称完整S2对照。
+D27 Sea-Wave已见被试强对照的[实际源与工程已通过协调审阅](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_ENGINEERING_REVIEW.md)，生效为input_v04 / PROTOCOL_V04。49个VAL被试全部见于TRAIN，包含3个initial和147个personal FT；D26完整计算结束、原精确进程退出且GPU空闲后直接按冻结矩阵接续，无需再次许可。D27尚未正式训练，不抢D26两卡、不重开旧测试。initial群体行未做global FT，不能冒称完整S2对照。
 
 # 历史入口：D25 固定权重来源诊断已封存
 
