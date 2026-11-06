@@ -1,0 +1,140 @@
+{
+  "stage": "engineer",
+  "protocol_sha256": "339f41a6b0490dbdcef73b64ce9ad17c24f9e372f6304f5050309952129018a0",
+  "process": {
+    "pid": 1336547,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_memoryless_output.py",
+      "engineer"
+    ],
+    "linux_startticks": 788305403,
+    "stage_started_unix": 1793955810.5934656,
+    "deadline_unix": 1793956410.5934656,
+    "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "runtime_versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "torch_cuda": "12.8"
+  },
+  "CPU_seconds": 8.477516501,
+  "elapsed_seconds": 3.742891553789377,
+  "counters": {
+    "TRAIN_records_loaded": 6,
+    "TRAIN_cached_windows_loaded": 3447,
+    "current_stem_points": 25056,
+    "context_output_points": 24960,
+    "backward_points": 24576,
+    "context_code_canary_points": 96
+  },
+  "location": {
+    "seed": 31415,
+    "phase": "first_two_TRAIN_records"
+  },
+  "resources": {
+    "peak_RSS_bytes": 1462263808,
+    "cuda_peak_allocated_bytes": 103724544,
+    "writer_free_bytes": 178078666752,
+    "writer_bytes": 28870
+  },
+  "new_encoder_head_windows": 0,
+  "new_signal_feature_prediction_array_files": 0,
+  "parameter_checkpoint_files": 0,
+  "training_statistics_files": 0,
+  "passed": true,
+  "checks": [
+    {
+      "seed": 1024,
+      "anchor_train_blocks": 28,
+      "anchor_block_max_abs": 0.0,
+      "shared_initial_tensors_exact": true,
+      "CPU_CUDA_RNG_exact": true,
+      "D22_shuffle_exact": true,
+      "changed_prior_probes": 64,
+      "same_output_after_past_perturbation": true,
+      "scalar_normalization_exact": true,
+      "query_code_delta": 2.5834498405456543,
+      "context_code_delta": 1.4911924600601196,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.02668572962284088
+        },
+        {
+          "current": 0.0006333335186354816,
+          "context_in": 9.749217861099169e-05,
+          "context_out": 0.0009490407537668943,
+          "mix": 0.0029802359640598297,
+          "output": 0.026490433141589165
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "anchor_train_blocks": 28,
+      "anchor_block_max_abs": 0.0,
+      "shared_initial_tensors_exact": true,
+      "CPU_CUDA_RNG_exact": true,
+      "D22_shuffle_exact": true,
+      "changed_prior_probes": 64,
+      "same_output_after_past_perturbation": true,
+      "scalar_normalization_exact": true,
+      "query_code_delta": 2.251993417739868,
+      "context_code_delta": 1.5561336278915405,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.035492587834596634
+        },
+        {
+          "current": 0.0007385272765532136,
+          "context_in": 0.0002451820473652333,
+          "context_out": 0.0016816090792417526,
+          "mix": 0.004936849698424339,
+          "output": 0.038327720016241074
+        }
+      ]
+    },
+    {
+      "seed": 31415,
+      "anchor_train_blocks": 28,
+      "anchor_block_max_abs": 0.0,
+      "shared_initial_tensors_exact": true,
+      "CPU_CUDA_RNG_exact": true,
+      "D22_shuffle_exact": true,
+      "changed_prior_probes": 64,
+      "same_output_after_past_perturbation": true,
+      "scalar_normalization_exact": true,
+      "query_code_delta": 2.66339111328125,
+      "context_code_delta": 1.1117238998413086,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.0206992756575346
+        },
+        {
+          "current": 0.00039192932308651507,
+          "context_in": 0.0001027355101541616,
+          "context_out": 0.0007205164292827249,
+          "mix": 0.0024992136750370264,
+          "output": 0.02012680098414421
+        }
+      ]
+    }
+  ],
+  "formal_fits": 0,
+  "optimizer_updates": 0,
+  "common_fit_code_and_signature_exact": true,
+  "frozen_module_unchanged": true
+}
