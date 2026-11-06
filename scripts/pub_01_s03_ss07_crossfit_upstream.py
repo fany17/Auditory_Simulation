@@ -393,10 +393,11 @@ def main(run):
     parser.add_argument("--stage", required=True, choices=("engineer", "formal"))
     args = parser.parse_args()
     started = time.monotonic()
+    cpu_started = time.process_time()
     candidate_path = ROOT / "FOLD_AND_BUDGET_CANDIDATE_V2.json"
     candidate = read(candidate_path)
     if args.stage == "formal":
-        gate = read(ROOT / "UPSTREAM_FORMAL_GATE.json")
+        gate = read(ROOT / "UPSTREAM_FORMAL_GATE_V04.json")
         require(gate["passed"] and all(digest(Path(p)) == h for p, h in gate["sources"].items()),
                 "Formal engineering/source pins")
         require(gate["candidate_sha256"] == digest(candidate_path), "Formal candidate pin")
@@ -567,7 +568,10 @@ def main(run):
             affine=real_fit[-1], D8_fixture_only=True, first4_equal=True, saved_roundtrip=True,
             IS_windows=is_windows, OOF_windows=oof_windows, **real_diag)
     guard()
-    evidence.update(cuda_peak_reserved_bytes=torch.cuda.max_memory_reserved(),
+    final_cuda_peak = torch.cuda.max_memory_reserved()
+    evidence.update(cuda_peak_reserved_bytes=final_cuda_peak,
+                    total_peak_reserved=max(cl["CUDA_peak_reserved_bytes"], head_peak, ft_peak, final_cuda_peak),
+                    total_CPU_seconds=time.process_time()-cpu_started,
                     peak_RSS_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024,
                     wall_seconds=time.monotonic()-started)
     exclusive(output / "COMPLETED.json", evidence)
