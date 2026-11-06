@@ -1,0 +1,92 @@
+{
+  "workers": [
+    {
+      "seed": 1024,
+      "arm": "C_current",
+      "pid": 2050850,
+      "returncode": 0
+    },
+    {
+      "seed": 1024,
+      "arm": "H_history",
+      "pid": 2050842,
+      "returncode": 0
+    },
+    {
+      "seed": 1024,
+      "arm": "T_continue",
+      "pid": 2148350,
+      "returncode": 0
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prediction_history",
+      "pid": 2180188,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "arm": "H_history",
+      "pid": 2224123,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "arm": "C_current",
+      "pid": 2263960,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "arm": "T_continue",
+      "pid": 2355852,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "arm": "P_prediction_history",
+      "pid": 2363711,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "arm": "C_current",
+      "pid": 2449021,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "arm": "H_history",
+      "pid": 2431869,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "arm": "T_continue",
+      "pid": 2569102,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "arm": "P_prediction_history",
+      "pid": 2571409,
+      "returncode": 0
+    }
+  ],
+  "wall_seconds": 42800.05040931702,
+  "CPU_worker_seconds": 78154.930126167,
+  "formal_fits": 12,
+  "total_update_positions": 946800,
+  "total_optimizer_updates": 946800,
+  "target_window_presentations": 60588960,
+  "component_forward_counts": {
+    "current_encoder_prefix_windows": 80392752,
+    "current_projection_windows": 80484252,
+    "current_head_windows": 80484252,
+    "frozen_encoder_prefix_windows": 59563425,
+    "attention_query_windows": 59473248,
+    "prior_projection_windows": 39588714
+  },
+  "goal_complete": false,
+  "independent_review_required": true
+}

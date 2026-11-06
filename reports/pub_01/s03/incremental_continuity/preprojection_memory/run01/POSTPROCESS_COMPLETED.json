@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "command": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/reporting/pub_01_s03_ss07_preprojection_present.py"
+  ],
+  "returncode": 0,
+  "waiter_CPU_seconds": 0.021331194,
+  "waiter_wall_seconds": 4240.708501815796,
+  "peak_waiter_RSS_KiB": 17516,
+  "timer_scope": "Waiter CPU excludes child; waiter wall includes waiting for training and presentation, so not additive to queue wall or presentation wall.",
+  "presentation_cost_receipt": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/report01/PRESENTATION_COST.json",
+  "new_NN": 0,
+  "new_backward": 0,
+  "training_processes_launched_or_changed": 0,
+  "scientific_interpretation_and_figure_viewing_still_required": true
+}

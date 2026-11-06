@@ -1,0 +1,201 @@
+{
+  "completed_matrix": {
+    "fits": 12,
+    "optimizer_updates": 946800,
+    "target_presentations": 60588960,
+    "components": {
+      "current_encoder_prefix_windows": 80392752,
+      "current_projection_windows": 80484252,
+      "current_head_windows": 80484252,
+      "frozen_encoder_prefix_windows": 59563425,
+      "attention_query_windows": 59473248,
+      "prior_projection_windows": 39588714
+    },
+    "worker_CPU_seconds": 78154.930126167,
+    "queue_global_wall_seconds": 42800.05040931702,
+    "timing_scope": "Queue wall already includes interrupted first attempt/recovery downtime/foreign-GPU waits; never add them again. Completed fit CPU includes setup/train/eval; epoch CPU/wall is nested, not additive."
+  },
+  "interrupted_formal_attempt01": {
+    "stage": "INTERRUPTED_FORMAL_ATTEMPT01",
+    "C_exact_failure": {
+      "time": 1793642684.3780277,
+      "traceback": "Traceback (most recent call last):\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py\", line 72, in <module>\n    try:run(args.seed,args.arm,args.device)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py\", line 43, in run\n    if positions%500==0:guard();assert time.time()-start<86400\n                        ^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_runtime.py\", line 47, in guard\n    assert min(shutil.disk_usage(ROOT).free,shutil.disk_usage('/sata5/fanyu/auditory_simulation_m6a').free)>=20*1024**3,'20GiB each disk'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 20GiB each disk\n",
+      "optimizer_updates": 23000,
+      "update_positions": 23000,
+      "invoked_component_counts": {
+        "current_encoder_prefix_windows": 2129278,
+        "current_projection_windows": 2129278,
+        "current_head_windows": 2129278,
+        "frozen_encoder_prefix_windows": 2097061,
+        "attention_query_windows": 2097061,
+        "prior_projection_windows": 0
+      },
+      "automatic_retry": false
+    },
+    "C_TRAIN_presentations": {
+      "optimizer_updates_bound": 23000,
+      "TRAIN_target_window_presentations": 1471870,
+      "TRAIN_effective_window_presentations": 1449526
+    },
+    "H_bounds": [
+      {
+        "optimizer_updates_bound": 18400,
+        "TRAIN_target_window_presentations": 1177496,
+        "TRAIN_effective_window_presentations": 1159556,
+        "current_prefix_projection_head_invoked_bound_each": 1551950,
+        "attention_query_invoked_bound": 1528412,
+        "E0_prefix_invoked_bound": 3056824
+      },
+      {
+        "optimizer_updates_bound": 18500,
+        "TRAIN_target_window_presentations": 1183896,
+        "TRAIN_effective_window_presentations": 1165870,
+        "current_prefix_projection_head_invoked_bound_each": 1558350,
+        "attention_query_invoked_bound": 1534726,
+        "E0_prefix_invoked_bound": 3069452
+      }
+    ],
+    "H_bound_reason": "STATUS written after every100positions; no empty batch possible under frozen metadata. Last STATUS18400, SIGTERM may interrupt up to100 following positions including a partially invoked operation. No exact termination counter or CPU timing survives; do not use bound as exact count.",
+    "C_CPU_seconds": null,
+    "H_CPU_seconds": null,
+    "original_queue_start_unix": 1793640563.790547,
+    "original_queue_deadline_unix": 1793726963.790547,
+    "current_unix": 1793643274.8788424,
+    "new_NN": 0,
+    "new_backward": 0,
+    "metadata_only_permutations_for_cost_bounds": 2
+  },
+  "discarded_engineering": {
+    "production_components": {
+      "current_encoder_prefix_windows": 2816,
+      "current_projection_windows": 2816,
+      "current_head_windows": 2816,
+      "frozen_encoder_prefix_windows": 2211,
+      "attention_query_windows": 1974,
+      "prior_projection_windows": 1798
+    },
+    "extra_operations": {
+      "reference_encoder_prefix_windows": 640,
+      "reference_projection_windows": 640,
+      "reference_head_windows": 640,
+      "readout_only_windows": 314,
+      "readout_VJP_calls": 5,
+      "attention_query_VJP_calls": 11,
+      "temporary_optimizer_updates": 28
+    },
+    "final_attempt_CPU_seconds": 15.346732677999999,
+    "final_attempt_wall_seconds": 11.880187034606934,
+    "prior_attempt_timing": [
+      {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/attempts/engineering_attempt01/ENGINEERING_FAILURE.json",
+        "sha256": "d25185efd1d78d92a05837d08e758c2d7526017dea1a7bd527f0268b32106521",
+        "CPU_seconds": null,
+        "wall_seconds": null,
+        "resource_timing_limitation": "Attempt01 failed before timing receipt; do not infer zero cost"
+      },
+      {
+        "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/attempts/engineering_attempt02/ENGINEERING_FAILURE.json",
+        "sha256": "5320b6ad12d36f9fb90bb3671d409ad75554a2c0c9fb97467bdb3a3eea62185a",
+        "CPU_seconds": 4.831863065,
+        "wall_seconds": 4.788066625595093,
+        "resource_timing_limitation": null
+      }
+    ],
+    "note": "28 discarded optimizer updates total, no final initialization from engineering."
+  },
+  "reference_synthetic_selfcheck": {
+    "status": "PASS",
+    "scope": "independent_reference_synthetic_algebra_only_not_production_autograd",
+    "source_sha256": "19eaa95bcd166ae5c35c0d30000e50b92089af32864ac0165d62a1448f401d18",
+    "seed": 20261103,
+    "batch": 3,
+    "latent_shape": [
+      3,
+      8,
+      192
+    ],
+    "coefficient_shape": [
+      3264,
+      192
+    ],
+    "directional": {
+      "analytic": -0.0008344840069010376,
+      "central_difference": -0.0008344840068363967,
+      "absolute_difference": 6.464089246510651e-14,
+      "step": 1e-05
+    },
+    "tolerance": 1.000834484006901e-07,
+    "constant_Z_gradient_zero": true,
+    "constant_P_keeps_baseline_gradient": true,
+    "real_array_access": false,
+    "NN_forwards": 0,
+    "NN_backwards": 0,
+    "optimizer_updates": 0,
+    "new_fits": 0,
+    "CPU_seconds": 0.05799247200000002,
+    "wall_seconds": 0.01453549973666668,
+    "peak_RSS_KiB": 47404,
+    "computation_host": "server2203",
+    "execution": "One SSH stdin Python invocation; reference bytes base64 transferred and SHA256 asserted before execution. Scientific arrays never returned to Windows.",
+    "counts_scope": "Timer begins after imports; no neural execution or scientific file inputs. SSH/local administrative overhead unmeasured."
+  },
+  "independent_reviews": "See REVIEW_COST_INVENTORY and original receipts. No new neural replay in presentation; no invented additive total for nested timers.",
+  "reused_upstream": "Original FT encoder/head, D8 latent/P caches and frozen Ccap assets are shared historical work. P reads frozen predicted history; its upstream cost is not zero or fully allocated by D18 runtime counters.",
+  "checkpoint_bytes_actual_total": 326294298,
+  "storage_estimate_correction": {
+    "actual_first_seed_checkpoint_bytes": {
+      "fits/H_history_seed1024/best_validation.pt": 13613599,
+      "fits/H_history_seed1024/last.pt": 13611043,
+      "fits/C_current_seed1024/best_validation.pt": 13613599,
+      "fits/C_current_seed1024/last.pt": 13611043,
+      "fits/T_continue_seed1024/best_validation.pt": 13543511,
+      "fits/T_continue_seed1024/last.pt": 13541043,
+      "fits/P_prediction_history_seed1024/best_validation.pt": 13616753,
+      "fits/P_prediction_history_seed1024/last.pt": 13614175
+    },
+    "observed_max_bytes": 13616753,
+    "legacy_planning_unit_bytes": 13614175,
+    "legacy_estimated_upper_bytes": 643174935,
+    "conservative_checkpoint_unit_bytes": 16777216,
+    "formal_checkpoint_slots": 24,
+    "other_estimate_components_unchanged_bytes": 316434735,
+    "conservative_projected_upper_bytes": 719087919,
+    "unchanged_enforced_root_limit_bytes": 805306368,
+    "remaining_margin_bytes": 86218449,
+    "interpretation": "best_validation.pt zip-name/header overhead makes P best slightly larger than the earlier last.pt-based estimate. A16MiB/checkpoint conservative projection still fits the unchanged768MiB root cap. Per-file16MiB is a review projection, not an added runtime rule. No protocol, training source, or results changed.",
+    "audit_CPU_seconds": 0.0018425790000000004,
+    "audit_wall_seconds": 0.0018429756164550781,
+    "new_NN": 0,
+    "new_backward": 0,
+    "new_optimizer_updates": 0,
+    "archive_structure_check": {
+      "archives": {
+        "best_validation.pt": {
+          "bytes": 13616753,
+          "archive_prefix": "best_validation.pt",
+          "entries": 182,
+          "payload_bytes": 13580289,
+          "archive_structure_bytes": 36464
+        },
+        "last.pt": {
+          "bytes": 13614175,
+          "archive_prefix": "last.pt",
+          "entries": 182,
+          "payload_bytes": 13580289,
+          "archive_structure_bytes": 33886
+        }
+      },
+      "normalized_entry_names_sizes_and_compression_identical": true,
+      "observed_size_difference_is_archive_structure": true,
+      "CPU_seconds": 0.0012065999999999986,
+      "wall_seconds": 0.0012094974517822266,
+      "NN_forwards": 0,
+      "backwards": 0,
+      "optimizer_updates": 0
+    },
+    "timer_scope": "Main storage calculation and archive-directory inspection were separate, disjoint metadata-only audits."
+  },
+  "components_are_not_unique_examples_or_FLOPs": true,
+  "new_NN_in_presentation": 0,
+  "new_backward_in_presentation": 0
+}
