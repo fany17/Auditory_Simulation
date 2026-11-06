@@ -6,6 +6,8 @@
 
 D27 Sea-Wave已见被试强对照的[实际源与工程已通过协调审阅](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_ENGINEERING_REVIEW.md)，生效为input_v04 / PROTOCOL_V04。49个VAL被试全部见于TRAIN，包含3个initial和147个personal FT；D26完整计算结束、原精确进程退出且GPU空闲后直接按冻结矩阵接续，无需再次许可。D27尚未正式训练，不抢D26两卡、不重开旧测试。initial群体行未做global FT，不能冒称完整S2对照。
 
+2026-11-07补齐[D28同协议raw EEG线性时滞对照](../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/COORDINATOR_DECISION.md)：已下达G全TRAIN共享＋I个人ridge、稠密0..32 lag及固定9alpha。独立科学审阅和实际元数据几何核验完成，执行端准备代码/限定CPU工程，具体源核验后可在空闲CPU完成全部450套系数解；无需等D26 GPU释放，也不能改变D26/D27。旧10人TRF报告不是当前49人评分的直接基线；本项是已知方法对照，不作为原创贡献。
+
 # 历史入口：D25 固定权重来源诊断已封存
 
 ## 当前执行入口
