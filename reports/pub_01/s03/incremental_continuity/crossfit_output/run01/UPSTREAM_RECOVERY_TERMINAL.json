@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "jobs": {
+    "seed1024_fold0": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue",
+      "seed": 1024,
+      "fold": 0,
+      "pid": 1346595,
+      "completed_sha256": "b86787023eac0ae052fcdc6fd838eca31494aeb73d13ce23a1312383f45c74fd",
+      "worker_returncode": 0,
+      "wall_seconds": 2201.6711136242375,
+      "CPU_seconds": 2358.276864271
+    },
+    "seed2026_fold0": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue",
+      "seed": 2026,
+      "fold": 0,
+      "pid": 1346596,
+      "completed_sha256": "396bd02ff5592884571c2aa2567037fa280a5f909b0d9d645ae25ac91180dd01",
+      "worker_returncode": 0,
+      "wall_seconds": 2361.3679513381794,
+      "CPU_seconds": 2531.233244291
+    },
+    "seed31415_fold0": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue",
+      "seed": 31415,
+      "fold": 0,
+      "pid": 1468703,
+      "completed_sha256": "a391960794ef498f3639499dce617892e1bcb206a6473e01eba5e5784df7e914",
+      "worker_returncode": 0,
+      "wall_seconds": 2179.498133758083,
+      "CPU_seconds": 2360.194505243
+    },
+    "seed1024_fold1": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/upstream_recovery_v01",
+      "seed": 1024,
+      "fold": 1,
+      "pid": 1504929,
+      "completed_sha256": "ecdfd6f930864724b141abde29390cb7330f670ad2d0055af337eac9868d411d",
+      "worker_returncode": 0,
+      "wall_seconds": 2046.7435368997976,
+      "CPU_seconds": 2222.037186749
+    },
+    "seed2026_fold1": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue",
+      "seed": 2026,
+      "fold": 1,
+      "pid": 1419021,
+      "completed_sha256": "838795260d308e4b2b928a97c03e97f3c9836f7a99f60318f4230c8bb05d2ca9",
+      "worker_returncode": 0,
+      "wall_seconds": 2257.474996299483,
+      "CPU_seconds": 2440.423035676
+    },
+    "seed31415_fold1": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue",
+      "seed": 31415,
+      "fold": 1,
+      "pid": 1379176,
+      "completed_sha256": "41dd5c1d3d22f4b01271624e3eb2641e648f0bcc22f78765936c8f93d3347317",
+      "worker_returncode": 0,
+      "wall_seconds": 2190.7307274946943,
+      "CPU_seconds": 2377.8222188229997
+    },
+    "seed1024_fold2": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/upstream_recovery_v01",
+      "seed": 1024,
+      "fold": 2,
+      "pid": 1472495,
+      "completed_sha256": "4e3a63958468876bd6b8e8b87c16cc2f5bb771b32edf0441808263abccae9afb",
+      "worker_returncode": 0,
+      "wall_seconds": 2084.80832073465,
+      "CPU_seconds": 2260.739173999
+    },
+    "seed2026_fold2": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/upstream_recovery_v01",
+      "seed": 2026,
+      "fold": 2,
+      "pid": 1426358,
+      "completed_sha256": "2cc65f76560e995a78f2ac9fb0d84a716c4ea0f0e76b6d1703a28210d8ee60e6",
+      "worker_returncode": 0,
+      "wall_seconds": 2266.912308254279,
+      "CPU_seconds": 2453.2823432590003
+    },
+    "seed31415_fold2": {
+      "queue": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue",
+      "seed": 31415,
+      "fold": 2,
+      "pid": 1381717,
+      "completed_sha256": "e96298722b969e0d6af8fee8fd1f8c5b1c79b8c1eec3f2d39addc6af628b2195",
+      "worker_returncode": 0,
+      "wall_seconds": 2191.1479348279536,
+      "CPU_seconds": 2368.753043792
+    }
+  },
+  "process": {
+    "pid": 1426341,
+    "uid": 1012,
+    "startticks": 789030241,
+    "cuda_visible_devices": null
+  },
+  "recovery_jobs": [
+    [
+      2026,
+      2
+    ],
+    [
+      1024,
+      2
+    ],
+    [
+      1024,
+      1
+    ]
+  ],
+  "original_queue_terminal": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue/TERMINAL.json",
+  "original_queue_terminal_sha256": "b42e053527cd696d61b1f8c3ef17f19ea13e096aec8d8de9da6d634283aa307e",
+  "original_queue_passed": false,
+  "frozen_upstream_gate_sha256": "0ad69424fb76f827b268b63f7d45cbd954ae514c7f687d13a870e66e52322482",
+  "recovery_source_sha256": "ff10edf3d8b7b347edd7823efc05e04d4bacec2ac9e117822655c5e31414e3ff",
+  "automatic_retry": false
+}
