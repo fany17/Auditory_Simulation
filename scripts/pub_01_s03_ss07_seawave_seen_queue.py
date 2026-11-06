@@ -9,7 +9,7 @@ from pathlib import Path
 
 import pub_01_s03_ss07_seawave_seen_data as data
 
-GATE=data.ROOT/"PROTOCOL.json"
+GATE=data.ROOT/"PROTOCOL_V04.json"
 REVIEW=data.ROOT/"COORDINATOR_EXECUTION_REVIEW.json"
 FORMAL=data.ROOT/"formal"
 GPU=("GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9","GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba")
@@ -87,6 +87,18 @@ def launch(attempt,item,slot,resume):
     return child,started
 
 
+def eligible(job):
+    stage,seed,person=job
+    return stage=="initial" or (folder(("initial",seed,None))/"COMPLETED.json").is_file()
+
+
+def publish(path,value):
+    if path.exists():
+        data.check(data.read(path)==value,"Same previously published score")
+    else:
+        data.write(path,value)
+
+
 def schedule(attempt,jobs,resume):
     jobs=[job for job in jobs if not (folder(job)/"COMPLETED.json").exists()]
     active={}
@@ -94,7 +106,10 @@ def schedule(attempt,jobs,resume):
     while jobs or active:
         for slot in range(2):
             if jobs and slot not in active and error is None:
-                item=jobs.pop(0)
+                index=next((i for i,job in enumerate(jobs) if eligible(job)),None)
+                if index is None:
+                    continue
+                item=jobs.pop(index)
                 try:
                     child,started=launch(attempt,item,slot,resume)
                     active[slot]=item,child,started
@@ -102,6 +117,7 @@ def schedule(attempt,jobs,resume):
                     error=f"Launch {name(item)}: {ex}"
         if error and not active:
             break
+        data.check(active or not jobs,"Incomplete initial source for pending personal jobs")
         for slot,(item,child,started) in list(active.items()):
             code=child.poll()
             if code is None:
@@ -139,15 +155,17 @@ def finish():
         families=set(inv["train_source_families"])
         adapted["families"]={key:source.aggregate([b for b in blocks if
                  (b["source_family"] in families)==(key=="shared")]) for key in ("shared","unseen")}
-        published=base/"PERSONAL_SELECTED_VAL.json"
-        if published.exists():
-            data.check(data.read(published)==adapted,"Same previously published score")
-        else:
-            data.write(published,adapted)
+        publish(base/"PERSONAL_SELECTED_VAL.json",adapted)
         rows.append(dict(seed=seed,initial_no_globalFT_r=group["r"],personal_r=adapted["r"],
                          initial_updates=initial["actual_updates"],personal_updates=sum(r["actual_updates"] for r in check)))
-    data.write(FORMAL/"COMPLETED.json",dict(passed=True,results=rows,initial_fits=3,personal_fits=147,
-               protocol_sha256=data.digest(GATE),process=identity(os.getpid()),old_test_reads=0))
+    receipt=dict(passed=True,results=rows,initial_fits=3,personal_fits=147,
+                 protocol_sha256=data.digest(GATE),old_test_reads=0)
+    done=FORMAL/"COMPLETED.json"
+    if done.exists():
+        original=data.read(done)
+        data.check(all(original[k]==v for k,v in receipt.items()),"Same completed matrix on repeat aggregate")
+    else:
+        publish(done,dict(**receipt,process=identity(os.getpid())))
 
 
 def run(resume):
@@ -172,8 +190,9 @@ def run(resume):
     data.write(attempt/"PROCESS.json",dict(**identity(os.getpid()),**exited))
     subjects=data.read(data.ROOT/"INVENTORY.json")["subjects"]
     try:
-        schedule(attempt,[("initial",seed,None) for seed in data.SEEDS],resume)
-        schedule(attempt,[("personal",seed,person) for seed in data.SEEDS for person in subjects],resume)
+        tasks=[("initial",seed,None) for seed in data.SEEDS]
+        tasks.extend(("personal",seed,person) for seed in data.SEEDS for person in subjects)
+        schedule(attempt,tasks,resume)
         finish()
     except BaseException as error:
         data.write(attempt/"FAILURE.json",dict(message=str(error),process=identity(os.getpid()),

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "queue_sha256": "461c824ebff77a54eb8baf87c7fd9e5f94ed6eec9f021551bf70ce160c905d4a",
+  "five_sources_AST_and_global_names": true,
+  "synthetic_events": [
+    [
+      "start",
+      "initial_31415"
+    ],
+    [
+      "start",
+      "personal_1024_synthetic-seen"
+    ],
+    [
+      "exit",
+      "personal_1024_synthetic-seen"
+    ],
+    [
+      "exit",
+      "initial_31415"
+    ],
+    [
+      "start",
+      "personal_31415_synthetic-seen"
+    ],
+    [
+      "exit",
+      "personal_31415_synthetic-seen"
+    ]
+  ],
+  "existing_summary_unchanged": true,
+  "conflicting_summary_rejected": true,
+  "CUDA": 0,
+  "new_models": 0,
+  "new_neural_forwards": 0,
+  "new_optimization_updates": 0,
+  "method": "Mocked child process and toy receipts on SATA, no true worker launch."
+}

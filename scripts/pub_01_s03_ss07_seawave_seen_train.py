@@ -17,7 +17,7 @@ import pub_01_s03_ss07_seawave_seen_data as data
 import pub_01_s03_ss07_seawave_seen_model as source
 
 GIB=1024**3
-GATE=data.ROOT/"PROTOCOL.json"
+GATE=data.ROOT/"PROTOCOL_V04.json"
 INVENTORY=data.ROOT/"INVENTORY.json"
 FORMAL=data.ROOT/"formal"
 WORKER_START=time.monotonic()
@@ -56,8 +56,9 @@ def guard(device):
 def pinned_sources():
     paths=set(Path(__file__).parent.glob("pub_01_s03_ss07_seawave_seen_*.py"))
     paths.update(source.AUTHOR/name for name in source.AUTHOR_HASHES)
-    paths.update([data.ROOT/"PLAN.md",data.ROOT/"COORDINATOR_DECISION.md",data.MASK,
-                  data.ROOT/"GEOMETRY_RECEIPT.json",data.ROOT/"BUDGET.json",data.ROOT/"ENGINEERING.json"])
+    paths.update([data.ROOT/"PLAN_V04.md",data.ROOT/"COORDINATOR_DECISION.md",data.MASK,
+                  data.ROOT/"GEOMETRY_RECEIPT.json",data.ROOT/"BUDGET.json",data.ROOT/"ENGINEERING.json",
+                  data.ROOT/"QUEUE_ENGINEERING_V04.json"])
     return {str(p.resolve()):data.digest(p) for p in sorted(paths)}
 
 
@@ -266,7 +267,11 @@ def fit(stage,seed,subject,resume):
         guard(device)
     for name,value in (("SELECTED.pt",state["best"]),("FINAL.pt",clone(net))):
         path=folder/name
-        if not path.exists():
+        if path.exists():
+            prior=torch.load(path,map_location="cpu",weights_only=True)
+            data.check(prior.keys()==value.keys() and all(torch.equal(prior[k],v) for k,v in value.items()),
+                       "Existing final weight evidence must match committed state")
+        else:
             atomic_torch(path,value)
     immutable(folder/"SELECTED_VAL.json",state["best_metrics"])
     immutable(folder/"COMPLETED.json",dict(
@@ -293,7 +298,9 @@ if __name__=="__main__":
         fit(args.stage,args.seed,args.subject,args.resume)
     except BaseException as error:
         data.write(data.ROOT/f"FAILURE_{args.stage}_{args.seed}_{os.getpid()}.json",
-                   dict(message=str(error),process=identity(),traceback=traceback.format_exc()))
+                   dict(message=str(error),process=identity(),traceback=traceback.format_exc(),
+                        uncommitted_training_updates=None,checkpoint_interval_updates=2048,
+                        note="Actual uncommitted attempts are unknown. At most 2048 completed updates can be between two committed boundaries."))
         raise
     finally:
         print(json.dumps(dict(event="worker_timing",process=identity(),
