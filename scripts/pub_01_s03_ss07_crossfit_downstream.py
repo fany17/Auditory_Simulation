@@ -3,9 +3,11 @@ import argparse
 import os
 import resource
 import sys
+import time
 import traceback
 from collections import defaultdict
 from dataclasses import dataclass
+from hashlib import sha256
 from pathlib import Path
 
 from pub_01_s03_ss07_crossfit_meta import D19, ROOT, SATA, SEEDS, digest, read
@@ -82,6 +84,45 @@ def tables(core):
             return self.history(indices, role, lag)
 
     return ScalarTable
+
+
+def payload_pin(path):
+    before = path.stat()
+    digestor = sha256()
+    with path.open("rb") as stream:
+        for data in iter(lambda: stream.read(4*1024**2), b""):
+            digestor.update(data)
+    after = path.stat()
+    if (before.st_size, before.st_mtime_ns) != (after.st_size, after.st_mtime_ns):
+        raise RuntimeError(f"Payload changed while hashing: {path}")
+    return dict(bytes=after.st_size, mtime_ns=after.st_mtime_ns, sha256=digestor.hexdigest())
+
+
+def historical_inputs(meta, d20):
+    wall, cpu = time.monotonic(), time.process_time()
+    d19 = read(D19/"PROTOCOL.json")
+    d20.require(d19["metadata_sha256"] == digest(D19/"PREPARATION_METADATA.json"), "D19 metadata")
+    pins = dict(meta["provenance"])
+    pins.update({str(D19/"input"/name): value for name, value in d19["source_sha256"].items()})
+    for run, name, key in ((D20, "recent_prediction_context", "d19_pins"),
+                           (D22, "output_query", "frozen_pins"),
+                           (D23, "memoryless_output", "frozen_pins")):
+        protocol = read(run/"PROTOCOL.json")
+        for path, sha in protocol[key].items():
+            d20.require(pins.setdefault(path, sha) == sha, "Contradictory historical pin")
+        pins[str(run/"input"/f"pub_01_s03_ss07_{name}.py")] = protocol["source_sha256"]
+    bytes_hashed = 0
+    for path, sha in pins.items():
+        result = payload_pin(Path(path))
+        d20.require(result["sha256"] == sha, f"Historical pin drift: {path}")
+        bytes_hashed += result["bytes"]
+    for path, expected in meta["inputs"].items():
+        stat = Path(path).stat()
+        d20.require((stat.st_size, stat.st_mtime_ns) == (expected["bytes"], expected["mtime_ns"]),
+                    f"D19 frozen input stat drift: {path}")
+    return dict(historical_sha256_pins=len(pins), D19_input_stats=len(meta["inputs"]),
+                historical_sha256_bytes=bytes_hashed, history_payload_scoring=0,
+                wall_seconds=time.monotonic()-wall, CPU_seconds=time.process_time()-cpu)
 
 
 def lane_data(meta, seed, lane, manifest, core, require):
@@ -196,6 +237,18 @@ def formal(meta, seed, core, legacy, d20, d22, d23, output, gate):
     _, _, _, _, fit_s, backend_s = d23.adapters(d20, d22, core, legacy)
     manifest = read(ROOT / "TRAIN_RECORD_ASSIGNMENT.json")["records"]
     receipt = legacy.Receipt(output, "fit", digest(gate))
+    frozen_gate = read(gate)
+    wall, cpu = time.monotonic(), time.process_time()
+    historical = historical_inputs(meta, d20)
+    required = {path: pin for path, pin in frozen_gate["upstream_payloads"].items()
+                if Path(path).parent.name.startswith(f"seed{seed}_") and path.endswith("_ANCHOR.npy")}
+    d20.require(len(required) == 6, "Exact lane prediction inputs")
+    for path, pin in required.items():
+        d20.require(payload_pin(Path(path)) == pin, f"Prediction identity drift: {path}")
+    d20.write(output/"VERIFIED_INPUTS.json", dict(prediction_files=len(required),
+              prediction_bytes=sum(pin["bytes"] for pin in required.values()),
+              historical=historical, wall_seconds=time.monotonic()-wall,
+              CPU_seconds=time.process_time()-cpu, new_scoring=0))
     guard = wire_guard(receipt, torch, d20.require)
     val = core.load_phase(meta, seed, "val", guard)
     anchor_val = core.evaluate(val, None, None, None, None, guard, receipt.count)["near"]
@@ -248,13 +301,16 @@ def freeze(meta, d20):
     sources = {upstream_gate, terminal, candidate_path, assignment, Path(__file__).resolve(),
                D19 / "PREPARATION_METADATA.json",
                D19 / "PROTOCOL.json", D20 / "PROTOCOL.json", D22 / "PROTOCOL.json", D23 / "PROTOCOL.json",
-               ROOT / "downstream_engineer/seed1024/COMPLETED.json"}
+               ROOT / "downstream_engineer/seed1024/COMPLETED.json",
+               ROOT / "DOWNSTREAM_INPUT_PREFLIGHT_V03.json"}
     module_paths = {Path(module.__file__).resolve() for module in list(sys.modules.values())
                     if getattr(module, "__file__", None)
                     and Path(module.__file__).name.startswith("pub_01_")}
     sources.update(module_paths)
     d20.require(read(ROOT / "downstream_engineer/seed1024/COMPLETED.json")["passed"], "Downstream canary")
-    coverage = {}
+    historical = historical_inputs(meta, d20)
+    coverage, payloads = {}, {}
+    payload_wall, payload_cpu = time.monotonic(), time.process_time()
     for job in candidate["jobs"]:
         seed, fold = job["seed"], job["model_fold"]
         folder = ROOT / f"formal/seed{seed}_fold{fold}"
@@ -287,6 +343,9 @@ def freeze(meta, d20):
             d20.require(sum(item["windows"] for item in row) == job[f"{lane}_output_windows"],
                         "Fold output windows")
             sources.add(path)
+        for name in ("IS_ANCHOR.npy", "OOF_ANCHOR.npy", "READOUT.npz", "FT.pt", "head.pt", "contrastive.pt"):
+            path = folder / name
+            payloads[str(path)] = payload_pin(path)
         coverage[f"{seed}:{fold}"] = dict(fit_records=len(ids),
             contrastive_actual_records=len(completed["contrastive"]["record_presentations"]),
             Ccap_fit_windows=frozen["Ccap"]["TRAIN_fit_windows"],
@@ -294,18 +353,28 @@ def freeze(meta, d20):
             total_peak_reserved=completed["total_peak_reserved"])
     d20.require(len(coverage) == 9 and len(meta["phases"]["val"]["records"]) == 49,
                 "Exact completed matrix")
-    d20.write(ROOT / "DOWNSTREAM_FORMAL_GATE.json",
-              dict(passed=True, upstream=coverage,
-                   sources={str(path): digest(path) for path in sorted(sources)}))
+    d20.require(len(payloads) == 54, "Exact upstream payload inventory")
+    d20.write(ROOT / "DOWNSTREAM_FORMAL_GATE_V03.json",
+              dict(passed=True, upstream=coverage, upstream_payloads=payloads,
+                   sources={str(path): digest(path) for path in sorted(sources)},
+                   historical=historical,
+                   payload_verification=dict(bytes=sum(p["bytes"] for p in payloads.values()),
+                       wall_seconds=time.monotonic()-payload_wall,
+                       CPU_seconds=time.process_time()-payload_cpu, new_scoring=0)))
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", type=int, choices=SEEDS)
-    parser.add_argument("--stage", choices=("engineer", "freeze", "formal"), required=True)
+    parser.add_argument("--stage", choices=("engineer", "preflight", "freeze", "formal"), required=True)
     args = parser.parse_args()
     core, legacy, d20, d22, d23 = get_modules()
     meta = read(D19 / "PREPARATION_METADATA.json")
+    if args.stage == "preflight":
+        result = historical_inputs(meta, d20)
+        d20.write(ROOT/"DOWNSTREAM_INPUT_PREFLIGHT_V03.json", result)
+        print(result)
+        return
     if args.stage == "freeze":
         freeze(meta, d20)
         return
@@ -318,7 +387,7 @@ def main():
     torch.use_deterministic_algorithms(True)
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.cuda.reset_peak_memory_stats()
-    gate = ROOT / "DOWNSTREAM_FORMAL_GATE.json"
+    gate = ROOT / "DOWNSTREAM_FORMAL_GATE_V03.json"
     if args.stage == "formal":
         pins = read(gate)
         d20.require(pins["passed"] and all(digest(Path(p)) == h for p, h in pins["sources"].items()),
