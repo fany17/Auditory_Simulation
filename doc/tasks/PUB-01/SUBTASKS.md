@@ -2,7 +2,9 @@
 
 唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
 
-2026-11-06 SS07 最新验收记录。D22 输出端非线性 B 完成三 seed，均在第 0 轮高于 D20，末轮均低于锚点。完整轨迹、前缀分解、逐人、独立终验与归档已交付。候选为 PASS_WITH_LIMITATION，SS07 仍为 ACTIVE。[D22 结果](../../../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md)
+2026-11-06 SS07 最新验收记录。D23 无历史非线性 S 三组完成。B 的各自最佳三 seed 均高于 S，S 的全部训练轮次高于锚点，且末轮均高于 B。完整轨迹、前缀分解、逐人、独立终验与归档已交付。候选为 PASS_WITH_LIMITATION，SS07 仍为 ACTIVE。[D23 结果](../../../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md)
+
+同日 D22 输出端非线性 B 完成三 seed，均在第 0 轮高于 D20，末轮均低于锚点。[D22 结果](../../../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md)
 
 同日 D21 输出端仿射 A / FIR F 共 18 个精确岭解完成。F 在三 seed 超过锚点和 A，仍低于 D20。[D21 结果](../../../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md)
 

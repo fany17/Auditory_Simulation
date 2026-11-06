@@ -1,4 +1,8 @@
-# 当前入口：D22 输出端非线性对照已完成
+# 当前入口：D23 无历史非线性对照已完成
+
+2026-11-06。D23 S 的两分支只用当前冻结预测，三 seed 各 20 pass 完成。S 的全部 60 个训练轮次高于锚点，选中均值 0.183899636。D22 B 的各自最佳在三 seed 高于 S，平均 +0.000681269；S 在 52/60 个同轮和三个末轮高于 B。B 的峰值差来自纯活动块，S/B 的输入维数和初始化仍限制历史机制解释。完整轨迹和独立审阅已归档，SS07 总体目标仍 ACTIVE。[D23 报告](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/ARCHIVE.md)
+
+# 历史入口：D22 输出端非线性对照已完成
 
 2026-11-06。D22 B 只接收当前冻结预测标量及 D20 同一紧邻预测历史。三 seed 各 20 pass，均选 epoch 0，开发 r 均值 0.184580904，较锚点 +0.002240965、较 D20 +0.000490394，三 seed 同向。约 86% 的 B−D20 均值差来自纯活动块。三组末轮均低于锚点，选中活动 MSE 高于锚点和 D20。D18 P 开发均值略低，逐 seed 仅 31415 高于 D18 P。独立复核和完整归档已交付。SS07 科研目标仍 ACTIVE。[D22 报告](../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/output_query/run01/ARCHIVE.md)
 

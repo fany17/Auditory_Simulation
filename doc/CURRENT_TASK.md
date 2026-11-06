@@ -1,4 +1,8 @@
-# 当前入口：D22 输出端非线性竞争对照已封存
+# 当前入口：D23 无历史非线性竞争对照已封存
+
+2026-11-06。S 只用当前冻结预测，两分支同值，实际 3,361 参数。三 seed 各 20 pass，86,820 更新，全部 60 个训练轮次高于锚点，S 选中开发均值 0.183899636。B 在三个 seed 的各自最佳均更高，平均 +0.000681269；S 在 52/60 个同轮及三个末轮均高于 B。B−S 的优势来自纯活动块，S 的活动 MSE 仍高于锚点。独立保存、固定实际点重放、科学汇总和归档通过。总体科研目标仍 ACTIVE。[D23 结果](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/ARCHIVE.md)
+
+# 历史入口：D22 输出端非线性竞争对照已封存
 
 2026-11-06。B 保留 D20 近预测历史，只将当前 8 维 latent 换为冻结预测标量。3×20 pass 完成 86,820 更新。三 seed 均选 epoch 0，开发 r 均值 0.184580904，较原锚点 +0.002240965、较 D20 +0.000490394。B 三组末轮均低于锚点，选中活动 MSE 高于锚点及 D20。固定近远替换平均差 +0.005032002，含分布变化。纯活动块解释 B 相对 D20 的大部分差值。独立保存审计、有界功能重放与科学汇总通过。总体科研目标仍 ACTIVE。[D22 结果](../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/output_query/run01/ARCHIVE.md)
 

@@ -245,3 +245,9 @@ D20 只改变 D19 P 的预测历史 lag288→1。3 fit ×20 pass，86,820 更新
 B 仅使用当前冻结预测标量和 D20 同一紧邻预测历史，9,441 参数。三 seed 各 20 pass、86,820 更新、1,422,210,600 个训练反传点全部完成。正式选点均为 epoch 0，平均开发 r 0.184580904，较原锚点 +0.002240965、较 D20 +0.000490394，三个 seed 同向。固定当前和模型的近远差 +0.005032002，含分布变化；约 86% 的 B−D20 平均差来自纯活动块。末轮均低于锚点，选中活动 MSE 高于锚点和 D20。B 高于 D18 P 的开发均值，逐 seed 只有 31415 更高，该比较跨协议。
 
 保存审计、真实权重有界重放及保存指标独立复算通过。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。完整两图、逐轮、逐人、前缀分解与静态报告已交付。SS07 总体科研目标仍 ACTIVE。[D22 报告](../../../../../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/output_query/run01/ARCHIVE.md)
+
+### 2026-11-06 D23 Completion Record
+
+S 两分支均仅输入当前冻结预测，3,361 参数，三 seed 各 20 pass、86,820 更新和 1,422,210,600 个反传点全部完成。S 全部 60 个训练轮次高于锚点，选中开发均值 0.183899636，较锚点 +0.001559696。B 的选中最佳三个 seed 均高，平均 +0.000681269，差来自纯活动；S 在 52/60 个同轮及三个末轮高于 B。重复评估槽输入和指标完全相同，仅计成本。S 与 B 的不同维度与初始化限制历史效应解释。
+
+保存审计、固定实际权重重放与科学标量复算通过。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。完整两图、逐轮、逐人、前缀分解和静态中文报告归档。SS07 总体目标继续 ACTIVE。[D23 报告](../../../../../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/ARCHIVE.md)
