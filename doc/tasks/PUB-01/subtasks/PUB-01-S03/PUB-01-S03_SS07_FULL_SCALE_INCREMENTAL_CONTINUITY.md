@@ -229,3 +229,9 @@ D17封存后的有限实现审计已交：reports/pub_01/s03/incremental_continu
 唯一物理时间轴连续残差三角色×三 seed×20 轮完整完成，260,460 更新和 4,266,631,800 个活动目标呈现。正式 PID 1237393 正常到达终态。九组均选回冻结 FT+Ccap，三 seed 平均 r 0.182339940。180 个实际训练轮次的开发 VAL r 均低于各自锚点，C/H/P 最佳已训练平均差 −0.027964/−0.003651/−0.000290。固定 TRAIN 活动 MSE 均降低。H 所有 seed 低于 P 与锚点，拟合态 selected 历史配对缺失，预设历史收益门未通过。
 
 协调独立核验九组保存结果，实际末轮有限重放原实现和 NumPy 各 2,304 物理点，预测最大差 6.184×10⁻⁷。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。完整中文四图、逐轮/逐人标量与静态 HTML 已交付，归档 ID `20261106_pub01_s03_ss07_physical_stream`。SS07 保持 ACTIVE，总体科研目标未达。无额外候选、旧外部评分或患者侧动作。[D19 结果](../../../../../reports/pub_01/s03/incremental_continuity/physical_stream/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/physical_stream/run01/ARCHIVE.md)
+
+### 2026-11-06 DECAF 审计与 D20 Completion Record
+
+锁定作者源码 commit f4c5dbe。普通推理重解过去 EEG，未反馈上一最终融合输出。论文所述 500 ms 延时在已查 loader 没有单独实现证据，普通与 Oracle 论文图表引用不同历史运行目录。49 份公开源码文本经 blob 核对，无作者代码执行和数据/权重下载。[协议链审计](../../../../../reports/pub_01/s03/incremental_continuity/metadata_review/code_review/decaf_protocol_20261106/REPORT.md)
+
+D20 只改变 D19 P 的预测历史 lag288→1。3 fit ×20 pass，86,820 更新，1,422,210,600 个 backward 目标点。三 seed 选择 epoch 0/1/0，开发均值 0.184090511，较冻结锚点 +0.001750571，较 D19 P 最佳已训练 +0.002040659。固定模型近−远 +0.005924620，包含输入分布变化，紧邻历史原始支持和当前重叠。末轮均低于锚点，均值仍低于 D18 P/C/H。独立保存、功能重放和全文目视通过。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。归档 ID `20261106_pub01_s03_ss07_recent_prediction_context`。总体目标仍 ACTIVE。[D20 结果](../../../../../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/ARCHIVE.md)

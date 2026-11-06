@@ -1,4 +1,8 @@
-# 当前入口：D19 连续残差候选已封存
+# 当前入口：D20 lag 单因素开发验证已封存
+
+2026-11-06。保留 D19 P 的模型、物理 MSE、数据与掩码，仅将冻结预测历史从 lag288 移到 lag1。三 seed 各 20 pass 完整完成，86,820 更新。三组的开发选点在 epoch 0/1/0，均值 r 0.184090511，较原锚点 +0.001750571，较 D19 P 最佳已训练 +0.002040659。固定模型换回 lag288 平均下降 0.005924620，含分布变化。三组末轮均低于锚点，D20 均值仍低于 D18 P。独立保存与有限功能重放及全文图审阅通过。SS07 总体科研目标继续 ACTIVE。[D20 结果](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/ARCHIVE.md)
+
+# 历史入口：D19 连续残差候选已封存
 
 2026-11-06，D19 三角色×三 seed×20 轮完成，共 260,460 更新和 4,266,631,800 个训练目标点。九组正式 selected 均回退到冻结 FT+Ccap，三 seed 平均 r 0.182339940。180 个实际训练轮次均低于同 seed 锚点。C/H/P 的最佳已训练 VAL r 平均差为 −0.027964/−0.003651/−0.000290，固定 TRAIN 活动 MSE 则均改善。正式历史收益门未过，拟合态 selected near/older 缺失。
 

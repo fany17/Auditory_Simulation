@@ -1,4 +1,8 @@
-# 当前入口：D19 完整检验与归档已完成
+# 当前入口：D20 紧邻预测历史已完成
+
+2026-11-06。D20 只将 D19 P 的历史 lag 从 288 点改为 1 点。三组各 20 pass、86,820 更新已完成，选择 epoch 0/1/0。开发 VAL r 均值 0.184090511，高于冻结 FT+Ccap 0.001750571，高于 D19 P 最佳已训练均值 0.002040659，低于 D18 P 的 0.184379162。末轮均低于锚点。固定模型的近远替换均下降，原始支持重叠和分布变化仍限制解释。独立复核通过，报告已归档。SS07 总体目标仍 ACTIVE。[D20 报告](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md) · [D20 归档](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/ARCHIVE.md) · [DECAF 公开实现审计](../reports/pub_01/s03/incremental_continuity/metadata_review/code_review/decaf_protocol_20261106/REPORT.md)
+
+# 历史入口：D19 完整检验与归档已完成
 
 2026-11-06，PUB-01-S03_SS07。D18 的 12 个正式 fit、科学审阅和归档均完成。H 对匹配当前 C 的开发 VAL r 三 seed 平均差为 −0.000004008，H 三个 seed 都低于 P。[D18 报告](../reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/REPORT.md)
 
