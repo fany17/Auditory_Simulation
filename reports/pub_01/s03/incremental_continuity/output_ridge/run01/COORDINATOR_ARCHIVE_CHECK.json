@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "archive_path": "E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261106_pub01_s03_ss07_output_ridge",
+  "HTML_sha256": "fa7e649f809b148718e3a40207fb9e8692cd288a29e5b35ca7ee6bbfb6b3739c",
+  "manifest_count": 16,
+  "source_copies_verified": 25,
+  "local_HTML_links_verified": 33,
+  "artifacts": [
+    {
+      "name": "COORDINATOR_DECISION.md",
+      "sha256": "da6623a8cfe2ae89c6fda4e26e3260ed5967b3c73320fe6347d2752aaea777db"
+    },
+    {
+      "name": "PLAN.md",
+      "sha256": "5e69f4c4d8473b435d52cd6e4655fc83f5c5548f6bddca8f10fef791bb2a9ee8"
+    },
+    {
+      "name": "REPORT.md",
+      "sha256": "0f901717db7d5acea9b7ae9d0d320602efdda1766100885469a102d63dc34fc1"
+    },
+    {
+      "name": "REVIEW.md",
+      "sha256": "6719cd6b1774e99c7d7496570b02e6b9ad124f3d809ba50c52c50c4c9d84a638"
+    },
+    {
+      "name": "FIR_COEFFICIENTS_AND_KERNEL.png",
+      "sha256": "eb4d78c4b9d06e778b5cc92db3a6a29cfcb9d6030077af7002f8873df12b0af6"
+    },
+    {
+      "name": "VAL_GRID.png",
+      "sha256": "db7df737185c9cd1b62d18fe641bcb2584fbb2e1bb4051b858481583d9c86454"
+    },
+    {
+      "name": "GRID.csv",
+      "sha256": "26f24d88da2a285586ca38e58897e1e64ab0477dc23bfc4403d9ae2eda157725"
+    },
+    {
+      "name": "PEOPLE.csv",
+      "sha256": "120fdbc996a406801fad34fa7df07aa3095e62d2b69f9357db70903420200625"
+    },
+    {
+      "name": "SELECTED.csv",
+      "sha256": "10fc2acd9b75077d35e452240238a61178124be7ed2960354a1369006a46286d"
+    },
+    {
+      "name": "ARRAYS_AND_PREFIX.json",
+      "sha256": "019bafc6b53c7ab6888aa8115660467a6389451a11ae7d7d2cd051e2d14a297f"
+    },
+    {
+      "name": "COMPLETED.json",
+      "sha256": "df9e89f69c99605abe6443fde45f910705441e9bab666b7f99a18734299ca02c"
+    },
+    {
+      "name": "COORDINATOR_SCIENTIFIC_REVIEW.json",
+      "sha256": "4570a6a4ea964ba6716495082abcd7190088fa615b3547f2370e4347c778d6d8"
+    },
+    {
+      "name": "COORDINATOR_TERMINAL_AUDIT.json",
+      "sha256": "d7c4c5f1d0d22cd8f489499ede9b28acd77b790c85d4b1b657581930399f8885"
+    },
+    {
+      "name": "ENGINEERING_COMPLETED.json",
+      "sha256": "94ec9cf61480a85494d1c687cfe101c606932113bd0be44c186aa4473d5bd660"
+    },
+    {
+      "name": "EXECUTION_REVIEW.json",
+      "sha256": "12eb7ce7e34c5891a987da271a8101795815cff52827329a1b5c8f65797f1358"
+    },
+    {
+      "name": "PROTOCOL.json",
+      "sha256": "c5c6ab5ced4b8811a3fdfa96fd6c786ed53e182e71d7c82e7098a1b825fcff0c"
+    }
+  ],
+  "review_scope": "Root read final Chinese REPORT/REVIEW and viewed both actual PNGs; independently verified static artifact hashes, source copies and local HTML links. Browser rendering not performed.",
+  "goal_complete": false
+}
