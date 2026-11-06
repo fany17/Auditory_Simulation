@@ -1,4 +1,8 @@
-# 当前入口：D21 输出端仿射与 FIR 对照已完成
+# 当前入口：D22 输出端非线性对照已完成
+
+2026-11-06。D22 B 只接收当前冻结预测标量及 D20 同一紧邻预测历史。三 seed 各 20 pass，均选 epoch 0，开发 r 均值 0.184580904，较锚点 +0.002240965、较 D20 +0.000490394，三 seed 同向。约 86% 的 B−D20 均值差来自纯活动块。三组末轮均低于锚点，选中活动 MSE 高于锚点和 D20。D18 P 开发均值略低，逐 seed 仅 31415 高于 D18 P。独立复核和完整归档已交付。SS07 科研目标仍 ACTIVE。[D22 报告](../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/output_query/run01/ARCHIVE.md)
+
+# 历史入口：D21 输出端仿射与 FIR 对照已完成
 
 2026-11-06。D21 的 18 个精确岭解全部完成，未运行原 EEG encoder 或任何新 NN。仿射 A 与 FIR F 三 seed 均选 λ=0.0001，均值 0.182570113 / 0.182905028，F 三 seed 均低于 D20，均差 −0.001185483。A 的小幅 r 增益位于锚点前缀衔接块。独立终验、两张实际系数与成绩图及完整网格已交付，SS07 总体目标仍 ACTIVE。[D21 报告](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md) · [D21 归档](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/ARCHIVE.md)
 

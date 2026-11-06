@@ -239,3 +239,9 @@ D20 只改变 D19 P 的预测历史 lag288→1。3 fit ×20 pass，86,820 更新
 ### 2026-11-06 D21 Completion Record
 
 原 D20 物理轴与数据端点上完成 A/F 各三 λ ×三 seed，共 18 精确解、71,110,530 TRAIN Gram 点、51,602,382 VAL 候选点评估、0 新 NN。A/F 三 seed 均选 λ=0.0001，均值 0.182570113/0.182905028，F 对锚点 +0.000565088、对 D20 −0.001185483。A 的 r 增益集中于混合原锚点前缀块。A/F 的活动 VAL MSE 均升高；当前对照不足以识别 D20 各组件。独立审阅和固定点重放通过，完整网格、逐人、实际核图和中文报告已归档。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。SS07 总体目标仍 ACTIVE。[D21 报告](../../../../../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/output_ridge/run01/ARCHIVE.md)
+
+### 2026-11-06 D22 Completion Record
+
+B 仅使用当前冻结预测标量和 D20 同一紧邻预测历史，9,441 参数。三 seed 各 20 pass、86,820 更新、1,422,210,600 个训练反传点全部完成。正式选点均为 epoch 0，平均开发 r 0.184580904，较原锚点 +0.002240965、较 D20 +0.000490394，三个 seed 同向。固定当前和模型的近远差 +0.005032002，含分布变化；约 86% 的 B−D20 平均差来自纯活动块。末轮均低于锚点，选中活动 MSE 高于锚点和 D20。B 高于 D18 P 的开发均值，逐 seed 只有 31415 更高，该比较跨协议。
+
+保存审计、真实权重有界重放及保存指标独立复算通过。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。完整两图、逐轮、逐人、前缀分解与静态报告已交付。SS07 总体科研目标仍 ACTIVE。[D22 报告](../../../../../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/output_query/run01/ARCHIVE.md)

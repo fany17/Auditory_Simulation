@@ -1,4 +1,8 @@
-# 当前入口：D21 输出端线性竞争对照已封存
+# 当前入口：D22 输出端非线性竞争对照已封存
+
+2026-11-06。B 保留 D20 近预测历史，只将当前 8 维 latent 换为冻结预测标量。3×20 pass 完成 86,820 更新。三 seed 均选 epoch 0，开发 r 均值 0.184580904，较原锚点 +0.002240965、较 D20 +0.000490394。B 三组末轮均低于锚点，选中活动 MSE 高于锚点及 D20。固定近远替换平均差 +0.005032002，含分布变化。纯活动块解释 B 相对 D20 的大部分差值。独立保存审计、有界功能重放与科学汇总通过。总体科研目标仍 ACTIVE。[D22 结果](../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/output_query/run01/ARCHIVE.md)
+
+# 历史入口：D21 输出端线性竞争对照已封存
 
 2026-11-06。冻结 D20 的输出支持、物理 MSE、TRAIN/VAL、掩码及 752 块评分，完成当前输出仿射 A 和含严格过去 96 箱的 FIR F，共 18 个精确岭解。三 seed 选 λ=0.0001，A/F 均值 0.182570113/0.182905028，F 对锚点 +0.000565088、对 D20 −0.001185483。A 的 r 增益集中于前缀块，A/F 的活动 VAL MSE 均高于锚点。完整 λ、逐人及等效物理核已交付，独立终验通过。SS07 总体目标保持 ACTIVE。[D21 结果](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/ARCHIVE.md)
 
