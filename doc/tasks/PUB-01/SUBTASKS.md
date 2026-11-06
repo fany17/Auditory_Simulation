@@ -1,5 +1,7 @@
 # PUB-01 Subtask Registry
 
+2026-11-06 当前执行为 SS07 的 D24。三折和上游工程已经独立验证。三 seed × 三折完整上游已在 2203 启动，随后使用同一原 VAL49 锚点评估 IS/OOF 各两臂。SS07 继续 ACTIVE。[D24 决定](../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_DECISION.md)
+
 唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
 
 2026-11-06 SS07 最新验收记录。D23 无历史非线性 S 三组完成。B 的各自最佳三 seed 均高于 S，S 的全部训练轮次高于锚点，且末轮均高于 B。完整轨迹、前缀分解、逐人、独立终验与归档已交付。候选为 PASS_WITH_LIMITATION，SS07 仍为 ACTIVE。[D23 结果](../../../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md)

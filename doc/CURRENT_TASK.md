@@ -1,4 +1,8 @@
-# 当前入口：D23 无历史非线性竞争对照已封存
+# 当前入口：D24 三折端到端对照正在训练
+
+2026-11-06。当前唯一执行节点仍为 PUB-01-S03_SS07。来源核查已证实 D19/D20/D22/D23 的 TRAIN 预测来自上游同一批 426 条拟合记录。D24 对全部 426 条 TRAIN 按 37 个音频源族分 3 折，训练 3 seed × 3 折原始上游。每折重拟合全部统计和模型，按冻结轮次训练，原 VAL49 只用于随后 B_IS/S_IS/B_OOF/S_OOF 的开发评分。队列 PID 1346529 已在 server2203 的独立 SATA 根运行，两张 L40 各启动一条正式预训练，独立准入通过。下游 B/S 张量桥及反传工程通过，正式 12 fit 等待 9 条上游齐备。SS07 总体目标仍 ACTIVE。[来源核查](../reports/pub_01/s03/incremental_continuity/stacking_input_audit/run01/REPORT.md) · [D24 决定](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_DECISION.md) · [三折账本](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/FOLD_AND_BUDGET_CANDIDATE_V2.json)
+
+## D23 无历史非线性竞争对照已封存
 
 2026-11-06。S 只用当前冻结预测，两分支同值，实际 3,361 参数。三 seed 各 20 pass，86,820 更新，全部 60 个训练轮次高于锚点，S 选中开发均值 0.183899636。B 在三个 seed 的各自最佳均更高，平均 +0.000681269；S 在 52/60 个同轮及三个末轮均高于 B。B−S 的优势来自纯活动块，S 的活动 MSE 仍高于锚点。独立保存、固定实际点重放、科学汇总和归档通过。总体科研目标仍 ACTIVE。[D23 结果](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/ARCHIVE.md)
 

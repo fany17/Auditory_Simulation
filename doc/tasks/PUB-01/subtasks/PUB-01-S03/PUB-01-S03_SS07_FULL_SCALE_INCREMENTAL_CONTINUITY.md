@@ -255,3 +255,8 @@ S 两分支均仅输入当前冻结预测，3,361 参数，三 seed 各 20 pass�
 ### 2026-11-06 D23 后续来源核查
 
 D19/D20/D22/D23 的 FT+Ccap 缓存溯源复核通过。三个 seed 的后处理 TRAIN 输入均来自已在全部 426 条 TRAIN 记录拟合过的 FT+Ccap。49 条 VAL 与拟合集无记录交集，29 条与 TRAIN 共享音频源族。已查目录与协议未发现可用 OOF。原对比学习逐记录随机访问集合缺收据，来源核查只使用清单、源码、文件属性和已有标量。[短报告](../../../../../reports/pub_01/s03/incremental_continuity/stacking_input_audit/run01/REPORT.md)
+
+
+### 2026-11-06 D24 执行记录
+
+三折仅由 TRAIN source_family 与窗口数决定，144/138/144 条记录，84,439/84,290/83,725 窗。两种训练输入均将覆盖全部 426 条记录。正式队列在 server2203 SATA 根运行，PID 1346529，UID 1012，startticks 788549137。各 GPU 分别启动 seed1024/fold0 与 seed2026/fold0，已各完成原完整 556 批的首轮对比学习。工程 canary 与正式计算分开。下游 B/S 沿用原 16,384 batch、20 pass，等待全部折模型完成后再进入 12 fit。旧测试和患者侧不在范围。SS07 维持 ACTIVE。[协调决定](../../../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_DECISION.md)
