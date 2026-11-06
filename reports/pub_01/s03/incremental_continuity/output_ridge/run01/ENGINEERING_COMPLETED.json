@@ -1,0 +1,68 @@
+{
+  "stage": "engineer",
+  "protocol_sha256": "c5c6ab5ced4b8811a3fdfa96fd6c786ed53e182e71d7c82e7098a1b825fcff0c",
+  "process": {
+    "pid": 1301712,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_output_ridge.py",
+      "engineer"
+    ],
+    "linux_startticks": 788092336,
+    "start_unix": 1793953678.7739162,
+    "deadline_unix": 1793954278.7739162
+  },
+  "location": {
+    "seed": 31415,
+    "phase": "bounded_engineering"
+  },
+  "counters": {
+    "TRAIN_records": 6,
+    "TRAIN_cached_windows": 3447,
+    "TRAIN_Gram_points": 1536,
+    "VAL_records": 6,
+    "VAL_cached_windows": 3756,
+    "small_ridge_solves": 18,
+    "independent_lstsq_solves": 18
+  },
+  "CPU_seconds": 6.173454688,
+  "wall_seconds": 1.6420440431684256,
+  "new_NN_forwards": 0,
+  "new_optimizer_updates": 0,
+  "new_encoder_head_windows": 0,
+  "resources": {
+    "peak_RSS_bytes": 659836928,
+    "writer_free_bytes": 178103029760,
+    "writer_bytes": 27572
+  },
+  "passed": true,
+  "checks": [
+    {
+      "seed": 1024,
+      "explicit_feature_max_abs": 0.0,
+      "raw_Gram_max_abs": 3.552713678800501e-14,
+      "ridge_prediction_max_abs": 1.2776573721901191e-14,
+      "normal_abs": 1.0692943926138287e-17,
+      "anchor_block_max_abs": 0.0,
+      "anchor_blocks": 31
+    },
+    {
+      "seed": 2026,
+      "explicit_feature_max_abs": 0.0,
+      "raw_Gram_max_abs": 7.105427357601002e-14,
+      "ridge_prediction_max_abs": 1.0096883948086394e-14,
+      "normal_abs": 7.897920488656308e-18,
+      "anchor_block_max_abs": 0.0,
+      "anchor_blocks": 31
+    },
+    {
+      "seed": 31415,
+      "explicit_feature_max_abs": 0.0,
+      "raw_Gram_max_abs": 7.105427357601002e-14,
+      "ridge_prediction_max_abs": 1.633750704909066e-14,
+      "normal_abs": 1.5903890617646743e-17,
+      "anchor_block_max_abs": 0.0,
+      "anchor_blocks": 31
+    }
+  ]
+}
