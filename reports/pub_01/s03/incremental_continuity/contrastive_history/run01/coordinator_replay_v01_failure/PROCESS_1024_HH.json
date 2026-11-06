@@ -1,0 +1,16 @@
+{
+  "process": [
+    1817804,
+    1012,
+    791687597
+  ],
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "-B",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/coordinator_final_replay_v01/COORDINATOR_FINAL_REPLAY.py",
+    "--seed",
+    "1024",
+    "--arm",
+    "HH"
+  ]
+}

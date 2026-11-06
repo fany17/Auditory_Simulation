@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "source_sha256": "81734e974351a33a6c1d91c47379ce5efd5d1b75b847a0038a7cac47f9f53705",
+  "plan_sha256": "fcd4867ff5ce92e7ae04e3068d54c06010e05de49c2b06abd2a1b69a95e42155",
+  "unchanged_forward_and_score_functions": [
+    "prefix",
+    "memory_delta",
+    "correct",
+    "metrics"
+  ],
+  "original_threshold_unchanged": true,
+  "raw_failure_preserved_with_following_outputs": true,
+  "calibrated_failure_preserved": true,
+  "equality_and_zero_denominator_checked": true,
+  "nonfinite_and_negative_MSE_rejected": true,
+  "raw_signal_reads": 0,
+  "weight_reads": 0,
+  "new_fits": 0,
+  "model_forwards": 0,
+  "optimizer_updates": 0
+}
