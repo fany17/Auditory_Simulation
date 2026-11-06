@@ -22,6 +22,14 @@ assert chosen[0]["record"]!=chosen[1]["record"]
 subset=dict(metadata,phases=dict(metadata["phases"]))
 subset["phases"]["val"]=dict(metadata["phases"]["val"],records=chosen)
 counters={"producer_model_points":0,"independent_numpy_model_points":0,"frozen_readout_windows_independent":0,"frozen_readout_windows_producer":0,"raw_EEG_encoder_windows":0,"backward":0,"optimizer_updates":0}
+def failure_hook(kind,error,trace):
+ import traceback
+ failure={"passed":False,"error":repr(error),"source_sha256":sha(__file__),"counters_completed_operations":counters,
+          "failing_operation_cost_if_incomplete":"unknown","CPU_seconds":time.process_time()-cpu,"wall_seconds":time.time()-begin,
+          "peak_RSS_bytes":resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024}
+ with (ROOT/"COORDINATOR_FUNCTIONAL_REPLAY_FAILURE.json").open("x") as f:json.dump(failure,f,indent=2);f.write("\n")
+ traceback.print_exception(kind,error,trace)
+sys.excepthook=failure_hook
 def check(a,b,atol,rtol=0):
  a=np.asarray(a);b=np.asarray(b)
  assert a.shape==b.shape and np.isfinite(a).all() and np.isfinite(b).all()
@@ -110,9 +118,10 @@ for seed in meta.SEEDS:
     max_anchor=max(max_anchor,check(bp.numpy(),b[points],1e-8))
     max_inputs=max(max_inputs,check(xp.numpy(),xr,2e-6),check(vp.numpy(),vr,2e-6))
     with torch.no_grad():prod=model(xp,vp,bp).numpy()
+    counters["producer_model_points"]+=len(points)
     independent=numpy_model(xr,vr,b[points],state)
+    counters["independent_numpy_model_points"]+=len(points)
     max_output=max(max_output,check(prod,independent,2e-5,2e-5))
-    counters["producer_model_points"]+=len(points);counters["independent_numpy_model_points"]+=len(points)
    results.append({"seed":seed,"role":role,"checkpoint":label,"checkpoint_sha256":sha(path),"passed":True,"input_max_abs":max_inputs,"anchor_max_abs":max_anchor,"prediction_max_abs":max_output,"points":256})
  assert counters["producer_model_points"]<=4608 and counters["independent_numpy_model_points"]<=4608
  del table,records,reference

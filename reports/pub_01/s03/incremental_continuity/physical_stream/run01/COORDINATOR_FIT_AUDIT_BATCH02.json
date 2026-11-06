@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "source_sha256": "45339ae9a54e4aee4486cb8c7bca11738767724a5105679b232349ed41f1bebc",
+  "protocol_sha256": "133b60eeb6e937def9f25bdb8303ab80d9a2cf00d0f86ea3f6768c0f56a7b078",
+  "fits": [
+    {
+      "fit": "seed2026_H_past_eeg",
+      "seed": 2026,
+      "role": "H_past_eeg",
+      "passed": true,
+      "selected_epoch": -1,
+      "selected_r": 0.1817561196902157,
+      "last_VAL_r": 0.16318639504406476,
+      "last_TRAIN_r": 0.2594731276570956,
+      "initialization_sha256": "19abb564974955ff25236161c729ef4d785c94db193cef85f1a5807be83efe3c",
+      "result_sha256": "d515b41d33b72bb9b9fc53413c25ae53c96645f28ff24f57a18c97038ba705f8",
+      "last_checkpoint_sha256": "fac62a8e9b7b909357367ff040d77dcf7dcd6d657f61b5b239cf5a7a39878dc7",
+      "recovery_last_sha256": "d1a3913bad7a131f5b3b4dae9a20fa03e7d47fd414a2e018e3d983c5af6b2868",
+      "max_saved_aggregate_error": 1.1102230246251565e-16,
+      "first_batch_logs_checked": 20,
+      "checkpoint_files": 20,
+      "parameters": 52673
+    },
+    {
+      "fit": "seed2026_P_past_prediction",
+      "seed": 2026,
+      "role": "P_past_prediction",
+      "passed": true,
+      "selected_epoch": -1,
+      "selected_r": 0.1817561196902157,
+      "last_VAL_r": 0.17778320637132977,
+      "last_TRAIN_r": 0.24872293937907589,
+      "initialization_sha256": "dc21d5c8beec5cdfec3e97b4cdde13c16c63bad9d61737b118b99faffb550776",
+      "result_sha256": "fa897b8b2822e0882dd562dbe45040c007eee4f68131b38952341541b861291c",
+      "last_checkpoint_sha256": "5361e4d6408d520b29280e35e34a2463e8deb02379f5b8c623d66dfc121a5861",
+      "recovery_last_sha256": "a7276ed8237055c5d7e791eb9630337131bb4ce0b38b0bf519ff3927e760cacb",
+      "max_saved_aggregate_error": 1.1102230246251565e-16,
+      "first_batch_logs_checked": 20,
+      "checkpoint_files": 20,
+      "parameters": 9665
+    }
+  ],
+  "new_neural_forward": 0,
+  "new_backward": 0,
+  "new_optimizer_updates": 0,
+  "EEG_or_prediction_arrays_loaded": false,
+  "checkpoint_parameter_arrays_loaded_on_CPU": true,
+  "CPU_seconds": 1.157111873,
+  "wall_seconds": 1.0918357372283936,
+  "scope": "Independent saved scalar aggregation/selection/cost and actual serialized parameter/Adam/RNG checks; not raw neural replay.",
+  "pid": 1249771
+}
