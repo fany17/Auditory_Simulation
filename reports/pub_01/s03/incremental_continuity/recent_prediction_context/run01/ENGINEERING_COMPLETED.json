@@ -1,0 +1,120 @@
+{
+  "stage": "engineer",
+  "protocol_sha256": "535d06ed1e12ea1048293ca1be63bb2ad8dfd7c0b985dd9ca9503d6f64735540",
+  "process": {
+    "pid": 1275721,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_recent_prediction_context.py",
+      "engineer"
+    ],
+    "linux_startticks": 787926184,
+    "stage_started_unix": 1793952018.2990239,
+    "deadline_unix": 1793952618.2990239,
+    "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "runtime_versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "torch_cuda": "12.8"
+  },
+  "CPU_seconds": 7.470734519999999,
+  "elapsed_seconds": 4.213333469815552,
+  "counters": {
+    "TRAIN_records_loaded": 6,
+    "TRAIN_cached_windows_loaded": 3447,
+    "TRAIN_statistics_points": 323418,
+    "current_stem_points": 24576,
+    "context_output_points": 36864,
+    "backward_points": 24576
+  },
+  "location": {
+    "seed": 31415,
+    "phase": "two_TRAIN_records"
+  },
+  "resources": {
+    "peak_RSS_bytes": 1504964608,
+    "cuda_peak_allocated_bytes": 115035136,
+    "writer_free_bytes": 178121113600,
+    "writer_bytes": 24875
+  },
+  "new_encoder_head_windows": 0,
+  "new_signal_feature_prediction_array_files": 0,
+  "parameter_checkpoint_files": 0,
+  "training_statistics_files": 0,
+  "passed": true,
+  "checks": [
+    {
+      "seed": 1024,
+      "initialization_sha256": "740b23230ed31aa3a5b985e86c8be608bfb4025002d2dc3a485d6d6b28169014",
+      "D19_P_epoch0_rng_equal": true,
+      "explicit_history_max_abs": 0.0,
+      "same_query_pair_max_abs": 0.018423626199364662,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.03088141418993473
+        },
+        {
+          "current": 0.0009852576768025756,
+          "context_in": 0.000407252722652629,
+          "context_out": 0.00038832813152112067,
+          "mix": 0.0028203646652400494,
+          "output": 0.029229717329144478
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "initialization_sha256": "dc21d5c8beec5cdfec3e97b4cdde13c16c63bad9d61737b118b99faffb550776",
+      "D19_P_epoch0_rng_equal": true,
+      "explicit_history_max_abs": 0.0,
+      "same_query_pair_max_abs": 0.009016169235110283,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.01938672363758087
+        },
+        {
+          "current": 0.0007568178698420525,
+          "context_in": 0.00020412637968547642,
+          "context_out": 0.00019499112386256456,
+          "mix": 0.0022568092681467533,
+          "output": 0.02127297781407833
+        }
+      ]
+    },
+    {
+      "seed": 31415,
+      "initialization_sha256": "c199cfc98b7eeae3feb74ee1a9a290e18cd539acab39750a703a18c8f15032f9",
+      "D19_P_epoch0_rng_equal": true,
+      "explicit_history_max_abs": 0.0,
+      "same_query_pair_max_abs": 0.016142343170940876,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.022791188210248947
+        },
+        {
+          "current": 0.0008455365314148366,
+          "context_in": 0.00022281838755588979,
+          "context_out": 0.0002307239337824285,
+          "mix": 0.0024065643083304167,
+          "output": 0.023011013865470886
+        }
+      ]
+    }
+  ],
+  "optimizer_updates": 0,
+  "formal_fits": 0
+}
