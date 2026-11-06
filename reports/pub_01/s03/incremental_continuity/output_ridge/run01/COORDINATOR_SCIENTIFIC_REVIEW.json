@@ -1,0 +1,284 @@
+{
+  "passed": true,
+  "source_sha256": "7ec86dc33edc494a4fb49a542b400538615b042486eb74b31298be96f4a7eda1",
+  "sources": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106/COORDINATOR_TERMINAL_AUDIT.json": "d7c4c5f1d0d22cd8f489499ede9b28acd77b790c85d4b1b657581930399f8885",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106/fit/seed1024_METRICS.json": "8f60e169d49045ad346d7f82261a19c10d6b8442b846cf29b8753e4c333002c4",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed1024_P_past_prediction/RESULT.json": "3816106b4c4d7310a179fc8f8e3d2743200392be21d5b2e8ad85fda284210d62",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106/fit/seed2026_METRICS.json": "8bf98c650ebe85ad1ecef57db2ed800a7c83fa60f6c2395bb1f0323190cdc28a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed2026_P_past_prediction/RESULT.json": "04a95d6a8b76034439eb3c18b2d036d98c98136bdbaebcf22a51dfa1a3ae2eec",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106/fit/seed31415_METRICS.json": "4379c96fd2470489d4cdb717743a9aba1de273b51dea4eea4007e6d886724399",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed31415_P_past_prediction/RESULT.json": "3f77c03dd848a66e6735c2fcff7e0edd544464e44fbdeed6a7b416a0530ca25b"
+  },
+  "results": [
+    {
+      "seed": 1024,
+      "anchor_r": 0.18188879428826338,
+      "anchor_train_MSE": 0.1918717043059639,
+      "anchor_val_MSE": 0.2501360895707256,
+      "D20": {
+        "primary_delta": 0.0010637061486599264,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.003544324161818714,
+            "unweighted_block_delta": 0.003544324161818714,
+            "contribution_to_primary_delta": 0.0002387916390027271,
+            "max_abs_block_delta": 0.03766808572891901,
+            "people_positive": 34
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": 0.0008852581241585725,
+            "unweighted_block_delta": 0.0008423428454887624,
+            "contribution_to_primary_delta": 0.0008249145096571992,
+            "max_abs_block_delta": 0.04109815613204182,
+            "people_positive": 25
+          }
+        },
+        "active_MSE": 0.2503813711371719,
+        "active_MSE_delta": 0.0002452815664463204
+      },
+      "grid_below_D20": 6,
+      "A": {
+        "primary_delta": 0.00023176611571537156,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.0036381690598753886,
+            "unweighted_block_delta": 0.0036381690598753886,
+            "contribution_to_primary_delta": 0.00023176611729805766,
+            "max_abs_block_delta": 0.011060848021195974,
+            "people_positive": 44
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": -1.700847526892888e-12,
+            "unweighted_block_delta": -1.5343984458347378e-12,
+            "contribution_to_primary_delta": -1.582686130243353e-12,
+            "max_abs_block_delta": 9.246589882661027e-10,
+            "people_positive": 25
+          }
+        },
+        "active_MSE": 0.250789883214933,
+        "active_MSE_delta": 0.0006537936442074233,
+        "train_MSE": 0.1918119190687865,
+        "r": 0.18212056040397875
+      },
+      "F": {
+        "primary_delta": 0.0004821211476445909,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.0034128672032315423,
+            "unweighted_block_delta": 0.0034128672032315423,
+            "contribution_to_primary_delta": 0.00022189955692054385,
+            "max_abs_block_delta": 0.014071181553626168,
+            "people_positive": 39
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": 0.00027839159266136504,
+            "unweighted_block_delta": 0.0002773529246318137,
+            "contribution_to_primary_delta": 0.0002602215907240471,
+            "max_abs_block_delta": 0.015562446241982261,
+            "people_positive": 28
+          }
+        },
+        "active_MSE": 0.25049842929907407,
+        "active_MSE_delta": 0.00036233972834848194,
+        "train_MSE": 0.19173465448415705,
+        "r": 0.18237091543590794
+      }
+    },
+    {
+      "seed": 2026,
+      "anchor_r": 0.1817561196902157,
+      "anchor_train_MSE": 0.1919082708198997,
+      "anchor_val_MSE": 0.25010805070946707,
+      "D20": {
+        "primary_delta": 0.00235422901960945,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.0020755338003334714,
+            "unweighted_block_delta": 0.0020755338003334714,
+            "contribution_to_primary_delta": 0.00013585715954893412,
+            "max_abs_block_delta": 0.02522943327033772,
+            "people_positive": 31
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": 0.0023792873810669656,
+            "unweighted_block_delta": 0.0022859374436916134,
+            "contribution_to_primary_delta": 0.002218371860060516,
+            "max_abs_block_delta": 0.028468448766269083,
+            "people_positive": 35
+          }
+        },
+        "active_MSE": 0.2500726377283296,
+        "active_MSE_delta": -3.54129811374615e-05
+      },
+      "grid_below_D20": 6,
+      "A": {
+        "primary_delta": 0.00022478176171165454,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.0035413993125547895,
+            "unweighted_block_delta": 0.0035413993125547895,
+            "contribution_to_primary_delta": 0.000224781767792673,
+            "max_abs_block_delta": 0.009995141435257537,
+            "people_positive": 46
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": -6.463988686601259e-12,
+            "unweighted_block_delta": -7.088308506173242e-12,
+            "contribution_to_primary_delta": -6.0810184531755155e-12,
+            "max_abs_block_delta": 7.349947872548057e-10,
+            "people_positive": 23
+          }
+        },
+        "active_MSE": 0.2507669697648477,
+        "active_MSE_delta": 0.0006589190553806246,
+        "train_MSE": 0.19185633190043663,
+        "r": 0.18198090145192736
+      },
+      "F": {
+        "primary_delta": 0.00044539861358540103,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.0033406170017733047,
+            "unweighted_block_delta": 0.0033406170017733047,
+            "contribution_to_primary_delta": 0.00021344640164999208,
+            "max_abs_block_delta": 0.014995419350345776,
+            "people_positive": 35
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": 0.00024830228611832553,
+            "unweighted_block_delta": 0.0002443678251628308,
+            "contribution_to_primary_delta": 0.00023195221193540892,
+            "max_abs_block_delta": 0.014483729160388911,
+            "people_positive": 29
+          }
+        },
+        "active_MSE": 0.2504407219009134,
+        "active_MSE_delta": 0.00033267119144630986,
+        "train_MSE": 0.19178882566300542,
+        "r": 0.18220151830380116
+      }
+    },
+    {
+      "seed": 31415,
+      "anchor_r": 0.18337490481957303,
+      "anchor_train_MSE": 0.19177259017770057,
+      "anchor_val_MSE": 0.2505419737022432,
+      "D20": {
+        "primary_delta": 0.001833778382994832,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.0022361109975688976,
+            "unweighted_block_delta": 0.0022361109975688976,
+            "contribution_to_primary_delta": 0.00015459972125141726,
+            "max_abs_block_delta": 0.030207810192606613,
+            "people_positive": 27
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": 0.0018043688549007955,
+            "unweighted_block_delta": 0.001679855176084856,
+            "contribution_to_primary_delta": 0.0016791786617434145,
+            "max_abs_block_delta": 0.05514305500870868,
+            "people_positive": 27
+          }
+        },
+        "active_MSE": 0.2506614495278933,
+        "active_MSE_delta": 0.00011947582565013937
+      },
+      "grid_below_D20": 6,
+      "A": {
+        "primary_delta": 0.00023397247596705978,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.0036738921676482215,
+            "unweighted_block_delta": 0.0036738921676482215,
+            "contribution_to_primary_delta": 0.0002339724825220408,
+            "max_abs_block_delta": 0.013105730603610671,
+            "people_positive": 45
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": -7.018192104500037e-12,
+            "unweighted_block_delta": -6.953579049725799e-12,
+            "contribution_to_primary_delta": -6.554981024975768e-12,
+            "max_abs_block_delta": 8.017139452309863e-10,
+            "people_positive": 20
+          }
+        },
+        "active_MSE": 0.2512445942209817,
+        "active_MSE_delta": 0.0007026205187385393,
+        "train_MSE": 0.19171250931076628,
+        "r": 0.1836088772955401
+      },
+      "F": {
+        "primary_delta": 0.0007677448696695733,
+        "parts": {
+          "mixed_prefix": {
+            "blocks": 49,
+            "macro_within_group_delta": 0.004429759289419517,
+            "unweighted_block_delta": 0.004429759289419517,
+            "contribution_to_primary_delta": 0.0002812968634814134,
+            "max_abs_block_delta": 0.012568234561516345,
+            "people_positive": 42
+          },
+          "pure_active": {
+            "blocks": 703,
+            "macro_within_group_delta": 0.0005209786058189335,
+            "unweighted_block_delta": 0.0005105764679736693,
+            "contribution_to_primary_delta": 0.00048644800618816007,
+            "max_abs_block_delta": 0.01646074447050768,
+            "people_positive": 33
+          }
+        },
+        "active_MSE": 0.2512414391440148,
+        "active_MSE_delta": 0.0006994654417716295,
+        "train_MSE": 0.19164127939070308,
+        "r": 0.18414264968924257
+      }
+    }
+  ],
+  "summary": {
+    "A": {
+      "mean_delta": 0.00023017345113136197,
+      "mixed_prefix_contribution": 0.0002301734558709238,
+      "pure_active_contribution": -4.739561869464879e-12,
+      "pure_active_macro_delta": -5.0610094393313946e-12,
+      "active_MSE_mean": 0.2509338157335875
+    },
+    "F": {
+      "mean_delta": 0.0005650882102998552,
+      "mixed_prefix_contribution": 0.0002388809406839831,
+      "pure_active_contribution": 0.000326207269615872,
+      "pure_active_macro_delta": 0.0003492241615328747,
+      "active_MSE_mean": 0.2507268634480007
+    },
+    "D20": {
+      "mean_delta": 0.0017505711837547363,
+      "mixed_prefix_contribution": 0.00017641617326769282,
+      "pure_active_contribution": 0.0015741550104870434,
+      "pure_active_macro_delta": 0.0016896381200421113,
+      "active_MSE_mean": 0.2503718194644649
+    }
+  },
+  "scope": "Descriptive decomposition of frozen selected-model saved blocks; preserves original macro-person weights and original endpoint. No new selection, model output, fit, external test, or significance claim.",
+  "CPU_seconds": 0.055897905,
+  "wall_seconds": 0.05605032201856375,
+  "NN_forwards": 0,
+  "fits": 0,
+  "goal_complete": false
+}
