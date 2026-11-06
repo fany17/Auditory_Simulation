@@ -6,6 +6,8 @@
 
 并行准备：[D27 Sea-Wave-Small已见被试对照](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_DECISION.md)。实际清单证实VAL49人均在TRAIN，故采用3个共享initial及147个独立personal FT，完整保留公开初始201轮上限和固定个人21轮/patience5。现在允许代码/2203有界CPU工程；正式训练接在D26计算结束及具体源/工程审核后，不影响其运行。personal与共享参数方法分栏，当前VAL非独立SOTA证据。[几何和预算来源](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/GEOMETRY_RECEIPT.json)
 
+D27 Sea-Wave-Small 已见被试强对照已完成 CPU 工程与 V04 独立准入。150,433 参数、感受野 249 点，正式含 3 个 initial 与 147 个个人 FT。GPU 队列等待 D26 完整真实终态、原进程退出及空卡准入，D27 目前只有三次 CPU 工程更新。[D27 计划](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/PLAN_V04.md) · [冻结门](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/PROTOCOL_V04.json) · [原整臂性能参照](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/HISTORICAL_REFERENCES.json)
+
 # 历史入口：D25 固定权重来源诊断已封存
 
 2026-11-06。D25 在原 VAL 固定使用 D24 的 B_OOF/S_OOF 实际 epoch 0/19 权重。B 相对锚点的损失在六个 seed/epoch 都缩小，平均缓解 0.002741，同时六格均低于同折锚点、S 和全 TRAIN 强锚点。正式 170,634 编码窗、64,189,524 真实下游活动点、0 优化和统计拟合，独立全量评分复算通过。D24/D25 的输出历史后处理支线封存，SS07 总体继续 ACTIVE。[D25 报告](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md) · [独立复核](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REVIEW.md) · [归档](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/ARCHIVE.md)
