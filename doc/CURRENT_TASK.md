@@ -1,6 +1,6 @@
 # 当前入口：D24 三折端到端对照正在训练
 
-2026-11-06。当前唯一执行节点仍为 PUB-01-S03_SS07。来源核查已证实 D19/D20/D22/D23 的 TRAIN 预测来自上游同一批 426 条拟合记录。D24 对全部 426 条 TRAIN 按 37 个音频源族分 3 折，训练 3 seed × 3 折原始上游。每折重拟合全部统计和模型，按冻结轮次训练，原 VAL49 只用于随后 B_IS/S_IS/B_OOF/S_OOF 的开发评分。队列 PID 1346529 已在 server2203 的独立 SATA 根运行，两张 L40 各启动一条正式预训练，独立准入通过。下游 B/S 张量桥及反传工程通过。等待控制器 PID 1358297 已在 2203 运行，在 9 条上游和 9 条独立 CPU 重放均通过、实际载荷身份一致后才启动正式 12 fit。SS07 总体目标仍 ACTIVE。[来源核查](../reports/pub_01/s03/incremental_continuity/stacking_input_audit/run01/REPORT.md) · [D24 决定](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_DECISION.md) · [三折账本](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/FOLD_AND_BUDGET_CANDIDATE_V2.json)
+2026-11-06。当前唯一执行节点仍为 PUB-01-S03_SS07。来源核查已证实 D19/D20/D22/D23 的 TRAIN 预测来自上游同一批 426 条拟合记录。D24 对全部 426 条 TRAIN 按 37 个音频源族分 3 折，训练 3 seed × 3 折原始上游。每折重拟合全部统计和模型，按冻结轮次训练，原 VAL49 只用于随后 B_IS/S_IS/B_OOF/S_OOF 的开发评分。队列 PID 1346529 已在 server2203 的独立 SATA 根运行，两张 L40 各启动一条正式预训练，独立准入通过。seed1024/fold0 与 seed2026/fold0 已完成，原队列继续。下游 B/S 张量桥及反传工程通过，但独立 CPU 重放 v01 在首组发现保存的物理预测不一致，等待控制器 PID 1358297 因依赖失败已退出。协调端正在定位差异，下游 0 fit。正式 12 fit 仍须等待全部 9 条上游及独立重放通过、实际载荷身份一致。SS07 总体目标仍 ACTIVE。[来源核查](../reports/pub_01/s03/incremental_continuity/stacking_input_audit/run01/REPORT.md) · [D24 决定](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/COORDINATOR_DECISION.md) · [三折账本](../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/FOLD_AND_BUDGET_CANDIDATE_V2.json)
 
 ## D23 无历史非线性竞争对照已封存
 
