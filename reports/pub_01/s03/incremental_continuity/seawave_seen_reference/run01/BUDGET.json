@@ -1,0 +1,486 @@
+{
+  "initial": {
+    "records": 426,
+    "windows": 755187,
+    "updates": 14230800,
+    "tail": 19,
+    "unique_record_sample_times": 24288672,
+    "target_sample_presentations": 241659840,
+    "repeated_target_sample_presentations": 217371168,
+    "fits": 3,
+    "epochs_per_fit": 201
+  },
+  "personal": {
+    "fits": 147,
+    "subjects": 49,
+    "cap_epochs_per_fit": 21,
+    "windows_per_all_people_pass": 2846186,
+    "unique_times_per_all_people_pass": 17231446,
+    "target_sample_presentations_per_all_people_pass": 1457247232,
+    "updates_per_all_people_pass": 355800,
+    "updates_cap": 22415400,
+    "per_subject": {
+      "sub-001": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-002": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-003": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-005": {
+        "records": 7,
+        "windows": 65713,
+        "updates": 8215,
+        "tail": 1,
+        "unique_record_sample_times": 397820,
+        "target_sample_presentations": 33645056,
+        "repeated_target_sample_presentations": 33247236
+      },
+      "sub-007": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-008": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-009": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-010": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-011": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-012": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-013": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-014": {
+        "records": 7,
+        "windows": 64397,
+        "updates": 8050,
+        "tail": 5,
+        "unique_record_sample_times": 389924,
+        "target_sample_presentations": 32971264,
+        "repeated_target_sample_presentations": 32581340
+      },
+      "sub-015": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-016": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-018": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-019": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-020": {
+        "records": 6,
+        "windows": 55805,
+        "updates": 6976,
+        "tail": 5,
+        "unique_record_sample_times": 337866,
+        "target_sample_presentations": 28572160,
+        "repeated_target_sample_presentations": 28234294
+      },
+      "sub-021": {
+        "records": 7,
+        "windows": 64397,
+        "updates": 8050,
+        "tail": 5,
+        "unique_record_sample_times": 389924,
+        "target_sample_presentations": 32971264,
+        "repeated_target_sample_presentations": 32581340
+      },
+      "sub-022": {
+        "records": 7,
+        "windows": 64397,
+        "updates": 8050,
+        "tail": 5,
+        "unique_record_sample_times": 389924,
+        "target_sample_presentations": 32971264,
+        "repeated_target_sample_presentations": 32581340
+      },
+      "sub-023": {
+        "records": 7,
+        "windows": 64397,
+        "updates": 8050,
+        "tail": 5,
+        "unique_record_sample_times": 389924,
+        "target_sample_presentations": 32971264,
+        "repeated_target_sample_presentations": 32581340
+      },
+      "sub-024": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-025": {
+        "records": 7,
+        "windows": 65713,
+        "updates": 8215,
+        "tail": 1,
+        "unique_record_sample_times": 397820,
+        "target_sample_presentations": 33645056,
+        "repeated_target_sample_presentations": 33247236
+      },
+      "sub-026": {
+        "records": 8,
+        "windows": 74305,
+        "updates": 9289,
+        "tail": 1,
+        "unique_record_sample_times": 449878,
+        "target_sample_presentations": 38044160,
+        "repeated_target_sample_presentations": 37594282
+      },
+      "sub-043": {
+        "records": 5,
+        "windows": 43277,
+        "updates": 5410,
+        "tail": 5,
+        "unique_record_sample_times": 262192,
+        "target_sample_presentations": 22157824,
+        "repeated_target_sample_presentations": 21895632
+      },
+      "sub-044": {
+        "records": 5,
+        "windows": 43277,
+        "updates": 5410,
+        "tail": 5,
+        "unique_record_sample_times": 262192,
+        "target_sample_presentations": 22157824,
+        "repeated_target_sample_presentations": 21895632
+      },
+      "sub-045": {
+        "records": 5,
+        "windows": 43277,
+        "updates": 5410,
+        "tail": 5,
+        "unique_record_sample_times": 262192,
+        "target_sample_presentations": 22157824,
+        "repeated_target_sample_presentations": 21895632
+      },
+      "sub-046": {
+        "records": 5,
+        "windows": 43277,
+        "updates": 5410,
+        "tail": 5,
+        "unique_record_sample_times": 262192,
+        "target_sample_presentations": 22157824,
+        "repeated_target_sample_presentations": 21895632
+      },
+      "sub-049": {
+        "records": 5,
+        "windows": 42236,
+        "updates": 5280,
+        "tail": 4,
+        "unique_record_sample_times": 255946,
+        "target_sample_presentations": 21624832,
+        "repeated_target_sample_presentations": 21368886
+      },
+      "sub-051": {
+        "records": 5,
+        "windows": 42236,
+        "updates": 5280,
+        "tail": 4,
+        "unique_record_sample_times": 255946,
+        "target_sample_presentations": 21624832,
+        "repeated_target_sample_presentations": 21368886
+      },
+      "sub-052": {
+        "records": 5,
+        "windows": 42236,
+        "updates": 5280,
+        "tail": 4,
+        "unique_record_sample_times": 255946,
+        "target_sample_presentations": 21624832,
+        "repeated_target_sample_presentations": 21368886
+      },
+      "sub-053": {
+        "records": 5,
+        "windows": 42236,
+        "updates": 5280,
+        "tail": 4,
+        "unique_record_sample_times": 255946,
+        "target_sample_presentations": 21624832,
+        "repeated_target_sample_presentations": 21368886
+      },
+      "sub-054": {
+        "records": 5,
+        "windows": 42236,
+        "updates": 5280,
+        "tail": 4,
+        "unique_record_sample_times": 255946,
+        "target_sample_presentations": 21624832,
+        "repeated_target_sample_presentations": 21368886
+      },
+      "sub-055": {
+        "records": 5,
+        "windows": 42236,
+        "updates": 5280,
+        "tail": 4,
+        "unique_record_sample_times": 255946,
+        "target_sample_presentations": 21624832,
+        "repeated_target_sample_presentations": 21368886
+      },
+      "sub-056": {
+        "records": 5,
+        "windows": 42236,
+        "updates": 5280,
+        "tail": 4,
+        "unique_record_sample_times": 255946,
+        "target_sample_presentations": 21624832,
+        "repeated_target_sample_presentations": 21368886
+      },
+      "sub-057": {
+        "records": 5,
+        "windows": 48586,
+        "updates": 6074,
+        "tail": 2,
+        "unique_record_sample_times": 294046,
+        "target_sample_presentations": 24876032,
+        "repeated_target_sample_presentations": 24581986
+      },
+      "sub-058": {
+        "records": 5,
+        "windows": 48586,
+        "updates": 6074,
+        "tail": 2,
+        "unique_record_sample_times": 294046,
+        "target_sample_presentations": 24876032,
+        "repeated_target_sample_presentations": 24581986
+      },
+      "sub-059": {
+        "records": 5,
+        "windows": 48586,
+        "updates": 6074,
+        "tail": 2,
+        "unique_record_sample_times": 294046,
+        "target_sample_presentations": 24876032,
+        "repeated_target_sample_presentations": 24581986
+      },
+      "sub-060": {
+        "records": 4,
+        "windows": 39349,
+        "updates": 4919,
+        "tail": 5,
+        "unique_record_sample_times": 238118,
+        "target_sample_presentations": 20146688,
+        "repeated_target_sample_presentations": 19908570
+      },
+      "sub-061": {
+        "records": 5,
+        "windows": 48586,
+        "updates": 6074,
+        "tail": 2,
+        "unique_record_sample_times": 294046,
+        "target_sample_presentations": 24876032,
+        "repeated_target_sample_presentations": 24581986
+      },
+      "sub-062": {
+        "records": 5,
+        "windows": 48586,
+        "updates": 6074,
+        "tail": 2,
+        "unique_record_sample_times": 294046,
+        "target_sample_presentations": 24876032,
+        "repeated_target_sample_presentations": 24581986
+      },
+      "sub-063": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-064": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-065": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-066": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-067": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-068": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-069": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-070": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      },
+      "sub-071": {
+        "records": 5,
+        "windows": 51272,
+        "updates": 6409,
+        "tail": 8,
+        "unique_record_sample_times": 310162,
+        "target_sample_presentations": 26251264,
+        "repeated_target_sample_presentations": 25941102
+      }
+    }
+  },
+  "validation": {
+    "unique_record_times_per_full_PASS": 2935045,
+    "calls_per_full_PASS": 752,
+    "halo_input_times_per_full_PASS": 3109389,
+    "initial_full_passes": 603,
+    "personal_equivalent_full_passes_cap": 66,
+    "initial_calls_cap": 453456,
+    "personal_calls_cap": 49632
+  },
+  "disk": {
+    "writer_GiB": 16,
+    "reserve_GiB": 64,
+    "physical_windows_on_disk": 0
+  },
+  "engineering_cap": {
+    "model_forward_batches": 8,
+    "initial_updates": 2,
+    "personal_updates": 1,
+    "CUDA": 0
+  }
+}

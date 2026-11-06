@@ -1,0 +1,89 @@
+{
+  "arms": [
+    {
+      "arm": "D22 B",
+      "source": "reports/pub_01/s03/incremental_continuity/output_query/run01/SEED_RESULTS.csv",
+      "source_sha256": "99aeb22b26cff851f88ea9c08389bf27308e0a19f3d9ac14e500a54599a3e10c",
+      "mean_r": 0.18458090437421806,
+      "fitted_updates_in_arm": 86820,
+      "registered_parameters": 9441,
+      "fixed_original_three_seed_selection": true,
+      "per_seed": [
+        {
+          "seed": 1024,
+          "epoch": 0,
+          "r": 0.18345456164136692
+        },
+        {
+          "seed": 2026,
+          "epoch": 0,
+          "r": 0.18453556913392583
+        },
+        {
+          "seed": 31415,
+          "epoch": 0,
+          "r": 0.18575258234736144
+        }
+      ],
+      "scope": "20 passes per seed, early VAL-selected output-only history, upstream FT+Ccap frozen"
+    },
+    {
+      "arm": "D18 P",
+      "source": "reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/report01/SELECTED_SUMMARY.csv",
+      "source_sha256": "1eaceda8abe13a25b26773c18f169383c3d840b2cdc3e6646f0b9010faacb3ae",
+      "mean_r": 0.18437916203596508,
+      "fitted_updates_in_arm": 236700,
+      "registered_parameters": 3390153,
+      "fixed_original_three_seed_selection": true,
+      "per_seed": [
+        {
+          "seed": 1024,
+          "epoch": 1,
+          "r": 0.18396398022389465
+        },
+        {
+          "seed": 2026,
+          "epoch": 0,
+          "r": 0.18455644835989835
+        },
+        {
+          "seed": 31415,
+          "epoch": 15,
+          "r": 0.18461705752410226
+        }
+      ],
+      "scope": "20 passes per seed, VAL-selected projection-memory predictor, fixed inherited Ccap"
+    },
+    {
+      "arm": "D23 S",
+      "source": "reports/pub_01/s03/incremental_continuity/memoryless_output/run01/SEED_RESULTS.csv",
+      "source_sha256": "333d857afc45a2800edf80371189b085eaf96a6beed7ba3e1f24ee3941b10bd3",
+      "mean_r": 0.1838996356911203,
+      "fitted_updates_in_arm": 86820,
+      "registered_parameters": 3361,
+      "fixed_original_three_seed_selection": true,
+      "per_seed": [
+        {
+          "seed": 1024,
+          "epoch": 11,
+          "r": 0.1830242168719168
+        },
+        {
+          "seed": 2026,
+          "epoch": 16,
+          "r": 0.18371391704857204
+        },
+        {
+          "seed": 31415,
+          "epoch": 8,
+          "r": 0.18496077315287207
+        }
+      ],
+      "scope": "20 passes per seed, VAL-selected memoryless nonlinear output-only, upstream FT+Ccap frozen"
+    }
+  ],
+  "role": "Descriptive prior frozen complete arms, same repeatedly used VAL with different training budgets and selection; not a SOTA or same-budget ranking.",
+  "new_scores": 0,
+  "new_fits": 0,
+  "old_test_access": 0
+}
