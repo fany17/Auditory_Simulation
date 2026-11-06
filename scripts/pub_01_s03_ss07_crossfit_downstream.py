@@ -15,6 +15,10 @@ from pub_01_s03_ss07_crossfit_meta import D19, ROOT, SATA, SEEDS, digest, read
 D20 = SATA / "s03_recent_prediction_context_20261106"
 D22 = SATA / "s03_output_query_20261106"
 D23 = SATA / "s03_memoryless_output_20261106"
+REPLAY = ROOT / "coordinator_upstream_audit_v01"
+REPLAY_SOURCE = ROOT / "COORDINATOR_UPSTREAM_REPLAY.py"
+REPLAY_SOURCE_SHA = "d8016bbd5b171e2893fd80d6366552a5cd32115549137c25970b3efd7c877a14"
+FORMAL_GATE = ROOT / "DOWNSTREAM_FORMAL_GATE_V04.json"
 ROLE = "P_past_prediction"
 GIB = 1024**3
 
@@ -292,6 +296,15 @@ def freeze(meta, d20):
     upstream = read(upstream_gate)
     terminal = ROOT / "queue/TERMINAL.json"
     d20.require(read(terminal)["passed"], "Upstream queue has not completed")
+    replay_done_path = REPLAY / "COMPLETED.json"
+    replay_done = read(replay_done_path)
+    replay_count = replay_done["counters"]
+    d20.require(replay_done["passed"] and replay_done["normalization_folds"] == 3
+                and len(replay_done["jobs"]) == 9 and replay_count["NN_windows"] <= 16384
+                and replay_count["fitting_updates"] == replay_count["labels_read"] == 0,
+                "Independent upstream replay has not passed")
+    d20.require(replay_done["process"]["source_sha256"] == digest(REPLAY_SOURCE) == REPLAY_SOURCE_SHA,
+                "Independent upstream replay source drift")
     candidate_path = ROOT / "FOLD_AND_BUDGET_CANDIDATE_V2.json"
     d20.require(upstream["candidate_sha256"] == digest(candidate_path), "Upstream candidate drift")
     candidate = read(candidate_path)
@@ -302,7 +315,7 @@ def freeze(meta, d20):
                D19 / "PREPARATION_METADATA.json",
                D19 / "PROTOCOL.json", D20 / "PROTOCOL.json", D22 / "PROTOCOL.json", D23 / "PROTOCOL.json",
                ROOT / "downstream_engineer/seed1024/COMPLETED.json",
-               ROOT / "DOWNSTREAM_INPUT_PREFLIGHT_V03.json"}
+               ROOT / "DOWNSTREAM_INPUT_PREFLIGHT_V03.json", replay_done_path, REPLAY_SOURCE}
     module_paths = {Path(module.__file__).resolve() for module in list(sys.modules.values())
                     if getattr(module, "__file__", None)
                     and Path(module.__file__).name.startswith("pub_01_")}
@@ -313,7 +326,14 @@ def freeze(meta, d20):
     payload_wall, payload_cpu = time.monotonic(), time.process_time()
     for job in candidate["jobs"]:
         seed, fold = job["seed"], job["model_fold"]
-        folder = ROOT / f"formal/seed{seed}_fold{fold}"
+        job_key = f"seed{seed}_fold{fold}"
+        folder = ROOT / "formal" / job_key
+        independent_path = REPLAY / f"{job_key}.json"
+        independent = read(independent_path)
+        d20.require(job_key in replay_done["jobs"] and independent["passed"]
+                    and independent["seed"] == seed and independent["fold"] == fold,
+                    "Independent actual job identity")
+        sources.add(independent_path)
         completed_path = folder / "COMPLETED.json"
         frozen_path = folder / "UPSTREAM_FROZEN.json"
         completed, frozen = read(completed_path), read(frozen_path)
@@ -345,7 +365,11 @@ def freeze(meta, d20):
             sources.add(path)
         for name in ("IS_ANCHOR.npy", "OOF_ANCHOR.npy", "READOUT.npz", "FT.pt", "head.pt", "contrastive.pt"):
             path = folder / name
-            payloads[str(path)] = payload_pin(path)
+            pin = payload_pin(path)
+            other = independent["payloads"][name]
+            d20.require(all(pin[key] == other[key] for key in ("bytes", "sha256")),
+                        "Upstream payload differs from the independent replay")
+            payloads[str(path)] = pin
         coverage[f"{seed}:{fold}"] = dict(fit_records=len(ids),
             contrastive_actual_records=len(completed["contrastive"]["record_presentations"]),
             Ccap_fit_windows=frozen["Ccap"]["TRAIN_fit_windows"],
@@ -354,10 +378,11 @@ def freeze(meta, d20):
     d20.require(len(coverage) == 9 and len(meta["phases"]["val"]["records"]) == 49,
                 "Exact completed matrix")
     d20.require(len(payloads) == 54, "Exact upstream payload inventory")
-    d20.write(ROOT / "DOWNSTREAM_FORMAL_GATE_V03.json",
+    d20.write(FORMAL_GATE,
               dict(passed=True, upstream=coverage, upstream_payloads=payloads,
                    sources={str(path): digest(path) for path in sorted(sources)},
-                   historical=historical,
+                   historical=historical, independent_replay=dict(receipt=str(replay_done_path),
+                       jobs=9, counters=replay_count, source_sha256=REPLAY_SOURCE_SHA),
                    payload_verification=dict(bytes=sum(p["bytes"] for p in payloads.values()),
                        wall_seconds=time.monotonic()-payload_wall,
                        CPU_seconds=time.process_time()-payload_cpu, new_scoring=0)))
@@ -387,7 +412,7 @@ def main():
     torch.use_deterministic_algorithms(True)
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.cuda.reset_peak_memory_stats()
-    gate = ROOT / "DOWNSTREAM_FORMAL_GATE_V03.json"
+    gate = FORMAL_GATE
     if args.stage == "formal":
         pins = read(gate)
         d20.require(pins["passed"] and all(digest(Path(p)) == h for p, h in pins["sources"].items()),
