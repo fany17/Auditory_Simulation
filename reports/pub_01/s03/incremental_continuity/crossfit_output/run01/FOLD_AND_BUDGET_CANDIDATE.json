@@ -1,0 +1,559 @@
+{
+  "downstream": {
+    "arms": [
+      "B_IS",
+      "S_IS",
+      "B_OOF",
+      "S_OOF"
+    ],
+    "backward_points": 5688842400,
+    "epochs": 20,
+    "evaluation": "common frozen full-TRAIN FT+Ccap anchor, original VAL49",
+    "physical_batch": 8192,
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "updates": 694560
+  },
+  "folds": [
+    {
+      "families": [
+        {
+          "records": 65,
+          "source_family": "audiobook_1",
+          "windows": 40495
+        },
+        {
+          "records": 25,
+          "source_family": "audiobook_2",
+          "windows": 13150
+        },
+        {
+          "records": 15,
+          "source_family": "audiobook_12",
+          "windows": 7106
+        },
+        {
+          "records": 6,
+          "source_family": "podcast_12",
+          "windows": 4200
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_2",
+          "windows": 3775
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_8",
+          "windows": 3370
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_1",
+          "windows": 3170
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_6",
+          "windows": 2810
+        },
+        {
+          "records": 5,
+          "source_family": "audiobook_8",
+          "windows": 2485
+        },
+        {
+          "records": 4,
+          "source_family": "audiobook_10",
+          "windows": 1636
+        },
+        {
+          "records": 2,
+          "source_family": "podcast_17",
+          "windows": 1214
+        },
+        {
+          "records": 2,
+          "source_family": "podcast_16",
+          "windows": 1028
+        }
+      ],
+      "id": 0,
+      "records": 144,
+      "windows": 84439
+    },
+    {
+      "families": [
+        {
+          "records": 48,
+          "source_family": "audiobook_5",
+          "windows": 29688
+        },
+        {
+          "records": 18,
+          "source_family": "audiobook_14",
+          "windows": 13176
+        },
+        {
+          "records": 20,
+          "source_family": "podcast_10",
+          "windows": 11100
+        },
+        {
+          "records": 9,
+          "source_family": "podcast_28",
+          "windows": 4833
+        },
+        {
+          "records": 6,
+          "source_family": "podcast_9",
+          "windows": 4758
+        },
+        {
+          "records": 6,
+          "source_family": "audiobook_13",
+          "windows": 3996
+        },
+        {
+          "records": 7,
+          "source_family": "podcast_20",
+          "windows": 3703
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_5",
+          "windows": 3310
+        },
+        {
+          "records": 6,
+          "source_family": "podcast_26",
+          "windows": 3150
+        },
+        {
+          "records": 6,
+          "source_family": "audiobook_9",
+          "windows": 2580
+        },
+        {
+          "records": 4,
+          "source_family": "podcast_13",
+          "windows": 1868
+        },
+        {
+          "records": 2,
+          "source_family": "podcast_19",
+          "windows": 1360
+        },
+        {
+          "records": 1,
+          "source_family": "podcast_18",
+          "windows": 768
+        }
+      ],
+      "id": 1,
+      "records": 138,
+      "windows": 84290
+    },
+    {
+      "families": [
+        {
+          "records": 48,
+          "source_family": "audiobook_6",
+          "windows": 26592
+        },
+        {
+          "records": 25,
+          "source_family": "audiobook_3",
+          "windows": 16000
+        },
+        {
+          "records": 21,
+          "source_family": "audiobook_4",
+          "windows": 11361
+        },
+        {
+          "records": 9,
+          "source_family": "podcast_29",
+          "windows": 5391
+        },
+        {
+          "records": 8,
+          "source_family": "podcast_23",
+          "windows": 4504
+        },
+        {
+          "records": 6,
+          "source_family": "podcast_24",
+          "windows": 3960
+        },
+        {
+          "records": 6,
+          "source_family": "podcast_11",
+          "windows": 3594
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_7",
+          "windows": 3275
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_27",
+          "windows": 2905
+        },
+        {
+          "records": 4,
+          "source_family": "podcast_14",
+          "windows": 2676
+        },
+        {
+          "records": 5,
+          "source_family": "podcast_3",
+          "windows": 2415
+        },
+        {
+          "records": 2,
+          "source_family": "audiobook_11",
+          "windows": 1052
+        }
+      ],
+      "id": 2,
+      "records": 144,
+      "windows": 83725
+    }
+  ],
+  "input_files": {
+    "D19_metadata": {
+      "path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PREPARATION_METADATA.json",
+      "sha256": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd"
+    },
+    "prepared_manifest": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/manifest_frozen.json",
+      "sha256": "4c0c2bcc6841437752fbc2c302e5df0693b9db120c19e68d7360d5125bd0c5e0"
+    },
+    "source_families": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/SOURCE_FAMILY_JOIN.json",
+      "sha256": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb"
+    },
+    "train_envelope_manifest": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/manifest_frozen.json",
+      "sha256": "395ffef0765ce595e897f85c7483f2a07816c0266d27f5e4e2e8d0d5959f84d5"
+    },
+    "train_window_index": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_windows.json",
+      "sha256": "17ad664e11e38c72bd0874395e4858ca035339cc0ba14705c48c001d8e6fbd54"
+    }
+  },
+  "jobs": [
+    {
+      "Ccap": {
+        "fit_windows": 166887,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 840075,
+        "updates": 13130
+      },
+      "IS_output_records": 144,
+      "IS_output_windows": 83725,
+      "OOF_output_records": 144,
+      "OOF_output_windows": 84439,
+      "affine_physical_points": 16155948,
+      "contrastive": {
+        "EEG_audio_window_pairs": 640512,
+        "batches_per_epoch": 556,
+        "epochs": 9,
+        "updates": 5004
+      },
+      "fit_raw_channel_normalization_samples": 16170550,
+      "fit_records": 282,
+      "fit_windows": 168015,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42003750,
+        "updates": 656500
+      },
+      "model_fold": 0,
+      "seed": 1024
+    },
+    {
+      "Ccap": {
+        "fit_windows": 166887,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 840075,
+        "updates": 13130
+      },
+      "IS_output_records": 144,
+      "IS_output_windows": 83725,
+      "OOF_output_records": 144,
+      "OOF_output_windows": 84439,
+      "affine_physical_points": 16155948,
+      "contrastive": {
+        "EEG_audio_window_pairs": 854016,
+        "batches_per_epoch": 556,
+        "epochs": 12,
+        "updates": 6672
+      },
+      "fit_raw_channel_normalization_samples": 16170550,
+      "fit_records": 282,
+      "fit_windows": 168015,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42003750,
+        "updates": 656500
+      },
+      "model_fold": 0,
+      "seed": 2026
+    },
+    {
+      "Ccap": {
+        "fit_windows": 166887,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 840075,
+        "updates": 13130
+      },
+      "IS_output_records": 144,
+      "IS_output_windows": 83725,
+      "OOF_output_records": 144,
+      "OOF_output_windows": 84439,
+      "affine_physical_points": 16155948,
+      "contrastive": {
+        "EEG_audio_window_pairs": 782848,
+        "batches_per_epoch": 556,
+        "epochs": 11,
+        "updates": 6116
+      },
+      "fit_raw_channel_normalization_samples": 16170550,
+      "fit_records": 282,
+      "fit_windows": 168015,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42003750,
+        "updates": 656500
+      },
+      "model_fold": 0,
+      "seed": 31415
+    },
+    {
+      "Ccap": {
+        "fit_windows": 167012,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 840820,
+        "updates": 13140
+      },
+      "IS_output_records": 144,
+      "IS_output_windows": 84439,
+      "OOF_output_records": 138,
+      "OOF_output_windows": 84290,
+      "affine_physical_points": 16170816,
+      "contrastive": {
+        "EEG_audio_window_pairs": 630144,
+        "batches_per_epoch": 547,
+        "epochs": 9,
+        "updates": 4923
+      },
+      "fit_raw_channel_normalization_samples": 16185966,
+      "fit_records": 288,
+      "fit_windows": 168164,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42041000,
+        "updates": 657000
+      },
+      "model_fold": 1,
+      "seed": 1024
+    },
+    {
+      "Ccap": {
+        "fit_windows": 167012,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 840820,
+        "updates": 13140
+      },
+      "IS_output_records": 144,
+      "IS_output_windows": 84439,
+      "OOF_output_records": 138,
+      "OOF_output_windows": 84290,
+      "affine_physical_points": 16170816,
+      "contrastive": {
+        "EEG_audio_window_pairs": 840192,
+        "batches_per_epoch": 547,
+        "epochs": 12,
+        "updates": 6564
+      },
+      "fit_raw_channel_normalization_samples": 16185966,
+      "fit_records": 288,
+      "fit_windows": 168164,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42041000,
+        "updates": 657000
+      },
+      "model_fold": 1,
+      "seed": 2026
+    },
+    {
+      "Ccap": {
+        "fit_windows": 167012,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 840820,
+        "updates": 13140
+      },
+      "IS_output_records": 144,
+      "IS_output_windows": 84439,
+      "OOF_output_records": 138,
+      "OOF_output_windows": 84290,
+      "affine_physical_points": 16170816,
+      "contrastive": {
+        "EEG_audio_window_pairs": 770176,
+        "batches_per_epoch": 547,
+        "epochs": 11,
+        "updates": 6017
+      },
+      "fit_raw_channel_normalization_samples": 16185966,
+      "fit_records": 288,
+      "fit_windows": 168164,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42041000,
+        "updates": 657000
+      },
+      "model_fold": 1,
+      "seed": 31415
+    },
+    {
+      "Ccap": {
+        "fit_windows": 167601,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 843645,
+        "updates": 13185
+      },
+      "IS_output_records": 138,
+      "IS_output_windows": 84290,
+      "OOF_output_records": 144,
+      "OOF_output_windows": 83725,
+      "affine_physical_points": 16224492,
+      "contrastive": {
+        "EEG_audio_window_pairs": 618624,
+        "batches_per_epoch": 537,
+        "epochs": 9,
+        "updates": 4833
+      },
+      "fit_raw_channel_normalization_samples": 16237736,
+      "fit_records": 282,
+      "fit_windows": 168729,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42182250,
+        "updates": 659250
+      },
+      "model_fold": 2,
+      "seed": 1024
+    },
+    {
+      "Ccap": {
+        "fit_windows": 167601,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 843645,
+        "updates": 13185
+      },
+      "IS_output_records": 138,
+      "IS_output_windows": 84290,
+      "OOF_output_records": 144,
+      "OOF_output_windows": 83725,
+      "affine_physical_points": 16224492,
+      "contrastive": {
+        "EEG_audio_window_pairs": 824832,
+        "batches_per_epoch": 537,
+        "epochs": 12,
+        "updates": 6444
+      },
+      "fit_raw_channel_normalization_samples": 16237736,
+      "fit_records": 282,
+      "fit_windows": 168729,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42182250,
+        "updates": 659250
+      },
+      "model_fold": 2,
+      "seed": 2026
+    },
+    {
+      "Ccap": {
+        "fit_windows": 167601,
+        "fits": 1,
+        "lambd": 0.01
+      },
+      "FT": {
+        "epochs": 5,
+        "target_windows": 843645,
+        "updates": 13185
+      },
+      "IS_output_records": 138,
+      "IS_output_windows": 84290,
+      "OOF_output_records": 144,
+      "OOF_output_windows": 83725,
+      "affine_physical_points": 16224492,
+      "contrastive": {
+        "EEG_audio_window_pairs": 756096,
+        "batches_per_epoch": 537,
+        "epochs": 11,
+        "updates": 5907
+      },
+      "fit_raw_channel_normalization_samples": 16237736,
+      "fit_records": 282,
+      "fit_windows": 168729,
+      "head": {
+        "epochs": 250,
+        "target_windows": 42182250,
+        "updates": 659250
+      },
+      "model_fold": 2,
+      "seed": 31415
+    }
+  ],
+  "model_routing": {
+    "IS": "(f+1)%3",
+    "OOF": "record's fold f"
+  },
+  "no_new_fits": true,
+  "root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106",
+  "rule": "sort whole source families by descending TRAIN windows, then family name; assign to least-loaded fold, then fold id",
+  "stage": "METADATA_CANDIDATE",
+  "train_manifest": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/TRAIN_RECORD_ASSIGNMENT.json",
+  "train_manifest_sha256": "7ab57f1818a4aef312c43342768893ae8a49ff39407fa8bd76812ef2c81e3d24"
+}
