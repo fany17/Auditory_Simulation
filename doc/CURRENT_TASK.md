@@ -1,3 +1,11 @@
+# 当前入口：D18 全量对照与静态报告已封存
+
+2026-11-06 完成 D18。四臂三种子各 20 轮，共 12 个完整拟合，946,800 次更新，另保留两个正式中断尝试和 28 次丢弃工程更新。协调核验保存指标、预算、选点、60 个固定 TRAIN 和 24 份 best/last，并审阅中文全文和八张原图。
+
+H/C/T/P 的 selected VAL r 三种子均值为 0.184245389、0.184249397、0.184075622、0.184379162。H−C 两正一负，均值 −0.000004008。H−P 三组均负。固定 H 检查点和当前 query 的 near−older 三组均正。D18 的预设历史收益门未满足，封存为重复开发 VAL 上的有限阴性证据。SS07 保持 ACTIVE，总体科研目标未达。
+
+证据位于 `reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/`。完整中文 HTML 归档 ID 为 `20261103_pub01_s03_ss07_preprojection_memory`。交付核验通过，覆盖 165 个清单产物、八张图、五张正文表及相对链接。旧启动与恢复记录保留在下方。
+
 # 当前入口：D18已迁移SATA，正式恢复队列运行中
 
 2026-11-03 D18首轮因home可用空间跌破20GiB触发既定停止；C1024确切23000更新、H1024保守[18400,18500]，无完整Adam/RNG可精确续跑。原131文件/33319215B内容及mtime全等备份后，原homeROOT完整保留在*_home_backup_formal_attempt01，canonical路径现指向SATA；两partial fits/旧队列/源/协议完整归档，未删除、未用于新选点或初始化。SATA真实写盘20GiB阈值，home只读且未声称空间已满足20GiB。仅queue小改沿用原24h绝对deadline1793726963.790547，8项神经相关源及科学配置逐字节不变；没有重复NN工程。新协议255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632、资源/迁移/0NN验证见preprojection_memory/run01；协调已独立核验490 pins/547 inputs、迁移证据、8源不变和原截止，新review e051f5c2d5978d88c6f7c275b9f8ff56bc29c1455bb0c61cd03dbdec95487c63绑定新protocol后，已按原四臂三seed各20轮干净重启12fits；队列2050834，H/C1024 workers2050842/2050850，实际UID1012/start_ticks/argv及空卡准入已记录。保留2中断＋12完成预期=14attempt，原成本界独立列账；SS07/科研目标ACTIVE，不重开旧测试/外部或合并PR6。
