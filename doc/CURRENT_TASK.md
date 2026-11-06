@@ -1,4 +1,10 @@
-# 当前入口：D18 全量对照与静态报告已封存
+# 当前入口：D19 连续残差候选已封存
+
+2026-11-06，D19 三角色×三 seed×20 轮完成，共 260,460 更新和 4,266,631,800 个训练目标点。九组正式 selected 均回退到冻结 FT+Ccap，三 seed 平均 r 0.182339940。180 个实际训练轮次均低于同 seed 锚点。C/H/P 的最佳已训练 VAL r 平均差为 −0.027964/−0.003651/−0.000290，固定 TRAIN 活动 MSE 则均改善。正式历史收益门未过，拟合态 selected near/older 缺失。
+
+技术复核覆盖九组保存结果与实际末轮有限重放。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。完整四图中文报告已归档，SS07 保持 ACTIVE，总体科研目标未达。[D19 报告](../reports/pub_01/s03/incremental_continuity/physical_stream/run01/REPORT.md) · [D19 复核](../reports/pub_01/s03/incremental_continuity/physical_stream/run01/REVIEW.md) · [归档](../reports/pub_01/s03/incremental_continuity/physical_stream/run01/ARCHIVE.md)
+
+# 历史入口：D18 全量对照与静态报告已封存
 
 2026-11-06 完成 D18。四臂三种子各 20 轮，共 12 个完整拟合，946,800 次更新，另保留两个正式中断尝试和 28 次丢弃工程更新。协调核验保存指标、预算、选点、60 个固定 TRAIN 和 24 份 best/last，并审阅中文全文和八张原图。
 

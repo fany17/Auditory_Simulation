@@ -2,6 +2,8 @@
 
 唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
 
+2026-11-06 SS07 最新验收记录。D19 九组正式训练和独立复核已完成，180 个训练轮次均低于锚点，九组正式选点回退，预设收益门未过。该候选为 PASS_WITH_LIMITATION 的开发阴性证据，SS07 仍为 ACTIVE。[完整结果与四图](../../../reports/pub_01/s03/incremental_continuity/physical_stream/run01/REPORT.md)
+
 | Subtask ID | Title | Status | Blocking | Upstream | Task Spec | Validation |
 |---|---|---|---|---|---|---|
 | `PUB-01-S01` | Public data preparation and exploration | `COMPLETED` | YES | NONE | `subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` | PASS_WITH_LIMITATION；许可/定向时序限制依任务保留 |

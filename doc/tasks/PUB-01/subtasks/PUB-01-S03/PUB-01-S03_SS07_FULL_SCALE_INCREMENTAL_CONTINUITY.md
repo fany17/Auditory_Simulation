@@ -223,3 +223,9 @@ D17封存后的有限实现审计已交：reports/pub_01/s03/incremental_continu
 2026-11-06 D18 候选收束。恢复后的冻结矩阵完整执行 12 组各 20 轮，共 946,800 次更新、60,588,960 个监督窗呈现。保留 C 中断 23,000 更新、H 中断 18,400–18,500 的成本界和 28 次丢弃工程更新。独立核验涵盖 12 组保存指标与选点、60 个固定 TRAIN、24 个真实 best/last。H/C/T/P selected VAL r 均值 0.184245389、0.184249397、0.184075622、0.184379162。H−C 两正一负，H−P 三组均负。H near−older 三组均正，原历史收益门未满足。重复开发 VAL 的 49 人均见于 TRAIN，来源混合。八个 selected TRAIN 缺口保留。技术证据和父任务边界审阅通过，科学结果为有限阴性证据，整体科研目标未达。
 
 完整中文 REPORT、REVIEW、八张实际目视图、逐 seed、逐人与逐来源 CSV、成本和中断账本位于 `reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/`。静态归档 ID 为 `20261103_pub01_s03_ss07_preprojection_memory`，独立全文及八图审阅和归档交付校验均通过。交付校验覆盖 165 个清单产物、五张正文表、11 条限制和全部相对链接。SS07 继续作为父任务下的当前执行节点。
+
+### 2026-11-06 D19 Completion Record
+
+唯一物理时间轴连续残差三角色×三 seed×20 轮完整完成，260,460 更新和 4,266,631,800 个活动目标呈现。正式 PID 1237393 正常到达终态。九组均选回冻结 FT+Ccap，三 seed 平均 r 0.182339940。180 个实际训练轮次的开发 VAL r 均低于各自锚点，C/H/P 最佳已训练平均差 −0.027964/−0.003651/−0.000290。固定 TRAIN 活动 MSE 均降低。H 所有 seed 低于 P 与锚点，拟合态 selected 历史配对缺失，预设历史收益门未通过。
+
+协调独立核验九组保存结果，实际末轮有限重放原实现和 NumPy 各 2,304 物理点，预测最大差 6.184×10⁻⁷。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。完整中文四图、逐轮/逐人标量与静态 HTML 已交付，归档 ID `20261106_pub01_s03_ss07_physical_stream`。SS07 保持 ACTIVE，总体科研目标未达。无额外候选、旧外部评分或患者侧动作。[D19 结果](../../../../../reports/pub_01/s03/incremental_continuity/physical_stream/run01/REPORT.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/physical_stream/run01/ARCHIVE.md)
