@@ -1,5 +1,7 @@
 # PUB-01 Subtask Registry
 
+2026-11-06当前：用户明确核心目标为SOTA，性能提升优先，历史机制不是性能路线硬门。唯一既有节点 `PUB-01-S03_SS07` 保持 ACTIVE，D24/D25封存后接续 [D26对比预训练历史联合学习](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。同一目标下6个唯一pretrain/9条监督链，实际源/工程冻结经协调核验后全量执行。三臂均可作为性能候选，不启动其他节点、患者、新数据或自动合并；旧测试与外部集仍冻结。
+
 2026-11-06 最新记录为 SS07 的 D25。固定 D24 B_OOF/S_OOF 的实际 0/19 轮权重，B 的相对损失六格均缓解，六格仍低于同折锚点、S 与全 TRAIN 强锚点。正式 0 fit、独立全量复算通过。输出历史后处理支线已封存，SS07 继续 ACTIVE。[D25 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md)
 
 2026-11-06 SS07 的 D24 记录。9 条上游和 12 个下游拟合完成，三级核验通过。B_OOF 的 60 个训练轮次均低于共同锚点，三组回退。S_OOF 的开发相关小幅增加，活动 MSE 上升。D24 已封存，SS07 继续 ACTIVE。[D24 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md)

@@ -209,3 +209,6 @@ Technical/阶段Acceptance PASS_WITH_LIMITATION、Parent consistency PASS；独�
 ### 2026-11-02 SS07完整FT条件历史阶段封存（不完成父任务）
 
 唯一H/current/prior三seed九fit20轮共710100更新完成，全部selected−1；H最佳已训练仍低于强FT+Ccap约.0063–.0079，收益门FALSE，last MSE改善/r下降均保留。独立selected/older/非零last19/目标/轻表与全文图文通过，5PNG完整中文HTML交付验证通过；Technical PASS / 阶段Acceptance PASS_WITH_LIMITATION / Parent PASS。详见full_ft_history/run01/REPORT.md、REVIEW.md、ARCHIVE.md。本候选冻结，SS07/PUB-01与持续goal ACTIVE，不自动扩模型/预算/数据、重开已看外部集、触碰患者或合并PR。
+# 2026-11-06 用户性能优先修订
+
+用户明确『有性能提升就行，核心目标是SOTA』。在既有PUB-01-S03_SS07公开EEG范围内，核心目标按同任务最强方法的可比性能提升推进，连续性仅为可选手段；不再把证明特定历史机制作为性能候选准入硬门。严格的训练/验证/测试用途、实际来源和全部成本披露保留；提升来自当前表示/训练/读出也照实接纳。具体D26三臂和后续SOTA比较见最新CURRENT_TASK。旧结果不改、患者及数据边界不变，不自动开启其他主节点或合并PR。

@@ -1,4 +1,10 @@
-# 当前入口：D25 固定权重来源诊断已封存
+# 当前入口：D26 强对比预训练中的历史联合学习
+
+用户最新优先级：**核心目标SOTA，有性能提升即保留；连续性是手段，历史机制不是性能准入硬门。** D26三臂都可以成为性能候选，完整披露来源与选择，协调同步核对最新同任务强方法和可比性。
+
+2026-11-06。协调已选定唯一实质训练阶段问题并授权执行者继续：[D26具体决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。HH/CH/CC三臂、3seed，共6个唯一从头对比预训练、9个head/FT及固定λ=.01新TRAIN读出。同结构、配对共同停止预算，严格过去且共享可训练encoder；最终FT固定5轮。现阶段实现/必要工程/实际协议冻结后协调审核即可正式运行，尚无本轮科学结果。SS07/持续goal ACTIVE；原D24/D25输出历史支线封存，不重开旧测试或外部、不增数据/患者/自动合并。
+
+# 历史入口：D25 固定权重来源诊断已封存
 
 2026-11-06。D25 在原 VAL 固定使用 D24 的 B_OOF/S_OOF 实际 epoch 0/19 权重。B 相对锚点的损失在六个 seed/epoch 都缩小，平均缓解 0.002741，同时六格均低于同折锚点、S 和全 TRAIN 强锚点。正式 170,634 编码窗、64,189,524 真实下游活动点、0 优化和统计拟合，独立全量评分复算通过。D24/D25 的输出历史后处理支线封存，SS07 总体继续 ACTIVE。[D25 报告](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md) · [独立复核](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REVIEW.md) · [归档](../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/ARCHIVE.md)
 

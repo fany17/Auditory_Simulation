@@ -1,5 +1,9 @@
 # PUB-01-S03_SS07 — 全量强基线上的连续性增量研究
 
+> 2026-11-06用户最新决定：『有性能提升就行，核心目标是SOTA』。性能提升和同任务SOTA比较优先；连续性是可选手段，历史机制降为解释性对照，不再作为性能候选推进硬门。D26三臂均可成为候选。仍不将开发集上涨当SOTA、不同任务指标混比或按测试调参。
+
+> 2026-11-06当前执行：D24/D25已完成并封存。协调在原持续授权内选定D26，仅比较原强EEG–XLSR对比阶段是否联合训练严格过去的表示。具体结构、HH/CH/CC三臂三seed、6个唯一pretrain/9条监督链、配对共同预算、固定5轮FT与TRAIN-only Ccap、工程/资源/评价见 [D26协调决定](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。执行者完成实际源/工程冻结后由协调核验并接续正式实验，不停在准备阶段；旧test/DTU/ds004408和更早结果不重开，无新数据/患者/下游/PR合并。SS07/goal ACTIVE，本轮尚无科学结果。下方旧状态快照不覆盖本次具体决定。
+
 > round01 Completion Record（历史；当前warm round02见Status及第6节）：该轮全部训练、五seed内部/DTU评分与实际raw v1/metric v2复核完成；raw360项最大波形差1.82e−12，metric583129项通过，综合V2 PASS。M4−P内部−.000621、DTU+.000149的M7近似区间均跨0，matched current亦跨0；未建立稳健增益或机制。Technical PASS / 本轮Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。九张真实图已实际查看、逐图中文解释及协调独立审阅，REPORT/REVIEW/final_summary在reports/pub_01/s03/incremental_continuity/run01；轻量HTML归档run_id=20261101_pub01_s03_ss07_round01。round01作业已正常结束；SS07和持续goal保持ACTIVE，不以阴性交付/工程PASS关闭目标，不以暴露测试调参，不改旧结论/其他节点/患者边界。
 
 | Field | Value |
