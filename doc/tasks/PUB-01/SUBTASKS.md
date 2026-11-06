@@ -2,7 +2,9 @@
 
 唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
 
-2026-11-06 SS07 最新验收记录。D20 lag1 单因素三组完成，三 seed 开发 r 均超过锚点与 D19 P 最佳已训练，末轮均低于锚点，均值低于 D18 最强开发参考。候选为 PASS_WITH_LIMITATION，SS07 仍为 ACTIVE。[D20 结果](../../../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md)
+2026-11-06 SS07 最新验收记录。D21 输出端仿射 A / FIR F 共 18 个精确岭解完成。F 在三 seed 超过锚点和 A，仍低于 D20。全部 λ、逐人与系数图、独立终验和归档已交付。候选为 PASS_WITH_LIMITATION，SS07 仍为 ACTIVE。[D21 结果](../../../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md)
+
+同日完成 D20 lag1 单因素三组。三 seed 开发 r 均超过锚点与 D19 P 最佳已训练，末轮均低于锚点，均值低于 D18 最强开发参考。[D20 结果](../../../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md)
 
 同日封存 D19。九组 180 个训练轮次均低于锚点，正式选点全部回退，预设收益门未过。[D19 结果与四图](../../../reports/pub_01/s03/incremental_continuity/physical_stream/run01/REPORT.md)
 

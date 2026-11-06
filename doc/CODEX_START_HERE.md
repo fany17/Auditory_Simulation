@@ -1,4 +1,8 @@
-# 当前入口：D20 紧邻预测历史已完成
+# 当前入口：D21 输出端仿射与 FIR 对照已完成
+
+2026-11-06。D21 的 18 个精确岭解全部完成，未运行原 EEG encoder 或任何新 NN。仿射 A 与 FIR F 三 seed 均选 λ=0.0001，均值 0.182570113 / 0.182905028，F 三 seed 均低于 D20，均差 −0.001185483。A 的小幅 r 增益位于锚点前缀衔接块。独立终验、两张实际系数与成绩图及完整网格已交付，SS07 总体目标仍 ACTIVE。[D21 报告](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md) · [D21 归档](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/ARCHIVE.md)
+
+# 历史入口：D20 紧邻预测历史已完成
 
 2026-11-06。D20 只将 D19 P 的历史 lag 从 288 点改为 1 点。三组各 20 pass、86,820 更新已完成，选择 epoch 0/1/0。开发 VAL r 均值 0.184090511，高于冻结 FT+Ccap 0.001750571，高于 D19 P 最佳已训练均值 0.002040659，低于 D18 P 的 0.184379162。末轮均低于锚点。固定模型的近远替换均下降，原始支持重叠和分布变化仍限制解释。独立复核通过，报告已归档。SS07 总体目标仍 ACTIVE。[D20 报告](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md) · [D20 归档](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/ARCHIVE.md) · [DECAF 公开实现审计](../reports/pub_01/s03/incremental_continuity/metadata_review/code_review/decaf_protocol_20261106/REPORT.md)
 

@@ -1,4 +1,8 @@
-# 当前入口：D20 lag 单因素开发验证已封存
+# 当前入口：D21 输出端线性竞争对照已封存
+
+2026-11-06。冻结 D20 的输出支持、物理 MSE、TRAIN/VAL、掩码及 752 块评分，完成当前输出仿射 A 和含严格过去 96 箱的 FIR F，共 18 个精确岭解。三 seed 选 λ=0.0001，A/F 均值 0.182570113/0.182905028，F 对锚点 +0.000565088、对 D20 −0.001185483。A 的 r 增益集中于前缀块，A/F 的活动 VAL MSE 均高于锚点。完整 λ、逐人及等效物理核已交付，独立终验通过。SS07 总体目标保持 ACTIVE。[D21 结果](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/output_ridge/run01/ARCHIVE.md)
+
+# 历史入口：D20 lag 单因素开发验证已封存
 
 2026-11-06。保留 D19 P 的模型、物理 MSE、数据与掩码，仅将冻结预测历史从 lag288 移到 lag1。三 seed 各 20 pass 完整完成，86,820 更新。三组的开发选点在 epoch 0/1/0，均值 r 0.184090511，较原锚点 +0.001750571，较 D19 P 最佳已训练 +0.002040659。固定模型换回 lag288 平均下降 0.005924620，含分布变化。三组末轮均低于锚点，D20 均值仍低于 D18 P。独立保存与有限功能重放及全文图审阅通过。SS07 总体科研目标继续 ACTIVE。[D20 结果](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/ARCHIVE.md)
 

@@ -1,0 +1,80 @@
+{
+  "stage": "fit",
+  "protocol_sha256": "c5c6ab5ced4b8811a3fdfa96fd6c786ed53e182e71d7c82e7098a1b825fcff0c",
+  "process": {
+    "pid": 1304200,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_output_ridge.py",
+      "fit"
+    ],
+    "linux_startticks": 788106508,
+    "start_unix": 1793953820.423477,
+    "deadline_unix": 1793961020.423477
+  },
+  "location": {
+    "seed": 31415,
+    "phase": "VAL_candidates"
+  },
+  "counters": {
+    "VAL_records": 147,
+    "VAL_cached_windows": 91500,
+    "VAL_anchor_blocks": 2256,
+    "TRAIN_records": 1278,
+    "TRAIN_cached_windows": 757362,
+    "TRAIN_Gram_points": 71110530,
+    "exact_ridge_solves": 18,
+    "VAL_feature_points": 8600397,
+    "VAL_candidate_points": 51602382,
+    "VAL_candidate_blocks": 13536
+  },
+  "CPU_seconds": 636.4021177469999,
+  "wall_seconds": 80.52882406674325,
+  "new_NN_forwards": 0,
+  "new_optimizer_updates": 0,
+  "new_encoder_head_windows": 0,
+  "resources": {
+    "peak_RSS_bytes": 2507051008,
+    "writer_free_bytes": 178097414144,
+    "writer_bytes": 5625623
+  },
+  "passed": true,
+  "selections": {
+    "1024": {
+      "A": {
+        "selected": "A_0.0001",
+        "r": 0.18212056040397875,
+        "delta_r": 0.0002317661157153761
+      },
+      "F": {
+        "selected": "F_0.0001",
+        "r": 0.18237091543590794,
+        "delta_r": 0.00048212114764456526
+      }
+    },
+    "2026": {
+      "A": {
+        "selected": "A_0.0001",
+        "r": 0.18198090145192736,
+        "delta_r": 0.00022478176171164543
+      },
+      "F": {
+        "selected": "F_0.0001",
+        "r": 0.18220151830380116,
+        "delta_r": 0.00044539861358544597
+      }
+    },
+    "31415": {
+      "A": {
+        "selected": "A_0.0001",
+        "r": 0.1836088772955401,
+        "delta_r": 0.00023397247596707027
+      },
+      "F": {
+        "selected": "F_0.0001",
+        "r": 0.18414264968924257,
+        "delta_r": 0.0007677448696695455
+      }
+    }
+  }
+}
