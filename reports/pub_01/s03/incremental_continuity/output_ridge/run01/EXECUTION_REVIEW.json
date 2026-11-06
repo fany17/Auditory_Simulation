@@ -1,0 +1,50 @@
+{
+  "stage": "fit",
+  "decision": "PASS",
+  "reviewer": "root coordinator",
+  "created_unix": 1793953804.090018,
+  "source_sha256": "2a21690924aae786a1d46cb5ad68b1a4702170d33e4719cb9934d8c09d67abcc",
+  "protocol_sha256": "c5c6ab5ced4b8811a3fdfa96fd6c786ed53e182e71d7c82e7098a1b825fcff0c",
+  "engineering_sha256": "94ec9cf61480a85494d1c687cfe101c606932113bd0be44c186aa4473d5bd660",
+  "checks": [
+    "Complete new source and plan read by root",
+    "Original target precision, history bins, normalization, mask and anchor selection checked",
+    "All source/provenance hashes and immutable input size/mtime verified directly on server",
+    "Actual engineering counters and successful terminal receipt verified; engineering PID absent",
+    "FP64 centered ridge with free intercept and prespecified lambda ordering reviewed",
+    "Full 752-block anchor bridge enforced before fitting each seed",
+    "No new test, external data, EEG encoder or neural head computation"
+  ],
+  "formal_budget": {
+    "TRAIN_records": 1278,
+    "VAL_records": 147,
+    "TRAIN_cached_windows": 757362,
+    "VAL_cached_windows": 91500,
+    "TRAIN_Gram_points": 71110530,
+    "VAL_feature_points": 8600397,
+    "VAL_candidate_points": 51602382,
+    "exact_ridge_solves": 18,
+    "VAL_anchor_blocks": 2256,
+    "VAL_candidate_blocks": 13536,
+    "new_NN_forwards": 0,
+    "optimizer_updates": 0
+  },
+  "resources": {
+    "seconds": {
+      "engineer": 600,
+      "fit": 7200
+    },
+    "RSS_GiB": 6,
+    "SATA_min_free_GiB": 20,
+    "writer_MiB": 64,
+    "BLAS_threads": 8,
+    "device": "CPU"
+  },
+  "limitations": [
+    "Repeated development VAL only; no independent generalization claim",
+    "A/F differ in capacity; exact ridge and D20 SGD costs differ",
+    "Temporal FIR is on offline predictions, not online causal EEG",
+    "Coefficient kernel is nominal algebra ignoring FP32 rounding"
+  ],
+  "goal_complete": false
+}
