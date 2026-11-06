@@ -1,0 +1,496 @@
+{
+  "candidate_sha256": "efa8659619eead489a5d776a2830d1b55d24dfcc912746a08ff3daa8fba83d6a",
+  "passed": true,
+  "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+  "code_and_JSON": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/DOWNSTREAM_FORMAL_GATE_V06.json": "5aba6ea5c1f44c17fba82c885c8c514277e85d5a166a3e38998c5e9615f91a00",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/ROUTING_AND_BUDGET_CANDIDATE.json": "efa8659619eead489a5d776a2830d1b55d24dfcc912746a08ff3daa8fba83d6a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_upstream.py": "5abc75d363619463378f178a86133e1f13cb59ed4e07662ea77334f255eee0bc",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/ENGINEERING_COMPLETED.json": "45e2062581946d6feb9d46491c9e7fe0af47ac6a6cd86076c08c2d10a15df698",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/VAL_ROUTING_METADATA.json": "a6074a541e2747ed2735d98672caa1c86dc02f72597a4b9409f014a7e32eaef1",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/input_v03/pub_01_s03_ss07_crossfit_alignment_meta.py": "d7f48eec18614fb96864abc549582371480c01e4ce93f95b35f2e1d52ac10e88",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/input_v03/pub_01_s03_ss07_crossfit_alignment.py": "451bcbeca20938406fe4319ebe0a3f1daf0eb1c1488a19f87b63dabb4941f72c",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/COORDINATOR_ROUTING_REVIEW.json": "efd5e4785714d8ab86d6dc1fade4366d9695b04eb9c61e790939b5740a0f7e48",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_downstream_v06/pub_01_s03_ss07_crossfit_downstream.py": "8e99a99ed0afd57ea56ce7139754341b7f1b30227247321e2a635578940eb55f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_conditional_history_probe_20261101/input/pub_01_s03_ss07_conditional_probe.py": "0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization_core.py": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/BASELINE_PROTOCOL.json": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INCREMENTAL_PROTOCOL.json": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py": "536889345d3b5a35d16ef53ef600e5cf5ec064e59bcfc259c9a3a0a98882def2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/features/manifest.json": "85a8b4a39c0b9bcf7e4c76e5d20ca36e89c0980d993c34851aaff4bbb3cc0d17",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_method_models.py": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/training_seed1024_attempt04/config_frozen.json": "09e18b9096c85bf4f83c9e6fa8d9d742580d11df57e40503391fd378279cb173",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/FOLD_AND_BUDGET_CANDIDATE_V2.json": "6638a00d673fb6eebbe5353d97d14b21800c19ddf0d9ac4a600cde0440740c83",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/TRAIN_RECORD_ASSIGNMENT.json": "7ab57f1818a4aef312c43342768893ae8a49ff39407fa8bd76812ef2c81e3d24",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/engineer_v03/seed1024_fold0/COMPLETED.json": "f6a69690580ba08faf454f57860a4a378f43ad441f54abc35d85a57d3cee4686",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_meta.py": "a3921beafa3f55cb87c2f0bdb556e31e19bed7e0466e498adceb345477b27433",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_queue.py": "189b21c8a242c7f8d87a69c515b151b3f8059f605fd0ada08eee9db6b679a679",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_memoryless_output_20261106/PROTOCOL.json": "339f41a6b0490dbdcef73b64ce9ad17c24f9e372f6304f5050309952129018a0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_memoryless_output_20261106/input/pub_01_s03_ss07_memoryless_output.py": "127c2d15b4727fa25a26c0d1bd0c83802ecf43fa243eedb7cb940562fb9b8393",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_query_20261106/PROTOCOL.json": "40de86545cdcd69264a308a68cc02c653b211f9688511b2cea9df2976dbcc74e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_query_20261106/input/pub_01_s03_ss07_output_query.py": "9425b886fed962ebfc349cf60c5dee3b56aa374ab13f7e7c231829f993f7afcb",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PREPARATION_METADATA.json": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PROTOCOL.json": "133b60eeb6e937def9f25bdb8303ab80d9a2cf00d0f86ea3f6768c0f56a7b078",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_run.py": "9fb8d5d5ce22681d6b886c1a3987b9db1be6c942111de7d303cc0c2d21bf1978",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/PROTOCOL.json": "535d06ed1e12ea1048293ca1be63bb2ad8dfd7c0b985dd9ca9503d6f64735540",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/input/pub_01_s03_ss07_recent_prediction_context.py": "31b9dc7756b95e555d6775b26fe8b8d59fc5d0e96ac84c2a947f099ffc2a04c3",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY_V02_STOP.json": "0f1a293b2e13e646a6b281a39157b95155ef4d2c5f0c9fd1ac0ebf09eeffd902",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY_V03.py": "ac9e2b7ca4a6d2ee6d393c2e15cf140416451c64871378273419a7a4a69f03be",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/DOWNSTREAM_INPUT_PREFLIGHT_V03.json": "a06b4b4543fa04651477bac462ef79d79a002954d87e6afb0ca66fe056e21637",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/UPSTREAM_FORMAL_GATE_V04.json": "0ad69424fb76f827b268b63f7d45cbd954ae514c7f687d13a870e66e52322482",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/UPSTREAM_RECOVERY_TERMINAL.json": "4e51fcae766b3e51c187eafe0a42117de5dd4aca28a4aa0db196860c0a68e4c2",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/COMPLETED.json": "231e76fa271a15fd7a6577c3dd65231d79e31b279bfb6a1f4ac2150c63317ec0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/PROCESS.json": "ee054355d9d4df582a8b1ffc2816e4d6680ad53a1a0266de6b8750c039c963d5",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed1024_fold0.json": "bf85676b35ca91283361f9a0afefdd4d89db2a126c6eb10458cfb1e5b3f42434",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed1024_fold1.json": "8aa6610464ee02185d0d572239556ee765a947a8b4cad65d6139ec8d2800d15b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed1024_fold2.json": "a5e1bdd09d6ea37212f589d76da86b1972ab66db9f3194b3fb72bd82073c154d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed2026_fold0.json": "e5253a0c38f5452708de97058be5d1b46e5c66c8e64f579341052b55d0d31bf1",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed2026_fold1.json": "40c0ef423e653946533767e473716558ec3d44c183db11e0710b3483ce3ba240",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed2026_fold2.json": "225ea36011e104140a3846d7fce381119177e98d906215d6c74e9df220b7effe",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed31415_fold0.json": "cd62bbd931a144acdd6993fede0a12965ff9489ed4f0a20df34b8a1e3a208f5b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed31415_fold1.json": "3a9b907455786fce074d8bb359a99e98038aeb33d52769ef5e714487e0150e58",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed31415_fold2.json": "3457e4c729c25b90bc2bd3f19fbce91689688b2a55109df30808dd3b628a6cfb",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_engineer/seed1024/COMPLETED.json": "3f334b8f23e2047cb628869eaafbdd7a0b9109fbf5b269a2791e1a95292cf7d8",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/COMPLETED.json": "b86787023eac0ae052fcdc6fd838eca31494aeb73d13ce23a1312383f45c74fd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/IS_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/OOF_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/UPSTREAM_FROZEN.json": "76b690f86503c8e8238ab664363160384381bf0e0f5f05bf53c40979afd77aa6",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/COMPLETED.json": "ecdfd6f930864724b141abde29390cb7330f670ad2d0055af337eac9868d411d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/IS_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/OOF_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/UPSTREAM_FROZEN.json": "833508d1cc29f61a1e6fb5bf8ea3dfc8245c507305dcc48f4c19516ffe00508b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/COMPLETED.json": "4e3a63958468876bd6b8e8b87c16cc2f5bb771b32edf0441808263abccae9afb",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/IS_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/OOF_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/UPSTREAM_FROZEN.json": "40edf68e4b2cbb60a832bd861a746391f06df034b068db7273e667bb41173c5c",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/COMPLETED.json": "396bd02ff5592884571c2aa2567037fa280a5f909b0d9d645ae25ac91180dd01",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/IS_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/OOF_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/UPSTREAM_FROZEN.json": "e978f260b988f19eabd6abb29c5b42e81dfcd94ee9d3bd87ac0bbc42b4b2dd86",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/COMPLETED.json": "838795260d308e4b2b928a97c03e97f3c9836f7a99f60318f4230c8bb05d2ca9",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/IS_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/OOF_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/UPSTREAM_FROZEN.json": "2deb08064ae6f46a8a53e8b2673e71b4507341f009c79e44694dd9fccb24eb0e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/COMPLETED.json": "2cc65f76560e995a78f2ac9fb0d84a716c4ea0f0e76b6d1703a28210d8ee60e6",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/IS_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/OOF_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/UPSTREAM_FROZEN.json": "45c8309282a10f62c0063801146f6f7043161cb8f9dee599a445e0b1c77152b8",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/COMPLETED.json": "a391960794ef498f3639499dce617892e1bcb206a6473e01eba5e5784df7e914",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/IS_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/OOF_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/UPSTREAM_FROZEN.json": "91573069d38fbdd279eaf6c440535f200b4c7e47288cd6c0c6c1d364a8e25e14",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/COMPLETED.json": "41dd5c1d3d22f4b01271624e3eb2641e648f0bcc22f78765936c8f93d3347317",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/IS_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/OOF_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/UPSTREAM_FROZEN.json": "fc31127fab9123d465253cdb010c79bf49b64cbfd0a7bb4d68b4475602b2656b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/COMPLETED.json": "e96298722b969e0d6af8fee8fd1f8c5b1c79b8c1eec3f2d39addc6af628b2195",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/IS_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/OOF_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/UPSTREAM_FROZEN.json": "8bfe1c58cd678cfe145d7d01f72602f69a31a7429c61b2d40379517fb96c5f8a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_downstream_v06/pub_01_s03_ss07_crossfit_meta.py": "a3921beafa3f55cb87c2f0bdb556e31e19bed7e0466e498adceb345477b27433",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_upstream_recovery_v01/pub_01_s03_ss07_crossfit_upstream_recovery.py": "ff10edf3d8b7b347edd7823efc05e04d4bacec2ac9e117822655c5e31414e3ff",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue/GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9_FAILURE.json": "feb9024f0de79be77abd7b7b8f39aaa269a142be056fc46c65946940f3bf0ad8",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue/TERMINAL.json": "b42e053527cd696d61b1f8c3ef17f19ea13e096aec8d8de9da6d634283aa307e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/upstream_recovery_v01/PLAN.json": "d5f46ef9f341fa43c682ed6a055f35443e9da5ad96d0225f55bdb7ad51de1044",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/upstream_recovery_v01/PROCESS.json": "3fcf5e3d233c20eb14df58a97bf361bf863a245d692abc7dd6cc005cc5820feb",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/B_OOF/seed1024_P_past_prediction/RESULT.json": "6aede0128b51f23b5aa57d2a64894cc6764e7f10b12f28c78c12f8aae0c5a2df",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/OOF_TRAIN_STATS.json": "2105eb9ad1657aa5aa010700f18daf14a5cc400844a1842e7b2a429fbf4363b9",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/S_OOF/seed1024_P_past_prediction/RESULT.json": "bb0ce2a9c501661e98e31021270bdffdb62d77060c23de23d1c3591e6dca0793",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/B_OOF/seed2026_P_past_prediction/RESULT.json": "325cd3a96f1579382670bc72565e3caa2836e850c8d297fba407b998d3f982a7",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/OOF_TRAIN_STATS.json": "c72e60858e3b07cbd598da5e67f145817568a7e16b42f5d81248b600418d8df5",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/S_OOF/seed2026_P_past_prediction/RESULT.json": "a04657d90d0f490716e4cd5bf8cc0b245dab981d0e87f69350638c972b3c75e6",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/B_OOF/seed31415_P_past_prediction/RESULT.json": "29d06379c78e4ed895c4c15008cd9a1691538f703ad6c7a3576ff33e5a1e6204",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/OOF_TRAIN_STATS.json": "9be126d9613e14de4a56b8b5ac197c4bbbe870a31319e3a4699d490d4bc833ca",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/S_OOF/seed31415_P_past_prediction/RESULT.json": "a249f1ce113a476a4d1aae5eb1998d4d66ee35a886b29b2aa195e13d7757e71b"
+  },
+  "OOF_fixed_weights": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/B_OOF/seed1024_P_past_prediction/recovery/epoch00.pt": {
+      "bytes": 133749,
+      "mtime_ns": 1793969738658533729,
+      "sha256": "158ddc284472888befdd38c7ab0221232bb75ae99ca043a9f55a7eed33cff1b0"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/B_OOF/seed1024_P_past_prediction/recovery/epoch19.pt": {
+      "bytes": 136245,
+      "mtime_ns": 1793969839346538037,
+      "sha256": "4a0e4c5801a7799ef6e453f613cd9dda454a8af25c946071c9d441ed5a9f8d48"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/S_OOF/seed1024_P_past_prediction/recovery/epoch00.pt": {
+      "bytes": 60789,
+      "mtime_ns": 1793969848332538421,
+      "sha256": "cc277dd38812fba332efefe7f3006b115c01c2fd4ca6392131d8d1a685e9447a"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/S_OOF/seed1024_P_past_prediction/recovery/epoch19.pt": {
+      "bytes": 63285,
+      "mtime_ns": 1793969946872542638,
+      "sha256": "99ef22ccd0cedd077dfdebe95bd62d1e1665e90b109ab31fd60ef801d2483b6f"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/B_OOF/seed2026_P_past_prediction/recovery/epoch00.pt": {
+      "bytes": 133749,
+      "mtime_ns": 1793969737691533687,
+      "sha256": "0701143c1ee47f115cadd72962c6b7763a5af907834df7f88889abcd69d3824e"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/B_OOF/seed2026_P_past_prediction/recovery/epoch19.pt": {
+      "bytes": 136245,
+      "mtime_ns": 1793969836055537896,
+      "sha256": "49d62abd4f20d78820216948b2c8eca8ed78ae22cebfecfdd91cd2c25765e4b5"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/S_OOF/seed2026_P_past_prediction/recovery/epoch00.pt": {
+      "bytes": 60789,
+      "mtime_ns": 1793969844860538273,
+      "sha256": "4d1a71b62747eb2b9370ee170d521b1b4867edf3dc2c288a800c3fee974fccab"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/S_OOF/seed2026_P_past_prediction/recovery/epoch19.pt": {
+      "bytes": 63285,
+      "mtime_ns": 1793969946214542610,
+      "sha256": "9db4326c4eb8b47c48b435c0c9ac7865aaa61e0d36642c4d7db1a9209aa93b11"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/B_OOF/seed31415_P_past_prediction/recovery/epoch00.pt": {
+      "bytes": 133749,
+      "mtime_ns": 1793970210612553923,
+      "sha256": "2a046c70651ff9af5172f63d8bd7f376cc123f5e010ab436ec0fc749fce82172"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/B_OOF/seed31415_P_past_prediction/recovery/epoch19.pt": {
+      "bytes": 136245,
+      "mtime_ns": 1793970318512558540,
+      "sha256": "5d3e0f1e7fe7a507e1a2635fd1946b6ddaf526b74b86aed292f594bb0ab23d32"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/S_OOF/seed31415_P_past_prediction/recovery/epoch00.pt": {
+      "bytes": 60789,
+      "mtime_ns": 1793970328612558972,
+      "sha256": "c32957ff402427360257d2a8850d1ba3a7f820b015ef2d80cf13432de10ef7c5"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/S_OOF/seed31415_P_past_prediction/recovery/epoch19.pt": {
+      "bytes": 63285,
+      "mtime_ns": 1793970433113563444,
+      "sha256": "786705ea31c0c9de96c426e7d213618d65cd3d3e24a4720d7a84b760f1645508"
+    }
+  },
+  "upstream_payloads": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793960347140131869,
+      "sha256": "45d860339c3be209faa939ae420c8a45ffd0b35d911cff74e9867552f434fb90"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793960407472134451,
+      "sha256": "05b21305423df6c3115734d676bbe59a18f606edb983b20670bdb935fe658638"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793969368789517902,
+      "sha256": "cb4a97b4f71559460a98cd6d3ccc0954a009d0405b4cefe637311009d7577c1e"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793969424556520288,
+      "sha256": "1e27764edd11945e65827e63268cdb07c8ba30e8baa9a716dc13e78ae32a2679"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793967319410430210,
+      "sha256": "874fa359f6d36d5d83e730c5ad411a89a913c3c8e881b557f126f4e826a24ae3"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793967375735432620,
+      "sha256": "8fb9f173ee4d60ad1be375001c1fb71131997f2009724e8f1c3cc2465dd49dfd"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793960513149138973,
+      "sha256": "e1e1ed3f6c4f0667ab4ed82cab0e9ea08f637d3786b524157bf6e22757e8a984"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793960571009141449,
+      "sha256": "84adecb1a558ed7064e61fc57c73e16e6ad313ff6ad95458b9800aeb7963fde4"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793964968065329597,
+      "sha256": "836662c26aeff8b625fbc9706ba30f099d607d9a823e9fac4bffe899af1dd8f7"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793965025124332038,
+      "sha256": "19146f36e8eccc7419165b3f487a7de95000eec823a06dac6f884dfd16331a0f"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793965230442340824,
+      "sha256": "cf346d1645138f960815a17654b83fc057a8b51ea7ddb62be2457006720aa4f9"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793965288473343307,
+      "sha256": "33c875a69d2311df6e03369751f00a09c5a1566d33c0ad360e1c0dcff64c3d29"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793967149838422954,
+      "sha256": "6a885e723d03ddb966d0d23f5e6b4a05ee347be490179891827cfaede351fb5b"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793967206625425384,
+      "sha256": "a730ae445c08f7677ee9356a8b1ac97294607e2d063dcf64da0344c79b5fa602"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793962546127225963,
+      "sha256": "79c8b307fdf5ef1ff1a9da5ff46550c9984b3232887b11c89c3b93be26f7cb86"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793962604526228462,
+      "sha256": "594c0880f50941cd463d6d5a99f5df6041aa986340a5743fedff6f4708102626"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793962709217232942,
+      "sha256": "af11bb3c101b203e0f530325f3e195e75da5fc73cf7fa56bd45e285269b5e190"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793962765517235351,
+      "sha256": "1409a7a4e574a8c0b50b398c38901827756ffea6dccce45c435ca065621f3ab6"
+    }
+  },
+  "VAL_raw_stats": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-001/ses-shortstories01/sub-001_ses-shortstories01_task-listeningActive_run-02_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832303299494621
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_2_envelope.npy": {
+      "bytes": 465880,
+      "mtime_ns": 1789831834542474563
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-002/ses-shortstories01/sub-002_ses-shortstories01_task-listeningActive_run-09_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832303028494610
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-003/ses-shortstories01/sub-003_ses-shortstories01_task-listeningActive_run-02_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832303017494609
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-005/ses-shortstories01/sub-005_ses-shortstories01_task-listeningActive_run-04_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832306851494773
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-007/ses-shortstories01/sub-007_ses-shortstories01_task-listeningActive_run-02_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832306877494774
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-008/ses-shortstories01/sub-008_ses-shortstories01_task-listeningActive_run-07_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832307147494786
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-009/ses-shortstories01/sub-009_ses-shortstories01_task-listeningActive_run-09_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832310653494936
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-010/ses-shortstories01/sub-010_ses-shortstories01_task-listeningActive_run-06_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832310744494940
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-011/ses-shortstories01/sub-011_ses-shortstories01_task-listeningActive_run-09_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832311003494951
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-012/ses-shortstories01/sub-012_ses-shortstories01_task-listeningActive_run-08_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832314467495099
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-013/ses-shortstories01/sub-013_ses-shortstories01_task-listeningActive_run-07_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832314603495105
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-014/ses-shortstories01/sub-014_ses-shortstories01_task-listeningActive_run-07_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832315151495128
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-015/ses-shortstories01/sub-015_ses-shortstories01_task-listeningActive_run-09_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832318304495263
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-016/ses-shortstories01/sub-016_ses-shortstories01_task-listeningActive_run-02_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832318422495268
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-018/ses-shortstories01/sub-018_ses-shortstories01_task-listeningActive_run-02_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832322187495430
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-019/ses-shortstories01/sub-019_ses-shortstories01_task-listeningActive_run-05_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832322221495431
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-020/ses-shortstories01/sub-020_ses-shortstories01_task-listeningActive_run-03_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832322828495457
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-021/ses-shortstories01/sub-021_ses-shortstories01_task-listeningActive_run-05_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832326070495596
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-022/ses-shortstories01/sub-022_ses-shortstories01_task-listeningActive_run-10_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832326051495595
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-023/ses-shortstories01/sub-023_ses-shortstories01_task-listeningActive_run-07_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832326644495620
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-024/ses-shortstories01/sub-024_ses-shortstories01_task-listeningActive_run-09_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832330236495774
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-025/ses-shortstories01/sub-025_ses-shortstories01_task-listeningActive_run-03_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832330124495769
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-026/ses-shortstories01/sub-026_ses-shortstories01_task-listeningActive_run-03_desc-preproc-audio-audiobook_5_2_eeg.npy": {
+      "bytes": 29884544,
+      "mtime_ns": 1789832330508495786
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-043/ses-varyingStories04/sub-043_ses-varyingStories04_task-listeningActive_run-07_desc-preproc-audio-podcast_15_eeg.npy": {
+      "bytes": 30277760,
+      "mtime_ns": 1789832334372495951
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_15_envelope.npy": {
+      "bytes": 472072,
+      "mtime_ns": 1789831835985474625
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-044/ses-varyingStories04/sub-044_ses-varyingStories04_task-listeningActive_run-08_desc-preproc-audio-podcast_15_eeg.npy": {
+      "bytes": 30277760,
+      "mtime_ns": 1789832337967496105
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-045/ses-varyingStories04/sub-045_ses-varyingStories04_task-listeningActive_run-08_desc-preproc-audio-podcast_15_eeg.npy": {
+      "bytes": 30277760,
+      "mtime_ns": 1789832337989496106
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-046/ses-varyingStories04/sub-046_ses-varyingStories04_task-listeningActive_run-09_desc-preproc-audio-podcast_15_eeg.npy": {
+      "bytes": 30277760,
+      "mtime_ns": 1789832338239496116
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-049/ses-varyingStories06/sub-049_ses-varyingStories06_task-listeningActive_run-09_desc-preproc-audio-podcast_21_eeg.npy": {
+      "bytes": 34635904,
+      "mtime_ns": 1789832666382510157
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_21_envelope.npy": {
+      "bytes": 540304,
+      "mtime_ns": 1789831850088475229
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-051/ses-varyingStories06/sub-051_ses-varyingStories06_task-listeningActive_run-04_desc-preproc-audio-podcast_21_eeg.npy": {
+      "bytes": 34635904,
+      "mtime_ns": 1789832670282510324
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-052/ses-varyingStories06/sub-052_ses-varyingStories06_task-listeningActive_run-06_desc-preproc-audio-podcast_21_eeg.npy": {
+      "bytes": 34635904,
+      "mtime_ns": 1789832670808510347
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-053/ses-varyingStories06/sub-053_ses-varyingStories06_task-listeningActive_run-01_desc-preproc-audio-podcast_21_eeg.npy": {
+      "bytes": 34635904,
+      "mtime_ns": 1789832670987510355
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-054/ses-varyingStories06/sub-054_ses-varyingStories06_task-listeningActive_run-01_desc-preproc-audio-podcast_21_eeg.npy": {
+      "bytes": 34635904,
+      "mtime_ns": 1789832674389510500
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-055/ses-varyingStories06/sub-055_ses-varyingStories06_task-listeningActive_run-06_desc-preproc-audio-podcast_21_eeg.npy": {
+      "bytes": 34635904,
+      "mtime_ns": 1789832674935510523
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-056/ses-varyingStories06/sub-056_ses-varyingStories06_task-listeningActive_run-08_desc-preproc-audio-podcast_21_eeg.npy": {
+      "bytes": 34635904,
+      "mtime_ns": 1789832675160510533
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-057/ses-varyingStories07/sub-057_ses-varyingStories07_task-listeningActive_run-07_desc-preproc-audio-audiobook_13_2_eeg.npy": {
+      "bytes": 27984000,
+      "mtime_ns": 1789832206393490475
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_2_envelope.npy": {
+      "bytes": 436080,
+      "mtime_ns": 1789831827920474280
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-058/ses-varyingStories07/sub-058_ses-varyingStories07_task-listeningActive_run-04_desc-preproc-audio-audiobook_13_2_eeg.npy": {
+      "bytes": 27984000,
+      "mtime_ns": 1789832207979490543
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-059/ses-varyingStories07/sub-059_ses-varyingStories07_task-listeningActive_run-04_desc-preproc-audio-audiobook_13_2_eeg.npy": {
+      "bytes": 27984000,
+      "mtime_ns": 1789832208706490574
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-060/ses-varyingStories07/sub-060_ses-varyingStories07_task-listeningActive_run-07_desc-preproc-audio-audiobook_13_2_eeg.npy": {
+      "bytes": 27984000,
+      "mtime_ns": 1789832210145490635
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-061/ses-varyingStories07/sub-061_ses-varyingStories07_task-listeningActive_run-02_desc-preproc-audio-audiobook_13_2_eeg.npy": {
+      "bytes": 27984000,
+      "mtime_ns": 1789832212040490716
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-062/ses-varyingStories07/sub-062_ses-varyingStories07_task-listeningActive_run-06_desc-preproc-audio-audiobook_13_2_eeg.npy": {
+      "bytes": 27984000,
+      "mtime_ns": 1789832212443490734
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-063/ses-varyingStories08/sub-063_ses-varyingStories08_task-listeningActive_run-06_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832564105505781
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_30_envelope.npy": {
+      "bytes": 498336,
+      "mtime_ns": 1789831842498474904
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-064/ses-varyingStories08/sub-064_ses-varyingStories08_task-listeningActive_run-03_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832565729505851
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-065/ses-varyingStories08/sub-065_ses-varyingStories08_task-listeningActive_run-01_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832567715505936
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-066/ses-varyingStories08/sub-066_ses-varyingStories08_task-listeningActive_run-08_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832568522505970
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-067/ses-varyingStories08/sub-067_ses-varyingStories08_task-listeningActive_run-01_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832570358506049
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-068/ses-varyingStories08/sub-068_ses-varyingStories08_task-listeningActive_run-07_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832571669506105
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-069/ses-varyingStories08/sub-069_ses-varyingStories08_task-listeningActive_run-07_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832572501506140
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-070/ses-varyingStories08/sub-070_ses-varyingStories08_task-listeningActive_run-04_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832574425506223
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_eeg/sub-071/ses-varyingStories08/sub-071_ses-varyingStories08_task-listeningActive_run-03_desc-preproc-audio-podcast_30_eeg.npy": {
+      "bytes": 31981696,
+      "mtime_ns": 1789832575619506274
+    }
+  },
+  "budget": {
+    "downstream_active_points": 64189524,
+    "full_VAL_equivalent_passes": 22.39066080321641,
+    "logical_fold_readout_routes": 36,
+    "new_fit_statistics": 0,
+    "new_fits": 0,
+    "old_test_and_external": 0,
+    "upstream_encoder_windows": 170634,
+    "upstream_encoder_fold_jobs": 9,
+    "upstream_encoder_minibatches": 2673
+  },
+  "authorized_scope": "One existing VAL fixed-weight diagnostic only"
+}
