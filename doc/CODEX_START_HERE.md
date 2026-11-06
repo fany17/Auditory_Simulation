@@ -1,4 +1,10 @@
-# 当前入口：实现审计已交，projection前memory四臂源/协议准备
+# 当前入口：D18 已封存，D19 连续残差等待工程审阅
+
+2026-11-06，PUB-01-S03_SS07。D18 的 12 个正式 fit、科学审阅和归档均完成。H 对匹配当前 C 的开发 VAL r 三 seed 平均差为 −0.000004008，H 三个 seed 都低于 P。[D18 报告](../reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/REPORT.md)
+
+D19 源码和 2203 元数据核对已完成。每物理点只有一个可训练残差。H/P 使用完整 6 秒历史，固定为 96 个四点箱，C 使用当前点的正 Hann 贡献窗。共享冻结 FT+Ccap 锚点。下一步先做绑定实际源码和 protocol 的工程审阅及受控验收，再按正式审阅启动三角色×三 seed。当前 D19 模型前向、更新和拟合均为 0。旧 test、DTU、ds004408 与患者侧维持既有边界。[D19 执行方案](../reports/pub_01/s03/incremental_continuity/physical_stream/run01/PLAN.md)
+
+# 历史入口：实现审计已交，projection前memory四臂源/协议准备
 
 D17封存后的有限实现审计已交：reports/pub_01/s03/incremental_continuity/implementation_path_audit/run01/REPORT.md，25函数/类SOURCE_INDEX与AUDIT_SCOPE明确0数组/构模/NN/fit。核实warm18fit已联合训练原encoder，不能重复声称首次end-to-end；新缺口限定64→8前192×64逐时间token/query-dependent memory。D12–D16仅冻结FT缓存，D9近null输出抵消不能靠feature fusion自动消除。DECAF作者README实际指carankt，所读teacher/eval入口与本项目output_prior不同，SHINE尚未代码发布，均未运行作者入口。协调下一已选H/C/T/P四臂×3seed、共同FT+Ccap(.01)/可微固定readout、当前Eθ/head可训/历史E0eval冻结、zero-output memory、near5/3/older9/7/i>=9、首9冻结anchor、D16共同目标shuffle与60s选点；拟20轮/24h/两GPU各一fit。现在只进入实际源/协议/必要工程准备，正式fits须具体冻结/实际工程与源审阅通过；不重开旧外部，D9坐标替代不混入本候选。
 
