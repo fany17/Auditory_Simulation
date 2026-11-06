@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "process": {
+    "pid": 1610547,
+    "uid": 1012,
+    "startticks": 790189760,
+    "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "TRAIN_records": 12,
+  "fixture_windows": 7005,
+  "fit": {
+    "TRAIN_physical_points": 673608,
+    "TRAIN_fit_windows": 6957,
+    "normal_equation_max_abs": 3.412526337898125e-17
+  },
+  "affine": {
+    "a": 0.0018075168229238529,
+    "b": 0.29206994923263874
+  },
+  "elapsed_seconds": 3.3095924640074372,
+  "CPU_seconds": 21.823599239,
+  "new_neural_updates": 0,
+  "new_neural_forwards": 0,
+  "engineering_ridge_fits": 1,
+  "first4_fallback_equal": true,
+  "positive_Hann_support": 59902,
+  "old_test_reads": 0
+}

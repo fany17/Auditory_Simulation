@@ -1,0 +1,96 @@
+{
+  "frozen": true,
+  "inventory_sha256": "6385bde08161beb1dd507568aeb3c6d32d2f2be9087f423aec04107c1e943697",
+  "budget_sha256": "47cfebc5dcb0539d3e065592f4ebeefd1882358a1949f8da984ec53f26d2450d",
+  "plan_sha256": "40db7e6c0dad3124b136a96f08da328f638720732541e6689f2f3849af7eb753",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_conditional_history_probe_20261101/input/pub_01_s03_ss07_conditional_probe.py": "0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization_core.py": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/SOURCE_FAMILY_JOIN.json": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/block_eligibility/val.json": "c655eda48e136de39c686bcedd04049d4bfc4414bfd201d38119aea36f869c22",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py": "536889345d3b5a35d16ef53ef600e5cf5ec064e59bcfc259c9a3a0a98882def2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/manifest_frozen.json": "395ffef0765ce595e897f85c7483f2a07816c0266d27f5e4e2e8d0d5959f84d5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/features/manifest.json": "85a8b4a39c0b9bcf7e4c76e5d20ca36e89c0980d993c34851aaff4bbb3cc0d17",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_method_models.py": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/manifest_frozen.json": "4c0c2bcc6841437752fbc2c302e5df0693b9db120c19e68d7360d5125bd0c5e0",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_windows.json": "17ad664e11e38c72bd0874395e4858ca035339cc0ba14705c48c001d8e6fbd54",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/val_windows.json": "b149790e36d2c6264cd628b702c2924bc824e1a10b58be005d215c09380b61df",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/training_seed1024_attempt04/config_frozen.json": "09e18b9096c85bf4f83c9e6fa8d9d742580d11df57e40503391fd378279cb173",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/BUDGET.json": "47cfebc5dcb0539d3e065592f4ebeefd1882358a1949f8da984ec53f26d2450d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/COORDINATOR_DECISION.md": "ce7d61da1088f14c0c5465e2dd1805fe8d4a896b3b787c47a846acc3221f7cff",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/ENGINEERING.json": "fdbdddddc0422966fbc7212a7f8b6810e91159f3df8300280ead9e7e05e06958",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/INPUT_RECEIPT.json": "750d736151b23a8c05d53e58492ca5072491c6d6dac4ea3144a4ef45589714a0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/PLAN.md": "40db7e6c0dad3124b136a96f08da328f638720732541e6689f2f3849af7eb753",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v03/pub_01_s03_ss07_contrastive_history_data.py": "d08d1d5eceaedd51f2efd75b1b98d16294ea500a527eded2840af9b62663e553",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v03/pub_01_s03_ss07_contrastive_history_engineering.py": "ffaae7f4aee1a6be8e30d2d6a73b7954a506d215b3d9d465e9e4f004f4e4dcde",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v03/pub_01_s03_ss07_contrastive_history_model.py": "d053b555fd45e06020b25e3dbe4d07660d06570431fd704215dc56452f180329",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v03/pub_01_s03_ss07_contrastive_history_queue.py": "c8a7032f73e2bb1e9bb2e16ca5f9d55268508560f3eadcb6b799773b00c0c5cc",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v03/pub_01_s03_ss07_contrastive_history_readout.py": "0121e5afbb5a9e641b74541952ef468e5f3453c525e53de6eeb472a9b0e04a6a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v03/pub_01_s03_ss07_contrastive_history_train.py": "95085c806ea930e18037a55d42b5a2b6345b73315fb6490700fb77bf202eedd2",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PREPARATION_METADATA.json": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed1024_ANCHOR.json": "af60310859044a34ab3d8ee48016c32529a3191e6b99abf7a5fd16fcd9cdce6d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed2026_ANCHOR.json": "b68906ddfbc6ecac1de8d16c43f3f6e447c883a508d1f820498143239d3f212e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed31415_ANCHOR.json": "ca49512758db6485c573d56a765304a5a6b97c11fa2e06d47c7292ba94b78702",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_model.py": "3a62b40203dcac345a12aefcd0445566205f725c570cb00e7323d866f6151e66",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_meta.py": "a3921beafa3f55cb87c2f0bdb556e31e19bed7e0466e498adceb345477b27433",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_upstream.py": "5abc75d363619463378f178a86133e1f13cb59ed4e07662ea77334f255eee0bc"
+  },
+  "engineering_sha256": "fdbdddddc0422966fbc7212a7f8b6810e91159f3df8300280ead9e7e05e06958",
+  "axes": {
+    "current": 192,
+    "hop": 96,
+    "ready": 864,
+    "near": [
+      -480,
+      -288
+    ],
+    "far": [
+      -864,
+      -672
+    ]
+  },
+  "arms": [
+    "HH",
+    "CH",
+    "CC"
+  ],
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "CL_pairs": 3,
+  "CL_unique_jobs": 6,
+  "head_jobs": 9,
+  "FT_jobs": 9,
+  "Ccap_jobs": 9,
+  "CL_batch": 128,
+  "CL_joint_patience": 15,
+  "CL_epoch_cap": 100,
+  "head_train_batch": 64,
+  "head_val_batch": 512,
+  "head_joint_patience": 10,
+  "head_epoch_cap": 250,
+  "FT_epochs": 5,
+  "FT_final_epoch": 4,
+  "lambda_fixed": 0.01,
+  "readout_prefix_windows": 4,
+  "loss": "native bidirectional CE and supervised float32 centered cosine eps1e-6",
+  "selection": "final Ccap mean3 fixed epoch4; tie CC CH HH",
+  "caps": {
+    "writer_GiB": 64,
+    "reserve_GiB": 64,
+    "RSS_per_worker_GiB": 32,
+    "CUDA_reserved_per_worker_GiB": 40
+  },
+  "source_family_counts": {
+    "shared_VAL": 29,
+    "unseen_VAL": 20
+  },
+  "old_test_reads": 0,
+  "exact_resume": "saved model optimizer scheduler Torch CPU/CUDA RNG and batch cursor"
+}
