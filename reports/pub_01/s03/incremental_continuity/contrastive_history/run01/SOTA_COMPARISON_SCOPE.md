@@ -15,6 +15,8 @@
 
 这些是同一反复开发VAL上的描述性候选，不是独立测试证据。各行保留整臂的全部三个seed，不跨方法挑seed拼接；历史机制、相关提升、幅值误差和独立泛化分别作结论。下一步强对照也不能仅战胜较低锚点便略去已存在的更高开发参考，更不能凭此宣称SOTA。
 
+开发数据的独立性层级已另作[实际元数据核验](../../seawave_seen_reference/run01/COHORT_INTERPRETATION.md)：49名VAL被试均见于TRAIN，49条记录只涉及5个故事标识；其中29人来源家族已见、20人来源家族未见。完整story/audio_path/record ID均不与TRAIN重复，但本检查不是波形或源时间区间去重。保留原49人主指标和完整整臂，另列5个故事的描述性汇总；不把被试数量冒充独立故事数量，不据此声称独立确认或广泛跨故事SOTA。
+
 | 方法 | 本次实际核实的一手依据 | 下一项可比性工作 |
 |---|---|---|
 | Sea-Wave | 已实际核读正式PDF、表7/8及12份固定作者源码，见[完整审计与来源指纹](../../metadata_review/code_review/seawave_protocol_20261106/REPORT.md)。论文Small周期5与公开JSON周期4、FT损失/hop/入口存在差异；原开发test作VAL有明确split说明，不据文件名断言泄漏。 | 后续实际清单证明VAL49人均在TRAIN，故[D27固定为覆盖已见人适配的3个initial＋147个personal FT](../../seawave_seen_reference/run01/COORDINATOR_DECISION.md)。initial群体结果只作未globalFT参考，不冒称完整S2。尚未开始Sea-Wave正式训练；不将personal与共享参数结果混称同适配条件。 |
