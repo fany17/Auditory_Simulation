@@ -1,0 +1,17 @@
+{
+  "old_process": [
+    1812007,
+    1012,
+    791424876
+  ],
+  "old_started_sha256": "9371f1553eb37b468b6ef5c06b1d851b47836db327822082ba9d5a22248283e8",
+  "observed_exited": true,
+  "replacement_process": [
+    1889881,
+    1012,
+    795110993
+  ],
+  "reason": "Scheduler identity changed",
+  "signal_sent": "SIGTERM",
+  "old_exit_code": null
+}

@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "scope": "Operational migration only; no performance or speedup claim",
+  "utc": "2026-11-07T03:59:03Z",
+  "resource_protocol_sha256": "9bce22984751e21fd8980f3a1032a2e1d64d39b01a5a41d11820906883300c75",
+  "original_queue": [
+    1748466,
+    1012,
+    791000426
+  ],
+  "all_original_parent_threads_stopped": true,
+  "old_reporter_live": false,
+  "replacement_scheduler": [
+    1889835,
+    1012,
+    795110900
+  ],
+  "replacement_reporter": [
+    1889881,
+    1012,
+    795110993
+  ],
+  "workers": [
+    {
+      "seed": 1024,
+      "process": [
+        1879079,
+        1012,
+        794756993
+      ],
+      "parent": 1748466,
+      "state": "R",
+      "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+      "cpu_ticks": 356150,
+      "completed_epochs": 10,
+      "last_epoch": 9,
+      "last_cumulative_updates": 236000,
+      "last_epoch_receipt": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/formal/seed1024/initial/EPOCH_009.json"
+    },
+    {
+      "seed": 2026,
+      "process": [
+        1879085,
+        1012,
+        794756996
+      ],
+      "parent": 1748466,
+      "state": "R",
+      "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+      "cpu_ticks": 356073,
+      "completed_epochs": 10,
+      "last_epoch": 9,
+      "last_cumulative_updates": 236000,
+      "last_epoch_receipt": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/formal/seed2026/initial/EPOCH_009.json"
+    },
+    {
+      "seed": 31415,
+      "process": [
+        1889880,
+        1012,
+        795110979
+      ],
+      "parent": 1889844,
+      "state": "S",
+      "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+      "cpu_ticks": 7763,
+      "completed_epochs": 0,
+      "last_epoch": null,
+      "last_cumulative_updates": null,
+      "last_epoch_receipt": null
+    }
+  ],
+  "GPU_memory_MiB": {
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": [
+      10078,
+      46068
+    ],
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": [
+      8034,
+      46068
+    ]
+  },
+  "GPU_compute_PIDs": {
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": [
+      1879079,
+      1889880
+    ],
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": [
+      1879085
+    ]
+  },
+  "no_training_worker_signals": true,
+  "original_scientific_protocol_preserved": true,
+  "scientific_matrix_fits": 150
+}

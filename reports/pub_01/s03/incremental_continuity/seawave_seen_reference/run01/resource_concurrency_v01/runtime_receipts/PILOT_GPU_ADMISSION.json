@@ -1,0 +1,22 @@
+{
+  "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+  "memory_MiB": {
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": [
+      8034,
+      46068
+    ],
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": [
+      8034,
+      46068
+    ]
+  },
+  "observed_GPU_PIDs": {
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": [
+      1879079
+    ],
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": [
+      1879085
+    ]
+  },
+  "maximum_workers_per_GPU": 2
+}
