@@ -1,12 +1,12 @@
-# 当前入口：D26 对比预训练历史联合学习
+# 当前入口：D27 Sea-Wave 正式训练；D26、D28 已完成
 
 用户最新：**有性能提升就行，核心目标SOTA**。性能优先，HH/CH/CC均可作为候选；不以历史机制未成立阻止实际性能路线，保持同任务强对照及诚实评估。
 
-2026-11-06，SS07继续ACTIVE。唯一下一轮为 [D26协调决定](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)：保留原强Transformer/XLSR目标，将历史在对比预训练阶段联合学习，HH/CH/CC三臂三seed，6个唯一预训练和9条监督链，配对共同预算。V05 已经独立工程核验并在 2203 正式启动，当前队列 PID 1622219，按 [CURRENT_TASK](CURRENT_TASK.md) 的实际运行状态接续。全部新计算在2203 SATA；旧test/DTU/ds004408关闭，无新数据/患者/PR合并。D24/D25封存，旧入口仅历史。
+2026-11-07，SS07 继续 ACTIVE。当前运行状态以 [CURRENT_TASK](CURRENT_TASK.md) 顶部及实际进程身份为准。D26 V05 全部六个对比预训练、九条监督链和九个 Ccap 已完成并独立审阅归档；旧队列 PID 1622219 已退出，不再续跑。HH 三种子开发 r=0.182767958，较原锚点 +0.000428018，仅两个种子提升，仍低于 D22 B 的 0.184580904。九个 HEAD 均选预算上限；首块复算的九个 raw MSE 严格失败保留，全部 r 与校准输出在原容差内。[D26 完整报告](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REPORT.md) · [独立审阅](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_FINAL_REVIEW.md)。全部新计算在 2203 SATA；旧 test/DTU/ds004408 关闭，无新数据、患者或 PR 合并。D24/D25 等旧入口仅作历史记录。
 
-D27 Sea-Wave已见被试强对照的[实际源与工程已通过协调审阅](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_ENGINEERING_REVIEW.md)，生效为input_v04 / PROTOCOL_V04。49个VAL被试全部见于TRAIN，包含3个initial和147个personal FT；D26完整计算结束、原精确进程退出且GPU空闲后直接按冻结矩阵接续，无需再次许可。D27尚未正式训练，不抢D26两卡、不重开旧测试。initial群体行未做global FT，不能冒称完整S2对照。
+D27 Sea-Wave 已按 input_v04 / PROTOCOL_V04 正式接续，原队列身份 PID 1748466 / UID 1012 / startticks 791000426，首批共享 initial 1024/2026 正在两卡训练。49 个 VAL 被试全部见于 TRAIN，固定矩阵包含三个 initial 和 147 个 personal FT。[源与工程审阅](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_ENGINEERING_REVIEW.md) · [实际接续准入](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_ADMISSION.json) · [冻结方案](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/PLAN_V04.md)。先核对登记 PID/UID/startticks、实际日志和终态，不因观察超时或本会话空闲重启作业。既有报告 waiter 会在完整矩阵及原进程退出后汇总；不得重复启动。initial 群体行未做 global FT，不能冒称完整 S2；个人模型与共享参数方法分列。当前尚无完整 D27 性能结果。
 
-2026-11-07补齐[D28同协议raw EEG线性时滞对照](../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/COORDINATOR_DECISION.md)：已下达G全TRAIN共享＋I个人ridge、稠密0..32 lag及固定9alpha。独立科学审阅和实际元数据几何核验完成，执行端准备代码/限定CPU工程，具体源核验后可在空闲CPU完成全部450套系数解；无需等D26 GPU释放，也不能改变D26/D27。旧10人TRF报告不是当前49人评分的直接基线；本项是已知方法对照，不作为原创贡献。
+D28 同协议 raw EEG 线性时滞对照已完整完成并独立审阅：G 共享与 I 个人 ridge 的开发 r 分别为 0.097929267、0.158231016，50 组拟合、450 套候选解和原 752 块支持均已核验。[D28 报告](../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/ARCHIVE.md)。不重跑已完成对照。现有最佳结果仍是反复使用的开发 VAL 结果；[SOTA 对照范围与缺口](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/SOTA_COMPARISON_SCOPE.md)不能由技术验收或跨协议论文数字替代。
 
 # 历史入口：D25 固定权重来源诊断已封存
 
