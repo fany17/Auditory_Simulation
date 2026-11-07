@@ -1,0 +1,19 @@
+{
+  "seed": 31415,
+  "arm": "C_match",
+  "epochs": 20,
+  "updates": 78900,
+  "selected_epoch": -1,
+  "selected_validation_r": 0.18337490481957303,
+  "new_trainable_parameters": 165792,
+  "target_window_presentations": 5049080,
+  "effective_residual_TRAIN_presentations": 4972400,
+  "new_residual_NN_window_forwards": 6598119,
+  "old_last19_TRAIN_forward_windows": 0,
+  "new_encoder_head_forwards": 0,
+  "wall_seconds": 845.528932094574,
+  "CPU_seconds": 901.574579967,
+  "peak_RSS_KiB": 5114512,
+  "peak_GPU_allocated_bytes": 37188096,
+  "test_or_external_access": false
+}

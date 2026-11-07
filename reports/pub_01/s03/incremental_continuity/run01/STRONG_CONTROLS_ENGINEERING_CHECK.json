@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "test_read": false,
+  "random_full_encoder_discarded": true,
+  "random_validation_predictions_only": true,
+  "raw_zero_lag_mixed_record_batch_matches_independent_slices": true,
+  "native_EEG_head_composition_initial_forward_max_difference": 0,
+  "encoder_nonzero_gradient_scalars": 3372343,
+  "head_nonzero_gradient_scalars": 257,
+  "Adam_group_rates": [
+    1e-05,
+    0.001
+  ],
+  "full49person752block_EMA0_vs_original_macro_max_difference": 0.0,
+  "no_performance_selection": true,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py": "b40c08a50f653b73497a0fa0a4cf5f409b34e5e2aee43fadb2a65a42fc6220ac",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema.py": "3f76d44ed808b80cb94402881cbacea9b2dbc5d11dbf232ac7edf27e27befdf7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_controls_check.py": "76dec17945f764919c4fe6040aea5b5c278f3da526eba88f9c8f0ffc02b2d015"
+  }
+}

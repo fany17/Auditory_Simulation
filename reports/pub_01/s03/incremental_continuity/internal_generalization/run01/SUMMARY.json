@@ -1,0 +1,872 @@
+{
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "roles": [
+    "P",
+    "Ponly",
+    "S32",
+    "U32",
+    "C",
+    "Ccap"
+  ],
+  "results": {
+    "1024": {
+      "P": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.1410507887815837,
+            "MSE": 0.2839859268812414,
+            "weighted_single_MSE": 0.2841916630661932,
+            "disagreement": 0.00020573618495174788,
+            "r3s": 0.1434652314470282,
+            "window_MSE": 0.2900295487594167,
+            "overlap_MSE": 0.002220270826364448,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.6632968130529384
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.16784985817752804,
+            "MSE": 0.2546209652429279,
+            "weighted_single_MSE": 0.2548315108239588,
+            "disagreement": 0.00021054558103089722,
+            "r3s": 0.1576384657838698,
+            "window_MSE": 0.26093321582550505,
+            "overlap_MSE": 0.002269057673697585,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.6381102460398079
+          }
+        },
+        "weighted": {
+          "r": 0.15891683504554657,
+          "MSE": 0.2644092857890324,
+          "weighted_single_MSE": 0.26461822823803693,
+          "disagreement": 0.00020894244900451412
+        },
+        "Hann_identity_max_abs": 4.041551639254008e-15
+      },
+      "Ponly": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14541052416160324,
+            "MSE": 0.28339585518002275,
+            "weighted_single_MSE": 0.2836992908950824,
+            "disagreement": 0.00030343571505960247,
+            "r3s": 0.1440875088942484,
+            "window_MSE": 0.2896243932211874,
+            "overlap_MSE": 0.0029257772739868485,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7403150321336458
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.1727724920853397,
+            "MSE": 0.2543067792846186,
+            "weighted_single_MSE": 0.2546315034457567,
+            "disagreement": 0.0003247241611380646,
+            "r3s": 0.15893529382273455,
+            "window_MSE": 0.2605875009477472,
+            "overlap_MSE": 0.0030551483583065565,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7180159331626128
+          }
+        },
+        "weighted": {
+          "r": 0.1636518361107609,
+          "MSE": 0.26400313791641994,
+          "weighted_single_MSE": 0.2643207659288652,
+          "disagreement": 0.00031762801244524387
+        },
+        "Hann_identity_max_abs": 3.4493299194563246e-15
+      },
+      "S32": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.1457254034535431,
+            "MSE": 0.2823545855292045,
+            "weighted_single_MSE": 0.28267151873727026,
+            "disagreement": 0.0003169332080657185,
+            "r3s": 0.1447206584204025,
+            "window_MSE": 0.288874844057448,
+            "overlap_MSE": 0.003038103577628506,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7495010557094856
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17394415848160868,
+            "MSE": 0.25294986613064013,
+            "weighted_single_MSE": 0.2532856608289791,
+            "disagreement": 0.00033579469833904836,
+            "r3s": 0.15978486103158182,
+            "window_MSE": 0.25923026048959485,
+            "overlap_MSE": 0.0031463888902741616,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7230002652107834
+          }
+        },
+        "weighted": {
+          "r": 0.16453790680558683,
+          "MSE": 0.26275143926349487,
+          "weighted_single_MSE": 0.26308094679840943,
+          "disagreement": 0.00032950753491460506
+        },
+        "Hann_identity_max_abs": 4.080665926692317e-15
+      },
+      "U32": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14539326592193458,
+            "MSE": 0.282329516114832,
+            "weighted_single_MSE": 0.2826481052842216,
+            "disagreement": 0.000318589169389589,
+            "r3s": 0.14478161330764738,
+            "window_MSE": 0.2888671530390633,
+            "overlap_MSE": 0.0030774346061323227,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7509563396075511
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17380826584241962,
+            "MSE": 0.2528670722543006,
+            "weighted_single_MSE": 0.2532044369191725,
+            "disagreement": 0.00033736466487179064,
+            "r3s": 0.1597898564443176,
+            "window_MSE": 0.2591624312233199,
+            "overlap_MSE": 0.003180233691718934,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7237172715513034
+          }
+        },
+        "weighted": {
+          "r": 0.16433659920225793,
+          "MSE": 0.26268788687447775,
+          "weighted_single_MSE": 0.2630189930408555,
+          "disagreement": 0.0003311061663777234
+        },
+        "Hann_identity_max_abs": 3.4299684403479858e-15
+      },
+      "C": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14457018677187577,
+            "MSE": 0.28207019264005645,
+            "weighted_single_MSE": 0.2824678067517566,
+            "disagreement": 0.00039761411170015587,
+            "r3s": 0.14466409491599022,
+            "window_MSE": 0.2886838153370592,
+            "overlap_MSE": 0.003696210813835093,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.8117650839566115
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17459725956372152,
+            "MSE": 0.2522176117832002,
+            "weighted_single_MSE": 0.25262877299024844,
+            "disagreement": 0.0004111612070482497,
+            "r3s": 0.1602281175701686,
+            "window_MSE": 0.25852571998909896,
+            "overlap_MSE": 0.003779796505043057,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7761010666272485
+          }
+        },
+        "weighted": {
+          "r": 0.16458823529977293,
+          "MSE": 0.26216847206881894,
+          "weighted_single_MSE": 0.2625751175774178,
+          "disagreement": 0.0004066455085988851
+        },
+        "Hann_identity_max_abs": 3.692901019702877e-15
+      },
+      "Ccap": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.1474031785120994,
+            "MSE": 0.28205094235238043,
+            "weighted_single_MSE": 0.2823417576066584,
+            "disagreement": 0.0002908152542779481,
+            "r3s": 0.14616430371318231,
+            "window_MSE": 0.28847929148405604,
+            "overlap_MSE": 0.002851740901523153,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.732046111974961
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17678066085205188,
+            "MSE": 0.2521797943032677,
+            "weighted_single_MSE": 0.2524920632625893,
+            "disagreement": 0.0003122689593216356,
+            "r3s": 0.1614373021464591,
+            "window_MSE": 0.2584601820977961,
+            "overlap_MSE": 0.0029961045285217965,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7066696277963682
+          }
+        },
+        "weighted": {
+          "r": 0.16698816673873437,
+          "MSE": 0.2621368436529719,
+          "weighted_single_MSE": 0.262441961377279,
+          "disagreement": 0.00030511772430707307
+        },
+        "Hann_identity_max_abs": 3.4823489578061917e-15
+      }
+    },
+    "2026": {
+      "P": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14088758669480508,
+            "MSE": 0.28473842929694065,
+            "weighted_single_MSE": 0.28492114396297435,
+            "disagreement": 0.0001827146660337266,
+            "r3s": 0.14265514166907642,
+            "window_MSE": 0.29050749297009393,
+            "overlap_MSE": 0.0021295629436438586,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.6269310377119506
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.16910139954752904,
+            "MSE": 0.2548898200524892,
+            "weighted_single_MSE": 0.25508109336731155,
+            "disagreement": 0.00019127331482224637,
+            "r3s": 0.15768622053558218,
+            "window_MSE": 0.26129207433536267,
+            "overlap_MSE": 0.0022104921897177074,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.6135486405437415
+          }
+        },
+        "weighted": {
+          "r": 0.1596967952632877,
+          "MSE": 0.26483935646730633,
+          "weighted_single_MSE": 0.2650277768991991,
+          "disagreement": 0.00018842043189273974
+        },
+        "Hann_identity_max_abs": 3.4699280666676546e-15
+      },
+      "Ponly": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14474201629096978,
+            "MSE": 0.28399045906142584,
+            "weighted_single_MSE": 0.2842771532360028,
+            "disagreement": 0.00028669417457693075,
+            "r3s": 0.1431894252726521,
+            "window_MSE": 0.28980700075635124,
+            "overlap_MSE": 0.0028924824884457184,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7184598333244949
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17443659588970473,
+            "MSE": 0.25430334499214213,
+            "weighted_single_MSE": 0.25461144413668085,
+            "disagreement": 0.0003080991445387773,
+            "r3s": 0.16028302555741009,
+            "window_MSE": 0.26057113654681785,
+            "overlap_MSE": 0.003012254118364925,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7024733234541337
+          }
+        },
+        "weighted": {
+          "r": 0.1645384026901264,
+          "MSE": 0.26419904968190333,
+          "weighted_single_MSE": 0.26450001383645483,
+          "disagreement": 0.0003009641545514951
+        },
+        "Hann_identity_max_abs": 3.799081681838887e-15
+      },
+      "S32": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.1457036254157386,
+            "MSE": 0.28268393721592344,
+            "weighted_single_MSE": 0.28299866362558046,
+            "disagreement": 0.00031472640965701614,
+            "r3s": 0.1436650864357783,
+            "window_MSE": 0.2890525299219578,
+            "overlap_MSE": 0.0031459837333977056,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7362982930251636
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17805788419914506,
+            "MSE": 0.2522587456719238,
+            "weighted_single_MSE": 0.25257992374352894,
+            "disagreement": 0.0003211780716050578,
+            "r3s": 0.1626202000846149,
+            "window_MSE": 0.2586310127684877,
+            "overlap_MSE": 0.0031519101995197904,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.704813932295335
+          }
+        },
+        "weighted": {
+          "r": 0.1672731312713429,
+          "MSE": 0.26240047618659035,
+          "weighted_single_MSE": 0.26271950370421276,
+          "disagreement": 0.00031902751762237725
+        },
+        "Hann_identity_max_abs": 3.4877902974593533e-15
+      },
+      "U32": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.1454812876216753,
+            "MSE": 0.28264240105543076,
+            "weighted_single_MSE": 0.2829618787989574,
+            "disagreement": 0.00031947774352671457,
+            "r3s": 0.14389356134687703,
+            "window_MSE": 0.2890534985934571,
+            "overlap_MSE": 0.0031797698762381405,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7361691574702964
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17774022617490834,
+            "MSE": 0.25213106252893785,
+            "weighted_single_MSE": 0.25245573642102076,
+            "disagreement": 0.0003246738920829342,
+            "r3s": 0.1625914681685556,
+            "window_MSE": 0.2585534600017732,
+            "overlap_MSE": 0.003190301728531449,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7052737046180859
+          }
+        },
+        "weighted": {
+          "r": 0.166987246657164,
+          "MSE": 0.26230150870443547,
+          "weighted_single_MSE": 0.2626244505469996,
+          "disagreement": 0.0003229418425641943
+        },
+        "Hann_identity_max_abs": 4.714102575637501e-15
+      },
+      "C": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.1457964644125781,
+            "MSE": 0.2823023679846037,
+            "weighted_single_MSE": 0.2827227838337207,
+            "disagreement": 0.0004204158491170017,
+            "r3s": 0.14447594734061997,
+            "window_MSE": 0.2888467564848862,
+            "overlap_MSE": 0.0039315433025833195,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.8100764848980482
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17813643026825624,
+            "MSE": 0.25136489811391166,
+            "weighted_single_MSE": 0.25178089491729516,
+            "disagreement": 0.0004159968033835944,
+            "r3s": 0.16312298181797116,
+            "window_MSE": 0.2577958971661466,
+            "overlap_MSE": 0.003890699544776899,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7668392724368343
+          }
+        },
+        "weighted": {
+          "r": 0.16735644164969685,
+          "MSE": 0.261677388070809,
+          "weighted_single_MSE": 0.262094857889437,
+          "disagreement": 0.0004174698186280635
+        },
+        "Hann_identity_max_abs": 3.2621474965743857e-15
+      },
+      "Ccap": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14921216344814434,
+            "MSE": 0.2821472553215669,
+            "weighted_single_MSE": 0.282421552019679,
+            "disagreement": 0.0002742966981120889,
+            "r3s": 0.14687990415094235,
+            "window_MSE": 0.2884229682612479,
+            "overlap_MSE": 0.002822794682247098,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7054265722627329
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.18047132934934573,
+            "MSE": 0.25179557253087814,
+            "weighted_single_MSE": 0.2520909475003575,
+            "disagreement": 0.0002953749694793742,
+            "r3s": 0.1643653724231539,
+            "window_MSE": 0.2581952640293612,
+            "overlap_MSE": 0.0029660633085641314,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.6870304826495636
+          }
+        },
+        "weighted": {
+          "r": 0.1700516073822786,
+          "MSE": 0.2619128001277744,
+          "weighted_single_MSE": 0.262201149006798,
+          "disagreement": 0.00028834887902361243
+        },
+        "Hann_identity_max_abs": 3.88165920924402e-15
+      }
+    },
+    "31415": {
+      "P": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.13965743076583947,
+            "MSE": 0.2835484427910283,
+            "weighted_single_MSE": 0.2837728366534696,
+            "disagreement": 0.00022439386244125175,
+            "r3s": 0.14047731931141957,
+            "window_MSE": 0.28979183967380046,
+            "overlap_MSE": 0.002454374219810131,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.6540715579310648
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17336794635882324,
+            "MSE": 0.25497480485831303,
+            "weighted_single_MSE": 0.2551977517745234,
+            "disagreement": 0.00022294691621038893,
+            "r3s": 0.15993532164547591,
+            "window_MSE": 0.2614484278191287,
+            "overlap_MSE": 0.0024383405418374714,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.6248458129810368
+          }
+        },
+        "weighted": {
+          "r": 0.16213110782782864,
+          "MSE": 0.2644993508358848,
+          "weighted_single_MSE": 0.2647227800675055,
+          "disagreement": 0.00022342923162067653
+        },
+        "Hann_identity_max_abs": 3.4356053900180427e-15
+      },
+      "Ponly": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14239914753196714,
+            "MSE": 0.28386630241391536,
+            "weighted_single_MSE": 0.2842335882040252,
+            "disagreement": 0.0003672857901098646,
+            "r3s": 0.14150680032499588,
+            "window_MSE": 0.28997091331378344,
+            "overlap_MSE": 0.0034270611387575197,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7564558657992916
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.1774059033682346,
+            "MSE": 0.25433089435510176,
+            "weighted_single_MSE": 0.2546927970449391,
+            "disagreement": 0.0003619026898373414,
+            "r3s": 0.1621471272457463,
+            "window_MSE": 0.260680231152263,
+            "overlap_MSE": 0.0034118635382610492,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7275372537234728
+          }
+        },
+        "weighted": {
+          "r": 0.16573698475614546,
+          "MSE": 0.26417603037470627,
+          "weighted_single_MSE": 0.2645397274313011,
+          "disagreement": 0.0003636970565948491
+        },
+        "Hann_identity_max_abs": 3.984505664322326e-15
+      },
+      "S32": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.1431791357857906,
+            "MSE": 0.2831423794763609,
+            "weighted_single_MSE": 0.2835079138689815,
+            "disagreement": 0.00036553439262071414,
+            "r3s": 0.14208076575037024,
+            "window_MSE": 0.28939087492232923,
+            "overlap_MSE": 0.0034812316267849508,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7559016452111457
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17882852610322447,
+            "MSE": 0.2531266285524438,
+            "weighted_single_MSE": 0.2534911629092609,
+            "disagreement": 0.00036453435681717267,
+            "r3s": 0.16300643510660356,
+            "window_MSE": 0.2594994169846054,
+            "overlap_MSE": 0.0034568306735919315,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7257113208273812
+          }
+        },
+        "weighted": {
+          "r": 0.16694539599741318,
+          "MSE": 0.2631318788604161,
+          "weighted_single_MSE": 0.2634967465625011,
+          "disagreement": 0.0003648677020850198
+        },
+        "Hann_identity_max_abs": 3.718759241516656e-15
+      },
+      "U32": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14327413331113867,
+            "MSE": 0.28308810827797737,
+            "weighted_single_MSE": 0.2834636681450456,
+            "disagreement": 0.00037555986706827577,
+            "r3s": 0.14233059221316988,
+            "window_MSE": 0.28934021033486695,
+            "overlap_MSE": 0.003544280073794921,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7596853322563479
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17871935815846873,
+            "MSE": 0.25307242353953113,
+            "weighted_single_MSE": 0.25344009808862855,
+            "disagreement": 0.0003676745490973684,
+            "r3s": 0.16299766952362285,
+            "window_MSE": 0.2593980490651047,
+            "overlap_MSE": 0.0034852471133796793,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7258761463954094
+          }
+        },
+        "weighted": {
+          "r": 0.16690428320935868,
+          "MSE": 0.2630776517856799,
+          "weighted_single_MSE": 0.2634479547741009,
+          "disagreement": 0.00037030298842100415
+        },
+        "Hann_identity_max_abs": 3.3621651469861735e-15
+      },
+      "C": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14355373725686343,
+            "MSE": 0.2823717688616444,
+            "weighted_single_MSE": 0.2828117883119941,
+            "disagreement": 0.000440019450349727,
+            "r3s": 0.1421016107866707,
+            "window_MSE": 0.28899605360752756,
+            "overlap_MSE": 0.004071848131521246,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.8154111255152656
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.17926289453405436,
+            "MSE": 0.25189853080925334,
+            "weighted_single_MSE": 0.2523561347168231,
+            "disagreement": 0.0004576039075697027,
+            "r3s": 0.16363606656065932,
+            "window_MSE": 0.25828040841836075,
+            "overlap_MSE": 0.004189992608347496,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7867672985895733
+          }
+        },
+        "weighted": {
+          "r": 0.16735984210832405,
+          "MSE": 0.262056276826717,
+          "weighted_single_MSE": 0.2625080192485468,
+          "disagreement": 0.0004517424218297108
+        },
+        "Hann_identity_max_abs": 3.886349792328603e-15
+      },
+      "Ccap": {
+        "phases": {
+          "test_heldout": {
+            "people": 13,
+            "blocks": 1172,
+            "records": 75,
+            "windows": 48119,
+            "window_r_undefined": 0,
+            "window_r_defined": 48119,
+            "r": 0.14578932189909824,
+            "MSE": 0.28274991065005506,
+            "weighted_single_MSE": 0.2831027846620947,
+            "disagreement": 0.00035287401203960145,
+            "r3s": 0.1439656778007975,
+            "window_MSE": 0.2890154915684502,
+            "overlap_MSE": 0.0032880494850109866,
+            "overlap_pairs": 48044,
+            "valid_normalized_pairs": 48044,
+            "overlap_NRMSE": 0.7465822308813762
+          },
+          "test_seen": {
+            "people": 69,
+            "blocks": 872,
+            "records": 69,
+            "windows": 36573,
+            "window_r_undefined": 0,
+            "window_r_defined": 36573,
+            "r": 0.18179136579356406,
+            "MSE": 0.252683728106875,
+            "weighted_single_MSE": 0.2530320036788185,
+            "disagreement": 0.00034827557194342355,
+            "r3s": 0.16481891068184512,
+            "window_MSE": 0.2590793179567224,
+            "overlap_MSE": 0.0033265518167074,
+            "overlap_pairs": 36504,
+            "valid_normalized_pairs": 36504,
+            "overlap_NRMSE": 0.7138907895493866
+          }
+        },
+        "weighted": {
+          "r": 0.1697906844954088,
+          "MSE": 0.26270578895460167,
+          "weighted_single_MSE": 0.2630555973399106,
+          "disagreement": 0.00034980838530881617
+        },
+        "Hann_identity_max_abs": 3.510971895159809e-15
+      }
+    }
+  },
+  "scientific_status": "POST-HOC INTERNAL EXPLORATORY",
+  "fit_or_selection": false,
+  "goal_complete": false
+}

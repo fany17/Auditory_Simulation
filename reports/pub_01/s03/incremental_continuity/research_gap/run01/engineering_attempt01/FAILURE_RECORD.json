@@ -1,0 +1,11 @@
+{
+  "failure": "cuDNN GRU backward while model remained eval after initial prediction",
+  "formal_fits": 0,
+  "temporary_optimizer_updates": 0,
+  "disposable_NN_window_forwards_derived_from_executed_first_H_path": 30169,
+  "count_basis": "30500-window VAL prediction evaluates30059 nonfallback +55 initialTRAIN +55 failed backward forward; source/trace show first step failed before optimizer.step",
+  "wall_seconds": null,
+  "CPU_seconds": null,
+  "correction": "Explicit model.train before disposable updates; no change to scientific matrix. Also complete stream hashes, idle GPU PID checks and own-worker timeout cleanup before formal run",
+  "no_deletion": true
+}

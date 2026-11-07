@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "archive": "E:/实验室-科研工作-文件/00_ChatGPT/CodexResult/Result/runs/20261106_pub01_s03_ss07_recent_prediction_context",
+  "artifacts_checked": 15,
+  "local_links_checked": 25,
+  "bound_files": [
+    {
+      "file": "REPORT.md",
+      "sha256": "c9acf7004ee55488b1f558cede253e2541b86467680ef2bfc9c1c97f92b2efc1"
+    },
+    {
+      "file": "REVIEW.md",
+      "sha256": "57aa7013cd5c599cd3678869193bb54b9b450e045634c4e5bf2b63df2c9b0df2"
+    },
+    {
+      "file": "VAL_TRAIN_TRAJECTORIES.png",
+      "sha256": "11c15391a6c04c9ac99326944d154d9e6c3a75d991949b8a27929155305a7e47"
+    },
+    {
+      "file": "COORDINATOR_SCIENTIFIC_REVIEW.json",
+      "sha256": "5696e04d22130d389e2f9f0c8632f66a47cebc068756838df4801abe9db831e5"
+    },
+    {
+      "file": "COORDINATOR_FIT_AUDIT_BATCH01.json",
+      "sha256": "24bba16e571fb75ec4152d5d2d128c84476e76e6add174f06cdc62cfe423b42b"
+    },
+    {
+      "file": "COORDINATOR_FUNCTIONAL_REPLAY.json",
+      "sha256": "1a7242858c0e2002f5a135c212e09dc202f9b576d7464aacb791e853bab519e8"
+    }
+  ],
+  "root_read_scientific_report_and_review": true,
+  "root_viewed_actual_six_panel_figure": true,
+  "browser_rendering_checked": false,
+  "new_model_forwards": 0,
+  "new_fits": 0,
+  "goal_complete": false
+}

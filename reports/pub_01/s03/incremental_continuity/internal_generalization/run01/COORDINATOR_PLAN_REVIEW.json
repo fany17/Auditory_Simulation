@@ -1,0 +1,74 @@
+{
+  "status": "PLAN_APPROVED_IMPLEMENTATION_AND_NECESSARY_CHECKS",
+  "formal_test_authorization": "Pending coordinator source/protocol review; no user approval needed",
+  "scope": "D7 once-only frozen current-readout posthoc internal audit",
+  "roles": [
+    "P*",
+    "Ponly",
+    "S32",
+    "U32",
+    "C",
+    "Ccap"
+  ],
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "splits": [
+    "test_seen",
+    "test_heldout"
+  ],
+  "role_split_scores": 36,
+  "new_fits": 0,
+  "coefficient_roles": "3 original native head checkpoints +15 selected ridge coefficient sets",
+  "primary_contrasts": [
+    "Ccap-P*",
+    "Ccap-Ponly"
+  ],
+  "secondary_contrasts": [
+    "Ccap-C",
+    "S32-Ponly",
+    "U32-S32",
+    "C-U32"
+  ],
+  "original_endpoint": "block -> person ->2/3seen+1/3heldout, mean3seeds",
+  "actual_metadata_verified": {
+    "seen": {
+      "records": 69,
+      "people": 69,
+      "windows": 36573,
+      "eligible_blocks": 872,
+      "families": 9
+    },
+    "heldout": {
+      "records": 75,
+      "people": 13,
+      "windows": 48119,
+      "eligible_blocks": 1172,
+      "families": 8
+    },
+    "all3_cache_manifests_complete": true,
+    "errors": 0,
+    "old_checkpoint_manifest_sha": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817"
+  },
+  "input_path_review": {
+    "original_cache_records": 144,
+    "extra_npy": "TRAIN neutral mean; excluded by originalmask",
+    "fusedP_saved_only": true,
+    "required_new_nativehead_forward": "Original NativeHead, eval, global64 aligned phase_offset/record boundaries, original precision; unscaledP fused bridge first",
+    "no_new_encoder_needed": true,
+    "weighted_endpoint": "2/3seen+1/3heldout, threeprespecifiedseeds"
+  },
+  "root_npy_count_bytes": 18406910112,
+  "resource_count_note": "All7 existing s03_*_20261101 roots, includes warm extra30848B. Header/metadata only, no test score or new inference.",
+  "restrictions": [
+    "No new model fitting/parameter or lambda selection",
+    "All old masks/record order/phase offsets retained",
+    "All432 original unscaledP fused record bridges<=1e-6 then P* metric invariance<=1e-10 before candidate scoring",
+    "Only existing latent->frozen native head forward; encoder/rawEEG forwards0",
+    "No DTU/newdataset/test-basedbudget or newarchitecture",
+    "Independent confirmation/publication/memory mechanism not established by this audit"
+  ],
+  "goal_complete": false
+}

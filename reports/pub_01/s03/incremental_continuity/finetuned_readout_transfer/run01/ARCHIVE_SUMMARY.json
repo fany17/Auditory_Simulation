@@ -1,0 +1,28 @@
+{
+  "findings": [
+    "D8固定27岭解完成，完整强P_FT encoder/head冻结。原P_FT*/P-only/C/Ccap三seed VAL60s/person r=.174141/.177842/.180541/.182340；Ccap−P_FT*+.008199、Ccap−P-only+.004498，三seed全正。读出增益不限于原冻结encoder。",
+    "仍是反复使用的已知被试source VAL开发结果，没有旧test/DTU推理、独立泛化、连续历史收益、纯loss因果或新方法充分性。D7旧内部test与D8 VAL不能直接跨比分数，D4-D7冻结。",
+    "P_FT*最跨窗一致但r最低，Ccap比C更一致且r更高而fused MSE更差。固定Hann disagreement也包含融合分散收益，不能直接以一致性为目标；goal仍ACTIVE。"
+  ],
+  "overview": [
+    "三seed各一次原global64 TRAIN/VAL编码，P/Z同次保存；三个历史selected VAL loss与首尾原Decoder raw波形差均0。按FT TRAIN重新拟合正a,b/latent/P/平方统计，不套native缓存或系数；原EEG输入normalization保持。",
+    "固定Ponly/C/Ccap×3seed×λ .0001/.01/1，三seed共享λ并有零残差FT候选。TRAIN250750共同i≥4，VAL30500窗/49人/752块全部评分，首4窗共同回退。完整27格/逐人逐块/四配对和三图中文解释保留。",
+    "实际独立247来源/523输入、全部27正规方程/截距、30聚合及18缓存读出重建通过；聚合差0、block r差≤3.33e−16，未新增NN前向。wall386.589s/CPU1183.994s，主encoder848862窗+工程300窗，NN更新0。"
+  ],
+  "figure_comments": {
+    "01_COMPLETE_MATRIX.png": "左/中/右为60秒person宏r、3秒窗口平均r、融合target MSE，横轴固定λ对数坐标，蓝/橙/绿为Ponly/C/Ccap，浅线每seed、粗线均值、黑点线P_FT*，无CI、各panel独立纵轴且MSE不从0起。仅左图选λ，实际.01/.0001/.01；对应r .177842/.180541/.182340，原P_FT*.174141。Ccap最弱正则.0001不如C，.01较好；最高r与最低MSE配置不同，不按辅助MSE重选。不能当独立test或纯loss效应。",
+    "02_FIXED_CONTRASTS.png": "上排预设primary Ccap−P_FT*/Ponly，下排secondary C−Ponly及Ccap−C，三色seed；前三位置同λ，虚线右菱形是各角色共享选择结果。两个primary均差+.008199/+.004498、每seed全正，前三比较全部3λ×3seed亦正。平方相对C在.0001三seed全负、.01和1正，选定Ccap对C还改变λ与容量，不能单独归因非线性。没有CI/显著性或三份独立数据声称。",
+    "03_CONTINUITY_MSE.png": "左为uniform96点overlap MSE、中为Hann加权单窗与融合target MSE及其disagreement间距、右为overlap与person宏r四均值点，均为选定模型的预设次要描述，中/右轴自适应。P_FT*最一致却r最低；Ccap比C一致性和r更好但fused MSE+.000133510：weighted单窗+.000056363、disagreement−.000077147。Hann恒等式逐点误差≤4.10e−15；uniform与Hann/person计权不同，没有一致性训练或因果机制证明。"
+  },
+  "caveats": [
+    "原P_FT继承完整预训练/head并追加5epoch联合微调；本轮增加TRAIN标定、27岭拟合及VAL搜索，不能称等预算或普通ridge具有方法创新。r改善不等同所有MSE标准均改善。",
+    "旧VAL被反复开发、已知被试/部分同书，三seed共享记录与刺激。source_family是缺失时story/clip fallback，不是独立书籍/说话人家族；没有外部确认或正式显著性。",
+    "原FT无持久化VAL波形：全VAL标量loss桥加首尾同路径wave桥不等于全历史波形证明。所有3秒undefined本次为0，规则为null+覆盖，不删60秒主块。",
+    "prepare01批准字段接口失配、audit首版metadata键失配均原样记录，均发生于各自数值前；未改正式模型、门限、mask或矩阵，未自动重跑正式run。",
+    "新Z/P/Gram/coef/信号只在2203；主run新root6.237GB，总NPY24.469GB、free27.709GB，符合7GiB/25GiB/20GiB三界。本地只轻量表图和代码，不含张量。"
+  ],
+  "next_steps": [
+    "完成D8实际全文/三图独立review、REVIEW与官方轻量归档/提交推送，PR6仍Draft且不合并，不把本开发阳性当科学goal完成。",
+    "后续只在明确冻结后检验同架构/初始化/预算的PCC、逐窗监督MSE与固定Hann融合监督MSE假说；本轮不自动新增模型/网格、旧test/DTU或数据范围。"
+  ]
+}

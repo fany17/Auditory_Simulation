@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "engineer": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/engineer_v03/seed1024_fold0/COMPLETED.json",
+  "worker_sha256": "5abc75d363619463378f178a86133e1f13cb59ed4e07662ea77334f255eee0bc",
+  "candidate_sha256": "6638a00d673fb6eebbe5353d97d14b21800c19ddf0d9ac4a600cde0440740c83",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_conditional_history_probe_20261101/input/pub_01_s03_ss07_conditional_probe.py": "0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization_core.py": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/BASELINE_PROTOCOL.json": "bd497cf38ee0a0ab6bb65dc246b8be9f788579917ba80ae810e2ad4eab32c767",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INCREMENTAL_PROTOCOL.json": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py": "536889345d3b5a35d16ef53ef600e5cf5ec064e59bcfc259c9a3a0a98882def2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/features/manifest.json": "85a8b4a39c0b9bcf7e4c76e5d20ca36e89c0980d993c34851aaff4bbb3cc0d17",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_method_models.py": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/training_seed1024_attempt04/config_frozen.json": "09e18b9096c85bf4f83c9e6fa8d9d742580d11df57e40503391fd378279cb173",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/FOLD_AND_BUDGET_CANDIDATE_V2.json": "6638a00d673fb6eebbe5353d97d14b21800c19ddf0d9ac4a600cde0440740c83",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/TRAIN_RECORD_ASSIGNMENT.json": "7ab57f1818a4aef312c43342768893ae8a49ff39407fa8bd76812ef2c81e3d24",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/engineer_v03/seed1024_fold0/COMPLETED.json": "f6a69690580ba08faf454f57860a4a378f43ad441f54abc35d85a57d3cee4686",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_meta.py": "a3921beafa3f55cb87c2f0bdb556e31e19bed7e0466e498adceb345477b27433",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_queue.py": "189b21c8a242c7f8d87a69c515b151b3f8059f605fd0ada08eee9db6b679a679",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_upstream.py": "5abc75d363619463378f178a86133e1f13cb59ed4e07662ea77334f255eee0bc"
+  },
+  "lanes": {
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": [
+      [
+        1024,
+        0
+      ],
+      [
+        31415,
+        1
+      ],
+      [
+        2026,
+        2
+      ],
+      [
+        1024,
+        2
+      ],
+      [
+        1024,
+        1
+      ]
+    ],
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": [
+      [
+        2026,
+        0
+      ],
+      [
+        31415,
+        2
+      ],
+      [
+        2026,
+        1
+      ],
+      [
+        31415,
+        0
+      ]
+    ]
+  },
+  "cap_bytes": 68719476736,
+  "reserve_bytes": 68719476736,
+  "automatic_retry": false,
+  "process_identity": {
+    "pid": 1346340,
+    "uid": 1012,
+    "startticks": 788547099,
+    "cuda_visible_devices": null
+  }
+}

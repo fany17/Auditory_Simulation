@@ -1,0 +1,31 @@
+{
+  "frozen": false,
+  "time": 1793510956.3828108,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_verify_v2.py": "2df9f4fce5b3f8d5971734b6a48b52eae54cac003e0c6eae14b891d66e5dd9c1",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_verify.py": "87d230eaf13839243138aa998bb53f73c48ef3119dd1cc4434dc1e4698b5cc66",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/WARM_PROTOCOL.json": "a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/results01/SUMMARY.json": "ca9fded2f589890df4aa97edd32d686d7be07f302d6c135305b65a8e3824d26d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/FINAL_REVIEW_FAILURE.json": "4976cd2372f86f43e32b9ac98a9ea51822754fce08ae946d385f058c3e69ac17",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/final_review01.log": "f64d0b416761607a5dcc2ed73dcc80ffcab52db2ab45a1e89382ccbbcd5ed0bc",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_wave_probe.py": "75d9d5bd8351d666ea46cc59e287d19eb60a35555713d14468c42a037bbc4b46",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/verification_failure_probe01/PROBE.json": "3553c7b622dc779a7342a00ce5598a00b82335b08ed06e796786adb7e60d14cc",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_wave_probe2.py": "68987f04f2b083b95923a66dc15bf6c91234dbcec5f75a49e9f0496da6f80737",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/verification_failure_probe02/PROBE.json": "7ab65a1235704797c3e4c11eec5fbc3d356f294d143b45cc32d622e79c9bbea6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_wave_probe3.py": "b0434ba7e7c47b017fcc8d171b842f6efa4c4471bcebdd37b54faff6a573339e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/verification_failure_probe03/PROBE.json": "86948651a76068a0810ce4104b93c30b564f82d9fd20a59b722ea3875a0213b3"
+  },
+  "all_conditions": 18,
+  "old_v1_failure_retained": true,
+  "training_weights_scores_selection_unchanged": true,
+  "actual_execution_fix": "original np.stack/astype strides; frozen original fullnative eval+no_grad with original parameter grad flags and recordB256 includingtails; selected encoder tensor-identical; joint original RawWindows-layout global64; head/state alwaysglobal64",
+  "primary_acceptance": {
+    "absolute_wave": 1e-06,
+    "mean3s_and60s_r": 1e-07,
+    "perblock_person_r": 1e-06,
+    "same_array_math": 1e-10
+  },
+  "normalized_wave_report": "maxdiff/max(1,maxref,maxfresh),fixed1e-6 reported in every cell; does not replace absoluteprimary",
+  "source_code_review_pending": true,
+  "new_fits_or_test": false
+}

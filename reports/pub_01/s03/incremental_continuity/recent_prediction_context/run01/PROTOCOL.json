@@ -1,0 +1,65 @@
+{
+  "candidate": "D20_RECENT_P_ONLY_V1",
+  "source_sha256": "31b9dc7756b95e555d6775b26fe8b8d59fc5d0e96ac84c2a947f099ffc2a04c3",
+  "d19_pins": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PROTOCOL.json": "133b60eeb6e937def9f25bdb8303ab80d9a2cf00d0f86ea3f6768c0f56a7b078",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PREPARATION_METADATA.json": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/COMPLETED.json": "5183983f18c96a771b66bece03b04d3226ceaa55f0d583df198564fd2c7964b9",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_run.py": "9fb8d5d5ce22681d6b886c1a3987b9db1be6c942111de7d303cc0c2d21bf1978",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed1024_P_past_prediction/CONFIG.json": "43bb29ada2a1422feec398564db35f9a3d77d45e31faf92c6f09fe93aa5f895a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed1024_P_past_prediction/RESULT.json": "b78092bfeb115735c9a33a810466979d0befdcbb4092f1949d63ae55f815622b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed1024_P_past_prediction/recovery/epoch00.pt": "c6c5e668d154d186c69be74f2337c186ff7450c74f077d6651b2496426879ecd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed1024_TRAIN_STATS.json": "7d11fc834609e096bb1a05aa2c227fa15825ae3daf83547ce634dfaf34cab709",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed2026_P_past_prediction/CONFIG.json": "f4bc2fabb3582c9e8f80af8aa7cf283a9b7399e00cb5aa2c5fe326069b400ebc",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed2026_P_past_prediction/RESULT.json": "fa897b8b2822e0882dd562dbe45040c007eee4f68131b38952341541b861291c",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed2026_P_past_prediction/recovery/epoch00.pt": "36011221e587be4279562bfe864f74a6c51a231fd360d2419dd380a98eb09ac7",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed2026_TRAIN_STATS.json": "63b50f12e929d55fc9710f10ec1d807d0e36421171bef1901832350c549c036b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed31415_P_past_prediction/CONFIG.json": "b3894f69538efb3f23fa170d8be75d68782e16866571035211843da75c2803ec",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed31415_P_past_prediction/RESULT.json": "445f36e753c384622019db290587968a95e10a05df845683985707c700151ee0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed31415_P_past_prediction/recovery/epoch00.pt": "d395c9126be60ae32db88f7a3596b4bb5bfa5320cfe61a746f3f13c57ef94fdd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/fit/seed31415_TRAIN_STATS.json": "10801e49c44c884674a1b5c378149ff01244aed7a7bef5018b25bef3a9d89388"
+  },
+  "seed": [
+    1024,
+    2026,
+    31415
+  ],
+  "role": "P_past_prediction",
+  "near_lag": 1,
+  "far_lag": 288,
+  "history_points": 384,
+  "first_active": 1344,
+  "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+  "geometry": {
+    "TRAIN_records": 426,
+    "VAL_records": 49,
+    "TRAIN_active": 23703510,
+    "VAL_active": 2866799,
+    "batches_per_pass": 1447,
+    "last_batch": 12246
+  },
+  "engineering_budget": {
+    "current_stem_points": 24576,
+    "context_output_points": 36864,
+    "backward_points": 24576,
+    "optimizer_updates": 0,
+    "TRAIN_records_loaded": 6,
+    "TRAIN_cached_windows_loaded": 3447,
+    "VAL_records_loaded": 0
+  },
+  "formal_budget": {
+    "fits": 3,
+    "optimizer_updates": 86820,
+    "backward_points": 1422210600,
+    "fixed_TRAIN_forwards": 284442120,
+    "epoch_VAL_forwards": 172007940,
+    "paired_current_points_max": 8600397,
+    "current_stem_points_max": 1887261057,
+    "context_output_points_max": 1895861454
+  },
+  "status": "ENGINEERING_ONLY_UNTIL_SEPARATE_EXECUTION_REVIEW",
+  "new_model_weight_or_data_downloads": 0,
+  "old_external_data_read": 0
+}

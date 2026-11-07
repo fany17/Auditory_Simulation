@@ -1,0 +1,15 @@
+{
+  "frozen": true,
+  "time": 1793500382.3379471,
+  "final_checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+  "mask_files": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/SPARR_TEST_MASK.json": "ffc8b151201e06c1b842e3ca896978cab6d5b7555fa7f61848f242d9928492c7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INTERVENTION_PAIR_MASK.json": "0db91d70ce3df2375b668d762fe4791fa74dc43906e81a5655d7a753635d4ba4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/SHUFFLE_METADATA_PLAN.json": "236d212dec15cc1f667dd32f08343a2855ce8144e93c7b46378157ecc0adfbe2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/DTU_TARGET_MASK.json": "15f9d20edf8193a180ef7f1eb8437ad58f6d789bde9c82fb8d11c4aa4cc39e26"
+  },
+  "executor_protocol_sha256": "24fffddda54be91ca3dea9c5024e903ef88f92d06331e22fbf93603b6aef56a4",
+  "actual_final_weight_VAL_bridge_sha256": "f1c5a9bf74ba7b35e2ad5f549e72b613e6527e1e74bd0595c524851bcd9a158f",
+  "model_predictions_so_far": false,
+  "all_masks_created_before_predictions": true
+}

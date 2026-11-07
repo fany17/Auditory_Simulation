@@ -1,0 +1,7 @@
+# D16独立归一化参考输出桥补充
+
+2026-11-02。v1实际首工程528残差NN窗/0fit/optimizer已PASS，协议24204cbde539ca165e76b312b53817dc4dc07e4bbdc2a365b17f73d5557bb647。协调新独立manual-normalized实现请求到达时该进程已结束，原生产Tensor仅在RAM、不保存预测缓存，不能事后伪称复用逐点输出。
+
+协调明确批准最小补充：三臂同metadata固定48有效窗各production GPU一次与manual CPU一次，新增144+144=288，累计工程816≤4096；不重复原528工程或全TRAIN遍历，0fit/optimizer。fixed非零output探针与v1定义相同，不进入正式初始化。逐点比对优先，不能用loss标量冒充。
+
+独立source1bd999ec8d1e09bb3f7141f4ee9f8ab54ad8594f8bcf333c1d1c0ccf814e15f2及helper0113a307…均原样，不调用生产Conditional或F.layer_norm完成手写参考；CNN/token后独立float64 population mean/var与eps1e−5，再cast f32接manual GRU。验证prod/source身份、同state/tensor，maxabs及容差实际记REFERENCE_BRIDGE.json。v1 source/PLAN/protocol/检查保留，主生产四源/科学配置不改变；v2只绑定新桥与证据/预算记录。原528工程计时与新增288桥计时单列，不把复制顶层计时称816累计。正式仍等待实际v2源/证据独立review后启动完整九fit。

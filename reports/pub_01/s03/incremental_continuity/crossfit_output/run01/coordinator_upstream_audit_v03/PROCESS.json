@@ -1,0 +1,10 @@
+{
+  "pid": 1427141,
+  "uid": 1012,
+  "startticks": 789033783,
+  "source_sha256": "ac9e2b7ca4a6d2ee6d393c2e15cf140416451c64871378273419a7a4a69f03be",
+  "deadline_unix": 1794049494.27929,
+  "CUDA_VISIBLE_DEVICES": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+  "TF32_matmul": false,
+  "TF32_cudnn": true
+}

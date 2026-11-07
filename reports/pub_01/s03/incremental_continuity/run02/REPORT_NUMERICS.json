@@ -1,0 +1,273 @@
+{
+  "derivation": "existing final metadata field copies and arithmetic only; no new fits, scoring, resampling or choices",
+  "condition_means": [
+    {
+      "condition": "frozen_p",
+      "VAL3s_mean": 0.1490258817070169,
+      "VAL60s_mean": 0.1623683877843134,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "frozen_current",
+      "VAL3s_mean": 0.15044075250462757,
+      "VAL60s_mean": 0.16288808391931342,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "frozen_past",
+      "VAL3s_mean": 0.15006952283877492,
+      "VAL60s_mean": 0.16293255833904613,
+      "selected_epochs": [
+        4,
+        3,
+        4
+      ]
+    },
+    {
+      "condition": "joint_p",
+      "VAL3s_mean": 0.15830312469259636,
+      "VAL60s_mean": 0.17413993455804533,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "joint_current",
+      "VAL3s_mean": 0.15834915795222007,
+      "VAL60s_mean": 0.17410003205843483,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "joint_past",
+      "VAL3s_mean": 0.15802536182325394,
+      "VAL60s_mean": 0.17374024673869884,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "incumbent_means": [
+    {
+      "mode": "frozen",
+      "original_incumbent_VAL3s": 0.14902228945721696,
+      "original_incumbent_VAL60s": 0.1623624854534431
+    },
+    {
+      "mode": "joint",
+      "original_incumbent_VAL3s": 0.14902229264687972,
+      "original_incumbent_VAL60s": 0.16236248600232414
+    }
+  ],
+  "contrasts": [
+    {
+      "mode": "frozen",
+      "past_minus": "continued_P",
+      "seeds": [
+        1024,
+        2026,
+        31415
+      ],
+      "VAL3s_difference": [
+        0.000692500412464131,
+        0.001123939495594778,
+        0.00131448348721519
+      ],
+      "VAL60s_difference": [
+        0.0007435609695116141,
+        0.00021525803447816627,
+        0.0007336926602084237
+      ],
+      "VAL3s_mean_difference": 0.001043641131758033,
+      "VAL60s_mean_difference": 0.0005641705547327347,
+      "positive_VAL60s_seed_count": 3
+    },
+    {
+      "mode": "frozen",
+      "past_minus": "current",
+      "seeds": [
+        1024,
+        2026,
+        31415
+      ],
+      "VAL3s_difference": [
+        -0.0003020680927839636,
+        -0.0006393824962318828,
+        -0.00017223840854208028
+      ],
+      "VAL60s_difference": [
+        -0.000413237896350227,
+        0.0006945288485522005,
+        -0.00014786769300381697
+      ],
+      "VAL3s_mean_difference": -0.0003712296658526422,
+      "VAL60s_mean_difference": 4.447441973271885e-05,
+      "positive_VAL60s_seed_count": 1
+    },
+    {
+      "mode": "frozen",
+      "past_minus": "original_P_incumbent",
+      "seeds": [
+        1024,
+        2026,
+        31415
+      ],
+      "VAL3s_difference": [
+        0.0006951659048189673,
+        0.0011288781713267027,
+        0.0013176560685282668
+      ],
+      "VAL60s_difference": [
+        0.0007487101816968378,
+        0.0002224064117740121,
+        0.0007391020633382428
+      ],
+      "VAL3s_mean_difference": 0.0010472333815579789,
+      "VAL60s_mean_difference": 0.0005700728856030309,
+      "positive_VAL60s_seed_count": 3
+    },
+    {
+      "mode": "joint",
+      "past_minus": "continued_P",
+      "seeds": [
+        1024,
+        2026,
+        31415
+      ],
+      "VAL3s_difference": [
+        -0.0008115397984864159,
+        -0.00022407536721619215,
+        0.00020232655767535301
+      ],
+      "VAL60s_difference": [
+        -0.0010421013985399963,
+        -0.00034242258206410026,
+        0.00018546052256465662
+      ],
+      "VAL3s_mean_difference": -0.00027776286934241834,
+      "VAL60s_mean_difference": -0.00039968781934647996,
+      "positive_VAL60s_seed_count": 1
+    },
+    {
+      "mode": "joint",
+      "past_minus": "current",
+      "seeds": [
+        1024,
+        2026,
+        31415
+      ],
+      "VAL3s_difference": [
+        -0.0006211023780166025,
+        -0.00039600579269596925,
+        4.571978381423536e-05
+      ],
+      "VAL60s_difference": [
+        -0.0007366823730158845,
+        -0.0002905500412183626,
+        -5.2123544973692315e-05
+      ],
+      "VAL3s_mean_difference": -0.00032379612896611215,
+      "VAL60s_mean_difference": -0.00035978531973597977,
+      "positive_VAL60s_seed_count": 0
+    },
+    {
+      "mode": "joint",
+      "past_minus": "original_P_incumbent",
+      "seeds": [
+        1024,
+        2026,
+        31415
+      ],
+      "VAL3s_difference": [
+        0.007498392272190985,
+        0.010663938210635882,
+        0.008846877046295859
+      ],
+      "VAL60s_difference": [
+        0.010632924163297863,
+        0.013389599384858869,
+        0.010110758660967445
+      ],
+      "VAL3s_mean_difference": 0.009003069176374242,
+      "VAL60s_mean_difference": 0.011377760736374726,
+      "positive_VAL60s_seed_count": 3
+    }
+  ],
+  "costs": {
+    "epochs": 90,
+    "updates": 355050,
+    "supervised_window_presentations": 22720860,
+    "target_time_sample_presentations": 4362405120,
+    "elapsed_seconds_sum": 10561.581091403961,
+    "validation_full_passes": 126,
+    "per_fit_elapsed_excludes_model_and_data_construction": true,
+    "queue_wall_seconds": 5880.1550116539,
+    "shared_upstream_training_reused_not_recounted_as_new": true,
+    "engineering_costs_separate": true
+  },
+  "per_condition_costs": [
+    {
+      "condition": "frozen_p",
+      "elapsed_seconds_sum": 97.11438775062561,
+      "updates_sum": 59175,
+      "trainable_parameters": [
+        257
+      ]
+    },
+    {
+      "condition": "frozen_current",
+      "elapsed_seconds_sum": 322.80249667167664,
+      "updates_sum": 59175,
+      "trainable_parameters": [
+        5161
+      ]
+    },
+    {
+      "condition": "frozen_past",
+      "elapsed_seconds_sum": 485.5875313282013,
+      "updates_sum": 59175,
+      "trainable_parameters": [
+        5161
+      ]
+    },
+    {
+      "condition": "joint_p",
+      "elapsed_seconds_sum": 3084.30899143219,
+      "updates_sum": 59175,
+      "trainable_parameters": [
+        3372617
+      ]
+    },
+    {
+      "condition": "joint_current",
+      "elapsed_seconds_sum": 3260.544367313385,
+      "updates_sum": 59175,
+      "trainable_parameters": [
+        3377521
+      ]
+    },
+    {
+      "condition": "joint_past",
+      "elapsed_seconds_sum": 3311.2233169078827,
+      "updates_sum": 59175,
+      "trainable_parameters": [
+        3377521
+      ]
+    }
+  ]
+}

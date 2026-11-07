@@ -1,0 +1,15 @@
+{
+  "time": 1793642684.3780277,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py\", line 72, in <module>\n    try:run(args.seed,args.arm,args.device)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py\", line 43, in run\n    if positions%500==0:guard();assert time.time()-start<86400\n                        ^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_runtime.py\", line 47, in guard\n    assert min(shutil.disk_usage(ROOT).free,shutil.disk_usage('/sata5/fanyu/auditory_simulation_m6a').free)>=20*1024**3,'20GiB each disk'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 20GiB each disk\n",
+  "optimizer_updates": 23000,
+  "update_positions": 23000,
+  "invoked_component_counts": {
+    "current_encoder_prefix_windows": 2129278,
+    "current_projection_windows": 2129278,
+    "current_head_windows": 2129278,
+    "frozen_encoder_prefix_windows": 2097061,
+    "attention_query_windows": 2097061,
+    "prior_projection_windows": 0
+  },
+  "automatic_retry": false
+}

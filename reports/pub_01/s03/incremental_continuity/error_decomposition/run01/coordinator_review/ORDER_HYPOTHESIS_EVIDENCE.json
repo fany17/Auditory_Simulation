@@ -1,0 +1,155 @@
+{
+  "time": 1793620514.9526246,
+  "facts": [
+    {
+      "seed": 1024,
+      "arm": "H_full",
+      "whole_fused_pointweighted_delta_MSE": 0.005765420207541023,
+      "record_delta_MSE_positive": 365,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.02834705433843665,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.1948694887767492,
+        0.19349282876489513
+      ]
+    },
+    {
+      "seed": 1024,
+      "arm": "C_match",
+      "whole_fused_pointweighted_delta_MSE": 0.00636608241911035,
+      "record_delta_MSE_positive": 368,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.027123212441388267,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.19467097488779972,
+        0.19367534696311947
+      ]
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prior",
+      "whole_fused_pointweighted_delta_MSE": 0.006180873215846783,
+      "record_delta_MSE_positive": 369,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.02802910729277963,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.19481971891142705,
+        0.19365749251455672
+      ]
+    },
+    {
+      "seed": 2026,
+      "arm": "H_full",
+      "whole_fused_pointweighted_delta_MSE": 0.005643660340975435,
+      "record_delta_MSE_positive": 363,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.02649987159995848,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.1946246254718221,
+        0.19351961943067864
+      ]
+    },
+    {
+      "seed": 2026,
+      "arm": "C_match",
+      "whole_fused_pointweighted_delta_MSE": 0.00587553770401899,
+      "record_delta_MSE_positive": 366,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.025161705116375943,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.1947676417044103,
+        0.19329340646043708
+      ]
+    },
+    {
+      "seed": 2026,
+      "arm": "P_prior",
+      "whole_fused_pointweighted_delta_MSE": 0.006070149342907415,
+      "record_delta_MSE_positive": 364,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.02612423092572147,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.19481299915703884,
+        0.19329841857291832
+      ]
+    },
+    {
+      "seed": 31415,
+      "arm": "H_full",
+      "whole_fused_pointweighted_delta_MSE": 0.006516735591869284,
+      "record_delta_MSE_positive": 366,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.03652415205559412,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.19451629229677428,
+        0.19331827230464727
+      ]
+    },
+    {
+      "seed": 31415,
+      "arm": "C_match",
+      "whole_fused_pointweighted_delta_MSE": 0.0062502946642893215,
+      "record_delta_MSE_positive": 365,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.03707985459971297,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.19461621720127803,
+        0.19316721783280658
+      ]
+    },
+    {
+      "seed": 31415,
+      "arm": "P_prior",
+      "whole_fused_pointweighted_delta_MSE": 0.006464164021911505,
+      "record_delta_MSE_positive": 367,
+      "records": 426,
+      "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "last_record_delta_MSE": -0.036693306706028994,
+      "online_trajectory_window_MSE_epochs0_19": [
+        0.19457644593246276,
+        0.1932628317644958
+      ]
+    }
+  ],
+  "source_SHA256": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed1024/train_H_full_REGIONS.csv": "08472afd2a1d611ebb24225997a8c5daa81c5c329959919a1e6cd42e53322fc6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed1024/HISTORY.jsonl": "52d96d36d282ec88b17ccf7316d361d85fc366ad4f95288423137fb63e7c235b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed1024/train_C_match_REGIONS.csv": "f4bc18e7fd10b8bd41681aec71e32d408301a3b05293a5380d48b3e44a17bbf6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed1024/HISTORY.jsonl": "08b4afe444444538260163a479c36fffc4d85e730f60cf60953eb4687f517f6e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed1024/train_P_prior_REGIONS.csv": "ab194bbde6d152f19021ed59ffe493f48a986528831db472696a01b1d36dd63d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed1024/HISTORY.jsonl": "5a286b77e459a45852682ab69e653b3f66c75feb3e77338277629fd7ff1297b2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed2026/train_H_full_REGIONS.csv": "0a4e43464acb5c41516b347400bd764c9de6e7824f05df4b24015e59a3187073",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed2026/HISTORY.jsonl": "b69432e3fd7be75754691f2b4c642ac272e634c3983e793a5d758f33ca019c39",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed2026/train_C_match_REGIONS.csv": "73483b9398ff9767b3ff1b72af5ce6d784c88213937518d85c937bd208aa5b1d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed2026/HISTORY.jsonl": "b80279b36c2f8844f1f8b37044bee1ec8f3d9244e30f23cd617b386ce610630a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed2026/train_P_prior_REGIONS.csv": "bd3302ddcd11400b825cb8be64221111fae71754dbe5cb707fd43f39fdb8588c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed2026/HISTORY.jsonl": "1769f15e2d4ef6188a4411221498da4a2381b89a9f77f2a9d0dfc331bfb94679",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed31415/train_H_full_REGIONS.csv": "425d1f535a60e4264116d1abbba4cc71e70a4072bdcd8cd7c9dfeb2ccf068e25",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed31415/HISTORY.jsonl": "b2dc1cf02f7612799a9cdb06320d8f062786ddc739b6c9a0f54a004cd9fd323e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed31415/train_C_match_REGIONS.csv": "d316319aec70197d8bce35a2e5e89a5ca71de1b431d8820cb0ed7b4d4f6ece7f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed31415/HISTORY.jsonl": "4e203f821136ece68555b266da0000375e76af5c62efc45c9d442d3058011064",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/results/seed31415/train_P_prior_REGIONS.csv": "cd63b538d64de3e1b58796ac4ca00984a3f63feb903fee8e422a7d361a6b8aea",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed31415/HISTORY.jsonl": "4afaa3f245214c3b2dee434dc8e5a291fca2385bd8aa2d59489c56a942290c1a"
+  },
+  "first_record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+  "last_record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+  "new_NN": 0,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "inference": "Fixed repeated manifest order can be investigated. Existing pointweighted physical MSE is worse too, not merely person macro weighting.",
+  "not_established": [
+    "Order causes the loss",
+    "offline unweighted window MSE equals fused MSE",
+    "online MSE is fixed final-model training loss",
+    "randomization will improve validation",
+    "continuity is beneficial"
+  ]
+}

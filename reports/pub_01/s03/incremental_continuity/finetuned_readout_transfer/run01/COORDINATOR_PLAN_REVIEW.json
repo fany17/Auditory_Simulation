@@ -1,0 +1,27 @@
+{
+  "status": "PLAN_APPROVED",
+  "goal_complete": false,
+  "approved_scope": "D8 existing strong P_FT TRAIN/VAL readout transfer; three frozen selected FT encoders/heads, current-only PFT*/Ponly/C/Ccap, 27 ridge fits across originalthree lambdas; no neural updates or oldtest/DTU.",
+  "plan_sha256": "8ad0e57cd2b01d58d52dac80154c6163081b7118ee2895b1101ab525a3e71cc9",
+  "inventory_sha256": "d034544ba48bbfcaa3941b4ad93534708a4ee4457182e6d0b45422b71eafbf62",
+  "actual_review": [
+    "Read complete PLAN and selected actual inventory fields; independently checked allthree current FT checkpoint hashes and currentfree space.",
+    "Read original finetune.RawWindows/Decoder/validate code: global64 acrossrecord phase batching and sourceEEG train normalization; original nativeP recordB256 cache is not FT.",
+    "Original source FINAL_WEIGHT_VAL_BRIDGE did not certify FT; plan correctly uses savedFT validation scalar plus bounded samepath Decoder waveform comparisons.",
+    "Actualcache outputsZ/P sameforward preserve originalheadinput layout; no changedlayout reconstruction asbaseline.",
+    "Corresponding FTTRAIN-only positiveglobalcalibration, latent/P/squarestatistics; no reusednative Gram/coef.",
+    "Allroles sametarget/mask/first4 fallback; common3seedlambda selection plusbaseline candidate; every27fit retained.",
+    "Storage exactnewNPY5867335680B and combined24469431456B fit existing25GiB cap; wholeD8max7GiB still leaves20GiBreserve now."
+  ],
+  "execution_authorization": "Proceed implementation and frozen source/protocol; perform specified samepath checks and full TRAIN/VAL caches/fits within this plan. Share source/launch evidence for parallel coordinator static review. Necessary checks passing do not require another human permission or plan-approval round. Do not run only smoke and stop.",
+  "requirements": [
+    "Preserve allFT checkpoints and oldruns; actualflags/global64/FP32/TF32/layout recorded.",
+    "FT scalar tolerance1e-7 and waveform1e-6 are prespecified; no tolerance relaxation for failedbridge.",
+    "Bridgeextra cap384encoder/headwindows, exactexpected300 for first64+last36 perseed; account actual.",
+    "Cache tensors/coef onlyserver; no duplication ofEEG/targets.",
+    "Oldtest/DTU remainclosed; no new source/data/model scope.",
+    "Actualindependent checks limited to changedcache/provenance/statistics/matrix and already specified27aggregation/selected18record reconstructions; do not replay unchangedoldtests.",
+    "Differenttrainingloss/scaling/dimension and repeatedVAL selection constrain scientific interpretation; no equivalence/history/novelty/SOTA claims."
+  ],
+  "future_hypothesis": "Supervised physical-time loss controls are justified as a next testable development hypothesis, not automatically run inD8 and not established novelty."
+}

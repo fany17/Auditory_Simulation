@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "variant": "B",
+      "identical": true,
+      "compared_points": 512,
+      "moments_points": 107806,
+      "parameters": 9441,
+      "initialization_sha256": "f2a98e3dc7596429f740f3485fb3bad4235530cf4abd58e4edd1c16fbdf43b6f"
+    },
+    {
+      "variant": "S",
+      "identical": true,
+      "compared_points": 512,
+      "moments_points": 107806,
+      "parameters": 3361,
+      "initialization_sha256": "f5d13fdc3d380e05008a015b6613f0934a25727e4ce915e3d930db7909bfe3f2"
+    }
+  ],
+  "updates": 0,
+  "process": {
+    "pid": 1346036,
+    "uid": 1012,
+    "argv": [
+      "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_downstream_v01/pub_01_s03_ss07_crossfit_downstream.py",
+      "--seed",
+      "1024",
+      "--stage",
+      "engineer"
+    ],
+    "linux_startticks": 788542800,
+    "stage_started_unix": 1793958185.1962552,
+    "deadline_unix": 1793958785.1962552,
+    "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "runtime": {
+    "peak_RSS_bytes": 1354727424,
+    "cuda_peak_reserved_bytes": 123731968,
+    "writer_free_bytes": 178063519744,
+    "writer_bytes": 1472370
+  }
+}

@@ -1,0 +1,3666 @@
+{
+  "stages": [
+    {
+      "seed": 1024,
+      "branch": "H",
+      "stage": "CL",
+      "epochs": 24,
+      "committed_updates": 19680,
+      "selection_epoch": 8,
+      "selected_prefix_updates": 7380,
+      "used_model_epoch": 8,
+      "used_prefix_updates": 7380,
+      "elapsed_seconds": 6154.166049183346,
+      "CPU_seconds": 6050.05989085,
+      "cuda_peak_reserved": 15183380480,
+      "stopping": "paired_patience",
+      "parameters": 3817609
+    },
+    {
+      "seed": 1024,
+      "branch": "C",
+      "stage": "CL",
+      "epochs": 24,
+      "committed_updates": 19680,
+      "selection_epoch": 8,
+      "selected_prefix_updates": 7380,
+      "used_model_epoch": 8,
+      "used_prefix_updates": 7380,
+      "elapsed_seconds": 6156.030695366673,
+      "CPU_seconds": 5984.505405972,
+      "cuda_peak_reserved": 15179186176,
+      "stopping": "paired_patience",
+      "parameters": 3817609
+    },
+    {
+      "seed": 1024,
+      "branch": "HH",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 2071.7212651884183,
+      "CPU_seconds": 880.5877717340001,
+      "cuda_peak_reserved": 2166358016,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 1024,
+      "branch": "CH",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 2071.579606165178,
+      "CPU_seconds": 1867.3675062309999,
+      "cuda_peak_reserved": 4177526784,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 1024,
+      "branch": "CC",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 1920.5287823425606,
+      "CPU_seconds": 1716.584451903,
+      "cuda_peak_reserved": 4177526784,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 1024,
+      "branch": "HH",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2863.1178318932652,
+      "CPU_seconds": 2829.5025366309997,
+      "cuda_peak_reserved": 9187622912,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 1024,
+      "branch": "CH",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2856.037360982038,
+      "CPU_seconds": 2824.4550514850002,
+      "cuda_peak_reserved": 9187622912,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 1024,
+      "branch": "CC",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2783.7600745949894,
+      "CPU_seconds": 2753.781059443,
+      "cuda_peak_reserved": 9237954560,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 2026,
+      "branch": "H",
+      "stage": "CL",
+      "epochs": 27,
+      "committed_updates": 22140,
+      "selection_epoch": 7,
+      "selected_prefix_updates": 6560,
+      "used_model_epoch": 7,
+      "used_prefix_updates": 6560,
+      "elapsed_seconds": 7013.919642996974,
+      "CPU_seconds": 6937.873645012,
+      "cuda_peak_reserved": 19511902208,
+      "stopping": "paired_patience",
+      "parameters": 3817609
+    },
+    {
+      "seed": 2026,
+      "branch": "C",
+      "stage": "CL",
+      "epochs": 27,
+      "committed_updates": 22140,
+      "selection_epoch": 11,
+      "selected_prefix_updates": 9840,
+      "used_model_epoch": 11,
+      "used_prefix_updates": 9840,
+      "elapsed_seconds": 7015.793991744518,
+      "CPU_seconds": 6675.016019949,
+      "cuda_peak_reserved": 19495124992,
+      "stopping": "paired_patience",
+      "parameters": 3817609
+    },
+    {
+      "seed": 2026,
+      "branch": "HH",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 2129.2267242660746,
+      "CPU_seconds": 853.6751799409999,
+      "cuda_peak_reserved": 2166358016,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 2026,
+      "branch": "CH",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 2126.51012757048,
+      "CPU_seconds": 1946.3842092669997,
+      "cuda_peak_reserved": 4177526784,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 2026,
+      "branch": "CC",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 1975.8825398208573,
+      "CPU_seconds": 1795.929256032,
+      "cuda_peak_reserved": 4177526784,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 2026,
+      "branch": "HH",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2871.741397785023,
+      "CPU_seconds": 2837.851898131,
+      "cuda_peak_reserved": 9187622912,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 2026,
+      "branch": "CH",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2871.2799064703286,
+      "CPU_seconds": 2839.880730587,
+      "cuda_peak_reserved": 9187622912,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 2026,
+      "branch": "CC",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2785.552564847283,
+      "CPU_seconds": 2755.785498004,
+      "cuda_peak_reserved": 9237954560,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 31415,
+      "branch": "H",
+      "stage": "CL",
+      "epochs": 26,
+      "committed_updates": 21320,
+      "selection_epoch": 10,
+      "selected_prefix_updates": 9020,
+      "used_model_epoch": 10,
+      "used_prefix_updates": 9020,
+      "elapsed_seconds": 6730.124504063278,
+      "CPU_seconds": 6657.7599057200005,
+      "cuda_peak_reserved": 19637731328,
+      "stopping": "paired_patience",
+      "parameters": 3817609
+    },
+    {
+      "seed": 31415,
+      "branch": "C",
+      "stage": "CL",
+      "epochs": 26,
+      "committed_updates": 21320,
+      "selection_epoch": 5,
+      "selected_prefix_updates": 4920,
+      "used_model_epoch": 5,
+      "used_prefix_updates": 4920,
+      "elapsed_seconds": 6731.006795220077,
+      "CPU_seconds": 6418.5082383,
+      "cuda_peak_reserved": 19620954112,
+      "stopping": "paired_patience",
+      "parameters": 3817609
+    },
+    {
+      "seed": 31415,
+      "branch": "HH",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 2147.049019413069,
+      "CPU_seconds": 885.761570466,
+      "cuda_peak_reserved": 2166358016,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 31415,
+      "branch": "CH",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 2147.2582357376814,
+      "CPU_seconds": 1961.0420983039999,
+      "cuda_peak_reserved": 4177526784,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 31415,
+      "branch": "CC",
+      "stage": "HEAD",
+      "epochs": 250,
+      "committed_updates": 986250,
+      "selection_epoch": 249,
+      "selected_prefix_updates": 986250,
+      "used_model_epoch": 249,
+      "used_prefix_updates": 986250,
+      "elapsed_seconds": 1997.0607155291364,
+      "CPU_seconds": 1811.0203407000001,
+      "cuda_peak_reserved": 4177526784,
+      "stopping": "maximum250",
+      "parameters": 257
+    },
+    {
+      "seed": 31415,
+      "branch": "HH",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2826.576964886859,
+      "CPU_seconds": 2795.83930819,
+      "cuda_peak_reserved": 9187622912,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 31415,
+      "branch": "CH",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2843.440185936168,
+      "CPU_seconds": 2813.025716714,
+      "cuda_peak_reserved": 9187622912,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    },
+    {
+      "seed": 31415,
+      "branch": "CC",
+      "stage": "FT",
+      "epochs": 5,
+      "committed_updates": 19725,
+      "selection_epoch": 4,
+      "selected_prefix_updates": 19725,
+      "used_model_epoch": 4,
+      "used_prefix_updates": 19725,
+      "elapsed_seconds": 2790.9375770390034,
+      "CPU_seconds": 2760.6315299440002,
+      "cuda_peak_reserved": 9237954560,
+      "stopping": "fixed5",
+      "parameters": 3389513
+    }
+  ],
+  "readouts": [
+    {
+      "seed": 1024,
+      "arm": "HH",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 1.2332799712022613e-17
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 677594,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 37551264,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 505.20914074999996,
+      "elapsed_seconds": 234.95248365215957
+    },
+    {
+      "seed": 1024,
+      "arm": "CH",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 1.1024980841461973e-17
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 557358,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 14465952,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 456.72198935,
+      "elapsed_seconds": 209.771003250964
+    },
+    {
+      "seed": 1024,
+      "arm": "CC",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 8.726133422613802e-18
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 557358,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 14465952,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 466.25985547000005,
+      "elapsed_seconds": 203.78785268496722
+    },
+    {
+      "seed": 2026,
+      "arm": "HH",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 1.0607393598465603e-17
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 677594,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 37551264,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 537.630185513,
+      "elapsed_seconds": 239.62481786403805
+    },
+    {
+      "seed": 2026,
+      "arm": "CH",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 9.859463506040056e-18
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 557358,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 14465952,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 506.32710557900003,
+      "elapsed_seconds": 215.27972624637187
+    },
+    {
+      "seed": 2026,
+      "arm": "CC",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 7.26415455565288e-18
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 557358,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 14465952,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 471.331696194,
+      "elapsed_seconds": 204.57199641596526
+    },
+    {
+      "seed": 31415,
+      "arm": "HH",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 2.5063704909254747e-17
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 677594,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 37551264,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 502.912110552,
+      "elapsed_seconds": 231.32411819603294
+    },
+    {
+      "seed": 31415,
+      "arm": "CH",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 1.2468324983583301e-17
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 557358,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 14465952,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 498.065307593,
+      "elapsed_seconds": 211.25930508133024
+    },
+    {
+      "seed": 31415,
+      "arm": "CC",
+      "train_fit": {
+        "TRAIN_physical_points": 24275628,
+        "TRAIN_fit_windows": 250750,
+        "normal_equation_max_abs": 9.676504389433127e-18
+      },
+      "current_EEG_windows": 282954,
+      "memory_EEG_slots": 557358,
+      "TRAIN": {
+        "current_encoder_windows": 252454,
+        "memory_encoder_slots": 497240,
+        "target_or_head_windows": 252454,
+        "unique_supervised_windows": 252454,
+        "repeated_supervised_windows": 0,
+        "unique_EEG_sample_times": 24276480,
+        "repeated_EEG_sample_time_presentations": 119664768
+      },
+      "VAL_unique_EEG_sample_times": 2932704,
+      "VAL_repeated_EEG_sample_time_presentations": 14465952,
+      "ridge_fits": 1,
+      "updates": 0,
+      "CPU_seconds": 471.012994859,
+      "elapsed_seconds": 204.34155306592584
+    }
+  ],
+  "branch_allocations": [
+    {
+      "seed": 1024,
+      "arm": "HH",
+      "pretraining_branch": "H",
+      "pretraining_job_share": 1,
+      "charged_CL_updates": 19680,
+      "full_standalone_CL_updates": 19680,
+      "actual_selected_CL_prefix_updates": 7380,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 1024,
+      "arm": "CH",
+      "pretraining_branch": "C",
+      "pretraining_job_share": 0.5,
+      "charged_CL_updates": 9840.0,
+      "full_standalone_CL_updates": 19680,
+      "actual_selected_CL_prefix_updates": 7380,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 1024,
+      "arm": "CC",
+      "pretraining_branch": "C",
+      "pretraining_job_share": 0.5,
+      "charged_CL_updates": 9840.0,
+      "full_standalone_CL_updates": 19680,
+      "actual_selected_CL_prefix_updates": 7380,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 2026,
+      "arm": "HH",
+      "pretraining_branch": "H",
+      "pretraining_job_share": 1,
+      "charged_CL_updates": 22140,
+      "full_standalone_CL_updates": 22140,
+      "actual_selected_CL_prefix_updates": 6560,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 2026,
+      "arm": "CH",
+      "pretraining_branch": "C",
+      "pretraining_job_share": 0.5,
+      "charged_CL_updates": 11070.0,
+      "full_standalone_CL_updates": 22140,
+      "actual_selected_CL_prefix_updates": 9840,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 2026,
+      "arm": "CC",
+      "pretraining_branch": "C",
+      "pretraining_job_share": 0.5,
+      "charged_CL_updates": 11070.0,
+      "full_standalone_CL_updates": 22140,
+      "actual_selected_CL_prefix_updates": 9840,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 31415,
+      "arm": "HH",
+      "pretraining_branch": "H",
+      "pretraining_job_share": 1,
+      "charged_CL_updates": 21320,
+      "full_standalone_CL_updates": 21320,
+      "actual_selected_CL_prefix_updates": 9020,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 31415,
+      "arm": "CH",
+      "pretraining_branch": "C",
+      "pretraining_job_share": 0.5,
+      "charged_CL_updates": 10660.0,
+      "full_standalone_CL_updates": 21320,
+      "actual_selected_CL_prefix_updates": 4920,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    },
+    {
+      "seed": 31415,
+      "arm": "CC",
+      "pretraining_branch": "C",
+      "pretraining_job_share": 0.5,
+      "charged_CL_updates": 10660.0,
+      "full_standalone_CL_updates": 21320,
+      "actual_selected_CL_prefix_updates": 4920,
+      "selected_head_prefix_updates": 986250,
+      "used_FT_updates": 19725,
+      "committed_head_updates": 986250,
+      "committed_FT_updates": 19725
+    }
+  ],
+  "CL_coverage": [
+    {
+      "seed": 1024,
+      "branch": "H",
+      "full_TRAIN": {
+        "current_EEG_windows": 2519040,
+        "memory_EEG_slots": 4952882,
+        "audio_target_windows": 2519040,
+        "unique_current_EEG_windows": 126156,
+        "repeated_current_EEG_windows": 2392884,
+        "unique_EEG_sample_times": 24221952,
+        "unique_slot1_EEG_sample_times": 23812992,
+        "unique_slot2_EEG_sample_times": 23812992,
+        "repeated_EEG_sample_time_presentations": 1410387072,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 2506857
+      },
+      "full_VAL": {
+        "current_EEG_windows": 301056,
+        "memory_EEG_slots": 592560,
+        "audio_target_windows": 301056,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 292349,
+        "unique_EEG_sample_times": 2677248,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 168897024,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 299493
+      },
+      "selected_prefix_TRAIN": {
+        "current_EEG_windows": 944640,
+        "memory_EEG_slots": 1857240,
+        "audio_target_windows": 944640,
+        "unique_current_EEG_windows": 126026,
+        "repeated_current_EEG_windows": 818614,
+        "unique_EEG_sample_times": 24221760,
+        "unique_slot1_EEG_sample_times": 23788416,
+        "unique_slot2_EEG_sample_times": 23788416,
+        "repeated_EEG_sample_time_presentations": 513739200,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 932457
+      },
+      "selected_prefix_VAL": {
+        "current_EEG_windows": 112896,
+        "memory_EEG_slots": 222210,
+        "audio_target_windows": 112896,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 104189,
+        "unique_EEG_sample_times": 2677248,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 61663104,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 111333
+      }
+    },
+    {
+      "seed": 1024,
+      "branch": "C",
+      "full_TRAIN": {
+        "current_EEG_windows": 2519040,
+        "memory_EEG_slots": 4952882,
+        "audio_target_windows": 2519040,
+        "unique_current_EEG_windows": 126156,
+        "repeated_current_EEG_windows": 2392884,
+        "unique_EEG_sample_times": 24221952,
+        "unique_slot1_EEG_sample_times": 23812992,
+        "unique_slot2_EEG_sample_times": 23812992,
+        "repeated_EEG_sample_time_presentations": 1410387072,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 2506857
+      },
+      "full_VAL": {
+        "current_EEG_windows": 301056,
+        "memory_EEG_slots": 592560,
+        "audio_target_windows": 301056,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 292349,
+        "unique_EEG_sample_times": 1671744,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 169902528,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 299493
+      },
+      "selected_prefix_TRAIN": {
+        "current_EEG_windows": 944640,
+        "memory_EEG_slots": 1857240,
+        "audio_target_windows": 944640,
+        "unique_current_EEG_windows": 126026,
+        "repeated_current_EEG_windows": 818614,
+        "unique_EEG_sample_times": 24196992,
+        "unique_slot1_EEG_sample_times": 23788416,
+        "unique_slot2_EEG_sample_times": 23788416,
+        "repeated_EEG_sample_time_presentations": 513763968,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 932457
+      },
+      "selected_prefix_VAL": {
+        "current_EEG_windows": 112896,
+        "memory_EEG_slots": 222210,
+        "audio_target_windows": 112896,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 104189,
+        "unique_EEG_sample_times": 1671744,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 62668608,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 111333
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "H",
+      "full_TRAIN": {
+        "current_EEG_windows": 2833920,
+        "memory_EEG_slots": 5571928,
+        "audio_target_windows": 2833920,
+        "unique_current_EEG_windows": 126156,
+        "repeated_current_EEG_windows": 2707764,
+        "unique_EEG_sample_times": 24221952,
+        "unique_slot1_EEG_sample_times": 23812992,
+        "unique_slot2_EEG_sample_times": 23812992,
+        "repeated_EEG_sample_time_presentations": 1589700864,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 2821737
+      },
+      "full_VAL": {
+        "current_EEG_windows": 338688,
+        "memory_EEG_slots": 666630,
+        "audio_target_windows": 338688,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 329981,
+        "unique_EEG_sample_times": 2677248,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 190343808,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 337125
+      },
+      "selected_prefix_TRAIN": {
+        "current_EEG_windows": 839680,
+        "memory_EEG_slots": 1651020,
+        "audio_target_windows": 839680,
+        "unique_current_EEG_windows": 125940,
+        "repeated_current_EEG_windows": 713740,
+        "unique_EEG_sample_times": 24221088,
+        "unique_slot1_EEG_sample_times": 23772864,
+        "unique_slot2_EEG_sample_times": 23772864,
+        "repeated_EEG_sample_time_presentations": 453993312,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 827497
+      },
+      "selected_prefix_VAL": {
+        "current_EEG_windows": 100352,
+        "memory_EEG_slots": 197520,
+        "audio_target_windows": 100352,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 91645,
+        "unique_EEG_sample_times": 2677248,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 54514176,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 98789
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "C",
+      "full_TRAIN": {
+        "current_EEG_windows": 2833920,
+        "memory_EEG_slots": 5571928,
+        "audio_target_windows": 2833920,
+        "unique_current_EEG_windows": 126156,
+        "repeated_current_EEG_windows": 2707764,
+        "unique_EEG_sample_times": 24221952,
+        "unique_slot1_EEG_sample_times": 23812992,
+        "unique_slot2_EEG_sample_times": 23812992,
+        "repeated_EEG_sample_time_presentations": 1589700864,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 2821737
+      },
+      "full_VAL": {
+        "current_EEG_windows": 338688,
+        "memory_EEG_slots": 666630,
+        "audio_target_windows": 338688,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 329981,
+        "unique_EEG_sample_times": 1671744,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 191349312,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 337125
+      },
+      "selected_prefix_TRAIN": {
+        "current_EEG_windows": 1259520,
+        "memory_EEG_slots": 2476498,
+        "audio_target_windows": 1259520,
+        "unique_current_EEG_windows": 126143,
+        "repeated_current_EEG_windows": 1133377,
+        "unique_EEG_sample_times": 24219456,
+        "unique_slot1_EEG_sample_times": 23810496,
+        "unique_slot2_EEG_sample_times": 23810496,
+        "repeated_EEG_sample_time_presentations": 693096000,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 1247337
+      },
+      "selected_prefix_VAL": {
+        "current_EEG_windows": 150528,
+        "memory_EEG_slots": 296280,
+        "audio_target_windows": 150528,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 141821,
+        "unique_EEG_sample_times": 1671744,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 84115392,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 148965
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "H",
+      "full_TRAIN": {
+        "current_EEG_windows": 2728960,
+        "memory_EEG_slots": 5365732,
+        "audio_target_windows": 2728960,
+        "unique_current_EEG_windows": 126156,
+        "repeated_current_EEG_windows": 2602804,
+        "unique_EEG_sample_times": 24221952,
+        "unique_slot1_EEG_sample_times": 23812992,
+        "unique_slot2_EEG_sample_times": 23812992,
+        "repeated_EEG_sample_time_presentations": 1529958912,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 2716777
+      },
+      "full_VAL": {
+        "current_EEG_windows": 326144,
+        "memory_EEG_slots": 641940,
+        "audio_target_windows": 326144,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 317437,
+        "unique_EEG_sample_times": 2677248,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 183194880,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 324581
+      },
+      "selected_prefix_TRAIN": {
+        "current_EEG_windows": 1154560,
+        "memory_EEG_slots": 2270032,
+        "audio_target_windows": 1154560,
+        "unique_current_EEG_windows": 126127,
+        "repeated_current_EEG_windows": 1028433,
+        "unique_EEG_sample_times": 24221760,
+        "unique_slot1_EEG_sample_times": 23807616,
+        "unique_slot2_EEG_sample_times": 23807616,
+        "repeated_EEG_sample_time_presentations": 633299904,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 1142377
+      },
+      "selected_prefix_VAL": {
+        "current_EEG_windows": 137984,
+        "memory_EEG_slots": 271590,
+        "audio_target_windows": 137984,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 129277,
+        "unique_EEG_sample_times": 2677248,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 75960960,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 136421
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "C",
+      "full_TRAIN": {
+        "current_EEG_windows": 2728960,
+        "memory_EEG_slots": 5365732,
+        "audio_target_windows": 2728960,
+        "unique_current_EEG_windows": 126156,
+        "repeated_current_EEG_windows": 2602804,
+        "unique_EEG_sample_times": 24221952,
+        "unique_slot1_EEG_sample_times": 23812992,
+        "unique_slot2_EEG_sample_times": 23812992,
+        "repeated_EEG_sample_time_presentations": 1529958912,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 2716777
+      },
+      "full_VAL": {
+        "current_EEG_windows": 326144,
+        "memory_EEG_slots": 641940,
+        "audio_target_windows": 326144,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 317437,
+        "unique_EEG_sample_times": 1671744,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 184200384,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 324581
+      },
+      "selected_prefix_TRAIN": {
+        "current_EEG_windows": 629760,
+        "memory_EEG_slots": 1238262,
+        "audio_target_windows": 629760,
+        "unique_current_EEG_windows": 125216,
+        "repeated_current_EEG_windows": 504544,
+        "unique_EEG_sample_times": 24041472,
+        "unique_slot1_EEG_sample_times": 23635392,
+        "unique_slot2_EEG_sample_times": 23635392,
+        "repeated_EEG_sample_time_presentations": 334618752,
+        "unique_audio_story_time_windows": 12183,
+        "repeated_audio_target_windows": 617577
+      },
+      "selected_prefix_VAL": {
+        "current_EEG_windows": 75264,
+        "memory_EEG_slots": 148140,
+        "audio_target_windows": 75264,
+        "unique_current_EEG_windows": 8707,
+        "repeated_current_EEG_windows": 66557,
+        "unique_EEG_sample_times": 1671744,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "repeated_EEG_sample_time_presentations": 41221824,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_audio_target_windows": 73701
+      }
+    }
+  ],
+  "supervised_coverage": [
+    {
+      "seed": 1024,
+      "branch": "HH",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 1024,
+          "arm": "HH",
+          "route": "H",
+          "process": {
+            "pid": 1723218,
+            "uid": 1012,
+            "startticks": 790875216,
+            "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 1977614336,
+            "CPU_seconds": 139.515577004,
+            "wall_seconds": 139.99255544971675
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 2166358016,
+            "CPU_seconds": 17.84241703699999,
+            "wall_seconds": 17.89438602142036
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 952.9995064614341,
+        "CPU_seconds": 874.5714310060005
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.723752466030419,
+        "CPU_seconds": 3.711684685998506
+      }
+    },
+    {
+      "seed": 1024,
+      "branch": "CH",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 1024,
+          "arm": "CH",
+          "route": "H",
+          "process": {
+            "pid": 1723228,
+            "uid": 1012,
+            "startticks": 790875219,
+            "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 1977614336,
+            "CPU_seconds": 138.402187306,
+            "wall_seconds": 138.9898433526978
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 2166358016,
+            "CPU_seconds": 17.856925458000006,
+            "wall_seconds": 17.970798104070127
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 930.7632540212944,
+        "CPU_seconds": 854.6413187760011
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.6011876733973622,
+        "CPU_seconds": 3.587957958002562
+      }
+    },
+    {
+      "seed": 1024,
+      "branch": "CC",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 1024,
+          "arm": "CC",
+          "route": "C",
+          "process": {
+            "pid": 1723228,
+            "uid": 1012,
+            "startticks": 790875219,
+            "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 3988783104,
+            "CPU_seconds": 134.475553375,
+            "wall_seconds": 134.8923182040453
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 4177526784,
+            "CPU_seconds": 16.224662090000038,
+            "wall_seconds": 16.274378553032875
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 930.3207946801558,
+        "CPU_seconds": 851.3774578290003
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.597506801597774,
+        "CPU_seconds": 3.583905775999426
+      }
+    },
+    {
+      "seed": 1024,
+      "branch": "HH",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 1024,
+      "branch": "CH",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 1024,
+      "branch": "CC",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "HH",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 2026,
+          "arm": "HH",
+          "route": "H",
+          "process": {
+            "pid": 1834271,
+            "uid": 1012,
+            "startticks": 792407735,
+            "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 1977614336,
+            "CPU_seconds": 137.378043426,
+            "wall_seconds": 137.77774338796735
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 2166358016,
+            "CPU_seconds": 16.722413733999986,
+            "wall_seconds": 16.77124588470906
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 921.953630650416,
+        "CPU_seconds": 844.547006704
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.498077413998544,
+        "CPU_seconds": 3.4859237229998996
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "CH",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 2026,
+          "arm": "CH",
+          "route": "H",
+          "process": {
+            "pid": 1834281,
+            "uid": 1012,
+            "startticks": 792407738,
+            "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 1977614336,
+            "CPU_seconds": 138.28933317500002,
+            "wall_seconds": 138.64225912559777
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 2166358016,
+            "CPU_seconds": 16.830273552999984,
+            "wall_seconds": 16.87230288144201
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 960.0431526200846,
+        "CPU_seconds": 891.0174662110022
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.7889575054869056,
+        "CPU_seconds": 3.7755698119997305
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "CC",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 2026,
+          "arm": "CC",
+          "route": "C",
+          "process": {
+            "pid": 1834281,
+            "uid": 1012,
+            "startticks": 792407738,
+            "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 3988783104,
+            "CPU_seconds": 134.13108044100002,
+            "wall_seconds": 134.4712580209598
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 4177526784,
+            "CPU_seconds": 16.241991160999987,
+            "wall_seconds": 16.278512217104435
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 956.3840198488906,
+        "CPU_seconds": 888.084697659001
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.786354660987854,
+        "CPU_seconds": 3.775020774999689
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "HH",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "CH",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 2026,
+      "branch": "CC",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "HH",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 31415,
+          "arm": "HH",
+          "route": "H",
+          "process": {
+            "pid": 1863522,
+            "uid": 1012,
+            "startticks": 793919644,
+            "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 1977614336,
+            "CPU_seconds": 138.060773105,
+            "wall_seconds": 138.44501000642776
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 2166358016,
+            "CPU_seconds": 16.804880048,
+            "wall_seconds": 16.84674158412963
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 948.0931828310713,
+        "CPU_seconds": 874.6776063110007
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.6202179258689284,
+        "CPU_seconds": 3.607134976000964
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "CH",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 31415,
+          "arm": "CH",
+          "route": "H",
+          "process": {
+            "pid": 1863532,
+            "uid": 1012,
+            "startticks": 793919647,
+            "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 1977614336,
+            "CPU_seconds": 137.542287004,
+            "wall_seconds": 137.94647602830082
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 2166358016,
+            "CPU_seconds": 16.77875628999999,
+            "wall_seconds": 16.830405535176396
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 967.8272041156888,
+        "CPU_seconds": 896.0501665640006
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.7913595475256443,
+        "CPU_seconds": 3.7780062179998026
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "CC",
+      "stage": "HEAD",
+      "train": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 63113500,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 62861046,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        },
+        "used_prefix": {
+          "current_encoder_windows": 0,
+          "memory_encoder_slots": 0,
+          "target_or_head_windows": 7625000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 7594500,
+          "unique_EEG_sample_times": null,
+          "repeated_EEG_sample_time_presentations": null
+        }
+      },
+      "cache_attempts": [
+        {
+          "seed": 31415,
+          "arm": "CC",
+          "route": "C",
+          "process": {
+            "pid": 1863532,
+            "uid": 1012,
+            "startticks": 793919647,
+            "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba"
+          },
+          "train": {
+            "phase": "train",
+            "global_B64_batches": 3945,
+            "current_encoder_windows": 252454,
+            "history_encoder_windows": 497240,
+            "CUDA_peak_reserved_bytes": 3988783104,
+            "CPU_seconds": 133.742158478,
+            "wall_seconds": 134.05648236349225
+          },
+          "val": {
+            "phase": "val",
+            "global_B64_batches": 477,
+            "current_encoder_windows": 30500,
+            "history_encoder_windows": 60118,
+            "CUDA_peak_reserved_bytes": 4177526784,
+            "CPU_seconds": 16.196429686000045,
+            "wall_seconds": 16.236881154589355
+          },
+          "scope": "Actual encoder and target staging, includes on-demand record loading."
+        }
+      ],
+      "head_optimize": {
+        "wall_seconds": 964.7809010231867,
+        "CPU_seconds": 894.3003338719992
+      },
+      "head_cached_VAL": {
+        "wall_seconds": 3.790096524171531,
+        "CPU_seconds": 3.779267231001427
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "HH",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "CH",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    },
+    {
+      "seed": 31415,
+      "branch": "CC",
+      "stage": "FT",
+      "train": {
+        "full": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        },
+        "used_prefix": {
+          "current_encoder_windows": 1262270,
+          "memory_encoder_slots": 2486200,
+          "target_or_head_windows": 1262270,
+          "unique_supervised_windows": 252454,
+          "repeated_supervised_windows": 1009816,
+          "unique_EEG_sample_times": 24276480,
+          "repeated_EEG_sample_time_presentations": 695429760
+        }
+      },
+      "val": {
+        "full": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        },
+        "used_prefix": {
+          "current_encoder_windows": 183000,
+          "memory_encoder_slots": 360708,
+          "target_or_head_windows": 183000,
+          "unique_supervised_windows": 30500,
+          "repeated_supervised_windows": 152500,
+          "unique_EEG_sample_times": 2932704,
+          "repeated_EEG_sample_time_presentations": 101459232
+        }
+      }
+    }
+  ],
+  "committed_updates_by_stage": {
+    "CL": 126280,
+    "HEAD": 8876250,
+    "FT": 177525
+  },
+  "failure_and_worker_ledger": {
+    "attempts": [
+      {
+        "attempt": "ATTEMPT_000",
+        "process": {
+          "pid": 1622219,
+          "uid": 1012,
+          "startticks": 790259158
+        },
+        "started_workers": 30,
+        "observed_first_launch_to_last_exit_seconds": 44961.36417197436
+      }
+    ],
+    "workers": [
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "cl",
+        "role": "C",
+        "passed": true,
+        "process": {
+          "pid": 1622239,
+          "uid": 1012,
+          "startticks": 790259176,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 1024,
+          "stage": "cl",
+          "role": "C",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "cl",
+            "--seed",
+            "1024",
+            "--role",
+            "C"
+          ],
+          "launched_monotonic_seconds": 7902591.760165748
+        },
+        "exit": {
+          "pid": 1622239,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 6160.34649532754,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "cl",
+          "role": "C",
+          "seed": 1024,
+          "worker_wall_seconds": 6158.519507791847,
+          "worker_CPU_seconds": 5988.37545724
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "CL_C": 19680
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_cl_C.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "cl",
+        "role": "H",
+        "passed": true,
+        "process": {
+          "pid": 1622229,
+          "uid": 1012,
+          "startticks": 790259172,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 1024,
+          "stage": "cl",
+          "role": "H",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "cl",
+            "--seed",
+            "1024",
+            "--role",
+            "H"
+          ],
+          "launched_monotonic_seconds": 7902591.727027013
+        },
+        "exit": {
+          "pid": 1622229,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 6158.379204979166,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "cl",
+          "role": "H",
+          "seed": 1024,
+          "worker_wall_seconds": 6156.644694361836,
+          "worker_CPU_seconds": 6053.864888112
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "CL_H": 19680
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_cl_H.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "ft",
+        "role": "CC",
+        "passed": true,
+        "process": {
+          "pid": 1809917,
+          "uid": 1012,
+          "startticks": 791384857,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 1024,
+          "stage": "ft",
+          "role": "CC",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "1024",
+            "--role",
+            "CC"
+          ],
+          "launched_monotonic_seconds": 7913848.578206394
+        },
+        "exit": {
+          "pid": 1809917,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2788.162912768312,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "CC",
+          "seed": 1024,
+          "worker_wall_seconds": 2785.9974890258163,
+          "worker_CPU_seconds": 2757.363484509
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_CC": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_ft_CC.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "ft",
+        "role": "CH",
+        "passed": true,
+        "process": {
+          "pid": 1763953,
+          "uid": 1012,
+          "startticks": 791098636,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 1024,
+          "stage": "ft",
+          "role": "CH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "1024",
+            "--role",
+            "CH"
+          ],
+          "launched_monotonic_seconds": 7910986.368364368
+        },
+        "exit": {
+          "pid": 1763953,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2860.1659556664526,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "CH",
+          "seed": 1024,
+          "worker_wall_seconds": 2858.256663894281,
+          "worker_CPU_seconds": 2828.027243189
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_CH": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_ft_CH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "ft",
+        "role": "HH",
+        "passed": true,
+        "process": {
+          "pid": 1763943,
+          "uid": 1012,
+          "startticks": 791098633,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 1024,
+          "stage": "ft",
+          "role": "HH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "1024",
+            "--role",
+            "HH"
+          ],
+          "launched_monotonic_seconds": 7910986.335887146
+        },
+        "exit": {
+          "pid": 1763943,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2866.243347237818,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "HH",
+          "seed": 1024,
+          "worker_wall_seconds": 2865.378611529246,
+          "worker_CPU_seconds": 2833.14436575
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_HH": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_ft_HH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "head",
+        "role": "C",
+        "passed": true,
+        "process": {
+          "pid": 1723228,
+          "uid": 1012,
+          "startticks": 790875219,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 1024,
+          "stage": "head",
+          "role": "C",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "head",
+            "--seed",
+            "1024",
+            "--role",
+            "C"
+          ],
+          "launched_monotonic_seconds": 7908752.199788232
+        },
+        "exit": {
+          "pid": 1723228,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2232.102478602901,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "head",
+          "role": "C",
+          "seed": 1024,
+          "worker_wall_seconds": 2230.9582868777215,
+          "worker_CPU_seconds": 2027.272524638
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "HEAD_CH": 986250,
+          "HEAD_CC": 986250
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_head_C.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "head",
+        "role": "H",
+        "passed": true,
+        "process": {
+          "pid": 1723218,
+          "uid": 1012,
+          "startticks": 790875216,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 1024,
+          "stage": "head",
+          "role": "H",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "head",
+            "--seed",
+            "1024",
+            "--role",
+            "H"
+          ],
+          "launched_monotonic_seconds": 7908752.164259579
+        },
+        "exit": {
+          "pid": 1723218,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2234.1384652769193,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "head",
+          "role": "H",
+          "seed": 1024,
+          "worker_wall_seconds": 2231.943511918187,
+          "worker_CPU_seconds": 1041.637245338
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "HEAD_HH": 986250
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_head_H.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "readout",
+        "role": "CC",
+        "passed": true,
+        "process": {
+          "pid": 1817658,
+          "uid": 1012,
+          "startticks": 791685085,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 1024,
+          "stage": "readout",
+          "role": "CC",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "1024",
+            "--arm",
+            "CC"
+          ],
+          "launched_monotonic_seconds": 7916850.855466969
+        },
+        "exit": {
+          "pid": 1817658,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 206.0137052508071,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "CC",
+          "seed": 1024,
+          "worker_wall_seconds": 205.1942373625934,
+          "worker_CPU_seconds": 469.06742874900004
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_readout_CC.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "readout",
+        "role": "CH",
+        "passed": true,
+        "process": {
+          "pid": 1817089,
+          "uid": 1012,
+          "startticks": 791663680,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 1024,
+          "stage": "readout",
+          "role": "CH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "1024",
+            "--arm",
+            "CH"
+          ],
+          "launched_monotonic_seconds": 7916636.807814437
+        },
+        "exit": {
+          "pid": 1817089,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 212.01295452658087,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "CH",
+          "seed": 1024,
+          "worker_wall_seconds": 211.2894464880228,
+          "worker_CPU_seconds": 459.607494886
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_readout_CH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 1024,
+        "stage": "readout",
+        "role": "HH",
+        "passed": true,
+        "process": {
+          "pid": 1817079,
+          "uid": 1012,
+          "startticks": 791663677,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 1024,
+          "stage": "readout",
+          "role": "HH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "1024",
+            "--arm",
+            "HH"
+          ],
+          "launched_monotonic_seconds": 7916636.775210632
+        },
+        "exit": {
+          "pid": 1817079,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 238.0831730812788,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "HH",
+          "seed": 1024,
+          "worker_wall_seconds": 236.46221805829555,
+          "worker_CPU_seconds": 508.105061527
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/1024_readout_HH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "cl",
+        "role": "C",
+        "passed": true,
+        "process": {
+          "pid": 1818367,
+          "uid": 1012,
+          "startticks": 791705694,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 2026,
+          "stage": "cl",
+          "role": "C",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "cl",
+            "--seed",
+            "2026",
+            "--role",
+            "C"
+          ],
+          "launched_monotonic_seconds": 7917056.94816167
+        },
+        "exit": {
+          "pid": 1818367,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 7020.372895789333,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "cl",
+          "role": "C",
+          "seed": 2026,
+          "worker_wall_seconds": 7018.203051030636,
+          "worker_CPU_seconds": 6678.796489826001
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "CL_C": 22140
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_cl_C.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "cl",
+        "role": "H",
+        "passed": true,
+        "process": {
+          "pid": 1818344,
+          "uid": 1012,
+          "startticks": 791705690,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 2026,
+          "stage": "cl",
+          "role": "H",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "cl",
+            "--seed",
+            "2026",
+            "--role",
+            "H"
+          ],
+          "launched_monotonic_seconds": 7917056.903395273
+        },
+        "exit": {
+          "pid": 1818344,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 7018.416882459074,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "cl",
+          "role": "H",
+          "seed": 2026,
+          "worker_wall_seconds": 7016.348548951559,
+          "worker_CPU_seconds": 6941.681143408
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "CL_H": 22140
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_cl_H.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "ft",
+        "role": "CC",
+        "passed": true,
+        "process": {
+          "pid": 1844428,
+          "uid": 1012,
+          "startticks": 792924172,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 2026,
+          "stage": "ft",
+          "role": "CC",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "2026",
+            "--role",
+            "CC"
+          ],
+          "launched_monotonic_seconds": 7929241.722023
+        },
+        "exit": {
+          "pid": 1844428,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2790.1480250749737,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "CC",
+          "seed": 2026,
+          "worker_wall_seconds": 2787.6013564979658,
+          "worker_CPU_seconds": 2759.299117085
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_CC": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_ft_CC.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "ft",
+        "role": "CH",
+        "passed": true,
+        "process": {
+          "pid": 1838927,
+          "uid": 1012,
+          "startticks": 792636554,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 2026,
+          "stage": "ft",
+          "role": "CH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "2026",
+            "--role",
+            "CH"
+          ],
+          "launched_monotonic_seconds": 7926365.547763634
+        },
+        "exit": {
+          "pid": 1838927,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2876.141023225151,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "CH",
+          "seed": 2026,
+          "worker_wall_seconds": 2873.4239918133244,
+          "worker_CPU_seconds": 2843.43931741
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_CH": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_ft_CH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "ft",
+        "role": "HH",
+        "passed": true,
+        "process": {
+          "pid": 1838917,
+          "uid": 1012,
+          "startticks": 792636551,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 2026,
+          "stage": "ft",
+          "role": "HH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "2026",
+            "--role",
+            "HH"
+          ],
+          "launched_monotonic_seconds": 7926365.515174689
+        },
+        "exit": {
+          "pid": 1838917,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2876.173279086128,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "HH",
+          "seed": 2026,
+          "worker_wall_seconds": 2873.9246830502525,
+          "worker_CPU_seconds": 2841.431499075
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_HH": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_ft_HH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "head",
+        "role": "C",
+        "passed": true,
+        "process": {
+          "pid": 1834281,
+          "uid": 1012,
+          "startticks": 792407738,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 2026,
+          "stage": "head",
+          "role": "C",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "head",
+            "--seed",
+            "2026",
+            "--role",
+            "C"
+          ],
+          "launched_monotonic_seconds": 7924077.387957451
+        },
+        "exit": {
+          "pid": 1834281,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2286.091701754369,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "head",
+          "role": "C",
+          "seed": 2026,
+          "worker_wall_seconds": 2284.3839741908014,
+          "worker_CPU_seconds": 2105.108768902
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "HEAD_CH": 986250,
+          "HEAD_CC": 986250
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_head_C.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "head",
+        "role": "H",
+        "passed": true,
+        "process": {
+          "pid": 1834271,
+          "uid": 1012,
+          "startticks": 792407735,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 2026,
+          "stage": "head",
+          "role": "H",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "head",
+            "--seed",
+            "2026",
+            "--role",
+            "H"
+          ],
+          "launched_monotonic_seconds": 7924077.355189759
+        },
+        "exit": {
+          "pid": 1834271,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2288.1251511294395,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "head",
+          "role": "H",
+          "seed": 2026,
+          "worker_wall_seconds": 2285.966342339292,
+          "worker_CPU_seconds": 1011.35496415
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "HEAD_HH": 986250
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_head_H.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "readout",
+        "role": "CC",
+        "passed": true,
+        "process": {
+          "pid": 1850375,
+          "uid": 1012,
+          "startticks": 793225200,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 2026,
+          "stage": "readout",
+          "role": "CC",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "2026",
+            "--arm",
+            "CC"
+          ],
+          "launched_monotonic_seconds": 7932252.006173295
+        },
+        "exit": {
+          "pid": 1850375,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 208.0118961231783,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "CC",
+          "seed": 2026,
+          "worker_wall_seconds": 206.0124461259693,
+          "worker_CPU_seconds": 474.20148843600003
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_readout_CC.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "readout",
+        "role": "CH",
+        "passed": true,
+        "process": {
+          "pid": 1849804,
+          "uid": 1012,
+          "startticks": 793203196,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 2026,
+          "stage": "readout",
+          "role": "CH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "2026",
+            "--arm",
+            "CH"
+          ],
+          "launched_monotonic_seconds": 7932031.959938133
+        },
+        "exit": {
+          "pid": 1849804,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 218.01327053643763,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "CH",
+          "seed": 2026,
+          "worker_wall_seconds": 216.8723446400836,
+          "worker_CPU_seconds": 509.296448892
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_readout_CH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 2026,
+        "stage": "readout",
+        "role": "HH",
+        "passed": true,
+        "process": {
+          "pid": 1849794,
+          "uid": 1012,
+          "startticks": 793203190,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 2026,
+          "stage": "readout",
+          "role": "HH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "2026",
+            "--arm",
+            "HH"
+          ],
+          "launched_monotonic_seconds": 7932031.901317907
+        },
+        "exit": {
+          "pid": 1849794,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 242.10655410960317,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "HH",
+          "seed": 2026,
+          "worker_wall_seconds": 241.33316658250988,
+          "worker_CPU_seconds": 540.692135971
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/2026_readout_HH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "cl",
+        "role": "C",
+        "passed": true,
+        "process": {
+          "pid": 1850851,
+          "uid": 1012,
+          "startticks": 793246008,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 31415,
+          "stage": "cl",
+          "role": "C",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "cl",
+            "--seed",
+            "31415",
+            "--role",
+            "C"
+          ],
+          "launched_monotonic_seconds": 7932460.08618356
+        },
+        "exit": {
+          "pid": 1850851,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 6736.328597069718,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "cl",
+          "role": "C",
+          "seed": 31415,
+          "worker_wall_seconds": 6733.439195640385,
+          "worker_CPU_seconds": 6422.3396871840005
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "CL_C": 21320
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_cl_C.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "cl",
+        "role": "H",
+        "passed": true,
+        "process": {
+          "pid": 1850841,
+          "uid": 1012,
+          "startticks": 793246005,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 31415,
+          "stage": "cl",
+          "role": "H",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "cl",
+            "--seed",
+            "31415",
+            "--role",
+            "H"
+          ],
+          "launched_monotonic_seconds": 7932460.053297807
+        },
+        "exit": {
+          "pid": 1850841,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 6734.360810875893,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "cl",
+          "role": "H",
+          "seed": 31415,
+          "worker_wall_seconds": 6732.587581930682,
+          "worker_CPU_seconds": 6661.568303964
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "CL_H": 21320
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_cl_H.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "ft",
+        "role": "CC",
+        "passed": true,
+        "process": {
+          "pid": 1873021,
+          "uid": 1012,
+          "startticks": 794433481,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 31415,
+          "stage": "ft",
+          "role": "CC",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "31415",
+            "--role",
+            "CC"
+          ],
+          "launched_monotonic_seconds": 7944334.815969768
+        },
+        "exit": {
+          "pid": 1873021,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2794.148986537941,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "CC",
+          "seed": 31415,
+          "worker_wall_seconds": 2793.050684590824,
+          "worker_CPU_seconds": 2764.193151597
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_CC": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_ft_CC.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "ft",
+        "role": "CH",
+        "passed": true,
+        "process": {
+          "pid": 1867840,
+          "uid": 1012,
+          "startticks": 794150264,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 31415,
+          "stage": "ft",
+          "role": "CH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "31415",
+            "--role",
+            "CH"
+          ],
+          "launched_monotonic_seconds": 7941502.641126646
+        },
+        "exit": {
+          "pid": 1867840,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2848.1768515836447,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "CH",
+          "seed": 31415,
+          "worker_wall_seconds": 2845.6121984208003,
+          "worker_CPU_seconds": 2816.619494224
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_CH": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_ft_CH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "ft",
+        "role": "HH",
+        "passed": true,
+        "process": {
+          "pid": 1867837,
+          "uid": 1012,
+          "startticks": 794150261,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 31415,
+          "stage": "ft",
+          "role": "HH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "ft",
+            "--seed",
+            "31415",
+            "--role",
+            "HH"
+          ],
+          "launched_monotonic_seconds": 7941502.610601121
+        },
+        "exit": {
+          "pid": 1867837,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2830.170958030969,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "ft",
+          "role": "HH",
+          "seed": 31415,
+          "worker_wall_seconds": 2828.7726752674207,
+          "worker_CPU_seconds": 2799.4363628630003
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "FT_HH": 19725
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_ft_HH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "head",
+        "role": "C",
+        "passed": true,
+        "process": {
+          "pid": 1863532,
+          "uid": 1012,
+          "startticks": 793919647,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 31415,
+          "stage": "head",
+          "role": "C",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "head",
+            "--seed",
+            "31415",
+            "--role",
+            "C"
+          ],
+          "launched_monotonic_seconds": 7939196.479709447
+        },
+        "exit": {
+          "pid": 1863532,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2306.096920784563,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "head",
+          "role": "C",
+          "seed": 31415,
+          "worker_wall_seconds": 2304.3815560126677,
+          "worker_CPU_seconds": 2118.9782856839997
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "HEAD_CH": 986250,
+          "HEAD_CC": 986250
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_head_C.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "head",
+        "role": "H",
+        "passed": true,
+        "process": {
+          "pid": 1863522,
+          "uid": 1012,
+          "startticks": 793919644,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 31415,
+          "stage": "head",
+          "role": "H",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+            "head",
+            "--seed",
+            "31415",
+            "--role",
+            "H"
+          ],
+          "launched_monotonic_seconds": 7939196.448232847
+        },
+        "exit": {
+          "pid": 1863522,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 2306.128190694377,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "head",
+          "role": "H",
+          "seed": 31415,
+          "worker_wall_seconds": 2304.572406486608,
+          "worker_CPU_seconds": 1044.275720112
+        },
+        "final_logged_cumulative_updates_by_branch": {
+          "HEAD_HH": 986250
+        },
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_head_H.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "readout",
+        "role": "CC",
+        "passed": true,
+        "process": {
+          "pid": 1878613,
+          "uid": 1012,
+          "startticks": 794734507,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 31415,
+          "stage": "readout",
+          "role": "CC",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "31415",
+            "--arm",
+            "CC"
+          ],
+          "launched_monotonic_seconds": 7947345.079338069
+        },
+        "exit": {
+          "pid": 1878613,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 208.01186091825366,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "CC",
+          "seed": 31415,
+          "worker_wall_seconds": 205.81904787383974,
+          "worker_CPU_seconds": 473.905575158
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_readout_CC.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "readout",
+        "role": "CH",
+        "passed": true,
+        "process": {
+          "pid": 1878068,
+          "uid": 1012,
+          "startticks": 794712903,
+          "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+          "seed": 31415,
+          "stage": "readout",
+          "role": "CH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "31415",
+            "--arm",
+            "CH"
+          ],
+          "launched_monotonic_seconds": 7947129.031790763
+        },
+        "exit": {
+          "pid": 1878068,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 214.0114728268236,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "CH",
+          "seed": 31415,
+          "worker_wall_seconds": 212.77880376577377,
+          "worker_CPU_seconds": 500.929654875
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_readout_CH.log"
+      },
+      {
+        "attempt": "ATTEMPT_000",
+        "seed": 31415,
+        "stage": "readout",
+        "role": "HH",
+        "passed": true,
+        "process": {
+          "pid": 1878058,
+          "uid": 1012,
+          "startticks": 794712899,
+          "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "seed": 31415,
+          "stage": "readout",
+          "role": "HH",
+          "argv": [
+            "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+            "-B",
+            "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_readout.py",
+            "--seed",
+            "31415",
+            "--arm",
+            "HH"
+          ],
+          "launched_monotonic_seconds": 7947128.999340929
+        },
+        "exit": {
+          "pid": 1878058,
+          "returncode": 0,
+          "terminal_receipt": true,
+          "worker_wall_seconds_observed": 234.08174265082926,
+          "timing_scope": "Spawn through observed exit; includes loader and init. Polling interval 2 s."
+        },
+        "timing": {
+          "event": "worker_timing",
+          "stage": "readout",
+          "role": "HH",
+          "seed": 31415,
+          "worker_wall_seconds": 232.89275786746293,
+          "worker_CPU_seconds": 505.843091159
+        },
+        "final_logged_cumulative_updates_by_branch": {},
+        "exact_extra_uncommitted_updates": 0,
+        "log": "ATTEMPT_000/31415_readout_HH.log"
+      }
+    ],
+    "failures": [],
+    "sum_observed_worker_wall_seconds": 80990.76576397847,
+    "retry_accounting": "Logical committed stage totals; failed or resumed workers may have executed extra work. Logged per-branch updates are cumulative and cannot be added across retries.",
+    "actual_worker_wall_is_not_matrix_wall": true,
+    "summed_worker_CPU_seconds": 77779.855893913,
+    "workers_without_timing": 0
+  }
+}

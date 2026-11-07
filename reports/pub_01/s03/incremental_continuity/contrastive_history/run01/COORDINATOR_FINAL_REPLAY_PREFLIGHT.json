@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "source_sha256": "c3f748355121532ec4bf77bc9b990bd3803f25d105d185c903d0031b08e448a9",
+  "plan_sha256": "b0c4c28eb43b972d7b83807d9431f97e8dc7d066e5becd337f34bc522e40aa10",
+  "known_signal_Hann_checks": {
+    "full": {
+      "r": 1.0,
+      "MSE": 2.8342318526109457e-33,
+      "samples": 3839
+    },
+    "active": {
+      "r": 1.0,
+      "MSE": 2.8722132170681566e-33,
+      "samples": 2880
+    },
+    "constant_rejected": true
+  },
+  "parameter_count": 3389513,
+  "constructor_only": 1,
+  "model_forwards": 0,
+  "new_fits": 0,
+  "optimizer_updates": 0,
+  "actual_EEG_reads": 0,
+  "actual_target_reads": 0,
+  "CPU_seconds": 1.723388463,
+  "wall_seconds": 1.1299058692529798
+}

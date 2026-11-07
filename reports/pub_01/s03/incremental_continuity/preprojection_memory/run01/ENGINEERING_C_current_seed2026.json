@@ -1,0 +1,159 @@
+{
+  "seed": 2026,
+  "arm": "C_current",
+  "trainable_parameters": 3389513,
+  "initial_same_raw_bridge": {
+    "max_abs": 0.0,
+    "bound": 1e-06
+  },
+  "raw_cache_bridge": null,
+  "readout_value_VJP_bridge": "shared same-seed proof",
+  "steps": [
+    {
+      "step": 0,
+      "CPU_seconds": 0.08702041999999999,
+      "wall_seconds": 0.08730101585388184,
+      "includes": "forward/loss/backward/Adam/synchronization; excludes batch loading",
+      "loss": -0.23604983288418552,
+      "gradients": {
+        "encoder": {
+          "nonzero_scalars": 3372339,
+          "L2_norm": 0.42447708255636574
+        },
+        "head": {
+          "nonzero_scalars": 257,
+          "L2_norm": 0.006340515456040224
+        },
+        "original_attention0": {
+          "nonzero_scalars": 49982,
+          "L2_norm": 5.8044628817091625e-08
+        },
+        "memory": {
+          "nonzero_scalars": 4160,
+          "L2_norm": 0.013266182470550718
+        },
+        "query_norm": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0
+        },
+        "memory_out_projection": {
+          "nonzero_scalars": 4160,
+          "L2_norm": 0.013266182470550718
+        },
+        "memory_Q_weight": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0,
+          "max_abs": 0.0
+        },
+        "memory_Q_bias": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0,
+          "max_abs": 0.0
+        },
+        "memory_K_weight": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0,
+          "max_abs": 0.0
+        },
+        "memory_K_bias": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0,
+          "max_abs": 0.0
+        },
+        "memory_V_weight": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0,
+          "max_abs": 0.0
+        },
+        "memory_V_bias": {
+          "nonzero_scalars": 0,
+          "L2_norm": 0.0,
+          "max_abs": 0.0
+        },
+        "K_bias_note": "Common key bias is softmax-unidentifiable; tiny float32 nonzero is not evidence of useful capacity."
+      },
+      "query_VJP": null
+    },
+    {
+      "step": 1,
+      "CPU_seconds": 0.08383341299999891,
+      "wall_seconds": 0.08419680595397949,
+      "includes": "forward/loss/backward/Adam/synchronization; excludes batch loading",
+      "loss": -0.21564811661349773,
+      "gradients": {
+        "encoder": {
+          "nonzero_scalars": 3372337,
+          "L2_norm": 0.5460329576429757
+        },
+        "head": {
+          "nonzero_scalars": 257,
+          "L2_norm": 0.006759066547225152
+        },
+        "original_attention0": {
+          "nonzero_scalars": 49983,
+          "L2_norm": 2.989286442452116e-08
+        },
+        "memory": {
+          "nonzero_scalars": 16896,
+          "L2_norm": 0.036627526069748846
+        },
+        "query_norm": {
+          "nonzero_scalars": 128,
+          "L2_norm": 8.214643673960463e-05
+        },
+        "memory_out_projection": {
+          "nonzero_scalars": 4160,
+          "L2_norm": 0.036532597539915446
+        },
+        "memory_Q_weight": {
+          "nonzero_scalars": 4096,
+          "L2_norm": 0.0012271568392943787,
+          "max_abs": 0.00016334738756995648
+        },
+        "memory_Q_bias": {
+          "nonzero_scalars": 64,
+          "L2_norm": 5.338078405612187e-05,
+          "max_abs": 2.190548366343137e-05
+        },
+        "memory_K_weight": {
+          "nonzero_scalars": 4096,
+          "L2_norm": 0.001312473253307616,
+          "max_abs": 0.00013380276504904032
+        },
+        "memory_K_bias": {
+          "nonzero_scalars": 64,
+          "L2_norm": 1.702358828130263e-10,
+          "max_abs": 6.252776074688882e-11
+        },
+        "memory_V_weight": {
+          "nonzero_scalars": 4096,
+          "L2_norm": 0.0018196262379866104,
+          "max_abs": 0.00014126196037977934
+        },
+        "memory_V_bias": {
+          "nonzero_scalars": 64,
+          "L2_norm": 0.0004511378282974724,
+          "max_abs": 8.08409895398654e-05
+        },
+        "K_bias_note": "Common key bias is softmax-unidentifiable; tiny float32 nonzero is not evidence of useful capacity."
+      },
+      "query_VJP": {
+        "nonzero_scalars": 774144,
+        "L2_norm": 1.5613682527202806e-06
+      }
+    }
+  ],
+  "P_content_probe": null,
+  "counts": {
+    "current_encoder_prefix_windows": 192,
+    "current_projection_windows": 192,
+    "current_head_windows": 192,
+    "frozen_encoder_prefix_windows": 174,
+    "attention_query_windows": 174,
+    "prior_projection_windows": 0
+  },
+  "checkpoint_bytes_in_memory": 13611043,
+  "E0_and_Ccap_unchanged": true,
+  "cold_fallback_and_entire_bypass_exact": true,
+  "formal_initialization_clean_rebuild_required": true
+}

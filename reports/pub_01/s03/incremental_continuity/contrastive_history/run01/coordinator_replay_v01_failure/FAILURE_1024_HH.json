@@ -1,0 +1,15 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/coordinator_final_replay_v01/COORDINATOR_FINAL_REPLAY.py\", line 249, in <module>\n    run(args.seed, args.arm)\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/coordinator_final_replay_v01/COORDINATOR_FINAL_REPLAY.py\", line 203, in run\n    assert max(errors.values()) <= 1e-4, (seed, arm, name, kind, errors)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1024, 'HH', 'near', 'raw', {'r': 3.991550023491053e-05, 'MSE': 1.309421636247862})\n",
+  "actual_calls": {
+    "backbone_windows": 102,
+    "native_unused_projection_windows": 102,
+    "final_projection_windows": 40,
+    "head_windows": 40,
+    "manual_memory_query_windows": 31,
+    "library_memory_query_windows": 31
+  },
+  "wall_seconds": 1.9965229956433177,
+  "CPU_seconds": 4.972995052,
+  "new_fits": 0,
+  "optimizer_updates": 0
+}

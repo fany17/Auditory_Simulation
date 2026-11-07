@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "scope": "D24 nine complete upstream pipelines only; downstream fitting has a separate implementation review. This is execution admission, not a completed experiment or scientific success.",
+  "reviewed_date": "2026-11-06",
+  "server_root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106",
+  "gate": "UPSTREAM_FORMAL_GATE_V04.json",
+  "gate_sha256": "0ad69424fb76f827b268b63f7d45cbd954ae514c7f687d13a870e66e52322482",
+  "worker_sha256": "5abc75d363619463378f178a86133e1f13cb59ed4e07662ea77334f255eee0bc",
+  "candidate_sha256": "6638a00d673fb6eebbe5353d97d14b21800c19ddf0d9ac4a600cde0440740c83",
+  "assignment_sha256": "7ab57f1818a4aef312c43342768893ae8a49ff39407fa8bd76812ef2c81e3d24",
+  "engineering_sha256": "f6a69690580ba08faf454f57860a4a378f43ad441f54abc35d85a57d3cee4686",
+  "actual_pin_hashes_independently_verified": 20,
+  "review": [
+    "Read complete new worker and queue plus original normalization, native sampler, head, FT objective and Ccap paths; separately reconstructed all 426 assignments and stage counts from authoritative server metadata.",
+    "Raw fold training derivatives supply newly fitted channel statistics. The old full-TRAIN normalized contrastive array and old EEG weights are not used in the formal branch. Every fitted stage excludes the complete OOF source family.",
+    "Original fixed architecture, 128 same-story distinct timestamps, epoch budgets, optimizer/loss/order, precision, fresh initialization and FT construction RNG sequence checked. Three folds share the exact predetermined assignment across seeds.",
+    "Actual v03 engineering terminal checked: PID 1344941 / UID 1012 / startticks 788517399 absent after successful COMPLETED and no FAILURE. Its limited true training path includes one contrastive, one head and one FT update; not zero updates or full formal training.",
+    "Read actual synthetic affine/Ccap fixture and real TRAIN cached-feature Ccap canary, first-four affine fallback, Hann support and exact output save/reload. Full-TRAIN D8 features are restricted to the separate engineering branch and are not an OOF validation claim.",
+    "All v04 source/import/config/engineering/candidate pins rehashed on server2203. Actual v03-to-v04 worker diff only adds total CPU/maximum stage memory accounting and changes the gate version; no new optimization/data/RNG change and no repeated engineering optimization required.",
+    "Queue contains exactly nine unique seed/fold pairs, two isolated GPU lanes, one full batch per model, no automatic retry, exclusive output directories, 64 GiB cap/reserve and actual PID/UID/startticks reporting. No original VAL performance is accessed by upstream fitting or selection."
+  ],
+  "verified_live_at_admission": [
+    {"role": "queue", "pid": 1346529, "uid": 1012, "startticks": 788549137},
+    {"role": "seed1024_fold0", "pid": 1346595, "uid": 1012, "startticks": 788549250},
+    {"role": "seed2026_fold0", "pid": 1346596, "uid": 1012, "startticks": 788549250}
+  ],
+  "limitations": [
+    "Metadata, source and bounded engineering review are not evidence that all nine formal pipelines have completed or that their final numerical outputs are correct; independently inspect those outputs after completion.",
+    "Retain costs of earlier engineering versions as well as v03; their files remain preserved.",
+    "OOF controls second-stage training provenance. Original VAL remains repeatedly used development data, with known subject/source-family overlap, and is not independent confirmation.",
+    "Fold models use less unique data and fixed epochs derived from historical selected epochs. Do not call total upstream cost or model quality identical to the original full-TRAIN anchor."
+  ]
+}

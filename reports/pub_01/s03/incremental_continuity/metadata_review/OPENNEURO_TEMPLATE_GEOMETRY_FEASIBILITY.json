@@ -1,0 +1,66 @@
+{
+  "status": "SOFTWARE_TEMPLATE_FEASIBILITY_ONLY_NOT_ACQUISITION_PROOF",
+  "computed_on": "server2203, existing env01, single CPU BLAS",
+  "mne_version": "1.6.1",
+  "head_size_m": 0.095,
+  "templates": [
+    "biosemi64",
+    "biosemi128"
+  ],
+  "coordinate_frames": [
+    "unknown",
+    "unknown"
+  ],
+  "source_hashes": {
+    "biosemi128.txt": "3adbfb01f4ebcb77b70f85dcd373ad10a626122f8891455be917bfc78c594e0e",
+    "biosemi64.txt": "8bd39ec923854853c1d6830c46cd4942f700d90ba9112541e21e45ea2a6fd7af"
+  },
+  "official_documentation": "https://mne.tools/1.6/generated/mne.channels.make_standard_montage.html",
+  "actual_comparison": {
+    "target_channels": 64,
+    "source_channels": 128,
+    "exact_tolerance_m": 1e-8,
+    "exact_template_matches": 34,
+    "non_exact_target_positions": 30,
+    "nearest_distance_mm_min": 0,
+    "nearest_distance_mm_median": 0,
+    "nearest_distance_mm_max": 19.86040802085414,
+    "same_text_labels_are_not_same_positions": [
+      {
+        "label": "C1",
+        "distance_mm": 50.31050593810397
+      },
+      {
+        "label": "C3",
+        "distance_mm": 126.2708305061907
+      },
+      {
+        "label": "C5",
+        "distance_mm": 168.69867214009676
+      },
+      {
+        "label": "C2",
+        "distance_mm": 28.410002582610435
+      },
+      {
+        "label": "C4",
+        "distance_mm": 59.33844923587326
+      },
+      {
+        "label": "C6",
+        "distance_mm": 59.16937786549424
+      }
+    ]
+  },
+  "inference": [
+    "Even these generic templates do not permit a64-channel identity subset:30 target positions differ. The numeric overlap of34 is a software-template fact only.",
+    "Names C1..C6 have different naming semantics in BioSemi128 alphabetic cap labels versus target64 10-20-style labels; string matching would assign wrong positions.",
+    "A future shared adapter would need an explicitly justified geometry/reference/bad-channel rule and metadata-linked declared assumptions. Nearest-neighbor substitution and spline interpolation are distinct transforms; neither was chosen or created here.",
+    "Dataset-specific positions remain unavailable in pinned tree. Software templates and README BioSemi statement do not prove actual individual electrode positions."
+  ],
+  "no_EEG_audio_or_annex_payload": true,
+  "no_interpolation_operator": true,
+  "no_dataset_prediction": true,
+  "no_new_package": true,
+  "authorization_unchanged": "PENDING_REQUIRED_HUMAN_DATA_SCOPE_ANSWER"
+}

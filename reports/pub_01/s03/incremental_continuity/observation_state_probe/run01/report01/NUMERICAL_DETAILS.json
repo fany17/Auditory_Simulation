@@ -1,0 +1,1072 @@
+{
+  "person_descriptive": [
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "full",
+      "seed": 1024,
+      "people": 49,
+      "positive": 23,
+      "negative": 26,
+      "zero": 0,
+      "mean": -0.0004143633427775924,
+      "median": -0.00012813876321561557,
+      "minimum": -0.005279398978211683,
+      "maximum": 0.0020658759131544358
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "full",
+      "seed": 2026,
+      "people": 49,
+      "positive": 20,
+      "negative": 29,
+      "zero": 0,
+      "mean": -0.0002375474833829007,
+      "median": -0.00027800950693940285,
+      "minimum": -0.004325503689491958,
+      "maximum": 0.002680228315382116
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "full",
+      "seed": 31415,
+      "people": 49,
+      "positive": 20,
+      "negative": 29,
+      "zero": 0,
+      "mean": -0.0001803106611311426,
+      "median": -0.00011473165541531216,
+      "minimum": -0.00593588862460151,
+      "maximum": 0.003254150624652896
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "warm",
+      "seed": 1024,
+      "people": 49,
+      "positive": 24,
+      "negative": 25,
+      "zero": 0,
+      "mean": -0.0003925993761451942,
+      "median": -0.00028586160888036116,
+      "minimum": -0.004764502412035507,
+      "maximum": 0.0022578853352328565
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "warm",
+      "seed": 2026,
+      "people": 49,
+      "positive": 21,
+      "negative": 28,
+      "zero": 0,
+      "mean": -0.00021568211345184422,
+      "median": -0.00025359713795686245,
+      "minimum": -0.003971956865836929,
+      "maximum": 0.0023277657669375507
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "warm",
+      "seed": 31415,
+      "people": 49,
+      "positive": 20,
+      "negative": 29,
+      "zero": 0,
+      "mean": -0.0001728874508443131,
+      "median": -0.00014783812263069462,
+      "minimum": -0.005715805243578009,
+      "maximum": 0.003516052304006201
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "cold",
+      "seed": 1024,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "cold",
+      "seed": 2026,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "cold",
+      "seed": 31415,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "full",
+      "seed": 1024,
+      "people": 49,
+      "positive": 28,
+      "negative": 21,
+      "zero": 0,
+      "mean": 0.00010457980139311802,
+      "median": 0.0002009241704535869,
+      "minimum": -0.006207777906879985,
+      "maximum": 0.009061695948999221
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "full",
+      "seed": 2026,
+      "people": 49,
+      "positive": 26,
+      "negative": 23,
+      "zero": 0,
+      "mean": 0.00014508373637099332,
+      "median": 0.0001382307791183146,
+      "minimum": -0.006343545549118715,
+      "maximum": 0.008020608812639857
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "full",
+      "seed": 31415,
+      "people": 49,
+      "positive": 26,
+      "negative": 23,
+      "zero": 0,
+      "mean": 8.117384863174439e-05,
+      "median": 0.00020582372725508336,
+      "minimum": -0.0057643631385959765,
+      "maximum": 0.011143623431033145
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "warm",
+      "seed": 1024,
+      "people": 49,
+      "positive": 26,
+      "negative": 23,
+      "zero": 0,
+      "mean": 4.295234049347342e-05,
+      "median": 0.00010494767479277134,
+      "minimum": -0.008481724310866412,
+      "maximum": 0.011673915631938814
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "warm",
+      "seed": 2026,
+      "people": 49,
+      "positive": 27,
+      "negative": 22,
+      "zero": 0,
+      "mean": 6.578421556096973e-05,
+      "median": 0.00034006910105616184,
+      "minimum": -0.008902122469387652,
+      "maximum": 0.01065825930580308
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "warm",
+      "seed": 31415,
+      "people": 49,
+      "positive": 27,
+      "negative": 22,
+      "zero": 0,
+      "mean": -2.717615853383579e-05,
+      "median": 8.905116268531632e-05,
+      "minimum": -0.008278440224734188,
+      "maximum": 0.013927335629559195
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "cold",
+      "seed": 1024,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "cold",
+      "seed": 2026,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "cold",
+      "seed": 31415,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "full",
+      "seed": 1024,
+      "people": 49,
+      "positive": 16,
+      "negative": 33,
+      "zero": 0,
+      "mean": -0.0005375381617451903,
+      "median": -0.0002396779228817647,
+      "minimum": -0.0050615065184277525,
+      "maximum": 0.0018671965568811955
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "full",
+      "seed": 2026,
+      "people": 49,
+      "positive": 14,
+      "negative": 35,
+      "zero": 0,
+      "mean": -0.0006193540869853407,
+      "median": -0.0005068834832163416,
+      "minimum": -0.004691279262965947,
+      "maximum": 0.003134821226519535
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "full",
+      "seed": 31415,
+      "people": 49,
+      "positive": 17,
+      "negative": 32,
+      "zero": 0,
+      "mean": -0.000501864712162888,
+      "median": -0.00045344106360123426,
+      "minimum": -0.005989410461026204,
+      "maximum": 0.003009209778350369
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "warm",
+      "seed": 1024,
+      "people": 49,
+      "positive": 15,
+      "negative": 34,
+      "zero": 0,
+      "mean": -0.0005476345261206121,
+      "median": -0.0002721393422811247,
+      "minimum": -0.005973813563586422,
+      "maximum": 0.0020664193240560458
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "warm",
+      "seed": 2026,
+      "people": 49,
+      "positive": 14,
+      "negative": 35,
+      "zero": 0,
+      "mean": -0.0006118787853097395,
+      "median": -0.0004161407194380462,
+      "minimum": -0.004291610412641908,
+      "maximum": 0.0030811235420138278
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "warm",
+      "seed": 31415,
+      "people": 49,
+      "positive": 18,
+      "negative": 31,
+      "zero": 0,
+      "mean": -0.0005162995307487166,
+      "median": -0.00040665620005408964,
+      "minimum": -0.005775608726166129,
+      "maximum": 0.0034687342762614037
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "cold",
+      "seed": 1024,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "cold",
+      "seed": 2026,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "cold",
+      "seed": 31415,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "full",
+      "seed": 1024,
+      "people": 49,
+      "positive": 14,
+      "negative": 35,
+      "zero": 0,
+      "mean": -0.000642789089436108,
+      "median": -0.0005379257385982605,
+      "minimum": -0.005058850198214004,
+      "maximum": 0.0017989166519005728
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "full",
+      "seed": 2026,
+      "people": 49,
+      "positive": 17,
+      "negative": 32,
+      "zero": 0,
+      "mean": -0.000510821493865651,
+      "median": -0.0003661939249712254,
+      "minimum": -0.004637521427309166,
+      "maximum": 0.001895558611509765
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "full",
+      "seed": 31415,
+      "people": 49,
+      "positive": 15,
+      "negative": 34,
+      "zero": 0,
+      "mean": -0.00044507133135580175,
+      "median": -0.0003740325501654651,
+      "minimum": -0.006012810719373762,
+      "maximum": 0.0034125299400926956
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "warm",
+      "seed": 1024,
+      "people": 49,
+      "positive": 17,
+      "negative": 32,
+      "zero": 0,
+      "mean": -0.0005854924246117322,
+      "median": -0.0003584158721103847,
+      "minimum": -0.004686040915831108,
+      "maximum": 0.0019845727656364054
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "warm",
+      "seed": 2026,
+      "people": 49,
+      "positive": 19,
+      "negative": 30,
+      "zero": 0,
+      "mean": -0.00045138222044937887,
+      "median": -0.000334761576881365,
+      "minimum": -0.004251351990350122,
+      "maximum": 0.0018241279419924789
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "warm",
+      "seed": 31415,
+      "people": 49,
+      "positive": 17,
+      "negative": 32,
+      "zero": 0,
+      "mean": -0.0003937972590039528,
+      "median": -0.0004455622903573875,
+      "minimum": -0.005718864228462475,
+      "maximum": 0.003729175024451581
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "cold",
+      "seed": 1024,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "cold",
+      "seed": 2026,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "cold",
+      "seed": 31415,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "full",
+      "seed": 1024,
+      "people": 49,
+      "positive": 19,
+      "negative": 30,
+      "zero": 0,
+      "mean": -0.0004915455255528579,
+      "median": -0.00030156135924097605,
+      "minimum": -0.005407029649371703,
+      "maximum": 0.0024070798853999265
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "full",
+      "seed": 2026,
+      "people": 49,
+      "positive": 18,
+      "negative": 31,
+      "zero": 0,
+      "mean": -0.00045000234179224313,
+      "median": -0.0003175602253492199,
+      "minimum": -0.004090907623537421,
+      "maximum": 0.0017879583035992908
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "full",
+      "seed": 31415,
+      "people": 49,
+      "positive": 16,
+      "negative": 33,
+      "zero": 0,
+      "mean": -0.0004721913768813135,
+      "median": -0.00025234030363541216,
+      "minimum": -0.004275259705809803,
+      "maximum": 0.0022049306450656614
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "warm",
+      "seed": 1024,
+      "people": 49,
+      "positive": 19,
+      "negative": 30,
+      "zero": 0,
+      "mean": -0.0005858200436235625,
+      "median": -0.0004532881125147159,
+      "minimum": -0.0069651870385634695,
+      "maximum": 0.002811357573968276
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "warm",
+      "seed": 2026,
+      "people": 49,
+      "positive": 16,
+      "negative": 33,
+      "zero": 0,
+      "mean": -0.0005522195866081782,
+      "median": -0.0003777048774141756,
+      "minimum": -0.0053108783242371005,
+      "maximum": 0.00200978861246795
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "warm",
+      "seed": 31415,
+      "people": 49,
+      "positive": 19,
+      "negative": 30,
+      "zero": 0,
+      "mean": -0.000595290766925936,
+      "median": -0.0004845843072158462,
+      "minimum": -0.0057182578313616506,
+      "maximum": 0.002599834611162144
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "cold",
+      "seed": 1024,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "cold",
+      "seed": 2026,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "cold",
+      "seed": 31415,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "full",
+      "seed": 1024,
+      "people": 49,
+      "positive": 15,
+      "negative": 34,
+      "zero": 0,
+      "mean": -0.00039347090953707525,
+      "median": -0.00032041978449445785,
+      "minimum": -0.00475791811961758,
+      "maximum": 0.0019439291889884747
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "full",
+      "seed": 2026,
+      "people": 49,
+      "positive": 16,
+      "negative": 33,
+      "zero": 0,
+      "mean": -0.00031864690593959045,
+      "median": -0.0005050846684726829,
+      "minimum": -0.004246365506377414,
+      "maximum": 0.002426917263407713
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "full",
+      "seed": 31415,
+      "people": 49,
+      "positive": 18,
+      "negative": 31,
+      "zero": 0,
+      "mean": -0.00037013511863675364,
+      "median": -0.00032173939553550857,
+      "minimum": -0.0056874842342905935,
+      "maximum": 0.0019609121526171225
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "warm",
+      "seed": 1024,
+      "people": 49,
+      "positive": 18,
+      "negative": 31,
+      "zero": 0,
+      "mean": -0.0004113016228642334,
+      "median": -0.0002509727638137227,
+      "minimum": -0.004409484955005927,
+      "maximum": 0.0017567641168322323
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "warm",
+      "seed": 2026,
+      "people": 49,
+      "positive": 18,
+      "negative": 31,
+      "zero": 0,
+      "mean": -0.00033639639341286564,
+      "median": -0.00040616243410135366,
+      "minimum": -0.003923925334718692,
+      "maximum": 0.0021287276990705067
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "warm",
+      "seed": 31415,
+      "people": 49,
+      "positive": 18,
+      "negative": 31,
+      "zero": 0,
+      "mean": -0.00041098383214597823,
+      "median": -0.00034503335304045257,
+      "minimum": -0.005498175871994665,
+      "maximum": 0.0020261874423251613
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "cold",
+      "seed": 1024,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "cold",
+      "seed": 2026,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "cold",
+      "seed": 31415,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "full",
+      "seed": 1024,
+      "people": 49,
+      "positive": 17,
+      "negative": 32,
+      "zero": 0,
+      "mean": -0.00035788877415942103,
+      "median": -0.00027635642733546406,
+      "minimum": -0.004543057273636714,
+      "maximum": 0.001927503746578324
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "full",
+      "seed": 2026,
+      "people": 49,
+      "positive": 19,
+      "negative": 30,
+      "zero": 0,
+      "mean": -0.00026739706204749215,
+      "median": -0.000315292636263273,
+      "minimum": -0.0041210409699678485,
+      "maximum": 0.002368628863205824
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "full",
+      "seed": 31415,
+      "people": 49,
+      "positive": 23,
+      "negative": 26,
+      "zero": 0,
+      "mean": -0.00025448377246521686,
+      "median": -0.00021275100473684694,
+      "minimum": -0.005836471322316961,
+      "maximum": 0.0018777844868314852
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "warm",
+      "seed": 1024,
+      "people": 49,
+      "positive": 20,
+      "negative": 29,
+      "zero": 0,
+      "mean": -0.00037053698044749357,
+      "median": -0.00022312530625981375,
+      "minimum": -0.004212203540838122,
+      "maximum": 0.0018516132084490378
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "warm",
+      "seed": 2026,
+      "people": 49,
+      "positive": 20,
+      "negative": 29,
+      "zero": 0,
+      "mean": -0.00027410240657801954,
+      "median": -0.0003639309999110829,
+      "minimum": -0.003834775541214891,
+      "maximum": 0.0018743597161589576
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "warm",
+      "seed": 31415,
+      "people": 49,
+      "positive": 23,
+      "negative": 26,
+      "zero": 0,
+      "mean": -0.00028568578373738775,
+      "median": -0.00023918733854336183,
+      "minimum": -0.005689735382478828,
+      "maximum": 0.0020233829578777396
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "cold",
+      "seed": 1024,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "cold",
+      "seed": 2026,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "cold",
+      "seed": 31415,
+      "people": 49,
+      "positive": 0,
+      "negative": 0,
+      "zero": 49,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "full",
+      "mean": -0.00027740716243053926,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.000414363342777585,
+        -0.00023754748338286613,
+        -0.00018031066113116667
+      ]
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "warm",
+      "mean": -0.00026038964681377824,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0003925993761452473,
+        -0.00021568211345179833,
+        -0.00017288745084428903
+      ]
+    },
+    {
+      "comparison": "PastCov-Ccap",
+      "subset": "cold",
+      "mean": 0.0,
+      "positive_seeds": 0,
+      "deltas": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "full",
+      "mean": 0.00011027912879861083,
+      "positive_seeds": 3,
+      "deltas": [
+        0.00010457980139311207,
+        0.00014508373637098226,
+        8.117384863173815e-05
+      ]
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "warm",
+      "mean": 2.718679917353602e-05,
+      "positive_seeds": 2,
+      "deltas": [
+        4.295234049345176e-05,
+        6.57842155609989e-05,
+        -2.7176158533842587e-05
+      ]
+    },
+    {
+      "comparison": "PastCov-CurrentCov",
+      "subset": "cold",
+      "mean": 0.0,
+      "positive_seeds": 0,
+      "deltas": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "full",
+      "mean": -0.0005529189869644865,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0005375381617451769,
+        -0.000619354086985352,
+        -0.0005018647121629305
+      ]
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "warm",
+      "mean": -0.0005586042807263492,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0005476345261206383,
+        -0.0006118787853097163,
+        -0.0005162995307486928
+      ]
+    },
+    {
+      "comparison": "PastCov-RecordPrefix",
+      "subset": "cold",
+      "mean": 0.0,
+      "positive_seeds": 0,
+      "deltas": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "full",
+      "mean": -0.0005328939715524931,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0006427890894360466,
+        -0.0005108214938656097,
+        -0.000445071331355823
+      ]
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "warm",
+      "mean": -0.00047689063468835574,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0005854924246117554,
+        -0.0004513822204493534,
+        -0.00039379725900395846
+      ]
+    },
+    {
+      "comparison": "PastCov-PersonTRAIN",
+      "subset": "cold",
+      "mean": 0.0,
+      "positive_seeds": 0,
+      "deltas": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "full",
+      "mean": -0.00047124641474211026,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0004915455255528056,
+        -0.00045000234179221055,
+        -0.00047219137688131463
+      ]
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "warm",
+      "mean": -0.000577776799052567,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0005858200436235916,
+        -0.0005522195866081436,
+        -0.0005952907669259655
+      ]
+    },
+    {
+      "comparison": "PastCov-PastOlder",
+      "subset": "cold",
+      "mean": 0.0,
+      "positive_seeds": 0,
+      "deltas": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "full",
+      "mean": -0.00036075097803779194,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.00039347090953706365,
+        -0.00031864690593955136,
+        -0.00037013511863676074
+      ]
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "warm",
+      "mean": -0.00038622728280767366,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0004113016228642352,
+        -0.00033639639341284666,
+        -0.00041098383214593914
+      ]
+    },
+    {
+      "comparison": "PastCov-PastNeutral",
+      "subset": "cold",
+      "mean": 0.0,
+      "positive_seeds": 0,
+      "deltas": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "full",
+      "mean": -0.00029325653622402914,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0003578887741594039,
+        -0.00026739706204745306,
+        -0.00025448377246523046
+      ]
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "warm",
+      "mean": -0.0003101083902543045,
+      "positive_seeds": 0,
+      "deltas": [
+        -0.0003705369804475611,
+        -0.0002741024065779918,
+        -0.00028568578373736053
+      ]
+    },
+    {
+      "comparison": "PastCov-Add",
+      "subset": "cold",
+      "mean": 0.0,
+      "positive_seeds": 0,
+      "deltas": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "frozen_F_mean_r": 0.18387384265527906,
+  "Past_minus_F_mean": -0.0018113102183588876,
+  "source_scientific": {
+    "pid": 656537,
+    "time": 1793526889.5615478,
+    "source_sha": "6f2897afcd586325db002ad97f72bc9d823efde51e90fff3a3b1fe843401b83f",
+    "protocol_sha": "a238ed63fd5c050fd66e88c07cf5b998f3bd15690bbe989d609459c947cb5f11"
+  },
+  "presentation_source_sha256": "c0fb05c17b97d9edf2b70318bf7bc70032fdbe78bd0244f2802df026deb7b238",
+  "resource_after_presentation": {
+    "time": 1793530046.035492,
+    "root_bytes": 142462631,
+    "numerical_array_bytes": 101036740,
+    "free_disk_bytes": 25595031552
+  },
+  "no_new_scoring_fitting_or_signal_reads": true
+}

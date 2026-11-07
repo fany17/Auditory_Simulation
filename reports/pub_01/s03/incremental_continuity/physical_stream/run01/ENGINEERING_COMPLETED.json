@@ -1,0 +1,397 @@
+{
+  "stage": "engineer",
+  "protocol_sha256": "133b60eeb6e937def9f25bdb8303ab80d9a2cf00d0f86ea3f6768c0f56a7b078",
+  "process": {
+    "pid": 1234493,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_physical_stream_run.py",
+      "engineer"
+    ],
+    "linux_startticks": 787661357,
+    "stage_started_unix": 1793949369.0282385,
+    "deadline_unix": 1793949969.0282385,
+    "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "runtime_versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "torch_cuda": "12.8",
+    "driver": "595.45.04"
+  },
+  "CPU_seconds": 60.083372934,
+  "elapsed_seconds": 12.38807887211442,
+  "counters": {
+    "TRAIN_records_loaded": 6,
+    "TRAIN_cached_windows_loaded": 3447,
+    "VAL_records_loaded": 147,
+    "VAL_cached_windows_loaded": 91500,
+    "TRAIN_statistics_points": 323418,
+    "current_stem_points": 110592,
+    "context_output_points": 135168,
+    "backward_points": 73728
+  },
+  "location": {
+    "seed": 31415,
+    "phase": "first_two_TRAIN_records",
+    "role": "P_past_prediction"
+  },
+  "resources": {
+    "peak_RSS_bytes": 1993388032,
+    "cuda_peak_allocated_bytes": 335306240,
+    "writer_free_bytes": 178223759360,
+    "writer_bytes": 7096501
+  },
+  "new_encoder_head_windows": 0,
+  "new_signal_feature_prediction_array_files": 0,
+  "parameter_checkpoint_files": 0,
+  "training_statistics_files": 0,
+  "passed": true,
+  "checks": [
+    {
+      "seed": 1024,
+      "role": "C_current",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.02821563184261322
+        },
+        {
+          "current": 0.0009246459812857211,
+          "context_in": 0.0012884170282632113,
+          "context_out": 0.00039542169542983174,
+          "mix": 0.0035894960165023804,
+          "output": 0.03196372091770172
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 2.2351741790771484e-08,
+      "temporary_pair_max_abs": null
+    },
+    {
+      "seed": 1024,
+      "role": "H_past_eeg",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.028374098241329193
+        },
+        {
+          "current": 0.0009664190583862364,
+          "context_in": 0.0007936148904263973,
+          "context_out": 0.0003202317748218775,
+          "mix": 0.0035717817954719067,
+          "output": 0.032228272408246994
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 2.2351741790771484e-08,
+      "temporary_pair_max_abs": 0.05252338945865631
+    },
+    {
+      "seed": 1024,
+      "role": "P_past_prediction",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.03154822066426277
+        },
+        {
+          "current": 0.0010152413742616773,
+          "context_in": 0.00039573365938849747,
+          "context_out": 0.00041248268098570406,
+          "mix": 0.002891067648306489,
+          "output": 0.02986876107752323
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 1.4901161193847656e-08,
+      "temporary_pair_max_abs": 0.02525447867810726
+    },
+    {
+      "seed": 2026,
+      "role": "C_current",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.020077861845493317
+        },
+        {
+          "current": 0.0007168077863752842,
+          "context_in": 0.0008083711145445704,
+          "context_out": 0.00023777193564455956,
+          "mix": 0.0017478062072768807,
+          "output": 0.0195017047226429
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 7.450580596923828e-09,
+      "temporary_pair_max_abs": null
+    },
+    {
+      "seed": 2026,
+      "role": "H_past_eeg",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.020014990121126175
+        },
+        {
+          "current": 0.0007246717577800155,
+          "context_in": 0.0004927720292471349,
+          "context_out": 0.00018300683586858213,
+          "mix": 0.0017773668514564633,
+          "output": 0.01942719891667366
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 7.450580596923828e-09,
+      "temporary_pair_max_abs": 0.014207486063241959
+    },
+    {
+      "seed": 2026,
+      "role": "P_past_prediction",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.018197769299149513
+        },
+        {
+          "current": 0.0007831632392480969,
+          "context_in": 0.0002056423109024763,
+          "context_out": 0.00018126584473066032,
+          "mix": 0.0020918105728924274,
+          "output": 0.0195838063955307
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 7.450580596923828e-09,
+      "temporary_pair_max_abs": 0.011097262613475323
+    },
+    {
+      "seed": 31415,
+      "role": "C_current",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.02836894430220127
+        },
+        {
+          "current": 0.0008228624938055873,
+          "context_in": 0.0010104746324941516,
+          "context_out": 0.00033490065834484994,
+          "mix": 0.0029498012736439705,
+          "output": 0.0282953642308712
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 1.862645149230957e-08,
+      "temporary_pair_max_abs": null
+    },
+    {
+      "seed": 31415,
+      "role": "H_past_eeg",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.027522606775164604
+        },
+        {
+          "current": 0.0008536922978237271,
+          "context_in": 0.0005591035005636513,
+          "context_out": 0.00027668202528730035,
+          "mix": 0.002916108351200819,
+          "output": 0.027554668486118317
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 1.862645149230957e-08,
+      "temporary_pair_max_abs": 0.02372410800307989
+    },
+    {
+      "seed": 31415,
+      "role": "P_past_prediction",
+      "ranges": [
+        [
+          0,
+          1344,
+          3392
+        ],
+        [
+          1,
+          48543,
+          50591
+        ]
+      ],
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.024781452491879463
+        },
+        {
+          "current": 0.0008948071044869721,
+          "context_in": 0.00022608246945310384,
+          "context_out": 0.0002194844710174948,
+          "mix": 0.0025128426495939493,
+          "output": 0.025023775175213814
+        }
+      ],
+      "latent_max_error": 0.0,
+      "history_max_error": 0.0,
+      "current_context_max_error": 0.0,
+      "anchor_block_r_error": 0.0,
+      "split_prediction_max_abs": 8.381903171539307e-09,
+      "temporary_pair_max_abs": 0.015307001769542694
+    }
+  ],
+  "optimizer_updates": 0,
+  "formal_fits": 0
+}

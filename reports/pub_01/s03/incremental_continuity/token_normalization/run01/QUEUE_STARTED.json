@@ -1,0 +1,11 @@
+{
+  "time": 1793630098.2092664,
+  "pid": 1832753,
+  "source_sha256": "5532523a6167da8427fabca36d59b910f0e435231f45f952a00bfbca57c1a972",
+  "max_jobs": 9,
+  "max_per_GPU": {
+    "cuda:0": 5,
+    "cuda:1": 4
+  },
+  "wall_cap_seconds": 21600
+}

@@ -1,0 +1,229 @@
+{
+  "stages": [
+    {
+      "stage": "VAL_capture_gold",
+      "seed": 1024,
+      "wall_seconds": 0.3647122383117676,
+      "CPU_seconds": 0.36060079899999975,
+      "encoder_head_windows": 100
+    },
+    {
+      "stage": "FT_phase_encoding_and_raw_bridge",
+      "seed": 1024,
+      "wall_seconds": 12.199965476989746,
+      "CPU_seconds": 11.562099643,
+      "phase": "test_seen",
+      "main_encoder_head_windows": 36573,
+      "extra_encoder_head_windows": 93,
+      "records": 69
+    },
+    {
+      "stage": "FT_phase_encoding_and_raw_bridge",
+      "seed": 1024,
+      "wall_seconds": 16.076647996902466,
+      "CPU_seconds": 15.234548143000001,
+      "phase": "test_heldout",
+      "main_encoder_head_windows": 48119,
+      "extra_encoder_head_windows": 119,
+      "records": 75
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.216754913330078,
+      "CPU_seconds": 25.537991178,
+      "role": "Ponly",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.2446486949920654,
+      "CPU_seconds": 25.793888609000007,
+      "role": "C",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.9884519577026367,
+      "CPU_seconds": 31.710193750000002,
+      "role": "Ccap",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.977201461791992,
+      "CPU_seconds": 31.60910318399999,
+      "role": "W",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 1024,
+      "wall_seconds": 3.9560720920562744,
+      "CPU_seconds": 31.447964729999995,
+      "role": "F",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "VAL_capture_gold",
+      "seed": 2026,
+      "wall_seconds": 0.13698530197143555,
+      "CPU_seconds": 0.13656195199999388,
+      "encoder_head_windows": 100
+    },
+    {
+      "stage": "FT_phase_encoding_and_raw_bridge",
+      "seed": 2026,
+      "wall_seconds": 12.181562900543213,
+      "CPU_seconds": 11.666578249999986,
+      "phase": "test_seen",
+      "main_encoder_head_windows": 36573,
+      "extra_encoder_head_windows": 93,
+      "records": 69
+    },
+    {
+      "stage": "FT_phase_encoding_and_raw_bridge",
+      "seed": 2026,
+      "wall_seconds": 16.059576272964478,
+      "CPU_seconds": 15.406158492999992,
+      "phase": "test_heldout",
+      "main_encoder_head_windows": 48119,
+      "extra_encoder_head_windows": 119,
+      "records": 75
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 3.361147880554199,
+      "CPU_seconds": 26.816544405000002,
+      "role": "Ponly",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 3.4297432899475098,
+      "CPU_seconds": 27.36778606200002,
+      "role": "C",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 4.276376724243164,
+      "CPU_seconds": 33.50279999899999,
+      "role": "Ccap",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 4.233204364776611,
+      "CPU_seconds": 33.64410238300002,
+      "role": "W",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 2026,
+      "wall_seconds": 4.02938437461853,
+      "CPU_seconds": 32.16783892199999,
+      "role": "F",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "VAL_capture_gold",
+      "seed": 31415,
+      "wall_seconds": 0.14133214950561523,
+      "CPU_seconds": 0.14100831699994387,
+      "encoder_head_windows": 100
+    },
+    {
+      "stage": "FT_phase_encoding_and_raw_bridge",
+      "seed": 31415,
+      "wall_seconds": 12.08457064628601,
+      "CPU_seconds": 11.581092981999973,
+      "phase": "test_seen",
+      "main_encoder_head_windows": 36573,
+      "extra_encoder_head_windows": 93,
+      "records": 69
+    },
+    {
+      "stage": "FT_phase_encoding_and_raw_bridge",
+      "seed": 31415,
+      "wall_seconds": 15.86373257637024,
+      "CPU_seconds": 15.199739561000001,
+      "phase": "test_heldout",
+      "main_encoder_head_windows": 48119,
+      "extra_encoder_head_windows": 119,
+      "records": 75
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 3.323115825653076,
+      "CPU_seconds": 26.506468348999988,
+      "role": "Ponly",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 3.3086647987365723,
+      "CPU_seconds": 26.42908238299998,
+      "role": "C",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 4.151385307312012,
+      "CPU_seconds": 33.14142535100001,
+      "role": "Ccap",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 4.120943784713745,
+      "CPU_seconds": 32.89970032299999,
+      "role": "W",
+      "records": 144,
+      "windows": 84692
+    },
+    {
+      "stage": "fixed_readout_and_score",
+      "seed": 31415,
+      "wall_seconds": 4.119998216629028,
+      "CPU_seconds": 32.89301244899997,
+      "role": "F",
+      "records": 144,
+      "windows": 84692
+    }
+  ],
+  "wall_seconds": 147.20980834960938,
+  "CPU_seconds": 539.1465178990001,
+  "main_encoder_head_windows": 254076,
+  "extra_VAL_capture_windows": 300,
+  "extra_original_Decoder_windows": 636,
+  "role_split_scores": 36,
+  "new_fits": 0,
+  "DTU": false,
+  "inherited_costs_nonzero": true
+}

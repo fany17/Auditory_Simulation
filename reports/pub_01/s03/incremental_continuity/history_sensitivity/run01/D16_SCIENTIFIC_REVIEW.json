@@ -1,0 +1,38 @@
+{
+  "time": 1793632257.876,
+  "coordinator_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "scientific_review_complete": true,
+  "accepted_for_archival": true,
+  "report_sha256": "b6ed15b493229922d1944b9c15a05714f79a357895cb42ae2e920d26588a45c0",
+  "review_markdown_sha256": "173314ce8f4ffecc523c7bea92d983dcc5ec3c70442a593c5c08d71fe1c9d9b3",
+  "numerical_review_sha256": "c6696649ecec5d0090b042b1ce51423a6f3bdc0783367e257fef73a4a8dcc77d",
+  "protocol_sha256": "56f4be8214ec7b5402b1c6ea3e4ff2154f082150b95c30538743bd1fa170b3a2",
+  "figures_actually_viewed": {
+    "01_OFFLINE_TRAIN_OBJECTIVE.png": "a3c77bbcd45a94301549bef3a901d106189844712bb1ecc30adc79aa7456b0ee",
+    "02_TRAIN_MSE_AND_PHYSICAL_R.png": "50bb8a15a951ce912ae6bafabc8429ad2ab14f3d63702181b76f277c087705bd",
+    "03_VAL_FIXED_SELECTION_CURVES.png": "fff03107ab98a0f7163ca9d897f1e4e8b10179f64209fe90de35b34939e9716c",
+    "04_AMPLITUDE_AND_OVERLAP.png": "67e1773edb63cc7e2e77bf6eba4281c04dded368270ebcef21a545e711fa6d39",
+    "05_TOKEN_AND_GRU_ACTIVITY.png": "2eb5d40c3672a282aafbe40572f2cd33450ea18b7a644f8c513aaafe0f45c369"
+  },
+  "basis": "Coordinator actually read full final Chinese REPORT and REVIEW, actual numerical review, summary and cost ledger; viewed all5 PNGs. Interpretation and numbers are consistent with sources and stated limits.",
+  "findings": [
+    "Selected meanVAL H .182378740 versus anchor/C .182339940 and P .182422084; onlyH2026 trained checkpoint survives selection, withP higher. No stable history-specific gain.",
+    "Nonzero selectedH2026 near-minus-older -1.4275e-10 is below independent r numerical discrepancy scale; other twoH usezerohead. No demonstrated history benefit from this intervention.",
+    "H token/GRU nonzero first-batch gradients in all19 postinitial epochs support sampled activity improvement only; TRAIN gains and worse lastVAL are both reported.",
+    "All5 plots have full interpretation with axes/markers, different panel scales, selected-versus-last distinction, and sampling limitations. No figures or statistics support a novelty or independent-generalization claim.",
+    "Formal9fits/710100updates/59473248NN, engineering816 and independent631239 are separated. Known total60105303NN and measuredCPU9026.013s are correctly scoped; administrative and timer exclusions disclosed."
+  ],
+  "technical": "PASS_WITH_LIMITATIONS",
+  "diagnostic_acceptance": "PASS_WITH_LIMITATIONS",
+  "history_benefit_established": false,
+  "independent_confirmation_established": false,
+  "publication_readiness_established": false,
+  "goal_complete": false,
+  "limits": [
+    "Repeated originalVAL only.",
+    "No second fullTRAIN neural replay or unretained intermediate-checkpoint replay.",
+    "First-batch gradients are not a global sensitivity measure.",
+    "Existing normalization is not a new architecture."
+  ],
+  "next_action": "Archive this final report, fivefigures, numerical records and receipt; commit/push lightweight evidence. Proceed only to separately specified D17 fixedTRAIN history-sensitivity implementation/source review; no newfits or external reopening."
+}

@@ -1,0 +1,1554 @@
+{
+  "seed": 31415,
+  "checkpoint_kind": "last",
+  "checkpoint_epoch": 19,
+  "effective_windows": 48,
+  "metadata_windows": 64,
+  "metadata": [
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 0,
+      "global_index": 0,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 8,
+      "global_index": 8,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 9,
+      "global_index": 9,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 10,
+      "global_index": 10,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 11,
+      "global_index": 11,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 12,
+      "global_index": 12,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 13,
+      "global_index": 13,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_1",
+      "record_offset": 0,
+      "local": 14,
+      "global_index": 14,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 0,
+      "global_index": 623,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 8,
+      "global_index": 631,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 9,
+      "global_index": 632,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 10,
+      "global_index": 633,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 11,
+      "global_index": 634,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 12,
+      "global_index": 635,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 13,
+      "global_index": 636,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_2_1",
+      "record_offset": 623,
+      "local": 14,
+      "global_index": 637,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 0,
+      "global_index": 1149,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 8,
+      "global_index": 1157,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 9,
+      "global_index": 1158,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 10,
+      "global_index": 1159,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 11,
+      "global_index": 1160,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 12,
+      "global_index": 1161,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 13,
+      "global_index": 1162,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_3",
+      "record_offset": 1149,
+      "local": 14,
+      "global_index": 1163,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 0,
+      "global_index": 1789,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 8,
+      "global_index": 1797,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 9,
+      "global_index": 1798,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 10,
+      "global_index": 1799,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 11,
+      "global_index": 1800,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 12,
+      "global_index": 1801,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 13,
+      "global_index": 1802,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_4",
+      "record_offset": 1789,
+      "local": 14,
+      "global_index": 1803,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 0,
+      "global_index": 2330,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 8,
+      "global_index": 2338,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 9,
+      "global_index": 2339,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 10,
+      "global_index": 2340,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 11,
+      "global_index": 2341,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 12,
+      "global_index": 2342,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 13,
+      "global_index": 2343,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_1",
+      "record_offset": 2330,
+      "local": 14,
+      "global_index": 2344,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 0,
+      "global_index": 2933,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 8,
+      "global_index": 2941,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 9,
+      "global_index": 2942,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 10,
+      "global_index": 2943,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 11,
+      "global_index": 2944,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 12,
+      "global_index": 2945,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 13,
+      "global_index": 2946,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_5_3",
+      "record_offset": 2933,
+      "local": 14,
+      "global_index": 2947,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 0,
+      "global_index": 3567,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 8,
+      "global_index": 3575,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 9,
+      "global_index": 3576,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 10,
+      "global_index": 3577,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 11,
+      "global_index": 3578,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 12,
+      "global_index": 3579,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 13,
+      "global_index": 3580,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_1",
+      "record_offset": 3567,
+      "local": 14,
+      "global_index": 3581,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 0,
+      "global_index": 4121,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 8,
+      "global_index": 4129,
+      "effective": false,
+      "near_local": null,
+      "older_local": null
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 9,
+      "global_index": 4130,
+      "effective": true,
+      "near_local": [
+        4,
+        6
+      ],
+      "older_local": [
+        0,
+        2
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 10,
+      "global_index": 4131,
+      "effective": true,
+      "near_local": [
+        5,
+        7
+      ],
+      "older_local": [
+        1,
+        3
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 11,
+      "global_index": 4132,
+      "effective": true,
+      "near_local": [
+        6,
+        8
+      ],
+      "older_local": [
+        2,
+        4
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 12,
+      "global_index": 4133,
+      "effective": true,
+      "near_local": [
+        7,
+        9
+      ],
+      "older_local": [
+        3,
+        5
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 13,
+      "global_index": 4134,
+      "effective": true,
+      "near_local": [
+        8,
+        10
+      ],
+      "older_local": [
+        4,
+        6
+      ]
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "subject": "sub-001",
+      "story": "audiobook_6_2",
+      "record_offset": 4121,
+      "local": 14,
+      "global_index": 4135,
+      "effective": true,
+      "near_local": [
+        9,
+        11
+      ],
+      "older_local": [
+        5,
+        7
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "near",
+      "nodes": {
+        "token_before_norm": {
+          "shape": [
+            48,
+            2,
+            32
+          ],
+          "RMS": 133.86948729858514,
+          "max_abs": 1033.8721923828125,
+          "across_windows_centered_RMS": 112.8421978397312,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            102.77272158609752,
+            122.08395031448057
+          ]
+        },
+        "token_after_norm": {
+          "shape": [
+            48,
+            2,
+            32
+          ],
+          "RMS": 0.999999995464147,
+          "max_abs": 5.1787309646606445,
+          "across_windows_centered_RMS": 0.9077945733689494,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            0.9046379735611465,
+            0.9109402349591373
+          ]
+        },
+        "GRU_states": {
+          "shape": [
+            48,
+            2,
+            32
+          ],
+          "RMS": 0.8035089628435425,
+          "max_abs": 1.0,
+          "across_windows_centered_RMS": 0.4939602352933766,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            0.4726079086583624,
+            0.5144270529197944
+          ]
+        },
+        "GRU_last_h": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.8769459970331347,
+          "max_abs": 1.0,
+          "across_windows_centered_RMS": 0.5144270529197944,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "current_q": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 1.7800873036590013,
+          "max_abs": 14.279048919677734,
+          "across_windows_centered_RMS": 1.65427189832072,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_gamma": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 7.3587880979949984,
+          "max_abs": 11.117844581604004,
+          "across_windows_centered_RMS": 1.34298608486601,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_beta": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 6.9813793050853885,
+          "max_abs": 23.960079193115234,
+          "across_windows_centered_RMS": 4.5123519731829935,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_tanh_gamma": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.9931169039846559,
+          "max_abs": 1.0,
+          "across_windows_centered_RMS": 0.10576129571054764,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_gain_delta": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.09931169166132445,
+          "max_abs": 0.10000000149011612,
+          "across_windows_centered_RMS": 0.010576129751715145,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_bias_delta": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.6981379438100961,
+          "max_abs": 2.396008014678955,
+          "across_windows_centered_RMS": 0.45123520620976976,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_modulated_current": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 1.5762388575858508,
+          "max_abs": 12.869719505310059,
+          "across_windows_centered_RMS": 1.5496867903554665,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "input_history": {
+          "shape": [
+            48,
+            2,
+            8,
+            192
+          ],
+          "RMS": 0.921820621063135,
+          "max_abs": 4.6969218254089355,
+          "across_windows_centered_RMS": 0.9018595325640959,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            0.8919783845826444,
+            0.9116335855982903
+          ]
+        },
+        "residual": {
+          "shape": [
+            48,
+            192
+          ],
+          "RMS": 0.47303249008591375,
+          "max_abs": 2.772963762283325,
+          "across_windows_centered_RMS": 0.45471669497603684,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "final_prediction_float64": {
+          "shape": [
+            48,
+            192
+          ],
+          "RMS": 0.5644958764353578,
+          "max_abs": 0.8764461749361654,
+          "across_windows_centered_RMS": 0.11342680638384739,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        }
+      },
+      "history_input_gradient": {
+        "nonzero_scalars": 147456,
+        "scalars": 147456,
+        "L2_norm": 1.2808322040929103,
+        "max_abs": 0.08077932894229889,
+        "finite": true
+      },
+      "probe_value": 2.751797676086426,
+      "probe_definition": "residual directional sum /48, fixed sin(arange192*.017); not target loss"
+    },
+    {
+      "condition": "older",
+      "nodes": {
+        "token_before_norm": {
+          "shape": [
+            48,
+            2,
+            32
+          ],
+          "RMS": 123.89837075552374,
+          "max_abs": 1166.7994384765625,
+          "across_windows_centered_RMS": 104.38528023250042,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            108.69633539599741,
+            99.88833830791323
+          ]
+        },
+        "token_after_norm": {
+          "shape": [
+            48,
+            2,
+            32
+          ],
+          "RMS": 0.9999999949925311,
+          "max_abs": 5.1787309646606445,
+          "across_windows_centered_RMS": 0.9034908000700228,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            0.9067593732710684,
+            0.9002103590869187
+          ]
+        },
+        "GRU_states": {
+          "shape": [
+            48,
+            2,
+            32
+          ],
+          "RMS": 0.8043582780481581,
+          "max_abs": 1.0,
+          "across_windows_centered_RMS": 0.4820728430156884,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            0.46494191177013866,
+            0.49861555393507906
+          ]
+        },
+        "GRU_last_h": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.8794217038378478,
+          "max_abs": 1.0,
+          "across_windows_centered_RMS": 0.49861555393507906,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "current_q": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 1.7800873036590013,
+          "max_abs": 14.279048919677734,
+          "across_windows_centered_RMS": 1.65427189832072,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_gamma": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 7.529606388273056,
+          "max_abs": 11.401366233825684,
+          "across_windows_centered_RMS": 1.276574616079098,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_beta": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 7.003183759780386,
+          "max_abs": 22.278844833374023,
+          "across_windows_centered_RMS": 4.064227647937913,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_tanh_gamma": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.9961785221640813,
+          "max_abs": 1.0,
+          "across_windows_centered_RMS": 0.06943928534877737,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_gain_delta": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.09961785344947913,
+          "max_abs": 0.10000000149011612,
+          "across_windows_centered_RMS": 0.006943928617210964,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_bias_delta": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 0.7003183882089198,
+          "max_abs": 2.227884531021118,
+          "across_windows_centered_RMS": 0.406422772030575,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "film_modulated_current": {
+          "shape": [
+            48,
+            32
+          ],
+          "RMS": 1.5746854708181917,
+          "max_abs": 12.785737037658691,
+          "across_windows_centered_RMS": 1.5461741946009742,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "input_history": {
+          "shape": [
+            48,
+            2,
+            8,
+            192
+          ],
+          "RMS": 0.9099847075475566,
+          "max_abs": 5.399622440338135,
+          "across_windows_centered_RMS": 0.8920393183613742,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates",
+          "per_token_position_across_windows_centered_RMS": [
+            0.9025228675200452,
+            0.881431088973293
+          ]
+        },
+        "residual": {
+          "shape": [
+            48,
+            192
+          ],
+          "RMS": 0.460641332253567,
+          "max_abs": 1.939576268196106,
+          "across_windows_centered_RMS": 0.45382978578173877,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        },
+        "final_prediction_float64": {
+          "shape": [
+            48,
+            192
+          ],
+          "RMS": 0.5654902024702803,
+          "max_abs": 0.8838193531426042,
+          "across_windows_centered_RMS": 0.11614276480790885,
+          "centering_axis": "axis0 over48 windows, each other coordinate fixed; then RMS over all coordinates"
+        }
+      },
+      "history_input_gradient": {
+        "nonzero_scalars": 147456,
+        "scalars": 147456,
+        "L2_norm": 1.2064426569488549,
+        "max_abs": 0.08076191693544388,
+        "finite": true
+      },
+      "probe_value": 3.8443655967712402,
+      "probe_definition": "residual directional sum /48, fixed sin(arange192*.017); not target loss"
+    }
+  ],
+  "near_minus_older": {
+    "token_before_norm": {
+      "difference_RMS": 158.1296939425547,
+      "difference_max_abs": 855.0588226318359,
+      "pooled_global_RMS": 128.980320021039,
+      "relative_difference_RMS": 1.2259986168181387,
+      "pooled_across_window_centered_RMS": 108.69601727413632,
+      "relative_to_across_window_centered_RMS": 1.4547882977510058,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.5716145833333334,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 98.0554267016721,
+      "per_window_difference_RMS_median": 154.98353262940137,
+      "per_window_difference_RMS_max": 222.87111735656552
+    },
+    "token_after_norm": {
+      "difference_RMS": 1.325895077913273,
+      "difference_max_abs": 5.563369989395142,
+      "pooled_global_RMS": 0.999999995228339,
+      "relative_difference_RMS": 1.3258950842399948,
+      "pooled_across_window_centered_RMS": 0.9056452432518163,
+      "relative_to_across_window_centered_RMS": 1.4640336133743768,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 1.0686713189094974,
+      "per_window_difference_RMS_median": 1.3470667225140076,
+      "per_window_difference_RMS_max": 1.5156595380374658
+    },
+    "GRU_states": {
+      "difference_RMS": 0.7076448032392295,
+      "difference_max_abs": 1.998019516468048,
+      "pooled_global_RMS": 0.8039337326031616,
+      "relative_difference_RMS": 0.8802277781625786,
+      "pooled_across_window_centered_RMS": 0.48805273281906564,
+      "relative_to_across_window_centered_RMS": 1.4499351312956843,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 0.4464502328794503,
+      "per_window_difference_RMS_median": 0.6957750191484842,
+      "per_window_difference_RMS_max": 0.9814914058246764
+    },
+    "GRU_last_h": {
+      "difference_RMS": 0.7375128609091416,
+      "difference_max_abs": 1.998019516468048,
+      "pooled_global_RMS": 0.8781847228497834,
+      "relative_difference_RMS": 0.8398151797902498,
+      "pooled_across_window_centered_RMS": 0.5065829958662897,
+      "relative_to_across_window_centered_RMS": 1.4558579086294572,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 0.38959669546732767,
+      "per_window_difference_RMS_median": 0.7541517185808662,
+      "per_window_difference_RMS_max": 1.1188890353137262
+    },
+    "current_q": {
+      "difference_RMS": 0.0,
+      "difference_max_abs": 0.0,
+      "pooled_global_RMS": 1.7800873036590013,
+      "relative_difference_RMS": 0.0,
+      "pooled_across_window_centered_RMS": 1.65427189832072,
+      "relative_to_across_window_centered_RMS": 0.0,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 1.0,
+      "exactly_equal_window_count": 48,
+      "per_window_difference_RMS_min": 0.0,
+      "per_window_difference_RMS_median": 0.0,
+      "per_window_difference_RMS_max": 0.0
+    },
+    "film_gamma": {
+      "difference_RMS": 1.8825119806569228,
+      "difference_max_abs": 6.8957479596138,
+      "pooled_global_RMS": 7.444687187300594,
+      "relative_difference_RMS": 0.25286649838937186,
+      "pooled_across_window_centered_RMS": 1.3102012010682236,
+      "relative_to_across_window_centered_RMS": 1.4368113684540107,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 0.7502608774887787,
+      "per_window_difference_RMS_median": 1.4620143906352348,
+      "per_window_difference_RMS_max": 4.635229862145393
+    },
+    "film_beta": {
+      "difference_RMS": 6.333009233762165,
+      "difference_max_abs": 22.325758457183838,
+      "pooled_global_RMS": 6.992290031696564,
+      "relative_difference_RMS": 0.9057131790949988,
+      "pooled_across_window_centered_RMS": 4.2941394192638525,
+      "relative_to_across_window_centered_RMS": 1.4748028919023402,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 1.0102631260804193,
+      "per_window_difference_RMS_median": 5.360992877305071,
+      "per_window_difference_RMS_max": 13.64949631273642
+    },
+    "film_tanh_gamma": {
+      "difference_RMS": 0.13419094473739573,
+      "difference_max_abs": 1.8733779191970825,
+      "pooled_global_RMS": 0.9946488910668632,
+      "relative_difference_RMS": 0.13491287824536974,
+      "pooled_across_window_centered_RMS": 0.0894630259384368,
+      "relative_to_across_window_centered_RMS": 1.4999598250760942,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.09049479166666667,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 3.6302420104621784e-05,
+      "per_window_difference_RMS_median": 0.012468116880898805,
+      "per_window_difference_RMS_max": 0.5200227110214518
+    },
+    "film_gain_delta": {
+      "difference_RMS": 0.013419094636669222,
+      "difference_max_abs": 0.18733779340982437,
+      "pooled_global_RMS": 0.09946489035462684,
+      "relative_difference_RMS": 0.1349128781907414,
+      "pooled_across_window_centered_RMS": 0.008946302732582763,
+      "relative_to_across_window_centered_RMS": 1.4999598200267006,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.099609375,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 3.6303892914485093e-06,
+      "per_window_difference_RMS_median": 0.0012468113494802477,
+      "per_window_difference_RMS_max": 0.0520022711960743
+    },
+    "film_bias_delta": {
+      "difference_RMS": 0.6333009355676309,
+      "difference_max_abs": 2.232575833797455,
+      "pooled_global_RMS": 0.6992290159350254,
+      "relative_difference_RMS": 0.9057131799954927,
+      "pooled_across_window_centered_RMS": 0.4294139500226967,
+      "relative_to_across_window_centered_RMS": 1.4748028924867431,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 0.10102631439459904,
+      "per_window_difference_RMS_median": 0.5360992946052991,
+      "per_window_difference_RMS_max": 1.3649496584076215
+    },
+    "film_modulated_current": {
+      "difference_RMS": 0.633860376973497,
+      "difference_max_abs": 2.232575833797455,
+      "pooled_global_RMS": 1.575462355654596,
+      "relative_difference_RMS": 0.4023329244894153,
+      "pooled_across_window_centered_RMS": 1.5479314888347286,
+      "relative_to_across_window_centered_RMS": 0.4094886508515066,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 0.10097305750636267,
+      "per_window_difference_RMS_median": 0.5360979491566296,
+      "per_window_difference_RMS_max": 1.364957482035841
+    },
+    "input_history": {
+      "difference_RMS": 1.2920562717329618,
+      "difference_max_abs": 6.122446298599243,
+      "pooled_global_RMS": 0.9159217830654635,
+      "relative_difference_RMS": 1.4106622373458881,
+      "pooled_across_window_centered_RMS": 0.8969628648888855,
+      "relative_to_across_window_centered_RMS": 1.4404791126921623,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 1.2105117991085201,
+      "per_window_difference_RMS_median": 1.2879165081057986,
+      "per_window_difference_RMS_max": 1.3812541136902148
+    },
+    "residual": {
+      "difference_RMS": 0.47252733446194006,
+      "difference_max_abs": 1.6213622689247131,
+      "pooled_global_RMS": 0.46687802135955236,
+      "relative_difference_RMS": 1.0121001907220581,
+      "pooled_across_window_centered_RMS": 0.4542734568256377,
+      "relative_to_across_window_centered_RMS": 1.040182575851683,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 0.048316866441109364,
+      "per_window_difference_RMS_median": 0.39539784383722154,
+      "per_window_difference_RMS_max": 1.0931541595383876
+    },
+    "final_prediction_float64": {
+      "difference_RMS": 0.04725273344619401,
+      "difference_max_abs": 0.1621362268924713,
+      "pooled_global_RMS": 0.564993258190928,
+      "relative_difference_RMS": 0.08363415449857617,
+      "pooled_across_window_centered_RMS": 0.11479281820668058,
+      "relative_to_across_window_centered_RMS": 0.4116349279021712,
+      "denominator_zero_returns_null": true,
+      "exactly_equal_element_fraction": 0.0,
+      "exactly_equal_window_count": 0,
+      "per_window_difference_RMS_min": 0.004831686644110935,
+      "per_window_difference_RMS_median": 0.03953978438372215,
+      "per_window_difference_RMS_max": 0.10931541595383876
+    }
+  },
+  "current_and_anchor_tensor_equal": true,
+  "weights_exactly_unchanged": true,
+  "mode": "train with frozen params, input grad only"
+}

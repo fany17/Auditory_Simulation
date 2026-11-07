@@ -1,0 +1,43 @@
+{
+  "V04_science_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "maximum_workers_per_GPU": 2,
+  "GPU_minimum_free_MiB": 16384,
+  "pilot": [
+    "initial",
+    31415,
+    null
+  ],
+  "old_scheduler": [
+    1748466,
+    1012,
+    791000426
+  ],
+  "old_workers": {
+    "1024": [
+      1879079,
+      1012,
+      794756993
+    ],
+    "2026": [
+      1879085,
+      1012,
+      794756996
+    ]
+  },
+  "old_report_waiter": [
+    1812007,
+    1012,
+    791424876
+  ],
+  "sources": {
+    "PLAN.md": "b2b35e119ecb99895535e2ed35b44249eed1091dbb29197ea82730443739db9d",
+    "ISOLATED_FIXTURE.py": "eb544ea994c9a5b131bfe0e4d39876530f7a147b4151acebef3c4b3ef8a67c43",
+    "FIXTURE_RECEIPT.json": "d03f079270af115e371734bfa1069bc959398c432a61d87dc4cde395321bd357",
+    "d27_resource_process.py": "d12dae6f6bc4b27b25157b1c943c77bb55473115f00f384ae25e339fb6fe51f6",
+    "d27_resource_queue.py": "ee9a0e514ba52a1d34d144d0a52ece2786794dbc3f1d0ffe09880812e74c6ef2",
+    "d27_resource_worker.py": "28c5e497781501eb75f9552f298c32c2e01a3511e018cb4a7dcaeb391ddaaefe",
+    "d27_resource_report_wait.py": "ac6c6cf6a19b8244960289d21ac8bb8ad4bfe321fad0bdaebd894675fa480a32"
+  },
+  "zero_new_experiment_config": true,
+  "formal_signals_require_independent_resource_review": true
+}

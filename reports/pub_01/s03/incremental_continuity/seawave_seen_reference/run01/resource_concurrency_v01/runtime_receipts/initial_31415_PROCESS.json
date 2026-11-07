@@ -1,0 +1,22 @@
+{
+  "pid": 1889880,
+  "uid": 1012,
+  "startticks": 795110979,
+  "status": "R",
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "-B",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_train.py",
+    "initial",
+    "--seed",
+    "31415"
+  ],
+  "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+  "started_monotonic": 7951109.797273934,
+  "supervisor": [
+    1889844,
+    1012,
+    795110960
+  ],
+  "origin": "V04 exec through gated supervisor"
+}

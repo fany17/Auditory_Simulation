@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "protocol_sha256": "339f41a6b0490dbdcef73b64ce9ad17c24f9e372f6304f5050309952129018a0",
+  "source_sha256": "f593ed7e0bf676fdf7a24f90fe414dfae9937afac481c4b205cc428c318d6c4b",
+  "selected_records": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz"
+  ],
+  "selection_rule": "Original VAL metadata first/last records; first64 active and last64 positive-covered points. Fixed before replay, no performance selection.",
+  "tolerances": {
+    "normalized_input_atol": 2e-06,
+    "anchor_atol": 1e-08,
+    "prediction_atol": 2e-05,
+    "prediction_rtol": 2e-05
+  },
+  "results": [
+    {
+      "seed": 1024,
+      "role": "P_past_prediction",
+      "checkpoint": "last",
+      "checkpoint_sha256": "2218ec2e269c22e1fc4717184f15f5c2723ad935cacf4f235d06f2d53f73978b",
+      "passed": true,
+      "input_max_abs": 0.0,
+      "anchor_max_abs": 0.0,
+      "prediction_max_abs": 5.587935447692871e-09,
+      "points": 256
+    },
+    {
+      "seed": 1024,
+      "role": "P_past_prediction",
+      "checkpoint": "selected",
+      "checkpoint_sha256": "017ee57af91b3f2381591ac023d964c7ac03f89c5a8ea9c01650b642cfc38ed7",
+      "passed": true,
+      "input_max_abs": 0.0,
+      "anchor_max_abs": 0.0,
+      "prediction_max_abs": 5.587935447692871e-09,
+      "points": 256
+    },
+    {
+      "seed": 2026,
+      "role": "P_past_prediction",
+      "checkpoint": "last",
+      "checkpoint_sha256": "658b250a9cd7201e25ac8ba5dd99adada5e940375b6195b441a7c94d48ab4315",
+      "passed": true,
+      "input_max_abs": 0.0,
+      "anchor_max_abs": 0.0,
+      "prediction_max_abs": 2.7939677238464355e-09,
+      "points": 256
+    },
+    {
+      "seed": 2026,
+      "role": "P_past_prediction",
+      "checkpoint": "selected",
+      "checkpoint_sha256": "d822f8ab4b0e7828f7bfa37013ad51a074f7471b32bb9f1232cde73cab20e80b",
+      "passed": true,
+      "input_max_abs": 0.0,
+      "anchor_max_abs": 0.0,
+      "prediction_max_abs": 2.3283064365386963e-09,
+      "points": 256
+    },
+    {
+      "seed": 31415,
+      "role": "P_past_prediction",
+      "checkpoint": "last",
+      "checkpoint_sha256": "bdc4c10859ea964feefe3570177afde1ada58b183bb30b03dbec6926ff3c9a5f",
+      "passed": true,
+      "input_max_abs": 0.0,
+      "anchor_max_abs": 0.0,
+      "prediction_max_abs": 2.7939677238464355e-09,
+      "points": 256
+    },
+    {
+      "seed": 31415,
+      "role": "P_past_prediction",
+      "checkpoint": "selected",
+      "checkpoint_sha256": "e1cba68ced0a1d7aa6f9b8c8e6f4918db0522c0c2e9b3410efc253cdef060f80",
+      "passed": true,
+      "input_max_abs": 0.0,
+      "anchor_max_abs": 0.0,
+      "prediction_max_abs": 3.259629011154175e-09,
+      "points": 256
+    }
+  ],
+  "counters": {
+    "producer_model_points": 1536,
+    "independent_numpy_model_points": 1536,
+    "frozen_readout_windows_independent": 3756,
+    "frozen_readout_windows_producer": 3756,
+    "raw_EEG_encoder_windows": 0,
+    "backward": 0,
+    "optimizer_updates": 0
+  },
+  "CPU_seconds": 2.694012079,
+  "wall_seconds": 1.8725051879882812,
+  "peak_RSS_bytes": 698667008,
+  "scope": "Bounded independent scalar-input/scatter fusion/NumPy GELU functional replay from existing VAL latent/P. Both q and context explicitly use current b only. No raw EEG encoder replay, no new scientific scoring, no fit or model selection. Producer and independent point forwards charged separately.",
+  "gpu_used": false,
+  "goal_complete": false
+}

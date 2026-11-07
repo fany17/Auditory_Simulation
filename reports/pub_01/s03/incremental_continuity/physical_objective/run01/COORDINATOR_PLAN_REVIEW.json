@@ -1,0 +1,83 @@
+{
+  "status": "PLAN_APPROVED",
+  "approved_for_execution": true,
+  "scope": "D9_TWO_OBJECTIVE_TRAIN_VAL_ONLY_SIX_FP64_SOLVES",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "execution_thread": "01a134e7-c257-7821-838c-b380642787f5",
+  "reviewed_commit": "51abaea",
+  "plan_sha256": "8f72b48cb65b5bf5596e9ae2ffcc9be9fbf8fccf43ab9ccefed77c41f0ace3c2",
+  "inventory_sha256": "ac184466c6d28dac2f8cbfa4cdca50194b7bfc768b61b6d782beb917b0bfda58",
+  "geometry_sha256": "2af2e9d6298348f8c7466b360ef29551aa728a8a93904855009cba2c8f8ff1e1",
+  "decision": "已实际阅读最终PLAN及输入metadata/几何摘要，批准按具体矩阵实现、冻结source/protocol并在必要改动验证通过后立即运行。无需等待新的用户许可或把准备文档当交付。协调代码审阅可与实现/必要检查并行；发现公共算子或边界错误须纠正并保留痕迹。",
+  "scientific_matrix": {
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "roles": [
+      "W",
+      "F"
+    ],
+    "new_solves": 6,
+    "initialization": "D8 strong FT+Ccap lambda0.01, same per-seed B/b",
+    "train_records": 426,
+    "train_people": 70,
+    "physical_targets": 24112044,
+    "first_four_windows": "fixed P_FT* retained in full-Hann boundary contribution",
+    "free_parameters": 620350,
+    "frozen_endpoint_parameters": 6530,
+    "lambda": 0.00005208333333333334,
+    "primary": "F minus W, original VAL 60-second person-macro r",
+    "secondary": "Each versus D8 Ccap; fused/weighted/window MSE, disagreement and 3-second r"
+  },
+  "solver": {
+    "precision": "FP64",
+    "max_updates_per_solve": 200,
+    "max_hessian_actions_per_solve": 214,
+    "relative_true_preconditioned_residual": 1e-8,
+    "preconditioner": "same deterministic rule, per-objective B diagonal and exact free bias 1x1/2x2 blocks, no target/VAL selection",
+    "nonconvergence": "Finite fixed-cap solutions are scored once and disclosed, no VAL-dependent budget extension. Only both converged permits optimized-objective comparison."
+  },
+  "review_findings": [
+    "公共物理点、目标、端点和首4窗上下文定义清楚。W/F正则相同；D8到D9支持不同，不能宣称D8与W只是无影响的loss缩放。",
+    "F移除了逐窗加权loss内含的disagreement项；不能预设F会降低disagreement或提高r。",
+    "输出列只按j与j+96相耦合。首可学习边界和尾部单窗支持可识别有效bias；仅内部区间的nullspace不能推广到完整记录。",
+    "几何bias条件数严重不良已披露，精确小块预条件为目标独立的数值处理。实际真残差、数值有限性及cap必须报告。",
+    "本轮没有新增历史推理输入；即使阳性，也只是当前读出监督目标证据，不是连续记忆或论文创新证明。"
+  ],
+  "necessary_changed_path_checks": [
+    "Synthetic W/F operator, gradient/symmetry, PCG versus direct small solve, exact fixed endpoints; preserve observed results.",
+    "Three seeds original first/last VAL records reconstruct D8 initial Ccap with frozen tolerances.",
+    "Actual TRAIN duplicated-label consistency, common point/counts and bias geometry match before formal solves.",
+    "Source/protocol pins and actual resource ceilings; no new NPY, no EEG encoder/head forwards."
+  ],
+  "root_synthetic_derivation": {
+    "scope": "SYNTHETIC_OPERATOR_DERIVATION_ONLY_NO_EEG_OR_NEW_FORMAL_MODEL",
+    "window": 6,
+    "hop": 3,
+    "featuresIncludingBias": 4,
+    "recordsWindows": [
+      7,
+      9
+    ],
+    "first4Fixed": true,
+    "T": 26,
+    "fusedGramMax": 8.881784197001252e-16,
+    "fusedRhsMax": 1.1102230246251565e-16,
+    "weightedGramMax": 8.881784197001252e-16,
+    "weightedRhsMax": 0,
+    "offPairGramMax": 0,
+    "HannIdentityMax": 1.7763568394002505e-15,
+    "activeRegularizedHessianMinEigen": 0.041964378305919516,
+    "verified": true
+  },
+  "resource_scope": "Only existing lawful public assets on server2203 under named project root; per PLAN two GPUs, per-worker resource bounds, no old test/DTU or new dataset.",
+  "claim_limits": [
+    "Repeated known-person/part-book-family VAL only",
+    "No new holdout or external confirmation",
+    "No statistically significant, equivalence or novelty claim from three seed means",
+    "D8 archived and frozen"
+  ],
+  "goal_complete": false
+}

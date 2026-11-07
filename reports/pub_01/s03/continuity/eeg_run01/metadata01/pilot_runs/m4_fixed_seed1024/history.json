@@ -1,0 +1,30 @@
+[
+  {
+    "step": 50,
+    "train_loss": 1.066595619916916,
+    "validation": {
+      "r": 0.058763291467286725,
+      "mse": 1.1126359688175251,
+      "persons": 45,
+      "records": 63,
+      "blocks": 63,
+      "undefined_r_blocks": 0
+    },
+    "train_seconds": 0.12747517973184586,
+    "elapsed_seconds": 0.30758032109588385
+  },
+  {
+    "step": 100,
+    "train_loss": 1.0156009352207185,
+    "validation": {
+      "r": 0.07660633913224356,
+      "mse": 1.111583903290741,
+      "persons": 45,
+      "records": 63,
+      "blocks": 63,
+      "undefined_r_blocks": 0
+    },
+    "train_seconds": 0.2545425109565258,
+    "elapsed_seconds": 0.6148959202691913
+  }
+]

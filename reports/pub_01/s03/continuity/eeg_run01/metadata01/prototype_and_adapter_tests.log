@@ -1,0 +1,9 @@
+............................... [ 75%]
+..........                                 [100%]
+=============================== warnings summary ===============================
+../../../../../.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/jit/_script.py:1488
+  /home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+41 passed, 1 warning, 71 subtests passed in 2.40s

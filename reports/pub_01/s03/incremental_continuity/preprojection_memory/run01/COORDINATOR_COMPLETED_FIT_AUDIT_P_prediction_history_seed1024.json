@@ -1,0 +1,165 @@
+{
+  "fit": "P_prediction_history_seed1024",
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "scope": "One completed fit; saved-metric reaggregation and budget/selection metadata only; no prediction replay or matrix-level conclusion",
+  "scalar_comparisons": 960,
+  "maximum_absolute_error": 1.9000643072808465e-16,
+  "selected_epoch": 1,
+  "incumbent_validation_r": 0.18188879428826338,
+  "selected_validation_r": 0.18396398022389465,
+  "last_validation_r": 0.1821792557457821,
+  "optimizer_updates": 78900,
+  "component_forward_counts": {
+    "current_encoder_prefix_windows": 6699396,
+    "current_projection_windows": 6699396,
+    "current_head_windows": 6699396,
+    "frozen_encoder_prefix_windows": 0,
+    "attention_query_windows": 6598119,
+    "prior_projection_windows": 13196238
+  },
+  "input_sha256": {
+    "COMPLETED.json": "d496712c45b7562fdf8e18b10c10e54acefeb177e77b93ba448374c92a66ebc1",
+    "STARTED.json": "cea2cf8ef5e2c6b96ee5b918f293391c2e8ce9e206dc5bc816ee130e01436200",
+    "HISTORY.jsonl": "8f85a52396dbe86a3006c6b2cbf80752cf226bc023510903b77734ad3daf9c0a",
+    "PERMUTATIONS.jsonl": "bb1bb4031b079b6af6702527ebbcc6ff6dc20465145eb6a0f2f46b9d35f54da7",
+    "INCUMBENT.json.gz": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9",
+    "SELECTED_METRICS.json.gz": "bc5991e854ddc49643d0d37aab71c91604adc079d0fa791b1388691b10cc689b",
+    "COMPONENT_COUNTS.json": "69b3587b50e116bd7bfb085f74b5d929007f75bc751f33995e511309a7f7d1f8"
+  },
+  "audit_NN_forwards": 0,
+  "audit_backwards": 0,
+  "audit_optimizer_updates": 0,
+  "audit_CPU_seconds": 0.018486225000000002,
+  "audit_wall_seconds": 0.01854848861694336,
+  "limitations": "Seen-participant, mixed-source, repeatedly developed VAL; checkpoint contents and predictions not independently replayed; other fits pending",
+  "goal_complete": false,
+  "audit_source_sha256": "f49a7b4939e7da0ac395412c0a4372a5a00b97a2eafe8d494a3caaebf0edb2b0",
+  "execution_host": "server2203",
+  "additional_metadata_checks": {
+    "audit_source_sha256": "f49a7b4939e7da0ac395412c0a4372a5a00b97a2eafe8d494a3caaebf0edb2b0",
+    "same_protocol_supervision_order_and_incumbent_passed": true,
+    "all_four_component_formulas_passed": true,
+    "expected_counts": {
+      "H_history": {
+        "current_encoder_prefix_windows": 6699396,
+        "current_projection_windows": 6729896,
+        "current_head_windows": 6729896,
+        "frozen_encoder_prefix_windows": 13256356,
+        "attention_query_windows": 6628178,
+        "prior_projection_windows": 0
+      },
+      "C_current": {
+        "current_encoder_prefix_windows": 6699396,
+        "current_projection_windows": 6699396,
+        "current_head_windows": 6699396,
+        "frozen_encoder_prefix_windows": 6598119,
+        "attention_query_windows": 6598119,
+        "prior_projection_windows": 0
+      },
+      "T_continue": {
+        "current_encoder_prefix_windows": 6699396,
+        "current_projection_windows": 6699396,
+        "current_head_windows": 6699396,
+        "frozen_encoder_prefix_windows": 0,
+        "attention_query_windows": 0,
+        "prior_projection_windows": 0
+      },
+      "P_prediction_history": {
+        "current_encoder_prefix_windows": 6699396,
+        "current_projection_windows": 6699396,
+        "current_head_windows": 6699396,
+        "frozen_encoder_prefix_windows": 0,
+        "attention_query_windows": 6598119,
+        "prior_projection_windows": 13196238
+      }
+    },
+    "completed_sha256": {
+      "H_history": "1b57f206a5e8002f9ab99bc5f4551efc84b2ee70dc52188c8c6f8eac0ee410fc",
+      "C_current": "04e7a3985892fe62db6d747b6a999d3cdf20f186d22cd236496eeb0b4a5a9fd6",
+      "T_continue": "c9fb88a301d2f24a7464fca7533e0c5a9f147bd5acce281038d82bfe27f1946e",
+      "P_prediction_history": "d496712c45b7562fdf8e18b10c10e54acefeb177e77b93ba448374c92a66ebc1"
+    },
+    "selected_validation_r": {
+      "H_history": 0.18389087545640637,
+      "C_current": 0.18329781649665086,
+      "T_continue": 0.1835927025460701,
+      "P_prediction_history": 0.18396398022389465
+    },
+    "selected_epochs": {
+      "H_history": 2,
+      "C_current": 0,
+      "T_continue": 2,
+      "P_prediction_history": 1
+    },
+    "incumbent_r": 0.18188879428826338,
+    "H_minus_controls_r": {
+      "C_current": 0.0005930589597555047,
+      "T_continue": 0.00029817291033626403,
+      "P_prediction_history": -0.00007310476748828565
+    },
+    "H_near_minus_older_r": 0.00029438703373313446,
+    "first_seed_gate_components": {
+      "C_current": true,
+      "T_continue": true,
+      "P_prediction_history": false,
+      "incumbent": true,
+      "near_gt_older": true
+    },
+    "first_seed_all_required_directions": false,
+    "training_costs": {
+      "H_history": {
+        "CPU_seconds": 8747.447574131002,
+        "wall_seconds": 8736.313759803772,
+        "peak_RSS_KiB": 9278400,
+        "peak_GPU_allocated_bytes": 2779212800,
+        "registered_trainable_parameters": 3389513
+      },
+      "C_current": {
+        "CPU_seconds": 6622.638691109,
+        "wall_seconds": 6606.841987609863,
+        "peak_RSS_KiB": 9260228,
+        "peak_GPU_allocated_bytes": 2608737280,
+        "registered_trainable_parameters": 3389513
+      },
+      "T_continue": {
+        "CPU_seconds": 5112.6209088919995,
+        "wall_seconds": 5097.117251157761,
+        "peak_RSS_KiB": 9154660,
+        "peak_GPU_allocated_bytes": 2531368960,
+        "registered_trainable_parameters": 3372617
+      },
+      "P_prediction_history": {
+        "CPU_seconds": 5574.881764872,
+        "wall_seconds": 5559.570688247681,
+        "peak_RSS_KiB": 9325816,
+        "peak_GPU_allocated_bytes": 2532001792,
+        "registered_trainable_parameters": 3390153
+      }
+    },
+    "scope": "First seed only; eight scheduled fits remain. Complete unchanged matrix before overall interpretation; do not relax the all-three-seed superiority rule or retune from these values.",
+    "audit_CPU_seconds": 0.014661028,
+    "audit_wall_seconds": 0.014715433120727539,
+    "audit_NN_forwards": 0,
+    "audit_backwards": 0,
+    "audit_optimizer_updates": 0,
+    "prior_addendum_attempt": {
+      "status": "Python parser SyntaxError in a malformed unused dict expression; corrected before any audit statements executed.",
+      "NN_forwards": 0,
+      "backwards": 0,
+      "optimizer_updates": 0,
+      "CPU_seconds": null,
+      "wall_seconds": null,
+      "scope": "Metadata observer only; no production file or training process changed."
+    },
+    "frozen_scientific_gate_source": {
+      "path": "reports/pub_01/s03/incremental_continuity/preprojection_memory/run01/COORDINATOR_DIRECTION.md",
+      "line": 44,
+      "last_commit": "63e77496cacad6174cbdf900efac56fb6211e3bf 2026-11-03T00:22:02+08:00",
+      "sha256": "4306714b26d87d01fbfdadaac6f3e5b27adcfd43e684ab0e01de6a7f58a86c44",
+      "supporting_source": "PLAN.md:61",
+      "interpretation": "The original all-three-seed H superiority condition already fails for H versus P in seed1024. Finish the unchanged scheduled matrix; this is not statistical proof of P superiority or a global denial of history utility."
+    }
+  },
+  "audit_timer_scope": "Main audit and successful additional_metadata_checks ran separately; their CPU/wall timers are disjoint. The parser-failed metadata observer attempt has no measured CPU/wall timer."
+}

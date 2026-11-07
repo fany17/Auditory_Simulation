@@ -1,0 +1,21 @@
+{
+  "passed_neural_assertions": true,
+  "wall_seconds": null,
+  "CPU_seconds": null,
+  "loss_or_grad_numeric_capture": null,
+  "exact_completed_updates": {
+    "CL_H": 2,
+    "CL_C": 2,
+    "HEAD_HH": 1,
+    "HEAD_CH": 1,
+    "HEAD_CC": 1,
+    "FT_HH": 1,
+    "FT_CH": 1,
+    "FT_CC": 1
+  },
+  "reached": "first TRAIN Ccap affine record; neural assertions were earlier",
+  "source_sha256": "bd6e08cafc97dbeaa0e6a12762b9fcb2fa11c6081162d7a3533429537c5e4825",
+  "log_sha256": "303cf4663795ec84e9288c97b7da3694b2bf820165a7ae3e69d261b527734375",
+  "failed_Ccap_before_solution": true,
+  "engineering_ridge_fits": 0
+}

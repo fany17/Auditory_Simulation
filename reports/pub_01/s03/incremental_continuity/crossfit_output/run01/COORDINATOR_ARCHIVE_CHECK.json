@@ -1,0 +1,266 @@
+{
+  "passed": true,
+  "archive_path": "E:\\实验室-科研工作-文件\\00_ChatGPT\\CodexResult\\Result\\runs\\20261106_pub01_s03_ss07_crossfit_output",
+  "HTML_sha256": "9b72be715f5b93ab4d8f9d1beb8ef9d3c0c60be77dc01c4e860ba59c145e5714",
+  "archive_manifest_sha256": "7675dd0821b7846a619e64322b4b6c16b60fa30d8431571d3d625c3d35647be1",
+  "manifest_count": 62,
+  "source_copies_verified": 79,
+  "local_HTML_links_verified": 31,
+  "figure_count": 2,
+  "table_count": 3,
+  "artifacts": [
+    {
+      "name": "ARCHIVE.md",
+      "sha256": "7cffe7333cd1456a6eea96d8f3314a263583f022c096f0ee4b933970edf7e616"
+    },
+    {
+      "name": "COORDINATOR_DECISION.md",
+      "sha256": "a6ca1951b20ab884cbee0f976d217abfe9aa3d743681662525eaba898221814e"
+    },
+    {
+      "name": "REPORT.md",
+      "sha256": "8290711e0e5e2789cfb5e3dbf84f14a152231d42603579056eda48052b5e8ad1"
+    },
+    {
+      "name": "REVIEW.md",
+      "sha256": "48c3404d60382848ef14b9bb4b028909abb0377c490c58795d8fe05883bc2318"
+    },
+    {
+      "name": "CROSSFIT_PAIRED_CONTRASTS.png",
+      "sha256": "36e894a75eaf4ecb020216be00c01e1a2ef7737e43d2cc10e083976a270ddae9"
+    },
+    {
+      "name": "CROSSFIT_TRAJECTORIES.png",
+      "sha256": "fe0a9dc6231cabb1e6e677cc0ad2167b83ab9d47dc1b1cef81384c531edd0d58"
+    },
+    {
+      "name": "EPOCH_METRICS.csv",
+      "sha256": "7852fe88c80c8e63edc3bb561a8404dfc232717f07ca0b1fdf8783ad81cebcac"
+    },
+    {
+      "name": "PAIRED_CONTRASTS.csv",
+      "sha256": "1b89f08ad3ab7929255b8bc06117f7ed7ae2fa3cfe3210c773d9c08b10852c05"
+    },
+    {
+      "name": "PEOPLE.csv",
+      "sha256": "0e9d892234d9c98e334412d3825150a9fbe38d0fb5aa675ee49049e7e9a00512"
+    },
+    {
+      "name": "SEED_RESULTS.csv",
+      "sha256": "03fbaacebcef6db59ea6292c78ff5dfb17b1aa3477f14cdeff5dd2882c7a3447"
+    },
+    {
+      "name": "COORDINATOR_DOWNSTREAM_AUDIT_PREFLIGHT.json",
+      "sha256": "8bdc7570690cd834abeaf8f7644f0cf955c22d07b606e72e914762bfbe47007f"
+    },
+    {
+      "name": "COORDINATOR_DOWNSTREAM_AUDIT_V01_FAILURE.json",
+      "sha256": "cf04ad89fff9bb5b51becd9b199f440cc098723f58959ca3fb8e73100edc1459"
+    },
+    {
+      "name": "COMPLETED.json",
+      "sha256": "c8bc03e7a38ae7d2063b0021fd95ae06a6a33310a2bf117512c1ccbe858efbd8"
+    },
+    {
+      "name": "PROCESS.json",
+      "sha256": "22dd43a5ce061409d0a289496cc90d5ced8a87aa314592bfc3ccdc4cd86850cf"
+    },
+    {
+      "name": "seed1024.json",
+      "sha256": "a050b0f222c26359c503b57f5f10a5f32a2a68bdd272fc9a2b0cbcecbb308e63"
+    },
+    {
+      "name": "seed2026.json",
+      "sha256": "1bec35898727084f456e58df25ff9998c9a524efcb248cd01061e64d6c253e56"
+    },
+    {
+      "name": "seed31415.json",
+      "sha256": "664457fb8acdc4905d8de7ef9478d94659df328adbadab5993984ea805156f20"
+    },
+    {
+      "name": "STATUS.json",
+      "sha256": "0e85bb99a61de810c4a890b0ab4d1e73e571d26abcf413f88730a1f9fa817609"
+    },
+    {
+      "name": "COORDINATOR_DOWNSTREAM_AUDIT_V02_COMPLETED.json",
+      "sha256": "c8bc03e7a38ae7d2063b0021fd95ae06a6a33310a2bf117512c1ccbe858efbd8"
+    },
+    {
+      "name": "COORDINATOR_DOWNSTREAM_EXECUTION_REVIEW.json",
+      "sha256": "740c378aad39f77b370261aff910ba64bffca6096d213dca42996da35daa43aa"
+    },
+    {
+      "name": "COORDINATOR_DOWNSTREAM_FUNCTIONAL_REPLAY.json",
+      "sha256": "84d43918825315574548f57e704c895ce2e14d9c53df36a992b41e7f7c1d4511"
+    },
+    {
+      "name": "COORDINATOR_DOWNSTREAM_V05_DEPENDENCY_REVIEW.json",
+      "sha256": "689ccb8a6dd1e31c23432f1ad370bc9af48a069c4c5f11e61673394397039a3f"
+    },
+    {
+      "name": "COORDINATOR_DOWNSTREAM_V06_DEPENDENCY_REVIEW.json",
+      "sha256": "b4096d2c64906de816a6a61bb06a52dc9eec1b18e077e89477fd7dcc7e3ac4d0"
+    },
+    {
+      "name": "COORDINATOR_FOLD_CHECK.json",
+      "sha256": "255566e163854c2b3d0dada5525fe03649e1e96e4c399f1152dd906476d07acf"
+    },
+    {
+      "name": "COORDINATOR_REPLAY_DIAGNOSTIC_V01.json",
+      "sha256": "0b44ca8581fa93b47200a9f27e497f1a116b80945e263108a59997cb7929e0f7"
+    },
+    {
+      "name": "COORDINATOR_REPLAY_DIAGNOSTIC_V02.json",
+      "sha256": "4df026d7b6da7ddb162e209e36778fe6e9eb666654260564d5da9a4aac03bb1e"
+    },
+    {
+      "name": "COORDINATOR_REPLAY_PRECISION_AMENDMENT_V02.json",
+      "sha256": "4123e6c97302dfd421c39d9d5881aa71c96065fb4b88d7c10c05355fd1f49970"
+    },
+    {
+      "name": "COORDINATOR_SCHEDULING_RECOVERY_REVIEW.json",
+      "sha256": "757f719d707e507b651ffef2d6d71cbe06795e20dd9e06672da92b82c4632e1e"
+    },
+    {
+      "name": "COORDINATOR_SCIENTIFIC_REVIEW.json",
+      "sha256": "6169ea3bc153f3dfa53889f300c881eaa4cd86aaa9bfcbb5b6a3f80927c0ee54"
+    },
+    {
+      "name": "COORDINATOR_TRAINED_AND_COST_CHECK.json",
+      "sha256": "27e774e3e586a15b40d12060ba05db0e9cde932ae2ffa87abffaacd7d3220203"
+    },
+    {
+      "name": "COMPLETED.json",
+      "sha256": "231e76fa271a15fd7a6577c3dd65231d79e31b279bfb6a1f4ac2150c63317ec0"
+    },
+    {
+      "name": "PROCESS.json",
+      "sha256": "ee054355d9d4df582a8b1ffc2816e4d6680ad53a1a0266de6b8750c039c963d5"
+    },
+    {
+      "name": "seed1024_fold0.json",
+      "sha256": "bf85676b35ca91283361f9a0afefdd4d89db2a126c6eb10458cfb1e5b3f42434"
+    },
+    {
+      "name": "seed1024_fold1.json",
+      "sha256": "8aa6610464ee02185d0d572239556ee765a947a8b4cad65d6139ec8d2800d15b"
+    },
+    {
+      "name": "seed1024_fold2.json",
+      "sha256": "a5e1bdd09d6ea37212f589d76da86b1972ab66db9f3194b3fb72bd82073c154d"
+    },
+    {
+      "name": "seed2026_fold0.json",
+      "sha256": "e5253a0c38f5452708de97058be5d1b46e5c66c8e64f579341052b55d0d31bf1"
+    },
+    {
+      "name": "seed2026_fold1.json",
+      "sha256": "40c0ef423e653946533767e473716558ec3d44c183db11e0710b3483ce3ba240"
+    },
+    {
+      "name": "seed2026_fold2.json",
+      "sha256": "225ea36011e104140a3846d7fce381119177e98d906215d6c74e9df220b7effe"
+    },
+    {
+      "name": "seed31415_fold0.json",
+      "sha256": "cd62bbd931a144acdd6993fede0a12965ff9489ed4f0a20df34b8a1e3a208f5b"
+    },
+    {
+      "name": "seed31415_fold1.json",
+      "sha256": "3a9b907455786fce074d8bb359a99e98038aeb33d52769ef5e714487e0150e58"
+    },
+    {
+      "name": "seed31415_fold2.json",
+      "sha256": "3457e4c729c25b90bc2bd3f19fbce91689688b2a55109df30808dd3b628a6cfb"
+    },
+    {
+      "name": "STATUS.json",
+      "sha256": "e3d610db314e88e3d9368d408b94644852a1e85d209919a291f500cc48ad4001"
+    },
+    {
+      "name": "COORDINATOR_UPSTREAM_EXECUTION_REVIEW.json",
+      "sha256": "432c8eb1f5bfa82067a12c583d4e2f9126d194acacc7b740f9739a0415246ef3"
+    },
+    {
+      "name": "COORDINATOR_UPSTREAM_REPLAY_V01_FAILURE.json",
+      "sha256": "17672250e9825555b97ee405aa9e64d4988956b369d218cda8a7dbd086851d57"
+    },
+    {
+      "name": "COORDINATOR_UPSTREAM_REPLAY_V02_STOP.json",
+      "sha256": "0f1a293b2e13e646a6b281a39157b95155ef4d2c5f0c9fd1ac0ebf09eeffd902"
+    },
+    {
+      "name": "DOWNSTREAM_ENGINEERING_V01.json",
+      "sha256": "3f334b8f23e2047cb628869eaafbdd7a0b9109fbf5b269a2791e1a95292cf7d8"
+    },
+    {
+      "name": "DOWNSTREAM_FORMAL_GATE_V06.json",
+      "sha256": "5aba6ea5c1f44c17fba82c885c8c514277e85d5a166a3e38998c5e9615f91a00"
+    },
+    {
+      "name": "DOWNSTREAM_INPUT_PREFLIGHT_V03.json",
+      "sha256": "a06b4b4543fa04651477bac462ef79d79a002954d87e6afb0ca66fe056e21637"
+    },
+    {
+      "name": "DOWNSTREAM_QUEUE_V03_PROCESS.json",
+      "sha256": "22d3db4c267bcb629fc74e312ca6bed8b70bae8e63706eb7ae5fd0ef8e6df078"
+    },
+    {
+      "name": "DOWNSTREAM_START.json",
+      "sha256": "c24eb6ef351a2f9fa51a4a0394836f5beba2483601a54ebb2ad65fd1393909c6"
+    },
+    {
+      "name": "DOWNSTREAM_TERMINAL.json",
+      "sha256": "31238c3a862d932f4a2e1dbd66a647aa1dc85ac21029ab9e053cc8aeb3d23ab2"
+    },
+    {
+      "name": "FOLD_AND_BUDGET_CANDIDATE.json",
+      "sha256": "9f9cbe22e39159919be2a8a27249a297d386dc49a9b8f94ea30594b7de99db16"
+    },
+    {
+      "name": "FOLD_AND_BUDGET_CANDIDATE_V2.json",
+      "sha256": "6638a00d673fb6eebbe5353d97d14b21800c19ddf0d9ac4a600cde0440740c83"
+    },
+    {
+      "name": "SUMMARY.json",
+      "sha256": "f9e13d6d58075d8b961e888ee63369cacdd996bf6e7d26c66698e8120a63af25"
+    },
+    {
+      "name": "UPSTREAM_ENGINEERING_V01.json",
+      "sha256": "29204749754c237f7d467dd792cd6fc61388bbd7aceb3e7558010670f5e167f8"
+    },
+    {
+      "name": "UPSTREAM_ENGINEERING_V02.json",
+      "sha256": "b314ddbe785f96b7576d6de981c123278f24420e12a9ec029fb5e322c21085e3"
+    },
+    {
+      "name": "UPSTREAM_ENGINEERING_V03.json",
+      "sha256": "f6a69690580ba08faf454f57860a4a378f43ad441f54abc35d85a57d3cee4686"
+    },
+    {
+      "name": "UPSTREAM_FORMAL_GATE.json",
+      "sha256": "8a390ca081c0fd91e5fd6479834e4dca712d869ee72eda791200ba85853917a0"
+    },
+    {
+      "name": "UPSTREAM_FORMAL_GATE_V04.json",
+      "sha256": "0ad69424fb76f827b268b63f7d45cbd954ae514c7f687d13a870e66e52322482"
+    },
+    {
+      "name": "UPSTREAM_RECOVERY_PLAN.json",
+      "sha256": "d5f46ef9f341fa43c682ed6a055f35443e9da5ad96d0225f55bdb7ad51de1044"
+    },
+    {
+      "name": "UPSTREAM_RECOVERY_PROCESS.json",
+      "sha256": "3fcf5e3d233c20eb14df58a97bf361bf863a245d692abc7dd6cc005cc5820feb"
+    },
+    {
+      "name": "UPSTREAM_RECOVERY_TERMINAL.json",
+      "sha256": "4e51fcae766b3e51c187eafe0a42117de5dd4aca28a4aa0db196860c0a68e4c2"
+    }
+  ],
+  "scope": "Root read full D24 REPORT/REVIEW, inspected both actual PNGs, independently recomputed scientific results on 2203, and checked archive hashes, source copies and static HTML local targets. No browser rendering claimed. Archive checks perform no numerical research evaluation.",
+  "scientific_status": "Completed negative development-only contrast. B_OOF all 60 trained checkpoints below same-protocol anchor; best trained mean r 0.176480208 and last 0.169019619. Selected equality is anchor fallback. Small S gain does not establish historical information contribution or independent generalization. Goal remains ACTIVE.",
+  "technical_review": "PASS_WITH_LIMITATIONS",
+  "acceptance_review": "PASS_WITH_LIMITATION: the fixed D24 comparison is completed; scientific improvement criterion is not met",
+  "parent_consistency_review": "PASS: original SS07 research goal remains active, external/test evidence frozen, no claim of ICML/NeurIPS-level completion"
+}

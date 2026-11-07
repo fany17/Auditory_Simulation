@@ -1,0 +1,586 @@
+{
+  "passed": true,
+  "checks": 583129,
+  "maximum_absolute_difference": {
+    "internal_r": 5.551115123125783e-16,
+    "internal_MSE_descriptive": 7.450580596923828e-09,
+    "internal_R2_descriptive": 7.450580596923828e-08,
+    "absolute_phase": 1.6653345369377348e-16,
+    "absolute_weighted": 1.3877787807814457e-16,
+    "internal_seed_differences": 4.553649124439119e-18,
+    "internal_point": 2.168404344971009e-18,
+    "internal_95": 5.637851296924623e-18,
+    "internal_Bonferroni": 7.37257477290143e-18,
+    "internal_family_sensitivity": 5.637851296924623e-18,
+    "internal_support_point": 3.469446951953614e-18,
+    "internal_support_95": 6.071532165918825e-18,
+    "history_seeds": 7.15573433840433e-18,
+    "history_point": 9.893344823930228e-19,
+    "history_95": 6.044427111606687e-18,
+    "history_sensitivity": 5.095750210681871e-18,
+    "history_matched_true_absolute": 5.551115123125783e-17,
+    "DTU_rA": 3.885780586188048e-16,
+    "DTU_rB": 3.3306690738754696e-16,
+    "DTU_absolute": 1.3877787807814457e-17,
+    "DTU_person_absolute": 8.326672684688674e-17,
+    "DTU_accuracy": 0.0,
+    "DTU_person_accuracy": 0.0,
+    "DTU_point": 2.6020852139652106e-18,
+    "DTU_seed_diff": 7.806255641895632e-18,
+    "DTU_person_diff": 2.5505856107721492e-17,
+    "DTU_95": 3.903127820947816e-18,
+    "DTU_Bonferroni": 4.9873299934333204e-18,
+    "DTU_LOPO": 3.469446951953614e-18
+  },
+  "maximum_scaled_difference": {
+    "internal_r": 5.551115123125783e-16,
+    "internal_MSE_descriptive": 1.024275637125286e-15,
+    "internal_R2_descriptive": 1.2331195973207707e-15,
+    "absolute_phase": 1.6653345369377348e-16,
+    "absolute_weighted": 1.3877787807814457e-16,
+    "internal_seed_differences": 4.553649124439119e-18,
+    "internal_point": 2.168404344971009e-18,
+    "internal_95": 5.637851296924623e-18,
+    "internal_Bonferroni": 7.37257477290143e-18,
+    "internal_family_sensitivity": 5.637851296924623e-18,
+    "internal_support_point": 3.469446951953614e-18,
+    "internal_support_95": 6.071532165918825e-18,
+    "history_seeds": 7.15573433840433e-18,
+    "history_point": 9.893344823930228e-19,
+    "history_95": 6.044427111606687e-18,
+    "history_sensitivity": 5.095750210681871e-18,
+    "history_matched_true_absolute": 5.551115123125783e-17,
+    "DTU_rA": 3.885780586188048e-16,
+    "DTU_rB": 3.3306690738754696e-16,
+    "DTU_absolute": 1.3877787807814457e-17,
+    "DTU_person_absolute": 8.326672684688674e-17,
+    "DTU_accuracy": 0.0,
+    "DTU_person_accuracy": 0.0,
+    "DTU_point": 2.6020852139652106e-18,
+    "DTU_seed_diff": 7.806255641895632e-18,
+    "DTU_person_diff": 2.5505856107721492e-17,
+    "DTU_95": 3.903127820947816e-18,
+    "DTU_Bonferroni": 4.9873299934333204e-18,
+    "DTU_LOPO": 3.469446951953614e-18
+  },
+  "internal": {
+    "cells": [
+      {
+        "seed": 1024,
+        "condition": "native_P",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "P_EMA",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "P_FT",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "m4_current_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "static_m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "output_prior_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "static_alignment",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "m1_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "m2_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "m3_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "m5_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "history__reset",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "history__content_blind",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "history__shuffled",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "history__older_outside_fused_support",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 1024,
+        "condition": "history__same_person_wrong_family",
+        "blocks": 1597,
+        "records": 119
+      },
+      {
+        "seed": 1024,
+        "condition": "history__same_story_wrong_person",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "native_P",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "P_EMA",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "P_FT",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "m4_current_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "static_m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "output_prior_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "static_alignment",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "m1_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "m2_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "m3_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "m5_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "history__reset",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "history__content_blind",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "history__shuffled",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "history__older_outside_fused_support",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 2026,
+        "condition": "history__same_person_wrong_family",
+        "blocks": 1597,
+        "records": 119
+      },
+      {
+        "seed": 2026,
+        "condition": "history__same_story_wrong_person",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "native_P",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "P_EMA",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "P_FT",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "m4_current_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "static_m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "output_prior_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "static_alignment",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "m1_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "m2_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "m3_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "m5_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "history__reset",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "history__content_blind",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "history__shuffled",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "history__older_outside_fused_support",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 31415,
+        "condition": "history__same_person_wrong_family",
+        "blocks": 1597,
+        "records": 119
+      },
+      {
+        "seed": 31415,
+        "condition": "history__same_story_wrong_person",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "native_P",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "P_EMA",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "P_FT",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "m4_current_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "static_m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "output_prior_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "static_alignment",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "history__reset",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "history__content_blind",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "history__shuffled",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "history__older_outside_fused_support",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 42,
+        "condition": "history__same_person_wrong_family",
+        "blocks": 1597,
+        "records": 119
+      },
+      {
+        "seed": 42,
+        "condition": "history__same_story_wrong_person",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "native_P",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "P_EMA",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "P_FT",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "m4_current_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "static_m4_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "output_prior_h16",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "static_alignment",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "history__reset",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "history__content_blind",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "history__shuffled",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "history__older_outside_fused_support",
+        "blocks": 2044,
+        "records": 144
+      },
+      {
+        "seed": 12345,
+        "condition": "history__same_person_wrong_family",
+        "blocks": 1597,
+        "records": 119
+      },
+      {
+        "seed": 12345,
+        "condition": "history__same_story_wrong_person",
+        "blocks": 2044,
+        "records": 144
+      }
+    ],
+    "all_block_metrics_replayed": 165373
+  },
+  "external": {
+    "cells": 40,
+    "all_trial_pairs_replayed": 43200
+  },
+  "seconds": 77.84264540672302,
+  "all_actual_targets_and_fused_predictions_stayed_on_server": true,
+  "independent_centered_dot_product_and_frequency_matrix_implementation": true,
+  "same_prespecified_rng_draw_order_20k_intervals_and_original_stratum_weights": true,
+  "does_not_validate_neural_prediction_correctness": true,
+  "raw_input_neural_replay_required_separately": true,
+  "scientific_goal_complete": false,
+  "review_version": 2,
+  "scaled_descriptive_metrics": [
+    "MSE_descriptive",
+    "R2_descriptive"
+  ],
+  "review_protocol_sha256": "97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d",
+  "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+  "ready_sha256": "02c474c140c0bdb46ea841880d27ba1848dd497ecf3b47f7980a6dda21d23a43",
+  "source_sha256": {
+    "pub_01_s03_ss07_review_math.py": "0fadae373c195b5f9fe081d975cbe64f01971ce9ea17ef4244697d6f956be11f",
+    "pub_01_s03_ss07_review_metrics_v2.py": "98fd5a3f6922219507d5356215b9d6574747a0da3fc4fa6c1cd0a7ecc5159bfb"
+  }
+}

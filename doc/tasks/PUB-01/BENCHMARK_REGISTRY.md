@@ -1,5 +1,15 @@
 # PUB-01 — EEG 听觉解码竞品与任务基准表
 
+2026-11-01 SS07 D11（诊断，非新确认性benchmark）：固定15fit/6干预/24评分全部完成。Past r=.182063<Ccap .182340，Past−Prefix/Person/Older/Neutral、−Add/F均三个seed负；Past−Current full+.000110全正、warm2/3正，六预设条件不满足。Past MSE改善保留，静态参考略益低于既有F，不冒充动态历史机制/新方法。独立26source/551inputs/475支持/15正规方程/60直接状态/48缓存/24聚合及全文三图通过，observation_state_probe/run01 REPORT/REVIEW、三图HTML归档完成且说明/副本/链接通过；无NN前向/更新/旧test/DTU或下载，goal ACTIVE。
+
+2026-11-01 SS07 D10：旧内部36项全部完成，PFT*/Ponly/C/Ccap/W/F加权r=.168945/.170374/.171197/.173348/.173393/.174284，三个主要内部配对各组/seed全正；C−Ponly held全负、W−Ccap mixed和F窗口退化完整保留。306source/600inputs/36聚合/72cached、全部rawFT桥及全文三图实际review有限制通过，finetuned_internal_audit/run01 REPORT/REVIEW/HTML归档完成。旧test仍POST-HOC INTERNAL EXPLORATORY，无新fit/λ/DTU或独立确认；D11仅原TRAIN/VAL慢观测状态最小PLAN/源码资产盘点，未新增方法/数据授权，goal ACTIVE。
+
+2026-11-01 SS07 D9：六个匹配物理目标解完成，Ccap/W/F VALr=.182340/.182474/.183874，F−W三seed正均+.001400；F单窗MSE352.068/r3s.003435、巨大bias在原Hann近相消，固定融合点增益和严重窗口表示退化并存。全TRAIN独立梯度/目标/真残差、全VAL及12缓存重建、全文四图实际review有限制通过，physical_objective/run01/REPORT/REVIEW与HTML已归档；未建立通用稳健、历史或独立确认，goal ACTIVE。D10仅固定6角色×3seed旧seen/held事后内部审计的PLAN/资产/预算准备，不能据旧test调参，DTU关闭。
+
+2026-11-01 SS07 D8：强FT epoch4冻结encoder/head上的27固定岭解完成，P_FT*/Ponly/C/Ccap三seed VAL r=.174141/.177842/.180541/.182340，Ccap两个primary均三seed正。全部FT历史loss/raw桥差0；实际27系数/30聚合/18缓存重建和全文三PNG独立review有限制通过，完整finetuned_readout_transfer/run01图文表/REVIEW与HTML归档齐备。新增TRAIN岭/标定/搜索成本真实，重复known-person VAL不称独立泛化或纯loss因果；普通ridge与平方不是方法创新，无历史输入，goal ACTIVE。D9仅精确连续监督PLAN准备，不打开旧test/DTU、不改D8λ。
+
+2026-11-01 SS07 D7：冻结current读出的36项旧内部评分完成、独立36聚合/72缓存重建及全文三图审阅通过，完整internal_generalization/run01/REPORT.md与REVIEW.md/HTML归档齐备。P*/P-only/Ccap原2:1加权r=.160248/.164642/.168943；Ccap对前两者每seed/组均正。同三seed历史完整P_FT=.168944726，与Ccap点均值几乎相同，配对方向混合，不能宣称超越/等效/非劣；额外预算与边界策略不同。旧测试POST-HOC INTERNAL EXPLORATORY，无独立确认或连续历史收益，goal ACTIVE。下一步仅准备P_FT TRAIN/VAL最小读出诊断及资源PLAN，不用旧test排名调参。
+
 2026-10-15交付：SS02 COMPLETED / PASS_WITH_LIMITATION。HDPS原100Hz/M、76人599对、test12776query：Top1/5/10=12.03/30.45/42.10%，shuffle Top1=.53%；Transformer原架构/public fold4/XLSR19、70训练/69seen/13heldout：2AFC=83.53/80.08%（加权82.38%）、EEG-only原Conv32包络r=.1688/.1403（加权.1593）。三运行独立review通过，完整论文条件未复现。M论文数字仍未核实，不与MWG20%比差；100–235候选原本存在固定公开索引。下述10-13等待记录为历史。
 
 状态：`PROTOCOL_AUDITED / REPRODUCTION_HOLD`（2026-10-13追加）。原raw100Hz/M70story与独立HDPS论文功能模型batch256工程smoke已完成；原split600/647对就绪，必要47条raw受限。**A+B同条件正式训练/测试NOT_RUN，不能判断一致性**。Transformer EEGcheckpoint失效且official test未齐；XLSR原声音权重已取得。恢复清单/三级review见`reports/pub_01/s03/strong_baselines/`；无76人/64Hz替代分数，SS02 WAITING_EXTERNAL / HOLD，无后台作业。

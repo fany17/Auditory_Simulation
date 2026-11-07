@@ -1,0 +1,28 @@
+{
+  "findings": [
+    "D10固定六角色×三seed×seen/heldout=36项完成，全部旧测试POST-HOC INTERNAL EXPLORATORY。原2:1加权r PFT*/Ponly/C/Ccap/W/F=.168945/.170374/.171197/.173348/.173393/.174284。三个primary F−W/Ccap−PFT*/Ccap−Ponly在两组各seed均正，不能称新独立确认。",
+    "F−W均差+.000891735、fused MSE−.000087688，同时F单窗MSE seen351.854/held352.247、3秒r .003885/.004506、overlap约706；固定Hann点增益与严重虚拟窗口表示退化并存，不自动否定最终连续输出或宣称通用稳健可用。",
+    "次要阴性完整保留：C−Ponly heldout三seed全负、均−.000914；W−Ccap加权仅1/3正、微均差+.000045。没有根据旧test排名重训/换λ，额外历史贡献、外部确认和方法创新仍缺，goal ACTIVE。"
+  ],
+  "overview": [
+    "冻结D8强FT当前读出与D9 W/F，TRAIN标定/统计/系数全继承，原2044块→person→2:1不变。FT原global64跨record、双stack/layout/grad/eval/precision保持，同次保存Z/P；36cached VAL桥通过，300VAL Z/P gold、636test Decoder与432原FT未缩放fused波形桥差均0。",
+    "独立306source/600inputs、全部36原mask/逐人/2:1聚合差0，72缓存重建block r≤2.78e−16、MSE/Hann≤2.70e−14，首4精确，旧同三seedFT .1689447264恢复。原源/协议/模型不变，renderer字段适配失败保留后仅改呈现。",
+    "主run147.210s/CPU539.147s，254076主+936工程encoder/head窗，共255012；无新神经/岭拟合、TRAIN统计重拟合、λ选择或DTU。新NPY1.756GB、总24.4245GiB<25GiB，free约25.86GB>20GiB；审核另3.087s/CPU17.644s分列。"
+  ],
+  "figure_comments": {
+    "01_ABSOLUTE_PAIRED.png": "左/中/右为seen、heldout、原2:1 person宏r，三色同seed六固定角色，黑方块均值，独立纵轴、无CI。PFT*/Ccap/F加权.168945/.173348/.174284；两组绝对水平不同，heldout整体仍低。参数在预测前冻结且无本轮选择，旧记录历史暴露不能当新确认、三seed不是独立人物/刺激样本。",
+    "02_FROZEN_CONTRASTS.png": "上排三个预设primary F−W/Ccap−PFT*/Ccap−Ponly，两组每seed全正；加权均+.000892/+.004403/+.002973。下排三个secondary保留负值：W−Ccap加权仅1/3正且held均小负，C−Ponly held三seed全负、seen/加权正。纵轴独立、零线无差，不据排名再训练或宣称显著/等效。",
+    "03_CONTINUITY_MSE.png": "左/中是两组uniform96 overlap MSE对数轴，F约705.608/706.262与其他约.003–.005全展示；右是原2:1 person宏加权单窗/融合target MSE，灰间距disagreement。F weighted .591967/fused .261612/D .330355，较W加权误差+.329896而D+.329984，故fused−.000087688，恒等误差≤2.58e−12。它是既有F表示在旧测试的行为，不是更一致或历史机制证明；小MSE差在正文表中给出，C的MSE还更低。"
+  },
+  "caveats": [
+    "旧seen/heldout均已暴露；heldout只相对原训练fold，不是整个研究未见。人物、来源/刺激依赖与反复开发仍在，无CI/p值、新外部确认或ICML/NeurIPS充分性。",
+    "F近null bias相消既不能凭低窗口r判最终输出无效，也未验证单窗独立/其他融合边界/完整低精度稳健性。无额外past EEG输入，不称连续记忆。",
+    "完整FT指冻结5个额外epoch预算，不证明最优或收敛；D8/D9学习、标定、搜索与求解成本非零，不是等总成本或纯非线性/纯loss归因。",
+    "432桥是旧未缩放fused波形，不是旧单窗raw gold或独立神经数学重写。3秒undefined全0、有效块不删；本地无Z/P/原信号/权重/coef。",
+    "生成器首版字段名不符的旧source/partial CSV/log在presentation_attempt01保留；没有重跑36科学评分或改source/protocol。新OpenNeuro scope仍等用户明确答复，不取payload。"
+  ],
+  "next_steps": [
+    "完成D10实际最终review/REVIEW/三图HTML归档及正常提交推送，科学结果冻结，PR6保持Draft不合并。",
+    "仅准备原TRAIN/VAL的缓慢观测/噪声状态最小科学PLAN，先区分已有M2/M5/D4/D5与EA/AEA/听觉自适应先例，保持强FT+Ccap和当前/静态状态对照、固定当前输入的历史干预；具体审定前不新模型训练、不读旧test/DTU、不扩大下载。"
+  ]
+}

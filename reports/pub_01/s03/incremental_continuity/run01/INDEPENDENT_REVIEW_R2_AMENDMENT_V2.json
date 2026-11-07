@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "time": 1793491351.8240194,
+  "reason": "legalVAL large-magnitude descriptiveR2 sum-vs-dot rounding can exceed an absolute1e-10 despite negligible scaled error",
+  "old_review_protocol_sha256": "5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795",
+  "legal_VAL_evidence_sha256": "a644f4e39ff5bf3922d966358b4e5d0fe5c3724f686efcd462f72183ee8cc1ff",
+  "numeric_policy": {
+    "scaled_descriptive_metrics": [
+      "MSE_descriptive",
+      "R2_descriptive"
+    ],
+    "scaled_tolerance": 1e-10,
+    "denominator": "max(1, abs(original_metric))",
+    "r_differences_and_intervals_absolute_tolerance_unchanged": 1e-10,
+    "raw_waveform_absolute_tolerance_unchanged": 1e-06,
+    "exact_constant_rejection_unchanged": true
+  },
+  "old8_sources_old3_proofs_and_protocol_retained_in_place_and_backed_up": true,
+  "raw_replay_uses_unchanged_v1_source_geometry_and_protocol": true,
+  "metrics_use_v2_protocol_and_combined_completion_marker": true,
+  "original_training_evaluation_predictions_scores_masks_and_choices_unchanged": true,
+  "not_an_actual_scientific_trial_failure_or_score_based_amendment": true,
+  "diff_sha256": "29759a81a3b23311f997fdb2c5792457db40b990f9894aba00b3dc1608ce5fcd"
+}

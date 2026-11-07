@@ -1,0 +1,43 @@
+{
+  "condition": "frozen_p",
+  "seed": 1024,
+  "selected_epoch": 4,
+  "windows": 30500,
+  "records": 49,
+  "persons": 49,
+  "blocks": 752,
+  "checkpoint_sha256": "1a605cad608a9a88eac2b24c31bc8857e1437bcc79fe170f7b45bcab565b947d",
+  "actual_weight_changes": {
+    "encoder": {
+      "scalars": 3372360,
+      "changed_scalars": 0,
+      "max_absolute_change": 0.0,
+      "tensors": 164
+    },
+    "head": {
+      "scalars": 257,
+      "changed_scalars": 257,
+      "max_absolute_change": 1.2007522583007812,
+      "tensors": 2
+    }
+  },
+  "fresh_minus_primary_reference_wave_max_absolute": 0.0,
+  "reference_wave_max_absolute": 313.4454650878906,
+  "fresh_wave_max_absolute": 313.4454650878906,
+  "normalized_wave_error": 0.0,
+  "original_absolute_wave_gate_1e6_passed": true,
+  "normalized_wave_gate_1e6_passed": true,
+  "encoder_geometry": "original cache per-record256 including tails",
+  "encoder_eval_and_no_grad": true,
+  "encoder_parameter_grad_flags_match_original_forward": true,
+  "fresh_VAL3s_r": 0.14876351802083576,
+  "fresh_VAL60s_person_r": 0.16115477106848902,
+  "VAL3s_absolute_difference": 9.958597835257876e-11,
+  "VAL60s_absolute_difference": 2.7755575615628914e-17,
+  "max_block_difference": 2.7755575615628914e-16,
+  "max_person_difference": 1.1102230246251565e-16,
+  "same_array_independent_formula_max_difference": 2.7755575615628914e-16,
+  "primary_wave_acceptance": "original absolute1e-6, normalized reported only",
+  "passed": true,
+  "test_read": false
+}

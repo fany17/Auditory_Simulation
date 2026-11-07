@@ -1,0 +1,25 @@
+{
+  "seed": 2026,
+  "roles": [
+    "P_FT_star",
+    "Ccap",
+    "W",
+    "F"
+  ],
+  "wall_seconds": 33.64252328872681,
+  "CPU_seconds": 59.516634821,
+  "peak_RSS_KiB": 1835476,
+  "peak_GPU_allocated_bytes": 193392128,
+  "main_encoder_head_windows": 45429,
+  "extra_bridge_windows": 181,
+  "new_model_fits": 0,
+  "input_record_gain_statistics_reused": 380,
+  "resource": {
+    "home_root_bytes": 1846208507,
+    "cache_root_bytes": 628011008,
+    "combined_run_bytes": 2474219515,
+    "all_SS07_NPY_bytes": 28029744756,
+    "home_free_bytes": 23181045760,
+    "cache_free_bytes": 178964004864
+  }
+}

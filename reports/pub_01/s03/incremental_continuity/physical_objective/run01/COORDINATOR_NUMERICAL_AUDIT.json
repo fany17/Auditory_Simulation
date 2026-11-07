@@ -1,0 +1,253 @@
+{
+  "status": "PASS_ACTUAL_NUMERICAL_RESULTS",
+  "goal_complete": false,
+  "protocol_sha256": "867042734282eeb7f9c7bf70e381996cb50072893afaedabd7075c30ee4f1499",
+  "scope_sha256": "9f3a7bdaf2f463a3603cad7b539fb8c99bef2149115b0099bba37bdab7d9028f",
+  "source_pins_verified": 275,
+  "input_fingerprints_verified": 535,
+  "all6_VAL_original_masks_exact": true,
+  "aggregation_max": 0.0,
+  "TRAIN_independent_full_physical_gradient_checks": [
+    {
+      "seed": 1024,
+      "role": "W",
+      "reported_converged": true,
+      "iterations": 59,
+      "Hessian_actions": 64,
+      "reported_true_residual": 9.956507596065626e-09,
+      "independent_true_residual": 9.956507585767313e-09,
+      "independent_below_formal_threshold": true,
+      "residual_absolute_difference": 1.0298312599501489e-17,
+      "TRAIN_objective_max_abs": 2.7755575615628914e-16,
+      "TRAIN_objectives": {
+        "W_data": 0.19511246425550519,
+        "F_data": 0.19471506065562744,
+        "disagreement": 0.00039740359987729026,
+        "regularizer": 0.00038067275950488935,
+        "W_total": 0.1954931370150101,
+        "F_total": 0.19509573341513234
+      }
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "reported_converged": true,
+      "iterations": 61,
+      "Hessian_actions": 67,
+      "reported_true_residual": 9.184006774722745e-09,
+      "independent_true_residual": 9.184006671048899e-09,
+      "independent_below_formal_threshold": true,
+      "residual_absolute_difference": 1.0367384662191505e-16,
+      "TRAIN_objective_max_abs": 2.6867397195928788e-14,
+      "TRAIN_objectives": {
+        "W_data": 0.5295486431763422,
+        "F_data": 0.19449387619828398,
+        "disagreement": 0.33505476697805864,
+        "regularizer": 0.0004419616784129536,
+        "W_total": 0.5299906048547551,
+        "F_total": 0.19493583787669694
+      }
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "reported_converged": true,
+      "iterations": 57,
+      "Hessian_actions": 62,
+      "reported_true_residual": 9.951854078162017e-09,
+      "independent_true_residual": 9.951854063409126e-09,
+      "independent_below_formal_threshold": true,
+      "residual_absolute_difference": 1.475289030197513e-17,
+      "TRAIN_objective_max_abs": 5.551115123125783e-17,
+      "TRAIN_objectives": {
+        "W_data": 0.19510273853395674,
+        "F_data": 0.194739891490044,
+        "disagreement": 0.00036284704391267196,
+        "regularizer": 0.00038403617156661896,
+        "W_total": 0.19548677470552336,
+        "F_total": 0.19512392766161063
+      }
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "reported_converged": true,
+      "iterations": 59,
+      "Hessian_actions": 64,
+      "reported_true_residual": 8.383953319384083e-09,
+      "independent_true_residual": 8.383953449999878e-09,
+      "independent_below_formal_threshold": true,
+      "residual_absolute_difference": 1.30615794152147e-16,
+      "TRAIN_objective_max_abs": 2.6700863742235015e-14,
+      "TRAIN_objectives": {
+        "W_data": 0.5309524440617831,
+        "F_data": 0.19454400482487327,
+        "disagreement": 0.33640843923690983,
+        "regularizer": 0.00043932067564839475,
+        "W_total": 0.5313917647374315,
+        "F_total": 0.19498332550052166
+      }
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "reported_converged": true,
+      "iterations": 59,
+      "Hessian_actions": 64,
+      "reported_true_residual": 7.743408374337897e-09,
+      "independent_true_residual": 7.743408375615056e-09,
+      "independent_below_formal_threshold": true,
+      "residual_absolute_difference": 1.2771585939757492e-18,
+      "TRAIN_objective_max_abs": 1.1102230246251565e-16,
+      "TRAIN_objectives": {
+        "W_data": 0.19502361944110905,
+        "F_data": 0.1946256518691422,
+        "disagreement": 0.0003979675719670725,
+        "regularizer": 0.00036565921945337757,
+        "W_total": 0.19538927866056244,
+        "F_total": 0.1949913110885956
+      }
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "reported_converged": true,
+      "iterations": 60,
+      "Hessian_actions": 65,
+      "reported_true_residual": 9.440294524934501e-09,
+      "independent_true_residual": 9.440294544600935e-09,
+      "independent_below_formal_threshold": true,
+      "residual_absolute_difference": 1.9666434130407497e-17,
+      "TRAIN_objective_max_abs": 2.5868196473766147e-14,
+      "TRAIN_objectives": {
+        "W_data": 0.5198589252390474,
+        "F_data": 0.194390838290494,
+        "disagreement": 0.3254680869485539,
+        "regularizer": 0.00043878856136776457,
+        "W_total": 0.5202977138004152,
+        "F_total": 0.19482962685186175
+      }
+    }
+  ],
+  "TRAIN_objective_max": 2.6867397195928788e-14,
+  "true_residual_absolute_difference_max": 1.30615794152147e-16,
+  "cached_cases": 12,
+  "cached_block_r_max": 2.220446049250313e-16,
+  "cached_MSE_Hann_max": 2.6922908347160046e-14,
+  "cached_3s_r_max": 0.0,
+  "first4_max": 0.0,
+  "Hann_aggregate_identity_max": 2.7033930649622562e-14,
+  "undefined3s": {
+    "1024:W": 0,
+    "1024:F": 0,
+    "2026:W": 0,
+    "2026:F": 0,
+    "31415:W": 0,
+    "31415:F": 0
+  },
+  "reconstruction_cases": [
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.3877787807814457e-16,
+      "MSE_and_Hann_max": 2.927345865710862e-18
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.1102230246251565e-16,
+      "MSE_and_Hann_max": 2.8189256484623115e-18
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 2.6756374893466273e-14
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.1102230246251565e-16,
+      "MSE_and_Hann_max": 2.681188604469753e-14
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 3.469446951953614e-18
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 4.2825985813177425e-18
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.3877787807814457e-16,
+      "MSE_and_Hann_max": 2.6867397195928788e-14
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 1.1102230246251565e-16,
+      "MSE_and_Hann_max": 2.6922908347160046e-14
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 2.220446049250313e-16,
+      "MSE_and_Hann_max": 3.469446951953614e-18
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 8.326672684688674e-17,
+      "MSE_and_Hann_max": 4.30970363562988e-18
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "r_max": 1.6653345369377348e-16,
+      "MSE_and_Hann_max": 2.5701663020072374e-14
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "r_max": 6.938893903907228e-17,
+      "MSE_and_Hann_max": 2.5701663020072374e-14
+    }
+  ],
+  "mean_r": {
+    "W": 0.18247396081083575,
+    "F": 0.18387384265527906
+  },
+  "paired_F_minus_W": [
+    0.0014234729314535621,
+    0.0014524337609453097,
+    0.0013237388409310658
+  ],
+  "review_cost": {
+    "wall_seconds": 69.71373724937439,
+    "CPU_seconds": 72.97196699700001,
+    "peak_RSS_bytes": 4504588288,
+    "peak_GPU_allocated_bytes": 6993585152,
+    "TRAIN_readout_window_predictions": 1514724,
+    "encoder_or_head_forward": 0,
+    "newfits": 0,
+    "new_NPY": 0
+  }
+}

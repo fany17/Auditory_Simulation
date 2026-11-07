@@ -1,0 +1,28 @@
+{
+  "stage": "SS07 D11 background audit during fixed execution",
+  "date": "2026-11-01",
+  "changes_to_frozen_experiment": false,
+  "new_data_download": false,
+  "observations": [
+    {
+      "title": "Riemannian geometry-based decoding of the directional focus of auditory attention using EEG",
+      "authors": "Simon Geirnaert, Tom Francart, Alexander Bertrand",
+      "year": 2021,
+      "source": "https://simongeirnaert.com/publication/riemannian2021geirnaert/riemannian2021geirnaert.pdf",
+      "actual_read_scope": "Author PDF abstract, introduction, Section2 equations1-6 and Algorithm1; experiment setup through Section3.1. No new performance claim derived.",
+      "verified": "Regularized EEG covariance is mapped relative to a TRAIN Riemannian reference and classified with a linear SVM. The prediction is attention direction rather than a continuous speech envelope.",
+      "implication": "Spatial covariance and a TRAIN reference are established EEG/AAD tools. A positive D11 result would not establish their novelty, and this classification task is not a numerical envelope-reconstruction baseline."
+    },
+    {
+      "title": "A Riemannian Modification of Artifact Subspace Reconstruction for EEG Artifact Handling",
+      "authors": "Sarah Blum, Nadine S J Jacobsen, Martin G Bleichner, Stefan Debener",
+      "year": 2019,
+      "doi": "10.3389/fnhum.2019.00141",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6499032/",
+      "actual_read_scope": "Abstract, introduction, opening Methods: original ASR and clean_rawdata, including calibration covariance and PCA description.",
+      "verified": "ASR compares covariance-derived component statistics with clean calibration data; rASR modifies covariance processing using Riemannian geometry. Its stated evaluation concerns artifact reduction and evoked responses.",
+      "implication": "Dynamic covariance-based EEG correction is prior art. D11 has no clean artifact calibration, artifact labels, inverse covariance transform or intervention on the current EEG, so it must not be named an artifact/noise correction method or an ASR reproduction."
+    }
+  ],
+  "scientific_inference": "Any future claim needs a demonstrated task-specific mechanism beyond adding a covariance summary or a recurrent state. D11 can at most establish bounded conditional predictive information under its declared controls; independent generalization remains outstanding."
+}

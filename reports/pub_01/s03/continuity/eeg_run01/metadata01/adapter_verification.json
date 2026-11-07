@@ -1,0 +1,1 @@
+{"technical": "PASS", "returncode": 0, "test_methods": 7, "CUDA_actual64channel_60s_output_gradient_chunk_parity": true, "manual_M5_BPTT_and_observation_aux_gradient_parity": true, "mode_isolation_and_zero_lag_fixed": true}

@@ -1,0 +1,128 @@
+{
+  "frozen": true,
+  "passed": true,
+  "time": 1793500369.2586725,
+  "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817",
+  "actual_final_primary_five_seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "records": [
+    {
+      "seed": 1024,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 0,
+      "primary_checkpoint_sha256": "996b4207083bbadae7a4c2863b72bb7a83526d09b1cfdaf08863f89fe5ae7dad",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 1024,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 605,
+      "primary_checkpoint_sha256": "996b4207083bbadae7a4c2863b72bb7a83526d09b1cfdaf08863f89fe5ae7dad",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 2026,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 0,
+      "primary_checkpoint_sha256": "98896297b878b0da6e365d368a9bf6ae0bb739154580a34a1f0d25d89051d6b6",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 2026,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 605,
+      "primary_checkpoint_sha256": "98896297b878b0da6e365d368a9bf6ae0bb739154580a34a1f0d25d89051d6b6",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 31415,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 0,
+      "primary_checkpoint_sha256": "6ac70376dc7c67836437ace85e7fa0ed22fa7c5539c3101cf9fc6781f2d8ba98",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 31415,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 605,
+      "primary_checkpoint_sha256": "6ac70376dc7c67836437ace85e7fa0ed22fa7c5539c3101cf9fc6781f2d8ba98",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 42,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 0,
+      "primary_checkpoint_sha256": "fdcdeadaecd4818aae810135c8c61e861d634b17e26e9297fdc02f3ea2478ce3",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 42,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 605,
+      "primary_checkpoint_sha256": "fdcdeadaecd4818aae810135c8c61e861d634b17e26e9297fdc02f3ea2478ce3",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 12345,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 0,
+      "primary_checkpoint_sha256": "138072045282fc3a27b187854f71aaf1376fc507c1cbe537564f367ba08e4151",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    },
+    {
+      "seed": 12345,
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "phase": "val",
+      "global_offset": 605,
+      "primary_checkpoint_sha256": "138072045282fc3a27b187854f71aaf1376fc507c1cbe537564f367ba08e4151",
+      "normal_true_bridge_max_abs": 0.0,
+      "prespecified_tolerance": 1e-06,
+      "native_EMA_tau0_exact_identity": true,
+      "current_z_unchanged": true
+    }
+  ],
+  "errors": [],
+  "no_test_or_DTU_inputs_or_scores": true,
+  "model_selection_or_threshold_changes": false
+}

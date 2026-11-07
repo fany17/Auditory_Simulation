@@ -1,0 +1,21 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SS06_ONLY",
+  "checks": {
+    "required_outputs": true,
+    "39_actual_runs_243_conditions": true,
+    "13variants_3seeds": true,
+    "same_supervised_steps": true,
+    "correct_endpoint_blocks": true,
+    "correct_audit_group_counts": true,
+    "eight_frozen_contrasts": true,
+    "metrics_match_actual_evidence": true,
+    "SSL_all_complete_train_spans_and_shared_weights": true,
+    "post_review_actual_metrics_and_raw_CPU": true,
+    "internal_audit_and_same_agent_disclosed": true,
+    "no_signal_or_weight_payload": true
+  },
+  "maximum_metric_difference": 0.0,
+  "scope": "same-agent separate package pass; negative/positive outcomes do not determine technical acceptance"
+}

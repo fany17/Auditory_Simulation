@@ -1,0 +1,6 @@
+{
+  "epoch": 1793472443.3132663,
+  "reason": "original config template has seed1024; training RNG/outer checkpoint seed correct for all seeds",
+  "resolution": "each pretrain_seed/RESOLVED_CONFIG.json distinguishes original reference vs actual config; historical/source freeze untouched; no restart/model/budget change",
+  "test_read": false
+}

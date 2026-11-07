@@ -1,0 +1,24 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_engineering.py\", line 136, in <module>\n    try:engineering(args.device)\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_engineering.py\", line 90, in engineering\n    loss=objective(prediction,target);loss.backward();grads=gradient_summary(model)\n         ^^^^^^^^^\nNameError: name 'objective' is not defined\n",
+  "completed_rows": 0,
+  "counts_completed_rows": {},
+  "unfinished_model_invoked_component_counts": {
+    "current_encoder_prefix_windows": 64,
+    "current_projection_windows": 64,
+    "current_head_windows": 64,
+    "frozen_encoder_prefix_windows": 126,
+    "attention_query_windows": 63,
+    "prior_projection_windows": 0
+  },
+  "extra_counts": {
+    "reference_encoder_prefix_windows": 128,
+    "reference_projection_windows": 128,
+    "reference_head_windows": 128,
+    "readout_only_windows": 63,
+    "readout_VJP_calls": 1,
+    "attention_query_VJP_calls": 0,
+    "temporary_optimizer_updates": 0
+  },
+  "warning": "Invoked component windows include an incomplete operation if a kernel raised; exact completed internal operations are not fabricated",
+  "automatic_retry": false
+}

@@ -1,0 +1,1142 @@
+{
+  "time": 1793603779.3024497,
+  "old_pid": 1379762,
+  "old_start_ticks": "753013869",
+  "termination": "Only verified own v1 transport job; all source/log/protocol and verified outputs retained",
+  "reason": "Measured2MiB9.360s/8MiB40.028s, four streams forecast exceeds4h; switch to8streams/BLAS1, same scientific adapter",
+  "old_processed_verified": 16,
+  "old_record_rows": [
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-01_eeg.eeg",
+      "record": "sub-001_task-listening_run-01_eeg",
+      "subject": "sub-001",
+      "run": "01",
+      "source_sha256": "3b4cc81b17535ce2f4a9accdbd1e5a30f7bec5484b8648ac474b0f139044ff96",
+      "source_bytes": 51380224,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-01_eeg.npy",
+      "processed_bytes": 2909568,
+      "processed_sha256": "46a0c6244cb5801cdf4a2e8a8266ceb61b5e237486008adcf35a434228419786",
+      "channel_table_git_blob": "84de42c847b21f0cc1cb4832f3594e2985179f6e",
+      "good_channels": 123,
+      "calibration": {
+        "A_record": 6659423.3771349965,
+        "A_source": 5.662644679918114,
+        "gain": 8.503205696998777e-07,
+        "time_support": [
+          0,
+          11365
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.4125941458869877,
+        5.078403253449361,
+        11.20291462357384
+      ],
+      "wall_seconds": 2.7470858097076416,
+      "mask": {
+        "length": 11365,
+        "windows": 117,
+        "covered": 11326,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 7680,
+          "stop": 11365,
+          "covered": 3647,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-03_eeg.eeg",
+      "record": "sub-001_task-listening_run-03_eeg",
+      "subject": "sub-001",
+      "run": "03",
+      "source_sha256": "02c970b6306023f009a81aa52327fe6c16b71bc383a0c9e53237831ff643d9f5",
+      "source_bytes": 49545216,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-03_eeg.npy",
+      "processed_bytes": 2950528,
+      "processed_sha256": "6c708a3544f2cace8b5482b823d5c8b3d4695e44c2047bbfb06fe6ad6dbdb0bd",
+      "channel_table_git_blob": "a55a4e5edf89ebe894707c24e7739cc694c14e84",
+      "good_channels": 125,
+      "calibration": {
+        "A_record": 6199670.772321748,
+        "A_source": 5.662644679918114,
+        "gain": 9.133782886018446e-07,
+        "time_support": [
+          0,
+          11525
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.277360462322189,
+        5.1818146346763765,
+        10.70772013899732
+      ],
+      "wall_seconds": 156.62903714179993,
+      "mask": {
+        "length": 11525,
+        "windows": 119,
+        "covered": 11518,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 11525,
+          "covered": 0,
+          "finite_target": true,
+          "nonconstant_target": false,
+          "eligible_r": false
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-02_eeg.eeg",
+      "record": "sub-001_task-listening_run-02_eeg",
+      "subject": "sub-001",
+      "run": "02",
+      "source_sha256": "a8ffef26e8d6f1b8f8125f13ad04d668bb48103124a415915341e92cf68d0a86",
+      "source_bytes": 53477376,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-02_eeg.npy",
+      "processed_bytes": 2960768,
+      "processed_sha256": "029ea7385a802c7a23850797142fccd6c2375868bf520e68550e04328793c12d",
+      "channel_table_git_blob": "0057be7d78dbe85ac2ad553d3ae635737c85bf71",
+      "good_channels": 126,
+      "calibration": {
+        "A_record": 7070278.2960055135,
+        "A_source": 5.662644679918114,
+        "gain": 8.009083154643759e-07,
+        "time_support": [
+          0,
+          11565
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.5149525566988844,
+        5.151641416528994,
+        10.818001069745595
+      ],
+      "wall_seconds": 176.47779822349548,
+      "mask": {
+        "length": 11565,
+        "windows": 119,
+        "covered": 11518,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 11565,
+          "covered": 0,
+          "finite_target": true,
+          "nonconstant_target": false,
+          "eligible_r": false
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-04_eeg.eeg",
+      "record": "sub-001_task-listening_run-04_eeg",
+      "subject": "sub-001",
+      "run": "04",
+      "source_sha256": "686dd99debf6536ca3f61e52a3f14389c8acc99afe715f3c7f53a2853681a057",
+      "source_bytes": 50855936,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-04_eeg.npy",
+      "processed_bytes": 2971520,
+      "processed_sha256": "7af454f7ba635835df30b6bc797cc81c9e004e32e414244346e40f5ea5d37fee",
+      "channel_table_git_blob": "e020b77afe414095d427d42d270a85b33a2a5ae8",
+      "good_channels": 127,
+      "calibration": {
+        "A_record": 7647663.245660289,
+        "A_source": 5.662644679918114,
+        "gain": 7.404411645781363e-07,
+        "time_support": [
+          0,
+          11607
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        2.732422618002119,
+        4.923019526893048,
+        12.049226036951756
+      ],
+      "wall_seconds": 176.95355129241943,
+      "mask": {
+        "length": 11607,
+        "windows": 119,
+        "covered": 11518,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 11607,
+          "covered": 0,
+          "finite_target": true,
+          "nonconstant_target": false,
+          "eligible_r": false
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-05_eeg.eeg",
+      "record": "sub-001_task-listening_run-05_eeg",
+      "subject": "sub-001",
+      "run": "05",
+      "source_sha256": "10b9e2022da39f662d090a43e7b6803659bdd7d8a7d4ac4e7ce3aac07ea8b354",
+      "source_bytes": 50069504,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-05_eeg.npy",
+      "processed_bytes": 2954624,
+      "processed_sha256": "09ee1d1bcf36b9c908de2a9ddc47d55a4e0a0df6588003ed837ee0f5ea2c3d2e",
+      "channel_table_git_blob": "e020b77afe414095d427d42d270a85b33a2a5ae8",
+      "good_channels": 127,
+      "calibration": {
+        "A_record": 7690253.29069416,
+        "A_source": 5.662644679918114,
+        "gain": 7.363404644643344e-07,
+        "time_support": [
+          0,
+          11541
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.175583800745372,
+        5.016053440688896,
+        11.515179826795446
+      ],
+      "wall_seconds": 182.9267122745514,
+      "mask": {
+        "length": 11541,
+        "windows": 119,
+        "covered": 11518,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 11541,
+          "covered": 0,
+          "finite_target": true,
+          "nonconstant_target": false,
+          "eligible_r": false
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-06_eeg.eeg",
+      "record": "sub-001_task-listening_run-06_eeg",
+      "subject": "sub-001",
+      "run": "06",
+      "source_sha256": "930e3255c37647f80c3a01ffb2de11109a96e283146aaeec924e7b1720791e6f",
+      "source_bytes": 55050240,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-06_eeg.npy",
+      "processed_bytes": 3312000,
+      "processed_sha256": "525b82c5580aaebfe769ff485e0a0e059b87f7e3329fa0bd2009016ec2ec7bb9",
+      "channel_table_git_blob": "e7c594e192509914fcb728a14a59d1d1676d137b",
+      "good_channels": 126,
+      "calibration": {
+        "A_record": 10604774.898821957,
+        "A_source": 5.662644679918114,
+        "gain": 5.339712284272206e-07,
+        "time_support": [
+          0,
+          12937
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        2.292359769700513,
+        4.544703620906885,
+        12.87773424010021
+      ],
+      "wall_seconds": 253.01944184303284,
+      "mask": {
+        "length": 12937,
+        "windows": 133,
+        "covered": 12862,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 12937,
+          "covered": 1343,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-07_eeg.eeg",
+      "record": "sub-001_task-listening_run-07_eeg",
+      "subject": "sub-001",
+      "run": "07",
+      "source_sha256": "8891abe1c746556cc06714168b388d0e5a9dc0aec0849b4895999594217eeaa5",
+      "source_bytes": 46399488,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-07_eeg.npy",
+      "processed_bytes": 2715520,
+      "processed_sha256": "22c90a5260416ac7b841e0223ff40801efa8ed76245dbe7472b5877143a8e732",
+      "channel_table_git_blob": "0057be7d78dbe85ac2ad553d3ae635737c85bf71",
+      "good_channels": 126,
+      "calibration": {
+        "A_record": 6909821.635099743,
+        "A_source": 5.662644679918114,
+        "gain": 8.195066354757468e-07,
+        "time_support": [
+          0,
+          10607
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.128053454389937,
+        5.181406077818988,
+        10.926204309858678
+      ],
+      "wall_seconds": 246.2628493309021,
+      "mask": {
+        "length": 10607,
+        "windows": 109,
+        "covered": 10558,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 7680,
+          "stop": 10607,
+          "covered": 2879,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-09_eeg.eeg",
+      "record": "sub-001_task-listening_run-09_eeg",
+      "subject": "sub-001",
+      "run": "09",
+      "source_sha256": "7f156e4308c9b5609ba3fdde28d0b46cb67c465c98bb2b837ade422d2d2869ac",
+      "source_bytes": 50855936,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-09_eeg.npy",
+      "processed_bytes": 2882944,
+      "processed_sha256": "5f35721aa89a667f6e2f2948ecd93d15e5b0a006a7c8c2ca2f4bd322a91efa22",
+      "channel_table_git_blob": "e020b77afe414095d427d42d270a85b33a2a5ae8",
+      "good_channels": 127,
+      "calibration": {
+        "A_record": 7677089.154516968,
+        "A_source": 5.662644679918114,
+        "gain": 7.376030896536332e-07,
+        "time_support": [
+          0,
+          11261
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.1356333367547653,
+        5.041669396807533,
+        11.1430699328154
+      ],
+      "wall_seconds": 267.8616101741791,
+      "mask": {
+        "length": 11261,
+        "windows": 116,
+        "covered": 11230,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 7680,
+          "stop": 11261,
+          "covered": 3551,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-08_eeg.eeg",
+      "record": "sub-001_task-listening_run-08_eeg",
+      "subject": "sub-001",
+      "run": "08",
+      "source_sha256": "c6e2c8ce6f1f108c300ca7e260f89bd3164bd3d502f0a89265e03e88b8a7aa09",
+      "source_bytes": 49283072,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-08_eeg.npy",
+      "processed_bytes": 2803328,
+      "processed_sha256": "2d845b57b69e2a9669f81d7e169722fb39c353664c6818126a7f5e9c46120ee7",
+      "channel_table_git_blob": "a55a4e5edf89ebe894707c24e7739cc694c14e84",
+      "good_channels": 125,
+      "calibration": {
+        "A_record": 6773908.703770328,
+        "A_source": 5.662644679918114,
+        "gain": 8.359493650639711e-07,
+        "time_support": [
+          0,
+          10950
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.111920486360246,
+        5.110589910382167,
+        11.06726950084438
+      ],
+      "wall_seconds": 283.64962792396545,
+      "mask": {
+        "length": 10950,
+        "windows": 113,
+        "covered": 10942,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 7680,
+          "stop": 10950,
+          "covered": 3263,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-10_eeg.eeg",
+      "record": "sub-001_task-listening_run-10_eeg",
+      "subject": "sub-001",
+      "run": "10",
+      "source_sha256": "95320fa976c37ede69839bb1086351967962c42d09f851de340fe931b161572e",
+      "source_bytes": 53215232,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-10_eeg.npy",
+      "processed_bytes": 3161728,
+      "processed_sha256": "3052b5a1ee3ed4156dc6cba5cd7bca90b7804e8b287099ac3311d05737ea7c72",
+      "channel_table_git_blob": "d76818d0fda5c6da30fb62acf6c48bf0627e00a0",
+      "good_channels": 117,
+      "calibration": {
+        "A_record": 316712022.5401224,
+        "A_source": 5.662644679918114,
+        "gain": 1.787947497067544e-08,
+        "time_support": [
+          0,
+          12350
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        0.2224654695703467,
+        3.060415666659189,
+        18.74905653456981
+      ],
+      "wall_seconds": 125.14859938621521,
+      "mask": {
+        "length": 12350,
+        "windows": 127,
+        "covered": 12286,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 12350,
+          "covered": 767,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-13_eeg.eeg",
+      "record": "sub-001_task-listening_run-13_eeg",
+      "subject": "sub-001",
+      "run": "13",
+      "source_sha256": "afede7c64e7881de9a3baa098054e5258a3957fffa2d4635dfb2202287fbb3e1",
+      "source_bytes": 50855936,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-13_eeg.npy",
+      "processed_bytes": 3001984,
+      "processed_sha256": "5ce3fed408e1260f0eea34d32608fb854827f0e9f0eef19fdcb21d3fe9296d94",
+      "channel_table_git_blob": "baddc3da58561eb2be996658452424f72dfce786",
+      "good_channels": 126,
+      "calibration": {
+        "A_record": 7782513.655707014,
+        "A_source": 5.662644679918114,
+        "gain": 7.276112745096986e-07,
+        "time_support": [
+          0,
+          11726
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        2.6171405965439574,
+        4.844581246603669,
+        10.773334285848724
+      ],
+      "wall_seconds": 155.4155158996582,
+      "mask": {
+        "length": 11726,
+        "windows": 121,
+        "covered": 11710,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 11726,
+          "covered": 191,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": false
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-11_eeg.eeg",
+      "record": "sub-001_task-listening_run-11_eeg",
+      "subject": "sub-001",
+      "run": "11",
+      "source_sha256": "bc67ad46653b4569ba7fef028957a81b2f6019c70ccc8456b3750f9435758ec2",
+      "source_bytes": 49283072,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-11_eeg.npy",
+      "processed_bytes": 2876800,
+      "processed_sha256": "7a78eab0afaf880ab9ca2e5e92aec546446a2fcb7216dd00470bda65a87313e3",
+      "channel_table_git_blob": "baddc3da58561eb2be996658452424f72dfce786",
+      "good_channels": 126,
+      "calibration": {
+        "A_record": 7663309.610120049,
+        "A_source": 5.662644679918114,
+        "gain": 7.38929387955318e-07,
+        "time_support": [
+          0,
+          11237
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.0982825404156227,
+        5.149772243773838,
+        10.981859178923548
+      ],
+      "wall_seconds": 206.0009388923645,
+      "mask": {
+        "length": 11237,
+        "windows": 116,
+        "covered": 11230,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 7680,
+          "stop": 11237,
+          "covered": 3551,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-12_eeg.eeg",
+      "record": "sub-001_task-listening_run-12_eeg",
+      "subject": "sub-001",
+      "run": "12",
+      "source_sha256": "d67eb59987170301e353244721cebaf2e4ba845d2a36ad9078fd3f131f5f788b",
+      "source_bytes": 50593792,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-12_eeg.npy",
+      "processed_bytes": 2945664,
+      "processed_sha256": "219e5105cc211dd1b45116dfb603df701b6a2d52ca20a38a74ae8083981230dc",
+      "channel_table_git_blob": "baddc3da58561eb2be996658452424f72dfce786",
+      "good_channels": 126,
+      "calibration": {
+        "A_record": 8048035.581575915,
+        "A_source": 5.662644679918114,
+        "gain": 7.036058206404315e-07,
+        "time_support": [
+          0,
+          11506
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.0771778370081493,
+        5.057346600646409,
+        11.144638592477152
+      ],
+      "wall_seconds": 215.8473768234253,
+      "mask": {
+        "length": 11506,
+        "windows": 118,
+        "covered": 11422,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 7680,
+          "stop": 11506,
+          "covered": 3743,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-14_eeg.eeg",
+      "record": "sub-001_task-listening_run-14_eeg",
+      "subject": "sub-001",
+      "run": "14",
+      "source_sha256": "36207e5540e07af134dab91dcfb21081dc8d1c5e69314eefc8bfbb70e732cf7b",
+      "source_bytes": 50069504,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-14_eeg.npy",
+      "processed_bytes": 2923648,
+      "processed_sha256": "1ccd5f19e6bda1c08870d6995dff8eb8c8f3759d045f70e14667cc3380395903",
+      "channel_table_git_blob": "0057be7d78dbe85ac2ad553d3ae635737c85bf71",
+      "good_channels": 126,
+      "calibration": {
+        "A_record": 7365805.685806033,
+        "A_source": 5.662644679918114,
+        "gain": 7.687746488927988e-07,
+        "time_support": [
+          0,
+          11420
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        2.8575036074794182,
+        5.197307705737508,
+        10.948731783813148
+      ],
+      "wall_seconds": 185.5649127960205,
+      "mask": {
+        "length": 11420,
+        "windows": 117,
+        "covered": 11326,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 7680,
+          "stop": 11420,
+          "covered": 3647,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-15_eeg.eeg",
+      "record": "sub-001_task-listening_run-15_eeg",
+      "subject": "sub-001",
+      "run": "15",
+      "source_sha256": "6c932693879b10aa15d59866d9f675e15dba0809af72ff572cabcaf979dae680",
+      "source_bytes": 50593792,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-15_eeg.npy",
+      "processed_bytes": 3004288,
+      "processed_sha256": "d046086f028c80369807fccd49f12e104b459da82a6b4298ba6fee1b63dc6e7c",
+      "channel_table_git_blob": "e020b77afe414095d427d42d270a85b33a2a5ae8",
+      "good_channels": 127,
+      "calibration": {
+        "A_record": 8047404.863091915,
+        "A_source": 5.662644679918114,
+        "gain": 7.036609660201008e-07,
+        "time_support": [
+          0,
+          11735
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        2.883626738649307,
+        5.0012248780511115,
+        10.699250775840506
+      ],
+      "wall_seconds": 184.1019127368927,
+      "mask": {
+        "length": 11735,
+        "windows": 121,
+        "covered": 11710,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 11735,
+          "covered": 191,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": false
+        }
+      }
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-16_eeg.eeg",
+      "record": "sub-001_task-listening_run-16_eeg",
+      "subject": "sub-001",
+      "run": "16",
+      "source_sha256": "fb0e073fd673dd3380a708a1118483468ec04e13e088364f7ab0d2b8dc0ff2ab",
+      "source_bytes": 52690944,
+      "processed_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/processed_EEG/sub-001_task-listening_run-16_eeg.npy",
+      "processed_bytes": 3049344,
+      "processed_sha256": "cdd9a0e96d6d69deaa79f74049aca3cdf67ab889c4db1cd0ffba553c40c6bc1e",
+      "channel_table_git_blob": "a55a4e5edf89ebe894707c24e7739cc694c14e84",
+      "good_channels": 125,
+      "calibration": {
+        "A_record": 6374725.955640608,
+        "A_source": 5.662644679918114,
+        "gain": 8.882961745057579e-07,
+        "time_support": [
+          0,
+          11911
+        ],
+        "variance_ddof": 0,
+        "channels": 64,
+        "support": "All cropped common-duration EEG samples; independent of window/Hann/target values",
+        "units": "source-amplitude calibrated numeric units; physical gain UNVERIFIED",
+        "uses_full_record_future_EEG": true,
+        "label_free": true,
+        "clamp": null
+      },
+      "processed_channel_std_min_median_max": [
+        3.5192977510979935,
+        5.3326871535669715,
+        9.334866758211467
+      ],
+      "wall_seconds": 203.299964427948,
+      "mask": {
+        "length": 11911,
+        "windows": 123,
+        "covered": 11902,
+        "blocks": [
+          {
+            "start": 0,
+            "stop": 3840,
+            "covered": 3839,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 3840,
+            "stop": 7680,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          },
+          {
+            "start": 7680,
+            "stop": 11520,
+            "covered": 3840,
+            "finite_target": true,
+            "nonconstant_target": true,
+            "eligible": true
+          }
+        ],
+        "tail": {
+          "start": 11520,
+          "stop": 11911,
+          "covered": 383,
+          "finite_target": true,
+          "nonconstant_target": true,
+          "eligible_r": true
+        }
+      }
+    }
+  ],
+  "truncated_final_JSONL_line": null,
+  "unregistered_outputs_moved_to_backup": [],
+  "no_deletion": true,
+  "new_NN": 0
+}

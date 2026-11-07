@@ -1,0 +1,77 @@
+{
+  "candidate": "D21_OUTPUT_RIDGE_V1",
+  "source_sha256": "2a21690924aae786a1d46cb5ad68b1a4702170d33e4719cb9934d8c09d67abcc",
+  "frozen_pins": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PROTOCOL.json": "133b60eeb6e937def9f25bdb8303ab80d9a2cf00d0f86ea3f6768c0f56a7b078",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PREPARATION_METADATA.json": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/PROTOCOL.json": "535d06ed1e12ea1048293ca1be63bb2ad8dfd7c0b985dd9ca9503d6f64735540",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/COMPLETED.json": "40637c0a9f38bf47942b7a4e5268435a06f9f86f22421b41ba09faad1ebf7320",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_run.py": "9fb8d5d5ce22681d6b886c1a3987b9db1be6c942111de7d303cc0c2d21bf1978",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed1024_TRAIN_STATS.json": "ced5e9a7048322f93e766a6e59aa0bc0c929b72e7e76b7c2219fdd4fa062a843",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed1024_ANCHOR.json": "d3cc91f53515c0d254d1c461e4d92cead47b606ebe9ea91b5d2b3ceff435f7f9",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed2026_TRAIN_STATS.json": "01672ae2814e9b5b4cee91afd09cad5dcaf838f05fe95a693f1b424b192c01d8",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed2026_ANCHOR.json": "37298c0bf10cb6183d580eac0eadfebafb9eaacd780e9d49c12c300113567d3d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed31415_TRAIN_STATS.json": "2d3534cd8c6817a944c350a393243fe29c14bd7f6acebb441ee4f96404018146",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/fit/seed31415_ANCHOR.json": "f057ccc079e4f1f5d27a117a5cbdb016427344eee323a9c6d6299cf6ec29c481"
+  },
+  "seed": [
+    1024,
+    2026,
+    31415
+  ],
+  "features": {
+    "A": 1,
+    "F": 97
+  },
+  "lambdas": [
+    1.0,
+    0.01,
+    0.0001
+  ],
+  "first_active": 1344,
+  "lag": 1,
+  "history": 384,
+  "bin_points": 4,
+  "batch": 16384,
+  "objective": "mean((b+intercept+X beta-y)^2) + lambda * sum(beta^2)",
+  "feature_precision": "raw float32, D20 P TRAIN reference FP32 affine, then FP64 / sqrt(D)",
+  "target_precision": "TRAIN float32-rounded envelope, FP64 residual and sufficient statistics",
+  "resources": {
+    "seconds": {
+      "engineer": 600,
+      "fit": 7200
+    },
+    "RSS_GiB": 6,
+    "SATA_min_free_GiB": 20,
+    "writer_MiB": 64,
+    "BLAS_threads": 8,
+    "device": "CPU"
+  },
+  "formal_budget": {
+    "TRAIN_records": 1278,
+    "VAL_records": 147,
+    "TRAIN_cached_windows": 757362,
+    "VAL_cached_windows": 91500,
+    "TRAIN_Gram_points": 71110530,
+    "VAL_feature_points": 8600397,
+    "VAL_candidate_points": 51602382,
+    "exact_ridge_solves": 18,
+    "VAL_anchor_blocks": 2256,
+    "VAL_candidate_blocks": 13536,
+    "new_NN_forwards": 0,
+    "optimizer_updates": 0
+  },
+  "engineering_budget": {
+    "TRAIN_records": 6,
+    "VAL_records": 6,
+    "TRAIN_cached_windows": 3447,
+    "VAL_cached_windows": 3756,
+    "TRAIN_Gram_points": 1536,
+    "small_ridge_solves": 18,
+    "independent_lstsq_solves": 18,
+    "new_NN_forwards": 0
+  },
+  "fit_requires": "Independent EXECUTION_REVIEW bound to this protocol and actual engineering"
+}

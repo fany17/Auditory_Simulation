@@ -1,0 +1,62 @@
+[
+  {
+    "seed": 1024,
+    "role": "B",
+    "mixed_blocks": 49,
+    "mixed_contribution": 0.00025169137009433936,
+    "mixed_within_group_macro_delta": 0.003792490702640624,
+    "pure_blocks": 703,
+    "pure_contribution": 0.0013140759830092114,
+    "pure_within_group_macro_delta": 0.0014100951622419721
+  },
+  {
+    "seed": 1024,
+    "role": "D20",
+    "mixed_blocks": 49,
+    "mixed_contribution": 0.0002387916390027271,
+    "mixed_within_group_macro_delta": 0.003544324161818714,
+    "pure_blocks": 703,
+    "pure_contribution": 0.0008249145096571992,
+    "pure_within_group_macro_delta": 0.0008852581241585725
+  },
+  {
+    "seed": 2026,
+    "role": "B",
+    "mixed_blocks": 49,
+    "mixed_contribution": 0.000338480559460183,
+    "mixed_within_group_macro_delta": 0.005354938035924638,
+    "pure_blocks": 703,
+    "pure_contribution": 0.0024409688842499245,
+    "pure_within_group_macro_delta": 0.0026170024284487502
+  },
+  {
+    "seed": 2026,
+    "role": "D20",
+    "mixed_blocks": 49,
+    "mixed_contribution": 0.00013585715954893412,
+    "mixed_within_group_macro_delta": 0.0020755338003334714,
+    "pure_blocks": 703,
+    "pure_contribution": 0.002218371860060516,
+    "pure_within_group_macro_delta": 0.0023792873810669656
+  },
+  {
+    "seed": 31415,
+    "role": "B",
+    "mixed_blocks": 49,
+    "mixed_contribution": 0.00014140008226809684,
+    "mixed_within_group_macro_delta": 0.0021197502867177057,
+    "pure_blocks": 703,
+    "pure_contribution": 0.002236277445520357,
+    "pure_within_group_macro_delta": 0.002400677415839004
+  },
+  {
+    "seed": 31415,
+    "role": "D20",
+    "mixed_blocks": 49,
+    "mixed_contribution": 0.00015459972125141726,
+    "mixed_within_group_macro_delta": 0.0022361109975688976,
+    "pure_blocks": 703,
+    "pure_contribution": 0.0016791786617434145,
+    "pure_within_group_macro_delta": 0.0018043688549007955
+  }
+]

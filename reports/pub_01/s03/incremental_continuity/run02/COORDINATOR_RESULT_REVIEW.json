@@ -1,0 +1,114 @@
+{
+  "time": 1793511385.9234824,
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "reviewer_role": "coordinator independent artifact/scientific review",
+  "technical_decision": "PASS_WITH_LIMITATIONS",
+  "scientific_decision": "NO_STABLE_INCREMENTAL_HISTORY_BENEFIT_ESTABLISHED",
+  "goal_complete": false,
+  "evidence_hashes": {
+    "WARM_PROTOCOL.json": "a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8",
+    "results01/SUMMARY.json": "ca9fded2f589890df4aa97edd32d686d7be07f302d6c135305b65a8e3824d26d",
+    "FINAL_REVIEW_V2_PROTOCOL.json": "6fc0f00aa12eb0bbb98577475ec959ccfb340508e144e6b4828295623004d2c9",
+    "final_review02/COMPLETED.json": "973a01288e95e888f896c31a288fedb545eb8687b5763c8ea741cb60890c35b5",
+    "FINAL_REVIEW_FAILURE.json": "4976cd2372f86f43e32b9ac98a9ea51822754fce08ae946d385f058c3e69ac17"
+  },
+  "root_actual_checks": [
+    "All31 frozen source/proof pins and90 report input pins unchanged",
+    "All18 selected checkpoint hashes and90 actual epoch histories read; earliest original3s loss including incumbent verified",
+    "All18 fit budgets:355050 updates,22720860 supervised windows total",
+    "All18 separate v2 cell records read; original absolute waveform gate passed with actual0 difference",
+    "All12 v2 source/proof pins unchanged; mean3s maxdifference9.346426410594688e-10, mean60s max5.551115123125783e-17",
+    "Frozen encoder tensors unchanged; current/past5161 trainable vsP257, joint3377521 vsP3372617; active changes inspected",
+    "Three actual warm PNGs visually inspected; allseed metrics andcosts retained"
+  ],
+  "validation_conditions": {
+    "TRAIN_records": 426,
+    "TRAIN_subjects": 70,
+    "VAL_records": 49,
+    "VAL_subjects": 49,
+    "VAL_continuous_blocks": 752,
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "new_epochs_per_fit": 5,
+    "scope": "SOURCE_TRAIN_VAL_DEVELOPMENT_ONLY"
+  },
+  "condition_means": [
+    {
+      "condition": "frozen_p",
+      "VAL3s_mean": 0.1490258817070169,
+      "VAL60s_mean": 0.1623683877843134,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "frozen_current",
+      "VAL3s_mean": 0.15044075250462757,
+      "VAL60s_mean": 0.16288808391931342,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "frozen_past",
+      "VAL3s_mean": 0.15006952283877492,
+      "VAL60s_mean": 0.16293255833904613,
+      "selected_epochs": [
+        4,
+        3,
+        4
+      ]
+    },
+    {
+      "condition": "joint_p",
+      "VAL3s_mean": 0.15830312469259636,
+      "VAL60s_mean": 0.17413993455804533,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "joint_current",
+      "VAL3s_mean": 0.15834915795222007,
+      "VAL60s_mean": 0.17410003205843483,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "joint_past",
+      "VAL3s_mean": 0.15802536182325394,
+      "VAL60s_mean": 0.17374024673869884,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "interpretation": [
+    "Frozen past mean60s exceeds continuedP, but is below samecapacity current2of3 seeds; no stableextra history contribution",
+    "Joint past mean60s below continuedP and belowcurrent; all3seeds belowcurrent,2of3belowcontinuedP",
+    "OriginalP tojoint improvement also occurs withplaincontinuedP; cannot attribute ittohistory",
+    "Fiveepochcurves notconverged; conclusions limitedtofixedbudget, no automaticextension",
+    "No newtest/DTU evaluation; validationdevelopment cannot establish externalgeneralization or ICML/NeurIPS-level novelty"
+  ],
+  "v1_and_v2": "v1 failed on mismatched encoder batching/layout/parametergradflags. Originalfailure preserved; v2 restores actualcache/RawWindowsexecution. Weights/training/scores/selection andoriginalabsolute1e-6 primarygate unchanged; normalizederror diagnostic only. All18corrected wave differences0.",
+  "review_limits": [
+    "Frozenneuralmodules reused, not independentlyreimplemented neuralmathematics",
+    "Canonical EEGderivatives andtargets, not original BDF/audio preprocessing replay",
+    "No calibrated significance claims from3seeddevelopment comparisons"
+  ],
+  "next_action": "Continue source-only mechanism diagnosis: minimumD4 conditional predictiveinformation protocol forfullvscompressed legalhistory andcapacitymatchedolderhistory, pendingcoordinator review beforefits; noautomaticnewarchitecture/test/dataset/epochbudget."
+}

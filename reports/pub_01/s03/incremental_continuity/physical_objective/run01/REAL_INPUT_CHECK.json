@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "TRAIN_windows_exact_duplicate_and_raw_float32_target": 252454,
+  "physical_targets": 24112044,
+  "geometry_max_abs": 0.0,
+  "initial_VAL_cases": [
+    {
+      "seed": 1024,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "D8_prediction_max_abs": 2.220446049250313e-16,
+      "D8_block_r_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "D8_prediction_max_abs": 2.220446049250313e-16,
+      "D8_block_r_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "D8_prediction_max_abs": 2.220446049250313e-16,
+      "D8_block_r_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "D8_prediction_max_abs": 2.220446049250313e-16,
+      "D8_block_r_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "D8_prediction_max_abs": 2.220446049250313e-16,
+      "D8_block_r_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "D8_prediction_max_abs": 2.220446049250313e-16,
+      "D8_block_r_max_abs": 0.0
+    }
+  ],
+  "encoder_head_forward": 0,
+  "new_solves": 0
+}

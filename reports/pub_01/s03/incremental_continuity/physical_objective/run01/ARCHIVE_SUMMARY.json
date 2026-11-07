@@ -1,0 +1,29 @@
+{
+  "findings": [
+    "D9固定W/F×3seed六解全部真残差收敛，固定离线Hann下F−W VAL60s/person r均+.001400，三seed均正，fused MSE均−.000126614。强Ccap/W/F r=.182340/.182474/.183874，这是重复source VAL点增益。",
+    "F单窗表示严重退化：window MSE352.068、3秒r .003435、uniform overlap706.180，巨大逐坐标bias在Hann内部近相消。该窗口退化不能忽略，也不能直接等同最终连续输出无效；固定融合下的小增益与近null表示并存。",
+    "既有bias代数核验显示F单窗bias峰247–253，内部物理bias≤.00587、首可学习边界≤.12165、tail≤.30603。未证明连续输出数值崩坏，也未证明通用稳健可用。无新增历史输入、独立泛化或方法创新，持续goal仍ACTIVE。"
+  ],
+  "overview": [
+    "共同D8完整强FT+Ccap起点，复用对应TRAIN特征/标定；相同24112044物理target、原完整Hann/首4窗fixed上下文、0/191端点固定、620350自由参数和λ=.01/192。W加权逐窗误差与F融合误差只差disagreement项，不把F称一致性惩罚。",
+    "每解上限200更新/214Hessian，实际355更新/386Hessian合计，六个真预条件残差均<1e−8。真实标签252454窗全核，初始D8首尾6桥预测≤2.22e−16，原block r差0，无encoder/head前向、新NPY或旧test/DTU。",
+    "独立275来源/535输入、六解完整TRAIN独立物理轴目标/梯度/真残差以及全VAL聚合和12缓存重建通过：目标≤2.69e−14、残差差≤1.31e−16、聚合0、block r≤2.22e−16。主wall185.396s、workerCPU和347.091s；独立audit另69.714s/CPU72.972s，不当免费成本。"
+  ],
+  "figure_comments": {
+    "01_MATCHED_RESULTS.png": "左为四个只读强参考及W/F的VAL person宏r，三色seed、黑均值，虚线分原参考/新解；中为primary F−W及W/F−Ccap配对点，右为三角色fused target MSE。独立自适应纵轴，无CI/p值或VAL选择。Ccap/W/F r .182340/.182474/.183874，F−W三seed+.001423/.001452/.001324且fused MSE降低，但并不覆盖严重窗口退化；已知被试/部分同书VAL不当新确认。",
+    "02_TRUE_RESIDUALS.png": "左右W/F，纵轴真实预条件残差/RHS对数，横轴CG更新，曲线点为初值/每20步/末次实际检查，不是每步真残差记录。三seed W在57–59步/62–64Hessian、F在59–61步/64–67Hessian达到1e−8黑点线。门和200/214上限冻结，实际次数不同不称等更新或等算力；独立物理轴复算也过原门。",
+    "03_PHYSICAL_DECOMPOSITION.png": "左为TRAIN同物理点融合/加权单窗MSE，中为VAL60s/person同分解，灰间距disagreement；右uniform96 overlap。F TRAIN Wdata .526787/Fdata .194476/D .332310，VAL weighted .572775/fused .242156/D .330619，W的VAL fused .242282。F移除D惩罚而允许误差相消，不能称更一致；全范围保留大值使Ccap/W小差不易分辨，图一与补图给细节。TRAIN/VAL计权不同，不跨比绝对误差。",
+    "04_WINDOW_DEGENERACY.png": "结果后仅用已存JSON/coef代数的展示补图，无新fit/评分。左/中对数轴显示Ccap/W/F窗口MSE .255169/.256938/352.068与overlap .003486/.005056/706.180，标数值避免大F掩盖其余。右三seed W→F最大bias约.25→247–253，叉号是F内部Hann加权bias对最大值<.006。支持窗口坐标近相消解释，不单凭bias否定连续主输出；原三主图完整保留。"
+  },
+  "caveats": [
+    "F无惩罚bias的小块虽正定但几何条件数约4.02e9。单窗脉冲/偏置近抵消是表示退化，不是病人生理、历史机制或独立泛化；固定离线Hann之外的适用性没有新证据。",
+    "bias-only大体解释disagreement仍有feature/交叉项，不是重新拟合消融；coef-only float32内部代数差≤1.45e−8，不是完整低精度推理或鲁棒性试验。",
+    "D8原sum-output ridge整体除192才有λ换算；D9支持/权重/端点变化，不能当与D8相同经验目标或纯Pearson→MSE因果。W/F共同目标条件成立，但实际迭代不同。",
+    "本轮只有重复known-person/partial-book source VAL，无CI/显著性、等效、SOTA或ICML/NeurIPS投稿充分性；不因r微正或工程PASS标goal完成。全部3秒undefined为0，752块保持。",
+    "所有参数/特征/信号只在2203，本地仅代码与轻量表图；新NPY0，总NPY24.469GB守25GiB，主root约34.11MiB、GPUallocated8.54GiB/RSS3.19GiB，另计审核。未为异常改bias/λ/Hann或重跑。"
+  ],
+  "next_steps": [
+    "完成实际全文/四图最终review、REVIEW三级判定及官方轻量HTML归档/正常推送，原六解及异常全部冻结，PR6仍Draft、不合并。",
+    "后续由协调明确审定有界科学选择，不自动增加bias约束/新模型或λ；保留强current框架，额外历史贡献与可信确认仍缺，不重开旧test/DTU或擅自下载。"
+  ]
+}

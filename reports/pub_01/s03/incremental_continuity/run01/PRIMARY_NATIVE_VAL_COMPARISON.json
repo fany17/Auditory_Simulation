@@ -1,0 +1,64 @@
+{
+  "time": 1793492375.1740272,
+  "primary": "m4_h16",
+  "all_initial15_completed": true,
+  "reference": "native_P exacttau0 alias from frozen EMA v2 same3seed VAL Hann60s/person metric",
+  "family_comparisons": [
+    {
+      "condition": "m1_h16",
+      "three_seed_validation60s_person_mean": 0.1607051220322272,
+      "native_P_three_seed_mean": 0.16236248706065334,
+      "difference_vs_native_P": -0.0016573650284261443
+    },
+    {
+      "condition": "m2_h16",
+      "three_seed_validation60s_person_mean": 0.15903009510186425,
+      "native_P_three_seed_mean": 0.16236248706065334,
+      "difference_vs_native_P": -0.0033323919587890938
+    },
+    {
+      "condition": "m3_h16",
+      "three_seed_validation60s_person_mean": 0.15870120771484375,
+      "native_P_three_seed_mean": 0.16236248706065334,
+      "difference_vs_native_P": -0.0036612793458095927
+    },
+    {
+      "condition": "m4_h16",
+      "three_seed_validation60s_person_mean": 0.16134536858285864,
+      "native_P_three_seed_mean": 0.16236248706065334,
+      "difference_vs_native_P": -0.001017118477794704
+    },
+    {
+      "condition": "m5_h16",
+      "three_seed_validation60s_person_mean": 0.1603096302314035,
+      "native_P_three_seed_mean": 0.16236248706065334,
+      "difference_vs_native_P": -0.002052856829249855
+    }
+  ],
+  "primary_per_seed_comparison": [
+    {
+      "seed": 1024,
+      "primary_validation60s_person_r": 0.1601974387152457,
+      "native_P_validation60s_person_r": 0.16114957741926011,
+      "difference": -0.0009521387040144214
+    },
+    {
+      "seed": 2026,
+      "primary_validation60s_person_r": 0.158199676737302,
+      "native_P_validation60s_person_r": 0.15958752669513007,
+      "difference": -0.0013878499578280634
+    },
+    {
+      "seed": 31415,
+      "primary_validation60s_person_r": 0.1656389902960282,
+      "native_P_validation60s_person_r": 0.16635035706756987,
+      "difference": -0.0007113667715416827
+    }
+  ],
+  "not_a_test_result_or_new_model_choice": true,
+  "no_training_or_policy_change_from_negative_VAL": true,
+  "sources": {
+    "FULL_PRIMARY_SELECTION.json": "d43da5b521af0cabfed6a2a6fc4ce968ae39f20824411d07c305fb1fa08b69d2",
+    "EMA_SELECTION.json": "addd6f2af80112a5a8de945ecda74f4f006ceef6785c9c6d7a8802bd21965149"
+  }
+}

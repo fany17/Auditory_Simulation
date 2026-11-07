@@ -1,0 +1,26 @@
+{
+  "findings": [
+    "D6完成27新model-λ解+18精确复用；P-only已将P*的VAL60s r从.162362提高至.171837，局部共享S32进一步.174284，完整C .174789、平方Ccap .176897。不能把全部增益归因latent或历史。",
+    "U32−S32选定三seed负；C−U32全部3λ×3seed正；Ccap−C依赖正则，λ=.0001三seed负、.01/1正。没有纯loss因果或无条件非线性优越证据。",
+    "P*同物理点跨窗最一致但r最低。Ccap比C更一致、r更高却略高fused MSE，固定Hann误差分解解释排名差异，不据此训练一致性loss。goal仍ACTIVE。",
+    "协调独立52来源/12输入/45共mask/27系数与约束/共享λ核对，并从缓存独立重建9选定新模型，逐块r差4.44e−16、secondary重算≤3.44e−16，全文和三图实际审阅，技术有限制通过。"
+  ],
+  "overview": [
+    "原3seed/TRAIN-VAL/P*残差和D4统计，所有臂共同denseP分支+b；S32/U32同local Z支持，C/Ccap原样复用。新拟合只复用TRAIN moments，不读新TRAIN载荷、无GPU/NN/head/encoder前向。",
+    "全部45候选/3P*、三个固定λ、七个配对比较和逐人/逐块/record连续性/MSE分解保留，VAL已知被试/部分同书家族，非独立确认。"
+  ],
+  "figure_comments": {
+    "01_COMPLETE_MATRIX.png": "左/中/右为3秒r、60秒/person r、同计权fused target MSE；粗线三seed均值、细线seed，C/Ccap虚线表示18套原样复用，其余27新解，黑点线P*。P-only/S32/U32/C选.0001，Ccap选.01。r与MSE排名不同，不只报胜者或把45套说成45新训练，无CI。",
+    "02_ATTRIBUTION_CONTRASTS.png": "顶排三primary为U32−S32/C−U32/Ccap−C，四辅助面板对P-only，前三点同λ，右菱形各臂共享选λ。U−S选定均−.000418、0/3正；C−U选定+.000922、全部三λ×三seed正；Ccap−C选定+.002108但.0001全负。所有模型保留共同denseP与截距；解除共享、扩大latent支持、平方扩容边界分开，不称原nativeConv复现或纯loss效应。",
+    "03_CONTINUITY_ACCURACY.png": "采用presentation02清晰版，原PNG保留。左uniform overlap MSE、中央Hann加权单窗/融合target MSE两点及精确gap、右r与overlap联合。P*最一致却r最低；Ccap相对C weighted MSE−7.77e−6、disagreement−1.10349e−4，故fused MSE+1.02576e−4，r反而+.002108。45候选逐点Hann恒等最大误差3.80e−15；uniform与Hann计权不同，连续性不参与选择、不等于优化目标。"
+  },
+  "caveats": [
+    "共享定义在D4逐坐标TRAIN标准化空间，S32/U32 local仅Z分支、共同P路径仍全current。扩大latent支持非扩大raw EEG权限；原模型离线3秒。",
+    "P-only是监督的一般192维再读出，不是Pearson不变的正全局仿射校准。旧PCC→MSE同时改变solver/正则/容量，严格loss因果未完成。",
+    "重复source VAL/已知人/部分同书家族，无显著性、独立泛化、等价、生理机制或发表充分性；新NN历史方法不能仅以弱P作唯一baseline。"
+  ],
+  "next_steps": [
+    "完整交付D6实际结果/独立review/归档，不扩D4-D6网格或自动优化低overlap。",
+    "基于真实current正向和短历史阴性，提出强current控制下的有界下一阶段设计及确认性证据缺口，先协调审定，goal保持ACTIVE。"
+  ]
+}

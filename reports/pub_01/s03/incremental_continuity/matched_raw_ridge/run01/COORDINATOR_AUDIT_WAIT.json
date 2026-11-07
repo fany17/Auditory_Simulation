@@ -1,0 +1,17 @@
+{
+  "process": {
+    "pid": 1736900,
+    "uid": 1012,
+    "startticks": 790951717
+  },
+  "target": {
+    "pid": 1725449,
+    "uid": 1012,
+    "startticks": 790888025
+  },
+  "script_sha256": "fa321948028ac8d0e418fbcdb9a5f447877c61dff44a52e74b92b113ddb9b27c",
+  "started_utc": "2026-11-06T16:24:32.558867+00:00",
+  "max_wait_seconds": 3600,
+  "new_fits": 0,
+  "new_NN": 0
+}

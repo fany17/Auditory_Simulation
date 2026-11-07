@@ -1,0 +1,19 @@
+{
+  "decision_id": "D18_ENGINEERING_FINAL_03",
+  "status": "AUTHORIZED_BEFORE_NEW_ATTEMPT",
+  "supersedes": "All crossed chat messages proposing reuse of the first two rows with a cumulative 24-update cap.",
+  "final_choice": "Revalidate all 12 engineering rows on the final CPU-only RNG-isolated source, two temporary optimizer updates per row.",
+  "reason": "The repaired CUDA dropout stream affects the initial comparison. A consistent final-source check is justified; preserve the two failed attempts and their actual costs.",
+  "prior_temporary_optimizer_updates": 4,
+  "new_temporary_optimizer_updates": 24,
+  "cumulative_temporary_optimizer_update_cap": 28,
+  "cumulative_current_prefix_and_reference_window_cap": 8192,
+  "cumulative_current_head_and_reference_window_cap": 8192,
+  "cumulative_frozen_prefix_window_cap": 16384,
+  "numerical_tolerances_unchanged": true,
+  "formal_fit_budget_unchanged": true,
+  "repeat_reference_synthetic_selfcheck": false,
+  "repeat_metadata_permutations_or_storage_serialization": false,
+  "new_validation_or_test_evaluation_authorized_by_this_decision": false,
+  "formal_execution_review_still_requires_actual_engineering_evidence": true
+}

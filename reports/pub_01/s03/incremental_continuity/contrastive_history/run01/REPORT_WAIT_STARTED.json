@@ -1,0 +1,21 @@
+{
+  "process": [
+    1773218,
+    1012,
+    791148839
+  ],
+  "upstream": [
+    1622219,
+    1012,
+    790259158
+  ],
+  "upstream_protocol_sha256": "8c249eabeb9edb9a5360006f1d3dabb9552e2a22ff649b9bae72801f75311b4d",
+  "sources": {
+    "D28_MATCHED_RAW_RIDGE_COMPLETED.json": "9be6b1dcc502318c4d6a1c7df734818af3deb5a64c76a2df739e2464599229f5",
+    "HISTORICAL_REFERENCES.json": "5c95ce13af5eecf960a74d9c935e626a232ad048ccf31b1e4f7a6de5bf51b1bc",
+    "pub_01_s03_ss07_contrastive_history_report_cost.py": "d07c8ab6bfb5fbae8292432da8ca4abac276846d8dadc780bf792c906709dbfd",
+    "pub_01_s03_ss07_contrastive_history_report_figures.py": "9650a02253958d217ed0d6c5af8c9b6ec7a252f5050181e74459cac837f093f9",
+    "pub_01_s03_ss07_contrastive_history_report.py": "550913f9c880c44687fbac280675db0285c42ee9bfeef18ee2b7a1619a149a08"
+  },
+  "trigger_sha256": "5493730bd9926d271dfff512628b026e60555b361e3611f6a372d91931589efa"
+}

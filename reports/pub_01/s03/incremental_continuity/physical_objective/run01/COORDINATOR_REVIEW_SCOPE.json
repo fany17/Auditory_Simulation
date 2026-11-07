@@ -1,0 +1,27 @@
+{
+  "status": "FROZEN_REVIEW_SCOPE",
+  "scope": "D9 final independent audit; no model selection, new solve, NN encoder/head forward, old test or DTU",
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "roles": [
+    "W",
+    "F"
+  ],
+  "all_six_TRAIN_checks": "Reconstruct normalization and prediction from immutable caches and final coefficients; independently accumulate physical-axis Hann gradients/objectives across all426 records, check true preconditioned residual and endpoint coefficients. No use of PhysicalQuadratic or its adjoint.",
+  "all_six_VAL_scores": "Verify every original752block identity/mask, 49person aggregation and phase metrics.",
+  "VAL_wave_cases": "Original manifest first and last VAL record ×3seeds ×2roles =12; independent feature/prediction/Hann/r reconstruction.",
+  "tolerances": {
+    "TRAIN_objective_absolute": 1e-9,
+    "reported_true_residual_absolute": 1e-10,
+    "VAL_aggregate_absolute": 1e-12,
+    "VAL_wave_metric_absolute": 1e-12,
+    "source_protocol_exact": true,
+    "endpoint_exact": true
+  },
+  "formal_convergence": "Retain exact protocol1e-8 formal threshold; independently report actual residual and discrepancy without replacing or relaxing formal convergence rule.",
+  "compute": "Run only on2203 after actual training workers finish, one GPU, <=8CPU threads, no newNPY, preserve frozen outputs; report audit wall/CPU/GPU/RSS/readout arithmetic separately.",
+  "goal_complete": false
+}

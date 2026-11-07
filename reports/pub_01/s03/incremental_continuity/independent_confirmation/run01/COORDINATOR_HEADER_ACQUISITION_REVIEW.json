@@ -1,0 +1,24 @@
+{
+  "status": "PASS_FOR_HEADER_ACQUISITION_ONLY",
+  "reviewed_on": "2026-11-02",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "actual_source_sha256": "f94fec52ac81fa9faf8848198241fd174e78957b4f31fb90db96e69815d16540",
+  "human_authorization_sha256": "9b81b1267bd406e537826d365e6d628ae65d2fb92d92c7bde2c6f2b422b2f773",
+  "server_pid": 1322348,
+  "actual_uid": 1012,
+  "actual_start_ticks": 752658852,
+  "checked": [
+    "Full script read; local/server source and authorization SHA match",
+    "Fixed commit tree and Git blob SHA verify annex declarations",
+    "Only vhdr/vmrk text payload and channel-table bodies requested; eeg/wav entries catalogued as pointers only",
+    "Header body size and SHA must match pinned declarations despite unversioned S3 URL",
+    "Bounded response sizes,8 request workers,3 transport attempts with failures logged",
+    "Existing metadata preserved and immutable comparison required; no model scores or NN calls"
+  ],
+  "limitations": [
+    "Acquisition is still active; completion and all-header agreement have not yet been verified",
+    "First marker is empty; no physical synchronization proof",
+    "Header/parser checks do not approve final 128-to-64 adapter or predictive evaluation"
+  ],
+  "scientific_run_authorized_by_this_review": false
+}

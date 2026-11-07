@@ -1,0 +1,25 @@
+{
+  "findings": [
+    "54/54固定岭解完成：完整近历史CF的共享选择VAL60s均值.174090，低于summary .174538及同维current Ccap .176897；没有额外历史收益证据。",
+    "强current读出C/Ccap在三个seed高于原P，但容量、函数类、MSE目标与正则改变，仅是反复使用source VAL的开发收益，不是独立泛化或ICML/NeurIPS新方法。",
+    "全54实际系数/mask/共享λ和17来源、48补充target指纹经协调独立核对；重聚合最大差1.11e−16，三图双方实际查看。科学goal仍ACTIVE。"
+  ],
+  "overview": [
+    "只原TRAIN426/VAL49，3seed，C/Ccap/CS/CF/CO/CF48×3λ，首4窗共同P回退、全30500窗/752块/49人；无新NN训练、encoder forward、新数据或test/DTU推理。",
+    "D4为加性线性条件预测，不涵盖历史×当前非线性状态交互。CF近历史为当前前3–0秒，CO为前6–3秒，不称长程记忆或零信息负对照。"
+  ],
+  "figure_comments": {
+    "01_COMPLETE_LAMBDA_MATRIX.png": "左右为3秒和60秒/person Pearson，细线是seed、粗线是均值、黑虚线是P。六臂三个固定λ全部呈现，无CI；Ccap共享选λ=.01时.176897，CF .174090。全部臂高于原P不证明历史有用，因为current控制已达到/超过历史；3秒与60秒排名不同。λ=1收缩近P不证明等价，连线不是连续寻优。",
+    "02_FIXED_CONTRASTS.png": "四面板CF−CS/CF−Ccap/CF−CO/CF48−CS；前三点用相同λ，右菱形用各臂共享选λ，三色是seed，无CI。CF−Ccap和CF48−CS在全部3λ×3seed均负；选定CF−CS均−.000447、仅1/3正，CF−CO均+.000151但1seed负。远历史可能有状态信息，不能先验作零对照；full/summary差异混合容量/表征，PCA阴性也非所有压缩无用。",
+    "03_CAPACITY_COST.png": "左图全54格名义系数与每输出有效df（不含截距），同参数数不保证相同有效容量；中图各seed整个18解/统计/评分约140/131/139秒；右图每λ记录合计约10.66/9.36/9.33秒，排除共享特征分解，不当整轮纯solve效率。总wall410.303秒、peakRSS约6.31GiB，执行中driverGPU500MiB，目标指纹/监控为运行后补充，未测子阶段CPU明确缺失。"
+  },
+  "caveats": [
+    "重复source VAL选参/报告、共享刺激和被试依赖；三seed点差非显著性、独立泛化、非劣或信息论因果证明。",
+    "C含dense residual及位置特异截距，Ccap逐坐标平方非所有current非线性；不能把C−P单独归因MSE或和warm跨轮当等预算胜出。",
+    "sidecar是第二seed运行中加入，原timing误写已保留+澄清，不冒充预冻结。无额外NN重放，不是外部实验室复现。"
+  ],
+  "next_steps": [
+    "收束本D4固定矩阵与中文归档，不追加λ/距离/seed追分；保留强current读出发现，goal不关闭。",
+    "另提出最小历史×当前映射交互设计供协调评估，固定强Ccap锚点与同容量current、合法更早历史对照；当前未执行此后续拟合。"
+  ]
+}

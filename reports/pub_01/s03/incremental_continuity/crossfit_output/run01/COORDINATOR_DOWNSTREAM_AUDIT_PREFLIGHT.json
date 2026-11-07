@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "source_sha256": "0506831377cd6a99da376483fb094e2e48b882d4f501121dfdb4b15876008f94",
+  "checks": [
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "active_points": 60191,
+      "context_values": 5778336,
+      "reference": {
+        "mean": 0.5650264620780945,
+        "std": 0.11083191633224487,
+        "constant": false
+      },
+      "producer": {
+        "mean": 0.5650264620780945,
+        "std": 0.11083191633224487,
+        "constant": false
+      },
+      "errors": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "active_points": 56255,
+      "context_values": 5400480,
+      "reference": {
+        "mean": 0.566807746887207,
+        "std": 0.09535928815603256,
+        "constant": false
+      },
+      "producer": {
+        "mean": 0.566807746887207,
+        "std": 0.09535928815603256,
+        "constant": false
+      },
+      "errors": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  ],
+  "synthetic_multiplicity_bridge": true,
+  "synthetic_context_values": 24576,
+  "CPU_seconds": 0.15066383300000008,
+  "new_neural_forwards": 0,
+  "actual_label_arrays_read": 0,
+  "optimizer_updates": 0,
+  "scope": "Actual fixed first/last IS records; dummy zero labels only to instantiate an existing table; no targets opened or fit."
+}

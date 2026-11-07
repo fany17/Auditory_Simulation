@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "protocol_sha256": "1791ab561d6faf1505855df1d691be83b7e2bd3eb26bc091276ab110422d883e",
+  "source_sha256": "13d34e2b3c416c2ad8111dcd1ca3aff1c4286c786aad4e32448c42eadae1c8e5",
+  "comparisons": 1325,
+  "summaries": [
+    {
+      "seed": 2026,
+      "kind": "selected",
+      "epoch": 5,
+      "residual_difference_RMS": 9.391956013054148e-08,
+      "prediction_difference_RMS": 9.391956012935096e-09
+    },
+    {
+      "seed": 1024,
+      "kind": "last",
+      "epoch": 19,
+      "residual_difference_RMS": 0.33526112250045326,
+      "prediction_difference_RMS": 0.033526112250045335
+    },
+    {
+      "seed": 2026,
+      "kind": "last",
+      "epoch": 19,
+      "residual_difference_RMS": 0.19121559403480512,
+      "prediction_difference_RMS": 0.019121559403480513
+    },
+    {
+      "seed": 31415,
+      "kind": "last",
+      "epoch": 19,
+      "residual_difference_RMS": 0.47252733446194006,
+      "prediction_difference_RMS": 0.04725273344619401
+    }
+  ],
+  "new_NN": 0,
+  "new_backward": 0,
+  "fits": 0,
+  "optimizer_updates": 0,
+  "CPU_seconds": 0.167573497,
+  "wall_seconds": 0.16796660423278809,
+  "peak_RSS_KiB": 23796,
+  "limits": [
+    "Source, metadata and scalar arithmetic consistency review only; no independent neural or activation replay",
+    "Runtime unchanged-input/weight assertions inspected, not independently replayed",
+    "Fixed48 windows from one subject; one input-gradient direction, not global sensitivity"
+  ],
+  "goal_complete": false
+}

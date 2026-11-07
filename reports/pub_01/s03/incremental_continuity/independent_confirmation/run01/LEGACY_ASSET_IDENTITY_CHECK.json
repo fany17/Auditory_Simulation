@@ -1,0 +1,346 @@
+{
+  "passed": true,
+  "scope": "Original TRAIN norm,3 checkpoints,3 TRAIN transforms,3 calibrations,9 frozen Ccap/W/F readouts",
+  "assets_checked": [
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz",
+      "sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/INPUT_INVENTORY.json",
+          "sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/TRAIN_TRANSFORMS.npz",
+      "sha256": "b61d80fa5af2ef81b241ab26c1e77d9221ca06a2a5f2acc51d1dbd6f9647507c",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "b61d80fa5af2ef81b241ab26c1e77d9221ca06a2a5f2acc51d1dbd6f9647507c"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "b61d80fa5af2ef81b241ab26c1e77d9221ca06a2a5f2acc51d1dbd6f9647507c"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "b61d80fa5af2ef81b241ab26c1e77d9221ca06a2a5f2acc51d1dbd6f9647507c"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/P_FT_BASELINE.json",
+      "sha256": "8b6231b512e947cda9880568f4d8e10ab4d044e0042b7e060d44c417961eb287",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "8b6231b512e947cda9880568f4d8e10ab4d044e0042b7e060d44c417961eb287"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "8b6231b512e947cda9880568f4d8e10ab4d044e0042b7e060d44c417961eb287"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "8b6231b512e947cda9880568f4d8e10ab4d044e0042b7e060d44c417961eb287"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/Ccap_lambda0.01_COEFFICIENTS.npz",
+      "sha256": "d85075dc49ffb0e5c1cae56821428333f072afe5ef97ed69f96b243128db2b12",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "d85075dc49ffb0e5c1cae56821428333f072afe5ef97ed69f96b243128db2b12"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "d85075dc49ffb0e5c1cae56821428333f072afe5ef97ed69f96b243128db2b12"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "d85075dc49ffb0e5c1cae56821428333f072afe5ef97ed69f96b243128db2b12"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed1024/W_COEFFICIENTS.npz",
+      "sha256": "eca6d073ec755cfa354b4b9afe18dda71b1848c06d6985b427e29166a4a9c126",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "eca6d073ec755cfa354b4b9afe18dda71b1848c06d6985b427e29166a4a9c126"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "eca6d073ec755cfa354b4b9afe18dda71b1848c06d6985b427e29166a4a9c126"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed1024/F_COEFFICIENTS.npz",
+      "sha256": "30664a05cf15e3553a1126591b36bac875d8a10bc6e0a3698b052ee438e5d887",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "30664a05cf15e3553a1126591b36bac875d8a10bc6e0a3698b052ee438e5d887"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "30664a05cf15e3553a1126591b36bac875d8a10bc6e0a3698b052ee438e5d887"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed1024/best_validation.pt",
+      "sha256": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/INPUT_INVENTORY.json",
+          "sha256": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/TRAIN_TRANSFORMS.npz",
+      "sha256": "f5de93ec1c8225fa940525618c5dc457d2deb822f52da32475ee53aae05c4392",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "f5de93ec1c8225fa940525618c5dc457d2deb822f52da32475ee53aae05c4392"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "f5de93ec1c8225fa940525618c5dc457d2deb822f52da32475ee53aae05c4392"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "f5de93ec1c8225fa940525618c5dc457d2deb822f52da32475ee53aae05c4392"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/P_FT_BASELINE.json",
+      "sha256": "0747207d9583d9b9644f4265bd3b50af6dd7bb12962a046bf0ecb9dbdeda0eb3",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "0747207d9583d9b9644f4265bd3b50af6dd7bb12962a046bf0ecb9dbdeda0eb3"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "0747207d9583d9b9644f4265bd3b50af6dd7bb12962a046bf0ecb9dbdeda0eb3"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "0747207d9583d9b9644f4265bd3b50af6dd7bb12962a046bf0ecb9dbdeda0eb3"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/Ccap_lambda0.01_COEFFICIENTS.npz",
+      "sha256": "871743334b85c7ed55ab2eac824508e82e53d82cd8df53e3b969b7e60684d609",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "871743334b85c7ed55ab2eac824508e82e53d82cd8df53e3b969b7e60684d609"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "871743334b85c7ed55ab2eac824508e82e53d82cd8df53e3b969b7e60684d609"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "871743334b85c7ed55ab2eac824508e82e53d82cd8df53e3b969b7e60684d609"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed2026/W_COEFFICIENTS.npz",
+      "sha256": "2b1f9e8c9f82dfb92bd78208495cc149298f2a6ae9ff03ed10463209bc02ae91",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "2b1f9e8c9f82dfb92bd78208495cc149298f2a6ae9ff03ed10463209bc02ae91"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "2b1f9e8c9f82dfb92bd78208495cc149298f2a6ae9ff03ed10463209bc02ae91"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed2026/F_COEFFICIENTS.npz",
+      "sha256": "102258bbd1abf24f02c13516ceb8b108db9af5dff6ae206458ef8ed79f2ac801",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "102258bbd1abf24f02c13516ceb8b108db9af5dff6ae206458ef8ed79f2ac801"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "102258bbd1abf24f02c13516ceb8b108db9af5dff6ae206458ef8ed79f2ac801"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed2026/best_validation.pt",
+      "sha256": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/INPUT_INVENTORY.json",
+          "sha256": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/TRAIN_TRANSFORMS.npz",
+      "sha256": "5ac2ce2e9f469276f284bc77a313ca183cb8a81440ca8d96453a856848095ff3",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "5ac2ce2e9f469276f284bc77a313ca183cb8a81440ca8d96453a856848095ff3"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "5ac2ce2e9f469276f284bc77a313ca183cb8a81440ca8d96453a856848095ff3"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "5ac2ce2e9f469276f284bc77a313ca183cb8a81440ca8d96453a856848095ff3"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/P_FT_BASELINE.json",
+      "sha256": "fa7d7b24c65a9f0714da414ecaffea3ceac5f6a622a4fc9728b053d5e2f01c27",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "fa7d7b24c65a9f0714da414ecaffea3ceac5f6a622a4fc9728b053d5e2f01c27"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "fa7d7b24c65a9f0714da414ecaffea3ceac5f6a622a4fc9728b053d5e2f01c27"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "fa7d7b24c65a9f0714da414ecaffea3ceac5f6a622a4fc9728b053d5e2f01c27"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/Ccap_lambda0.01_COEFFICIENTS.npz",
+      "sha256": "0660f10af60d68af1ff4f5cd7e4d853b934667dc6d0868380ef44559b673fcba",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "0660f10af60d68af1ff4f5cd7e4d853b934667dc6d0868380ef44559b673fcba"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "0660f10af60d68af1ff4f5cd7e4d853b934667dc6d0868380ef44559b673fcba"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "0660f10af60d68af1ff4f5cd7e4d853b934667dc6d0868380ef44559b673fcba"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed31415/W_COEFFICIENTS.npz",
+      "sha256": "ec3ba82044f144a3b34fb84bb40735aacc5d8b46c33ac4d8406eced022123ada",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "ec3ba82044f144a3b34fb84bb40735aacc5d8b46c33ac4d8406eced022123ada"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "ec3ba82044f144a3b34fb84bb40735aacc5d8b46c33ac4d8406eced022123ada"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/seed31415/F_COEFFICIENTS.npz",
+      "sha256": "a1a23b7ab5279480f2db5b58da8f368982fe93ae8e5d235736e2bfe2834e705d",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "a1a23b7ab5279480f2db5b58da8f368982fe93ae8e5d235736e2bfe2834e705d"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "a1a23b7ab5279480f2db5b58da8f368982fe93ae8e5d235736e2bfe2834e705d"
+        }
+      ]
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed31415/best_validation.pt",
+      "sha256": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9",
+      "historical_references": [
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json",
+          "sha256": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json",
+          "sha256": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/INPUT_INVENTORY.json",
+          "sha256": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9"
+        },
+        {
+          "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json",
+          "sha256": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9"
+        }
+      ]
+    }
+  ],
+  "historical_manifests": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/INPUT_INVENTORY.json": "ed3c0d74dcf1e49869a9aa5c9a378c0a5237df1c93e8e6c15c8a8bd4bf104184",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/PROTOCOL.json": "14b2cedd0df026637624afbc63004c3803644d420e7966bad234cab33babb78e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/INPUT_INVENTORY.json": "d034544ba48bbfcaa3941b4ad93534708a4ee4457182e6d0b45422b71eafbf62",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/PROTOCOL.json": "867042734282eeb7f9c7bf70e381996cb50072893afaedabd7075c30ee4f1499"
+  },
+  "SOURCE_ASSETS_sha256": "5073fea6a3eafb832ca4c5101f4a3770faf6808b35e47908a281cec6783299a6",
+  "source_sha256": "186ebf5456147830638da2d6dcd5ffc4feef5963cd93205d6e9b6d30f1f86bdf",
+  "real_NN_forwards": 0,
+  "new_model_fits": 0
+}

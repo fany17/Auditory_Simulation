@@ -1,0 +1,362 @@
+{
+  "round01": {
+    "m1_h16": [
+      {
+        "seed": 1024,
+        "registered": 3169,
+        "gradient_reachable": 3169,
+        "nonzero_gradient_scalars": 3169,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m1_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 3169,
+        "gradient_reachable": 3169,
+        "nonzero_gradient_scalars": 3169,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m1_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 3169,
+        "gradient_reachable": 3169,
+        "nonzero_gradient_scalars": 3169,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m1_h16_seed31415/completed.json"
+      }
+    ],
+    "m2_h16": [
+      {
+        "seed": 1024,
+        "registered": 5841,
+        "gradient_reachable": 5841,
+        "nonzero_gradient_scalars": 5841,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m2_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 5841,
+        "gradient_reachable": 5841,
+        "nonzero_gradient_scalars": 5841,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m2_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 5841,
+        "gradient_reachable": 5841,
+        "nonzero_gradient_scalars": 5841,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m2_h16_seed31415/completed.json"
+      }
+    ],
+    "m3_h16": [
+      {
+        "seed": 1024,
+        "registered": 6657,
+        "gradient_reachable": 6657,
+        "nonzero_gradient_scalars": 6657,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m3_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 6657,
+        "gradient_reachable": 6657,
+        "nonzero_gradient_scalars": 6657,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m3_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 6657,
+        "gradient_reachable": 6657,
+        "nonzero_gradient_scalars": 6657,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m3_h16_seed31415/completed.json"
+      }
+    ],
+    "m4_h16": [
+      {
+        "seed": 1024,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m4_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m4_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m4_h16_seed31415/completed.json"
+      }
+    ],
+    "m5_h16": [
+      {
+        "seed": 1024,
+        "registered": 6657,
+        "gradient_reachable": 6657,
+        "nonzero_gradient_scalars": 6657,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m5_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 6657,
+        "gradient_reachable": 6657,
+        "nonzero_gradient_scalars": 6657,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m5_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 6657,
+        "gradient_reachable": 6657,
+        "nonzero_gradient_scalars": 6657,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m5_h16_seed31415/completed.json"
+      }
+    ],
+    "m4_current_h16": [
+      {
+        "seed": 1024,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m4_current_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m4_current_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/m4_current_h16_seed31415/completed.json"
+      }
+    ],
+    "static_m4_h16": [
+      {
+        "seed": 1024,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/static_m4_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/static_m4_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 5161,
+        "gradient_reachable": 5161,
+        "nonzero_gradient_scalars": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/static_m4_h16_seed31415/completed.json"
+      }
+    ],
+    "output_prior_h16": [
+      {
+        "seed": 1024,
+        "registered": 2167,
+        "gradient_reachable": 2167,
+        "nonzero_gradient_scalars": 2167,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/output_prior_h16_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 2167,
+        "gradient_reachable": 2167,
+        "nonzero_gradient_scalars": 2167,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/output_prior_h16_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 2167,
+        "gradient_reachable": 2167,
+        "nonzero_gradient_scalars": 2167,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/output_prior_h16_seed31415/completed.json"
+      }
+    ],
+    "static_alignment": [
+      {
+        "seed": 1024,
+        "registered": 281,
+        "gradient_reachable": 281,
+        "nonzero_gradient_scalars": 281,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/static_alignment_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "registered": 281,
+        "gradient_reachable": 281,
+        "nonzero_gradient_scalars": 281,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/static_alignment_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "registered": 281,
+        "gradient_reachable": 281,
+        "nonzero_gradient_scalars": 281,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/full/static_alignment_seed31415/completed.json"
+      }
+    ]
+  },
+  "warm": {
+    "frozen_p": [
+      {
+        "seed": 1024,
+        "trainable_parameters": 257,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "trainable_parameters": 257,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "trainable_parameters": 257,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed31415/completed.json"
+      }
+    ],
+    "frozen_current": [
+      {
+        "seed": 1024,
+        "trainable_parameters": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "trainable_parameters": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "trainable_parameters": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed31415/completed.json"
+      }
+    ],
+    "frozen_past": [
+      {
+        "seed": 1024,
+        "trainable_parameters": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "trainable_parameters": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "trainable_parameters": 5161,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed31415/completed.json"
+      }
+    ],
+    "joint_p": [
+      {
+        "seed": 1024,
+        "trainable_parameters": 3372617,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "trainable_parameters": 3372617,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "trainable_parameters": 3372617,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed31415/completed.json"
+      }
+    ],
+    "joint_current": [
+      {
+        "seed": 1024,
+        "trainable_parameters": 3377521,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "trainable_parameters": 3377521,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "trainable_parameters": 3377521,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed31415/completed.json"
+      }
+    ],
+    "joint_past": [
+      {
+        "seed": 1024,
+        "trainable_parameters": 3377521,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed1024/completed.json"
+      },
+      {
+        "seed": 2026,
+        "trainable_parameters": 3377521,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed2026/completed.json"
+      },
+      {
+        "seed": 31415,
+        "trainable_parameters": 3377521,
+        "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed31415/completed.json"
+      }
+    ]
+  },
+  "frozen_FT_anchor": {
+    "1024": {
+      "selected_epoch": 4,
+      "original_FT_trainable_parameters": 3372617,
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed1024/best_validation.pt",
+      "checkpoint_sha256": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2",
+      "cache_completed": {
+        "seed": 1024,
+        "checkpoint_sha": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2",
+        "GPU_driver_MiB": 706,
+        "new_NN_updates": 0,
+        "original_FT_unchanged": true
+      },
+      "future_frozen_encoder_head_trainable_parameters": 0,
+      "existing_Ccap_coefficients_including_bias": 626880
+    },
+    "2026": {
+      "selected_epoch": 4,
+      "original_FT_trainable_parameters": 3372617,
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed2026/best_validation.pt",
+      "checkpoint_sha256": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4",
+      "cache_completed": {
+        "seed": 2026,
+        "checkpoint_sha": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4",
+        "GPU_driver_MiB": 706,
+        "new_NN_updates": 0,
+        "original_FT_unchanged": true
+      },
+      "future_frozen_encoder_head_trainable_parameters": 0,
+      "existing_Ccap_coefficients_including_bias": 626880
+    },
+    "31415": {
+      "selected_epoch": 4,
+      "original_FT_trainable_parameters": 3372617,
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed31415/best_validation.pt",
+      "checkpoint_sha256": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9",
+      "cache_completed": {
+        "seed": 31415,
+        "checkpoint_sha": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9",
+        "GPU_driver_MiB": 706,
+        "new_NN_updates": 0,
+        "original_FT_unchanged": true
+      },
+      "future_frozen_encoder_head_trainable_parameters": 0,
+      "existing_Ccap_coefficients_including_bias": 626880
+    }
+  }
+}

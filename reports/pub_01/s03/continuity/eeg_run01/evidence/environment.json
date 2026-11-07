@@ -1,0 +1,35 @@
+{
+  "hostname": "nercn",
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "interpreter": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+  "torch": "2.11.0+cu128",
+  "numpy": "1.26.4",
+  "CUDA_runtime": "12.8",
+  "GPU_names": [
+    "NVIDIA L40",
+    "NVIDIA L40"
+  ],
+  "CPU_M5_workers_memory_snapshot": [
+    {
+      "pid": 3535787,
+      "VmRSS_snapshot": "708964 kB",
+      "VmHWM_so_far": "736704 kB",
+      "threads": "4"
+    },
+    {
+      "pid": 3535789,
+      "VmRSS_snapshot": "722004 kB",
+      "VmHWM_so_far": "744996 kB",
+      "threads": "4"
+    },
+    {
+      "pid": 3535790,
+      "VmRSS_snapshot": "722928 kB",
+      "VmHWM_so_far": "737496 kB",
+      "threads": "4"
+    }
+  ],
+  "memory_scope": "observed mid-run, not complete all-model peak RSS profiling",
+  "formal_TF32": "disabled in trainer main; pilot default differs",
+  "epoch": 1792696518.5112765
+}

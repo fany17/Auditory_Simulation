@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "condition": "C",
+      "seed": 1024,
+      "selected_step": 3262,
+      "checkpoint_sha256": "9196049cdd414f4c9f62d77af25b54ca92cb48edc29e45a2e73777a6d41dd401"
+    },
+    {
+      "condition": "O",
+      "seed": 1024,
+      "selected_step": 3262,
+      "checkpoint_sha256": "1b7a5e267bc71d20dfa1f42f232d92b65ea53220c2ae0be7b9b9a0c3b615b03e"
+    },
+    {
+      "condition": "P_pretrain",
+      "seed": 1024,
+      "selected_step": 479,
+      "checkpoint_sha256": "a4159c58bea7f5d18ce498936e2218e8ba6e04d5d6ae4ad687838c7d9bfe681d"
+    },
+    {
+      "condition": "P_head",
+      "seed": 1024,
+      "selected_step": 1017,
+      "checkpoint_sha256": "67fac25ff97f9c4ddad790a7850d99466cd403c8845a604f7bd346017027a787"
+    },
+    {
+      "condition": "C",
+      "seed": 2026,
+      "selected_step": 3262,
+      "checkpoint_sha256": "a1435d4bdc8e8c8c10188748c5d9a57e5112bb7a7fc74b6944cd2e33548cbba5"
+    },
+    {
+      "condition": "O",
+      "seed": 2026,
+      "selected_step": 3262,
+      "checkpoint_sha256": "25cc1c8b254e1c6743f1d9f207b2b6802dc0ab0ebed9394784de021aef96a95b"
+    },
+    {
+      "condition": "P_pretrain",
+      "seed": 2026,
+      "selected_step": 479,
+      "checkpoint_sha256": "f128432e0003423698bd306e9e59529fe8b27c5aad2d2c67ae4fad308e47f2b6"
+    },
+    {
+      "condition": "P_head",
+      "seed": 2026,
+      "selected_step": 2035,
+      "checkpoint_sha256": "6edfbc031b9c71b44809884615b5b4f0336d5a9cfa51ca259e5fdbd693be3360"
+    },
+    {
+      "condition": "C",
+      "seed": 31415,
+      "selected_step": 3262,
+      "checkpoint_sha256": "93e9e98e35b0827af4fcb48971dddc68a69ba6d41d2978f0211facff8f383959"
+    },
+    {
+      "condition": "O",
+      "seed": 31415,
+      "selected_step": 3000,
+      "checkpoint_sha256": "075bfe09089aef3605e9b4249d28aa640e9666fca493996afab0af1fdea79a1d"
+    },
+    {
+      "condition": "P_pretrain",
+      "seed": 31415,
+      "selected_step": 479,
+      "checkpoint_sha256": "61c6a841cc07e8ded9ba0a6a38ec168ec846bd6ab60b8d1f5803f0165bd692d3"
+    },
+    {
+      "condition": "P_head",
+      "seed": 31415,
+      "selected_step": 2035,
+      "checkpoint_sha256": "561166276b5ae477a667908d1eda0d94b6b5c2676cbf2d7b7cf5ac3a8aa52038"
+    }
+  ],
+  "all_conditions_completed": true,
+  "exact_matched_record_block_order_verified": true,
+  "P_actual_coverage_and_budget_verified": true,
+  "audit_payload_read": false,
+  "review_kind": "executor separate post-training technical review; coordinator review also requested"
+}

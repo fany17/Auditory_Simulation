@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "process": {
+    "pid": 1432627,
+    "uid": 1012,
+    "startticks": 789056187,
+    "source_sha256": "b0fd94cb7deb04420270eb55a29591d1e3a303bceb4b6606bc90c408b75a6d1c",
+    "deadline_unix": 1794049718.2119832
+  },
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "fits": 12,
+  "counters": {
+    "TRAIN_anchor_points_read": 145656324,
+    "context_values_represented": 13653221760,
+    "neural_forwards": 0,
+    "label_arrays_read": 0,
+    "fitting_updates": 0
+  },
+  "CPU_seconds": 7.036526472,
+  "wall_seconds_including_wait": 7143.750049352646,
+  "peak_RSS_bytes": 645607424,
+  "scope": "Independent complete lane TRAIN statistics, saved scoring aggregation/selection, actual last/selected weights and optimizer states. No new labels, model forward or scientific claim."
+}

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "C": {
+      "future_perturbation_max": 1.7881393432617188e-07,
+      "full_chunk_max": 8.344650268554688e-07,
+      "carry_max": 8.940696716308594e-07,
+      "cache_conv": 63,
+      "cache_KV": 191,
+      "cache_head": 31,
+      "attention_window_including_current": 192,
+      "position_after_carry": 600,
+      "parameters": 3128137,
+      "cross_microchunk_gradient": 0.47251904010772705,
+      "real_60s_loss": 1.0340536832809448,
+      "all_grad_finite": true,
+      "real_step_seconds": 0.5987903578206897
+    },
+    "O": {
+      "real_60s_loss": 1.0541939735412598,
+      "all_grad_finite": true,
+      "parameters": 3372617,
+      "real_step_seconds": 0.15792119596153498,
+      "Hann_identity_max": 2.384185791015625e-07,
+      "native_windows_per_60s": 39
+    }
+  },
+  "seconds": 2.26901382394135,
+  "audit_read": false,
+  "actual_input": "newtrain normalized cache x[s]=rawEEG[s+8]",
+  "target": "same envelope coordinate s"
+}

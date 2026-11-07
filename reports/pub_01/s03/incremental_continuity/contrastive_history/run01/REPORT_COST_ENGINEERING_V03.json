@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "synthetic_worker_roles": 30,
+  "synthetic_completed_training_stages": 24,
+  "synthetic_readouts": 9,
+  "synthetic_epoch_receipts": 249,
+  "verifies_actual_vs_prefix_and_shared_CL": true,
+  "raw_signal_reads": 0,
+  "new_model_fits": 0,
+  "actual_formal_scores_read": 0
+}

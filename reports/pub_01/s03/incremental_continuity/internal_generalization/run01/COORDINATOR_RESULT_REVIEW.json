@@ -1,0 +1,90 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "reviewer": "root coordinator; independent review of executor code, fixed protocol and actual artifacts, not external peer review",
+  "scope": "D7 frozen six-role internal generalization audit",
+  "goal_complete": false,
+  "scientific_conclusion": "CURRENT_READOUT_GAIN_OVER_FROZEN_NATIVE_P_AND_OUTPUT_ONLY; NO_ESTABLISHED_ADVANTAGE_OVER_HISTORICAL_FINE_TUNED_BASELINE; NO_HISTORY_OR_INDEPENDENT_CONFIRMATION_CLAIM",
+  "actual_execution": {
+    "role_split_scores": 36,
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "seen_records": 69,
+    "seen_people": 69,
+    "heldout_records": 75,
+    "heldout_people": 13,
+    "new_fits": 0,
+    "encoder_forwards": 0,
+    "new_head_window_forwards": 254076,
+    "DTU": 0
+  },
+  "primary_results": {
+    "weighted_P": 0.1602482460455543,
+    "weighted_Ponly": 0.16464240785234424,
+    "weighted_Ccap": 0.16894348620547392,
+    "Ccap_minus_P": 0.008695240159919617,
+    "Ccap_minus_Ponly": 0.004301078353129669,
+    "all_primary_differences_positive_in_each_seed_and_phase": true
+  },
+  "historical_reference": {
+    "registered_D7_role": false,
+    "new_inference": false,
+    "source": "COORDINATOR_HISTORICAL_FT_REFERENCE.json",
+    "same_seed_same_2044_block_keys": true,
+    "P_FT_weighted": 0.16894472636867197,
+    "Ccap_minus_P_FT_weighted": -1.240163198061121e-06,
+    "paired_seed_deltas": [
+      -0.0016928607791364958,
+      0.0010038101912706598,
+      0.0006853300982716526
+    ],
+    "interpretation": "Nearly equal point means are neither superiority nor equivalence/noninferiority. Additional five-epoch joint fine tuning and frozen-encoder ridge/search differ in cost, function class and boundary policy; no pure causal comparison."
+  },
+  "actual_independent_checks": {
+    "source_pins": 286,
+    "input_header_fingerprints": 893,
+    "all_scores_and_masks": 36,
+    "cached_reconstruction_cases": 72,
+    "original_P_unscaled_max": 0,
+    "P_affine_block_r_max": 3.3306690738754696e-16,
+    "stored_aggregation_max": 0,
+    "reconstructed_block_r_max": 2.7755575615628914e-16,
+    "reconstructed_MSE_max": 5.551115123125783e-17,
+    "reconstructed_3s_r_max": 5.551115123125783e-17,
+    "first4_fallback_max": 0,
+    "Hann_aggregate_identity_max": 4.0475977604315094e-16,
+    "undefined_3s_count": 0
+  },
+  "artifact_sha256": {
+    "COORDINATOR_NUMERICAL_AUDIT.json": "1128a53b4609f0b33e1f8ef4c8587c03e9121f5250978856289721267bbb8da4",
+    "COORDINATOR_HISTORICAL_FT_REFERENCE.json": "d178483c28be5847bad1c74e4c5c8b7dea32cd451e2ad18638ec23d667dd8a2f",
+    "PROTOCOL.json": "eed8be9fbd1d5c2a182f90f10bc3fcb4128468da15f0eff84554e55e3d149886",
+    "COMPLETED.json": "6491230e6b39fb3e9dcce929532ce9eee5543e40d04f65499b5e8b9294736bdc",
+    "Windows_REPORT.md_reviewed_raw_bytes": "53f76adbe071935e5b71ed2af531bf46a964d8f401654145a54a506675e0aeb2",
+    "report01/01_ABSOLUTE_PAIRED.png": "79060fb48e2ee5fb5ffc6fdef07b289c16604f41ce30595fa33ad8b4f4710749",
+    "report01/02_FROZEN_CONTRASTS.png": "2a62622e2e878185eaaa9149683056adf31ef2e2877329e126cbcaffa4c6ec78",
+    "report01/03_CONTINUITY_MSE.png": "7cd6b88e167aa7d82ae9d1033a10b2425429f9c3d63771420211fffe8ac7ff0d"
+  },
+  "presentation_review": {
+    "full_Chinese_REPORT_actually_read": true,
+    "three_actual_PNGs_viewed": true,
+    "exact_matched_three_seed_FT_annotation_read": true,
+    "all_six_predefined_contrasts_present": true,
+    "negative_secondary_and_MSE_discordance_disclosed": true,
+    "no_new_plot_or_test_required": true
+  },
+  "limitations": [
+    "All old internal test records previously exposed: POST-HOC INTERNAL EXPLORATORY, not independent confirmation.",
+    "Current-only readout gain does not overturn negative history tests or establish continuity benefit/novelty.",
+    "Ccap versus C changes capacity and selected regularization; not pure nonlinear-feature effect or equal-budget win.",
+    "C versus U32 heldout mean is negative and one of three seeds negative; no universally stable full-support benefit.",
+    "Lower overlap disagreement does not imply higher accuracy; Ccap fused target MSE worse than C despite higher r.",
+    "Three seeds share records, people and stimuli; no new CI/significance or independent-data claim.",
+    "Raw EEG/encoder were not rerun in D7; validation and actual cached algebra/provenance were checked as declared.",
+    "Historical FT reference has no D7 first-four-window fallback and a different additional optimization budget."
+  ],
+  "completion_authorization": "Close D7 with unchanged audit/reference/review, complete Chinese archive and normal commit/push to PR6 branch. Do not merge or mark parent goal complete.",
+  "next_scope": "Prepare bounded FT TRAIN/VAL PFT/Ponly/C/Ccap transfer plan using corresponding FT TRAIN statistics and actual resource inventory. No old-test/DTU selection, no automatic new architecture or download."
+}

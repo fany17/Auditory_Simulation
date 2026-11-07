@@ -1,0 +1,20 @@
+{
+  "all_variants": [
+    "local",
+    "m1_short",
+    "m1_long",
+    "m1_multi",
+    "m2",
+    "gru",
+    "m3_frozen",
+    "m3_finetune",
+    "m4_fixed",
+    "m4_adaptive",
+    "m5_eeg",
+    "m5_prior",
+    "m5_full"
+  ],
+  "steps_each": 100,
+  "selected_by_validation_only": true,
+  "audit_read": false
+}

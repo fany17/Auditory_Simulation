@@ -1,0 +1,82 @@
+{
+  "status": "FROZEN_PREPARED_NOT_EXECUTED",
+  "scientific_protocol_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "source_sha256": "4652539110004c50232fcebcf199e45a70f1c795d8103e047011bdf209e8ad3d",
+  "source_server": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/COORDINATOR_FULL_REPLAY.py",
+  "launch_after": "All 150 frozen fits and successor report have completed, original saved-evidence audit passes, and the execution source matches this SHA256.",
+  "scope": "Independent CPU replay of all selected D27 models on all original eligible development VAL blocks. No model selection, optimization, normalization refit or external-test access.",
+  "matrix": {
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "stages": [
+      "initial",
+      "personal"
+    ],
+    "unique_selected_models": 150,
+    "record_prediction_passes": 294,
+    "eligible_blocks_per_seed_stage": 752,
+    "total_block_comparisons": 4512
+  },
+  "model": {
+    "architecture": "Frozen author Sea-Wave Small",
+    "parameters": 150433,
+    "direct_operations": "Weight normalization from weight_g/weight_v, conv1d, GELU, gated tanh/sigmoid, per-layer and per-cycle residual scales, skip accumulation, final linear convolution.",
+    "author_class_imported_for_formal_replay": false,
+    "author_class_used_for_synthetic_parity_only": true
+  },
+  "evaluation": {
+    "core": 4096,
+    "halo_left": 124,
+    "halo_right": 124,
+    "normalization": "Unchanged existing TRAIN-only statistics",
+    "targets": "Original envelope values in float64 for scoring",
+    "sample_mask": "Original prediction-independent positive-Hann support",
+    "metric_r": "Independent NumPy covariance correlation",
+    "metric_MSE": "Compensated scalar squared-error sum / count",
+    "absolute_tolerance_per_block": {
+      "r": 0.0001,
+      "MSE": 0.0001
+    },
+    "outcome": "Finish all six cases even if numerical tolerances fail; preserve every failed block and report execution_completed separately from strict_all_metrics_passed."
+  },
+  "resources": {
+    "host": "server2203",
+    "device": "cpu",
+    "CPUs": [
+      40,
+      41,
+      42,
+      43
+    ],
+    "torch_threads": 4,
+    "torch_interop_threads": 1,
+    "GPU": 0,
+    "training_updates": 0,
+    "new_fits": 0,
+    "old_test_reads": 0
+  },
+  "cost_accounting": {
+    "formal_model_calls": "Count all independent forward invocations and exact input sample-time presentations including halos.",
+    "checkpoint_reads": "150 successful tensor decodes; separate load attempts and decoded file sizes.",
+    "data": "294 EEG record passes; actual EEG sample-time reads and scored target sample-time presentations, not global unions.",
+    "all_synthetic_preparation_calls": {
+      "author": 8,
+      "independent": 16
+    },
+    "first_draft_synthetic_CPU_and_wall": "Unknown, retained as null; final verification timing recorded in preparation receipt."
+  },
+  "safety": {
+    "existing_output_directory": "Refuse; no overwrite or silent resume.",
+    "failure": "Preserve completed case receipts, actual counters and failure evidence; no automatic retry.",
+    "metric_failure": "Do not change tolerance or retrain."
+  },
+  "remaining": [
+    "Actual execution after the full matrix is complete",
+    "Independent inspection of per-block discrepancies and actual exit evidence",
+    "Rendered figure review and scientific interpretation",
+    "Independent generalization/SOTA evidence outside these repeated development scores"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "fit": "C_current_seed2026",
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "scope": "One completed fit; saved-metric reaggregation and budget/selection metadata only; no prediction replay or matrix-level conclusion",
+  "scalar_comparisons": 960,
+  "maximum_absolute_error": 2.1927988938519327e-16,
+  "selected_epoch": 0,
+  "incumbent_validation_r": 0.1817561196902157,
+  "selected_validation_r": 0.18390715539561397,
+  "last_validation_r": 0.18168668062818916,
+  "optimizer_updates": 78900,
+  "component_forward_counts": {
+    "current_encoder_prefix_windows": 6699396,
+    "current_projection_windows": 6699396,
+    "current_head_windows": 6699396,
+    "frozen_encoder_prefix_windows": 6598119,
+    "attention_query_windows": 6598119,
+    "prior_projection_windows": 0
+  },
+  "input_sha256": {
+    "COMPLETED.json": "c97405069b531031a3716ebd3ca9ff945c5b302486b591f627cdb0a0cbf6fe94",
+    "STARTED.json": "c98b76bce7de7f986353b385cefd2a51e058c844aae7326680f614826bc60e23",
+    "HISTORY.jsonl": "b838ecc700a527fa0ce110d26aa6d21d83e3cf22f1dc6df7337caed61cf152a0",
+    "PERMUTATIONS.jsonl": "c9d7e4e5aa517640ca2cd644b4a217f24793717be68dd41812b7e270eaa5c04b",
+    "INCUMBENT.json.gz": "fdf7a6dfd62bab1537384194a0614b65aecd619e5e6dae541c3bc2d9f92a9241",
+    "SELECTED_METRICS.json.gz": "435941fff4779fa52a4b58c8222b102701e323d6a12b9c19dcc3fbd60b45f812",
+    "COMPONENT_COUNTS.json": "560d2e20cf3d0dc701ab023e112d350ad452881f9ad3f749bf76baf67910be45"
+  },
+  "audit_NN_forwards": 0,
+  "audit_backwards": 0,
+  "audit_optimizer_updates": 0,
+  "audit_CPU_seconds": 0.01808644,
+  "audit_wall_seconds": 0.0181424617767334,
+  "limitations": "Seen-participant, mixed-source, repeatedly developed VAL; checkpoint contents and predictions not independently replayed; other fits pending",
+  "goal_complete": false,
+  "audit_source_sha256": "f49a7b4939e7da0ac395412c0a4372a5a00b97a2eafe8d494a3caaebf0edb2b0",
+  "execution_host": "server2203",
+  "paired_H_metadata_consistency": {
+    "scope": "Equality of source/metadata hashes from the independently read H/C receipts; no new numerical experiment.",
+    "protocol_equal": true,
+    "all20_permutations_equal": true,
+    "incumbent_metric_file_equal": true,
+    "H_completed_sha256": "5a0697e07d780a1f46667e89ec561a9a27c0b81f2bbdaf3df297ccf97087a545",
+    "T_and_P_2026_complete": false
+  }
+}

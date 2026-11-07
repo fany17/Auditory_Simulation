@@ -1,0 +1,136 @@
+{
+  "stage": "engineer",
+  "protocol_sha256": "40de86545cdcd69264a308a68cc02c653b211f9688511b2cea9df2976dbcc74e",
+  "process": {
+    "pid": 1317350,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_output_query.py",
+      "engineer"
+    ],
+    "linux_startticks": 788189262,
+    "stage_started_unix": 1793954649.1709607,
+    "deadline_unix": 1793955249.1709607,
+    "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "runtime_versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "torch_cuda": "12.8"
+  },
+  "CPU_seconds": 7.013310067,
+  "elapsed_seconds": 3.611113978549838,
+  "counters": {
+    "TRAIN_records_loaded": 6,
+    "TRAIN_cached_windows_loaded": 3447,
+    "current_stem_points": 36960,
+    "context_output_points": 49152,
+    "backward_points": 24576
+  },
+  "location": {
+    "seed": 31415,
+    "phase": "first_two_TRAIN_records"
+  },
+  "resources": {
+    "peak_RSS_bytes": 1445126144,
+    "cuda_peak_allocated_bytes": 101933568,
+    "writer_free_bytes": 178096754688,
+    "writer_bytes": 28369
+  },
+  "new_encoder_head_windows": 0,
+  "new_signal_feature_prediction_array_files": 0,
+  "parameter_checkpoint_files": 0,
+  "training_statistics_files": 0,
+  "passed": true,
+  "checks": [
+    {
+      "seed": 1024,
+      "shared_initial_tensors_exact": true,
+      "CPU_CUDA_RNG_exact": true,
+      "D20_epoch0_shuffle_state_exact": true,
+      "perturbed_latent_output_max_abs": 0.0,
+      "current_explicit_max_abs": 0.0,
+      "history_explicit_max_abs": 0.0,
+      "current_b_perturbation_code_max_abs": 2.5836257934570312,
+      "current_code_ref_max_abs": 0.0,
+      "same_code_near_far_max_abs": 0.010219626128673553,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.023663552477955818
+        },
+        {
+          "current": 0.0005642949254252017,
+          "context_in": 0.00031080006738193333,
+          "context_out": 0.0003132298297714442,
+          "mix": 0.003089568577706814,
+          "output": 0.024462273344397545
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "shared_initial_tensors_exact": true,
+      "CPU_CUDA_RNG_exact": true,
+      "D20_epoch0_shuffle_state_exact": true,
+      "perturbed_latent_output_max_abs": 0.0,
+      "current_explicit_max_abs": 0.0,
+      "history_explicit_max_abs": 0.0,
+      "current_b_perturbation_code_max_abs": 2.2167470455169678,
+      "current_code_ref_max_abs": 0.0,
+      "same_code_near_far_max_abs": 0.022316060960292816,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.03385980427265167
+        },
+        {
+          "current": 0.0005682335468009114,
+          "context_in": 0.0007997310603968799,
+          "context_out": 0.0006037383573129773,
+          "mix": 0.004342553671449423,
+          "output": 0.03637532889842987
+        }
+      ]
+    },
+    {
+      "seed": 31415,
+      "shared_initial_tensors_exact": true,
+      "CPU_CUDA_RNG_exact": true,
+      "D20_epoch0_shuffle_state_exact": true,
+      "perturbed_latent_output_max_abs": 0.0,
+      "current_explicit_max_abs": 0.0,
+      "history_explicit_max_abs": 0.0,
+      "current_b_perturbation_code_max_abs": 2.6585166454315186,
+      "current_code_ref_max_abs": 0.0,
+      "same_code_near_far_max_abs": 0.008865326642990112,
+      "gradients": [
+        {
+          "current": 0.0,
+          "context_in": 0.0,
+          "context_out": 0.0,
+          "mix": 0.0,
+          "output": 0.02003519795835018
+        },
+        {
+          "current": 0.00040632931631989777,
+          "context_in": 0.00034200988011434674,
+          "context_out": 0.00031116916215978563,
+          "mix": 0.0025297177489846945,
+          "output": 0.020020617172122
+        }
+      ]
+    }
+  ],
+  "optimizer_updates": 0,
+  "formal_fits": 0,
+  "common_fit_code_and_signature_exact": true,
+  "frozen_module_unchanged": true
+}

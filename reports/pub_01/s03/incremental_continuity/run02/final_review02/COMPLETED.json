@@ -1,0 +1,26 @@
+{
+  "time": 1793511304.6121926,
+  "cells": 18,
+  "wholeVAL_window_replays": 549000,
+  "continuous_blocks": 13536,
+  "all_passed": true,
+  "max_mean3s_difference": 9.346426410594688e-10,
+  "max_mean60s_difference": 5.551115123125783e-17,
+  "max_block_difference": 4.440892098500626e-16,
+  "max_person_difference": 2.220446049250313e-16,
+  "independent_math_checks": {
+    "constant_pred_and_target_rejected": true,
+    "normal_formula_difference": 2.42861286636753e-17
+  },
+  "max_absolute_wave_difference": 0.0,
+  "max_normalized_wave_error": 0.0,
+  "corrected_replay_absolute_gate_all18_passed": true,
+  "v1_failed_gate_remains_failed_historical_evidence": true,
+  "v2_normalized_all18_passed": true,
+  "review_protocol_sha256": "6fc0f00aa12eb0bbb98577475ec959ccfb340508e144e6b4828295623004d2c9",
+  "source_sha256": "2df9f4fce5b3f8d5971734b6a48b52eae54cac003e0c6eae14b891d66e5dd9c1",
+  "test_read": false,
+  "new_fits": false,
+  "scientific_goal_achieved_claimed": false,
+  "limitation": "frozen neural modules reused; canonical derivative inputs, not original BDF/audio preprocessing replay; TRAIN_VAL development only"
+}

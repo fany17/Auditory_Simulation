@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "process": {
+    "pid": 1650691,
+    "uid": 1012,
+    "startticks": 790456096,
+    "gpu": ""
+  },
+  "TRAIN_records": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz"
+  ],
+  "parameters": 150433,
+  "receptive_field": 249,
+  "input_and_target_bridge": true,
+  "author_nonzero_state_max_abs": 0.0,
+  "gradient_norm_after_two_MSE_updates": {
+    "init_conv.0.conv.weight_v": 4.950527909386437e-06,
+    "final_conv.2.conv.weight": 0.299809992313385
+  },
+  "halo_forward_calls": [
+    4220,
+    636
+  ],
+  "halo_max_abs": 1.4551915228366852e-10,
+  "shared_metric_abs": {
+    "r": 6.938893903907228e-18,
+    "MSE": 0.0
+  },
+  "personal_independent_start": true,
+  "FT_objective": 0.38530850410461426,
+  "scheduler_resume": {
+    "initial": {
+      "restarts": 1,
+      "exact_lr_wd_continuation": true,
+      "actual_Adam_moments_and_step_restored": true,
+      "checked_batch_positions": 15,
+      "first_and_last": [
+        [
+          9,
+          0,
+          1.1915273109353625e-06,
+          2.1852398617324577e-08
+        ],
+        [
+          13,
+          2,
+          7.502500000000001e-05,
+          1.3693063937629153e-06
+        ]
+      ]
+    },
+    "personal": {
+      "restarts": 1,
+      "exact_lr_wd_continuation": true,
+      "actual_Adam_moments_and_step_restored": true,
+      "checked_batch_positions": 15,
+      "first_and_last": [
+        [
+          9,
+          0,
+          2.0816937315575665e-07,
+          2.1852398617324577e-05
+        ],
+        [
+          13,
+          2,
+          7.525e-06,
+          0.001369306393762915
+        ]
+      ]
+    }
+  },
+  "updates": {
+    "initial": 2,
+    "personal": 1
+  },
+  "model_forward_batches": {
+    "optimization": 3,
+    "author_equivalence": 2,
+    "halo_full": 1,
+    "halo_parts": 2
+  },
+  "wall_seconds": 1.5111541096121073,
+  "CPU_seconds": 1.5408443739999997,
+  "CUDA": 0,
+  "VAL_read": 0,
+  "old_test_reads": 0,
+  "notes": "All three actual optimization states stayed in memory and are not formal assets; resume checkpoint used synthetic linear tensors."
+}

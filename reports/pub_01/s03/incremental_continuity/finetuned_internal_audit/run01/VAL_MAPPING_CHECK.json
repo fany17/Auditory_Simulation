@@ -1,0 +1,259 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "seed": 1024,
+      "role": "P_FT",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "P_FT",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "Ponly",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 5.551115123125783e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "C",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 3.3306690738754696e-16,
+      "block_r_max_abs": 8.326672684688674e-17
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "Ccap",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 1024,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 1.6653345369377348e-16,
+      "block_r_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.842170943040401e-14,
+      "block_r_max_abs": 8.326672684688674e-17
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 2.842170943040401e-14,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "P_FT",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "P_FT",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "Ponly",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 3.3306690738754696e-16,
+      "block_r_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 2026,
+      "role": "C",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 3.3306690738754696e-16,
+      "block_r_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "Ccap",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 4.163336342344337e-17
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 5.684341886080802e-14,
+      "block_r_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 2.842170943040401e-14,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "P_FT",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "P_FT",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "Ponly",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 0.0,
+      "block_r_max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 6.106226635438361e-16,
+      "block_r_max_abs": 2.7755575615628914e-17
+    },
+    {
+      "seed": 31415,
+      "role": "C",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 3.3306690738754696e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 31415,
+      "role": "Ccap",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 2.220446049250313e-16,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "prediction_max_abs": 2.842170943040401e-14,
+      "block_r_max_abs": 5.551115123125783e-17
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "prediction_max_abs": 5.684341886080802e-14,
+      "block_r_max_abs": 8.326672684688674e-17
+    }
+  ],
+  "new_encoder_head_windows": 0,
+  "new_test_scoring": false
+}

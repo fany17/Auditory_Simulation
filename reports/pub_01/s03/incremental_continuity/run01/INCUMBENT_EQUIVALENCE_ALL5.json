@@ -1,0 +1,56 @@
+{
+  "seeds": {
+    "1024": {
+      "raw_reencoded_B64_validation_loss": -0.14876086750479994,
+      "original_cached_B512_validation_loss": -0.14876085354949609,
+      "absolute_difference": 1.3955303856949541e-08,
+      "prespecified_absolute_tolerance": 0.0001,
+      "passed": true,
+      "full_validation_windows": 30500,
+      "optimizer_steps_before_check": 0,
+      "test_read": false
+    },
+    "2026": {
+      "raw_reencoded_B64_validation_loss": -0.14634139147254288,
+      "original_cached_B512_validation_loss": -0.14634140256486955,
+      "absolute_difference": 1.109232666829385e-08,
+      "prespecified_absolute_tolerance": 0.0001,
+      "passed": true,
+      "full_validation_windows": 30500,
+      "optimizer_steps_before_check": 0,
+      "test_read": false
+    },
+    "31415": {
+      "raw_reencoded_B64_validation_loss": -0.1519646189632963,
+      "original_cached_B512_validation_loss": -0.15196461358129001,
+      "absolute_difference": 5.382006285081786e-09,
+      "prespecified_absolute_tolerance": 0.0001,
+      "passed": true,
+      "full_validation_windows": 30500,
+      "optimizer_steps_before_check": 0,
+      "test_read": false
+    },
+    "42": {
+      "raw_reencoded_B64_validation_loss": -0.15183016995719223,
+      "original_cached_B512_validation_loss": -0.15183015767570401,
+      "absolute_difference": 1.2281488215304392e-08,
+      "prespecified_absolute_tolerance": 0.0001,
+      "passed": true,
+      "full_validation_windows": 30500,
+      "optimizer_steps_before_check": 0,
+      "test_read": false
+    },
+    "12345": {
+      "raw_reencoded_B64_validation_loss": -0.1498351394900533,
+      "original_cached_B512_validation_loss": -0.1498351025395706,
+      "absolute_difference": 3.695048270135892e-08,
+      "prespecified_absolute_tolerance": 0.0001,
+      "passed": true,
+      "full_validation_windows": 30500,
+      "optimizer_steps_before_check": 0,
+      "test_read": false
+    }
+  },
+  "all5_passed_before_any_FT_updates": true,
+  "test_read": false
+}

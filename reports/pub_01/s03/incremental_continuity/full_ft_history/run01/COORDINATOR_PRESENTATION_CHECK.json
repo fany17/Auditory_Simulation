@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "rows": {
+    "FIT_RESULTS.csv": 9,
+    "FIT_RESULTS_WITH_TRAINED.csv": 9,
+    "ALL_EPOCHS.csv": 180,
+    "ALL_PERSON.csv": 735,
+    "ALL_BLOCKS.csv": 11280,
+    "FAMILY_DESCRIPTIVE.csv": 75,
+    "MODEL_SUMMARY.csv": 15
+  },
+  "family_metadata_join_and_shared_TRAIN_verified": true,
+  "all_75_family_and_15_warm_aggregates_verified": true,
+  "NN_forwards": 0,
+  "figure_files_actually_viewed_by_coordinator": [
+    "01_ABSOLUTE_AND_CONTRASTS.png",
+    "02_ALL_TRAIN_VAL_CURVES.png",
+    "03_WINDOW_AND_FUSED_ERRORS.png",
+    "04_COSTS_AND_SELECTED_EPOCHS_v2.png"
+  ]
+}

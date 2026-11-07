@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "train": {
+      "records": 426,
+      "supervised_windows": 252454,
+      "supervised_B64": 3945,
+      "supervised_B512": 494,
+      "supervised_history_windows": 248620,
+      "native_CL_index_rows": 126341,
+      "native_CL_batches": 820,
+      "native_CL_presentations": 104960
+    },
+    "val": {
+      "records": 49,
+      "supervised_windows": 30500,
+      "supervised_B64": 477,
+      "supervised_B512": 60,
+      "supervised_history_windows": 30059,
+      "native_CL_index_rows": 15268,
+      "native_CL_batches": 98,
+      "native_CL_presentations": 12544
+    }
+  },
+  "allowed_phases": [
+    "train",
+    "val"
+  ],
+  "VAL_people": 49,
+  "VAL_blocks": 752,
+  "VAL_shared_family_records": 29,
+  "pinned_payload_stats": 572,
+  "inventory_sha256": "6385bde08161beb1dd507568aeb3c6d32d2f2be9087f423aec04107c1e943697"
+}

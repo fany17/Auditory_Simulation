@@ -1,0 +1,12 @@
+{
+  "math": {
+    "positive_affine_both_half_directions_exact": true,
+    "negative_scale_rejected": true,
+    "nonbinary_constant_fit_rejected": true,
+    "piecewise_constant_energy_preserved": true,
+    "within_bin_zero_mean_energy_discarded": true
+  },
+  "source_sha256": "e0a2fdd577167e25766b4683b5e85f12ce55cfd7b28eee36367748ea6ff81512",
+  "GPU_used": false,
+  "threads": 1
+}

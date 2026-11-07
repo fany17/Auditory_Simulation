@@ -1,0 +1,94 @@
+{
+  "frozen": true,
+  "frozen_epoch": 1793472202.5077975,
+  "task": "PUB-01-S03_SS07",
+  "authorization": "2026-11-01 human full-scale goal; native baseline may start after necessary consistency checks, no additional permission gate",
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_method_models.py": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/training_seed1024_attempt04/config_frozen.json": "09e18b9096c85bf4f83c9e6fa8d9d742580d11df57e40503391fd378279cb173",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/config_frozen.json": "6ea64f46d0308afb6cd8e545634a9db888ff17999f6e318aa9b403c1773ae7bb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/manifest_frozen.json": "4c0c2bcc6841437752fbc2c302e5df0693b9db120c19e68d7360d5125bd0c5e0"
+  },
+  "cohort": {
+    "train": 426,
+    "val": 49,
+    "test_seen": 69,
+    "test_heldout": 75
+  },
+  "model": "immutable native SS02 TransformerCLIP/XLSR19/SpeechLSTM, fresh EEG/audio initialization",
+  "pretrain": {
+    "epochs_ceiling": 100,
+    "patience": 15,
+    "batch": 128,
+    "negative_matrix": [
+      128,
+      128
+    ],
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "clip": null,
+    "scheduler_step_epochs": 10,
+    "scheduler_gamma": 0.1,
+    "batches_per_epoch": 820,
+    "updates_ceiling_per_seed": 82000,
+    "sample_presentations_ceiling": 2015232000,
+    "batch_rule": "unchanged native StoryBatches same story/distinct128 timestamps; random person per timestamp; repeated/omitted windows permitted and reported",
+    "train_batch_seed": "seed+epoch; shuffle=true",
+    "val_batch_seed": 20261015,
+    "val_shuffle": false,
+    "val_batches": 98,
+    "selection": "minimum fixed val symmetric InfoNCE, earliest tie; check each epoch; StepLR aftervalidation as original"
+  },
+  "head": {
+    "epochs_ceiling": 250,
+    "patience": 10,
+    "batch": 64,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "clip": null,
+    "shuffle": false,
+    "grid": "0:96:common_samples-192, native original lag0, noSS06lag8 orwarmup",
+    "loss": "negative centered cosine over3s,eps1e-6",
+    "selection": "minimum full30500 newval windows negative Pearson;earliest tie",
+    "train_windows": 252454,
+    "val_windows": 30500,
+    "steps_per_epoch": 3945,
+    "updates_ceiling": 986250,
+    "target_sample_presentations_ceiling": 12117792000,
+    "init": "manualseed reset immediately before native Conv32+LeakyReLU construction; shared same seed encoder/head initializations for future variants"
+  },
+  "normalization": "exact original426train-only mean/std; original preprocessed64Hz derivative; noSS06stats",
+  "coordinate": "EEG[s:s+192] paired with envelope[s:s+192]/XLSR19[s:s+192];lag0",
+  "time_permission": "native whole3s timeLN/sameConv/unmasked attention; no hardwarecausality claim",
+  "execution_differences": [
+    "single GPU perseed, globalbatch128 and full128 negatives retained instead of original two-GPU DataParallel; mathematical model/loss unchanged, RNG/hardware trajectory not guaranteed bitwise",
+    "only train/val in this stage; old mains/evaluation and test caches disabled; native metrics delayed until all candidate/seed/stat plans frozen",
+    "new checkpoint/latent destinations; old encoder-independent train/val target arrays reused after manifest order/offset validation; no old EEG embeddings/weights"
+  ],
+  "precision": {
+    "dtype": "float32",
+    "TF32_matmul": false,
+    "TF32_cudnn": true
+  },
+  "storage": {
+    "cachecap_bytes": 26843545600,
+    "reserve_bytes": 21474836480,
+    "three_seed_latents_estimate": 5215408128,
+    "newEEG_XLSR_cache": 0,
+    "best_latest_bounded": true,
+    "historical_deletions": false
+  },
+  "claims": "restore full SS02 available-public budget, not all paper500epochs/180persons/ensemble/hidden packet; tests already exposed, INTERNAL POSTHOC only",
+  "test_payload_read_or_test_scores_generated": false,
+  "increments_not_yet_selected": true
+}

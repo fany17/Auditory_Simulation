@@ -1,0 +1,421 @@
+{
+  "passed": true,
+  "resource_protocol_sha256": "9bce22984751e21fd8980f3a1032a2e1d64d39b01a5a41d11820906883300c75",
+  "review_sha256": "17a03102af3b7ef9a729c2ea9fdf23d5b10caaa56d139489adc3cdf8f6a369b7",
+  "checks": {
+    "exact_old_workers_same_identity": true,
+    "old_scheduler_all_threads_paused": true,
+    "all_three_workers_CPU_advancing": true,
+    "all_three_workers_not_stopped": true,
+    "all_three_original_native_argv": true,
+    "original_old_reporter_not_live": true,
+    "new_reporter_bound_to_actual_coordinator": true,
+    "old_reporter_retirement_bound_to_new_reporter": true,
+    "resource_and_original_science_unchanged": true,
+    "no_failure_receipts": true,
+    "all_three_same_original_GPU_bindings": true
+  },
+  "before": {
+    "utc": "2026-11-07T03:59:22Z",
+    "processes": {
+      "old_scheduler": {
+        "pid": 1748466,
+        "uid": 1012,
+        "startticks": 791000426,
+        "state": "T",
+        "ppid": 1,
+        "readable_startcode": true,
+        "wait_status_field52": 19,
+        "cpu_seconds": 0.63,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_queue.py"
+        ],
+        "GPU_env": "",
+        "all_threads_stopped": true
+      },
+      "1024": {
+        "pid": 1879079,
+        "uid": 1012,
+        "startticks": 794756993,
+        "state": "R",
+        "ppid": 1748466,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 3579.97,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_train.py",
+          "initial",
+          "--seed",
+          "1024"
+        ],
+        "GPU_env": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+        "all_threads_stopped": false,
+        "checkpoint_files": [
+          {
+            "name": "CURRENT.pt",
+            "bytes": 2902329,
+            "mtime_ns": 1794023955292853635
+          }
+        ],
+        "last_log_event": {
+          "stage": "initial",
+          "seed": 1024,
+          "subject": null,
+          "epoch": 9,
+          "r": 0.14147865996015732,
+          "MSE": 0.24649058868934945,
+          "windows": 755187,
+          "updates": 236000,
+          "train_objective": 0.20190816313399254,
+          "stale": 0,
+          "VAL_model_calls": 752,
+          "VAL_model_input_sample_times": 3109389
+        }
+      },
+      "2026": {
+        "pid": 1879085,
+        "uid": 1012,
+        "startticks": 794756996,
+        "state": "R",
+        "ppid": 1748466,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 3579.31,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_train.py",
+          "initial",
+          "--seed",
+          "2026"
+        ],
+        "GPU_env": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+        "all_threads_stopped": false,
+        "checkpoint_files": [
+          {
+            "name": "CURRENT.pt",
+            "bytes": 2902329,
+            "mtime_ns": 1794023939864852975
+          }
+        ],
+        "last_log_event": {
+          "stage": "initial",
+          "seed": 2026,
+          "subject": null,
+          "epoch": 9,
+          "r": 0.13732688794116904,
+          "MSE": 0.24767980749693402,
+          "windows": 755187,
+          "updates": 236000,
+          "train_objective": 0.2022742359787405,
+          "stale": 0,
+          "VAL_model_calls": 752,
+          "VAL_model_input_sample_times": 3109389
+        }
+      },
+      "31415": {
+        "pid": 1889880,
+        "uid": 1012,
+        "startticks": 795110979,
+        "state": "S",
+        "ppid": 1889844,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 96.15,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_train.py",
+          "initial",
+          "--seed",
+          "31415"
+        ],
+        "GPU_env": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+        "all_threads_stopped": false,
+        "checkpoint_files": [
+          {
+            "name": "CURRENT.pt",
+            "bytes": 2193337,
+            "mtime_ns": 1794023959614853820
+          }
+        ],
+        "last_log_event": null
+      },
+      "coordinator": {
+        "pid": 1889835,
+        "uid": 1012,
+        "startticks": 795110900,
+        "state": "S",
+        "ppid": 1,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 0.05,
+        "argv": [
+          "/opt/miniconda3/bin/python3",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/resource_concurrency_v01/d27_resource_queue.py",
+          "--migrate"
+        ],
+        "GPU_env": "",
+        "all_threads_stopped": false
+      },
+      "reporter": {
+        "pid": 1889881,
+        "uid": 1012,
+        "startticks": 795110993,
+        "state": "S",
+        "ppid": 1889835,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 0.02,
+        "argv": [
+          "/opt/miniconda3/bin/python3",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/resource_concurrency_v01/d27_resource_report_wait.py",
+          "--upstream",
+          "1889835",
+          "1012",
+          "795110900"
+        ],
+        "GPU_env": "",
+        "all_threads_stopped": false
+      },
+      "supervisor": {
+        "pid": 1889844,
+        "uid": 1012,
+        "startticks": 795110960,
+        "state": "S",
+        "ppid": 1889835,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 0.02,
+        "argv": [
+          "/opt/miniconda3/bin/python3",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/resource_concurrency_v01/d27_resource_worker.py",
+          "initial",
+          "--seed",
+          "31415",
+          "--gpu",
+          "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "--release-fd",
+          "7"
+        ],
+        "GPU_env": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+        "all_threads_stopped": false
+      }
+    }
+  },
+  "after": {
+    "utc": "2026-11-07T04:00:02Z",
+    "processes": {
+      "old_scheduler": {
+        "pid": 1748466,
+        "uid": 1012,
+        "startticks": 791000426,
+        "state": "T",
+        "ppid": 1,
+        "readable_startcode": true,
+        "wait_status_field52": 19,
+        "cpu_seconds": 0.63,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_queue.py"
+        ],
+        "GPU_env": "",
+        "all_threads_stopped": true
+      },
+      "1024": {
+        "pid": 1879079,
+        "uid": 1012,
+        "startticks": 794756993,
+        "state": "R",
+        "ppid": 1748466,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 3619.37,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_train.py",
+          "initial",
+          "--seed",
+          "1024"
+        ],
+        "GPU_env": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+        "all_threads_stopped": false,
+        "checkpoint_files": [
+          {
+            "name": "CURRENT.pt",
+            "bytes": 2902329,
+            "mtime_ns": 1794023985621854933
+          }
+        ],
+        "last_log_event": {
+          "stage": "initial",
+          "seed": 1024,
+          "subject": null,
+          "epoch": 9,
+          "r": 0.14147865996015732,
+          "MSE": 0.24649058868934945,
+          "windows": 755187,
+          "updates": 236000,
+          "train_objective": 0.20190816313399254,
+          "stale": 0,
+          "VAL_model_calls": 752,
+          "VAL_model_input_sample_times": 3109389
+        }
+      },
+      "2026": {
+        "pid": 1879085,
+        "uid": 1012,
+        "startticks": 794756996,
+        "state": "S",
+        "ppid": 1748466,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 3618.58,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_train.py",
+          "initial",
+          "--seed",
+          "2026"
+        ],
+        "GPU_env": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+        "all_threads_stopped": false,
+        "checkpoint_files": [
+          {
+            "name": "CURRENT.pt",
+            "bytes": 2902329,
+            "mtime_ns": 1794023997578855445
+          }
+        ],
+        "last_log_event": {
+          "stage": "initial",
+          "seed": 2026,
+          "subject": null,
+          "epoch": 9,
+          "r": 0.13732688794116904,
+          "MSE": 0.24767980749693402,
+          "windows": 755187,
+          "updates": 236000,
+          "train_objective": 0.2022742359787405,
+          "stale": 0,
+          "VAL_model_calls": 752,
+          "VAL_model_input_sample_times": 3109389
+        }
+      },
+      "31415": {
+        "pid": 1889880,
+        "uid": 1012,
+        "startticks": 795110979,
+        "state": "R",
+        "ppid": 1889844,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 135.57,
+        "argv": [
+          "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v04/pub_01_s03_ss07_seawave_seen_train.py",
+          "initial",
+          "--seed",
+          "31415"
+        ],
+        "GPU_env": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+        "all_threads_stopped": false,
+        "checkpoint_files": [
+          {
+            "name": "CURRENT.pt",
+            "bytes": 2193337,
+            "mtime_ns": 1794023990334855135
+          }
+        ],
+        "last_log_event": null
+      },
+      "coordinator": {
+        "pid": 1889835,
+        "uid": 1012,
+        "startticks": 795110900,
+        "state": "S",
+        "ppid": 1,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 0.05,
+        "argv": [
+          "/opt/miniconda3/bin/python3",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/resource_concurrency_v01/d27_resource_queue.py",
+          "--migrate"
+        ],
+        "GPU_env": "",
+        "all_threads_stopped": false
+      },
+      "reporter": {
+        "pid": 1889881,
+        "uid": 1012,
+        "startticks": 795110993,
+        "state": "S",
+        "ppid": 1889835,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 0.02,
+        "argv": [
+          "/opt/miniconda3/bin/python3",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/resource_concurrency_v01/d27_resource_report_wait.py",
+          "--upstream",
+          "1889835",
+          "1012",
+          "795110900"
+        ],
+        "GPU_env": "",
+        "all_threads_stopped": false
+      },
+      "supervisor": {
+        "pid": 1889844,
+        "uid": 1012,
+        "startticks": 795110960,
+        "state": "S",
+        "ppid": 1889835,
+        "readable_startcode": true,
+        "wait_status_field52": 0,
+        "cpu_seconds": 0.02,
+        "argv": [
+          "/opt/miniconda3/bin/python3",
+          "-B",
+          "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/resource_concurrency_v01/d27_resource_worker.py",
+          "initial",
+          "--seed",
+          "31415",
+          "--gpu",
+          "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+          "--release-fd",
+          "7"
+        ],
+        "GPU_env": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+        "all_threads_stopped": false
+      }
+    }
+  },
+  "GPU_sample": [
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9, 95, 11170, 46068",
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba, 25, 8034, 46068"
+  ],
+  "observed_GPU_processes": [
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9, 1879079, 8012",
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9, 1889880, 3130",
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba, 1879085, 8012"
+  ],
+  "observer_model_forwards": 0,
+  "observer_signal_payload_reads": 0,
+  "observer_formal_signals": 0,
+  "throughput_improvement_not_yet_measured": true
+}

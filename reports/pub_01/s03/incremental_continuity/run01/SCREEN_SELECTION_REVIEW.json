@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "time": 1793486854.8936727,
+  "all54_successful_cells_and_ledger_checked": true,
+  "all_recorded_block_correlations_reaveraged": 40608,
+  "all_recorded_person_means_checked": 2646,
+  "maximum_person_mean_difference": 1.1102230246251565e-16,
+  "maximum_macro_mean_difference": 5.551115123125783e-17,
+  "fixed_widths_recomputed": [
+    {
+      "family": "m1",
+      "width16_mean_three_seed_validation60s_person_r": 0.15897470279899095,
+      "width32_mean_three_seed_validation60s_person_r": 0.15846670624683754,
+      "selected_width": 16,
+      "selected_condition": "m1_h16",
+      "selection_uses_test": false,
+      "full_training_starts_fresh_not_screen_weights": true
+    },
+    {
+      "family": "m2",
+      "width16_mean_three_seed_validation60s_person_r": 0.1587129094055558,
+      "width32_mean_three_seed_validation60s_person_r": 0.15864426352644007,
+      "selected_width": 16,
+      "selected_condition": "m2_h16",
+      "selection_uses_test": false,
+      "full_training_starts_fresh_not_screen_weights": true
+    },
+    {
+      "family": "m3",
+      "width16_mean_three_seed_validation60s_person_r": 0.15860172441025258,
+      "width32_mean_three_seed_validation60s_person_r": 0.1582263701777202,
+      "selected_width": 16,
+      "selected_condition": "m3_h16",
+      "selection_uses_test": false,
+      "full_training_starts_fresh_not_screen_weights": true
+    },
+    {
+      "family": "m4",
+      "width16_mean_three_seed_validation60s_person_r": 0.15970552892327453,
+      "width32_mean_three_seed_validation60s_person_r": 0.15933197323316464,
+      "selected_width": 16,
+      "selected_condition": "m4_h16",
+      "selection_uses_test": false,
+      "full_training_starts_fresh_not_screen_weights": true
+    },
+    {
+      "family": "m5",
+      "width16_mean_three_seed_validation60s_person_r": 0.16054263848587455,
+      "width32_mean_three_seed_validation60s_person_r": 0.15675008008076374,
+      "selected_width": 16,
+      "selected_condition": "m5_h16",
+      "selection_uses_test": false,
+      "full_training_starts_fresh_not_screen_weights": true
+    }
+  ],
+  "all18_ranking_means_exactly_match": true,
+  "ties_use_smaller_width": true,
+  "original_ledger_target_presentations_column_is_sample_not_window_count": true,
+  "independent_CSV_uses_explicit_window_and_sample_units": true,
+  "parent_protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+  "full_selection_sha256": "be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80",
+  "source_sha256": "0120b226d3ce0aed4ab540e0d585bb3013c6d8117b8729308bc4e11f73b2f9bf",
+  "no_actual_signals_checkpoints_test_or_DTU_payload_loaded": true,
+  "not_a_raw_input_prediction_or_correlation_review": true,
+  "validation_only_no_performance_superiority_or_goal_completion_claim": true
+}

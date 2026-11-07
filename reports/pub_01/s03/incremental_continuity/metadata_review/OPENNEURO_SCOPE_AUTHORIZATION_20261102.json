@@ -1,0 +1,36 @@
+{
+  "status": "AUTHORIZED_BY_HUMAN_DATA_SCOPE",
+  "stage": "PUB-01-S03_SS07",
+  "decision_date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "source_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "question_item_id": "[\"request_user_input_async\",\"call_43ce69b0c26b4fabb8f569f8fc424a55\",0]",
+  "human_question": "现有测试数据都已被查看过。为取得新的独立泛化证据，是否授权增加 OpenNeuro ds004408 v1.0.8（CC0，19人、380条公开语音 EEG 记录及对应音频）？此前任务限定不扩充数据集，所以这次需要确认新的数据范围；仍只用2203，先冻结通道适配和评估方案，不拿新数据调参。当前内部评估继续执行。",
+  "human_answer": "授权这一公开数据集（推荐）",
+  "dataset": {
+    "repository": "OpenNeuroDatasets/ds004408",
+    "version": "1.0.8",
+    "commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+    "doi": "10.18112/openneuro.ds004408.v1.0.8",
+    "participants": 19,
+    "EEG_records": 380,
+    "audio_segments": 20
+  },
+  "authorized_scope": "Acquire this version's public EEG, corresponding speech audio and necessary metadata on server2203 and execute a prospectively frozen shared adaptation/evaluation protocol. No repeated permission for this dataset scope.",
+  "retained_constraints": [
+    "All data access, preprocessing, arrays, model inference and scientific computation on server2203 under /home/fanyu/auditory_simulation_m6a",
+    "Freeze channel/units/reference/bad-channel/time/audio adapter and model/comparison/scoring/statistical protocol before predictive evaluation; no new-data performance tuning or outcome-driven exclusion",
+    "No other dataset, new external model weights, patient/STN records or server Git",
+    "Protect original CNN/TRF/stash and all closed prior experiment evidence; no permanent deletion",
+    "Existing PR6 branch, code/light reports only locally; no automatic PR merge"
+  ],
+  "coordinator_resource_decision": {
+    "basis": "Adopt previously proposed bounded storage as implementation of the now-authorized dataset scope; these numeric limits are coordinator guardrails, not quoted human instructions",
+    "new_dataset_root_cap_bytes": 3221225472,
+    "total_SS07_NPY_cap_bytes": 30064771072,
+    "minimum_free_reserve_bytes": 21474836480,
+    "storage_strategy": "Check actual sizes first; prefer per-record bounded in-memory acquisition and frozen preprocessing, retaining source checksums/manifests. Do not evade caps or delete evidence. Revise feasibility before payload if this strategy cannot fit."
+  },
+  "next_actions": "Executor records scope release and prepares actual acquisition/header checks plus a single concrete adapter/evaluation freeze for coordinator review. Data authorization does not itself certify montage/synchronization or independent-confirmation eligibility. Review and necessary engineering work proceed without another human gate.",
+  "scientific_goal_complete": false
+}

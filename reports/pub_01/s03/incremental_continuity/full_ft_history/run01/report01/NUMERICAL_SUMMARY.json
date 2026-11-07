@@ -1,0 +1,68 @@
+{
+  "fits": 9,
+  "epochs": 180,
+  "total_updates": 710100,
+  "all_prespecified_seed_direction_conditions_met": false,
+  "contrasts": [
+    {
+      "comparison": "H_full-Anchor",
+      "mean_delta": 0.0,
+      "positive_seeds": 0,
+      "seed1024": 0.0,
+      "seed2026": 0.0,
+      "seed31415": 0.0,
+      "warm_mean_delta": 0.0,
+      "warm_positive_seeds": 0,
+      "warm_seed1024": 0.0,
+      "warm_seed2026": 0.0,
+      "warm_seed31415": 0.0
+    },
+    {
+      "comparison": "H_full-C_match",
+      "mean_delta": 0.0,
+      "positive_seeds": 0,
+      "seed1024": 0.0,
+      "seed2026": 0.0,
+      "seed31415": 0.0,
+      "warm_mean_delta": 0.0,
+      "warm_positive_seeds": 0,
+      "warm_seed1024": 0.0,
+      "warm_seed2026": 0.0,
+      "warm_seed31415": 0.0
+    },
+    {
+      "comparison": "H_full-P_prior",
+      "mean_delta": 0.0,
+      "positive_seeds": 0,
+      "seed1024": 0.0,
+      "seed2026": 0.0,
+      "seed31415": 0.0,
+      "warm_mean_delta": 0.0,
+      "warm_positive_seeds": 0,
+      "warm_seed1024": 0.0,
+      "warm_seed2026": 0.0,
+      "warm_seed31415": 0.0
+    },
+    {
+      "comparison": "H_full-H_older",
+      "mean_delta": 0.0,
+      "positive_seeds": 0,
+      "seed1024": 0.0,
+      "seed2026": 0.0,
+      "seed31415": 0.0,
+      "warm_mean_delta": 0.0,
+      "warm_positive_seeds": 0,
+      "warm_seed1024": 0.0,
+      "warm_seed2026": 0.0,
+      "warm_seed31415": 0.0
+    }
+  ],
+  "selected_incumbents": 9,
+  "new_encoder_head_forwards": 0,
+  "formal_new_residual_NN_window_forwards": 50522928,
+  "summed_CPU_seconds": 3317.273217485,
+  "parallel_fit_wall_times_not_total_wall": true,
+  "descriptive_development_only": true,
+  "new_report_NN": 0,
+  "goal_complete": false
+}

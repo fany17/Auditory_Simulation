@@ -1,0 +1,38 @@
+{
+  "condition": "C",
+  "seed": 2026,
+  "steps": 3262,
+  "targets": 12526080,
+  "selected_step": 3262,
+  "selected_validation": 0.10574834400643197,
+  "seconds": 1846.1974832490087,
+  "parameters": {
+    "registered": 3128137,
+    "gradient_reachable": 3128137,
+    "all_parameter_gradients_finite": true
+  },
+  "max_GPU_bytes": 369372672,
+  "EEG_window_presentations_excluding_warmup": 12526080,
+  "warmup_records": 249,
+  "old_checkpoints_loaded": false,
+  "audit_read": false,
+  "actual_visitation_summary": {
+    "rows": 3262,
+    "unique_records": 249,
+    "repeat_anchor_windows": 0,
+    "first": {
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "block": 0,
+      "start": 3840,
+      "samples": 3840
+    },
+    "last": {
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "block": 13,
+      "start": 53760,
+      "samples": 3840
+    }
+  },
+  "canonical_full_metadata_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run02_matched_baseline/formal01/C_seed2026/completed.json",
+  "canonical_full_metadata_sha256": "8d1c59da2c87f09f8a9f59123ea978b5908e4736d2fde98f9504b866dfd9eabf"
+}

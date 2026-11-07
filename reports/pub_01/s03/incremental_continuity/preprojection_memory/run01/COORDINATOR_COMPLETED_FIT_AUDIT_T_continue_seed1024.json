@@ -1,0 +1,93 @@
+{
+  "fit": "T_continue_seed1024",
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "scope": "One completed fit; saved-metric reaggregation and budget/selection metadata only; no prediction replay or matrix-level conclusion",
+  "scalar_comparisons": 960,
+  "maximum_absolute_error": 2.1646096373673096e-16,
+  "selected_epoch": 2,
+  "incumbent_validation_r": 0.18188879428826338,
+  "selected_validation_r": 0.1835927025460701,
+  "last_validation_r": 0.1821901800000681,
+  "optimizer_updates": 78900,
+  "component_forward_counts": {
+    "current_encoder_prefix_windows": 6699396,
+    "current_projection_windows": 6699396,
+    "current_head_windows": 6699396,
+    "frozen_encoder_prefix_windows": 0,
+    "attention_query_windows": 0,
+    "prior_projection_windows": 0
+  },
+  "input_sha256": {
+    "COMPLETED.json": "c9fb88a301d2f24a7464fca7533e0c5a9f147bd5acce281038d82bfe27f1946e",
+    "STARTED.json": "b09058c709bc176e0926af7ead20ac3b6215ecdeff6fb6e12f952526a8d3619b",
+    "HISTORY.jsonl": "2b6738f041c6692d74c3b1b2f4f6de3a6d3799c51f00adcba13564482fb9e59b",
+    "PERMUTATIONS.jsonl": "bb1bb4031b079b6af6702527ebbcc6ff6dc20465145eb6a0f2f46b9d35f54da7",
+    "INCUMBENT.json.gz": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9",
+    "SELECTED_METRICS.json.gz": "08fd24ba11bd5646f6dde6713e0f4902bb97146f1395826811911836554745ac",
+    "COMPONENT_COUNTS.json": "ca5d2d724c2563345004bdc398f03c4f2b4ca72895a36722d9da7c686154ea81"
+  },
+  "audit_NN_forwards": 0,
+  "audit_backwards": 0,
+  "audit_optimizer_updates": 0,
+  "audit_CPU_seconds": 0.018374233999999996,
+  "audit_wall_seconds": 0.01842975616455078,
+  "limitations": "Seen-participant, mixed-source, repeatedly developed VAL; checkpoint contents and predictions not independently replayed; other fits pending",
+  "goal_complete": false,
+  "audit_source_sha256": "f49a7b4939e7da0ac395412c0a4372a5a00b97a2eafe8d494a3caaebf0edb2b0",
+  "execution_host": "server2203",
+  "additional_metadata_checks": {
+    "audit_source_sha256": "f49a7b4939e7da0ac395412c0a4372a5a00b97a2eafe8d494a3caaebf0edb2b0",
+    "T_component_formula_expected": {
+      "current_encoder_prefix_windows": 6699396,
+      "current_projection_windows": 6699396,
+      "current_head_windows": 6699396,
+      "frozen_encoder_prefix_windows": 0,
+      "attention_query_windows": 0,
+      "prior_projection_windows": 0
+    },
+    "T_component_formula_passed": true,
+    "same_protocol_supervision_order_and_incumbent_passed": true,
+    "completed_sha256": {
+      "H_history": "1b57f206a5e8002f9ab99bc5f4551efc84b2ee70dc52188c8c6f8eac0ee410fc",
+      "C_current": "04e7a3985892fe62db6d747b6a999d3cdf20f186d22cd236496eeb0b4a5a9fd6",
+      "T_continue": "c9fb88a301d2f24a7464fca7533e0c5a9f147bd5acce281038d82bfe27f1946e"
+    },
+    "selected_validation_r": {
+      "H_history": 0.18389087545640637,
+      "C_current": 0.18329781649665086,
+      "T_continue": 0.1835927025460701
+    },
+    "H_minus_T_selected_r": 0.00029817291033626403,
+    "training_costs": {
+      "H_history": {
+        "CPU_seconds": 8747.447574131002,
+        "wall_seconds": 8736.313759803772,
+        "peak_RSS_KiB": 9278400,
+        "peak_GPU_allocated_bytes": 2779212800,
+        "registered_trainable_parameters": 3389513
+      },
+      "C_current": {
+        "CPU_seconds": 6622.638691109,
+        "wall_seconds": 6606.841987609863,
+        "peak_RSS_KiB": 9260228,
+        "peak_GPU_allocated_bytes": 2608737280,
+        "registered_trainable_parameters": 3389513
+      },
+      "T_continue": {
+        "CPU_seconds": 5112.6209088919995,
+        "wall_seconds": 5097.117251157761,
+        "peak_RSS_KiB": 9154660,
+        "peak_GPU_allocated_bytes": 2531368960,
+        "registered_trainable_parameters": 3372617
+      }
+    },
+    "scope": "3 completed fits of seed1024; P1024 and seeds2026/31415 pending; no complete-matrix or independent-generalization claim",
+    "audit_CPU_seconds": 0.000694891999999999,
+    "audit_wall_seconds": 0.0007016658782958984,
+    "audit_NN_forwards": 0,
+    "audit_backwards": 0,
+    "audit_optimizer_updates": 0
+  },
+  "audit_timer_scope": "Main audit and additional_metadata_checks ran separately; their CPU/wall timers are disjoint."
+}

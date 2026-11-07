@@ -1,0 +1,29 @@
+{
+  "source_sha256": "a1476b5f3a060f5eb1e755538d1c63c9329ad8dcaa932f900ecc87170761ea0d",
+  "frozen_before_any_real_NN": true,
+  "figures": [
+    "person_and_seed_performance",
+    "two_primary_differences",
+    "window_and_fused_error",
+    "full_FP32_sensitivity",
+    "preselected_example"
+  ],
+  "example": {
+    "seed": 2026,
+    "canonical_record_index": 0,
+    "seconds": [
+      0,
+      60
+    ]
+  },
+  "no_gain_or_axis_normalization_for_example": true,
+  "example_y_axis": "Shared original numeric min/max across target and all four predictions; no clipping",
+  "cost_ledger": "Acquisition attempts/audio/preprocessing/inference plus separately inherited three-seed training and D8/D9; missing measurements explicit; no summed parallel wall time",
+  "supersedes_presentation_only": [
+    "PRESENTATION_PROTOCOL.json",
+    "PRESENTATION_PROTOCOL_V2.json"
+  ],
+  "all_seed_and_person_rows": true,
+  "new_NN": 0,
+  "interpretation": "Offline/transductive unlabeled whole-record scalar calibration, not SI repair or uncalibrated confirmation"
+}

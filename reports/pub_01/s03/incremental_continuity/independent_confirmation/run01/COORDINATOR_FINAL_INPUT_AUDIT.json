@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "protocol_sha256": "5cb28c2cd219c25fc36ed5ea91d92572a9c6b61b0a3ae864a0f1fa5180cc76c5",
+  "queue_source_sha256": "c67f180839cef445d71e5d658548f2dc9cb570485efc4652acc697b178392a4b",
+  "source_pins_recomputed": 1017,
+  "EEG_hash_shape_dtype_finite_and_mask_checked": 380,
+  "source_payload_manifest_associations_checked": 380,
+  "TSV_Git_blobs_checked": 119,
+  "target_hashes_checked": 20,
+  "people": 19,
+  "records": 380,
+  "eligible_blocks": 988,
+  "windows": 45429,
+  "records_per_person": [
+    20
+  ],
+  "blocks_per_person": [
+    52
+  ],
+  "calibrated_input_RMS_relative_max_error": 2.338609084162613e-09,
+  "gain_min_max": [
+    1.787947497067544e-08,
+    1.5860994617167512e-06
+  ],
+  "combined_run_projected_bytes": 2913807921,
+  "SS07_NPY_projected_bytes": 28343750260,
+  "projected_home_free_bytes": 23053357056,
+  "projected_cache_free_bytes": 178650028032,
+  "preprocessing_costs": {
+    "wall_seconds": 7694.5902535915375,
+    "CPU_seconds": 1190.573252027,
+    "reused_v1_records": 16,
+    "new_v2_records": 364,
+    "total_elapsed_since_v1_seconds": 8590.281322479248,
+    "peak_RSS_KiB": 1977676
+  },
+  "audit_seconds": 2.832557439804077,
+  "formal_NN_started": false,
+  "scientific_goal_complete": false
+}

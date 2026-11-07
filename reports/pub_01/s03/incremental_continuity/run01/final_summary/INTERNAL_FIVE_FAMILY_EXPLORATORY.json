@@ -1,0 +1,211 @@
+{
+  "contrasts": [
+    {
+      "contrast": "m1_h16-native_P",
+      "seed_paired_weighted_differences": [
+        -0.0010569267674272386,
+        -1.8431415078977212e-05,
+        -0.002040865313888072
+      ],
+      "weighted_mean_difference": -0.0010387411654647627,
+      "weighted_95_approx_bootstrap_interval": [
+        -0.002138541513329536,
+        7.090896643565006e-05
+      ],
+      "weighted_Bonferroni_M_approx_bootstrap_interval": [
+        -0.0024217404711093884,
+        0.00042536885399246417
+      ],
+      "weighted_crossed_Exp_sensitivity_interval_not_calibrated_CI": [
+        -0.002143382481291543,
+        0.00021185678372722693
+      ],
+      "supporting_endpoints": {
+        "seen": {
+          "mean_difference": -0.0008287552828511388,
+          "exploratory_95_interval": [
+            -0.00213281231663414,
+            0.00043188970487364103
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        },
+        "heldout": {
+          "mean_difference": -0.0014587129306920105,
+          "exploratory_95_interval": [
+            -0.0030006441599385535,
+            0.00011702342971156576
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        }
+      }
+    },
+    {
+      "contrast": "m2_h16-native_P",
+      "seed_paired_weighted_differences": [
+        -0.0029857509794822723,
+        -0.0015932205628749426,
+        -0.00305789813064617
+      ],
+      "weighted_mean_difference": -0.0025456232243344615,
+      "weighted_95_approx_bootstrap_interval": [
+        -0.0037324692727827473,
+        -0.0013440754917329017
+      ],
+      "weighted_Bonferroni_M_approx_bootstrap_interval": [
+        -0.004150080799155418,
+        -0.0009193082089612505
+      ],
+      "weighted_crossed_Exp_sensitivity_interval_not_calibrated_CI": [
+        -0.0038058568967412098,
+        -0.0012263315003350512
+      ],
+      "supporting_endpoints": {
+        "seen": {
+          "mean_difference": -0.002457355606678054,
+          "exploratory_95_interval": [
+            -0.003663887184237275,
+            -0.0013476646559242632
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        },
+        "heldout": {
+          "mean_difference": -0.002722158459647276,
+          "exploratory_95_interval": [
+            -0.004970726070577378,
+            -0.0001592719434192714
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        }
+      }
+    },
+    {
+      "contrast": "m3_h16-native_P",
+      "seed_paired_weighted_differences": [
+        -0.0018631611497256528,
+        -0.0014655163281503184,
+        -0.0032958750013311966
+      ],
+      "weighted_mean_difference": -0.0022081841597357227,
+      "weighted_95_approx_bootstrap_interval": [
+        -0.003551647354850591,
+        -0.0009493925855823807
+      ],
+      "weighted_Bonferroni_M_approx_bootstrap_interval": [
+        -0.003997048650459709,
+        -0.0005826584597410885
+      ],
+      "weighted_crossed_Exp_sensitivity_interval_not_calibrated_CI": [
+        -0.003560387108891448,
+        -0.0008049008751796536
+      ],
+      "supporting_endpoints": {
+        "seen": {
+          "mean_difference": -0.0019408998272516123,
+          "exploratory_95_interval": [
+            -0.00343288241103813,
+            -0.0004852542458206329
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        },
+        "heldout": {
+          "mean_difference": -0.0027427528247039434,
+          "exploratory_95_interval": [
+            -0.004880910999611368,
+            -0.00045899440930421314
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        }
+      }
+    },
+    {
+      "contrast": "m4_h16-native_P",
+      "seed_paired_weighted_differences": [
+        -0.00018255110098754494,
+        -0.0020328641903783803,
+        -0.001050582677731016
+      ],
+      "weighted_mean_difference": -0.0010886659896989805,
+      "weighted_95_approx_bootstrap_interval": [
+        -0.002097776154895209,
+        -5.612553193241143e-05
+      ],
+      "weighted_Bonferroni_M_approx_bootstrap_interval": [
+        -0.002407049835591092,
+        0.00028329717451345307
+      ],
+      "weighted_crossed_Exp_sensitivity_interval_not_calibrated_CI": [
+        -0.002129689476320057,
+        8.934487507364228e-07
+      ],
+      "supporting_endpoints": {
+        "seen": {
+          "mean_difference": -0.0010543953787496563,
+          "exploratory_95_interval": [
+            -0.0021722017549345536,
+            0.00021102621397046196
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        },
+        "heldout": {
+          "mean_difference": -0.001157207211597629,
+          "exploratory_95_interval": [
+            -0.0024244175774687884,
+            -2.9170710544408732e-05
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        }
+      }
+    },
+    {
+      "contrast": "m5_h16-native_P",
+      "seed_paired_weighted_differences": [
+        -0.0010766142119768957,
+        -0.0017065151521311057,
+        -0.0005834903421925805
+      ],
+      "weighted_mean_difference": -0.0011222065687668606,
+      "weighted_95_approx_bootstrap_interval": [
+        -0.0021915816298634138,
+        -2.5203853696912816e-05
+      ],
+      "weighted_Bonferroni_M_approx_bootstrap_interval": [
+        -0.0025584360164088173,
+        0.00043855751126667224
+      ],
+      "weighted_crossed_Exp_sensitivity_interval_not_calibrated_CI": [
+        -0.0022444570229231517,
+        9.697169093688837e-05
+      ],
+      "supporting_endpoints": {
+        "seen": {
+          "mean_difference": -0.0017452489078856926,
+          "exploratory_95_interval": [
+            -0.0029300823467044994,
+            -0.0005680084884219964
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        },
+        "heldout": {
+          "mean_difference": 0.00012387810947080352,
+          "exploratory_95_interval": [
+            -0.0017558730399679404,
+            0.0022794732375528153
+          ],
+          "not_in_weighted_M_multiplicity_guarantee": true
+        }
+      }
+    }
+  ],
+  "M": 5,
+  "primary_endpoint": "original 2/3 seen + 1/3 heldout macro r",
+  "draws": 20000,
+  "seed_person_rng": 20261101,
+  "family_sensitivity_rng": 20261103,
+  "shared_person_draw_across_all_seeds_and_contrasts": true,
+  "interpretation": "Bonferroni-adjusted approximate bootstrap intervals; no finite-sample/confirmatory guarantee",
+  "family_sensitivity_interpretation": "positive crossed weights; NOT calibrated frequentist confidence intervals",
+  "other_contrast_family_joint_FWER_not_claimed": true,
+  "exploratory_only": true,
+  "separate_M5_family": true,
+  "not_independent_replication_or_joint_FWER_with_main_family": true
+}

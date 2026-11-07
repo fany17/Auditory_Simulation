@@ -1,0 +1,13 @@
+seed,arm,selected_epoch,fixed_TRAIN_available,reason
+1024,H_history,2,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation
+1024,C_current,0,True,Saved fixed checkpoint exists
+1024,T_continue,2,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation
+1024,P_prediction_history,1,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation
+2026,H_history,0,True,Saved fixed checkpoint exists
+2026,C_current,0,True,Saved fixed checkpoint exists
+2026,T_continue,2,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation
+2026,P_prediction_history,0,True,Saved fixed checkpoint exists
+31415,H_history,5,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation
+31415,C_current,5,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation
+31415,T_continue,1,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation
+31415,P_prediction_history,15,False,No saved fixed TRAIN evaluation at selected epoch; not evaluated or interpolated for presentation

@@ -1,0 +1,9 @@
+{
+  "source_sha256": "db98c2cdd4e1e27c1e97170cea28d6b657df3f1566000405eecde8d05dd91f29",
+  "retained_original_source": "input/pub_01_s03_ss07_full_ft_history_report_v1.py",
+  "original_presentation_plan_retained": true,
+  "change": "Correct source_family using pre-prediction record metadata; preserve raw fields. Add Anchor/Holder warm and all four auxiliary warm contrasts.",
+  "dependency_metadata_sha256": "acc3d3489cf63decea96d1c97bdfaca7cb3329e9db4bddfcaf7b9d66d32964da",
+  "NN_forwards": 0,
+  "changes_training_or_selection": false
+}

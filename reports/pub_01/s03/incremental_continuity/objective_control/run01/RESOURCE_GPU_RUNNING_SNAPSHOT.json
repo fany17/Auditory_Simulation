@@ -1,0 +1,6 @@
+{
+  "time": 1793626622.9497745,
+  "nvidia_smi_query": "index,name,utilization.gpu,memory.used,memory.total",
+  "raw_csv": "0, NVIDIA L40, 99, 2894, 46068\n1, NVIDIA L40, 97, 2318, 46068\n",
+  "interpretation": "One concurrent execution snapshot, not average utilization/FLOPs or method compute savings"
+}

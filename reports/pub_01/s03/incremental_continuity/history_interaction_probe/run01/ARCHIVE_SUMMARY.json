@@ -1,0 +1,26 @@
+{
+  "findings": [
+    "固定36/36双线性probe完成，未达到Near同时胜Add及CC、三个seed一致的预设开发判读门。Near−CC三个seed均负，Near−Add仅1/3正。",
+    "全部臂共享选择λ=1，Anchor/Add/CC/Near/Older r=.176897359/.176902435/.176905911/.176902047/.176903531，极接近强current锚点。微小Near−Anchor全正不能据此声称历史机制。",
+    "D4当前读出开发收益保留；D5仅约束当前PCA32/16×16双线性形式，未证明一切历史无用。goal仍ACTIVE，不扩大网格或自动追加NN。",
+    "协调独立21来源/60输入指纹/36系数与相同mask/共享λ及关键重聚合核验通过，最大差1.11e−16，完整中文REPORT和三图实际读/看，技术PASS_WITH_LIMITATIONS。"
+  ],
+  "overview": [
+    "冻结D4强current Ccap(.01)，Add/CC/Near/Older×3seed×3λ，共同current/near/older加性主效应，CC不是完全无历史；只有锚点为纯current。",
+    "仅2203 CPU，原TRAIN/VAL，首4窗共同锚点回退、30500窗/752块/49人；头/encoder前向、GPU和NN优化均0。TRAIN70人41clip，VAL49已知人5clip，部分同书家族，非独立故事/被试确认。"
+  ],
+  "figure_comments": {
+    "01_COMPLETE_LAMBDA_MATRIX.png": "左3秒右60秒/person r，粗线3seed均值、细线各seed、黑虚线冻结Ccap；三个固定λ和四臂全部呈现，无CI。全部选λ=1，强收缩回到Anchor附近；低λ下Near较差。连线非连续寻优，接近锚点不证明等价/非劣；未因最强λ胜出新增更大网格。",
+    "02_FIXED_CONTRASTS.png": "五面板是Near−Add/Near−CC/Older−Add/Older−CC/Near−Older，三色seed，前三点相同λ、右菱形共享选择。Near−Add均−3.88e−7仅1/3正，Near−CC均−3.86e−6且0/3正；Near−Older全3λ×3seed负。Older−Add在λ=1微正但不稳定胜CC，不能改为机制主发现；无CI，无零信息远历史假定。",
+    "03_CAPACITY_COST.png": "左全36解名义系数数对每输出有效df、不含截距，三交互臂点部分重叠；选λ=1时Add约2.852、交互约3.848，名义同参数不代表rank相同。中/右为stage wall/CPU堆叠，锚点重建/Gram主要开销，不只计solve。总wall69.045秒、CPU493.421秒、peakRSS约3.33GiB、派生约42.74MiB；GPU/头/encoder前向均0。共享CPU计时不宣称隔离效率优势，部分记账不在stage堆叠内。"
+  },
+  "caveats": [
+    "原P当前是3秒离线表征；近历史前3–0秒、older前6–3秒，非在线因果/长程记忆。",
+    "无监督PCA先于锚点检查，与PLAN顺序有偏差，原样披露不重跑；所有新岭解前真实锚点评分差0，PCA无VAL拟合。",
+    "重复已知被试/部分同书VAL选参，不是显著性、泛化、信息论或生物机制结论；固定PCA二阶形式阴性不排除其他非线性交互。"
+  ],
+  "next_steps": [
+    "本D5固定矩阵、失败/限制和全36格完整交付，保持D4/旧warm原结论，不自动扩λ/距离/维数/seed。",
+    "后续围绕真正的strong-current开发增益提出最小归因/强基线方案，先协调评估；goal不以工程PASS或微小VAL正差关闭。"
+  ]
+}

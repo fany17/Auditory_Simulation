@@ -1,0 +1,16 @@
+{
+  "pid": 1986322,
+  "uid": 1012,
+  "start_ticks": "756780744",
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_queue.py"
+  ],
+  "source_commit": "49b223239611cfd52a41da185ca5b49705d23090",
+  "protocol_sha256": "71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367",
+  "approval_sha256": "76a5db7a532b6b6f17404548f653a6252092587ae73beb7dac0aa6362c2f9a90",
+  "launched_unix": 1793640562.7398498,
+  "formal_fits": 12,
+  "epochs_per_fit": 20,
+  "automatic_retry": false
+}

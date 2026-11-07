@@ -1,0 +1,52 @@
+{
+  "cohort": {
+    "train": 426,
+    "val": 49,
+    "test_seen": 69,
+    "test_heldout": 75
+  },
+  "normalization_fit": "original426train only; exact SS02 stats reused",
+  "normalization_sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+  "prepared_manifest_sha256": "4c0c2bcc6841437752fbc2c302e5df0693b9db120c19e68d7360d5125bd0c5e0",
+  "train_windows_sha256": "17ad664e11e38c72bd0874395e4858ca035339cc0ba14705c48c001d8e6fbd54",
+  "val_windows_sha256": "b149790e36d2c6264cd628b702c2924bc824e1a10b58be005d215c09380b61df",
+  "native_training_source_sha256": "694f5ce16bddd254c7c6f0332d9b255577f23de76dbc3bdaa1468a74ffd4e0aa",
+  "native_model_source_sha256": "201bf542823d4733fe81a7938a9508ada90b37c677dc46097389f893537dbea3",
+  "native_config_sha256": "09e18b9096c85bf4f83c9e6fa8d9d742580d11df57e40503391fd378279cb173",
+  "feature_manifest_sha256": "85a8b4a39c0b9bcf7e4c76e5d20ca36e89c0980d993c34851aaff4bbb3cc0d17",
+  "XLSR19_revision": "46f221381d200f7bef268309b3f02023ccf11fcc",
+  "stochastic_coverage_example": [
+    {
+      "phase": "train",
+      "eligible_record_time_windows": 126341,
+      "batches_per_epoch": 820,
+      "actual_window_presentations_epoch0": 104960,
+      "unique_visited_epoch0": 72852,
+      "repeat_presentations_epoch0": 32108,
+      "unvisited_eligible_epoch0": 53489,
+      "unique_story_time_windows_epoch0": 12124
+    },
+    {
+      "phase": "val",
+      "eligible_record_time_windows": 15268,
+      "batches_per_epoch": 98,
+      "actual_window_presentations_epoch0": 12544,
+      "unique_visited_epoch0": 8707,
+      "repeat_presentations_epoch0": 3837,
+      "unvisited_eligible_epoch0": 6561,
+      "unique_story_time_windows_epoch0": 1563
+    }
+  ],
+  "head_windows": {
+    "train": 252454,
+    "val": 30500
+  },
+  "cache_estimate_three_seeds_bytes": 5215408128,
+  "disk_free_bytes": 58635407360,
+  "new_cache_cap_bytes": 26843545600,
+  "reserve_bytes": 21474836480,
+  "test_payload_loaded": false,
+  "old_EEG_latents_or_checkpoints_reused": false,
+  "original_independent_audio_targets_reused": true,
+  "kind": "all historical tests exposed; no independent confirmation"
+}

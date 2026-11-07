@@ -1,0 +1,58 @@
+[
+  {
+    "step": 1000,
+    "train_loss": 1.0192398520112038,
+    "validation": {
+      "r": 0.07822416914935833,
+      "mse": 1.0752759455544512,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "train_seconds": 2.8179734414443374,
+    "elapsed_seconds": 4.4594711642712355
+  },
+  {
+    "step": 2000,
+    "train_loss": 1.0044018258452416,
+    "validation": {
+      "r": 0.08409305697091579,
+      "mse": 1.071495681555277,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "train_seconds": 5.4448777521029115,
+    "elapsed_seconds": 8.53965513408184
+  },
+  {
+    "step": 3000,
+    "train_loss": 0.9965550904870033,
+    "validation": {
+      "r": 0.08726414598785207,
+      "mse": 1.0593503724039177,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "train_seconds": 8.069345384836197,
+    "elapsed_seconds": 12.600574042648077
+  },
+  {
+    "step": 3262,
+    "train_loss": 0.9638931435028105,
+    "validation": {
+      "r": 0.08754364790896267,
+      "mse": 1.0644487946107057,
+      "persons": 45,
+      "records": 63,
+      "blocks": 980,
+      "undefined_r_blocks": 0
+    },
+    "train_seconds": 8.756945228204131,
+    "elapsed_seconds": 14.351680932566524
+  }
+]

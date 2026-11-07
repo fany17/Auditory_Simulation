@@ -1,0 +1,222 @@
+{
+  "checked_utc": "2026-11-06T16:02:40.473684+00:00",
+  "inventory_sha256": "9f9ccde5d9645213ce88adba6833ccba8ea3a4c685871ab18c7d55dc612f8732",
+  "TRAIN_records": 426,
+  "VAL_records": 49,
+  "TRAIN_unique_record_target_times": 24297126,
+  "VAL_unique_record_target_times": 2935045,
+  "dimension": 2112,
+  "coefficients_with_intercept": 2113,
+  "model_statistic_sets": 50,
+  "alpha_candidates": 9,
+  "coefficient_solutions": 450,
+  "personal": {
+    "sub-001": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-002": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-003": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-005": {
+      "records": 7,
+      "targets": 397835
+    },
+    "sub-007": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-008": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-009": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-010": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-011": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-012": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-013": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-014": {
+      "records": 7,
+      "targets": 389938
+    },
+    "sub-015": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-016": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-018": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-019": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-020": {
+      "records": 6,
+      "targets": 337879
+    },
+    "sub-021": {
+      "records": 7,
+      "targets": 389938
+    },
+    "sub-022": {
+      "records": 7,
+      "targets": 389938
+    },
+    "sub-023": {
+      "records": 7,
+      "targets": 389938
+    },
+    "sub-024": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-025": {
+      "records": 7,
+      "targets": 397835
+    },
+    "sub-026": {
+      "records": 8,
+      "targets": 449894
+    },
+    "sub-043": {
+      "records": 5,
+      "targets": 262204
+    },
+    "sub-044": {
+      "records": 5,
+      "targets": 262204
+    },
+    "sub-045": {
+      "records": 5,
+      "targets": 262204
+    },
+    "sub-046": {
+      "records": 5,
+      "targets": 262204
+    },
+    "sub-049": {
+      "records": 5,
+      "targets": 255957
+    },
+    "sub-051": {
+      "records": 5,
+      "targets": 255957
+    },
+    "sub-052": {
+      "records": 5,
+      "targets": 255957
+    },
+    "sub-053": {
+      "records": 5,
+      "targets": 255957
+    },
+    "sub-054": {
+      "records": 5,
+      "targets": 255957
+    },
+    "sub-055": {
+      "records": 5,
+      "targets": 255957
+    },
+    "sub-056": {
+      "records": 5,
+      "targets": 255957
+    },
+    "sub-057": {
+      "records": 5,
+      "targets": 294055
+    },
+    "sub-058": {
+      "records": 5,
+      "targets": 294055
+    },
+    "sub-059": {
+      "records": 5,
+      "targets": 294055
+    },
+    "sub-060": {
+      "records": 4,
+      "targets": 238127
+    },
+    "sub-061": {
+      "records": 5,
+      "targets": 294055
+    },
+    "sub-062": {
+      "records": 5,
+      "targets": 294055
+    },
+    "sub-063": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-064": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-065": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-066": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-067": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-068": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-069": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-070": {
+      "records": 5,
+      "targets": 310170
+    },
+    "sub-071": {
+      "records": 5,
+      "targets": 310170
+    }
+  },
+  "personal_TRAIN_records": 305,
+  "personal_TRAIN_targets": 17232052,
+  "planned_actual_training_Gram_target_rows": 24297126,
+  "logical_group_plus_person_target_rows": 41529178,
+  "lag_design_scalar_entries": 51315530112,
+  "lag_design_padded_scalar_entries": 14395392,
+  "all_alpha_both_modes_VAL_prediction_targets": 52830810,
+  "new_signal_reads": 0,
+  "new_fits": 0,
+  "new_NN": 0,
+  "note": "Metadata geometry only. Actual decomposition counts, implementation costs and engineering remain for execution review. Scalar padding counts assume every record has at least33 points."
+}

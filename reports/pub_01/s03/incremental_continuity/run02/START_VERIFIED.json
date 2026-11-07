@@ -1,0 +1,55 @@
+{
+  "time": 1793504201.4052353,
+  "protocol_sha256": "a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8",
+  "review_sha256": "0d208252e5ad26328237721aeeea2197b096088f3c1beff1a806ee59dac87587",
+  "controller": {
+    "pid": 416910,
+    "argv": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm_queue.py"
+    ],
+    "uid": 1012,
+    "start_ticks": 743141234
+  },
+  "workers": [
+    {
+      "GPU": 0,
+      "pid": 416911,
+      "condition": "frozen_p",
+      "seed": 1024,
+      "argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm.py",
+        "--condition",
+        "frozen_p",
+        "--seed",
+        "1024",
+        "--device",
+        "cuda:0"
+      ],
+      "uid": 1012,
+      "start_ticks": 743141343
+    },
+    {
+      "GPU": 1,
+      "pid": 416912,
+      "condition": "frozen_p",
+      "seed": 2026,
+      "argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/input/pub_01_s03_ss07_warm.py",
+        "--condition",
+        "frozen_p",
+        "--seed",
+        "2026",
+        "--device",
+        "cuda:1"
+      ],
+      "uid": 1012,
+      "start_ticks": 743141344
+    }
+  ],
+  "test_read": false,
+  "new_fits": 18,
+  "scientific_goal_achieved_claimed": false
+}

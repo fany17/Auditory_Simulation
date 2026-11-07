@@ -1,0 +1,53 @@
+{
+  "status": "FROZEN_BEFORE_D11_FORMAL_SCORES",
+  "plan_sha256": "d24597073f89b80950c4bf43f178051fc6ebcf5684187acbdeabb3de4500a8b4",
+  "compute_host": "server2203",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "non_goals": [
+    "No new model fitting",
+    "No neural forwards",
+    "No old-test/DTU scoring",
+    "No repeated D8/D9/D10 audit",
+    "No new data downloads",
+    "No stored prediction/EEG arrays"
+  ],
+  "checks": [
+    {
+      "check": "Source and input provenance",
+      "scope": "All D11 PROTOCOL source pins and input size/mtime; link to immutable upstream source hashes. Disclose metadata-only checks for inputs whose content hash is not newly recomputed."
+    },
+    {
+      "check": "All 15 saved normal equations and intercepts",
+      "tolerance": "max_abs <= 1e-7 * max(1,max_abs(H)); bias max_abs<=1e-10",
+      "counts": 15
+    },
+    {
+      "check": "All 24 full/warm/cold aggregates, 6 primary contrasts and condition_met",
+      "tolerance": "r and MSE absolute <=1e-10; exact counts and identities",
+      "counts": 24
+    },
+    {
+      "check": "Representative independent cached readout reconstruction",
+      "scope": "First and last original VAL record × 3 seeds × 8 scoring roles; same first41 fallback; independent NumPy feature/anchor/ridge/Hann formulas.",
+      "cases": 48,
+      "tolerance": "block r and 3s r<=1e-10; MSE/Hann identity<=1e-8; cold predictions bitwise identical to anchor"
+    },
+    {
+      "check": "Independent raw direct interval state feature checks",
+      "scope": "First/last original TRAIN and VAL record; first-valid41, integer-middle floor((41+windows-1)/2), last window; CurrentCov/RecordPrefix/PersonTRAIN/PastCov/OlderCov. Person covariance uses all legal other TRAIN record prefixes. Independent float32 normalization then FP64 centered covariance/descriptor; saved frozen PCA only.",
+      "cases": 60,
+      "tolerance": "descriptor rolling-direct absolute <=1e-8 when rolling comparison available; float32 PCA cache allclose atol2e-6 rtol2e-6; report maxima and failures without relaxing thresholds"
+    },
+    {
+      "check": "All475 support/static-state/cache provenance",
+      "scope": "Exact record-local offsets and windows, no past overlap with union, all cold cache rows zero, prefix and person cache constant within each record; same subject VAL static reference matches shared TRAIN provenance; no target/VAL in PCA statistics"
+    },
+    {
+      "check": "Resource and claim reconciliation",
+      "scope": "15fits,6interventions,24sets,zeroNN; actual root/arrays/allNPY/free disk/RSS/wall; retained failures; full r3s/MSE/fusion identity; all seeds/people included"
+    }
+  ],
+  "failure_policy": "Preserve audit evidence and diagnose the failing check. No tolerance relaxation or scientific changes based on results. Any justified numerical amendment must be explicit and separated from scientific selection.",
+  "new_arrays_saved": 0,
+  "goal_complete": false
+}

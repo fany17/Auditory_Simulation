@@ -1,0 +1,67 @@
+{
+  "stage": "fit",
+  "decision": "PASS",
+  "protocol_sha256": "133b60eeb6e937def9f25bdb8303ab80d9a2cf00d0f86ea3f6768c0f56a7b078",
+  "engineering_sha256": "87225694f4a3716a52e8ae248c8341eb887d6ad3dfbd0989144aa6d34679d578",
+  "reviewer": "coordinator",
+  "reviewed_source_commit": "a34f55cb83521a13600407249685113faffe3b35",
+  "actual_receipt_checks": {
+    "matrix": "All 9 seed/role rows present, exact counts and zero optimizer/fit in engineering.",
+    "max_errors": {
+      "latent_max_error": 0,
+      "history_max_error": 0,
+      "current_context_max_error": 0,
+      "anchor_block_r_error": 0,
+      "split_prediction_max_abs": 2.2351741790771484e-8
+    },
+    "finite_temporary_history_deltas": [
+      {
+        "seed": 1024,
+        "role": "H_past_eeg",
+        "max_abs": 0.05252338945865631
+      },
+      {
+        "seed": 1024,
+        "role": "P_past_prediction",
+        "max_abs": 0.02525447867810726
+      },
+      {
+        "seed": 2026,
+        "role": "H_past_eeg",
+        "max_abs": 0.014207486063241959
+      },
+      {
+        "seed": 2026,
+        "role": "P_past_prediction",
+        "max_abs": 0.011097262613475323
+      },
+      {
+        "seed": 31415,
+        "role": "H_past_eeg",
+        "max_abs": 0.02372410800307989
+      },
+      {
+        "seed": 31415,
+        "role": "P_past_prediction",
+        "max_abs": 0.015307001769542694
+      }
+    ],
+    "initialization_zero_residual_and_gradients": "Checked all saved initial/temporary-head per-layer gradient rows; matches source assertions.",
+    "source_unchanged": true,
+    "resources": {
+      "peak_RSS_bytes": 1993388032,
+      "cuda_peak_allocated_bytes": 335306240,
+      "writer_free_bytes": 178223759360,
+      "writer_bytes": 7096501
+    },
+    "CPU_seconds": 60.083372934,
+    "wall_seconds": 12.38807887211442
+  },
+  "authorization": "Start the single frozen fit stage immediately: 3 seeds x 3 roles x 20 complete global-shuffled physical-point passes, 260460 optimizer updates. Use only the pinned sources/protocol and existing TRAIN/VAL. No result-based budget/model changes, no external reopening, no restart due observation timeout.",
+  "conditions": [
+    "Original fit-stage six-hour deadline applies to any later recovery; preserved checkpoint/RNG is not proof that a recovery has executed.",
+    "Checkpoint, normalization and upstream frozen encoder/readout costs remain explicit. Engineering is charged separately.",
+    "Full all-role/all-seed results and fixed-context near/older comparison required; engineering success is not scientific improvement."
+  ],
+  "scientific_goal_achieved": false
+}

@@ -1,0 +1,46 @@
+{
+  "TRAIN_shared_points": 24297126,
+  "TRAIN_personal_logical_points": 17232052,
+  "shared_record_statistics_physical_points": 24297126,
+  "logical_sum_G_and_I_points": 41529178,
+  "TRAIN_records": 426,
+  "TRAIN_personal_records": 305,
+  "raw_subject_accumulators": 70,
+  "TRAIN_rank_k_calls": 6176,
+  "fitted_statistics": 50,
+  "eigensystems": 50,
+  "candidates": 450,
+  "VAL_points": 2935045,
+  "VAL_candidate_prediction_points": 52830810,
+  "VAL_candidate_blocks": 13536,
+  "features": 2112,
+  "per_record_block_max": 4096,
+  "alphas": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "engineering_max": {
+    "synthetic_small_solutions": 2,
+    "actual_2112_solutions": 1,
+    "actual_TRAIN_target_rows": 2048,
+    "max_samples_read_per_record": 4640,
+    "TRAIN_scoring_segments_of_4608": 2,
+    "VAL_performance": 0
+  },
+  "author_independent_geometry_sha256": "c6d9672f6b80b368eea10ad62d5a1b0e0fde9378e89a58a8e0dc54c759a11309",
+  "resource": {
+    "engineering_threads": 4,
+    "formal_threads": 16,
+    "RSS_GiB": 8,
+    "writer_GiB": 8,
+    "SATA_reserve_GiB": 64
+  },
+  "no_GPU_or_NN": true
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "phase": "train",
+      "records": 426,
+      "windows": 252454,
+      "target_elements": 48471168,
+      "unequal_float32_elements": 0,
+      "maximum_abs_difference": 0.0,
+      "record_order_and_window_coordinate_passed": true
+    },
+    {
+      "phase": "val",
+      "records": 49,
+      "windows": 30500,
+      "target_elements": 5856000,
+      "unequal_float32_elements": 0,
+      "maximum_abs_difference": 0.0,
+      "record_order_and_window_coordinate_passed": true
+    }
+  ],
+  "source_sha256": "7d57f47c1db14e5e696f74b37e0be736ba2ddae5f2c07036510299e3c5a39648",
+  "NN_forwards": 0,
+  "optimizer_updates": 0,
+  "external_access": false,
+  "wall_seconds": 0.21558833122253418,
+  "CPU_seconds": 0.21418780399999998
+}

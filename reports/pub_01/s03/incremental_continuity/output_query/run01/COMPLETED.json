@@ -1,0 +1,86 @@
+{
+  "stage": "fit",
+  "protocol_sha256": "40de86545cdcd69264a308a68cc02c653b211f9688511b2cea9df2976dbcc74e",
+  "process": {
+    "pid": 1320228,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_output_query.py",
+      "fit"
+    ],
+    "linux_startticks": 788206171,
+    "stage_started_unix": 1793954818.0942056,
+    "deadline_unix": 1793976418.0942056,
+    "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "runtime_versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "torch_cuda": "12.8"
+  },
+  "CPU_seconds": 1207.3996587010001,
+  "elapsed_seconds": 369.1451178621501,
+  "counters": {
+    "TRAIN_records_loaded": 1278,
+    "TRAIN_cached_windows_loaded": 757362,
+    "VAL_records_loaded": 147,
+    "VAL_cached_windows_loaded": 91500,
+    "training_statistics_files": 3,
+    "current_stem_points": 1887261057,
+    "context_output_points": 1895861454,
+    "backward_points": 1422210600,
+    "optimizer_updates": 86820,
+    "parameter_checkpoint_files": 66,
+    "formal_fits_completed": 3
+  },
+  "location": {
+    "seed": 31415,
+    "role": "P_past_prediction",
+    "epoch": 19,
+    "phase": "selected_VAL_pair"
+  },
+  "resources": {
+    "peak_RSS_bytes": 5210808320,
+    "cuda_peak_allocated_bytes": 2592440320,
+    "writer_free_bytes": 178079305728,
+    "writer_bytes": 17029796
+  },
+  "new_encoder_head_windows": 0,
+  "new_signal_feature_prediction_array_files": 0,
+  "parameter_checkpoint_files": 66,
+  "training_statistics_files": 3,
+  "passed": true,
+  "seeds": {
+    "1024": {
+      "selected_epoch": 0,
+      "selected_r": 0.18345456164136692,
+      "D20_r": 0.1829525004369233,
+      "anchor_r": 0.18188879428826338,
+      "best_trained_epoch": 0,
+      "best_trained_r": 0.18345456164136692,
+      "last_r": 0.17956253068476186,
+      "paired_far_r": 0.17899056324956364
+    },
+    "2026": {
+      "selected_epoch": 0,
+      "selected_r": 0.18453556913392583,
+      "D20_r": 0.1841103487098252,
+      "anchor_r": 0.1817561196902157,
+      "best_trained_epoch": 0,
+      "best_trained_r": 0.18453556913392583,
+      "last_r": 0.180950860311757,
+      "paired_far_r": 0.1796893646306755
+    },
+    "31415": {
+      "selected_epoch": 0,
+      "selected_r": 0.18575258234736144,
+      "D20_r": 0.18520868320256786,
+      "anchor_r": 0.18337490481957303,
+      "best_trained_epoch": 0,
+      "best_trained_r": 0.18575258234736144,
+      "last_r": 0.18168841309993727,
+      "paired_far_r": 0.17996677998144106
+    }
+  }
+}

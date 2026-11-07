@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "process": {
+    "pid": 1571636,
+    "uid": 1012,
+    "startticks": 789924778,
+    "cuda_visible_devices": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "gate_sha256": "e7b458165025059156804e1097dcf8994b8c9e0ac27b3f611d32d91fc842c93a",
+  "counters": {
+    "encoder_windows": 170634,
+    "encoder_batches": 2673,
+    "anchor_score_points": 16047381,
+    "current_stem_points": 64189524,
+    "context_output_points": 64189524,
+    "downstream_active_points": 64189524,
+    "logical_fold_readout_routes": 36
+  },
+  "fixed_epochs": [
+    0,
+    19
+  ],
+  "scores": 36,
+  "record_scores": 1335,
+  "block_scores": 20970,
+  "no_fit": true,
+  "new_optimizer_updates": 0,
+  "new_statistics_fits": 0,
+  "VAL_labels": 49,
+  "old_test_reads": 0,
+  "wall_seconds": 51.00777365360409,
+  "CPU_seconds": 126.251207391,
+  "CUDA_peak_reserved_bytes": 249561088
+}

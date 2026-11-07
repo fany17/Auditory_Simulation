@@ -1,0 +1,44 @@
+{
+  "scope": "Independent audit computation only; excludes formal training/readout costs. V02 fixed-nine-case cap is not changed.",
+  "V01_failed_actual_calls": {
+    "backbone_windows": 102,
+    "native_unused_projection_windows": 102,
+    "final_projection_windows": 40,
+    "head_windows": 40,
+    "manual_memory_query_windows": 31,
+    "library_memory_query_windows": 31
+  },
+  "V02_nine_case_call_cap": {
+    "backbone_windows": 1290,
+    "native_unused_projection_windows": 1290,
+    "final_projection_windows": 600,
+    "head_windows": 600,
+    "manual_memory_query_windows": 465,
+    "library_memory_query_windows": 465
+  },
+  "CPU_bridge_executed_calls": {
+    "backbone_windows": 378,
+    "native_unused_projection_windows": 102,
+    "final_projection_windows": 144,
+    "head_windows": 144,
+    "manual_memory_query_windows": 31,
+    "library_memory_query_windows": 117
+  },
+  "combined_fixed_upper_bound": {
+    "backbone_windows": 1770,
+    "native_unused_projection_windows": 1494,
+    "final_projection_windows": 784,
+    "head_windows": 784,
+    "manual_memory_query_windows": 527,
+    "library_memory_query_windows": 613
+  },
+  "CPU_bridge_reported_CPU_seconds": 17.555162731,
+  "CPU_bridge_reported_wall_seconds": 5.225165509618819,
+  "CPU_bridge_result_sha256": "5c040fc73b880d34e87bb9fc9dee1fc88f87daaaed2c27e13d584d1c0ed62169",
+  "all_GPU_forwards": 0,
+  "all_new_fits": 0,
+  "all_optimizer_updates": 0,
+  "strict_raw_failures_remain": true,
+  "TF32_attribution_established": false,
+  "note": "Formal CPU40 and CPU64 first40 outputs are elementwise equal for this fixed case. Independent-vs-formal CPU metrics satisfy original tolerances; original CPU-vs-saved-CUDA raw absolute MSE failure remains."
+}

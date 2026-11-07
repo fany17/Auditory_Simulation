@@ -1,0 +1,21 @@
+{
+  "process": {
+    "pid": 1432627,
+    "uid": 1012,
+    "startticks": 789056187,
+    "source_sha256": "b0fd94cb7deb04420270eb55a29591d1e3a303bceb4b6606bc90c408b75a6d1c",
+    "deadline_unix": 1794049718.2119832
+  },
+  "completed_seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "counters": {
+    "TRAIN_anchor_points_read": 145656324,
+    "context_values_represented": 13653221760,
+    "neural_forwards": 0,
+    "label_arrays_read": 0,
+    "fitting_updates": 0
+  }
+}

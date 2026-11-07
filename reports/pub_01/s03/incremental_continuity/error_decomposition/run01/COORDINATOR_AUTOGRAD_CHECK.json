@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "source_sha256": "99d18dce42d4a3783c6bbe4e8a0f435d53b8c38a692f012019d444a3c3be0282",
+  "methods": "torch.fold/autograd versus independent NumPy physical derivatives and explicit H transpose",
+  "synthetic_windows": 82,
+  "first_fixed_windows": 9,
+  "physical_blocks": 2,
+  "physical_block_weights": [
+    0.25,
+    0.75
+  ],
+  "gradient_max_abs": {
+    "M": 1.0842021724855044e-19,
+    "F": 4.336808689942018e-19,
+    "R": 4.336808689942018e-19
+  },
+  "angular_identity_max_abs": 5.421010862427522e-19,
+  "decomposition": [
+    {
+      "designed_gain": 0.2,
+      "alpha": 0.22323946400962835,
+      "r_reconstruction_error": 2.7755575615628914e-17,
+      "MSE_sum_error": 0.0
+    },
+    {
+      "designed_gain": -0.4,
+      "alpha": -0.42416959744221855,
+      "r_reconstruction_error": 0.0,
+      "MSE_sum_error": 2.220446049250313e-16
+    },
+    {
+      "designed_gain": -1.4,
+      "alpha": -1.429408769478494,
+      "r_reconstruction_error": 8.326672684688674e-17,
+      "MSE_sum_error": 2.220446049250313e-16
+    }
+  ],
+  "cross_60s_window_both_halves_checked": true,
+  "unscored_tail_MSE_only_checked": true,
+  "negative_total_gain_checked": true,
+  "actual_data_or_NN_or_optimizer_access": false,
+  "CPU_seconds": 0.16389036800000012,
+  "wall_seconds": 0.17322182655334473
+}

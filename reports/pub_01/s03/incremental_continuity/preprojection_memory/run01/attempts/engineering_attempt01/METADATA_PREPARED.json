@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "engineering_protocol_sha256": "3c40968fb4a81c52915aee2e001bd257a8323e8b75d1dc052612f3f9869b475c",
+  "source_pins": 482,
+  "input_identities": 547,
+  "all60_permutations_match_D16": true,
+  "all_batches_have_nonfallback": true,
+  "new_encoder_head_forwards": 0,
+  "scientific_array_values_read": false,
+  "new_fits": 0,
+  "CPU_seconds": 2.540374834,
+  "wall_seconds": 2.549225091934204,
+  "peak_RSS_KiB": 590384
+}

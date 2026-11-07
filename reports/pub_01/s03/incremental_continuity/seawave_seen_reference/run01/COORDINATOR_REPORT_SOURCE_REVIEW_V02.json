@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "scope": "Independent static reporting-source review and exact deployed/local source matching; not acceptance of future performance.",
+  "server_utc": "2026-11-06T17:40:39Z",
+  "implementation_commit": "54bfa18",
+  "sources": {
+    "pub_01_s03_ss07_seawave_seen_report.py": "75bd2d8068b84904203567ae4edf03fc83645182646f5e735cc524af8f0caebf",
+    "pub_01_s03_ss07_seawave_seen_report_cost.py": "dec630336f230bb36429195abdf734e8d6564f5d6b853cd3c4aeb9cc27f99a04",
+    "pub_01_s03_ss07_seawave_seen_report_figures.py": "7edc7ef38d80773b751645f5afbe5088378e6a387dcf759114e40bee8dd8cb50"
+  },
+  "reviewed_common_support_helpers": {
+    "pub_01_s03_ss07_contrastive_history_report.py": "550913f9c880c44687fbac280675db0285c42ee9bfeef18ee2b7a1619a149a08",
+    "pub_01_s03_ss07_contrastive_history_report_cost.py": "d07c8ab6bfb5fbae8292432da8ca4abac276846d8dadc780bf792c906709dbfd"
+  },
+  "protocol_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "checked": [
+    "3 unique shared initial fits and 147 person-specific branches, bound to each seed initial selected checkpoint SHA.",
+    "Original 49-person / 752-block support reconstructed before same-support r and MSE aggregation; five stories and 29/20 source-family groups retained.",
+    "Personal epoch -1 eligible; strict improvement preserves earliest ties; selected -1 costs zero personal optimizer updates while all actually executed search epochs remain charged.",
+    "Initial 201 epochs, personal frozen cap/patience, exact frame/hop/batch/tail and full-record halo costs match the actual frozen training implementation.",
+    "3 shared initial fits charged once; per-person allocation is explicitly accounting only. Cross-fit unique-time sums are not misrepresented as a union.",
+    "Exact registered final worker identity required; missing exit markers and unknown uncommitted failure work preserved instead of inventing clean-exit or exact-cost claims.",
+    "Original Transformer and D26 use complete same-support blocks/MSE; D28 uses independently reviewed completion. Historical r-only comparisons remain separate.",
+    "Group initial and person-adapted results remain separate; performance ranking is development VAL and does not establish independent generalization or SOTA."
+  ],
+  "publisher_fixture_receipt_sha256": "7a6d99d6491c4947341bffd3cfa12c88ae5f4b407629fd003f8454f329c1f068",
+  "publisher_fixtures_reviewed_not_independently_rerun": true,
+  "new_signal_reads": 0,
+  "new_weight_reads": 0,
+  "new_model_forwards": 0,
+  "new_fits": 0,
+  "new_optimizer_updates": 0,
+  "final_review_pending": [
+    "Actual 150 fit receipts and selected models",
+    "Complete same-support scores and rendered final plots",
+    "Actual runtime/failure accounting",
+    "Whole-method comparisons with adaptation, timing permission, teacher-feature and budget differences"
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "scope": "Study/language/book and available identity metadata only; no old NN or old signal/audio values",
+  "new": {
+    "dataset": "OpenNeuro ds004408 v1.0.8",
+    "commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+    "study": "Di Liberto2015 plus Broderick2018; Trinity College Dublin",
+    "people": 19,
+    "records": 380,
+    "language": "English",
+    "book": "The Old Man and the Sea",
+    "narratives": 1,
+    "audio_identities": [
+      {
+        "path": "stimuli/audio01.wav",
+        "target_sha256": "2da43ff1f7e2b4f2b271f26c384ab2c0269ca96f0117b9971b63aebea3723123"
+      },
+      {
+        "path": "stimuli/audio02.wav",
+        "target_sha256": "d9b024887eb42f9cf1052d1c3a02f20b866d3858d3658d055153fddb1bc63fdf"
+      },
+      {
+        "path": "stimuli/audio03.wav",
+        "target_sha256": "d86270c522ede132aa214736f5f3c41f75543f123823e7a5bbbe3ae57fb4c682"
+      },
+      {
+        "path": "stimuli/audio04.wav",
+        "target_sha256": "dd54fa9705fa943c46f82f70018e67967d61f8566f64774a47bcbd7b3b800fac"
+      },
+      {
+        "path": "stimuli/audio05.wav",
+        "target_sha256": "89ac4f0f094dc3d188789f27f87b896670fd35976858489ab2d8bcf1e5f7d4d0"
+      },
+      {
+        "path": "stimuli/audio06.wav",
+        "target_sha256": "e60f424acf10370a1aec1ee86dbaf16f2f69841f7e0fddac0e74ac26c622cd4d"
+      },
+      {
+        "path": "stimuli/audio07.wav",
+        "target_sha256": "7b286befdd21cc6755e9e49af7a51c00a4d7e8e6bbf697ac66b126af0b80ebed"
+      },
+      {
+        "path": "stimuli/audio08.wav",
+        "target_sha256": "27b8e5f7035d6b3a4a1805989dc41cac6236d49c1588126e8304d1baa7c72752"
+      },
+      {
+        "path": "stimuli/audio09.wav",
+        "target_sha256": "981d85abb7136cee130f33d4b240e71d4f5104bec8dca17c409f421313ce2462"
+      },
+      {
+        "path": "stimuli/audio10.wav",
+        "target_sha256": "933460245c12fcbff44d795db02052dd072ff1a9b28b60b7a9aca123056d2cda"
+      },
+      {
+        "path": "stimuli/audio11.wav",
+        "target_sha256": "296ca14bda5ded97996a6e0bc5cb16a76d48acc2fb4c99e7f33090264a7423c5"
+      },
+      {
+        "path": "stimuli/audio12.wav",
+        "target_sha256": "1bd5ea34dc6876d9b489feb8e22d47920c355b7ed87c6fdb5535a3a5cd65464e"
+      },
+      {
+        "path": "stimuli/audio13.wav",
+        "target_sha256": "b32d5310ade7c2d7a28b3deb669f0345b270500e900a0afb9b3dcd5a63e0d0c0"
+      },
+      {
+        "path": "stimuli/audio14.wav",
+        "target_sha256": "3a82a989af47f83071afb2752b3e0303443e755459af45c1c02cf437cb2cb56a"
+      },
+      {
+        "path": "stimuli/audio15.wav",
+        "target_sha256": "17e8a3d056425fb18b1c318f257730391914f8ed55dec578c468854e98cb3c25"
+      },
+      {
+        "path": "stimuli/audio16.wav",
+        "target_sha256": "1d1f31cb33b57d9f37c0185fe781853c892c1f84ebac34714bdb458818996a9e"
+      },
+      {
+        "path": "stimuli/audio17.wav",
+        "target_sha256": "d15b0d9d6a802fa6ad32ed68a006b7c7a191633fb263a4ba5c3f3733087dcdb6"
+      },
+      {
+        "path": "stimuli/audio18.wav",
+        "target_sha256": "679ebc1c716f651fbc8cee26cd9759551c54f3c205a3c5f581f2c0d94a036ad8"
+      },
+      {
+        "path": "stimuli/audio19.wav",
+        "target_sha256": "101bcf1372a15bd690db565b0ca907155b08a10be4dcff6cc09414049f1122c0"
+      },
+      {
+        "path": "stimuli/audio20.wav",
+        "target_sha256": "3ce78a37cf46240ad102cc159427cc215d1af542b96bfede5b7400d0a119aa90"
+      }
+    ]
+  },
+  "source_Sparr": {
+    "dataset": "SparrKULee",
+    "study": "KU Leuven",
+    "language": "Dutch/Flemish",
+    "existing_manifest_records": 619,
+    "training_records": 426,
+    "training_audio_story_IDs": [
+      "audiobook_1",
+      "audiobook_10_1",
+      "audiobook_11_1",
+      "audiobook_12_1",
+      "audiobook_12_2",
+      "audiobook_13_1",
+      "audiobook_14_1",
+      "audiobook_14_2",
+      "audiobook_2_1",
+      "audiobook_3",
+      "audiobook_4",
+      "audiobook_5_1",
+      "audiobook_5_3",
+      "audiobook_6_1",
+      "audiobook_6_2",
+      "audiobook_8_1",
+      "audiobook_9_1",
+      "podcast_1",
+      "podcast_10",
+      "podcast_11",
+      "podcast_12",
+      "podcast_13",
+      "podcast_14",
+      "podcast_16",
+      "podcast_17",
+      "podcast_18",
+      "podcast_19",
+      "podcast_2",
+      "podcast_20",
+      "podcast_23",
+      "podcast_24",
+      "podcast_26",
+      "podcast_27",
+      "podcast_28",
+      "podcast_29",
+      "podcast_3",
+      "podcast_5",
+      "podcast_6",
+      "podcast_7",
+      "podcast_8",
+      "podcast_9"
+    ],
+    "all_available_story_IDs": [
+      "audiobook_1",
+      "audiobook_10_1",
+      "audiobook_10_2",
+      "audiobook_11_1",
+      "audiobook_11_2",
+      "audiobook_12_1",
+      "audiobook_12_2",
+      "audiobook_13_1",
+      "audiobook_13_2",
+      "audiobook_14_1",
+      "audiobook_14_2",
+      "audiobook_2_1",
+      "audiobook_2_2",
+      "audiobook_3",
+      "audiobook_4",
+      "audiobook_5_1",
+      "audiobook_5_2",
+      "audiobook_5_3",
+      "audiobook_6_1",
+      "audiobook_6_2",
+      "audiobook_8_1",
+      "audiobook_8_2",
+      "audiobook_9_1",
+      "audiobook_9_2",
+      "podcast_1",
+      "podcast_10",
+      "podcast_11",
+      "podcast_12",
+      "podcast_13",
+      "podcast_14",
+      "podcast_15",
+      "podcast_16",
+      "podcast_17",
+      "podcast_18",
+      "podcast_19",
+      "podcast_2",
+      "podcast_20",
+      "podcast_21",
+      "podcast_22",
+      "podcast_23",
+      "podcast_24",
+      "podcast_25",
+      "podcast_26",
+      "podcast_27",
+      "podcast_28",
+      "podcast_29",
+      "podcast_3",
+      "podcast_30",
+      "podcast_31",
+      "podcast_32",
+      "podcast_33",
+      "podcast_34",
+      "podcast_35",
+      "podcast_36",
+      "podcast_37",
+      "podcast_4",
+      "podcast_5",
+      "podcast_6",
+      "podcast_7",
+      "podcast_8",
+      "podcast_9"
+    ],
+    "raw_audio_digest_comparison_available": false,
+    "reason": "Existing model manifest names processed NPZ audio objects and numeric story IDs; these are not a directly comparable set of original WAV fingerprints"
+  },
+  "prior_exposed_DTU": {
+    "dataset": "Zenodo1199011 v1",
+    "study": "Technical University of Denmark",
+    "language": "Danish",
+    "task": "Two competing speakers / reverberation; existing selected preprocessed trials",
+    "only_existing_DATA_preproc_and_script": true,
+    "raw_AUDIO_archive_downloaded_for_this_check": false,
+    "original_audio_identity_complete": false
+  },
+  "references": [
+    {
+      "url": "https://github.com/OpenNeuroDatasets/ds004408/blob/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be/README",
+      "supports": "Pinned dataset links its acquisition to DiLiberto2015/Broderick2018 and one OldManAndSea audiobook"
+    },
+    {
+      "url": "https://mickcrosse.com/assets/pubs/Broderick_etal_CurrBiol_2018.pdf",
+      "supports": "Original paper:19 native-English single-audiobook experiment; key resources identify OldManAndSea. Indexed primary text read; full fetch timed out."
+    },
+    {
+      "url": "https://assets-eu.researchsquare.com/files/rs-3397581/v1_covered_853cbd8c-9086-43e4-874b-adf373f85270.pdf?c=1718765782",
+      "supports": "Authors SparrKULee data-descriptor preprint labels SparrKULee Dutch and contrasts English Broderick/Danish DTU collections"
+    },
+    {
+      "url": "https://doi.org/10.3389/fnins.2018.00531",
+      "supports": "DTU primary methods section2.4: professionally recorded Danish male/female fictional stories"
+    },
+    {
+      "url": "https://zenodo.org/records/1199011",
+      "supports": "DTU18 participant study/data packaging and available original audio metadata"
+    }
+  ],
+  "interpretation": "Metadata supports a distinct collection and stimulus language/narrative source, not a complete cross-corpus waveform or participant identity proof",
+  "residual_limits": [
+    "No full original-waveform identity comparison across Sparr/DTU/ds004408 was possible from available manifests",
+    "No complete audit can exclude exposure of this narration/audio during large XLSR pretraining; do not claim guaranteed unseen audio to every pretraining stage",
+    "At most19 independent participant units conditional on one shared narrative/speaker;20 segments are not20 independent stories",
+    "All new predictive evaluation occurs after frozen shared offline/transductive EEG gain calibration, not an uncalibrated zero-shot confirmation"
+  ],
+  "metadata_pins": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/manifest_frozen.json": "4c0c2bcc6841437752fbc2c302e5df0693b9db120c19e68d7360d5125bd0c5e0",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/external_dtu/INTAKE_AUTHORIZATION.json": "410c443acd0d2e58fc0f8b1fad637db6d50f54e1f3db7be1b14f28bbae457523",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/external_dtu/DOWNLOAD_EXTRACT_COMPLETED.json": "712d3d1e313b1a1849fecf8751f042f6fe01fc125d239bbf476e253c476132b9",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/AUDIO_PREPARE_COMPLETED.json": "d5e911e74d069adc0911ecd80fb066eb2818249cc5edcc263baec06920670915"
+  },
+  "source_sha256": "76ea1567ac4ee070677a7694551614e7e7079b0f5460fd0c21d378ef186d3313",
+  "new_NN": 0,
+  "old_NN": 0
+}

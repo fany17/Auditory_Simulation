@@ -1,0 +1,70 @@
+{
+  "review_date": "2026-11-02",
+  "reviewer": "root coordinator, independent server/source review",
+  "decision": "PASS_PRE_REVIEW_AWAIT_ACTUAL_COMPLETE_DATA_FREEZE",
+  "approved_for_real_NN_now": false,
+  "verified": {
+    "legacy_assets_current_SHA": 19,
+    "historical_manifests_current_SHA": 4,
+    "actual_historical_path_digest_associations": 54,
+    "all_SOURCE_ASSETS_V2_pins_recomputed": 1000,
+    "source_independence_metadata_pins_recomputed": 4,
+    "source_manifest_counts": {
+      "all_records": 619,
+      "train_records": 426,
+      "train_story_IDs": 41,
+      "all_story_IDs": 61,
+      "new_audio_target_identities": 20
+    },
+    "proof_hashes": {
+      "LEGACY_ASSET_IDENTITY_CHECK": "7b9ea3d0fac5ef39110a3ab92b721a4fec64aad0a20d5fc78524b8b72faa2a75",
+      "SOURCE_ASSETS_V2": "2040586dfb93f47b80d1582a17803dca3a6f98d8f5a5b454b027acca8fadf73b",
+      "SOURCE_INDEPENDENCE": "7db8e1592ab995599d099968d03e84efd641b6ea2a699675b2d5f8439eb2f92f",
+      "STATISTICS_PROTOCOL": "4cd2b2b8b39624ba02ffc248ffa0d24e072b35d01f4ab5c00d947972462f6506"
+    },
+    "reviewed_code": [
+      "openneuro_evaluate.py plus complete evaluate_v2 diff",
+      "openneuro_scoring.py",
+      "openneuro_statistics.py",
+      "openneuro_metrics.py"
+    ],
+    "synthetic_independent_checks": {
+      "small_n_signflip_against_itertools_product": 5,
+      "undefined_left_and_right_Holm_slots": true,
+      "real_NN_or_data_scores": 0
+    },
+    "stored_nine_readout_bridge_max_abs": 2.842170943040401e-14
+  },
+  "accepted_statistical_rules": [
+    "Two fixed primary comparisons; each person averages three seeds after equal weighting of eligible record-local blocks.",
+    "Undefined fixed-support model/primary is reported undefined; its internal p=1 reserves the two-test Holm family without changing the other comparison.",
+    "One FP32 sensitivity-diagnostic failure cannot invalidate valid FP64 primary scores; the diagnostic failure remains visible.",
+    "Exact sign enumeration is conditional on independent people and sign symmetry/exchangeability, not unconditional causal or distribution-free evidence.",
+    "Shared person bootstrap draws and the prespecified Bonferroni family95 approximate percentile intervals are retained."
+  ],
+  "source_review": {
+    "judgment": "Distinct collection and stimulus-language evidence; complete participant and original-waveform cross-corpus identity exclusion remains unavailable.",
+    "primary_sources_actually_read": [
+      {
+        "url": "https://doi.org/10.1016/j.cub.2018.01.080",
+        "scope": "Indexed primary STAR Methods: native English participants,19 single-audiobook participants; one male narrator and continuous story; key resources list Old Man and the Sea."
+      },
+      {
+        "url": "https://assets-eu.researchsquare.com/files/rs-3397581/v1_covered_853cbd8c-9086-43e4-874b-adf373f85270.pdf?c=1718765782",
+        "scope": "Author preprint Table1 and Section2.1: SparrKULee Dutch/Flemish, Broderick English, DTU Danish."
+      },
+      {
+        "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2018.00531/full",
+        "scope": "Section2.4: professionally recorded male/female Danish fictional stories."
+      }
+    ],
+    "XLSR_pretraining_exposure_not_excluded": true,
+    "shared_narrative_limit": true
+  },
+  "remaining": [
+    "All actual EEG preprocessing results, their input/source identities and final common mask must match the planned cohort or receive a transparent input-only failure amendment.",
+    "Final EVALUATION_PROTOCOL fingerprint must bind the reviewed source/statistical/legacy assets and actual input manifest before formal model evaluation.",
+    "Final reporting must retain seed-by-person metrics and directions, precision failures, F cancellation diagnostics and calibrated-transfer limitations; descriptive summary cannot stand in for these outputs."
+  ],
+  "scientific_goal_complete": false
+}

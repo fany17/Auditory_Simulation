@@ -1,0 +1,11 @@
+{
+  "source_sha256": "0113a30704b0fe2f13ae0e23aa53b2527afa29cfefc3c0c784789f384229cc64",
+  "passed": true,
+  "manual_GRU_max_abs": 5.960464477539063e-08,
+  "synthetic_GRU_sequences": 7,
+  "synthetic_GRU_steps_per_sequence": 2,
+  "independent_pairwise_Hann_max_abs": 2.220446049250313e-16,
+  "scientific_input_access": false,
+  "CPU_seconds": 0.05665985500000015,
+  "wall_seconds": 0.022836923599243164
+}

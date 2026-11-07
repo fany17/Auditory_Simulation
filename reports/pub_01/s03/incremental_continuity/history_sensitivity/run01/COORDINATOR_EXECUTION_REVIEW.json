@@ -1,0 +1,58 @@
+{
+  "time": 1793633494.582,
+  "coordinator_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "approved_for_execution": true,
+  "protocol_sha256": "1791ab561d6faf1505855df1d691be83b7e2bd3eb26bc091276ab110422d883e",
+  "prepared_sha256": "cfa436b29ab218ef3bd60b4d48c7281b5eaa06106b280e453c2ae8c4078d9af5",
+  "axis_tests_sha256": "6b33130d9daac441947467de832f23a993ab8d0e12926daa7bd72315031298be",
+  "review": "Coordinator read all3 source files/PLAN/final metadata amendments; checked all229 source pins,15 input identities and4 checkpoint SHA on2203; local sources match server. Scalar centering/zero denominator tests actualPASS. Both GPUs actually idle and disks above20GiB.",
+  "scope": "Read-only D16 H2026 selected5 plus3seed last19; original fixed64metadata/48effective TRAIN windows, same current and Ccap, near/older twohistories; no model fitting or newVAL/test.",
+  "sample_scope": {
+    "subjects": [
+      "sub-001"
+    ],
+    "records": 8,
+    "stories": 8,
+    "metadata_windows": 64,
+    "effective_windows": 48,
+    "not_population_representative": true
+  },
+  "source_findings": [
+    "Only bounded memmap indices are read; no fullTRAIN Data construction or target reads.",
+    "Unchanged D16 Conditional forward; hooks observe existing activations; allweightsFalse/historyTrue; train() with no dropout/runningstats preserves input-backward path.",
+    "Current and anchor tensors, metadata order and complete model state checked unchanged.",
+    "RMS centers over48windows(axis0) at fixed remaining coordinates; two token positions separately reported. Zero relative denominators returnnull.",
+    "Original Ccap float64 addition grouping restored; subject/story are actualmanifest fields. V1 evidence preserved with0NN refreeze.",
+    "Bounded emptyGPU wait under existing900s alarm; no foreignprocess termination."
+  ],
+  "NN_windows": 384,
+  "forward_calls": 8,
+  "maximum_history_input_backward_calls": 8,
+  "optimizer_updates": 0,
+  "fits": 0,
+  "new_encoder_head": 0,
+  "resource_limits": {
+    "wall_seconds": 900,
+    "RSS_bytes": 8589934592,
+    "GPU_allocated_bytes": 2147483648,
+    "root_bytes": 8388608,
+    "each_disk_free_bytes": 21474836480
+  },
+  "independent_review": {
+    "source": "pub_01_s03_ss07_history_sensitivity_scalar_review.py",
+    "source_sha256": "13d34e2b3c416c2ad8111dcd1ca3aff1c4286c786aad4e32448c42eadae1c8e5",
+    "new_NN": 0,
+    "new_backward": 0,
+    "coordinator_runs": true,
+    "scope": "Source/metadata/scalar arithmetic consistency; no independent neural or activation replay."
+  },
+  "limits": [
+    "Single subject and fixed48windows, not population evidence.",
+    "Near/older alter both content and recency; older may preserve information.",
+    "One local input-gradient direction; nonzero parameter gradients do not prove history content use.",
+    "Float32 equality/attenuation is local numerical evidence, not global information-theoretic collapse.",
+    "No performance or publication-readiness claim from diagnosis."
+  ],
+  "action": "Run the bound384NN/8input-backward diagnosis once now; report actualcompletion or failure counters. Preserveall4checkpoints and allnodes, do not retrain or automatically rerun neural work.",
+  "goal_complete": false
+}

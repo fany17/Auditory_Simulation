@@ -1,6 +1,27 @@
+> 2026-11-01当前：SS07 ACTIVE，全量原强基线/连续残差持续goal，旧STOP为历史；入口CODEX_START_HERE.md及SS07任务书。
+
+SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/incremental_continuity/run01/EXECUTION_REVIEW_01.md)（实际运行与工程/独立审阅）、[`EVIDENCE_MATRIX`](../reports/pub_01/s03/incremental_continuity/run01/EVIDENCE_MATRIX.md)（结果前投稿证据缺口）、[`FINETUNE_SNAPSHOT`](../reports/pub_01/s03/incremental_continuity/run01/FINETUNE_SNAPSHOT.json)（五FT完整训练验证预算）。真实科学结果仍待全训练/统一评估/实际复算，不把以上准备当科学验收。
+
+[`RELATED_WORK_COMPARISON`](../reports/pub_01/s03/incremental_continuity/run01/RELATED_WORK_COMPARISON.md)补充9份已实际浏览的一手论文与冻结代码/任务可比性，区分已有组件、研究假说与未建立的新意，不据此自动扩实验。
+
+[`SCREEN_SELECTION_REVIEW`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_SELECTION_REVIEW.json)与[`SCREEN_WIDTHS`](../reports/pub_01/s03/incremental_continuity/run01/SCREEN_WIDTHS.csv)记录54/54完整筛选、全部已存VAL r的独立聚合核对和五类H16；[`FULL_START_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FULL_START_VERIFIED.json)是初始full启动快照。
+
+初始15full完成后的[`PRIMARY_SELECTION_REVIEW`](../reports/pub_01/s03/incremental_continuity/run01/PRIMARY_SELECTION_REVIEW.json)、[`FULL_INITIAL15_BUDGET`](../reports/pub_01/s03/incremental_continuity/run01/FULL_INITIAL15_BUDGET.csv)核对原规则冻结M4及预算；[`PRIMARY_NATIVE_VAL_COMPARISON`](../reports/pub_01/s03/incremental_continuity/run01/PRIMARY_NATIVE_VAL_COMPARISON.json)保留五family均值/M4逐seed低于原P的合法VAL证据；[`FINAL_CONTROL_START_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_CONTROL_START_VERIFIED.json)记录固定五seed/四控制接续（唯一full总37）。不是测试胜负或科学目标完成。
+
+[`FULL_INITIAL15_CURVES`](../reports/pub_01/s03/incremental_continuity/run01/FULL_INITIAL15_CURVES.png)与[`FULL_INITIAL15_VAL60S`](../reports/pub_01/s03/incremental_continuity/run01/FULL_INITIAL15_VAL60S.png)呈现495条实际epoch日志和原三seed验证差值；同目录HISTORY/CURVE_SUMMARY CSV与CURVE_SNAPSHOT保存数值/来源。仅VAL描述图，不代替最终gated测试结果图；中文逐图解释见EXECUTION_REVIEW_01。
+
+[`FAILURE_MECHANISM_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/FAILURE_MECHANISM_CHECK.md)及[`INITIAL15_PAIRED_VALIDATION_METADATA`](../reports/pub_01/s03/incremental_continuity/run01/INITIAL15_PAIRED_VALIDATION_METADATA.csv)明确同seed encoder/随机head联合训练与已训练head增量的区别，并列原P两种VAL指标/预算，区分事实、假说与未识别机制，不追加实验。
+
+当前37full已完成，实际统一评估启动：[`FINAL_CHECKPOINT_MANIFEST`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_CHECKPOINT_MANIFEST.json)冻结47角色/106成本条目；[`FINAL_WEIGHT_VAL_BRIDGE`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_WEIGHT_VAL_BRIDGE.json)为五seed×2VAL差均0；[`EVALUATION_READY`](../reports/pub_01/s03/incremental_continuity/run01/EVALUATION_READY.json)绑定预测前掩码；[`FINAL_EVALUATION_HANDOFF_VERIFIED`](../reports/pub_01/s03/incremental_continuity/run01/FINAL_EVALUATION_HANDOFF_VERIFIED.json)是当时两卡实际worker/来源快照。实际评分及raw/metric复核仍待，不以训练或工程通过完成goal。
+
+[`RESULT_FIGURE_ENGINEERING_CHECK`](../reports/pub_01/s03/incremental_continuity/run01/RESULT_FIGURE_ENGINEERING_CHECK.json)仅为最终呈现入口的synthetic M6/M7检查，非真实成绩；实际图表入口`pub_01_s03_ss07_result_figures.py`必须等待统一评估和实际独立复核通过，不能提前运行读取结果。
+
+当前review/呈现入口已接续V2：[`R2合法VAL证明`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_R2_LEGAL_VAL_CHECK_V2.json)、[`工程amendment`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_R2_AMENDMENT_V2.json)、[`正式V2协议`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_PROTOCOL_V2.json)、[`安全handoff`](../reports/pub_01/s03/incremental_continuity/run01/INDEPENDENT_REVIEW_V2_HANDOFF_COMPLETED.json)。新队列233443只接替旧等待父113154，训练/评估不变；实际图表使用`pub_01_s03_ss07_result_figures_v2.py`，严格等INDEPENDENT_REVIEW_COMPLETED_V2。旧入口/证据保留，不据工程交付完成科学目标。
+
+> 当前入口更新（2026-10-26）：SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP，C/O/P三seed真实比较及复核完成。先读CODEX_START_HERE.md、continuity/eeg_run02_matched_baseline/REPORT.md/REVIEW.md；run01全部冻结保留，无自动下游。
 # Auditory_Simulation Document Index
 
-更新时间：`2026-10-13`
+更新时间：`2026-10-26`
 
 ## A. Authoritative current documents
 
@@ -20,7 +41,11 @@
 
 `TASKS.md` 是父任务状态 source of truth；每个父任务的 `SUBTASKS.md` 是其 subtask 状态 source of truth。
 
-## B. Current executable task tree（2026-10-13）
+## B. Current executable task tree（2026-10-23）
+
+最新入口：CODEX_START_HERE.md → reports/pub_01/s03/continuity/eeg_run01/REPORT.md/REVIEW.md；SS06真实实验COMPLETED/PASS_WITH_LIMITATION，39run/3SSL/243结果与四图已交，当前STOP。执行契约SS06_REAL_EEG_EXECUTION.md及SS06任务书保留；prototype01只为历史工程证据。代码src/m6a_public/continuity/及scripts/pub_01_s03_ss06_*.py；#6仍Draft，旧SS02/03/05冻结，SS04/S04/父S05不启动。
+
+### 历史任务树快照（2026-10-13；仅追溯）
 
 - Parent：`tasks/PUB-01/TASK.md`；唯一子任务登记：`tasks/PUB-01/SUBTASKS.md`。
 - 科学支线与依赖：`tasks/PUB-01/RESEARCH_BRANCHES.md`。

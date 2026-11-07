@@ -1,0 +1,74 @@
+{
+  "reviewer": "Coordinator independently inspected source, actual server artifacts, report and three figures",
+  "status": "PASS_WITH_LIMITATIONS",
+  "scientific_status": "CURRENT_READOUT_ATTRIBUTION_SUPPORTED_ON_REUSED_SOURCE_VALIDATION_ONLY",
+  "goal_complete": false,
+  "run_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_readout_attribution_20261101",
+  "source_sha": "b0e4336ff96e7d06d59fd75304b2c20afd95b884fca51b843be4954465c5c422",
+  "core_sha": "5b9cb9dedeabf6d4ce7268fd524cb50ecc5d7e5c65d26e1fd2c7761511c3e633",
+  "review_scope": {
+    "driver": "Full static source review, including exact D4 normalization and source reuse, new27/reused18, source/input freeze, current-only P branch, local constraints, bias, selection, resource and no-test boundaries",
+    "core": "Full mathematical/source review of expanded-Frobenius shared Schur solve, local unshared support, coupled degrees of freedom, fixed-Hann secondary decomposition",
+    "actual": "52 source hashes and12 input fingerprints, all45 same-mask scores and shared-lambda selection, all27 saved new coefficients/support/sharing/normal-equation/bias, independent selected9 cached-input waveform reconstruction and separately implemented Hann/NumPy correlation scoring",
+    "report": "Full Chinese REPORT read; report01/01_COMPLETE_MATRIX.png, report01/02_ATTRIBUTION_CONTRASTS.png and presentation02/03_CONTINUITY_ACCURACY.png actually viewed"
+  },
+  "numerical": {
+    "stored_aggregation_max_abs": 8.326672684688674e-17,
+    "new_normal_equation_max_abs": 1.0646865333807654e-16,
+    "new_bias_max_abs": 3.469446951953614e-18,
+    "S32_weight_sharing_max_abs": 0,
+    "independent_selected_block_r_max_abs": 4.440892098500626e-16,
+    "secondary_recalculation_max_abs": 3.432177502274425e-16,
+    "all45_shared_mask": true,
+    "all27_coefficients_valid": true,
+    "selection_verified": true,
+    "baseline_people": 49,
+    "baseline_blocks": 752,
+    "baseline_windows": 30500,
+    "overlap_pairs_per_seed": 30451
+  },
+  "selected_mean_r60": {
+    "P": 0.1623624854534431,
+    "Ponly": 0.1718368486141928,
+    "S32": 0.174284472393747,
+    "U32": 0.17386667757607985,
+    "C": 0.1747890116383014,
+    "Ccap": 0.17689735905459683
+  },
+  "conclusions": [
+    "P-only output re-reading produces a material development gain; current EEG latent information still adds beyond that strong output-only control.",
+    "Unsharing the same local latent support does not improve the selected solution: U32-S32 negative in all3 seeds, although other fixed lambdas have small positive deltas.",
+    "Full current latent C beats same-support local U32 for all3 lambdas and3 seeds. This includes increased parameter/function capacity and is not a raw EEG receptive-field or physiology claim.",
+    "Ccap beats C at their shared-selected lambdas in all3 seeds, but same-lambda .0001 is negative for all3. The gain depends on regularization and cannot isolate nonlinearity from expanded capacity.",
+    "Original P* is most overlap-consistent but least accurate. The exact fixed-Hann error identity shows disagreement can contribute ensemble reduction; neither smaller nor larger disagreement alone is a justified training target.",
+    "D6 contains no additional history input and does not reverse D4/D5 negative history findings."
+  ],
+  "limitations": [
+    "Repeated source VAL development, known subjects and different clips with partial book-family overlap. No independent confirmation, significance, generalization or publication acceptance claim.",
+    "No pure Pearson-versus-MSE loss ablation: optimizer, parameterization and regularization differ from native P.",
+    "S32 sharing is in D4 coordinatewise TRAIN-normalized latent coordinates. S32/U32 share a dense whole-window P branch and native encoder sees full3s.",
+    "Nominal parameter matching is not effective-df/compute matching. Upstream encoder/head training and D4 moments are inherited nonzero costs.",
+    "Independent reconstruction uses cached frozen latents/P, not a fresh raw EEG/encoder replay, which was not needed for these algebraic-readout changes.",
+    "No new NN training, test/DTU inference, extra data or architecture expansion authorized by this result review itself."
+  ],
+  "cost": {
+    "new_model_lambda_fits": 27,
+    "reused_D4_models": 18,
+    "full_VAL_scores": 48,
+    "wall_seconds": 62.76740026473999,
+    "CPU_seconds": 348.898245615,
+    "peak_RSS_bytes": 2522185728,
+    "main_derived_bytes": 94125140,
+    "GPU_initialized": false,
+    "new_NN_updates": 0,
+    "encoder_head_forwards": 0
+  },
+  "disposition": {
+    "technical": "PASS_WITH_LIMITATIONS",
+    "acceptance": "Bounded D6 attribution experiment completed; broader research success not established",
+    "parent": "PASS; original results and public-only scope preserved",
+    "next": "Preserve Ponly and strong C/Ccap as required controls; concrete next hypothesis and bounded matrix reviewed before fitting. Do not expand D4/D5/D6 or optimize overlap consistency merely because it is smaller."
+  },
+  "actual_audit_sha256": "54a778a9eb99880c491621fcf1dadb83738692d22e8d653e95ba55f0fd7e86d3",
+  "protocol_sha256": "8dbbef41a5c914a56f5eb01ca2b8943fd86c3ba5f95b139d2d6b53a877d62575"
+}

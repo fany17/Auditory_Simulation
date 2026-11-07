@@ -1,0 +1,32 @@
+{
+  "frozen": true,
+  "time": 1793480014.2353594,
+  "scientific_protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+  "original_EMA_protocol_sha256": "4091918923670ded0abb9dd98e8201a91609317c26d112434b70f71977d21610",
+  "old_sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema.py": "3f76d44ed808b80cb94402881cbacea9b2dbc5d11dbf232ac7edf27e27befdf7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py": "105595992cc628b400c927321bbd19655880f54a8f93fae3029e7967dee143c2"
+  },
+  "new_sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2.py": "aaa4244289d6a0f2256a71b1208c61cb7a2f51d2632431349d75158352d3154e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_queue_v2.py": "ae3f788ffa83c32436e7961e46cc1ae4e24c95f232c717762d0123399df2acbd",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2_check.py": "62f08b8800cffca59fea4034433b7f7b140197e1d811c92c0b92ededff46ed0a"
+  },
+  "actual_weight_proof_sha256": "b1baf2d88056fcf824f4cf3fb271e4d1470b0182658c89902d7097ff5827ca20",
+  "diff_sha256": "2fea980f1279b378d044444b31528a55fe2d0b66d08949bb0fa4af56acf4c522",
+  "scope": "future EMA only; old waiting driver stopped before any legacy selection/results; no baseline/screen/full/FT training change",
+  "change": "prediction now phase-global64 plus record splits via frozen forward_global_batch; all tau same fused nativeP predictions",
+  "unchanged": {
+    "taus_seconds": [
+      0,
+      0.0625,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "where": "entire nativeP record prediction AFTER originalHann fusion; resetrecord/coveragegap",
+    "selection": "one tau by mean paired3 valmacro, exacttie smaller tau; lockbeforetest and reuse5seed",
+    "extra_NN_training": false
+  },
+  "limitation": "batch-shape cuDNN floating-point differences, not a new method/hyperparameter; old random-prediction tau0 proof covered only fusion/scoring"
+}

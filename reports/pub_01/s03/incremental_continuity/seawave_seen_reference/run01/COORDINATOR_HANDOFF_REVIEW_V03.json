@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "reviewer": "coordinator/root",
+  "reviewed_at_utc": "2026-11-06T16:32:05.524299+00:00",
+  "handoff_source_sha256": "93384d10fc940557a97360e846723135861031abc27c0dd9166b95b2c39f255a",
+  "D27_protocol_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "D27_queue_sha256": "461c824ebff77a54eb8baf87c7fd9e5f94ed6eec9f021551bf70ce160c905d4a",
+  "D27_execution_review_sha256": "e5cfcb770962a322e8f25304621478db63a0fdd1835445c0907064400cef033d",
+  "D26_protocol_sha256": "8c249eabeb9edb9a5360006f1d3dabb9552e2a22ff649b9bae72801f75311b4d",
+  "engineering_receipt_sha256": "abc32fed6751258ebfbbec4cd21db7d1ad405f536f7ea7594819bd6663da613b",
+  "independent_checks": [
+    "actual_V04_all_source_hashes_and_review",
+    "actual_D26_original_process_live_WAIT_D26",
+    "complete_unique_fixture_READY_two_GPU_reads",
+    "missing_terminal_rejected",
+    "missing_row_rejected",
+    "duplicate_row_rejected",
+    "wrong_upstream_protocol_rejected",
+    "actual_readout_mismatch_rejected",
+    "live_original_no_GPU_query",
+    "live_registered_worker_no_GPU_query",
+    "busy_GPU_waits",
+    "existing_formal_rejected"
+  ],
+  "actual_GPU_queries": 0,
+  "new_fits": 0,
+  "new_NN": 0,
+  "actual_original_queue_state": "WAIT_D26",
+  "approved_action": "Start one persistent V03 waiter now; exec unchanged approved V04 queue only after complete original D26 matrix and exact process exit and two free-card observations. No restart or scientific-source change.",
+  "review_scope": "Read full handoff source and actual D26 completion/readout producers; independently exercised admission mocks plus actual preconditions/check-only. No D27 formal training started by this review."
+}

@@ -1,0 +1,19 @@
+{
+  "process": [
+    1822456,
+    1012,
+    791818365
+  ],
+  "sources": {
+    "CPU_BRIDGE.py": "685ccbc0200b1d5817b6f6891656568f509aa6901cfe87622b48bcf17f73694a",
+    "PLAN.md": "c12f5249b994e0193d5e077eab9825435cfc46d783a9dfb8d6ffedf2b40e826d"
+  },
+  "argv": [
+    "/usr/bin/taskset",
+    "-c",
+    "44-47",
+    "/home/fanyu/.conda/envs/auditory_m6a_public_001/bin/python",
+    "-B",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/coordinator_cpu_bridge_v01/CPU_BRIDGE.py"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "parameters": [
+    {
+      "condition": "frozen_p",
+      "all_trainable_parameter_tensors_nonzero_gradient_by_step3": true,
+      "trainable_tensor_count": 2,
+      "encoder_call_shapes": [
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ]
+      ],
+      "frozen_eval_preserved": true,
+      "synthetic_steps_only": 3,
+      "real_data_optimizer_steps": 0
+    },
+    {
+      "condition": "frozen_current",
+      "all_trainable_parameter_tensors_nonzero_gradient_by_step3": true,
+      "trainable_tensor_count": 13,
+      "encoder_call_shapes": [
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ]
+      ],
+      "frozen_eval_preserved": true,
+      "synthetic_steps_only": 3,
+      "real_data_optimizer_steps": 0
+    },
+    {
+      "condition": "frozen_past",
+      "all_trainable_parameter_tensors_nonzero_gradient_by_step3": true,
+      "trainable_tensor_count": 13,
+      "encoder_call_shapes": [
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ]
+      ],
+      "frozen_eval_preserved": true,
+      "synthetic_steps_only": 3,
+      "real_data_optimizer_steps": 0
+    },
+    {
+      "condition": "joint_p",
+      "all_trainable_parameter_tensors_nonzero_gradient_by_step3": true,
+      "trainable_tensor_count": 166,
+      "encoder_call_shapes": [
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ]
+      ],
+      "frozen_eval_preserved": false,
+      "synthetic_steps_only": 3,
+      "real_data_optimizer_steps": 0
+    },
+    {
+      "condition": "joint_current",
+      "all_trainable_parameter_tensors_nonzero_gradient_by_step3": true,
+      "trainable_tensor_count": 177,
+      "encoder_call_shapes": [
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ]
+      ],
+      "frozen_eval_preserved": false,
+      "synthetic_steps_only": 3,
+      "real_data_optimizer_steps": 0
+    },
+    {
+      "condition": "joint_past",
+      "all_trainable_parameter_tensors_nonzero_gradient_by_step3": true,
+      "trainable_tensor_count": 177,
+      "encoder_call_shapes": [
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ],
+        [
+          64,
+          192,
+          64
+        ]
+      ],
+      "frozen_eval_preserved": false,
+      "synthetic_steps_only": 3,
+      "real_data_optimizer_steps": 0
+    }
+  ],
+  "within_global64_history_gradient": {
+    "earlier_i0_gradient_norm": 17.253517150878906,
+    "i_minus2_gradient_norm": 146.22262573242188,
+    "overlap_i_minus1_gradient_zero": true,
+    "future_gradient_zero": true
+  },
+  "chunk_carry_not_reset": true,
+  "partition_reference_dtype_device": "float64 CPU on2203",
+  "partition_reference_max_diff": 2.842170943040401e-14,
+  "native_M4_same64_equation_max_diff": 0.0,
+  "GPU_different_recurrent_partition_bitwise_equivalence_claimed": false,
+  "detach_cuts_cross_update_graph_not_numeric_state": true,
+  "mixed_record_independence": true,
+  "wrong_record_state_rejected": true,
+  "epoch_reset_reproducible": true
+}

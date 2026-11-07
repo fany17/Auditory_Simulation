@@ -1,0 +1,69 @@
+{
+  "source_sha": "d8016bbd5b171e2893fd80d6366552a5cd32115549137c25970b3efd7c877a14",
+  "diagnostic_only": true,
+  "explicit_transforms": [
+    "move exact global64 raw batch to CUDA",
+    "return z/p to CPU for unchanged independent NumPy Ccap/Hann"
+  ],
+  "runs": [
+    {
+      "TF32_matmul": false,
+      "TF32_cudnn": true,
+      "record_probes": [
+        {
+          "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+          "max_abs": 2.220446049250313e-16,
+          "mean_abs": 2.2898349882893852e-17,
+          "failed_points": 0,
+          "points": 160,
+          "early_max": 0.0,
+          "active_max": 2.220446049250313e-16
+        },
+        {
+          "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+          "max_abs": 2.220446049250313e-16,
+          "mean_abs": 2.0122792321330962e-17,
+          "failed_points": 0,
+          "points": 160,
+          "early_max": 0.0,
+          "active_max": 2.220446049250313e-16
+        }
+      ],
+      "passed_original_tolerance": true,
+      "counters": {
+        "NN_windows": 269,
+        "NN_batches": 5,
+        "physical_points": 320,
+        "fitting_updates": 0,
+        "labels_read": 0
+      },
+      "CPU_seconds": 0.5033165620000002,
+      "peak_GPU_bytes": 193392128
+    },
+    {
+      "TF32_matmul": false,
+      "TF32_cudnn": false,
+      "record_probes": [
+        {
+          "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+          "max_abs": 5.135851279036707e-05,
+          "mean_abs": 1.6551056735859827e-05,
+          "failed_points": 17,
+          "points": 160,
+          "early_max": 1.786439257722705e-05,
+          "active_max": 5.135851279036707e-05
+        }
+      ],
+      "failure": "Raw-FT-Ccap-Hann replay mismatch",
+      "counters": {
+        "NN_windows": 269,
+        "NN_batches": 5,
+        "physical_points": 0,
+        "fitting_updates": 0,
+        "labels_read": 0
+      },
+      "CPU_seconds": 0.352021288,
+      "peak_GPU_bytes": 193392128
+    }
+  ]
+}

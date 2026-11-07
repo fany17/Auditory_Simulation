@@ -1,0 +1,55 @@
+{
+  "condition": "frozen_past",
+  "seed": 2026,
+  "selected_epoch": 3,
+  "windows": 30500,
+  "records": 49,
+  "persons": 49,
+  "blocks": 752,
+  "checkpoint_sha256": "703701c865074edff524d6cdf8773413939a8e83b1b2409875b686e35aae1134",
+  "actual_weight_changes": {
+    "encoder": {
+      "scalars": 3372360,
+      "changed_scalars": 0,
+      "max_absolute_change": 0.0,
+      "tensors": 164
+    },
+    "head": {
+      "scalars": 257,
+      "changed_scalars": 257,
+      "max_absolute_change": 1.4385910034179688,
+      "tensors": 2
+    },
+    "context_core": {
+      "scalars": 4496,
+      "changed_scalars": 4496,
+      "max_absolute_change": 0.7032771110534668,
+      "tensors": 9
+    },
+    "residual": {
+      "scalars": 408,
+      "changed_scalars": 408,
+      "max_absolute_change": 1.0245646238327026,
+      "tensors": 2
+    }
+  },
+  "fresh_minus_primary_reference_wave_max_absolute": 0.0,
+  "reference_wave_max_absolute": 354.3585205078125,
+  "fresh_wave_max_absolute": 354.3585205078125,
+  "normalized_wave_error": 0.0,
+  "original_absolute_wave_gate_1e6_passed": true,
+  "normalized_wave_gate_1e6_passed": true,
+  "encoder_geometry": "original cache per-record256 including tails",
+  "encoder_eval_and_no_grad": true,
+  "encoder_parameter_grad_flags_match_original_forward": true,
+  "fresh_VAL3s_r": 0.1474702811098719,
+  "fresh_VAL60s_person_r": 0.1598099235110762,
+  "VAL3s_absolute_difference": 1.596852094998269e-10,
+  "VAL60s_absolute_difference": 2.7755575615628914e-17,
+  "max_block_difference": 2.7755575615628914e-16,
+  "max_person_difference": 5.551115123125783e-17,
+  "same_array_independent_formula_max_difference": 2.7755575615628914e-16,
+  "primary_wave_acceptance": "original absolute1e-6, normalized reported only",
+  "passed": true,
+  "test_read": false
+}

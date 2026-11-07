@@ -1,0 +1,115 @@
+{
+  "time": 1793486918.7913902,
+  "screen_completed_cells": 54,
+  "selected_widths_all_families": 16,
+  "full_initial_stage_families": [
+    "m1_h16",
+    "m2_h16",
+    "m3_h16",
+    "m4_h16",
+    "m5_h16"
+  ],
+  "scheduled_initial_full_cells": 15,
+  "actual_live_initial_runs": [
+    {
+      "seed": 1024,
+      "pid": 156906,
+      "actual_cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py --condition m1_h16 --seed 1024 --device cuda:0 --stage full ",
+      "resolved_config": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 1024,
+        "epochs_cap": 250,
+        "patience": 10,
+        "encoder_sha256": "75860bfb1bbeed03eab32c25baaa37338f60dcc6214c6f340da9742ae1fd99d8",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5",
+        "global_batch64": true,
+        "optimizer": "Adam.001/no wd/no clip",
+        "shuffle": false,
+        "test_read": false
+      },
+      "completed_epochs": 5,
+      "last_updates": 19725
+    },
+    {
+      "seed": 2026,
+      "pid": 156904,
+      "actual_cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py --condition m1_h16 --seed 2026 --device cuda:1 --stage full ",
+      "resolved_config": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 2026,
+        "epochs_cap": 250,
+        "patience": 10,
+        "encoder_sha256": "20036e59d62b4295a3bf62e21a18f96c9dc27bb6b9990faf52fb76ead81a08d2",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5",
+        "global_batch64": true,
+        "optimizer": "Adam.001/no wd/no clip",
+        "shuffle": false,
+        "test_read": false
+      },
+      "completed_epochs": 6,
+      "last_updates": 23670
+    },
+    {
+      "seed": 31415,
+      "pid": 156905,
+      "actual_cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py --condition m1_h16 --seed 31415 --device cuda:0 --stage full ",
+      "resolved_config": {
+        "condition": {
+          "id": "m1_h16",
+          "family": "m1",
+          "width": 16,
+          "tau": 30.0,
+          "conditioning": "past"
+        },
+        "seed": 31415,
+        "epochs_cap": 250,
+        "patience": 10,
+        "encoder_sha256": "4e3fa89d6498a41979d8dbc2251eb4cea7a39eb5c8727822ca21535de2aaef7a",
+        "engineering_amendment_sha256": "c5a85cf12bd64906dacbd150150a3ed941e953bbc37b53376b746827f630dae5",
+        "global_batch64": true,
+        "optimizer": "Adam.001/no wd/no clip",
+        "shuffle": false,
+        "test_read": false
+      },
+      "completed_epochs": 5,
+      "last_updates": 19725
+    }
+  ],
+  "controllers": {
+    "14537": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue_v2.py ",
+    "88448": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_eval_queue.py ",
+    "113154": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_queue.py "
+  },
+  "source_guard_checks": {
+    "FULL_QUEUE_V2_PROTOCOL.json": {
+      "source_count": 7,
+      "protocol_sha256": "a6d0f19417acd0b1f27cb279221e966b4b8e26ee174989137a3dd657f8d02421"
+    },
+    "EVALUATION_EXECUTOR_PROTOCOL.json": {
+      "source_count": 25,
+      "protocol_sha256": "24fffddda54be91ca3dea9c5024e903ef88f92d06331e22fbf93603b6aef56a4"
+    },
+    "INDEPENDENT_REVIEW_PROTOCOL.json": {
+      "source_count": 8,
+      "protocol_sha256": "5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795"
+    }
+  },
+  "full_selection_sha256": "be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80",
+  "legacy_wait_status_is_not_the_authoritative_active_stage": true,
+  "test_ready_exists": false,
+  "primary_selection_exists": false,
+  "scientific_goal_complete": false,
+  "inspection_metadata_and_code_only_no_signal_or_checkpoint_load": true
+}

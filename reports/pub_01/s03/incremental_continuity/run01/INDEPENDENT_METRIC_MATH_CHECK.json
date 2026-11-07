@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "checks": 37,
+  "maximum_absolute_difference": {
+    "synthetic_crossed_points": 6.938893903907228e-18,
+    "synthetic_crossed_all20k_samples": 2.0816681711721685e-17,
+    "synthetic_family_all20k_samples": 4.163336342344337e-17,
+    "synthetic_external_point": 0.0,
+    "synthetic_external_95": 1.0408340855860843e-17,
+    "synthetic_external_Bonferroni": 6.938893903907228e-18,
+    "synthetic_quantiles": 1.1102230246251565e-16,
+    "synthetic_pearson": 1.1102230246251565e-16,
+    "synthetic_pearson_positive": 0.0,
+    "synthetic_pearson_negative": 0.0
+  },
+  "every_internal20k_resample_and_family_weight_sample_compared": true,
+  "external20k_intervals_compared": true,
+  "manual_quantile_extremes_checked": true,
+  "reject_checks": [
+    "constant_prediction",
+    "nonfinite_target",
+    "duplicate_block",
+    "missing_stratum",
+    "mismatch_keys",
+    "exact_nonbinary_constant_prediction_3840_0.1",
+    "exact_nonbinary_constant_target_3840_0.1",
+    "exact_nonbinary_constant_prediction_3166_0.3",
+    "exact_nonbinary_constant_target_3166_0.3",
+    "exact_nonbinary_constant_prediction_3_0.1",
+    "exact_nonbinary_constant_target_3_0.1"
+  ],
+  "incomplete_summary_payload_loads": {
+    "arrays": 0,
+    "MAT": 0,
+    "ready": 0
+  },
+  "actual_test_or_DTU_signal_reads": 0,
+  "source_sha256": {
+    "pub_01_s03_ss07_review_math.py": "0fadae373c195b5f9fe081d975cbe64f01971ce9ea17ef4244697d6f956be11f",
+    "pub_01_s03_ss07_review_metrics.py": "0d431392bea41f2dd4814ba45bb410b0e4221937375cfd0b50bd20bceccb17ed",
+    "pub_01_s03_ss07_review_math_check.py": "df70e1d1f341461afb06a65769a58318a9fcc7b0ae6a464ea2910bc61886c04b"
+  }
+}

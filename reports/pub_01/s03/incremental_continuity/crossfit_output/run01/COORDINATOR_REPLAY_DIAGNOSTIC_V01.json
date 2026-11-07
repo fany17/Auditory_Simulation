@@ -1,0 +1,70 @@
+{
+  "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+  "max_abs": 5.139661767628034e-05,
+  "mean_abs": 1.6557723351147414e-05,
+  "failed_points": 17,
+  "total_points": 160,
+  "examples": [
+    {
+      "point": 1407,
+      "reference": 0.6135799430041332,
+      "observed": 0.6135440723129274,
+      "error": 3.5870691205808214e-05
+    },
+    {
+      "point": 61481,
+      "reference": 0.6601701688418338,
+      "observed": 0.6601337485443609,
+      "error": 3.642029747286113e-05
+    },
+    {
+      "point": 61519,
+      "reference": 0.5319644684390024,
+      "observed": 0.5319279624875649,
+      "error": 3.6505951437448836e-05
+    },
+    {
+      "point": 61480,
+      "reference": 0.6601852170354294,
+      "observed": 0.6601483348005309,
+      "error": 3.6882234898505395e-05
+    },
+    {
+      "point": 61523,
+      "reference": 0.5238738171101349,
+      "observed": 0.5238273492016123,
+      "error": 4.646790852258498e-05
+    },
+    {
+      "point": 61520,
+      "reference": 0.5303370745010765,
+      "observed": 0.5302894634553919,
+      "error": 4.761104568462571e-05
+    },
+    {
+      "point": 61522,
+      "reference": 0.5313385655448334,
+      "observed": 0.5312877637549112,
+      "error": 5.080178992222795e-05
+    },
+    {
+      "point": 61521,
+      "reference": 0.5322755822279416,
+      "observed": 0.5322241856102653,
+      "error": 5.139661767628034e-05
+    }
+  ],
+  "early_max": 1.7887369287872268e-05,
+  "active_max": 5.139661767628034e-05,
+  "failure": "Raw-FT-Ccap-Hann replay mismatch",
+  "counters": {
+    "NN_windows": 269,
+    "NN_batches": 5,
+    "physical_points": 0,
+    "fitting_updates": 0,
+    "labels_read": 0
+  },
+  "CPU_seconds": 7.526317005,
+  "source_sha": "d8016bbd5b171e2893fd80d6366552a5cd32115549137c25970b3efd7c877a14",
+  "kind": "diagnostic only; original audit assertion retained"
+}

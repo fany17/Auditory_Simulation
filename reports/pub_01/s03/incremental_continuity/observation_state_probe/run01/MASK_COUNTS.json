@@ -1,0 +1,14 @@
+{
+  "scope": "FROZEN_PROTOCOL_BLOCK_METADATA_ONLY_NO_OUTCOME_READ",
+  "time": 1793528588.041445,
+  "protocol_sha256": "a238ed63fd5c050fd66e88c07cf5b998f3bd15690bbe989d609459c947cb5f11",
+  "blocks": {
+    "full": 752,
+    "cold": 49,
+    "warm": 654,
+    "transition": 49
+  },
+  "roles_per_seed": 8,
+  "seeds": 3,
+  "new_full_role_seed_sets": 24
+}

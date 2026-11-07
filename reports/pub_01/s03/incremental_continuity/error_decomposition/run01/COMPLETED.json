@@ -1,0 +1,29 @@
+{
+  "workers": [
+    {
+      "seed": 1024,
+      "pid": 1669051,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "pid": 1669059,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "pid": 1669935,
+      "returncode": 0
+    }
+  ],
+  "effective_residual_NN_windows": 2508111,
+  "new_encoder_head_windows": 0,
+  "learning_model_fits": 0,
+  "optimizer_updates": 0,
+  "block_descriptive_projection_statistics": 61704,
+  "auxiliary_region_projection_statistics": 21240,
+  "queue_wall_seconds": 90.26940107345581,
+  "CPU_worker_seconds": 355.187199722,
+  "goal_complete": false,
+  "independent_review_required": true
+}

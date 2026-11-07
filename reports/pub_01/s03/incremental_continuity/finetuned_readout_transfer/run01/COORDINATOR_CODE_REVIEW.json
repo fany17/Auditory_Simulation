@@ -1,0 +1,24 @@
+{
+  "status": "CODE_REVIEW_PASS_CONCURRENT_AUTHORIZED_TRAIN_VAL_RUN",
+  "approved_for_execution": true,
+  "protocol_sha256": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+  "source_sha256": "3f4d4786daa1533b504d48300dd287ef36044d3e498425a9ce4b7456955365a0",
+  "source_pins_verified": 247,
+  "input_fingerprints_verified": 523,
+  "time": 1793519410.2558818,
+  "goal_complete": false,
+  "review_timing": "Initial driver statically reviewed before this final record; authorized PLAN explicitly allowed source-frozen TRAIN/VAL execution and parallel coordinator review. This final record is written after actual run launch, not a retrospective claim of pre-run code gate.",
+  "implementation_review": [
+    "Original FT RawWindows/global64/eval/no_grad/FP32 and TF32 flags retained; original input EEG TRAIN normalization and frozen FT checkpoint identity.",
+    "VAL samepath first64 and tail36 wave comparisons and full historical scalar before TRAIN; store P from same raw encoder/head call, not changedlayout reconstruction.",
+    "Fresh FT TRAIN physical-time a,b and latent/P/square moments; first4 fallback and fixed49-person752-block VAL masks.",
+    "Correct centered Gram/crossmoment, arm indices, unpenalized intercept, 27 finite ridge solutions and common3seedlambda selection with baseline candidate.",
+    "Bounded848862primary windows plus300engineering; no neuralupdate or oldtest/DTU.",
+    "Prepare schema correction preserved before any numerical run; no frozen scientific matrix or tolerance change."
+  ],
+  "notes": [
+    "effective_df is peroutput and excludes intercept; disclose in report.",
+    "No need to repeat inherited D4/D7 formula tests.",
+    "Keep actual failures, do not restart performance-dependent or relax bridges."
+  ]
+}

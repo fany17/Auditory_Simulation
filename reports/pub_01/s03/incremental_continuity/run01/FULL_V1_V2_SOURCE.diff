@@ -1,0 +1,99 @@
+--- train_v1.py
++++ train_full_v2.py
+@@ -154,8 +154,16 @@
+     return {'macro_r':macro,'subjects':len(people),'blocks':len(segments)},segments,people
+ 
+ 
++def gradients_finite(model):
++    values=[torch.isfinite(v.grad).all() for v in model.parameters() if v.grad is not None]
++    return bool(torch.stack(values).all()) if values else True
++
++
+ def train_config(config,seed,device,stage='screen',epochs=12,patience=4):
+     assert stage in ('screen','full')
++    assert stage=='full', 'v2 engineering amendment applies only to full stage'
++    engineering=read(ROOT/'FULL_ENGINEERING_AMENDMENT.json');assert engineering['frozen']
++    for path,digest in engineering['new_sources'].items():assert sha(path)==digest
+     protocol=read(ROOT/'INCREMENTAL_PROTOCOL.json');assert protocol['frozen']
+     budget=protocol['screen_budget' if stage=='screen' else 'full_budget']
+     assert epochs==budget['epochs'] and patience==budget['patience']
+@@ -175,7 +183,7 @@
+         scaling=(train.teacher.mean(0),train.teacher.std(0,unbiased=False).clamp_min(1e-5))
+     dump(folder/'resolved_config.json',{'condition':config,'seed':seed,'epochs_cap':epochs,'patience':patience,
+         'encoder_sha256':sha(ROOT/f'baseline/pretrain_seed{seed}/best_validation.pt'),
+-        'global_batch64':True,'optimizer':'Adam.001/no wd/no clip','shuffle':False,'test_read':False})
++        'engineering_amendment_sha256':sha(ROOT/'FULL_ENGINEERING_AMENDMENT.json'),'global_batch64':True,'optimizer':'Adam.001/no wd/no clip','shuffle':False,'test_read':False})
+     history=[];best=float('inf');selected=None;stale=0;updates=0;started=time.time();active_grad=None
+     for epoch in range(epochs):
+         model.train();state=None;active=None;total=0.;samples=0;teacher_count=0;train.reset_count=0
+@@ -184,7 +192,7 @@
+             p,state,active,aux,naux=forward_global_batch(model,train,first,last,state,active,scaling,config.get('teacher','future'),config.get('mode','full'))
+             pearson=objective(p,train.y[first:last]);loss=pearson+config.get('aux_weight',.01)*aux
+             assert torch.isfinite(loss);loss.backward()
+-            assert all(torch.isfinite(v.grad).all() for v in model.parameters() if v.grad is not None)
++            assert gradients_finite(model)
+             opt.step();state=detach(state);updates+=1;total+=float(pearson.detach())*(last-first);samples+=last-first;teacher_count+=naux
+             if updates==2:
+                 active_grad={'registered':sum(v.numel() for v in model.parameters()),
+@@ -211,7 +219,7 @@
+         'supervised_target_samples':252454*192*len(history),'teacher_presentations':sum(r['teacher_presentations_epoch'] for r in history),
+         'teacher_target48_scalar_cost_separate':True,'gradient_parameters':active_grad,'test_read':False,
+         'seconds':time.time()-started,'validation_macro':macro,'record_resets_per_train_epoch':426,
+-        'validation_record_resets':49,'protocol_sha256':sha(ROOT/'INCREMENTAL_PROTOCOL.json')})
++        'validation_record_resets':49,'protocol_sha256':sha(ROOT/'INCREMENTAL_PROTOCOL.json'),'engineering_amendment_sha256':sha(ROOT/'FULL_ENGINEERING_AMENDMENT.json')})
+ 
+ 
+ if __name__=='__main__':
+
+--- full_queue_v1.py
++++ full_queue_v2.py
+@@ -17,7 +17,7 @@
+ 
+ 
+ def verify_sources():
+-    p=read(ROOT/'FULL_QUEUE_PROTOCOL.json')
++    p=read(ROOT/'FULL_QUEUE_V2_PROTOCOL.json')
+     assert p['frozen'] and p['test_operations'] is False
+     assert p['incremental_protocol_sha256']==sha(ROOT/'INCREMENTAL_PROTOCOL.json')
+     for path,value in p['sources'].items():assert sha(path)==value
+@@ -44,12 +44,13 @@
+     log=ROOT/f'full_{condition}_seed{seed}.log'
+     print(json.dumps({'start_full':condition,'seed':seed,'device':device}),flush=True)
+     with log.open('x') as output:
+-        result=subprocess.run([sys.executable,str(ROOT/'input/pub_01_s03_ss07_train.py'),
++        result=subprocess.run([sys.executable,str(ROOT/'input/pub_01_s03_ss07_train_full_v2.py'),
+             '--condition',condition,'--seed',str(seed),'--device',device,'--stage','full'],
+             stdout=output,stderr=subprocess.STDOUT)
+     if result.returncode:failure(condition,seed,f'exit {result.returncode}; see {log.name}')
+     _,means,missing,failed=collect('full',[config],[seed])
+     if missing or failed or len(means)!=1:failure(condition,seed,'exit0 without valid completed output')
++    assert read(folder/'completed.json')['engineering_amendment_sha256']==sha(ROOT/'FULL_ENGINEERING_AMENDMENT.json')
+     print(json.dumps({'completed_full':condition,'seed':seed}),flush=True)
+ 
+ 
+@@ -75,7 +76,7 @@
+ 
+ 
+ def main():
+-    verify_sources();dump(ROOT/'FULL_QUEUE_LEASE.json',{'pid':os.getpid(),'time':time.time(),'automatic_restarts':False})
++    verify_sources();dump(ROOT/'FULL_QUEUE_V2_LEASE.json',{'pid':os.getpid(),'time':time.time(),'automatic_restarts':False})
+     p=read(ROOT/'INCREMENTAL_PROTOCOL.json');deadline=time.time()+7*86400
+     while True:
+         _,_,missing,failed=collect('screen',p['conditions'],p['screening_seeds'])
+@@ -86,7 +87,7 @@
+             b'screen_seed' in Path(f'/proc/{pid}/cmdline').read_bytes() for pid in pids)
+         if not alive:raise RuntimeError('all screen drivers ended with missing outputs; explicit review required')
+         if time.time()>deadline:raise RuntimeError('screen wait expired; no fit retries')
+-        update(ROOT/'FULL_QUEUE_STATUS.json',{'stage':'WAIT_ALL54_SCREEN','missing_cells':len(missing),'time':time.time()})
++        update(ROOT/'FULL_QUEUE_V2_STATUS.json',{'stage':'WAIT_ALL54_SCREEN','missing_cells':len(missing),'time':time.time()})
+         time.sleep(30)
+     screen_selection();selection=read(ROOT/'FULL_SELECTION.json')
+     devices={1024:'cuda:0',2026:'cuda:1',31415:'cuda:0',42:'cuda:1',12345:'cuda:1'}
+@@ -107,6 +108,6 @@
+ if __name__=='__main__':
+     try:main()
+     except Exception as exc:
+-        update(ROOT/'FULL_QUEUE_STOPPED.json',{'error':repr(exc),'time':time.time(),
++        update(ROOT/'FULL_QUEUE_V2_STOPPED.json',{'error':repr(exc),'time':time.time(),
+             'explicit_review_required':True,'no_automatic_retry':True})
+         raise

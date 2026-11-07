@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "synthetic_metadata_only": true,
+  "checkpoint_loader_stub_explicit_not_scientific_weight_validation": true,
+  "positive_fixture": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/synthetic_final_lock_prsz8g03",
+  "negative_fixture": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/synthetic_final_lock_prsz8g03_wrong_full_mean",
+  "screen54_pretrain5_full32_cost_cells_accounted_once": true,
+  "screen_width_full_primary_and_EMA_ranking_recomputed": true,
+  "wrong_recorded_full_validation_means_rejected": true,
+  "real_test_or_DTU_payload_read": false,
+  "real_final_checkpoint_manifest_created": false
+}
