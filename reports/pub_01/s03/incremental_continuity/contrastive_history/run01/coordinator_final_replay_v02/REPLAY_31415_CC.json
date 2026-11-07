@@ -1,0 +1,163 @@
+{
+  "passed": false,
+  "execution_completed": true,
+  "strict_all_metrics_passed": false,
+  "all_r_checks_passed": true,
+  "calibrated_output_checks_passed": true,
+  "raw_MSE_checks_passed": false,
+  "numerical_cause": "Not established; relative errors are descriptive and do not replace original thresholds.",
+  "seed": 31415,
+  "arm": "CC",
+  "source_sha256": "81734e974351a33a6c1d91c47379ce5efd5d1b75b847a0038a7cac47f9f53705",
+  "protocol_sha256": "8c249eabeb9edb9a5360006f1d3dabb9552e2a22ff649b9bae72801f75311b4d",
+  "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+  "EEG_samples_read": 3936,
+  "target_samples_read": 3840,
+  "parameter_count": 3389513,
+  "normalization_sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+  "normalized_EEG_prefix_sha256": "21eba7dcf5446ebcffa594ce2f66992be44e9760096754936959eb3ba1070d73",
+  "target_prefix_sha256": "353b51866da236aa5ff6ce895e3c1d094788ccf9311b46d518ca98c4d19ceab6",
+  "FT_checkpoint_sha256": "e4adaa7f4369ce5f8d39d13e69f56bb037b5c005d1557309741c5e647d783f3b",
+  "readout_sha256": "814204a205853d13eb85ea7b996f8c8a558efba08883889c2c85ce2f7fc7532d",
+  "score_sha256": {
+    "native": "067dd9a1ac8563ac16ab1830c7b7749159273decb9c09173cadcce2607b783c2"
+  },
+  "memory_bridge_max_abs": {
+    "native": 1.0728836059570312e-06
+  },
+  "comparisons": [
+    {
+      "path": "native",
+      "output": "Ccap",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.18019191311959112,
+        "MSE": 0.12407714492922449,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.18018774200554524,
+        "MSE": 0.12407672167561098
+      },
+      "errors": {
+        "r": 4.171114045881108e-06,
+        "MSE": 4.232536135045928e-07
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 3.4112249887707115e-06,
+      "absolute_RMSE_error": 6.007934005292093e-07
+    },
+    {
+      "path": "native",
+      "output": "raw",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.18019464535432744,
+        "MSE": 18771.13970154828,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.18019097728561534,
+        "MSE": 18770.30887325325
+      },
+      "errors": {
+        "r": 3.668068712103789e-06,
+        "MSE": 0.8308282950310968
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": false
+      },
+      "strict_passed": false,
+      "relative_MSE_error": 4.42628994888297e-05,
+      "absolute_RMSE_error": 0.0030320807812813655
+    },
+    {
+      "path": "native",
+      "output": "affine",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.18019464535432742,
+        "MSE": 0.12125028760713186,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.1801909772856154,
+        "MSE": 0.12124984175027863
+      },
+      "errors": {
+        "r": 3.6680687120205224e-06,
+        "MSE": 4.458568532289542e-07
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 3.677174722810965e-06,
+      "absolute_RMSE_error": 6.402129599791806e-07
+    }
+  ],
+  "actual_calls": {
+    "backbone_windows": 102,
+    "native_unused_projection_windows": 102,
+    "final_projection_windows": 40,
+    "head_windows": 40,
+    "manual_memory_query_windows": 31,
+    "library_memory_query_windows": 31
+  },
+  "CPU_seconds": 5.133003701,
+  "wall_seconds": 2.0573971457779408,
+  "replay_CPU_seconds": 3.8568358050000002,
+  "replay_wall_seconds": 1.0749081317335367,
+  "peak_RSS_bytes": 867926016,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "filepath": "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "CPU_affinity": [
+    44,
+    45,
+    46,
+    47
+  ],
+  "new_fits": 0,
+  "optimizer_updates": 0,
+  "audio_forwards": 0,
+  "old_test_reads": 0,
+  "GPU": 0,
+  "scope": "First fixed VAL record, first 60-second block only; raw EEG and final model replay. Not full-cohort signal replay or a new independent test."
+}

@@ -1,0 +1,16 @@
+{
+  "process": [
+    1879101,
+    1012,
+    794757119
+  ],
+  "argv": [
+    "/home/fanyu/.conda/envs/auditory_m6a_public_001/bin/python",
+    "-B",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/coordinator_final_replay_v02/COORDINATOR_FINAL_REPLAY.py",
+    "--seed",
+    "31415",
+    "--arm",
+    "CC"
+  ]
+}
