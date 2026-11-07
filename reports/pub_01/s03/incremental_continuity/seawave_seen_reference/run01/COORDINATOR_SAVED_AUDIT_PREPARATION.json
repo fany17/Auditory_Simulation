@@ -1,0 +1,23 @@
+{
+  "prepared_not_final_audit": true,
+  "source_sha256": "30cedb8af4370b567398b911d4ba0af7df9b93bc24765348635298fcf7690da1",
+  "self_test": {
+    "self_test_passed": true,
+    "adversarial_rejections": 8,
+    "formal_file_reads": 0,
+    "signal_payload_reads": 0,
+    "model_forwards": 0,
+    "new_fits": 0,
+    "new_optimizer_updates": 0,
+    "source_sha256": "30cedb8af4370b567398b911d4ba0af7df9b93bc24765348635298fcf7690da1"
+  },
+  "actual_unfinished_matrix_guard": {
+    "incomplete_matrix_rejected": true,
+    "scoring_files_or_weights_read": 0,
+    "error": "Full matrix and final report not complete"
+  },
+  "UTC": "2026-11-07T04:14:34Z",
+  "model_forwards": 0,
+  "new_fits": 0,
+  "new_updates": 0
+}

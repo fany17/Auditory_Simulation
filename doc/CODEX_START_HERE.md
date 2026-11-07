@@ -8,6 +8,8 @@ D27 Sea-Wave 继续原 input_v04 / PROTOCOL_V04，2026-11-07 已完成资源并�
 
 49 个 VAL 被试全部见于 TRAIN，固定矩阵仍为三个 initial 和 147 个 personal FT，未改训练规则或预算。[源与工程审阅](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_ENGINEERING_REVIEW.md) · [冻结方案](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/PLAN_V04.md)。先核对登记 PID/UID/startticks、实际日志和终态，不因观察超时或会话空闲重启作业。新报告等待完整 150 项真实退出与旧进程退休凭据后汇总。initial 群体行未做 global FT，不能冒称完整 S2；个人模型与共享参数方法分列。当前尚无完整 D27 性能结果，也未测得稳定吞吐增益。
 
+D27 完整矩阵与继任报告结束后，由协调在 2203 运行[独立保存证据审计](../scripts/pub_01_s03_ss07_seawave_saved_evidence_audit.py)。该工具独立核对 150 个实际拟合、4512 块评分、选点/成本、选中权重字节和新旧进程退出；不导入训练或报告实现。当前仅完成[合成错误检出与未完成矩阵拒绝验证](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_SAVED_AUDIT_PREPARATION.json)，真实结果审计尚未运行。数值重放、图审和科学结论仍须分别核验，不能用该工具代替。
+
 D28 同协议 raw EEG 线性时滞对照已完整完成并独立审阅：G 共享与 I 个人 ridge 的开发 r 分别为 0.097929267、0.158231016，50 组拟合、450 套候选解和原 752 块支持均已核验。[D28 报告](../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [归档](../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/ARCHIVE.md)。不重跑已完成对照。现有最佳结果仍是反复使用的开发 VAL 结果；[SOTA 对照范围与缺口](../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/SOTA_COMPARISON_SCOPE.md)不能由技术验收或跨协议论文数字替代。
 
 # 历史入口：D25 固定权重来源诊断已封存
