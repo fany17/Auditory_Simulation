@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "kernel": {
+    "original_Popen": [
+      0,
+      23,
+      -15
+    ],
+    "nonancestor_decoded": [
+      0,
+      23,
+      -15
+    ],
+    "proc_wait_status": [
+      0,
+      5888,
+      15
+    ],
+    "stale_fd_ESRCH": true
+  },
+  "per_GPU_cap_and_foreign_process_rejection": true,
+  "clean_rollback_before_release": true,
+  "no_old_parent_resume_after_release": true,
+  "actual_formal_signals": 0,
+  "actual_formal_workers": 0,
+  "signal_payload_reads": 0,
+  "model_forwards": 0
+}
