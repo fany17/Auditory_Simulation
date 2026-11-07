@@ -1,6 +1,6 @@
 # PUB-01 Subtask Registry
 
-2026-11-07，D28 同协议原始 EEG 岭回归已完成并独立验收。开发 VAL 上 G/I r 为 0.097929/0.158231，最高历史冻结参照 D22 B 为 0.184581。D26 继续运行，D27 已部署独立等待门，正式队列待 D26 九行终态、进程退出和双卡准入。节点 SS07 保持 ACTIVE。[D28 结果](../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [D27 接续](../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_STARTED.json)。
+2026-11-07，D28 同协议原始 EEG 岭回归已完成并独立验收。开发 VAL 上 G/I r 为 0.097929/0.158231，最高历史冻结参照 D22 B 为 0.184581。D26 已完成三种子九条完整链，HH r 0.182768，较原锚点 +0.000428，两正一负，低于 D22 B。D27 已通过双卡准入并启动首批共享 initial。 [D26 报告](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REPORT.md) · [D26 验收](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REVIEW.md)。节点 SS07 保持 ACTIVE。[D28 结果](../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [D27 接续](../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_ADMISSION.json)。
 
 2026-11-06当前：用户明确核心目标为SOTA，性能提升优先，历史机制不是性能路线硬门。唯一既有节点 `PUB-01-S03_SS07` 保持 ACTIVE，D24/D25封存后接续 [D26对比预训练历史联合学习](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。同一目标下6个唯一pretrain/9条监督链，实际源/工程冻结经协调核验后全量执行。三臂均可作为性能候选，不启动其他节点、患者、新数据或自动合并；旧测试与外部集仍冻结。
 

@@ -289,3 +289,9 @@ D26 V05 独立工程验收通过，已在 2203 SATA 启动固定矩阵。正式�
 D28 完成 50 次特征分解、450 套候选、原 49 人/752 块的 13,536 个候选评分。G r/MSE 0.097929/0.249037，I r/MSE 0.158231/0.239358。49 人 r 均提高，36 人 MSE 降低。个人模型开发 r 仍低于 D22 B。独立核对原支持、全矩阵、逐人选点和残差，另登记启动 CPU 短时超额及同进程修复。Technical PASS_WITH_LIMITATIONS / Acceptance PASS_WITH_LIMITATION / Parent consistency PASS。 [D28 中文结果](../../../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [终验](../../../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/COORDINATOR_RESULT_REVIEW.json) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/ARCHIVE.md)。
 
 D26 V05 仍按原矩阵继续。D27 V03 等待进程 1748466 / UID 1012 / startticks 791000426 已部署，唯一用途是满足 D26 九个完整终态、全部登记进程退出及双卡空闲后启动审核过的 D27 V04。SS07 仍为 ACTIVE。 [D27 等待回执](../../../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_STARTED.json)。
+
+### 2026-11-07 D26 完成记录及 D27 正式准入
+
+D26 正式完成 6 CL、9 HEAD、9 固定五轮 FT、9 固定 Ccap，共 9,180,055 次优化更新。HH/CH/CC 三种子开发 r 为 0.182768/0.180812/0.182477。HH 对原锚点平均 +0.000428，方向两正一负，全支持 MSE 增加 0.000197，仍低于 D22 B。九个 HEAD 均在 250 轮上限选 epoch 249。独立复算 42 项收齐，r 与校准输出通过，九个 raw MSE 超差仍登记为严格失败。技术 PASS_WITH_LIMITATIONS，固定矩阵验收 PASS_WITH_LIMITATION，父任务一致性 PASS。 [D26 报告](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REPORT.md) · [验收](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REVIEW.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/ARCHIVE.md)。
+
+D27 原等待进程在 D26 成功终态、相关进程退出、双卡空闲后已切换到 V04 正式队列。首批共享 initial 1024/2026 已启动。节点 SS07 保持 ACTIVE。 [D27 正式准入](../../../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_ADMISSION.json)。
