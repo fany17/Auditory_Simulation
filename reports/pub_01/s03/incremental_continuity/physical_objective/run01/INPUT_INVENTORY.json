@@ -1,0 +1,109 @@
+{
+  "scope": "PLAN_METADATA_ONLY_NO_ARRAY_VALUE_NO_NEW_SOLVE_FORWARD_OR_SCORE",
+  "time": 1793520689.6477158,
+  "counts": {
+    "TRAIN_records": 426,
+    "TRAIN_people": 70,
+    "all_windows": 252454,
+    "fit_windows": 250750,
+    "common_physical_target_points": 24112044,
+    "active_positive_Hann_contributions": 47642500,
+    "fixed_first4_context_contributions": 40044,
+    "combined_positive_Hann_contributions": 47682544,
+    "free_readout_parameters": 620350,
+    "frozen_endpoint_parameters": 6530,
+    "paired_output_systems": 96
+  },
+  "source_pins": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/input/pub_01_s03_ss07_physical_inventory.py": "b49480c4c11143fccce5edde1000c7653a9581073083fff5e8034c159abb3078",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/TRAIN_TRANSFORMS.npz": "b61d80fa5af2ef81b241ab26c1e77d9221ca06a2a5f2acc51d1dbd6f9647507c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/TRAIN_MOMENTS.npz": "4d62a05334bf21b4adfd800e3a9c603713c25ae6812d62cc7072e470603b7e62",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/Ccap_lambda0.01_COEFFICIENTS.npz": "d85075dc49ffb0e5c1cae56821428333f072afe5ef97ed69f96b243128db2b12",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/P_FT_BASELINE.json": "8b6231b512e947cda9880568f4d8e10ab4d044e0042b7e060d44c417961eb287",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/FT_VAL_BRIDGE.json": "570dfc7ff8bc0208135e9ea2cd86798ebfac3c4cae81f6a87f4af497205676ff",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/CACHE_COMPLETED.json": "73e66eef0726411e663683cde7daae6d0c0d9b9cc48e52b78b2c89c6f127ff89",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/TRAIN_TRANSFORMS.npz": "f5de93ec1c8225fa940525618c5dc457d2deb822f52da32475ee53aae05c4392",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/TRAIN_MOMENTS.npz": "a9777c6a1d565700f4a395fc36618c11e9b5d794045f0598bb47a4894a60fa37",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/Ccap_lambda0.01_COEFFICIENTS.npz": "871743334b85c7ed55ab2eac824508e82e53d82cd8df53e3b969b7e60684d609",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/P_FT_BASELINE.json": "0747207d9583d9b9644f4265bd3b50af6dd7bb12962a046bf0ecb9dbdeda0eb3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/FT_VAL_BRIDGE.json": "9ec1bffcda039a8deda2a4a2dd305dfb7eb9f19b052ee4d965f167d2a3659210",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/CACHE_COMPLETED.json": "7056484d51abbadf9438c39799fa2257abc6d31dfe6e1dd7470c4bc662b12ccb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/TRAIN_TRANSFORMS.npz": "5ac2ce2e9f469276f284bc77a313ca183cb8a81440ca8d96453a856848095ff3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/TRAIN_MOMENTS.npz": "da32f8013f951877239e375f58232045a5a06f09f21e5683a639761b930ceb9e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/Ccap_lambda0.01_COEFFICIENTS.npz": "0660f10af60d68af1ff4f5cd7e4d853b934667dc6d0868380ef44559b673fcba",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/P_FT_BASELINE.json": "fa7d7b24c65a9f0714da414ecaffea3ceac5f6a622a4fc9728b053d5e2f01c27",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/FT_VAL_BRIDGE.json": "26e83c399aa548bc4cb0788648b4692b54f88d229c936c8b184ac156b38c2a89",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/CACHE_COMPLETED.json": "643d9fd4ec709e8adcf20ac98c843e55c20b0ceacccc8ca504de3234c32ed616",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/PROTOCOL.json": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/SUMMARY.json": "58937843b06e81ec52215db606201f46e496180330e1feb1047bca18c9bb1aee",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/COORDINATOR_RESULT_REVIEW.json": "a059476ad1ef1f73f16e0c8e8b995d674442e31c2399e97701766dc251cb26a9"
+  },
+  "inputs": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_latent.npy": {
+      "bytes": 1551077504,
+      "mtime_ns": 1793519380466263092
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_P.npy": {
+      "bytes": 193884800,
+      "mtime_ns": 1793519380466263092
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_latent.npy": {
+      "bytes": 187392128,
+      "mtime_ns": 1793519319851260499
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_P.npy": {
+      "bytes": 23424128,
+      "mtime_ns": 1793519319851260499
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_latent.npy": {
+      "bytes": 1551077504,
+      "mtime_ns": 1793519515987268891
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_P.npy": {
+      "bytes": 193884800,
+      "mtime_ns": 1793519515987268891
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_latent.npy": {
+      "bytes": 187392128,
+      "mtime_ns": 1793519455105266286
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_P.npy": {
+      "bytes": 23424128,
+      "mtime_ns": 1793519455105266286
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_latent.npy": {
+      "bytes": 1551077504,
+      "mtime_ns": 1793519641003274240
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_P.npy": {
+      "bytes": 193884800,
+      "mtime_ns": 1793519641003274240
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_latent.npy": {
+      "bytes": 187392128,
+      "mtime_ns": 1793519580706271660
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_P.npy": {
+      "bytes": 23424128,
+      "mtime_ns": 1793519580706271660
+    }
+  },
+  "existing_all_SS07_npy_bytes": 24469431456,
+  "proposed_new_npy_bytes": 0,
+  "new_root_cap_bytes": 268435456,
+  "disk_free_bytes": 27702579200,
+  "GPU_metadata": [
+    "0, NVIDIA L40, 46068 MiB, 14 MiB, 0 %",
+    "1, NVIDIA L40, 46068 MiB, 14 MiB, 0 %"
+  ],
+  "GPU_full_TRAIN_feature_bytes": 6592078848,
+  "GPU_full_TRAIN_window_value_bytes": 387769344,
+  "lambda_D8_sum_output": 0.01,
+  "lambda_scalar_mean": 5.208333333333334e-05,
+  "max_fits": 6,
+  "max_CG_iterations_per_fit": 200,
+  "max_Hessian_products_per_fit": 214,
+  "encoder_head_forward": 0,
+  "old_test_DTU": false,
+  "goal_complete": false
+}

@@ -1,0 +1,53 @@
+{
+  "types": {
+    ".eeg": {
+      "count": 380,
+      "declared_bytes": 19435625984,
+      "maximum_object_bytes": 125218304
+    },
+    ".wav": {
+      "count": 20,
+      "declared_bytes": 640222064,
+      "maximum_object_bytes": 35655724
+    },
+    ".vhdr": {
+      "count": 380,
+      "declared_bytes": 1133920,
+      "maximum_object_bytes": 2984
+    },
+    ".vmrk": {
+      "count": 380,
+      "declared_bytes": 197600,
+      "maximum_object_bytes": 520
+    }
+  },
+  "headers": 760,
+  "failures": [],
+  "channel_tables_unique": 119,
+  "format_variants": [
+    "IEEE_FLOAT_32"
+  ],
+  "orientation_variants": [
+    "MULTIPLEXED"
+  ],
+  "channel_count_variants": [
+    128
+  ],
+  "sampling_interval_us": [
+    1953.125
+  ],
+  "resolution_unit_variants": [
+    [
+      0.1,
+      "\u00b5V"
+    ]
+  ],
+  "marker_counts": [
+    0
+  ],
+  "all_channel_names_A1_D32": true,
+  "projected_full_EEG_float32_64Hz_64channel_bytes_upper": 1214775264,
+  "no_EEG_audio_body": true,
+  "NN_forwards": 0,
+  "wall_seconds": 109.00130915641785
+}

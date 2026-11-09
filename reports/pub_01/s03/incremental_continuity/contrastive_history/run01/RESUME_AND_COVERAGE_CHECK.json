@@ -1,0 +1,182 @@
+{
+  "passed": true,
+  "actual_epoch0_and_fixed_val_geometry": {
+    "train_1024": {
+      "H": {
+        "current_windows": 104960,
+        "unique_current_windows": 72852,
+        "unique_current_EEG_sample_times": 13987584,
+        "memory_query_windows": 103176,
+        "history_slot_presentations": 206352,
+        "unique_slot1_EEG_sample_times": 13749696,
+        "unique_slot2_EEG_sample_times": 13749696,
+        "unique_all_EEG_sample_times": 22165920,
+        "unique_audio_story_time_windows": 12124,
+        "repeated_current_windows": 32108,
+        "cumulative": {
+          "unique_current_windows": 72852,
+          "unique_EEG_samples": 22165920,
+          "unique_slot1_samples": 13749696,
+          "unique_slot2_samples": 13749696,
+          "unique_audio_windows": 12124
+        }
+      },
+      "C": {
+        "current_windows": 104960,
+        "unique_current_windows": 72852,
+        "unique_current_EEG_sample_times": 13987584,
+        "memory_query_windows": 103176,
+        "history_slot_presentations": 206352,
+        "unique_slot1_EEG_sample_times": 13749696,
+        "unique_slot2_EEG_sample_times": 13749696,
+        "unique_all_EEG_sample_times": 13987584,
+        "unique_audio_story_time_windows": 12124,
+        "repeated_current_windows": 32108,
+        "cumulative": {
+          "unique_current_windows": 72852,
+          "unique_EEG_samples": 13987584,
+          "unique_slot1_samples": 13749696,
+          "unique_slot2_samples": 13749696,
+          "unique_audio_windows": 12124
+        }
+      }
+    },
+    "train_2026": {
+      "H": {
+        "current_windows": 104960,
+        "unique_current_windows": 72763,
+        "unique_current_EEG_sample_times": 13970496,
+        "memory_query_windows": 103185,
+        "history_slot_presentations": 206370,
+        "unique_slot1_EEG_sample_times": 13738752,
+        "unique_slot2_EEG_sample_times": 13738752,
+        "unique_all_EEG_sample_times": 22127808,
+        "unique_audio_story_time_windows": 12120,
+        "repeated_current_windows": 32197,
+        "cumulative": {
+          "unique_current_windows": 72763,
+          "unique_EEG_samples": 22127808,
+          "unique_slot1_samples": 13738752,
+          "unique_slot2_samples": 13738752,
+          "unique_audio_windows": 12120
+        }
+      },
+      "C": {
+        "current_windows": 104960,
+        "unique_current_windows": 72763,
+        "unique_current_EEG_sample_times": 13970496,
+        "memory_query_windows": 103185,
+        "history_slot_presentations": 206370,
+        "unique_slot1_EEG_sample_times": 13738752,
+        "unique_slot2_EEG_sample_times": 13738752,
+        "unique_all_EEG_sample_times": 13970496,
+        "unique_audio_story_time_windows": 12120,
+        "repeated_current_windows": 32197,
+        "cumulative": {
+          "unique_current_windows": 72763,
+          "unique_EEG_samples": 13970496,
+          "unique_slot1_samples": 13738752,
+          "unique_slot2_samples": 13738752,
+          "unique_audio_windows": 12120
+        }
+      }
+    },
+    "train_31415": {
+      "H": {
+        "current_windows": 104960,
+        "unique_current_windows": 72945,
+        "unique_current_EEG_sample_times": 14005440,
+        "memory_query_windows": 103183,
+        "history_slot_presentations": 206366,
+        "unique_slot1_EEG_sample_times": 13770432,
+        "unique_slot2_EEG_sample_times": 13770432,
+        "unique_all_EEG_sample_times": 22202976,
+        "unique_audio_story_time_windows": 12116,
+        "repeated_current_windows": 32015,
+        "cumulative": {
+          "unique_current_windows": 72945,
+          "unique_EEG_samples": 22202976,
+          "unique_slot1_samples": 13770432,
+          "unique_slot2_samples": 13770432,
+          "unique_audio_windows": 12116
+        }
+      },
+      "C": {
+        "current_windows": 104960,
+        "unique_current_windows": 72945,
+        "unique_current_EEG_sample_times": 14005440,
+        "memory_query_windows": 103183,
+        "history_slot_presentations": 206366,
+        "unique_slot1_EEG_sample_times": 13770432,
+        "unique_slot2_EEG_sample_times": 13770432,
+        "unique_all_EEG_sample_times": 14005440,
+        "unique_audio_story_time_windows": 12116,
+        "repeated_current_windows": 32015,
+        "cumulative": {
+          "unique_current_windows": 72945,
+          "unique_EEG_samples": 14005440,
+          "unique_slot1_samples": 13770432,
+          "unique_slot2_samples": 13770432,
+          "unique_audio_windows": 12116
+        }
+      }
+    },
+    "val_20261015": {
+      "H": {
+        "current_windows": 12544,
+        "unique_current_windows": 8707,
+        "unique_current_EEG_sample_times": 1671744,
+        "memory_query_windows": 12345,
+        "history_slot_presentations": 24690,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "unique_all_EEG_sample_times": 2677248,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_current_windows": 3837,
+        "cumulative": {
+          "unique_current_windows": 8707,
+          "unique_EEG_samples": 2677248,
+          "unique_slot1_samples": 1644864,
+          "unique_slot2_samples": 1644864,
+          "unique_audio_windows": 1563
+        }
+      },
+      "C": {
+        "current_windows": 12544,
+        "unique_current_windows": 8707,
+        "unique_current_EEG_sample_times": 1671744,
+        "memory_query_windows": 12345,
+        "history_slot_presentations": 24690,
+        "unique_slot1_EEG_sample_times": 1644864,
+        "unique_slot2_EEG_sample_times": 1644864,
+        "unique_all_EEG_sample_times": 1671744,
+        "unique_audio_story_time_windows": 1563,
+        "repeated_current_windows": 3837,
+        "cumulative": {
+          "unique_current_windows": 8707,
+          "unique_EEG_samples": 1671744,
+          "unique_slot1_samples": 1644864,
+          "unique_slot2_samples": 1644864,
+          "unique_audio_windows": 1563
+        }
+      }
+    }
+  },
+  "restored": [
+    "model",
+    "optimizer",
+    "scheduler",
+    "CPU RNG",
+    "CUDA RNG",
+    "batch cursor",
+    "objective accumulator"
+  ],
+  "actual_train_data_forward": 0,
+  "optimizer_updates": 0,
+  "source": {
+    "pid": 1616041,
+    "uid": 1012,
+    "startticks": 790223978,
+    "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ACTUAL_FROZEN_SOURCE_REVIEW",
+  "goal_complete": false,
+  "driver": "scripts/pub_01_s03_ss07_ft_audit.py",
+  "driver_sha256": "2ce7df72c7082b7ff482121a3c076227eeff65c9d9d5c0915cef77f80a23f675",
+  "protocol_sha256": "14b2cedd0df026637624afbc63004c3803644d420e7966bad234cab33babb78e",
+  "scope": "Actual complete source read; original FT test loader/predictor source inspected; no producer imports for independent numerical reconstruction.",
+  "checks": [
+    "Original FT phase-global64 order, cross-record batches, last29/55; capture same encoder forward and original head, not native record256.",
+    "Original raw_windows normalization/layout; no_grad not inference_mode; eval while parameters retain requires_grad; original TF32 policy.",
+    "3 existing seed epoch4 checkpoints only; no fitting, model selection, new targets, old DTU, or new data.",
+    "D8 TRAIN transforms/calibration and all D8/D9 frozen coefficients; standardized Z square uses stored D8 transform2; first4 raw FT fallback; W/F endpoints unchanged.",
+    "Unscaled original FT all144 record bridges and original block-r check before five learned readouts per seed.",
+    "36 cached VAL mappings actual PASS; toy global64 scatter actual PASS; 306 source hashes and D8/D9 inherited source hashes actual matched.",
+    "36 predefined role-split scores, fixed original masks/person macro/2:1 phase weights; 255012 NN forward window budget, no learned waveform disk cache."
+  ],
+  "engineering_note": "Cache memmaps allocated before the next all_npy guard, rather than a separate projected guard at allocation. Frozen inventory/prelaunch free-space check and observed final limits pass; no material cap breach and no source change or rerun requested.",
+  "next": "Independent frozen-scope actual all36 aggregations and72 cached reconstructions; code PASS does not establish scientific superiority."
+}

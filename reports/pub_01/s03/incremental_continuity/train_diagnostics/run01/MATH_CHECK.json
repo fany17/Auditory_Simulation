@@ -1,0 +1,7 @@
+{
+  "positive_affine_both_half_directions_exact": true,
+  "negative_scale_rejected": true,
+  "nonbinary_constant_fit_rejected": true,
+  "piecewise_constant_energy_preserved": true,
+  "within_bin_zero_mean_energy_discarded": true
+}

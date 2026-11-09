@@ -1,0 +1,55 @@
+{
+  "time": 1793509250.856651,
+  "seconds": 28.979037523269653,
+  "seeds": [
+    {
+      "seed": 1024,
+      "records": 426,
+      "windows": 252454,
+      "overlap_pairs": 252028,
+      "D2_energy_retained_ratio": 0.1284447664955491,
+      "D2_zero_energy_window_channels": 0,
+      "forward_positive_fit_fraction": 0.9953179805418445,
+      "forward_held_aligned_raw_ratio": 1.333320804678133,
+      "reverse_positive_fit_fraction": 0.9724713127112861,
+      "reverse_held_aligned_raw_ratio": 2.173861908799788
+    },
+    {
+      "seed": 2026,
+      "records": 426,
+      "windows": 252454,
+      "overlap_pairs": 252028,
+      "D2_energy_retained_ratio": 0.1352385085121954,
+      "D2_zero_energy_window_channels": 0,
+      "forward_positive_fit_fraction": 0.9960877362832701,
+      "forward_held_aligned_raw_ratio": 1.4314380445838422,
+      "reverse_positive_fit_fraction": 0.9703525005158157,
+      "reverse_held_aligned_raw_ratio": 2.4563006630640976
+    },
+    {
+      "seed": 31415,
+      "records": 426,
+      "windows": 252454,
+      "overlap_pairs": 252028,
+      "D2_energy_retained_ratio": 0.13251983359995556,
+      "D2_zero_energy_window_channels": 0,
+      "forward_positive_fit_fraction": 0.9941911216214071,
+      "forward_held_aligned_raw_ratio": 1.3702286702772013,
+      "reverse_positive_fit_fraction": 0.966928277810402,
+      "reverse_held_aligned_raw_ratio": 2.577658754396764
+    }
+  ],
+  "expected_records_per_seed": 426,
+  "errors": [],
+  "D3_records": 426,
+  "D3_shared_target_computed_once": true,
+  "phase": "TRAIN_ONLY",
+  "threads": 1,
+  "GPU_used": false,
+  "new_NN_fits": false,
+  "VAL_test_DTU_reads": false,
+  "source_sha256": "e0a2fdd577167e25766b4683b5e85f12ce55cfd7b28eee36367748ea6ff81512",
+  "protocol_sha256": "b0436c600c320e24f29abce396c93fda78ebda467cc1124db34e47d518a9914d",
+  "scientific_goal_achieved_claimed": false,
+  "interpretation": "descriptive affine consistency and latent energy compression; not predictive information, mechanism or generalization proof"
+}

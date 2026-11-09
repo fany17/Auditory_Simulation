@@ -1,0 +1,19 @@
+{
+  "time": 1793504555.977671,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_report.py": "cfada5926062167261d4ee7a7c03284901509cf9210c06c64e4dc1e23dbc3a35",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/report_input/pub_01_s03_ss07_warm_report_queue.py": "4c2d977c857b5d01c24d33d1738d4d4d309c15c8cf0adaa274d1124737ff4a82",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/WARM_PROTOCOL.json": "a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8"
+  },
+  "required_complete_cells": 18,
+  "phases": [
+    "train",
+    "val"
+  ],
+  "test_operations": false,
+  "model_selection_or_new_fits": false,
+  "reporting": "all6x3 incumbent and selected3s/60s,original3s earliest-choice and budget/checkpoint checks,all per-person and epoch CSV,paired past-current/continuedP/incumbent,3 static figures,complete costs",
+  "inference": "descriptive train/val only, no CI or generalization claims; approx1e-8 original/newP rounding not scientific gain",
+  "training_sources_unchanged": true,
+  "independent_acceptance_not_claimed": true
+}

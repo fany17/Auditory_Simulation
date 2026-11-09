@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "seed": 1024,
+      "initial_no_globalFT_r": 0.16375973858951365,
+      "personal_r": 0.2174415109341215,
+      "initial_updates": 4743600,
+      "personal_updates": 5957902
+    },
+    {
+      "seed": 2026,
+      "initial_no_globalFT_r": 0.1629631604028974,
+      "personal_r": 0.21761696365455158,
+      "initial_updates": 4743600,
+      "personal_updates": 6237148
+    },
+    {
+      "seed": 31415,
+      "initial_no_globalFT_r": 0.16173585586271366,
+      "personal_r": 0.21469937066315706,
+      "initial_updates": 4743600,
+      "personal_updates": 6095011
+    }
+  ],
+  "initial_fits": 3,
+  "personal_fits": 147,
+  "protocol_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "old_test_reads": 0,
+  "process": {
+    "pid": 1889835,
+    "uid": 1012,
+    "startticks": 795110900,
+    "status": "R"
+  }
+}

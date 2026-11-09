@@ -1,0 +1,20 @@
+{
+  "technical": "PASS",
+  "acceptance": "PASS_WITH_LIMITATION",
+  "parent_consistency": "PASS_SS06_ONLY",
+  "max_aggregation_error": 0.0,
+  "raw_original_CPU_checks": 18,
+  "CPU_C_microchunk": 127,
+  "max_raw_CPU_r_error": 3.362404887852222e-08,
+  "max_raw_CPU_MSE_error": 2.3582598540627941e-07,
+  "same_agent_separate_observer_pass": true,
+  "third_party_scientific_signoff": false,
+  "P_native_optimizer_and_sequential_window_order_verified": true,
+  "old_model_weights_used": false,
+  "kind": "POST-HOC INTERNAL EXPLORATORY; only5families; original preprocessed EEG, physical synchronization UNKNOWN",
+  "C_causality_scope": "provided preprocessed64Hz EEG sample coordinates; no claim raw preprocessing/hardware causal",
+  "all_training_completed_before_common_assessment": true,
+  "protocol_sha256": "3c263ebb353b33b1fe7e7e656513bde8b3b0c570fb1759c87ad4dcc7b7d533ff",
+  "P_amendment_sha256": "094790b21537a10cea0f68ec65ffffbdcdf637ddd050e896c181e93b2bc937b2",
+  "observer_source_sha256": "8700848903160a6e7b35cba314d8f3467fb166d8d0f738a051fa50d11aceb95a"
+}

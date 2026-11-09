@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "arm": "H_full",
+      "contiguous_first64_tail38_tensor_exact": true,
+      "nonzero_reorder_equivalent": true,
+      "mixed_record_loss_abs": 0.0,
+      "parameter_gradient_max_abs": 3.4924596548080444e-10,
+      "optimizer_updates": 0
+    },
+    {
+      "arm": "C_match",
+      "contiguous_first64_tail38_tensor_exact": true,
+      "nonzero_reorder_equivalent": true,
+      "mixed_record_loss_abs": 0.0,
+      "parameter_gradient_max_abs": 2.3283064365386963e-10,
+      "optimizer_updates": 0
+    },
+    {
+      "arm": "P_prior",
+      "contiguous_first64_tail38_tensor_exact": true,
+      "nonzero_reorder_equivalent": true,
+      "mixed_record_loss_abs": 0.0,
+      "parameter_gradient_max_abs": 2.0372681319713593e-10,
+      "optimizer_updates": 0
+    }
+  ],
+  "all60_permutations_bijective_and_torch_RNG_unchanged": true,
+  "complete_record_local_past_metadata_checked": true,
+  "NN_windows": 1230,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "new_encoder_head": 0,
+  "wall_seconds": 20.126062870025635,
+  "CPU_seconds": 29.872918548999998,
+  "peak_RSS_KiB": 5121448,
+  "peak_GPU_allocated_bytes": 37329408,
+  "device": "cuda:0",
+  "formal_models_reconstructed_clean": true
+}

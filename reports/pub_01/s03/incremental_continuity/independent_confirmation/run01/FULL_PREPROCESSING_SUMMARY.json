@@ -1,0 +1,30 @@
+{
+  "records": 380,
+  "people": 19,
+  "source_bytes": 19435625984,
+  "processed_bytes": 1129921792,
+  "all_scalar_calibrations_label_free": true,
+  "all_use_future_record_EEG": true,
+  "physical_gain": "UNVERIFIED",
+  "summary_new_NN": 0,
+  "good_channels": {
+    "min": 94.0,
+    "median": 125.0,
+    "max": 128.0
+  },
+  "A_record": {
+    "min": 3570169.9777320526,
+    "median": 7440008.788086172,
+    "max": 316712022.5401224
+  },
+  "gain": {
+    "min": 1.787947497067544e-08,
+    "median": 7.611075479998423e-07,
+    "max": 1.5860994617167512e-06
+  },
+  "common_64Hz_samples": {
+    "min": 10607.0,
+    "median": 11553.0,
+    "max": 12937.0
+  }
+}

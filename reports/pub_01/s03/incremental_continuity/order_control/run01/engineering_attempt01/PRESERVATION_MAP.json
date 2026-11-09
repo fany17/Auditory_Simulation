@@ -1,0 +1,28 @@
+{
+  "mapping": [
+    {
+      "old": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/input",
+      "preserved": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/engineering_attempt01/input"
+    },
+    {
+      "old": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/PLAN.md",
+      "preserved": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/engineering_attempt01/PLAN.md"
+    },
+    {
+      "old": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/PROTOCOL.json",
+      "preserved": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/engineering_attempt01/PROTOCOL.json"
+    },
+    {
+      "old": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/PREPARE.log",
+      "preserved": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/engineering_attempt01/PREPARE.log"
+    },
+    {
+      "old": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/PREPARE_LAUNCH.json",
+      "preserved": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/engineering_attempt01/PREPARE_LAUNCH.json"
+    }
+  ],
+  "engineering_NN_reconstructed_from_call_path": 362,
+  "optimizer_updates": 0,
+  "formal_fits": 0,
+  "resource_peaks": "UNKNOWN: not written before failure"
+}

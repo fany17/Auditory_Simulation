@@ -1,0 +1,39 @@
+{
+  "time": 1793491837.8521385,
+  "old_pid": 113154,
+  "old_waiting_parent_no_longer_live": true,
+  "new_pid": 233443,
+  "new_process": {
+    "pid": 233443,
+    "cmdline": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python /home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_review_queue_v2.py ",
+    "uids": [
+      1012,
+      1012,
+      1012,
+      1012
+    ],
+    "children": [],
+    "start_ticks": "741908140"
+  },
+  "new_status": {
+    "stage": "WAIT_COMPLETE_FIXED_EVALUATION",
+    "actual_live_upstream_pid": 88448,
+    "time": 1793491837.7438908,
+    "test_or_DTU_payload_read": false
+  },
+  "exactly_one_live_review_queue_pid": [
+    233443
+  ],
+  "old_source_protocol_proofs_lease_status_preserved": true,
+  "backup_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/independent_review_v1_before_R2_scaled",
+  "protocol_v2_sha256": "97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d",
+  "source_commit": "1153dbf207aa47175efeb9e43c58459635bb8970",
+  "protected_training_and_eval_pids_unchanged": [
+    14537,
+    88448
+  ],
+  "raw_protocol_version": 1,
+  "metric_protocol_version": 2,
+  "actual_review_or_test_not_started": true,
+  "no_automatic_retries": true
+}

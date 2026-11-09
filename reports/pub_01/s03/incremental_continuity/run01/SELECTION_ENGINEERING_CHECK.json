@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "synthetic_metadata_only": true,
+  "tests": [
+    "missing seeds never averaged",
+    "failed seed explicitly detected",
+    "all54 required; exact tie selects smaller width",
+    "all15 full cells; family tie rule; fixed five seeds and deterministic controls",
+    "frozen child idempotent",
+    "nonfinite macro rejects condition"
+  ],
+  "test_read": false,
+  "fixture_paths": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/selection_fixture_ikfs7stn",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/selection_complete_fixture_bc7rbb8a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/selection_bad_fixture_scbdv1kc"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "probes": [
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "batch": 256,
+      "dtype": "torch.float32",
+      "original_input_stride": [
+        12288,
+        1,
+        192
+      ],
+      "old_review_input_stride": [
+        12288,
+        64,
+        1
+      ],
+      "numeric_input_max_difference": 0.0,
+      "original_recipe_selected_wrapper_vs_cache": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "original_recipe_original_wrapper_vs_cache": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_input_selected_three_repeat_max": 0.0,
+      "same_input_original_three_repeat_max": 0.0
+    },
+    {
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "batch": 256,
+      "dtype": "torch.float32",
+      "original_input_stride": [
+        12288,
+        1,
+        192
+      ],
+      "old_review_input_stride": [
+        12288,
+        64,
+        1
+      ],
+      "numeric_input_max_difference": 0.0,
+      "original_recipe_selected_wrapper_vs_cache": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "original_recipe_original_wrapper_vs_cache": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_input_selected_three_repeat_max": 0.0,
+      "same_input_original_three_repeat_max": 0.0
+    },
+    {
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "batch": 54,
+      "dtype": "torch.float32",
+      "original_input_stride": [
+        12288,
+        1,
+        192
+      ],
+      "old_review_input_stride": [
+        12288,
+        64,
+        1
+      ],
+      "numeric_input_max_difference": 0.0,
+      "original_recipe_selected_wrapper_vs_cache": [
+        2.384185791015625e-06,
+        2.384185791015625e-06,
+        2.384185791015625e-06
+      ],
+      "original_recipe_original_wrapper_vs_cache": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_input_selected_three_repeat_max": 0.0,
+      "same_input_original_three_repeat_max": 0.0
+    }
+  ],
+  "precision": {
+    "TF32_matmul": false,
+    "TF32_cudnn": true
+  },
+  "all_original_recipe_exact_cache": false,
+  "source_of_layout_mismatch": "old FreshVAL used np.asarray(list,dtype=float32); original cache and RawWindows use np.stack(list).astype(float32)",
+  "changed_checkpoint_training_or_gate": false,
+  "test_read": false
+}

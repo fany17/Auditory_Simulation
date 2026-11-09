@@ -1,0 +1,9 @@
+......................................                                    [100%]
+=============================== warnings summary ===============================
+tests/test_ss06_alignment_innovation.py::AlignmentInnovationTests::test_alignment_fixed_and_adaptive_share_lag_bank
+  /home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/prototype01/tests/test_ss06_alignment_innovation.py:116: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+  Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+    self.assertGreater(float((a.aux["weights"] - f.aux["weights"]).abs().max()), 1e-7)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+38 passed, 1 warning, 71 subtests passed in 2.04s

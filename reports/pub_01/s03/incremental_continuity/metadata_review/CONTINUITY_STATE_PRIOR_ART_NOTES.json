@@ -1,0 +1,47 @@
+{
+  "scope": "LITERATURE_AND_UNEXECUTED_HYPOTHESIS_ONLY; does not alter D10 or authorize new model/data/inference",
+  "date": "2026-11-01",
+  "reason": "The goal includes a defensible innovation claim; covariance-based adaptive EEG normalization is prior art and must not be relabeled as new continuity.",
+  "sources": [
+    {
+      "title": "Transfer Learning for Brain-Computer Interfaces: A Euclidean Space Data Alignment Approach",
+      "authors": "He He; Dongrui Wu",
+      "version": "arXiv1808.05464v2, 2019-04-02",
+      "url": "https://arxiv.org/html/1808.05464v2",
+      "actual_read": "Abstract, introduction, SectionsII–III including equations10–12 and evaluation-scenario definitions; not full numerical study independently reviewed.",
+      "supported": "EA averages within-subject trial covariance and applies the inverse square root to raw EEG trials; alignment itself does not require target labels. The described simulated-online classification experiment includes sequential target labels, so it must not be portrayed as fully label-free online classification.",
+      "implication": "Simple covariance whitening, mean-reference adaptation and use of unlabeled target EEG are already known. MI/ERP evidence is not proof for auditory envelope regression."
+    },
+    {
+      "title": "Lightweight Source-Free Domain Adaptation based on Adaptive Euclidean Alignment for Brain-Computer Interfaces",
+      "authors": "Huiyang Wang; Hongfang Han; John Q. Gan; Haixian Wang",
+      "doi": "10.1109/JBHI.2024.3463737",
+      "url": "https://repository.essex.ac.uk/39235/1/Lightweight_Source-Free_Domain_Adaptation_based_on_Adaptive_Euclidean_Alignment_for_Brain-Computer_Interfaces.pdf",
+      "actual_read": "Author-manuscript pages0–1 abstract/introduction/contribution text. Further method search timed out; no full method/evaluation claim.",
+      "supported": "AEA learns an input projection while retaining the pretrained model, combined with source-free adaptation; the stated studies cover MI, ERP andSSVEP.",
+      "implication": "Learning a lightweight covariance-informed projection while freezing a strong EEG model is not by itself new. Task/time-access/label differences require explicit comparison."
+    },
+    {
+      "title": "Subject Disentanglement Neural Network for Speech Envelope Reconstruction from EEG",
+      "authors": "Li Zhang; Jiyao Liu",
+      "version": "arXiv2501.08693v1, 2025-01-15",
+      "url": "https://arxiv.org/abs/2501.08693",
+      "actual_read": "Primary abstract and bibliographic record only.",
+      "supported": "The authors propose an envelope decoder, a subject-identity network and a mutual-information estimator to reduce subject information in reconstruction.",
+      "implication": "Subject-dependent nuisance modeling/disentanglement already exists in the exact envelope-reconstruction task. Claimed superiority has not been compared under our protocol; no imported score/SOTA claim."
+    }
+  ],
+  "unexecuted_hypothesis": {
+    "statement": "Long-past EEG may be useful for estimating slowly varying observation/noise statistics, even when past target envelopes or low-dimensional past latent summaries do not improve current decoding.",
+    "status": "Hypothesis only; neither useful information nor gain has been measured. Not derived from any future D10 scores.",
+    "possible_scope": "Within the originally considered slow-state/latent EEG correction direction, first justify the mechanism using original TRAIN only; preserve fixed strong FT+Ccap/F references and legal time access. No new fit or architecture authorized by this note.",
+    "required_differences_from_prior_art": [
+      "Task-relevant state estimation beyond generic EA/AEA",
+      "Causal past-only statistics and cold-start/record boundaries explicitly defined",
+      "Strong current-only covariance and static/EA controls, parameter/budget matching",
+      "Current EEG held fixed for history interventions",
+      "No test-label adaptation or expansion based on old test scores"
+    ]
+  },
+  "authorization": "D10 remains only the exact frozen-model internal audit under separate plan review. No new dataset payload, weights, patient data, training grid or test-time adaptation."
+}

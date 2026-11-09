@@ -1,0 +1,73 @@
+{
+  "scope": "REPOSITORY_TREE_METADATA_ONLY_NO_SIGNAL_HEADER_AUDIO_OR_TARGET_PAYLOAD",
+  "repository": "OpenNeuroDatasets/ds004408",
+  "commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+  "truncated": false,
+  "entries": 1988,
+  "subjects": 19,
+  "runs_per_subject": 20,
+  "recordings": 380,
+  "types": {
+    "eeg": {
+      "count": 380,
+      "git_bytes": 78282,
+      "unique_blob_shas": 380,
+      "modes": [
+        "120000"
+      ]
+    },
+    "vhdr": {
+      "count": 380,
+      "git_bytes": 76000,
+      "unique_blob_shas": 380,
+      "modes": [
+        "120000"
+      ]
+    },
+    "vmrk": {
+      "count": 380,
+      "git_bytes": 75240,
+      "unique_blob_shas": 380,
+      "modes": [
+        "120000"
+      ]
+    },
+    "wav": {
+      "count": 20,
+      "git_bytes": 4060,
+      "unique_blob_shas": 20,
+      "modes": [
+        "120000"
+      ]
+    },
+    "json": {
+      "count": 382,
+      "git_bytes": 185831,
+      "unique_blob_shas": 353,
+      "modes": [
+        "100644"
+      ]
+    },
+    "tsv": {
+      "count": 381,
+      "git_bytes": 2250404,
+      "unique_blob_shas": 120,
+      "modes": [
+        "100644"
+      ]
+    }
+  },
+  "geometry_files": [],
+  "actual_repository_signal_format": "BrainVision EEG (.eeg, .vhdr, .vmrk), annex symlink metadata only",
+  "interpretation": "Full pinned tree corrects earlier unspecific EEGLab payload caveat. README describes original BioSemi; BIDS Manufacturer BrainProducts may reflect conversion format, but actual acquisition hardware/montage/unit correspondence remains unverified. Git symlink sizes are not EEG payload bytes.",
+  "authorization": "Metadata only; no new dataset payload/adapter/inference approved.",
+  "tree_api_url": "https://api.github.com/repos/OpenNeuroDatasets/ds004408/git/trees/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be?recursive=1",
+  "sample_annex_declaration": {
+    "path": "sub-001/eeg/sub-001_task-listening_run-01_eeg.eeg",
+    "git_blob_sha": "39f191d0265ac3869de1e3017fa05dd56843a950",
+    "declared_payload_bytes": 51380224,
+    "declared_payload_sha256": "3b4cc81b17535ce2f4a9accdbd1e5a30f7bec5484b8648ac474b0f139044ff96",
+    "verification": "Only the 206-byte git symlink text was read, not .eeg signal bytes. Full dataset byte total not measured."
+  },
+  "metadata_variation": "119 distinct channel-table blob SHAs are implied by 120 total TSV blob SHAs including participants.tsv; individual differences have not been inspected. Do not generalize the sample channel status/unit table to all records."
+}

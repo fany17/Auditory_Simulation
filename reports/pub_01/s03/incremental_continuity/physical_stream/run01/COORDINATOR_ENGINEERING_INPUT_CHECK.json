@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "pub_01_s03_ss07_physical_stream_run.py": "9fb8d5d5ce22681d6b886c1a3987b9db1be6c942111de7d303cc0c2d21bf1978",
+    "pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3"
+  },
+  "metadata_sha256": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+  "inputs_stat_and_provenance_hash_checks": 79,
+  "errors": [],
+  "input_payloads_not_hashed_or_loaded": true,
+  "candidate": "D19_ORDERED_16HZ_V2",
+  "CPU_seconds": 0.013931602999999997,
+  "wall_seconds": 0.014010429382324219,
+  "new_neural_forward": 0,
+  "new_optimizer_updates": 0,
+  "writer_free_bytes": 178223779840
+}

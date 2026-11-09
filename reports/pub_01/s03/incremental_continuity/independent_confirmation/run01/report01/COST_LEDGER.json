@@ -1,0 +1,498 @@
+{
+  "entries": [
+    {
+      "stage": "Header attempt01",
+      "inherited": false,
+      "wall_seconds": 321.66575717926025,
+      "measurement": "Elapsed start-to-voluntary-interruption timestamps; not CPU or active compute time",
+      "references": [
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/HEADER_ACQUISITION_STARTED.json",
+          "sha256": "80cfce729fadad8e1eb1ce0983da2eef96da2ba6da6773832ec1a1df6ce051aa"
+        },
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/HEADER_ATTEMPT01_TRANSPORT_SWITCH.json",
+          "sha256": "617c7d42ef874e23ec3a59733ab8703075735a9821abbf9cde56a003a37db44d"
+        }
+      ],
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Audio/EEG prefetch attempt01",
+      "inherited": false,
+      "wall_seconds": 736.3586049079895,
+      "measurement": "Elapsed start-to-voluntary-interruption timestamps; not CPU or active compute time",
+      "references": [
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/ACQUISITION_PREFLIGHT_STARTED.json",
+          "sha256": "2f3d46e2d21c0361e69e5821603a32eb1bc36d6aa54c829636e751710b05c050"
+        },
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/PREFLIGHT_ATTEMPT01_TRANSPORT_SWITCH.json",
+          "sha256": "87dbc16590e9a44f290b04f52e58a9f2f7e04717c9cdfce871f30bf8c89d414e"
+        }
+      ],
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "EEG preprocessing retained v1",
+      "inherited": false,
+      "wall_seconds": 884.140109539032,
+      "measurement": "Elapsed start-to-voluntary-interruption timestamps; not CPU or active compute time",
+      "references": [
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/EEG_PREPARE_STARTED.json",
+          "sha256": "5e8e8e8ce0effe8ee4d6c757093955f48c173b6dfb6955633b54db07447a82e1"
+        },
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/PREPROCESSING_TRANSPORT_HANDOFF.json",
+          "sha256": "f0fa4de470fbe83b2c70504999d1909b53f3833b45abae65005870fc3e8af556"
+        }
+      ],
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Header acquisition v2",
+      "inherited": false,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/HEADER_ACQUISITION_V2_COMPLETED.json",
+      "manifest_sha256": "76a124eb1cbc2980a50aa51909c270c157c0f440979e71d7ae2eefdd8aecd744",
+      "wall_seconds": 109.00130915641785,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "note": null,
+      "wall_measurement_key": "wall_seconds",
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Audio/EEG prefetch v2 including five reused verified WAVs",
+      "inherited": false,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/ACQUISITION_PREFLIGHT_V2_COMPLETED.json",
+      "manifest_sha256": "42d3f7f782b500f89e44c71f8c7039aef11ae182209f8d7965a96dc7b233c6d4",
+      "wall_seconds": 644.815009355545,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "note": null,
+      "wall_measurement_key": "wall_seconds",
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Twenty fixed gammatone envelopes",
+      "inherited": false,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/AUDIO_PREPARE_COMPLETED.json",
+      "manifest_sha256": "d5e911e74d069adc0911ecd80fb066eb2818249cc5edcc263baec06920670915",
+      "wall_seconds": 196.60874462127686,
+      "CPU_seconds": 196.952465873,
+      "peak_RSS_KiB": 926200,
+      "peak_GPU_bytes": null,
+      "note": null,
+      "wall_measurement_key": "wall_seconds",
+      "missing_measurements": [
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "EEG acquisition/preprocessing v2; sixteen v1 outputs reused",
+      "inherited": false,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/EEG_PREPARE_COMPLETED_V2.json",
+      "manifest_sha256": "e0eb21270d8e10cfaa844c389b4e4c812eaf441c5f3373ab199bb7059d4e0fac",
+      "wall_seconds": 7694.5902535915375,
+      "CPU_seconds": 1190.573252027,
+      "peak_RSS_KiB": 1977676,
+      "peak_GPU_bytes": null,
+      "note": "total_elapsed_since_v1_seconds is an enclosing interval, not additive to either preprocessing phase",
+      "wall_measurement_key": "wall_seconds",
+      "reused_v1_records": 16,
+      "new_v2_records": 364,
+      "unlabeled_record_gain_statistics": 380,
+      "total_elapsed_since_v1_seconds": 8590.281322479248,
+      "missing_measurements": [
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "External seed1024 inference/readout/scoring",
+      "inherited": false,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/evaluation_seed1024/COMPLETED.json",
+      "manifest_sha256": "9d7163d8153d3beecd9523fec550062d2c0da969e6508ea31ec29b9e333ba5e8",
+      "wall_seconds": 33.869428873062134,
+      "CPU_seconds": 60.364774938,
+      "peak_RSS_KiB": 1843636,
+      "peak_GPU_bytes": 193392128,
+      "note": null,
+      "wall_measurement_key": "wall_seconds",
+      "main_encoder_head_windows": 45429,
+      "extra_bridge_windows": 181,
+      "new_model_fits": 0,
+      "input_record_gain_statistics_reused": 380,
+      "peak_GPU_allocated_bytes": 193392128,
+      "missing_measurements": []
+    },
+    {
+      "stage": "Inherited Native pretraining seed1024",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed1024/completed.json",
+      "manifest_sha256": "6790f607ddf65f70fe09804ee4fc65542628ffd163c9c1fec72b70cc79ffa25f",
+      "wall_seconds": 4051.133745908737,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": 5508522496,
+      "note": null,
+      "wall_measurement_key": "seconds",
+      "epochs": 24,
+      "updates": 19680,
+      "selected_epoch": 8,
+      "stochastic_actual_presentations": 2519040,
+      "sample_presentations": 483655680,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB"
+      ]
+    },
+    {
+      "stage": "Inherited Native supervised head including cache seed1024",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/completed.json",
+      "manifest_sha256": "0c22721f33dd8347e7b1089982c5e28116ac621320fab423460fcd9bb9860c29",
+      "wall_seconds": 1502.5930078029633,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "note": null,
+      "wall_measurement_key": "seconds_including_cache",
+      "epochs": 250,
+      "updates": 986250,
+      "selected_epoch": 249,
+      "target_window_presentations": 63113500,
+      "target_sample_presentations": 12117792000,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Inherited Native strong finetune seed1024",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed1024/completed.json",
+      "manifest_sha256": "8ba7e14c2b29fc1285672c74419558aac5ef20b6752bbf52c7c12a8dac58572f",
+      "wall_seconds": 3257.197015762329,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": 2512312320,
+      "note": null,
+      "wall_measurement_key": "seconds",
+      "epochs": 5,
+      "updates": 19725,
+      "selected_epoch": 4,
+      "target_window_presentations": 1262270,
+      "validation_passes_including_incumbent": 6,
+      "registered_trainable_parameters": 3372617,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB"
+      ]
+    },
+    {
+      "stage": "External seed2026 inference/readout/scoring",
+      "inherited": false,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/evaluation_seed2026/COMPLETED.json",
+      "manifest_sha256": "db01605f724390a340df6f6432ffef9559f0ffdc81179f8eb2ee0984c8b436fd",
+      "wall_seconds": 33.64252328872681,
+      "CPU_seconds": 59.516634821,
+      "peak_RSS_KiB": 1835476,
+      "peak_GPU_bytes": 193392128,
+      "note": null,
+      "wall_measurement_key": "wall_seconds",
+      "main_encoder_head_windows": 45429,
+      "extra_bridge_windows": 181,
+      "new_model_fits": 0,
+      "input_record_gain_statistics_reused": 380,
+      "peak_GPU_allocated_bytes": 193392128,
+      "missing_measurements": []
+    },
+    {
+      "stage": "Inherited Native pretraining seed2026",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed2026/completed.json",
+      "manifest_sha256": "e37de70373223fe7d584e9aa8792b13266eff9c9a476380702905627722fa7a5",
+      "wall_seconds": 6112.8350784778595,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": 5508522496,
+      "note": null,
+      "wall_measurement_key": "seconds",
+      "epochs": 27,
+      "updates": 22140,
+      "selected_epoch": 11,
+      "stochastic_actual_presentations": 2833920,
+      "sample_presentations": 544112640,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB"
+      ]
+    },
+    {
+      "stage": "Inherited Native supervised head including cache seed2026",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/completed.json",
+      "manifest_sha256": "0360e4aca4b446fafb923e36a8616b4175929efb5267c096b28f629a32eda93d",
+      "wall_seconds": 1533.7738671302795,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "note": null,
+      "wall_measurement_key": "seconds_including_cache",
+      "epochs": 250,
+      "updates": 986250,
+      "selected_epoch": 249,
+      "target_window_presentations": 63113500,
+      "target_sample_presentations": 12117792000,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Inherited Native strong finetune seed2026",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed2026/completed.json",
+      "manifest_sha256": "4fe8b9e7e117d372713a6ec5791e0052f6690a5a1b0682a2c8cf34ad7fc30276",
+      "wall_seconds": 4013.4077484607697,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": 2512312320,
+      "note": null,
+      "wall_measurement_key": "seconds",
+      "epochs": 5,
+      "updates": 19725,
+      "selected_epoch": 4,
+      "target_window_presentations": 1262270,
+      "validation_passes_including_incumbent": 6,
+      "registered_trainable_parameters": 3372617,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB"
+      ]
+    },
+    {
+      "stage": "External seed31415 inference/readout/scoring",
+      "inherited": false,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/evaluation_seed31415/COMPLETED.json",
+      "manifest_sha256": "3e761a0ffc31ced45c19bdd9bc4318746f6cef696cb568c13cfff4b8610dc397",
+      "wall_seconds": 28.028639793395996,
+      "CPU_seconds": 60.182876638,
+      "peak_RSS_KiB": 1838828,
+      "peak_GPU_bytes": 193392128,
+      "note": null,
+      "wall_measurement_key": "wall_seconds",
+      "main_encoder_head_windows": 45429,
+      "extra_bridge_windows": 181,
+      "new_model_fits": 0,
+      "input_record_gain_statistics_reused": 380,
+      "peak_GPU_allocated_bytes": 193392128,
+      "missing_measurements": []
+    },
+    {
+      "stage": "Inherited Native pretraining seed31415",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/pretrain_seed31415/completed.json",
+      "manifest_sha256": "9a391135317902eb7b1bbfa3144beb22733f2177a533d3afd32815a76a4eab01",
+      "wall_seconds": 4394.759388685226,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": 5508522496,
+      "note": null,
+      "wall_measurement_key": "seconds",
+      "epochs": 26,
+      "updates": 21320,
+      "selected_epoch": 10,
+      "stochastic_actual_presentations": 2728960,
+      "sample_presentations": 523960320,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB"
+      ]
+    },
+    {
+      "stage": "Inherited Native supervised head including cache seed31415",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/completed.json",
+      "manifest_sha256": "2ef25a6591409347af5fe3ddd6d1cdf50c8565ac8d5b9651bc411301c5bb6e48",
+      "wall_seconds": 1364.6672563552856,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "note": null,
+      "wall_measurement_key": "seconds_including_cache",
+      "epochs": 250,
+      "updates": 986250,
+      "selected_epoch": 249,
+      "target_window_presentations": 63113500,
+      "target_sample_presentations": 12117792000,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Inherited Native strong finetune seed31415",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed31415/completed.json",
+      "manifest_sha256": "1ea84c687b42b701663fdab1c0cb97cf51b3e8c4e43889762a91740d856eb4f3",
+      "wall_seconds": 3225.6097860336304,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": 2512312320,
+      "note": null,
+      "wall_measurement_key": "seconds",
+      "epochs": 5,
+      "updates": 19725,
+      "selected_epoch": 4,
+      "target_window_presentations": 1262270,
+      "validation_passes_including_incumbent": 6,
+      "registered_trainable_parameters": 3372617,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB"
+      ]
+    },
+    {
+      "stage": "Inherited D8 source FT cache/calibration/Ccap selection and 27 ridge fits",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/COST.json",
+      "manifest_sha256": "c15115885d719d7fc3e0abb905f6afc6ed061fa97793316d779a50c234e734cd",
+      "wall_seconds": 386.58805990219116,
+      "CPU_seconds": 1183.993107539,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "note": "Full stage-level numeric costs are in referenced manifest; enclosing wall time, not sum of stages",
+      "wall_measurement_key": "wall_seconds",
+      "primary_encoder_head_windows": 848862,
+      "extra_bridge_encoder_head_windows": 300,
+      "new_ridge_fits": 27,
+      "NN_updates": 0,
+      "missing_measurements": [
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Inherited D9 fixed physical W/F readouts, six solves",
+      "inherited": true,
+      "manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101/COMPLETED.json",
+      "manifest_sha256": "8160d2bccf83dcd4fd10128e9a0a0b723f75ac1fa58b496d244db81fdbd2a747",
+      "wall_seconds": 185.39582633972168,
+      "CPU_seconds": null,
+      "peak_RSS_KiB": null,
+      "peak_GPU_bytes": null,
+      "note": null,
+      "wall_measurement_key": "wall_seconds",
+      "solves": 6,
+      "missing_measurements": [
+        "CPU_seconds",
+        "peak_RSS_KiB",
+        "peak_GPU_bytes"
+      ]
+    },
+    {
+      "stage": "Inherited D9 worker seed1024",
+      "inherited": true,
+      "included_in": "Inherited D9 fixed physical W/F readouts, six solves",
+      "wall_seconds": 91.80918574333191,
+      "CPU_seconds": 119.363399634,
+      "peak_RSS_bytes": 3424587776,
+      "peak_GPU_allocated_bytes": 9172116992,
+      "solves": 2
+    },
+    {
+      "stage": "Inherited D9 worker seed2026",
+      "inherited": true,
+      "included_in": "Inherited D9 fixed physical W/F readouts, six solves",
+      "wall_seconds": 89.21214509010315,
+      "CPU_seconds": 117.299453116,
+      "peak_RSS_bytes": 3426803712,
+      "peak_GPU_allocated_bytes": 9172116992,
+      "solves": 2
+    },
+    {
+      "stage": "Inherited D9 worker seed31415",
+      "inherited": true,
+      "included_in": "Inherited D9 fixed physical W/F readouts, six solves",
+      "wall_seconds": 83.09623718261719,
+      "CPU_seconds": 110.428161358,
+      "peak_RSS_bytes": 3423457280,
+      "peak_GPU_allocated_bytes": 9172116992,
+      "solves": 2
+    },
+    {
+      "stage": "Inherited upstream XLSR pretraining and original TRAIN normalization preparation",
+      "inherited": true,
+      "wall_seconds": null,
+      "CPU_seconds": null,
+      "note": "Costs not measured in these run manifests; unknown, not zero. Source/model identity pinned in SOURCE_ASSETS_V2.json and EVALUATION_PROTOCOL.json",
+      "missing_measurements": [
+        "wall_seconds",
+        "CPU_seconds",
+        "peak_RSS",
+        "peak_GPU"
+      ],
+      "references": [
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/SOURCE_ASSETS_V2.json",
+          "sha256": "2040586dfb93f47b80d1582a17803dca3a6f98d8f5a5b454b027acca8fadf73b"
+        },
+        {
+          "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/EVALUATION_PROTOCOL.json",
+          "sha256": "5cb28c2cd219c25fc36ed5ea91d92572a9c6b61b0a3ae864a0f1fa5180cc76c5"
+        }
+      ]
+    }
+  ],
+  "parallel_wall_times_not_summed": true,
+  "missing_is_not_zero": true,
+  "units": {
+    "wall_seconds": "seconds",
+    "CPU_seconds": "seconds",
+    "peak_RSS_KiB": "KiB",
+    "peak_RSS_bytes": "bytes",
+    "peak_GPU_bytes": "bytes; allocated memory where the original uses peak_GPU_allocated_bytes",
+    "peak_GPU_allocated_bytes": "bytes"
+  },
+  "count_semantics": "Window/sample presentations count repeats across epochs; not unique recordings or independent people",
+  "inherited_training_not_new_work": true,
+  "scope": "Three inherited seeds used here; not a complete all-SS07 research cost ledger",
+  "additional_engineering_and_review_overhead": "Not fully instrumented; no total elapsed-compute claim"
+}

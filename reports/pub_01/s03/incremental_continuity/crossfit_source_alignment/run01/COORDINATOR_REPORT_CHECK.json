@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "residual_RMS_groups_checked": 12,
+  "standardized_RMS": {
+    "B": {
+      "current": 0.9974311322178552,
+      "context": 0.9894565091389378
+    },
+    "S": {
+      "current": 0.9974311322178552,
+      "context": 0.9974311322178552
+    }
+  },
+  "positive_counts_of_six": {
+    "all": {
+      "B_minus_fold_anchor": 0,
+      "S_minus_fold_anchor": 5,
+      "B_minus_S": 0
+    },
+    "shared": {
+      "B_minus_fold_anchor": 0,
+      "S_minus_fold_anchor": 6,
+      "B_minus_S": 0
+    },
+    "unseen": {
+      "B_minus_fold_anchor": 0,
+      "S_minus_fold_anchor": 0,
+      "B_minus_S": 0
+    }
+  },
+  "neural_forward": 0,
+  "array_reads": 0,
+  "fit": 0
+}

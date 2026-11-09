@@ -1,0 +1,86 @@
+{
+  "stages": [
+    {
+      "stage": "prepare_v1_source_stat_and_synthetic_axis_checks",
+      "NN": 0,
+      "backward": 0,
+      "fits": 0,
+      "optimizer_updates": 0,
+      "new_encoder_head": 0,
+      "CPU_seconds": 0.22760512300000002,
+      "wall_seconds": 0.23488545417785645,
+      "peak_RSS_KiB": 550616,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "prepare_v2_review_metadata_and_grouping_refreeze",
+      "NN": 0,
+      "backward": 0,
+      "fits": 0,
+      "optimizer_updates": 0,
+      "new_encoder_head": 0,
+      "CPU_seconds": 0.227900204,
+      "wall_seconds": 0.23027992248535156,
+      "peak_RSS_KiB": 533872,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "fixed48_four_checkpoints_two_conditions",
+      "NN": 384,
+      "backward": 8,
+      "fits": 0,
+      "optimizer_updates": 0,
+      "new_encoder_head": 0,
+      "CPU_seconds": 2.186963157,
+      "wall_seconds": 1.2373802661895752,
+      "peak_RSS_KiB": 1106752,
+      "peak_GPU_allocated_bytes": 36940288
+    },
+    {
+      "stage": "JSON_only_tables",
+      "NN": 0,
+      "backward": 0,
+      "fits": 0,
+      "optimizer_updates": 0,
+      "new_encoder_head": 0,
+      "CPU_seconds": 0.0029069879999999992,
+      "wall_seconds": 0.0029206275939941406,
+      "peak_RSS_KiB": 11648,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "JSON_only_cost_ledger",
+      "NN": 0,
+      "backward": 0,
+      "fits": 0,
+      "optimizer_updates": 0,
+      "new_encoder_head": 0,
+      "CPU_seconds": 0.0008399720000000013,
+      "wall_seconds": 0.00084686279296875,
+      "peak_RSS_KiB": 11628,
+      "peak_GPU_allocated_bytes": 0
+    }
+  ],
+  "total_new_residual_NN": 384,
+  "total_input_backward_calls": 8,
+  "fits": 0,
+  "optimizer_updates": 0,
+  "new_encoder_head": 0,
+  "listed_instrumented_CPU_seconds": 2.646215444,
+  "resource": {
+    "root_bytes": 466974,
+    "root_cap_bytes": 8388608,
+    "home_free_bytes": 22660694016,
+    "sata_free_bytes": 178649985024,
+    "each_disk_reserve_bytes": 21474836480,
+    "new_array_or_weight_files": []
+  },
+  "notes": [
+    "Prepare timers include lightweight source/checkpoint hashes/stat checks and synthetic scalar checks; no cache values or NN. Their preceding imports are excluded.",
+    "Diagnostic run timer includes verification, bounded emptyGPU wait, checkpoint/subset loading, diagnostics and backward; preceding imports and final receipt serialization excluded.",
+    "384NN windows and8 local input-gradient backward calls are separate cost measures; no optimizer or encoder/head. Additional hook statistic arithmetic is included in runtime, not relabeled as zero arithmetic.",
+    "Administrative review, SSH/copy, local archive and timers before imports/after final serialization not comprehensively instrumented; no FLOP equality claim.",
+    "Inherited D16/D15 and earlier costs remain provenance, not new D17 computation. Independent review of source and scalar receipts is not an additional neural replay."
+  ],
+  "goal_complete": false
+}

@@ -1,0 +1,29 @@
+{
+  "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+  "jobs": [
+    [
+      2026,
+      2
+    ],
+    [
+      1024,
+      2
+    ],
+    [
+      1024,
+      1
+    ]
+  ],
+  "original_failure": {
+    "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+    "reason": "GPU already busy: GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+    "process": {
+      "pid": 1346529,
+      "uid": 1012,
+      "startticks": 788549137,
+      "cuda_visible_devices": null
+    }
+  },
+  "gate_sha256": "0ad69424fb76f827b268b63f7d45cbd954ae514c7f687d13a870e66e52322482",
+  "source_sha256": "ff10edf3d8b7b347edd7823efc05e04d4bacec2ac9e117822655c5e31414e3ff"
+}

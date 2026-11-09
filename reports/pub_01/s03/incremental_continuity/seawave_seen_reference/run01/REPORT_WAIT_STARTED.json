@@ -1,0 +1,30 @@
+{
+  "process": [
+    1812007,
+    1012,
+    791424876
+  ],
+  "upstream": [
+    1748466,
+    1012,
+    791000426
+  ],
+  "CPUs": [
+    40,
+    41,
+    42,
+    43
+  ],
+  "protocol_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "trigger_sha256": "e32a196d02c818f5f126a084efddbcbd4c4cfaa2c2f5f968e8a9c2532818989a",
+  "source_review_sha256": "9c0831201ccf120d69ffccc503e91cc2712bf81536704856217d68303e0560ec",
+  "report_sources": {
+    "pub_01_s03_ss07_seawave_seen_report.py": "75bd2d8068b84904203567ae4edf03fc83645182646f5e735cc524af8f0caebf",
+    "pub_01_s03_ss07_seawave_seen_report_cost.py": "dec630336f230bb36429195abdf734e8d6564f5d6b853cd3c4aeb9cc27f99a04",
+    "pub_01_s03_ss07_seawave_seen_report_figures.py": "7edc7ef38d80773b751645f5afbe5088378e6a387dcf759114e40bee8dd8cb50"
+  },
+  "common_support_helpers": {
+    "pub_01_s03_ss07_contrastive_history_report.py": "550913f9c880c44687fbac280675db0285c42ee9bfeef18ee2b7a1619a149a08",
+    "pub_01_s03_ss07_contrastive_history_report_cost.py": "d07c8ab6bfb5fbae8292432da8ca4abac276846d8dadc780bf792c906709dbfd"
+  }
+}

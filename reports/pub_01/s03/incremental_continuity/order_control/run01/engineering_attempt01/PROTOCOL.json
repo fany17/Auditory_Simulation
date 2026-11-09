@@ -1,0 +1,828 @@
+{
+  "frozen": true,
+  "time": 1793621124.2208579,
+  "source_pins": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/input/pub_01_s03_ss07_error_decomposition_core.py": "f1f69e250bc1c82a2d78968c9f40f20c8dd1f5e557dd46b6b007e7e5815f31de",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/input/pub_01_s03_ss07_error_decomposition_prepare.py": "1371fe888b5c23b7b2631db0adb552359e7b868fe5d371cf6fb7d07f6d6e9fa2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/input/pub_01_s03_ss07_error_decomposition_run.py": "fc4e5b4e122c35a26b0129c0637d819c1c24e67a509b8478e672e325dfb92e49",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/input/pub_01_s03_ss07_error_decomposition_queue.py": "30c84073fd040c117c54a6642ed6661009dc0d040e4d0ce32c23908fba143957",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/input/pub_01_s03_ss07_error_decomposition_report.py": "74363dcf1da7682a2b6b6d2f4439e0ba58b7ad1b555b7ee3ef68c723453a878d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/PLAN.md": "56e55836d537fbf87aba13da8f80455fdcb07a202ecc819ee182ca0160860cf3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/COORDINATOR_MATH_AND_SCOPE.md": "a943e17697a624b6eb7a8c4ca586ae678a72948d200da4b7a42497ba7c799331",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/SUPPORT_MASK.json": "c605f276ca97562fd20802bacdc6caf5ccbc9dd29c58761e88efb70f9d452e62",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/PROTOCOL.json": "b8e3552f33557be86609aa244c6d837ef63d9d765f518b5e3df58b46d89289f3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_core.py": "f913bd0425293b0f81cb60537a3b9851506479489197a9d1a6a595be8897fc85",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization_core.py": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_train.py": "f7706357f7814d6c27e575d01d68101db0c549f30fd04387f1ee2d4f38905c04",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_prepare.py": "679e5824be1df11852c8e601423aed428a6613dbda0d666928acc6149d935981",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/input/pub_01_s03_ss07_full_ft_history_queue.py": "be9e9244756635a5d82e152f699dadc2e1b10bb6d096993b5687c3198a4784a6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/PLAN.md": "a073b050d6d3255896014e4bfec6804da4d9b5a3ec5fd70a6080fd15c7810e57",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/COORDINATOR_DECISION.md": "28ef71a9d287301349b76b75513d0ae997a9bd2016be3d1e98f6407dbce27252",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/PROTOCOL.json": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/TRAIN_TRANSFORMS.npz": "b61d80fa5af2ef81b241ab26c1e77d9221ca06a2a5f2acc51d1dbd6f9647507c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/Ccap_lambda0.01_COEFFICIENTS.npz": "d85075dc49ffb0e5c1cae56821428333f072afe5ef97ed69f96b243128db2b12",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/P_FT_BASELINE.json": "8b6231b512e947cda9880568f4d8e10ab4d044e0042b7e060d44c417961eb287",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/Ccap_lambda0.01_METRICS.json": "ebbda4abdabfcbc8a2bbce2bba697e38e48692243fdada01149176d9a1ee5eb6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/TRAIN_TRANSFORMS.npz": "f5de93ec1c8225fa940525618c5dc457d2deb822f52da32475ee53aae05c4392",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/Ccap_lambda0.01_COEFFICIENTS.npz": "871743334b85c7ed55ab2eac824508e82e53d82cd8df53e3b969b7e60684d609",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/P_FT_BASELINE.json": "0747207d9583d9b9644f4265bd3b50af6dd7bb12962a046bf0ecb9dbdeda0eb3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/Ccap_lambda0.01_METRICS.json": "c4fa39337606469190890866d1dd3610ca1bb6b9d5ac91090dbf71d59ebb5be7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/TRAIN_TRANSFORMS.npz": "5ac2ce2e9f469276f284bc77a313ca183cb8a81440ca8d96453a856848095ff3",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/Ccap_lambda0.01_COEFFICIENTS.npz": "0660f10af60d68af1ff4f5cd7e4d853b934667dc6d0868380ef44559b673fcba",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/P_FT_BASELINE.json": "fa7d7b24c65a9f0714da414ecaffea3ceac5f6a622a4fc9728b053d5e2f01c27",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/Ccap_lambda0.01_METRICS.json": "3e763b0faffce1e3ffdb438454feebba5c49ec5ae1fb805584c159be6cd69cbb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/PROTOCOL.json": "47404c336f76365c48fb847ac59007067420ea6701a82f806c82418c7b02221c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/coordinator_review/REVIEW.json": "e97d214a5d362435c045daa814fcb385d8f8b6dc82463866f5ec17cf930c0cc7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102/coordinator_review/ORDER_HYPOTHESIS_EVIDENCE.json": "cf1887563383e5c976033aec090099afea86a462db23edf3ee8ce2fbd5269c14",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/PLAN.md": "151f327e615940d2cfaa9896b012cc6b203df903e56d3ca59e1cc1c71d99ef25",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/input/pub_01_s03_ss07_order_control_core.py": "63920fdbc708368a7d6e0df128d8692c21e9e0ea8096e736cefbd265bf9671e7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/input/pub_01_s03_ss07_order_control_prepare.py": "fbfc74aaa28e80d24adbd3e9563fe201b27bacd4e89413123ba387b3a5066e7f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/input/pub_01_s03_ss07_order_control_queue.py": "6bc898a50b817da856203ad32bb40dc43d9763fb54d508f91fd4635d447df455",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102/input/pub_01_s03_ss07_order_control_train.py": "46d352572fd6d428ef6ac14e70a51302fdd00610edf9288945ac74fdb5257e68"
+  },
+  "inputs": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_latent.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_latent.npy",
+      "bytes": 1551077504,
+      "mtime_ns": 1793519380466263092,
+      "sha256": "6e9ccf582d317438245a664c3bc6e659f206be181a091b16209af281294ba5dc"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_P.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/train_P.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1793519380466263092,
+      "sha256": "333bfa8998c1d2bc0cec10af6664809d5109ec99c8c39061ef800975c43902bc"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_latent.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_latent.npy",
+      "bytes": 187392128,
+      "mtime_ns": 1793519319851260499,
+      "sha256": "ec60d89db49665804093bcb0c6337632178f288199dc1994ee39024236dd8745"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_P.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed1024/val_P.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1793519319851260499,
+      "sha256": "b15dd6c2a79a6016fb08a7d7dd4efb52a8463ea3aafca83014bee0f60d1b9efb"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_latent.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_latent.npy",
+      "bytes": 1551077504,
+      "mtime_ns": 1793519515987268891,
+      "sha256": "35798c547a9858af40e9b5754e794daea518058cfdcc1106684c1bbdc17846d1"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_P.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/train_P.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1793519515987268891,
+      "sha256": "3b06d89ad343918a347dda8cca200a07a95825150853dad348d441e30c067786"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_latent.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_latent.npy",
+      "bytes": 187392128,
+      "mtime_ns": 1793519455105266286,
+      "sha256": "cd476f85418efd32cd3e80137585776aa406fffbc6974b90adda66abe0e9daa8"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_P.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed2026/val_P.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1793519455105266286,
+      "sha256": "4cb0d52ed450d3bdccab7518d373e07ab6ee0f07f037cf258247a4ab90290607"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_latent.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_latent.npy",
+      "bytes": 1551077504,
+      "mtime_ns": 1793519641003274240,
+      "sha256": "592e60dd295ae70485babe1cb4bd3417da80cad435e322f0b932b476a39517ab"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_P.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/train_P.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1793519641003274240,
+      "sha256": "6b93862d91a19bf903790965025fb2806291505fcfaffc6a1ffab820dabc6744"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_latent.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_latent.npy",
+      "bytes": 187392128,
+      "mtime_ns": 1793519580706271660,
+      "sha256": "e4e48792bcd8e67569e8dcda128ef6a0011ef5fe85e994b92f587d31ccdd3d61"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_P.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/seed31415/val_P.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1793519580706271660,
+      "sha256": "044d94d9a1d89b324922c50e2de314a75e57c57e7deb93af2997c72e82e9625a"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy",
+      "bytes": 193884800,
+      "mtime_ns": 1792065674893059646,
+      "sha256": "2759e8ed9674fb8e23a4946adbc0c683a9babafaadfed0739fd18fcd9b8818ee"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/val_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/val_envelope.npy",
+      "bytes": 23424128,
+      "mtime_ns": 1792065675067059654,
+      "sha256": "8ee8b603a217641136dab109e696ac55dd3e69c848ea8ae26777df6e022217a5"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_10_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_10_1_envelope.npy",
+      "bytes": 315256,
+      "mtime_ns": 1789831812611473625,
+      "sha256": "a6b143619445e2ec44b87f2b7d2e6117c1150e964b15db9700a5702372ab160d"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_11_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_11_1_envelope.npy",
+      "bytes": 405320,
+      "mtime_ns": 1789831822235474037,
+      "sha256": "bc2f0818750a9daea5ab18bd29802e5bbc0a92ee1e41447a52e4ba60d1f89113"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy",
+      "bytes": 338040,
+      "mtime_ns": 1789831814755473717,
+      "sha256": "5364fa93a89f577d21e7d0f272d516947da11c338ebd7be11ca866a834a12fd9"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy",
+      "bytes": 389240,
+      "mtime_ns": 1789831818403473873,
+      "sha256": "088ec89428374b5e72012199e2c08ef87712dbd1d1cbfc0812e1342f1ea4036f"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy",
+      "bytes": 512880,
+      "mtime_ns": 1789831846100475058,
+      "sha256": "9f1554c9b5d525a2a9681be6ee67a0db18a3d7167deb05328c3ba583ccc1fcaa"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_2_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_2_envelope.npy",
+      "bytes": 436080,
+      "mtime_ns": 1789831827920474280,
+      "sha256": "c05d1873f4cc70027f3ffa51f628ac7747e711e3adacbf1a11aea652cb2a6c24"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_1_envelope.npy",
+      "bytes": 538880,
+      "mtime_ns": 1789831849401475199,
+      "sha256": "29551283d970523aeb4266c8fdbbb9422c49db0c1a73d259be021ab728dce7ec"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_2_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_2_envelope.npy",
+      "bytes": 588032,
+      "mtime_ns": 1789831851453475287,
+      "sha256": "b85fd6e9a0bcdfbc7b09cbab52280a7483e8be6faf543f17cdc69ae68c03fa5e"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_1_envelope.npy",
+      "bytes": 479792,
+      "mtime_ns": 1789831837941474709,
+      "sha256": "6618f59f1547b3d7287f2147886d39bc41ea83c7924384afe82eaf0f5a80d6ba"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_2_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_2_1_envelope.npy",
+      "bytes": 405080,
+      "mtime_ns": 1789831822127474032,
+      "sha256": "6fd957b963132e8c4845ac0961f55d62338849f2567fea97c66ac7cb8f36263f"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_3_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_3_envelope.npy",
+      "bytes": 492904,
+      "mtime_ns": 1789831840503474818,
+      "sha256": "1f4d248b2b76ae0780c972237ee3dccc5c51bf2e8e4b36038c79d3c6093327e2"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_4_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_4_envelope.npy",
+      "bytes": 416608,
+      "mtime_ns": 1789831824131474118,
+      "sha256": "58761e661e06ff6bc9a0ba6b376103e7349f78c72a066a87a70a99140c06e895"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_1_envelope.npy",
+      "bytes": 464056,
+      "mtime_ns": 1789831834016474541,
+      "sha256": "c15027d688695b12aa690d801f3956aaf72df364a3c931930c7c7973c907b6fe"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_2_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_2_envelope.npy",
+      "bytes": 465880,
+      "mtime_ns": 1789831834542474563,
+      "sha256": "c80ee342e3e80f331641a07efc56c7f0ab97397c86f78502a6b892a6213ef411"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_3_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_3_envelope.npy",
+      "bytes": 488048,
+      "mtime_ns": 1789831839457474774,
+      "sha256": "bae32a680e7d6e3521d88430977e08159f4ba7e046225de82b93377bd6a728d4"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_1_envelope.npy",
+      "bytes": 426928,
+      "mtime_ns": 1789831825857474192,
+      "sha256": "1255e98f697fbd54b4ecc2b0f171a92d0a668516224aa3fa1d815160fa835084"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_2_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_2_envelope.npy",
+      "bytes": 426840,
+      "mtime_ns": 1789831824598474138,
+      "sha256": "b1fa1f0d2d381623561cace42b3695ddce3af0a74642f0746ae200b9131774b7"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_8_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_8_1_envelope.npy",
+      "bytes": 382672,
+      "mtime_ns": 1789831818336473870,
+      "sha256": "04556e973ff2e8cbf2879b26151fefc05d5678e4d144bbdeaaf01da5d57bfd44"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_9_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_9_1_envelope.npy",
+      "bytes": 331400,
+      "mtime_ns": 1789831814495473706,
+      "sha256": "041f31c931b9cea753d00eb1000445097ddc1c78b5e110616de094d0c359a9fb"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_10_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_10_envelope.npy",
+      "bytes": 427816,
+      "mtime_ns": 1789831826037474199,
+      "sha256": "c4705a97324f8cfc630458e397e9a11f08b54350c24a73276c34037b3edbf37e"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_11_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_11_envelope.npy",
+      "bytes": 460936,
+      "mtime_ns": 1789831832522474477,
+      "sha256": "fbc49fdb69830208cfe8674c314f045f119e508ddeae4471de90142a977d2745"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_12_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_12_envelope.npy",
+      "bytes": 538840,
+      "mtime_ns": 1789831848431475158,
+      "sha256": "ccb8bb9b63d771ebc9244946ae12004c28faf2c96415bcb5e94f05ad33c5c610"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_13_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_13_envelope.npy",
+      "bytes": 360320,
+      "mtime_ns": 1789831816416473788,
+      "sha256": "aeb422a4522e8b65a5ad980859ad5f1fd72470b9ff0f0fc9f6a45c467c2b927c"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_14_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_14_envelope.npy",
+      "bytes": 515144,
+      "mtime_ns": 1789831846432475072,
+      "sha256": "3f66ea5f9b2b5966b4a90131030db34d267beaec1ec5869eff5c89c9a1942ae9"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_15_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_15_envelope.npy",
+      "bytes": 472072,
+      "mtime_ns": 1789831835985474625,
+      "sha256": "74c2c058abef2a3b4938dd0fe50c39361b95977611c959fea9f197e51b3779e5"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_16_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_16_envelope.npy",
+      "bytes": 395736,
+      "mtime_ns": 1789831820255473952,
+      "sha256": "c4fe3056843ebd995bb5a601ba9899558d4538f657dc8f6f0e433b7eb13c5cf3"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_17_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_17_envelope.npy",
+      "bytes": 467328,
+      "mtime_ns": 1789831835515474605,
+      "sha256": "57376f0f48e4fc8fc8fe83718e3f2188f8d5c41fc02ebd66aa70f9796986d18c"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_18_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_18_envelope.npy",
+      "bytes": 590744,
+      "mtime_ns": 1789831852141475316,
+      "sha256": "809a58a1c63155140a39022c425eea656b7420a03b6b901f4c2922db0ec0b6c7"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_19_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_19_envelope.npy",
+      "bytes": 523816,
+      "mtime_ns": 1789831848079475143,
+      "sha256": "c76baea65b3e378e3879999a87f2b1754ee7e7a271a56859563424621ce1b9b1"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_1_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_1_envelope.npy",
+      "bytes": 488544,
+      "mtime_ns": 1789831840197474805,
+      "sha256": "a52c07eac49971dcc7ba9805ba42ee8ad8bc8d69c8da60d443b20471c9111095"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy",
+      "bytes": 407792,
+      "mtime_ns": 1789831822688474056,
+      "sha256": "68b12f327c8bec8a3c9024d946ff31f76013cee108edea80e17e6e9f60966cdc"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_21_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_21_envelope.npy",
+      "bytes": 540304,
+      "mtime_ns": 1789831850088475229,
+      "sha256": "ddde49040dda50ef4607d55b6de2cc602418cab648361a0c6155e421692523fc"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_23_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_23_envelope.npy",
+      "bytes": 433496,
+      "mtime_ns": 1789831828143474290,
+      "sha256": "a6c014d9054ff5d6da5a6fc08608ed4e3bd8fce5a6f4fcf3a509f30dcf732f18"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy",
+      "bytes": 508480,
+      "mtime_ns": 1789831844472474988,
+      "sha256": "b2729e58566baa816ab28afba381541d9cfc4dc1b6c03905d8223a6c8e37832d"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy",
+      "bytes": 404432,
+      "mtime_ns": 1789831820455473961,
+      "sha256": "44795e6fe74e3280a8a974729387bbbef472844d7013882fd4ca68fa4e273a9c"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_27_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_27_envelope.npy",
+      "bytes": 447568,
+      "mtime_ns": 1789831829988474369,
+      "sha256": "ab2fe1bfa7b08c26d3010388c1321035b425bceb4e9109cc7a93e33c9b404f98"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_28_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_28_envelope.npy",
+      "bytes": 413736,
+      "mtime_ns": 1789831824005474113,
+      "sha256": "b15421d245a899eed9cf8cfb3824c795925ac921f7fde1c1f5acc310dabc65e1"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_29_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_29_envelope.npy",
+      "bytes": 461640,
+      "mtime_ns": 1789831833504474519,
+      "sha256": "c93f5e743a7f1c9d9bc6fb8a71d2056fcc31538c156b5de7a6aaf7090e024169"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_2_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_2_envelope.npy",
+      "bytes": 581136,
+      "mtime_ns": 1789831850462475245,
+      "sha256": "bf1b622122564bc8fe179788fc25e07379db9e090abb80295d92b670519b3ddd"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_30_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_30_envelope.npy",
+      "bytes": 498336,
+      "mtime_ns": 1789831842498474904,
+      "sha256": "59e5f49db1f23679dfff3009d00b416ebff09cc939d5fccd1b11663ab1d04b7a"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy",
+      "bytes": 372480,
+      "mtime_ns": 1789831816641473797,
+      "sha256": "11854ab5914e403e73bb01dc423a4a33a02506ad7fcada615faaa663bfb6f76c"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_5_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_5_envelope.npy",
+      "bytes": 509736,
+      "mtime_ns": 1789831845417475029,
+      "sha256": "9478f6569d16f6265e0bc2f7d898c9497dff627480f76c46273c4ba2b58acc47"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_6_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_6_envelope.npy",
+      "bytes": 432640,
+      "mtime_ns": 1789831826821474233,
+      "sha256": "290ad3a0776443fc819bf045741f4711d5b10ee4e30bf3458c3ccec12ac2c570"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_7_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_7_envelope.npy",
+      "bytes": 504480,
+      "mtime_ns": 1789831843454474945,
+      "sha256": "fa6734cd9acbdd07055cd85698f9559266d3f6bc84a0455eed831e5ac4eb941a"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_8_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_8_envelope.npy",
+      "bytes": 518840,
+      "mtime_ns": 1789831847373475112,
+      "sha256": "286d162f6dff806b8729da5851601198223bfe0d729dc3210e024938ea755643"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_9_envelope.npy": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_9_envelope.npy",
+      "bytes": 610136,
+      "mtime_ns": 1789831852801475345,
+      "sha256": "087ec4159e4c989943b2876d1b34ffd158e01207b71df3532614c30da099d303"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed1024/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed1024/last.pt",
+      "bytes": 667843,
+      "mtime_ns": 1793615232955364580,
+      "sha256": "4c691ad0bfeb5cd244aef5d9f87c244fe50ea8ae7ae74cf73bea701521fc83f6"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed1024/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed1024/last.pt",
+      "bytes": 667843,
+      "mtime_ns": 1793615231647364524,
+      "sha256": "3d1741a2cdfeecb07fa8b6ef3813e3ede750c943bd1d3239fd8de13987a957ff"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed1024/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed1024/last.pt",
+      "bytes": 663811,
+      "mtime_ns": 1793615589359379830,
+      "sha256": "2f008cf918b8f0c5eebe6b204fc02255134f7565f99a0d01c094804e50c125fb"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed2026/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed2026/last.pt",
+      "bytes": 667843,
+      "mtime_ns": 1793615581734379504,
+      "sha256": "c2a1ab592a23bd7a7bd0fc34a81c36314f84161c8abd8ac9ddf9a457ed9a10e4"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed2026/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed2026/last.pt",
+      "bytes": 667843,
+      "mtime_ns": 1793615943889395000,
+      "sha256": "1b93884a4a1610f027895f98db7700dced0d4c7f44179d091e7cdff6929a5bb6"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed2026/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed2026/last.pt",
+      "bytes": 663811,
+      "mtime_ns": 1793615918172393900,
+      "sha256": "89afa591d7af80e78d735cfb271a0c6c0b775f90fb64eadb7ff9acc3f567f585"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed31415/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/H_full_seed31415/last.pt",
+      "bytes": 667843,
+      "mtime_ns": 1793616262193408620,
+      "sha256": "e22f02cc913b7e428b5489dac6402ec61f23fd852f094c25db57738b90415727"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed31415/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/C_match_seed31415/last.pt",
+      "bytes": 667843,
+      "mtime_ns": 1793616279173409347,
+      "sha256": "afa7879effb6bd2b397c80a9fb0ed10c005cdc055a3ba510b36a062d8294dc2e"
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed31415/last.pt": {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102/fits/P_prior_seed31415/last.pt",
+      "bytes": 663811,
+      "mtime_ns": 1793616618779423878,
+      "sha256": "4cf059e7236ae744a9c0078767a51d6218aca1bb8656186beb41b417cea9183e"
+    }
+  },
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "arms": [
+    "H_full",
+    "C_match",
+    "P_prior"
+  ],
+  "epochs": 20,
+  "train_windows": 252454,
+  "train_effective": 248620,
+  "val_effective": 30059,
+  "batch_size": 64,
+  "last_batch_size": 38,
+  "updates_per_fit": 78900,
+  "updates_total": 710100,
+  "permutations": [
+    {
+      "seed": 1024,
+      "epoch": 0,
+      "sha256": "1d3612c34ad5588bc14a72aeaeee990480bfafda6769049e9f4ab70c191859f9"
+    },
+    {
+      "seed": 1024,
+      "epoch": 1,
+      "sha256": "5e0b369d86eec7be74d6715438d80278667159453cd8bad413552dcf26878cd8"
+    },
+    {
+      "seed": 1024,
+      "epoch": 2,
+      "sha256": "c19b152b3ccf390ed13a7565d1568f9782eaff1207a1c6af24698a9eb2904050"
+    },
+    {
+      "seed": 1024,
+      "epoch": 3,
+      "sha256": "6334ffe86b25e90b52fbe913d7e173252d27d44a0fd72c6f5a9101cd059ad8c1"
+    },
+    {
+      "seed": 1024,
+      "epoch": 4,
+      "sha256": "8cb91d8203ae59642db73b0cd4b8a7a4ccb0f27c125ad7cec047dfa67a5be15d"
+    },
+    {
+      "seed": 1024,
+      "epoch": 5,
+      "sha256": "c07b04c787a292c371be1e75d4daad2437af78e469181751cd844902d8eb4424"
+    },
+    {
+      "seed": 1024,
+      "epoch": 6,
+      "sha256": "544b3b367eb534ad7f2abccd1c58fcccc59ce95c87f0384a84f0c8c6586190e4"
+    },
+    {
+      "seed": 1024,
+      "epoch": 7,
+      "sha256": "6a8c8a0d9783dbd047168274d652098853bb759aa454e5873398e6e3ebcb0abf"
+    },
+    {
+      "seed": 1024,
+      "epoch": 8,
+      "sha256": "99031e00ef77b191185e003ad77ee52f523c571f655c2584990ec9211d5ae38f"
+    },
+    {
+      "seed": 1024,
+      "epoch": 9,
+      "sha256": "d9161878ca93d3ad73374163e143dd26a1b94be9ed883cca1747f8dba8b8ae91"
+    },
+    {
+      "seed": 1024,
+      "epoch": 10,
+      "sha256": "f90e930c4d86e504d2f4b5330019ee394021ecdeb307f3da737754d4a65b30d4"
+    },
+    {
+      "seed": 1024,
+      "epoch": 11,
+      "sha256": "295a7c860fad77c3e17105008378833b60396cea0ce8a2e354bbdae2d83b976b"
+    },
+    {
+      "seed": 1024,
+      "epoch": 12,
+      "sha256": "cbc69b0c497bd1feb58f46487b433b1f864ae5348966d3d9c745bff57848bc0f"
+    },
+    {
+      "seed": 1024,
+      "epoch": 13,
+      "sha256": "364399095b1edb5def675265d57500b5c4bf4ded5fc8b805da7ab0b1818d8452"
+    },
+    {
+      "seed": 1024,
+      "epoch": 14,
+      "sha256": "784572c5eae85ed8a68c8752085bc4d87dc6e516850f511e55e1f06a460545fe"
+    },
+    {
+      "seed": 1024,
+      "epoch": 15,
+      "sha256": "29a4eb4e59cb009aef7f45cd6cdc87b5db86294d47c20c12db137a27acfe1242"
+    },
+    {
+      "seed": 1024,
+      "epoch": 16,
+      "sha256": "78a885fb30e3084708dbbcf1166e0adff0742bf9bcbe390a031d21f73fa79239"
+    },
+    {
+      "seed": 1024,
+      "epoch": 17,
+      "sha256": "4ddf27d1b00a014dcfa5a4b35875521518101b37e95346a5eb260a9c772dfa23"
+    },
+    {
+      "seed": 1024,
+      "epoch": 18,
+      "sha256": "00f04d533804297ecc42ef886c43c8432801406414ffe87e6f5fb893b5cebaad"
+    },
+    {
+      "seed": 1024,
+      "epoch": 19,
+      "sha256": "e91703ec103ffaf7e3721a9c592372e647a3c85e0df8186effde57756fc6b07c"
+    },
+    {
+      "seed": 2026,
+      "epoch": 0,
+      "sha256": "5b515d75ef7ff4266ab37959275f50f02b0fd672791a02f0b68ee07dee704b50"
+    },
+    {
+      "seed": 2026,
+      "epoch": 1,
+      "sha256": "8d6cad742db1bcd2f12f69cfa968319170199129ca3266988fbc0f3af6c14d7e"
+    },
+    {
+      "seed": 2026,
+      "epoch": 2,
+      "sha256": "7f7a346a9a0c82bf99fac24d8d7b063e21e7fdb225c748014b5f6139a0ec1884"
+    },
+    {
+      "seed": 2026,
+      "epoch": 3,
+      "sha256": "c6f8b6da7f8da0cf45f6191c96e4a6ac8da5502fb5132a3efaf7c92266a3adee"
+    },
+    {
+      "seed": 2026,
+      "epoch": 4,
+      "sha256": "df8f9d0efa8e3a4183bfde05266e55b4800cd27092ea46e5c36040d5029f1fa9"
+    },
+    {
+      "seed": 2026,
+      "epoch": 5,
+      "sha256": "20e0e8b55537abb99243ff2eef97ecc8d7b40e5b6b23ed77ecf96332a4d6dadd"
+    },
+    {
+      "seed": 2026,
+      "epoch": 6,
+      "sha256": "77e720de1648e1a71f52c190a17cde7676865b33f082e414e3a658f345d6b5ed"
+    },
+    {
+      "seed": 2026,
+      "epoch": 7,
+      "sha256": "62679a3d74efb10321c12ba4671dc09d55122e495ace4504ab6dca5fa7754f53"
+    },
+    {
+      "seed": 2026,
+      "epoch": 8,
+      "sha256": "fce1dac07096b647a171d3fe50dc5be74954f330a25df840d110b9490b899b4d"
+    },
+    {
+      "seed": 2026,
+      "epoch": 9,
+      "sha256": "d778573fbdbb90600a7ce4bd35fbc6fc3016c02fe92eee23ec6e3556671e5fe6"
+    },
+    {
+      "seed": 2026,
+      "epoch": 10,
+      "sha256": "60d185e3fa42de1a1ee02b9d72ea47803c227c6ea66392ae11436c847d796b39"
+    },
+    {
+      "seed": 2026,
+      "epoch": 11,
+      "sha256": "b6e958ef5bfcf682b6f0c81195e8183ea6d45a7d4bf587de0aacd87e71e60313"
+    },
+    {
+      "seed": 2026,
+      "epoch": 12,
+      "sha256": "9b93ed7acb2b590faf193533b17ec1dd96e68bce76d5b24a4e38b3f1a1311454"
+    },
+    {
+      "seed": 2026,
+      "epoch": 13,
+      "sha256": "1d6e52b6bf15170c4c2311c7a880a0d2d6879624e9690a0652e78424c8a73a0a"
+    },
+    {
+      "seed": 2026,
+      "epoch": 14,
+      "sha256": "c019715d580c0bdec8b30d02d976a240af1525616d0ba92afebfa7fd10cbe482"
+    },
+    {
+      "seed": 2026,
+      "epoch": 15,
+      "sha256": "b7e06607490a1e9e74d7cf35505680ccf6f7a22bd9a78f2b60e309d437e65a6b"
+    },
+    {
+      "seed": 2026,
+      "epoch": 16,
+      "sha256": "fe7662bb501fe5517afae80c4e2248ddf6f45f616f9b8b84f8779053e5df7a64"
+    },
+    {
+      "seed": 2026,
+      "epoch": 17,
+      "sha256": "b682308cc33ea75b8123aeaff0aaa10576e40ea28f53635e4a9d8abf6252d444"
+    },
+    {
+      "seed": 2026,
+      "epoch": 18,
+      "sha256": "e16ec001cc1d59d0b7f3e07caad9626979a7308e2909b77e81ba813c03b1f92e"
+    },
+    {
+      "seed": 2026,
+      "epoch": 19,
+      "sha256": "cf2a5468a94181a80bd8182b8dc906d5711d259ab005d751b9a7583e5daf0e30"
+    },
+    {
+      "seed": 31415,
+      "epoch": 0,
+      "sha256": "db99d2754f31f197d930b5644b36ab89da74fdee39d2ba913f0986c397abc3ad"
+    },
+    {
+      "seed": 31415,
+      "epoch": 1,
+      "sha256": "bb588132ce5e9e9960ca6c695eba43ed94de1f81d1ad94971d0705e4e1536fda"
+    },
+    {
+      "seed": 31415,
+      "epoch": 2,
+      "sha256": "eae29298331a759be1d76224d97b816d518430a27dce8cf1a20c65d972c8c1c2"
+    },
+    {
+      "seed": 31415,
+      "epoch": 3,
+      "sha256": "2db4433824628739e9c764e363317ec047a8ed52f7f98723b51d6180347efac4"
+    },
+    {
+      "seed": 31415,
+      "epoch": 4,
+      "sha256": "a2db741d9689ef5d379eb4f4b02a8cc3c65d6ee9d875ca75291802634304e130"
+    },
+    {
+      "seed": 31415,
+      "epoch": 5,
+      "sha256": "6260d605284587a03553629db8d6b79e205c649e9bb98ac4f630b722aff00e63"
+    },
+    {
+      "seed": 31415,
+      "epoch": 6,
+      "sha256": "8e318d2873f8a70f8ab260f73917528bcc9780953a48b0d694c7bc44b667fd91"
+    },
+    {
+      "seed": 31415,
+      "epoch": 7,
+      "sha256": "bfb1af5695e9e4363d0614eeab66b613ba9068a61bb6f93738704d26e4149d20"
+    },
+    {
+      "seed": 31415,
+      "epoch": 8,
+      "sha256": "7945465d4cf78759e9b87a1074259c1c6ca56f871b51e1612b19c0c2359d5b89"
+    },
+    {
+      "seed": 31415,
+      "epoch": 9,
+      "sha256": "06b1cd4b5b4afae52eaf08e1a5c8aeedf94b1070a908163cb520675d8a68b061"
+    },
+    {
+      "seed": 31415,
+      "epoch": 10,
+      "sha256": "8d84835e033d461b1d78c6e3c6b0b07d079f074e33a889335d09dbb78e69acaf"
+    },
+    {
+      "seed": 31415,
+      "epoch": 11,
+      "sha256": "aba34a982056ea8e162217302d2f42443734cc49129be88bd10f73006ff20fa1"
+    },
+    {
+      "seed": 31415,
+      "epoch": 12,
+      "sha256": "ec62a3b3db2a4f6b76c95b03a36dc3150ea4db03e34c4315721c2b5873275910"
+    },
+    {
+      "seed": 31415,
+      "epoch": 13,
+      "sha256": "7be7e989bf9cb91348fd783d7e16d5ea54fd79ba34be88995564b3518c2edd80"
+    },
+    {
+      "seed": 31415,
+      "epoch": 14,
+      "sha256": "1d90652dd209a843079069286ac2688bac9564b6c5580d569bc538b4f6aeeeee"
+    },
+    {
+      "seed": 31415,
+      "epoch": 15,
+      "sha256": "417025537b9a92dc3976b52a6cbaee76902afb38401314dc03ed34b71239a411"
+    },
+    {
+      "seed": 31415,
+      "epoch": 16,
+      "sha256": "8f40362911a8297f3f6d30dc26acf7a2ca4de6c5caedf9cc1cd5241dca6a72f1"
+    },
+    {
+      "seed": 31415,
+      "epoch": 17,
+      "sha256": "b69df9d6c85cd85759aea9a703e97c9b60f4bcf28a0077c7298e17464cc5a057"
+    },
+    {
+      "seed": 31415,
+      "epoch": 18,
+      "sha256": "31947c0c2b785a7426ba86a924705c9a712b3d4f4dc60c94e7b43b81a57ad9e6"
+    },
+    {
+      "seed": 31415,
+      "epoch": 19,
+      "sha256": "d4e146eeed14870d793fcd657ebf4dc0159a494baa9c8acb4c6d93f61c63584a"
+    }
+  ],
+  "permutation_stream": "NumPy default_rng(SeedSequence([seed,20261102,epoch])), shared H/C/P per seed/epoch; independent of torch initialization",
+  "intervention": "Only global TRAIN-window order; history source remains original record-local (5,3), older(9,7)",
+  "offline_TRAIN_epochs": [
+    -1,
+    0,
+    4,
+    9,
+    19
+  ],
+  "old_reference": "All nine D12 last19 once TRAIN only, same batch64; compare physical to D13",
+  "selection": "VAL0..19 vs incumbent-1; strict > and earliest tie; selected VAL replay and H older once",
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0
+  },
+  "formal_NN": {
+    "train_updates": 44751600,
+    "val_epochs": 5410620,
+    "offline_TRAIN_nonzero": 8950320,
+    "selected_VAL": 270531,
+    "selected_H_older_VAL": 90177,
+    "new_models_total": 59473248,
+    "old_last19_TRAIN": 2237580,
+    "total": 61710828
+  },
+  "new_encoder_head": 0,
+  "engineering_NN_cap": 16384,
+  "engineering_optimizer_updates": 0,
+  "budget": {
+    "wall_seconds": 21600,
+    "max_idle_GPU": 2,
+    "RSS_each": 8589934592,
+    "GPU_allocated_each": 2147483648,
+    "root_bytes": 134217728,
+    "each_disk_free": 21474836480,
+    "new_arrays": 0
+  },
+  "forbidden": [
+    "old test",
+    "DTU",
+    "ds004408",
+    "new datasets",
+    "new weights",
+    "new encoder/head forwards",
+    "new loss/LR/capacity",
+    "permutation chosen by scores"
+  ],
+  "acceptance": "Check optimization/order effect first; no method innovation or confirmatory generalization claim; preserve negative outcomes"
+}

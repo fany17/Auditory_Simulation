@@ -1,0 +1,50 @@
+{
+  "stage": "INTERRUPTED_FORMAL_ATTEMPT01",
+  "C_exact_failure": {
+    "time": 1793642684.3780277,
+    "traceback": "Traceback (most recent call last):\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py\", line 72, in <module>\n    try:run(args.seed,args.arm,args.device)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py\", line 43, in run\n    if positions%500==0:guard();assert time.time()-start<86400\n                        ^^^^^^^\n  File \"/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_runtime.py\", line 47, in guard\n    assert min(shutil.disk_usage(ROOT).free,shutil.disk_usage('/sata5/fanyu/auditory_simulation_m6a').free)>=20*1024**3,'20GiB each disk'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 20GiB each disk\n",
+    "optimizer_updates": 23000,
+    "update_positions": 23000,
+    "invoked_component_counts": {
+      "current_encoder_prefix_windows": 2129278,
+      "current_projection_windows": 2129278,
+      "current_head_windows": 2129278,
+      "frozen_encoder_prefix_windows": 2097061,
+      "attention_query_windows": 2097061,
+      "prior_projection_windows": 0
+    },
+    "automatic_retry": false
+  },
+  "C_TRAIN_presentations": {
+    "optimizer_updates_bound": 23000,
+    "TRAIN_target_window_presentations": 1471870,
+    "TRAIN_effective_window_presentations": 1449526
+  },
+  "H_bounds": [
+    {
+      "optimizer_updates_bound": 18400,
+      "TRAIN_target_window_presentations": 1177496,
+      "TRAIN_effective_window_presentations": 1159556,
+      "current_prefix_projection_head_invoked_bound_each": 1551950,
+      "attention_query_invoked_bound": 1528412,
+      "E0_prefix_invoked_bound": 3056824
+    },
+    {
+      "optimizer_updates_bound": 18500,
+      "TRAIN_target_window_presentations": 1183896,
+      "TRAIN_effective_window_presentations": 1165870,
+      "current_prefix_projection_head_invoked_bound_each": 1558350,
+      "attention_query_invoked_bound": 1534726,
+      "E0_prefix_invoked_bound": 3069452
+    }
+  ],
+  "H_bound_reason": "STATUS written after every100positions; no empty batch possible under frozen metadata. Last STATUS18400, SIGTERM may interrupt up to100 following positions including a partially invoked operation. No exact termination counter or CPU timing survives; do not use bound as exact count.",
+  "C_CPU_seconds": null,
+  "H_CPU_seconds": null,
+  "original_queue_start_unix": 1793640563.790547,
+  "original_queue_deadline_unix": 1793726963.790547,
+  "current_unix": 1793643274.8788424,
+  "new_NN": 0,
+  "new_backward": 0,
+  "metadata_only_permutations_for_cost_bounds": 2
+}

@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "all_source_pins_and_input_identities_rechecked": true,
+  "source_pins": 490,
+  "input_identities": 547,
+  "sources": [
+    {
+      "name": "pub_01_s03_ss07_preprojection_data.py",
+      "changed": false
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_engineering.py",
+      "changed": false
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_metrics.py",
+      "changed": false
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_model.py",
+      "changed": false
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_prepare.py",
+      "changed": false
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_queue.py",
+      "changed": true
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_reference.py",
+      "changed": false
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_runtime.py",
+      "changed": false
+    },
+    {
+      "name": "pub_01_s03_ss07_preprojection_train.py",
+      "changed": false
+    }
+  ],
+  "scheduler_logic": {
+    "passed": true,
+    "new_NN": 0,
+    "one_per_GPU_and_foreign_PID_wait": true
+  },
+  "original_deadline_unix": 1793726963.790547,
+  "physical_output_path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "physical_output_free_bytes": 178615578624,
+  "home_readonly_free_bytes": 20285173760,
+  "root_bytes": 33869110,
+  "new_NN": 0,
+  "new_backward": 0,
+  "optimizer_updates": 0,
+  "process_launches": 0,
+  "engineered_neural_implementation_reused": true,
+  "changed_queue_clock_validated_separately": true
+}

@@ -1,0 +1,54 @@
+{
+  "review_date": "2026-11-02",
+  "reviewer": "root coordination, independent artifact read",
+  "decision": "PASS_TRANSPORT_PREPROCESSING_ONLY",
+  "evidence": {
+    "protocol_sha256": "67743570afdf250307d5492cb55e732e45e154dcf5842c0eb855305d5743405c",
+    "source_pins_recomputed_on_server": 21,
+    "source_pin_mismatches": [],
+    "reused_outputs_recomputed_sha_shape_dtype_order_finiteness": 16,
+    "live_process": {
+      "pid": 1395718,
+      "uid": 1012,
+      "start_ticks": "753103322",
+      "identity_matches": true,
+      "RSS_KiB": 839256,
+      "peak_RSS_KiB": 1080920
+    },
+    "prepare_v2_source_sha256": "7efeecb3ea88483ebd7987e2cb7c0c191403af3b36a9b11eb3d097612ab8a35f",
+    "resume_source_sha256": "8a6ec2bee85117277f99346f10f5f3d36ec23b65ef9b3ec3ecdc5f2eeda8915b",
+    "code_read": [
+      "prepare_v2.run/freeze/guard",
+      "resume.bridge/handoff",
+      "network=8; DSP semaphore=2; BLAS=1",
+      "exclusive output writes; no overwrites or permanent deletion"
+    ],
+    "bridge_evidence_read": {
+      "max_abs": 4.76837158203125e-7,
+      "limit": 0.000001,
+      "bitwise_equal": false
+    },
+    "handoff_evidence_read": {
+      "prior_source_pins": 17,
+      "TSV_Git_blobs": 119,
+      "target_NPY_original_SHA": 20,
+      "backed_up_orphans": 0,
+      "truncated_jsonl_lines": 0
+    },
+    "report_read": "PREPROCESSING_REPORT.md",
+    "figures_actually_viewed": [
+      "audio_structure_v3.png",
+      "audio01_fixed_envelope.png",
+      "header_layout_overview_v2.png",
+      "EEG_unit_diagnostic.png"
+    ]
+  },
+  "limitations": [
+    "Reuse is numerical-tolerance-compatible, not bitwise-identical BLAS execution; retain v1/v2 provenance.",
+    "Only 16 completed EEG records at this snapshot, not evidence that all 380 are readable.",
+    "Physical units remain UNVERIFIED; one full-record unlabeled scalar gain is offline/transductive adaptation, not physical SI correction or pure zero-calibration transfer.",
+    "The four descriptive figures are consistent with the stated data limitations; they contain no model-performance evidence.",
+    "Final actual cohort/mask/model/source/statistics freeze and review still required before new-data NN predictions."
+  ],
+  "scientific_goal_complete": false
+}

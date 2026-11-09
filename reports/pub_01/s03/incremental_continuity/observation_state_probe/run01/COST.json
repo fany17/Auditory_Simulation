@@ -1,0 +1,112 @@
+{
+  "stages": [
+    {
+      "stage": "Ccap_full_VAL_bridge_before_state_fit",
+      "wall_seconds": 64.45466184616089,
+      "CPU_seconds": 113.110706872,
+      "seeds": 3
+    },
+    {
+      "stage": "TRAIN_static_covariance_references",
+      "wall_seconds": 171.38867592811584,
+      "CPU_seconds": 170.786660564,
+      "records": 426
+    },
+    {
+      "stage": "TRAIN_shared_descriptor_statistics_PCA8",
+      "wall_seconds": 319.66081523895264,
+      "CPU_seconds": 1239.9090471979998,
+      "pooled_windows": 939952,
+      "positive_components": 8
+    },
+    {
+      "stage": "TRAIN_VAL_shared_state_cache",
+      "wall_seconds": 325.30411767959595,
+      "CPU_seconds": 1110.3020082789997,
+      "cache_files": 10,
+      "payload_bytes": 45272640
+    },
+    {
+      "stage": "TRAIN_q_h_product_statistics",
+      "wall_seconds": 351.24786281585693,
+      "CPU_seconds": 1675.6153652829998,
+      "seed": 1024,
+      "windows": 234988
+    },
+    {
+      "stage": "TRAIN_15_fixed_ridge_per_seed5",
+      "wall_seconds": 189.60817670822144,
+      "CPU_seconds": 937.5113212269998,
+      "seed": 1024,
+      "fits": 5,
+      "NN_updates": 0
+    },
+    {
+      "stage": "VAL_8_fixed_roles",
+      "wall_seconds": 166.4943811893463,
+      "CPU_seconds": 252.19364784699974,
+      "seed": 1024,
+      "roles": 8,
+      "windows": 30500,
+      "people": 49,
+      "blocks": 752
+    },
+    {
+      "stage": "TRAIN_q_h_product_statistics",
+      "wall_seconds": 359.2663035392761,
+      "CPU_seconds": 1682.585074310001,
+      "seed": 2026,
+      "windows": 234988
+    },
+    {
+      "stage": "TRAIN_15_fixed_ridge_per_seed5",
+      "wall_seconds": 193.09043669700623,
+      "CPU_seconds": 948.4308168729995,
+      "seed": 2026,
+      "fits": 5,
+      "NN_updates": 0
+    },
+    {
+      "stage": "VAL_8_fixed_roles",
+      "wall_seconds": 170.08991479873657,
+      "CPU_seconds": 256.2586022690002,
+      "seed": 2026,
+      "roles": 8,
+      "windows": 30500,
+      "people": 49,
+      "blocks": 752
+    },
+    {
+      "stage": "TRAIN_q_h_product_statistics",
+      "wall_seconds": 353.82513093948364,
+      "CPU_seconds": 1678.2006985490007,
+      "seed": 31415,
+      "windows": 234988
+    },
+    {
+      "stage": "TRAIN_15_fixed_ridge_per_seed5",
+      "wall_seconds": 190.76118564605713,
+      "CPU_seconds": 942.3196642559997,
+      "seed": 31415,
+      "fits": 5,
+      "NN_updates": 0
+    },
+    {
+      "stage": "VAL_8_fixed_roles",
+      "wall_seconds": 166.2138102054596,
+      "CPU_seconds": 251.68487339900094,
+      "seed": 31415,
+      "roles": 8,
+      "windows": 30500,
+      "people": 49,
+      "blocks": 752
+    }
+  ],
+  "wall_seconds": 3023.1560900211334,
+  "CPU_seconds": 11262.106591232001,
+  "new_ridge_fits": 15,
+  "nofit_interventions": 6,
+  "VAL_role_seed_scores": 24,
+  "NN_forwards": 0,
+  "NN_updates": 0
+}

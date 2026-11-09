@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "run_id": "20261103_pub01_s03_ss07_preprojection_memory",
+  "archive_path": "E:\\实验室-科研工作-文件\\00_ChatGPT\\CodexResult\\Result\\runs\\20261103_pub01_s03_ss07_preprojection_memory",
+  "report_html_sha256": "92d8cbaaac858d4ace7b77a5b98461b06636c6e29ce59081d72da4aec2655f2a",
+  "manifest_sha256": "9b33a9c279883590eb36b988d3e104e4a586039b33641068c280b03d0ae10da0",
+  "manifest_artifacts_verified": 165,
+  "artifact_errors": [],
+  "local_links_checked": 62,
+  "broken_links": [],
+  "tables": 5,
+  "figure_bindings": [
+    {
+      "name": "01_VAL_TRAJECTORIES.png",
+      "sha256": "33f62895dc84ebae22b4946b6c6ebe2d94cbdba093ef1cd2ae57cd90d4cd43c7",
+      "matches_actually_viewed": true
+    },
+    {
+      "name": "02_SELECTED_AND_CONTROLS.png",
+      "sha256": "a7ae74bf9be9c97adae803d5a4b7f02709355c7e932ab6791cede75914b9e932",
+      "matches_actually_viewed": true
+    },
+    {
+      "name": "03_FIXED_TRAIN_AND_MATCHED_VAL.png",
+      "sha256": "06ba6b13eaaa43131b2ed39d7aa24400d9418ec23e68d80659dc63978a647213",
+      "matches_actually_viewed": true
+    },
+    {
+      "name": "04_FIXED_OBJECTIVE_AND_WINDOW_ERROR.png",
+      "sha256": "afab3e132db758d8979510decf968532519e72646214afca8fbfa3c9da63e66d",
+      "matches_actually_viewed": true
+    },
+    {
+      "name": "05_AMPLITUDE_PHYSICAL_ERROR_AND_OVERLAP.png",
+      "sha256": "c692a21f69d58edcc7a98bb1703b16bd1f1249fc2868bcf7e5803e9e5cddf167",
+      "matches_actually_viewed": true
+    },
+    {
+      "name": "06_PERSON_AND_SOURCE_DESCRIPTIVE.png",
+      "sha256": "fc11b681d2da2ee0b25912d25896831a82911feb7c2cd7ec3707f5a1b38d5162",
+      "matches_actually_viewed": true
+    },
+    {
+      "name": "07_MEMORY_ACTIVITY_SAMPLES.png",
+      "sha256": "a8fbd768377c6ecb0f05433c51a5db7ff4d2feef0e8d6cbc2c77340956dda61c",
+      "matches_actually_viewed": true
+    },
+    {
+      "name": "08_COMPONENT_AND_RESOURCE_COSTS.png",
+      "sha256": "b3118f7dcba704afbe7e26c3a18c0ed43e548a57cf0f230ec7780c1f93a9aad7",
+      "matches_actually_viewed": true
+    }
+  ],
+  "review_binding_errors": [],
+  "source_bundle_files_compared": 199,
+  "source_bundle_errors": [],
+  "browser_rendering_independently_verified": false,
+  "browser_limitation": "Local file protocol blocked by browser URL policy; no workaround attempted. Static HTML links, structure and artifact bindings verified; all eight original figures already independently visually reviewed.",
+  "scientific_data_recomputed_locally": false,
+  "new_neural_forward": 0,
+  "new_optimizer_updates": 0,
+  "wall_seconds": 0.12659716606140137,
+  "cpu_seconds": 0.03125,
+  "goal_complete": false
+}

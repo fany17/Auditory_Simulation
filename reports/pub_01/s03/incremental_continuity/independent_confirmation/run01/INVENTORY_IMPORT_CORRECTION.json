@@ -1,0 +1,7 @@
+{
+  "time": 1793604256.803384,
+  "old_source_sha256": "e46c68e5de1a45b46e7da88941768d5e4794f769c2e7568de0e2389dabf86e34",
+  "preserved_source": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/input/engineering_history/pub_01_s03_ss07_openneuro_evaluate_e46c68e5de1a.py",
+  "failure": "Missing native train_v2 sibling import path for pub_01_s03_method_models; no model instantiated or NN run",
+  "correction": "Insert immutable original native input folder into sys.path before ft.native"
+}

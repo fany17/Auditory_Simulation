@@ -1,0 +1,12 @@
+{
+  "NN_windows": 0,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "new_encoder_head": 0,
+  "CPU_seconds": 7.099573218,
+  "wall_seconds": 5.334264755249023,
+  "peak_RSS_KiB": 184720,
+  "peak_GPU_allocated_bytes": 0,
+  "scope": "JSON-only tables and five static plots; timer starts after Python standard-library imports, before numpy/matplotlib imports",
+  "all_five_figures_produced": true
+}

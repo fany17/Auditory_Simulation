@@ -1,0 +1,48 @@
+{
+  "stage": "fit",
+  "decision": "PASS",
+  "reviewer": "root coordinator",
+  "created_unix": 1793955933.6219687,
+  "source_sha256": "127c2d15b4727fa25a26c0d1bd0c83802ecf43fa243eedb7cb940562fb9b8393",
+  "protocol_sha256": "339f41a6b0490dbdcef73b64ce9ad17c24f9e372f6304f5050309952129018a0",
+  "engineering_sha256": "37539a332f00c16d7fb579cead04a77736bdc496c8109803e230e4532befff90",
+  "checks": [
+    "Root read complete S source and original context_raw/context/evaluate routes",
+    "Both q and context receive same current normalized scalar, preserving original offline b permission",
+    "True Record.anchor history perturbation changes stored rolling values but leaves protected current input and actual output unchanged",
+    "Current b perturbation reaches both query and context paths; shared initialization/RNG/shuffle and finite gradients passed",
+    "84 bounded TRAIN anchor blocks exactly match frozen D22; formal full VAL anchor bridge enforced",
+    "Exact original fit_role code/signature preserved through local parameter-count proxy; no frozen module or file mutation",
+    "All frozen hashes/provenance/input size-mtime checked directly on server; actual engineer terminal successful and formal directory absent",
+    "Duplicate selected evaluation slots must have identical metrics and are not a history intervention"
+  ],
+  "formal_budget": {
+    "fits": 3,
+    "optimizer_updates": 86820,
+    "backward_points": 1422210600,
+    "fixed_TRAIN_forwards": 284442120,
+    "epoch_VAL_forwards": 172007940,
+    "paired_current_points_max": 8600397,
+    "current_stem_points_max": 1887261057,
+    "context_output_points_max": 1895861454
+  },
+  "resources": {
+    "GPU_count": 1,
+    "fit_seconds": 21600,
+    "engineering_seconds": 600,
+    "RSS_GiB": 12,
+    "torch_allocated_GiB": 8,
+    "writer_MiB": 256,
+    "SATA_min_free_GiB": 20
+  },
+  "verified_pins": 48,
+  "verified_provenance": 6,
+  "verified_input_stamps": 73,
+  "limitations": [
+    "3361 vs 9441 actual parameters and context input initialization differ",
+    "Repeated development VAL only; no independent confirmation",
+    "Stored P role is a legacy slot; actual candidate S is memoryless",
+    "Statistics copied from frozen same-seed TRAIN data, not refit"
+  ],
+  "goal_complete": false
+}

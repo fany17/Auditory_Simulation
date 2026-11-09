@@ -1,0 +1,36 @@
+{
+  "metadata_only": true,
+  "payload_downloaded": false,
+  "epoch": 1793476142.3282719,
+  "DTU": {
+    "source": "https://zenodo.org/records/1199011",
+    "license": {
+      "id": "cc-by-nc-4.0"
+    },
+    "files": [
+      {
+        "name": "AUDIO.zip",
+        "bytes": 385086237
+      },
+      {
+        "name": "preproc_data.m",
+        "bytes": 6252
+      },
+      {
+        "name": "EEG.zip",
+        "bytes": 16044939963
+      },
+      {
+        "name": "DATA_preproc.zip",
+        "bytes": 1838947136
+      }
+    ]
+  },
+  "NaturalSpeech": {
+    "source": "https://datadryad.org/dataset/doi:10.5061/dryad.070jc",
+    "license": "https://spdx.org/licenses/CC0-1.0.html",
+    "version": 3,
+    "desired_archive": "Natural Speech.zip",
+    "official_page_size": "3.46GB; exact bytes not yet inspected"
+  }
+}

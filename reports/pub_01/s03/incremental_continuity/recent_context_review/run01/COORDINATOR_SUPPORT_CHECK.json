@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "source_sha256": "0034f8cf5f42fbb6455c28c07b9673ae16d277587cfdc50fc7d89542003f4127",
+  "metadata_sha256": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+  "phases": {
+    "train": {
+      "records": 426,
+      "points_sampled": 286272,
+      "covered_active_points": 23703510
+    },
+    "val": {
+      "records": 49,
+      "points_sampled": 32928,
+      "covered_active_points": 2866799
+    }
+  },
+  "sampled_coordinates": 319200,
+  "sample_rule": "All 96 interior stride phases plus actual first 288 active and last 384 covered points per record; not enumeration of every point.",
+  "recent_prediction_lags_inclusive": [
+    1,
+    384
+  ],
+  "D19_prediction_lags_inclusive": [
+    288,
+    671
+  ],
+  "recent_latest_raw_end_minus_target_range": [
+    2,
+    190
+  ],
+  "D19_latest_raw_end_minus_target_range": [
+    -192,
+    -97
+  ],
+  "recent_latest_prediction_overlaps_current_raw_support_count": 319200,
+  "D19_latest_prediction_overlaps_current_raw_support_count": 0,
+  "max_future_permission_extended": false,
+  "general_reason": "For u<t, min(n-1,floor((u-1)/96)) <= min(n-1,floor((t-1)/96)); hence every prior frozen prediction ends no later in raw EEG than the current frozen prediction. This does not make the offline backbone causal or independent of current EEG.",
+  "scope": "Integer geometry and existing TRAIN/VAL metadata only. No information-gain claim, model selection or performance computation.",
+  "signal_feature_target_arrays_loaded": 0,
+  "model_forwards": 0,
+  "fits": 0,
+  "optimizer_updates": 0,
+  "CPU_seconds": 0.9647763890000001,
+  "wall_seconds": 0.9658174235373735,
+  "pid": 1267421,
+  "goal_complete": false
+}

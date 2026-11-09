@@ -1,0 +1,45 @@
+{
+  "stage": "fit",
+  "decision": "PASS",
+  "reviewer": "root coordinator",
+  "created_unix": 1793954806.0644977,
+  "source_sha256": "9425b886fed962ebfc349cf60c5dee3b56aa374ab13f7e7c231829f993f7afcb",
+  "protocol_sha256": "40de86545cdcd69264a308a68cc02c653b211f9688511b2cea9df2976dbcc74e",
+  "engineering_sha256": "49aee0f06142204e30ff9cec1cf34b799c50f43a13e5af99e6313cb3ad125695",
+  "checks": [
+    "Root read complete new source/PLAN/protocol and old fit_role/evaluate/current_code dependencies",
+    "All 33 frozen pins plus provenance and immutable input stamps verified directly on server",
+    "Actual engineer terminal receipt and counts verified; no FAILURE; formal directory absent",
+    "Scalar current and history use frozen D20 P TRAIN-only statistics; no current g input in train/eval/cache route",
+    "Actual Record.latent perturbation with fixed anchor reconstructed through Table leaves scalar input/output unchanged",
+    "Common tensors/RNG/shuffle/zero head/active gradients and history pair checked",
+    "FunctionType preserves original fit_role code/signature; only local metadata parameter assertion changes to actual 9441, no module-wide mutation",
+    "Unchanged complete TRAIN/VAL endpoint, physical SSE/batch denominator, optimizer/20-pass schedule/strict earliest selection and anchor bridge"
+  ],
+  "formal_budget": {
+    "fits": 3,
+    "optimizer_updates": 86820,
+    "backward_points": 1422210600,
+    "fixed_TRAIN_forwards": 284442120,
+    "epoch_VAL_forwards": 172007940,
+    "paired_current_points_max": 8600397,
+    "current_stem_points_max": 1887261057,
+    "context_output_points_max": 1895861454
+  },
+  "resources": {
+    "GPU_count": 1,
+    "fit_seconds": 21600,
+    "engineering_seconds": 600,
+    "RSS_GiB": 12,
+    "torch_allocated_GiB": 8,
+    "writer_MiB": 256,
+    "SATA_min_free_GiB": 20
+  },
+  "limitations": [
+    "Development VAL repeatedly used; no new independent test",
+    "Input width/current weight initialization and actual parameter count differ from D20",
+    "Offline frozen predictions share raw EEG support; not online causality or EEG-specific historical information",
+    "Current and history statistics copied, not refit"
+  ],
+  "goal_complete": false
+}

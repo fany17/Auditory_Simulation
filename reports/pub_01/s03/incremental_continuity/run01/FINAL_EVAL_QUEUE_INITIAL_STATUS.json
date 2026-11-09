@@ -1,0 +1,18 @@
+{
+  "stage": "WAIT_ALL_FIXED_TRAINING",
+  "missing": [
+    "FULL_SELECTED_CONDITIONS_COMPLETED.json",
+    "FULL_PRIMARY_SELECTION.json",
+    "finetune/native_P_seed2026/completed.json",
+    "finetune/native_P_seed42/completed.json",
+    "finetune/native_P_seed12345/completed.json"
+  ],
+  "actual_live_upstream_handles": [
+    14537,
+    4187870,
+    4187872,
+    4187873
+  ],
+  "time": 1793482573.8133578,
+  "test_read": false
+}

@@ -1,0 +1,3778 @@
+{
+  "time": 1793512883.6788406,
+  "timing": "POST_LAUNCH, not a pre-run freeze; seed1024 first Gram was in progress",
+  "source_sha256": "d366d026ae5ee097e2d3a0ffa4ce945a5a2a2ab099b18f31a74cdab078fb1d8e",
+  "formal_pid": 521141,
+  "formal_source_sha": "0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "8",
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "NUMEXPR_NUM_THREADS": "8"
+  },
+  "target_inputs": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/train_envelope.npy": {
+      "shape": [
+        252454,
+        1,
+        192
+      ],
+      "dtype": "float32",
+      "bytes": 193884800,
+      "mtime_ns": 1792065674893059646
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_1_envelope.npy": {
+      "shape": [
+        59958,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 479792,
+      "mtime_ns": 1789831837941474709
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_2_1_envelope.npy": {
+      "shape": [
+        50619,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 405080,
+      "mtime_ns": 1789831822127474032
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_3_envelope.npy": {
+      "shape": [
+        61597,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 492904,
+      "mtime_ns": 1789831840503474818
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_4_envelope.npy": {
+      "shape": [
+        52060,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 416608,
+      "mtime_ns": 1789831824131474118
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_1_envelope.npy": {
+      "shape": [
+        57991,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 464056,
+      "mtime_ns": 1789831834016474541
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_3_envelope.npy": {
+      "shape": [
+        60990,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 488048,
+      "mtime_ns": 1789831839457474774
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_1_envelope.npy": {
+      "shape": [
+        53350,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 426928,
+      "mtime_ns": 1789831825857474192
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_6_2_envelope.npy": {
+      "shape": [
+        53339,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 426840,
+      "mtime_ns": 1789831824598474138
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_1_envelope.npy": {
+      "shape": [
+        61052,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 488544,
+      "mtime_ns": 1789831840197474805
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_10_envelope.npy": {
+      "shape": [
+        53461,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 427816,
+      "mtime_ns": 1789831826037474199
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_2_envelope.npy": {
+      "shape": [
+        72626,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 581136,
+      "mtime_ns": 1789831850462475245
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_3_envelope.npy": {
+      "shape": [
+        46544,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 372480,
+      "mtime_ns": 1789831816641473797
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_8_1_envelope.npy": {
+      "shape": [
+        47818,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 382672,
+      "mtime_ns": 1789831818336473870
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_5_envelope.npy": {
+      "shape": [
+        63701,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 509736,
+      "mtime_ns": 1789831845417475029
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_6_envelope.npy": {
+      "shape": [
+        54064,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 432640,
+      "mtime_ns": 1789831826821474233
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_7_envelope.npy": {
+      "shape": [
+        63044,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 504480,
+      "mtime_ns": 1789831843454474945
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_8_envelope.npy": {
+      "shape": [
+        64839,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 518840,
+      "mtime_ns": 1789831847373475112
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_9_1_envelope.npy": {
+      "shape": [
+        41409,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 331400,
+      "mtime_ns": 1789831814495473706
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_11_envelope.npy": {
+      "shape": [
+        57601,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 460936,
+      "mtime_ns": 1789831832522474477
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_12_envelope.npy": {
+      "shape": [
+        67339,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 538840,
+      "mtime_ns": 1789831848431475158
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_9_envelope.npy": {
+      "shape": [
+        76251,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 610136,
+      "mtime_ns": 1789831852801475345
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_10_1_envelope.npy": {
+      "shape": [
+        39391,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 315256,
+      "mtime_ns": 1789831812611473625
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_13_envelope.npy": {
+      "shape": [
+        45024,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 360320,
+      "mtime_ns": 1789831816416473788
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_14_envelope.npy": {
+      "shape": [
+        64377,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 515144,
+      "mtime_ns": 1789831846432475072
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_11_1_envelope.npy": {
+      "shape": [
+        50649,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 405320,
+      "mtime_ns": 1789831822235474037
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_16_envelope.npy": {
+      "shape": [
+        49451,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 395736,
+      "mtime_ns": 1789831820255473952
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_17_envelope.npy": {
+      "shape": [
+        58400,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 467328,
+      "mtime_ns": 1789831835515474605
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_18_envelope.npy": {
+      "shape": [
+        73827,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 590744,
+      "mtime_ns": 1789831852141475316
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_19_envelope.npy": {
+      "shape": [
+        65461,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 523816,
+      "mtime_ns": 1789831848079475143
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_1_envelope.npy": {
+      "shape": [
+        42239,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 338040,
+      "mtime_ns": 1789831814755473717
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_12_2_envelope.npy": {
+      "shape": [
+        48639,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 389240,
+      "mtime_ns": 1789831818403473873
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_20_envelope.npy": {
+      "shape": [
+        50958,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 407792,
+      "mtime_ns": 1789831822688474056
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_23_envelope.npy": {
+      "shape": [
+        54171,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 433496,
+      "mtime_ns": 1789831828143474290
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_1_envelope.npy": {
+      "shape": [
+        64094,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 512880,
+      "mtime_ns": 1789831846100475058
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_24_envelope.npy": {
+      "shape": [
+        63544,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 508480,
+      "mtime_ns": 1789831844472474988
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_26_envelope.npy": {
+      "shape": [
+        50538,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 404432,
+      "mtime_ns": 1789831820455473961
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_27_envelope.npy": {
+      "shape": [
+        55930,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 447568,
+      "mtime_ns": 1789831829988474369
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_1_envelope.npy": {
+      "shape": [
+        67344,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 538880,
+      "mtime_ns": 1789831849401475199
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_14_2_envelope.npy": {
+      "shape": [
+        73488,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 588032,
+      "mtime_ns": 1789831851453475287
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_28_envelope.npy": {
+      "shape": [
+        51701,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 413736,
+      "mtime_ns": 1789831824005474113
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_29_envelope.npy": {
+      "shape": [
+        57689,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 461640,
+      "mtime_ns": 1789831833504474519
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/val_envelope.npy": {
+      "shape": [
+        30500,
+        1,
+        192
+      ],
+      "dtype": "float32",
+      "bytes": 23424128,
+      "mtime_ns": 1792065675067059654
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_5_2_envelope.npy": {
+      "shape": [
+        58219,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 465880,
+      "mtime_ns": 1789831834542474563
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_15_envelope.npy": {
+      "shape": [
+        58993,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 472072,
+      "mtime_ns": 1789831835985474625
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_21_envelope.npy": {
+      "shape": [
+        67522,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 540304,
+      "mtime_ns": 1789831850088475229
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/audiobook_13_2_envelope.npy": {
+      "shape": [
+        54494,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 436080,
+      "mtime_ns": 1789831827920474280
+    },
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s06/sparrkulee_v3.1/raw/derivatives/preprocessed_stimuli/podcast_30_envelope.npy": {
+      "shape": [
+        62276,
+        1
+      ],
+      "dtype": "float64",
+      "bytes": 498336,
+      "mtime_ns": 1789831842498474904
+    }
+  },
+  "record_length_checks": [
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-004_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-004_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-004_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-006_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 50619,
+      "common_samples": 50618,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 61597,
+      "common_samples": 61596,
+      "windows": 640
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 52060,
+      "common_samples": 52059,
+      "windows": 541
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 57991,
+      "common_samples": 57990,
+      "windows": 603
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 60990,
+      "common_samples": 60988,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53350,
+      "common_samples": 53349,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 53339,
+      "common_samples": 53338,
+      "windows": 554
+    },
+    {
+      "phase": "train",
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 61052,
+      "common_samples": 61050,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 72626,
+      "common_samples": 72625,
+      "windows": 755
+    },
+    {
+      "phase": "train",
+      "record": "sub-027_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "target_samples": 46544,
+      "common_samples": 46543,
+      "windows": 483
+    },
+    {
+      "phase": "train",
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 61052,
+      "common_samples": 61050,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 72626,
+      "common_samples": 72625,
+      "windows": 755
+    },
+    {
+      "phase": "train",
+      "record": "sub-028_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 46544,
+      "common_samples": 46543,
+      "windows": 483
+    },
+    {
+      "phase": "train",
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 61052,
+      "common_samples": 61050,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 72626,
+      "common_samples": 72625,
+      "windows": 755
+    },
+    {
+      "phase": "train",
+      "record": "sub-029_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 46544,
+      "common_samples": 46543,
+      "windows": 483
+    },
+    {
+      "phase": "train",
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-11_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 61052,
+      "common_samples": 61050,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-12_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 72626,
+      "common_samples": 72625,
+      "windows": 755
+    },
+    {
+      "phase": "train",
+      "record": "sub-030_ses-varyingStories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 46544,
+      "common_samples": 46543,
+      "windows": 483
+    },
+    {
+      "phase": "train",
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-13_eeg.bdf.gz",
+      "target_samples": 61052,
+      "common_samples": 61050,
+      "windows": 634
+    },
+    {
+      "phase": "train",
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 72626,
+      "common_samples": 72625,
+      "windows": 755
+    },
+    {
+      "phase": "train",
+      "record": "sub-031_ses-varyingStories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 46544,
+      "common_samples": 46543,
+      "windows": 483
+    },
+    {
+      "phase": "train",
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 47818,
+      "common_samples": 47817,
+      "windows": 497
+    },
+    {
+      "phase": "train",
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 63701,
+      "common_samples": 63699,
+      "windows": 662
+    },
+    {
+      "phase": "train",
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 54064,
+      "common_samples": 54062,
+      "windows": 562
+    },
+    {
+      "phase": "train",
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 63044,
+      "common_samples": 63043,
+      "windows": 655
+    },
+    {
+      "phase": "train",
+      "record": "sub-032_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 64839,
+      "common_samples": 64837,
+      "windows": 674
+    },
+    {
+      "phase": "train",
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 47818,
+      "common_samples": 47817,
+      "windows": 497
+    },
+    {
+      "phase": "train",
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 63701,
+      "common_samples": 63699,
+      "windows": 662
+    },
+    {
+      "phase": "train",
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 54064,
+      "common_samples": 54062,
+      "windows": 562
+    },
+    {
+      "phase": "train",
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 63044,
+      "common_samples": 63043,
+      "windows": 655
+    },
+    {
+      "phase": "train",
+      "record": "sub-033_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 64839,
+      "common_samples": 64837,
+      "windows": 674
+    },
+    {
+      "phase": "train",
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 47818,
+      "common_samples": 47817,
+      "windows": 497
+    },
+    {
+      "phase": "train",
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 63701,
+      "common_samples": 63699,
+      "windows": 662
+    },
+    {
+      "phase": "train",
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 54064,
+      "common_samples": 54062,
+      "windows": 562
+    },
+    {
+      "phase": "train",
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 63044,
+      "common_samples": 63043,
+      "windows": 655
+    },
+    {
+      "phase": "train",
+      "record": "sub-034_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 64839,
+      "common_samples": 64837,
+      "windows": 674
+    },
+    {
+      "phase": "train",
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 47818,
+      "common_samples": 47817,
+      "windows": 497
+    },
+    {
+      "phase": "train",
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 63701,
+      "common_samples": 63699,
+      "windows": 662
+    },
+    {
+      "phase": "train",
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 54064,
+      "common_samples": 54062,
+      "windows": 562
+    },
+    {
+      "phase": "train",
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 63044,
+      "common_samples": 63043,
+      "windows": 655
+    },
+    {
+      "phase": "train",
+      "record": "sub-035_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 64839,
+      "common_samples": 64837,
+      "windows": 674
+    },
+    {
+      "phase": "train",
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 47818,
+      "common_samples": 47817,
+      "windows": 497
+    },
+    {
+      "phase": "train",
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 63701,
+      "common_samples": 63699,
+      "windows": 662
+    },
+    {
+      "phase": "train",
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 54064,
+      "common_samples": 54062,
+      "windows": 562
+    },
+    {
+      "phase": "train",
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 63044,
+      "common_samples": 63043,
+      "windows": 655
+    },
+    {
+      "phase": "train",
+      "record": "sub-036_ses-varyingStories02_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 64839,
+      "common_samples": 64837,
+      "windows": 674
+    },
+    {
+      "phase": "train",
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 41409,
+      "common_samples": 41407,
+      "windows": 430
+    },
+    {
+      "phase": "train",
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 57601,
+      "common_samples": 57600,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 67339,
+      "common_samples": 67337,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-037_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 76251,
+      "common_samples": 76250,
+      "windows": 793
+    },
+    {
+      "phase": "train",
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 41409,
+      "common_samples": 41407,
+      "windows": 430
+    },
+    {
+      "phase": "train",
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 57601,
+      "common_samples": 57600,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 67339,
+      "common_samples": 67337,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-038_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 76251,
+      "common_samples": 76250,
+      "windows": 793
+    },
+    {
+      "phase": "train",
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 41409,
+      "common_samples": 41407,
+      "windows": 430
+    },
+    {
+      "phase": "train",
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 57601,
+      "common_samples": 57600,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 67339,
+      "common_samples": 67337,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-039_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 76251,
+      "common_samples": 76250,
+      "windows": 793
+    },
+    {
+      "phase": "train",
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 41409,
+      "common_samples": 41407,
+      "windows": 430
+    },
+    {
+      "phase": "train",
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 57601,
+      "common_samples": 57600,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 67339,
+      "common_samples": 67337,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-040_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 76251,
+      "common_samples": 76250,
+      "windows": 793
+    },
+    {
+      "phase": "train",
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 41409,
+      "common_samples": 41407,
+      "windows": 430
+    },
+    {
+      "phase": "train",
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 57601,
+      "common_samples": 57600,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 67339,
+      "common_samples": 67337,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-041_ses-varyingStories03_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 76251,
+      "common_samples": 76250,
+      "windows": 793
+    },
+    {
+      "phase": "train",
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 41409,
+      "common_samples": 41407,
+      "windows": 430
+    },
+    {
+      "phase": "train",
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 57601,
+      "common_samples": 57600,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 67339,
+      "common_samples": 67337,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-042_ses-varyingStories03_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 76251,
+      "common_samples": 76250,
+      "windows": 793
+    },
+    {
+      "phase": "train",
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 39391,
+      "common_samples": 39389,
+      "windows": 409
+    },
+    {
+      "phase": "train",
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 45024,
+      "common_samples": 45023,
+      "windows": 467
+    },
+    {
+      "phase": "train",
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 64377,
+      "common_samples": 64376,
+      "windows": 669
+    },
+    {
+      "phase": "train",
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 39391,
+      "common_samples": 39389,
+      "windows": 409
+    },
+    {
+      "phase": "train",
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 45024,
+      "common_samples": 45023,
+      "windows": 467
+    },
+    {
+      "phase": "train",
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 64377,
+      "common_samples": 64376,
+      "windows": 669
+    },
+    {
+      "phase": "train",
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 39391,
+      "common_samples": 39389,
+      "windows": 409
+    },
+    {
+      "phase": "train",
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 45024,
+      "common_samples": 45023,
+      "windows": 467
+    },
+    {
+      "phase": "train",
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 64377,
+      "common_samples": 64376,
+      "windows": 669
+    },
+    {
+      "phase": "train",
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 39391,
+      "common_samples": 39389,
+      "windows": 409
+    },
+    {
+      "phase": "train",
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 53461,
+      "common_samples": 53460,
+      "windows": 555
+    },
+    {
+      "phase": "train",
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 45024,
+      "common_samples": 45023,
+      "windows": 467
+    },
+    {
+      "phase": "train",
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 64377,
+      "common_samples": 64376,
+      "windows": 669
+    },
+    {
+      "phase": "train",
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 50649,
+      "common_samples": 50647,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 49451,
+      "common_samples": 49450,
+      "windows": 514
+    },
+    {
+      "phase": "train",
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 58400,
+      "common_samples": 58399,
+      "windows": 607
+    },
+    {
+      "phase": "train",
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 73827,
+      "common_samples": 73825,
+      "windows": 768
+    },
+    {
+      "phase": "train",
+      "record": "sub-047_ses-varyingStories05_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 65461,
+      "common_samples": 65459,
+      "windows": 680
+    },
+    {
+      "phase": "train",
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 50649,
+      "common_samples": 50647,
+      "windows": 526
+    },
+    {
+      "phase": "train",
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 49451,
+      "common_samples": 49450,
+      "windows": 514
+    },
+    {
+      "phase": "train",
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 58400,
+      "common_samples": 58399,
+      "windows": 607
+    },
+    {
+      "phase": "train",
+      "record": "sub-048_ses-varyingStories05_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 65461,
+      "common_samples": 65459,
+      "windows": 680
+    },
+    {
+      "phase": "train",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 42239,
+      "common_samples": 42237,
+      "windows": 438
+    },
+    {
+      "phase": "train",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 50958,
+      "common_samples": 50957,
+      "windows": 529
+    },
+    {
+      "phase": "train",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-050_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-050_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-050_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 42239,
+      "common_samples": 42237,
+      "windows": 438
+    },
+    {
+      "phase": "train",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 50958,
+      "common_samples": 50957,
+      "windows": 529
+    },
+    {
+      "phase": "train",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 42239,
+      "common_samples": 42237,
+      "windows": 438
+    },
+    {
+      "phase": "train",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 50958,
+      "common_samples": 50957,
+      "windows": 529
+    },
+    {
+      "phase": "train",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 42239,
+      "common_samples": 42237,
+      "windows": 438
+    },
+    {
+      "phase": "train",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 50958,
+      "common_samples": 50957,
+      "windows": 529
+    },
+    {
+      "phase": "train",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 42239,
+      "common_samples": 42237,
+      "windows": 438
+    },
+    {
+      "phase": "train",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 50958,
+      "common_samples": 50957,
+      "windows": 529
+    },
+    {
+      "phase": "train",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 42239,
+      "common_samples": 42237,
+      "windows": 438
+    },
+    {
+      "phase": "train",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 50958,
+      "common_samples": 50957,
+      "windows": 529
+    },
+    {
+      "phase": "train",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 42239,
+      "common_samples": 42237,
+      "windows": 438
+    },
+    {
+      "phase": "train",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 48639,
+      "common_samples": 48637,
+      "windows": 505
+    },
+    {
+      "phase": "train",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 50958,
+      "common_samples": 50957,
+      "windows": 529
+    },
+    {
+      "phase": "train",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 54171,
+      "common_samples": 54170,
+      "windows": 563
+    },
+    {
+      "phase": "train",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 64094,
+      "common_samples": 64092,
+      "windows": 666
+    },
+    {
+      "phase": "train",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 63544,
+      "common_samples": 63542,
+      "windows": 660
+    },
+    {
+      "phase": "train",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 50538,
+      "common_samples": 50537,
+      "windows": 525
+    },
+    {
+      "phase": "train",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 55930,
+      "common_samples": 55928,
+      "windows": 581
+    },
+    {
+      "phase": "train",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 64094,
+      "common_samples": 64092,
+      "windows": 666
+    },
+    {
+      "phase": "train",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 63544,
+      "common_samples": 63542,
+      "windows": 660
+    },
+    {
+      "phase": "train",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 50538,
+      "common_samples": 50537,
+      "windows": 525
+    },
+    {
+      "phase": "train",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 55930,
+      "common_samples": 55928,
+      "windows": 581
+    },
+    {
+      "phase": "train",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 64094,
+      "common_samples": 64092,
+      "windows": 666
+    },
+    {
+      "phase": "train",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 63544,
+      "common_samples": 63542,
+      "windows": 660
+    },
+    {
+      "phase": "train",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 50538,
+      "common_samples": 50537,
+      "windows": 525
+    },
+    {
+      "phase": "train",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 55930,
+      "common_samples": 55928,
+      "windows": 581
+    },
+    {
+      "phase": "train",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 64094,
+      "common_samples": 64092,
+      "windows": 666
+    },
+    {
+      "phase": "train",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 63544,
+      "common_samples": 63542,
+      "windows": 660
+    },
+    {
+      "phase": "train",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 50538,
+      "common_samples": 50537,
+      "windows": 525
+    },
+    {
+      "phase": "train",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 64094,
+      "common_samples": 64092,
+      "windows": 666
+    },
+    {
+      "phase": "train",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 63544,
+      "common_samples": 63542,
+      "windows": 660
+    },
+    {
+      "phase": "train",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 50538,
+      "common_samples": 50537,
+      "windows": 525
+    },
+    {
+      "phase": "train",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 55930,
+      "common_samples": 55928,
+      "windows": 581
+    },
+    {
+      "phase": "train",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 64094,
+      "common_samples": 64092,
+      "windows": 666
+    },
+    {
+      "phase": "train",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 63544,
+      "common_samples": 63542,
+      "windows": 660
+    },
+    {
+      "phase": "train",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 50538,
+      "common_samples": 50537,
+      "windows": 525
+    },
+    {
+      "phase": "train",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 55930,
+      "common_samples": 55928,
+      "windows": 581
+    },
+    {
+      "phase": "train",
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 59958,
+      "common_samples": 59956,
+      "windows": 623
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 67344,
+      "common_samples": 67342,
+      "windows": 700
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 73488,
+      "common_samples": 73486,
+      "windows": 764
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 51701,
+      "common_samples": 51699,
+      "windows": 537
+    },
+    {
+      "phase": "train",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 57689,
+      "common_samples": 57687,
+      "windows": 599
+    },
+    {
+      "phase": "val",
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 58219,
+      "common_samples": 58218,
+      "windows": 605
+    },
+    {
+      "phase": "val",
+      "record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 58993,
+      "common_samples": 58991,
+      "windows": 613
+    },
+    {
+      "phase": "val",
+      "record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 58993,
+      "common_samples": 58991,
+      "windows": 613
+    },
+    {
+      "phase": "val",
+      "record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 58993,
+      "common_samples": 58991,
+      "windows": 613
+    },
+    {
+      "phase": "val",
+      "record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 58993,
+      "common_samples": 58991,
+      "windows": 613
+    },
+    {
+      "phase": "val",
+      "record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+      "target_samples": 67522,
+      "common_samples": 67520,
+      "windows": 702
+    },
+    {
+      "phase": "val",
+      "record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 67522,
+      "common_samples": 67520,
+      "windows": 702
+    },
+    {
+      "phase": "val",
+      "record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 67522,
+      "common_samples": 67520,
+      "windows": 702
+    },
+    {
+      "phase": "val",
+      "record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 67522,
+      "common_samples": 67520,
+      "windows": 702
+    },
+    {
+      "phase": "val",
+      "record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 67522,
+      "common_samples": 67520,
+      "windows": 702
+    },
+    {
+      "phase": "val",
+      "record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 67522,
+      "common_samples": 67520,
+      "windows": 702
+    },
+    {
+      "phase": "val",
+      "record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 67522,
+      "common_samples": 67520,
+      "windows": 702
+    },
+    {
+      "phase": "val",
+      "record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 54494,
+      "common_samples": 54492,
+      "windows": 566
+    },
+    {
+      "phase": "val",
+      "record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 54494,
+      "common_samples": 54492,
+      "windows": 566
+    },
+    {
+      "phase": "val",
+      "record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 54494,
+      "common_samples": 54492,
+      "windows": 566
+    },
+    {
+      "phase": "val",
+      "record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 54494,
+      "common_samples": 54492,
+      "windows": 566
+    },
+    {
+      "phase": "val",
+      "record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "target_samples": 54494,
+      "common_samples": 54492,
+      "windows": 566
+    },
+    {
+      "phase": "val",
+      "record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 54494,
+      "common_samples": 54492,
+      "windows": 566
+    },
+    {
+      "phase": "val",
+      "record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    },
+    {
+      "phase": "val",
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "target_samples": 62276,
+      "common_samples": 62275,
+      "windows": 647
+    }
+  ],
+  "changes_to_formal_code_protocol_scores": false,
+  "cost_limitations": "Per-lambda main times combine coefficient formation and prediction/score, exclude shared eigendecomposition; those subphases not separately measured. Process CPU sampled externally. No replay to invent missing detail."
+}

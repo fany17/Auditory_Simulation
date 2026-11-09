@@ -1,0 +1,10 @@
+condition,seed,gradient_steps,supervised_target_samples,pretrain_EEG_samples,train_EEG_samples_including_warmup_or_encoder_cache,extra_training,seconds,seconds_note,selected_step,selected_pretrain_step
+C,1024,3262,12526080,0,13482240,none,1762.8504671705887,includes validation;sharedGPU walltimes,3262,
+O,1024,3262,12526080,0,26290368,none,242.75789419189095,includes validation;sharedGPU walltimes,3262,
+P,1024,2674,25004352,12526080,37530432,EEG-audio contrastive639steps;frozen encoder cache;native Adam unshuffled head2035steps,362.4418148994446,includes head cache construction/validation;pretrain measured stage time;sharedGPU walltimes,1017,479
+C,2026,3262,12526080,0,13482240,none,1846.1974832490087,includes validation;sharedGPU walltimes,3262,
+O,2026,3262,12526080,0,26290368,none,288.01168142352253,includes validation;sharedGPU walltimes,3262,
+P,2026,2674,25004352,12526080,37530432,EEG-audio contrastive639steps;frozen encoder cache;native Adam unshuffled head2035steps,353.2154655456543,includes head cache construction/validation;pretrain measured stage time;sharedGPU walltimes,2035,479
+C,31415,3262,12526080,0,13482240,none,1819.182380212471,includes validation;sharedGPU walltimes,3262,
+O,31415,3262,12526080,0,26290368,none,248.68169323634356,includes validation;sharedGPU walltimes,3000,
+P,31415,2674,25004352,12526080,37530432,EEG-audio contrastive639steps;frozen encoder cache;native Adam unshuffled head2035steps,356.6676621437073,includes head cache construction/validation;pretrain measured stage time;sharedGPU walltimes,2035,479

@@ -1,0 +1,28 @@
+{
+  "status": "APPROVED_NEW_CACHE_FILESYSTEM_ONLY",
+  "time": 1793606376.191464,
+  "home_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102",
+  "cache_root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/caches",
+  "UID": 1012,
+  "home_device": 2051,
+  "cache_device": 2129,
+  "created_directories": [
+    "/sata5/fanyu",
+    "/sata5/fanyu/auditory_simulation_m6a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_openneuro_confirmation_20261102/caches"
+  ],
+  "symlinks_created": 0,
+  "home_free_bytes": 22922141696,
+  "cache_free_bytes": 179592044544,
+  "remaining_home_processed_bytes": 785149696,
+  "home_future_report_reserve_bytes": 134217728,
+  "planned_cache_NPY_bytes": 942016512,
+  "home_projected_free_bytes": 22002774272,
+  "cache_projected_free_bytes": 178650028032,
+  "minimum_free_each_filesystem_bytes": 21474836480,
+  "combined_new_run_cap_bytes": 3221225472,
+  "cumulative_SS07_NPY_cap_bytes": 30064771072,
+  "no_existing_asset_move_or_delete": true
+}

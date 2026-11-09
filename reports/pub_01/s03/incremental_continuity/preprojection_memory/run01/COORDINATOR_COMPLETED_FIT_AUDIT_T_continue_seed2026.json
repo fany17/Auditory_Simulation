@@ -1,0 +1,45 @@
+{
+  "fit": "T_continue_seed2026",
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "scope": "One completed fit; saved-metric reaggregation and budget/selection metadata only; no prediction replay or matrix-level conclusion",
+  "scalar_comparisons": 960,
+  "maximum_absolute_error": 1.9184957442131e-16,
+  "selected_epoch": 2,
+  "incumbent_validation_r": 0.1817561196902157,
+  "selected_validation_r": 0.18394026276478914,
+  "last_validation_r": 0.1826115137400843,
+  "optimizer_updates": 78900,
+  "component_forward_counts": {
+    "current_encoder_prefix_windows": 6699396,
+    "current_projection_windows": 6699396,
+    "current_head_windows": 6699396,
+    "frozen_encoder_prefix_windows": 0,
+    "attention_query_windows": 0,
+    "prior_projection_windows": 0
+  },
+  "input_sha256": {
+    "COMPLETED.json": "98971552ca5113071477adfd46c2cacffa23d1c584ccfdd143b8c808ea287bec",
+    "STARTED.json": "62ab127ebd36ca1774175198afb9ef93d52058dc14a33f591d524ae85876dd38",
+    "HISTORY.jsonl": "cf58cd153f23ad343a6fcfc848ae2739a9dcea5a6cc1d04e611c4279de003e9c",
+    "PERMUTATIONS.jsonl": "c9d7e4e5aa517640ca2cd644b4a217f24793717be68dd41812b7e270eaa5c04b",
+    "INCUMBENT.json.gz": "fdf7a6dfd62bab1537384194a0614b65aecd619e5e6dae541c3bc2d9f92a9241",
+    "SELECTED_METRICS.json.gz": "b9dd72bea1550f5df36cd5f05d2c35aad02a3bde2e119526304833ee4dddbbd0",
+    "COMPONENT_COUNTS.json": "ca5d2d724c2563345004bdc398f03c4f2b4ca72895a36722d9da7c686154ea81"
+  },
+  "audit_NN_forwards": 0,
+  "audit_backwards": 0,
+  "audit_optimizer_updates": 0,
+  "audit_CPU_seconds": 0.018281604000000003,
+  "audit_wall_seconds": 0.01835012435913086,
+  "limitations": "Seen-participant, mixed-source, repeatedly developed VAL; checkpoint contents and predictions not independently replayed; other fits pending",
+  "goal_complete": false,
+  "audit_source_sha256": "f49a7b4939e7da0ac395412c0a4372a5a00b97a2eafe8d494a3caaebf0edb2b0",
+  "execution_host": "server2203",
+  "paired_H_metadata_consistency": {
+    "protocol_equal": true,
+    "all20_permutations_equal": true,
+    "incumbent_metric_file_equal": true,
+    "P2026_complete": false
+  }
+}

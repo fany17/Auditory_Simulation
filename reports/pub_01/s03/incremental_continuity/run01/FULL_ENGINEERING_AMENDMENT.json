@@ -1,0 +1,20 @@
+{
+  "frozen": true,
+  "time": 1793477845.30082,
+  "scientific_protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+  "scope": "future full stage only; no screen/baseline/FT/EMA changes or retries",
+  "old_sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue.py": "3fea34ed9eb9099294e57609667567b793bcb87817ce2aee7fda3d43eb82e707"
+  },
+  "new_sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py": "fa0fa9ce975e1655c6e3c6b05f48f7c8e8ea54b6a326dddcd36d4825a4ab5c62",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_full_queue_v2.py": "2d1693b01ad8f3a665a81868ac4a73397d90b2a24234c2fd71aaee169a814d15"
+  },
+  "profile_sha256": "c6c972334386aa27dd678aa3f50c90a66f00bf5a8733b3f61d24af83095f42c1",
+  "profile_equivalence": "same actual gradients/initialweights/Adamstates, finite predicates nonmutating; no claim independent cuDNN backward or whole-training bitwise identity",
+  "only_training_computation_change": "all gradient tensors finite checked on GPU; torch.stack all then single host bool instead of repeated per-tensor host bool; all checks every step, same data/batch/gradient/optimizer/loss/init/precision/budget",
+  "added_nontraining_changes": "full-only guard and immutable amendment/source association in resolved/completed metadata",
+  "timing_limitation": "shared GPU contention, 8 alternating20step blocks, indicative1.96x only",
+  "diff_sha256": "ccae71ac3792e034ee759fcb5535c2b2a0b7df3f452174743eb80a19e15dc79c"
+}

@@ -1,0 +1,70 @@
+{
+  "status": "PASS_ACTUAL_PRESENTATION_REFERENCES",
+  "F_existing_sources": [
+    {
+      "seed": 1024,
+      "source_sha256": "94108cf0ef0ce918c1b722242aebab88fe2b5c483688ced35ca3da1a62f45b91",
+      "passed": true
+    },
+    {
+      "seed": 2026,
+      "source_sha256": "f9dc92e78651672eebadcd3d44ce220c82ac6c0c00828c1d75de1f1bf8596d0e",
+      "passed": true
+    },
+    {
+      "seed": 31415,
+      "source_sha256": "dea43c188392780c12816559f5071c7b1cbfd869df32b9b86fef0bad60673c24",
+      "passed": true
+    }
+  ],
+  "secondary_Past_Add": [
+    {
+      "seed": 1024,
+      "subset": "full",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "subset": "warm",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1024,
+      "subset": "cold",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "subset": "full",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "subset": "warm",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2026,
+      "subset": "cold",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "subset": "full",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "subset": "warm",
+      "max_abs": 0.0
+    },
+    {
+      "seed": 31415,
+      "subset": "cold",
+      "max_abs": 0.0
+    }
+  ],
+  "new_predictions": 0,
+  "new_fits": 0,
+  "formal_run_modified": false
+}

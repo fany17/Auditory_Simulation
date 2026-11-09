@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "exact_real_V04_source_preflight",
+    "original_D26_live_no_GPU_queries",
+    "missing_terminal_rejected",
+    "missing_and_duplicate_rows_rejected",
+    "wrong_upstream_protocol_rejected",
+    "mismatched_readout_rejected",
+    "exact_D26_worker_live_no_GPU_queries",
+    "busy_GPU_waits",
+    "complete_fixture_ready",
+    "existing_D27_formal_rejected"
+  ],
+  "scientific_fits": 0,
+  "neural_forwards": 0,
+  "actual_gpu_queries": 0,
+  "formal_paths_created": 0,
+  "executed_approved_queue": false
+}

@@ -1,0 +1,16 @@
+{
+  "metadata_only": true,
+  "passed_assignment": true,
+  "source_family_sha256": "3dc7c61a5afa747b0b26537305296b2260b8613677693b66e42e2efd021395cb",
+  "assignment_sha256": "7ab57f1818a4aef312c43342768893ae8a49ff39407fa8bd76812ef2c81e3d24",
+  "records": 426,
+  "source_families": 37,
+  "folds": [
+    {"fold": 0, "OOF_families": 12, "OOF_records": 144, "OOF_windows": 84439, "fit_records": 282, "fit_windows": 168015, "pretrain_batches_per_epoch": 556, "fit_channel_points": 16170550, "Ccap_fit_windows": 166887, "head_steps_per_epoch": 2626, "FT_steps_per_epoch": 2626},
+    {"fold": 1, "OOF_families": 13, "OOF_records": 138, "OOF_windows": 84290, "fit_records": 288, "fit_windows": 168164, "pretrain_batches_per_epoch": 547, "fit_channel_points": 16185966, "Ccap_fit_windows": 167012, "head_steps_per_epoch": 2628, "FT_steps_per_epoch": 2628},
+    {"fold": 2, "OOF_families": 12, "OOF_records": 144, "OOF_windows": 83725, "fit_records": 282, "fit_windows": 168729, "pretrain_batches_per_epoch": 537, "fit_channel_points": 16237736, "Ccap_fit_windows": 167601, "head_steps_per_epoch": 2637, "FT_steps_per_epoch": 2637}
+  ],
+  "upstream_updates": {"pretrain": 52480, "head": 5918250, "FT": 118365},
+  "downstream": {"active_points_per_pass": 23703510, "physical_batch": 16384, "steps_per_pass": 1447, "last_batch": 12246, "fits": 12, "epochs_per_fit": 20, "updates": 347280, "backward_points": 5688842400},
+  "scope": "Root independently reconstructed these values on server2203 using original source-family/manifest/window JSON and the actual record assignment. No array payload, NN or fitting. This is not an implementation or training admission; 16384 batch must be bound in the actual source and protocol."
+}

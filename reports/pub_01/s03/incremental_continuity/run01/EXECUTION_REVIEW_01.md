@@ -1,0 +1,175 @@
+# SS07 实现与接续阶段复核（2026-11-01）
+
+当前结论仅为工程/协议通过，不能据此声称超过baseline。原完整baseline五seed训练中；1024正式预训练24epoch/19680更新、best epoch8、patience15停止，正在生成其新encoder的train/val缓存。没有读取test载荷或候选test成绩。
+
+协调chat 01a134e4-2036-7e02-81e9-1289a07606f2已独立读取2203代码、JSON与实际进程，核对select/full_queue/history/history_check四文件与本地来源一致；确认控制器PID4176245实际在WAIT_ALL54_SCREEN，接受先54完整配对screen、再15full、然后固定primary五seed和同预算控制的有界流程，无自动失败重试/缺失平均。此独立复核不等于SS07科学验收。
+
+| 证据 | 核验要点 |
+|---|---|
+| INCREMENTAL_ENGINEERING_CHECK_v2.json | 17组synthetic，恒等、梯度、未来/重叠排除、奇数分块；注明single-call跨窗不冒充跨forward证据 |
+| TRAINER_ENGINEERING_CHECK.json | 全426/252454窗/3945更新；420个混record batch；单步与native差9.31e-10；真正两forward不断开状态的前块梯度.000581449，detach后None且数值相同；M3两teacher mask/次数相同 |
+| SELECTION_ENGINEERING_CHECK.json | 6项metadata fixture，覆盖54/15全数要求、失败/缺失/nonfinite拒绝、定宽/定family、五seed与不可变child；fixture保留engineering_history，科学选择不读取 |
+| HISTORY_ENGINEERING_CHECK.json | 6family非零残差预测与冻结forward差0；current不变/逐窗错历史、内容盲不同于reset；15组Hann支持首尾/尾差与EMA0/gap reset |
+| STRONG_CONTROLS_ENGINEERING_CHECK.json | 随机完整encoder raw混record与独立切片精确一致；组合forward差0；encoder/head梯度；EMA0与原49人752块macro逐块误差0；无随机性能报告 |
+
+后续协调已独立通过强FT/EMA phase，并要求真实incumbent验证loss一致性。已补入固定1e−4绝对误差门，raw重编码/B64与原cached/B512全30500窗比较，0optimizer steps时保存INCUMBENT_EQUIVALENCE；不一致则失败保留，不调阈值/换checkpoint。FINETUNE_PROTOCOL/EMA_PROTOCOL冻结，五FT与一个EMA driver排队等待各自完整native head。旧随机工程proof对应v1来源，v1源在服务器engineering_history/strong_controls_v1保留；新增门由实际启动核验，不把随机组装检查冒充真实checkpoint一致。
+
+实际首个核对已PASS：seed1024完整两阶段head250epoch/986250更新完成，FT raw/B64与原cached/B512的全30500窗验证loss差1.3955303856949541e−8，0optimizer-step时通过预定1e−4阈值；不是随机权重替代检验。head选249、按250上限结束，保留预算未收敛风险。
+
+统计/干预规则经协调五点澄清后冻结EVALUATION_RULES，代码合成PASS；metadata-only SOURCE_FAMILY_JOIN/DONOR_METADATA_PLAN已保存144个目标的唯一供体/缺失原因。最终checkpoint/target-mask child仍未具备，不产生test预测。外部DTU两文件扩展获协调授权，range确认18个MAT、zip+extraction3.43GiB，在2203白名单下载中，无外部模型表现；AUDIO/EEG/Dryad/新权重未批准。sub-077暴露、sub-017未知/质量问题继续分开保留。SS07保持ACTIVE，未作性能或科学成功声明。
+
+后续DTU下载/官方MD5/安全提取与18人1080trial全审计完成，报告与轻量证据已同步本地。profile工程v1独立backward强bitwise失败保留服务器engineering_history/profile_v1；修订为同一真实梯度/初始参数/Adam状态隔离finite谓词，非mutation/参数/梯度/Adam差0、NaN/±Inf一致。共享GPU交替短块全step中位13.606ms→6.928ms仅为工程测量，不保证完整训练加速或bitwise一致。经协调独立审阅批准，future full独立v2/helper39项实际NaN/Inf判定PASS，FULL_ENGINEERING_AMENDMENT/FULL_V1_V2_SOURCE.diff关联来源。live检查旧等待controller无children/无fullcells/WAIT54后仅停止该等待进程，新PID14537及独立lease/status接续；不改/重启baseline/screen/FT/EMA。原scientific protocol、所有旧源/lease/status保留。完整三seed比较及科学验收尚未到达。
+
+## 五次完整native与平滑控制（后续实际进展）
+
+五seed预训练分别24/27/26/24/25 epoch，均按patience15停止；selected epoch（0-based）8/11/10/8/9。五个head均实际250epoch/986250更新、达到原预算上限，不称patience早停或已收敛；selected249/249/249/244/249。BASELINE_BUDGET.csv及SNAPSHOT.json来自完成的实际history/completed，图横轴为1-based，点为验证所选checkpoint。右图仅原3s checkpoint criterion，不是60s逐人主测试成绩。
+
+![完整native的五seed验证曲线](BASELINE_CURVES.png)
+
+实际EMA入口数值审阅发现whole-phase64不拆record与主macro验证的global64/record split不同；旧随机预测tau0检查仅覆盖融合计分，不能证明真实NN输出恒等。live核对原EMA等待driver4187874的exact argv、无children、无selection/results后仅停止该等待进程，原源/lease/status/protocol保留；EMA_V2_HANDOFF、NUMERICAL_AMENDMENT及精确diff完整记录，新driver48661已完成。真实P1024完整VAL752块：旧分块最大r差1.449e−5，修正为原forward_global_batch后差0，未放宽数值阈值、未重训。预设5tau/3seed均值选优/5seed复用规则不改，最终tau0；所有三个seed下其余四个平滑tau均较差。EMA_SELECTION保留tau0恒等alias，并保留预设M6/7中的重复保守对照，不扩大范围追改善。
+
+FT五个真实incumbent检查均在0更新前通过（最大绝对差3.70e−8，固定阈值1e−4）。其中1024/31415已各5epoch/19725更新完成，另三个继续。本阶段PROGRESS_02快照为screen24/54；不对不完整seed排名，正式候选full尚待54配对结果。
+
+## 最终执行链的工程复核
+
+新checkpoint builder在任何test payload之前核验全部54screen、五family初始full、最终primary/control5seed、P/FT/EMA，独立重算screen宽度/full前三seed赢家/EMA选择、核验真实checkpoint key/shape/seed/epoch/最早validation tie。成本账本显式包含全部未入选screen、5次共享pretrain各计一次、native head、FT及去重full，整个搜索成本与赢家正式预算分开；probe/profile不混入科学训练总账。
+
+最终真实weights就绪后，先在每seed至少两合法VAL record（含非64起点）自动复核primary正常forward/true-history桥和P/EMA0同预测，再固定target/coverage/donor/shuffle mask，之后才推理。P/增量/history保留phase-global64拆record；FT保留其原mixed-record完整global64 raw decoder；P_EMA直接复用P相同window预测。内部技术失败保留partial并阻止该seed后续DTU，低分不触发停止。每种donor只与相同key子集的true-history配对，不把119记录对子集与144记录全体相减。
+
+FINAL_EVAL_COMMON_ENGINEERING_CHECK_v2：真实native VAL752块r差0，实际拟合非零M2 true bridge差0，六family非零/奇数首块恒等差0，FT真实P incumbent两VAL record混batch raw路径差0；错key/person/seed/epoch/tie拒绝；提前builder调用payload读取0。FINAL_EVAL_PIPELINE_ENGINEERING_CHECK_v2：隔离合成输入/小模型走完整一seed caller，显式克隆合成metadata测试五seed聚合，覆盖1080trial/EMA同波形/FT独立源/不同donor keys/缺stratum不重权/内部技术失败external calls0。FINAL_MANIFEST_ENGINEERING_CHECK仅合成完成metadata+显式checkpoint stub检验全账本/排名与错均值拒绝，不冒充实际权重完成。失败probe/初版语法/fixture浮点修订均保留服务器engineering_history。
+
+协调端已独立读取上述当前代码、实际proof和source hash并批准按原门冻结/自动排队；无新增用户审批。最终实际checkpoint manifest/READY目前未创建，无真实test或DTU NN成绩。预估最坏8主条件的新数组约9.06GB，加现有8.69GB低于25GiB并保留磁盘20GiB。正式权重桥、真实推理、原始预测复算、图表和科学验收仍待完成，goal保持ACTIVE。
+
+当前代码已提交推送4e33d69，22个本地/服务器执行脚本逐项SHA一致；EVALUATION_EXECUTOR_PROTOCOL锁25个source及5份proof，PID88448实际ps/argv核对通过并在WAIT_ALL_FIXED_TRAINING，等待handle14537及三个尚在运行的FT driver均live。协议hash24fffddda54be91ca3dea9c5024e903ef88f92d06331e22fbf93603b6aef56a4。未创建真实FINAL_CHECKPOINT_MANIFEST/READY；此排队不等于已经进行了测试或完成研究goal。
+
+## 结果产生前固定独立复核
+
+新增 review_math/metrics/raw 与独立 review_queue，完全在原冻结调用链之外。实际复核必须先有全部固定评估的 final_summary/COMPLETED，再通过 require_ready 和新复核来源/proof 协议门；不得提前读取实际 test/DTU 预测、目标或神经输入。原14537/88448及其25个冻结来源不改。复核不训练、不换模型、不重试、不覆盖原结果，技术通过仍不代表科学验收。
+
+数学实现不调用生产相关/统计函数：centered dot Pearson、显式块到人矩阵、频数矩阵/einsum实现相同跨seed/person重采样，手工排序/线性插值分位数；共享family的Exp权重敏感性另以block权重矩阵复算。全量检查所有保存预测与原目标、内外key/metadata、EMA0同波形、主M6/7、探索M5、六历史干预各自相同key子集以及外部18×60×5seed。MSE采用max(1,原MSE)缩放误差≤1e−10，其余指标/区间绝对误差≤1e−10，阈值在实际分数产生前固定。
+
+协调独立审阅发现非二进制常数可能被中心化舍入错误放行，已只在新review Pearson增加精确max==min拒绝；3840×.1、3166×.3、3×.1的预测/目标两侧共6项拒绝测试通过，不加epsilon，不把常数结果替换为0或排除。旧proof及来源在engineering_history/independent_review_before_exact_constant_rejection保留。若实际触发则技术review失败，生产结果保留待判断。
+
+INDEPENDENT_METRIC_MATH_CHECK：37次数值核对，20k内部crossed与Exp逐sample最大差4.17e−17，外部区间及手工quantile吻合，11类拒绝与提前gate payload0。INDEPENDENT_METRIC_PIPELINE_CHECK：隔离合成信号、全部五seed和18×60外部keys、生产聚合后独立caller共77482次数值核对，含缺stratum不重权、同key donor和故意改r拒绝；不是实际科学结果。首math fixture缺story、首pipeline fixture缺来源副本均保留原fixture/source后只修夹具，未改实际数据或生产算法。
+
+INDEPENDENT_RAW_INPUT_VAL_CHECK：真实已完成P1024与拟合非零M2的两合法VAL（offset0/605），fresh raw→B256 encoder与原cache差0，独立head全局分块差0、独立Hann融合最大5.69e−14；已完成FT1024的独立snap全局64重放包含前后record填充、与完整raw流最大差0。DTU合成66通道乱序、尺度异常、时常数三案适配逐float32相等；未来非common扰动不改变第一当前窗，提前gate读取0。未对实际test或DTU做NN推理。
+
+代表性raw复核在看分数前按metadata固定：每Sparr phase按record字典序取首记录及首个非64对齐起点（去重，最多4）；DTU S1/S11/S18的trial1/60，S11因既有输入尺度审计异常预先纳入；五seed全部main条件，波形绝对误差门1e−6。独立读取raw、核对checkpoint角色、B256编码/FT自身完整raw64/通道映射与融合，但复用冻结神经forward；不称全量raw重放、独立神经数学或history干预NN重放，后者仅全量独立复算保存预测指标。
+
+最近实际训练快照screen36/54、full0；FT1024/31415完成5epoch/19725更新，另三已完成epoch3/15780更新并继续；最终checkpoint/READY仍不存在。磁盘42.67GiB，控制器14537/88448的实际argv仍匹配。此处不据不完整screen排名或改变矩阵，SS07和goal保持ACTIVE。
+
+协调端独立读完8个review源/3proof并核验hash后批准冻结和自动等待。来源commit2f699c217537fed010aa48e0ad6ee8783f14060d已推送；INDEPENDENT_REVIEW_PROTOCOL的hash为5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795。实际metadata去重选中3条Sparr（seen2、heldout1，heldout字典首本身即非64起点），不为凑4而补选。新队列PID113154经ps/完整argv/lease核验live、WAIT_COMPLETE_FIXED_EVALUATION，实际上游88448，payload读取false；failure文件不存在。14537/88448原controller及来源不变。此时screen37/54，最终checkpoint/READY仍无，真实raw/metrics review尚未执行。冻结protocol和handoff/lease/status已回传本地，数据/权重/预测数组仍仅在2203。
+
+## 五seed微调控制已完整完成
+
+五个FT均完成预设5epoch/19725更新，每seed额外1262270个监督窗口呈现、含incumbent共6次VAL，selected均为0-based4（最终预算轮）。FINETUNE_SNAPSHOT/CSV与图仅从2203 completed/history/初始一致性metadata生成，不读取信号或测试分数；图中横轴0表示原P raw/global64 incumbent，方框是选中checkpoint。原预训练和head成本另外计入，不因微调只5轮而忽略上游成本。
+
+![五个FT的完整验证曲线](FINETUNE_CURVES.png)
+
+原始3s验证r的initial→selected分别为1024 .148761→.157074、2026 .146341→.157230、31415 .151965→.160609、42 .151830→.160529、12345 .149835→.159814；均仍在预算末端改善，不能称收敛、最优微调、60s/person指标改善或测试胜出。记录runtime约3226–4016秒，受同期GPU作业影响，不作隔离推理延迟/效率对比。最终测试及外部主比较仍待全量筛选/full完成。
+
+新增EVIDENCE_MATRIX仅汇总父任务接受所需的已有直接证据、权威待交产物和外推限制，不增加模型、数据、终点或准入门。当前关键缺口仍是真实候选full、全部匹配比较/历史干预、独立实际复算和方法新意/泛化接受判断；不会用验证曲线替代这些缺口。
+
+## 全54筛选完成，五family全预算阶段已启动
+
+FULL_SELECTION已按原18条件×3seed完整结果冻结，sha256为be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80。每个已选checkpoint仍由原3s VAL准则选择；下表是其完整record Hann融合后60s→人macro r的三seed均值，仅用于预设选宽度，不是最终主模型选择或测试成绩。
+
+| Family | H16 验证均值 | H32 验证均值 | 预定规则选择 |
+|---|---:|---:|---|
+| M1 | .158975 | .158467 | H16 |
+| M2 | .158713 | .158644 | H16 |
+| M3 | .158602 | .158226 | H16 |
+| M4 | .159706 | .159332 | H16 |
+| M5 | .160543 | .156750 | H16 |
+
+协调端另行从2203完成记录独立重算18组均值、覆盖、预算及tie规则，确认五类H16。执行者新screen_review又用math.fsum从所有40608个已保存VAL block r重新按人汇总，核对2646个人均值、54个macro和全ledger：macro最大差5.56e−17、18个原均值及宽度选择逐项吻合。此为**已保存相关系数的聚合复算**，未重新读取信号/预测或重算r，不冒充原始输入复核；后者仍由冻结最终链执行。来源和轻量证据见SCREEN_SELECTION_REVIEW、SCREEN_WIDTHS及SCREEN_INDEPENDENT_VAL。
+
+全试验账本保留54行，无失败/缺seed平均。原SCREEN_LEDGER的target_presentations列来自supervised_target_samples，单位实际为目标sample呈现而非窗口；原文件保留不改，新独立CSV明确分开supervised_window_presentations与supervised_target_sample_presentations并核验后者=192×前者。最终COSTS仍直接读取completed里的明确单位，不从这个简写列猜测成本。
+
+本阶段screen-native架构控制（上限12轮）的验证均值.159038，static_m2_h16为.163131，五个历史family最高为M5的.160543。这些是同一筛选阶段的描述性结果，**没有建立历史超越静态容量控制的收益**，不能将其当正式强基线胜负；native完整250轮和FT控制另按统一最终评估。保留全部五family继续既定full，不因该现象增加/替换候选、改窗口或另选negative sampling。
+
+初始full按五family×三seed共15cell启动，预算仍250epoch/pat10、3945更新/epoch，fresh初始化，不继承screen权重。实际首批m1_h16：1024 PID156906/cuda0、2026 PID156904/cuda1、31415 PID156905/cuda0；FULL_START_VERIFIED快照分别已完成5/6/5epoch和19725/23670/19725更新，resolved_config的各自encoder与既有cache匹配、engineering amendment相符。full7、eval25、review8个冻结source逐项仍匹配原protocol。14537/88448/113154实际argv在线，primary selection和READY尚无，未读实际test/DTU NN成绩。
+
+FULL_QUEUE_V2_STATUS仍保留最后一次WAIT_ALL54_SCREEN文字，是旧等待快照；当前阶段以FULL_SELECTION、full目录、实际子进程argv及更新判断，不为状态文字停/重启控制器，也不手改它。完整15full后的primary/controls、五seed配对、统一内外评估、实际raw/metrics复核与科学接受仍待，goal ACTIVE。
+
+## 最终呈现代码准备（尚无真实结果图）
+
+新增result_figures及其synthetic检查，不进入或修改冻结的训练/评估/独立复核来源。其真实main必须先满足INDEPENDENT_REVIEW_COMPLETED技术通过、完整gated及实际raw/metrics proof与最终checkpoint清单对应，才读取五个final_summary结果JSON。没有启动呈现等待队列，也未调用真实结果入口。
+
+准备输出五张静态图：固定M6/7主差值（内外两支分开）、前三seed五family探索M5、六history各自同key子集/覆盖/缺分层、全部main五seed绝对值、全搜索成本；另自动写NUMERICAL_SUMMARY数值表，明确科学解释待完成。只转述已有区间，不重采样、不挑模型/seed/排序、不重新赋权；τ0对照保留重复M，且内外contrast与absolute的别名一致性显式核对。history缺分层显示Endpoint unavailable，不能画成0。对近似区间不强制点估计落在区间内，不平移/重居中。成本用log点图和数字，区分逐run elapsed之和、服务器wall time与隔离计时；不因预训练监督窗口列为0而忽略其数据/负样本预算。
+
+RESULT_FIGURE_ENGINEERING_CHECK只用隔离合成输入，完整覆盖M6与M7两种五图/数值表路径、bad order/坏τ0别名/缺main seed/未知cost stage拒绝、缺history分层、点估计落在区间外、提前复核门的gated/renderer调用0及输入summary不改。所有图面均标SYNTHETIC；执行者已查看M7五图及M6主图确认可读。原成功fixture与旧source/proof保留，后续修改只改善alias夹具自洽、mean/seed图注、log成本呈现和补足M6覆盖，没有实际数据/成绩参与。合成预览仅放本地visualizations目录，不作为真实报告图进入Git。
+
+最近实核初始full已有1/15完成：M1seed1024正常结束后自动进入M2seed1024（PID163617），另两M1继续；控制器14537/88448/113154实际argv在线、root无failure、primary selection仍无。完整五seed科学差值与实际呈现仍待，不将工程图通过或首个full完成当科学成功。
+
+协调独立读完renderer/check并查看合成主比较、history覆盖和log成本图后审阅通过；最新M6/M7 proof hash af3a87ede51d3268c1104556d56a00ed5581898fc0bc81d7fe0764a0ed85e672、renderer hash c6b60bb032538a54a55676f1c3337031285fe2e71f5b114642d2c0b4bd27b42f已由执行者在2203再次核验。真实复核齐备后可直接在2203生成呈现，不另索许可；实际图仍须按真实值看是否裁切/重叠并完成科学解释。首个M1 full1024实际22epoch、selected11、pat10、86790更新/5553988窗口呈现亦已双侧从completed/history核对；这只是一个完成cell，不能代表三seed family或最终胜负。
+
+## 独立review v2：仅修正无界描述性R²的舍入核验
+
+协调在五native全部合法VAL上发现旧R²绝对1e−10门会误拒绝正常sum/dot舍入。执行者独立重跑五已完成head各49record/752block，共245record/3760block/11280项比较，0新fits、0test/DTU：旧门误拒绝1个R²，new scaled全部通过；五seed最大缩放差7.3515e−16。具体原值/独立值、record/start、逐seed范围与误差均保存INDEPENDENT_R2_LEGAL_VAL_CHECK_V2，不是实际科学试验失败。Pearson训练未校准幅度，描述性R²绝对值可达约10^5，不能套同r的绝对误差解释。
+
+v2仅将R2_descriptive加入既有MSE_descriptive的|差|/max(1,|原值|)≤1e−10核验；r、全部相关差值和CI仍绝对1e−10，raw waveform仍绝对1e−6，精确常数拒绝不变。模型/训练/科学终点/原分数/纳排/选择均不改。这是test尚未开启前的review工程修订，不以test结果放松标准。
+
+旧8source/3proof/protocol/lease/status/handoff已核验并备份至engineering_history/independent_review_v1_before_R2_scaled，原文件仍原位保留。旧raw完全不改、继续用原几何协议和原gate；新metrics_v2使用新R²数值核验，新combined完成标记显式区分raw v1与metric v2，呈现v2入口只读新的combined并复用原已审纯render。新协议同时pin旧依赖与新source/proof，避免混用。当前只准备新文件，不触14537/88448或任何训练/评估源。
+
+INDEPENDENT_METRIC_MATH_CHECK_V2通过38个数值核对与原常数拒绝，补大R²合法舍入可过、明显错误R²及r/CI错误仍拒绝；预期错误使用单独counter，旧draft proof/source保留。INDEPENDENT_METRIC_PIPELINE_CHECK_V2在放大合成预测的完整caller/五seed聚合上仍通过77482项核对，R²绝对舍入差超过旧1e−10而缩放差合格，故意破坏R²也被拒绝。INDEPENDENT_REVIEW_V2_GATE_CHECK验证raw v1/metric v2正确组合、4种混协议/版本/checkpoint拒绝和提前gated/render调用0。原真实VAL raw与M6/M7纯render工程证据继续复用，来源不变。v2候选协议待协调核验后仅交接113154等待父进程；真实review仍未执行。
+
+协调随后独立核验18source/8proof与8342字符exact diff、38/77482数值及3760合法VAL，批准v2正式接续。正式INDEPENDENT_REVIEW_PROTOCOL_V2 hash为97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d，source commit1153dbf207aa47175efeb9e43c58459635bb8970。临执行实核旧113154 UID四项1012、exact argv、无children、WAIT/无actual review与READY，再保存最终lease/status至备份并仅终止该等待父进程。新233443的UID/argv/无children/WAIT实核通过，遍历/proc确认唯一review queue为[233443]；14537/88448前后argv及start_ticks完全相同，未触训练或最终评估。
+
+PRECHECK及HANDOFF_COMPLETED、v2 lease/status/protocol已回传。旧协议/source/proof/lease/status原位保留，备份engineering_history/independent_review_v1_before_R2_scaled；新的combined为INDEPENDENT_REVIEW_COMPLETED_V2，raw v1与metric v2各自protocol hash明确区分，实际呈现只用result_figures_v2入口。协调亦实际复核接续和无双队列通过，不再新增许可门。最新full13/15，尚无primary/READY/实际review结果；工程交接后继续原全量流水线，goal ACTIVE。
+
+## 初始15个full完成，M4主模型冻结
+
+FULL_PRIMARY_SELECTION已建立，sha256为d43da5b521af0cabfed6a2a6fc4ce968ae39f20824411d07c305fb1fa08b69d2。按原三个seed（1024/2026/31415）的VAL60s→被试macro r均值及原tie规则，选择m4_h16；新增seed不参与重新选择。primary_review从11280个已保存VAL block r独立重聚合735个人均值，最大macro差2.78e−17，并核对全部15cell的各自encoder/cache、配置、history最早选点、patience、更新/窗口/样本/teacher预算及相同49人/752keys，见PRIMARY_SELECTION_REVIEW与FULL_INITIAL15_BUDGET。这是保存指标和metadata的核对，不冒充原始预测或神经前向复核。协调端也已独立重算选择、全部预算和覆盖，确认按原方案继续。
+
+| full候选 | 三seed VAL60s/person均值 | 相对原P的均值差 | 实际epoch数（1024/2026/31415） |
+|---|---:|---:|---|
+| M1 H16 | .160705122 | −.001657365 | 22 / 61 / 52 |
+| M2 H16 | .159030095 | −.003332392 | 15 / 49 / 32 |
+| M3 H16 | .158701208 | −.003661279 | 16 / 28 / 26 |
+| M4 H16（冻结primary） | .161345369 | −.001017118 | 17 / 55 / 71 |
+| M5 H16 | .160309630 | −.002052857 | 15 / 16 / 20 |
+
+全部15cell按patience10停止，不称全局收敛。原P同三seed/同VAL60s/person均值为.162362487（冻结EMA tau0与原P精确别名）。五候选均低于原P，且M4逐seed差为−.000952139 / −.001387850 / −.000711367，见PRIMARY_NATIVE_VAL_COMPARISON。这是合法验证集负向证据，不是测试或外部结论，不因M4候选中最高而写成已超过原P。不据此改预算、候选、划分或启动额外分支。
+
+四控制冻结为m4_current_h16、static_m4_h16、output_prior_h16、static_alignment；最终固定五seed为1024/2026/31415/42/12345。原三seed各训练四控制，额外两个seed先训练冻结M4再训练四控制，追加22cell，总唯一full37（主比较25，另四family各原三seed共12）。FINAL_CONTROL_START_VERIFIED记录首批PID237174–237178、各自argv/resolved/cache/amendment和250/pat10预算；这是启动快照，不作永久活跃PID表。后续实核seed1024的current控制已完成并进入static_m4，其余四worker继续；14537/88448/233443仍工作，无真实READY。继续完整比较、实际raw/metric复核与科学判断，不以本次选择或阴性VAL完成goal。
+
+## 初始15个full的实际曲线与验证差值
+
+新增initial_full_curves仅在2203读取已完成history/completed、冻结PRIMARY/EMA选择metadata，不载入信号、checkpoint或预测数组，不训练、不新增评分。完整495条epoch记录及15个选中点均与预算/早期选择记录吻合；差值均值与PRIMARY_NATIVE_VAL_COMPARISON逐项相符。FULL_INITIAL15_HISTORY与CURVE_SUMMARY为图的轻量数值入口，CURVE_SNAPSHOT记录来源。两张实际图已检查无裁切/点标注重叠；第一版标注位置不佳的源与输出保留在2203 engineering_history/initial_full_curves_v1.py及initial_full_curves01，当前交付取initial_full_curves02，仅改呈现。
+
+![初始15个full的真实训练和验证曲线](FULL_INITIAL15_CURVES.png)
+
+左列为训练过程中各batch的在线3s相关均值，右列为每轮完成后的固定验证遍历；空方框是最早最佳3s验证checkpoint。左右来自不同样本池且训练值随轮内权重变化，不能把两线数值差直接当成同一checkpoint的泛化误差估计。所有曲线使用原max250/pat10；实际终止轮数见上表，不把未跑满250误称预算违约，也不称全局收敛。
+
+M2、M3的若干曲线在训练目标继续改善时，验证表现已持平或下降；M5的三个验证峰分别位于第5/6/10轮，之后没有恢复到更高值。这种轨迹与拟合训练数据而未获得相应验证收益相容，但仅凭曲线不能确定原因或证明历史普遍无用。M4三个seed最佳轮次相差较大（第7/45/61轮），本轮按既定耐心规则处理，不据此延长其中某个seed或换挑选准则。
+
+![初始三seed候选相对原P的验证差值](FULL_INITIAL15_VAL60S.png)
+
+第二图在每个seed内比较同一VAL60s→被试macro指标；点是seed配对差，黑横线为三seed均值，不是置信区间。基准是原P精确EMA tau0别名。实际15个逐seed差全部小于0，M4均值差约−.001017，是五family中最小的下降。3s checkpoint选择曲线与融合后60s/person终点不同，不能用某条3s曲线较高替代后者。此处VAL同时用于训练/候选选择，不是独立确认或最终内部/外部测试。
+
+随后两个额外M4 seed也已完成：42为21epoch/82845更新、选中0-based10；12345为35epoch/138075更新、选中0-based24，均pat10。仅重聚合保存VAL块、核对history/预算/各自encoder/cache和共同49人/752keys通过，未读任何权重或预测载荷，也未重选primary。其VAL60s/person r分别.164240891/.162190684；既有EMA选择不含这两个seed的P60s值，不拼凑不存在的配对比较。最新运行快照full20/37：M4五seed、原三seed current控制完成；三static控制及其余current控制仍实际运行，无失败或真实READY。最终五seed统一比较/实际复核及goal继续。
+
+协调请求的简短机制核查已完成：FAILURE_MECHANISM_CHECK与INITIAL15_PAIRED_VALIDATION_METADATA将15候选的best3s、VAL60s、选中epoch/实际预算/停止原因与同seed P并列。源码/来源核对确认同seed共享冻结encoder并从相同随机head联合训练残差，不是训完P head上的历史增量；训练中只有FT加载训完P head，EMA另为无拟合后处理。M4/31415的3s高P .000303917但60s低P .000711367，说明指标排序可不一致，不能把所有阴性单独归因于过拟合或信息不足。事实/可证伪假说/无法区分机制分开，不设计或启动下一轮，原评估不改。
+
+## 37个full完成，冻结权重与统一评估实际接续
+
+全部37个唯一full已完成：主模型/四控制×五seed共25，加其他四family原三seed共12；原M4三seed只计一次。协调独立核对全部seed/协议/amendment、history最早best、停止规则及每轮3945更新/252454窗通过；执行者又从最终manifest重加总一致。全37搜索/对照共3418epoch、13,484,010更新、862,887,772监督窗口重复呈现、165,674,452,224目标sample呈现。这不是仅主模型的成本；最终总研究账本还包括54screen、5shared pretrain、5native head、5FT，各共享预训练只计一次。
+
+FULL_SELECTED_CONDITIONS_COMPLETED保存以下五seed**验证**均值，不是测试或独立确认，primary不重新选择：
+
+| 固定full条件 | 五seed VAL60s/person r |
+|---|---:|
+| m4_h16 | .162093536 |
+| m4_current_h16 | .162053112 |
+| static_m4_h16 | .167224942 |
+| output_prior_h16 | .162545551 |
+| static_alignment | .164176010 |
+
+M4与current的验证均值接近，低于其余三控制的均值；不据此改模型、预算或终点。原三seed候选对P的阴性记录保留，且不把三seed P与五seed候选拼成配对比较。该完成文件的generic FT/EMA pending字段不是当前状态依据；最终manifest已实际核验五FT及EMA。
+
+FINAL_CHECKPOINT_MANIFEST已冻结94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817：5个原encoder、47个checkpoint角色、14份协议及106个训练成本条目，M4/五seed/8main/M7保持原规则。协调另行核对来源与SHA通过。五seed×2条真实最终权重VAL桥（包括global offset605非64起点）全部差0、当前z不变、P/EMA0精确恒等，见FINAL_WEIGHT_VAL_BRIDGE；没有新增fits或阈值调整。
+
+EVALUATION_READY已在预测前冻结02c474c140c0bdb46ea841880d27ba1848dd497ecf3b47f7980a6dda21d23a43，记录checkpoint/VAL桥/四mask的关联。当前数组8,762,245,632 bytes，新增上界9,055,582,784 bytes，合计小于25GiB cap并保留20GiB余量，见FINAL_EVAL_ARRAY_BUDGET。模型/信号/预测数组仍仅2203；仅上述约181KB轻量JSON回传。
+
+full父14537正常结束；原评估父88448实际启动seed1024/cuda0 PID359965与seed2026/cuda1 PID359966，FINAL_EVALUATION_HANDOFF_VERIFIED保存当时argv/来源关联与检查，PID是观察快照。后续顺序仍cuda0的1024→31415→12345、cuda1的2026→42，每seed先内部后DTU；不因低r停外部，技术失败保留并停止受影响seed。复核父233443继续等待完整summary，随后原raw v1→metric v2；只有INDEPENDENT_REVIEW_COMPLETED_V2通过才用result_figures_v2。实际NN结果、raw/metric复核和科学判断仍待，不以训练/工程完成结束goal。

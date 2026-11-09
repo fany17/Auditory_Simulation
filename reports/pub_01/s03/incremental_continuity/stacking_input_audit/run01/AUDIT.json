@@ -1,0 +1,845 @@
+{
+  "EEG_channel_norm_artifact": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz",
+  "EEG_channel_norm_recorded_sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+  "NN_calls": 0,
+  "anchor_by_seed": {
+    "1024": {
+      "train": {
+        "MSE": 0.2048865015709997,
+        "active_MSE": 0.19187170430596392,
+        "active_points": 23703510,
+        "r": 0.2458293944351208
+      },
+      "val": {
+        "MSE": 0.24227645987623703,
+        "active_MSE": 0.2501360895707256,
+        "active_points": 2866799,
+        "r": 0.18188879428826338
+      }
+    },
+    "2026": {
+      "train": {
+        "MSE": 0.20493901973771048,
+        "active_MSE": 0.19190827081989986,
+        "active_points": 23703510,
+        "r": 0.24484918430904762
+      },
+      "val": {
+        "MSE": 0.2422361111581663,
+        "active_MSE": 0.25010805070946707,
+        "active_points": 2866799,
+        "r": 0.1817561196902157
+      }
+    },
+    "31415": {
+      "train": {
+        "MSE": 0.20482857986017247,
+        "active_MSE": 0.19177259017770082,
+        "active_points": 23703510,
+        "r": 0.2490902535024761
+      },
+      "val": {
+        "MSE": 0.242624095931501,
+        "active_MSE": 0.2505419737022432,
+        "active_points": 2866799,
+        "r": 0.18337490481957303
+      }
+    }
+  },
+  "anchor_seed_mean": {
+    "train": {
+      "MSE": 0.20488470038962756,
+      "active_MSE": 0.1918508551011882,
+      "r": 0.2465896107488815
+    },
+    "val": {
+      "MSE": 0.24237888898863477,
+      "active_MSE": 0.25026203799414526,
+      "r": 0.18233993959935071
+    }
+  },
+  "contrastive": {
+    "train": {
+      "guaranteed_minimum_records": 1,
+      "index": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_windows.json",
+      "phase_index_rows": 126341,
+      "plans_per_epoch": 820,
+      "possible_records": {
+        "overlap_current_TRAIN": 426,
+        "overlap_current_VAL": 0,
+        "records": 426
+      },
+      "possible_sampled_rows": 126156,
+      "presentations_per_epoch": 104960
+    },
+    "val": {
+      "guaranteed_minimum_records": 0,
+      "index": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/val_windows.json",
+      "phase_index_rows": 15268,
+      "plans_per_epoch": 98,
+      "possible_records": {
+        "overlap_current_TRAIN": 0,
+        "overlap_current_VAL": 49,
+        "records": 49
+      },
+      "possible_sampled_rows": 15228,
+      "presentations_per_epoch": 12544
+    }
+  },
+  "contrastive_historical_example": [
+    {
+      "actual_window_presentations_epoch0": 104960,
+      "batches_per_epoch": 820,
+      "eligible_record_time_windows": 126341,
+      "phase": "train",
+      "repeat_presentations_epoch0": 32108,
+      "unique_story_time_windows_epoch0": 12124,
+      "unique_visited_epoch0": 72852,
+      "unvisited_eligible_epoch0": 53489
+    },
+    {
+      "actual_window_presentations_epoch0": 12544,
+      "batches_per_epoch": 98,
+      "eligible_record_time_windows": 15268,
+      "phase": "val",
+      "repeat_presentations_epoch0": 3837,
+      "unique_story_time_windows_epoch0": 1563,
+      "unique_visited_epoch0": 8707,
+      "unvisited_eligible_epoch0": 6561
+    }
+  ],
+  "contrastive_record_visit_log_present_in_receipts": false,
+  "current_cohort": {
+    "train": {
+      "Ccap_i_ge_4_windows": 250750,
+      "prepared_points": 24297126,
+      "records": 426,
+      "stories": 41,
+      "subjects": 70,
+      "windows": 252454
+    },
+    "val": {
+      "Ccap_i_ge_4_windows": 30304,
+      "prepared_points": 2935045,
+      "records": 49,
+      "stories": 5,
+      "subjects": 49,
+      "windows": 30500
+    }
+  },
+  "downloads": 0,
+  "external_payload_or_metrics_read": false,
+  "fit_record_coverage": {
+    "Ccap_coefficients": {
+      "overlap_current_TRAIN": 426,
+      "overlap_current_VAL": 0,
+      "records": 426
+    },
+    "Ccap_transforms": {
+      "overlap_current_TRAIN": 426,
+      "overlap_current_VAL": 0,
+      "records": 426
+    },
+    "EEG_channel_norm": {
+      "overlap_current_TRAIN": 426,
+      "overlap_current_VAL": 0,
+      "records": 426
+    },
+    "FT_affine": {
+      "overlap_current_TRAIN": 426,
+      "overlap_current_VAL": 0,
+      "records": 426
+    },
+    "joint_FT": {
+      "overlap_current_TRAIN": 426,
+      "overlap_current_VAL": 0,
+      "records": 426
+    },
+    "native_head": {
+      "overlap_current_TRAIN": 426,
+      "overlap_current_VAL": 0,
+      "records": 426
+    }
+  },
+  "fits": 0,
+  "old_test_payload_or_metrics_read": false,
+  "oof_inventory": {
+    "candidate_names_regex": "(?i)(?<![a-z0-9])(?:oof|out[-_]?of[-_]?fold|cross[-_]?fit|fold\\\\d+|kfold)(?![a-z])",
+    "candidates": [],
+    "directories_per_root": {
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_conditional_history_probe_20261101": 6,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101": 10,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101": 8,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101": 7,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_error_decomposition_20261102": 10,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_history_20261102": 30,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_objective_control_20261102": 21,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_order_control_20261102": 19,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_full_ft_token_normalization_20261102": 19,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_interaction_probe_20261101": 6,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_memory_20261019": 58,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_history_sensitivity_20261102": 7,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101": 1158,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_observation_state_probe_20261101": 6,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_physical_objective_20261101": 7,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103": 30,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103_home_backup_formal_attempt01": 10,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_readout_attribution_20261101": 7,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_research_gap_20261102": 1,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01": 8,
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_train_diagnostics_20261101": 4,
+      "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_memoryless_output_20261106": 12,
+      "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_query_20261106": 12,
+      "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106": 6,
+      "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106": 26,
+      "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106": 12
+    },
+    "excluded_names_regex": "test|dtu|external|openneuro|ds004408|__pycache__",
+    "mode": "filename inventory only"
+  },
+  "paths": {
+    "D8_protocol": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/PROTOCOL.json",
+    "baseline_protocol": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/BASELINE_PROTOCOL.json",
+    "checkpoint_manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/FINAL_CHECKPOINT_MANIFEST.json",
+    "downstream_bindings": {
+      "D19": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PREPARATION_METADATA.json",
+      "D20": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/PROTOCOL.json",
+      "D22": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_query_20261106/PROTOCOL.json",
+      "D23": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_memoryless_output_20261106/PROTOCOL.json"
+    },
+    "family_join": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/SOURCE_FAMILY_JOIN.json",
+    "finetune_protocol": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/FINETUNE_PROTOCOL.json",
+    "intake": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/INTAKE.json",
+    "prepared_manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/manifest_frozen.json",
+    "target_manifest": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/envelope_readout_seed1024/manifest_frozen.json",
+    "training_sources": [
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_finetune.py",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/input/pub_01_s03_transformer_train_v2.py",
+      "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_readout_transfer_20261101/input/pub_01_s03_ss07_ft_readout.py"
+    ]
+  },
+  "scientific_array_reads": 0,
+  "scope": "server2203 public TRAIN/VAL JSON, source provenance and path/stat only",
+  "seeds": {
+    "1024": {
+      "Ccap_dimension": 3264,
+      "Ccap_lambda": 0.01,
+      "D19_D20_D22_D23_anchor_values_equal": true,
+      "D19_asset_stat_matches": [
+        "train_latent.npy",
+        "train_P.npy",
+        "val_latent.npy",
+        "val_P.npy",
+        "TRAIN_TRANSFORMS.npz",
+        "Ccap_lambda0.01_COEFFICIENTS.npz",
+        "P_FT_BASELINE.json"
+      ],
+      "FT_calibration_TRAIN_physical_points": 24275628,
+      "FT_checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed1024/best_validation.pt",
+      "FT_checkpoint_recorded_sha256": "9abba8fb2c7875df066b11171a1dc81a7ec956c0aa9698252d9ce55b0525fde2",
+      "FT_epochs": 5,
+      "FT_selected_epoch": 4,
+      "FT_target_window_presentations": 1262270,
+      "FT_updates": 19725,
+      "contrastive_selected_epoch": 8,
+      "contrastive_selected_prefix_updates": 7380,
+      "head_epochs": 250,
+      "head_selected_epoch": 249,
+      "head_target_window_presentations": 63113500
+    },
+    "2026": {
+      "Ccap_dimension": 3264,
+      "Ccap_lambda": 0.01,
+      "D19_D20_D22_D23_anchor_values_equal": true,
+      "D19_asset_stat_matches": [
+        "train_latent.npy",
+        "train_P.npy",
+        "val_latent.npy",
+        "val_P.npy",
+        "TRAIN_TRANSFORMS.npz",
+        "Ccap_lambda0.01_COEFFICIENTS.npz",
+        "P_FT_BASELINE.json"
+      ],
+      "FT_calibration_TRAIN_physical_points": 24275628,
+      "FT_checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed2026/best_validation.pt",
+      "FT_checkpoint_recorded_sha256": "24814ea35ecbf17ef16f4ae09f0d391ed00c848950767f241f36ae697402cde4",
+      "FT_epochs": 5,
+      "FT_selected_epoch": 4,
+      "FT_target_window_presentations": 1262270,
+      "FT_updates": 19725,
+      "contrastive_selected_epoch": 11,
+      "contrastive_selected_prefix_updates": 9840,
+      "head_epochs": 250,
+      "head_selected_epoch": 249,
+      "head_target_window_presentations": 63113500
+    },
+    "31415": {
+      "Ccap_dimension": 3264,
+      "Ccap_lambda": 0.01,
+      "D19_D20_D22_D23_anchor_values_equal": true,
+      "D19_asset_stat_matches": [
+        "train_latent.npy",
+        "train_P.npy",
+        "val_latent.npy",
+        "val_P.npy",
+        "TRAIN_TRANSFORMS.npz",
+        "Ccap_lambda0.01_COEFFICIENTS.npz",
+        "P_FT_BASELINE.json"
+      ],
+      "FT_calibration_TRAIN_physical_points": 24275628,
+      "FT_checkpoint": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/finetune/native_P_seed31415/best_validation.pt",
+      "FT_checkpoint_recorded_sha256": "68273b469ca01fdec51b74632d638c37e61a1c49424532724e65b11454a763a9",
+      "FT_epochs": 5,
+      "FT_selected_epoch": 4,
+      "FT_target_window_presentations": 1262270,
+      "FT_updates": 19725,
+      "contrastive_selected_epoch": 10,
+      "contrastive_selected_prefix_updates": 9020,
+      "head_epochs": 250,
+      "head_selected_epoch": 249,
+      "head_target_window_presentations": 63113500
+    }
+  },
+  "source_family": {
+    "groups": [
+      {
+        "source_family": "audiobook_1",
+        "train": {
+          "records": 65,
+          "subjects": 65,
+          "windows": 40495
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_10",
+        "train": {
+          "records": 4,
+          "subjects": 4,
+          "windows": 1636
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_11",
+        "train": {
+          "records": 2,
+          "subjects": 2,
+          "windows": 1052
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_12",
+        "train": {
+          "records": 15,
+          "subjects": 8,
+          "windows": 7106
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_13",
+        "train": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 3996
+        },
+        "val": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 3396
+        }
+      },
+      {
+        "source_family": "audiobook_14",
+        "train": {
+          "records": 18,
+          "subjects": 9,
+          "windows": 13176
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_2",
+        "train": {
+          "records": 25,
+          "subjects": 25,
+          "windows": 13150
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_3",
+        "train": {
+          "records": 25,
+          "subjects": 25,
+          "windows": 16000
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_4",
+        "train": {
+          "records": 21,
+          "subjects": 21,
+          "windows": 11361
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_5",
+        "train": {
+          "records": 48,
+          "subjects": 24,
+          "windows": 29688
+        },
+        "val": {
+          "records": 23,
+          "subjects": 23,
+          "windows": 13915
+        }
+      },
+      {
+        "source_family": "audiobook_6",
+        "train": {
+          "records": 48,
+          "subjects": 24,
+          "windows": 26592
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_8",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 2485
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "audiobook_9",
+        "train": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 2580
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_1",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 3170
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_10",
+        "train": {
+          "records": 20,
+          "subjects": 20,
+          "windows": 11100
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_11",
+        "train": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 3594
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_12",
+        "train": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 4200
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_13",
+        "train": {
+          "records": 4,
+          "subjects": 4,
+          "windows": 1868
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_14",
+        "train": {
+          "records": 4,
+          "subjects": 4,
+          "windows": 2676
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_15",
+        "train": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        },
+        "val": {
+          "records": 4,
+          "subjects": 4,
+          "windows": 2452
+        }
+      },
+      {
+        "source_family": "podcast_16",
+        "train": {
+          "records": 2,
+          "subjects": 2,
+          "windows": 1028
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_17",
+        "train": {
+          "records": 2,
+          "subjects": 2,
+          "windows": 1214
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_18",
+        "train": {
+          "records": 1,
+          "subjects": 1,
+          "windows": 768
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_19",
+        "train": {
+          "records": 2,
+          "subjects": 2,
+          "windows": 1360
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_2",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 3775
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_20",
+        "train": {
+          "records": 7,
+          "subjects": 7,
+          "windows": 3703
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_21",
+        "train": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        },
+        "val": {
+          "records": 7,
+          "subjects": 7,
+          "windows": 4914
+        }
+      },
+      {
+        "source_family": "podcast_23",
+        "train": {
+          "records": 8,
+          "subjects": 8,
+          "windows": 4504
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_24",
+        "train": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 3960
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_26",
+        "train": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 3150
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_27",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 2905
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_28",
+        "train": {
+          "records": 9,
+          "subjects": 9,
+          "windows": 4833
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_29",
+        "train": {
+          "records": 9,
+          "subjects": 9,
+          "windows": 5391
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_3",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 2415
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_30",
+        "train": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        },
+        "val": {
+          "records": 9,
+          "subjects": 9,
+          "windows": 5823
+        }
+      },
+      {
+        "source_family": "podcast_5",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 3310
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_6",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 2810
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_7",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 3275
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_8",
+        "train": {
+          "records": 5,
+          "subjects": 5,
+          "windows": 3370
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      },
+      {
+        "source_family": "podcast_9",
+        "train": {
+          "records": 6,
+          "subjects": 6,
+          "windows": 4758
+        },
+        "val": {
+          "records": 0,
+          "subjects": 0,
+          "windows": 0
+        }
+      }
+    ],
+    "shared": [
+      "audiobook_13",
+      "audiobook_5"
+    ],
+    "shared_train_records": 54,
+    "shared_val_records": 29,
+    "story_overlap": [],
+    "subject_overlap": 49,
+    "train_groups": 37,
+    "train_groups_at_most_5": 17,
+    "train_record_counts": {
+      "max": 65,
+      "median": 6,
+      "min": 1
+    },
+    "val_groups": 5
+  },
+  "weight_reads": 0
+}

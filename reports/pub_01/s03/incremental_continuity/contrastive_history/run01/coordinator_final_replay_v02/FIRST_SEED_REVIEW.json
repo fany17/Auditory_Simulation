@@ -1,0 +1,51 @@
+{
+  "scope": "Partial numerical review: fixed first record/block and seed1024 only, not full D26 or SOTA acceptance.",
+  "server_utc": "2026-11-06T18:38:33Z",
+  "execution_completed_cases": 3,
+  "planned_cases": 9,
+  "strict_all_metrics_passed": false,
+  "all_r_checks_passed": true,
+  "calibrated_output_checks_passed": true,
+  "comparison_count": 14,
+  "original_raw_MSE_failures_preserved": 3,
+  "max_r_abs_error": 4.753593411122026e-05,
+  "max_affine_Ccap_MSE_abs_error": 2.804816847404301e-06,
+  "numerical_cause": "Not established. Large raw output scale is documented; no TF32 causal claim.",
+  "case_sha256": {
+    "HH": "94687409c3b54186878c5472c9b275f3cfe05042b44669a43de4d86f3f434d86",
+    "CH": "56c9372d897f1f079fe03be8ec8a6f4dcb8912ac570a3b72a1b5c2657266e574",
+    "CC": "9856908dabc1883a8d0bcbadbf9718a049227a69b470b6c46d6295f8dd07036c"
+  },
+  "actual_V02_calls": {
+    "backbone_windows": 430,
+    "native_unused_projection_windows": 430,
+    "final_projection_windows": 200,
+    "head_windows": 200,
+    "manual_memory_query_windows": 155,
+    "library_memory_query_windows": 155
+  },
+  "V01_failed_extra_calls": {
+    "backbone_windows": 102,
+    "native_unused_projection_windows": 102,
+    "final_projection_windows": 40,
+    "head_windows": 40,
+    "manual_memory_query_windows": 31,
+    "library_memory_query_windows": 31
+  },
+  "actual_calls_including_V01": {
+    "backbone_windows": 532,
+    "native_unused_projection_windows": 532,
+    "final_projection_windows": 240,
+    "head_windows": 240,
+    "manual_memory_query_windows": 186,
+    "library_memory_query_windows": 186
+  },
+  "V02_reported_CPU_seconds": 24.118512840999998,
+  "V01_failed_reported_CPU_seconds": 4.972995052,
+  "queue": [
+    1820067,
+    1012,
+    791745669
+  ],
+  "remaining_work": "Six original seed2026/31415 cases and full scientific result review; original formal queue unchanged."
+}

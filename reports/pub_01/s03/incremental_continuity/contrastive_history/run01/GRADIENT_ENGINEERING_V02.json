@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "seed": 1024,
+  "extra_CL_updates": 4,
+  "extra_head_or_FT_updates": 0,
+  "process": {
+    "pid": 1610546,
+    "uid": 1012,
+    "startticks": 790189760,
+    "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "history": {
+    "H": [
+      {
+        "step": 1,
+        "current_windows": 128,
+        "audio_windows": 128,
+        "slot_encoder_windows": 256,
+        "gradients": {
+          "query": 0.0014447701396420598,
+          "slot1": 0.0,
+          "slot2": 0.0,
+          "audio": 0.01004813238978386,
+          "out_proj": 0.002744235098361969
+        }
+      },
+      {
+        "step": 2,
+        "current_windows": 128,
+        "audio_windows": 128,
+        "slot_encoder_windows": 250,
+        "gradients": {
+          "query": 0.0011037539225071669,
+          "slot1": 4.87544275529217e-06,
+          "slot2": 4.990458364773076e-06,
+          "audio": 0.00837558414787054,
+          "out_proj": 0.0022061895579099655
+        }
+      }
+    ],
+    "C": [
+      {
+        "step": 1,
+        "current_windows": 128,
+        "audio_windows": 128,
+        "slot_encoder_windows": 256,
+        "gradients": {
+          "query": 0.0014447701396420598,
+          "slot1": 0.0,
+          "slot2": 0.0,
+          "audio": 0.01004813238978386,
+          "out_proj": 0.0035887008998543024
+        }
+      },
+      {
+        "step": 2,
+        "current_windows": 128,
+        "audio_windows": 128,
+        "slot_encoder_windows": 250,
+        "gradients": {
+          "query": 0.0010988007998093963,
+          "slot1": 4.915429599350318e-06,
+          "slot2": 5.070058705314295e-06,
+          "audio": 0.008340504951775074,
+          "out_proj": 0.003471532603725791
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 4.247076844796538,
+  "CPU_seconds": 4.81209001,
+  "CUDA_peak_reserved_bytes": 15179186176
+}

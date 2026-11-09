@@ -1,0 +1,20 @@
+{
+  "frozen_before_P_formal_updates": true,
+  "epoch": 1793014282.248457,
+  "source_sha256": "380ccdbd98c40470a4c54b830b33e2b242bbba6d991a093748f0f6aa4c2e808d",
+  "source": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_continuity_20261023/eeg_run02_matched_baseline/input/pub_01_s03_ss06_matched_native_p.py",
+  "P_formal_updates_before_amendment": 0,
+  "reason": "restore verified original SS02 optimizer/order, coordinator protocol review; no P outcome available",
+  "supersedes_fields": [
+    "P.pretrain_optimizer gradient_clip1",
+    "P.head_optimizer AdamW/wd/clip",
+    "P.head_training_order permutation"
+  ],
+  "pretrain_optimizer": "AdamW lr.001 wd.01, NO clipping",
+  "head_optimizer": "Adam lr.001 wd0, NO clipping",
+  "head_order": "manifest newtrain record order, chronological hop96 windows, batch64 shuffle=false",
+  "budgets_and_val_steps": "unchanged639pre/2035head and frozen quarter-step selection",
+  "pilot_old_P": "retained engineering record only, never formal initialization",
+  "frozen_C_O_unchanged": true,
+  "common_protocol_sha256": "3c263ebb353b33b1fe7e7e656513bde8b3b0c570fb1759c87ad4dcc7b7d533ff"
+}

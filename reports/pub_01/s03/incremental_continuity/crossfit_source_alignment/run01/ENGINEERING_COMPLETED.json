@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "source_sha256": "451bcbeca20938406fe4319ebe0a3f1daf0eb1c1488a19f87b63dabb4941f72c",
+  "pid": 1568939,
+  "one_shared_VAL_record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+  "fold": 1,
+  "actual_fixed_models": 4,
+  "all_12_checkpoint_identities_checked": true,
+  "records_and_mask_verified": true,
+  "weights_unchanged": true,
+  "synthetic_three_route_score_average": true,
+  "counters": {
+    "encoder_windows": 605,
+    "encoder_batches": 10,
+    "Hann_bridge_points": 3,
+    "current_stem_points": 227324,
+    "context_output_points": 227324
+  },
+  "downstream_active_points": 227324,
+  "wall_seconds": 2.7015892025083303,
+  "CPU_seconds": 5.01695794,
+  "new_optimizer_updates": 0,
+  "new_statistics_fits": 0,
+  "VAL_labels": 1,
+  "old_test_reads": 0
+}

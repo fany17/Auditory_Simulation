@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "legal_VAL_only": true,
+  "new_fits": 0,
+  "actual_test_or_DTU_reads": 0,
+  "seeds": [
+    {
+      "seed": 1024,
+      "records": 49,
+      "blocks": 752,
+      "max_R2_absolute_difference": 8.731149137020111e-11,
+      "max_R2_scaled_difference": 6.768052242661726e-16,
+      "max_r_absolute_difference": 2.7755575615628914e-16,
+      "production_R2_range": [
+        -183380.90737015757,
+        -28097.246567330687
+      ],
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed1024/best_validation.pt",
+      "selected_epoch": 249
+    },
+    {
+      "seed": 2026,
+      "records": 49,
+      "blocks": 752,
+      "max_R2_absolute_difference": 1.1641532182693481e-10,
+      "max_R2_scaled_difference": 7.316547657660226e-16,
+      "max_r_absolute_difference": 2.7755575615628914e-16,
+      "production_R2_range": [
+        -196093.29484143344,
+        -28699.886176393426
+      ],
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed2026/best_validation.pt",
+      "selected_epoch": 249
+    },
+    {
+      "seed": 31415,
+      "records": 49,
+      "blocks": 752,
+      "max_R2_absolute_difference": 7.275957614183426e-11,
+      "max_R2_scaled_difference": 7.35149957011627e-16,
+      "max_r_absolute_difference": 2.7755575615628914e-16,
+      "production_R2_range": [
+        -186548.84352685945,
+        -28021.65342960867
+      ],
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed31415/best_validation.pt",
+      "selected_epoch": 249
+    },
+    {
+      "seed": 42,
+      "records": 49,
+      "blocks": 752,
+      "max_R2_absolute_difference": 5.820766091346741e-11,
+      "max_R2_scaled_difference": 6.866922492509526e-16,
+      "max_r_absolute_difference": 3.885780586188048e-16,
+      "production_R2_range": [
+        -145488.2001326122,
+        -22223.770016488663
+      ],
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed42/best_validation.pt",
+      "selected_epoch": 244
+    },
+    {
+      "seed": 12345,
+      "records": 49,
+      "blocks": 752,
+      "max_R2_absolute_difference": 8.731149137020111e-11,
+      "max_R2_scaled_difference": 6.217058371292021e-16,
+      "max_r_absolute_difference": 3.3306690738754696e-16,
+      "production_R2_range": [
+        -277051.9793958367,
+        -41884.342628853046
+      ],
+      "checkpoint_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/baseline/head_seed12345/best_validation.pt",
+      "selected_epoch": 249
+    }
+  ],
+  "records": 245,
+  "blocks": 3760,
+  "comparisons": 11280,
+  "old_absolute_R2_gate_rejections": [
+    {
+      "seed": 2026,
+      "record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "start": 0,
+      "samples": 3839,
+      "production_R2": -159112.36729942044,
+      "independent_R2": -159112.36729942056,
+      "absolute_difference": 1.1641532182693481e-10,
+      "scaled_difference": 7.316547657660226e-16,
+      "interpretation": "legalVAL numerical comparison counterexample, not scientific trial failure"
+    }
+  ],
+  "old_strict_rejections_are_numerical_evidence_not_actual_scientific_failures": true,
+  "maximum_absolute_difference": {
+    "internal_r": 3.885780586188048e-16,
+    "internal_MSE_descriptive": 1.8189894035458565e-11,
+    "internal_R2_descriptive": 1.1641532182693481e-10
+  },
+  "maximum_scaled_difference": {
+    "internal_r": 3.885780586188048e-16,
+    "internal_MSE_descriptive": 9.539116842351515e-16,
+    "internal_R2_descriptive": 7.35149957011627e-16
+  },
+  "R2_MSE_scaled_tolerance": 1e-10,
+  "r_absolute_tolerance_unchanged": 1e-10,
+  "production_outputs_and_original_sources_unchanged": true,
+  "seconds": 3.3826093673706055,
+  "source_sha256": {
+    "pub_01_s03_ss07_review_r2_val_check.py": "e5926ea7404b46436ad4673a78ded32652b3f01c5c7a12328cb866a7a08ca8a9",
+    "pub_01_s03_ss07_review_math.py": "0fadae373c195b5f9fe081d975cbe64f01971ce9ea17ef4244697d6f956be11f",
+    "pub_01_s03_ss07_review_metrics.py": "0d431392bea41f2dd4814ba45bb410b0e4221937375cfd0b50bd20bceccb17ed",
+    "pub_01_s03_ss07_review_metrics_v2.py": "98fd5a3f6922219507d5356215b9d6574747a0da3fc4fa6c1cd0a7ecc5159bfb"
+  }
+}

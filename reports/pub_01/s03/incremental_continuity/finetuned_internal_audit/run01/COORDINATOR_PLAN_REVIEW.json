@@ -1,0 +1,98 @@
+{
+  "status": "PLAN_APPROVED",
+  "approved_for_execution": true,
+  "scope": "D10_FIXED_FT_READOUT_OLD_INTERNAL_AUDIT",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "commit": "b5d5e37",
+  "plan_sha256": "0359a0525332166244e15a4fdcc28a48a17dc9e1bf956e96ce43101f39b3f804",
+  "inventory_sha256": "ed3c0d74dcf1e49869a9aa5c9a378c0a5237df1c93e8e6c15c8a8bd4bf104184",
+  "decision": "已实际读完整PLAN和原FT测试路径，核对服务器同hash及47输入来源hash/600文件指纹无漂移。批准该固定矩阵的实现、必要桥、一次正式编码/评分；source/protocol冻结且必要桥通过后直接执行，不需新用户许可。协调代码审阅并行，实际失败保留并纠正工程问题，不能改矩阵/阈值/模型追分。",
+  "matrix": {
+    "roles": [
+      "P_FT",
+      "Ponly",
+      "C",
+      "Ccap",
+      "W",
+      "F"
+    ],
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "phases": [
+      "test_seen",
+      "test_heldout"
+    ],
+    "role_split_scores": 36,
+    "seen": {
+      "records": 69,
+      "people": 69,
+      "windows": 36573,
+      "blocks": 872
+    },
+    "heldout": {
+      "records": 75,
+      "people": 13,
+      "windows": 48119,
+      "blocks": 1172
+    },
+    "primary_diagnostics": [
+      "F-W",
+      "Ccap-P_FT",
+      "Ccap-Ponly"
+    ],
+    "secondary": [
+      "F-Ccap",
+      "W-Ccap",
+      "C-Ponly"
+    ],
+    "aggregation": "original block-to-person macro, then2/3seen+1/3heldout",
+    "fits": 0,
+    "statistic_refits": 0,
+    "selection": 0
+  },
+  "necessary_changed_path_bridges": [
+    "36 cached VAL readout cases from original first/last record ×3seeds ×6roles, same storedmetrics/canonicalprediction",
+    "300 oldVAL windows capture latent/P against existing D8 gold, original units ≤1e-6",
+    "Testcapture reuses original separate-phase global64 crossing record boundaries, exact double-stack/precision/no_grad/eval/grad flags. P and Z from same forward, no hook.",
+    "636 first/tail test batch windows compare capture P to originalDecoder, original units ≤1e-6",
+    "All432record unscaled Hann fused P_FT waves versus stored originalwave ≤1e-6; P_FT* everyblock r preserved ≤1e-10 before learned readouts",
+    "Frozen original masks, per-record first4 P_FT* fallback, exact existing stats/weights/coefs/endpoints, no DTU paths"
+  ],
+  "budget": {
+    "main_encoder_head_windows": 254076,
+    "main_batches": 3972,
+    "extra_windows": 936,
+    "total_windows": 255012,
+    "new_npy_bytes": 1756174848,
+    "combined_npy_bytes": 26225606304,
+    "array_cap_bytes": 26843545600,
+    "root_cap_bytes": 2147483648,
+    "min_free_bytes": 21474836480,
+    "GPU_allocated_cap_bytes": 2147483648,
+    "RSS_cap_bytes": 8589934592,
+    "wall_cap_seconds": 3600,
+    "single_GPU": true
+  },
+  "scientific_limits": [
+    "All old tests historically exposed: POST-HOC INTERNAL EXPLORATORY, not new confirmation or unbiased test estimate.",
+    "D8/D9 outputcoefficients fixed before thisaudit; do not choose a model or extend training based on thisranking.",
+    "F virtualwindow degeneration and fixed-Hann physicaloutput interpreted separately; do not drop failed/constant windows or changeHann/bias to improve figures.",
+    "Three seeds, same original cohort/stimuli; no significance/equivalence/SOTA claims.",
+    "No independent confirmation, historical-input mechanism or sufficient ICML/NeurIPS novelty established."
+  ],
+  "actual_source_read": [
+    "pub_01_s03_ss07_eval_common.py::predict_raw_phase",
+    "pub_01_s03_ss07_eval_io.py::SparrRecords.raw_windows/finetuned_predictions",
+    "pub_01_s03_ss07_eval_seed.py::main",
+    "pub_01_s03_ss07_ft_audit_inventory.py"
+  ],
+  "actual_preflight": {
+    "source_hashes_verified": 47,
+    "input_fingerprints_verified": 600,
+    "mismatches": []
+  },
+  "goal_complete": false
+}

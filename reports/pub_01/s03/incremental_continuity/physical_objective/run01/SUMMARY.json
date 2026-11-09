@@ -1,0 +1,188 @@
+{
+  "results": [
+    {
+      "seed": 1024,
+      "role": "W",
+      "converged": true,
+      "iterations": 59,
+      "hessian_actions": 64,
+      "true_preconditioned_relative": 9.956507596065626e-09,
+      "status": "CONVERGED",
+      "r": 0.18199367110466072,
+      "MSE": 0.2421545940593919,
+      "train_objectives": {
+        "W_data": 0.1951124642555049,
+        "F_data": 0.19471506065562763,
+        "disagreement": 0.0003974035998772921,
+        "regularizer": 0.00038067275950488924,
+        "W_total": 0.1954931370150098,
+        "F_total": 0.19509573341513253,
+        "identity_error": 1.474514954580286e-17
+      },
+      "wall_seconds": 37.154958724975586,
+      "CPU_seconds": 50.968519150000006,
+      "operator_counts": {
+        "Hessian": 64,
+        "A": 65,
+        "AT": 65,
+        "RHS": 1,
+        "objective": 1
+      }
+    },
+    {
+      "seed": 1024,
+      "role": "F",
+      "converged": true,
+      "iterations": 61,
+      "hessian_actions": 67,
+      "true_preconditioned_relative": 9.184006774722745e-09,
+      "status": "CONVERGED",
+      "r": 0.18341714403611428,
+      "MSE": 0.2419868058000209,
+      "train_objectives": {
+        "W_data": 0.5295486431763157,
+        "F_data": 0.19449387619828384,
+        "disagreement": 0.33505476697803177,
+        "regularizer": 0.0004419616784129537,
+        "W_total": 0.5299906048547286,
+        "F_total": 0.1949358378766968,
+        "identity_error": 5.551115123125783e-17
+      },
+      "wall_seconds": 38.521700382232666,
+      "CPU_seconds": 51.135504602,
+      "operator_counts": {
+        "Hessian": 67,
+        "A": 68,
+        "AT": 68,
+        "RHS": 1,
+        "objective": 1
+      }
+    },
+    {
+      "seed": 2026,
+      "role": "W",
+      "converged": true,
+      "iterations": 57,
+      "hessian_actions": 62,
+      "true_preconditioned_relative": 9.951854078162017e-09,
+      "status": "CONVERGED",
+      "r": 0.181994994261301,
+      "MSE": 0.24215362855751765,
+      "train_objectives": {
+        "W_data": 0.19510273853395674,
+        "F_data": 0.19473989149004406,
+        "disagreement": 0.0003628470439126741,
+        "regularizer": 0.000384036171566619,
+        "W_total": 0.19548677470552336,
+        "F_total": 0.19512392766161069,
+        "identity_error": 4.445228907190568e-18
+      },
+      "wall_seconds": 35.97082710266113,
+      "CPU_seconds": 49.675762586000005,
+      "operator_counts": {
+        "Hessian": 62,
+        "A": 63,
+        "AT": 63,
+        "RHS": 1,
+        "objective": 1
+      }
+    },
+    {
+      "seed": 2026,
+      "role": "F",
+      "converged": true,
+      "iterations": 59,
+      "hessian_actions": 64,
+      "true_preconditioned_relative": 8.383953319384083e-09,
+      "status": "CONVERGED",
+      "r": 0.1834474280222463,
+      "MSE": 0.2420397121156885,
+      "train_objectives": {
+        "W_data": 0.5309524440617565,
+        "F_data": 0.19454400482487327,
+        "disagreement": 0.33640843923688313,
+        "regularizer": 0.00043932067564839475,
+        "W_total": 0.5313917647374049,
+        "F_total": 0.19498332550052166,
+        "identity_error": 5.551115123125783e-17
+      },
+      "wall_seconds": 37.01546835899353,
+      "CPU_seconds": 50.446076182,
+      "operator_counts": {
+        "Hessian": 64,
+        "A": 65,
+        "AT": 65,
+        "RHS": 1,
+        "objective": 1
+      }
+    },
+    {
+      "seed": 31415,
+      "role": "W",
+      "converged": true,
+      "iterations": 59,
+      "hessian_actions": 64,
+      "true_preconditioned_relative": 7.743408374337897e-09,
+      "status": "CONVERGED",
+      "r": 0.1834332170665455,
+      "MSE": 0.24253832998503205,
+      "train_objectives": {
+        "W_data": 0.19502361944110916,
+        "F_data": 0.1946256518691421,
+        "disagreement": 0.0003979675719670744,
+        "regularizer": 0.00036565921945337757,
+        "W_total": 0.19538927866056255,
+        "F_total": 0.1949913110885955,
+        "identity_error": 1.826880660638075e-17
+      },
+      "wall_seconds": 36.94860124588013,
+      "CPU_seconds": 50.093372112000004,
+      "operator_counts": {
+        "Hessian": 64,
+        "A": 65,
+        "AT": 65,
+        "RHS": 1,
+        "objective": 1
+      }
+    },
+    {
+      "seed": 31415,
+      "role": "F",
+      "converged": true,
+      "iterations": 60,
+      "hessian_actions": 65,
+      "true_preconditioned_relative": 9.440294524934501e-09,
+      "status": "CONVERGED",
+      "r": 0.18475695590747657,
+      "MSE": 0.2424401919371972,
+      "train_objectives": {
+        "W_data": 0.5198589252390219,
+        "F_data": 0.19439083829049383,
+        "disagreement": 0.325468086948528,
+        "regularizer": 0.0004387885613677647,
+        "W_total": 0.5202977138003897,
+        "F_total": 0.1948296268518616,
+        "identity_error": 0.0
+      },
+      "wall_seconds": 37.45780968666077,
+      "CPU_seconds": 50.172472352999996,
+      "operator_counts": {
+        "Hessian": 65,
+        "A": 66,
+        "AT": 66,
+        "RHS": 1,
+        "objective": 1
+      }
+    }
+  ],
+  "mean_r": {
+    "W": 0.18247396081083575,
+    "F": 0.18387384265527906
+  },
+  "paired_F_minus_W": [
+    0.0014234729314535621,
+    0.0014524337609453097,
+    0.0013237388409310658
+  ],
+  "goal_complete": false
+}

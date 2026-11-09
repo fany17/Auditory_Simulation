@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "actual_preflight_wait": true,
+  "rejected_incomplete_real_terminal": true,
+  "synthetic_rejected_partial_duplicate_wrong_identity_wrong_protocol_and_old_test": true,
+  "synthetic_wait_then_single_report": true,
+  "synthetic_failure_receipt_without_retry": true,
+  "formal_paths_created": 0,
+  "raw_signal_reads": 0,
+  "weight_reads": 0,
+  "model_forwards": 0,
+  "new_fits": 0
+}

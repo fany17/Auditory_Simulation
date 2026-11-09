@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "54d424d5c26f1ab4aee4712c2efb149739a9e70ec876d2698391e4e5b6d0c980",
+  "full_scores": "27learned +3PFT baseline; exact originalVAL mask, allperson/record/block aggregation, sharedselection and source/stat/cache/coef provenance.",
+  "reconstruction": "Selected lambda per3roles from frozen rule, all3seeds, first/last originalVAL manifest record; 18cached-only reconstructions. No new rawEEG/encoder/head forward.",
+  "records": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz"
+  ],
+  "selection_record_choice": "First/last originalmanifest metadata, not outcome selected.",
+  "new_budgets_or_models": false
+}

@@ -1,0 +1,38 @@
+{
+  "approved_for_execution": true,
+  "status": "PASS_FOR_FIXED_POSTHOC_INTERNAL_AUDIT",
+  "protocol_sha256": "eed8be9fbd1d5c2a182f90f10bc3fcb4128468da15f0eff84554e55e3d149886",
+  "source_sha256": "13a02bb16bf7a221b24786d6f382fdf59cae46014773f6d12d660cf7ebb127a2",
+  "core_sha256": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+  "engineering_check_sha256": "c08d3e993844e0d2ed6a30daaf32d35064f8ee260eae6834dd3145087b3f8dc1",
+  "math_check_sha256": "e710e1630637d51d66b5509b6d2f4aab20e1a29ba059cfaa0536199f20203ae0",
+  "actual_source_pins_verified": 286,
+  "actual_input_header_fingerprints_verified": 893,
+  "actual_fixed_VAL_cells": 18,
+  "actual_VAL_primary_max_abs": 5.551115123125783e-17,
+  "actual_VAL_secondary_max_abs": 0.0,
+  "source_review": "Coordinator read full core/driver and all subsequent corrections: exact frozen selected coefficients/TRAIN transforms, original NativeHead/global64/precision/no_grad path, per-seed full unscaledP432record bridge before5candidates, fixed original mask/2:1 person weighting, no model selection, memory/disk/cost boundary",
+  "corrected_boundaries": [
+    "Auxiliary3s undefined ->null andcoverage, no primary block deletion; primary constant strict rejection including floatingHann constant canary",
+    "Full60s/person/two-stratum synthetic aggregation",
+    "3head SHA andselectedepoch match oldmanifest; cache manifest SHA matched; actual imported module paths pinned with old raw/metric proof",
+    "All7datedSS07root NPY ledger includes30848B warm extra; no fullfusedprediction copies"
+  ],
+  "actual_math_check": {
+    "passed": true,
+    "current_only_and_first4_canaries": true,
+    "Ponly_zeroZ": true,
+    "exact_constant_rejection": true,
+    "Hann_identity_max_abs": 3.0097452308197603e-16,
+    "complete_60s_block_and_person_macro_and_weighted_split": true,
+    "undefined_auxiliary_3s_null_without_dropping_primary": true
+  },
+  "authorization": "Execute frozen36role-split audit now, after originalP bridges pass. No additional user approval or another review gate. Retain failures; numerical/source failure requires diagnosis not threshold relaxation. No NNfit, extraencoder, DTU/newdata, lambda/seed expansion or performance-driven retries.",
+  "final_review_scope_sha256": "f0ee68d34f6a8104a0d12dbe0b1cfae0dbcee94148657dbd13fad4ba92659365",
+  "limits": [
+    "Old tests already exposed: POST-HOC INTERNAL EXPLORATORY, not newconfirmation",
+    "Currentreadout only; no historymechanism ornovelty established",
+    "Broad researchgoal remains active andunachieved"
+  ],
+  "goal_complete": false
+}

@@ -1,0 +1,18 @@
+{
+  "process": {
+    "pid": 1395678,
+    "uid": 1012,
+    "startticks": 788875912,
+    "source_sha256": "0506831377cd6a99da376483fb094e2e48b882d4f501121dfdb4b15876008f94",
+    "deadline_unix": 1794047915.4533756
+  },
+  "message": "Downstream controller failure",
+  "traceback": "Traceback (most recent call last):\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_DOWNSTREAM_AUDIT.py\", line 256, in main\n    require(not failure.exists(), 'Downstream controller failure')\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_DOWNSTREAM_AUDIT.py\", line 49, in require\n    raise RuntimeError(message)\nRuntimeError: Downstream controller failure\n",
+  "counters": {
+    "TRAIN_anchor_points_read": 0,
+    "context_values_represented": 0,
+    "neural_forwards": 0,
+    "label_arrays_read": 0,
+    "fitting_updates": 0
+  }
+}

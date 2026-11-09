@@ -1,0 +1,39 @@
+{
+  "prepared_not_actual_replay": true,
+  "source_sha256": "4652539110004c50232fcebcf199e45a70f1c795d8103e047011bdf209e8ad3d",
+  "self_test": {
+    "self_test_passed": true,
+    "author_forward_calls": 4,
+    "independent_forward_calls": 8,
+    "author_error_max": 1.862645149230957e-08,
+    "full_chunk_error_max": 1.862645149230957e-08,
+    "incomplete_state_rejected": true,
+    "formal_checkpoint_reads": 0,
+    "formal_signal_payload_reads": 0,
+    "new_fits": 0,
+    "new_optimizer_updates": 0,
+    "source_sha256": "4652539110004c50232fcebcf199e45a70f1c795d8103e047011bdf209e8ad3d"
+  },
+  "unfinished_matrix_guard": {
+    "unfinished_matrix_rejected": true,
+    "formal_signal_or_weight_reads": 0,
+    "error": "Wait for full formal matrix, report, and independent saved-evidence audit"
+  },
+  "UTC": "2026-11-07T04:24:33Z",
+  "CPU_seconds_this_verification": 2.000471768,
+  "wall_seconds_this_verification": 1.291731994599104,
+  "previous_draft_fixture": {
+    "source_sha256": "17aa046cc6a4ea90f2504bff6137d778b1180aee481d407a3867b1fe10b163cf",
+    "passed": true,
+    "author_forward_calls": 4,
+    "independent_forward_calls": 8,
+    "CPU_seconds": null,
+    "wall_seconds": null
+  },
+  "total_synthetic_author_calls": 8,
+  "total_synthetic_independent_calls": 16,
+  "formal_signal_reads": 0,
+  "formal_weight_reads": 0,
+  "new_fits": 0,
+  "new_optimizer_updates": 0
+}

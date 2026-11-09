@@ -1,0 +1,297 @@
+{
+  "passed": false,
+  "execution_completed": true,
+  "strict_all_metrics_passed": false,
+  "all_r_checks_passed": true,
+  "calibrated_output_checks_passed": true,
+  "raw_MSE_checks_passed": false,
+  "numerical_cause": "Not established; relative errors are descriptive and do not replace original thresholds.",
+  "seed": 1024,
+  "arm": "HH",
+  "source_sha256": "81734e974351a33a6c1d91c47379ce5efd5d1b75b847a0038a7cac47f9f53705",
+  "protocol_sha256": "8c249eabeb9edb9a5360006f1d3dabb9552e2a22ff649b9bae72801f75311b4d",
+  "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+  "EEG_samples_read": 3936,
+  "target_samples_read": 3840,
+  "parameter_count": 3389513,
+  "normalization_sha256": "2ed88be6c5d2279a65276e20d20fc3725d2d7e21185a90452886b367759784d8",
+  "normalized_EEG_prefix_sha256": "21eba7dcf5446ebcffa594ce2f66992be44e9760096754936959eb3ba1070d73",
+  "target_prefix_sha256": "353b51866da236aa5ff6ce895e3c1d094788ccf9311b46d518ca98c4d19ceab6",
+  "FT_checkpoint_sha256": "f70c442054c1f27c517511aa78d720532732ffef04585029add0789bc37457fb",
+  "readout_sha256": "7719fc6e6cb42f2bc911b7ee52622874e4759262c2beb0197d89beb90a334017",
+  "score_sha256": {
+    "near": "fdab77bd6bd160192861bb087fd86a6d74fbde0f60cbcb15e683d5010161fdf2",
+    "far": "ae6a346de4168ce9436e2f2f3d55c11fe31d398ac1f88e570a75e034d4ee3298",
+    "copy": "098f2076a281465e19cce214f8dc021677f6355285a83d7b6eee414941cfee6a"
+  },
+  "memory_bridge_max_abs": {
+    "near": 8.940696716308594e-07,
+    "far": 1.1920928955078125e-06,
+    "copy": 1.0728836059570312e-06
+  },
+  "comparisons": [
+    {
+      "path": "near",
+      "output": "Ccap",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.28963764436239214,
+        "MSE": 0.11753445602518368,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.28967487774666073,
+        "MSE": 0.11753273099774227
+      },
+      "errors": {
+        "r": 3.72333842685868e-05,
+        "MSE": 1.7250274414182254e-06
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 1.467699615906451e-05,
+      "absolute_RMSE_error": 2.5158515127299275e-06
+    },
+    {
+      "path": "near",
+      "output": "raw",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.29465964738388817,
+        "MSE": 27523.194874509794,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.2946995628841231,
+        "MSE": 27521.885452873546
+      },
+      "errors": {
+        "r": 3.991550023491053e-05,
+        "MSE": 1.309421636247862
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": false
+      },
+      "strict_passed": false,
+      "relative_MSE_error": 4.7577468429262205e-05,
+      "absolute_RMSE_error": 0.003946437779518419
+    },
+    {
+      "path": "near",
+      "output": "affine",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.2946596473838882,
+        "MSE": 0.11651857208062466,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.2946995628841229,
+        "MSE": 0.11651576726377726
+      },
+      "errors": {
+        "r": 3.9915500234688484e-05,
+        "MSE": 2.804816847404301e-06
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 2.4072423100081754e-05,
+      "absolute_RMSE_error": 4.108464591867644e-06
+    },
+    {
+      "path": "near",
+      "output": "Ccap",
+      "support": "physical_960_to_3839",
+      "observed": {
+        "r": 0.283794577374842,
+        "MSE": 0.1226363532455368,
+        "samples": 2880
+      },
+      "expected": {
+        "r": 0.28383772262796725,
+        "MSE": 0.12263417681383054
+      },
+      "errors": {
+        "r": 4.314525312526518e-05,
+        "MSE": 2.1764317062605842e-06
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 1.7747350394536416e-05,
+      "absolute_RMSE_error": 3.107472982599724e-06
+    },
+    {
+      "path": "far",
+      "output": "Ccap",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.2841678590463204,
+        "MSE": 0.11797313221281254,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.28420834525204114,
+        "MSE": 0.11797120901640563
+      },
+      "errors": {
+        "r": 4.048620572072448e-05,
+        "MSE": 1.923196406905525e-06
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 1.6302252243918906e-05,
+      "absolute_RMSE_error": 2.7996507543370797e-06
+    },
+    {
+      "path": "far",
+      "output": "Ccap",
+      "support": "physical_960_to_3839",
+      "observed": {
+        "r": 0.27640702163557557,
+        "MSE": 0.12322794412403183,
+        "samples": 2880
+      },
+      "expected": {
+        "r": 0.2764545575696868,
+        "MSE": 0.12322550592785401
+      },
+      "errors": {
+        "r": 4.753593411122026e-05,
+        "MSE": 2.4381961778174865e-06
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 1.9786457028182135e-05,
+      "absolute_RMSE_error": 3.472851372532393e-06
+    },
+    {
+      "path": "copy",
+      "output": "Ccap",
+      "support": "first_original_block",
+      "observed": {
+        "r": 0.27894572999689277,
+        "MSE": 0.11797501182766378,
+        "samples": 3839
+      },
+      "expected": {
+        "r": 0.2789757587235809,
+        "MSE": 0.11797353980084942
+      },
+      "errors": {
+        "r": 3.002872668811385e-05,
+        "MSE": 1.4720268143586512e-06
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 1.2477601476090086e-05,
+      "absolute_RMSE_error": 2.1428514508925467e-06
+    },
+    {
+      "path": "copy",
+      "output": "Ccap",
+      "support": "physical_960_to_3839",
+      "observed": {
+        "r": 0.26973276888157083,
+        "MSE": 0.1232402937266973,
+        "samples": 2880
+      },
+      "expected": {
+        "r": 0.2697668504906172,
+        "MSE": 0.12323844544489633
+      },
+      "errors": {
+        "r": 3.408160904638802e-05,
+        "MSE": 1.8482818009701862e-06
+      },
+      "original_absolute_tolerance": 0.0001,
+      "original_checks": {
+        "r": true,
+        "MSE": true
+      },
+      "strict_passed": true,
+      "relative_MSE_error": 1.4997607234477893e-05,
+      "absolute_RMSE_error": 2.6324701634661274e-06
+    }
+  ],
+  "actual_calls": {
+    "backbone_windows": 226,
+    "native_unused_projection_windows": 226,
+    "final_projection_windows": 120,
+    "head_windows": 120,
+    "manual_memory_query_windows": 93,
+    "library_memory_query_windows": 93
+  },
+  "CPU_seconds": 12.519173916,
+  "wall_seconds": 4.052844398654997,
+  "replay_CPU_seconds": 11.240652993,
+  "replay_wall_seconds": 3.0684140818193555,
+  "peak_RSS_bytes": 857550848,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "filepath": "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "CPU_affinity": [
+    44,
+    45,
+    46,
+    47
+  ],
+  "new_fits": 0,
+  "optimizer_updates": 0,
+  "audio_forwards": 0,
+  "old_test_reads": 0,
+  "GPU": 0,
+  "scope": "First fixed VAL record, first 60-second block only; raw EEG and final model replay. Not full-cohort signal replay or a new independent test."
+}

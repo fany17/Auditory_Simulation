@@ -1,0 +1,10 @@
+{
+  "process": [
+    1777664,
+    1012,
+    791174579
+  ],
+  "traceback": "Traceback (most recent call last):\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/coordinator_final_replay_v01/COORDINATOR_REPLAY_QUEUE.py\", line 102, in main\n    assert code == 0 and result.exists(), (seed, arm, code)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1024, 'HH', 1)\n",
+  "D26_not_restarted": true,
+  "completed_cases": []
+}

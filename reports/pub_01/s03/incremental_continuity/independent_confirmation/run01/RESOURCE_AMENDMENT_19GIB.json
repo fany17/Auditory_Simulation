@@ -1,0 +1,17 @@
+{
+  "time": 1793606273.8722758,
+  "free_now_bytes": 22922313728,
+  "current_processed_bytes": 344772096,
+  "remaining_processed_bytes": 785149696,
+  "three_seed_cache_bytes": 942016512,
+  "future_report_reserve_bytes": 134217728,
+  "projected_free_after_full_pipeline_bytes": 21060929792,
+  "proposed_inference_minimum_free_bytes": 20401094656,
+  "prior_inference_minimum_free_bytes": 21474836480,
+  "projected_margin_bytes": 659835136,
+  "preprocessing_minimum_free_bytes": 21474836480,
+  "unchanged_root_cap": 3221225472,
+  "unchanged_all_SS07_NPY_cap": 30064771072,
+  "learning_model_fits": 0,
+  "real_NN_forwards": 0
+}

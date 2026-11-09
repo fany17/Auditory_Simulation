@@ -1,0 +1,24 @@
+{
+  "derived_from_frozen_summary_only": true,
+  "weighted_Ccap_minus_C": {
+    "mean_r": 0.0025086465195426344,
+    "mean_MSE": 0.00028443192300103837,
+    "mean_weighted_single_MSE": 0.0001735710028619719,
+    "mean_disagreement": -0.00011086092013905258
+  },
+  "counts": {
+    "roles": 6,
+    "seeds": 3,
+    "role_split_scores": 36,
+    "record_role_scores": 2592,
+    "head_forward_windows": 254076,
+    "role_score_windows": 1524456,
+    "role_score_blocks": 36792,
+    "role_overlap_pairs": 1521864,
+    "raw_P_bridge_values": 24456972
+  },
+  "stage_sums": {
+    "wall_seconds": 73.30712294578552,
+    "CPU_seconds": 501.96545832400005
+  }
+}

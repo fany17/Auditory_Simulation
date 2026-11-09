@@ -1,0 +1,64 @@
+{
+  "artifacts": {
+    "PERSON_BY_SEED.csv": {
+      "bytes": 14073,
+      "sha256": "6434c3034a7508e80d107233aab976efbaaeb6ed7a35b434347a9630034be643"
+    },
+    "SEED_SUMMARY.csv": {
+      "bytes": 1237,
+      "sha256": "bbf68519c284b939948a34cc369d63e8f0404e680f2d140633b8fa3e296fb9c4"
+    },
+    "PRECISION_RECORDS.csv": {
+      "bytes": 238141,
+      "sha256": "2b1f87c43dc3b50b0aae225865046b4102564391f480004c9d42cc4417088a9a"
+    },
+    "PRECISION_PERSON.csv": {
+      "bytes": 1324,
+      "sha256": "0dda525f236dce738800ce69b920741fe3c20ca3ddf9f764c207a765a1c9724c"
+    },
+    "EXAMPLE_AXES.json": {
+      "bytes": 276,
+      "sha256": "6f2765d69cae760eb24349a039a5562dca4174c4615809726b6c51dd4bb5896b"
+    },
+    "SECONDARY_DESCRIPTIVE.csv": {
+      "bytes": 171,
+      "sha256": "79e09fac61f43a59503e870daea7c6ca6252ef8c6a0212c63a8d4510ddcef61f"
+    },
+    "COST_LEDGER.json": {
+      "bytes": 19397,
+      "sha256": "98205a2246c46182ca908fc5a948468bb812b8f051f35bda1fc2b2d838052b57"
+    },
+    "REPORT_DRAFT.md": {
+      "bytes": 5616,
+      "sha256": "877a2ca77521a96acb1713293f9dd704a593a9659c92591528197cc234da6f6c"
+    },
+    "DIRECTIONS.json": {
+      "bytes": 416,
+      "sha256": "80ef52f7066eebbf99318814ecc42a2c7754861919c259a88c3630a007afc28b"
+    },
+    "figures/person_and_seed_performance.png": {
+      "bytes": 66704,
+      "sha256": "7933004c632ec8b86e9fcb118c037bc96f3bbff6c970680724c5f1d6c510f054"
+    },
+    "figures/two_primary_differences.png": {
+      "bytes": 78188,
+      "sha256": "c8aaa73ab85d465e974b224fdaff5d5fb3e7b072e5ec340fdcd7c6f6e5983037"
+    },
+    "figures/window_and_fused_error.png": {
+      "bytes": 79028,
+      "sha256": "0d85277d21f28474603fa342b90b763e863851d1eae7143402aae2f671f19787"
+    },
+    "figures/full_FP32_sensitivity.png": {
+      "bytes": 209289,
+      "sha256": "82da19f9397912a9e1176afc92146cbdd66712a229ce9db07da1633f7b788fd2"
+    },
+    "figures/preselected_example.png": {
+      "bytes": 630090,
+      "sha256": "000127655b8adab5a7d954aa92466d0f810af54a58e9f0bbe068a717ffc04529"
+    }
+  },
+  "figures": 5,
+  "new_NN": 0,
+  "actual_results_only": true,
+  "review_pending": true
+}

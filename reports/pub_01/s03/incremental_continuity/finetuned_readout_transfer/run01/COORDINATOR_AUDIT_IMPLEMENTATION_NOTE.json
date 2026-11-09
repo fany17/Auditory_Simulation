@@ -1,0 +1,10 @@
+{
+  "scope": "Coordinator audit implementation only; formal D8 remains completed and unchanged",
+  "failure": "KeyError source_family while constructing expectedmetadata keys before scoring or reconstruction",
+  "cause": "OriginalD8 TRAIN/VAL rows carry story IDs without explicit source_family. Frozen inherited metric uses row.get('source_family',row['story']).",
+  "correction": "Use same declared metadata fallback for key comparison, not regroup or alter any scores. No tolerance/scope/model/selection changes.",
+  "scientific_note": "Fallback source_family is a clip/story label, not verified independent book/speakerfamily.",
+  "new_formal_neural_forward_or_fit": 0,
+  "COORDINATOR_NUMERICAL_AUDIT_ATTEMPT01.py_sha256": "a552bed30dafd6e837dcaa9c5d8bee0c5da9a6b9ec54f34f3df796f8fbd5ae03",
+  "COORDINATOR_NUMERICAL_AUDIT.py_sha256": "68d23c1e7de206b7bf0f618f061ff5ee9a945412e626c20e994abe0fda8af3c9"
+}

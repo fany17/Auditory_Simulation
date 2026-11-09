@@ -1,0 +1,17 @@
+{
+  "NN_windows": 0,
+  "backwards": 0,
+  "optimizer_updates": 0,
+  "new_fits": 0,
+  "scientific_arrays_read": false,
+  "model_checkpoints_loaded": 0,
+  "CPU_seconds": 12.499649960000001,
+  "wall_seconds": 10.53845477104187,
+  "peak_RSS_KiB": 248776,
+  "scope": "After standard imports, includes numpy/matplotlib, gzip JSON parsing, tables and8plots. No torch/model/runtime/dataset loading.",
+  "all_eight_figures_produced": true,
+  "root_bytes_before": 409616364,
+  "root_bytes_after_outputs": 417432950,
+  "physical_output_path": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "presentation_source_sha256": "e0415dd74c62c045452556f81a824737ddcf5504422ec1a9301446e8d942f48b"
+}

@@ -1,0 +1,25 @@
+{
+  "findings": [
+    "D7固定36角色-split完成，Ccap对P*/P-only在seen及held-out三个seed全正；原2:1加权r P*=.160248、P-only=.164642、Ccap=.168943，两primary均差+.008695/+.004301。全部旧测试已暴露，仍为内部探索。",
+    "同三seed历史P_FT加权点均值.168944726，Ccap .168943486，差−1.24e−6且seed方向混合；没有证明超微调强baseline、等效或非劣。新增预算/函数类不同，历史参考不改D7角色或主假设。",
+    "原P最跨窗一致却r最低，Ccap比C更一致/r更高但fused MSE更高。没有新增历史输入或一致性训练；D4/D5阴性保持，科学goal仍ACTIVE。"
+  ],
+  "overview": [
+    "6角色×3固定seed×seen/held-out，无新fit/λ选择。seen69record/69人/872块、held-out75record/13人/1172块，原Hann/首4窗P*回退/2:1person宏计权不变。",
+    "复用已有latent，只恢复P head窗口输出；全部432未缩放P波形桥差0，P* block r差≤3.33e−16。独立286来源/893输入/全部36聚合及72预定cached读出重建已实际核验，块r差≤2.78e−16，首4差0。"
+  ],
+  "figure_comments": {
+    "01_ABSOLUTE_PAIRED.png": "左/中/右分别seen、held-out、原2:1加权，三色连同seed六固定角色、黑方块三seed均值，无CI，各panel y范围不同。Ccap .179681/.147468/.168943，相对P .170106/.140532/.160248均提高；不按新排名选模型，旧测试POST-HOC INTERNAL EXPLORATORY不能当独立确认。P-only已有输出再读出增益，latent另有增量。",
+    "02_FROZEN_CONTRASTS.png": "前两格为预设primary Ccap−P/P-only，seen/held-out/2:1三点及各3seed全正；其余四格是secondary并保留负值。C−U32 held-out均−.000076、seed1024负，不能把VAL全正泛化到该组；U32−S32选定加权三seed负。Ccap−C固定不同λ且增容，不单独证明非线性因果，无p值/CI。",
+    "03_CONTINUITY_MSE.png": "左/中分别两组uniform96点overlap MSE，右为2:1 person宏Hann加权单窗/融合target MSE与disagreement间距。一致性从未用于选择。P*最一致而r最低；Ccap−C weighted单窗MSE+.000173571、disagreement−.000110861，所以fused MSE+.000284432，r却+.002509。逐点恒等误差≤4.71e−15；uniform与Hann计权不同，不据此训练一致性loss或学习融合权重。"
+  },
+  "caveats": [
+    "同一旧Sparr测试已有项目历史暴露，held-out仅对原P训练fold定义；源被试/刺激/来源依赖、三seed重复数据均不变，不称显著、独立泛化或新方法充分性。",
+    "同三seedP_FT事后历史参考具有相同2044block keys但新增5epoch联合微调、边界策略与冻结ridge预算不同，不能当等预算消融或均值近似等效。",
+    "3秒辅助遇undefined规定null+覆盖、不删60秒主块；本次全0。原P raw单位门未用a约.002缩小误差；encoder/raw EEG/新训练/DTU/下载均0。"
+  ],
+  "next_steps": [
+    "D7结果冻结，完整全表/三图/独立review/HTML归档，不用其排名重开D4-D6、换λ/seed或再测试。",
+    "后续只读盘点P_FT TRAIN/VAL资产并提出最小强encoder读出方案，重拟合对应TRAIN统计/a,b，不套native系数；实际新拟合/缓存需具体预算审定，不再访问D7/DTU。"
+  ]
+}

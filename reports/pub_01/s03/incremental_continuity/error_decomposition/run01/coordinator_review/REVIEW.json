@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "source_sha256": "7e89f64bbfc01c85e2c5c7bcaa4c146303e573f1c7274925eeb709c1c8076a26",
+  "protocol_sha256": "47404c336f76365c48fb847ac59007067420ea6701a82f806c82418c7b02221c",
+  "checks": {
+    "autograd_record_moments": {
+      "count": 7668,
+      "max_abs": 1.6543612251060553e-23
+    },
+    "autograd_record_cosines": {
+      "count": 3834,
+      "max_abs": 5.551115123125783e-16
+    },
+    "autograd_seed_moments": {
+      "count": 18,
+      "max_abs": 4.235164736271502e-22
+    },
+    "autograd_seed_cosines": {
+      "count": 9,
+      "max_abs": 2.220446049250313e-16
+    },
+    "block_r_identity": {
+      "count": 61704,
+      "max_abs": 3.3306690738754696e-16
+    },
+    "block_MSE_identity": {
+      "count": 61704,
+      "max_abs": 4.926614671774132e-16
+    },
+    "person_aggregation": {
+      "count": 11781,
+      "max_abs": 0.0
+    },
+    "phase_aggregation": {
+      "count": 198,
+      "max_abs": 0.0
+    },
+    "prior_independent_VAL_r": {
+      "count": 9,
+      "max_abs": 1.3596881592858878e-08
+    },
+    "prior_independent_VAL_MSE": {
+      "count": 9,
+      "max_abs": 3.020178274137919e-10
+    }
+  },
+  "gradients": [
+    {
+      "seed": 1024,
+      "records": 426,
+      "windows": 252454,
+      "learnable_coordinates": 47735040
+    },
+    {
+      "seed": 2026,
+      "records": 426,
+      "windows": 252454,
+      "learnable_coordinates": 47735040
+    },
+    {
+      "seed": 31415,
+      "records": 426,
+      "windows": 252454,
+      "learnable_coordinates": 47735040
+    }
+  ],
+  "blocks": 61704,
+  "new_NN": 0,
+  "optimizer_updates": 0,
+  "learning_model_fits": 0,
+  "limits": "Independent real gradient and reported-moment identities; no second TRAIN nonzero network replay, no parameter-gradient conclusion",
+  "CPU_seconds": 92.74914572099999,
+  "wall_seconds": 38.496137380599976,
+  "peak_RSS_KiB": 2406984,
+  "goal_complete": false
+}

@@ -1,0 +1,30 @@
+{
+  "findings": [
+    "D11固定15个岭解、6个无拟合干预、24个评分集合全部完成。Ccap/CurrentCov/RecordPrefix/PersonTRAIN/PastCov均VAL r=.182340/.181952/.182615/.182595/.182063；Past−Ccap均−.000277407且三个seed皆负，预设六方向条件不满足。",
+    "Past−Current full+.000110279三seed正但warm仅2/3正；Past−Prefix/Person/Older/Neutral full均−.000553/−.000533/−.000471/−.000361，三个seed均负。更早/中性干预提高r，未支持近期滑动状态额外历史作用。",
+    "Past−Add均−.000293257、−既有F full均−.001811310，均三seed负；Past MSE=.241838737优于Ccap .242378889，所以是Pearson条件阴性而非全部指标恶化。没有新确认、去噪/因果或创新证据，goal ACTIVE。"
+  ],
+  "overview": [
+    "强D8完整FT+Ccap冻结；current q32固定，四类协方差状态共享TRAIN PCA8及h/product规则，同λ=.01；PersonTRAIN严格同人其他TRAINrecord leave-record-out，静态参考不能称动态状态。i>=41共同训练/应用，前41Ccap精确fallback；完整49人752块不裁，654warm/49cold/49transition规则事前固定。",
+    "输入为发布预处理64通道EEG：原float32归一化后才FP64累计；同一float32 state缓存同时用于TRAIN和VAL。三seedCcap桥差0；32实际rolling/direct descriptor差≤1.0814e−13，floor/clip/负variance修正0；15正规方程max7.03e−17。",
+    "独立26source/551size-mtime、475支持、15正规方程、60原区间状态、48缓存读出和24full/warm/cold聚合实际通过，cache差≤1.135e−7，r/MSE/r3s差0。主wall3023.156s/CPU11262.107s、RSS2.61GiB、NN新前向/更新0；独立审核另3.276s/CPU20.704s。"
+  ],
+  "figure_comments": {
+    "01_COMPLETE_MATRIX.png": "左右为原full和固定warm的60秒/person宏r，柱为三seed均值、黑点为各seed，无CI，纵轴从0起。左黑虚线仅为已有D9 F full均.183873843，右无新F。Prefix/Person约.182615/.182595高于Past .182063，Add .182356亦高；细微差值由图2及表给出。cold49块所有角色精确一致，均r=.170396742，是fallback一致性而非泛化证据。",
+    "02_FIXED_CONTRASTS.png": "六个预设primary，横轴full与固定warm，同色同seed，各面板独立纵轴和零线，无检验或CI。Past−Ccap/Prefix/Person/Older/Neutral两种范围全seed负；唯一full全正的Past−Current在warm seed31415变为−.000027176。Older/Neutral保持当前输入、q、anchor、系数不变且不重拟合，结果没有呈现正确近期状态应优于干预的预期模式；不能单独分离时效和分布偏移。",
+    "03_ERROR_AND_STATE.png": "左为full fused MSE对r，Past MSE .241838737低于Ccap .242378889但r也低；Prefix .241390097同时更低MSE/更高r。中蓝fused、橙weightedSingle，差为D：Ccap D=.000361727，Past=.000382517，融合误差下降不能说更一致。恒等式max3.62e−15。右为TRAIN PCA8谱，特征值约333/240/129/108/91/76/73/52，只表明descriptor方差结构，不是任务信息或噪声机制证明。"
+  },
+  "caveats": [
+    "全部为反复known-person/source VAL开发；VAL49人全部见TRAIN，无新独立被试/故事确认，无新CI/p值。三seed不是独立人物或刺激。",
+    "本阴性只覆盖PCA8观测二阶状态、q32、30秒和λ=.01；未拆分h加性与交互，不排除全部协方差/EEG历史信息，不因阴性扩网格。",
+    "当前3秒与过去30秒样本数不同，静态/被试控制不能穷尽刺激、身份和分布解释。协方差不是已测噪声，当前EEG未做去噪变换；EA/AEA/ASR并未复现。",
+    "管线含离线SosFiltFilt/MWF/CAR/resample，实际旧derivative revision和硬件同步仍未核实；数组过去不等于端到端在线因果。",
+    "F full来自原冻结JSON并逐文件SHA引用，无新F推理/warm评分；其窗口MSE约352和近相消bias限制保留，不能称通用稳健最优，也不能省略其较高Pearson参考。",
+    "相同57024参数不等于相同有效df；原TRAIN i>=4 PCA32与本轮i>=41统计支持区分。输入size/mtime并非新载荷全内容hash；上游NN/D8/D9成本非零。",
+    "新state NPY45273920B，全SS07 NPY26270880224B<25GiB；数值101036740B<128MiB、root<256MiB、free>20GiB。仅静态图/表/报告和轻量源码回传，无原信号、latent、PCA载荷、Gram、系数或预测数组。"
+  ],
+  "next_steps": [
+    "冻结D11全部阴性/混合指标与独立review，完成三图HTML归档、tracker和正常提交推送，PR6保持Draft。",
+    "后续科学选择回到SS07授权范围和parent验收；不自动重开旧test/DTU、扩λ/时长/PCA/backbone或患者分支。OpenNeuro载荷scope仍待实际人类答复。"
+  ]
+}

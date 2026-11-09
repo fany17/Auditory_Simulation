@@ -1,0 +1,4843 @@
+{
+  "status": "ACTUAL_PINNED_TEXT_METADATA_REVIEW_ONLY",
+  "repository": "OpenNeuroDatasets/ds004408",
+  "commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+  "reviewed_on": "2026-11-01",
+  "method": "Read all119 unique channels.tsv blobs at pinned raw URLs through GitHub connector; map content identities through all380 tree entries. No EEG/audio or annex-header payload, model inference, preprocessing or exclusion.",
+  "summary": {
+    "records": 380,
+    "unique_blobs": 119,
+    "all128": true,
+    "all_ordered_A1_to_D32": true,
+    "all_EEG": true,
+    "all_unit_V": true,
+    "all_sample_rate_512": true,
+    "records_with_at_least_one_declared_bad": 285,
+    "bad_count_min": 0,
+    "bad_count_max": 34,
+    "bad_count_histogram": {
+      "0": 95,
+      "1": 63,
+      "2": 31,
+      "3": 32,
+      "4": 22,
+      "5": 22,
+      "6": 15,
+      "7": 10,
+      "8": 4,
+      "9": 34,
+      "10": 5,
+      "11": 8,
+      "12": 3,
+      "13": 12,
+      "14": 9,
+      "15": 3,
+      "16": 2,
+      "17": 1,
+      "18": 3,
+      "19": 1,
+      "22": 1,
+      "23": 1,
+      "26": 1,
+      "28": 1,
+      "34": 1
+    },
+    "unknown_status_entries": 0
+  },
+  "correction": "Previous sample metadata wording all-good was false. Exact unchanged sub001/run01 pinned blob declares B2,C20,C21,C24,C25 bad (5 of128); FUTURE_CONFIRMATION_PINNED_HEADERS.json corrected transparently.",
+  "limits": [
+    "Metadata status is a curator declaration, not independent signal-quality validation.",
+    "No participants or records excluded; bad-channel count cannot be turned into a performance-driven filter.",
+    "No actual montage coordinates or reference derivation established. No 128-to-64 operator selected.",
+    "New EEG/audio data scope still needs actual human authorization; current D11 is independent and unchanged."
+  ],
+  "unique_blob_details": [
+    {
+      "sha": "84de42c847b21f0cc1cb4832f3594e2985179f6e",
+      "path": "sub-001/eeg/sub-001_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "B2",
+        "C20",
+        "C21",
+        "C24",
+        "C25"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "0057be7d78dbe85ac2ad553d3ae635737c85bf71",
+      "path": "sub-015/eeg/sub-015_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C20",
+        "C21"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "a55a4e5edf89ebe894707c24e7739cc694c14e84",
+      "path": "sub-001/eeg/sub-001_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C20",
+        "C21",
+        "C25"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "e020b77afe414095d427d42d270a85b33a2a5ae8",
+      "path": "sub-015/eeg/sub-015_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C21"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "e7c594e192509914fcb728a14a59d1d1676d137b",
+      "path": "sub-001/eeg/sub-001_task-listening_run-06_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C21",
+        "C26"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "d76818d0fda5c6da30fb62acf6c48bf0627e00a0",
+      "path": "sub-001/eeg/sub-001_task-listening_run-10_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A30",
+        "A31",
+        "B3",
+        "B17",
+        "C3",
+        "C13",
+        "C20",
+        "C21",
+        "C25",
+        "C26",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "baddc3da58561eb2be996658452424f72dfce786",
+      "path": "sub-001/eeg/sub-001_task-listening_run-13_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C21",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "db8d3c4c940c9b174e1ab0b9a9e9750289c27e43",
+      "path": "sub-001/eeg/sub-001_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C12",
+        "C20",
+        "C21",
+        "C25"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "9653c5ba25631eb411d452c69066ac1b4b47f3a5",
+      "path": "sub-002/eeg/sub-002_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "B1",
+        "B2",
+        "B4",
+        "B8",
+        "B25",
+        "B29",
+        "B31",
+        "B32",
+        "C1",
+        "C30",
+        "C31",
+        "D10",
+        "D23"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "89c74a97a11b57808e8810803398c0cfe847e19c",
+      "path": "sub-002/eeg/sub-002_task-listening_run-18_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "B1",
+        "B2",
+        "B4",
+        "B8",
+        "B25",
+        "B29",
+        "B31",
+        "B32",
+        "C1",
+        "C30",
+        "C31",
+        "D10"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "d30e38a72f4fb57bacccfe8a8a727711d46d2486",
+      "path": "sub-002/eeg/sub-002_task-listening_run-03_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "B1",
+        "B2",
+        "B4",
+        "B8",
+        "B25",
+        "B26",
+        "B29",
+        "B31",
+        "B32",
+        "C1",
+        "C30",
+        "C31",
+        "D10"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "96aa39eca7ea6079e1a709db97a8319b8fec58fa",
+      "path": "sub-002/eeg/sub-002_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A3",
+        "B1",
+        "B2",
+        "B4",
+        "B8",
+        "B25",
+        "B29",
+        "B31",
+        "B32",
+        "C1",
+        "C30",
+        "C31",
+        "D10",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "4a69cec680398f6177b4242b0f3e7c546da8ba53",
+      "path": "sub-002/eeg/sub-002_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "B1",
+        "B2",
+        "B4",
+        "B8",
+        "B25",
+        "B29",
+        "B31",
+        "B32",
+        "C1",
+        "C30",
+        "C31",
+        "D10",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "aa0a80d3b4023cbfaab9c931a1e5e222392d6e73",
+      "path": "sub-002/eeg/sub-002_task-listening_run-12_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A3",
+        "B1",
+        "B2",
+        "B4",
+        "B8",
+        "B25",
+        "B29",
+        "B31",
+        "B32",
+        "C1",
+        "C30",
+        "C31",
+        "D10"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b",
+      "path": "sub-006/eeg/sub-006_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "ae7bc609f493e9ca384146680be00350b19db31f",
+      "path": "sub-003/eeg/sub-003_task-listening_run-13_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703",
+      "path": "sub-017/eeg/sub-017_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "2467172181d8e54cd2414200f8775ca294957339",
+      "path": "sub-004/eeg/sub-004_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A6",
+        "A15",
+        "A19",
+        "B8",
+        "B9",
+        "D13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "ccb9d80201f6246c48ea3bd82fc39cd450f1d2c8",
+      "path": "sub-004/eeg/sub-004_task-listening_run-11_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A6",
+        "A19",
+        "B8",
+        "B9",
+        "D13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "8c3388c04a1a4e1ee146ed70ce9c6afe01bc6df9",
+      "path": "sub-004/eeg/sub-004_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A6",
+        "B8",
+        "B9",
+        "D13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "fc9031fa42c01be200c25d0441ffff69d1690031",
+      "path": "sub-004/eeg/sub-004_task-listening_run-13_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A5",
+        "A6",
+        "A19",
+        "B8",
+        "B9",
+        "D13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "6c6d1bbc502ed948e5a49dece3d5f3076ffb3c2e",
+      "path": "sub-004/eeg/sub-004_task-listening_run-06_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A19",
+        "B8",
+        "B9",
+        "D13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "c8d197888c81ac12dd12e32fc5a467dd96d098a1",
+      "path": "sub-004/eeg/sub-004_task-listening_run-17_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A5",
+        "A6",
+        "B8",
+        "B9",
+        "D13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "f5be80e2bb65203258fc85b5796027fed367e792",
+      "path": "sub-004/eeg/sub-004_task-listening_run-18_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "B8",
+        "B9",
+        "D13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "4ba131c16b7a68b0832185b2ff4925793c09782a",
+      "path": "sub-005/eeg/sub-005_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A7",
+        "A18",
+        "A22",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993",
+      "path": "sub-005/eeg/sub-005_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A18",
+        "A22",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "cf665d0248ab4eba87983c32ae02f2f5fa480764",
+      "path": "sub-005/eeg/sub-005_task-listening_run-16_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A18",
+        "A21",
+        "A22",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7d39a71c7a64f63c00750039ac86a00b2c951028",
+      "path": "sub-005/eeg/sub-005_task-listening_run-04_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A7",
+        "A18",
+        "A20",
+        "A21",
+        "A22",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "fad4d5b22346bd12a0b5ca046feb5c6422df09f1",
+      "path": "sub-005/eeg/sub-005_task-listening_run-05_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A7",
+        "A18",
+        "A21",
+        "A22",
+        "A23",
+        "A31",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "b77985126356bc69e1127a8eccd780a264b507ba",
+      "path": "sub-005/eeg/sub-005_task-listening_run-08_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A7",
+        "A18",
+        "A21",
+        "A22",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "9b92dcd574bf0f35e82e7a80eefcdd5f2093acf0",
+      "path": "sub-005/eeg/sub-005_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A18",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "b5f27a98bb09c56cc29b9e447bc7a3f69cdb960c",
+      "path": "sub-005/eeg/sub-005_task-listening_run-15_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A22",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "9b2932639f3a2e3a18342bd3f8394a8918b3b016",
+      "path": "sub-005/eeg/sub-005_task-listening_run-18_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A22",
+        "A23",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "1f124dbbcf0961c196429208a3b91169c4eb750d",
+      "path": "sub-006/eeg/sub-006_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A6",
+        "D16",
+        "D17",
+        "D18",
+        "D27",
+        "D28"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "a02bec74d0467102d1ec29b24da575238eb68674",
+      "path": "sub-006/eeg/sub-006_task-listening_run-02_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A6",
+        "D16",
+        "D17",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "d759acebb703ba10523e2b3323b151eb73e53828",
+      "path": "sub-006/eeg/sub-006_task-listening_run-03_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "D16",
+        "D17",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "5dc36e88806a198c3a24c1bb0666a6e51cb2c434",
+      "path": "sub-006/eeg/sub-006_task-listening_run-13_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A6",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "4612f0143c972027190691cfd825326fed6db7c8",
+      "path": "sub-006/eeg/sub-006_task-listening_run-06_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A6",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "3d4e8d3470d1bb50a1fecf016a93a76b8afae883",
+      "path": "sub-006/eeg/sub-006_task-listening_run-08_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "C17",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "1a222f033f0dea555e88b1d621752d371669ab0d",
+      "path": "sub-006/eeg/sub-006_task-listening_run-09_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A6",
+        "C17",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "1b2abc68c82b95afeabd4446087f59cc7d537268",
+      "path": "sub-006/eeg/sub-006_task-listening_run-10_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A19",
+        "A32",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "57ff84c052d5914df8dd7a2b3533334db0b8d53d",
+      "path": "sub-006/eeg/sub-006_task-listening_run-15_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "e1b4e92dd6593b56d29a65b33b2c368714d75245",
+      "path": "sub-006/eeg/sub-006_task-listening_run-16_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A20",
+        "A32",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "cb4988e96f3e81dfd9c098b1857e3743d201aaec",
+      "path": "sub-006/eeg/sub-006_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A19",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "e8d247b71651825ef67033d1a840a3cd91714a61",
+      "path": "sub-019/eeg/sub-019_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7391824740c0fd4273eb94a754de1b654a8b66e5",
+      "path": "sub-008/eeg/sub-008_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "B6",
+        "B8",
+        "B25",
+        "B27",
+        "B29",
+        "B31",
+        "B32",
+        "C13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "71faeb117b67b9a264203f239238379d045a8828",
+      "path": "sub-008/eeg/sub-008_task-listening_run-02_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A5",
+        "B6",
+        "B8",
+        "B25",
+        "B27",
+        "B29",
+        "B31",
+        "B32",
+        "C13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8",
+      "path": "sub-008/eeg/sub-008_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A5",
+        "B6",
+        "B8",
+        "B25",
+        "B29",
+        "B31",
+        "B32",
+        "C13"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "1332384456a774534b3cd95dc96ab6dd3d617fdc",
+      "path": "sub-009/eeg/sub-009_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A3",
+        "A5",
+        "A6",
+        "A30",
+        "A31",
+        "C6",
+        "C10",
+        "C11",
+        "C19",
+        "C22",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "2b39c8713f416fc3b0301819386323ae59265a9b",
+      "path": "sub-009/eeg/sub-009_task-listening_run-02_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A6",
+        "A30",
+        "A31",
+        "B1",
+        "B26",
+        "C6",
+        "C10",
+        "C11",
+        "C19",
+        "C22",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "4499e133793d2b7daf1b44dbfb8c150732f98a3d",
+      "path": "sub-009/eeg/sub-009_task-listening_run-03_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A6",
+        "A30",
+        "A31",
+        "B1",
+        "C11",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "8b24f59bb5a9d6b25da86536824d6c71f559be0a",
+      "path": "sub-009/eeg/sub-009_task-listening_run-04_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A6",
+        "A30",
+        "A31",
+        "B1",
+        "C6",
+        "C10",
+        "C11",
+        "C19",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "0b391c2f87c68564e52777e236dafde719cc5f94",
+      "path": "sub-009/eeg/sub-009_task-listening_run-05_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A6",
+        "A31",
+        "C11",
+        "C19"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "77a5981a4182bc7dcf69287150189aef0209077f",
+      "path": "sub-009/eeg/sub-009_task-listening_run-06_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A6",
+        "A30",
+        "A31",
+        "B1",
+        "B2",
+        "C6",
+        "C11",
+        "C19",
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "d3b4715dc20c2d959034722efa354746ae0ef2f2",
+      "path": "sub-009/eeg/sub-009_task-listening_run-07_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "C6",
+        "C11",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "d7bb2f040e200c5f4c173d8b6fd7e70cb9a25a64",
+      "path": "sub-009/eeg/sub-009_task-listening_run-08_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A31",
+        "C11",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7ed9797b2047a6af8cb4935a00389eb3c1387a83",
+      "path": "sub-009/eeg/sub-009_task-listening_run-09_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A30",
+        "A31",
+        "B1",
+        "C11",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7690c27b5842ab666d63a05971cd4d37cf35ecbd",
+      "path": "sub-009/eeg/sub-009_task-listening_run-10_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A31",
+        "B2",
+        "C11",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "b8bc56428a52d62461e9d2119190108a9af2bf93",
+      "path": "sub-009/eeg/sub-009_task-listening_run-11_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "C11",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "a55c64ec1d15b5dc7e52d27401952aefdad1db18",
+      "path": "sub-009/eeg/sub-009_task-listening_run-16_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "0574a17c5d64cf67b98124b79f545377f38f2bf0",
+      "path": "sub-009/eeg/sub-009_task-listening_run-18_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "C19"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "b1a460f1f7c3c567723b413ce06c2abde9fa5b0b",
+      "path": "sub-009/eeg/sub-009_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "B18",
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "3365233add2b50db8f27942defcfcefba582a8d5",
+      "path": "sub-009/eeg/sub-009_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C19",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "d36ab4a620fa5b1bf53e7313bd5a640c71271d5e",
+      "path": "sub-010/eeg/sub-010_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A25",
+        "A28",
+        "B8",
+        "B23",
+        "B25",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "C13",
+        "D10"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "eb6a28d4e9ca290dd9ced0635e4077d3367d7ef6",
+      "path": "sub-010/eeg/sub-010_task-listening_run-07_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A25",
+        "B8",
+        "B25",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "C13",
+        "D10"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "55c8158b50a86dfddd913b5dbc16eee8db268e46",
+      "path": "sub-010/eeg/sub-010_task-listening_run-03_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A25",
+        "A31",
+        "B8",
+        "B25",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "C13",
+        "D10"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "58507379a76d2cedaab50fde627f5052af51e4bc",
+      "path": "sub-010/eeg/sub-010_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "B8",
+        "B25",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "C13",
+        "D10"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "9ff671145fd4174788f1a8fa524bcf0e010487cf",
+      "path": "sub-013/eeg/sub-013_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A9",
+        "A10",
+        "A15",
+        "A16",
+        "A17",
+        "A19",
+        "A31",
+        "A32",
+        "B1",
+        "B2",
+        "B5",
+        "B6",
+        "B8",
+        "B9",
+        "B11",
+        "B15",
+        "B16",
+        "B19",
+        "B20",
+        "B25",
+        "B27",
+        "C29",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D26",
+        "D27",
+        "D29"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7bb29f05266c3d45c8ff6f741bdae79cd6fbe632",
+      "path": "sub-013/eeg/sub-013_task-listening_run-02_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A9",
+        "A10",
+        "A15",
+        "A17",
+        "A25",
+        "A31",
+        "A32",
+        "B1",
+        "B2",
+        "B5",
+        "B6",
+        "B9",
+        "B16",
+        "B19",
+        "B25",
+        "C7",
+        "C10",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D27",
+        "D29"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "e11c44c6f94c2178611ee13938922fe22c0a9d49",
+      "path": "sub-013/eeg/sub-013_task-listening_run-03_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A9",
+        "A10",
+        "A17",
+        "A31",
+        "B1",
+        "B2",
+        "B5",
+        "B6",
+        "B9",
+        "B15",
+        "B16",
+        "B19",
+        "B25",
+        "C10",
+        "C29",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D20",
+        "D27"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7b69fc45ababf3797d09dfc6b742ef022d587d76",
+      "path": "sub-013/eeg/sub-013_task-listening_run-04_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A10",
+        "A17",
+        "A31",
+        "B2",
+        "B5",
+        "B6",
+        "B9",
+        "B15",
+        "B16",
+        "B19",
+        "C10",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D20",
+        "D26",
+        "D27"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "1f3a9ae84a4c58ca6a1ce48b0573bd6b8dc9c0ef",
+      "path": "sub-013/eeg/sub-013_task-listening_run-05_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A10",
+        "A17",
+        "A25",
+        "A31",
+        "B2",
+        "B5",
+        "B6",
+        "B9",
+        "B15",
+        "B16",
+        "B19",
+        "B25",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D20",
+        "D27"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "ac13d5161fc560552327fa3a4dad1c9b9973dd11",
+      "path": "sub-013/eeg/sub-013_task-listening_run-06_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A16",
+        "A17",
+        "A31",
+        "B2",
+        "B5",
+        "B6",
+        "B9",
+        "B15",
+        "B19",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D20",
+        "D27"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "de283d0ca1ef2b609c651a966a8b8840e7077546",
+      "path": "sub-013/eeg/sub-013_task-listening_run-07_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A10",
+        "A16",
+        "A17",
+        "A25",
+        "A31",
+        "B2",
+        "B5",
+        "B9",
+        "B15",
+        "D8",
+        "D9",
+        "D11",
+        "D15",
+        "D16",
+        "D18",
+        "D27"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "ab9c6bcb06f66c2d9f8e0da98493563c5d349370",
+      "path": "sub-013/eeg/sub-013_task-listening_run-08_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A16",
+        "A17",
+        "A25",
+        "B2",
+        "B5",
+        "B9",
+        "B15",
+        "C29",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D27"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "4d66695f2ac36484ea515a66b197d2c4e12828f7",
+      "path": "sub-013/eeg/sub-013_task-listening_run-09_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A4",
+        "A5",
+        "A10",
+        "A16",
+        "A17",
+        "B2",
+        "B5",
+        "B9",
+        "B15",
+        "C29",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "35c5faa681263ed612fd5d59187afd72e4f0df65",
+      "path": "sub-013/eeg/sub-013_task-listening_run-10_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A10",
+        "A16",
+        "A17",
+        "A25",
+        "B5",
+        "B9",
+        "B15",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "cb5d0f071b0a30174040033edc4c6056eb544eee",
+      "path": "sub-013/eeg/sub-013_task-listening_run-11_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A10",
+        "A16",
+        "A17",
+        "A25",
+        "B5",
+        "B9",
+        "B15",
+        "B16",
+        "D8",
+        "D9",
+        "D11",
+        "D15",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "9c3c46cd9a6be6855afc1e000831713bd32a79ff",
+      "path": "sub-013/eeg/sub-013_task-listening_run-12_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A10",
+        "A16",
+        "A17",
+        "B5",
+        "B9",
+        "B15",
+        "D8",
+        "D9",
+        "D11",
+        "D15",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "351d1d2442e4bf790cb163e2cfdec22ac8e2b29d",
+      "path": "sub-013/eeg/sub-013_task-listening_run-13_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A16",
+        "A17",
+        "A25",
+        "B2",
+        "B5",
+        "B9",
+        "B16",
+        "C29",
+        "D8",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18",
+        "D20"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "6f09df60b3de492d3cd8c1c2b9a8225256327b13",
+      "path": "sub-013/eeg/sub-013_task-listening_run-14_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A25",
+        "B5",
+        "B9",
+        "D8",
+        "D9",
+        "D11",
+        "D15",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "600b0a5c788ac74cade19b5ca38d81b136f44e0d",
+      "path": "sub-013/eeg/sub-013_task-listening_run-15_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A17",
+        "A25",
+        "B2",
+        "B5",
+        "B9",
+        "B15",
+        "D8",
+        "D9",
+        "D11",
+        "D15",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "86eb0764b0fb05a2354fadc7b3012ebfcdb493d3",
+      "path": "sub-013/eeg/sub-013_task-listening_run-16_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A17",
+        "B5",
+        "B9",
+        "B14",
+        "B15",
+        "C29",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "f5e80064621dd923b0b127538f324c4850cadcb8",
+      "path": "sub-013/eeg/sub-013_task-listening_run-17_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A17",
+        "B2",
+        "B5",
+        "B9",
+        "B14",
+        "B27",
+        "D9",
+        "D11",
+        "D14",
+        "D15",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "2d40d3d262fc8fe22603c81842350af14517c5ed",
+      "path": "sub-013/eeg/sub-013_task-listening_run-18_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A17",
+        "A25",
+        "B5",
+        "B9",
+        "B27",
+        "D9",
+        "D11",
+        "D15",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7660556037775d578363f49ba878ec7995e54764",
+      "path": "sub-013/eeg/sub-013_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A4",
+        "A5",
+        "A9",
+        "A17",
+        "B5",
+        "B9",
+        "B27",
+        "D9",
+        "D11",
+        "D15",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "1319c60baeae075ef06415f64833fc5b2526c1a1",
+      "path": "sub-013/eeg/sub-013_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A1",
+        "A4",
+        "A5",
+        "A9",
+        "A17",
+        "B2",
+        "B5",
+        "B9",
+        "D9",
+        "D11",
+        "D15",
+        "D16"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0",
+      "path": "sub-015/eeg/sub-015_task-listening_run-11_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C26"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "532c087128c55a68ebe03ec5d5b88ac04820ded3",
+      "path": "sub-015/eeg/sub-015_task-listening_run-08_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C11",
+        "C12",
+        "C13",
+        "C20",
+        "C23",
+        "C24",
+        "C25",
+        "C26"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "a45119add5bec06e1c62be19734c84e469c47ced",
+      "path": "sub-015/eeg/sub-015_task-listening_run-09_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C11",
+        "C12",
+        "C13",
+        "C20",
+        "C21",
+        "C22",
+        "C24",
+        "C25",
+        "C26"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "64d2cbfafdbee29e999bef8895499a1387acf49a",
+      "path": "sub-015/eeg/sub-015_task-listening_run-12_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C20",
+        "C26"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "22e059938c8bc71d2b641f6271673dfa66a590d0",
+      "path": "sub-015/eeg/sub-015_task-listening_run-14_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D1"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "16b2e690af96e7d2c9ffd60c4413614cd883cd1f",
+      "path": "sub-015/eeg/sub-015_task-listening_run-15_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "C24",
+        "C25",
+        "C26",
+        "D1"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "f96882100b3792c2bb6de5e44b1d5d8eff9392d3",
+      "path": "sub-016/eeg/sub-016_task-listening_run-01_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A12",
+        "A22",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "75746b9d9dd87183cf6bcb9af97f25523a9c93f8",
+      "path": "sub-016/eeg/sub-016_task-listening_run-02_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A12",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "dc291475f324090ffc4e7b04f60beee587472639",
+      "path": "sub-016/eeg/sub-016_task-listening_run-03_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A12",
+        "D17",
+        "D29"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "8b04caff90ee3c6841f6fb2ed3313fa3b84b1fa0",
+      "path": "sub-016/eeg/sub-016_task-listening_run-05_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A12",
+        "D28"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "85649e4a8bea456f6854d7ab8cd090af2c4131ed",
+      "path": "sub-016/eeg/sub-016_task-listening_run-06_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A12",
+        "D29",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "feb3d296d44596b1b6ee0f895028e1abc01773bd",
+      "path": "sub-016/eeg/sub-016_task-listening_run-12_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A12",
+        "D29",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "2f948d389b4d978bddd0483202dc2d12b66b0954",
+      "path": "sub-016/eeg/sub-016_task-listening_run-08_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "A12",
+        "D16",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "d373d3ce648782ef6a26f9b95ed37cfcb83777d1",
+      "path": "sub-016/eeg/sub-016_task-listening_run-09_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A12",
+        "D17",
+        "D29",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "0e82160b7128356950096ef908ac2a6744738f83",
+      "path": "sub-016/eeg/sub-016_task-listening_run-13_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D16",
+        "D29",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "afc03c71ee50c4c35b3d5c3baaecf31a3ab7d2b7",
+      "path": "sub-016/eeg/sub-016_task-listening_run-14_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D29",
+        "D30",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "633ea59c319a6e861e1bcae4f0ecd904d82ed2bf",
+      "path": "sub-016/eeg/sub-016_task-listening_run-15_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5",
+        "D16",
+        "D29",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "682835e0c7011ef3c1cdcfc276e90f183f251684",
+      "path": "sub-016/eeg/sub-016_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D29",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "5cf259383934afd267581dbb4b8404a177a1c0c1",
+      "path": "sub-016/eeg/sub-016_task-listening_run-17_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D17",
+        "D29",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "e542d5f1e8d930878003bae326c81c0cd3976c4b",
+      "path": "sub-016/eeg/sub-016_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D16",
+        "D32"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "28bfa66ea14da44c2f2d93194aaeaa308bb4278f",
+      "path": "sub-017/eeg/sub-017_task-listening_run-04_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D16",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "215d05ec1f40731f005bb3c013df2db0488fbd3b",
+      "path": "sub-018/eeg/sub-018_task-listening_run-07_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A6"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "a5bdf4b3ab27fd10b4e1ab3cd2a6100bf96ea231",
+      "path": "sub-018/eeg/sub-018_task-listening_run-04_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A3",
+        "A4",
+        "D7"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "495e1fc80cf5dc90faf32d9dc6c4295c1a54c3de",
+      "path": "sub-018/eeg/sub-018_task-listening_run-05_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A6",
+        "C7",
+        "D7",
+        "D17"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "00aeeead2c4fdc8adf2ee26ee8f307d8b0f2449c",
+      "path": "sub-018/eeg/sub-018_task-listening_run-08_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A6",
+        "A7",
+        "D23"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997",
+      "path": "sub-019/eeg/sub-019_task-listening_run-14_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A5"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "a789d06d23008722ccc9621c26a0ab604ad8863b",
+      "path": "sub-018/eeg/sub-018_task-listening_run-10_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A7",
+        "D23"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "b34d8abbb21861fa878fa25891321089e1911d12",
+      "path": "sub-018/eeg/sub-018_task-listening_run-15_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D23"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "481ad102daaace517a50a2dbd4cc3c58311016ff",
+      "path": "sub-018/eeg/sub-018_task-listening_run-17_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A6",
+        "D23"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "6873663b5f050ed43f0a8b98eef31d4522d306a1",
+      "path": "sub-018/eeg/sub-018_task-listening_run-18_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "D14",
+        "D18"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "2668ccde70fc90147702512215b9a39f003282b6",
+      "path": "sub-018/eeg/sub-018_task-listening_run-19_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "B20"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    },
+    {
+      "sha": "7d7dd430090f50bed4867b0f86abab8ba182f23a",
+      "path": "sub-018/eeg/sub-018_task-listening_run-20_channels.tsv",
+      "rows": 128,
+      "types": [
+        "EEG"
+      ],
+      "units": [
+        "V"
+      ],
+      "frequencies": [
+        "512.0"
+      ],
+      "bad": [
+        "A20",
+        "B20"
+      ],
+      "unknownStatus": [],
+      "statusDescriptions": [
+        "n/a"
+      ]
+    }
+  ],
+  "record_to_blob": [
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "84de42c847b21f0cc1cb4832f3594e2985179f6e"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "0057be7d78dbe85ac2ad553d3ae635737c85bf71"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "a55a4e5edf89ebe894707c24e7739cc694c14e84"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "e020b77afe414095d427d42d270a85b33a2a5ae8"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "e020b77afe414095d427d42d270a85b33a2a5ae8"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "e7c594e192509914fcb728a14a59d1d1676d137b"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "0057be7d78dbe85ac2ad553d3ae635737c85bf71"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "a55a4e5edf89ebe894707c24e7739cc694c14e84"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "e020b77afe414095d427d42d270a85b33a2a5ae8"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "d76818d0fda5c6da30fb62acf6c48bf0627e00a0"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "baddc3da58561eb2be996658452424f72dfce786"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "baddc3da58561eb2be996658452424f72dfce786"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "baddc3da58561eb2be996658452424f72dfce786"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "0057be7d78dbe85ac2ad553d3ae635737c85bf71"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "e020b77afe414095d427d42d270a85b33a2a5ae8"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "a55a4e5edf89ebe894707c24e7739cc694c14e84"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "a55a4e5edf89ebe894707c24e7739cc694c14e84"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "a55a4e5edf89ebe894707c24e7739cc694c14e84"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "db8d3c4c940c9b174e1ab0b9a9e9750289c27e43"
+    },
+    {
+      "path": "sub-001/eeg/sub-001_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "a55a4e5edf89ebe894707c24e7739cc694c14e84"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "9653c5ba25631eb411d452c69066ac1b4b47f3a5"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "d30e38a72f4fb57bacccfe8a8a727711d46d2486"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "96aa39eca7ea6079e1a709db97a8319b8fec58fa"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "4a69cec680398f6177b4242b0f3e7c546da8ba53"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "aa0a80d3b4023cbfaab9c931a1e5e222392d6e73"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "4a69cec680398f6177b4242b0f3e7c546da8ba53"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "96aa39eca7ea6079e1a709db97a8319b8fec58fa"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "89c74a97a11b57808e8810803398c0cfe847e19c"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "96aa39eca7ea6079e1a709db97a8319b8fec58fa"
+    },
+    {
+      "path": "sub-002/eeg/sub-002_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "4a69cec680398f6177b4242b0f3e7c546da8ba53"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "ae7bc609f493e9ca384146680be00350b19db31f"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-003/eeg/sub-003_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "2467172181d8e54cd2414200f8775ca294957339"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "ccb9d80201f6246c48ea3bd82fc39cd450f1d2c8"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "8c3388c04a1a4e1ee146ed70ce9c6afe01bc6df9"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "fc9031fa42c01be200c25d0441ffff69d1690031"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "8c3388c04a1a4e1ee146ed70ce9c6afe01bc6df9"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "6c6d1bbc502ed948e5a49dece3d5f3076ffb3c2e"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "c8d197888c81ac12dd12e32fc5a467dd96d098a1"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "fc9031fa42c01be200c25d0441ffff69d1690031"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "fc9031fa42c01be200c25d0441ffff69d1690031"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "fc9031fa42c01be200c25d0441ffff69d1690031"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "ccb9d80201f6246c48ea3bd82fc39cd450f1d2c8"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "fc9031fa42c01be200c25d0441ffff69d1690031"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "fc9031fa42c01be200c25d0441ffff69d1690031"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "c8d197888c81ac12dd12e32fc5a467dd96d098a1"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "8c3388c04a1a4e1ee146ed70ce9c6afe01bc6df9"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "8c3388c04a1a4e1ee146ed70ce9c6afe01bc6df9"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "c8d197888c81ac12dd12e32fc5a467dd96d098a1"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "f5be80e2bb65203258fc85b5796027fed367e792"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "8c3388c04a1a4e1ee146ed70ce9c6afe01bc6df9"
+    },
+    {
+      "path": "sub-004/eeg/sub-004_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "8c3388c04a1a4e1ee146ed70ce9c6afe01bc6df9"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "4ba131c16b7a68b0832185b2ff4925793c09782a"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "cf665d0248ab4eba87983c32ae02f2f5fa480764"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "7d39a71c7a64f63c00750039ac86a00b2c951028"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "fad4d5b22346bd12a0b5ca046feb5c6422df09f1"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "cf665d0248ab4eba87983c32ae02f2f5fa480764"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "cf665d0248ab4eba87983c32ae02f2f5fa480764"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "b77985126356bc69e1127a8eccd780a264b507ba"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "9b92dcd574bf0f35e82e7a80eefcdd5f2093acf0"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "cf665d0248ab4eba87983c32ae02f2f5fa480764"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "b5f27a98bb09c56cc29b9e447bc7a3f69cdb960c"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "cf665d0248ab4eba87983c32ae02f2f5fa480764"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "9b2932639f3a2e3a18342bd3f8394a8918b3b016"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "6bba5e8c7ba48daafb7b712d557ce3ac5db6a993"
+    },
+    {
+      "path": "sub-005/eeg/sub-005_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "9b92dcd574bf0f35e82e7a80eefcdd5f2093acf0"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "1f124dbbcf0961c196429208a3b91169c4eb750d"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "a02bec74d0467102d1ec29b24da575238eb68674"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "d759acebb703ba10523e2b3323b151eb73e53828"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "5dc36e88806a198c3a24c1bb0666a6e51cb2c434"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "5dc36e88806a198c3a24c1bb0666a6e51cb2c434"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "4612f0143c972027190691cfd825326fed6db7c8"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "3d4e8d3470d1bb50a1fecf016a93a76b8afae883"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "1a222f033f0dea555e88b1d621752d371669ab0d"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "1b2abc68c82b95afeabd4446087f59cc7d537268"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "57ff84c052d5914df8dd7a2b3533334db0b8d53d"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "5dc36e88806a198c3a24c1bb0666a6e51cb2c434"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "57ff84c052d5914df8dd7a2b3533334db0b8d53d"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e1b4e92dd6593b56d29a65b33b2c368714d75245"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "12d4f0e31c039a424db94a20764a6861e09d8b5b"
+    },
+    {
+      "path": "sub-006/eeg/sub-006_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "cb4988e96f3e81dfd9c098b1857e3743d201aaec"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-007/eeg/sub-007_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "7391824740c0fd4273eb94a754de1b654a8b66e5"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "71faeb117b67b9a264203f239238379d045a8828"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-008/eeg/sub-008_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "9c61e7a3e397c5cb2aeec3b7b114dc0ae819c6b8"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "1332384456a774534b3cd95dc96ab6dd3d617fdc"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "2b39c8713f416fc3b0301819386323ae59265a9b"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "4499e133793d2b7daf1b44dbfb8c150732f98a3d"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "8b24f59bb5a9d6b25da86536824d6c71f559be0a"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "0b391c2f87c68564e52777e236dafde719cc5f94"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "77a5981a4182bc7dcf69287150189aef0209077f"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "d3b4715dc20c2d959034722efa354746ae0ef2f2"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "d7bb2f040e200c5f4c173d8b6fd7e70cb9a25a64"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "7ed9797b2047a6af8cb4935a00389eb3c1387a83"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "7690c27b5842ab666d63a05971cd4d37cf35ecbd"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "b8bc56428a52d62461e9d2119190108a9af2bf93"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "a55c64ec1d15b5dc7e52d27401952aefdad1db18"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "a55c64ec1d15b5dc7e52d27401952aefdad1db18"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "a55c64ec1d15b5dc7e52d27401952aefdad1db18"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "a55c64ec1d15b5dc7e52d27401952aefdad1db18"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "a55c64ec1d15b5dc7e52d27401952aefdad1db18"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "0574a17c5d64cf67b98124b79f545377f38f2bf0"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "0574a17c5d64cf67b98124b79f545377f38f2bf0"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "b1a460f1f7c3c567723b413ce06c2abde9fa5b0b"
+    },
+    {
+      "path": "sub-009/eeg/sub-009_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "3365233add2b50db8f27942defcfcefba582a8d5"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "d36ab4a620fa5b1bf53e7313bd5a640c71271d5e"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "eb6a28d4e9ca290dd9ced0635e4077d3367d7ef6"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "55c8158b50a86dfddd913b5dbc16eee8db268e46"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "eb6a28d4e9ca290dd9ced0635e4077d3367d7ef6"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "eb6a28d4e9ca290dd9ced0635e4077d3367d7ef6"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "eb6a28d4e9ca290dd9ced0635e4077d3367d7ef6"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-010/eeg/sub-010_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "58507379a76d2cedaab50fde627f5052af51e4bc"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-011/eeg/sub-011_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-012/eeg/sub-012_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "9ff671145fd4174788f1a8fa524bcf0e010487cf"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "7bb29f05266c3d45c8ff6f741bdae79cd6fbe632"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "e11c44c6f94c2178611ee13938922fe22c0a9d49"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "7b69fc45ababf3797d09dfc6b742ef022d587d76"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "1f3a9ae84a4c58ca6a1ce48b0573bd6b8dc9c0ef"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "ac13d5161fc560552327fa3a4dad1c9b9973dd11"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "de283d0ca1ef2b609c651a966a8b8840e7077546"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "ab9c6bcb06f66c2d9f8e0da98493563c5d349370"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "4d66695f2ac36484ea515a66b197d2c4e12828f7"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "35c5faa681263ed612fd5d59187afd72e4f0df65"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "cb5d0f071b0a30174040033edc4c6056eb544eee"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "9c3c46cd9a6be6855afc1e000831713bd32a79ff"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "351d1d2442e4bf790cb163e2cfdec22ac8e2b29d"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "6f09df60b3de492d3cd8c1c2b9a8225256327b13"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "600b0a5c788ac74cade19b5ca38d81b136f44e0d"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "86eb0764b0fb05a2354fadc7b3012ebfcdb493d3"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "f5e80064621dd923b0b127538f324c4850cadcb8"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "2d40d3d262fc8fe22603c81842350af14517c5ed"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "7660556037775d578363f49ba878ec7995e54764"
+    },
+    {
+      "path": "sub-013/eeg/sub-013_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "1319c60baeae075ef06415f64833fc5b2526c1a1"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-014/eeg/sub-014_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "532c087128c55a68ebe03ec5d5b88ac04820ded3"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "a45119add5bec06e1c62be19734c84e469c47ced"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "64eb0a99d5c5a1f3018df987ab4d50f93fc03ae0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "64d2cbfafdbee29e999bef8895499a1387acf49a"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "22e059938c8bc71d2b641f6271673dfa66a590d0"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "16b2e690af96e7d2c9ffd60c4413614cd883cd1f"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "0057be7d78dbe85ac2ad553d3ae635737c85bf71"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "e020b77afe414095d427d42d270a85b33a2a5ae8"
+    },
+    {
+      "path": "sub-015/eeg/sub-015_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "0057be7d78dbe85ac2ad553d3ae635737c85bf71"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "f96882100b3792c2bb6de5e44b1d5d8eff9392d3"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "75746b9d9dd87183cf6bcb9af97f25523a9c93f8"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "dc291475f324090ffc4e7b04f60beee587472639"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "8b04caff90ee3c6841f6fb2ed3313fa3b84b1fa0"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "8b04caff90ee3c6841f6fb2ed3313fa3b84b1fa0"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "85649e4a8bea456f6854d7ab8cd090af2c4131ed"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "feb3d296d44596b1b6ee0f895028e1abc01773bd"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "2f948d389b4d978bddd0483202dc2d12b66b0954"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "d373d3ce648782ef6a26f9b95ed37cfcb83777d1"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "feb3d296d44596b1b6ee0f895028e1abc01773bd"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "feb3d296d44596b1b6ee0f895028e1abc01773bd"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "feb3d296d44596b1b6ee0f895028e1abc01773bd"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "0e82160b7128356950096ef908ac2a6744738f83"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "afc03c71ee50c4c35b3d5c3baaecf31a3ab7d2b7"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "633ea59c319a6e861e1bcae4f0ecd904d82ed2bf"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "682835e0c7011ef3c1cdcfc276e90f183f251684"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "5cf259383934afd267581dbb4b8404a177a1c0c1"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "682835e0c7011ef3c1cdcfc276e90f183f251684"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "682835e0c7011ef3c1cdcfc276e90f183f251684"
+    },
+    {
+      "path": "sub-016/eeg/sub-016_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "e542d5f1e8d930878003bae326c81c0cd3976c4b"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "28bfa66ea14da44c2f2d93194aaeaa308bb4278f"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-017/eeg/sub-017_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "81aafdf7881abe8e14c152dcd91b75c082bb2703"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "215d05ec1f40731f005bb3c013df2db0488fbd3b"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "215d05ec1f40731f005bb3c013df2db0488fbd3b"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "215d05ec1f40731f005bb3c013df2db0488fbd3b"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "a5bdf4b3ab27fd10b4e1ab3cd2a6100bf96ea231"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "495e1fc80cf5dc90faf32d9dc6c4295c1a54c3de"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "215d05ec1f40731f005bb3c013df2db0488fbd3b"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "215d05ec1f40731f005bb3c013df2db0488fbd3b"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "00aeeead2c4fdc8adf2ee26ee8f307d8b0f2449c"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "a789d06d23008722ccc9621c26a0ab604ad8863b"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "b34d8abbb21861fa878fa25891321089e1911d12"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "b34d8abbb21861fa878fa25891321089e1911d12"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "b34d8abbb21861fa878fa25891321089e1911d12"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "481ad102daaace517a50a2dbd4cc3c58311016ff"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "6873663b5f050ed43f0a8b98eef31d4522d306a1"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "2668ccde70fc90147702512215b9a39f003282b6"
+    },
+    {
+      "path": "sub-018/eeg/sub-018_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "7d7dd430090f50bed4867b0f86abab8ba182f23a"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-01_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-02_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-03_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-04_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-05_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-06_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-07_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-08_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-09_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-10_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-11_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-12_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-13_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-14_channels.tsv",
+      "git_blob_sha": "f3d6ed9c1e49dd7fe613b724b5e8d6a442020997"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-15_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-16_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-17_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-18_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-19_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    },
+    {
+      "path": "sub-019/eeg/sub-019_task-listening_run-20_channels.tsv",
+      "git_blob_sha": "e8d247b71651825ef67033d1a840a3cd91714a61"
+    }
+  ],
+  "goal_complete": false
+}

@@ -1,0 +1,18 @@
+{
+  "pid": 599747,
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_finetuned_internal_audit_20261101/input/pub_01_s03_ss07_ft_audit.py",
+    "run",
+    "--device",
+    "cuda:0"
+  ],
+  "time": 1793523767.9843566,
+  "uid": 1012,
+  "source_sha": "2ce7df72c7082b7ff482121a3c076227eeff65c9d9d5c0915cef77f80a23f675",
+  "protocol_sha": "14b2cedd0df026637624afbc63004c3803644d420e7966bad234cab33babb78e",
+  "review_scope_sha": "6117f196b4fa1f577704748a5d5f052a02879fe3195a1c83b4fe7c8c1edf27d8",
+  "commit": "57a09ff",
+  "fit_selection": false,
+  "DTU": false
+}

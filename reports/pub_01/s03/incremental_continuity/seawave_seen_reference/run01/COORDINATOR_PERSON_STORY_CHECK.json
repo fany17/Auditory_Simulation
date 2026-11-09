@@ -1,0 +1,658 @@
+{
+  "checked_utc": "2026-11-06T15:28:47.769365+00:00",
+  "inventory_sha256": "9f9ccde5d9645213ce88adba6833ccba8ea3a4c685871ab18c7d55dc612f8732",
+  "summary": {
+    "TRAIN_records": 426,
+    "VAL_records": 49,
+    "TRAIN_people": 70,
+    "VAL_people": 49,
+    "all_VAL_people_seen_in_TRAIN": true,
+    "same_subject_same_source_VAL_records": 29,
+    "same_subject_exact_story_VAL_records": 0,
+    "same_subject_exact_audio_path_VAL_records": 0,
+    "global_exact_story_VAL_records": 0,
+    "global_exact_audio_path_VAL_records": 0,
+    "overlapping_record_ids": [],
+    "VAL_story_record_counts": {
+      "audiobook_13_2": 6,
+      "audiobook_5_2": 23,
+      "podcast_15": 4,
+      "podcast_21": 7,
+      "podcast_30": 9
+    },
+    "VAL_source_family_record_counts": {
+      "audiobook_13": 6,
+      "audiobook_5": 23,
+      "podcast_15": 4,
+      "podcast_21": 7,
+      "podcast_30": 9
+    }
+  },
+  "rows": [
+    {
+      "subject": "sub-001",
+      "VAL_record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-002",
+      "VAL_record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "sub-002_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-003",
+      "VAL_record": "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-003_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-005",
+      "VAL_record": "sub-005_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-005_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+        "sub-005_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-007",
+      "VAL_record": "sub-007_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-007_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-007_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-008",
+      "VAL_record": "sub-008_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-008_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "sub-008_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-009",
+      "VAL_record": "sub-009_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-009_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "sub-009_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-010",
+      "VAL_record": "sub-010_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-010_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-010_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-011",
+      "VAL_record": "sub-011_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-011_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "sub-011_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-012",
+      "VAL_record": "sub-012_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-012_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+        "sub-012_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-013",
+      "VAL_record": "sub-013_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-013_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "sub-013_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-014",
+      "VAL_record": "sub-014_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-014_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "sub-014_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-015",
+      "VAL_record": "sub-015_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-015_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "sub-015_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-016",
+      "VAL_record": "sub-016_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-016_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-016_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-018",
+      "VAL_record": "sub-018_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-018_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-018_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-019",
+      "VAL_record": "sub-019_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-019_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "sub-019_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-020",
+      "VAL_record": "sub-020_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-020_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "sub-020_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-021",
+      "VAL_record": "sub-021_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-021_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz",
+        "sub-021_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-022",
+      "VAL_record": "sub-022_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-022_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "sub-022_ses-shortstories01_task-listeningActive_run-11_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-023",
+      "VAL_record": "sub-023_ses-shortstories01_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-023_ses-shortstories01_task-listeningActive_run-06_eeg.bdf.gz",
+        "sub-023_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-024",
+      "VAL_record": "sub-024_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-024_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "sub-024_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-025",
+      "VAL_record": "sub-025_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-025_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "sub-025_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-026",
+      "VAL_record": "sub-026_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz",
+      "VAL_story": "audiobook_5_2",
+      "VAL_source_family": "audiobook_5",
+      "same_subject_source_TRAIN_records": [
+        "sub-026_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "sub-026_ses-shortstories01_task-listeningActive_run-04_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-043",
+      "VAL_record": "sub-043_ses-varyingStories04_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "podcast_15",
+      "VAL_source_family": "podcast_15",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-044",
+      "VAL_record": "sub-044_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "VAL_story": "podcast_15",
+      "VAL_source_family": "podcast_15",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-045",
+      "VAL_record": "sub-045_ses-varyingStories04_task-listeningActive_run-08_eeg.bdf.gz",
+      "VAL_story": "podcast_15",
+      "VAL_source_family": "podcast_15",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-046",
+      "VAL_record": "sub-046_ses-varyingStories04_task-listeningActive_run-09_eeg.bdf.gz",
+      "VAL_story": "podcast_15",
+      "VAL_source_family": "podcast_15",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-049",
+      "VAL_record": "sub-049_ses-varyingStories06_task-listeningActive_run-09_eeg.bdf.gz",
+      "VAL_story": "podcast_21",
+      "VAL_source_family": "podcast_21",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-051",
+      "VAL_record": "sub-051_ses-varyingStories06_task-listeningActive_run-04_eeg.bdf.gz",
+      "VAL_story": "podcast_21",
+      "VAL_source_family": "podcast_21",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-052",
+      "VAL_record": "sub-052_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "VAL_story": "podcast_21",
+      "VAL_source_family": "podcast_21",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-053",
+      "VAL_record": "sub-053_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "VAL_story": "podcast_21",
+      "VAL_source_family": "podcast_21",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-054",
+      "VAL_record": "sub-054_ses-varyingStories06_task-listeningActive_run-01_eeg.bdf.gz",
+      "VAL_story": "podcast_21",
+      "VAL_source_family": "podcast_21",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-055",
+      "VAL_record": "sub-055_ses-varyingStories06_task-listeningActive_run-06_eeg.bdf.gz",
+      "VAL_story": "podcast_21",
+      "VAL_source_family": "podcast_21",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-056",
+      "VAL_record": "sub-056_ses-varyingStories06_task-listeningActive_run-08_eeg.bdf.gz",
+      "VAL_story": "podcast_21",
+      "VAL_source_family": "podcast_21",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-057",
+      "VAL_record": "sub-057_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "audiobook_13_2",
+      "VAL_source_family": "audiobook_13",
+      "same_subject_source_TRAIN_records": [
+        "sub-057_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-058",
+      "VAL_record": "sub-058_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "VAL_story": "audiobook_13_2",
+      "VAL_source_family": "audiobook_13",
+      "same_subject_source_TRAIN_records": [
+        "sub-058_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-059",
+      "VAL_record": "sub-059_ses-varyingStories07_task-listeningActive_run-04_eeg.bdf.gz",
+      "VAL_story": "audiobook_13_2",
+      "VAL_source_family": "audiobook_13",
+      "same_subject_source_TRAIN_records": [
+        "sub-059_ses-varyingStories07_task-listeningActive_run-03_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-060",
+      "VAL_record": "sub-060_ses-varyingStories07_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "audiobook_13_2",
+      "VAL_source_family": "audiobook_13",
+      "same_subject_source_TRAIN_records": [
+        "sub-060_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-061",
+      "VAL_record": "sub-061_ses-varyingStories07_task-listeningActive_run-02_eeg.bdf.gz",
+      "VAL_story": "audiobook_13_2",
+      "VAL_source_family": "audiobook_13",
+      "same_subject_source_TRAIN_records": [
+        "sub-061_ses-varyingStories07_task-listeningActive_run-01_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-062",
+      "VAL_record": "sub-062_ses-varyingStories07_task-listeningActive_run-06_eeg.bdf.gz",
+      "VAL_story": "audiobook_13_2",
+      "VAL_source_family": "audiobook_13",
+      "same_subject_source_TRAIN_records": [
+        "sub-062_ses-varyingStories07_task-listeningActive_run-05_eeg.bdf.gz"
+      ],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-063",
+      "VAL_record": "sub-063_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-064",
+      "VAL_record": "sub-064_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-065",
+      "VAL_record": "sub-065_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-066",
+      "VAL_record": "sub-066_ses-varyingStories08_task-listeningActive_run-08_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-067",
+      "VAL_record": "sub-067_ses-varyingStories08_task-listeningActive_run-01_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-068",
+      "VAL_record": "sub-068_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-069",
+      "VAL_record": "sub-069_ses-varyingStories08_task-listeningActive_run-07_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-070",
+      "VAL_record": "sub-070_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    },
+    {
+      "subject": "sub-071",
+      "VAL_record": "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz",
+      "VAL_story": "podcast_30",
+      "VAL_source_family": "podcast_30",
+      "same_subject_source_TRAIN_records": [],
+      "same_subject_exact_story_TRAIN_records": [],
+      "same_subject_exact_audio_path_TRAIN_records": [],
+      "global_exact_story_TRAIN_records": [],
+      "global_exact_audio_path_TRAIN_records": []
+    }
+  ],
+  "scope": "Metadata only. Exact identifier/path disjointness is not a waveform/time-interval duplication audit or independent-test evidence.",
+  "effect": "Clarifies existing 29/20 source-family split without changing any record, fit, selection, protocol or score.",
+  "new_signal_reads": 0,
+  "new_neural_forwards": 0,
+  "new_training_updates": 0
+}

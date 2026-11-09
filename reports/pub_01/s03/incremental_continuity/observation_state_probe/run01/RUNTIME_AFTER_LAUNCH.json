@@ -1,0 +1,13 @@
+{
+  "query_time": 1793528232.038529,
+  "scope": "Same declared environment metadata queried after formal launch, no signal values or fitting",
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "numpy_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/lib/python3.11/site-packages/numpy/__init__.py",
+  "scipy_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/lib/python3.11/site-packages/scipy/__init__.py",
+  "formal_process_executable": "/home/fanyu/.conda/envs/auditory_m6a_public_001/bin/python3.11",
+  "declared_accumulation": "float64",
+  "state_cache": "float32 then float64 downstream",
+  "original_input_normalization": "original float32 path then float64 covariance"
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "technical": "PASS_ACTUAL_SOURCE_INPUT_SIX_SOLVES_AND_INDEPENDENT_NUMERICAL_AUDIT",
+  "acceptance": "PASS_FOR_MATCHED_FIXED_OFFLINE_OBJECTIVE_DIAGNOSTIC; SINGLE_WINDOW_REPRESENTATION_NOT_VALIDATED_FOR_STANDALONE_USE",
+  "parent_goal": "NOT_COMPLETE",
+  "goal_complete": false,
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "pins": {
+    "driver": "61f80f5c312a5698b38b5041170faac31cdb75978186a07688524123c413f38f",
+    "core": "daa4d5c75012265ab6539c741aa2e181eddfdb99aa3e88e931693d9faf058628",
+    "protocol": "867042734282eeb7f9c7bf70e381996cb50072893afaedabd7075c30ee4f1499",
+    "independent_audit": "339a8be287b59cf951724c18e0ad01b317bcff10e5aed634ddd31953fb434211",
+    "bias_diagnostic": "8c36e80e96be7bac07bba497a8610e61f1a77f1c096b74c4fc221962e9a1e4ff",
+    "audit_scope": "9f3a7bdaf2f463a3603cad7b539fb8c99bef2149115b0099bba37bdab7d9028f"
+  },
+  "actual_verification": {
+    "source_pins": 275,
+    "input_fingerprints": 535,
+    "full_TRAIN_physical_gradient_checks": 6,
+    "all_six_residuals_independently_below_1e_8": true,
+    "objective_max_abs": 2.6867397195928788e-14,
+    "true_residual_max_abs": 1.30615794152147e-16,
+    "all_six_VAL_masks_and_aggregation": true,
+    "aggregation_max_abs": 0,
+    "cached_reconstructions": 12,
+    "block_r_max_abs": 2.220446049250313e-16,
+    "MSE_Hann_max_abs": 2.6922908347160046e-14,
+    "first4_max_abs": 0,
+    "frozen_endpoints_exact": true
+  },
+  "scientific_results": {
+    "mean_r": {
+      "P_FT": 0.17414107459879757,
+      "Ponly": 0.1778418093111921,
+      "C": 0.18054058334553788,
+      "Ccap": 0.18233993959935071,
+      "W": 0.18247396081083575,
+      "F": 0.18387384265527906
+    },
+    "primary_F_minus_W_by_seed": [
+      0.0014234729314535621,
+      0.0014524337609453097,
+      0.0013237388409310658
+    ],
+    "primary_mean": 0.0013998818444433125,
+    "secondary_F_minus_Ccap": 0.0015339030559283484,
+    "F_minus_original_complete_FT": 0.009732768056481489,
+    "secondary_F_minus_W_fused_MSE": -0.00012661424967833068,
+    "F_window_MSE": 352.06764841397677,
+    "F_r3s": 0.003434746820108902,
+    "F_uniform_overlap_MSE": 706.179653521553
+  },
+  "interpretation": [
+    "在同一强FT+Ccap、相同物理目标/参数/正则/初始化下，F相对W的离线Hann融合VAL r小幅改善，三seed方向一致；融合MSE也下降。实际独立重建支持该事实。",
+    "6解真残差均过原1e-8门，异常窗口不是未收敛或求解失败的代名词。",
+    "F不惩罚W内含的disagreement。单窗bias峰247–253、window MSE352和r3s约.0034为真实严重单窗表示退化，不能省略。",
+    "已有系数代数表明内部物理bias≤.00587、首可学习边界≤.12165、尾部≤.30603；bias-only disagreement解释了大部分差异。固定Hann下近null坐标抵消不能单凭窗口误差被判定为融合输出无效或数值崩坏。",
+    "只读bias的float32代数误差≤1.45e-8不是完整低精度推理或鲁棒性证据。不同边界、融合规则、单窗独立使用均未验证。",
+    "仅重复known-person/部分同书VAL，未有新的独立确认、额外历史输入或发表级方法新意；不报告显著性、等效或goal完成。"
+  ],
+  "presentation": {
+    "full_REPORT_read": true,
+    "all_four_actual_PNGs_viewed": true,
+    "figures": {
+      "report01/01_MATCHED_RESULTS.png": "a9ad95842dea006e1e88d8a034c61dfce36e3576b216a0cc63ae3f6f3ca22bd3",
+      "report01/02_TRUE_RESIDUALS.png": "cce2b2b961606ffc7a85f67903ecab364eb2cc99ea0d741af5fd6db456fa9ccb",
+      "report01/03_PHYSICAL_DECOMPOSITION.png": "9870297186f0e0737bab7e5c04bb1daf8bfa9b068d490e886ae23c783e6d0f36",
+      "presentation02/04_WINDOW_DEGENERACY.png": "85f5f32f90712b0ab2c92922010ff80054e10580304b5e4b3f4c3ed0f57959bb"
+    },
+    "note": "三主图保留；第四图是已存结果后风险展示，无新增评价或模型选择。完整正文及已加入的独立audit/bias解释均已阅读。"
+  },
+  "cost": {
+    "main_wall_seconds": 185.39582633972168,
+    "CG_updates": 355,
+    "Hessian_actions": 386,
+    "actual_new_solves": 6,
+    "encoder_head_forwards": 0,
+    "new_NPY": 0,
+    "independent_audit": {
+      "wall_seconds": 69.71373724937439,
+      "CPU_seconds": 72.97196699700001,
+      "peak_RSS_bytes": 4504588288,
+      "peak_GPU_allocated_bytes": 6993585152,
+      "TRAIN_readout_window_predictions": 1514724,
+      "encoder_or_head_forward": 0,
+      "newfits": 0,
+      "new_NPY": 0
+    }
+  },
+  "continuation": "D9正式输出冻结，不为异常加bias正则/更换Hann/追加λ或重跑。允许先准备固定P_FT/P-only/C/Ccap/W/F ×3seed的旧seen/heldout事后内部泛化审计PLAN和只读资产/空间盘点；待精确输入桥/预算方案审阅后再编码/评分。旧DTU不再推理，无新数据下载/患者或其他支线。",
+  "archive_status": "Final review written; executor to include unchanged evidence in actual archive and normal branch commit/push. Archive/commit will be verified separately."
+}

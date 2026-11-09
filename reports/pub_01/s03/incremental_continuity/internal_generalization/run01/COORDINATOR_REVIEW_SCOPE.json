@@ -1,0 +1,72 @@
+{
+  "scope": "Coordinator independent final audit; not new fitting or an added training gate",
+  "selection_rule": "First and last record in each original phase, fixed before new candidate test scores",
+  "records": [
+    {
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "phase": "test_seen",
+      "subject": "sub-002",
+      "story": "audiobook_2_2",
+      "source_family": "audiobook_2",
+      "phase_offset": 0,
+      "common_samples": 48745,
+      "rule": "first_in_original_manifest"
+    },
+    {
+      "record": "sub-071_ses-varyingStories08_task-listeningActive_run-06_eeg.bdf.gz",
+      "phase": "test_seen",
+      "subject": "sub-071",
+      "story": "podcast_31",
+      "source_family": "podcast_31",
+      "phase_offset": 35983,
+      "common_samples": 56790,
+      "rule": "last_in_original_manifest"
+    },
+    {
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-06_eeg.bdf.gz",
+      "phase": "test_heldout",
+      "subject": "sub-072",
+      "story": "audiobook_1",
+      "source_family": "audiobook_1",
+      "phase_offset": 0,
+      "common_samples": 59956,
+      "rule": "first_in_original_manifest"
+    },
+    {
+      "record": "sub-085_ses-varyingStories10_task-listeningActive_run-02_eeg.bdf.gz",
+      "phase": "test_heldout",
+      "subject": "sub-085",
+      "story": "podcast_37",
+      "source_family": "podcast_37",
+      "phase_offset": 47551,
+      "common_samples": 54689,
+      "rule": "last_in_original_manifest"
+    }
+  ],
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "roles": [
+    "P",
+    "Ponly",
+    "S32",
+    "U32",
+    "C",
+    "Ccap"
+  ],
+  "cached_record_role_cases": 72,
+  "all_result_coverage": "All36 role-split fixed-source/mask/aggregation and paired contrasts, all3 unscaled baseline bridges; original69/13 people and872/1172 blocks",
+  "reconstruction": "Existing frozen latent +new original windowP cache +pinned TRAIN stats/coefficients. Separately implement normalization/readout/Hann and NumPy r; no rawEEG/encoder/head forward.",
+  "checks": [
+    "Original source/selectedlambda pins and unchanged input fingerprints",
+    "All common record/block/person/sample keys with no prediction-dependent exclusions",
+    "All stored person/group/2:1/3seed arithmetic",
+    "Finite selected coefficient sources and exactfirst4P* fallback",
+    "72 metadata-selected cached input reconstructions; r/MSE andsameHanncoverage",
+    "Truthful auxiliary3s undefined coverage, costs/failed attempts andexposure labeling",
+    "Actual complete figures andChinese report"
+  ],
+  "goal_complete": false
+}

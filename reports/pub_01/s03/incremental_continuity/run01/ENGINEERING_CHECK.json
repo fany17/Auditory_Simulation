@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "native_vs_explicit_loss_difference": 0.0,
+  "global_negative_matrix": [
+    128,
+    128
+  ],
+  "single_GPU_seed_preserves_global_batch128": true,
+  "native_registered_parameters": 3800713,
+  "all_train_grad_finite": true,
+  "real_train_step_seconds": 0.30581167340278625,
+  "peak_GPU_bytes": 5481936384,
+  "pilot_weights_discarded": true,
+  "TF32_matmul": false,
+  "TF32_cudnn": true,
+  "test_payload_loaded": false,
+  "original_mains_called": false
+}

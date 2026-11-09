@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "process": {
+    "pid": 1720546,
+    "uid": 1012,
+    "startticks": 790861902,
+    "state": "R"
+  },
+  "synthetic": {
+    "passed": true,
+    "two_small_solutions": true,
+    "coefficient_max_abs": 9.211261401207184e-15,
+    "zero_variance_columns": 3,
+    "tail_and_block_border_verified": true,
+    "resumed_record_prefix": 1,
+    "exactly_two_records_after_resume": true,
+    "same_receipt_preserved": true,
+    "conflict_rejected": true
+  },
+  "actual_records": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+    "sub-001_ses-shortstories01_task-listeningActive_run-03_eeg.bdf.gz"
+  ],
+  "actual_rows": 2048,
+  "actual_features": 2112,
+  "samples_read_per_record": 4640,
+  "TRAIN_predictions_of_4608": 2,
+  "shared_metric_absolute_errors": [
+    {
+      "r": 2.7755575615628914e-17,
+      "MSE": 0.0
+    },
+    {
+      "r": 0.0,
+      "MSE": 0.0
+    }
+  ],
+  "normal_equation_residual": 9.332812300755222e-15,
+  "three_total_engineering_solutions": 3,
+  "engineering_coefficients_saved": 0,
+  "VAL_performance_calls": 0,
+  "neural_forwards": 0,
+  "gpu": 0,
+  "actual_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libopenblas",
+      "filepath": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+      "version": "0.3.23.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libopenblas",
+      "filepath": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/lib/python3.11/site-packages/scipy.libs/libopenblasp-r0-01191904.3.27.so",
+      "version": "0.3.27",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "filepath": "/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    }
+  ],
+  "elapsed_seconds": 1.105569857172668,
+  "CPU_seconds": 4.11135248,
+  "old_test_reads": 0
+}

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "process": {
+    "pid": 1725449,
+    "uid": 1012,
+    "startticks": 790888025,
+    "state": "R"
+  },
+  "protocol_sha256": "b9942886d0ddaa90919e7c9409dfd057003714dfe3bbb21b6b8427df54299500",
+  "inventory_sha256": "09ea7dc8b620c20f5159b69c780ab2b406207c41e3d58c470da7439d54d116d6",
+  "scores": {
+    "G": {
+      "r": 0.09792926702895285,
+      "MSE": 0.24903726163330867
+    },
+    "I": {
+      "r": 0.1582310164120084,
+      "MSE": 0.2393579102961427
+    }
+  },
+  "TRAIN_records": 426,
+  "TRAIN_points": 24297126,
+  "per_record_G_moment_calls": 6176,
+  "TRAIN_subject_accumulators": 70,
+  "distinct_fit_statistics": 50,
+  "eigensystems": 50,
+  "ridge_candidates": 450,
+  "VAL_records": 49,
+  "VAL_people": 49,
+  "VAL_eligible_blocks": 752,
+  "VAL_candidate_blocks": 13536,
+  "CPU_seconds_this_attempt": 13470.147547065,
+  "elapsed_seconds_this_attempt": 1040.879275456071,
+  "peak_RSS_bytes": 855875584,
+  "gpu": 0,
+  "new_neural_forwards": 0,
+  "new_neural_optimizations": 0,
+  "old_test_reads": 0
+}

@@ -1,0 +1,79 @@
+{
+  "frozen": true,
+  "inventory_sha256": "9f9ccde5d9645213ce88adba6833ccba8ea3a4c685871ab18c7d55dc612f8732",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/block_eligibility/val.json": "c655eda48e136de39c686bcedd04049d4bfc4414bfd201d38119aea36f869c22",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/BUDGET.json": "f3a16281aae1ff80c4d8a4b476b4e84d021c1cef959fc9f7bce14de5319a4632",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/COORDINATOR_DECISION.md": "96d06bf36f9f87b818b129dde6760125de62d42867c51a270f277d96d87b47bf",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/ENGINEERING.json": "8009f56e6f561b4c24033980e24becbf06c093f306470fc4db25daf52246db33",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/GEOMETRY_RECEIPT.json": "064e1ca3ea0b9d81ddac138f3146be391981dc2008dd819c6173566d35131d2e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/PLAN.md": "ad45dd96ff37eaed1261e03fb15dca71ec9258eb263308438a59e88f7484b626",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/author/EEGWaveRegressor.py": "bac621abfd5c4553d9b4be790da7e5af81d26932ee3e0dede86564503950f0f0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/author/LICENSE": "8b53e6bd069c180598bb4dd0c121d5a86b89d2a856c7f35002a5426e2340b69c",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/author/cyclic_scheduler.py": "4ec5aefb6e92637984b2e1d82e70f7f62367d0dfda38cc6443ebc25e4c7a5ebf",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/author/util.py": "8520aa37c0d0e1551dd5d7bdaa5f25b692f252fbdc62dea47486cec665e6b50d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v03/pub_01_s03_ss07_seawave_seen_data.py": "641d87896e3daf0e5c9b8e9c8d34d200b26d5afd7214a764925f6566a6d0a3d0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v03/pub_01_s03_ss07_seawave_seen_engineering.py": "323cf8d6e89954d8a177e613fac25e7ec1cb8d29c55bb90fcb5b1006333f68f0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v03/pub_01_s03_ss07_seawave_seen_model.py": "0f93102c789c99d7cccb0a956053dff9fc2f7e692a503fbfd20ccd59682ec350",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v03/pub_01_s03_ss07_seawave_seen_queue.py": "37e9c2ed31117fdfb7c75bcd54dad8c04e26e3bf94667aa4d7af2d0da668c11e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/input_v03/pub_01_s03_ss07_seawave_seen_train.py": "87d53e9d0e7b02f98b6b866bbf14795afa5100eea07c5f1550aaa153dec30618"
+  },
+  "budget_sha256": "f3a16281aae1ff80c4d8a4b476b4e84d021c1cef959fc9f7bce14de5319a4632",
+  "settings": {
+    "initial": {
+      "frame": 320,
+      "hop": 32,
+      "batch": 32,
+      "epochs": 201,
+      "lr": 0.0001,
+      "wd": 1e-05,
+      "dropout": 0.2
+    },
+    "personal": {
+      "frame": 512,
+      "hop": 6,
+      "batch": 8,
+      "epochs": 21,
+      "patience": 5,
+      "lr": 1e-05,
+      "wd": 0.01,
+      "dropout": 0.65
+    }
+  },
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "initial_fits": 3,
+  "personal_fits": 147,
+  "model": {
+    "in_channels": 64,
+    "channels": 32,
+    "out": 1,
+    "layers": 20,
+    "cycle": 5,
+    "kernel": 3,
+    "receptive_field": 249
+  },
+  "use_native_author_code": true,
+  "train_only_norm": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261015/transformer_available01/prepared/train_only_normalization.npz",
+  "VAL_mask": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/block_eligibility/val.json",
+  "halo": {
+    "core": 4096,
+    "left": 124,
+    "right": 124
+  },
+  "VAL_people": 49,
+  "VAL_blocks": 752,
+  "no_population_global_FT": true,
+  "old_test_reads": 0,
+  "resource_caps": {
+    "writer_GiB": 16,
+    "reserve_GiB": 64,
+    "RSS_worker_GiB": 32,
+    "CUDA_worker_GiB": 40
+  },
+  "checkpoint_frequency_updates": 2048,
+  "formal_requires_completed_D26_and_exited_workers": true
+}

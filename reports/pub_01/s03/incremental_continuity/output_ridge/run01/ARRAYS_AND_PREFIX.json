@@ -1,0 +1,38 @@
+[
+  {
+    "seed": 1024,
+    "remote_array_file": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106/fit/seed1024_COEFFICIENTS_AND_GRAM.npz",
+    "bytes": 105648,
+    "sha256": "d84f9b91b0c388116ac97044b13d2e62a961f122fe71e4e5ee936b2af5ac6f63",
+    "mixed_A_blocks": 49,
+    "mixed_A_delta_r_mean": 0.0036381690598753895,
+    "active_only_A_blocks": 703,
+    "active_only_A_delta_r_max_abs": 9.246589882661027e-10,
+    "nominal_F_peak_tap_lag": -8,
+    "nominal_F_peak_tap": -0.013896633189249502
+  },
+  {
+    "seed": 2026,
+    "remote_array_file": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106/fit/seed2026_COEFFICIENTS_AND_GRAM.npz",
+    "bytes": 105648,
+    "sha256": "aa0353c42e2723f4296ee97fb76829066e45d93b328cea6c95b4fb72728cda57",
+    "mixed_A_blocks": 49,
+    "mixed_A_delta_r_mean": 0.0035413993125547895,
+    "active_only_A_blocks": 703,
+    "active_only_A_delta_r_max_abs": 7.349947872548057e-10,
+    "nominal_F_peak_tap_lag": -8,
+    "nominal_F_peak_tap": -0.013909648072751774
+  },
+  {
+    "seed": 31415,
+    "remote_array_file": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_ridge_20261106/fit/seed31415_COEFFICIENTS_AND_GRAM.npz",
+    "bytes": 105648,
+    "sha256": "7b0dbb46da6a907c9b570a7a4d943df16ae46470e48fb346660813e4372c2cbc",
+    "mixed_A_blocks": 49,
+    "mixed_A_delta_r_mean": 0.0036738921676482215,
+    "active_only_A_blocks": 703,
+    "active_only_A_delta_r_max_abs": 8.017139452309863e-10,
+    "nominal_F_peak_tap_lag": -8,
+    "nominal_F_peak_tap": -0.01697037898029236
+  }
+]

@@ -1,12 +1,32 @@
 # PUB-01 Subtask Registry
 
-唯一子任务状态登记表（2026-10-19）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。
+2026-11-09：SS07 的 D27 全部 150 个 fit 与报告完成。个人 Sea-Wave 开发 r=0.216585948，共享 initial r=0.162819585；个人模型高于历史 D22 B，但并非同预算共享方法比较或独立 SOTA 证据。保存证据审计通过，原始信号数值复算待执行。[D27 结果](../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/REPORT.md)。SS07 尚未完成，持续研究 goal 按用户此前要求保持暂停；本次仅核查结果与提交，不启动后续实验。以下为历史记录。
+
+2026-11-07，D28 同协议原始 EEG 岭回归已完成并独立验收。开发 VAL 上 G/I r 为 0.097929/0.158231，最高历史冻结参照 D22 B 为 0.184581。D26 已完成三种子九条完整链，HH r 0.182768，较原锚点 +0.000428，两正一负，低于 D22 B。D27 已通过双卡准入并启动首批共享 initial。 [D26 报告](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REPORT.md) · [D26 验收](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REVIEW.md)。节点 SS07 保持 ACTIVE。[D28 结果](../../../reports/pub_01/s03/incremental_continuity/matched_raw_ridge/run01/REPORT.md) · [D27 接续](../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_ADMISSION.json)。
+
+2026-11-06当前：用户明确核心目标为SOTA，性能提升优先，历史机制不是性能路线硬门。唯一既有节点 `PUB-01-S03_SS07` 保持 ACTIVE，D24/D25封存后接续 [D26对比预训练历史联合学习](../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/COORDINATOR_DECISION.md)。同一目标下6个唯一pretrain/9条监督链，实际源/工程冻结经协调核验后全量执行。三臂均可作为性能候选，不启动其他节点、患者、新数据或自动合并；旧测试与外部集仍冻结。
+
+2026-11-06 最新记录为 SS07 的 D25。固定 D24 B_OOF/S_OOF 的实际 0/19 轮权重，B 的相对损失六格均缓解，六格仍低于同折锚点、S 与全 TRAIN 强锚点。正式 0 fit、独立全量复算通过。输出历史后处理支线已封存，SS07 继续 ACTIVE。[D25 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_source_alignment/run01/REPORT.md)
+
+2026-11-06 SS07 的 D24 记录。9 条上游和 12 个下游拟合完成，三级核验通过。B_OOF 的 60 个训练轮次均低于共同锚点，三组回退。S_OOF 的开发相关小幅增加，活动 MSE 上升。D24 已封存，SS07 继续 ACTIVE。[D24 报告](../../../reports/pub_01/s03/incremental_continuity/crossfit_output/run01/REPORT.md)
+
+唯一子任务状态登记表（2026-11-01）；路线参见 `RESEARCH_BRANCHES.md`。父状态以 `doc/TASKS.md` 为准。当前唯一执行SS07，旧SS06 STOP为历史。
+
+2026-11-06 SS07 最新验收记录。D23 无历史非线性 S 三组完成。B 的各自最佳三 seed 均高于 S，S 的全部训练轮次高于锚点，且末轮均高于 B。完整轨迹、前缀分解、逐人、独立终验与归档已交付。候选为 PASS_WITH_LIMITATION，SS07 仍为 ACTIVE。[D23 结果](../../../reports/pub_01/s03/incremental_continuity/memoryless_output/run01/REPORT.md)
+
+同日 D22 输出端非线性 B 完成三 seed，均在第 0 轮高于 D20，末轮均低于锚点。[D22 结果](../../../reports/pub_01/s03/incremental_continuity/output_query/run01/REPORT.md)
+
+同日 D21 输出端仿射 A / FIR F 共 18 个精确岭解完成。F 在三 seed 超过锚点和 A，仍低于 D20。[D21 结果](../../../reports/pub_01/s03/incremental_continuity/output_ridge/run01/REPORT.md)
+
+同日完成 D20 lag1 单因素三组。三 seed 开发 r 均超过锚点与 D19 P 最佳已训练，末轮均低于锚点，均值低于 D18 最强开发参考。[D20 结果](../../../reports/pub_01/s03/incremental_continuity/recent_prediction_context/run01/REPORT.md)
+
+同日封存 D19。九组 180 个训练轮次均低于锚点，正式选点全部回退，预设收益门未过。[D19 结果与四图](../../../reports/pub_01/s03/incremental_continuity/physical_stream/run01/REPORT.md)
 
 | Subtask ID | Title | Status | Blocking | Upstream | Task Spec | Validation |
 |---|---|---|---|---|---|---|
 | `PUB-01-S01` | Public data preparation and exploration | `COMPLETED` | YES | NONE | `subtasks/PUB-01-S01_DATASET_LICENSE_TIMING_AUDIT.md` | PASS_WITH_LIMITATION；许可/定向时序限制依任务保留 |
 | `PUB-01-S02` | Acoustic & frozen-audio feature → EEG encoding baseline | `COMPLETED` | YES | S01 | `subtasks/PUB-01-S02_FEATURE_BANK_BASELINE.md` | 83人/659录音；acoustic/log-mel/wav2vec2，HuBERT HOLD；PASS_WITH_LIMITATION |
-| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01/SS02/SS03冻结；SS05真实15run新内部holdout阴性结果/review完成有限制，当前停止；SS04 BACKLOG |
+| `PUB-01-S03` | **A线：SparrKULee EEG direct auditory decoding** | `ACTIVE` | YES | S02 | `subtasks/PUB-01-S03_PUBLIC_EEG_BENCHMARK.md` | SS01/02/03/05/06冻结；新授权SS07全量原强基线+连续残差，SS04 BACKLOG |
 | `PUB-01-S04` | **B线：ds004703 independent intracranial baseline + transfer** | `BACKLOG` | YES | S01数据准入；仅 transfer 需 S03 | `subtasks/PUB-01-S04_INTRACRANIAL_TRANSFER.md` | SS01/02 未执行；两线不串行阻塞数据基线 |
 | `PUB-01-S05` | Public artifact candidate + parent integration review | `BACKLOG` | YES | S01–S04 | `subtasks/PUB-01-S05_ARTIFACT_INTEGRATION.md` | 阶段结果与失败/许可统一审核；未产生 ART-AUDREP-v1 |
 
@@ -25,7 +45,10 @@
 | `PUB-01-S03_SS02` | S03 | **Strong EEG auditory decoding baseline reproduction（Codex）** | **`COMPLETED`** | S01/S02+SS01 | `subtasks/PUB-01-S03/PUB-01-S03_SS02_STRONG_BASELINE_REPRODUCTION.md` | 2026-10-15 PASS_WITH_LIMITATION：HDPS76人Top1/5/10=12.03/30.45/42.10%；Transformer70训练、69seen/13heldout，2AFC加权82.38%、直接包络加权r=.1593；三运行独立review及交付检查；原完整论文条件未复现，不启下一节点 |
 | `PUB-01-S03_SS03` | S03 | Architecture hypothesis and direct decoder | **`COMPLETED`** | SS02 PASS_WITH_LIMITATION + researcher authorization 2026-10-19 | `subtasks/PUB-01-S03/PUB-01-S03_SS03_ARCHITECTURE_HYPOTHESIS.md` | 2026-10-19 PASS_WITH_LIMITATION：4×3真实同预算训练/test；multiscale seen/heldout r=.10305/.11380，高于long/middle，四预设contrast family95%区间>0；same-agent separate review，非生理机制/强基线超越声明；SS04不启动 |
 | `PUB-01-S03_SS04` | S03 | Direct reconstruction + 2AFC/5AFC/large-pool evaluation | `BACKLOG` | SS02+SS03 | `subtasks/PUB-01-S03/PUB-01-S03_SS04_DIRECT_RECONSTRUCTION_AND_RETRIEVAL.md` | 分协议公平评价 / 强对照 / 跨被试 / 消融 |
-| `PUB-01-S03_SS05` | S03 | History-aware predictive/associative memory (Codex execution) | **`COMPLETED`** | SS03 frozen + 2026-10-19 researcher authorizes Codex | `subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` | 2026-10-19 PASS_WITH_LIMITATION：新train norm、15tests/pilot/15run×7条件完成；21人/47record/7family五组r约.091–.092，六primary区间跨0，真实阴性不扩架构；同agent separate review，当前STOP；#4 Draft |
+| `PUB-01-S03_SS05` | S03 | History-aware predictive/associative memory (Codex execution) | **`COMPLETED`** | SS03 frozen + 2026-10-19 researcher authorizes Codex | `subtasks/PUB-01-S03/PUB-01-S03_SS05_PREDICTIVE_MEMORY.md` | 2026-10-19 PASS_WITH_LIMITATION：新train norm、15tests/pilot/15run×7条件完成；21人/47record/7family五组r约.091–.092，六primary区间跨0，真实阴性不扩架构；同agent separate review，历史STOP；#4已合并60c3404 |
+| `PUB-01-S03_SS06` | S03 | Five continuity frameworks and matched strong-baseline comparison | **`COMPLETED`** | run01 frozen + 2026-10-26 matched-scale authorization executed | `subtasks/PUB-01-S03/PUB-01-S03_SS06_CONTINUITY_FRAMEWORKS.md` | PASS_WITH_LIMITATION：run02 C/O各3×3262/P完整两阶段3×639pre+2035head，r=.123014/.151762/.141466，六项C配对校正区间全跨0；18原始CPU r差3.36e-8、协调SUMMARY2.78e-17；已看audit/5family/单pass及权限/额外预算限制，报告3图/轻量证据齐备；run01不改，#6 Draft，STOP |
+
+| `PUB-01-S03_SS07` | S03 | Full-scale native strong baseline + incremental continuity research | **`ACTIVE`** | SS02/SS06 frozen + explicit2026-11-01 full-scale goal authorization | `subtasks/PUB-01-S03/PUB-01-S03_SS07_FULL_SCALE_INCREMENTAL_CONTINUITY.md` | D4-D11冻结；ds004408三seed完整380记录/19人/988块/45429窗及独立4560记录/11856块/2280FP32复算通过。Ccap−PFT +.008040823/Holm5.34e−5、3seed/18人正；F−W未达阈值/单窗退化和融合MSE更差保留。阶段PASS_WITH_LIMITATION，全文/图实际审阅通过、13图完整中文HTML与交付核验完成（同run ARCHIVE.md）；全record未来EEG gain/SI等限制保留，当前读出迁移不证明历史机制，goal未达到；D15九fit目标对照及独立数值/图文/4PNG HTML已封存；H全回退anchor、历史收益门FALSE，梯度退化限制保留，D16九fit/20轮和631239窗独立复算通过，首批通路活动改善、TRAIN拟合增强，但H仅2026微增且低于P、其余回锚；三臂last VAL均值低于D15，历史收益门FALSE。五图中文全文/成本经协调实际审阅，HTML170产物/5图/10限制/链接及最新source_bundle交付检查通过，D16封存；D17固定小批384NN/8输入反传/0fit已完成，selected响应很小、三last仍有明显响应，不能统称塌缩；1325个0NN标量核验/全文科学审阅及34产物/完整中文3表HTML交付检查通过，D17封存。有限只读实现审计纠正warm joint既有覆盖，下一协调已选projection前64token memory四臂H/C/T/P、共同强FT+Ccap/strict5-3历史，D18最终12行工程/累计28临时更新全部丢弃及独立源/输入审阅已过，正式首轮因home磁盘阈值终止，2partial及准确/有界成本已完整保留；已可恢复迁至SATA并0NN核验，新协议实际独立审阅通过后同配置干净重开12fit，队列2050834运行中；原24h截止不变，恢复证据见preprojection_memory/run01，不重开外部。D14九fit顺序对照已独立验收及4PNG HTML归档，修正TRAIN退化但历史收益门FALSE；下一D15仅目标对照源/工程准备，goal ACTIVE。D13固定last误差/三梯度独立复核及四图HTML已交付，TRAIN物理MSE升高/r下降、VAL偏置改善、梯度cos正；D14仅顺序干预方案准备，goal ACTIVE；完整FT单结构9×20轮/710100更新已完成且全部selected−1；best-trained H低于强锚点.0063–.0079，收益门FALSE；独立手写/非零last19/目标/图文表审阅通过、5PNG HTML已归档，本候选封存；旧外部冻结，无自动扩数据/其他节点/患者/PR合并。2026-11-06 D18 候选封存：12 个完整拟合、60 个固定 TRAIN、24 个 best/last 独立核验，H−C 两正一负且 H−P 三组均负，预设收益门未过。完整中文 8 图 HTML 与交付验证见 preprojection_memory/run01/ARCHIVE.md，SS07 总目标未达。 |
 
 ## S04：独立保留的 ds004703 公共颅内支线
 
@@ -37,7 +60,7 @@
 ## Governance, branch dependencies and historical mapping
 
 - S03 和 S04 是两条并列数据研究支线；**S04_SS01 可独立审计/跑自己的 baseline，不依赖 S03/SOTA；S04_SS02 的 cross-recording transfer 才依赖 S03**。
-- SS02/SS03冻结不变；SS05于2026-10-19完成真实内部holdout阴性研究及review，COMPLETED/PASS_WITH_LIMITATION，当前停止。SS04/S04/父S05保持BACKLOG，不自动启动；PR#3已按新授权合并、#4仍Draft。
+- SS02/SS03/SS05冻结；#3/#4已按后续授权合并。2026-10-23 SS06先原型、后用户“启动吧”真实执行，现39监督+3SSL/内部审计/后置review完成有限制并STOP。#6仍Draft；SS04/S04/父S05保持BACKLOG，不自动启动。早先“仅合成/不训练”属于prototype01历史，不能覆盖真实完成记录。
 - `S03_SS01` 与 `S02` 已有科学结果不改写；之前的 PUB-01-S06 错号只作为历史 `S01_SS01` 别名，其历史报告、脚本、server路径均不重命名。
 - 阴性结果合法；模型名/性能目标不能触发额外模型、更改 split 或候选难度。
 - SS## 只在已有 S## 内，不建立更深层级；同一执行链一次一个节点；Technical/Acceptance/Parent consistency 三级验收，S05 还需父整合审核。

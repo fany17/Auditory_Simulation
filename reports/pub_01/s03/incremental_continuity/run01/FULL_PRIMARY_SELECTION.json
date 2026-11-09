@@ -1,0 +1,50 @@
+{
+  "frozen": true,
+  "epoch": 1793492085.752123,
+  "parent_full_selection_sha256": "be938571b24393ef3007b352f040dce63b2abf83d3cef150daaf7f56d3763f80",
+  "primary": "m4_h16",
+  "full_family_validation_means": {
+    "m1_h16": 0.1607051220322272,
+    "m2_h16": 0.15903009510186425,
+    "m3_h16": 0.15870120771484375,
+    "m4_h16": 0.16134536858285864,
+    "m5_h16": 0.1603096302314035
+  },
+  "same_full_budget_control_ids": [
+    "m4_current_h16",
+    "static_m4_h16",
+    "output_prior_h16",
+    "static_alignment"
+  ],
+  "final_seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "native_P_five_seeds_already_authorized": true,
+  "EMA_control": {
+    "taus_seconds": [
+      0,
+      0.0625,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "where": "entire nativeP record prediction AFTER originalHann fusion; resetrecord/coveragegap",
+    "selection": "one tau by mean paired3 valmacro, exacttie smaller tau; lockbeforetest and reuse5seed",
+    "extra_NN_training": false
+  },
+  "strong_finetune_control": {
+    "method": "nativeP encoder+head finetuning, priorbest same seed; separate phase protocol beforetest",
+    "max_epochs": 5,
+    "patience": 3,
+    "EEG_lr": 1e-05,
+    "head_lr": 0.001,
+    "all_extra_costs_disclosed": true
+  },
+  "extra_seeds_fixed_before_any_test": true,
+  "five_seed_primary_not_reselected_after_extra_seeds": true,
+  "test_read": false
+}

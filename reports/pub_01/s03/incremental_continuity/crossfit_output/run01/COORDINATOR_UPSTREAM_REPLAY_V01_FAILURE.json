@@ -1,0 +1,18 @@
+{
+  "process": {
+    "pid": 1352127,
+    "uid": 1012,
+    "startticks": 788616084,
+    "source_sha256": "d8016bbd5b171e2893fd80d6366552a5cd32115549137c25970b3efd7c877a14",
+    "deadline_unix": 1794045317.1938457
+  },
+  "message": "Raw-FT-Ccap-Hann replay mismatch",
+  "traceback": "Traceback (most recent call last):\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY.py\", line 243, in main\n    result = inspect_job(job, manifest, norm_cache, native, cfg, counts)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY.py\", line 205, in inspect_job\n    replay[lane] = replay_lane(folder, lane, rows, model, arrays, frozen['affine'], counts)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY.py\", line 167, in replay_lane\n    require(np.isfinite(observed).all() and np.all(error <= ATOL+RTOL*np.abs(observed)), 'Raw-FT-Ccap-Hann replay mismatch')\n  File \"/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY.py\", line 46, in require\n    raise RuntimeError(text)\nRuntimeError: Raw-FT-Ccap-Hann replay mismatch\n",
+  "counters": {
+    "NN_windows": 269,
+    "NN_batches": 5,
+    "physical_points": 0,
+    "fitting_updates": 0,
+    "labels_read": 0
+  }
+}

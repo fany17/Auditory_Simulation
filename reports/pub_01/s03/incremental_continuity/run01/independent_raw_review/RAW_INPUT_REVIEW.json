@@ -1,0 +1,3342 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "snapped_global_range": [
+        0,
+        512
+      ],
+      "target_global_range": [
+        0,
+        506
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "snapped_global_range": [
+        448,
+        1024
+      ],
+      "target_global_range": [
+        506,
+        1012
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "sub-004_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "snapped_global_range": [
+        2048,
+        2752
+      ],
+      "target_global_range": [
+        2087,
+        2715
+      ],
+      "batch_fill_records": [
+        "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.3642420526593924e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.815970093361102e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.2505552149377763e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.881784197001252e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 6.217248937900877e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.0658141036401503e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.3642420526593924e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.0658141036401503e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 6.394884621840902e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.3642420526593924e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 1024,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "snapped_global_range": [
+        0,
+        512
+      ],
+      "target_global_range": [
+        0,
+        506
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "snapped_global_range": [
+        448,
+        1024
+      ],
+      "target_global_range": [
+        506,
+        1012
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "sub-004_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 4.263256414560601e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "snapped_global_range": [
+        2048,
+        2752
+      ],
+      "target_global_range": [
+        2087,
+        2715
+      ],
+      "batch_fill_records": [
+        "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 6.394884621840902e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.5987211554602254e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 4.263256414560601e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.5987211554602254e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 6.394884621840902e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 6.394884621840902e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 4.263256414560601e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 2026,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 6.394884621840902e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "snapped_global_range": [
+        0,
+        512
+      ],
+      "target_global_range": [
+        0,
+        506
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 4.263256414560601e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "snapped_global_range": [
+        448,
+        1024
+      ],
+      "target_global_range": [
+        506,
+        1012
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "sub-004_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "snapped_global_range": [
+        2048,
+        2752
+      ],
+      "target_global_range": [
+        2087,
+        2715
+      ],
+      "batch_fill_records": [
+        "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 6.394884621840902e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.0231815394945443e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 9.094947017729282e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.3642420526593924e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.3642420526593924e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 3.552713678800501e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.3642420526593924e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 31415,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "snapped_global_range": [
+        0,
+        512
+      ],
+      "target_global_range": [
+        0,
+        506
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "snapped_global_range": [
+        448,
+        1024
+      ],
+      "target_global_range": [
+        506,
+        1012
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "sub-004_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "snapped_global_range": [
+        2048,
+        2752
+      ],
+      "target_global_range": [
+        2087,
+        2715
+      ],
+      "batch_fill_records": [
+        "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.7763568394002505e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 3.552713678800501e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 3.552713678800501e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.881784197001252e-15,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.3642420526593924e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 42,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "snapped_global_range": [
+        0,
+        512
+      ],
+      "target_global_range": [
+        0,
+        506
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "snapped_global_range": [
+        448,
+        1024
+      ],
+      "target_global_range": [
+        506,
+        1012
+      ],
+      "batch_fill_records": [
+        "sub-002_ses-shortstories01_task-listeningActive_run-05_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+        "sub-004_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-003_ses-shortstories01_task-listeningActive_run-10_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "snapped_global_range": [
+        2048,
+        2752
+      ],
+      "target_global_range": [
+        2087,
+        2715
+      ],
+      "batch_fill_records": [
+        "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-03_eeg.bdf.gz",
+        "sub-072_ses-varyingStories09_task-listeningActive_run-07_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "Sparr",
+      "record": "sub-072_ses-varyingStories09_task-listeningActive_run-01_eeg.bdf.gz",
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 7.105427357601002e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.4868995751603507e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S1",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.1316282072803006e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S11",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 1,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "native_P",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_EMA",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.1368683772161603e-13,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "P_FT",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 8.526512829121202e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.4210854715202004e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "m4_current_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_m4_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 1.8189894035458565e-12,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "output_prior_h16",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 2.842170943040401e-14,
+      "prespecified_tolerance": 1e-06
+    },
+    {
+      "seed": 12345,
+      "condition": "static_alignment",
+      "dataset": "DTU",
+      "subject": "S18",
+      "trial": 60,
+      "maximum_absolute_waveform_difference": 5.684341886080802e-14,
+      "prespecified_tolerance": 1e-06
+    }
+  ],
+  "seconds": 16.570396900177002,
+  "prospective_metadata_only_sampling": true,
+  "S11_prespecified_from_input_scale_not_model_scores": true,
+  "all_five_seeds_all_main_models_on_selected_records": true,
+  "fresh_raw_signals_and_own_checkpoint_roles": true,
+  "reused_frozen_neural_forward_implementation": true,
+  "not_exhaustive_raw_replay_or_independent_neural_math": true,
+  "history_intervention_neural_outputs_not_raw_replayed": true,
+  "separate_all_fused_prediction_metric_replay_required": true,
+  "scientific_goal_complete": false,
+  "review_protocol_sha256": "5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795",
+  "checkpoint_manifest_sha256": "94fa602a7e33d5539dd27f34a2d1bad517d4b8a588ae9adfa9356d8d2c61d817"
+}

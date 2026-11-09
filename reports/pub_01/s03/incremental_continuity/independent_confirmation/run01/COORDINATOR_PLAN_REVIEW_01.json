@@ -1,0 +1,67 @@
+{
+  "status": "DESIGN_APPROVED_PREPROCESSING_ALLOWED_FINAL_PREDICTION_FREEZE_PENDING",
+  "reviewed_on": "2026-11-02",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "reviewed_plan_sha256": "274a8954ea1ccb3f901fc74a301a2e2a6c81670d3c54cf8313c51dc986cbcc96",
+  "approved_design": {
+    "roles": [
+      "P_FT_star",
+      "Ccap",
+      "W",
+      "F"
+    ],
+    "seeds": [
+      1024,
+      2026,
+      31415
+    ],
+    "primary_contrasts": [
+      "Ccap - P_FT_star",
+      "F - W"
+    ],
+    "scope": "Fixed authorized ds004408 v1.0.8, no fitting or model selection on new data",
+    "adapter": "One shared geometry/units/reference/filter/resampling/envelope pipeline with declared provenance limitations",
+    "acquisition_and_preprocessing_may_continue": true,
+    "another_human_permission_required": false
+  },
+  "required_before_prediction": [
+    "Explicit equal-block person Pearson aggregation, seed average, equal-clip secondary and mechanical target/mask rules",
+    "Sign-flip statistic abs(mean(person differences)), all 2^n signs, inclusive ties tolerance1e-15; null sign-exchangeability/symmetry assumption; no causal or distribution-free claim",
+    "Bootstrap quantiles [.0125,.9875] as two-comparison Bonferroni family95 approximate intervals, Holm2 p separately",
+    "Source study/language/story/available audio identity metadata comparison and unverified broad XLSR pretraining exposure disclosure",
+    "Pin actual adapter/library source, original TRAIN units/norm, frozen model/readout coefficients and actual final data mask before inference"
+  ],
+  "actual_acquisition_review": {
+    "header_V2_completed_sha256": "76a124eb1cbc2980a50aa51909c270c157c0f440979e71d7ae2eefdd8aecd744",
+    "headers": 760,
+    "unique_channel_tables": 119,
+    "failures": 0,
+    "all128channels": true,
+    "sampling_hz": 512,
+    "resolution_microvolt": 0.1,
+    "all_marker_counts": 0,
+    "header_V2_source_sha256": "0487216bd44a8d5fe6ccdc7b9fcd45a2ef2c45c35fb5acb3cf9d418d395e20ce",
+    "source_read": "Entire v1/v2 headers, preflight v1/v2 and Range transport code read; current audio/canary acquisition not yet complete"
+  },
+  "resource_review": {
+    "storage_feasibility_sha256": "b3364749b265689ad05cccc30104fd2b97f1f1c82f7e5c3274a396e4c266ec63",
+    "projected_root_upper_bytes": 3053941616,
+    "cap_bytes": 3221225472,
+    "projected_all_NPY_bytes": 28499925984,
+    "all_NPY_cap_bytes": 30064771072,
+    "minimum_free_bytes": 21474836480
+  },
+  "statistical_reference": {
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html",
+    "actually_read": "Paired samples null/2^n sample swaps and one-sample sign flips; finite-precision ties warning. This supports documenting permutation assumptions and tie handling, not the biological independence of this dataset.",
+    "note": "Custom prespecified absolute-mean enumeration need not silently adopt SciPy default two-sided or tolerance conventions."
+  },
+  "interpretation_limits": [
+    "At most19 independent people, not57 seed-person observations or380 independent recordings",
+    "Conditional on one shared narrative/speaker, not multiple independent story replication",
+    "Template montage assumption and absent hardware synchronization evidence remain limitations",
+    "F single-window degeneracy and FP32-vs-FP64 stability must be reported",
+    "Positive readout/fusion generalization would not establish a continuity mechanism, novelty or publication readiness"
+  ],
+  "goal_complete": false
+}

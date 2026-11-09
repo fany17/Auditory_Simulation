@@ -1,0 +1,93 @@
+{
+  "stage": "fit",
+  "protocol_sha256": "339f41a6b0490dbdcef73b64ce9ad17c24f9e372f6304f5050309952129018a0",
+  "process": {
+    "pid": 1337533,
+    "uid": 1012,
+    "argv": [
+      "input/pub_01_s03_ss07_memoryless_output.py",
+      "fit"
+    ],
+    "linux_startticks": 788318955,
+    "stage_started_unix": 1793955946.0152304,
+    "deadline_unix": 1793977546.0152304,
+    "cuda_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+  },
+  "runtime_versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "torch_cuda": "12.8"
+  },
+  "CPU_seconds": 1146.63668985,
+  "elapsed_seconds": 351.9723368482664,
+  "counters": {
+    "TRAIN_records_loaded": 1278,
+    "TRAIN_cached_windows_loaded": 757362,
+    "VAL_records_loaded": 147,
+    "VAL_cached_windows_loaded": 91500,
+    "training_statistics_files": 3,
+    "current_stem_points": 1887261057,
+    "context_output_points": 1895861454,
+    "backward_points": 1422210600,
+    "optimizer_updates": 86820,
+    "parameter_checkpoint_files": 66,
+    "formal_fits_completed": 3
+  },
+  "location": {
+    "seed": 31415,
+    "role": "P_past_prediction",
+    "epoch": 19,
+    "phase": "selected_VAL_pair"
+  },
+  "resources": {
+    "peak_RSS_bytes": 5190995968,
+    "cuda_peak_allocated_bytes": 2592440320,
+    "writer_free_bytes": 178065715200,
+    "writer_bytes": 12508080
+  },
+  "new_encoder_head_windows": 0,
+  "new_signal_feature_prediction_array_files": 0,
+  "parameter_checkpoint_files": 66,
+  "training_statistics_files": 3,
+  "passed": true,
+  "seeds": {
+    "1024": {
+      "selected_epoch": 11,
+      "selected_r": 0.1830242168719168,
+      "D20_r": 0.1829525004369233,
+      "anchor_r": 0.18188879428826338,
+      "best_trained_epoch": 11,
+      "best_trained_r": 0.1830242168719168,
+      "last_r": 0.1828474737419528,
+      "D22_r": 0.18345456164136692,
+      "delta_D22_r": -0.0004303447694501139,
+      "duplicate_slot_r": 0.1830242168719168
+    },
+    "2026": {
+      "selected_epoch": 16,
+      "selected_r": 0.18371391704857204,
+      "D20_r": 0.1841103487098252,
+      "anchor_r": 0.1817561196902157,
+      "best_trained_epoch": 16,
+      "best_trained_r": 0.18371391704857204,
+      "last_r": 0.18344460688182238,
+      "D22_r": 0.18453556913392583,
+      "delta_D22_r": -0.0008216520853537856,
+      "duplicate_slot_r": 0.18371391704857204
+    },
+    "31415": {
+      "selected_epoch": 8,
+      "selected_r": 0.18496077315287207,
+      "D20_r": 0.18520868320256786,
+      "anchor_r": 0.18337490481957303,
+      "best_trained_epoch": 8,
+      "best_trained_r": 0.18496077315287207,
+      "last_r": 0.18486311943016273,
+      "D22_r": 0.18575258234736144,
+      "delta_D22_r": -0.0007918091944893735,
+      "duplicate_slot_r": 0.18496077315287207
+    }
+  },
+  "history_intervention": false
+}

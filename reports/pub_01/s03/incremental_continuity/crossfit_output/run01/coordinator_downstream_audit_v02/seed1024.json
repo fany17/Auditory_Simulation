@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "seed": 1024,
+  "statistics": [
+    {
+      "passed": true,
+      "lane": "IS",
+      "reference": {
+        "mean": 0.5599145293235779,
+        "std": 0.10093269497156143,
+        "constant": false
+      },
+      "saved": {
+        "mean": 0.5599145293235779,
+        "std": 0.10093269497156143,
+        "constant": false,
+        "points": 23703510,
+        "context_values": 2275536960
+      },
+      "absolute_errors": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "TRAIN_records": 426,
+      "physical_points": 24276054
+    },
+    {
+      "passed": true,
+      "lane": "OOF",
+      "reference": {
+        "mean": 0.5615187883377075,
+        "std": 0.0991552546620369,
+        "constant": false
+      },
+      "saved": {
+        "mean": 0.5615187883377075,
+        "std": 0.0991552546620369,
+        "constant": false,
+        "points": 23703510,
+        "context_values": 2275536960
+      },
+      "absolute_errors": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "TRAIN_records": 426,
+      "physical_points": 24276054
+    }
+  ],
+  "fits": [
+    {
+      "passed": true,
+      "arm": "B_IS",
+      "selected_epoch": 0,
+      "selected_r": 0.18341134148123908,
+      "last_r": 0.18056649139856734,
+      "parameters": 9441,
+      "maximum_saved_aggregate_error": 1.6653345369377348e-16,
+      "result_sha256": "e1d8c3cd2e1020959c5cab6d0699de4a9cf746e04bdaf6b0ee3f0d3aec632a3e",
+      "last_weights_sha256": "49ee3c42554476d2693d03caaa07b27f7f8fff6e7516e5b92928666835359067",
+      "selected_weights_sha256": "445998241ce12904432b9cad90fbc223b57f8651dd5fec858fc976c09446708c",
+      "recovery_files_named": 20,
+      "recovery_files_loaded": 2
+    },
+    {
+      "passed": true,
+      "arm": "S_IS",
+      "selected_epoch": 11,
+      "selected_r": 0.1830517584206163,
+      "last_r": 0.18292003084434283,
+      "parameters": 3361,
+      "maximum_saved_aggregate_error": 1.6653345369377348e-16,
+      "result_sha256": "059b835552f93fe8f2cb8c84fe22e10aefacaa0a1f031000278aa1abdaad23ec",
+      "last_weights_sha256": "5257da842ad8be601593ef496ce68ac46e5c7f8c13b5d8b8e753686e5b2f19d1",
+      "selected_weights_sha256": "c35ce9941000f1d1c2581d041cd221f7cb47545df8c7b59108fc01ee0f640bbf",
+      "recovery_files_named": 20,
+      "recovery_files_loaded": 2
+    },
+    {
+      "passed": true,
+      "arm": "B_OOF",
+      "selected_epoch": -1,
+      "selected_r": 0.18188879428826338,
+      "last_r": 0.16820874010300388,
+      "parameters": 9441,
+      "maximum_saved_aggregate_error": 1.1102230246251565e-16,
+      "result_sha256": "6aede0128b51f23b5aa57d2a64894cc6764e7f10b12f28c78c12f8aae0c5a2df",
+      "last_weights_sha256": "75ea4ee12eb9e6c5e8998b93c9300ed020c3d8e1a9870964c0865aa4e54b422c",
+      "selected_weights_sha256": null,
+      "recovery_files_named": 20,
+      "recovery_files_loaded": 1
+    },
+    {
+      "passed": true,
+      "arm": "S_OOF",
+      "selected_epoch": 3,
+      "selected_r": 0.1821294473536228,
+      "last_r": 0.181971412718894,
+      "parameters": 3361,
+      "maximum_saved_aggregate_error": 5.551115123125783e-17,
+      "result_sha256": "bb0ce2a9c501661e98e31021270bdffdb62d77060c23de23d1c3591e6dca0793",
+      "last_weights_sha256": "f2426d6b1a42067ac2269ab38d2e87009e845439c26a8e58c8ca247ef6697262",
+      "selected_weights_sha256": "ef1b1ce63a62f41f36552510166238200ee707a21345aaabcd3a12d34224116b",
+      "recovery_files_named": 20,
+      "recovery_files_loaded": 2
+    }
+  ],
+  "terminal_sha256": "ea427603d7139c68772f8adce141617414f5c71c9cf66356e162f7170a58286e",
+  "formal_gate_sha256": "5aba6ea5c1f44c17fba82c885c8c514277e85d5a166a3e38998c5e9615f91a00",
+  "actual_training_statistics_files": 6
+}

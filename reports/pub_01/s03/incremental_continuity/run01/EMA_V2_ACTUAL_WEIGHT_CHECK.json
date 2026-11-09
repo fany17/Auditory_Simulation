@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "actual_completed_native_P_seed": 1024,
+  "whole_val_windows": 30500,
+  "people": 49,
+  "blocks": 752,
+  "corrected_tau0_perblock_r_max_difference_from_original_macro": 0.0,
+  "legacy_unsplit_B64_perblock_r_max_difference": 1.4490008137885146e-05,
+  "correction": "phase-global64 forward_global_batch with record boundary splits/reset; all tau reuse SAME predictions",
+  "no_tau_selection_in_this_check": true,
+  "test_read": false,
+  "neural_parameters_updated": false,
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema.py": "3f76d44ed808b80cb94402881cbacea9b2dbc5d11dbf232ac7edf27e27befdf7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2.py": "aaa4244289d6a0f2256a71b1208c61cb7a2f51d2632431349d75158352d3154e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2_check.py": "62f08b8800cffca59fea4034433b7f7b140197e1d811c92c0b92ededff46ed0a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e"
+  }
+}

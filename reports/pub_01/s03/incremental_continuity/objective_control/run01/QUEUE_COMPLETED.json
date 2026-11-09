@@ -1,0 +1,70 @@
+{
+  "workers": [
+    {
+      "seed": 31415,
+      "arm": "P_prior",
+      "pid": 1769304,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "arm": "P_prior",
+      "pid": 1769262,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "arm": "C_match",
+      "pid": 1769286,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "arm": "H_full",
+      "pid": 1769272,
+      "returncode": 0
+    },
+    {
+      "seed": 1024,
+      "arm": "C_match",
+      "pid": 1769190,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "arm": "C_match",
+      "pid": 1769250,
+      "returncode": 0
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prior",
+      "pid": 1769227,
+      "returncode": 0
+    },
+    {
+      "seed": 1024,
+      "arm": "H_full",
+      "pid": 1769182,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "arm": "H_full",
+      "pid": 1769242,
+      "returncode": 0
+    }
+  ],
+  "wall_seconds": 1010.7994871139526,
+  "CPU_worker_seconds": 8824.64224052,
+  "new_fits": 9,
+  "total_updates": 710100,
+  "formal_residual_NN_windows": 59473248,
+  "new_encoder_head": 0,
+  "max_per_GPU": {
+    "cuda:0": 5,
+    "cuda:1": 4
+  },
+  "goal_complete": false,
+  "independent_review_required": true
+}

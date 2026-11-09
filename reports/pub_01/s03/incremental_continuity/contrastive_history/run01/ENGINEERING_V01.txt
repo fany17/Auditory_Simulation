@@ -1,0 +1,12 @@
+/home/fanyu/.conda/envs/auditory_m6a_public_001/lib/python3.11/site-packages/torch/nn/modules/conv.py:370: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1024.)
+  return F.conv1d(
+Traceback (most recent call last):
+  File "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v01/pub_01_s03_ss07_contrastive_history_engineering.py", line 197, in <module>
+    {"prepare":prepare,"engineer":engineering,"freeze":freeze}[stage]()
+  File "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v01/pub_01_s03_ss07_contrastive_history_engineering.py", line 151, in engineering
+    fit,stats=model.ridge.readout(rows,z[:limit],p[:limit],targets,model.ridge_helpers)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_v04/pub_01_s03_ss07_crossfit_upstream.py", line 303, in readout
+    x, y = values[keep], np.asarray(target[row["record"]], dtype=np.float64)[keep]
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: boolean index did not match indexed array along dimension 0; dimension is 59958 but corresponding boolean dimension is 59956

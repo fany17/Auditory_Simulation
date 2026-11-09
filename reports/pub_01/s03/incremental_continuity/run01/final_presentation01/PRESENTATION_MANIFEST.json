@@ -1,0 +1,50 @@
+{
+  "main_contrasts": [
+    "primary-native_P",
+    "primary-current",
+    "primary-static",
+    "primary-output_prior",
+    "primary-P_EMA",
+    "primary-P_FT",
+    "primary-static_alignment"
+  ],
+  "main_M": 7,
+  "fixed_main_model_order": [
+    "native_P",
+    "P_EMA",
+    "P_FT",
+    "m4_h16",
+    "m4_current_h16",
+    "static_m4_h16",
+    "output_prior_h16",
+    "static_alignment"
+  ],
+  "exploratory_family_count": 5,
+  "history_missing_endpoints_preserved": [],
+  "main_seed_dots": 70,
+  "absolute_seed_dots": 80,
+  "separate_internal_external_comparison_families": true,
+  "no_new_fit_selection_interval_or_scientific_acceptance": true,
+  "figures": [
+    "01_MAIN_CONTRASTS.png",
+    "02_FIVE_FAMILY_EXPLORATORY.png",
+    "03_HISTORY_DIAGNOSTICS.png",
+    "04_ABSOLUTE_PER_SEED.png",
+    "05_SEARCH_COSTS.png"
+  ],
+  "time": 1793501046.6237278,
+  "sources": {
+    "INTERNAL_MAIN.json": "78555c556bb656b098f3d0cd85d0aa3024a4c8af4dbabe7d216a12819e2335c1",
+    "EXTERNAL_DTU_MAIN.json": "124f07ab8b9c4cd489e7e49da5a4b59a71c848d791e7589de6034aaf1be95a25",
+    "INTERNAL_FIVE_FAMILY_EXPLORATORY.json": "a99913d132a4f22eac4bedfaad6bfdb4c4c7ed1d19e380a9f76645676d99da03",
+    "INTERNAL_HISTORY_DIAGNOSTICS.json": "26294627ced895baf645c4c3331d858241c9d427b9f6d3f2b767fdfbd992d5d6",
+    "COSTS.json": "dbb63bb68e92013917da00f05bbef7f90726e20df828e03726a9a4ff79b4d34a"
+  },
+  "source_sha256": "6ee20bb4181d51132e9d4ca6749f98ddff1cab351b12c65f2162baa0737bfbb7",
+  "reused_rendering_source_sha256": "c6b60bb032538a54a55676f1c3337031285fe2e71f5b114642d2c0b4bd27b42f",
+  "independent_review_complete_sha256": "eda79bff02d06a884bd7db7cd540630c7cfed2224bd0632499f594b918d64ca0",
+  "raw_protocol_version": 1,
+  "metric_protocol_version": 2,
+  "scientific_goal_complete": false,
+  "original_data_and_summaries_unchanged": true
+}

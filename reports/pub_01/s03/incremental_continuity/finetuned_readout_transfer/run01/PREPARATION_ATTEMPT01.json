@@ -1,0 +1,8 @@
+{
+  "time": 1793519257.5760684,
+  "stage": "prepare_metadata_only",
+  "failure": "KeyError: approved_for_execution; actual coordinator review uses status=PLAN_APPROVED and explicit execution_authorization",
+  "new_forward_fit_cache": 0,
+  "protocol_created": false,
+  "correction": "Read actual signed plan review status/hash; no invented second code approval gate; coordinator explicitly authorizes parallel code review."
+}

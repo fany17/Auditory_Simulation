@@ -1,0 +1,25 @@
+{
+  "train": {
+    "phase": "train",
+    "CPU_seconds": 97.126556874,
+    "wall_seconds": 77.46853137016296,
+    "raw_RAM_bytes": 6220064256,
+    "anchor_bytes": 387769344,
+    "records": 426,
+    "windows": 252454,
+    "scientific_new_disk_arrays": 0
+  },
+  "val": {
+    "phase": "val",
+    "CPU_seconds": 7.884410243999994,
+    "wall_seconds": 5.688300132751465,
+    "raw_RAM_bytes": 751371520,
+    "anchor_bytes": 46848000,
+    "records": 49,
+    "windows": 30500,
+    "scientific_new_disk_arrays": 0
+  },
+  "RSS_KiB_after_setup": 7987564,
+  "registered_trainable_parameters": 3389513,
+  "reference_encoder_frozen": true
+}

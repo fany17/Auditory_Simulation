@@ -1,0 +1,88 @@
+{
+  "repository": "LiuyinYang1101/Sea-Wave",
+  "ref": "910138cdac01c58c007459711008ae4991757ff2",
+  "accessed": "2026-11-06",
+  "license": "MIT",
+  "copies": "Git blob identity verified with git hash-object --no-filters. Source inspection only; not imported or executed.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob": "e0de31734f9ab427be8f7f1efe9e016619d73dbd",
+      "sha256": "8b53e6bd069c180598bb4dd0c121d5a86b89d2a856c7f35002a5426e2340b69c",
+      "bytes": 1068
+    },
+    {
+      "path": "models/EEGWaveRegressor.py",
+      "git_blob": "b869eb6ccda53f122a7f8980193a43fb88dc80f0",
+      "sha256": "bac621abfd5c4553d9b4be790da7e5af81d26932ee3e0dede86564503950f0f0",
+      "bytes": 6706
+    },
+    {
+      "path": "train/wavenet_best_4_20_32.json",
+      "git_blob": "2a454338c59a7569812aefabf1b33faf563bc15d",
+      "sha256": "c1e1889a724595b9a94733deb448ba243d18ebd6cbce7b0e530c22b7c70db43c",
+      "bytes": 1060
+    },
+    {
+      "path": "train/train.py",
+      "git_blob": "a9972fdc9f3b3221c46e9e0fb35435825ff594ce",
+      "sha256": "866720d254cc53752eff928d6175fa2424c6e7cad7a0a9a45c7a98e6380a3276",
+      "bytes": 11977
+    },
+    {
+      "path": "train/distributed_train.py",
+      "git_blob": "17a2a76e9985171d08e6a8a2abbe308cb4e93c9b",
+      "sha256": "e77bcf6667d08f2f86a660496877451d46d53becbef198d78434ad36561afe42",
+      "bytes": 1447
+    },
+    {
+      "path": "utils/CustomDatasetPytorch.py",
+      "git_blob": "b508df61091424e7de816f0f3157c2b4bb14cc89",
+      "sha256": "a4b2061ee4f4f262b128a3505d13e684123063c4752fdb5650148c46bded882e",
+      "bytes": 25872
+    },
+    {
+      "path": "utils/util.py",
+      "git_blob": "75af8a193c277fbbcdc78be746e5989c1092b5dc",
+      "sha256": "8520aa37c0d0e1551dd5d7bdaa5f25b692f252fbdc62dea47486cec665e6b50d",
+      "bytes": 8016
+    },
+    {
+      "path": "utils/cyclic_scheduler.py",
+      "git_blob": "d5ec03898de6b7aa15a7c4a0b17a24ac0acd59d9",
+      "sha256": "4ec5aefb6e92637984b2e1d82e70f7f62367d0dfda38cc6443ebc25e4c7a5ebf",
+      "bytes": 8510
+    },
+    {
+      "path": "utils/dataset.py",
+      "git_blob": "44790bfa34818552a276ffa41c8fe517e0653797",
+      "sha256": "14b3da07eabcd81f0d3e33bcc0e82a7dcf18b9e7cb44146e0cea39d35d983b69",
+      "bytes": 1086
+    },
+    {
+      "path": "finetune/fine_tune_subject.py",
+      "git_blob": "76a6f7b29fc03eea494f8647de3784bff92786fb",
+      "sha256": "fef7fed91cbd4c1600b7c31b5303bf73691fcf1b331f6012b3adafc2f49bb2b7",
+      "bytes": 13791
+    },
+    {
+      "path": "finetune/wavenet_best_4_20_32_finetune.json",
+      "git_blob": "c962c967945311c264d0c64cc3137ef2f81ac618",
+      "sha256": "d96b943d02ee0815e138512793ebc0439848bdb91c20d3e8e4125a59188a2cad",
+      "bytes": 1158
+    },
+    {
+      "path": "finetune/distributed_train_fine_tune.py",
+      "git_blob": "5abe24082e120b44cd85f81c0c95e63edf3c8fd7",
+      "sha256": "21f77edc1c521be0970ba7f2d53dc034793a5098b3c221361642acb1be255ec8",
+      "bytes": 1469
+    }
+  ],
+  "paper": {
+    "doi": "10.1109/OJSP.2024.3378594",
+    "url": "https://lirias.kuleuven.be/retrieve/8a19355d-6c50-4d10-91ff-c48f1b1c66ff",
+    "sha256": "dbbe7193ce0422f22bf2aeb47d638bc534a8a7428d79b43565b73aefed3a8949",
+    "pages": 14,
+    "checked": "Published PDF journal pages 690 and 693 rendered and inspected; full text extracted. PDF retained in local scratch, not copied to Git."
+  }
+}

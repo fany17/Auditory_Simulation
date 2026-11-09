@@ -1,0 +1,44 @@
+{
+  "reason": "Coordinator GPU audit resident CUDA context conflicts with original queue <=256MiB exclusive admission between jobs. Preserve three successful replays; replace with audit that creates CUDA context only after all upstream jobs finish.",
+  "stopped_identity": {
+    "pid": 1387563,
+    "uid": 1012,
+    "startticks": 788823429
+  },
+  "completed_audits": [
+    "seed31415_fold1.json",
+    "seed1024_fold0.json",
+    "seed31415_fold2.json",
+    "seed2026_fold0.json"
+  ],
+  "state": {
+    "process": {
+      "pid": 1387563,
+      "uid": 1012,
+      "startticks": 788823429,
+      "source_sha256": "6463ac6cf775e382a0199e25bfc11293447d0249f1a80d257d54120ada664912",
+      "deadline_unix": 1794047390.6257553,
+      "CUDA_VISIBLE_DEVICES": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+      "TF32_matmul": false,
+      "TF32_cudnn": true
+    },
+    "completed_audits": 4,
+    "pending": [
+      "seed31415_fold0",
+      "seed1024_fold1",
+      "seed2026_fold1",
+      "seed1024_fold2",
+      "seed2026_fold2"
+    ],
+    "counters": {
+      "NN_windows": 1840,
+      "NN_batches": 35,
+      "physical_points": 2560,
+      "fitting_updates": 0,
+      "labels_read": 0
+    }
+  },
+  "signal": "SIGTERM",
+  "unix": 1793962873.3824112,
+  "upstream_training_changes": 0
+}

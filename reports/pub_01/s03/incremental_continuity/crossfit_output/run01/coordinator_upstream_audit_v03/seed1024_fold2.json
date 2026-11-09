@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "seed": 1024,
+  "fold": 2,
+  "fit_records": 282,
+  "full_normalization_points": 16237736,
+  "normalization_max_abs": {
+    "mean": 7.979727989493313e-17,
+    "std": 1.0658141036401503e-14
+  },
+  "replay": {
+    "IS": [
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-01_eeg.bdf.gz",
+        "points": 160,
+        "max_abs_error": 1.1102230246251565e-16,
+        "first_point": 1,
+        "last_point": 57982
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-04_eeg.bdf.gz",
+        "points": 160,
+        "max_abs_error": 2.220446049250313e-16,
+        "first_point": 1,
+        "last_point": 51646
+      }
+    ],
+    "OOF": [
+      {
+        "record": "sub-001_ses-shortstories01_task-listeningActive_run-08_eeg.bdf.gz",
+        "points": 160,
+        "max_abs_error": 1.6653345369377348e-16,
+        "first_point": 1,
+        "last_point": 61534
+      },
+      {
+        "record": "sub-071_ses-varyingStories08_task-listeningActive_run-02_eeg.bdf.gz",
+        "points": 160,
+        "max_abs_error": 2.220446049250313e-16,
+        "first_point": 1,
+        "last_point": 57598
+      }
+    ]
+  },
+  "payloads": {
+    "FT.pt": {
+      "bytes": 13539991,
+      "sha256": "874fa359f6d36d5d83e730c5ad411a89a913c3c8e881b557f126f4e826a24ae3"
+    },
+    "contrastive.pt": {
+      "bytes": 15267377,
+      "sha256": "c9ba9ecd9955dcc647c2936a24526be942b7906403e9af1416c079692e58f410"
+    },
+    "head.pt": {
+      "bytes": 2893,
+      "sha256": "3d508786ee385bc4f0c4b4cadfe66261ca92b06e29529b1176ce198a864b3fb9"
+    },
+    "READOUT.npz": {
+      "bytes": 5074746,
+      "sha256": "8fb9f173ee4d60ad1be375001c1fb71131997f2009724e8f1c3cc2465dd49dfd"
+    },
+    "IS_ANCHOR.npy": {
+      "bytes": 64839728,
+      "sha256": "6623ac126324ebbbe4979466f0870e58405fb16fdcf79cfd291b3634f61a4b50"
+    },
+    "IS_ANCHOR.json": {
+      "bytes": 21274,
+      "sha256": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51"
+    },
+    "OOF_ANCHOR.npy": {
+      "bytes": 64410368,
+      "sha256": "c0e28008732f69cf4d8866b99b98b4a2f58cac4f4647a45a10d837df63fc7afa"
+    },
+    "OOF_ANCHOR.json": {
+      "bytes": 22111,
+      "sha256": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f"
+    },
+    "COMPLETED.json": {
+      "bytes": 1567165,
+      "sha256": "4e3a63958468876bd6b8e8b87c16cc2f5bb771b32edf0441808263abccae9afb"
+    },
+    "UPSTREAM_FROZEN.json": {
+      "bytes": 21212,
+      "sha256": "40edf68e4b2cbb60a832bd861a746391f06df034b068db7273e667bb41173c5c"
+    }
+  }
+}

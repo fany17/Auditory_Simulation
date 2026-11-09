@@ -1,0 +1,25 @@
+{
+  "scope": "SS07 coordinator research extension under human full-public-EEG goal",
+  "coordinator_chat": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "human_named_dataset": false,
+  "allowed": {
+    "DATA_preproc.zip": [
+      1838947136,
+      "1c1ca1390ad99ff41c33f36ca67f8418"
+    ],
+    "preproc_data.m": [
+      6252,
+      "7723ddc5334f5aa1f473143251fdcffd"
+    ]
+  },
+  "license": "CC-BY-NC-4.0; noncommercial research/attribution",
+  "source": "https://zenodo.org/records/1199011",
+  "zip_plus_extraction_peak_bytes": 3677897496,
+  "resource_check": {
+    "free_bytes": 55492927488,
+    "pending_baseline_cache_bytes": 5402799744,
+    "planned_extra_bytes": 3677897496
+  },
+  "models_or_performance_authorized_here": false,
+  "time": 1793476662.3503065
+}

@@ -1,0 +1,71 @@
+{
+  "decision": "PASS_SCHEDULING_RECOVERY_ONLY",
+  "root_cause": "Coordinator V02 audit retained a CUDA context between model completions, violating the upstream queue 256MiB exclusive GPU admission. No model-training failure or model retry.",
+  "recovery_source_sha256": "ff10edf3d8b7b347edd7823efc05e04d4bacec2ac9e117822655c5e31414e3ff",
+  "recovery_jobs": [
+    [
+      2026,
+      2
+    ],
+    [
+      1024,
+      2
+    ],
+    [
+      1024,
+      1
+    ]
+  ],
+  "original_training_gate_and_all_source_pins_unchanged": true,
+  "neural_and_numeric_helpers_AST_identical": [
+    "raw",
+    "norm_reference",
+    "Decoder",
+    "readout",
+    "replay_lane",
+    "inspect_job"
+  ],
+  "exact_live_processes": {
+    "queue": {
+      "pid": 1346529,
+      "uid": 1012,
+      "startticks": 788549137,
+      "cuda_visible_devices": null
+    },
+    "upstream_recovery_v01": {
+      "pid": 1426341,
+      "uid": 1012,
+      "startticks": 789030241,
+      "cuda_visible_devices": null
+    },
+    "coordinator_upstream_audit_v03": {
+      "pid": 1427141,
+      "uid": 1012,
+      "startticks": 789033783,
+      "source_sha256": "ac9e2b7ca4a6d2ee6d393c2e15cf140416451c64871378273419a7a4a69f03be",
+      "deadline_unix": 1794049494.27929,
+      "CUDA_VISIBLE_DEVICES": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+      "TF32_matmul": false,
+      "TF32_cudnn": true
+    }
+  },
+  "new_root_audit_has_no_CUDA_context": true,
+  "GPU_residents_observed": "1426358, GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9, 5870 MiB\n1419021, GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba, 5870 MiB\n",
+  "completed_upstream_jobs_observed": 4,
+  "preserved_and_new_evidence": {
+    "COORDINATOR_UPSTREAM_REPLAY_V02_STOP.json": "0f1a293b2e13e646a6b281a39157b95155ef4d2c5f0c9fd1ac0ebf09eeffd902",
+    "queue/GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9_FAILURE.json": "feb9024f0de79be77abd7b7b8f39aaa269a142be056fc46c65946940f3bf0ad8",
+    "downstream_queue_v02/FAILURE.json": "8c7fbb4dd7498825ddc1f154108c19bf90a595897f7fef9a654a7f632ad3b7f3",
+    "coordinator_downstream_audit_v01/FAILURE.json": "cf04ad89fff9bb5b51becd9b199f440cc098723f58959ca3fb8e73100edc1459",
+    "COORDINATOR_UPSTREAM_REPLAY_V03.py": "ac9e2b7ca4a6d2ee6d393c2e15cf140416451c64871378273419a7a4a69f03be",
+    "upstream_recovery_v01/PLAN.json": "d5f46ef9f341fa43c682ed6a055f35443e9da5ad96d0225f55bdb7ad51de1044"
+  },
+  "prior_audit_NN_windows": {
+    "initial_CPU_failure_and_precision_diagnostics": 1076,
+    "stopped_V02_successful_replays": 1377
+  },
+  "prior_audit_fitting_updates": 0,
+  "prior_audit_label_reads": 0,
+  "unknown_cost_fields": "V02 accumulated CPU time was not recorded at controlled termination; do not invent it. V03 final wall/CPU counters are separate.",
+  "continuation": "Original GPU1 lane and all completed models untouched. Original GPU0 unstarted suffix only. Complete all nine, then full precision-matched V03 review; downstream waits for V03 process exit before GPU use. No performance-based gate."
+}

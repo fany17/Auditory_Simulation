@@ -1,0 +1,27 @@
+{
+  "wall_seconds": 5246.089957237244,
+  "protocol_sha256": "5cb28c2cd219c25fc36ed5ea91d92572a9c6b61b0a3ae864a0f1fa5180cc76c5",
+  "seed_workers": [
+    {
+      "seed": 1024,
+      "device": "cuda:0",
+      "pid": 1532233,
+      "returncode": 0
+    },
+    {
+      "seed": 2026,
+      "device": "cuda:1",
+      "pid": 1532236,
+      "returncode": 0
+    },
+    {
+      "seed": 31415,
+      "device": "cuda:0",
+      "pid": 1533064,
+      "returncode": 0
+    }
+  ],
+  "new_model_fits": 0,
+  "goal_complete": false,
+  "independent_result_review_still_required": true
+}

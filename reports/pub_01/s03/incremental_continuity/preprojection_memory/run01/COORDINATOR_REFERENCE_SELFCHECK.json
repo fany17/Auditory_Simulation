@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "independent_reference_synthetic_algebra_only_not_production_autograd",
+  "source_sha256": "19eaa95bcd166ae5c35c0d30000e50b92089af32864ac0165d62a1448f401d18",
+  "seed": 20261103,
+  "batch": 3,
+  "latent_shape": [
+    3,
+    8,
+    192
+  ],
+  "coefficient_shape": [
+    3264,
+    192
+  ],
+  "directional": {
+    "analytic": -0.0008344840069010376,
+    "central_difference": -0.0008344840068363967,
+    "absolute_difference": 6.464089246510651e-14,
+    "step": 0.00001
+  },
+  "tolerance": 1.000834484006901e-7,
+  "constant_Z_gradient_zero": true,
+  "constant_P_keeps_baseline_gradient": true,
+  "real_array_access": false,
+  "NN_forwards": 0,
+  "NN_backwards": 0,
+  "optimizer_updates": 0,
+  "new_fits": 0,
+  "CPU_seconds": 0.05799247200000002,
+  "wall_seconds": 0.01453549973666668,
+  "peak_RSS_KiB": 47404,
+  "computation_host": "server2203",
+  "execution": "One SSH stdin Python invocation; reference bytes base64 transferred and SHA256 asserted before execution. Scientific arrays never returned to Windows.",
+  "counts_scope": "Timer begins after imports; no neural execution or scientific file inputs. SSH/local administrative overhead unmeasured."
+}

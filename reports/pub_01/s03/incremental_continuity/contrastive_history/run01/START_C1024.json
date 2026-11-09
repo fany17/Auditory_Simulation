@@ -1,0 +1,20 @@
+{
+  "pid": 1622239,
+  "uid": 1012,
+  "startticks": 790259176,
+  "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+  "seed": 1024,
+  "stage": "cl",
+  "role": "C",
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "-B",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/input_v05/pub_01_s03_ss07_contrastive_history_train.py",
+    "cl",
+    "--seed",
+    "1024",
+    "--role",
+    "C"
+  ],
+  "launched_monotonic_seconds": 7902591.760165748
+}

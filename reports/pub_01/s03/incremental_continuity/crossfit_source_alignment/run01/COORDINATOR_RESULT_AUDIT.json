@@ -1,0 +1,1048 @@
+{
+  "passed": true,
+  "source_sha256": "cb3a5eba4b9068be05dbaa6e12a80649e69d2e42b94c8e0ebb8da23df4d2915c",
+  "inputs": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/COMPLETED.json": "1226815357624a586162698df5765e6b713ff64af8018d11251fffdf62840a7c",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/FORMAL_GATE.json": "e7b458165025059156804e1097dcf8994b8c9e0ac27b3f611d32d91fc842c93a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/VAL_ROUTING_METADATA.json": "a6074a541e2747ed2735d98672caa1c86dc02f72597a4b9409f014a7e32eaef1",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/ROUTING_AND_BUDGET_CANDIDATE.json": "efa8659619eead489a5d776a2830d1b55d24dfcc912746a08ff3daa8fba83d6a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/RECORD_SCORES.csv": "c48f0ad30bc8723bc6e19082266e047f66a06f298b569bbd2c40f12c44b05500",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/RESULTS.csv": "e50737038417b926ba55d55a53c59f4a103f1100fa93b34ea3dc507551ac8542",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_crossfit_source_alignment_20261106/BLOCK_SCORES.csv": "f31b41b8d8af8748316708b32811b4678152155e88dd4fd9b38f4434cd5e8936"
+  },
+  "full_score_sources": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/B_OOF/seed1024_P_past_prediction/RESULT.json": "6aede0128b51f23b5aa57d2a64894cc6764e7f10b12f28c78c12f8aae0c5a2df",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed1024/S_OOF/seed1024_P_past_prediction/RESULT.json": "bb0ce2a9c501661e98e31021270bdffdb62d77060c23de23d1c3591e6dca0793",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/B_OOF/seed2026_P_past_prediction/RESULT.json": "325cd3a96f1579382670bc72565e3caa2836e850c8d297fba407b998d3f982a7",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed2026/S_OOF/seed2026_P_past_prediction/RESULT.json": "a04657d90d0f490716e4cd5bf8cc0b245dab981d0e87f69350638c972b3c75e6",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/B_OOF/seed31415_P_past_prediction/RESULT.json": "29d06379c78e4ed895c4c15008cd9a1691538f703ad6c7a3576ff33e5a1e6204",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_formal/seed31415/S_OOF/seed31415_P_past_prediction/RESULT.json": "a249f1ce113a476a4d1aae5eb1998d4d66ee35a886b29b2aa195e13d7757e71b"
+  },
+  "aggregates": [
+    {
+      "seed": 1024,
+      "group": "all",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.17541815715307407,
+        "MSE": 0.24321394170500632,
+        "active_MSE": 0.25117733153971816,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.16999141012204494,
+        "MSE": 0.24502737079166612,
+        "active_MSE": 0.25309436939238683,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "all",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.17541815715307407,
+        "MSE": 0.24321394170500632,
+        "active_MSE": 0.25117733153971816,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.17498359034144084,
+        "MSE": 0.2436964616208156,
+        "active_MSE": 0.2517662353858999,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "all",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.17541815715307407,
+        "MSE": 0.24321394170500632,
+        "active_MSE": 0.25117733153971816,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.16443613077685126,
+        "MSE": 0.24499488002050393,
+        "active_MSE": 0.25297299183446365,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "all",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.17541815715307407,
+        "MSE": 0.24321394170500632,
+        "active_MSE": 0.25117733153971816,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.17556860580169215,
+        "MSE": 0.24371316962934356,
+        "active_MSE": 0.25179012077712576,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "shared",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.2068428740934878,
+        "MSE": 0.129053045166847,
+        "active_MSE": 0.1296797013048773,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.20222018594321067,
+        "MSE": 0.12973541461906954,
+        "active_MSE": 0.13039548961090713,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "shared",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.2068428740934878,
+        "MSE": 0.129053045166847,
+        "active_MSE": 0.1296797013048773,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.20777950213879717,
+        "MSE": 0.12840904941655978,
+        "active_MSE": 0.1290381134739708,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "shared",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.2068428740934878,
+        "MSE": 0.129053045166847,
+        "active_MSE": 0.1296797013048773,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.19583139343836045,
+        "MSE": 0.13055439474708255,
+        "active_MSE": 0.13123466404262954,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "shared",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.2068428740934878,
+        "MSE": 0.129053045166847,
+        "active_MSE": 0.1296797013048773,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.20823235220933053,
+        "MSE": 0.12838765072241498,
+        "active_MSE": 0.12901539687147925,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "unseen",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.12985231758947413,
+        "MSE": 0.4087472416853373,
+        "active_MSE": 0.41031085468961265,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.1232596851813546,
+        "MSE": 0.41220070724193114,
+        "active_MSE": 0.41380124892931,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "unseen",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.12985231758947413,
+        "MSE": 0.4087472416853373,
+        "active_MSE": 0.41031085468961265,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.12742951823527415,
+        "MSE": 0.4108632093169865,
+        "active_MSE": 0.41251141528500956,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "unseen",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.12985231758947413,
+        "MSE": 0.4087472416853373,
+        "active_MSE": 0.41031085468961265,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.11891299991766291,
+        "MSE": 0.4109335836669649,
+        "active_MSE": 0.4124217725756696,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 1024,
+      "group": "unseen",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.12985231758947413,
+        "MSE": 0.4087472416853373,
+        "active_MSE": 0.41031085468961265,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.12820617351061647,
+        "MSE": 0.41093517204438995,
+        "active_MSE": 0.41259633840538057,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "all",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.17100880222767553,
+        "MSE": 0.24343792695125835,
+        "active_MSE": 0.2513943210296375,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.16690106658044332,
+        "MSE": 0.24556176393698964,
+        "active_MSE": 0.25372230271761564,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "all",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.17100880222767553,
+        "MSE": 0.24343792695125835,
+        "active_MSE": 0.2513943210296375,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.17224255289209514,
+        "MSE": 0.2437446019815525,
+        "active_MSE": 0.2518177413876133,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "all",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.17100880222767553,
+        "MSE": 0.24343792695125835,
+        "active_MSE": 0.2513943210296375,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.16161141190119854,
+        "MSE": 0.24502424098749453,
+        "active_MSE": 0.2530399035020585,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "all",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.17100880222767553,
+        "MSE": 0.24343792695125835,
+        "active_MSE": 0.2513943210296375,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.17228007778431356,
+        "MSE": 0.2435122928129982,
+        "active_MSE": 0.2515543384244337,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "shared",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.20023902381948455,
+        "MSE": 0.12976441596580485,
+        "active_MSE": 0.13037208996958974,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.197632473012848,
+        "MSE": 0.1297523250578133,
+        "active_MSE": 0.1303710758386767,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "shared",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.20023902381948455,
+        "MSE": 0.12976441596580485,
+        "active_MSE": 0.13037208996958974,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.20287534972456917,
+        "MSE": 0.1287769475735179,
+        "active_MSE": 0.12937835754309526,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "shared",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.20023902381948455,
+        "MSE": 0.12976441596580485,
+        "active_MSE": 0.13037208996958974,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.19205359657500237,
+        "MSE": 0.1305359523686371,
+        "active_MSE": 0.13116614976634935,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "shared",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.20023902381948455,
+        "MSE": 0.12976441596580485,
+        "active_MSE": 0.13037208996958974,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.20296374701498696,
+        "MSE": 0.12879144368111745,
+        "active_MSE": 0.12939200403679993,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "unseen",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.12862498091955243,
+        "MSE": 0.40826451788016593,
+        "active_MSE": 0.40990518227706374,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.12234052725345651,
+        "MSE": 0.41348545031179534,
+        "active_MSE": 0.4152836046143382,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "unseen",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.12862498091955243,
+        "MSE": 0.40826451788016593,
+        "active_MSE": 0.40990518227706374,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.12782499748500775,
+        "MSE": 0.41044770087320276,
+        "active_MSE": 0.4121847418453154,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "unseen",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.12862498091955243,
+        "MSE": 0.40826451788016593,
+        "active_MSE": 0.40990518227706374,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.11747024412418301,
+        "MSE": 0.4110322594848378,
+        "active_MSE": 0.4126660606047054,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 2026,
+      "group": "unseen",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.12862498091955243,
+        "MSE": 0.40826451788016593,
+        "active_MSE": 0.40990518227706374,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.1277887573998372,
+        "MSE": 0.40985752405422526,
+        "active_MSE": 0.41155846879096125,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "all",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.17031271306370008,
+        "MSE": 0.24335717102221824,
+        "active_MSE": 0.25130775097330266,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.16752423427870058,
+        "MSE": 0.24527726765637736,
+        "active_MSE": 0.25340381294239006,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "all",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.17031271306370008,
+        "MSE": 0.24335717102221824,
+        "active_MSE": 0.25130775097330266,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.170644867245669,
+        "MSE": 0.24351818484874424,
+        "active_MSE": 0.25155865566204194,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "all",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.17031271306370008,
+        "MSE": 0.24335717102221824,
+        "active_MSE": 0.25130775097330266,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.1613028852938168,
+        "MSE": 0.24510372706841912,
+        "active_MSE": 0.2531386753540574,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "all",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.17031271306370008,
+        "MSE": 0.24335717102221824,
+        "active_MSE": 0.25130775097330266,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      },
+      "model": {
+        "r": 0.17109220167916192,
+        "MSE": 0.24354363838967436,
+        "active_MSE": 0.25159230367157365,
+        "active_points": 2866799,
+        "people": 49,
+        "blocks": 752
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "shared",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.19956827269229063,
+        "MSE": 0.12985292066148785,
+        "active_MSE": 0.13046930047691455,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.19853393674492986,
+        "MSE": 0.1297025208344187,
+        "active_MSE": 0.13030403870939444,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "shared",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.19956827269229063,
+        "MSE": 0.12985292066148785,
+        "active_MSE": 0.13046930047691455,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.20124847526768663,
+        "MSE": 0.12890640122447333,
+        "active_MSE": 0.1295170630855371,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "shared",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.19956827269229063,
+        "MSE": 0.12985292066148785,
+        "active_MSE": 0.13046930047691455,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.19137067612403566,
+        "MSE": 0.1304760949656884,
+        "active_MSE": 0.13109261354754848,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "shared",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.19956827269229063,
+        "MSE": 0.12985292066148785,
+        "active_MSE": 0.13046930047691455,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      },
+      "model": {
+        "r": 0.20160826349262861,
+        "MSE": 0.12888637449757864,
+        "active_MSE": 0.12949692827206669,
+        "active_points": 1625635,
+        "people": 29,
+        "blocks": 429
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "unseen",
+      "epoch": 0,
+      "variant": "B",
+      "anchor": {
+        "r": 0.12789215160224374,
+        "MSE": 0.4079383340452773,
+        "active_MSE": 0.4095779025992729,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.12256016570266816,
+        "MSE": 0.4128606505482174,
+        "active_MSE": 0.4146357705928343,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "unseen",
+      "epoch": 0,
+      "variant": "S",
+      "anchor": {
+        "r": 0.12789215160224374,
+        "MSE": 0.4079383340452773,
+        "active_MSE": 0.4095779025992729,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.12626963561374338,
+        "MSE": 0.40970527110393706,
+        "active_MSE": 0.4114046424519475,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "unseen",
+      "epoch": 19,
+      "variant": "B",
+      "anchor": {
+        "r": 0.12789215160224374,
+        "MSE": 0.4079383340452773,
+        "active_MSE": 0.4095779025992729,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.11770458858999949,
+        "MSE": 0.4113137936173787,
+        "active_MSE": 0.4129905157916015,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    },
+    {
+      "seed": 31415,
+      "group": "unseen",
+      "epoch": 19,
+      "variant": "S",
+      "anchor": {
+        "r": 0.12789215160224374,
+        "MSE": 0.4079383340452773,
+        "active_MSE": 0.4095779025992729,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      },
+      "model": {
+        "r": 0.12684391204963524,
+        "MSE": 0.40979667103321316,
+        "active_MSE": 0.4115087334001006,
+        "active_points": 1241164,
+        "people": 20,
+        "blocks": 323
+      }
+    }
+  ],
+  "original_block_metadata_sha256": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+  "independently_checked_blocks": 20970,
+  "comparisons": [
+    {
+      "seed": 1024,
+      "epoch": 0,
+      "group": "all",
+      "B_minus_fold_anchor": -0.005426747031029133,
+      "S_minus_fold_anchor": -0.0004345668116332302,
+      "B_minus_S": -0.004992180219395903,
+      "B_minus_full_strong_anchor": -0.011897384166218439,
+      "B_delta_change": 0.0015016614027908437
+    },
+    {
+      "seed": 1024,
+      "epoch": 19,
+      "group": "all",
+      "B_minus_fold_anchor": -0.010982026376222809,
+      "S_minus_fold_anchor": 0.0001504486486180734,
+      "B_minus_S": -0.011132475024840882,
+      "B_minus_full_strong_anchor": -0.017452663511412114,
+      "B_delta_change": 0.0026980278090366905
+    },
+    {
+      "seed": 1024,
+      "epoch": 0,
+      "group": "shared",
+      "B_minus_fold_anchor": -0.004622688150277138,
+      "S_minus_fold_anchor": 0.0009366280453093623,
+      "B_minus_S": -0.0055593161955865,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 1024,
+      "epoch": 19,
+      "group": "shared",
+      "B_minus_fold_anchor": -0.01101148065512736,
+      "S_minus_fold_anchor": 0.0013894781158427238,
+      "B_minus_S": -0.012400958770970083,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 1024,
+      "epoch": 0,
+      "group": "unseen",
+      "B_minus_fold_anchor": -0.006592632408119525,
+      "S_minus_fold_anchor": -0.002422799354199978,
+      "B_minus_S": -0.004169833053919547,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 1024,
+      "epoch": 19,
+      "group": "unseen",
+      "B_minus_fold_anchor": -0.010939317671811222,
+      "S_minus_fold_anchor": -0.0016461440788576587,
+      "B_minus_S": -0.009293173592953563,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 2026,
+      "epoch": 0,
+      "group": "all",
+      "B_minus_fold_anchor": -0.0041077356472322135,
+      "S_minus_fold_anchor": 0.0012337506644196083,
+      "B_minus_S": -0.005341486311651822,
+      "B_minus_full_strong_anchor": -0.014855053109772393,
+      "B_delta_change": 0.0020005507599360206
+    },
+    {
+      "seed": 2026,
+      "epoch": 19,
+      "group": "all",
+      "B_minus_fold_anchor": -0.00939739032647699,
+      "S_minus_fold_anchor": 0.0012712755566380296,
+      "B_minus_S": -0.01066866588311502,
+      "B_minus_full_strong_anchor": -0.02014470778901717,
+      "B_delta_change": 0.004767186024520892
+    },
+    {
+      "seed": 2026,
+      "epoch": 0,
+      "group": "shared",
+      "B_minus_fold_anchor": -0.0026065508066365484,
+      "S_minus_fold_anchor": 0.0026363259050846133,
+      "B_minus_S": -0.005242876711721162,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 2026,
+      "epoch": 19,
+      "group": "shared",
+      "B_minus_fold_anchor": -0.00818542724448218,
+      "S_minus_fold_anchor": 0.0027247231955024043,
+      "B_minus_S": -0.010910150439984584,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 2026,
+      "epoch": 0,
+      "group": "unseen",
+      "B_minus_fold_anchor": -0.006284453666095924,
+      "S_minus_fold_anchor": -0.0007999834345446821,
+      "B_minus_S": -0.005484470231551242,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 2026,
+      "epoch": 19,
+      "group": "unseen",
+      "B_minus_fold_anchor": -0.011154736795369422,
+      "S_minus_fold_anchor": -0.0008362235197152401,
+      "B_minus_S": -0.010318513275654181,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 31415,
+      "epoch": 0,
+      "group": "all",
+      "B_minus_fold_anchor": -0.002788478784999493,
+      "S_minus_fold_anchor": 0.00033215418196891333,
+      "B_minus_S": -0.0031206329669684063,
+      "B_minus_full_strong_anchor": -0.01585067054087244,
+      "B_delta_change": 0.0023701824859538034
+    },
+    {
+      "seed": 31415,
+      "epoch": 19,
+      "group": "all",
+      "B_minus_fold_anchor": -0.009009827769883266,
+      "S_minus_fold_anchor": 0.000779488615461843,
+      "B_minus_S": -0.00978931638534511,
+      "B_minus_full_strong_anchor": -0.022072019525756215,
+      "B_delta_change": 0.0031065038578250437
+    },
+    {
+      "seed": 31415,
+      "epoch": 0,
+      "group": "shared",
+      "B_minus_fold_anchor": -0.0010343359473607705,
+      "S_minus_fold_anchor": 0.0016802025753960004,
+      "B_minus_S": -0.002714538522756771,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 31415,
+      "epoch": 19,
+      "group": "shared",
+      "B_minus_fold_anchor": -0.008197596568254972,
+      "S_minus_fold_anchor": 0.002039990800337982,
+      "B_minus_S": -0.010237587368592954,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 31415,
+      "epoch": 0,
+      "group": "unseen",
+      "B_minus_fold_anchor": -0.005331985899575578,
+      "S_minus_fold_anchor": -0.001622515988500356,
+      "B_minus_S": -0.003709469911075222,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    },
+    {
+      "seed": 31415,
+      "epoch": 19,
+      "group": "unseen",
+      "B_minus_fold_anchor": -0.010187563012244244,
+      "S_minus_fold_anchor": -0.001048239552608493,
+      "B_minus_S": -0.009139323459635751,
+      "B_minus_full_strong_anchor": null,
+      "B_delta_change": null
+    }
+  ],
+  "summary": {
+    "B_minus_fold_anchor": {
+      "mean": -0.0069520343226406505,
+      "positive_fixed_seed_epoch_pairs": 0,
+      "total": 6
+    },
+    "S_minus_fold_anchor": {
+      "mean": 0.0005554251425788729,
+      "positive_fixed_seed_epoch_pairs": 5,
+      "total": 6
+    },
+    "B_minus_S": {
+      "mean": -0.007507459465219524,
+      "positive_fixed_seed_epoch_pairs": 0,
+      "total": 6
+    },
+    "B_minus_full_strong_anchor": {
+      "mean": -0.017045416440508127,
+      "positive_fixed_seed_epoch_pairs": 0,
+      "total": 6
+    },
+    "B_delta_change": {
+      "mean": 0.002740685390010549,
+      "positive_fixed_seed_epoch_pairs": 6,
+      "total": 6
+    }
+  },
+  "actual_counters": {
+    "encoder_windows": 170634,
+    "encoder_batches": 2673,
+    "anchor_score_points": 16047381,
+    "current_stem_points": 64189524,
+    "context_output_points": 64189524,
+    "downstream_active_points": 64189524,
+    "logical_fold_readout_routes": 36
+  },
+  "new_neural_forward": 0,
+  "new_signal_arrays": 0,
+  "new_fits": 0,
+  "CPU_seconds": 0.426748927,
+  "wall_seconds": 0.4276203913614154,
+  "scope": "Independent aggregation of all fixed D25 scalar record/fold results and verification of frozen identities. Does not replace bounded functional checks of encoder, readout or block scoring.",
+  "scientific_limitations": [
+    "Repeated development VAL; no independent confirmation or ICML/NeurIPS-level completion.",
+    "Same weights evaluated at fixed epochs 0 and 19, without selection or fallback.",
+    "B/S have different function classes and parameter counts.",
+    "Fold models differ from full-TRAIN models in fit data and prediction strength; source mismatch is not uniquely identified.",
+    "A gain over a weaker fold anchor is not by itself a gain over the strong full-TRAIN baseline."
+  ]
+}

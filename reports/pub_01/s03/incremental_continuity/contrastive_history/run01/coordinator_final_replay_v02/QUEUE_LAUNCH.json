@@ -1,0 +1,23 @@
+{
+  "process": [
+    1820067,
+    1012,
+    791745669
+  ],
+  "command": [
+    "/usr/bin/taskset",
+    "-c",
+    "44-47",
+    "/home/fanyu/.conda/envs/auditory_m6a_public_001/bin/python",
+    "-B",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/coordinator_final_replay_v02/COORDINATOR_REPLAY_QUEUE.py"
+  ],
+  "source_hashes": {
+    "COORDINATOR_FINAL_REPLAY.py": "81734e974351a33a6c1d91c47379ce5efd5d1b75b847a0038a7cac47f9f53705",
+    "COORDINATOR_FINAL_REPLAY_PLAN.md": "fcd4867ff5ce92e7ae04e3068d54c06010e05de49c2b06abd2a1b69a95e42155",
+    "COORDINATOR_REPLAY_QUEUE.py": "9858411daba7d8072fc4d1277b4eb61c6339e190b835d33f703cfc9da452f9d7"
+  },
+  "prior_failure_preserved": true,
+  "new_training_or_fit": false,
+  "server_utc": "2026-11-06T18:36:51Z"
+}

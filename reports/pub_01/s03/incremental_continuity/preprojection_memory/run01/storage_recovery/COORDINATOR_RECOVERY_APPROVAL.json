@@ -1,0 +1,35 @@
+{
+  "approved_for_migration_and_recovery_freeze": true,
+  "decision_id": "D18_STORAGE_RECOVERY_01",
+  "canonical_home_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "verified_SATA_copy": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "preserved_home_backup": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103_home_backup_formal_attempt01",
+  "actual_files_verified": 131,
+  "bytes_verified": 33319215,
+  "all_contents_sizes_mtime_ns_equal": true,
+  "tree_fingerprint_sha256": "827cb9a91f0835f5470fb836c478869a1e37f22307b146f44a4dfe287e587d01",
+  "backup_manifest_sha256": "26d3bc34084a621a7ea0017074ed2827f018cf824fc54d77c306e07e40be8858",
+  "backup_receipt_sha256": "bbd6544cf4ac9f7f1fbe07314c01a9c363954dd1c40e20c45787a46267311a90",
+  "old_protocol_sha256": "71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367",
+  "only_source_change_authorized": "Queue clock preserves original absolute24h deadline; scientific/model/train/data/metric/runtime source byte-identical.",
+  "writer_policy": "Canonical ROOT follows SATA symlink;20GiB floor applies to physical SATA output volume. Home is readonly source/provenance, not claimed to have20GiB free.",
+  "absolute_deadline_unix": 1793726963.790547,
+  "storage_upper_with_retained_attempt_bytes": 643174935,
+  "cumulative_formal_update_bounds": [
+    988200,
+    988300
+  ],
+  "cumulative_formal_target_presentations_bounds": [
+    63238326,
+    63244726
+  ],
+  "restart_reason": "Actual shared-home free-space guard failure; no complete optimizer/RNG state. New clean frozen12fit matrix; preserve2interrupted attempts; never select or initialize from partial checkpoints.",
+  "no_new_engineering_NN": true,
+  "new_NN": 0,
+  "new_backward": 0,
+  "new_updates": 0,
+  "no_permanent_deletion": true,
+  "final_execution_review_must_bind_actual_new_protocol_sha": true,
+  "time_unix": 1793643484.592714,
+  "goal_complete": false
+}

@@ -1,0 +1,28 @@
+{
+  "reviewer": "root scientific coordinator",
+  "review_time_remote": 1793512899.3318236,
+  "source_sha256": "0182fb055b7d684026ad3a21d13d715e70e7cd952831b42c436bcd6a4f54a410",
+  "protocol_sha256": "22bdfb1c0ed22f40930d906c0748a07b016fb956068a40c4a75bc6f1077b7a8b",
+  "source_pins_actually_matched": 17,
+  "technical_scope": "Static scientific implementation and bounded engineering evidence; not final outcomes review",
+  "status": "PASS_WITH_LIMITATIONS_CONTINUE_FIXED_MATRIX",
+  "checked": [
+    "All6arms/time supports and fixed first4window P fallback",
+    "TRAINonly affine calibration, normalization and PCA48",
+    "centered float64 multivariate ridge and exact PCA moment transformation",
+    "shared lambda selected across3seeds; zeroresidual incumbent; no extra search or TEST/DTU",
+    "actual seed1024 originalP VAL60s matches0; affine invariance max2.22e-16",
+    "source SHA, actual PID521141, GPU500MiB and RSS5.50GiB at snapshot; BLAS/OMP/MKL limits8",
+    "17 immutable source SHA checks"
+  ],
+  "accepted_supplement": "Executor supplies read-only sidecar target input fingerprints/shape/record lengths, resource and stage costs; added during run, not retrospectively claimed prefrozen; no modification/restart of frozen source/fits",
+  "limitations": [
+    "Final54solutions and full metrics not yet reviewed",
+    "source-level target-payload fingerprints and GPUassert absent; actual sidecar supplements with timing disclosed",
+    "exact separate solve versus scoring time not independently recorded; combined timings retained",
+    "conditional additive linear probe, no claim about all nonlinear state interactions",
+    "VAL reused for selection/report, not independent confirmation; nominal dimensional equality is not rank equality"
+  ],
+  "new_experiments_authorized": "Only fixed3seeds6arms3lambda=54 under existing PLAN",
+  "goal_achieved": false
+}

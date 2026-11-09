@@ -1,0 +1,78 @@
+{
+  "epoch": 1793482118.7746336,
+  "native_pretrain_epochs": [
+    24,
+    27,
+    26,
+    24,
+    25
+  ],
+  "native_heads_complete": 5,
+  "screen_cells_complete": 24,
+  "FT": {
+    "1024": {
+      "seed": 1024,
+      "epochs": 5,
+      "updates": 19725,
+      "selected_epoch": 4,
+      "initial_validation_negative_Pearson": -0.14876086750479994,
+      "best_validation_negative_Pearson": -0.15707376345259244,
+      "target_window_presentations": 1262270,
+      "validation_passes_including_incumbent": 6,
+      "seconds": 3257.197015762329,
+      "peak_GPU_bytes": 2512312320,
+      "registered_trainable_parameters": 3372617,
+      "all_extra_costs_separate": true,
+      "test_read": false,
+      "protocol_sha256": "b6482614c37df9dc80b4a658d31888d8608bf9587f7cd332389e9c4d3e48da6f"
+    },
+    "2026": {
+      "in_progress": {
+        "epoch": 2,
+        "updates": 11200,
+        "samples_epoch": 211840,
+        "seconds": 2248.2674055099487
+      }
+    },
+    "31415": {
+      "seed": 31415,
+      "epochs": 5,
+      "updates": 19725,
+      "selected_epoch": 4,
+      "initial_validation_negative_Pearson": -0.1519646189632963,
+      "best_validation_negative_Pearson": -0.16060895846124557,
+      "target_window_presentations": 1262270,
+      "validation_passes_including_incumbent": 6,
+      "seconds": 3225.6097860336304,
+      "peak_GPU_bytes": 2512312320,
+      "registered_trainable_parameters": 3372617,
+      "all_extra_costs_separate": true,
+      "test_read": false,
+      "protocol_sha256": "b6482614c37df9dc80b4a658d31888d8608bf9587f7cd332389e9c4d3e48da6f"
+    },
+    "42": {
+      "in_progress": {
+        "epoch": 2,
+        "updates": 10500,
+        "samples_epoch": 167040,
+        "seconds": 2152.5920140743256
+      }
+    },
+    "12345": {
+      "in_progress": {
+        "epoch": 2,
+        "updates": 10500,
+        "samples_epoch": 167040,
+        "seconds": 2152.50675368309
+      }
+    }
+  },
+  "EMA_tau": 0,
+  "full_controller": {
+    "stage": "WAIT_ALL54_SCREEN",
+    "missing_cells": 30,
+    "time": 1793482100.7201521
+  },
+  "real_final_checkpoint_manifest_exists": false,
+  "test_or_external_NN_scores_produced": false
+}

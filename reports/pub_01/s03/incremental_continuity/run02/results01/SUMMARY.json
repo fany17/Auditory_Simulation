@@ -1,0 +1,315 @@
+{
+  "time": 1793510062.7195828,
+  "protocol_sha256": "a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8",
+  "report_source_sha256": "cfada5926062167261d4ee7a7c03284901509cf9210c06c64e4dc1e23dbc3a35",
+  "inputs": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed1024/completed.json": "18105e82d8c8f56a3ab21b219a75896f633224e647f93cff4ad8a1973d14d3bb",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed1024/history.json": "e3a451c5330959ae0339c9b3daac43ed55e9bb686117354284c5d4b5ff5d159e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed1024/INCUMBENT_VALIDATION.json": "f2827bb57af8d1980e207110ebe5c381670f12a99d27f53df72f7186af1a6c54",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed1024/SELECTED_VALIDATION.json": "180c4954a022972644928837f0865d41ab7eb9b3e83c006f66aee443318c4aee",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed1024/resolved_config.json": "ce9633b3bebd98397f6b71c765bcdaa30abd1c210d3aeb63ec252dcdab05e1ad",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed2026/completed.json": "7a2973315335100d749528065f4efa4f2a48f0483d4996dadc1ce07e7f2250e7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed2026/history.json": "43e8bc159071d544a8d3ef5199f688dcc29037f9c1f59523a9c42fd59d003c51",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed2026/INCUMBENT_VALIDATION.json": "4eb7ac6ecc3d3aec5b0659138ff1f458d175187c68e869dbdc00ba4442e8a9b4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed2026/SELECTED_VALIDATION.json": "4dcce92935a12fd4c06aead7900e232c856cb2bd5c5ac4140e51ad678f3dd984",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed2026/resolved_config.json": "355da0dffa75246b13b14d3d25393bed8e1cfd4a6659ff369bfabe8890d461ca",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed31415/completed.json": "a64c5ad6d14b3a0133365d1f5e5c0b91bca080b3ae1a41bd6b1b7f4027117b45",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed31415/history.json": "10f9d1d4908c79bbc238f839879b6a223dde9ae314382c4a7879d9b67af01229",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed31415/INCUMBENT_VALIDATION.json": "e06bb1d85793f8812878cb992b7701969266a5bac883bf5c47c30508c693f1fd",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed31415/SELECTED_VALIDATION.json": "45857b346a5f8984cbe7f5997c1f8b5fa17ca9882b50edbbaa48224094c0cbc5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_p_seed31415/resolved_config.json": "4bbc41899bbeb2cfafe348fb730dc3a3fca58c236875de7b12dd1a527b737e6f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed1024/completed.json": "d4e36a085f091b45b57ed3804531816ae748367a93254e23ce130cce6550f970",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed1024/history.json": "8bb2c52ba38853fee017c123e6d6c53f34372d157ff869faec424872cf2f572d",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed1024/INCUMBENT_VALIDATION.json": "f2827bb57af8d1980e207110ebe5c381670f12a99d27f53df72f7186af1a6c54",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed1024/SELECTED_VALIDATION.json": "37eb1887c3d237b8d2da16d024b4a64ae27598de83ab9b1018cdbfb747947813",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed1024/resolved_config.json": "dbf46d7d3ff66164ef9d67bda6f14fa8138e968fe6b45f67495931cbb6066994",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed2026/completed.json": "f37edf146ffc71369c8f81cf01b950f4631611c1b0a8f3f7b1349c9114f4b471",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed2026/history.json": "233d38c5cc942815382c3c98cc4830728aad6dba98c9fd1114fb249b671643f1",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed2026/INCUMBENT_VALIDATION.json": "4eb7ac6ecc3d3aec5b0659138ff1f458d175187c68e869dbdc00ba4442e8a9b4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed2026/SELECTED_VALIDATION.json": "eb892e61604719f06c9a59662d8eca77e36eeca84bdf35635f5a730b98cfb0b2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed2026/resolved_config.json": "5a373b7884d89b6815222375cd0b0528c1f150caeeb7412d6f17230594ef13e9",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed31415/completed.json": "4fca991f1d2aa5129850564e5e8caaf62015525aa9a5ae2d0d1ae06f486465ba",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed31415/history.json": "b755badc8e52b9ddbd37fc27fb4aec595174a57dc51af39ebc27b7d39a6207e8",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed31415/INCUMBENT_VALIDATION.json": "e06bb1d85793f8812878cb992b7701969266a5bac883bf5c47c30508c693f1fd",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed31415/SELECTED_VALIDATION.json": "030ebaf1503fb54b07bd85a5374c5c015f155262c31950c937124716f886cf76",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_current_seed31415/resolved_config.json": "eafda8d1f836797875a341021c732140152df1066ccb24bc6787f8bfe651c97f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed1024/completed.json": "5e4baabd5375fdbd7b73b37ff0229b0756db37ecfb1edad9ca279b47ae31436e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed1024/history.json": "c4193e8c19e952a6f74814fc1dc4869fea6b7d6eba61ab93203c2bbb432c252c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed1024/INCUMBENT_VALIDATION.json": "f2827bb57af8d1980e207110ebe5c381670f12a99d27f53df72f7186af1a6c54",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed1024/SELECTED_VALIDATION.json": "31ac4df9dbea9c6af5caa9332104b6ab190c00b1d30f20e86e3c205eada9ee2a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed1024/resolved_config.json": "5b96985c4bad337dab3312acc4578197b12d9ee16ad97c3f234f6fde9a24d641",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed2026/completed.json": "868fa70f557ea7177c0594ab104237e2b0d1671cda2782ca38cc0ca46b660380",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed2026/history.json": "9ac0b930dc2d9caf3c8c73641f98f67583d540f84e7b5a90d38f7983921c60be",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed2026/INCUMBENT_VALIDATION.json": "4eb7ac6ecc3d3aec5b0659138ff1f458d175187c68e869dbdc00ba4442e8a9b4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed2026/SELECTED_VALIDATION.json": "f2a213ead3d9a0a7101103e6689a2b2e3ee794630ae19444876b753a9cfe0f93",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed2026/resolved_config.json": "7fbc7bf977ee0944229f68cf9dcc066cd81844817ee1a5e8b83e672fc95bc47c",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed31415/completed.json": "983bdd0f688d2ee092bd3f26d074b80b7fc72c8757f9403613dcaabee53b4711",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed31415/history.json": "595bcbf79b2427d6e7f775726ef0e2513ef59bae51aba460041639834be79422",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed31415/INCUMBENT_VALIDATION.json": "e06bb1d85793f8812878cb992b7701969266a5bac883bf5c47c30508c693f1fd",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed31415/SELECTED_VALIDATION.json": "f603b6770d1991e837ec55bcec2b4f2605e3e51f7b8f02f27c6e88a931c3b46b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/frozen_past_seed31415/resolved_config.json": "52f7e08e7da13554d3f64fd7558d39b887fe6cd69e3d2119eb3794e6f2d60c0e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed1024/completed.json": "94f6c0e4ba54c0acbb1770fefcd6bbdb8cd118e6a5773fd350b64d28c4d365ca",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed1024/history.json": "89d4d929575111cf7638e55b9b8017f860cd5c4dfdfc23510c086ba68a68c3fe",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed1024/INCUMBENT_VALIDATION.json": "91620ebb61f6a8f2ee327312c6761df734360cd3c679ad9e31cd3a3a08f7b64b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed1024/SELECTED_VALIDATION.json": "123a506490a9d62e91b78a0876a0af6d22e04a8045a495cba561a1918a6de495",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed1024/resolved_config.json": "a223fc6df167b6bfca6384dd76faabb9d685574e7af218c8fe54325f874abdb5",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed2026/completed.json": "2302a4a916446e0991f6dd0956e59f8c704b64a8ebf49a0e66db3e1403e6da77",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed2026/history.json": "2fba435749b0ccc72b02dbdc093053266eff98630010e620a7b0c58cf7c01794",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed2026/INCUMBENT_VALIDATION.json": "46ebbea847b5dc17dec868ef192d492a16426ebeaf3c7a6f164f90789f4b861e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed2026/SELECTED_VALIDATION.json": "892f34f85ac83423655f37f32c17f55bf9e33a82b63ff43bcadf17a37b021dd4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed2026/resolved_config.json": "1bc6416f69267c9be0e745090710c0f9a5a61968a078a61d07816486a067ff34",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed31415/completed.json": "0f5f5e0476678d72e59b45991a5ebe8991e931c1ccdcc46cb116e5397440999e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed31415/history.json": "3481cd8df603572dadc4f5ef4e12705051f046336281cf6cdba4cac6a366cb57",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed31415/INCUMBENT_VALIDATION.json": "d17606539c32219b4b1de339ff462e2424c5d73d7a892df057883751cfd3cdac",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed31415/SELECTED_VALIDATION.json": "0755eacd0635c7c5ede524030ffaa555cf4bcc18ced1c1ca12dae19b8251ddbe",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_p_seed31415/resolved_config.json": "2c9fab2b3b75ce8cf5ef0ac2a76848568e1c1de2f8ad817427e996d3a70853c6",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed1024/completed.json": "fd11f6b3fd297b26703cf42e601a0059de41a485945c9e18cda1b583711014de",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed1024/history.json": "dd51b8186545f7a3714d16793d05da473aaa40855d0aa43fc30997a0e33b45b4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed1024/INCUMBENT_VALIDATION.json": "91620ebb61f6a8f2ee327312c6761df734360cd3c679ad9e31cd3a3a08f7b64b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed1024/SELECTED_VALIDATION.json": "27dfa53e66ad1541c1ca39757056d499b4fd802d4e511575ede576c61b3f87aa",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed1024/resolved_config.json": "65f3b3c3c1dbaa6cea2bce90eb185ec88661cc11f23a1d59f69452c14d76a462",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed2026/completed.json": "5cd8abe79ab04a18e2032164d003e0656b65f775cb05bb3f99751d9e820a2d22",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed2026/history.json": "7722e15d9897e047f5f631141316b62e83c8746bc1dd5881bb8c2acd4111a4fc",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed2026/INCUMBENT_VALIDATION.json": "46ebbea847b5dc17dec868ef192d492a16426ebeaf3c7a6f164f90789f4b861e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed2026/SELECTED_VALIDATION.json": "087701d50d36eb1967747211a1b8249cb1c1bfdb3b6eafe704a3e5bcaeb70d4a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed2026/resolved_config.json": "2acb098a38e3c233d8ecb6d28765c928919e452b84675d6fe8416f32bd6bc024",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed31415/completed.json": "0a3ff91b3ab1928561327e742fddcf2a5427c52dfcd1e25a1347f36340e5fe49",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed31415/history.json": "6d1bb988d7f20c610046aabc4bae8e2555166b4188f88d91b03bf90c3fe9870e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed31415/INCUMBENT_VALIDATION.json": "d17606539c32219b4b1de339ff462e2424c5d73d7a892df057883751cfd3cdac",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed31415/SELECTED_VALIDATION.json": "b9844cdd81c71652719bd7afe19085897ccbe65440854baa99e8e0e9518f4c18",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_current_seed31415/resolved_config.json": "49906ab8f9c6dcc9f86fe66cdca70bcbd673b27b45c1e38120e59bb6ab0cc31f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed1024/completed.json": "d8beba7f193d0c2673dd8930677abd25a835f04ae8791fe510b482fcc2c1a47a",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed1024/history.json": "286503cccacc66a853c4c3669cf3e03d3fa620f5069293c46164fdbc85d79e1f",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed1024/INCUMBENT_VALIDATION.json": "91620ebb61f6a8f2ee327312c6761df734360cd3c679ad9e31cd3a3a08f7b64b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed1024/SELECTED_VALIDATION.json": "f2e3add768738a3dc825cd28aff138f438d1e282a5fc1aebe7633a7bf5f5bd21",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed1024/resolved_config.json": "817a4d4ca2cd1328b1084ec89aef91d0564e203bf00883fd4fac8b3b77d4ce4b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed2026/completed.json": "89c24244510f10c0a1cea9121f68ee891b5595d0cffd12649bf75e312a549632",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed2026/history.json": "6d3b601164ccc961d842454977fb3f5985681752d5096395c3ff18ec9096f8b4",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed2026/INCUMBENT_VALIDATION.json": "46ebbea847b5dc17dec868ef192d492a16426ebeaf3c7a6f164f90789f4b861e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed2026/SELECTED_VALIDATION.json": "aa633715bcb22abd545cc5370c2dc4f6485565ca26bac63da2f67c1a8a477bad",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed2026/resolved_config.json": "459e5c7eb8031334104212fb70e0eb21505754c7bfa0afe550fce3c7193d558b",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed31415/completed.json": "9f94d7f468aa33975ea1d3be3dd09ec4b848561f0ae54a3d8938c97f5b325b35",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed31415/history.json": "29331732b837afa08a9de2e6aeb302cae334ec3b68f762ca9b4ab43798ae7d73",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed31415/INCUMBENT_VALIDATION.json": "d17606539c32219b4b1de339ff462e2424c5d73d7a892df057883751cfd3cdac",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed31415/SELECTED_VALIDATION.json": "fad7acfef4f24dcf28fcebf75bfa0a25f17e92768a9d85fe29aa990cbb2e6abc",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_warm_20261101/fits/joint_past_seed31415/resolved_config.json": "42692d2b254fb6adbb38c044b7bf1ef11ef359c66078021e964b1597c3609924"
+  },
+  "cells": 18,
+  "seeds": [
+    1024,
+    2026,
+    31415
+  ],
+  "condition_means": [
+    {
+      "condition": "frozen_p",
+      "VAL3s_mean": 0.1490258817070169,
+      "VAL60s_mean": 0.1623683877843134,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "frozen_current",
+      "VAL3s_mean": 0.15044075250462757,
+      "VAL60s_mean": 0.16288808391931342,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "frozen_past",
+      "VAL3s_mean": 0.15006952283877492,
+      "VAL60s_mean": 0.16293255833904613,
+      "selected_epochs": [
+        4,
+        3,
+        4
+      ]
+    },
+    {
+      "condition": "joint_p",
+      "VAL3s_mean": 0.15830312469259636,
+      "VAL60s_mean": 0.17413993455804533,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "joint_current",
+      "VAL3s_mean": 0.15834915795222007,
+      "VAL60s_mean": 0.17410003205843483,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "condition": "joint_past",
+      "VAL3s_mean": 0.15802536182325394,
+      "VAL60s_mean": 0.17374024673869884,
+      "selected_epochs": [
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "paired_differences": [
+    {
+      "encoder_mode": "frozen",
+      "seed": 1024,
+      "contrast": "past_minus_continued_P",
+      "VAL3s_difference": 0.000692500412464131,
+      "VAL60s_difference": 0.0007435609695116141
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 1024,
+      "contrast": "past_minus_current",
+      "VAL3s_difference": -0.0003020680927839636,
+      "VAL60s_difference": -0.000413237896350227
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 1024,
+      "contrast": "past_minus_original_P_incumbent",
+      "VAL3s_difference": 0.0006951659048189673,
+      "VAL60s_difference": 0.0007487101816968378
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 2026,
+      "contrast": "past_minus_continued_P",
+      "VAL3s_difference": 0.001123939495594778,
+      "VAL60s_difference": 0.00021525803447816627
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 2026,
+      "contrast": "past_minus_current",
+      "VAL3s_difference": -0.0006393824962318828,
+      "VAL60s_difference": 0.0006945288485522005
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 2026,
+      "contrast": "past_minus_original_P_incumbent",
+      "VAL3s_difference": 0.0011288781713267027,
+      "VAL60s_difference": 0.0002224064117740121
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 31415,
+      "contrast": "past_minus_continued_P",
+      "VAL3s_difference": 0.00131448348721519,
+      "VAL60s_difference": 0.0007336926602084237
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 31415,
+      "contrast": "past_minus_current",
+      "VAL3s_difference": -0.00017223840854208028,
+      "VAL60s_difference": -0.00014786769300381697
+    },
+    {
+      "encoder_mode": "frozen",
+      "seed": 31415,
+      "contrast": "past_minus_original_P_incumbent",
+      "VAL3s_difference": 0.0013176560685282668,
+      "VAL60s_difference": 0.0007391020633382428
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 1024,
+      "contrast": "past_minus_continued_P",
+      "VAL3s_difference": -0.0008115397984864159,
+      "VAL60s_difference": -0.0010421013985399963
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 1024,
+      "contrast": "past_minus_current",
+      "VAL3s_difference": -0.0006211023780166025,
+      "VAL60s_difference": -0.0007366823730158845
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 1024,
+      "contrast": "past_minus_original_P_incumbent",
+      "VAL3s_difference": 0.007498392272190985,
+      "VAL60s_difference": 0.010632924163297863
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 2026,
+      "contrast": "past_minus_continued_P",
+      "VAL3s_difference": -0.00022407536721619215,
+      "VAL60s_difference": -0.00034242258206410026
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 2026,
+      "contrast": "past_minus_current",
+      "VAL3s_difference": -0.00039600579269596925,
+      "VAL60s_difference": -0.0002905500412183626
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 2026,
+      "contrast": "past_minus_original_P_incumbent",
+      "VAL3s_difference": 0.010663938210635882,
+      "VAL60s_difference": 0.013389599384858869
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 31415,
+      "contrast": "past_minus_continued_P",
+      "VAL3s_difference": 0.00020232655767535301,
+      "VAL60s_difference": 0.00018546052256465662
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 31415,
+      "contrast": "past_minus_current",
+      "VAL3s_difference": 4.571978381423536e-05,
+      "VAL60s_difference": -5.2123544973692315e-05
+    },
+    {
+      "encoder_mode": "joint",
+      "seed": 31415,
+      "contrast": "past_minus_original_P_incumbent",
+      "VAL3s_difference": 0.008846877046295859,
+      "VAL60s_difference": 0.010110758660967445
+    }
+  ],
+  "costs": {
+    "epochs": 90,
+    "updates": 355050,
+    "supervised_window_presentations": 22720860,
+    "target_time_sample_presentations": 4362405120,
+    "elapsed_seconds_sum": 10561.581091403961,
+    "validation_full_passes": 126,
+    "per_fit_elapsed_excludes_model_and_data_construction": true,
+    "queue_wall_seconds": 5880.1550116539,
+    "shared_upstream_training_reused_not_recounted_as_new": true,
+    "engineering_costs_separate": true
+  },
+  "review": {
+    "all_budgets_and_earliest_incumbent_selection_pass": true,
+    "saved_segment_to_person_max_difference": 0.0,
+    "selected_checkpoint_roles_and_hashes_verified": true,
+    "independent_raw_neural_replay": false
+  },
+  "scope": "source TRAIN_VAL_DEVELOPMENT only, no tests, no calibrated significance or generalization claim; row mode also changes dropout",
+  "numerical_boundary": "old/new P approx1e-8 differences are implementation rounding, not scientific gain",
+  "scientific_goal_achieved_claimed": false,
+  "new_fits_requested": false
+}

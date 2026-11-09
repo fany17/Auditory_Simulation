@@ -1,0 +1,22 @@
+{
+  "process": {
+    "pid": 1777664,
+    "uid": 1012,
+    "startticks": 791174579
+  },
+  "queue_sha256": "c3f2808e1bba5ac4dc2e352cff5f1d2fdf43851f769f90a25dd5e645cf4fc8f3",
+  "replay_source_sha256": "c3f748355121532ec4bf77bc9b990bd3803f25d105d185c903d0031b08e448a9",
+  "expected_original_D26": {
+    "pid": 1622219,
+    "uid": 1012,
+    "startticks": 790259158
+  },
+  "CPU_affinity": [
+    44,
+    45,
+    46,
+    47
+  ],
+  "no_GPU": true,
+  "no_new_fits": true
+}

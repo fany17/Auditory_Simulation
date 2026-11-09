@@ -1,0 +1,51 @@
+{
+  "decision": "PASS_FOR_ONE_FIXED_WEIGHT_DIAGNOSTIC",
+  "source_sha256": "451bcbeca20938406fe4319ebe0a3f1daf0eb1c1488a19f87b63dabb4941f72c",
+  "formal_gate_sha256": "e7b458165025059156804e1097dcf8994b8c9e0ac27b3f611d32d91fc842c93a",
+  "engineering_sha256": "45e2062581946d6feb9d46491c9e7fe0af47ac6a6cd86076c08c2d10a15df698",
+  "routing_review_sha256": "efd5e4785714d8ab86d6dc1fade4366d9695b04eb9c61e790939b5740a0f7e48",
+  "actual_identity_checks": {
+    "source_and_JSON": 105,
+    "fixed_checkpoints": 12,
+    "upstream_payloads": 18,
+    "VAL_stat_inputs": 54
+  },
+  "reviewed_paths": [
+    "native FT eval/no_grad and own-fold READOUT/norm",
+    "same-fold current/history inputs and additive anchor",
+    "same OOF TRAIN statistics, no fitting",
+    "fixed epoch0/19 actual recovery identities",
+    "original Hann first-four fallback and mask",
+    "block scores averaged within record over eligible folds before person average",
+    "actual current/context counters and state-independent observations",
+    "no old test or external access"
+  ],
+  "scope": "Root inspected actual V03 source and called helper sources, rehashed all frozen inputs, and read the actual bounded engineering receipt. Existing D24 full-chain independent audits retained. No new independent neural replay claimed by this review.",
+  "engineering_actual": {
+    "encoder_windows": 605,
+    "encoder_batches": 10,
+    "Hann_bridge_points": 3,
+    "current_stem_points": 227324,
+    "context_output_points": 227324
+  },
+  "formal_budget": {
+    "downstream_active_points": 64189524,
+    "full_VAL_equivalent_passes": 22.39066080321641,
+    "logical_fold_readout_routes": 36,
+    "new_fit_statistics": 0,
+    "new_fits": 0,
+    "old_test_and_external": 0,
+    "upstream_encoder_windows": 170634,
+    "upstream_encoder_fold_jobs": 9,
+    "upstream_encoder_minibatches": 2673
+  },
+  "scientific_limitations": [
+    "Repeated development VAL only",
+    "B/S architecture and fold-model strength differences remain",
+    "No checkpoint selection or positive-result-dependent extension",
+    "Source matching is a diagnostic, not a new continuous-history architecture"
+  ],
+  "execution_authorized": true,
+  "new_fit_authorized": false,
+  "created_unix": 1793971983.564137
+}

@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "source_sha256": "1bd999ec8d1e09bb3f7141f4ee9f8ab54ad8594f8bcf333c1d1c0ccf814e15f2",
+  "helper_sha256": "0113a30704b0fe2f13ae0e23aa53b2527afa29cfefc3c0c784789f384229cc64",
+  "protocol_sha256": "56f4be8214ec7b5402b1c6ea3e4ff2154f082150b95c30538743bd1fa170b3a2",
+  "checks": {
+    "comparisons": 48624,
+    "maximum_r_difference": 2.328201129109253e-07,
+    "maximum_other_difference": 4.353043774663057e-06
+  },
+  "failures": [],
+  "summaries": [
+    {
+      "seed": 1024,
+      "arm": "H_full",
+      "selected_epoch": -1,
+      "selected_r": 0.18188879428826335,
+      "last19_r": 0.17561520360450927,
+      "selected_state_sha256": "4fc6e765368cde7425b6dfb2b272e02b0e1edbc3999691f90a4280f940f79673",
+      "last_state_sha256": "2b229e106a57d3348f50d472ead9621a88fcdb12cecfd624faa153389eb12378"
+    },
+    {
+      "seed": 1024,
+      "arm": "C_match",
+      "selected_epoch": -1,
+      "selected_r": 0.18188879428826335,
+      "last19_r": 0.17608774768386762,
+      "selected_state_sha256": "4fc6e765368cde7425b6dfb2b272e02b0e1edbc3999691f90a4280f940f79673",
+      "last_state_sha256": "9f4dcc02d0e97799f4d8b1466129dc7bb75ec7b0c81388d9fd1581d5aaad29e1"
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prior",
+      "selected_epoch": -1,
+      "selected_r": 0.18188879428826335,
+      "last19_r": 0.17610303289540954,
+      "selected_state_sha256": "caef500a3a87b41ac373d1474e842906e621fa8ba4874eee56eab4113d8fb011",
+      "last_state_sha256": "a30deada1c1a65646454ccf33b70ca322e2e04b9b984e783a043232c3efd996d"
+    },
+    {
+      "seed": 2026,
+      "arm": "H_full",
+      "selected_epoch": 5,
+      "selected_r": 0.18187252098610762,
+      "last19_r": 0.17811444645895322,
+      "selected_state_sha256": "8cd8d96d37d0666e44e244ad38d342237c3e321ddc998436f1e13fa363469ca4",
+      "last_state_sha256": "2d16ef60e9184f1819ff97fe6e1ad2bcc4eab70c2368cbc53f0213189a73d114"
+    },
+    {
+      "seed": 2026,
+      "arm": "C_match",
+      "selected_epoch": -1,
+      "selected_r": 0.1817561196902157,
+      "last19_r": 0.17716132801632195,
+      "selected_state_sha256": "930d6cdf010343c2b4b02dcf9ffe0416f59ecbc638899c3db4a5ef22c0ef3ecc",
+      "last_state_sha256": "2ea29b51149a766d2239391d05f548f04d48ceb9800ca9134e9eb43aef7a5a1c"
+    },
+    {
+      "seed": 2026,
+      "arm": "P_prior",
+      "selected_epoch": 5,
+      "selected_r": 0.18200255334033563,
+      "last19_r": 0.17785265068024825,
+      "selected_state_sha256": "f951baf540e2ba355c864c4e8c430742df721cc5485e8102eed8a67a05c4ea3c",
+      "last_state_sha256": "ba6bc9c645f41cfe43eaa812799a390127127515b417029f6af1cdee316e7afe"
+    },
+    {
+      "seed": 31415,
+      "arm": "H_full",
+      "selected_epoch": -1,
+      "selected_r": 0.183374904819573,
+      "last19_r": 0.1770460739341716,
+      "selected_state_sha256": "6c794670337756c41e79915718d02c824ffb73486424e10e23a10e6297fc2eec",
+      "last_state_sha256": "1a9eb8b74a4fddb20aab30f26691799f2379c54084e05f291c1d119167401503"
+    },
+    {
+      "seed": 31415,
+      "arm": "C_match",
+      "selected_epoch": -1,
+      "selected_r": 0.183374904819573,
+      "last19_r": 0.17664250256875488,
+      "selected_state_sha256": "6c794670337756c41e79915718d02c824ffb73486424e10e23a10e6297fc2eec",
+      "last_state_sha256": "3b9875f1d4a947bcf83cffe75d7bbe8f3780cf4c12af4769abd3ecae54998181"
+    },
+    {
+      "seed": 31415,
+      "arm": "P_prior",
+      "selected_epoch": -1,
+      "selected_r": 0.183374904819573,
+      "last19_r": 0.17915748766198122,
+      "selected_state_sha256": "51665d27515b618d380fa3f1fbbea4592518293666cf80620c26af9a18878e82",
+      "last_state_sha256": "4d7fd82af88fffdd186399478990c3aa212a52e7b68d39445c6607a4feebe6fd"
+    }
+  ],
+  "all180_actual_permutation_logs_checked": 180,
+  "all180_existing_backward_gradient_logs_checked": 180,
+  "offline_TRAIN_aggregation_files": 45,
+  "selected_equals_last_reused": 0,
+  "cost": {
+    "residual_NN_window_forwards": 631239,
+    "new_encoder_head_forwards": 0,
+    "optimizer_updates": 0,
+    "actual_input_sha256_bytes": 0,
+    "CPU_seconds": 75.52517424,
+    "wall_seconds": 24.750539779663086,
+    "peak_RSS_KiB": 1172048,
+    "GPU_bytes": 0
+  },
+  "limits": [
+    "No second complete TRAIN neural forward for objective/window MSE/amplitude diagnostics",
+    "No replay of unretained intermediate epochs",
+    "Original repeatedly viewed VAL, not independent confirmation",
+    "Known input-token normalization is not architectural novelty"
+  ],
+  "goal_complete": false
+}

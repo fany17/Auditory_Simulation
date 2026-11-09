@@ -1,0 +1,12 @@
+# Preserve server evidence bytes and SHA256 identities across checkouts.
+/COMPLETED.json -text
+/COORDINATOR_SAVED_EVIDENCE_AUDIT.json -text
+/report01/* -text
+# Python CSV exports use CRLF; keep those bytes without treating CR as trailing space.
+/report01/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/resource_concurrency_v01/initial_1024_KERNEL_EXIT.json -text
+/resource_concurrency_v01/initial_2026_KERNEL_EXIT.json -text
+/resource_concurrency_v01/TERMINAL.json -text
+/resource_concurrency_v01/OLD_QUEUE_RETIRED.json -text
+/resource_concurrency_v01/READY_FINALIZE.json -text
+/resource_concurrency_v01/REPORT_WAITER_COMPLETED.json -text

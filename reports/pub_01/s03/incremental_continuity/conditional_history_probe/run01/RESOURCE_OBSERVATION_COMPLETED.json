@@ -1,0 +1,11 @@
+{
+  "time": 1793513150.7466404,
+  "samples": 53,
+  "last_observed_process_CPU_seconds": 2634.42,
+  "sample_peak_RSS_bytes": 6727946240,
+  "sample_peak_GPU_MiB": 500,
+  "observed_GPU_within_1GiB": true,
+  "target_inputs_unchanged_since_supplement": true,
+  "limitations": "Sampling begins after launch; not a complete continuous resource trace. CPU final sample is a lower bound when process exited between samples.",
+  "formal_completed": true
+}

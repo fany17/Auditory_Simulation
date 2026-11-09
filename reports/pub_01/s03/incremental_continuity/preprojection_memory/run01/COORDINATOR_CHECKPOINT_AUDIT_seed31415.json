@@ -1,0 +1,211 @@
+{
+  "seed": 31415,
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "fits": [
+    {
+      "arm": "H_history",
+      "seed": 31415,
+      "completed_sha256": "9c3595da49d3229ef3fdbb7acf31a25be359f747140d2a125b16d9a62a81490b",
+      "history_sha256": "e018d3fa3240d984e335949e9c4849cfc921dbeaf0c017ced70dda0c48eae1cb",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "210dee27909d723ea5666b667277017077f49ecd0db3736ad2b5958b49b99495",
+          "bytes": 13613599,
+          "epoch": 5,
+          "validation_r": 0.18437049237699174,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "a28023573461d18613a246f7c21f25b4d3e6c3fdce0270dbfdc4c723946e251d",
+          "bytes": 13611043,
+          "epoch": 19,
+          "validation_r": 0.18164422527320634,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 174
+    },
+    {
+      "arm": "C_current",
+      "seed": 31415,
+      "completed_sha256": "ea51c666822223c416cf73c4cb9be33c650a7c3ce3c97b7482aaa2b2c20b123d",
+      "history_sha256": "75f1ff8e3178a81d27d56eb061bc8c45f35939399e00ce0ddd20fe3d58775987",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "bea8afd304ce507218e2590731371b177cf8150c67f735d22bc0cf7e89cb8aea",
+          "bytes": 13613599,
+          "epoch": 5,
+          "validation_r": 0.18554321915585273,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "10499a00ae4cb59cdfcafcd05a66dab4481033df56b841939a3d7446fa27512b",
+          "bytes": 13611043,
+          "epoch": 19,
+          "validation_r": 0.1825874164751808,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 174
+    },
+    {
+      "arm": "T_continue",
+      "seed": 31415,
+      "completed_sha256": "5d99aed34cc734b63bbd907fb411fd9ef424ba9bd98d3a024b0ddf8adab78004",
+      "history_sha256": "e47dc56811d4a5199168181182a62df3b8d4f3a9b74bf5fe3a39f30a4b86ac5a",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "b421c1dba91593ee4ab2229e171df404eb498f335126f19a09faacc8ecb41d45",
+          "bytes": 13543511,
+          "epoch": 1,
+          "validation_r": 0.18469389988062496,
+          "parameter_tensors": 166,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3372617
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "164d6e2a35a384917c841dc391583e33ec6b6692392c771a178ae17932bfabb6",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "945c21a6a99f1559a81e4ad688037199265e309f8892fe0f30426993df3636b9",
+          "bytes": 13541043,
+          "epoch": 19,
+          "validation_r": 0.1838572209450276,
+          "parameter_tensors": 166,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3372617
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "164d6e2a35a384917c841dc391583e33ec6b6692392c771a178ae17932bfabb6",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 166
+    },
+    {
+      "arm": "P_prediction_history",
+      "seed": 31415,
+      "completed_sha256": "36faba6dfad5fbcd2492cdfd8e71c83fa568c4d389de0b9536ef799fd1d6f5ec",
+      "history_sha256": "5663f87663baa050b928055e4cb39a0fb567e59ed72c9d2d557ef99730e43abd",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "880885ff07c8923fc11d7414dfd2e17076f557e591343539353406d7dbc74d87",
+          "bytes": 13616753,
+          "epoch": 15,
+          "validation_r": 0.18461705752410226,
+          "parameter_tensors": 176,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896,
+            "prior_projection": 640
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3390153
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "bd8d5c1a2c73e2d79ef42941eafb5e43e980da4a0b01c092ff084727a188a119",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "b55b9f30699ca5c8011c9de73e55dc3706a0ebe2a952672421ef451de2667fa0",
+          "bytes": 13614175,
+          "epoch": 19,
+          "validation_r": 0.18280170844841356,
+          "parameter_tensors": 176,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896,
+            "prior_projection": 640
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3390153
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "bd8d5c1a2c73e2d79ef42941eafb5e43e980da4a0b01c092ff084727a188a119",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 176
+    }
+  ],
+  "audit_source_sha256": "5f1b6f1bfa6a8b164f6e75f0f7daae57f5894cb5746c864d45e39c867153c087",
+  "execution_host": "server2203",
+  "map_location": "cpu",
+  "weights_only": true,
+  "checkpoint_files_inspected": 8,
+  "dataset_arrays_read": 0,
+  "neural_forwards": 0,
+  "backwards": 0,
+  "optimizer_updates": 0,
+  "cuda_initialized": false,
+  "audit_CPU_seconds": 1.5002692389999999,
+  "audit_wall_seconds": 1.6097795963287354,
+  "audit_peak_RSS_KiB": 591284,
+  "timer_scope": "Includes torch import, reads/hashes, header/parameter/schema/finite/equality checks; no dataset or model execution",
+  "scope": "One completed seed: actual serialized checkpoint integrity and metadata only; no independent prediction or metric replay",
+  "goal_complete": false
+}

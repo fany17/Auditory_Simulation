@@ -1,0 +1,63 @@
+{
+  "workers": [
+    {
+      "seed": 1024,
+      "arm": "H_full",
+      "returncode": 0,
+      "pid": 1586000
+    },
+    {
+      "seed": 1024,
+      "arm": "C_match",
+      "returncode": 0,
+      "pid": 1586008
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prior",
+      "returncode": 0,
+      "pid": 1591762
+    },
+    {
+      "seed": 2026,
+      "arm": "H_full",
+      "returncode": 0,
+      "pid": 1591828
+    },
+    {
+      "seed": 2026,
+      "arm": "P_prior",
+      "returncode": 0,
+      "pid": 1598068
+    },
+    {
+      "seed": 2026,
+      "arm": "C_match",
+      "returncode": 0,
+      "pid": 1598060
+    },
+    {
+      "seed": 31415,
+      "arm": "H_full",
+      "returncode": 0,
+      "pid": 1603311
+    },
+    {
+      "seed": 31415,
+      "arm": "C_match",
+      "returncode": 0,
+      "pid": 1603727
+    },
+    {
+      "seed": 31415,
+      "arm": "P_prior",
+      "returncode": 0,
+      "pid": 1608817
+    }
+  ],
+  "wall_seconds": 1730.7780511379242,
+  "new_fits": 9,
+  "total_updates": 710100,
+  "goal_complete": false,
+  "independent_review_required": true
+}

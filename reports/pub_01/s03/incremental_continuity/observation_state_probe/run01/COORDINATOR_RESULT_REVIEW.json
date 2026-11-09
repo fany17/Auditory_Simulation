@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "stage": "PUB-01-S03_SS07_D11",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "reviewed_on": "2026-11-01",
+  "technical_validation": "PASS",
+  "bounded_probe_acceptance": "PASS_WITH_LIMITATIONS",
+  "parent_consistency": "PASS",
+  "scientific_candidate_status": "NOT_SUPPORTED_FOR_PREDEFINED_HISTORY_CONDITIONS",
+  "condition_met": false,
+  "goal_complete": false,
+  "protocol_sha256": "a238ed63fd5c050fd66e88c07cf5b998f3bd15690bbe989d609459c947cb5f11",
+  "numerical_scope_sha256": "ba327ea69e82b120746b5d4e32bbeb8cec6154e2fb826e796ed172f2a770e9c6",
+  "numerical_audit_sha256": "4103d153c297dcf04300cba24487b1f9dd203d3ad81be0a945ce9eb9e587b649",
+  "numerical_audit_source_sha256": "f2ce771988e6c58a4f48764557f2c8c3c3c65ddf2e6c0b4156efd71156c5a5be",
+  "report_sha256": "e4bd82b34ba633d6cece2c8d6f5ea54f050c9a55b80f072601de60e0d0f273eb",
+  "actual_review": [
+    "Full final PLAN and full core/run source, including D8 Gram scaling",
+    "Actual main completion and independent one-shot numerical audit",
+    "Full REPORT plus actual amended PCA scaling/final audit paragraphs",
+    "Full REVIEW",
+    "All3 actual PNG images",
+    "Secondary Past-Add CSV and existing F reference CSV/source hashes"
+  ],
+  "figures": [
+    {
+      "name": "01_COMPLETE_MATRIX.png",
+      "sha256": "cfb1f90aaa1c3e54dcade5ac7ed2c36a1e1f7ad30b2afeca9b7c726a8ed3ac5d"
+    },
+    {
+      "name": "02_FIXED_CONTRASTS.png",
+      "sha256": "a5ddccef1dc041641b1730f3b63a0a34c700ad7f81acca6ea29d33752333d8c9"
+    },
+    {
+      "name": "03_ERROR_AND_STATE.png",
+      "sha256": "1d960e057f965ff278661abdfe11140b58c2731484ab79e1549156b1526bb546"
+    }
+  ],
+  "numerical_evidence": {
+    "source_hashes_verified": 26,
+    "input_size_mtime_verified": 551,
+    "input_payloads_fully_rehashed": false,
+    "record_support_checks": 475,
+    "normal_equations": 15,
+    "normal_max_abs": 7.025630077706069e-17,
+    "intercept_max_abs": 0,
+    "raw_direct_state_cases": 60,
+    "raw_state_cache_max_abs": 1.1346611650253635e-7,
+    "cache_prediction_cases": 48,
+    "block_r_MSE_r3s_max_abs": 0,
+    "score_sets": 24,
+    "full_warm_cold_aggregation_max_abs": 0,
+    "all3_old_Ccap_VAL_bridges_max_abs": 0,
+    "cold_fallback_exact": true
+  },
+  "scientific_findings": {
+    "mean_VAL_r": {
+      "Ccap": 0.18233993959935071,
+      "Add": 0.1823557889731442,
+      "CurrentCov": 0.18195225330812156,
+      "RecordPrefix": 0.18261545142388466,
+      "PersonTRAIN": 0.18259542640847268,
+      "PastCov": 0.18206253243692017,
+      "PastOlder": 0.18253377885166225,
+      "PastNeutral": 0.18242328341495795,
+      "existing_F_full_only": 0.18387384265527906
+    },
+    "Past_minus_Ccap_mean": -0.00027740716243053926,
+    "Past_minus_Ccap_all3_negative": true,
+    "primary_contrasts": "Past-Ccap/RecordPrefix/PersonTRAIN/PastOlder/PastNeutral all negative in all3 seeds. Only Past-CurrentCov full positive in all3, warm only2of3.",
+    "secondary": "Past-Add full/warm negative all3; Past-existingF full negative all3. F references separately hash checked, no new F prediction.",
+    "metric_tradeoff": "Past fused MSE0.24183873708280124 improves upon Ccap0.24237888898863477 despite worse primary Pearson. Static references modestly improve Ccap r but do not exceed existing F.",
+    "scope": "Original TRAIN426/70people and repeated known-person VAL49/49people,752blocks,30500windows. No old test/DTU or independent confirmation."
+  },
+  "cost": {
+    "main_wall_seconds": 3023.156286239624,
+    "main_CPU_seconds": 11262.106785528002,
+    "peak_RSS_bytes": 2800222208,
+    "new_ridge_fits": 15,
+    "nofit_interventions": 6,
+    "new_NN_forwards": 0,
+    "new_NN_updates": 0,
+    "numeric_array_bytes": 101036740,
+    "all_SS07_NPY_bytes": 26270880224,
+    "independent_audit_wall_seconds": 3.2760326862335205,
+    "independent_audit_new_fits": 0,
+    "independent_audit_new_arrays": 0
+  },
+  "documentation_fix": "Unqualified no-whitening wording corrected: no64channel EEG covariance inverse/spatial whitening; PCA basis actually V/sqrt(eigenvalue) followed by TRAIN factor normalization. No scientific source or result changed.",
+  "limits": [
+    "Bounded PCA8/covariance/30s/fixed-ridge probe cannot exclude all historical information",
+    "Same nominal parameters not same effective df; temporal covariance estimation support differs",
+    "Known people and repeatedly used VAL with stimulus/source dependence",
+    "Published preprocessed EEG, historical derivative revision and physical synchronization unknown; not end-to-end causal",
+    "No measured-noise mechanism, isolated interaction proof, novelty claim or new independent generalization",
+    "Independent audit reused frozen upstream numerical caches;551 inputs checked by size/mtime, not all content rehashed"
+  ],
+  "actions": "Archive and commit/push this completed negative probe with full controls. Preserve old runs and no automatic test reopening or hyperparameter/model expansion. Existing broader scientific goal remains active; no ICML/NeurIPS readiness claim.",
+  "archive_status": "Executor may now finish archive; root will separately verify actual HTML and copied artifacts before final user delivery."
+}

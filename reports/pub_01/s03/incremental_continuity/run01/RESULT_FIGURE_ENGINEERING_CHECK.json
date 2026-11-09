@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "fixture_path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/engineering_history/synthetic_result_figures_7u77wyjt",
+  "rendering": {
+    "main_contrasts": [
+      "primary-native_P",
+      "primary-m3_current_h16",
+      "primary-static_m3_h16",
+      "primary-output_prior_h16",
+      "primary-P_EMA",
+      "primary-P_FT",
+      "primary-m3_reconstruct_h16"
+    ],
+    "main_M": 7,
+    "fixed_main_model_order": [
+      "native_P",
+      "P_EMA",
+      "P_FT",
+      "m3_h16",
+      "m3_current_h16",
+      "static_m3_h16",
+      "output_prior_h16",
+      "m3_reconstruct_h16"
+    ],
+    "exploratory_family_count": 5,
+    "history_missing_endpoints_preserved": [
+      "same_person_wrong_family"
+    ],
+    "main_seed_dots": 70,
+    "absolute_seed_dots": 80,
+    "separate_internal_external_comparison_families": true,
+    "no_new_fit_selection_interval_or_scientific_acceptance": true,
+    "figures": [
+      "01_MAIN_CONTRASTS.png",
+      "02_FIVE_FAMILY_EXPLORATORY.png",
+      "03_HISTORY_DIAGNOSTICS.png",
+      "04_ABSOLUTE_PER_SEED.png",
+      "05_SEARCH_COSTS.png"
+    ]
+  },
+  "source_summaries_unchanged": true,
+  "M6_rendering": {
+    "main_contrasts": [
+      "primary-native_P",
+      "primary-m2_current_h16",
+      "primary-static_m2_h16",
+      "primary-output_prior_h16",
+      "primary-P_EMA",
+      "primary-P_FT"
+    ],
+    "main_M": 6,
+    "fixed_main_model_order": [
+      "native_P",
+      "P_EMA",
+      "P_FT",
+      "m2_h16",
+      "m2_current_h16",
+      "static_m2_h16",
+      "output_prior_h16"
+    ],
+    "exploratory_family_count": 5,
+    "history_missing_endpoints_preserved": [
+      "same_person_wrong_family"
+    ],
+    "main_seed_dots": 60,
+    "absolute_seed_dots": 70,
+    "separate_internal_external_comparison_families": true,
+    "no_new_fit_selection_interval_or_scientific_acceptance": true,
+    "figures": [
+      "01_MAIN_CONTRASTS.png",
+      "02_FIVE_FAMILY_EXPLORATORY.png",
+      "03_HISTORY_DIAGNOSTICS.png",
+      "04_ABSOLUTE_PER_SEED.png",
+      "05_SEARCH_COSTS.png"
+    ]
+  },
+  "M6_and_M7_both_synthetic_paths_exercised": true,
+  "interval_outside_mean_retained_not_recentered": true,
+  "tau0_duplicate_contrast_retained": true,
+  "missing_history_stratum_not_plotted_as_zero_or_reweighted": true,
+  "rejected": [
+    "contrast_order_mismatch",
+    "tau0_alias_metric_changed",
+    "missing_main_seed",
+    "unaccounted_cost_stage"
+  ],
+  "premature_gated_or_renderer_calls": 0,
+  "no_actual_test_or_external_scores_loaded": true,
+  "source_sha256": {
+    "pub_01_s03_ss07_result_figures.py": "c6b60bb032538a54a55676f1c3337031285fe2e71f5b114642d2c0b4bd27b42f",
+    "pub_01_s03_ss07_result_figures_check.py": "4fa7406ce9c4c0e1e466c954512cf910ec883041ee59413b4578f15a328b1842"
+  }
+}

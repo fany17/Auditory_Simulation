@@ -1,0 +1,44 @@
+{
+  "frozen": true,
+  "time": 1793480014.2358854,
+  "incremental_protocol_sha256": "c0e1926097e2ca8b026b5f710fa6e6da4bff43bfabdc59662e1eead67fcecf45",
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema.py": "3f76d44ed808b80cb94402881cbacea9b2dbc5d11dbf232ac7edf27e27befdf7",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_strong_queue.py": "105595992cc628b400c927321bbd19655880f54a8f93fae3029e7967dee143c2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_history.py": "07dbced7ea1feb325b1d8e00298f27e96d105a8d4e14a0cc0d3c7b5e2a2b098e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_incremental.py": "39ce6973e8501e69b16639813f360b56460624cfb65b64170a049b5637d345e2",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train.py": "7d60a541d19e79828c3c30594e72eaa615e0ee4afdff876e2ff78fb84a41b37e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_baseline.py": "ed3a3ab9e4c3ae6b672bc4a0070f52746b866d5b3597b0ab6e4cc76dd83e4301",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2.py": "aaa4244289d6a0f2256a71b1208c61cb7a2f51d2632431349d75158352d3154e",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_queue_v2.py": "ae3f788ffa83c32436e7961e46cc1ae4e24c95f232c717762d0123399df2acbd",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_ema_v2_check.py": "62f08b8800cffca59fea4034433b7f7b140197e1d811c92c0b92ededff46ed0a"
+  },
+  "test_operations": false,
+  "seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "budget": {
+    "taus_seconds": [
+      0,
+      0.0625,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "where": "entire nativeP record prediction AFTER originalHann fusion; resetrecord/coveragegap",
+    "selection": "one tau by mean paired3 valmacro, exacttie smaller tau; lockbeforetest and reuse5seed",
+    "extra_NN_training": false
+  },
+  "incumbent_loss_absolute_tolerance": null,
+  "incumbent_epoch_minus1_eligible": false,
+  "additional_initial_validation_pass_disclosed": true,
+  "review": "coordinator independently reviewed source/check JSON; real incumbent guard required before updates",
+  "numerical_amendment_sha256": "adc9f2a96f177fc2068d674a1259261365053553df300372d6e6a4bf352cf3f2",
+  "real_weight_tau0_max_r_difference": 0,
+  "results_directory": "ema_validation_v2",
+  "required_old_sources_retained": true
+}

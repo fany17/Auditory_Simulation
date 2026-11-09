@@ -1,0 +1,107 @@
+{
+  "stages": [
+    {
+      "stage": "formal_nine_fits_including_prespecified_evaluation",
+      "NN": 59473248,
+      "optimizer_updates": 710100,
+      "fits": 9,
+      "CPU_seconds": 8852.713272681998,
+      "wall_seconds": 1015.8106248378754,
+      "wall_definition": "Concurrent queue elapsed, not worker elapsed sum",
+      "peak_RSS_KiB": 5124184,
+      "peak_GPU_allocated_bytes": 37188096
+    },
+    {
+      "stage": "original_v1_engineering",
+      "NN": 528,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 42.855459812999996,
+      "wall_seconds": 16.42221713066101,
+      "peak_RSS_KiB": 5172252,
+      "peak_GPU_allocated_bytes": 34527744
+    },
+    {
+      "stage": "minimal_independent_output_bridge",
+      "NN": 288,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 47.648009251000005,
+      "wall_seconds": 14.921778202056885,
+      "peak_RSS_KiB": 5117740,
+      "peak_GPU_allocated_bytes": 20024320
+    },
+    {
+      "stage": "evidence_refreeze_no_NN",
+      "NN": 0,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 0.16769426199999948,
+      "wall_seconds": 0.17588567733764648,
+      "peak_RSS_KiB": null,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "coordinator_independent_manual_neural_metrics_review",
+      "NN": 631239,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 75.52517424,
+      "wall_seconds": 24.750539779663086,
+      "peak_RSS_KiB": 1172048,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "JSON_only_tables_and_five_figures",
+      "NN": 0,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 7.099573218,
+      "wall_seconds": 5.334264755249023,
+      "peak_RSS_KiB": 184720,
+      "peak_GPU_allocated_bytes": 0
+    },
+    {
+      "stage": "JSON_only_cost_ledger",
+      "NN": 0,
+      "optimizer_updates": 0,
+      "fits": 0,
+      "CPU_seconds": 0.003574081,
+      "wall_seconds": 0.003607034683227539,
+      "peak_RSS_KiB": 12268,
+      "peak_GPU_allocated_bytes": 0,
+      "timer_scope": "Excludes final serialization and standard-library imports"
+    }
+  ],
+  "total_known_residual_NN": 60105303,
+  "formal_residual_NN": 59473248,
+  "engineering_residual_NN": 816,
+  "engineering_GPU_residual_NN": 672,
+  "engineering_manual_CPU_residual_NN": 144,
+  "independent_residual_NN": 631239,
+  "new_encoder_head": 0,
+  "total_learning_fits": 9,
+  "total_optimizer_updates": 710100,
+  "listed_instrumented_CPU_seconds": 9026.012757546996,
+  "resource": {
+    "time": 1793631217.7190542,
+    "root_bytes": 117469638,
+    "root_cap_bytes": 167772160,
+    "inflight_reserve_during_training": 29360128,
+    "home_free_bytes": 22663213056,
+    "sata_free_bytes": 178649985024,
+    "each_disk_reserve": 21474836480,
+    "checkpoint_files": 18,
+    "new_disk_arrays": [],
+    "transport_tar_in_root": false
+  },
+  "notes": [
+    "ENGINEERING_CHECK v2 top-level timing still describes original528 only; bridge288 and refreeze0 costs are separate actual measurements",
+    "Queue wall and worker CPU answer different questions; parallelism is not method compute reduction",
+    "CPU sum covers listed measured scopes, not SSH, approval waiting, source copying, local archive generation, process startup before timers or all administrative time",
+    "D15 storage estimate was inherited, not newly executed or counted as D16 compute",
+    "Identical parameter counts do not imply identical operator/FLOP costs; normalization adds arithmetic and changes the represented function",
+    "Historical D12/D13/D14/D15 costs remain provenance and are not relabeled as D16 computation"
+  ],
+  "goal_complete": false
+}

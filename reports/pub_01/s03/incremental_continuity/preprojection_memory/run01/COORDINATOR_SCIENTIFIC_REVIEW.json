@@ -1,0 +1,52 @@
+{
+  "accepted_for_archival": true,
+  "report_sha256": "32edf3c368cf0381b51e8227f7493a4560cd773f2819bf9e10301f60b35807f6",
+  "review_markdown_sha256": "582a08bd691fe4213d1c567757379070794bef03161a9c53211c552fb81cf59b",
+  "figures_actually_viewed": {
+    "01_VAL_TRAJECTORIES.png": "33f62895dc84ebae22b4946b6c6ebe2d94cbdba093ef1cd2ae57cd90d4cd43c7",
+    "02_SELECTED_AND_CONTROLS.png": "a7ae74bf9be9c97adae803d5a4b7f02709355c7e932ab6791cede75914b9e932",
+    "03_FIXED_TRAIN_AND_MATCHED_VAL.png": "06ba6b13eaaa43131b2ed39d7aa24400d9418ec23e68d80659dc63978a647213",
+    "04_FIXED_OBJECTIVE_AND_WINDOW_ERROR.png": "afab3e132db758d8979510decf968532519e72646214afca8fbfa3c9da63e66d",
+    "05_AMPLITUDE_PHYSICAL_ERROR_AND_OVERLAP.png": "c692a21f69d58edcc7a98bb1703b16bd1f1249fc2868bcf7e5803e9e5cddf167",
+    "06_PERSON_AND_SOURCE_DESCRIPTIVE.png": "fc11b681d2da2ee0b25912d25896831a82911feb7c2cd7ec3707f5a1b38d5162",
+    "07_MEMORY_ACTIVITY_SAMPLES.png": "a8fbd768377c6ecb0f05433c51a5db7ff4d2feef0e8d6cbc2c77340956dda61c",
+    "08_COMPONENT_AND_RESOURCE_COSTS.png": "b3118f7dcba704afbe7e26c3a18c0ed43e548a57cf0f230ec7780c1f93a9aad7"
+  },
+  "reviewed_report_commit": "9f0dfcc97920d3fb363046fc744e486b7f5f4847",
+  "technical_evidence_review": "PASS within the documented evidence scope;12 completed fits,3 seeds,24 serialized best/last checkpoints,60 fixed TRAIN evaluation artifacts and saved block/person aggregations independently audited.",
+  "scientific_history_gate": false,
+  "scientific_decision": "The pre-specified every-seed history benefit criterion is not met. H-C is positive for1024/2026 and negative for31415; H-P is negative in all3seeds. Archive as a completed bounded negative experiment, not a global rejection of useful history.",
+  "results": {
+    "H_history": 0.18424538862918907,
+    "C_current": 0.18424939701603918,
+    "T_continue": 0.18407562173049472,
+    "P_prediction_history": 0.18437916203596508
+  },
+  "presentation_audit": {
+    "receipt": "COORDINATOR_PRESENTATION_AUDIT.json",
+    "source": "COORDINATOR_PRESENTATION_AUDIT.py",
+    "source_sha256": "7251f883f41ee683c5e209a3ea819d0aa5b549265d1061a8ddb4d068d8aa2078",
+    "scalar_comparisons": 3981,
+    "maximum_absolute_error": 6.965998958219366e-17,
+    "source_manifest_entries_verified": 167,
+    "audit_CPU_seconds": 3.448330617,
+    "audit_wall_seconds": 3.931004762649536
+  },
+  "visual_and_text_review": "All8actual PNGs and the complete REPORT.md/REVIEW.md were independently read. Axes, selected markers, seed/control directions, fixed versus online evaluations, near/older intervention limits and component-cost labels agree with saved outputs. No new plots or neural predictions were required.",
+  "scope_limits": [
+    "Repeated-development, seen-participant, mixed-source VAL only; no fresh independent test.",
+    "Eight selected checkpoints lack corresponding fixed TRAIN evaluations and remain explicitly missing.",
+    "Near/older replacement holds current query/checkpoint fixed while changing history content and recency with unchanged slot encodings; no pure latency-causal claim.",
+    "Three training seeds are not independent participants; neither significance nor equivalence has been established.",
+    "Weights and saved metrics were independently checked; raw neural predictions were not independently replayed.",
+    "H/C equal registered parameter counts do not imply equal compute; P has640additional parameters and previously incurred prior costs.",
+    "Original fit failures,28discarded engineering updates,partial-count bounds and unknown interrupted costs remain disclosed."
+  ],
+  "costs_after_original_presentation": "REVIEW.md separately lists the four late seed31415 reviews. The final presentation audit in this receipt is a further non-neural metadata audit; its measured CPU/wall are additional, not nested sums. Human/assistant reading and visual-review elapsed time is not instrumented here.",
+  "archive_status": "Approved scientific content for archival; the completed archive and its actual rendered links/assets still require delivery verification.",
+  "new_EEG_neural_forwards": 0,
+  "new_EEG_backwards": 0,
+  "new_optimizer_updates": 0,
+  "goal_complete": false,
+  "ICML_NeurIPS_submission_evidence_established": false
+}

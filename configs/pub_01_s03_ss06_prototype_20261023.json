@@ -1,0 +1,23 @@
+{
+  "task_id": "PUB-01-S03_SS06",
+  "phase": "PROTOTYPE_ONLY",
+  "real_data_training_authorized": false,
+  "optimizer_steps": 0,
+  "input_channels": 64,
+  "hidden": 32,
+  "sample_rate_hz": 64,
+  "eeg_lookahead_samples": 0,
+  "acoustic_lag_status": "UNFROZEN_NOT_APPLIED",
+  "synthetic_seed": 601,
+  "smoke_samples": 256,
+  "long_forward_samples": 3840,
+  "frameworks": ["dense_multiscale", "persistent_state", "predictive", "adaptive_alignment", "innovation_state"],
+  "dense_multiscale": {"branch_mode": "multi"},
+  "predictive": {"horizons": [4, 16, 64], "mode": "finetune"},
+  "adaptive_alignment": {"lags": [0, 4, 8, 16], "mode": "adaptive"},
+  "innovation_state": {"mode": "full"},
+  "proposed_objective": {"continuous_seconds": 60, "mse_weight": 0.1, "status": "DESIGN_ONLY_UNFROZEN"},
+  "data_manifest": null,
+  "formal_split": null,
+  "checkpoint": null
+}

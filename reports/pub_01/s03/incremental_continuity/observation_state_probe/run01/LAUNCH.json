@@ -1,0 +1,16 @@
+{
+  "pid": 656537,
+  "uid": 1012,
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_observation_state_probe_20261101/input/pub_01_s03_ss07_observation_state_run.py",
+    "run"
+  ],
+  "start_ticks": "745413342",
+  "source_commit": "5c50719",
+  "protocol_sha256": "a238ed63fd5c050fd66e88c07cf5b998f3bd15690bbe989d609459c947cb5f11",
+  "time": 1793526888.9148912,
+  "new_fits": 15,
+  "NN_updates": 0,
+  "automatic_retry": false
+}

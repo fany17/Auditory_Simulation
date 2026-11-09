@@ -1,0 +1,26 @@
+{
+  "technical_review_passed": true,
+  "children": [
+    {
+      "script": "review_raw",
+      "exit": 0
+    },
+    {
+      "script": "review_metrics_v2",
+      "exit": 0
+    }
+  ],
+  "review_version": 2,
+  "scaled_descriptive_metrics": [
+    "MSE_descriptive",
+    "R2_descriptive"
+  ],
+  "old_raw_protocol_sha256": "5499cb54029da9497259e769aa4b9a6760783e821cf367155d2865f6ce16b795",
+  "raw_replay_uses_unchanged_v1_geometry_and_protocol": true,
+  "metric_replay_uses_v2_scaled_R2_protocol": true,
+  "protocol_sha256": "97c7686b94d63836c59d83df561887d926d2d65a3528ea004ddf86cd1d52d28d",
+  "time": 1793500936.2230482,
+  "scientific_goal_complete": false,
+  "scientific_acceptance_and_interpretation_pending": true,
+  "no_training_model_selection_or_score_threshold_changes": true
+}

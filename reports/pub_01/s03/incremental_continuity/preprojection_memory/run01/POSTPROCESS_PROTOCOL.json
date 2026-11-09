@@ -1,0 +1,25 @@
+{
+  "presentation_source_sha256": "e0415dd74c62c045452556f81a824737ddcf5504422ec1a9301446e8d942f48b",
+  "waiter_source_sha256": "3e20adc97bd3f5c37c503443b759eb000e778667fce049084a56c13bebe66024",
+  "scientific_protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "metadata_input_schema_receipt_sha256": "54a2c5dd6a83d53ddfb5b5e0d05bee46791c80fa336edd76687662e61d9b0590",
+  "coordinator_schema_receipt_sha256": "13edba81094543067217c3ce2c835be74dbd5d8a91780fea20d04e1831cf4c76",
+  "gate": "QUEUE_COMPLETED plus all12 COMPLETED.json; then one presentation run. Incomplete matrix never rendered.",
+  "figures": 8,
+  "scientific_arrays_or_weights_read": false,
+  "new_NN": 0,
+  "new_backward": 0,
+  "new_fits": 0,
+  "training_sources_or_processes_changed": false,
+  "offline_TRAIN_epochs": [
+    -1,
+    0,
+    4,
+    9,
+    19
+  ],
+  "selected_TRAIN_gaps": "Preserve, do not interpolate or rerun",
+  "review_costs": "dict/list top-level receipts with json_pointer; do not sum nested timers",
+  "failure": "Preserve log/partial report01, no automatic retry",
+  "goal_complete": false
+}

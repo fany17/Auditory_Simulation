@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "source_sha256": "2fabe89dd01bb51b17b198c113c0aed5f79364895298f1a9f997a193910a0d2e",
+  "protocol_sha256": "c5c6ab5ced4b8811a3fdfa96fd6c786ed53e182e71d7c82e7098a1b825fcff0c",
+  "completion_sha256": "df9e89f69c99605abe6443fde45f910705441e9bab666b7f99a18734299ca02c",
+  "selected_records": [
+    "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+    "sub-071_ses-varyingStories08_task-listeningActive_run-03_eeg.bdf.gz"
+  ],
+  "results": [
+    {
+      "seed": 1024,
+      "anchor_r": 0.18188879428826338,
+      "selection": {
+        "A": {
+          "selected": "A_0.0001",
+          "r": 0.18212056040397875,
+          "delta_r": 0.0002317661157153761,
+          "people_positive": 44,
+          "people_negative": 5
+        },
+        "F": {
+          "selected": "F_0.0001",
+          "r": 0.18237091543590794,
+          "delta_r": 0.00048212114764456526,
+          "people_positive": 30,
+          "people_negative": 19
+        }
+      },
+      "metrics_sha256": "8f60e169d49045ad346d7f82261a19c10d6b8442b846cf29b8753e4c333002c4",
+      "coefficients_sha256": "d84f9b91b0c388116ac97044b13d2e62a961f122fe71e4e5ee936b2af5ac6f63"
+    },
+    {
+      "seed": 2026,
+      "anchor_r": 0.1817561196902157,
+      "selection": {
+        "A": {
+          "selected": "A_0.0001",
+          "r": 0.18198090145192736,
+          "delta_r": 0.00022478176171164543,
+          "people_positive": 46,
+          "people_negative": 3
+        },
+        "F": {
+          "selected": "F_0.0001",
+          "r": 0.18220151830380116,
+          "delta_r": 0.00044539861358544597,
+          "people_positive": 32,
+          "people_negative": 17
+        }
+      },
+      "metrics_sha256": "8bf98c650ebe85ad1ecef57db2ed800a7c83fa60f6c2395bb1f0323190cdc28a",
+      "coefficients_sha256": "aa0353c42e2723f4296ee97fb76829066e45d93b328cea6c95b4fb72728cda57"
+    },
+    {
+      "seed": 31415,
+      "anchor_r": 0.18337490481957303,
+      "selection": {
+        "A": {
+          "selected": "A_0.0001",
+          "r": 0.1836088772955401,
+          "delta_r": 0.00023397247596707027,
+          "people_positive": 45,
+          "people_negative": 4
+        },
+        "F": {
+          "selected": "F_0.0001",
+          "r": 0.18414264968924257,
+          "delta_r": 0.0007677448696695455,
+          "people_positive": 34,
+          "people_negative": 15
+        }
+      },
+      "metrics_sha256": "4379c96fd2470489d4cdb717743a9aba1de273b51dea4eea4007e6d886724399",
+      "coefficients_sha256": "7b0dbb46da6a907c9b570a7a4d943df16ae46470e48fb346660813e4372c2cbc"
+    }
+  ],
+  "comparison": {
+    "mean_r": {
+      "A": 0.18257011305048207,
+      "F": 0.18290502780965057
+    },
+    "anchor_mean_r": 0.18233993959935071,
+    "D20_mean_r": 0.18409051078310545,
+    "F_minus_A": 0.00033491475916849756,
+    "F_minus_D20": -0.0011854829734548877
+  },
+  "max_errors": {
+    "person_r": 1.1102230246251565e-16,
+    "person_MSE": 1.1102230246251565e-16,
+    "macro_r": 5.551115123125783e-17,
+    "macro_MSE": 5.551115123125783e-17,
+    "anchor_r": 0.0,
+    "anchor_active_MSE": 0.0,
+    "anchor_MSE": 0.0,
+    "gram_symmetric": 0.0,
+    "train_anchor_MSE": 0.0,
+    "intercept_saved": 0.0,
+    "normal_equation": 2.0057740190981832e-18,
+    "train_MSE": 5.551115123125783e-17,
+    "objective": 5.551115123125783e-17,
+    "kernel": 0.0,
+    "kernel_intercept": 1.3877787807814457e-17,
+    "current_gain": 0.0,
+    "past_gain_sum": 0.0,
+    "past_gain_L1": 0.0,
+    "selected_r": 0.0,
+    "selected_delta": 0.0,
+    "explicit_bins": 0.0,
+    "functional_prediction": 1.1102230246251565e-16,
+    "nominal_kernel_rounding": 6.7345689025444244e-09
+  },
+  "counters": {
+    "fits": 0,
+    "NN_forwards": 0,
+    "producer_linear_points": 4608,
+    "independent_linear_points": 4608,
+    "nominal_kernel_points": 4608,
+    "frozen_readout_windows": 3756,
+    "saved_blocks": 15792,
+    "normal_equations": 18
+  },
+  "CPU_seconds": 2.344078855,
+  "wall_seconds": 1.7124924091622233,
+  "peak_RSS_bytes": 655593472,
+  "scope": "Full saved budget/18 normal equations/coefficients/primary block-to-person aggregation/selection audit. Fixed first-last VAL record endpoints: 4608 outputs per implementation, no new scoring/fit. Frozen Ccap reconstruction reused, no raw neural replay. Does not independently rebuild full TRAIN Gram or all raw VAL predictions/full-record metric.",
+  "goal_complete": false
+}

@@ -1,0 +1,37 @@
+{
+  "decision": "PASS_V05_DEPENDENCY_ONLY_AMENDMENT",
+  "base_review": "COORDINATOR_DOWNSTREAM_EXECUTION_REVIEW.json",
+  "precision_amendment": "COORDINATOR_REPLAY_PRECISION_AMENDMENT_V02.json",
+  "source_sha256": {
+    "input_downstream_v05/pub_01_s03_ss07_crossfit_downstream.py": "afffe133a001cfaa3553d62cd271fd622e9c8af5be53dfb69d3d28a93ca96f41",
+    "input_downstream_v05/pub_01_s03_ss07_crossfit_downstream_queue.py": "5efdea5811115f324b19294dff0cd791cb45ab12b887eae310b0da6f576ce726",
+    "COORDINATOR_UPSTREAM_REPLAY_V02.py": "6463ac6cf775e382a0199e25bfc11293447d0249f1a80d257d54120ada664912"
+  },
+  "reviewed_diff": "Actual v04-v05 full source diff: root audit path/source hash, precision fields, gate version and queue output directory only. No learning, data routing, budget, loss, seed or metric change. Metadata source bytes identical.",
+  "live_verified": {
+    "upstream": {
+      "pid": 1346529,
+      "uid": 1012,
+      "startticks": 788549137
+    },
+    "audit_v02": {
+      "pid": 1387563,
+      "uid": 1012,
+      "startticks": 788823429
+    },
+    "downstream_queue_v02": {
+      "pid": 1389187,
+      "uid": 1012,
+      "startticks": 788830232
+    }
+  },
+  "observed": {
+    "upstream_completed": 2,
+    "independent_replays_passed": 2,
+    "downstream_formal_exists": false,
+    "formal_gate_exists": false
+  },
+  "all_nine_upstream_and_replay_success_still_required": true,
+  "original_failure_artifacts_preserved": true,
+  "automatic_twelve_fit_authorization_unchanged": true
+}

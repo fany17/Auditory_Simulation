@@ -1,0 +1,363 @@
+{
+  "passed": true,
+  "time_unix": 1793643925.8388112,
+  "attempt": "formal_recovery_attempt02",
+  "workers": [
+    {
+      "seed": 1024,
+      "arm": "H_history",
+      "device": "cuda:0",
+      "pid": 2050842,
+      "uid": 1012,
+      "start_ticks": "757103900",
+      "time": 1793643794.2931025,
+      "resource_admission": {
+        "device": "cuda:0",
+        "GPU_uuid": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+        "free_GPU_MiB": 45446,
+        "compute_pids": [],
+        "MemAvailable_bytes": 1597889343488,
+        "admitted": true
+      },
+      "actual_argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py",
+        "--seed",
+        "1024",
+        "--arm",
+        "H_history",
+        "--device",
+        "cuda:0"
+      ],
+      "identity_verified": true,
+      "status": {
+        "epoch": 0,
+        "positions": 1000,
+        "optimizer_updates": 1000,
+        "empty_positions": 0,
+        "elapsed_seconds": 121.19776201248169
+      },
+      "first_existing_batch_gradients": {
+        "epoch": 0,
+        "batch_global_indices": [
+          129475,
+          111899,
+          215029,
+          240123,
+          190585,
+          4067,
+          111780,
+          83579,
+          9183,
+          89152,
+          249051,
+          19635,
+          124963,
+          164281,
+          37870,
+          98950,
+          37998,
+          102650,
+          47591,
+          19280,
+          161601,
+          176874,
+          11022,
+          149657,
+          249244,
+          123439,
+          107137,
+          178907,
+          201283,
+          130794,
+          10290,
+          45413,
+          71944,
+          63169,
+          249076,
+          67869,
+          132496,
+          58732,
+          157312,
+          45805,
+          188693,
+          113003,
+          194741,
+          38041,
+          193509,
+          44762,
+          135119,
+          42506,
+          64751,
+          216302,
+          107301,
+          227693,
+          11190,
+          41759,
+          14387,
+          186881,
+          169357,
+          39063,
+          36773,
+          219117,
+          116514,
+          55974,
+          203892,
+          63577
+        ],
+        "effective_windows": 63,
+        "fallback_windows": 1,
+        "fresh_zero_attention": true,
+        "modules": {
+          "encoder": {
+            "nonzero_scalars": 3372335,
+            "L2_norm": 0.4788600613954898
+          },
+          "head": {
+            "nonzero_scalars": 257,
+            "L2_norm": 0.008034752568692963
+          },
+          "original_attention0": {
+            "nonzero_scalars": 49982,
+            "L2_norm": 3.115666699737548e-08
+          },
+          "memory": {
+            "nonzero_scalars": 4160,
+            "L2_norm": 0.028240273008720892
+          },
+          "query_norm": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0
+          },
+          "memory_out_projection": {
+            "nonzero_scalars": 4160,
+            "L2_norm": 0.028240273008720892
+          },
+          "memory_Q_weight": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_Q_bias": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_K_weight": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_K_bias": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_V_weight": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_V_bias": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "K_bias_note": "Common key bias is softmax-unidentifiable; tiny float32 nonzero is not evidence of useful capacity."
+        },
+        "activation_diagnostics": {
+          "query_RMS": 0.7741143797811401,
+          "memory_RMS": 0.7853819144362444,
+          "delta_RMS": 0.0,
+          "delta_max_abs": 0.0
+        },
+        "extra_NN": 0
+      },
+      "new_NN": 0
+    },
+    {
+      "seed": 1024,
+      "arm": "C_current",
+      "device": "cuda:1",
+      "pid": 2050850,
+      "uid": 1012,
+      "start_ticks": "757103905",
+      "time": 1793643794.3449032,
+      "resource_admission": {
+        "device": "cuda:1",
+        "GPU_uuid": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+        "free_GPU_MiB": 45446,
+        "compute_pids": [],
+        "MemAvailable_bytes": 1597877559296,
+        "admitted": true
+      },
+      "actual_argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_train.py",
+        "--seed",
+        "1024",
+        "--arm",
+        "C_current",
+        "--device",
+        "cuda:1"
+      ],
+      "identity_verified": true,
+      "status": {
+        "epoch": 0,
+        "positions": 1400,
+        "optimizer_updates": 1400,
+        "empty_positions": 0,
+        "elapsed_seconds": 130.2830514907837
+      },
+      "first_existing_batch_gradients": {
+        "epoch": 0,
+        "batch_global_indices": [
+          129475,
+          111899,
+          215029,
+          240123,
+          190585,
+          4067,
+          111780,
+          83579,
+          9183,
+          89152,
+          249051,
+          19635,
+          124963,
+          164281,
+          37870,
+          98950,
+          37998,
+          102650,
+          47591,
+          19280,
+          161601,
+          176874,
+          11022,
+          149657,
+          249244,
+          123439,
+          107137,
+          178907,
+          201283,
+          130794,
+          10290,
+          45413,
+          71944,
+          63169,
+          249076,
+          67869,
+          132496,
+          58732,
+          157312,
+          45805,
+          188693,
+          113003,
+          194741,
+          38041,
+          193509,
+          44762,
+          135119,
+          42506,
+          64751,
+          216302,
+          107301,
+          227693,
+          11190,
+          41759,
+          14387,
+          186881,
+          169357,
+          39063,
+          36773,
+          219117,
+          116514,
+          55974,
+          203892,
+          63577
+        ],
+        "effective_windows": 63,
+        "fallback_windows": 1,
+        "fresh_zero_attention": true,
+        "modules": {
+          "encoder": {
+            "nonzero_scalars": 3372335,
+            "L2_norm": 0.4788600613954898
+          },
+          "head": {
+            "nonzero_scalars": 257,
+            "L2_norm": 0.008034752536574489
+          },
+          "original_attention0": {
+            "nonzero_scalars": 49982,
+            "L2_norm": 3.115666699737548e-08
+          },
+          "memory": {
+            "nonzero_scalars": 4160,
+            "L2_norm": 0.026751814940657766
+          },
+          "query_norm": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0
+          },
+          "memory_out_projection": {
+            "nonzero_scalars": 4160,
+            "L2_norm": 0.026751814940657766
+          },
+          "memory_Q_weight": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_Q_bias": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_K_weight": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_K_bias": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_V_weight": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "memory_V_bias": {
+            "nonzero_scalars": 0,
+            "L2_norm": 0.0,
+            "max_abs": 0.0
+          },
+          "K_bias_note": "Common key bias is softmax-unidentifiable; tiny float32 nonzero is not evidence of useful capacity."
+        },
+        "activation_diagnostics": {
+          "query_RMS": 0.7741143797811401,
+          "memory_RMS": 0.7904008695176415,
+          "delta_RMS": 0.0,
+          "delta_max_abs": 0.0
+        },
+        "extra_NN": 0
+      },
+      "new_NN": 0
+    }
+  ],
+  "queue_pid": 2050834,
+  "original_queue_start_unix": 1793640563.790547,
+  "absolute_deadline_unix": 1793726963.790547,
+  "physical_output_ROOT": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "SATA_writer_free_bytes": 178586537984,
+  "home_readonly_free_bytes": 20287533056,
+  "root_bytes": 62816331,
+  "new_NN": 0,
+  "new_backward": 0,
+  "formal_completed_fits": 0,
+  "retained_interrupted_attempts": 2,
+  "scientific_conclusion": null
+}

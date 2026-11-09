@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "source_sha256": "746380c40be3d8a7e301d830f1164370745956af10ede8d27f96b957d9df9d8c",
+  "helper_sha256": "0113a30704b0fe2f13ae0e23aa53b2527afa29cfefc3c0c784789f384229cc64",
+  "protocol_sha256": "83b05eafcb126952d48750930106b5fb04c56d49f82d2b0128ba7d2c813d0172",
+  "checks": {
+    "comparisons": 48624,
+    "maximum_r_difference": 1.1806225008736959e-07,
+    "maximum_other_difference": 1.1806225008736959e-07
+  },
+  "failures": [],
+  "summaries": [
+    {
+      "seed": 1024,
+      "arm": "H_full",
+      "selected_epoch": -1,
+      "selected_r": 0.18188879428826335,
+      "last19_r": 0.1730934717824366,
+      "selected_state_sha256": "4fc6e765368cde7425b6dfb2b272e02b0e1edbc3999691f90a4280f940f79673",
+      "last_state_sha256": "df39c2fe2d1d44f353e1efa561ba81f088cc556790ff287500fdb7907da342fd"
+    },
+    {
+      "seed": 1024,
+      "arm": "C_match",
+      "selected_epoch": -1,
+      "selected_r": 0.18188879428826335,
+      "last19_r": 0.1729874685074204,
+      "selected_state_sha256": "4fc6e765368cde7425b6dfb2b272e02b0e1edbc3999691f90a4280f940f79673",
+      "last_state_sha256": "e243aa592636b37e441f86db48041f6d96281e01ddc8481eff3a3cfcb100bde7"
+    },
+    {
+      "seed": 1024,
+      "arm": "P_prior",
+      "selected_epoch": -1,
+      "selected_r": 0.18188879428826335,
+      "last19_r": 0.17175007456857339,
+      "selected_state_sha256": "caef500a3a87b41ac373d1474e842906e621fa8ba4874eee56eab4113d8fb011",
+      "last_state_sha256": "eee61bf8d0ed819e7384afd8115973d106db51589cb7ad15241f06b045f2e113"
+    },
+    {
+      "seed": 2026,
+      "arm": "H_full",
+      "selected_epoch": 1,
+      "selected_r": 0.1819500599677552,
+      "last19_r": 0.17381387763416453,
+      "selected_state_sha256": "8cc902dd5f326d1ad94a06f9852fbf00a06e9b112f7df814436f235af1c927e5",
+      "last_state_sha256": "9bdb6b53e090d172aa2979de342cb18631c6a53469acfdf1a36f07ed613ba2b5"
+    },
+    {
+      "seed": 2026,
+      "arm": "C_match",
+      "selected_epoch": -1,
+      "selected_r": 0.1817561196902157,
+      "last19_r": 0.17522919524162658,
+      "selected_state_sha256": "930d6cdf010343c2b4b02dcf9ffe0416f59ecbc638899c3db4a5ef22c0ef3ecc",
+      "last_state_sha256": "65ae5dd9235bc45e1c2e45a905e8b65597d3305eafa7a0f9dcc018af84fcfdd8"
+    },
+    {
+      "seed": 2026,
+      "arm": "P_prior",
+      "selected_epoch": 1,
+      "selected_r": 0.18185344409926713,
+      "last19_r": 0.17282442680082666,
+      "selected_state_sha256": "967a2d45f8a487e0a709a865e8e8f16b907b7a005bf07bba03cafff17770235a",
+      "last_state_sha256": "b4aca6e9f2abb465e213abd782c5021d7bae11c148ad2295cc423cdd40b28b07"
+    },
+    {
+      "seed": 31415,
+      "arm": "H_full",
+      "selected_epoch": -1,
+      "selected_r": 0.183374904819573,
+      "last19_r": 0.17811846790960761,
+      "selected_state_sha256": "6c794670337756c41e79915718d02c824ffb73486424e10e23a10e6297fc2eec",
+      "last_state_sha256": "16961c110e02d42556b8c989700304fdfdd4875c0a82e2b9572071d5b9da8c8a"
+    },
+    {
+      "seed": 31415,
+      "arm": "C_match",
+      "selected_epoch": -1,
+      "selected_r": 0.183374904819573,
+      "last19_r": 0.17621778561071402,
+      "selected_state_sha256": "6c794670337756c41e79915718d02c824ffb73486424e10e23a10e6297fc2eec",
+      "last_state_sha256": "f3c42a3cbea3758137a4f359aec78fddcf498fb74bf5b6f4c9a4618b54d76266"
+    },
+    {
+      "seed": 31415,
+      "arm": "P_prior",
+      "selected_epoch": 0,
+      "selected_r": 0.183662803299831,
+      "last19_r": 0.17755897170270474,
+      "selected_state_sha256": "a892072741a5d4a316cba8021f18f5381fb9d05525ae1533d229f56e9d5194e2",
+      "last_state_sha256": "ab6bda82509580bd55c858772fe98256e14de29aad930120724e777e55eb2456"
+    }
+  ],
+  "all180_actual_permutation_logs_checked": 180,
+  "offline_TRAIN_aggregation_files": 54,
+  "old_last_TRAIN_D13_crosschecks": 18,
+  "selected_equals_last_reused": 0,
+  "cost": {
+    "residual_NN_window_forwards": 631239,
+    "new_encoder_head_forwards": 0,
+    "optimizer_updates": 0,
+    "actual_input_sha256_bytes": 0,
+    "CPU_seconds": 72.03608439,
+    "wall_seconds": 23.90737557411194,
+    "peak_RSS_KiB": 1174516,
+    "GPU_bytes": 0
+  },
+  "limits": [
+    "No second complete TRAIN neural forward for offline window MSE",
+    "No replay of unretained intermediate epochs",
+    "Original repeatedly viewed VAL, not independent confirmation"
+  ],
+  "goal_complete": false
+}

@@ -1,0 +1,30 @@
+{
+  "decision": "PASS_CONDITIONAL_EXECUTION",
+  "date": "2026-11-06",
+  "scope": "D24 B_IS, S_IS, B_OOF, S_OOF for all three fixed seeds; twelve complete 20-pass fits. Dependency observer may start now. Formal fits may start automatically only after the actual upstream and independent replay prerequisites pass.",
+  "worker_sha256": "947ed1677af9df2973c61d5d07ab937899799915e6cc9722a526a25a0a7ddf52",
+  "queue_sha256": "3aac9fe33a6c76be5865889abad02564d7baaf4694d202d04b81c48798a4f78c",
+  "independent_upstream_replay_source_sha256": "d8016bbd5b171e2893fd80d6366552a5cd32115549137c25970b3efd7c877a14",
+  "physical_batch": 16384,
+  "epochs_per_fit": 20,
+  "total_fits": 12,
+  "total_optimizer_updates": 347280,
+  "total_backward_points": 5688842400,
+  "reviewed": [
+    "Complete new scalar table, lane loading, statistics, fit dispatch, freeze and observer source; original Tables, moments, batch_inputs, B/S adapters and actual fit_role implementation.",
+    "TRAIN routing uses all 426 original records and exact physical coordinates. OOF uses its excluded-fold model, IS the next fold model that includes the record. History is per-record lag 1 with four-point bins; fixed active boundary prevents crossing records.",
+    "Each lane estimates scalar near-history statistics on TRAIN only. B/S in that lane share those statistics, target rounding, data order, fixed batch loss denominator, original optimizer and exact original training/evaluation function body. S has equal near/older inputs and its duplicate outputs must be identical.",
+    "All four roles evaluate the same frozen full-TRAIN FT+Ccap VAL49 anchor. The existing full 752-block bridge checks the score. No new old-test or external evaluation is introduced.",
+    "Actual v01 bounded engineering receipt: both B/S have 512 compared points, 107806 moment points, expected 9441/3361 parameters and finite loss gradients, zero optimizer updates. Source changes through v04 add identity and dependency enforcement, not learning-path changes.",
+    "Historical input preflight verifies 55 SHA pins and 73 stored input stamps. The final gate must include all nine upstream completed jobs, 54 final payload identities and the actual independent per-job replay identities. A matching outer protocol alone is not treated as verification of inner files.",
+    "Observer uses exact PID/UID/startticks and actual terminal receipts for the two existing dependencies, preserves failures and never restarts them. Its worker SHA is fixed both before and after waiting. Two GPU lanes execute the fixed three seeds once."
+  ],
+  "required_actual_prerequisites": [
+    "Existing upstream queue TERMINAL.passed and all nine complete budget/record/statistics/output-geometry checks.",
+    "coordinator_upstream_audit_v01 COMPLETED.passed, all nine exact job receipts, three independently recomputed fold statistics, bounded raw EEG/FT/NumPy readout replay, no fitting or label access.",
+    "Independent receipt payload sizes and SHA256 match all 54 final upstream prediction/weight/readout files; bind this evidence and reviewed source identities into DOWNSTREAM_FORMAL_GATE_V04.json.",
+    "Each formal seed rechecks its six actual prediction inputs, all bound small files and historical input identities before use. Failures preserve artifacts and require investigation, not an automatic retry."
+  ],
+  "status_at_review": "Upstream training and independent replay observer are still active. No downstream formal fit or final scientific result is asserted by this review.",
+  "limitations": "Repeated development VAL only. S/B differ in parameter count and input rank; history comparison is not a pure causal effect. Crossfit is a training-source control, not a novelty or publication claim. Final numerical and scientific result review remains required."
+}

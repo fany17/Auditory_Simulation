@@ -1,0 +1,37 @@
+{
+  "fit": "P_prediction_history_seed31415",
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "scope": "One completed fit; saved-metric reaggregation and budget/selection metadata only; no prediction replay or matrix-level conclusion",
+  "scalar_comparisons": 960,
+  "maximum_absolute_error": 2.3936473463048724e-16,
+  "selected_epoch": 15,
+  "incumbent_validation_r": 0.18337490481957303,
+  "selected_validation_r": 0.18461705752410226,
+  "last_validation_r": 0.18280170844841356,
+  "optimizer_updates": 78900,
+  "component_forward_counts": {
+    "current_encoder_prefix_windows": 6699396,
+    "current_projection_windows": 6699396,
+    "current_head_windows": 6699396,
+    "frozen_encoder_prefix_windows": 0,
+    "attention_query_windows": 6598119,
+    "prior_projection_windows": 13196238
+  },
+  "input_sha256": {
+    "COMPLETED.json": "36faba6dfad5fbcd2492cdfd8e71c83fa568c4d389de0b9536ef799fd1d6f5ec",
+    "STARTED.json": "a42f6f04b52605e43e39fb478b1dc614e07886e2bdb253d62d042bc7d0cdd182",
+    "HISTORY.jsonl": "5663f87663baa050b928055e4cb39a0fb567e59ed72c9d2d557ef99730e43abd",
+    "PERMUTATIONS.jsonl": "ebb99a02743dc83a6cbc928cd33dddddce9616d3758cc0082a4d843f0d6a35a2",
+    "INCUMBENT.json.gz": "a535f53c9e48db53b8dcd5e4a776cac2a4f1d7576d3fada14b7d3fafdf4def1b",
+    "SELECTED_METRICS.json.gz": "54a6be912ad6dd82606637e021275f5bbb485c7d85861c5992d07e17d3492c54",
+    "COMPONENT_COUNTS.json": "0862adcf432d837640440a1ed4e7bee0ad9a3ec60246f6383a7004f98fc127c7"
+  },
+  "audit_NN_forwards": 0,
+  "audit_backwards": 0,
+  "audit_optimizer_updates": 0,
+  "audit_CPU_seconds": 0.018285712,
+  "audit_wall_seconds": 0.018351078033447266,
+  "limitations": "Seen-participant, mixed-source, repeatedly developed VAL; checkpoint contents and predictions not independently replayed; other fits pending",
+  "goal_complete": false
+}

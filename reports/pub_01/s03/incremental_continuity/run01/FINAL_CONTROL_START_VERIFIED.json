@@ -1,0 +1,111 @@
+{
+  "time": 1793492375.2238169,
+  "primary_selection_sha256": "d43da5b521af0cabfed6a2a6fc4ce968ae39f20824411d07c305fb1fa08b69d2",
+  "five_final_seed_workers_verified": [
+    {
+      "pid": 237174,
+      "condition": "m4_current_h16",
+      "seed": 1024,
+      "epochs": 13,
+      "updates": 51285,
+      "actual_argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py",
+        "--condition",
+        "m4_current_h16",
+        "--seed",
+        "1024",
+        "--device",
+        "cuda:0",
+        "--stage",
+        "full"
+      ]
+    },
+    {
+      "pid": 237175,
+      "condition": "m4_current_h16",
+      "seed": 2026,
+      "epochs": 12,
+      "updates": 47340,
+      "actual_argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py",
+        "--condition",
+        "m4_current_h16",
+        "--seed",
+        "2026",
+        "--device",
+        "cuda:1",
+        "--stage",
+        "full"
+      ]
+    },
+    {
+      "pid": 237176,
+      "condition": "m4_h16",
+      "seed": 42,
+      "epochs": 9,
+      "updates": 35505,
+      "actual_argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py",
+        "--condition",
+        "m4_h16",
+        "--seed",
+        "42",
+        "--device",
+        "cuda:1",
+        "--stage",
+        "full"
+      ]
+    },
+    {
+      "pid": 237177,
+      "condition": "m4_current_h16",
+      "seed": 31415,
+      "epochs": 13,
+      "updates": 51285,
+      "actual_argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py",
+        "--condition",
+        "m4_current_h16",
+        "--seed",
+        "31415",
+        "--device",
+        "cuda:0",
+        "--stage",
+        "full"
+      ]
+    },
+    {
+      "pid": 237178,
+      "condition": "m4_h16",
+      "seed": 12345,
+      "epochs": 8,
+      "updates": 31560,
+      "actual_argv": [
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+        "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_train_full_v2.py",
+        "--condition",
+        "m4_h16",
+        "--seed",
+        "12345",
+        "--device",
+        "cuda:1",
+        "--stage",
+        "full"
+      ]
+    }
+  ],
+  "main_full_conditions": [
+    "m4_h16",
+    "m4_current_h16",
+    "static_m4_h16",
+    "output_prior_h16",
+    "static_alignment"
+  ],
+  "expected_total_unique_full_cells": 37,
+  "actual_final_checkpoint_or_test_ready": false,
+  "no_extra_seed_reselection": true
+}

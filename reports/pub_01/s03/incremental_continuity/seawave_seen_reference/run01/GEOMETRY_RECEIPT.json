@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-06",
+  "reviewer": "root coordinator",
+  "computation_host": "server2203",
+  "method": "Read frozen D26 INPUTS.json metadata; count floor((common_samples-frame)/hop)+1 and per-fit ceil(windows/batch). No arrays, models or performance scores read.",
+  "input_inventory": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_contrastive_history_20261106/INPUTS.json",
+  "input_sha256": "6385bde08161beb1dd507568aeb3c6d32d2f2be9087f423aec04107c1e943697",
+  "subjects": {
+    "train": 70,
+    "val": 49,
+    "val_seen_in_train": 49,
+    "val_unseen_in_train": 0
+  },
+  "initial": {
+    "records": 426,
+    "frame": 320,
+    "hop": 32,
+    "batch": 32,
+    "windows_per_epoch": 755187,
+    "updates_per_epoch": 23600,
+    "tail_batch": 19,
+    "target_samples_per_epoch": 241659840,
+    "unique_record_sample_times_per_epoch": 24288672,
+    "three_seed_201_epoch_updates": 14230800
+  },
+  "personal": {
+    "subjects": 49,
+    "records": 305,
+    "frame": 512,
+    "hop": 6,
+    "batch": 8,
+    "windows_per_all_people_pass": 2846186,
+    "updates_per_all_people_pass": 355800,
+    "min_subject_windows": 39349,
+    "max_subject_windows": 74305,
+    "three_seed_21_epoch_update_cap": 22415400
+  },
+  "not_selected_current_stage": {
+    "full_TRAIN_group_FT_windows_per_epoch": 4013433,
+    "full_TRAIN_group_FT_updates_per_epoch": 501680,
+    "three_seed_30_epoch_update_cap": 45151200,
+    "reason": "Not a prerequisite to published seen-subject adaptation; remains necessary if later claiming a complete strengthened group/S2 comparator."
+  },
+  "actual_D27_training_updates": 0
+}

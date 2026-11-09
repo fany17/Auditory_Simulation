@@ -1,0 +1,540 @@
+{
+  "metadata_schema_only": true,
+  "model_performance_computed": false,
+  "all18_MAT_headers_readable": true,
+  "headers": [
+    {
+      "file": "S10_data_preproc.mat",
+      "bytes": 102358462,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S11_data_preproc.mat",
+      "bytes": 101463187,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S12_data_preproc.mat",
+      "bytes": 101984306,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S13_data_preproc.mat",
+      "bytes": 102216072,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S14_data_preproc.mat",
+      "bytes": 102158836,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S15_data_preproc.mat",
+      "bytes": 102323909,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S16_data_preproc.mat",
+      "bytes": 102118097,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S17_data_preproc.mat",
+      "bytes": 102250912,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S18_data_preproc.mat",
+      "bytes": 102095130,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S1_data_preproc.mat",
+      "bytes": 102112553,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S2_data_preproc.mat",
+      "bytes": 102264168,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S3_data_preproc.mat",
+      "bytes": 102399736,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S4_data_preproc.mat",
+      "bytes": 102118329,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S5_data_preproc.mat",
+      "bytes": 102203916,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S6_data_preproc.mat",
+      "bytes": 102250842,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S7_data_preproc.mat",
+      "bytes": 102224848,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S8_data_preproc.mat",
+      "bytes": 102169858,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    },
+    {
+      "file": "S9_data_preproc.mat",
+      "bytes": 102230947,
+      "MATLAB_variables": [
+        {
+          "name": "data",
+          "shape": [
+            1,
+            1
+          ],
+          "MATLAB_class": "struct"
+        }
+      ]
+    }
+  ],
+  "first_subject": "S1_data_preproc.mat",
+  "first_subject_structure": {
+    "data": {
+      "dim": {
+        "chan": {
+          "eeg": {
+            "shape": [
+              60
+            ],
+            "dtype": "object",
+            "first_two_schemas": [
+              {
+                "shape": [
+                  66
+                ],
+                "dtype": "object",
+                "first_two_schemas": [
+                  {
+                    "type": "string",
+                    "metadata": "Fp1"
+                  },
+                  {
+                    "type": "string",
+                    "metadata": "AF7"
+                  }
+                ]
+              },
+              {
+                "shape": [
+                  66
+                ],
+                "dtype": "object",
+                "first_two_schemas": [
+                  {
+                    "type": "string",
+                    "metadata": "Fp1"
+                  },
+                  {
+                    "type": "string",
+                    "metadata": "AF7"
+                  }
+                ]
+              }
+            ]
+          },
+          "wavA": {
+            "shape": [
+              60
+            ],
+            "dtype": "object",
+            "first_two_schemas": [
+              {
+                "type": "string",
+                "metadata": "1"
+              },
+              {
+                "type": "string",
+                "metadata": "1"
+              }
+            ]
+          },
+          "wavB": {
+            "shape": [
+              60
+            ],
+            "dtype": "object",
+            "first_two_schemas": [
+              {
+                "type": "string",
+                "metadata": "1"
+              },
+              {
+                "type": "string",
+                "metadata": "1"
+              }
+            ]
+          }
+        },
+        "eeg": {
+          "type": "string",
+          "metadata": "time_chan"
+        },
+        "wavA": {
+          "type": "string",
+          "metadata": "time_chan"
+        },
+        "freq": {},
+        "wavB": {
+          "type": "string",
+          "metadata": "time_chan"
+        }
+      },
+      "fsample": {
+        "eeg": {
+          "type": "int",
+          "metadata_value": 64.0
+        },
+        "wavA": {
+          "type": "int",
+          "metadata_value": 64.0
+        },
+        "wavB": {
+          "type": "int",
+          "metadata_value": 64.0
+        }
+      },
+      "event": {
+        "eeg": {
+          "type": "list",
+          "length": 60,
+          "first_two_schemas": [
+            {
+              "sample": {
+                "type": "int"
+              },
+              "value": {
+                "type": "int"
+              }
+            },
+            {
+              "sample": {
+                "type": "int"
+              },
+              "value": {
+                "type": "int"
+              }
+            }
+          ]
+        }
+      },
+      "eeg": {
+        "shape": [
+          60
+        ],
+        "dtype": "object",
+        "first_two_schemas": [
+          {
+            "shape": [
+              3200,
+              66
+            ],
+            "dtype": "float64"
+          },
+          {
+            "shape": [
+              3200,
+              66
+            ],
+            "dtype": "float64"
+          }
+        ]
+      },
+      "cfg": {
+        "type": "list",
+        "length": 19,
+        "first_two_schemas": [
+          {
+            "eeg": {
+              "smooth": {
+                "type": "float"
+              },
+              "channels": {
+                "type": "string",
+                "metadata": "all"
+              },
+              "bpfilter": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "hpfilter": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "lpfilter": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "plotfiltresp": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "demean": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "detrend": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "reref": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "zscore": {
+                "type": "string",
+                "metadata": "no"
+              },
+              "hilbert": {
+                "type": "string",
+                "metadata": "no"
+              }
+            },
+            "fcn": {
+              "type": "string",
+              "metadata": "co_preprocessing"
+            },
+            "date": {
+              "type": "string",
+              "metadata": "13-Mar-2018"
+            }
+          },
+          {
+            "eeg": {
+              "newfs": {
+                "type": "int",
+                "metadata_value": 64.0
+              },
+              "dimname": {
+                "type": "string",
+                "metadata": "time"
+              },
+              "method": {
+                "type": "string",
+                "metadata": "fft"
+              }
+            },
+            "fcn": {
+              "type": "string",
+              "metadata": "co_resampledata"
+            },
+            "date": {
+              "type": "string",
+              "metadata": "13-Mar-2018"
+            }
+          }
+        ]
+      },
+      "wavA": {
+        "shape": [
+          60
+        ],
+        "dtype": "object",
+        "first_two_schemas": [
+          {
+            "shape": [
+              3200
+            ],
+            "dtype": "float64"
+          },
+          {
+            "shape": [
+              3200
+            ],
+            "dtype": "float64"
+          }
+        ]
+      },
+      "wavB": {
+        "shape": [
+          60
+        ],
+        "dtype": "object",
+        "first_two_schemas": [
+          {
+            "shape": [
+              3200
+            ],
+            "dtype": "float64"
+          },
+          {
+            "shape": [
+              3200
+            ],
+            "dtype": "float64"
+          }
+        ]
+      }
+    }
+  },
+  "scalp_channel_mapping_or_trial_eligibility_not_yet_claimed": true,
+  "time": 1793477391.6001537
+}

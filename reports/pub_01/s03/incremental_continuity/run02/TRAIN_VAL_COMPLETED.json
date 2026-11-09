@@ -1,0 +1,83 @@
+{
+  "time": 1793510048.886788,
+  "cells": [
+    {
+      "condition": "frozen_p",
+      "seed": 1024
+    },
+    {
+      "condition": "frozen_p",
+      "seed": 2026
+    },
+    {
+      "condition": "frozen_p",
+      "seed": 31415
+    },
+    {
+      "condition": "frozen_current",
+      "seed": 1024
+    },
+    {
+      "condition": "frozen_current",
+      "seed": 2026
+    },
+    {
+      "condition": "frozen_current",
+      "seed": 31415
+    },
+    {
+      "condition": "frozen_past",
+      "seed": 1024
+    },
+    {
+      "condition": "frozen_past",
+      "seed": 2026
+    },
+    {
+      "condition": "frozen_past",
+      "seed": 31415
+    },
+    {
+      "condition": "joint_p",
+      "seed": 1024
+    },
+    {
+      "condition": "joint_p",
+      "seed": 2026
+    },
+    {
+      "condition": "joint_p",
+      "seed": 31415
+    },
+    {
+      "condition": "joint_current",
+      "seed": 1024
+    },
+    {
+      "condition": "joint_current",
+      "seed": 2026
+    },
+    {
+      "condition": "joint_current",
+      "seed": 31415
+    },
+    {
+      "condition": "joint_past",
+      "seed": 1024
+    },
+    {
+      "condition": "joint_past",
+      "seed": 2026
+    },
+    {
+      "condition": "joint_past",
+      "seed": 31415
+    }
+  ],
+  "new_fits": 18,
+  "total_updates": 355050,
+  "supervised_windows": 22720860,
+  "test_read": false,
+  "scientific_goal_achieved_claimed": false,
+  "protocol_sha256": "a9e1d220170a9c6a166c71c8113ed6ede0b6570a5aab3152e5a3ee5a685481a8"
+}

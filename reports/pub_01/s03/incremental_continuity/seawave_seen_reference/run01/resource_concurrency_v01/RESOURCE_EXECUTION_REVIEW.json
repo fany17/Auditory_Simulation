@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "review_kind": "Independent operational source and isolated-process execution review",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "resource_protocol_sha256": "9bce22984751e21fd8980f3a1032a2e1d64d39b01a5a41d11820906883300c75",
+  "V04_science_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "independent_verification_sha256": "f07c04f0b56b2f4a7266713ddeb4e23eea065cc952ae901c8d8f4319e9ba8c79",
+  "independent_verification_utc": "2026-11-07T03:55:43Z",
+  "sources": {
+    "d27_resource_process.py": "d12dae6f6bc4b27b25157b1c943c77bb55473115f00f384ae25e339fb6fe51f6",
+    "d27_resource_queue.py": "ee9a0e514ba52a1d34d144d0a52ece2786794dbc3f1d0ffe09880812e74c6ef2",
+    "d27_resource_worker.py": "28c5e497781501eb75f9552f298c32c2e01a3511e018cb4a7dcaeb391ddaaefe",
+    "d27_resource_report_wait.py": "ac6c6cf6a19b8244960289d21ac8bb8ad4bfe321fad0bdaebd894675fa480a32",
+    "ISOLATED_FIXTURE.py": "eb544ea994c9a5b131bfe0e4d39876530f7a147b4151acebef3c4b3ef8a67c43"
+  },
+  "checks": {
+    "full_four_operational_sources_read": true,
+    "all_resource_and_V04_source_pins_verified_on_server": true,
+    "original_queue_finish_source_reviewed": true,
+    "exact_identity_proc_directory_fd_signaling": true,
+    "original_children_preserved_without_restart": true,
+    "all_parent_threads_stopped_and_exact_children_checked": true,
+    "actual_child_GPU_environment_checked": true,
+    "only_quiescent_single_Z_leader_accepted_for_original_exit": true,
+    "raw_kernel_status_and_actual_Popen_exit_agree_in_isolated_fixture": true,
+    "new_native_workers_registered_before_release_and_owned_by_durable_supervisor": true,
+    "release_intent_is_irreversible_and_postrelease_failure_never_resumes_old_parent": true,
+    "pre_release_failure_resumes_old_parent_in_fixture": true,
+    "two_workers_per_GPU_and_16_GiB_free_admission_with_foreign_process_rejection": true,
+    "old_parent_retired_only_after_both_original_exit_receipts": true,
+    "finalizer_and_reporter_directly_check_exact_old_processes_not_live": true,
+    "actual_new_coordinator_identity_preserved_by_exec_to_original_training_interpreter": true,
+    "report_binds_actual_terminal_150_worker_exits_and_original_reviewed_report_sources": true,
+    "original_3_initial_147_personal_matrix_and_16_science_sources_unchanged": true
+  },
+  "authorization": {
+    "approved": "Execute the frozen resource-only --migrate once after the exact source commit is pushed and mirrored.",
+    "original_scheduler": [
+      1748466,
+      1012,
+      791000426
+    ],
+    "original_workers": [
+      [
+        1879079,
+        1012,
+        794756993
+      ],
+      [
+        1879085,
+        1012,
+        794756996
+      ]
+    ],
+    "original_reporter": [
+      1812007,
+      1012,
+      791424876
+    ],
+    "signals": "Only verified old scheduler and old report waiter via their pinned proc directory descriptors; no signals to formal training workers.",
+    "rollback": "Before release intent only. After release intent, preserve active workers and receipts; fail closed and report any fault, with no automatic original-parent resume or duplicate launch.",
+    "scientific_changes_authorized": false,
+    "new_fits_beyond_original_matrix": 0
+  },
+  "verification_scope": {
+    "actual_formal_signals": 0,
+    "actual_formal_launches": 0,
+    "signal_payload_reads": 0,
+    "model_forwards": 0,
+    "execution_runtime": "/opt/miniconda3/bin/python3",
+    "native_training_runtime_unchanged": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python"
+  },
+  "limitations": [
+    "This approval covers operational concurrency, not predictive performance, SOTA, convergence or a completed D27 result.",
+    "A crash or partial immutable receipt can require manual evidence-based recovery; no automatic replay or retry is authorized.",
+    "Concurrency changes wall-clock cost. Preserve actual worker timings and distinguish native fitting cost from coordinator/reporter/fixture overhead.",
+    "New workers may have ordinary runtime nondeterminism; no promise of bitwise equality is made."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PENDING_USER_DATA_SCOPE_AUTHORIZATION_NOT_EXECUTABLE_PROTOCOL",
+  "purpose": "Independent confirmation is unavailable from previously exposed Sparr/DTU tests; request one bounded additional public dataset, without changing D10.",
+  "dataset": {
+    "repository": "OpenNeuroDatasets/ds004408",
+    "commit": "b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be",
+    "doi": "10.18112/openneuro.ds004408.v1.0.8",
+    "description_url": "https://github.com/OpenNeuroDatasets/ds004408/blob/b2d91784a90c18e1d76bd77dcb2b29b0ce27a0be/dataset_description.json",
+    "license": "CC0, actual pinned metadata verified2026-11-01",
+    "participants": 19,
+    "records": 380,
+    "audio_segments": 20,
+    "signal_format": "BrainVision .eeg/.vhdr/.vmrk, actual pinned repository tree",
+    "metadata_only_so_far": true
+  },
+  "requested_scope": "Only this version's EEG, associated speech audio and necessary metadata; no other dataset/model weights, no patient/STN records, no contact with participants/authors.",
+  "proposed_storage": {
+    "server_root": "/home/fanyu/auditory_simulation_m6a/pub_01",
+    "new_dataset_root_cap_bytes": 3221225472,
+    "minimum_free_reserve_bytes": 21474836480,
+    "proposed_total_SS07_NPY_cap_bytes": 30064771072,
+    "note": "Explicit future increase from25GiB to28GiB only if authorized scope/protocol is adopted; do not evade the existing cap by renaming directories.",
+    "acquisition_strategy": "Review feasibility of per-record in-memory authenticated-by-checksum download and preprocessing, retaining immutable source manifest rather than a permanent second raw-data copy. Never delete existing or newly persisted files to make space. If actual formats cannot support the bounded plan, stop and revise transparently before payload acquisition."
+  },
+  "scientific_conditions": [
+    "The source describes128channels/512Hz, unlike the trained64channel/64Hz input. A single documented geometry/units/reference/resampling adaptation must be frozen before predictive evaluation, shared by baseline and candidates.",
+    "Verify actual header channel mapping, units, missing/bad-channel metadata, audio synchronization and legitimate nonpatient scope. Public raw format is not proof that paper preprocessing has already been reproduced.",
+    "No target labels for model selection, adaptive normalization fitting, lag tuning or candidate selection. Any legitimate label-free input transform must be specified in advance.",
+    "Evaluate only models and exact comparisons frozen before new outcomes; do not turn this into another repeatedly consulted development set.",
+    "Data access authorization alone does not certify final preprocessing or independent-confirmation eligibility; coordinator must review the concrete protocol."
+  ],
+  "excluded": [
+    "Additional public datasets",
+    "New external model weights",
+    "Patient/STN data",
+    "Performance-driven exclusions/preprocessing/lag selection",
+    "Using old test rankings to extend training",
+    "Overwriting original arrays/checkpoints"
+  ],
+  "authorization_needed_reason": "Earlier task scope explicitly barred unapproved dataset expansion. Existing resource/compute permission is retained, but this named dataset adds a new scientific data range.",
+  "ongoing_independent_work": "D10 fixed36-cell oldinternal audit proceeds under existing authorization; awaiting this decision does not stop it.",
+  "goal_complete": false
+}

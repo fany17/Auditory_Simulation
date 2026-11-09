@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "scope": "Three completed paired H/C fits; shared protocol, training order, incumbent and scoring coordinates. Selected repeated-development VAL only; T/P seed31415 pending; not a complete matrix or significance test.",
+  "rows": [
+    {
+      "seed": 1024,
+      "H_r": 0.18389087545640637,
+      "C_r": 0.18329781649665086,
+      "H_minus_C": 0.0005930589597555047,
+      "selected_epochs": [
+        2,
+        0
+      ],
+      "completed_sha256": [
+        "1b57f206a5e8002f9ab99bc5f4551efc84b2ee70dc52188c8c6f8eac0ee410fc",
+        "04e7a3985892fe62db6d747b6a999d3cdf20f186d22cd236496eeb0b4a5a9fd6"
+      ],
+      "permutation_sha256": "bb1bb4031b079b6af6702527ebbcc6ff6dc20465145eb6a0f2f46b9d35f54da7",
+      "incumbent_sha256": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9",
+      "selected_metric_sha256": [
+        "ce63359126ebad4322bca3c9c523a118c549eb295a130ba0cb02169ca20e4415",
+        "1975684350d1b4705ceee4c2dc8f6216db679b45fe2d514892a054076cb01b11"
+      ]
+    },
+    {
+      "seed": 2026,
+      "H_r": 0.18447479805416914,
+      "C_r": 0.18390715539561397,
+      "H_minus_C": 0.0005676426585551619,
+      "selected_epochs": [
+        0,
+        0
+      ],
+      "completed_sha256": [
+        "5a0697e07d780a1f46667e89ec561a9a27c0b81f2bbdaf3df297ccf97087a545",
+        "c97405069b531031a3716ebd3ca9ff945c5b302486b591f627cdb0a0cbf6fe94"
+      ],
+      "permutation_sha256": "c9d7e4e5aa517640ca2cd644b4a217f24793717be68dd41812b7e270eaa5c04b",
+      "incumbent_sha256": "fdf7a6dfd62bab1537384194a0614b65aecd619e5e6dae541c3bc2d9f92a9241",
+      "selected_metric_sha256": [
+        "3ce8e18e5dccdb5d3825a429f7df9a7862f8d38538dbc32e9b88372cbd072a7b",
+        "435941fff4779fa52a4b58c8222b102701e323d6a12b9c19dcc3fbd60b45f812"
+      ]
+    },
+    {
+      "seed": 31415,
+      "H_r": 0.18437049237699174,
+      "C_r": 0.18554321915585273,
+      "H_minus_C": -0.0011727267788609885,
+      "selected_epochs": [
+        5,
+        5
+      ],
+      "completed_sha256": [
+        "9c3595da49d3229ef3fdbb7acf31a25be359f747140d2a125b16d9a62a81490b",
+        "ea51c666822223c416cf73c4cb9be33c650a7c3ce3c97b7482aaa2b2c20b123d"
+      ],
+      "permutation_sha256": "ebb99a02743dc83a6cbc928cd33dddddce9616d3758cc0082a4d843f0d6a35a2",
+      "incumbent_sha256": "a535f53c9e48db53b8dcd5e4a776cac2a4f1d7576d3fada14b7d3fafdf4def1b",
+      "selected_metric_sha256": [
+        "bc2111e7b3ef5185af729e120a71cd5c9873b119ba6a1ff6d41863f33b6aa763",
+        "4383e5df6cb1fae4aab3ed575ab5822634afa4862e9fef9a2b2d897e0a2f7d0b"
+      ]
+    }
+  ],
+  "mean_H_r": 0.18424538862918907,
+  "mean_C_r": 0.18424939701603918,
+  "mean_H_minus_C": -0.000004008386850107293,
+  "H_gt_C_all_seeds": false,
+  "audit_CPU_seconds": 0.047864340000000005,
+  "audit_wall_seconds": 0.08759307861328125,
+  "audit_NN_forwards": 0,
+  "audit_backwards": 0,
+  "audit_optimizer_updates": 0,
+  "goal_complete": false,
+  "execution_note": "The accompanying .py source was executed once via stdin on server2203, then preserved without rerunning."
+}

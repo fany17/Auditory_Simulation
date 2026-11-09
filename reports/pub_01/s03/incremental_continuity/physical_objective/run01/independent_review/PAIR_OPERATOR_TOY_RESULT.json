@@ -1,0 +1,20 @@
+{
+  "scope": "SYNTHETIC_OPERATOR_DERIVATION_ONLY_NO_EEG_OR_NEW_FORMAL_MODEL",
+  "window": 6,
+  "hop": 3,
+  "featuresIncludingBias": 4,
+  "recordsWindows": [
+    7,
+    9
+  ],
+  "first4Fixed": true,
+  "T": 26,
+  "fusedGramMax": 8.881784197001252e-16,
+  "fusedRhsMax": 1.1102230246251565e-16,
+  "weightedGramMax": 8.881784197001252e-16,
+  "weightedRhsMax": 0,
+  "offPairGramMax": 0,
+  "HannIdentityMax": 1.7763568394002505e-15,
+  "activeRegularizedHessianMinEigen": 0.041964378305919516,
+  "verified": true
+}

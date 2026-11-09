@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "scope": "Required fields/types for new presentation only; no saved-score recomputation or independent audit rerun; incomplete matrix remains WAIT",
+  "completed_fits_schema_checked": 10,
+  "representative_fixed_TRAIN_schema_checked": 1,
+  "checked_files": [
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed1024/COMPLETED.json",
+      "sha256": "04e7a3985892fe62db6d747b6a999d3cdf20f186d22cd236496eeb0b4a5a9fd6"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed1024/SELECTED_METRICS.json.gz",
+      "sha256": "1975684350d1b4705ceee4c2dc8f6216db679b45fe2d514892a054076cb01b11"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed1024/INCUMBENT.json.gz",
+      "sha256": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed2026/COMPLETED.json",
+      "sha256": "c97405069b531031a3716ebd3ca9ff945c5b302486b591f627cdb0a0cbf6fe94"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed2026/SELECTED_METRICS.json.gz",
+      "sha256": "435941fff4779fa52a4b58c8222b102701e323d6a12b9c19dcc3fbd60b45f812"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed2026/INCUMBENT.json.gz",
+      "sha256": "fdf7a6dfd62bab1537384194a0614b65aecd619e5e6dae541c3bc2d9f92a9241"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed31415/COMPLETED.json",
+      "sha256": "ea51c666822223c416cf73c4cb9be33c650a7c3ce3c97b7482aaa2b2c20b123d"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed31415/SELECTED_METRICS.json.gz",
+      "sha256": "4383e5df6cb1fae4aab3ed575ab5822634afa4862e9fef9a2b2d897e0a2f7d0b"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/C_current_seed31415/INCUMBENT.json.gz",
+      "sha256": "a535f53c9e48db53b8dcd5e4a776cac2a4f1d7576d3fada14b7d3fafdf4def1b"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed1024/COMPLETED.json",
+      "sha256": "1b57f206a5e8002f9ab99bc5f4551efc84b2ee70dc52188c8c6f8eac0ee410fc"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed1024/SELECTED_METRICS.json.gz",
+      "sha256": "ce63359126ebad4322bca3c9c523a118c549eb295a130ba0cb02169ca20e4415"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed1024/INCUMBENT.json.gz",
+      "sha256": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed1024/OLDER_METRICS.json.gz",
+      "sha256": "e08916fb8032093b01f6f28f3c538dc836aeda976aaf9bde7ef9e5e039b5a51d"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed2026/COMPLETED.json",
+      "sha256": "5a0697e07d780a1f46667e89ec561a9a27c0b81f2bbdaf3df297ccf97087a545"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed2026/SELECTED_METRICS.json.gz",
+      "sha256": "3ce8e18e5dccdb5d3825a429f7df9a7862f8d38538dbc32e9b88372cbd072a7b"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed2026/INCUMBENT.json.gz",
+      "sha256": "fdf7a6dfd62bab1537384194a0614b65aecd619e5e6dae541c3bc2d9f92a9241"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed2026/OLDER_METRICS.json.gz",
+      "sha256": "cf9a7e87838c123b5546ec9fd3934a4418374f771f67139385f8e64e9855abc9"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed31415/COMPLETED.json",
+      "sha256": "9c3595da49d3229ef3fdbb7acf31a25be359f747140d2a125b16d9a62a81490b"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed31415/SELECTED_METRICS.json.gz",
+      "sha256": "bc2111e7b3ef5185af729e120a71cd5c9873b119ba6a1ff6d41863f33b6aa763"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed31415/INCUMBENT.json.gz",
+      "sha256": "a535f53c9e48db53b8dcd5e4a776cac2a4f1d7576d3fada14b7d3fafdf4def1b"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed31415/OLDER_METRICS.json.gz",
+      "sha256": "477e810dfac0796576011c16a32132ccbbd21ecbe4a76d996ad52b195ac9610d"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/P_prediction_history_seed1024/COMPLETED.json",
+      "sha256": "d496712c45b7562fdf8e18b10c10e54acefeb177e77b93ba448374c92a66ebc1"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/P_prediction_history_seed1024/SELECTED_METRICS.json.gz",
+      "sha256": "bc5991e854ddc49643d0d37aab71c91604adc079d0fa791b1388691b10cc689b"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/P_prediction_history_seed1024/INCUMBENT.json.gz",
+      "sha256": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/P_prediction_history_seed2026/COMPLETED.json",
+      "sha256": "6123ed105aabee41402b9369d50e1829a49c5b7ca465fbffbed0004670bcaa90"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/P_prediction_history_seed2026/SELECTED_METRICS.json.gz",
+      "sha256": "47d0ca3675b42e3e041ad7d1ffabbff793d4464b3a84814bfec12d5fef35e358"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/P_prediction_history_seed2026/INCUMBENT.json.gz",
+      "sha256": "fdf7a6dfd62bab1537384194a0614b65aecd619e5e6dae541c3bc2d9f92a9241"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/T_continue_seed1024/COMPLETED.json",
+      "sha256": "c9fb88a301d2f24a7464fca7533e0c5a9f147bd5acce281038d82bfe27f1946e"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/T_continue_seed1024/SELECTED_METRICS.json.gz",
+      "sha256": "08fd24ba11bd5646f6dde6713e0f4902bb97146f1395826811911836554745ac"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/T_continue_seed1024/INCUMBENT.json.gz",
+      "sha256": "1aa34a055adc0e4a0d9ae368b796fdbe57194f3af9f875e896a51099fa3abee9"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/T_continue_seed2026/COMPLETED.json",
+      "sha256": "98971552ca5113071477adfd46c2cacffa23d1c584ccfdd143b8c808ea287bec"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/T_continue_seed2026/SELECTED_METRICS.json.gz",
+      "sha256": "b9dd72bea1550f5df36cd5f05d2c35aad02a3bde2e119526304833ee4dddbbd0"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/T_continue_seed2026/INCUMBENT.json.gz",
+      "sha256": "fdf7a6dfd62bab1537384194a0614b65aecd619e5e6dae541c3bc2d9f92a9241"
+    },
+    {
+      "path": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/fits/H_history_seed1024/OFFLINE_TRAIN_epoch19.json.gz",
+      "sha256": "d093d04ee2dd280bcee416d0484d38945f523ca3932f5276eade4ee9c2f98a9f"
+    }
+  ],
+  "review_receipt_schema_reused": "COORDINATOR_PRESENTATION_SCHEMA_AUDIT.json, not rerun",
+  "new_NN": 0,
+  "new_backward": 0,
+  "new_fits": 0,
+  "new_metric_aggregation": false,
+  "CPU_seconds": 0.205999234,
+  "wall_seconds": 0.28475356101989746,
+  "peak_RSS_KiB": 39980
+}

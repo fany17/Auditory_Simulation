@@ -1,0 +1,23 @@
+{
+  "raw_cache_bridge": {
+    "Z": {
+      "max_abs": 0.0,
+      "bound": 0.00010995312595367433
+    },
+    "P": {
+      "max_abs": 0.0,
+      "bound": 0.0004357861633300781
+    },
+    "Ccap": {
+      "max_abs": 1.1102230246251565e-16,
+      "bound": 0.00010086234890360219
+    },
+    "scope": "Fresh shuffled raw64 eval vs original global64 cached data; not same-latent algebra"
+  },
+  "initial_same_raw_bridge": {
+    "max_abs": 0.0,
+    "bound": 1e-06
+  },
+  "CPU_and_CUDA_RNG_equal": true,
+  "E0_eval": true
+}

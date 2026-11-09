@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "no_test_or_actual_DTU_signal_reads": true,
+  "actual_completed_native_and_FT_seed": 1024,
+  "actual_VAL_evidence": [
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "model": "native_P",
+      "fresh_encoder_vs_cache_max": 0.0,
+      "window_output_max": 0.0,
+      "fusion_max": 5.684341886080802e-14,
+      "global_offset": 0
+    },
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "model": "actual_nonzero_M2",
+      "fresh_encoder_vs_cache_max": 0.0,
+      "window_output_max": 0.0,
+      "fusion_max": 3.552713678800501e-15,
+      "global_offset": 0
+    },
+    {
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "model": "native_P",
+      "fresh_encoder_vs_cache_max": 0.0,
+      "window_output_max": 0.0,
+      "fusion_max": 5.684341886080802e-14,
+      "global_offset": 605
+    },
+    {
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "model": "actual_nonzero_M2",
+      "fresh_encoder_vs_cache_max": 0.0,
+      "window_output_max": 0.0,
+      "fusion_max": 3.552713678800501e-15,
+      "global_offset": 605
+    }
+  ],
+  "actual_FT_VAL_evidence": [
+    {
+      "record": "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+      "maximum_difference": 0.0,
+      "snapped_global_range": [
+        0,
+        640
+      ],
+      "target_global_range": [
+        0,
+        605
+      ],
+      "batch_fill_records": [
+        "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true
+    },
+    {
+      "record": "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+      "maximum_difference": 0.0,
+      "snapped_global_range": [
+        576,
+        1216
+      ],
+      "target_global_range": [
+        605,
+        1210
+      ],
+      "batch_fill_records": [
+        "sub-001_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz",
+        "sub-002_ses-shortstories01_task-listeningActive_run-09_eeg.bdf.gz",
+        "sub-003_ses-shortstories01_task-listeningActive_run-02_eeg.bdf.gz"
+      ],
+      "raw_global64_not_record_split": true
+    }
+  ],
+  "synthetic_DTU_adaptation": [
+    {
+      "case": "permuted66",
+      "adapter_max_abs": 0.0
+    },
+    {
+      "case": "scale_outlier",
+      "adapter_max_abs": 0.0
+    },
+    {
+      "case": "all_time_constant",
+      "adapter_max_abs": 0.0
+    }
+  ],
+  "future_samples_do_not_change_first_current_window": true,
+  "premature_scientific_payload_loads": 0,
+  "source_sha256": {
+    "pub_01_s03_ss07_review_raw.py": "6aae9b95c2d7a45a9ea2a40c4b429a30d95e640e019301bdbd45236c10452999",
+    "pub_01_s03_ss07_review_raw_check.py": "0b9b6552c45371abef8ffbecc4c2a425f5fad8cc7b1ca3b9ea0b6dce465e06de"
+  }
+}

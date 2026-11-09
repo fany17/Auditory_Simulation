@@ -1,0 +1,57 @@
+{
+  "status": "PREPARED_NOT_MIGRATED_NOT_RESTARTED",
+  "decision_id": "D18_STORAGE_RECOVERY_01",
+  "canonical_home_root": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "verified_SATA_copy": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "untouched_home_backup": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103_home_backup_formal_attempt01",
+  "proof_root": "/sata5/fanyu/auditory_simulation_m6a/pub_01/d18_storage_recovery_20261103",
+  "migration": "Rename originalhomeROOT to reserved siblingbackup; create canonicalhomeROOT symlink to verifiedSATAcopy. Preserve all131 files SHA256/mtime before switch; no deletion. Keep original homebackup read-only.",
+  "rollback": "Rename canonical symlink to reserved failed-link sibling, then rename original homebackup back to canonicalROOT; never unlink/delete.",
+  "archive_under_canonical_ROOT": "attempts/formal_attempt01",
+  "archive": "Move two interrupted fits and old queue launch/status/failure/stdout/worker logs into formal_attempt01; preserve old protocol/review and exact oldinput sources. No completed fit exists. New fits directory starts empty.",
+  "writer_resource_policy": "ROOT resolves to SATA; 20GiB minimum for physical writableROOT/SATA. Home becomes read-only input/source/provenance, not a new large-output target; its free-space threshold no longer gates this SATA-backed run. No model/data movement. Existing guard source remains unchanged and tests physicalROOT/SATA.",
+  "root_budget_bytes": 805306368,
+  "conservative_storage_upper_with_retained_attempt_bytes": 643174935,
+  "unmodified_original_protocol_sha256": "71e19d9ed88d1b591994d26cc6a52a7d4a4f45dddbbab86721d8ebd6d5501367",
+  "source_changes": "Only queue.py accepts original_queue_start_unix from bound RESOURCE_RECOVERY_AMENDMENT.json and records actual attempt start separately. Train/model/data/metrics/readout/runtime/optimizer/seed/permutation/selection remain byte-identical; no new engineering NN.",
+  "restart": "No complete Adam/RNG/mid-epoch state exists. Rebuild all12 planned fits from original same-seed FT+Ccap assets; two interrupted1024fits are new attempts from epoch0, other10neverstarted. Never initialize from their best_validation.pt or use partial VAL to choose method.",
+  "new_completed_matrix_fits": 12,
+  "retained_interrupted_fit_attempts": 2,
+  "total_fit_attempts_if_all_complete": 14,
+  "new_matrix_update_positions": 946800,
+  "retained_partial_update_bounds": [
+    41400,
+    41500
+  ],
+  "cumulative_formal_update_position_bounds": [
+    988200,
+    988300
+  ],
+  "new_matrix_target_presentations": 60588960,
+  "cumulative_formal_target_presentation_bounds": [
+    63238326,
+    63244726
+  ],
+  "interrupted_C_current_prefix_projection_head_each": 2129278,
+  "interrupted_H_current_prefix_projection_head_each_bounds": [
+    1551950,
+    1558350
+  ],
+  "CPU_timing_of_interrupted_fits": null,
+  "H_exact_terminal_counter": null,
+  "deadline": "Keep original global24h deadline, including interrupted attempt and recovery downtime; queue clock is not reset",
+  "original_queue_start_unix": 1793640563.790547,
+  "absolute_deadline_unix": 1793726963.790547,
+  "original_per_file_metric_and_GPU_RSS_and_other_limits_unchanged": true,
+  "reengineer_or_new_VAL_test_for_recovery": false,
+  "requires_coordinator_actual_recovery_review_before_restart": true,
+  "new_NN_in_preparation": 0,
+  "stage": "APPLIED_READY_PENDING_EXECUTION_REVIEW",
+  "plan_sha256": "ae997345f1535e6dbb1c4b5436fb1e7df2157e4552218c6c3f6453d33d0e17ef",
+  "migration_approval_sha256": "d412fe03eb71928b2a55cdf4bd7d740f8d76fda162294f179ff182fd3315a3db",
+  "queue_candidate_sha256": "a27ce59ef205d4dbc3eff202ac448bc7e4bf32cc7acf97491fe7669675706d07",
+  "original_protocol_archived": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/attempts/formal_attempt01/PROTOCOL.json",
+  "model_train_data_metrics_runtime_unchanged": true,
+  "engineering_weights_still_discarded": true,
+  "old_partial_checkpoints_never_loaded_for_restart": true
+}

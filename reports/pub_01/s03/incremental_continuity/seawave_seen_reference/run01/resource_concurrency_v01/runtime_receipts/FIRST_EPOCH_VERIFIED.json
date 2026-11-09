@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "First complete 31415 epoch and continued operational status",
+  "utc": "2026-11-07T04:05:36Z",
+  "resource_protocol_sha256": "9bce22984751e21fd8980f3a1032a2e1d64d39b01a5a41d11820906883300c75",
+  "original_parent_all_threads_stopped": true,
+  "workers": [
+    {
+      "seed": 1024,
+      "process": [
+        1879079,
+        1012,
+        794756993
+      ],
+      "state": "R",
+      "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+      "cpu_ticks_since_initial_observation": 38700,
+      "completed_epochs": 11,
+      "last_epoch": 10,
+      "cumulative_updates": 259600,
+      "last_epoch_receipt_sha256": "3b5bed80b68ba62fa062a7fe39d54f9d2da330605e87f3e014f17216f2eda468"
+    },
+    {
+      "seed": 2026,
+      "process": [
+        1879085,
+        1012,
+        794756996
+      ],
+      "state": "S",
+      "gpu": "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba",
+      "cpu_ticks_since_initial_observation": 38682,
+      "completed_epochs": 11,
+      "last_epoch": 10,
+      "cumulative_updates": 259600,
+      "last_epoch_receipt_sha256": "6a576cdd51dc1c6e487743af7b105316c98ca7b7e7d251b636ceda9f3932f906"
+    },
+    {
+      "seed": 31415,
+      "process": [
+        1889880,
+        1012,
+        795110979
+      ],
+      "state": "R",
+      "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9",
+      "cpu_ticks_since_initial_observation": 38770,
+      "completed_epochs": 1,
+      "last_epoch": 0,
+      "cumulative_updates": 23600,
+      "last_epoch_receipt_sha256": "f49bfb46d8f92711149ca5b576450a20f53bc16b5fd8ca25a08f832e1b9a8a3e"
+    }
+  ],
+  "first_31415_epoch_receipt": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_seawave_seen_reference_20261106/formal/seed31415/initial/EPOCH_000.json",
+  "first_31415_epoch_receipt_sha256": "f49bfb46d8f92711149ca5b576450a20f53bc16b5fd8ca25a08f832e1b9a8a3e",
+  "first_31415_epoch_file_mtime_utc": "2026-11-07T04:03:46Z",
+  "GPU_memory_MiB": {
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": [
+      16042,
+      46068
+    ],
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": [
+      8034,
+      46068
+    ]
+  },
+  "GPU_compute_PIDs": {
+    "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9": [
+      1879079,
+      1889880
+    ],
+    "GPU-cd053687-ccd7-87d3-3f4c-a3beffadfcba": [
+      1879085
+    ]
+  },
+  "scheduler": [
+    1889835,
+    1012,
+    795110900
+  ],
+  "reporter": [
+    1889881,
+    1012,
+    795110993
+  ],
+  "science_unchanged": true,
+  "performance_or_stable_speedup_not_established": true
+}

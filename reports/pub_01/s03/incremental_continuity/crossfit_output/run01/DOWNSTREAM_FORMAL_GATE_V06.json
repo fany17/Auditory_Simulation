@@ -1,0 +1,442 @@
+{
+  "passed": true,
+  "upstream": {
+    "1024:0": {
+      "fit_records": 282,
+      "contrastive_actual_records": 282,
+      "Ccap_fit_windows": 166887,
+      "total_CPU_seconds": 2358.276864271,
+      "total_peak_reserved": 7046430720
+    },
+    "2026:0": {
+      "fit_records": 282,
+      "contrastive_actual_records": 282,
+      "Ccap_fit_windows": 166887,
+      "total_CPU_seconds": 2531.233244291,
+      "total_peak_reserved": 7046430720
+    },
+    "31415:0": {
+      "fit_records": 282,
+      "contrastive_actual_records": 282,
+      "Ccap_fit_windows": 166887,
+      "total_CPU_seconds": 2360.194505243,
+      "total_peak_reserved": 7046430720
+    },
+    "1024:1": {
+      "fit_records": 288,
+      "contrastive_actual_records": 288,
+      "Ccap_fit_windows": 167012,
+      "total_CPU_seconds": 2222.037186749,
+      "total_peak_reserved": 6947864576
+    },
+    "2026:1": {
+      "fit_records": 288,
+      "contrastive_actual_records": 288,
+      "Ccap_fit_windows": 167012,
+      "total_CPU_seconds": 2440.423035676,
+      "total_peak_reserved": 6947864576
+    },
+    "31415:1": {
+      "fit_records": 288,
+      "contrastive_actual_records": 288,
+      "Ccap_fit_windows": 167012,
+      "total_CPU_seconds": 2377.8222188229997,
+      "total_peak_reserved": 6947864576
+    },
+    "1024:2": {
+      "fit_records": 282,
+      "contrastive_actual_records": 282,
+      "Ccap_fit_windows": 167601,
+      "total_CPU_seconds": 2260.739173999,
+      "total_peak_reserved": 6952058880
+    },
+    "2026:2": {
+      "fit_records": 282,
+      "contrastive_actual_records": 282,
+      "Ccap_fit_windows": 167601,
+      "total_CPU_seconds": 2453.2823432590003,
+      "total_peak_reserved": 6952058880
+    },
+    "31415:2": {
+      "fit_records": 282,
+      "contrastive_actual_records": 282,
+      "Ccap_fit_windows": 167601,
+      "total_CPU_seconds": 2368.753043792,
+      "total_peak_reserved": 6952058880
+    }
+  },
+  "upstream_payloads": {
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/IS_ANCHOR.npy": {
+      "bytes": 64410368,
+      "mtime_ns": 1793960424932135198,
+      "sha256": "eb96f9e83e3e6437bb7ed8d01cf9b1628fcbc45b8360343ed41b33dcc4074195"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/OOF_ANCHOR.npy": {
+      "bytes": 64958720,
+      "mtime_ns": 1793960450532136294,
+      "sha256": "220f4491f035d9bc183e159584db4716c9092bd90251d4571eb1a57380e9a3da"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793960407472134451,
+      "sha256": "05b21305423df6c3115734d676bbe59a18f606edb983b20670bdb935fe658638"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793960347140131869,
+      "sha256": "45d860339c3be209faa939ae420c8a45ffd0b35d911cff74e9867552f434fb90"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793959661380102526,
+      "sha256": "0dfcf521ade74a1534c434f21a4df1d7d619ab156e6912727edd3ee396947daf"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793958975174073164,
+      "sha256": "a15059f8c65a4a495af6bf6dda4aba161044969245db7259e286dd8c8a0f29ff"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/IS_ANCHOR.npy": {
+      "bytes": 64410368,
+      "mtime_ns": 1793960588988142218,
+      "sha256": "66f97c21736ed512c175a7b73cddc5a5f96c2ae88c92bfd2b1df518af4a43eca"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/OOF_ANCHOR.npy": {
+      "bytes": 64958720,
+      "mtime_ns": 1793960610204143126,
+      "sha256": "25cf6888fdb3288cf7db259113e826a2ef8688a86aeced4e078a66ea8fa9988e"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793960571009141449,
+      "sha256": "84adecb1a558ed7064e61fc57c73e16e6ad313ff6ad95458b9800aeb7963fde4"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793960513149138973,
+      "sha256": "e1e1ed3f6c4f0667ab4ed82cab0e9ea08f637d3786b524157bf6e22757e8a984"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793959824913109524,
+      "sha256": "91681265ec017b650b125ed78864132581df10c226ac0e1d6b5cb140d6d6e36c"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793959200553082808,
+      "sha256": "3ba96cd4d7c288166317fbfe9d39f791f9bb120f209012a61882de62b819c672"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/IS_ANCHOR.npy": {
+      "bytes": 64410368,
+      "mtime_ns": 1793967224128426133,
+      "sha256": "de50aeb7a51e9ae6458aca9f883b887d5c7e47a8a21d49bcfb5fca9e6f159b14"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/OOF_ANCHOR.npy": {
+      "bytes": 64958720,
+      "mtime_ns": 1793967244066426986,
+      "sha256": "baa856dffb3ac8b8f6143a6702f68874062f5b1ee85c90846e3e60cbbe71b435"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793967206625425384,
+      "sha256": "a730ae445c08f7677ee9356a8b1ac97294607e2d063dcf64da0344c79b5fa602"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793967149838422954,
+      "sha256": "6a885e723d03ddb966d0d23f5e6b4a05ee347be490179891827cfaede351fb5b"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793966464957393648,
+      "sha256": "60cd3c2dea96b73881c9ac3857960ab50d6b9cdcba2b7f837eed211bc87623b3"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793965844365367093,
+      "sha256": "89c1263d9afb2c30587168871117c99bb65896af5d3412228dd865a3a237ff56"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/IS_ANCHOR.npy": {
+      "bytes": 64958720,
+      "mtime_ns": 1793969442240521045,
+      "sha256": "b1f70e18936bc324cedda4d70421f4c6508ba823e569185bb987104f397864d7"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/OOF_ANCHOR.npy": {
+      "bytes": 64839728,
+      "mtime_ns": 1793969462188521899,
+      "sha256": "2da042181bb45279d223ca3844dd1996343446f97395a2555fb4c5462f6da749"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793969424556520288,
+      "sha256": "1e27764edd11945e65827e63268cdb07c8ba30e8baa9a716dc13e78ae32a2679"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793969368789517902,
+      "sha256": "cb4a97b4f71559460a98cd6d3ccc0954a009d0405b4cefe637311009d7577c1e"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793968683702488587,
+      "sha256": "0b3ee7682570f1602dcaa0963d2bcc29d2f2d7bf2e7b96c0a146d400d491ff5e"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793968049202461437,
+      "sha256": "2634f4274478ca0c8b2b30f501ebe22c5635b56688ee7ce1652f521a04b3d74b"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/IS_ANCHOR.npy": {
+      "bytes": 64958720,
+      "mtime_ns": 1793965042800332795,
+      "sha256": "6b42e0f365b026c1cd9c53e743e91e246515217fa2e3596af3a71a31bf7906fc"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/OOF_ANCHOR.npy": {
+      "bytes": 64839728,
+      "mtime_ns": 1793965062704333646,
+      "sha256": "f32ba67a671e1be00b543df48baa9d6ea931315efc5defb4554ec26474cd2d2f"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793965025124332038,
+      "sha256": "19146f36e8eccc7419165b3f487a7de95000eec823a06dac6f884dfd16331a0f"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793964968065329597,
+      "sha256": "836662c26aeff8b625fbc9706ba30f099d607d9a823e9fac4bffe899af1dd8f7"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793964281723300229,
+      "sha256": "0f55a89f1f0ced3c9f291dcecedc37e608ed0740105c12f2e76869393231e95b"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793963648155273119,
+      "sha256": "4344f6189fa2d84b96106fa930e0d7dff8ecbf00203e05d3b1cb67fba035bfdc"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/IS_ANCHOR.npy": {
+      "bytes": 64958720,
+      "mtime_ns": 1793962622589229235,
+      "sha256": "01707335002d3e0c5b02b17899ff610b3ac7b0ece43d040a8fe60c7f000af0ca"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/OOF_ANCHOR.npy": {
+      "bytes": 64839728,
+      "mtime_ns": 1793962643419230126,
+      "sha256": "4ed6b074cf42e40680defde7215091d1135473ebe6e7c55b38406622da50213f"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793962604526228462,
+      "sha256": "594c0880f50941cd463d6d5a99f5df6041aa986340a5743fedff6f4708102626"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793962546127225963,
+      "sha256": "79c8b307fdf5ef1ff1a9da5ff46550c9984b3232887b11c89c3b93be26f7cb86"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793961860961196645,
+      "sha256": "4ca5b7ad027860784542116213907849b00efbed08f717c343e755ae6b05618b"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793961228104169566,
+      "sha256": "d31ba3c85a22686cf9064c12394ba184a1dce87ccea673fff2d56a0a9e8ffae4"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/IS_ANCHOR.npy": {
+      "bytes": 64839728,
+      "mtime_ns": 1793967393604433385,
+      "sha256": "6623ac126324ebbbe4979466f0870e58405fb16fdcf79cfd291b3634f61a4b50"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/OOF_ANCHOR.npy": {
+      "bytes": 64410368,
+      "mtime_ns": 1793967413583434240,
+      "sha256": "c0e28008732f69cf4d8866b99b98b4a2f58cac4f4647a45a10d837df63fc7afa"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793967375735432620,
+      "sha256": "8fb9f173ee4d60ad1be375001c1fb71131997f2009724e8f1c3cc2465dd49dfd"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793967319410430210,
+      "sha256": "874fa359f6d36d5d83e730c5ad411a89a913c3c8e881b557f126f4e826a24ae3"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793966631017400754,
+      "sha256": "3d508786ee385bc4f0c4b4cadfe66261ca92b06e29529b1176ce198a864b3fb9"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793965949324371585,
+      "sha256": "c9ba9ecd9955dcc647c2936a24526be942b7906403e9af1416c079692e58f410"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/IS_ANCHOR.npy": {
+      "bytes": 64839728,
+      "mtime_ns": 1793965306622344084,
+      "sha256": "2cd97dd5c8634651ff542b1aec5936eb255382045ae233debad75c8c08e33238"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/OOF_ANCHOR.npy": {
+      "bytes": 64410368,
+      "mtime_ns": 1793965326797344947,
+      "sha256": "5dc5c98cc3d5fc7e9d8dd39735a6249f3ab762f28b5a19c813475490272f21a6"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793965288473343307,
+      "sha256": "33c875a69d2311df6e03369751f00a09c5a1566d33c0ad360e1c0dcff64c3d29"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793965230442340824,
+      "sha256": "cf346d1645138f960815a17654b83fc057a8b51ea7ddb62be2457006720aa4f9"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793964540393311297,
+      "sha256": "4278ca37a68d1a0efdca9a6188feee4b94bb6707782c2bc4a3afe7234b15a7d8"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793963882786283158,
+      "sha256": "96ff7ba4c4a6f6f795ab2ccace445004cf0e97d3dd8efaff6a67876729c3eebc"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/IS_ANCHOR.npy": {
+      "bytes": 64839728,
+      "mtime_ns": 1793962783400236116,
+      "sha256": "b9a55b5f182c1f0b673efc70add7866c29f41d53fb9a83007fb4649b3066393c"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/OOF_ANCHOR.npy": {
+      "bytes": 64410368,
+      "mtime_ns": 1793962803336236969,
+      "sha256": "55e5608473cfbc85ba880ef6440cf8e5a0e32718a0c150e795e4c6d136d50a29"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/READOUT.npz": {
+      "bytes": 5074746,
+      "mtime_ns": 1793962765517235351,
+      "sha256": "1409a7a4e574a8c0b50b398c38901827756ffea6dccce45c435ca065621f3ab6"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/FT.pt": {
+      "bytes": 13539991,
+      "mtime_ns": 1793962709217232942,
+      "sha256": "af11bb3c101b203e0f530325f3e195e75da5fc73cf7fa56bd45e285269b5e190"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/head.pt": {
+      "bytes": 2893,
+      "mtime_ns": 1793962019281203420,
+      "sha256": "32019c07164018c852432542ae1b8d52b35ec0dfeee9fde3a2cb66192c0278a6"
+    },
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/contrastive.pt": {
+      "bytes": 15267377,
+      "mtime_ns": 1793961369362175610,
+      "sha256": "4236d731690f48b0b62efdd69586a8ceafd50bf5b3e525d63f1717ff9c6e498f"
+    }
+  },
+  "sources": {
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_current_readout_internal_audit_20261101/input/pub_01_s03_ss07_generalization_core.py": "729218083b3405d05a7e93a3d056b762591f92bc0570f5c2a57eddcae93fbbd4",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_memoryless_output_20261106/PROTOCOL.json": "339f41a6b0490dbdcef73b64ce9ad17c24f9e372f6304f5050309952129018a0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_memoryless_output_20261106/input/pub_01_s03_ss07_memoryless_output.py": "127c2d15b4727fa25a26c0d1bd0c83802ecf43fa243eedb7cb940562fb9b8393",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_query_20261106/PROTOCOL.json": "40de86545cdcd69264a308a68cc02c653b211f9688511b2cea9df2976dbcc74e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_output_query_20261106/input/pub_01_s03_ss07_output_query.py": "9425b886fed962ebfc349cf60c5dee3b56aa374ab13f7e7c231829f993f7afcb",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PREPARATION_METADATA.json": "1068d1eede47893e074c7a67b7a57c1a967364cb974ffdf088a1d623121e24bd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/PROTOCOL.json": "133b60eeb6e937def9f25bdb8303ab80d9a2cf00d0f86ea3f6768c0f56a7b078",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_core.py": "e05a2f871afcdf2662682ee3ae4b5312ba6474f478fb176014feb95b117fdf96",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_meta.py": "d4563944f3634598cab5dfbe62c852b40edb0f649e7ed1d915858afbe8c515b3",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_physical_stream_20261106/input/pub_01_s03_ss07_physical_stream_run.py": "9fb8d5d5ce22681d6b886c1a3987b9db1be6c942111de7d303cc0c2d21bf1978",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/PROTOCOL.json": "535d06ed1e12ea1048293ca1be63bb2ad8dfd7c0b985dd9ca9503d6f64735540",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_recent_prediction_context_20261106/input/pub_01_s03_ss07_recent_prediction_context.py": "31b9dc7756b95e555d6775b26fe8b8d59fc5d0e96ac84c2a947f099ffc2a04c3",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY_V02_STOP.json": "0f1a293b2e13e646a6b281a39157b95155ef4d2c5f0c9fd1ac0ebf09eeffd902",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/COORDINATOR_UPSTREAM_REPLAY_V03.py": "ac9e2b7ca4a6d2ee6d393c2e15cf140416451c64871378273419a7a4a69f03be",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/DOWNSTREAM_INPUT_PREFLIGHT_V03.json": "a06b4b4543fa04651477bac462ef79d79a002954d87e6afb0ca66fe056e21637",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/FOLD_AND_BUDGET_CANDIDATE_V2.json": "6638a00d673fb6eebbe5353d97d14b21800c19ddf0d9ac4a600cde0440740c83",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/TRAIN_RECORD_ASSIGNMENT.json": "7ab57f1818a4aef312c43342768893ae8a49ff39407fa8bd76812ef2c81e3d24",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/UPSTREAM_FORMAL_GATE_V04.json": "0ad69424fb76f827b268b63f7d45cbd954ae514c7f687d13a870e66e52322482",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/UPSTREAM_RECOVERY_TERMINAL.json": "4e51fcae766b3e51c187eafe0a42117de5dd4aca28a4aa0db196860c0a68e4c2",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/COMPLETED.json": "231e76fa271a15fd7a6577c3dd65231d79e31b279bfb6a1f4ac2150c63317ec0",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/PROCESS.json": "ee054355d9d4df582a8b1ffc2816e4d6680ad53a1a0266de6b8750c039c963d5",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed1024_fold0.json": "bf85676b35ca91283361f9a0afefdd4d89db2a126c6eb10458cfb1e5b3f42434",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed1024_fold1.json": "8aa6610464ee02185d0d572239556ee765a947a8b4cad65d6139ec8d2800d15b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed1024_fold2.json": "a5e1bdd09d6ea37212f589d76da86b1972ab66db9f3194b3fb72bd82073c154d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed2026_fold0.json": "e5253a0c38f5452708de97058be5d1b46e5c66c8e64f579341052b55d0d31bf1",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed2026_fold1.json": "40c0ef423e653946533767e473716558ec3d44c183db11e0710b3483ce3ba240",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed2026_fold2.json": "225ea36011e104140a3846d7fce381119177e98d906215d6c74e9df220b7effe",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed31415_fold0.json": "cd62bbd931a144acdd6993fede0a12965ff9489ed4f0a20df34b8a1e3a208f5b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed31415_fold1.json": "3a9b907455786fce074d8bb359a99e98038aeb33d52769ef5e714487e0150e58",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/seed31415_fold2.json": "3457e4c729c25b90bc2bd3f19fbce91689688b2a55109df30808dd3b628a6cfb",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/downstream_engineer/seed1024/COMPLETED.json": "3f334b8f23e2047cb628869eaafbdd7a0b9109fbf5b269a2791e1a95292cf7d8",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/COMPLETED.json": "b86787023eac0ae052fcdc6fd838eca31494aeb73d13ce23a1312383f45c74fd",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/IS_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/OOF_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold0/UPSTREAM_FROZEN.json": "76b690f86503c8e8238ab664363160384381bf0e0f5f05bf53c40979afd77aa6",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/COMPLETED.json": "ecdfd6f930864724b141abde29390cb7330f670ad2d0055af337eac9868d411d",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/IS_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/OOF_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold1/UPSTREAM_FROZEN.json": "833508d1cc29f61a1e6fb5bf8ea3dfc8245c507305dcc48f4c19516ffe00508b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/COMPLETED.json": "4e3a63958468876bd6b8e8b87c16cc2f5bb771b32edf0441808263abccae9afb",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/IS_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/OOF_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed1024_fold2/UPSTREAM_FROZEN.json": "40edf68e4b2cbb60a832bd861a746391f06df034b068db7273e667bb41173c5c",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/COMPLETED.json": "396bd02ff5592884571c2aa2567037fa280a5f909b0d9d645ae25ac91180dd01",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/IS_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/OOF_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold0/UPSTREAM_FROZEN.json": "e978f260b988f19eabd6abb29c5b42e81dfcd94ee9d3bd87ac0bbc42b4b2dd86",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/COMPLETED.json": "838795260d308e4b2b928a97c03e97f3c9836f7a99f60318f4230c8bb05d2ca9",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/IS_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/OOF_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold1/UPSTREAM_FROZEN.json": "2deb08064ae6f46a8a53e8b2673e71b4507341f009c79e44694dd9fccb24eb0e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/COMPLETED.json": "2cc65f76560e995a78f2ac9fb0d84a716c4ea0f0e76b6d1703a28210d8ee60e6",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/IS_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/OOF_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed2026_fold2/UPSTREAM_FROZEN.json": "45c8309282a10f62c0063801146f6f7043161cb8f9dee599a445e0b1c77152b8",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/COMPLETED.json": "a391960794ef498f3639499dce617892e1bcb206a6473e01eba5e5784df7e914",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/IS_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/OOF_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold0/UPSTREAM_FROZEN.json": "91573069d38fbdd279eaf6c440535f200b4c7e47288cd6c0c6c1d364a8e25e14",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/COMPLETED.json": "41dd5c1d3d22f4b01271624e3eb2641e648f0bcc22f78765936c8f93d3347317",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/IS_ANCHOR.json": "21228135cbc6f7b3c2e5acedb3df6867080f7c04926f40186929a97b4643b432",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/OOF_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold1/UPSTREAM_FROZEN.json": "fc31127fab9123d465253cdb010c79bf49b64cbfd0a7bb4d68b4475602b2656b",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/COMPLETED.json": "e96298722b969e0d6af8fee8fd1f8c5b1c79b8c1eec3f2d39addc6af628b2195",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/IS_ANCHOR.json": "545c0535333e757426713d5937aaeb7b0d8549918c0677b1b9339c5e605dfb51",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/OOF_ANCHOR.json": "f142c8f5178a5f7def00ab36dc844200fd25c72a198547ac75b3600f27287b9f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/formal/seed31415_fold2/UPSTREAM_FROZEN.json": "8bfe1c58cd678cfe145d7d01f72602f69a31a7429c61b2d40379517fb96c5f8a",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_downstream_v06/pub_01_s03_ss07_crossfit_downstream.py": "8e99a99ed0afd57ea56ce7139754341b7f1b30227247321e2a635578940eb55f",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_downstream_v06/pub_01_s03_ss07_crossfit_meta.py": "a3921beafa3f55cb87c2f0bdb556e31e19bed7e0466e498adceb345477b27433",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/input_upstream_recovery_v01/pub_01_s03_ss07_crossfit_upstream_recovery.py": "ff10edf3d8b7b347edd7823efc05e04d4bacec2ac9e117822655c5e31414e3ff",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue/GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9_FAILURE.json": "feb9024f0de79be77abd7b7b8f39aaa269a142be056fc46c65946940f3bf0ad8",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/queue/TERMINAL.json": "b42e053527cd696d61b1f8c3ef17f19ea13e096aec8d8de9da6d634283aa307e",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/upstream_recovery_v01/PLAN.json": "d5f46ef9f341fa43c682ed6a055f35443e9da5ad96d0225f55bdb7ad51de1044",
+    "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/upstream_recovery_v01/PROCESS.json": "3fcf5e3d233c20eb14df58a97bf361bf863a245d692abc7dd6cc005cc5820feb"
+  },
+  "historical": {
+    "historical_sha256_pins": 55,
+    "D19_input_stats": 73,
+    "historical_sha256_bytes": 18738099,
+    "history_payload_scoring": 0,
+    "wall_seconds": 0.03784075565636158,
+    "CPU_seconds": 0.024194959999999988
+  },
+  "independent_replay": {
+    "receipt": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_source_family_crossfit_20261106/coordinator_upstream_audit_v03/COMPLETED.json",
+    "jobs": 9,
+    "counters": {
+      "NN_windows": 4068,
+      "NN_batches": 78,
+      "physical_points": 5760,
+      "fitting_updates": 0,
+      "labels_read": 0
+    },
+    "source_sha256": "ac9e2b7ca4a6d2ee6d393c2e15cf140416451c64871378273419a7a4a69f03be"
+  },
+  "payload_verification": {
+    "bytes": 1470217959,
+    "wall_seconds": 1.6096410360187292,
+    "CPU_seconds": 1.6060168080000006,
+    "new_scoring": 0
+  }
+}

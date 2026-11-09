@@ -1,0 +1,14 @@
+{
+  "seed": 1024,
+  "epochs": 250,
+  "updates": 986250,
+  "selected_epoch": 249,
+  "stopping": "RESOURCE_CEILING250",
+  "best_validation": -0.14876085354949609,
+  "seconds_including_cache": 1502.5930078029633,
+  "test_payload_loaded": false,
+  "encoder_sha256": "75860bfb1bbeed03eab32c25baaa37338f60dcc6214c6f340da9742ae1fd99d8",
+  "target_window_presentations": 63113500,
+  "target_sample_presentations": 12117792000,
+  "head_parameters": 257
+}

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "test_payload_or_scores": false,
+  "actual_frozen_native_fullval49people752blocks_r_max_difference": 0.0,
+  "actual_nonzero_fitted_M2_val_predict_vs_true_history_max_difference": 0.0,
+  "six_family_nonzero_aligned_chunk_identity_errors": {
+    "m1": 0.0,
+    "m2": 0.0,
+    "m3": 0.0,
+    "m4": 0.0,
+    "m5": 0.0,
+    "output_prior": 0.0
+  },
+  "FT_incumbent_real_val_two_record_global64_streaming_max_difference": 0.0,
+  "prediction_independent_geometry_and_constant_target_masks_verified": true,
+  "current_val_z_unchanged_by_wrong_history": true,
+  "donor_subset_same_keys_verified": true,
+  "mismatched_keys_or_person_rejected": true,
+  "checkpoint_seed_epoch_mismatch_rejected": true,
+  "earliest_checkpoint_tie_and_incumbent_verified": true,
+  "premature_manifest_call_payload_loads": 0,
+  "no_incomplete_scientific_manifest_created": true
+}

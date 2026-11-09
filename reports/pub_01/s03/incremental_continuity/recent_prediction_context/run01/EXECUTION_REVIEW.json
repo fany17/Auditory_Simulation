@@ -1,0 +1,33 @@
+{
+  "stage": "fit",
+  "decision": "PASS",
+  "protocol_sha256": "535d06ed1e12ea1048293ca1be63bb2ad8dfd7c0b985dd9ca9503d6f64735540",
+  "engineering_sha256": "af7cc0bbe5c2fb8c7d3ce00383f98d33e5ff27743d625c708e24f40177e3b770",
+  "source_sha256": "31b9dc7756b95e555d6775b26fe8b8d59fc5d0e96ac84c2a947f099ffc2a04c3",
+  "reviewer": "root independent coordinator",
+  "reviewed_source_scope": "Read entire 362-line D20 wrapper plus actual inherited D19 Table/model/statistics/evaluate/fit_role/Receipt paths; immutable upstream code reused. Near288/older960 dispatch map to actual1/288 only for P; mask1344 unchanged.",
+  "actual_pin_checks": 18,
+  "provenance_checks": 6,
+  "input_stat_checks": 73,
+  "engineering_checks": "All3 explicit bins/record boundaries/initial parameter identities/epoch0 PCG64/zero residual/nonzero gradients/same-current-code interventions read; counts match.",
+  "authorizations": "Three full20-pass fits within existing TRAIN/VAL; no extra architectures, data, external tests or altered D19.",
+  "limitations": [
+    "Repeated development VAL with seen participants; not confirmatory.",
+    "Recent predictions overlap current raw EEG; same upper future bound is offline permission, not causality or pure extra past information.",
+    "P near normalization refitted on TRAIN; remote intervention uses near statistics and can change input distribution.",
+    "No performance conclusion or goal completion from this engineering pass."
+  ],
+  "formal_budget": {
+    "fits": 3,
+    "optimizer_updates": 86820,
+    "backward_points": 1422210600,
+    "fixed_TRAIN_forwards": 284442120,
+    "epoch_VAL_forwards": 172007940,
+    "paired_current_points_max": 8600397,
+    "current_stem_points_max": 1887261057,
+    "context_output_points_max": 1895861454
+  },
+  "new_model_forwards_in_review": 0,
+  "new_fits_in_review": 0,
+  "created_unix": 1793952154.6708734
+}

@@ -1,0 +1,21 @@
+{
+  "pid": 2050834,
+  "uid": 1012,
+  "start_ticks": "757103757",
+  "argv": [
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_strong_baselines_20261013/env01/bin/python",
+    "/home/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103/input/pub_01_s03_ss07_preprojection_queue.py"
+  ],
+  "source_commit": "d6a24f67723dd36140bcf65dfbd11407325032e8",
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "approval_sha256": "e051f5c2d5978d88c6f7c275b9f8ff56bc29c1455bb0c61cd03dbdec95487c63",
+  "launched_unix": 1793643792.8686008,
+  "formal_fits": 12,
+  "epochs_per_fit": 20,
+  "automatic_retry": false,
+  "attempt": "formal_recovery_attempt02",
+  "old_interrupted_fits": 2,
+  "old_attempt_archive": "attempts/formal_attempt01",
+  "physical_ROOT": "/sata5/fanyu/auditory_simulation_m6a/pub_01/s03_preprojection_memory_20261103",
+  "original_absolute_deadline_unix": 1793726963.790547
+}

@@ -1,0 +1,28 @@
+{
+  "time": 1793500346.3721902,
+  "conditions": [
+    "m4_h16",
+    "m4_current_h16",
+    "static_m4_h16",
+    "output_prior_h16",
+    "static_alignment"
+  ],
+  "paired_seeds": [
+    1024,
+    2026,
+    31415,
+    42,
+    12345
+  ],
+  "all_cells_validated": 25,
+  "validation_means": {
+    "m4_h16": 0.16209353605691493,
+    "m4_current_h16": 0.162053111779053,
+    "static_m4_h16": 0.16722494225262738,
+    "output_prior_h16": 0.16254555143102878,
+    "static_alignment": 0.16417600978657776
+  },
+  "test_read": false,
+  "strong_finetune_and_EMA_separate_pending": true,
+  "research_goal_complete": false
+}

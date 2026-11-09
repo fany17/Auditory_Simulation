@@ -1,0 +1,482 @@
+{
+  "selected_means": [
+    {
+      "arm": "Ponly",
+      "selected_lambda": 0.0001,
+      "r3s": 0.1550705108668,
+      "r60s": 0.1718368486141928,
+      "delta60s_over_P": 0.009474363160749705,
+      "overlap_MSE": 0.0030755804708817607,
+      "overlap_NRMSE": 0.7147136142797628,
+      "window_target_MSE": 0.2575220914186286,
+      "weighted_single_MSE": 0.24515649509550566,
+      "fused_MSE": 0.24483567389861918,
+      "disagreement": 0.0003208211968864831,
+      "paired_deltas_over_P": [
+        0.009443166569983064,
+        0.011352462374660283,
+        0.007627460537605768
+      ],
+      "selected_effective_df_total": [
+        13436.475198360204,
+        13731.594908512478,
+        13491.564891186823
+      ]
+    },
+    {
+      "arm": "S32",
+      "selected_lambda": 0.0001,
+      "r3s": 0.15618014335682734,
+      "r60s": 0.174284472393747,
+      "delta60s_over_P": 0.011921986940303895,
+      "overlap_MSE": 0.0031702089058667153,
+      "overlap_NRMSE": 0.7177456514526073,
+      "window_target_MSE": 0.2563083759496207,
+      "weighted_single_MSE": 0.2439676644698725,
+      "fused_MSE": 0.24363803389974023,
+      "disagreement": 0.00032963057013228326,
+      "paired_deltas_over_P": [
+        0.011187518762578563,
+        0.01553930047913843,
+        0.009039141579194693
+      ],
+      "selected_effective_df_total": [
+        13513.580403267391,
+        13816.781763720406,
+        13566.692068731696
+      ]
+    },
+    {
+      "arm": "U32",
+      "selected_lambda": 0.0001,
+      "r3s": 0.15607760709226418,
+      "r60s": 0.17386667757607985,
+      "delta60s_over_P": 0.01150419212263673,
+      "overlap_MSE": 0.003204608204496116,
+      "overlap_NRMSE": 0.7183378936515998,
+      "window_target_MSE": 0.2562397717128205,
+      "weighted_single_MSE": 0.24390836364925952,
+      "fused_MSE": 0.2435758962778064,
+      "disagreement": 0.0003324673714531343,
+      "paired_deltas_over_P": [
+        0.010825578908608274,
+        0.014947600483680101,
+        0.008739396975621816
+      ],
+      "selected_effective_df_total": [
+        27205.01532760637,
+        28933.36506506525,
+        26879.19666007194
+      ]
+    },
+    {
+      "arm": "C",
+      "selected_lambda": 0.0001,
+      "r3s": 0.15674131463180327,
+      "r60s": 0.1747890116383014,
+      "delta60s_over_P": 0.012426526184858308,
+      "overlap_MSE": 0.003881823212768531,
+      "overlap_NRMSE": 0.7778726776064345,
+      "window_target_MSE": 0.25544698757650436,
+      "weighted_single_MSE": 0.24317886586990559,
+      "fused_MSE": 0.24275916867919026,
+      "disagreement": 0.0004196971907153597,
+      "paired_deltas_over_P": [
+        0.011132108917005723,
+        0.015859894455169304,
+        0.010287575182399894
+      ],
+      "selected_effective_df_total": [
+        94304.3024009025,
+        103196.20170293978,
+        91395.39354641858
+      ]
+    },
+    {
+      "arm": "Ccap",
+      "selected_lambda": 0.01,
+      "r3s": 0.1577907889638309,
+      "r60s": 0.17689735905459683,
+      "delta60s_over_P": 0.014534873601153742,
+      "overlap_MSE": 0.003015964168783896,
+      "overlap_NRMSE": 0.7025571451775311,
+      "window_target_MSE": 0.25552905952878874,
+      "weighted_single_MSE": 0.24317109357937325,
+      "fused_MSE": 0.24286174500217536,
+      "disagreement": 0.0003093485771978891,
+      "paired_deltas_over_P": [
+        0.01373163052612264,
+        0.017326942303317244,
+        0.01254604797402134
+      ],
+      "selected_effective_df_total": [
+        27617.939082092227,
+        28019.895401078014,
+        27497.14166846872
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "comparison": "U32-S32",
+      "choice": 0.0001,
+      "deltas": [
+        -0.00036193985397028894,
+        -0.000591699995458328,
+        -0.0002997446035728768
+      ],
+      "mean": -0.0004177948176671646,
+      "positive_seeds": 0
+    },
+    {
+      "comparison": "U32-S32",
+      "choice": 0.01,
+      "deltas": [
+        3.373694752137335e-05,
+        7.219508084074788e-05,
+        3.267610537172061e-05
+      ],
+      "mean": 4.620271124461395e-05,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "U32-S32",
+      "choice": 1.0,
+      "deltas": [
+        2.911507366254451e-06,
+        2.1631401429245134e-06,
+        3.0805393259891733e-06
+      ],
+      "mean": 2.7183956117227126e-06,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "U32-S32",
+      "choice": "shared_selected",
+      "deltas": [
+        -0.00036193985397028894,
+        -0.000591699995458328,
+        -0.0002997446035728768
+      ],
+      "mean": -0.0004177948176671646,
+      "positive_seeds": 0
+    },
+    {
+      "comparison": "C-U32",
+      "choice": 0.0001,
+      "deltas": [
+        0.0003065300083974487,
+        0.0009122939714892031,
+        0.001548178206778078
+      ],
+      "mean": 0.0009223340622215767,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "C-U32",
+      "choice": 0.01,
+      "deltas": [
+        0.0009479075851558938,
+        0.0019636235403068525,
+        0.0019901172595617744
+      ],
+      "mean": 0.0016338827950081736,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "C-U32",
+      "choice": 1.0,
+      "deltas": [
+        0.00021325805683777843,
+        0.0003732893663316861,
+        0.00020922480132792853
+      ],
+      "mean": 0.0002652574081657977,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "C-U32",
+      "choice": "shared_selected",
+      "deltas": [
+        0.0003065300083974487,
+        0.0009122939714892031,
+        0.001548178206778078
+      ],
+      "mean": 0.0009223340622215767,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "Ccap-C",
+      "choice": 0.0001,
+      "deltas": [
+        -0.00016695113662254513,
+        -0.0001460964759771033,
+        -0.0013381656163984346
+      ],
+      "mean": -0.0005504044096660277,
+      "positive_seeds": 0
+    },
+    {
+      "comparison": "Ccap-C",
+      "choice": 0.01,
+      "deltas": [
+        0.0025916036729582703,
+        0.003075953871423537,
+        0.002372247719454962
+      ],
+      "mean": 0.0026799350879455897,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "Ccap-C",
+      "choice": 1.0,
+      "deltas": [
+        9.836063629464764e-05,
+        0.00010324530956196121,
+        7.141525626541689e-05
+      ],
+      "mean": 9.100706737400858e-05,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "Ccap-C",
+      "choice": "shared_selected",
+      "deltas": [
+        0.002599521609116917,
+        0.0014670478481479399,
+        0.0022584727916214464
+      ],
+      "mean": 0.0021083474162954343,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "S32-Ponly",
+      "choice": 0.0001,
+      "deltas": [
+        0.0017443521925954997,
+        0.004186838104478147,
+        0.0014116810415889247
+      ],
+      "mean": 0.00244762377955419,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "S32-Ponly",
+      "choice": 0.01,
+      "deltas": [
+        0.0006455220062199785,
+        0.0011728045466284642,
+        0.00033572126844216843
+      ],
+      "mean": 0.0007180159404302037,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "S32-Ponly",
+      "choice": 1.0,
+      "deltas": [
+        2.245321885652185e-05,
+        4.0540819044726506e-05,
+        2.397839677412139e-05
+      ],
+      "mean": 2.899081155845658e-05,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "S32-Ponly",
+      "choice": "shared_selected",
+      "deltas": [
+        0.0017443521925954997,
+        0.004186838104478147,
+        0.0014116810415889247
+      ],
+      "mean": 0.00244762377955419,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "U32-Ponly",
+      "choice": 0.0001,
+      "deltas": [
+        0.0013824123386252107,
+        0.0035951381090198187,
+        0.001111936438016048
+      ],
+      "mean": 0.0020298289618870258,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "U32-Ponly",
+      "choice": 0.01,
+      "deltas": [
+        0.0006792589537413518,
+        0.0012449996274692121,
+        0.00036839737381388904
+      ],
+      "mean": 0.0007642186516748176,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "U32-Ponly",
+      "choice": 1.0,
+      "deltas": [
+        2.53647262227763e-05,
+        4.270395918765102e-05,
+        2.7058936100110564e-05
+      ],
+      "mean": 3.17092071701793e-05,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "U32-Ponly",
+      "choice": "shared_selected",
+      "deltas": [
+        0.0013824123386252107,
+        0.0035951381090198187,
+        0.001111936438016048
+      ],
+      "mean": 0.0020298289618870258,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "C-Ponly",
+      "choice": 0.0001,
+      "deltas": [
+        0.0016889423470226594,
+        0.004507432080509022,
+        0.002660114644794126
+      ],
+      "mean": 0.0029521630241086025,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "C-Ponly",
+      "choice": 0.01,
+      "deltas": [
+        0.0016271665388972456,
+        0.0032086231677760646,
+        0.0023585146333756635
+      ],
+      "mean": 0.002398101446682991,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "C-Ponly",
+      "choice": 1.0,
+      "deltas": [
+        0.00023862278306055473,
+        0.0004159933255193371,
+        0.0002362837374280391
+      ],
+      "mean": 0.00029696661533597696,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "C-Ponly",
+      "choice": "shared_selected",
+      "deltas": [
+        0.0016889423470226594,
+        0.004507432080509022,
+        0.002660114644794126
+      ],
+      "mean": 0.0029521630241086025,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "Ccap-Ponly",
+      "choice": 0.0001,
+      "deltas": [
+        0.0015219912104001143,
+        0.0043613356045319185,
+        0.0013219490283956914
+      ],
+      "mean": 0.002401758614442575,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "Ccap-Ponly",
+      "choice": 0.01,
+      "deltas": [
+        0.004218770211855516,
+        0.006284577039199601,
+        0.004730762352830625
+      ],
+      "mean": 0.005078036534628581,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "Ccap-Ponly",
+      "choice": 1.0,
+      "deltas": [
+        0.0003369834193552024,
+        0.0005192386350812983,
+        0.000307698993693456
+      ],
+      "mean": 0.00038797368270998556,
+      "positive_seeds": 3
+    },
+    {
+      "comparison": "Ccap-Ponly",
+      "choice": "shared_selected",
+      "deltas": [
+        0.0042884639561395765,
+        0.005974479928656962,
+        0.004918587436415572
+      ],
+      "mean": 0.005060510440404037,
+      "positive_seeds": 3
+    }
+  ],
+  "baseline_means": {
+    "r3s": 0.149022289439366,
+    "r60s": 0.1623624854534431,
+    "overlap_MSE": 0.002268606259928837,
+    "overlap_NRMSE": 0.6299122258878403,
+    "window_target_MSE": 0.2582681101632571,
+    "weighted_single_MSE": 0.24566440472944628,
+    "fused_MSE": 0.2454579629759496,
+    "disagreement": 0.0002064417534966954
+  },
+  "cost": {
+    "new_model_lambda_fits": 27,
+    "reused_models": 18,
+    "candidate_scores": 45,
+    "baseline_scores": 3,
+    "wall_seconds": 62.76740026473999,
+    "CPU_seconds": 348.898245615,
+    "peak_RSS_bytes": 2522185728,
+    "GPU_initialized": false,
+    "derived_disk_bytes": 94125140,
+    "inputs_unchanged": true,
+    "test_DTU": false
+  },
+  "seed_costs": [
+    {
+      "seed": 1024,
+      "new_models": 9,
+      "reused_models": 6,
+      "scores": 15,
+      "wall_seconds": 20.549975156784058,
+      "CPU_seconds": 115.719356417
+    },
+    {
+      "seed": 2026,
+      "new_models": 9,
+      "reused_models": 6,
+      "scores": 15,
+      "wall_seconds": 20.580329418182373,
+      "CPU_seconds": 116.667368334
+    },
+    {
+      "seed": 31415,
+      "new_models": 9,
+      "reused_models": 6,
+      "scores": 15,
+      "wall_seconds": 20.422414779663086,
+      "CPU_seconds": 115.29967012499998
+    }
+  ],
+  "maximum_reused_primary_abs": 1.6653345369377348e-16,
+  "maximum_normal_equation_abs": 1.0636023312082798e-16,
+  "maximum_Hann_identity_abs": 3.801754917820421e-15,
+  "scope": "Ponly common output reread; S32/U32 same local Z support, denseP common; sharing after D4 coordinate normalization. Repeated known-subject source VAL, no independent loss causality."
+}

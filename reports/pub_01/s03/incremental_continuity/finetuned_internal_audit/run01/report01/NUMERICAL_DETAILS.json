@@ -1,0 +1,165 @@
+{
+  "window_details": [
+    {
+      "role": "P_FT",
+      "phase": "test_seen",
+      "window_MSE": 0.26062527445558786,
+      "seed_window_MSE": [
+        0.26069835010042064,
+        0.26010240622823133,
+        0.2610750670381117
+      ],
+      "r3s": 0.1661850460855682,
+      "undefined": 0
+    },
+    {
+      "role": "P_FT",
+      "phase": "test_heldout",
+      "window_MSE": 0.2894651285325202,
+      "seed_window_MSE": [
+        0.2895981650719737,
+        0.2895360966492525,
+        0.2892611238763344
+      ],
+      "r3s": 0.1478068719913783,
+      "undefined": 0
+    },
+    {
+      "role": "Ponly",
+      "phase": "test_seen",
+      "window_MSE": 0.2603553645739504,
+      "seed_window_MSE": [
+        0.26045423426637454,
+        0.260046821762142,
+        0.2605650376933346
+      ],
+      "r3s": 0.1659780594575051,
+      "undefined": 0
+    },
+    {
+      "role": "Ponly",
+      "phase": "test_heldout",
+      "window_MSE": 0.289415370533098,
+      "seed_window_MSE": [
+        0.2894565759664823,
+        0.2894098709551729,
+        0.28937966467763887
+      ],
+      "r3s": 0.14676527725397112,
+      "undefined": 0
+    },
+    {
+      "role": "C",
+      "phase": "test_seen",
+      "window_MSE": 0.2577917262539228,
+      "seed_window_MSE": [
+        0.25790671524083225,
+        0.25748383920350765,
+        0.25798462431742863
+      ],
+      "r3s": 0.16653951931898794,
+      "undefined": 0
+    },
+    {
+      "role": "C",
+      "phase": "test_heldout",
+      "window_MSE": 0.28841293635175996,
+      "seed_window_MSE": [
+        0.288263946414286,
+        0.2884394838796273,
+        0.28853537876136653
+      ],
+      "r3s": 0.14607343626756272,
+      "undefined": 0
+    },
+    {
+      "role": "Ccap",
+      "phase": "test_seen",
+      "window_MSE": 0.258259976145077,
+      "seed_window_MSE": [
+        0.2580794939728451,
+        0.2579637625109647,
+        0.2587366719514212
+      ],
+      "r3s": 0.1678012218755598,
+      "undefined": 0
+    },
+    {
+      "role": "Ccap",
+      "phase": "test_heldout",
+      "window_MSE": 0.2883219312483574,
+      "seed_window_MSE": [
+        0.2882280206675353,
+        0.28820033068644824,
+        0.2885374423910887
+      ],
+      "r3s": 0.14793464097059916,
+      "undefined": 0
+    },
+    {
+      "role": "W",
+      "phase": "test_seen",
+      "window_MSE": 0.259719721582085,
+      "seed_window_MSE": [
+        0.2595722119181167,
+        0.25938876928795224,
+        0.26019818354018603
+      ],
+      "r3s": 0.16126686969692616,
+      "undefined": 0
+    },
+    {
+      "role": "W",
+      "phase": "test_heldout",
+      "window_MSE": 0.2898125873979726,
+      "seed_window_MSE": [
+        0.28975940332283723,
+        0.28969826792119036,
+        0.28998009094989025
+      ],
+      "r3s": 0.14153855814951197,
+      "undefined": 0
+    },
+    {
+      "role": "F",
+      "phase": "test_seen",
+      "window_MSE": 351.85384764813784,
+      "seed_window_MSE": [
+        356.2370586470856,
+        357.44503798196513,
+        341.8794463153628
+      ],
+      "r3s": 0.0038847114485397877,
+      "undefined": 0
+    },
+    {
+      "role": "F",
+      "phase": "test_heldout",
+      "window_MSE": 352.2471512972051,
+      "seed_window_MSE": [
+        356.63731019547697,
+        357.8392925226757,
+        342.26485117346255
+      ],
+      "r3s": 0.0045055170717484515,
+      "undefined": 0
+    }
+  ],
+  "F_minus_W_weighted": {
+    "fused_MSE": -8.768775045669974e-05,
+    "weighted_single_MSE": 0.32989648980496283,
+    "disagreement": 0.3299841775553933
+  },
+  "stage_wall_sum": 141.84617924690247,
+  "stage_CPU_sum": 532.7562902169998,
+  "extra_original_Decoder_windows": 636,
+  "extra_original_Decoder_max_abs": 0.0,
+  "VAL_capture_max_abs": 0.0,
+  "global_raw_units_max_abs": 0.0,
+  "Hann_identity_max_abs": 2.5792701308091637e-12,
+  "window_scores": 1524456,
+  "record_scores": 2592,
+  "block_scores": 36792,
+  "NPY_GiB": 24.424499183893204,
+  "source": "only saved score/bridge/cost summaries, no new scientific scoring or model operations"
+}

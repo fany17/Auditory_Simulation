@@ -1,0 +1,78 @@
+{
+  "FORMAL_PROTOCOL.json": {
+    "bytes": 6896,
+    "sha256": "07204af637d82eb3c68c22f0a24bd964d8939726183d41cea19075a2df0f781b"
+  },
+  "RESULTS.csv": {
+    "bytes": 40479,
+    "sha256": "d1d31f481f0aeb6a452e9a39bb836a4d4dadc6e137863063019f83bf16e84192"
+  },
+  "SUMMARY.csv": {
+    "bytes": 10550,
+    "sha256": "338c9bb198cade9218c36830008936317b970b6ab1627983e2d645d4b1c6018e"
+  },
+  "per_record_all_seeds.csv": {
+    "bytes": 1986293,
+    "sha256": "fe10dddfffdbb5c37cc3c86ae5350ed70e9771827aed91731bb1b19b3355edd7"
+  },
+  "per_subject_all_seeds.csv": {
+    "bytes": 1038543,
+    "sha256": "331237783dbaf5de9e72172520a2b611bc8a61d8dfbf7da78fd80dedf95de370"
+  },
+  "training_summary.csv": {
+    "bytes": 4584,
+    "sha256": "860a7b5b621484512d5bc8924dda0766c04a4f5248bfd275e3918658777ebb52"
+  },
+  "primary_contrasts.csv": {
+    "bytes": 1736,
+    "sha256": "09ae3a3082ebf2ab52b2ec7d14c7fc7c161c0b1c03b60e99468f88addd698903"
+  },
+  "history_deltas.csv": {
+    "bytes": 9421,
+    "sha256": "b873dd77ab448ff63be03ef1e107ddc512af565d58d0647774b8eaa8965444c3"
+  },
+  "review.json": {
+    "bytes": 1439,
+    "sha256": "5fadbcef5759091a1ed0a0da5f2c0d1758256f6fe9b72292288fc999c143c5ea"
+  },
+  "learning_curves.png": {
+    "bytes": 137522,
+    "sha256": "cabf69a6dee1dd3f32334e011fbd7d20ec18368a130302422356ffa1daea101e"
+  },
+  "model_scores.png": {
+    "bytes": 134010,
+    "sha256": "5770c78085756f217ecb310abe69189c778e9de0b876df987b5ec531a15f39a4"
+  },
+  "primary_paired_differences.png": {
+    "bytes": 93247,
+    "sha256": "6d5f4407d8be51af557f5175b8752790938e200eb36bb9bcecf72f4a862b7484"
+  },
+  "history_interventions.png": {
+    "bytes": 190924,
+    "sha256": "0d7076a7c39dfc4d75c86120cf58ef5b0f81171bd2415d9352f93d7f99526f77"
+  },
+  "REPORT.md": {
+    "bytes": 11761,
+    "sha256": "a577d9d58e4eaf416887893b435c3138ce75c62016353bd28a33f19baceb9c8e"
+  },
+  "REVIEW.md": {
+    "bytes": 5231,
+    "sha256": "70da2f5a2099f8cc19c655e2c4fd9ae754f2b692b4dbba08228122b9e36656af"
+  },
+  "EXECUTION_LOG.md": {
+    "bytes": 6422,
+    "sha256": "d416a3a97a0aee7db0e717cc3e8c1d954c1149cafc86ddd7e50379e43c320832"
+  },
+  "CODE_AUDIT.md": {
+    "bytes": 7877,
+    "sha256": "a40c8fb9e490c5f48a9122ff98f359e44dd96a04f01a01b18b2a1916ed644fde"
+  },
+  "SPLIT_PROVENANCE.md": {
+    "bytes": 3624,
+    "sha256": "89f6422993c84b259e1f5e9f20b853ca318993f5614b67a21effc96002cf811b"
+  },
+  "package_review.json": {
+    "bytes": 776,
+    "sha256": "ef5764af3044b3a0e58eb2faf12d94d50820fac45632b6e45a79abec3fb6cb90"
+  }
+}

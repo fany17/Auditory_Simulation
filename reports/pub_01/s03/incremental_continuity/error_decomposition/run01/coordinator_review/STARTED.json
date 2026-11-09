@@ -1,0 +1,10 @@
+{
+  "source_sha256": "7e89f64bbfc01c85e2c5c7bcaa4c146303e573f1c7274925eeb709c1c8076a26",
+  "protocol_sha256": "47404c336f76365c48fb847ac59007067420ea6701a82f806c82418c7b02221c",
+  "new_NN": 0,
+  "optimizer_updates": 0,
+  "statistical_recomputation": "All3TRAINseed scalar losses and autograd; all fixed block identities/aggregation",
+  "prediction_comparison": "Reuses independent D12 last19 VAL replay; no repeat NN",
+  "device": "CPU",
+  "threads": 2
+}

@@ -1,0 +1,45 @@
+{
+  "engineering_only": true,
+  "test_read": false,
+  "fresh_discarded_weights": true,
+  "active_training_sources_changed": false,
+  "actual_first128_ownseed1024_train_cache_windows": true,
+  "equivalence_method": "exact SAME real backward gradients and initial weights/Adam states; check predicates verified nonmutating; independent cuDNN backwards not assumed bitwise deterministic",
+  "parameter_max_diff": 0.0,
+  "gradient_max_diff": 0.0,
+  "Adam_state_max_diff": 0.0,
+  "NaN_Inf_both_signs_in_each_gradient_tensor_detected": true,
+  "whole_step_seconds_per_alternating_block": {
+    "serial": [
+      0.013668509107083083,
+      0.013749054539948702,
+      0.013551340810954571,
+      0.013608856964856387,
+      0.013603381067514419,
+      0.01350990729406476,
+      0.013650212902575731,
+      0.013456059945747256
+    ],
+    "aggregated": [
+      0.0069149424321949485,
+      0.007013804372400045,
+      0.006900015147402882,
+      0.006940593430772424,
+      0.007002622401341796,
+      0.0068367364350706335,
+      0.00691511919721961,
+      0.007011668803170323
+    ]
+  },
+  "whole_step_medians_seconds": {
+    "serial": 0.013606119016185404,
+    "aggregated": 0.006927856313996017
+  },
+  "finite_check_alone_seconds": {
+    "serial": 0.007662352863699198,
+    "aggregated": 0.0007806432899087667
+  },
+  "GPU_contention": "other authorized jobs remain active; timing is indicative only",
+  "source": "/home/fanyu/auditory_simulation_m6a/pub_01/s03_incremental_continuity_20261101/input/pub_01_s03_ss07_profile.py",
+  "source_sha256": "750e27516144a9b114c5be11253cf1e412cbed7a8988f76c428b86c032016e9c"
+}

@@ -1,0 +1,265 @@
+{
+  "seed": 1024,
+  "passed": true,
+  "protocol_sha256": "255ce2b95457d807e41775eaa208d40024dc5d1637c3a37b24edfec189c90632",
+  "fits": [
+    {
+      "arm": "H_history",
+      "seed": 1024,
+      "completed_sha256": "1b57f206a5e8002f9ab99bc5f4551efc84b2ee70dc52188c8c6f8eac0ee410fc",
+      "history_sha256": "a9d25a458afc6d5af414df6479799255569e6f718b9ee68bfdd3fbfa23c40d5a",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "4b8d68502dcc80a697c38cc3fb5b51f965b53155efc65c785d1dd23c0a4c3bfd",
+          "bytes": 13613599,
+          "epoch": 2,
+          "validation_r": 0.18389087545640637,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "39057157911ce221560bf572fa18d9be20789efd670b232fb03c3937edd05587",
+          "bytes": 13611043,
+          "epoch": 19,
+          "validation_r": 0.17985549903286843,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 174
+    },
+    {
+      "arm": "C_current",
+      "seed": 1024,
+      "completed_sha256": "04e7a3985892fe62db6d747b6a999d3cdf20f186d22cd236496eeb0b4a5a9fd6",
+      "history_sha256": "a5ca180c9410004160858514e6cc8ba287fa797cab8bcc27c068908a95af9ead",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "cedb7b8da7355e06381669d33697f0e3324e5dfa4f307cf0373f4622f8ab1527",
+          "bytes": 13613599,
+          "epoch": 0,
+          "validation_r": 0.18329781649665086,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "f78fed28dcc94ce2c910228efa240969960c57e9bd232184f8666d7340f5763c",
+          "bytes": 13611043,
+          "epoch": 19,
+          "validation_r": 0.1787658902330074,
+          "parameter_tensors": 174,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3389513
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "4a5f3dce127eae58fac9b895a2d1ec55346d3bc5bd762b7cb9c357172c9e26b9",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 174
+    },
+    {
+      "arm": "T_continue",
+      "seed": 1024,
+      "completed_sha256": "c9fb88a301d2f24a7464fca7533e0c5a9f147bd5acce281038d82bfe27f1946e",
+      "history_sha256": "2b6738f041c6692d74c3b1b2f4f6de3a6d3799c51f00adcba13564482fb9e59b",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "4174258eecca0585ad62fe080f1c1e61bc68485604b27deed11551969be858ad",
+          "bytes": 13543511,
+          "epoch": 2,
+          "validation_r": 0.1835927025460701,
+          "parameter_tensors": 166,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3372617
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "164d6e2a35a384917c841dc391583e33ec6b6692392c771a178ae17932bfabb6",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "14a49da0787eb12b252d9e399391fd2bf6c7828c51fee9b3214b50cd1bee3846",
+          "bytes": 13541043,
+          "epoch": 19,
+          "validation_r": 0.1821901800000681,
+          "parameter_tensors": 166,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3372617
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "164d6e2a35a384917c841dc391583e33ec6b6692392c771a178ae17932bfabb6",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 166
+    },
+    {
+      "arm": "P_prediction_history",
+      "seed": 1024,
+      "completed_sha256": "d496712c45b7562fdf8e18b10c10e54acefeb177e77b93ba448374c92a66ebc1",
+      "history_sha256": "8f85a52396dbe86a3006c6b2cbf80752cf226bc023510903b77734ad3daf9c0a",
+      "checkpoints": [
+        {
+          "file": "best_validation.pt",
+          "sha256": "0365ec27e20d9ce3aba3dc01d2300f99cdac230c952f55a3757a986f7a9a3ecf",
+          "bytes": 13616753,
+          "epoch": 1,
+          "validation_r": 0.18396398022389465,
+          "parameter_tensors": 176,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896,
+            "prior_projection": 640
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3390153
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "bd8d5c1a2c73e2d79ef42941eafb5e43e980da4a0b01c092ff084727a188a119",
+          "header_matches_completed_and_history": true
+        },
+        {
+          "file": "last.pt",
+          "sha256": "4a1f6abe6383e43f3f9d63c9ccbf969449e97aef349cb55a93aea445c86dfb4c",
+          "bytes": 13614175,
+          "epoch": 19,
+          "validation_r": 0.1821792557457821,
+          "parameter_tensors": 176,
+          "parameters_by_module": {
+            "encoder": 3372360,
+            "head": 257,
+            "memory": 16896,
+            "prior_projection": 640
+          },
+          "parameters_by_dtype": {
+            "torch.float32": 3390153
+          },
+          "all_tensors_finite": true,
+          "tensor_schema_sha256": "bd8d5c1a2c73e2d79ef42941eafb5e43e980da4a0b01c092ff084727a188a119",
+          "header_matches_completed_and_history": true
+        }
+      ],
+      "best_vs_last_differing_parameter_tensors": 176
+    }
+  ],
+  "audit_source_sha256": "5f1b6f1bfa6a8b164f6e75f0f7daae57f5894cb5746c864d45e39c867153c087",
+  "execution_host": "server2203",
+  "map_location": "cpu",
+  "weights_only": true,
+  "checkpoint_files_inspected": 8,
+  "dataset_arrays_read": 0,
+  "neural_forwards": 0,
+  "backwards": 0,
+  "optimizer_updates": 0,
+  "cuda_initialized": false,
+  "audit_CPU_seconds": 1.489962735,
+  "audit_wall_seconds": 1.3451600074768066,
+  "audit_peak_RSS_KiB": 576744,
+  "timer_scope": "Includes torch import, reads/hashes, header/parameter/schema/finite/equality checks; no dataset or model execution",
+  "scope": "One completed seed: actual serialized checkpoint integrity and metadata only; no independent prediction or metric replay",
+  "goal_complete": false,
+  "storage_estimate_reconciliation": {
+    "actual_first_seed_checkpoint_bytes": {
+      "fits/H_history_seed1024/best_validation.pt": 13613599,
+      "fits/H_history_seed1024/last.pt": 13611043,
+      "fits/C_current_seed1024/best_validation.pt": 13613599,
+      "fits/C_current_seed1024/last.pt": 13611043,
+      "fits/T_continue_seed1024/best_validation.pt": 13543511,
+      "fits/T_continue_seed1024/last.pt": 13541043,
+      "fits/P_prediction_history_seed1024/best_validation.pt": 13616753,
+      "fits/P_prediction_history_seed1024/last.pt": 13614175
+    },
+    "observed_max_bytes": 13616753,
+    "legacy_planning_unit_bytes": 13614175,
+    "legacy_estimated_upper_bytes": 643174935,
+    "conservative_checkpoint_unit_bytes": 16777216,
+    "formal_checkpoint_slots": 24,
+    "other_estimate_components_unchanged_bytes": 316434735,
+    "conservative_projected_upper_bytes": 719087919,
+    "unchanged_enforced_root_limit_bytes": 805306368,
+    "remaining_margin_bytes": 86218449,
+    "interpretation": "best_validation.pt zip-name/header overhead makes P best slightly larger than the earlier last.pt-based estimate. A16MiB/checkpoint conservative projection still fits the unchanged768MiB root cap. Per-file16MiB is a review projection, not an added runtime rule. No protocol, training source, or results changed.",
+    "audit_CPU_seconds": 0.0018425790000000004,
+    "audit_wall_seconds": 0.0018429756164550781,
+    "new_NN": 0,
+    "new_backward": 0,
+    "new_optimizer_updates": 0,
+    "archive_structure_check": {
+      "archives": {
+        "best_validation.pt": {
+          "bytes": 13616753,
+          "archive_prefix": "best_validation.pt",
+          "entries": 182,
+          "payload_bytes": 13580289,
+          "archive_structure_bytes": 36464
+        },
+        "last.pt": {
+          "bytes": 13614175,
+          "archive_prefix": "last.pt",
+          "entries": 182,
+          "payload_bytes": 13580289,
+          "archive_structure_bytes": 33886
+        }
+      },
+      "normalized_entry_names_sizes_and_compression_identical": true,
+      "observed_size_difference_is_archive_structure": true,
+      "CPU_seconds": 0.0012065999999999986,
+      "wall_seconds": 0.0012094974517822266,
+      "NN_forwards": 0,
+      "backwards": 0,
+      "optimizer_updates": 0
+    },
+    "timer_scope": "Main storage calculation and archive-directory inspection were separate, disjoint metadata-only audits."
+  },
+  "combined_timer_note": "Checkpoint audit, storage projection, and archive-directory metadata inspection are disjoint timed operations; no neural work."
+}

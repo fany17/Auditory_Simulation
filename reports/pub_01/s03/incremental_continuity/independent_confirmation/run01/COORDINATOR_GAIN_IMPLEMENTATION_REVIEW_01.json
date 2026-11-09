@@ -1,0 +1,42 @@
+{
+  "status": "CALIBRATION_SOURCE_AND_ACTUAL_CHECK_VERIFIED_BATCH_PREPROCESSING_ALLOWED",
+  "reviewed_on": "2026-11-02",
+  "parent_decision": "COORDINATOR_GAIN_CALIBRATION_DECISION_20261102.json",
+  "reviewer_thread": "01a134e4-2036-7e02-81e9-1289a07606f2",
+  "reviewed_source_sha256": "17f3005e3a7dc92d9162c465f3b2d365c6659d5e1787523be42add2bc8e6632f",
+  "actual_server_source_matches_local": true,
+  "actual_check_sha256": "48954f0a9ba8da8d2e6a95069706c80837b64bc1ea74e756a2dc291b8d5ce119",
+  "source_amplitude": 5.662644679918114,
+  "full_positive_scale_invariance_max_abs": 1.1368683772161603e-13,
+  "fixed_positive_scales_tested": [
+    1e-9,
+    0.01,
+    1,
+    1000000,
+    1000000000
+  ],
+  "actual_real_canary": {
+    "shape": [
+      64,
+      11365
+    ],
+    "A_record": 6659423.37711397,
+    "gain": 8.503205697025626e-7,
+    "support": "All EEG samples [0,11365) after metadata-defined common-duration crop, including Hann-uncovered boundaries",
+    "not_saved_EEG": true,
+    "new_model_predictions": 0
+  },
+  "checked": [
+    "Full v2 source read",
+    "Original TRAIN normalization fingerprint fixed",
+    "FP64 DSP and crop before scalar calibration; FP32 only at final storage",
+    "Amplitude-estimator centering does not subtract time means from output",
+    "Full-record future input exposure disclosed",
+    "No target/prediction in calibration or unit-multiplier selection"
+  ],
+  "mechanical_fix_requested": "Reject raw good-channel input when every channel is exactly constant across time, before filtering can turn constants into tiny roundoff that calibration amplifies. Test full prepare_record with different per-channel DC constants. No nonzero magnitude threshold, cohort selection or hyperparameter.",
+  "metrics_review": "Exact formulas/seed-person aggregation/Holm2/bootstrap match amended design; additionally require identical unique record/block identities across seeds and roles, beyond matching counts.",
+  "scope": "Acquisition and batch preprocessing may proceed after these bounded engineering checks; final predictive evaluation awaits source/model/data-mask/statistical freeze.",
+  "physical_units": "UNVERIFIED; calibrated numeric units, not SI repair",
+  "scientific_goal_complete": false
+}
