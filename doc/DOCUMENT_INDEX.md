@@ -1,4 +1,6 @@
-> 2026-11-01当前：SS07 ACTIVE，全量原强基线/连续残差持续goal，旧STOP为历史；入口CODEX_START_HERE.md及SS07任务书。
+> 2026-11-09 当前：[D27 Sea-Wave 结果](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/REPORT.md)、[逐种子指标](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/report01/SEED_SCORES.csv)、[独立保存证据审计](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_SAVED_EVIDENCE_AUDIT.json)。150 个训练完成，完整数值复算尚待，持续研究暂停；最新执行状态以 CODEX_START_HERE / CURRENT_TASK 顶部为准。
+
+> 历史快照（2026-11-01）：SS07 ACTIVE，全量原强基线/连续残差持续goal，旧STOP为历史；入口CODEX_START_HERE.md及SS07任务书。
 
 SS07当前轻量交付：[`EXECUTION_REVIEW_01`](../reports/pub_01/s03/incremental_continuity/run01/EXECUTION_REVIEW_01.md)（实际运行与工程/独立审阅）、[`EVIDENCE_MATRIX`](../reports/pub_01/s03/incremental_continuity/run01/EVIDENCE_MATRIX.md)（结果前投稿证据缺口）、[`FINETUNE_SNAPSHOT`](../reports/pub_01/s03/incremental_continuity/run01/FINETUNE_SNAPSHOT.json)（五FT完整训练验证预算）。真实科学结果仍待全训练/统一评估/实际复算，不把以上准备当科学验收。
 

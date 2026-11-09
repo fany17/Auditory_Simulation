@@ -1,0 +1,11 @@
+{
+  "old_process": [
+    1748466,
+    1012,
+    791000426
+  ],
+  "observed_exited": true,
+  "signal_sent": "SIGKILL",
+  "exit_code": null,
+  "reason": "Both original children ended with independent kernel exit evidence"
+}

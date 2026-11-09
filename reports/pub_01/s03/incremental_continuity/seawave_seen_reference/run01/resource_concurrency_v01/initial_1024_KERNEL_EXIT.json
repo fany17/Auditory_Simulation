@@ -1,0 +1,33 @@
+{
+  "proc_stat_field": 52,
+  "proc_state": {
+    "pid": 1879079,
+    "uid": 1012,
+    "startticks": 794756993,
+    "state": "Z",
+    "ppid": 1748466,
+    "readable_startcode": false,
+    "wait_status_field52": 0
+  },
+  "observation_monotonic": 8016551.898445165,
+  "observed_with_stopped_parent": [
+    1748466,
+    1012,
+    791000426
+  ],
+  "field_reader_uid": 1012,
+  "actual_returncode": 0,
+  "worker_timing": {
+    "event": "worker_timing",
+    "process": {
+      "pid": 1879079,
+      "uid": 1012,
+      "startticks": 794756993,
+      "gpu": "GPU-be77d5f7-abf2-5e41-2a1c-9510e4a832d9"
+    },
+    "wall_seconds": 68978.74646720756,
+    "CPU_seconds": 67885.40906861701
+  },
+  "completed_receipt_sha256": "d9f7b7ee3d55e23effbc08a784f10bd95522c83da46f4696d894fe7a2d97c380",
+  "check_error": null
+}

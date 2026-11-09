@@ -1,0 +1,23 @@
+{
+  "process": [
+    1889881,
+    1012,
+    795110993
+  ],
+  "upstream": [
+    1889835,
+    1012,
+    795110900
+  ],
+  "resource_protocol_sha256": "9bce22984751e21fd8980f3a1032a2e1d64d39b01a5a41d11820906883300c75",
+  "V04_science_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "CPUs": [
+    40,
+    41,
+    42,
+    43
+  ],
+  "report_source_review_sha256": "9c0831201ccf120d69ffccc503e91cc2712bf81536704856217d68303e0560ec",
+  "formal_completed_sha256": "507acac0f09060d3df2aa11f5c05012e546544e31574085e8e23810f70cf4ad5",
+  "report_artifacts_sha256": "72a1a4ae4eca1aa90ce96877ca779f97fd7beeeaf25ab6dd545730e050648682"
+}

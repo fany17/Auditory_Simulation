@@ -295,3 +295,11 @@ D26 V05 仍按原矩阵继续。D27 V03 等待进程 1748466 / UID 1012 / startt
 D26 正式完成 6 CL、9 HEAD、9 固定五轮 FT、9 固定 Ccap，共 9,180,055 次优化更新。HH/CH/CC 三种子开发 r 为 0.182768/0.180812/0.182477。HH 对原锚点平均 +0.000428，方向两正一负，全支持 MSE 增加 0.000197，仍低于 D22 B。九个 HEAD 均在 250 轮上限选 epoch 249。独立复算 42 项收齐，r 与校准输出通过，九个 raw MSE 超差仍登记为严格失败。技术 PASS_WITH_LIMITATIONS，固定矩阵验收 PASS_WITH_LIMITATION，父任务一致性 PASS。 [D26 报告](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REPORT.md) · [验收](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/REVIEW.md) · [归档](../../../../../reports/pub_01/s03/incremental_continuity/contrastive_history/run01/ARCHIVE.md)。
 
 D27 原等待进程在 D26 成功终态、相关进程退出、双卡空闲后已切换到 V04 正式队列。首批共享 initial 1024/2026 已启动。节点 SS07 保持 ACTIVE。 [D27 正式准入](../../../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/D26_WAIT_ADMISSION.json)。
+
+### 2026-11-09 D27 训练完成与保存证据核验记录
+
+固定 V04 的 3 个 initial、147 个 personal 及自动报告全部完成。个人模型的三种子开发 r=0.216585948、MSE=0.238145332，共享 initial r=0.162819585、MSE=0.245618792。个人 r 高于历史 D22 B 的 0.184580904，三个种子均超过原 Transformer FT+Ccap，但个人适配、预算与时间权限不同，且 49 人均为 TRAIN-seen，不能认定同预算新架构胜出或 SOTA。
+
+2203 独立保存证据审计通过：150 fit、4512 块评分、294 逐人行、147 配对行、选点/成本/权重字节与实际退出均已核验；三张结果图已查看。总优化更新 32,520,861。此审计没有模型前向，完整原始 EEG→预测数值复算仍待执行，D27 科学终验未完成。[结果与限制](../../../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/REPORT.md) · [实际审计原件](../../../../../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_SAVED_EVIDENCE_AUDIT.json)。
+
+本次用户要求“看一眼情况，然后 commit and push”，仅核验并提交轻量证据。持续研究 goal 保持此前暂停，SS07 未完成；没有新训练、改冻结规则、重开测试或自动合并 PR。

@@ -1,4 +1,10 @@
-# 当前入口：D27 Sea-Wave 三种子并发训练；D26、D28 已完成
+# 当前入口：D27 训练完成，结果已核对；持续研究暂停
+
+2026-11-09，按用户“看一眼情况，然后 commit and push”核查：D27 的 3 个 initial、147 个 personal 及自动报告均已完成，原登记进程已退出。个人模型三种子开发 r=**0.216585948**，共享 initial r=**0.162819585**；历史 D22 B 为 0.184580904。个人微调、训练预算和共享方法不同，不据此认定新框架达到 SOTA。
+
+独立保存证据审计通过，完整 EEG→预测数值复算仍未执行。[当前结果与限制](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/REPORT.md) · [实际审计](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_SAVED_EVIDENCE_AUDIT.json)。用户此前要求暂停思考等训练结果；本次只核查与提交，持续 goal 保持暂停，SS07 未完成。不自动重启 D27、启动新训练或合并 PR。以下均为历史快照，不作为续跑指令。
+
+# 历史入口（2026-11-07）：D27 Sea-Wave 三种子并发训练；D26、D28 已完成
 
 用户最新：**有性能提升就行，核心目标SOTA**。性能优先，HH/CH/CC均可作为候选；不以历史机制未成立阻止实际性能路线，保持同任务强对照及诚实评估。
 

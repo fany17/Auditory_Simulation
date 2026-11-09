@@ -1,4 +1,10 @@
-# 当前入口：D27 已见被试 Sea-Wave 三种子并发训练，D26 已完成
+# 当前入口：D27 结果核对与提交完成范围；持续研究暂停
+
+2026-11-09：D27 完成 3 个 initial + 147 个 personal，全部实际退出与报告终态已核验；个人模型开发 r=0.216585948、MSE=0.238145332，共享 initial r=0.162819585。个人 r 高于历史 D22 B 的 0.184580904，但属于已有方法的个人适配，成本、上下文和选点与共享方法不同，非独立 SOTA 证明。
+
+[结果报告](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/REPORT.md) · [独立保存证据审计](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/COORDINATOR_SAVED_EVIDENCE_AUDIT.json)。保存证据核验通过；全模型原始信号数值复算待执行，未宣称整体科学验收。本次依用户指令只查看并 commit/push，没有新训练、方法选择或测试。持续研究 goal 保持此前暂停，SS07 未完成；下方运行中记录均为历史，不恢复原队列。
+
+# 历史入口（2026-11-07）：D27 已见被试 Sea-Wave 三种子并发训练，D26 已完成
 
 用户最新优先级：**核心目标SOTA，有性能提升即保留；连续性是手段，历史机制不是性能准入硬门。** D26三臂都可以成为性能候选，完整披露来源与选择，协调同步核对最新同任务强方法和可比性。
 

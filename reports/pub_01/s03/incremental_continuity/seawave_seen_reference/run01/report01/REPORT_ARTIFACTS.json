@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "protocol_sha256": "8442767e6fb1a220bab129d2c2163321e760610102fdefb986f43a06079f7476",
+  "formal_completed_sha256": "507acac0f09060d3df2aa11f5c05012e546544e31574085e8e23810f70cf4ad5",
+  "artifacts": {
+    "BLOCKS.csv": "c57766b99af8b68ffa08607fa0933747b62309d5572b4e986c9a11eaf2238987",
+    "FIT_COSTS.json": "5d3ce1a1e08d819a1f0b8db353ca030eaaa50decde64d2eb6c6adfa88ed26f5c",
+    "PAIRS.csv": "83e17a2766cd20a6e60a02171dd42d7a479ff6d3d87430e7b43094df0e897764",
+    "PEOPLE.csv": "7c8280ae5694491b3d26ce634941af8b59a36254583c197d24e5fff01cced81a",
+    "RESULT_SUMMARY.json": "468e3df2d619bbe135c7c51bc533415f95d40e09fdd792d6faf2b75e1bd876f1",
+    "SEED_SCORES.csv": "e7312190f80e7771de17ae29ca5c8fc48606f87f0a572a820d31fd5bf8377b4f",
+    "STRATA.csv": "a21ad70b2a6117f84292eadd9255fcc98c4f9e25b7ee777b5868be308ebd8f95",
+    "TRAINING_EPOCHS.csv": "e1bf162dc22b826c029625cca392cf2b1be491154ec8c9b7769d4775a20284a2",
+    "personal_adaptation.png": "97083829b46107e601a9582e949dd1d54a67f79beb7ccd9512729581f7c76381",
+    "training_selection.png": "5761a65caccf4b7dd1c83d59dbd9d8fbeb0db0ba9aa16604d4d6156d4dcddf8f",
+    "val_same_support.png": "c6e9fa31e232ec7651af20a7befe1aeeaddf46d191d8b1877f871933d0ae0f66"
+  },
+  "D26_helper_hashes": {
+    "pub_01_s03_ss07_contrastive_history_report.py": "550913f9c880c44687fbac280675db0285c42ee9bfeef18ee2b7a1619a149a08",
+    "pub_01_s03_ss07_contrastive_history_report_cost.py": "d07c8ab6bfb5fbae8292432da8ca4abac276846d8dadc780bf792c906709dbfd"
+  },
+  "sources": {
+    "pub_01_s03_ss07_seawave_seen_report_figures.py": "7edc7ef38d80773b751645f5afbe5088378e6a387dcf759114e40bee8dd8cb50",
+    "pub_01_s03_ss07_seawave_seen_report.py": "75bd2d8068b84904203567ae4edf03fc83645182646f5e735cc524af8f0caebf",
+    "pub_01_s03_ss07_seawave_seen_report_cost.py": "dec630336f230bb36429195abdf734e8d6564f5d6b853cd3c4aeb9cc27f99a04"
+  },
+  "signal_reads": 0,
+  "weight_reads": 0,
+  "model_forwards": 0,
+  "new_fits": 0
+}

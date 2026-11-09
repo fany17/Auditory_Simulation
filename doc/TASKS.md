@@ -1,4 +1,6 @@
-> 2026-11-01当前：SS07 ACTIVE，全量原强基线/连续残差持续goal，旧STOP为历史；入口CODEX_START_HERE.md及SS07任务书。
+> 2026-11-09 当前：PUB-01/SS07 尚未完成，持续研究 goal 按用户要求保持暂停。D27 全部 150 个训练与报告已完成，个人模型开发 r=0.216585948；保存证据核验通过，独立数值复算待执行。[结果与限制](../reports/pub_01/s03/incremental_continuity/seawave_seen_reference/run01/REPORT.md)。本次仅查看并提交，不开启后续实验。
+
+> 历史快照（2026-11-01）：SS07 ACTIVE，全量原强基线/连续残差持续goal，旧STOP为历史；入口CODEX_START_HERE.md及SS07任务书。
 
 > 2026-10-26最新：SS06 run02 COMPLETED/PASS_WITH_LIMITATION并STOP，C/O/P r=.123014/.151762/.141466；匹配监督规模/3seed、一次统一assessment及CPU/协调汇总复核完成，六项C配对校正区间全跨0。详见continuity/eeg_run02_matched_baseline/REPORT.md；POST-HOC INTERNAL EXPLORATORY，PUB-01仍ACTIVE，不启下游。
 # Auditory_Simulation Parent Task Registry
